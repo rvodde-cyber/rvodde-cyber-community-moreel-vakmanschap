@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ["Cormorant Garamond", "serif"],
+        sans: ["DM Sans", "sans-serif"]
+      },
+      colors: {
+        achtergrond: "var(--achtergrond)",
+        primair: "var(--tekst-primair)",
+        secundair: "var(--tekst-secundair)",
+        rand: "var(--rand)"
+      },
+      boxShadow: {
+        warm: "0 24px 80px rgba(26, 39, 68, 0.08)"
+      }
+    }
+  },
+  plugins: []
+};

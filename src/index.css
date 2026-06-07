@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kleur-zien: #185fa5;
+  --kleur-voelen: #854f0b;
+  --kleur-wegen: #993556;
+  --kleur-handelen: #0f6e56;
+  --kleur-volhouden: #993c1d;
+  --kleur-kern: #534ab7;
+  --achtergrond: #fafaf8;
+  --tekst-primair: #1a2744;
+  --tekst-secundair: #5f5e5a;
+  --rand: #d3d1c7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--achtergrond);
+  color: var(--tekst-primair);
+  font-family: "DM Sans", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #eeedfe;
+  color: var(--tekst-primair);
+}
+
+.section-shell {
+  margin-inline: auto;
+  max-width: 1180px;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
