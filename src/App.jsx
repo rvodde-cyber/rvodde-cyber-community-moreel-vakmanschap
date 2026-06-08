@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Aanmelden from "./components/Aanmelden";
 import CirkelModel from "./components/CirkelModel";
 import Hero from "./components/Hero";
 import OverHetFundament from "./components/OverHetFundament";
 import WatBieden from "./components/WatBieden";
+import About from "./pages/About";
+import Over from "./pages/Over";
 
 function Navigatie() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,21 +26,27 @@ function Navigatie() {
       }`}
     >
       <nav className="section-shell flex min-h-20 flex-col items-start justify-center gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <a href="#" className="font-display text-3xl font-semibold tracking-tight text-primair">
+        <a href="/" className="font-display text-3xl font-semibold tracking-tight text-primair">
           Moreel Vakmanschap
         </a>
         <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-secundair sm:justify-end">
-          <a className="transition hover:text-primair" href="#model">
+          <a className="transition hover:text-primair" href="/#model">
             Het Model
           </a>
-          <a className="transition hover:text-primair" href="#wat-bieden">
+          <a className="transition hover:text-primair" href="/#wat-bieden">
             Wat bieden we
           </a>
-          <a className="transition hover:text-primair" href="#over-ons">
+          <a className="transition hover:text-primair" href="/#over-ons">
             Over ons
           </a>
-          <a className="transition hover:text-primair" href="#aanmelden">
+          <a className="transition hover:text-primair" href="/#aanmelden">
             Aanmelden
+          </a>
+          <a className="transition hover:text-primair" href="/over">
+            Over
+          </a>
+          <a className="transition hover:text-primair" href="/about">
+            About
           </a>
         </div>
       </nav>
@@ -64,10 +73,9 @@ function Footer() {
   );
 }
 
-export default function App() {
+function Home() {
   return (
     <>
-      <Navigatie />
       <main>
         <Hero />
         <CirkelModel />
@@ -77,5 +85,18 @@ export default function App() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navigatie />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/over" element={<Over />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
