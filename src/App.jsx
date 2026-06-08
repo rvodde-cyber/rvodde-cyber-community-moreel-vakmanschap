@@ -3,12 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Aanmelden from "./components/Aanmelden";
 import CirkelModel from "./components/CirkelModel";
 import Hero from "./components/Hero";
+import TaalSchakelaar from "./components/TaalSchakelaar";
 import OverHetFundament from "./components/OverHetFundament";
 import WatBieden from "./components/WatBieden";
+import { TaalProvider, useTaal } from "./context/TaalContext";
 import About from "./pages/About";
 import Over from "./pages/Over";
 
 function Navigatie() {
+  const { taal, t } = useTaal();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,27 +30,22 @@ function Navigatie() {
     >
       <nav className="section-shell flex min-h-20 flex-col items-start justify-center gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
         <a href="/" className="font-display text-3xl font-semibold tracking-tight text-primair">
-          Moreel Vakmanschap
+          {t.hero.titel}
         </a>
-        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-secundair sm:justify-end">
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-secundair sm:justify-end">
           <a className="transition hover:text-primair" href="/#model">
-            Het Model
+            {t.nav.model}
           </a>
           <a className="transition hover:text-primair" href="/#wat-bieden">
-            Wat bieden we
+            {t.nav.bieden}
           </a>
-          <a className="transition hover:text-primair" href="/#over-ons">
-            Over ons
+          <a className="transition hover:text-primair" href={taal === "nl" ? "/over" : "/about"}>
+            {t.nav.over}
           </a>
           <a className="transition hover:text-primair" href="/#aanmelden">
-            Aanmelden
+            {t.nav.aanmelden}
           </a>
-          <a className="transition hover:text-primair" href="/over">
-            Over
-          </a>
-          <a className="transition hover:text-primair" href="/about">
-            About
-          </a>
+          <TaalSchakelaar />
         </div>
       </nav>
     </header>
@@ -55,19 +53,18 @@ function Navigatie() {
 }
 
 function Footer() {
+  const { t } = useTaal();
+
   return (
     <footer className="border-t border-rand bg-achtergrond py-10">
       <div className="section-shell grid gap-6 text-sm text-secundair md:grid-cols-2 md:items-center">
         <div className="leading-7">
-          <p className="font-semibold text-primair">Lectoraat Ethisch Werken — Fontys Hogescholen</p>
-          <a className="transition hover:text-primair" href="mailto:ethisch.werken@fontys.nl">
-            ethisch.werken@fontys.nl
+          <p className="font-semibold text-primair">{t.footer.lectoraat}</p>
+          <a className="transition hover:text-primair" href={`mailto:${t.footer.contact}`}>
+            {t.footer.contact}
           </a>
         </div>
-        <p className="font-display text-xl italic leading-8 text-primair md:text-right">
-          Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen
-          en koers houden — ook wanneer iets op het spel staat.
-        </p>
+        <p className="font-display text-xl italic leading-8 text-primair md:text-right">{t.footer.kernzin}</p>
       </div>
     </footer>
   );
@@ -90,13 +87,15 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navigatie />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/over" element={<Over />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <TaalProvider>
+      <BrowserRouter>
+        <Navigatie />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/over" element={<Over />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </TaalProvider>
   );
 }

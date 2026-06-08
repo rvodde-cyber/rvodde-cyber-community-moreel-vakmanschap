@@ -19,7 +19,7 @@ export default function StapKaart({ stap, compact = false }) {
         </span>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-secundair">
-            {stap.engelsNaam}
+            {stap.flowLabel}
           </p>
           <h3 className="font-display text-4xl font-semibold leading-none" style={{ color: stap.kleur }}>
             {stap.naam}
