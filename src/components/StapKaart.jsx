@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
+import { useTaal } from "../context/TaalContext";
+
+function isComingSoon(tool) {
+  return /\(coming soon\)|\(binnenkort\)/i.test(tool);
+}
 
 export default function StapKaart({ stap, compact = false }) {
+  const { t } = useTaal();
+
   return (
     <motion.article
       key={stap.nummer}
@@ -34,14 +41,22 @@ export default function StapKaart({ stap, compact = false }) {
 
       <div className="mt-7">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-secundair">
-          Tools
+          {t.stapKaart.tools}
         </p>
         <div className="flex flex-wrap gap-2">
           {stap.tools.map((tool) => (
             <span
               key={tool}
-              className="rounded-full px-3 py-1.5 text-sm font-semibold"
-              style={{ backgroundColor: stap.kleurLicht, color: stap.kleur }}
+              className={`rounded-full px-3 py-1.5 text-sm ${
+                isComingSoon(tool)
+                  ? "bg-[#eeedea] font-normal italic text-[#888780]"
+                  : "font-semibold"
+              }`}
+              style={
+                isComingSoon(tool)
+                  ? undefined
+                  : { backgroundColor: stap.kleurLicht, color: stap.kleur }
+              }
             >
               {tool}
             </span>

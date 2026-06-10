@@ -56,7 +56,7 @@ export const stappen = [
     kernvraag: "Welke koers wil ik blijven houden?",
     beschrijving: "Moreel vakmanschap is geen eenmalige prestatie. Het vraagt volharding — koers houden in tijd en tegenslag, ook als de druk toeneemt.",
     flowLabel: "Integriteit & volharding",
-    tools: ["Morele Spiegel", "Koers Houden", "Leergang Moreel Leiderschap"],
+    tools: ["Morele Spiegel", "Koers Houden", "Leergang Moreel Leiderschap (binnenkort)"],
     positie: { x: 15, y: 35 }
   }
 ];
