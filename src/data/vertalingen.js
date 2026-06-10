@@ -71,6 +71,9 @@ export const vertalingen = {
     worksheets_subtitle: 'Elf werkbladen voor zelfonderzoek en professionele identiteit',
     worksheets_download: 'Download werkblad (.docx)',
     worksheets_badge: 'Aanbevolen',
+    worksheets_wegen_supertitle: 'STAP 3 — WEGEN',
+    worksheets_wegen_title: 'Werkblad — Moreel Beraad',
+    worksheets_wegen_subtitle: 'Samen wegen, redeneren en tot een verdedigbare conclusie komen',
     overPagina: {
       label: 'Over het project',
       titel: 'Community Moreel Vakmanschap',
@@ -190,6 +193,9 @@ export const vertalingen = {
     worksheets_subtitle: 'Eleven worksheets for self-inquiry and professional identity',
     worksheets_download: 'Download worksheet (.docx)',
     worksheets_badge: 'Recommended',
+    worksheets_wegen_supertitle: 'STEP 3 — WEIGHING',
+    worksheets_wegen_title: 'Worksheet — Moral Deliberation',
+    worksheets_wegen_subtitle: 'Weighing together, reasoning and reaching a defensible conclusion',
     overPagina: {
       label: 'About the project',
       titel: 'Community Moral Craftsmanship',

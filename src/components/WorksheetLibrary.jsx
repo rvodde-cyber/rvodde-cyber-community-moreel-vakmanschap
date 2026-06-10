@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { worksheets } from "../data/worksheets";
+import WorksheetCard from "./WorksheetCard";
 
 const STAP_KLEUR = "#185fa5";
-const KERN_KLEUR = "#534ab7";
+const STAP_KLEUR_LICHT = "#e6f1fb";
 
 export default function WorksheetLibrary() {
   const { t } = useTaal();
@@ -27,46 +28,15 @@ export default function WorksheetLibrary() {
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {worksheets.map((sheet) => (
-          <article
+          <WorksheetCard
             key={sheet.id}
-            className="flex flex-col rounded-xl border border-rand bg-[#fafaf8] p-5 shadow-warm transition-shadow hover:shadow-[0_20px_60px_rgba(26,39,68,0.12)]"
-          >
-            <div className="mb-4 flex items-start justify-between gap-3">
-              <span
-                className="rounded-full px-2.5 py-1 text-xs font-bold tracking-wide text-white"
-                style={{ backgroundColor: KERN_KLEUR }}
-              >
-                {sheet.id}
-              </span>
-              <span className="shrink-0 rounded-full border border-rand bg-white px-2.5 py-1 text-xs font-semibold text-secundair">
-                ⭐ {t.worksheets_badge}
-              </span>
-            </div>
-
-            <h4 className="font-display text-2xl font-semibold leading-snug text-primair">{sheet.title}</h4>
-
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {sheet.themes.map((theme) => (
-                <span
-                  key={theme}
-                  className="rounded-full px-2.5 py-1 text-xs font-semibold"
-                  style={{ backgroundColor: "#e6f1fb", color: STAP_KLEUR }}
-                >
-                  {theme}
-                </span>
-              ))}
-            </div>
-
-            <p className="mt-4 line-clamp-2 flex-1 text-sm leading-6 text-secundair">{sheet.intro}</p>
-
-            <a
-              href={`/downloads/zien/${sheet.filename}`}
-              download={sheet.filename}
-              className="mt-5 inline-flex items-center justify-center rounded-full border-2 border-[#185fa5] px-4 py-2.5 text-center text-sm font-semibold text-[#185fa5] transition-colors hover:bg-[#185fa5] hover:text-white"
-            >
-              {t.worksheets_download}
-            </a>
-          </article>
+            sheet={sheet}
+            accentColor={STAP_KLEUR}
+            accentBg={STAP_KLEUR_LICHT}
+            downloadBasePath="/downloads/zien"
+            downloadLabel={t.worksheets_download}
+            badgeLabel={t.worksheets_badge}
+          />
         ))}
       </div>
     </motion.div>
