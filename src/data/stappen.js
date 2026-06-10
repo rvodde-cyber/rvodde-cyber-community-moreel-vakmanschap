@@ -8,7 +8,7 @@ export const stappen = [
     kernvraag: "Wat gebeurt hier echt?",
     beschrijving: "Je herkent dat er iets moreel speelt. Niet alles is een dilemma — maar sommige situaties vragen om aandacht. Zien is de eerste stap van moreel vakmanschap.",
     flowLabel: "Bewustwording",
-    tools: ["Gesprekskaarten", "Moreel Woordenboek"],
+    tools: ["Gesprekskaarten", "Moreel Woordenboek", "Werkbladen"],
     positie: { x: 50, y: 8 } // procenten, met de klok mee startend boven
   },
   {

@@ -25,7 +25,7 @@ export const vertalingen = {
       kernTekst: 'Morele situaties uit de praktijk'
     },
     stappen: [
-      { nummer: 1, naam: 'Zien', kernvraag: 'Wat gebeurt hier echt?', beschrijving: 'Je herkent dat er iets moreel speelt. Niet alles is een dilemma — maar sommige situaties vragen om aandacht. Zien is de eerste stap van moreel vakmanschap.', flowLabel: 'Bewustwording', tools: ['Gesprekskaarten', 'Moreel Woordenboek'] },
+      { nummer: 1, naam: 'Zien', kernvraag: 'Wat gebeurt hier echt?', beschrijving: 'Je herkent dat er iets moreel speelt. Niet alles is een dilemma — maar sommige situaties vragen om aandacht. Zien is de eerste stap van moreel vakmanschap.', flowLabel: 'Bewustwording', tools: ['Gesprekskaarten', 'Moreel Woordenboek', 'Werkbladen'] },
       { nummer: 2, naam: 'Voelen', kernvraag: 'Waar krijg ik morele buikpijn van?', beschrijving: 'Voordat je gaat redeneren, voel je al iets. Een ongemak, een twijfel, een buikpijn. Dat gevoel is geen ruis — het is morele informatie.', flowLabel: 'Innerlijk kompas', tools: ['Rad van Moreel Fortuin'] },
       { nummer: 3, naam: 'Wegen', kernvraag: 'Wat botst hier allemaal?', beschrijving: 'Wat botst hier? Waarden, belangen, verantwoordelijkheden, context. Moreel wegen is geen berekening — het is een zorgvuldige afweging van wat er echt op het spel staat.', flowLabel: 'Morele afweging', tools: ['Moreel Beraad', 'Vertrouwenspiegel', 'Morele Lakmoesproef'] },
       { nummer: 4, naam: 'Handelen', kernvraag: 'Wat vraagt dit van mij?', beschrijving: 'Je doet iets met je morele oordeel. Dat vraagt moed — de bereidheid om te staan voor wat juist is, ook als het ongemakkelijk is.', flowLabel: 'Morele moed', tools: ['Morele Moed', 'MAPS Trilogie'] },
@@ -149,7 +149,7 @@ export const vertalingen = {
       kernTekst: 'Moral situations from practice'
     },
     stappen: [
-      { nummer: 1, naam: 'Seeing', kernvraag: 'What is really happening?', beschrijving: 'You recognise that something moral is at play. Not every situation is a dilemma — but some demand attention. Seeing is the first step of moral craftsmanship.', flowLabel: 'Awareness', tools: ['Conversation Cards', 'Moral Dictionary'] },
+      { nummer: 1, naam: 'Seeing', kernvraag: 'What is really happening?', beschrijving: 'You recognise that something moral is at play. Not every situation is a dilemma — but some demand attention. Seeing is the first step of moral craftsmanship.', flowLabel: 'Awareness', tools: ['Conversation Cards', 'Moral Dictionary', 'Worksheets'] },
       { nummer: 2, naam: 'Feeling', kernvraag: 'Where do I feel moral discomfort?', beschrijving: 'Before you start reasoning, you already feel something. Unease, doubt, a gut feeling. That feeling is not noise — it is moral information.', flowLabel: 'Inner compass', tools: ['Wheel of Moral Fortune'] },
       { nummer: 3, naam: 'Weighing', kernvraag: 'What is in conflict here?', beschrijving: 'What is at odds here? Values, interests, responsibilities, context. Moral weighing is not a calculation — it is a careful consideration of what is truly at stake.', flowLabel: 'Moral deliberation', tools: ['Moral Deliberation', 'Mirror of Trust', 'Moral Litmus Test'] },
       { nummer: 4, naam: 'Acting', kernvraag: 'What does this ask of me?', beschrijving: 'You act on your moral judgement. That requires courage — the willingness to stand for what is right, even when it is uncomfortable.', flowLabel: 'Moral courage', tools: ['Moral Courage', 'MAPS Trilogy'] },
