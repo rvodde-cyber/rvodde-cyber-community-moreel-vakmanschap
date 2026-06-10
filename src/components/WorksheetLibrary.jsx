@@ -34,7 +34,6 @@ export default function WorksheetLibrary() {
             accentColor={STAP_KLEUR}
             accentBg={STAP_KLEUR_LICHT}
             downloadBasePath="/downloads/zien"
-            downloadLabel={t.worksheets_download}
             badgeLabel={t.worksheets_badge}
           />
         ))}

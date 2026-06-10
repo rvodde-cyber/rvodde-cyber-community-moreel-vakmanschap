@@ -1,7 +1,8 @@
 export const worksheets = [
   {
     "id": "MV_01",
-    "filename": "MV_01_ImOKYoureOK_EN.docx",
+    "filenameEn": "MV_01_ImOKYoureOK_EN.docx",
+    "filenameNl": "MV_01_IkBenOK.docx",
     "title": "I'm OK — You're OK",
     "themes": [
       "Transactional Analysis",
@@ -13,7 +14,8 @@ export const worksheets = [
   },
   {
     "id": "MV_02",
-    "filename": "MV_02_SocialisationReport_EN.docx",
+    "filenameEn": "MV_02_SocialisationReport_EN.docx",
+    "filenameNl": "MV_02_Socialisatieverslag.docx",
     "title": "The Socialisation Report",
     "themes": [
       "Self-Inquiry",
@@ -24,7 +26,8 @@ export const worksheets = [
   },
   {
     "id": "MV_03",
-    "filename": "MV_03_TransculturalGenogram_EN.docx",
+    "filenameEn": "MV_03_TransculturalGenogram_EN.docx",
+    "filenameNl": "MV_03_Genogram.docx",
     "title": "The Transcultural Genogram",
     "themes": [
       "Family Lines",
@@ -35,7 +38,8 @@ export const worksheets = [
   },
   {
     "id": "MV_04",
-    "filename": "MV_04_LifeLine_EN.docx",
+    "filenameEn": "MV_04_LifeLine_EN.docx",
+    "filenameNl": "MV_04_Levenslijn.docx",
     "title": "The Life Line",
     "themes": [
       "Cognitive",
@@ -47,7 +51,8 @@ export const worksheets = [
   },
   {
     "id": "MV_05",
-    "filename": "MV_05_TheStrangerTheOther_EN.docx",
+    "filenameEn": "MV_05_TheStrangerTheOther_EN.docx",
+    "filenameNl": "MV_05_DeVreemdeAnder.docx",
     "title": "The Stranger — The Other",
     "themes": [
       "Self-Inquiry",
@@ -58,7 +63,8 @@ export const worksheets = [
   },
   {
     "id": "MV_06",
-    "filename": "MV_06_InterculturalCompetences_EN.docx",
+    "filenameEn": "MV_06_InterculturalCompetences_EN.docx",
+    "filenameNl": "MV_06_IntercultureleCompetenties.docx",
     "title": "Model of Intercultural Competences",
     "themes": [
       "Knowledge",
@@ -69,7 +75,8 @@ export const worksheets = [
   },
   {
     "id": "MV_07",
-    "filename": "MV_07_IntersectionalityAudit_EN.docx",
+    "filenameEn": "MV_07_IntersectionalityAudit_EN.docx",
+    "filenameNl": "MV_07_IntersectionaliteitsAudit.docx",
     "title": "The Intersectionality Audit",
     "themes": [
       "Power",
@@ -80,7 +87,8 @@ export const worksheets = [
   },
   {
     "id": "MV_08",
-    "filename": "MV_08_TrueNorth_EN.docx",
+    "filenameEn": "MV_08_TrueNorth_EN.docx",
+    "filenameNl": "MV_08_WareKoers.docx",
     "title": "True North",
     "themes": [
       "Leadership",
@@ -91,7 +99,8 @@ export const worksheets = [
   },
   {
     "id": "MV_09",
-    "filename": "MV_09_JohariWindow_EN.docx",
+    "filenameEn": "MV_09_JohariWindow_EN.docx",
+    "filenameNl": "MV_09_JohariVenster.docx",
     "title": "The Johari Window",
     "themes": [
       "Self-Knowledge",
@@ -103,7 +112,8 @@ export const worksheets = [
   },
   {
     "id": "MV_10",
-    "filename": "MV_10_LogicalLevelsBateson_EN.docx",
+    "filenameEn": "MV_10_LogicalLevelsBateson_EN.docx",
+    "filenameNl": "MV_10_LogischeNiveausBateson.docx",
     "title": "Logical Levels of Bateson",
     "themes": [
       "Environment",
@@ -117,7 +127,8 @@ export const worksheets = [
   },
   {
     "id": "MV_11",
-    "filename": "MV_11_LearysRose_EN.docx",
+    "filenameEn": "MV_11_LearysRose_EN.docx",
+    "filenameNl": "MV_11_RoosVanLeary.docx",
     "title": "Leary's Rose",
     "themes": [
       "Interaction",

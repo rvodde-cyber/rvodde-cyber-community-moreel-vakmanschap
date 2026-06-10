@@ -7,6 +7,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const zienDir = path.join(root, "public", "downloads", "zien");
 
+const nlFilenames = {
+  MV_01: "MV_01_IkBenOK.docx",
+  MV_02: "MV_02_Socialisatieverslag.docx",
+  MV_03: "MV_03_Genogram.docx",
+  MV_04: "MV_04_Levenslijn.docx",
+  MV_05: "MV_05_DeVreemdeAnder.docx",
+  MV_06: "MV_06_IntercultureleCompetenties.docx",
+  MV_07: "MV_07_IntersectionaliteitsAudit.docx",
+  MV_08: "MV_08_WareKoers.docx",
+  MV_09: "MV_09_JohariVenster.docx",
+  MV_10: "MV_10_LogischeNiveausBateson.docx",
+  MV_11: "MV_11_RoosVanLeary.docx"
+};
+
 const filenames = [
   "MV_01_ImOKYoureOK_EN.docx",
   "MV_02_SocialisationReport_EN.docx",
@@ -101,7 +115,15 @@ async function extractWorksheet(filename) {
   if (!themes.length) throw new Error(`Could not extract themes from ${filename}`);
   if (!intro) throw new Error(`Could not extract intro from ${filename}`);
 
-  return { id, filename, title, themes, intro };
+  const filenameNl = nlFilenames[id];
+  if (!filenameNl) throw new Error(`No NL filename mapped for ${id}`);
+
+  const nlPath = path.join(zienDir, filenameNl);
+  if (!fs.existsSync(nlPath)) {
+    throw new Error(`Missing NL file: ${filenameNl}`);
+  }
+
+  return { id, filenameEn: filename, filenameNl, title, themes, intro };
 }
 
 const worksheets = [];

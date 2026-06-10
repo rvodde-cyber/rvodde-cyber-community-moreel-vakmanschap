@@ -1,6 +1,7 @@
 export const worksheetWegen = {
   "id": "MV_12",
-  "filename": "MV_12_MoralDeliberation_EN.docx",
+  "filenameEn": "MV_12_MoralDeliberation_EN.docx",
+  "filenameNl": "MV_12_MoreelBeraad.docx",
   "title": "MV_12 — Moral Deliberation",
   "themes": [
     "Weighing Together",

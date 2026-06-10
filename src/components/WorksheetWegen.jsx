@@ -32,7 +32,6 @@ export default function WorksheetWegen() {
           accentColor={STAP_KLEUR}
           accentBg={STAP_KLEUR_LICHT}
           downloadBasePath="/downloads/wegen"
-          downloadLabel={t.worksheets_download}
           badgeLabel={t.worksheets_badge}
         />
       </div>

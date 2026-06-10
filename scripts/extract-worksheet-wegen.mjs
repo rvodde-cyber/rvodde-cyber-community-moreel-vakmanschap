@@ -54,9 +54,17 @@ if (!fs.existsSync(filePath)) {
 }
 
 const { value: html } = await mammoth.convertToHtml({ path: filePath });
+const filenameNl = "MV_12_MoreelBeraad.docx";
+const nlPath = path.join(root, "public", "downloads", "wegen", filenameNl);
+
+if (!fs.existsSync(nlPath)) {
+  throw new Error(`Missing NL file: ${filenameNl}`);
+}
+
 const worksheet = {
   id: "MV_12",
-  filename,
+  filenameEn: filename,
+  filenameNl,
   title: extractTitle(html),
   themes: extractThemes(html),
   intro: extractIntro(html)
