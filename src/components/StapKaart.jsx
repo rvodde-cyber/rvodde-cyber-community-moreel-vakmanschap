@@ -5,14 +5,30 @@ function isComingSoon(tool) {
   return /\(coming soon\)|\(binnenkort\)/i.test(tool);
 }
 
-export default function StapKaart({ stap, compact = false }) {
+export default function StapKaart({ stap, compact = false, isActive = false, onSelect }) {
   const { t } = useTaal();
+  const isSelectable = Boolean(onSelect);
 
   return (
     <motion.article
       key={stap.nummer}
-      className="rounded-[2rem] border-2 bg-white p-6 shadow-warm md:p-8"
-      style={{ borderColor: stap.kleur }}
+      role={isSelectable ? "button" : undefined}
+      tabIndex={isSelectable ? 0 : undefined}
+      onClick={onSelect}
+      onKeyDown={
+        isSelectable
+          ? (event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                onSelect();
+              }
+            }
+          : undefined
+      }
+      className={`rounded-[2rem] border-2 bg-white p-6 shadow-warm md:p-8 ${
+        isSelectable ? "cursor-pointer transition-shadow hover:shadow-[0_20px_60px_rgba(26,39,68,0.12)]" : ""
+      } ${isActive ? "ring-2 ring-offset-2" : ""}`}
+      style={{ borderColor: stap.kleur, ...(isActive ? { ringColor: stap.kleur } : {}) }}
       initial={{ opacity: 0, x: compact ? 0 : 36 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}

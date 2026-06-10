@@ -66,6 +66,11 @@ export const vertalingen = {
     stapKaart: {
       tools: 'Tools'
     },
+    worksheets_supertitle: 'STAP 1 — ZIEN',
+    worksheets_title: 'Werkbladen — Gnōthi seauton · Ken uzelf',
+    worksheets_subtitle: 'Elf werkbladen voor zelfonderzoek en professionele identiteit',
+    worksheets_download: 'Download werkblad (.docx)',
+    worksheets_badge: 'Aanbevolen',
     overPagina: {
       label: 'Over het project',
       titel: 'Community Moreel Vakmanschap',
@@ -180,6 +185,11 @@ export const vertalingen = {
     stapKaart: {
       tools: 'Tools'
     },
+    worksheets_supertitle: 'STEP 1 — SEEING',
+    worksheets_title: 'Worksheets — Gnōthi seauton · Know Yourself',
+    worksheets_subtitle: 'Eleven worksheets for self-inquiry and professional identity',
+    worksheets_download: 'Download worksheet (.docx)',
+    worksheets_badge: 'Recommended',
     overPagina: {
       label: 'About the project',
       titel: 'Community Moral Craftsmanship',

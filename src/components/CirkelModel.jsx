@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import StapKaart from "./StapKaart";
+import WorksheetLibrary from "./WorksheetLibrary";
 import { useTaal } from "../context/TaalContext";
 import { stappen as basisStappen } from "../data/stappen";
 
@@ -182,9 +183,23 @@ export default function CirkelModel() {
           </div>
         </div>
 
+        {activeStepNumber === 1 && (
+          <div className="hidden md:block">
+            <WorksheetLibrary />
+          </div>
+        )}
+
         <div className="grid gap-5 md:hidden">
           {stappen.map((stap) => (
-            <StapKaart key={stap.nummer} stap={stap} compact />
+            <div key={stap.nummer}>
+              <StapKaart
+                stap={stap}
+                compact
+                isActive={activeStepNumber === stap.nummer}
+                onSelect={() => setActiveStepNumber(stap.nummer)}
+              />
+              {stap.nummer === 1 && activeStepNumber === 1 && <WorksheetLibrary />}
+            </div>
           ))}
         </div>
       </motion.div>
