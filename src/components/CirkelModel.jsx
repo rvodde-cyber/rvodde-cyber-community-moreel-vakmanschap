@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import StapKaart from "./StapKaart";
-import { stappen as stappenMeta } from "../data/stappen";
 import { useTaal } from "../context/TaalContext";
+import { stappen as basisStappen } from "../data/stappen";
 
 const nodeRadius = 10.5;
 
@@ -27,20 +27,18 @@ function arrowPath(fromStep, toStep) {
 }
 
 export default function CirkelModel() {
-  const { t, taal } = useTaal();
-  const stappen = t.stappen.map((stap, index) => ({
-    ...stappenMeta[index],
-    ...stap,
-    engelsNaam: taal === "nl" ? stappenMeta[index].engelsNaam : stap.flowLabel
+  const { t } = useTaal();
+  const [activeStepNumber, setActiveStepNumber] = useState(1);
+  const stappen = basisStappen.map((basisStap, index) => ({
+    ...basisStap,
+    ...t.stappen[index],
+    kleur: basisStap.kleur,
+    kleurLicht: basisStap.kleurLicht,
+    positie: basisStap.positie
   }));
-
-  const [activeStep, setActiveStep] = useState(stappen[0]);
+  const activeStep = stappen.find((stap) => stap.nummer === activeStepNumber) || stappen[0];
   const clockwiseArrows = stappen.slice(0, 4).map((stap, index) => [stap, stappen[index + 1]]);
   const returnPath = arrowPath(stappen[4], stappen[0]);
-
-  useEffect(() => {
-    setActiveStep(stappen[0]);
-  }, [taal]);
 
   return (
     <section id="model" className="bg-achtergrond py-20 md:py-28">
@@ -52,10 +50,12 @@ export default function CirkelModel() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="mb-12 max-w-3xl">
-          <h2 className="font-display text-5xl font-semibold leading-tight text-primair md:text-6xl">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-secundair">
             {t.model.titel}
+          </p>
+          <h2 className="font-display text-5xl font-semibold leading-tight text-primair md:text-6xl">
+            {t.model.subtitel}
           </h2>
-          <p className="mt-4 text-lg text-secundair">{t.model.subtitel}</p>
         </div>
 
         <div className="hidden gap-10 md:grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center">
@@ -112,6 +112,9 @@ export default function CirkelModel() {
                 <text x="50" y="55" textAnchor="middle" fill="#534ab7" fontSize="3.4" fontWeight="600">
                   {t.model.kernSub}
                 </text>
+                <text x="50" y="60" textAnchor="middle" fill="#534ab7" fontSize="2.5" fontWeight="500">
+                  {t.model.kernTekst}
+                </text>
               </g>
 
               {stappen.map((stap) => {
@@ -124,11 +127,11 @@ export default function CirkelModel() {
                     role="button"
                     tabIndex="0"
                     aria-label={`${stap.nummer}. ${stap.naam}`}
-                    onClick={() => setActiveStep(stap)}
+                    onClick={() => setActiveStepNumber(stap.nummer)}
                     onKeyDown={(event) => {
                       if (event.key === "Enter" || event.key === " ") {
                         event.preventDefault();
-                        setActiveStep(stap);
+                        setActiveStepNumber(stap.nummer);
                       }
                     }}
                     className="cursor-pointer outline-none"
