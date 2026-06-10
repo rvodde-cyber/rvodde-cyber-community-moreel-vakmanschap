@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTaal } from "../context/TaalContext";
 
 export default function Aanmelden() {
+  const { t } = useTaal();
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -11,17 +14,16 @@ export default function Aanmelden() {
     const ethiekonderwijs = formData.get("ethiekonderwijs") || "";
 
     const body = [
-      `Naam: ${naam}`,
-      `Instelling: ${instelling}`,
-      `E-mailadres: ${email}`,
+      `${t.aanmelden.naamLabel}: ${naam}`,
+      `${t.aanmelden.instellingLabel}: ${instelling}`,
+      `${t.aanmelden.emailLabel}: ${email}`,
       "",
-      "Waar werk jij aan in ethiekonderwijs?",
-      ethiekonderwijs || "Niet ingevuld"
+      t.aanmelden.emailVraag,
+      ethiekonderwijs || t.aanmelden.nietIngevuld
     ].join("\n");
 
-    const subject = "Aanmelding Community Moreel Vakmanschap";
-    window.location.href = `mailto:ethisch.werken@fontys.nl?subject=${encodeURIComponent(
-      subject
+    window.location.href = `mailto:${t.footer.contact}?subject=${encodeURIComponent(
+      t.aanmelden.emailSubject
     )}&body=${encodeURIComponent(body)}`;
   };
 
@@ -36,21 +38,15 @@ export default function Aanmelden() {
       >
         <div className="grid gap-10 rounded-[2.5rem] border border-rand bg-achtergrond p-7 shadow-warm md:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-secundair">
-              Aanmelden
-            </p>
             <h2 className="font-display text-5xl font-semibold leading-tight text-primair md:text-6xl">
-              Doe mee met de community.
+              {t.aanmelden.titel}
             </h2>
-            <p className="mt-6 leading-8 text-secundair">
-              Laat weten wie je bent en waar je aan werkt. Je mailprogramma opent automatisch met een
-              ingevulde aanmelding aan het Lectoraat Ethisch Werken.
-            </p>
+            <p className="mt-6 leading-8 text-secundair">{t.aanmelden.subtitel}</p>
           </div>
 
           <form className="grid gap-5" onSubmit={handleSubmit}>
             <label className="grid gap-2 text-sm font-semibold text-primair">
-              Naam
+              {t.aanmelden.naamLabel}
               <input
                 required
                 name="naam"
@@ -60,7 +56,7 @@ export default function Aanmelden() {
             </label>
 
             <label className="grid gap-2 text-sm font-semibold text-primair">
-              Instelling
+              {t.aanmelden.instellingLabel}
               <input
                 required
                 name="instelling"
@@ -70,7 +66,7 @@ export default function Aanmelden() {
             </label>
 
             <label className="grid gap-2 text-sm font-semibold text-primair">
-              E-mailadres
+              {t.aanmelden.emailLabel}
               <input
                 required
                 name="email"
@@ -80,7 +76,7 @@ export default function Aanmelden() {
             </label>
 
             <label className="grid gap-2 text-sm font-semibold text-primair">
-              Waar werk jij aan in ethiekonderwijs?
+              {t.aanmelden.vraagLabel}
               <textarea
                 name="ethiekonderwijs"
                 rows="5"
@@ -92,7 +88,7 @@ export default function Aanmelden() {
               type="submit"
               className="mt-2 rounded-full bg-primair px-8 py-4 text-base font-semibold text-white shadow-warm transition hover:-translate-y-0.5 hover:bg-[#233657] focus:outline-none focus:ring-4 focus:ring-[#534ab7]/20"
             >
-              Stuur mijn aanmelding
+              {t.aanmelden.knop}
             </button>
           </form>
         </div>

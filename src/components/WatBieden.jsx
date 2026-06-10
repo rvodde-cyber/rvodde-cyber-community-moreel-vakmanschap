@@ -1,25 +1,12 @@
 import { motion } from "framer-motion";
 import { Sprout, Upload, Users } from "lucide-react";
+import { useTaal } from "../context/TaalContext";
 
-const aanbod = [
-  {
-    titel: "Jouw materialen",
-    tekst: "Deel werkvormen, casuïstiek en tools. Getagd op modelstap. Drie niveaus: Concept, Getest, Aanbevolen.",
-    icoon: Upload
-  },
-  {
-    titel: "Online sessies",
-    tekst: "Elke zes weken een gezamenlijke sessie. Altijd opening met een gesprekskaart. Altijd een open vraag die je meeneemt.",
-    icoon: Users
-  },
-  {
-    titel: "Dilemma van de week",
-    tekst: "Elke week een nieuwe morele situatie, gekoppeld aan een stap van het model. Reageer, reflecteer, deel.",
-    icoon: Sprout
-  }
-];
+const iconMap = { Upload, Users, Sprout };
 
 export default function WatBieden() {
+  const { t } = useTaal();
+
   return (
     <section id="wat-bieden" className="bg-white py-20 md:py-28">
       <motion.div
@@ -30,17 +17,14 @@ export default function WatBieden() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="mb-12 max-w-3xl">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-secundair">
-            Wat de community biedt
-          </p>
           <h2 className="font-display text-5xl font-semibold leading-tight text-primair md:text-6xl">
-            Delen, ontmoeten en groeien in morele praktijk.
+            {t.bieden.titel}
           </h2>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {aanbod.map((item) => {
-            const Icon = item.icoon;
+          {t.bieden.items.map((item) => {
+            const Icon = iconMap[item.icon];
 
             return (
               <article
