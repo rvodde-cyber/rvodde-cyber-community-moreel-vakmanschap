@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useTaal } from "../context/TaalContext";
+import { downloadGesprekskaartPdf } from "../utils/generateGesprekskaartPdf";
 
 function CardButton({ children, accentColor, variant = "outline", onClick, href, download }) {
   const className =
@@ -43,6 +44,7 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
 
 export function ConversationCardPreview({ card, onOpen }) {
   const { t } = useTaal();
+  const handleDownload = () => downloadGesprekskaartPdf(card, t);
 
   return (
     <article
@@ -68,7 +70,7 @@ export function ConversationCardPreview({ card, onOpen }) {
           <CardButton accentColor={card.kleur} onClick={onOpen}>
             {t.gesprekskaart.bekijk}
           </CardButton>
-          <CardButton accentColor={card.kleur} variant="filled" onClick={(e) => e.preventDefault()}>
+          <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
             {t.gesprekskaart.downloadPdf}
           </CardButton>
         </div>
@@ -87,6 +89,7 @@ function formatStapVerbinding(template, card, kernvraag) {
 export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { t } = useTaal();
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
+  const handleDownload = () => downloadGesprekskaartPdf(card, t);
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -164,7 +167,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               </p>
 
               <div className="mt-8">
-                <CardButton accentColor={card.kleur} variant="filled" onClick={(e) => e.preventDefault()}>
+                <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
                   {t.gesprekskaart.downloadPdf}
                 </CardButton>
               </div>

@@ -82,7 +82,9 @@ export const vertalingen = {
       sluit: 'Sluit',
       stapLabel: 'Stap',
       instructie: 'Bespreek deze vraag met elkaar. Er is geen goed antwoord — alleen een echte ontmoeting.',
-      stapVerbinding: 'Deze kaart hoort bij stap {nummer} — {naam}: {kernvraag}'
+      stapVerbinding: 'Deze kaart hoort bij stap {nummer} — {naam}: {kernvraag}',
+      pdfHeader: 'Community Moreel Vakmanschap',
+      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken'
     },
     bibliotheek: {
       stap1: {
@@ -246,7 +248,9 @@ export const vertalingen = {
       sluit: 'Close',
       stapLabel: 'Step',
       instructie: 'Discuss this question together. There is no right answer — only a real encounter.',
-      stapVerbinding: 'This card belongs to step {nummer} — {naam}: {kernvraag}'
+      stapVerbinding: 'This card belongs to step {nummer} — {naam}: {kernvraag}',
+      pdfHeader: 'Community Moreel Vakmanschap',
+      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken'
     },
     bibliotheek: {
       stap1: {
