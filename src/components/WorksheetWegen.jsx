@@ -11,7 +11,8 @@ export default function WorksheetWegen() {
 
   return (
     <motion.div
-      className="mt-10"
+      id="werkbladen-sectie"
+      className="mt-10 scroll-mt-24"
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
