@@ -61,7 +61,7 @@ export const vertalingen = {
     footer: {
       kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat.',
       lectoraat: 'Lectoraat Ethisch Werken — Fontys Hogescholen',
-      contact: 'ethisch.werken@fontys.nl'
+      contact: 'r.vodde@fontys.nl'
     },
     stapKaart: {
       tools: 'Tools'
@@ -227,7 +227,7 @@ export const vertalingen = {
     footer: {
       kernzin: 'Moral craftsmanship means: keep seeing, keep feeling, keep weighing, keep acting and hold the course — even when something is at stake.',
       lectoraat: 'Research Group on Ethical Practice — Fontys University of Applied Sciences',
-      contact: 'ethisch.werken@fontys.nl'
+      contact: 'r.vodde@fontys.nl'
     },
     stapKaart: {
       tools: 'Tools'
