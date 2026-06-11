@@ -12,7 +12,9 @@ export default function BibliotheekComingSoon({ stapNummer, kleur, kleurLicht })
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      <h3 className="font-display text-2xl font-semibold text-primair md:text-3xl">{stap.titel}</h3>
+      <h3 className="font-display text-2xl font-semibold text-primair md:text-3xl">
+        {stap.gesprekskaarten_titel || stap.titel}
+      </h3>
 
       <div
         className="mt-6 rounded-xl border border-rand p-8 md:p-10"

@@ -96,7 +96,7 @@ export const vertalingen = {
         comingSoon: 'Hier komen binnenkort materialen voor stap 2 — Voelen. Wil je bijdragen? Meld je aan als lid.'
       },
       stap3: {
-        gesprekskaarten_titel: 'Gesprekskaarten — Morele afweging',
+        gesprekskaarten_titel: "Gesprekskaarten — Morele Dilemma's",
         kaarten: [
           { id: 'GK_W01', categorie: 'Professionele praktijk', vraag: 'Wat botst hier — en wie draagt welke verantwoordelijkheid?' },
           { id: 'GK_W02', categorie: 'Professionele praktijk', vraag: 'Welke waarden staan op het spel — en voor wie?' },
@@ -105,10 +105,12 @@ export const vertalingen = {
       },
       stap4: {
         titel: 'Werkbladen & Tools',
+        gesprekskaarten_titel: 'Gesprekskaarten — Morele Moed in de Praktijk',
         comingSoon: 'Hier komen binnenkort materialen voor stap 4 — Handelen. Wil je bijdragen? Meld je aan als lid.'
       },
       stap5: {
         titel: 'Werkbladen & Tools',
+        gesprekskaarten_titel: 'Gesprekskaarten — Koers Houden',
         comingSoon: 'Hier komen binnenkort materialen voor stap 5 — Volhouden. Wil je bijdragen? Meld je aan als lid.'
       }
     },
@@ -256,7 +258,7 @@ export const vertalingen = {
         comingSoon: 'Materials for Step 2 — Feeling are coming soon. Want to contribute? Join the community.'
       },
       stap3: {
-        gesprekskaarten_titel: 'Conversation Cards — Moral Deliberation',
+        gesprekskaarten_titel: 'Conversation Cards — Moral Dilemmas',
         kaarten: [
           { id: 'GK_W01', categorie: 'Professional Practice', vraag: 'What is in conflict here — and who bears which responsibility?' },
           { id: 'GK_W02', categorie: 'Professional Practice', vraag: 'Which values are at stake — and for whom?' },
@@ -265,10 +267,12 @@ export const vertalingen = {
       },
       stap4: {
         titel: 'Worksheets & Tools',
+        gesprekskaarten_titel: 'Conversation Cards — Moral Courage in Practice',
         comingSoon: 'Materials for Step 4 — Acting are coming soon. Want to contribute? Join the community.'
       },
       stap5: {
         titel: 'Worksheets & Tools',
+        gesprekskaarten_titel: 'Conversation Cards — Holding Course',
         comingSoon: 'Materials for Step 5 — Persisting are coming soon. Want to contribute? Join the community.'
       }
     },
