@@ -76,6 +76,42 @@ export const vertalingen = {
     worksheets_wegen_supertitle: 'STAP 3 — WEGEN',
     worksheets_wegen_title: 'Werkblad — Moreel Beraad',
     worksheets_wegen_subtitle: 'Samen wegen, redeneren en tot een verdedigbare conclusie komen',
+    gesprekskaart: {
+      bekijk: 'Bekijk kaart',
+      downloadPdf: 'Download PDF',
+      sluit: 'Sluit',
+      stapLabel: 'Stap'
+    },
+    bibliotheek: {
+      stap1: {
+        gesprekskaarten_titel: 'Gesprekskaarten — Dagelijks Leven',
+        kaarten: [
+          { id: 'GK_01', categorie: 'Dagelijks Leven', vraag: 'Wat gebeurt hier echt — en wat zie ik nog niet?' },
+          { id: 'GK_02', categorie: 'Dagelijks Leven', vraag: 'Welke details wijs ik over het hoofd — en waarom?' },
+          { id: 'GK_03', categorie: 'Dagelijks Leven', vraag: 'Wie is hier het meest kwetsbaar — en zie ik dat?' }
+        ]
+      },
+      stap2: {
+        titel: 'Werkbladen & Tools',
+        comingSoon: 'Hier komen binnenkort materialen voor stap 2 — Voelen. Wil je bijdragen? Meld je aan als lid.'
+      },
+      stap3: {
+        gesprekskaarten_titel: 'Gesprekskaarten — Morele afweging',
+        kaarten: [
+          { id: 'GK_W01', categorie: 'Professionele praktijk', vraag: 'Wat botst hier — en wie draagt welke verantwoordelijkheid?' },
+          { id: 'GK_W02', categorie: 'Professionele praktijk', vraag: 'Welke waarden staan op het spel — en voor wie?' },
+          { id: 'GK_W03', categorie: 'Professionele praktijk', vraag: 'Wat is de meest verdedigbare koers — ook als die ongemakkelijk is?' }
+        ]
+      },
+      stap4: {
+        titel: 'Werkbladen & Tools',
+        comingSoon: 'Hier komen binnenkort materialen voor stap 4 — Handelen. Wil je bijdragen? Meld je aan als lid.'
+      },
+      stap5: {
+        titel: 'Werkbladen & Tools',
+        comingSoon: 'Hier komen binnenkort materialen voor stap 5 — Volhouden. Wil je bijdragen? Meld je aan als lid.'
+      }
+    },
     overPagina: {
       label: 'Over het project',
       titel: 'Community Moreel Vakmanschap',
@@ -200,6 +236,42 @@ export const vertalingen = {
     worksheets_wegen_supertitle: 'STEP 3 — WEIGHING',
     worksheets_wegen_title: 'Worksheet — Moral Deliberation',
     worksheets_wegen_subtitle: 'Weighing together, reasoning and reaching a defensible conclusion',
+    gesprekskaart: {
+      bekijk: 'View card',
+      downloadPdf: 'Download PDF',
+      sluit: 'Close',
+      stapLabel: 'Step'
+    },
+    bibliotheek: {
+      stap1: {
+        gesprekskaarten_titel: 'Conversation Cards — Daily Life',
+        kaarten: [
+          { id: 'GK_01', categorie: 'Daily Life', vraag: 'What is really happening here — and what am I not seeing yet?' },
+          { id: 'GK_02', categorie: 'Daily Life', vraag: 'Which details am I overlooking — and why?' },
+          { id: 'GK_03', categorie: 'Daily Life', vraag: 'Who is most vulnerable here — and do I see that?' }
+        ]
+      },
+      stap2: {
+        titel: 'Worksheets & Tools',
+        comingSoon: 'Materials for Step 2 — Feeling are coming soon. Want to contribute? Join the community.'
+      },
+      stap3: {
+        gesprekskaarten_titel: 'Conversation Cards — Moral Deliberation',
+        kaarten: [
+          { id: 'GK_W01', categorie: 'Professional Practice', vraag: 'What is in conflict here — and who bears which responsibility?' },
+          { id: 'GK_W02', categorie: 'Professional Practice', vraag: 'Which values are at stake — and for whom?' },
+          { id: 'GK_W03', categorie: 'Professional Practice', vraag: 'What is the most defensible course — even when it is uncomfortable?' }
+        ]
+      },
+      stap4: {
+        titel: 'Worksheets & Tools',
+        comingSoon: 'Materials for Step 4 — Acting are coming soon. Want to contribute? Join the community.'
+      },
+      stap5: {
+        titel: 'Worksheets & Tools',
+        comingSoon: 'Materials for Step 5 — Persisting are coming soon. Want to contribute? Join the community.'
+      }
+    },
     overPagina: {
       label: 'About the project',
       titel: 'Community Moral Craftsmanship',

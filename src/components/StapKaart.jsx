@@ -12,10 +12,12 @@ const WORKSHEET_TOOL_ANCHORS = new Set([
   "Moral Deliberation"
 ]);
 
-function scrollToWorksheetSection(event) {
+const CONVERSATION_TOOL_ANCHORS = new Set(["Gesprekskaarten", "Conversation Cards"]);
+
+function scrollToSection(event, sectionId) {
   event.preventDefault();
   event.stopPropagation();
-  document.getElementById("werkbladen-sectie")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export default function StapKaart({ stap, compact = false, isActive = false, onSelect }) {
@@ -88,7 +90,21 @@ export default function StapKaart({ stap, compact = false, isActive = false, onS
                 <a
                   key={tool}
                   href="#werkbladen-sectie"
-                  onClick={scrollToWorksheetSection}
+                  onClick={(event) => scrollToSection(event, "werkbladen-sectie")}
+                  className={`${pillClass} cursor-pointer transition-opacity hover:opacity-80`}
+                  style={pillStyle}
+                >
+                  {tool}
+                </a>
+              );
+            }
+
+            if (CONVERSATION_TOOL_ANCHORS.has(tool)) {
+              return (
+                <a
+                  key={tool}
+                  href="#gesprekskaarten-sectie"
+                  onClick={(event) => scrollToSection(event, "gesprekskaarten-sectie")}
                   className={`${pillClass} cursor-pointer transition-opacity hover:opacity-80`}
                   style={pillStyle}
                 >
