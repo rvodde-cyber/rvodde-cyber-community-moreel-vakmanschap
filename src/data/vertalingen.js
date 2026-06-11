@@ -77,10 +77,12 @@ export const vertalingen = {
     worksheets_wegen_title: 'Werkblad — Moreel Beraad',
     worksheets_wegen_subtitle: 'Samen wegen, redeneren en tot een verdedigbare conclusie komen',
     gesprekskaart: {
-      bekijk: 'Bekijk kaart',
+      bekijk: 'Bekijk vraag',
       downloadPdf: 'Download PDF',
       sluit: 'Sluit',
-      stapLabel: 'Stap'
+      stapLabel: 'Stap',
+      instructie: 'Bespreek deze vraag met elkaar. Er is geen goed antwoord — alleen een echte ontmoeting.',
+      stapVerbinding: 'Deze kaart hoort bij stap {nummer} — {naam}: {kernvraag}'
     },
     bibliotheek: {
       stap1: {
@@ -239,10 +241,12 @@ export const vertalingen = {
     worksheets_wegen_title: 'Worksheet — Moral Deliberation',
     worksheets_wegen_subtitle: 'Weighing together, reasoning and reaching a defensible conclusion',
     gesprekskaart: {
-      bekijk: 'View card',
+      bekijk: 'View question',
       downloadPdf: 'Download PDF',
       sluit: 'Close',
-      stapLabel: 'Step'
+      stapLabel: 'Step',
+      instructie: 'Discuss this question together. There is no right answer — only a real encounter.',
+      stapVerbinding: 'This card belongs to step {nummer} — {naam}: {kernvraag}'
     },
     bibliotheek: {
       stap1: {

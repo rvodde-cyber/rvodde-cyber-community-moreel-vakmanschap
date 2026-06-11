@@ -77,8 +77,16 @@ export function ConversationCardPreview({ card, onOpen }) {
   );
 }
 
+function formatStapVerbinding(template, card, kernvraag) {
+  return template
+    .replace("{nummer}", card.stapNummer)
+    .replace("{naam}", card.stapNaam)
+    .replace("{kernvraag}", kernvraag);
+}
+
 export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { t } = useTaal();
+  const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -148,6 +156,12 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               >
                 &ldquo;{card.vraag}&rdquo;
               </h2>
+
+              <p className="mt-5 leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
+
+              <p className="mt-4 text-sm font-semibold leading-6" style={{ color: card.kleur }}>
+                {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}
+              </p>
 
               <div className="mt-8">
                 <CardButton accentColor={card.kleur} variant="filled" onClick={(e) => e.preventDefault()}>
