@@ -7,6 +7,8 @@ export const vertalingen = {
     nav: {
       model: 'Het Model',
       bieden: 'Wat bieden we',
+      gesprekskaarten: 'Gesprekskaarten',
+      bibliotheek: 'Bibliotheek',
       over: 'Over ons',
       aanmelden: 'Aanmelden'
     },
@@ -162,7 +164,27 @@ export const vertalingen = {
           ]
         }
       ]
-    }
+    },
+    maker: {
+      label: 'De maker',
+      titel: 'Richard Voddé',
+      alineas: [
+        'Richard Voddé is docent en onderzoeker Ethisch Werken aan Fontys Hogescholen in Tilburg. Als Comenius Senior Fellow werkt hij aan de vraag hoe ethiekonderwijs in het hoger beroepsonderwijs werkelijk vormt — niet alleen informeert.',
+        'Hij ontwikkelde het Model Moreel Vakmanschap en de bijbehorende gesprekskaartenmethodiek, en bouwt daaromheen een Community of Practice voor docenten en onderzoekers bij hogescholen en universiteiten in Nederland en daarbuiten. Zijn klankbordgroep bestaat uit collega\'s bij HAN, Avans en Hogeschool Utrecht. Internationaal werkt hij samen met universitaire partners via het HEROES-project.',
+      ],
+      contact: 'lectoraatethischwerken@fontys.nl',
+      contactLabel: 'Neem contact op',
+    },
+    visie: {
+      label: 'De drijfveer',
+      titel: 'Waarom dit project bestaat',
+      alineas: [
+        'Ethiek verdwijnt in het hoger onderwijs onder druk van toetsing en leerstofoverdracht. Studenten leren wat goed is — maar worden onvoldoende voorbereid op de weerbarstige werkelijkheid waarbij echt iets op het spel staat.',
+        'Mijn overtuiging is dat mensen effectiever worden aangesproken via een praktijkverhaal dan via theoretische principes. Morele oordeelsvorming ontstaat niet in een college — ze ontstaat in confrontatie met echte situaties, in gesprek met anderen die anders kiezen.',
+        'Dit project is de concrete vertaling van die visie. Het gaat niet om kennis óver ethiek, maar om morele veerkracht: het vermogen om te blijven kijken, voelen, wegen en handelen — ook wanneer iets op het spel staat. En om de ruggengraat te ontwikkelen om daarnaar te handelen, als het erop aankomt.',
+      ],
+      citaat: 'Morele littekens — de langdurige impact van onvoldoende onderbouwde keuzes — zijn te voorkomen. Dat is wat mij drijft.',
+    },
   },
 
   en: {
@@ -173,6 +195,8 @@ export const vertalingen = {
     nav: {
       model: 'The Model',
       bieden: 'What we offer',
+      gesprekskaarten: 'Conversation Cards',
+      bibliotheek: 'Library',
       over: 'About',
       aanmelden: 'Join us'
     },
@@ -328,6 +352,26 @@ export const vertalingen = {
           ]
         }
       ]
-    }
+    },
+    maker: {
+      label: 'The author',
+      titel: 'Richard Voddé',
+      alineas: [
+        'Richard Voddé is a lecturer and researcher in Ethical Practice at Fontys University of Applied Sciences in Tilburg, the Netherlands. As a Comenius Senior Fellow, he works on the question of how ethics education in higher professional education can genuinely shape people — not merely inform them.',
+        'He developed the Model of Moral Craftsmanship and the conversation card methodology, and is building a Community of Practice for ethics educators at universities of applied sciences and research universities in the Netherlands and internationally. His advisory group includes colleagues at HAN, Avans, and Hogeschool Utrecht. He collaborates with international university partners through the HEROES project.',
+      ],
+      contact: 'lectoraatethischwerken@fontys.nl',
+      contactLabel: 'Get in touch',
+    },
+    visie: {
+      label: 'The conviction',
+      titel: 'Why this project exists',
+      alineas: [
+        'In higher professional education, ethics is increasingly reduced to content delivery and assessment. Students learn what is right — but are rarely prepared for the messy reality of situations where something is genuinely at stake.',
+        'My conviction is that people engage more deeply with a concrete story from practice than with theoretical principles. Moral judgement does not develop in a lecture — it develops through confrontation with real situations, in conversation with others who see things differently.',
+        'This project is the concrete expression of that conviction. It is not about knowledge of ethics, but about moral resilience: the capacity to keep looking, feeling, weighing and acting — even when things are difficult. And to develop the backbone to act on that, when it counts.',
+      ],
+      citaat: 'Moral scars — the lasting impact of choices made without adequate grounding — are preventable. That is what drives this work.',
+    },
   }
 };

@@ -12,6 +12,14 @@ export default function TaalRouteSync() {
       navigate("/about", { replace: true });
     } else if (location.pathname === "/about" && taal === "nl") {
       navigate("/over", { replace: true });
+    } else if (location.pathname === "/gesprekskaarten" && taal === "en") {
+      navigate("/conversation-cards", { replace: true });
+    } else if (location.pathname === "/conversation-cards" && taal === "nl") {
+      navigate("/gesprekskaarten", { replace: true });
+    } else if (location.pathname === "/bibliotheek" && taal === "en") {
+      navigate("/library", { replace: true });
+    } else if (location.pathname === "/library" && taal === "nl") {
+      navigate("/bibliotheek", { replace: true });
     }
   }, [taal, location.pathname, navigate]);
 

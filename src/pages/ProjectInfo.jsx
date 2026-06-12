@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { stappen as stappenMeta } from "../data/stappen";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: i * 0.1, ease: "easeOut" },
+  }),
+};
+
 export default function ProjectInfo() {
   const { t } = useTaal();
   const { overPagina } = t;
@@ -196,6 +205,195 @@ export default function ProjectInfo() {
           {t.footer.lectoraat} · {t.footer.contact}
         </p>
       </motion.section>
+
+      {/* ── SCHEIDINGSLIJN ── */}
+      <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem" }}>
+        <div style={{ height: "1px", backgroundColor: "var(--rand, #d3d1c7)" }} />
+      </div>
+
+      {/* ── OVER DE MAKER ── */}
+      <section style={{ padding: "5rem 1.5rem", maxWidth: "760px", margin: "0 auto" }}>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          style={{
+            fontSize: "0.75rem",
+            fontFamily: "DM Sans, sans-serif",
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "#534ab7",
+            marginBottom: "0.75rem",
+          }}
+        >
+          {t.maker.label}
+        </motion.p>
+
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={1}
+          style={{
+            fontFamily: "Cormorant Garamond, serif",
+            fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
+            fontWeight: 600,
+            color: "var(--tekst-primair, #1a2744)",
+            marginBottom: "1.75rem",
+          }}
+        >
+          {t.maker.titel}
+        </motion.h2>
+
+        {t.maker.alineas.map((alinea, i) => (
+          <motion.p
+            key={alinea}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={i + 2}
+            style={{
+              fontFamily: "DM Sans, sans-serif",
+              fontSize: "1rem",
+              lineHeight: 1.8,
+              color: "var(--tekst-secundair, #5f5e5a)",
+              marginBottom: "1.25rem",
+            }}
+          >
+            {alinea}
+          </motion.p>
+        ))}
+
+        <motion.a
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={4}
+          href={`mailto:${t.maker.contact}`}
+          style={{
+            display: "inline-block",
+            marginTop: "0.5rem",
+            padding: "0.625rem 1.5rem",
+            border: "1px solid #534ab7",
+            color: "#534ab7",
+            fontFamily: "DM Sans, sans-serif",
+            fontSize: "0.9rem",
+            borderRadius: "6px",
+            textDecoration: "none",
+            transition: "all 0.2s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "#534ab7";
+            e.currentTarget.style.color = "#ffffff";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.color = "#534ab7";
+          }}
+        >
+          {t.maker.contactLabel} →
+        </motion.a>
+      </section>
+
+      {/* ── SCHEIDINGSLIJN ── */}
+      <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem" }}>
+        <div style={{ height: "1px", backgroundColor: "var(--rand, #d3d1c7)" }} />
+      </div>
+
+      {/* ── ONDERWIJSVISIE ── */}
+      <section
+        style={{
+          padding: "5rem 1.5rem 6rem",
+          maxWidth: "760px",
+          margin: "0 auto",
+        }}
+      >
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          style={{
+            fontSize: "0.75rem",
+            fontFamily: "DM Sans, sans-serif",
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "#534ab7",
+            marginBottom: "0.75rem",
+          }}
+        >
+          {t.visie.label}
+        </motion.p>
+
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={1}
+          style={{
+            fontFamily: "Cormorant Garamond, serif",
+            fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
+            fontWeight: 600,
+            color: "var(--tekst-primair, #1a2744)",
+            marginBottom: "1.75rem",
+          }}
+        >
+          {t.visie.titel}
+        </motion.h2>
+
+        {t.visie.alineas.map((alinea, i) => (
+          <motion.p
+            key={alinea}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={i + 2}
+            style={{
+              fontFamily: "DM Sans, sans-serif",
+              fontSize: "1rem",
+              lineHeight: 1.8,
+              color: "var(--tekst-secundair, #5f5e5a)",
+              marginBottom: "1.25rem",
+            }}
+          >
+            {alinea}
+          </motion.p>
+        ))}
+
+        <motion.blockquote
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={5}
+          style={{
+            margin: "2.5rem 0 0",
+            padding: "1.5rem 2rem",
+            borderLeft: "3px solid #534ab7",
+            backgroundColor: "#f0eeea",
+            borderRadius: "0 8px 8px 0",
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "Cormorant Garamond, serif",
+              fontSize: "1.2rem",
+              fontStyle: "italic",
+              lineHeight: 1.65,
+              color: "var(--tekst-primair, #1a2744)",
+              margin: 0,
+            }}
+          >
+            {t.visie.citaat}
+          </p>
+        </motion.blockquote>
+      </section>
     </main>
   );
 }

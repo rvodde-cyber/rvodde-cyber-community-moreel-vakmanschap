@@ -10,6 +10,8 @@ import TaalSchakelaar from "./components/TaalSchakelaar";
 import WatBieden from "./components/WatBieden";
 import { TaalProvider, useTaal } from "./context/TaalContext";
 import About from "./pages/About";
+import BiblioteekPagina from "./pages/BiblioteekPagina";
+import GespreksKaartenPagina from "./pages/GespreksKaartenPagina";
 import Over from "./pages/Over";
 
 function Navigatie() {
@@ -40,6 +42,18 @@ function Navigatie() {
           </a>
           <a className="transition hover:text-primair" href="/#wat-bieden">
             {t.nav.bieden}
+          </a>
+          <a
+            className="transition hover:text-primair"
+            href={taal === "nl" ? "/gesprekskaarten" : "/conversation-cards"}
+          >
+            {t.nav.gesprekskaarten}
+          </a>
+          <a
+            className="transition hover:text-primair"
+            href={taal === "nl" ? "/bibliotheek" : "/library"}
+          >
+            {t.nav.bibliotheek}
           </a>
           <a className="transition hover:text-primair" href={taal === "nl" ? "/over" : "/about"}>
             {t.nav.over}
@@ -107,6 +121,24 @@ function AboutPagina() {
   );
 }
 
+function GespreksKaartenRoute() {
+  return (
+    <>
+      <GespreksKaartenPagina />
+      <Footer />
+    </>
+  );
+}
+
+function BibliotheekRoute() {
+  return (
+    <>
+      <BiblioteekPagina />
+      <Footer />
+    </>
+  );
+}
+
 export default function App() {
   return (
     <TaalProvider>
@@ -118,6 +150,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/over" element={<OverPagina />} />
           <Route path="/about" element={<AboutPagina />} />
+          <Route path="/gesprekskaarten" element={<GespreksKaartenRoute />} />
+          <Route path="/conversation-cards" element={<GespreksKaartenRoute />} />
+          <Route path="/bibliotheek" element={<BibliotheekRoute />} />
+          <Route path="/library" element={<BibliotheekRoute />} />
         </Routes>
       </BrowserRouter>
     </TaalProvider>

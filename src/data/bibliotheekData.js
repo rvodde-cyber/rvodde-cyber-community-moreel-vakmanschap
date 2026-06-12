@@ -1,0 +1,286 @@
+// Kwaliteitsniveaus:
+// 'concept'     = 🌱 Concept — pas geprobeerd, ter inspiratie
+// 'getest'      = ✅ Getest — minimaal 1x gebruikt in onderwijs
+// 'aanbevolen'  = ⭐ Aanbevolen — positief beoordeeld door meerdere leden
+// 'binnenkort'  = 🔜 Binnenkort beschikbaar
+
+export const bibliotheekData = {
+  nl: [
+    {
+      stap: 1,
+      stapNaam: 'Zien',
+      kleur: '#185fa5',
+      intro: 'Gnōthi seauton — ken uzelf. Moreel vakmanschap begint bij zelfkennis. Wie ben ik? Wat drijft mij? Welke blinde vlekken heb ik? De werkbladen bij Zien helpen je de patronen en achtergronden te verkennen die jouw morele blik kleuren.',
+      materialen: [
+        {
+          id: 'MV_01', titel: 'Ik ben OK — Jij bent OK',
+          themas: ['Transactionele Analyse', 'Grondposities', 'Zelfbewustzijn'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_01_IkBenOK.docx',
+          bestand_en: 'MV_01_ImOKYoureOK_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_02', titel: 'Socialisatieverslag',
+          themas: ['Socialisatie', 'Achtergrond', 'Identiteit'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_02_Socialisatieverslag.docx',
+          bestand_en: 'MV_02_SocialisationReport_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_03', titel: 'Transculturaal Genogram',
+          themas: ['Familie', 'Cultuur', 'Herkomst'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_03_Genogram.docx',
+          bestand_en: 'MV_03_TransculturalGenogram_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_04', titel: 'De Levenslijn',
+          themas: ['Levensgeschiedenis', 'Keerpunten', 'Reflectie'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_04_Levenslijn.docx',
+          bestand_en: 'MV_04_LifeLine_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_05', titel: 'De Vreemde — De Ander',
+          themas: ['Interculturele dialoog', 'Zelfonderzoek', 'Professionaliteit'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_05_DeVreemdeAnder.docx',
+          bestand_en: 'MV_05_TheStrangerTheOther_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_06', titel: 'Interculturele Competenties',
+          themas: ['Cultuur', 'Competenties', 'Diversiteit'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_06_IntercultureleCompetenties.docx',
+          bestand_en: 'MV_06_InterculturalCompetences_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_07', titel: 'Intersectionaliteitsaudit',
+          themas: ['Intersectionaliteit', 'Identiteit', 'Privilege'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_07_IntersectionaliteitsAudit.docx',
+          bestand_en: 'MV_07_IntersectionalityAudit_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_08', titel: 'Ware Koers',
+          themas: ['Waarden', 'Leiderschap', 'Authenticiteit'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_08_WareKoers.docx',
+          bestand_en: 'MV_08_TrueNorth_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_09', titel: 'Johari-venster',
+          themas: ['Zelfbewustzijn', 'Feedback', 'Blinde vlekken'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_09_JohariVenster.docx',
+          bestand_en: 'MV_09_JohariWindow_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_10', titel: 'Logische Niveaus van Bateson',
+          themas: ['Identiteit', 'Overtuigingen', 'Gedrag'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_10_LogischeNiveausBateson.docx',
+          bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx',
+          map: 'zien',
+        },
+        {
+          id: 'MV_11', titel: 'De Roos van Leary',
+          themas: ['Interactie', 'Gedragspatronen', 'Relaties'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_11_RoosVanLeary.docx',
+          bestand_en: 'MV_11_LearysRose_EN.docx',
+          map: 'zien',
+        },
+      ],
+    },
+    {
+      stap: 2,
+      stapNaam: 'Voelen',
+      kleur: '#854f0b',
+      intro: 'Moreel vakmanschap vraagt om het vermogen je eigen morele bronnen te kennen. Wat raakt jou? Waar word je ongemakkelijk van? De tools bij Voelen helpen je jouw innerlijke kompas te ontdekken en te vertrouwen.',
+      materialen: [
+        {
+          id: 'RAD_01', titel: 'Rad van Moreel Fortuin',
+          themas: ['Morele bronnen', 'Innerlijk kompas', 'Beïnvloeding'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'voelen',
+          binnenkort: true,
+        },
+      ],
+    },
+    {
+      stap: 3,
+      stapNaam: 'Wegen',
+      kleur: '#993556',
+      intro: 'Morele dilemma\'s kenmerken zich door botsende waarden — geen van beide kanten heeft ongelijk. De tools bij Wegen helpen je die spanning te benoemen, te onderzoeken en samen tot een afgewogen oordeel te komen.',
+      materialen: [
+        {
+          id: 'MV_12', titel: 'Moreel Beraad',
+          themas: ['Gezamenlijke reflectie', 'Besluitvorming', 'Waarden'],
+          niveau: 'aanbevolen',
+          bestand_nl: 'MV_12_MoreelBeraad.docx',
+          bestand_en: 'MV_12_MoralDeliberation_EN.docx',
+          map: 'wegen',
+        },
+        {
+          id: 'VT_01', titel: 'Vertrouwenspiegel',
+          themas: ['Vertrouwen', 'Morele relaties', 'Integriteit'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'wegen',
+          binnenkort: true,
+        },
+        {
+          id: 'LM_01', titel: 'Morele Lakmoesproef',
+          themas: ['Organisatiecultuur', 'Integriteit', 'Morele toets'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'wegen',
+          binnenkort: true,
+        },
+      ],
+    },
+    {
+      stap: 4,
+      stapNaam: 'Handelen',
+      kleur: '#0f6e56',
+      intro: 'Weten wat goed is, is niet genoeg. Moreel vakmanschap vraagt om de moed om te handelen — ook als dat ongemakkelijk is, ook als je er alleen voor staat. De tools bij Handelen helpen je die stap te zetten.',
+      materialen: [
+        {
+          id: 'MM_01', titel: 'Morele Moed',
+          themas: ['Moed', 'Standpunt innemen', 'Moreel handelen'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'handelen',
+          binnenkort: true,
+        },
+        {
+          id: 'MAPS_01', titel: 'MAPS Trilogie',
+          themas: ['Morele scenario\'s', 'Keuzes', 'Voorbereiding'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'handelen',
+          binnenkort: true,
+        },
+      ],
+    },
+    {
+      stap: 5,
+      stapNaam: 'Volhouden',
+      kleur: '#993c1d',
+      intro: 'Moreel vakmanschap is geen eenmalige keuze. Het vraagt om koers houden — in de tijd, onder druk, wanneer het makkelijker zou zijn om bij te draaien. De tools bij Volhouden helpen je die koers te bewaren.',
+      materialen: [
+        {
+          id: 'MS_01', titel: 'Morele Spiegel',
+          themas: ['Reflectie', 'Identiteit', 'Koers'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'volhouden',
+          binnenkort: true,
+        },
+        {
+          id: 'KH_01', titel: 'Koers Houden',
+          themas: ['Richting', 'Volharding', 'Tegenslag'],
+          niveau: 'getest',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'volhouden',
+          binnenkort: true,
+        },
+        {
+          id: 'LML_01', titel: 'Leergang Moreel Leiderschap',
+          themas: ['Leiderschap', 'Morele cultuur', 'Organisatie'],
+          niveau: 'concept',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'volhouden',
+          binnenkort: true,
+        },
+      ],
+    },
+  ],
+
+  en: [
+    {
+      stap: 1,
+      stapNaam: 'Seeing',
+      kleur: '#185fa5',
+      intro: 'Gnōthi seauton — know thyself. Moral craftsmanship begins with self-knowledge. Who am I? What drives me? What are my blind spots? The worksheets for Seeing help you explore the patterns and backgrounds that shape your moral perspective.',
+      materialen: [
+        { id: 'MV_01', titel: 'I\'m OK — You\'re OK', themas: ['Transactional Analysis', 'Life Positions', 'Self-awareness'], niveau: 'aanbevolen', bestand_nl: 'MV_01_IkBenOK.docx', bestand_en: 'MV_01_ImOKYoureOK_EN.docx', map: 'zien' },
+        { id: 'MV_02', titel: 'Socialisation Report', themas: ['Socialisation', 'Background', 'Identity'], niveau: 'aanbevolen', bestand_nl: 'MV_02_Socialisatieverslag.docx', bestand_en: 'MV_02_SocialisationReport_EN.docx', map: 'zien' },
+        { id: 'MV_03', titel: 'Transcultural Genogram', themas: ['Family', 'Culture', 'Origins'], niveau: 'aanbevolen', bestand_nl: 'MV_03_Genogram.docx', bestand_en: 'MV_03_TransculturalGenogram_EN.docx', map: 'zien' },
+        { id: 'MV_04', titel: 'The Life Line', themas: ['Life history', 'Turning points', 'Reflection'], niveau: 'aanbevolen', bestand_nl: 'MV_04_Levenslijn.docx', bestand_en: 'MV_04_LifeLine_EN.docx', map: 'zien' },
+        { id: 'MV_05', titel: 'The Stranger — The Other', themas: ['Intercultural dialogue', 'Self-inquiry', 'Professional proximity'], niveau: 'aanbevolen', bestand_nl: 'MV_05_DeVreemdeAnder.docx', bestand_en: 'MV_05_TheStrangerTheOther_EN.docx', map: 'zien' },
+        { id: 'MV_06', titel: 'Intercultural Competences', themas: ['Culture', 'Competences', 'Diversity'], niveau: 'aanbevolen', bestand_nl: 'MV_06_IntercultureleCompetenties.docx', bestand_en: 'MV_06_InterculturalCompetences_EN.docx', map: 'zien' },
+        { id: 'MV_07', titel: 'Intersectionality Audit', themas: ['Intersectionality', 'Identity', 'Privilege'], niveau: 'aanbevolen', bestand_nl: 'MV_07_IntersectionaliteitsAudit.docx', bestand_en: 'MV_07_IntersectionalityAudit_EN.docx', map: 'zien' },
+        { id: 'MV_08', titel: 'True North', themas: ['Values', 'Leadership', 'Authenticity'], niveau: 'aanbevolen', bestand_nl: 'MV_08_WareKoers.docx', bestand_en: 'MV_08_TrueNorth_EN.docx', map: 'zien' },
+        { id: 'MV_09', titel: 'Johari Window', themas: ['Self-awareness', 'Feedback', 'Blind spots'], niveau: 'aanbevolen', bestand_nl: 'MV_09_JohariVenster.docx', bestand_en: 'MV_09_JohariWindow_EN.docx', map: 'zien' },
+        { id: 'MV_10', titel: 'Bateson\'s Logical Levels', themas: ['Identity', 'Beliefs', 'Behaviour'], niveau: 'aanbevolen', bestand_nl: 'MV_10_LogischeNiveausBateson.docx', bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx', map: 'zien' },
+        { id: 'MV_11', titel: 'Leary\'s Rose', themas: ['Interaction', 'Behaviour patterns', 'Relationships'], niveau: 'aanbevolen', bestand_nl: 'MV_11_RoosVanLeary.docx', bestand_en: 'MV_11_LearysRose_EN.docx', map: 'zien' },
+      ],
+    },
+    {
+      stap: 2, stapNaam: 'Feeling', kleur: '#854f0b',
+      intro: 'Moral craftsmanship requires knowing your own moral sources. What moves you? Where do you feel discomfort? The tools for Feeling help you discover and trust your inner moral compass.',
+      materialen: [
+        { id: 'RAD_01', titel: 'Wheel of Moral Fortune', themas: ['Moral sources', 'Inner compass', 'Influence'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'voelen', binnenkort: true },
+      ],
+    },
+    {
+      stap: 3, stapNaam: 'Weighing', kleur: '#993556',
+      intro: 'Moral dilemmas are characterised by conflicting values — neither side is simply wrong. The tools for Weighing help you name that tension, explore it together, and arrive at a considered judgement.',
+      materialen: [
+        { id: 'MV_12', titel: 'Moral Deliberation', themas: ['Shared reflection', 'Decision-making', 'Values'], niveau: 'aanbevolen', bestand_nl: 'MV_12_MoreelBeraad.docx', bestand_en: 'MV_12_MoralDeliberation_EN.docx', map: 'wegen' },
+        { id: 'VT_01', titel: 'Trust Mirror', themas: ['Trust', 'Moral relationships', 'Integrity'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
+        { id: 'LM_01', titel: 'Moral Litmus Test', themas: ['Organisational culture', 'Integrity', 'Moral audit'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
+      ],
+    },
+    {
+      stap: 4, stapNaam: 'Acting', kleur: '#0f6e56',
+      intro: 'Knowing what is right is not enough. Moral craftsmanship requires the courage to act — even when it is uncomfortable, even when you stand alone. The tools for Acting help you take that step.',
+      materialen: [
+        { id: 'MM_01', titel: 'Moral Courage', themas: ['Courage', 'Taking a stand', 'Moral action'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
+        { id: 'MAPS_01', titel: 'MAPS Trilogy', themas: ['Moral scenarios', 'Choices', 'Preparation'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
+      ],
+    },
+    {
+      stap: 5, stapNaam: 'Persisting', kleur: '#993c1d',
+      intro: 'Moral craftsmanship is not a one-time choice. It requires holding course — over time, under pressure, when it would be easier to give way. The tools for Persisting help you maintain that direction.',
+      materialen: [
+        { id: 'MS_01', titel: 'Moral Mirror', themas: ['Reflection', 'Identity', 'Direction'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
+        { id: 'KH_01', titel: 'Holding Course', themas: ['Direction', 'Perseverance', 'Adversity'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
+        { id: 'LML_01', titel: 'Moral Leadership Programme', themas: ['Leadership', 'Moral culture', 'Organisation'], niveau: 'concept', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
+      ],
+    },
+  ],
+}
+
+export const niveauLabels = {
+  nl: {
+    aanbevolen: '⭐ Aanbevolen',
+    getest: '✅ Getest',
+    concept: '🌱 Concept',
+  },
+  en: {
+    aanbevolen: '⭐ Recommended',
+    getest: '✅ Tested',
+    concept: '🌱 Concept',
+  },
+}
