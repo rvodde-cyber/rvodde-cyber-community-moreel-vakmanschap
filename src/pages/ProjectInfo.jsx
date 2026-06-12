@@ -247,56 +247,77 @@ export default function ProjectInfo() {
           {t.maker.titel}
         </motion.h2>
 
-        {t.maker.alineas.map((alinea, i) => (
-          <motion.p
-            key={alinea}
+        <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
+          <motion.img
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            custom={i + 2}
+            custom={2}
+            src="/images/Richard Voddé.jpeg"
+            alt={t.maker.titel}
             style={{
-              fontFamily: "DM Sans, sans-serif",
-              fontSize: "1rem",
-              lineHeight: 1.8,
-              color: "var(--tekst-secundair, #5f5e5a)",
-              marginBottom: "1.25rem",
+              width: "160px",
+              height: "160px",
+              borderRadius: "50%",
+              objectFit: "cover",
+              flexShrink: 0,
             }}
-          >
-            {alinea}
-          </motion.p>
-        ))}
+          />
 
-        <motion.a
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={4}
-          href={`mailto:${t.maker.contact}`}
-          style={{
-            display: "inline-block",
-            marginTop: "0.5rem",
-            padding: "0.625rem 1.5rem",
-            border: "1px solid #534ab7",
-            color: "#534ab7",
-            fontFamily: "DM Sans, sans-serif",
-            fontSize: "0.9rem",
-            borderRadius: "6px",
-            textDecoration: "none",
-            transition: "all 0.2s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "#534ab7";
-            e.currentTarget.style.color = "#ffffff";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "transparent";
-            e.currentTarget.style.color = "#534ab7";
-          }}
-        >
-          {t.maker.contactLabel} →
-        </motion.a>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            {t.maker.alineas.map((alinea, i) => (
+              <motion.p
+                key={alinea}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={i + 3}
+                style={{
+                  fontFamily: "DM Sans, sans-serif",
+                  fontSize: "1rem",
+                  lineHeight: 1.8,
+                  color: "var(--tekst-secundair, #5f5e5a)",
+                  marginBottom: "1.25rem",
+                }}
+              >
+                {alinea}
+              </motion.p>
+            ))}
+
+            <motion.a
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={5}
+              href={`mailto:${t.maker.contact}`}
+              style={{
+                display: "inline-block",
+                marginTop: "0.5rem",
+                padding: "0.625rem 1.5rem",
+                border: "1px solid #534ab7",
+                color: "#534ab7",
+                fontFamily: "DM Sans, sans-serif",
+                fontSize: "0.9rem",
+                borderRadius: "6px",
+                textDecoration: "none",
+                transition: "all 0.2s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#534ab7";
+                e.currentTarget.style.color = "#ffffff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = "#534ab7";
+              }}
+            >
+              {t.maker.contactLabel} →
+            </motion.a>
+          </div>
+        </div>
       </section>
 
       {/* ── SCHEIDINGSLIJN ── */}
