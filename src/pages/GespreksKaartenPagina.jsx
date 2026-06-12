@@ -102,8 +102,6 @@ const content = {
 }
 
 // ── DRIE VOORBEELDKAARTEN ────────────────────────────────────────
-// Vervang image-paden door echte Firefly-afbeeldingen zodra beschikbaar.
-// Tijdelijk: gekleurde placeholder met icon.
 
 const voorbeeldKaarten = [
   {
@@ -393,41 +391,33 @@ export default function GespreksKaartenPagina() {
                   flexDirection: 'column',
                 }}
               >
-                {/* Kleurblok als placeholder voor Firefly-afbeelding */}
-                {/* TODO: vervang dit blok door een <img> zodra Firefly-afbeeldingen beschikbaar zijn */}
-                <div style={{
-                  height: '180px',
-                  backgroundColor: kaart.kleur,
-                  opacity: 0.85,
-                  display: 'flex',
-                  alignItems: 'flex-end',
-                  padding: '1rem 1.25rem',
-                }}>
-                  <div>
-                    <span style={{
-                      fontSize: '0.7rem',
-                      fontFamily: 'DM Sans, sans-serif',
-                      letterSpacing: '0.1em',
-                      textTransform: 'uppercase',
-                      color: 'rgba(255,255,255,0.75)',
-                      display: 'block',
-                      marginBottom: '0.25rem',
-                    }}>
-                      {k.domein} · {kaart.complexiteit}
-                    </span>
-                    <span style={{
-                      fontFamily: 'Cormorant Garamond, serif',
-                      fontSize: '1.3rem',
-                      fontWeight: 600,
-                      color: '#ffffff',
-                    }}>
-                      {k.titel}
-                    </span>
-                  </div>
-                </div>
+                <img
+                  src={`/images/gesprekskaarten/kaart-${kaart.id}.jpg`}
+                  alt={k.titel}
+                  style={{ width: '100%', height: '180px', objectFit: 'cover' }}
+                />
 
-                {/* Casustekst */}
                 <div style={{ padding: '1.5rem', flexGrow: 1 }}>
+                  <span style={{
+                    fontSize: '0.7rem',
+                    fontFamily: 'DM Sans, sans-serif',
+                    letterSpacing: '0.1em',
+                    textTransform: 'uppercase',
+                    color: 'var(--tekst-secundair, #5f5e5a)',
+                    display: 'block',
+                    marginBottom: '0.35rem',
+                  }}>
+                    {k.domein} · {kaart.complexiteit}
+                  </span>
+                  <h3 style={{
+                    fontFamily: 'Cormorant Garamond, serif',
+                    fontSize: '1.3rem',
+                    fontWeight: 600,
+                    color: 'var(--tekst-primair, #1a2744)',
+                    margin: '0 0 1rem',
+                  }}>
+                    {k.titel}
+                  </h3>
                   <p style={{
                     fontFamily: 'DM Sans, sans-serif',
                     fontSize: '0.9rem',
