@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import ConversationCardSection from '../components/ConversationCardSection'
+import { stappen as basisStappen } from '../data/stappen'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -40,7 +42,7 @@ const content = {
       niveaus: 'De kaarten zijn geordend in complexiteitsniveaus — van toegankelijke alledaagse dilemma\'s tot systemische situaties waarbij hiërarchie, wetgeving en ethiek tegelijk in het geding zijn.',
     },
     preview: {
-      titel: 'Drie voorbeelden',
+      titel: 'Beschikbare kaarten',
       subtitel: 'Elke kaart sluit af met dezelfde twee vragen:',
       vraag1: 'Wat zou jij doen en waarom?',
       vraag2: 'Welke waarden zijn hier in het spel?',
@@ -88,7 +90,7 @@ const content = {
       niveaus: 'The cards are organised by complexity — from accessible, everyday dilemmas to systemic situations where hierarchy, regulation, and ethics are all in tension at once.',
     },
     preview: {
-      titel: 'Three examples',
+      titel: 'Available cards',
       subtitel: 'Every card closes with the same two questions:',
       vraag1: 'What would you do, and why?',
       vraag2: 'What values are at stake here?',
@@ -100,59 +102,6 @@ const content = {
     },
   },
 }
-
-// ── DRIE VOORBEELDKAARTEN ────────────────────────────────────────
-
-const voorbeeldKaarten = [
-  {
-    id: 1,
-    stap: 'zien',
-    kleur: '#185fa5',
-    complexiteit: '★★☆☆☆',
-    nl: {
-      domein: 'HRM',
-      titel: 'De stille collega',
-      casus: 'Yara werkt al drie jaar samen met Daan. Ze merkt dat hij de laatste maanden anders is — stiller, afwezig, een keer te laat op een belangrijke vergadering. Haar leidinggevende vraagt haar of ze "iets weet". Yara twijfelt. Daan heeft haar niets verteld. Maar ze maakt zich zorgen.',
-    },
-    en: {
-      domein: 'HRM',
-      titel: 'The quiet colleague',
-      casus: 'Yara has worked with Daan for three years. She notices he has changed in recent months — quieter, distracted, once late for an important meeting. Her manager asks her whether she "knows anything." Yara hesitates. Daan has told her nothing. But she is worried.',
-    },
-  },
-  {
-    id: 2,
-    stap: 'wegen',
-    kleur: '#993556',
-    complexiteit: '★★★☆☆',
-    nl: {
-      domein: 'Zorg',
-      titel: 'Het dossier',
-      casus: 'Verpleegkundige Fatima ziet dat een collega in het dossier van een patiënt iets heeft ingevuld wat niet klopt met wat zij zelf heeft waargenomen. Ze weet niet of het een vergissing is of iets anders. De collega is ervaren en goed aangeschreven. Melden voelt zwaar. Niet melden ook.',
-    },
-    en: {
-      domein: 'Healthcare',
-      titel: 'The patient record',
-      casus: 'Nurse Fatima notices that a colleague has recorded something in a patient\'s file that does not match what she herself observed. She does not know whether it is a mistake or something else. The colleague is experienced and well-regarded. Reporting feels serious. So does staying silent.',
-    },
-  },
-  {
-    id: 3,
-    stap: 'volhouden',
-    kleur: '#993c1d',
-    complexiteit: '★★★★☆',
-    nl: {
-      domein: 'Onderwijs',
-      titel: 'De cijferdruk',
-      casus: 'Docent Marcus krijgt van zijn teamleider de opdracht de slagingspercentages van zijn vak te verhogen. De druk is duidelijk: te veel studenten halen het niet. Marcus gelooft in zijn aanpak en in zijn studenten — maar hij ziet ook dat collega\'s hun normen stiller en stiller bijstellen. Hij vraagt zich af hoe lang hij dit vol kan houden.',
-    },
-    en: {
-      domein: 'Education',
-      titel: 'The grade pressure',
-      casus: 'Teacher Marcus is instructed by his team leader to raise the pass rates for his course. The pressure is clear: too many students are failing. Marcus believes in his approach and in his students — but he also sees colleagues quietly adjusting their standards. He wonders how long he can hold his ground.',
-    },
-  },
-]
 
 // ── ANIMATIE ─────────────────────────────────────────────────────
 
@@ -170,9 +119,12 @@ const fadeUp = {
 export default function GespreksKaartenPagina() {
   const { taal } = useTaal()
   const t = content[taal]
+  const stap1 = basisStappen[0]
+  const stap3 = basisStappen[2]
+  const aanmeldenHref = taal === 'nl' ? '/aanmelden' : '/join'
 
   return (
-    <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)' }}>
+    <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
 
       {/* ── HERO ── */}
       <section style={{ padding: '5rem 1.5rem 4rem', maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
@@ -343,7 +295,7 @@ export default function GespreksKaartenPagina() {
         </div>
       </section>
 
-      {/* ── PREVIEW KAARTEN ── */}
+      {/* ── BESCHIKBARE KAARTEN ── */}
       <section style={{ padding: '5rem 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
         <motion.h2
           variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
@@ -374,84 +326,20 @@ export default function GespreksKaartenPagina() {
           <em style={{ color: '#534ab7' }}>{t.preview.vraag2}</em>
         </motion.p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-          {voorbeeldKaarten.map((kaart, i) => {
-            const k = kaart[taal]
-            return (
-              <motion.div
-                key={kaart.id}
-                variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i}
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: '16px',
-                  overflow: 'hidden',
-                  border: '1px solid var(--rand, #d3d1c7)',
-                  boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}
-              >
-                <img
-                  src={`/images/gesprekskaarten/kaart-${kaart.id}.jpg`}
-                  alt={k.titel}
-                  style={{ width: '100%', height: '180px', objectFit: 'cover' }}
-                />
+        <ConversationCardSection
+          stapNummer={1}
+          kleur={stap1.kleur}
+          kleurLicht={stap1.kleurLicht}
+          titelKey="gesprekskaarten_titel"
+        />
 
-                <div style={{ padding: '1.5rem', flexGrow: 1 }}>
-                  <span style={{
-                    fontSize: '0.7rem',
-                    fontFamily: 'DM Sans, sans-serif',
-                    letterSpacing: '0.1em',
-                    textTransform: 'uppercase',
-                    color: 'var(--tekst-secundair, #5f5e5a)',
-                    display: 'block',
-                    marginBottom: '0.35rem',
-                  }}>
-                    {k.domein} · {kaart.complexiteit}
-                  </span>
-                  <h3 style={{
-                    fontFamily: 'Cormorant Garamond, serif',
-                    fontSize: '1.3rem',
-                    fontWeight: 600,
-                    color: 'var(--tekst-primair, #1a2744)',
-                    margin: '0 0 1rem',
-                  }}>
-                    {k.titel}
-                  </h3>
-                  <p style={{
-                    fontFamily: 'DM Sans, sans-serif',
-                    fontSize: '0.9rem',
-                    lineHeight: 1.75,
-                    color: 'var(--tekst-secundair, #5f5e5a)',
-                    marginBottom: '1.25rem',
-                  }}>
-                    {k.casus}
-                  </p>
-
-                  {/* Twee vragen */}
-                  <div style={{
-                    borderTop: '1px solid var(--rand, #d3d1c7)',
-                    paddingTop: '1rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.5rem',
-                  }}>
-                    {[t.preview.vraag1, t.preview.vraag2].map((vraag, vi) => (
-                      <p key={vi} style={{
-                        fontFamily: 'Cormorant Garamond, serif',
-                        fontSize: '0.95rem',
-                        fontStyle: 'italic',
-                        color: '#534ab7',
-                        margin: 0,
-                      }}>
-                        {vraag}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            )
-          })}
+        <div style={{ marginTop: '4rem' }}>
+          <ConversationCardSection
+            stapNummer={3}
+            kleur={stap3.kleur}
+            kleurLicht={stap3.kleurLicht}
+            titelKey="gesprekskaarten_titel"
+          />
         </div>
       </section>
 
@@ -490,7 +378,7 @@ export default function GespreksKaartenPagina() {
 
         <motion.a
           variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2}
-          href="/#aanmelden"
+          href={aanmeldenHref}
           style={{
             display: 'inline-block',
             padding: '0.875rem 2.5rem',

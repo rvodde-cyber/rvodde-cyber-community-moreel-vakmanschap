@@ -1,3 +1,5 @@
+// VEROUDERD — gebruik src/data/bibliotheekData.js als enige bron.
+// Dit script schreef naar worksheets.js (verwijderd).
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";

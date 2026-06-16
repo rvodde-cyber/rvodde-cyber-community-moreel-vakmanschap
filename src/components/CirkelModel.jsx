@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import StapKaart from "./StapKaart";
-import StepBibliotheek from "./StepBibliotheek";
 import { useTaal } from "../context/TaalContext";
 import { stappen as basisStappen } from "../data/stappen";
 
 const nodeRadius = 10.5;
+
+const stapBibliotheekSlug = {
+  nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
+  en: { 1: "seeing", 2: "feeling", 3: "weighing", 4: "acting", 5: "persisting" },
+};
 
 function offsetPoint(from, to, distance) {
   const dx = to.x - from.x;
@@ -28,7 +33,7 @@ function arrowPath(fromStep, toStep) {
 }
 
 export default function CirkelModel() {
-  const { t } = useTaal();
+  const { t, taal } = useTaal();
   const [activeStepNumber, setActiveStepNumber] = useState(1);
   const stappen = basisStappen.map((basisStap, index) => ({
     ...basisStap,
@@ -183,10 +188,6 @@ export default function CirkelModel() {
           </div>
         </div>
 
-        <div className="hidden md:block">
-          <StepBibliotheek stapNummer={activeStepNumber} />
-        </div>
-
         <div className="grid gap-5 md:hidden">
           {stappen.map((stap) => (
             <div key={stap.nummer}>
@@ -196,7 +197,19 @@ export default function CirkelModel() {
                 isActive={activeStepNumber === stap.nummer}
                 onSelect={() => setActiveStepNumber(stap.nummer)}
               />
-              {activeStepNumber === stap.nummer && <StepBibliotheek stapNummer={stap.nummer} />}
+              {activeStepNumber === stap.nummer && (
+                <Link
+                  to={
+                    taal === "nl"
+                      ? `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`
+                      : `/library/${stapBibliotheekSlug.en[stap.nummer]}`
+                  }
+                  className="mt-4 inline-flex px-2 text-sm font-semibold"
+                  style={{ color: stap.kleur }}
+                >
+                  {taal === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
+                </Link>
+              )}
             </div>
           ))}
         </div>

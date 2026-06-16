@@ -8,7 +8,7 @@ export default function WatBieden() {
   const { t } = useTaal();
 
   return (
-    <section id="wat-bieden" className="bg-white py-20 md:py-28">
+    <section id="aanbod" className="bg-white py-20 md:py-28">
       <motion.div
         className="section-shell"
         initial={{ opacity: 0, y: 24 }}

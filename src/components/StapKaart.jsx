@@ -1,28 +1,26 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 
 function isComingSoon(tool) {
   return /\(coming soon\)|\(binnenkort\)/i.test(tool);
 }
 
-const WORKSHEET_TOOL_ANCHORS = new Set([
-  "Werkbladen",
-  "Worksheets",
-  "Moreel Beraad",
-  "Moral Deliberation"
-]);
-
 const CONVERSATION_TOOL_ANCHORS = new Set(["Gesprekskaarten", "Conversation Cards"]);
 
-function scrollToSection(event, sectionId) {
-  event.preventDefault();
-  event.stopPropagation();
-  document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+const stapBibliotheekSlug = {
+  nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
+  en: { 1: "seeing", 2: "feeling", 3: "weighing", 4: "acting", 5: "persisting" },
+};
 
 export default function StapKaart({ stap, compact = false, isActive = false, onSelect }) {
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
   const isSelectable = Boolean(onSelect);
+  const bibliotheekHref =
+    taal === "nl"
+      ? `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`
+      : `/library/${stapBibliotheekSlug.en[stap.nummer]}`;
+  const gesprekskaartenHref = taal === "nl" ? "/gesprekskaarten" : "/conversation-cards";
 
   return (
     <motion.article
@@ -85,42 +83,44 @@ export default function StapKaart({ stap, compact = false, isActive = false, onS
               ? undefined
               : { backgroundColor: stap.kleurLicht, color: stap.kleur };
 
-            if (WORKSHEET_TOOL_ANCHORS.has(tool)) {
-              return (
-                <a
-                  key={tool}
-                  href="#werkbladen-sectie"
-                  onClick={(event) => scrollToSection(event, "werkbladen-sectie")}
-                  className={`${pillClass} cursor-pointer transition-opacity hover:opacity-80`}
-                  style={pillStyle}
-                >
-                  {tool}
-                </a>
-              );
-            }
-
             if (CONVERSATION_TOOL_ANCHORS.has(tool)) {
               return (
-                <a
+                <Link
                   key={tool}
-                  href="#gesprekskaarten-sectie"
-                  onClick={(event) => scrollToSection(event, "gesprekskaarten-sectie")}
+                  to={gesprekskaartenHref}
+                  onClick={(event) => event.stopPropagation()}
                   className={`${pillClass} cursor-pointer transition-opacity hover:opacity-80`}
                   style={pillStyle}
                 >
                   {tool}
-                </a>
+                </Link>
               );
             }
 
             return (
-              <span key={tool} className={pillClass} style={pillStyle}>
+              <Link
+                key={tool}
+                to={bibliotheekHref}
+                onClick={(event) => event.stopPropagation()}
+                className={`${pillClass} ${isComingSoon(tool) ? "" : "cursor-pointer transition-opacity hover:opacity-80"}`}
+                style={pillStyle}
+              >
                 {tool}
-              </span>
+              </Link>
             );
           })}
         </div>
       </div>
+
+      {!compact && (
+        <Link
+          to={bibliotheekHref}
+          className="mt-8 inline-flex text-sm font-semibold transition hover:opacity-80"
+          style={{ color: stap.kleur }}
+        >
+          {taal === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
+        </Link>
+      )}
     </motion.article>
   );
 }

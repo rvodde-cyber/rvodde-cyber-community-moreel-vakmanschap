@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 import ConversationCard, { ConversationCardPreview } from "./ConversationCard";
 import { useTaal } from "../context/TaalContext";
 
-export default function ConversationCardSection({ stapNummer, kleur, kleurLicht, titelKey }) {
+export default function ConversationCardSection({
+  stapNummer,
+  kleur,
+  kleurLicht,
+  titelKey,
+  sectionId = `gesprekskaarten-stap-${stapNummer}`,
+}) {
   const { t } = useTaal();
   const kaarten = t.bibliotheek[`stap${stapNummer}`].kaarten;
   const [openCardId, setOpenCardId] = useState(null);
@@ -21,7 +27,7 @@ export default function ConversationCardSection({ stapNummer, kleur, kleurLicht,
   return (
     <>
       <motion.section
-        id="gesprekskaarten-sectie"
+        id={sectionId}
         className="mt-12 scroll-mt-24"
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}

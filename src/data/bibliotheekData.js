@@ -1,8 +1,50 @@
-// Kwaliteitsniveaus:
-// 'concept'     = 🌱 Concept — pas geprobeerd, ter inspiratie
+// ─── ENIGE BRON VOOR BIBLIOTHEEKMATERIALEN ───────────────────────────────────
+// Alle werkbladen staan hier. De site toont ze via /bibliotheek/:stap (StapPagina).
+//
+// Nieuw materiaal toevoegen:
+//   1. .docx-bestand in public/downloads/{stap}/ plaatsen
+//   2. Entry toevoegen in bibliotheekData.nl én bibliotheekData.en (onder de juiste stap)
+//   3. Committen en pushen → daarna zichtbaar op de live site
+//
+// Velden per materiaal:
+//   id, titel, themas, bestand_nl, bestand_en, map
+//   optioneel: omschrijving, status ('beschikbaar'|'concept'), bron, binnenkort: true
+//
+// Kwaliteitsniveaus (niveau, zonder status):// 'concept'     = 🌱 Concept — pas geprobeerd, ter inspiratie
 // 'getest'      = ✅ Getest — minimaal 1x gebruikt in onderwijs
 // 'aanbevolen'  = ⭐ Aanbevolen — positief beoordeeld door meerdere leden
 // 'binnenkort'  = 🔜 Binnenkort beschikbaar
+
+const materiaalBron = {
+  MV_01: "Berne, E. (1964). Games People Play. Grove Press.",
+  MV_02: "Gebaseerd op socialisatietheorie (geen specifieke auteursrechtelijk beschermde bron)",
+  MV_03: "Hardy, K.V. & Laszloffy, T.A. (1995). The cultural genogram. Journal of Marital and Family Therapy, 21(3).",
+  MV_04: "Algemeen coachingsinstrument (geen specifieke auteursrechtelijk beschermde bron)",
+  MV_05: "Deardorff, D.K. (2006). Identification and Assessment of Intercultural Competence. Journal of Studies in International Education, 10(3).",
+  MV_06: "Crenshaw, K. (1989). Demarginalizing the Intersection of Race and Sex. University of Chicago Legal Forum.",
+  MV_07: "George, B. (2003). Authentic Leadership. Jossey-Bass.",
+  MV_08: "Luft, J. & Ingham, H. (1955). The Johari Window. Proceedings of the Western Training Laboratory in Group Development. UCLA.",
+  MV_09: "Dilts, R. (1990). Changing Belief Systems with NLP. Meta Publications. (gebaseerd op Bateson, G., 1972)",
+  MV_10: "Leary, T. (1957). Interpersonal Diagnosis of Personality. Ronald Press.",
+  MV_11: "Eigen ontwikkeling Richard Voddé — geen externe bron",
+  MV_12: "Molewijk, B. et al. (2008). Implementing moral case deliberation. Science and Engineering Ethics, 14(4).",
+  MV_13: {
+    nl: "Gebaseerd op Torringa (2023) en Karssing (2001) — vrij te gebruiken met bronvermelding",
+    en: "Based on Torringa (2023) and Karssing (2001) — free to use with attribution",
+  },
+  MV_14: {
+    nl: "Gebaseerd op Torringa (2023) en Biesta (2015) — vrij te gebruiken met bronvermelding",
+    en: "Based on Torringa (2023) and Biesta (2015) — free to use with attribution",
+  },
+  MV_15: {
+    nl: "Gebaseerd op Torringa (2023) en Karssing (2001) — vrij te gebruiken met bronvermelding",
+    en: "Based on Torringa (2023) and Karssing (2001) — free to use with attribution",
+  },
+  MV_16: {
+    nl: "Gebaseerd op Nelson & Heckmann (1952), Karssing (2001) en Biesta (2015) — vrij te gebruiken met bronvermelding",
+    en: "Based on Nelson & Heckmann (1952), Karssing (2001) and Biesta (2015) — free to use with attribution",
+  },
+};
 
 export const bibliotheekData = {
   nl: [
@@ -19,6 +61,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_01_IkBenOK.docx',
           bestand_en: 'MV_01_ImOKYoureOK_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_01,
         },
         {
           id: 'MV_02', titel: 'Socialisatieverslag',
@@ -27,6 +70,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_02_Socialisatieverslag.docx',
           bestand_en: 'MV_02_SocialisationReport_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_02,
         },
         {
           id: 'MV_03', titel: 'Transculturaal Genogram',
@@ -35,6 +79,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_03_Genogram.docx',
           bestand_en: 'MV_03_TransculturalGenogram_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_03,
         },
         {
           id: 'MV_04', titel: 'De Levenslijn',
@@ -43,6 +88,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_04_Levenslijn.docx',
           bestand_en: 'MV_04_LifeLine_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_04,
         },
         {
           id: 'MV_05', titel: 'De Vreemde — De Ander',
@@ -51,6 +97,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_05_DeVreemdeAnder.docx',
           bestand_en: 'MV_05_TheStrangerTheOther_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_05,
         },
         {
           id: 'MV_06', titel: 'Interculturele Competenties',
@@ -59,6 +106,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_06_IntercultureleCompetenties.docx',
           bestand_en: 'MV_06_InterculturalCompetences_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_06,
         },
         {
           id: 'MV_07', titel: 'Intersectionaliteitsaudit',
@@ -67,6 +115,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_07_IntersectionaliteitsAudit.docx',
           bestand_en: 'MV_07_IntersectionalityAudit_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_07,
         },
         {
           id: 'MV_08', titel: 'Ware Koers',
@@ -75,6 +124,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_08_WareKoers.docx',
           bestand_en: 'MV_08_TrueNorth_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_08,
         },
         {
           id: 'MV_09', titel: 'Johari-venster',
@@ -83,6 +133,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_09_JohariVenster.docx',
           bestand_en: 'MV_09_JohariWindow_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_09,
         },
         {
           id: 'MV_10', titel: 'Logische Niveaus van Bateson',
@@ -91,6 +142,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_10_LogischeNiveausBateson.docx',
           bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_10,
         },
         {
           id: 'MV_11', titel: 'De Roos van Leary',
@@ -99,6 +151,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_11_RoosVanLeary.docx',
           bestand_en: 'MV_11_LearysRose_EN.docx',
           map: 'zien',
+          bron: materiaalBron.MV_11,
         },
       ],
     },
@@ -117,6 +170,15 @@ export const bibliotheekData = {
           map: 'voelen',
           binnenkort: true,
         },
+        {
+          id: 'MV_14', titel: 'Morele verbeelding',
+          themas: ['Empathie', 'Perspectief nemen', 'Morele verbeelding'],
+          niveau: 'concept',
+          bestand_nl: 'MV_14_Morele_Verbeelding_NL.docx',
+          bestand_en: 'MV_14_Moral_Imagination_EN.docx',
+          map: 'voelen',
+          bron: materiaalBron.MV_14,
+        },
       ],
     },
     {
@@ -131,6 +193,54 @@ export const bibliotheekData = {
           niveau: 'aanbevolen',
           bestand_nl: 'MV_12_MoreelBeraad.docx',
           bestand_en: 'MV_12_MoralDeliberation_EN.docx',
+          map: 'wegen',
+          bron: materiaalBron.MV_12,
+        },
+        {
+          id: 'MV_13', titel: 'Goede redenen',
+          themas: ['Redeneren', 'Argumentatie', 'Ethische afweging'],
+          niveau: 'concept',
+          bestand_nl: 'MV_13_Goede_Redenen_NL.docx',
+          bestand_en: 'MV_13_Good_Reasons_EN.docx',
+          map: 'wegen',
+          bron: materiaalBron.MV_13,
+        },
+        {
+          id: 'MV_15', titel: 'Valkuilen in moreel redeneren',
+          themas: ['Valkuilen', 'Denkfouten', 'Morele blinde vlekken'],
+          niveau: 'concept',
+          bestand_nl: 'MV_15_Valkuilen_NL.docx',
+          bestand_en: 'MV_15_Pitfalls_EN.docx',
+          map: 'wegen',
+          bron: materiaalBron.MV_15,
+        },
+        {
+          id: 'MV_16', titel: 'Het Socratisch gesprek',
+          themas: ['Socratische dialoog', 'Gespreksvoering', 'Onderzoekend leren'],
+          niveau: 'concept',
+          bestand_nl: 'MV_16_Socratisch_Gesprek_NL.docx',
+          bestand_en: 'MV_16_Socratic_Dialogue_EN.docx',
+          map: 'wegen',
+          bron: materiaalBron.MV_16,
+        },
+        {
+          id: 'MV_17',
+          titel: 'AeroTech Innovations — Morele onderstroom',
+          omschrijving: 'Zes praktijkcasussen voor TP en HRM, met de morele spanning zichtbaar gemaakt die er altijd al onder zat.',
+          themas: ['TP', 'HRM', 'HBO'],
+          status: 'beschikbaar',
+          bestand_nl: 'MV_17_AeroTech_NL.docx',
+          bestand_en: 'MV_17_AeroTech_EN.docx',
+          map: 'wegen',
+        },
+        {
+          id: 'MV_18',
+          titel: 'Moral Crossroads',
+          omschrijving: 'Een gestructureerde methode om morele dilemma\'s door te werken via drie ethische routes: plicht, gevolgen en deugd. Met analysetabel en twee casussen.',
+          themas: ['Plicht', 'Gevolgen', 'Deugd'],
+          status: 'beschikbaar',
+          bestand_nl: 'MV_18_MoralCrossroads_NL.docx',
+          bestand_en: 'MV_18_MoralCrossroads_EN.docx',
           map: 'wegen',
         },
         {
@@ -195,15 +305,6 @@ export const bibliotheekData = {
           binnenkort: true,
         },
         {
-          id: 'KH_01', titel: 'Koers Houden',
-          themas: ['Richting', 'Volharding', 'Tegenslag'],
-          niveau: 'getest',
-          bestand_nl: null,
-          bestand_en: null,
-          map: 'volhouden',
-          binnenkort: true,
-        },
-        {
           id: 'LML_01', titel: 'Leergang Moreel Leiderschap',
           themas: ['Leiderschap', 'Morele cultuur', 'Organisatie'],
           niveau: 'concept',
@@ -211,6 +312,25 @@ export const bibliotheekData = {
           bestand_en: null,
           map: 'volhouden',
           binnenkort: true,
+        },
+      ],
+    },
+    {
+      stap: 'verhaal',
+      stapSlug: { nl: 'verhaal', en: 'story-reflection' },
+      stapNaam: 'Verhaal & Reflectie',
+      kleur: '#534ab7',
+      intro: 'Verhalen die morele dilemma\'s tot leven brengen — te gebruiken als reflectie-instrument in de community. Lees, bespreek en verbind de fictie met je eigen praktijk.',
+      materialen: [
+        {
+          id: 'KH_01',
+          titel: 'Koers Houden — Proloog & Hoofdstuk 1',
+          omschrijving: 'Een ethische thriller over vriendschap, integriteit en moreel leiderschap. Te gebruiken als reflectie-instrument in de community.',
+          themas: ['docenten', 'onderzoekers', 'community'],
+          status: 'concept',
+          bestand_nl: null,
+          bestand_en: null,
+          map: 'verhaal',
         },
       ],
     },
@@ -223,17 +343,17 @@ export const bibliotheekData = {
       kleur: '#185fa5',
       intro: 'Gnōthi seauton — know thyself. Moral craftsmanship begins with self-knowledge. Who am I? What drives me? What are my blind spots? The worksheets for Seeing help you explore the patterns and backgrounds that shape your moral perspective.',
       materialen: [
-        { id: 'MV_01', titel: 'I\'m OK — You\'re OK', themas: ['Transactional Analysis', 'Life Positions', 'Self-awareness'], niveau: 'aanbevolen', bestand_nl: 'MV_01_IkBenOK.docx', bestand_en: 'MV_01_ImOKYoureOK_EN.docx', map: 'zien' },
-        { id: 'MV_02', titel: 'Socialisation Report', themas: ['Socialisation', 'Background', 'Identity'], niveau: 'aanbevolen', bestand_nl: 'MV_02_Socialisatieverslag.docx', bestand_en: 'MV_02_SocialisationReport_EN.docx', map: 'zien' },
-        { id: 'MV_03', titel: 'Transcultural Genogram', themas: ['Family', 'Culture', 'Origins'], niveau: 'aanbevolen', bestand_nl: 'MV_03_Genogram.docx', bestand_en: 'MV_03_TransculturalGenogram_EN.docx', map: 'zien' },
-        { id: 'MV_04', titel: 'The Life Line', themas: ['Life history', 'Turning points', 'Reflection'], niveau: 'aanbevolen', bestand_nl: 'MV_04_Levenslijn.docx', bestand_en: 'MV_04_LifeLine_EN.docx', map: 'zien' },
-        { id: 'MV_05', titel: 'The Stranger — The Other', themas: ['Intercultural dialogue', 'Self-inquiry', 'Professional proximity'], niveau: 'aanbevolen', bestand_nl: 'MV_05_DeVreemdeAnder.docx', bestand_en: 'MV_05_TheStrangerTheOther_EN.docx', map: 'zien' },
-        { id: 'MV_06', titel: 'Intercultural Competences', themas: ['Culture', 'Competences', 'Diversity'], niveau: 'aanbevolen', bestand_nl: 'MV_06_IntercultureleCompetenties.docx', bestand_en: 'MV_06_InterculturalCompetences_EN.docx', map: 'zien' },
-        { id: 'MV_07', titel: 'Intersectionality Audit', themas: ['Intersectionality', 'Identity', 'Privilege'], niveau: 'aanbevolen', bestand_nl: 'MV_07_IntersectionaliteitsAudit.docx', bestand_en: 'MV_07_IntersectionalityAudit_EN.docx', map: 'zien' },
-        { id: 'MV_08', titel: 'True North', themas: ['Values', 'Leadership', 'Authenticity'], niveau: 'aanbevolen', bestand_nl: 'MV_08_WareKoers.docx', bestand_en: 'MV_08_TrueNorth_EN.docx', map: 'zien' },
-        { id: 'MV_09', titel: 'Johari Window', themas: ['Self-awareness', 'Feedback', 'Blind spots'], niveau: 'aanbevolen', bestand_nl: 'MV_09_JohariVenster.docx', bestand_en: 'MV_09_JohariWindow_EN.docx', map: 'zien' },
-        { id: 'MV_10', titel: 'Bateson\'s Logical Levels', themas: ['Identity', 'Beliefs', 'Behaviour'], niveau: 'aanbevolen', bestand_nl: 'MV_10_LogischeNiveausBateson.docx', bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx', map: 'zien' },
-        { id: 'MV_11', titel: 'Leary\'s Rose', themas: ['Interaction', 'Behaviour patterns', 'Relationships'], niveau: 'aanbevolen', bestand_nl: 'MV_11_RoosVanLeary.docx', bestand_en: 'MV_11_LearysRose_EN.docx', map: 'zien' },
+        { id: 'MV_01', titel: 'I\'m OK — You\'re OK', themas: ['Transactional Analysis', 'Life Positions', 'Self-awareness'], niveau: 'aanbevolen', bestand_nl: 'MV_01_IkBenOK.docx', bestand_en: 'MV_01_ImOKYoureOK_EN.docx', map: 'zien', bron: materiaalBron.MV_01 },
+        { id: 'MV_02', titel: 'Socialisation Report', themas: ['Socialisation', 'Background', 'Identity'], niveau: 'aanbevolen', bestand_nl: 'MV_02_Socialisatieverslag.docx', bestand_en: 'MV_02_SocialisationReport_EN.docx', map: 'zien', bron: materiaalBron.MV_02 },
+        { id: 'MV_03', titel: 'Transcultural Genogram', themas: ['Family', 'Culture', 'Origins'], niveau: 'aanbevolen', bestand_nl: 'MV_03_Genogram.docx', bestand_en: 'MV_03_TransculturalGenogram_EN.docx', map: 'zien', bron: materiaalBron.MV_03 },
+        { id: 'MV_04', titel: 'The Life Line', themas: ['Life history', 'Turning points', 'Reflection'], niveau: 'aanbevolen', bestand_nl: 'MV_04_Levenslijn.docx', bestand_en: 'MV_04_LifeLine_EN.docx', map: 'zien', bron: materiaalBron.MV_04 },
+        { id: 'MV_05', titel: 'The Stranger — The Other', themas: ['Intercultural dialogue', 'Self-inquiry', 'Professional proximity'], niveau: 'aanbevolen', bestand_nl: 'MV_05_DeVreemdeAnder.docx', bestand_en: 'MV_05_TheStrangerTheOther_EN.docx', map: 'zien', bron: materiaalBron.MV_05 },
+        { id: 'MV_06', titel: 'Intercultural Competences', themas: ['Culture', 'Competences', 'Diversity'], niveau: 'aanbevolen', bestand_nl: 'MV_06_IntercultureleCompetenties.docx', bestand_en: 'MV_06_InterculturalCompetences_EN.docx', map: 'zien', bron: materiaalBron.MV_06 },
+        { id: 'MV_07', titel: 'Intersectionality Audit', themas: ['Intersectionality', 'Identity', 'Privilege'], niveau: 'aanbevolen', bestand_nl: 'MV_07_IntersectionaliteitsAudit.docx', bestand_en: 'MV_07_IntersectionalityAudit_EN.docx', map: 'zien', bron: materiaalBron.MV_07 },
+        { id: 'MV_08', titel: 'True North', themas: ['Values', 'Leadership', 'Authenticity'], niveau: 'aanbevolen', bestand_nl: 'MV_08_WareKoers.docx', bestand_en: 'MV_08_TrueNorth_EN.docx', map: 'zien', bron: materiaalBron.MV_08 },
+        { id: 'MV_09', titel: 'Johari Window', themas: ['Self-awareness', 'Feedback', 'Blind spots'], niveau: 'aanbevolen', bestand_nl: 'MV_09_JohariVenster.docx', bestand_en: 'MV_09_JohariWindow_EN.docx', map: 'zien', bron: materiaalBron.MV_09 },
+        { id: 'MV_10', titel: 'Bateson\'s Logical Levels', themas: ['Identity', 'Beliefs', 'Behaviour'], niveau: 'aanbevolen', bestand_nl: 'MV_10_LogischeNiveausBateson.docx', bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx', map: 'zien', bron: materiaalBron.MV_10 },
+        { id: 'MV_11', titel: 'Leary\'s Rose', themas: ['Interaction', 'Behaviour patterns', 'Relationships'], niveau: 'aanbevolen', bestand_nl: 'MV_11_RoosVanLeary.docx', bestand_en: 'MV_11_LearysRose_EN.docx', map: 'zien', bron: materiaalBron.MV_11 },
       ],
     },
     {
@@ -241,13 +361,19 @@ export const bibliotheekData = {
       intro: 'Moral craftsmanship requires knowing your own moral sources. What moves you? Where do you feel discomfort? The tools for Feeling help you discover and trust your inner moral compass.',
       materialen: [
         { id: 'RAD_01', titel: 'Wheel of Moral Fortune', themas: ['Moral sources', 'Inner compass', 'Influence'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'voelen', binnenkort: true },
+        { id: 'MV_14', titel: 'Moral Imagination', themas: ['Empathy', 'Perspective-taking', 'Moral imagination'], niveau: 'concept', bestand_nl: 'MV_14_Morele_Verbeelding_NL.docx', bestand_en: 'MV_14_Moral_Imagination_EN.docx', map: 'voelen', bron: materiaalBron.MV_14 },
       ],
     },
     {
       stap: 3, stapNaam: 'Weighing', kleur: '#993556',
       intro: 'Moral dilemmas are characterised by conflicting values — neither side is simply wrong. The tools for Weighing help you name that tension, explore it together, and arrive at a considered judgement.',
       materialen: [
-        { id: 'MV_12', titel: 'Moral Deliberation', themas: ['Shared reflection', 'Decision-making', 'Values'], niveau: 'aanbevolen', bestand_nl: 'MV_12_MoreelBeraad.docx', bestand_en: 'MV_12_MoralDeliberation_EN.docx', map: 'wegen' },
+        { id: 'MV_12', titel: 'Moral Deliberation', themas: ['Shared reflection', 'Decision-making', 'Values'], niveau: 'aanbevolen', bestand_nl: 'MV_12_MoreelBeraad.docx', bestand_en: 'MV_12_MoralDeliberation_EN.docx', map: 'wegen', bron: materiaalBron.MV_12 },
+        { id: 'MV_13', titel: 'Good Reasons', themas: ['Reasoning', 'Argumentation', 'Ethical deliberation'], niveau: 'concept', bestand_nl: 'MV_13_Goede_Redenen_NL.docx', bestand_en: 'MV_13_Good_Reasons_EN.docx', map: 'wegen', bron: materiaalBron.MV_13 },
+        { id: 'MV_15', titel: 'Pitfalls in moral reasoning', themas: ['Pitfalls', 'Thinking errors', 'Moral blind spots'], niveau: 'concept', bestand_nl: 'MV_15_Valkuilen_NL.docx', bestand_en: 'MV_15_Pitfalls_EN.docx', map: 'wegen', bron: materiaalBron.MV_15 },
+        { id: 'MV_16', titel: 'The Socratic Dialogue', themas: ['Socratic dialogue', 'Conversation', 'Inquiry-based learning'], niveau: 'concept', bestand_nl: 'MV_16_Socratisch_Gesprek_NL.docx', bestand_en: 'MV_16_Socratic_Dialogue_EN.docx', map: 'wegen', bron: materiaalBron.MV_16 },
+        { id: 'MV_17', titel: 'AeroTech Innovations — Moral Undercurrent', omschrijving: 'Six professional case studies for Applied Psychology and HRM, with the moral undercurrent made visible.', themas: ['TP', 'HRM', 'HBO'], status: 'beschikbaar', bestand_nl: 'MV_17_AeroTech_NL.docx', bestand_en: 'MV_17_AeroTech_EN.docx', map: 'wegen' },
+        { id: 'MV_18', titel: 'Moral Crossroads', omschrijving: 'A structured method for working through moral dilemmas via three ethical routes: duty, consequences and virtue. Includes an analysis table and two cases.', themas: ['Duty', 'Consequences', 'Virtue'], status: 'beschikbaar', bestand_nl: 'MV_18_MoralCrossroads_NL.docx', bestand_en: 'MV_18_MoralCrossroads_EN.docx', map: 'wegen' },
         { id: 'VT_01', titel: 'Trust Mirror', themas: ['Trust', 'Moral relationships', 'Integrity'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
         { id: 'LM_01', titel: 'Moral Litmus Test', themas: ['Organisational culture', 'Integrity', 'Moral audit'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
       ],
@@ -265,8 +391,17 @@ export const bibliotheekData = {
       intro: 'Moral craftsmanship is not a one-time choice. It requires holding course — over time, under pressure, when it would be easier to give way. The tools for Persisting help you maintain that direction.',
       materialen: [
         { id: 'MS_01', titel: 'Moral Mirror', themas: ['Reflection', 'Identity', 'Direction'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
-        { id: 'KH_01', titel: 'Holding Course', themas: ['Direction', 'Perseverance', 'Adversity'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
         { id: 'LML_01', titel: 'Moral Leadership Programme', themas: ['Leadership', 'Moral culture', 'Organisation'], niveau: 'concept', bestand_nl: null, bestand_en: null, map: 'volhouden', binnenkort: true },
+      ],
+    },
+    {
+      stap: 'verhaal',
+      stapSlug: { nl: 'verhaal', en: 'story-reflection' },
+      stapNaam: 'Story & Reflection',
+      kleur: '#534ab7',
+      intro: 'Stories that bring moral dilemmas to life — for use as a reflective instrument in the community. Read, discuss and connect the fiction to your own practice.',
+      materialen: [
+        { id: 'KH_01', titel: 'Holding Course — Prologue & Chapter 1', omschrijving: 'An ethical thriller about friendship, integrity and moral leadership. For use as a reflective instrument in the community.', themas: ['teachers', 'researchers', 'community'], status: 'concept', bestand_nl: null, bestand_en: null, map: 'verhaal' },
       ],
     },
   ],
@@ -282,5 +417,16 @@ export const niveauLabels = {
     aanbevolen: '⭐ Recommended',
     getest: '✅ Tested',
     concept: '🌱 Concept',
+  },
+}
+
+export const statusLabels = {
+  nl: {
+    beschikbaar: { label: 'Beschikbaar', color: '#0f6e56', background: '#e6f4ef' },
+    concept: { label: 'In ontwikkeling', color: '#5f5e5a', background: '#f0eeea' },
+  },
+  en: {
+    beschikbaar: { label: 'Available', color: '#0f6e56', background: '#e6f4ef' },
+    concept: { label: 'In development', color: '#5f5e5a', background: '#f0eeea' },
   },
 }
