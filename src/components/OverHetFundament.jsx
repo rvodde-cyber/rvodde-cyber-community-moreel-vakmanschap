@@ -18,6 +18,9 @@ export default function OverHetFundament() {
             <h2 className="font-display text-5xl font-semibold leading-tight text-primair md:text-6xl">
               {t.fundament.titel}
             </h2>
+            <p className="mt-6 font-display text-xl italic leading-8 text-primair md:text-2xl">
+              {t.fundament.kernzin}
+            </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">

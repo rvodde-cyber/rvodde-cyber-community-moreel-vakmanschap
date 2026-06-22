@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import StapKaart from "./StapKaart";
 import { useTaal } from "../context/TaalContext";
 import { stappen as basisStappen } from "../data/stappen";
+import { terugkoppelmomenten } from "../data/terugkoppelmomenten";
 
 const nodeRadius = 10.5;
 
 const stapBibliotheekSlug = {
   nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
   en: { 1: "seeing", 2: "feeling", 3: "weighing", 4: "acting", 5: "persisting" },
+};
+
+const stapSlugByNummer = {
+  1: "zien",
+  2: "voelen",
+  3: "wegen",
+  4: "handelen",
+  5: "volhouden",
 };
 
 function offsetPoint(from, to, distance) {
@@ -32,9 +41,73 @@ function arrowPath(fromStep, toStep) {
   return `M ${start.x} ${start.y} Q 50 50 ${end.x} ${end.y}`;
 }
 
+function innerPoint(pos, factor) {
+  return {
+    x: 50 + (pos.x - 50) * factor,
+    y: 50 + (pos.y - 50) * factor
+  };
+}
+
+function feedbackArcPath(vanPos, naarPos, boog) {
+  const radiusFactor = boog === "ruim" ? 0.42 : 0.5;
+  const start = innerPoint(vanPos, radiusFactor);
+  const end = innerPoint(naarPos, radiusFactor);
+
+  let cx;
+  let cy;
+
+  if (boog === "ruim") {
+    cx = 50;
+    cy = 50;
+  } else {
+    const midX = (start.x + end.x) / 2;
+    const midY = (start.y + end.y) / 2;
+    cx = 50 + (midX - 50) * 0.4;
+    cy = 50 + (midY - 50) * 0.4;
+  }
+
+  const d = `M ${start.x} ${start.y} Q ${cx} ${cy} ${end.x} ${end.y}`;
+  const mid = {
+    x: (start.x + end.x + cx * 2) / 4,
+    y: (start.y + end.y + cy * 2) / 4
+  };
+
+  return { d, mid };
+}
+
+function FeedbackTooltip({ moment, taal, position }) {
+  const vraag = taal === "nl" ? moment.vraagNL : moment.vraagEN;
+
+  return (
+    <motion.div
+      className="pointer-events-none absolute z-20 max-w-[220px] -translate-x-1/2 -translate-y-full px-3 py-2 text-left"
+      style={{ left: `${position.x}%`, top: `${position.y}%` }}
+      initial={{ opacity: 0, scale: 0.92, y: 4 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.92, y: 4 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+    >
+      <div
+        className="relative rounded-lg px-3 py-2 text-[11px] leading-snug text-white shadow-lg"
+        style={{ backgroundColor: "#1a2744", fontFamily: '"DM Sans", sans-serif' }}
+      >
+        {vraag}
+        <span
+          className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent"
+          style={{ borderTopColor: "#1a2744" }}
+          aria-hidden="true"
+        />
+      </div>
+    </motion.div>
+  );
+}
+
 export default function CirkelModel() {
   const { t, taal } = useTaal();
   const [activeStepNumber, setActiveStepNumber] = useState(1);
+  const [activeMoment, setActiveMoment] = useState(null);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 50, y: 50 });
+
   const stappen = basisStappen.map((basisStap, index) => ({
     ...basisStap,
     ...t.stappen[index],
@@ -42,9 +115,37 @@ export default function CirkelModel() {
     kleurLicht: basisStap.kleurLicht,
     positie: basisStap.positie
   }));
+
+  const stapBySlug = Object.fromEntries(
+    stappen.map((stap) => [stapSlugByNummer[stap.nummer], stap])
+  );
+
   const activeStep = stappen.find((stap) => stap.nummer === activeStepNumber) || stappen[0];
   const clockwiseArrows = stappen.slice(0, 4).map((stap, index) => [stap, stappen[index + 1]]);
   const returnPath = arrowPath(stappen[4], stappen[0]);
+
+  const feedbackArcs = terugkoppelmomenten.map((moment) => {
+    const vanStap = stapBySlug[moment.van];
+    const naarStap = stapBySlug[moment.naar];
+    const arc = feedbackArcPath(vanStap.positie, naarStap.positie, moment.boog);
+    return { moment, ...arc };
+  });
+
+  const activeMomentData = terugkoppelmomenten.find((m) => m.id === activeMoment);
+
+  function activateMoment(momentId, mid) {
+    setTooltipPosition(mid);
+    setActiveMoment((current) => (current === momentId ? null : momentId));
+  }
+
+  function hoverMoment(momentId, mid) {
+    setTooltipPosition(mid);
+    setActiveMoment(momentId);
+  }
+
+  function leaveMoment() {
+    setActiveMoment(null);
+  }
 
   return (
     <section id="model" className="bg-achtergrond py-20 md:py-28">
@@ -65,7 +166,7 @@ export default function CirkelModel() {
         </div>
 
         <div className="hidden gap-10 md:grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center">
-          <div className="rounded-[2.5rem] border border-rand bg-white/70 p-4 shadow-warm md:p-8">
+          <div className="relative rounded-[2.5rem] border border-rand bg-white/70 p-4 shadow-warm md:p-8">
             <svg viewBox="0 0 100 100" role="img" aria-label={t.model.titel}>
               <defs>
                 <marker
@@ -79,9 +180,21 @@ export default function CirkelModel() {
                 >
                   <path d="M 0 0 L 8 4 L 0 8 z" fill="#b8b4a6" />
                 </marker>
+                {terugkoppelmomenten.map((moment) => (
+                  <marker
+                    key={`marker-${moment.id}`}
+                    id={`feedback-arrow-${moment.id}`}
+                    markerWidth="6"
+                    markerHeight="6"
+                    refX="5"
+                    refY="3"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                  >
+                    <path d="M 0 0 L 6 3 L 0 6 z" fill={moment.kleur} />
+                  </marker>
+                ))}
               </defs>
-
-              <circle cx="50" cy="50" r="23" fill="none" stroke="#d3d1c7" strokeWidth="0.6" />
 
               {clockwiseArrows.map(([from, to]) => (
                 <path
@@ -101,6 +214,52 @@ export default function CirkelModel() {
                 strokeDasharray="2.2 2.2"
                 strokeWidth="1.1"
               />
+
+              <circle cx="50" cy="50" r="23" fill="none" stroke="#d3d1c7" strokeWidth="0.6" />
+
+              {feedbackArcs.map(({ moment, d, mid }) => {
+                const isActive = activeMoment === moment.id;
+
+                return (
+                  <g key={moment.id}>
+                    <path
+                      d={d}
+                      fill="none"
+                      stroke="transparent"
+                      strokeWidth="4"
+                      className="cursor-pointer"
+                      onPointerEnter={(event) => {
+                        if (event.pointerType === "mouse") hoverMoment(moment.id, mid);
+                      }}
+                      onPointerLeave={(event) => {
+                        if (event.pointerType === "mouse") leaveMoment();
+                      }}
+                      onPointerDown={(event) => {
+                        if (event.pointerType === "touch") {
+                          event.preventDefault();
+                          activateMoment(moment.id, mid);
+                        }
+                      }}
+                    />
+                    <motion.path
+                      d={d}
+                      fill="none"
+                      stroke={moment.kleur}
+                      strokeWidth={isActive ? 2 : 1.5}
+                      strokeDasharray="1.5 1.5"
+                      strokeOpacity={isActive ? Math.min(moment.opacity + 0.35, 1) : moment.opacity}
+                      markerEnd={`url(#feedback-arrow-${moment.id})`}
+                      pointerEvents="none"
+                      animate={{
+                        strokeOpacity: isActive ? Math.min(moment.opacity + 0.35, 1) : moment.opacity,
+                        scale: isActive ? 1.02 : 1
+                      }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
+                      style={{ transformBox: "fill-box", transformOrigin: "center" }}
+                    />
+                  </g>
+                );
+              })}
 
               <g>
                 <circle cx="50" cy="50" r="14.5" fill="#eeedfe" stroke="#534ab7" strokeWidth="1.7" />
@@ -181,6 +340,16 @@ export default function CirkelModel() {
                 );
               })}
             </svg>
+
+            <AnimatePresence>
+              {activeMomentData && (
+                <FeedbackTooltip
+                  moment={activeMomentData}
+                  taal={taal}
+                  position={tooltipPosition}
+                />
+              )}
+            </AnimatePresence>
           </div>
 
           <div className="lg:pl-2">

@@ -43,6 +43,7 @@ export const vertalingen = {
     },
     fundament: {
       titel: 'Over het fundament',
+      kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
       linksTitel: 'Het model',
       linksTekst: 'Het Model Moreel Vakmanschap is ontwikkeld vanuit het Lectoraat Ethisch Werken van Fontys Hogescholen. Het is gebaseerd op het werk van Karssing, Rest, Biesta en Aristoteles\' concept van phronesis — praktische wijsheid die je ontwikkelt door te doen, te reflecteren en te volhouden.',
       rechtsTitel: 'Biesta\'s gedachtegoed',
@@ -61,7 +62,7 @@ export const vertalingen = {
       nietIngevuld: 'Niet ingevuld'
     },
     footer: {
-      kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat.',
+      kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
       lectoraat: 'Lectoraat Ethisch Werken — Fontys Hogescholen',
       contact: 'r.vodde@fontys.nl'
     },
@@ -231,6 +232,7 @@ export const vertalingen = {
     },
     fundament: {
       titel: 'About the foundation',
+      kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
       linksTitel: 'The model',
       linksTekst: 'The Model of Moral Craftsmanship was developed by the Research Group on Ethical Practice at Fontys University of Applied Sciences. It is grounded in the work of Karssing, Rest, Biesta and Aristotle\'s concept of phronesis — practical wisdom developed through action, reflection and perseverance.',
       rechtsTitel: 'Biesta\'s thinking',
@@ -249,7 +251,7 @@ export const vertalingen = {
       nietIngevuld: 'Not provided'
     },
     footer: {
-      kernzin: 'Moral craftsmanship means: keep seeing, keep feeling, keep weighing, keep acting and hold the course — even when something is at stake.',
+      kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
       lectoraat: 'Research Group on Ethical Practice — Fontys University of Applied Sciences',
       contact: 'r.vodde@fontys.nl'
     },
