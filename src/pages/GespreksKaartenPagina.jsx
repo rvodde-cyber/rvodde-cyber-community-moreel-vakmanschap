@@ -1,7 +1,15 @@
+import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import ConversationCardSection from '../components/ConversationCardSection'
+import GesprekskaartenFilters, { EMPTY_FILTERS } from '../components/GesprekskaartenFilters'
 import { stappen as basisStappen } from '../data/stappen'
-import { gesprekskaartenTeaser, TEASER_DOWNLOADS } from '../data/gesprekskaartenTeaser'
+import {
+  TEASER_DOWNLOADS,
+  filterCards,
+  getAllCards,
+  getFilterOptions,
+  localizeCards,
+} from '../data/gesprekskaarten'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -121,6 +129,20 @@ export default function GespreksKaartenPagina() {
   const { taal, t } = useTaal()
   const copy = pageContent[taal]
   const stap4 = basisStappen[3]
+  const [filters, setFilters] = useState(EMPTY_FILTERS)
+  const allCards = getAllCards()
+  const filterOptions = useMemo(() => getFilterOptions(allCards), [allCards])
+  const filteredCards = useMemo(
+    () => filterCards(allCards, { ...filters, taal }),
+    [allCards, filters, taal]
+  )
+  const displayCards = useMemo(() => {
+    const labels = t.gesprekskaart.filters.categorieLabels ?? {}
+    return localizeCards(taal, filteredCards).map((card) => ({
+      ...card,
+      categorie: labels[card.categorieSlug] ?? card.categorieSlug,
+    }))
+  }, [filteredCards, taal, t.gesprekskaart.filters.categorieLabels])
   const aanmeldenHref = taal === 'nl' ? '/aanmelden' : '/join'
   const teaserDownload = {
     href: TEASER_DOWNLOADS[taal].href,
@@ -331,12 +353,20 @@ export default function GespreksKaartenPagina() {
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
         </motion.p>
 
+        <GesprekskaartenFilters
+          filters={filters}
+          onChange={setFilters}
+          options={filterOptions}
+          resultCount={displayCards.length}
+          totalCount={allCards.length}
+        />
+
         <ConversationCardSection
           stapNummer={4}
           kleur={stap4.kleur}
           kleurLicht={stap4.kleurLicht}
           titelKey="gesprekskaarten_titel"
-          kaarten={gesprekskaartenTeaser[taal]}
+          kaarten={displayCards}
           downloadLinks={teaserDownload}
         />
       </section>

@@ -2,8 +2,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "node scripts/generate-gesprekskaarten-catalog.mjs && vite build",
+    "preview": "vite preview",
+    "cards:migrate": "node scripts/migrate-gesprekskaarten.mjs",
+    "cards:catalog": "node scripts/generate-gesprekskaarten-catalog.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

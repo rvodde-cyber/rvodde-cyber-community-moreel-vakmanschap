@@ -4,6 +4,29 @@ import { X } from "lucide-react";
 import { useTaal } from "../context/TaalContext";
 import { downloadGesprekskaartPdf } from "../utils/generateGesprekskaartPdf";
 
+function StarRating({ value, max = 3, className = "" }) {
+  const filled = Math.max(0, Math.min(max, Number(value) || 0));
+  return (
+    <span className={className} aria-label={`${filled} of ${max}`} title={`${filled}/${max}`}>
+      {"★".repeat(filled)}
+      <span className="opacity-35">{"★".repeat(max - filled)}</span>
+    </span>
+  );
+}
+
+function CardMedia({ card }) {
+  if (card.afbeelding) {
+    return (
+      <>
+        <img src={card.afbeelding} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+      </>
+    );
+  }
+
+  return <div className="absolute inset-0" style={{ backgroundColor: card.kleur, opacity: 0.35 }} />;
+}
+
 function CardButton({ children, accentColor, variant = "outline", onClick, href, download }) {
   const className =
     "inline-flex flex-1 items-center justify-center rounded-full border-2 px-3 py-2.5 text-center text-sm font-semibold transition-colors";
@@ -52,17 +75,31 @@ export function ConversationCardPreview({ card, onOpen }) {
       style={{ borderTopWidth: 4, borderTopColor: card.kleur }}
     >
       <div className="relative h-36" style={{ backgroundColor: card.kleurLicht }}>
-        <div className="absolute inset-0" style={{ backgroundColor: card.kleur, opacity: 0.35 }} />
+        <CardMedia card={card} />
         <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-primair">
           {card.categorie}
         </span>
-        <span className="absolute right-3 top-3 rounded-full border border-rand bg-white px-2.5 py-1 text-xs font-semibold text-secundair">
-          {card.verhaal ? t.gesprekskaart.teaserBadge : `⭐ ${t.worksheets_badge}`}
+        <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full border border-rand bg-white px-2.5 py-1 text-xs font-semibold text-secundair">
+          <StarRating value={card.moeilijkheid} />
         </span>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <p className="text-xs font-semibold uppercase tracking-wide text-secundair">{card.categorie}</p>
+        <div className="flex flex-wrap items-center gap-2 text-xs text-secundair">
+          <span className="font-semibold uppercase tracking-wide">{card.categorie}</span>
+          {card.taalniveau && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>{card.taalniveau}</span>
+            </>
+          )}
+          {card.woorden != null && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>{t.gesprekskaart.woordenLabel.replace("{count}", String(card.woorden))}</span>
+            </>
+          )}
+        </div>
         <p className="mt-2 font-display text-xl font-semibold leading-snug text-primair md:text-2xl">
           {card.titel || card.vraag}
         </p>
@@ -137,8 +174,8 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            <div className="relative h-48" style={{ backgroundColor: card.kleurLicht }}>
-              <div className="absolute inset-0" style={{ backgroundColor: card.kleur, opacity: 0.4 }} />
+            <div className="relative h-48 overflow-hidden" style={{ backgroundColor: card.kleurLicht }}>
+              <CardMedia card={card} />
               <button
                 type="button"
                 onClick={onClose}
@@ -157,6 +194,16 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
               </p>
               <p className="mb-1 text-sm font-semibold text-secundair">{card.categorie}</p>
+              <div className="mb-3 flex flex-wrap gap-3 text-xs text-secundair">
+                <span>
+                  {t.gesprekskaart.moeilijkheidLabel}: <StarRating value={card.moeilijkheid} className="text-accent" />
+                </span>
+                {card.taalniveau && (
+                  <span>
+                    {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
+                  </span>
+                )}
+              </div>
               <h2
                 id="gesprekskaart-titel"
                 className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"

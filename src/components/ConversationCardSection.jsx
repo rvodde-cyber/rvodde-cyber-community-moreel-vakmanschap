@@ -11,19 +11,23 @@ export default function ConversationCardSection({
   kaarten: kaartenOverride,
   sectionId = `gesprekskaarten-stap-${stapNummer}`,
   downloadLinks = null,
+  emptyMessage = null,
 }) {
   const { t } = useTaal();
   const stapData = t.bibliotheek[`stap${stapNummer}`];
   const kaarten = kaartenOverride ?? stapData?.kaarten ?? [];
   const [openCardId, setOpenCardId] = useState(null);
 
-  const enrichedKaarten = kaarten.map((kaart) => ({
-    ...kaart,
-    stapNummer,
-    stapNaam: t.stappen[stapNummer - 1].naam,
-    kleur,
-    kleurLicht
-  }));
+  const enrichedKaarten = kaarten.map((kaart) => {
+    const step = kaart.stap ?? stapNummer;
+    return {
+      ...kaart,
+      stapNummer: step,
+      stapNaam: t.stappen[step - 1].naam,
+      kleur,
+      kleurLicht,
+    };
+  });
 
   const openCard = enrichedKaarten.find((kaart) => kaart.id === openCardId) || null;
 
@@ -52,15 +56,21 @@ export default function ConversationCardSection({
           )}
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {enrichedKaarten.map((kaart) => (
-            <ConversationCardPreview
-              key={kaart.id}
-              card={kaart}
-              onOpen={() => setOpenCardId(kaart.id)}
-            />
-          ))}
-        </div>
+        {kaarten.length === 0 ? (
+          <p className="rounded-xl border border-dashed border-rand bg-white/60 px-4 py-8 text-center text-sm text-secundair">
+            {emptyMessage ?? t.gesprekskaart.filters.empty}
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {enrichedKaarten.map((kaart) => (
+              <ConversationCardPreview
+                key={kaart.id}
+                card={kaart}
+                onOpen={() => setOpenCardId(kaart.id)}
+              />
+            ))}
+          </div>
+        )}
       </motion.section>
 
       <ConversationCard card={openCard} isOpen={Boolean(openCard)} onClose={() => setOpenCardId(null)} />
