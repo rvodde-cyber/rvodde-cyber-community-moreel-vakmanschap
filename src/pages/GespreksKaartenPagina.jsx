@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 import ConversationCardSection from '../components/ConversationCardSection'
 import { stappen as basisStappen } from '../data/stappen'
+import { gesprekskaartenTeaser, TEASER_DOWNLOADS } from '../data/gesprekskaartenTeaser'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
 
-const content = {
+const pageContent = {
   nl: {
     hero: {
       label: 'De methode',
@@ -117,11 +118,15 @@ const fadeUp = {
 // ── COMPONENT ────────────────────────────────────────────────────
 
 export default function GespreksKaartenPagina() {
-  const { taal } = useTaal()
-  const t = content[taal]
-  const stap1 = basisStappen[0]
-  const stap3 = basisStappen[2]
+  const { taal, t } = useTaal()
+  const copy = pageContent[taal]
+  const stap4 = basisStappen[3]
   const aanmeldenHref = taal === 'nl' ? '/aanmelden' : '/join'
+  const teaserDownload = {
+    href: TEASER_DOWNLOADS[taal].href,
+    filename: TEASER_DOWNLOADS[taal].filename,
+    label: t.gesprekskaart.downloadTeaserSet,
+  }
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
@@ -139,7 +144,7 @@ export default function GespreksKaartenPagina() {
             marginBottom: '1rem',
           }}
         >
-          {t.hero.label}
+          {copy.hero.label}
         </motion.p>
 
         <motion.h1
@@ -153,7 +158,7 @@ export default function GespreksKaartenPagina() {
             marginBottom: '1.25rem',
           }}
         >
-          {t.hero.titel}
+          {copy.hero.titel}
         </motion.h1>
 
         <motion.p
@@ -166,7 +171,7 @@ export default function GespreksKaartenPagina() {
             marginBottom: '1.75rem',
           }}
         >
-          {t.hero.subtitel}
+          {copy.hero.subtitel}
         </motion.p>
 
         <motion.p
@@ -180,7 +185,7 @@ export default function GespreksKaartenPagina() {
             margin: '0 auto',
           }}
         >
-          {t.hero.intro}
+          {copy.hero.intro}
         </motion.p>
       </section>
 
@@ -201,11 +206,11 @@ export default function GespreksKaartenPagina() {
             textAlign: 'center',
           }}
         >
-          {t.waarom.titel}
+          {copy.waarom.titel}
         </motion.h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
-          {t.waarom.pijlers.map((pijler, i) => (
+          {copy.waarom.pijlers.map((pijler, i) => (
             <motion.div
               key={i}
               variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i}
@@ -256,27 +261,27 @@ export default function GespreksKaartenPagina() {
               marginBottom: '1.25rem',
             }}
           >
-            {t.hoe.titel}
+            {copy.hoe.titel}
           </motion.h2>
 
           <motion.p
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1}
             style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '1rem', lineHeight: 1.75, marginBottom: '1.5rem', color: 'var(--tekst-secundair, #5f5e5a)' }}
           >
-            {t.hoe.intro}
+            {copy.hoe.intro}
           </motion.p>
 
           <motion.ul
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2}
             style={{ listStyle: 'none', padding: 0, marginBottom: '1.75rem' }}
           >
-            {t.hoe.vormen.map((vorm, i) => (
+            {copy.hoe.vormen.map((vorm, i) => (
               <li key={i} style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '0.95rem',
                 lineHeight: 1.7,
                 padding: '0.5rem 0 0.5rem 1.5rem',
-                borderBottom: i < t.hoe.vormen.length - 1 ? '1px solid var(--rand, #d3d1c7)' : 'none',
+                borderBottom: i < copy.hoe.vormen.length - 1 ? '1px solid var(--rand, #d3d1c7)' : 'none',
                 color: 'var(--tekst-primair, #1a2744)',
                 position: 'relative',
               }}>
@@ -290,7 +295,7 @@ export default function GespreksKaartenPagina() {
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}
             style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--tekst-secundair, #5f5e5a)', fontStyle: 'italic' }}
           >
-            {t.hoe.niveaus}
+            {copy.hoe.niveaus}
           </motion.p>
         </div>
       </section>
@@ -307,7 +312,7 @@ export default function GespreksKaartenPagina() {
             marginBottom: '0.5rem',
           }}
         >
-          {t.preview.titel}
+          {copy.preview.titel}
         </motion.h2>
 
         <motion.p
@@ -320,27 +325,20 @@ export default function GespreksKaartenPagina() {
             marginBottom: '3rem',
           }}
         >
-          {t.preview.subtitel}{' '}
-          <em style={{ color: '#534ab7' }}>{t.preview.vraag1}</em>{' '}
+          {copy.preview.subtitel}{' '}
+          <em style={{ color: '#534ab7' }}>{copy.preview.vraag1}</em>{' '}
           {taal === 'nl' ? 'en' : 'and'}{' '}
-          <em style={{ color: '#534ab7' }}>{t.preview.vraag2}</em>
+          <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
         </motion.p>
 
         <ConversationCardSection
-          stapNummer={1}
-          kleur={stap1.kleur}
-          kleurLicht={stap1.kleurLicht}
+          stapNummer={4}
+          kleur={stap4.kleur}
+          kleurLicht={stap4.kleurLicht}
           titelKey="gesprekskaarten_titel"
+          kaarten={gesprekskaartenTeaser[taal]}
+          downloadLinks={teaserDownload}
         />
-
-        <div style={{ marginTop: '4rem' }}>
-          <ConversationCardSection
-            stapNummer={3}
-            kleur={stap3.kleur}
-            kleurLicht={stap3.kleurLicht}
-            titelKey="gesprekskaarten_titel"
-          />
-        </div>
       </section>
 
       {/* ── CTA ── */}
@@ -359,7 +357,7 @@ export default function GespreksKaartenPagina() {
             marginBottom: '1.25rem',
           }}
         >
-          {t.cta.titel}
+          {copy.cta.titel}
         </motion.h2>
 
         <motion.p
@@ -373,7 +371,7 @@ export default function GespreksKaartenPagina() {
             margin: '0 auto 2.5rem',
           }}
         >
-          {t.cta.tekst}
+          {copy.cta.tekst}
         </motion.p>
 
         <motion.a
@@ -395,7 +393,7 @@ export default function GespreksKaartenPagina() {
           onMouseEnter={e => e.currentTarget.style.backgroundColor = '#3f38a0'}
           onMouseLeave={e => e.currentTarget.style.backgroundColor = '#534ab7'}
         >
-          {t.cta.knop}
+          {copy.cta.knop}
         </motion.a>
       </section>
 

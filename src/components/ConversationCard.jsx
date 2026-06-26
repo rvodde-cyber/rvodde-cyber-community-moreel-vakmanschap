@@ -57,14 +57,18 @@ export function ConversationCardPreview({ card, onOpen }) {
           {card.categorie}
         </span>
         <span className="absolute right-3 top-3 rounded-full border border-rand bg-white px-2.5 py-1 text-xs font-semibold text-secundair">
-          ⭐ {t.worksheets_badge}
+          {card.verhaal ? t.gesprekskaart.teaserBadge : `⭐ ${t.worksheets_badge}`}
         </span>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <p className="font-display text-xl italic leading-snug text-primair md:text-2xl">
-          &ldquo;{card.vraag}&rdquo;
+        <p className="text-xs font-semibold uppercase tracking-wide text-secundair">{card.categorie}</p>
+        <p className="mt-2 font-display text-xl font-semibold leading-snug text-primair md:text-2xl">
+          {card.titel || card.vraag}
         </p>
+        {card.verhaal && (
+          <p className="mt-3 line-clamp-4 text-sm leading-6 text-secundair">{card.verhaal}</p>
+        )}
 
         <div className="mt-5 flex gap-2">
           <CardButton accentColor={card.kleur} onClick={onOpen}>
@@ -155,12 +159,40 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               <p className="mb-1 text-sm font-semibold text-secundair">{card.categorie}</p>
               <h2
                 id="gesprekskaart-titel"
-                className="font-display text-3xl italic leading-snug text-primair md:text-4xl"
+                className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"
               >
-                &ldquo;{card.vraag}&rdquo;
+                {card.titel || card.vraag}
               </h2>
 
-              <p className="mt-5 leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
+              {card.verhaal ? (
+                <p className="mt-5 leading-7 text-secundair">{card.verhaal}</p>
+              ) : (
+                <p className="mt-5 font-display text-2xl italic leading-snug text-primair">
+                  &ldquo;{card.vraag}&rdquo;
+                </p>
+              )}
+
+              {(card.vraag1 || card.vraag2) && (
+                <div className="mt-6 space-y-3 rounded-xl border border-rand bg-white/70 p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
+                    {t.gesprekskaart.reflectieLabel}
+                  </p>
+                  {card.vraag1 && (
+                    <p className="text-sm leading-6 text-primair">
+                      <span className="font-semibold">1.</span> {card.vraag1}
+                    </p>
+                  )}
+                  {card.vraag2 && (
+                    <p className="text-sm leading-6 text-primair">
+                      <span className="font-semibold">2.</span> {card.vraag2}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {!card.verhaal && (
+                <p className="mt-5 leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
+              )}
 
               <p className="mt-4 text-sm font-semibold leading-6" style={{ color: card.kleur }}>
                 {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}

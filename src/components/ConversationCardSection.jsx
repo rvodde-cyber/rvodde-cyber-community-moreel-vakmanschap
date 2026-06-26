@@ -8,10 +8,13 @@ export default function ConversationCardSection({
   kleur,
   kleurLicht,
   titelKey,
+  kaarten: kaartenOverride,
   sectionId = `gesprekskaarten-stap-${stapNummer}`,
+  downloadLinks = null,
 }) {
   const { t } = useTaal();
-  const kaarten = t.bibliotheek[`stap${stapNummer}`].kaarten;
+  const stapData = t.bibliotheek[`stap${stapNummer}`];
+  const kaarten = kaartenOverride ?? stapData?.kaarten ?? [];
   const [openCardId, setOpenCardId] = useState(null);
 
   const enrichedKaarten = kaarten.map((kaart) => ({
@@ -33,9 +36,21 @@ export default function ConversationCardSection({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.45, ease: "easeOut" }}
       >
-        <h3 className="mb-6 font-display text-2xl font-semibold text-primair md:text-3xl">
-          {t.bibliotheek[`stap${stapNummer}`][titelKey]}
-        </h3>
+        <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <h3 className="font-display text-2xl font-semibold text-primair md:text-3xl">
+            {stapData?.[titelKey]}
+          </h3>
+          {downloadLinks && (
+            <a
+              href={downloadLinks.href}
+              download={downloadLinks.filename}
+              className="inline-flex items-center justify-center rounded-full border-2 px-4 py-2 text-sm font-semibold transition-colors"
+              style={{ borderColor: kleur, color: kleur }}
+            >
+              {downloadLinks.label}
+            </a>
+          )}
+        </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {enrichedKaarten.map((kaart) => (

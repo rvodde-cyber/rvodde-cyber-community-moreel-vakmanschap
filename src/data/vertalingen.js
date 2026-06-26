@@ -82,6 +82,9 @@ export const vertalingen = {
     gesprekskaart: {
       bekijk: 'Bekijk vraag',
       downloadPdf: 'Download PDF',
+      downloadTeaserSet: 'Download volledige set (15 kaarten, Word)',
+      teaserBadge: 'Voorbeeld',
+      reflectieLabel: 'Reflectie',
       sluit: 'Sluit',
       stapLabel: 'Stap',
       instructie: 'Bespreek deze vraag met elkaar. Er is geen goed antwoord — alleen een echte ontmoeting.',
@@ -113,7 +116,7 @@ export const vertalingen = {
       stap4: {
         titel: 'Werkbladen & Tools',
         gesprekskaarten_titel: 'Gesprekskaarten — Morele Moed in de Praktijk',
-        comingSoon: 'Hier komen binnenkort materialen voor stap 4 — Handelen. Wil je bijdragen? Meld je aan als lid.'
+        comingSoon: 'Meer kaartensets volgen. Wil je bijdragen? Meld je aan als lid.'
       },
       stap5: {
         titel: 'Werkbladen & Tools',
@@ -271,6 +274,9 @@ export const vertalingen = {
     gesprekskaart: {
       bekijk: 'View question',
       downloadPdf: 'Download PDF',
+      downloadTeaserSet: 'Download full set (15 cards, PDF)',
+      teaserBadge: 'Sample',
+      reflectieLabel: 'Reflection',
       sluit: 'Close',
       stapLabel: 'Step',
       instructie: 'Discuss this question together. There is no right answer — only a real encounter.',
@@ -302,7 +308,7 @@ export const vertalingen = {
       stap4: {
         titel: 'Worksheets & Tools',
         gesprekskaarten_titel: 'Conversation Cards — Moral Courage in Practice',
-        comingSoon: 'Materials for Step 4 — Acting are coming soon. Want to contribute? Join the community.'
+        comingSoon: 'More card sets are coming. Want to contribute? Join the community.'
       },
       stap5: {
         titel: 'Worksheets & Tools',

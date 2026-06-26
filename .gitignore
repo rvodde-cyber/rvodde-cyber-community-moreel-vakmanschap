@@ -2,3 +2,8 @@ node_modules/
 dist/
 .env
 .env.local
+.vercel
+
+public/downloads/gesprekskaarten/_extract/
+public/downloads/gesprekskaarten/_extract_text.py
+public/downloads/gesprekskaarten/_print_report.py

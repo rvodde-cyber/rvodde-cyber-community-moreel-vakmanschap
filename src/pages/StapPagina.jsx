@@ -117,6 +117,57 @@ function bronTekst(bron, taal) {
   return bron[taal];
 }
 
+function downloadUrl(map, bestand) {
+  return `/downloads/${map}/${bestand}`;
+}
+
+function DownloadKnop({ bestand, map, label, accentColor, variant, disabled, disabledTitle }) {
+  const baseStyle = {
+    padding: "0.45rem 0.9rem",
+    fontFamily: "DM Sans, sans-serif",
+    fontSize: "0.8rem",
+    borderRadius: "6px",
+    fontWeight: 500,
+    textAlign: "center",
+  };
+
+  if (disabled || !bestand) {
+    return (
+      <span
+        title={disabledTitle}
+        aria-disabled="true"
+        style={{
+          ...baseStyle,
+          backgroundColor: "#eeedea",
+          color: "#888780",
+          border: "1px solid #d3d1c7",
+          cursor: "not-allowed",
+        }}
+      >
+        {label}
+      </span>
+    );
+  }
+
+  const filled = variant === "filled";
+
+  return (
+    <a
+      href={downloadUrl(map, bestand)}
+      download={bestand}
+      style={{
+        ...baseStyle,
+        textDecoration: "none",
+        backgroundColor: filled ? accentColor : "transparent",
+        color: filled ? "#ffffff" : accentColor,
+        border: filled ? "none" : `1px solid ${accentColor}`,
+      }}
+    >
+      {label}
+    </a>
+  );
+}
+
 export default function StapPagina() {
   const { stap } = useParams();
   const { taal } = useTaal();
@@ -388,43 +439,24 @@ export default function StapPagina() {
               ) : mat.bestand_nl || mat.bestand_en ? (
                 <>
                   <div style={{ display: "flex", gap: "0.5rem", marginTop: "auto", flexWrap: "wrap" }}>
-                    {mat.bestand_nl && (
-                      <a
-                        href={`/downloads/${mat.map}/${mat.bestand_nl}`}
-                        download
-                        style={{
-                          padding: "0.45rem 0.9rem",
-                          backgroundColor: stapData.kleur,
-                          color: "#ffffff",
-                          fontFamily: "DM Sans, sans-serif",
-                          fontSize: "0.8rem",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                        }}
-                      >
-                        {ui.downloadNL}
-                      </a>
-                    )}
-                    {mat.bestand_en && (
-                      <a
-                        href={`/downloads/${mat.map}/${mat.bestand_en}`}
-                        download
-                        style={{
-                          padding: "0.45rem 0.9rem",
-                          backgroundColor: "transparent",
-                          color: stapData.kleur,
-                          border: `1px solid ${stapData.kleur}`,
-                          fontFamily: "DM Sans, sans-serif",
-                          fontSize: "0.8rem",
-                          borderRadius: "6px",
-                          textDecoration: "none",
-                          fontWeight: 500,
-                        }}
-                      >
-                        {ui.downloadEN}
-                      </a>
-                    )}
+                    <DownloadKnop
+                      bestand={mat.bestand_nl}
+                      map={mat.map}
+                      label={ui.downloadNL}
+                      accentColor={stapData.kleur}
+                      variant="filled"
+                      disabled={!mat.bestand_nl}
+                      disabledTitle={ui.binnenkort}
+                    />
+                    <DownloadKnop
+                      bestand={mat.bestand_en}
+                      map={mat.map}
+                      label={ui.downloadEN}
+                      accentColor={stapData.kleur}
+                      variant="outline"
+                      disabled={!mat.bestand_en}
+                      disabledTitle={ui.binnenkort}
+                    />
                   </div>
                   {bronTekst(mat.bron, taal) && (
                     <p

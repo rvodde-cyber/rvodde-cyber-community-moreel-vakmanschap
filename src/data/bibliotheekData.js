@@ -283,10 +283,9 @@ export const bibliotheekData = {
           id: 'MM_01', titel: 'Morele Moed',
           themas: ['Moed', 'Standpunt innemen', 'Moreel handelen'],
           niveau: 'getest',
-          bestand_nl: null,
-          bestand_en: null,
-          map: 'handelen',
-          binnenkort: true,
+          bestand_nl: 'GK_MM_Teaser_NL.docx',
+          bestand_en: 'GK_MM_Teaser_EN.pdf',
+          map: 'gesprekskaarten',
         },
         {
           id: 'MAPS_01', titel: 'MAPS Trilogie',
@@ -393,7 +392,7 @@ export const bibliotheekData = {
       stap: 4, stapNaam: 'Acting', kleur: '#0f6e56',
       intro: 'Knowing what is right is not enough. Moral craftsmanship requires the courage to act — even when it is uncomfortable, even when you stand alone. The tools for Acting help you take that step.',
       materialen: [
-        { id: 'MM_01', titel: 'Moral Courage', themas: ['Courage', 'Taking a stand', 'Moral action'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
+        { id: 'MM_01', titel: 'Moral Courage', themas: ['Courage', 'Taking a stand', 'Moral action'], niveau: 'getest', bestand_nl: 'GK_MM_Teaser_NL.docx', bestand_en: 'GK_MM_Teaser_EN.pdf', map: 'gesprekskaarten' },
         { id: 'MAPS_01', titel: 'MAPS Trilogy', themas: ['Moral scenarios', 'Choices', 'Preparation'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
       ],
     },
