@@ -172,7 +172,7 @@ export default function WelkomPagina() {
         <div style={{ height: "1px", backgroundColor: "var(--rand, #d3d1c7)" }} />
       </div>
 
-      <section style={{ padding: "4rem 1.5rem 6rem", maxWidth: "900px", margin: "0 auto" }}>
+      <section style={{ padding: "3.5rem 1.5rem 5rem", maxWidth: "900px", margin: "0 auto" }}>
         <div
           style={{
             display: "grid",
@@ -190,9 +190,9 @@ export default function WelkomPagina() {
               custom={i}
               style={{
                 padding: "2rem",
-                backgroundColor: "#ffffff",
+                backgroundColor: "var(--surface, #fdfcfa)",
                 borderRadius: "12px",
-                border: "1px solid var(--rand, #d3d1c7)",
+                border: "1px solid var(--rand, #d8d3c9)",
                 borderTop: "3px solid #534ab7",
               }}
             >

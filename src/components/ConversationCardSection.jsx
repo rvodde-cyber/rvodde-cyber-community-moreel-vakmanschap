@@ -57,7 +57,7 @@ export default function ConversationCardSection({
         </div>
 
         {kaarten.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-rand bg-white/60 px-4 py-8 text-center text-sm text-secundair">
+          <p className="rounded-xl border border-dashed border-rand bg-surface-muted/80 px-4 py-8 text-center text-sm text-secundair">
             {emptyMessage ?? t.gesprekskaart.filters.empty}
           </p>
         ) : (

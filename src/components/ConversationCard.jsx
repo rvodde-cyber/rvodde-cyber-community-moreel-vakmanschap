@@ -71,7 +71,7 @@ export function ConversationCardPreview({ card, onOpen }) {
 
   return (
     <article
-      className="flex flex-col overflow-hidden rounded-xl border border-rand bg-[#fafaf8] shadow-warm transition-shadow hover:shadow-[0_20px_60px_rgba(26,39,68,0.12)]"
+      className="flex flex-col overflow-hidden rounded-xl border border-rand bg-surface shadow-warm transition-shadow hover:shadow-[0_20px_60px_rgba(26,39,68,0.12)]"
       style={{ borderTopWidth: 4, borderTopColor: card.kleur }}
     >
       <div className="relative h-36" style={{ backgroundColor: card.kleurLicht }}>
@@ -103,9 +103,6 @@ export function ConversationCardPreview({ card, onOpen }) {
         <p className="mt-2 font-display text-xl font-semibold leading-snug text-primair md:text-2xl">
           {card.titel || card.vraag}
         </p>
-        {card.verhaal && (
-          <p className="mt-3 line-clamp-4 text-sm leading-6 text-secundair">{card.verhaal}</p>
-        )}
 
         <div className="mt-5 flex gap-2">
           <CardButton accentColor={card.kleur} onClick={onOpen}>
@@ -168,7 +165,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
           />
 
           <motion.div
-            className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white shadow-warm"
+            className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-surface shadow-warm"
             initial={{ opacity: 0, y: 24, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.98 }}

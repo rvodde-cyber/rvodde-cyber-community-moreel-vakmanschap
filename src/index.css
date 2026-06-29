@@ -11,10 +11,12 @@
   --kleur-handelen: #0f6e56;
   --kleur-volhouden: #993c1d;
   --kleur-kern: #534ab7;
-  --achtergrond: #fafaf8;
+  --achtergrond: #f5f2ec;
+  --surface: #fdfcfa;
+  --surface-muted: #f0ebe3;
   --tekst-primair: #1a2744;
   --tekst-secundair: #5f5e5a;
-  --rand: #d3d1c7;
+  --rand: #d8d3c9;
 }
 
 html {
@@ -50,4 +52,18 @@ textarea {
   .section-shell {
     padding-inline: 2rem;
   }
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  content: " ▾";
+  float: right;
+  opacity: 0.6;
+}
+
+details[open] > summary::after {
+  content: " ▴";
 }

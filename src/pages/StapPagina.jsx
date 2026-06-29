@@ -342,10 +342,10 @@ export default function StapPagina() {
               viewport={{ once: true }}
               custom={i}
               style={{
-                backgroundColor: "#ffffff",
+                backgroundColor: "var(--surface, #fdfcfa)",
                 borderRadius: "12px",
-                border: "1px solid var(--rand, #d3d1c7)",
-                borderTop: `3px solid ${mat.binnenkort ? "var(--rand, #d3d1c7)" : stapData.kleur}`,
+                border: "1px solid var(--rand, #d8d3c9)",
+                borderTop: `3px solid ${mat.binnenkort ? "var(--rand, #d8d3c9)" : stapData.kleur}`,
                 padding: "1.25rem",
                 opacity: mat.binnenkort ? 0.65 : 1,
                 display: "flex",

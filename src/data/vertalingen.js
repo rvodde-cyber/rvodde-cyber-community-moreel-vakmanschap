@@ -52,6 +52,7 @@ export const vertalingen = {
     aanmelden: {
       titel: 'Doe mee',
       subtitel: 'Word onderdeel van de community',
+      hint: 'Laat weten wie je bent en waar je aan werkt. Je mailprogramma opent met een ingevulde aanmelding aan het Lectoraat Ethisch Werken.',
       naamLabel: 'Naam',
       instellingLabel: 'Instelling',
       emailLabel: 'E-mailadres',
@@ -59,6 +60,7 @@ export const vertalingen = {
       knop: 'Stuur mijn aanmelding',
       emailSubject: 'Aanmelding Community Moreel Vakmanschap',
       emailVraag: 'Waar werk jij aan in ethiekonderwijs?',
+      emailTo: 'lectoraatethischwerken@fontys.nl',
       nietIngevuld: 'Niet ingevuld'
     },
     footer: {
@@ -269,6 +271,7 @@ export const vertalingen = {
     aanmelden: {
       titel: 'Join us',
       subtitel: 'Become part of the community',
+      hint: 'Tell us who you are and what you are working on. Your email app will open with a pre-filled registration message to the Research Group on Ethical Practice.',
       naamLabel: 'Name',
       instellingLabel: 'Institution',
       emailLabel: 'Email address',
@@ -276,6 +279,7 @@ export const vertalingen = {
       knop: 'Send my registration',
       emailSubject: 'Registration Community Moral Craftsmanship',
       emailVraag: 'What are you working on in ethics education?',
+      emailTo: 'lectoraatethischwerken@fontys.nl',
       nietIngevuld: 'Not provided'
     },
     footer: {

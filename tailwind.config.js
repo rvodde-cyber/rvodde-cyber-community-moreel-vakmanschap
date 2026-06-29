@@ -9,6 +9,8 @@ export default {
       },
       colors: {
         achtergrond: "var(--achtergrond)",
+        surface: "var(--surface)",
+        "surface-muted": "var(--surface-muted)",
         primair: "var(--tekst-primair)",
         secundair: "var(--tekst-secundair)",
         rand: "var(--rand)"

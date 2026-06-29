@@ -56,6 +56,7 @@ const pageContent = {
       vraag1: 'Wat zou jij doen en waarom?',
       vraag2: 'Welke waarden zijn hier in het spel?',
     },
+    introToggle: 'Over de methode — waarom en hoe?',
     cta: {
       titel: 'Wat is er beschikbaar?',
       tekst: 'Binnen de Community Moreel Vakmanschap zijn sets beschikbaar voor verschillende domeinen en contexten. Leden kunnen materiaal downloaden, gebruiken, en — als het werkt — terugdelen met de community. De ambitie: 250+ kaarten, ontwikkeld samen met studenten, alumni en professionals uit het veld.',
@@ -104,6 +105,7 @@ const pageContent = {
       vraag1: 'What would you do, and why?',
       vraag2: 'What values are at stake here?',
     },
+    introToggle: 'About the method — why and how?',
     cta: {
       titel: 'What is available?',
       tekst: 'Within the Community of Moral Craftsmanship, sets are available for different domains and contexts. Members can download materials, use them in practice, and — when they work — share them back with the community. The ambition: 250+ cards, developed together with students, alumni and professionals from the field.',
@@ -154,7 +156,7 @@ export default function GespreksKaartenPagina() {
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
 
       {/* ── HERO ── */}
-      <section style={{ padding: '5rem 1.5rem 4rem', maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
+      <section style={{ padding: '3.5rem 1.5rem 2.5rem', maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
         <motion.p
           variants={fadeUp} initial="hidden" animate="visible" custom={0}
           style={{
@@ -216,31 +218,56 @@ export default function GespreksKaartenPagina() {
         <div style={{ height: '1px', backgroundColor: 'var(--rand, #d3d1c7)' }} />
       </div>
 
+      {/* ── INLEIDING (inklapbaar) ── */}
+      <details
+        style={{
+          maxWidth: '900px',
+          margin: '0 auto 1rem',
+          padding: '0 1.5rem',
+        }}
+      >
+        <summary
+          style={{
+            cursor: 'pointer',
+            listStyle: 'none',
+            fontFamily: 'DM Sans, sans-serif',
+            fontSize: '0.95rem',
+            fontWeight: 500,
+            color: '#534ab7',
+            padding: '0.75rem 1rem',
+            borderRadius: '10px',
+            border: '1px solid var(--rand, #d8d3c9)',
+            backgroundColor: 'var(--surface-muted, #f0ebe3)',
+          }}
+        >
+          {copy.introToggle}
+        </summary>
+
       {/* ── WAAROM WERKEN ZE ── */}
-      <section style={{ padding: '4rem 1.5rem', maxWidth: '900px', margin: '0 auto' }}>
+      <section style={{ padding: '2rem 0 1rem', maxWidth: '900px', margin: '0 auto' }}>
         <motion.h2
           variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
           style={{
             fontFamily: 'Cormorant Garamond, serif',
             fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
             fontWeight: 600,
-            marginBottom: '3rem',
+            marginBottom: '2rem',
             textAlign: 'center',
           }}
         >
           {copy.waarom.titel}
         </motion.h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
           {copy.waarom.pijlers.map((pijler, i) => (
             <motion.div
               key={i}
               variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i}
               style={{
-                padding: '2rem',
-                backgroundColor: '#ffffff',
+                padding: '1.5rem',
+                backgroundColor: 'var(--surface, #fdfcfa)',
                 borderRadius: '12px',
-                border: '1px solid var(--rand, #d3d1c7)',
+                border: '1px solid var(--rand, #d8d3c9)',
                 borderTop: '3px solid #534ab7',
               }}
             >
@@ -268,12 +295,13 @@ export default function GespreksKaartenPagina() {
 
       {/* ── HOE WORDEN ZE GEBRUIKT ── */}
       <section style={{
-        padding: '4rem 1.5rem',
-        backgroundColor: '#f0eeea',
-        borderTop: '1px solid var(--rand, #d3d1c7)',
-        borderBottom: '1px solid var(--rand, #d3d1c7)',
+        padding: '2rem 0 2.5rem',
+        backgroundColor: 'var(--surface-muted, #f0ebe3)',
+        borderTop: '1px solid var(--rand, #d8d3c9)',
+        borderBottom: '1px solid var(--rand, #d8d3c9)',
+        borderRadius: '12px',
       }}>
-        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 0.5rem' }}>
           <motion.h2
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
             style={{
@@ -321,9 +349,10 @@ export default function GespreksKaartenPagina() {
           </motion.p>
         </div>
       </section>
+      </details>
 
       {/* ── BESCHIKBARE KAARTEN ── */}
-      <section style={{ padding: '5rem 1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
+      <section style={{ padding: '3rem 1.5rem 4rem', maxWidth: '1100px', margin: '0 auto' }}>
         <motion.h2
           variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
           style={{
@@ -344,7 +373,7 @@ export default function GespreksKaartenPagina() {
             fontSize: '0.9rem',
             textAlign: 'center',
             color: 'var(--tekst-secundair, #5f5e5a)',
-            marginBottom: '3rem',
+            marginBottom: '1.5rem',
           }}
         >
           {copy.preview.subtitel}{' '}
@@ -373,7 +402,7 @@ export default function GespreksKaartenPagina() {
 
       {/* ── CTA ── */}
       <section style={{
-        padding: '5rem 1.5rem',
+        padding: '3.5rem 1.5rem',
         backgroundColor: '#1a2744',
         textAlign: 'center',
       }}>
