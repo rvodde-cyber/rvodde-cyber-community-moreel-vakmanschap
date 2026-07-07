@@ -6,7 +6,15 @@ function isComingSoon(tool) {
   return /\(coming soon\)|\(binnenkort\)/i.test(tool);
 }
 
-const CONVERSATION_TOOL_ANCHORS = new Set(["Gesprekskaarten", "Conversation Cards"]);
+import { usesEnglishRoutes } from "../data/vertalingen";
+
+const CONVERSATION_TOOL_ANCHORS = new Set([
+  "Gesprekskaarten",
+  "Conversation Cards",
+  "Samtalskort",
+  "Samtalekort",
+  "Konverzační karty",
+]);
 
 const stapBibliotheekSlug = {
   nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
@@ -16,11 +24,11 @@ const stapBibliotheekSlug = {
 export default function StapKaart({ stap, compact = false, isActive = false, onSelect }) {
   const { taal, t } = useTaal();
   const isSelectable = Boolean(onSelect);
-  const bibliotheekHref =
-    taal === "nl"
-      ? `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`
-      : `/library/${stapBibliotheekSlug.en[stap.nummer]}`;
-  const gesprekskaartenHref = taal === "nl" ? "/gesprekskaarten" : "/conversation-cards";
+  const enRoutes = usesEnglishRoutes(taal);
+  const bibliotheekHref = enRoutes
+    ? `/library/${stapBibliotheekSlug.en[stap.nummer]}`
+    : `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`;
+  const gesprekskaartenHref = enRoutes ? "/conversation-cards" : "/gesprekskaarten";
 
   return (
     <motion.article

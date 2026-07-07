@@ -1,6 +1,7 @@
 import { getGesprekskaartStrings } from "./gesprekskaarten/i18n.js";
 import { gesprekskaartUiLocales } from "./gesprekskaartUiLocales.js";
 import { pageUiLocales } from "./pageUiLocales.js";
+import { siteContentLocales } from "./siteContentLocales.js";
 
 export const vertalingen = {
   nl: {
@@ -494,13 +495,21 @@ function mergeGesprekskaartUi(taal, baseGk) {
 }
 
 function mergeSiteOverlay(taal, base) {
-  const overlay = pageUiLocales[taal]?.siteOverlay;
+  const overlay = siteContentLocales[taal];
   if (!overlay) return base;
   return {
     ...base,
     meta: { ...base.meta, ...overlay.meta },
     hero: { ...base.hero, ...overlay.hero },
     model: { ...base.model, ...overlay.model },
+    stappen: overlay.stappen ?? base.stappen,
+    fundament: overlay.fundament ?? base.fundament,
+    overPagina: overlay.overPagina ?? base.overPagina,
+    maker: overlay.maker ?? base.maker,
+    visie: overlay.visie ?? base.visie,
+    aanmelden: overlay.aanmelden ?? base.aanmelden,
+    footer: overlay.footer ?? base.footer,
+    stapKaart: overlay.stapKaart ?? base.stapKaart,
   };
 }
 
@@ -586,5 +595,5 @@ const kernLines = {
 
 export function getKernLines(taal) {
   if (kernLines[taal]) return kernLines[taal];
-  return pageUiLocales[taal]?.siteOverlay?.kernLines ?? kernLines.en;
+  return siteContentLocales[taal]?.kernLines ?? kernLines.en;
 }

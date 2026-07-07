@@ -372,60 +372,6 @@ const gesprekskaartenDa = {
   },
 };
 
-const siteOverlaySv = {
-  meta: {
-    title: "Community Moral Craftsmanship",
-    description: "Community Moral Craftsmanship: en gemenskap av utövare inom etikundervisning.",
-  },
-  hero: {
-    label: "Community",
-    titel: "Moral Craftsmanship",
-    subtitel: "En gemenskap av utövare inom etikundervisning",
-  },
-  model: {
-    titel: "Modellen Moral Craftsmanship",
-    subtitel: "Klicka på ett steg för att läsa mer",
-    kernTekst: "Moraliska situationer från praktiken",
-  },
-  kernLines: { line1: "Moraliska situationer", line2: "från praktiken" },
-};
-
-const siteOverlayCs = {
-  meta: {
-    title: "Community Moral Craftsmanship",
-    description: "Community Moral Craftsmanship: komunita praktiků etické výchovy.",
-  },
-  hero: {
-    label: "Komunita",
-    titel: "Moral Craftsmanship",
-    subtitel: "Komunita praktiků etické výchovy",
-  },
-  model: {
-    titel: "Model Moral Craftsmanship",
-    subtitel: "Klikněte na krok a přečtěte si více",
-    kernTekst: "Morální situace z praxe",
-  },
-  kernLines: { line1: "Morální situace", line2: "z praxe" },
-};
-
-const siteOverlayDa = {
-  meta: {
-    title: "Community Moral Craftsmanship",
-    description: "Community Moral Craftsmanship: et fællesskab af praktikere i etikundervisning.",
-  },
-  hero: {
-    label: "Fællesskab",
-    titel: "Moral Craftsmanship",
-    subtitel: "Et fællesskab af praktikere i etikundervisning",
-  },
-  model: {
-    titel: "Modellen Moral Craftsmanship",
-    subtitel: "Klik på et trin for at læse mere",
-    kernTekst: "Moralske situationer fra praksis",
-  },
-  kernLines: { line1: "Moralske situationer", line2: "fra praksis" },
-};
-
 export const pageUiLocales = {
   sv: {
     navItems: navItemsSv,
@@ -433,7 +379,6 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekSv,
     stapPagina: stapPaginaSv,
     gesprekskaarten: gesprekskaartenSv,
-    siteOverlay: siteOverlaySv,
   },
   cs: {
     navItems: navItemsCs,
@@ -441,7 +386,6 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekCs,
     stapPagina: stapPaginaCs,
     gesprekskaarten: gesprekskaartenCs,
-    siteOverlay: siteOverlayCs,
   },
   da: {
     navItems: navItemsDa,
@@ -449,6 +393,5 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekDa,
     stapPagina: stapPaginaDa,
     gesprekskaarten: gesprekskaartenDa,
-    siteOverlay: siteOverlayDa,
   },
 };
