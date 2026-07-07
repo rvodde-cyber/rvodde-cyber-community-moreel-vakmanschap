@@ -9,7 +9,7 @@ import TaalRouteSync from "./components/TaalRouteSync";
 import TaalSchakelaar from "./components/TaalSchakelaar";
 
 import { TaalProvider, useTaal } from "./context/TaalContext";
-import { usesEnglishRoutes } from "./data/vertalingen";
+import { getNavItems, usesEnglishRoutes } from "./data/vertalingen";
 
 import AanbodPagina from "./pages/AanbodPagina";
 
@@ -30,55 +30,13 @@ import WelkomPagina from "./pages/WelkomPagina";
 
 
 
-const navItems = {
-
-  nl: [
-
-    { label: "Welkom", href: "/welkom" },
-
-    { label: "Het Model", href: "/model" },
-
-    { label: "Over ons", href: "/over" },
-
-    { label: "Wat bieden we", href: "/aanbod" },
-
-    { label: "Gesprekskaarten", href: "/gesprekskaarten" },
-
-    { label: "Bibliotheek", href: "/bibliotheek" },
-
-    { label: "Aanmelden", href: "/aanmelden", knop: true },
-
-  ],
-
-  en: [
-
-    { label: "Welcome", href: "/welcome" },
-
-    { label: "The Model", href: "/model" },
-
-    { label: "About", href: "/about" },
-
-    { label: "What we offer", href: "/what-we-offer" },
-
-    { label: "Conversation Cards", href: "/conversation-cards" },
-
-    { label: "Library", href: "/library" },
-
-    { label: "Join us", href: "/join", knop: true },
-
-  ],
-
-};
-
-
-
 function Navigatie() {
 
   const { taal, t } = useTaal();
 
   const [scrolled, setScrolled] = useState(false);
 
-  const items = navItems[taal] ?? navItems.en;
+  const items = getNavItems(taal);
 
   const homeHref = usesEnglishRoutes(taal) ? "/welcome" : "/welkom";
 

@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
-import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
+import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
 const uiTekst = {
   nl: {
@@ -17,6 +17,8 @@ const uiTekst = {
     disclaimerTitel: "Gebruik & bronvermelding",
     disclaimerTekst:
       "De werkbladen op dit platform zijn ontwikkeld door Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) als onderdeel van het Comenius Senior Fellowship. De onderliggende theoretische modellen worden gebruikt met bronvermelding en zijn bedoeld voor niet-commercieel educatief gebruik. Vrij te gebruiken met vermelding van de bron.",
+    materialenEn: "materiaal",
+    materialenMeervoud: "materialen",
   },
   en: {    label: "Materials",
     titel: "Library",
@@ -28,6 +30,8 @@ const uiTekst = {
     disclaimerTitel: "Use & attribution",
     disclaimerTekst:
       "The worksheets on this platform were developed by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. The underlying theoretical models are used with full attribution and are intended for non-commercial educational purposes. Free to use with source acknowledgement.",
+    materialenEn: "material",
+    materialenMeervoud: "materials",
   },
 };
 const stapSlug = {
@@ -38,9 +42,9 @@ const stapSlug = {
   5: "volhouden",
 };
 
-function getStapRouteSlug(stapItem, pageLang) {
+function getStapRouteSlug(stapItem, dataLang) {
   if (stapItem.stapSlug) {
-    return pageLang === "nl" ? stapItem.stapSlug.nl : stapItem.stapSlug.en;
+    return dataLang === "nl" ? stapItem.stapSlug.nl : stapItem.stapSlug.en;
   }
   return stapSlug[stapItem.stap];
 }
@@ -66,13 +70,13 @@ function handleImageError(event, kleur) {
 
 export default function BiblioteekOverzicht() {
   const { taal } = useTaal();
-  const pageLang = getPageContentLang(taal);
-  const ui = uiTekst[pageLang];
-  const data = bibliotheekData[pageLang];
+  const ui = getLocalizedPageContent(uiTekst, taal, "bibliotheek");
+  const dataLang = getBibliotheekDataLang(taal);
+  const data = bibliotheekData[dataLang];
   const navigate = useNavigate();
 
   const handleStapKlik = (stapItem) => {
-    const slug = getStapRouteSlug(stapItem, pageLang);
+    const slug = getStapRouteSlug(stapItem, dataLang);
     const route = usesEnglishRoutes(taal) ? `/library/${slug}` : `/bibliotheek/${slug}`;
     navigate(route);
   };
@@ -237,13 +241,13 @@ export default function BiblioteekOverzicht() {
                       color: "var(--tekst-secundair)",
                     }}
                   >
-                    {taal === "nl"
+                    {dataLang === "nl"
                       ? stap.materialen.length === 1
                         ? "1 materiaal"
                         : `${stap.materialen.length} materialen`
                       : stap.materialen.length === 1
-                        ? "1 material"
-                        : `${stap.materialen.length} materials`}
+                        ? `1 ${ui.materialenEn ?? "material"}`
+                        : `${stap.materialen.length} ${ui.materialenMeervoud ?? "materials"}`}
                   </span>
                   <span
                     style={{

@@ -5,16 +5,12 @@ import ModelWheel from "./ModelWheel";
 import StapKaart from "./StapKaart";
 import { useTaal } from "../context/TaalContext";
 import { stappen as basisStappen } from "../data/stappen";
-import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
+import { getKernLines, getBibliotheekDataLang, usesEnglishRoutes } from "../data/vertalingen";
+import { pageUiLocales } from "../data/pageUiLocales";
 
 const stapBibliotheekSlug = {
   nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
   en: { 1: "seeing", 2: "feeling", 3: "weighing", 4: "acting", 5: "persisting" },
-};
-
-const kernLines = {
-  nl: { line1: "Morele situaties", line2: "uit de praktijk" },
-  en: { line1: "Moral situations", line2: "from practice" },
 };
 
 export default function CirkelModel() {
@@ -29,9 +25,12 @@ export default function CirkelModel() {
   }));
 
   const activeStep = stappen.find((stap) => stap.nummer === activeStepNumber) || stappen[0];
-  const pageLang = getPageContentLang(taal);
   const enRoutes = usesEnglishRoutes(taal);
-  const kern = kernLines[pageLang];
+  const kern = getKernLines(taal);
+  const dataLang = getBibliotheekDataLang(taal);
+  const bibliotheekLink =
+    pageUiLocales[taal]?.stapPagina?.bibliotheekLink ??
+    (dataLang === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →");
 
   return (
     <section id="model" className="bg-achtergrond py-20 md:py-28">
@@ -102,7 +101,7 @@ export default function CirkelModel() {
                   className="mt-4 inline-flex px-2 text-sm font-semibold"
                   style={{ color: stap.kleur }}
                 >
-                  {pageLang === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
+                  {bibliotheekLink}
                 </Link>
               )}
             </div>

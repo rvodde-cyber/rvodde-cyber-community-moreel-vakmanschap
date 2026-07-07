@@ -1,5 +1,6 @@
 import { getGesprekskaartStrings } from "./gesprekskaarten/i18n.js";
 import { gesprekskaartUiLocales } from "./gesprekskaartUiLocales.js";
+import { pageUiLocales } from "./pageUiLocales.js";
 
 export const vertalingen = {
   nl: {
@@ -492,29 +493,98 @@ function mergeGesprekskaartUi(taal, baseGk) {
   };
 }
 
-/** Volledige siteteksten; SV/CS/DA vallen terug op EN behalve gesprekskaart-UI */
+function mergeSiteOverlay(taal, base) {
+  const overlay = pageUiLocales[taal]?.siteOverlay;
+  if (!overlay) return base;
+  return {
+    ...base,
+    meta: { ...base.meta, ...overlay.meta },
+    hero: { ...base.hero, ...overlay.hero },
+    model: { ...base.model, ...overlay.model },
+  };
+}
+
+/** Volledige siteteksten; SV/CS/DA krijgen vertaalde pagina-UI + EN-fallback voor rest */
 export function getVertalingenForLocale(taal) {
   if (taal === "nl" || taal === "en") return vertalingen[taal];
-  if (gesprekskaartUiLocales[taal]) {
+  if (pageUiLocales[taal] || gesprekskaartUiLocales[taal]) {
+    const base = mergeSiteOverlay(taal, vertalingen.en);
     return {
-      ...vertalingen.en,
+      ...base,
       gesprekskaart: mergeGesprekskaartUi(taal, vertalingen.en.gesprekskaart),
     };
   }
   return vertalingen.en;
 }
 
-/** Pagina-inhoud (welkom, bibliotheek, …): alleen NL/EN — SV/CS/DA → EN */
-export function getPageContentLang(taal) {
+/** UI-taal voor paginateksten (welkom, bibliotheek, …) */
+export function getPageUiLang(taal) {
+  if (taal === "nl" || taal === "en") return taal;
+  if (pageUiLocales[taal]) return taal;
+  return "en";
+}
+
+/** Bibliotheekmateriaal: alleen NL/EN beschikbaar */
+export function getBibliotheekDataLang(taal) {
   return taal === "nl" ? "nl" : "en";
+}
+
+/** Haal gelokaliseerde pagina-inhoud op (NL/EN-map + SV/CS/DA in pageUiLocales) */
+export function getLocalizedPageContent(nlEnMap, taal, localeKey) {
+  if (nlEnMap[taal]) return nlEnMap[taal];
+  const localized = pageUiLocales[taal]?.[localeKey];
+  if (localized) return localized;
+  return nlEnMap.en;
 }
 
 /** Kaartverhalen: alleen NL/EN beschikbaar — overige talen → EN */
 export function getCardContentLang(taal) {
-  return getPageContentLang(taal);
+  return getBibliotheekDataLang(taal);
+}
+
+/** @deprecated Gebruik getPageUiLang voor UI of getBibliotheekDataLang voor materiaal */
+export function getPageContentLang(taal) {
+  return getPageUiLang(taal);
 }
 
 /** Routetaal: NL-routes vs EN-routes */
 export function usesEnglishRoutes(taal) {
   return taal !== "nl";
+}
+
+const navItems = {
+  nl: [
+    { label: "Welkom", href: "/welkom" },
+    { label: "Het Model", href: "/model" },
+    { label: "Over ons", href: "/over" },
+    { label: "Wat bieden we", href: "/aanbod" },
+    { label: "Gesprekskaarten", href: "/gesprekskaarten" },
+    { label: "Bibliotheek", href: "/bibliotheek" },
+    { label: "Aanmelden", href: "/aanmelden", knop: true },
+  ],
+  en: [
+    { label: "Welcome", href: "/welcome" },
+    { label: "The Model", href: "/model" },
+    { label: "About", href: "/about" },
+    { label: "What we offer", href: "/what-we-offer" },
+    { label: "Conversation Cards", href: "/conversation-cards" },
+    { label: "Library", href: "/library" },
+    { label: "Join us", href: "/join", knop: true },
+  ],
+};
+
+export function getNavItems(taal) {
+  if (navItems[taal]) return navItems[taal];
+  if (pageUiLocales[taal]?.navItems) return pageUiLocales[taal].navItems;
+  return navItems.en;
+}
+
+const kernLines = {
+  nl: { line1: "Morele situaties", line2: "uit de praktijk" },
+  en: { line1: "Moral situations", line2: "from practice" },
+};
+
+export function getKernLines(taal) {
+  if (kernLines[taal]) return kernLines[taal];
+  return pageUiLocales[taal]?.siteOverlay?.kernLines ?? kernLines.en;
 }

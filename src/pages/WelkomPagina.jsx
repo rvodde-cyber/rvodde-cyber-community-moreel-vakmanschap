@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
-import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
+import { getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
 const content = {
   nl: {
@@ -68,8 +68,7 @@ const fadeUp = {
 
 export default function WelkomPagina() {
   const { taal } = useTaal();
-  const pageLang = getPageContentLang(taal);
-  const t = content[pageLang];
+  const t = getLocalizedPageContent(content, taal, "welkom");
   const aanmeldenHref = usesEnglishRoutes(taal) ? "/join" : "/aanmelden";
 
   return (

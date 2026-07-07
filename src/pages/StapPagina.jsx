@@ -2,7 +2,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData, niveauLabels, statusLabels } from "../data/bibliotheekData";
-import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
+import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
 const stapSlugNaarNummer = {
   zien: 1,
@@ -173,14 +173,14 @@ export default function StapPagina() {
   const { stap } = useParams();
   const { taal } = useTaal();
   const navigate = useNavigate();
-  const pageLang = getPageContentLang(taal);
+  const ui = getLocalizedPageContent(uiTekst, taal, "stapPagina");
+  const dataLang = getBibliotheekDataLang(taal);
   const enRoutes = usesEnglishRoutes(taal);
-  const ui = uiTekst[pageLang];
-  const labels = niveauLabels[pageLang];
-  const status = statusLabels[pageLang];
+  const labels = niveauLabels[dataLang];
+  const status = statusLabels[dataLang];
 
   const stapNummer = stapSlugNaarNummer[stap];
-  const data = bibliotheekData[pageLang];
+  const data = bibliotheekData[dataLang];
   const stapData = data.find((item) => item.stap === stapNummer);
   const afbeeldingSlug = slugNaarAfbeelding[stap] || stap;
   const combineer = typeof stapNummer === "number" ? combineerKoppelingen[stapNummer] : null;
@@ -317,7 +317,7 @@ export default function StapPagina() {
                 e.currentTarget.style.color = stapData.kleur;
               }}
             >
-              {pageLang === "nl" ? combineer.nlLabel : combineer.enLabel}
+              {dataLang === "nl" ? combineer.nlLabel : combineer.enLabel}
             </Link>
           </motion.div>
         )}
@@ -460,7 +460,7 @@ export default function StapPagina() {
                       disabledTitle={ui.binnenkort}
                     />
                   </div>
-                  {bronTekst(mat.bron, pageLang) && (
+                  {bronTekst(mat.bron, dataLang) && (
                     <p
                       style={{
                         fontSize: "0.75rem",
@@ -470,7 +470,7 @@ export default function StapPagina() {
                         lineHeight: 1.6,
                       }}
                     >
-                      {ui.bronLabel} {bronTekst(mat.bron, pageLang)}
+                      {ui.bronLabel} {bronTekst(mat.bron, dataLang)}
                     </p>
                   )}
                 </>
