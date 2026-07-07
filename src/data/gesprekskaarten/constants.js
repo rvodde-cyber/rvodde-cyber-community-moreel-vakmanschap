@@ -8,6 +8,7 @@ export const CATEGORIE_SLUGS = [
   "social-media",
   "studentenleven",
   "zorg",
+  "nucleaire-geneeskunde",
   "onderwijs",
   "overheid",
 ];
@@ -37,6 +38,7 @@ export const CATEGORIE_KLEUREN = {
   "social-media": "#e8820a",
   studentenleven: "#8e44ad",
   zorg: "#0f6e56",
+  "nucleaire-geneeskunde": "#2563eb",
   overheid: "#185fa5",
 };
 
@@ -72,6 +74,8 @@ export const CATEGORY_FROM_LEGACY = {
   "Social Media": "social-media",
   Studentenleven: "studentenleven",
   "Student life": "studentenleven",
+  "Nuclear medicine": "nucleaire-geneeskunde",
+  "Nucleaire geneeskunde": "nucleaire-geneeskunde",
 };
 
 export const TEASER_SET = {
