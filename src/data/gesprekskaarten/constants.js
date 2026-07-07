@@ -97,6 +97,17 @@ export const TEASER_SET = {
   },
 };
 
+export const WORK_FORMS_DOWNLOADS = {
+  nl: {
+    href: "/downloads/gesprekskaarten/MV_20_VierWerkvormen_NL.docx",
+    filename: "MV_20_VierWerkvormen_NL.docx",
+  },
+  en: {
+    href: "/downloads/gesprekskaarten/MV_20_FourWorkForms_EN.docx",
+    filename: "MV_20_FourWorkForms_EN.docx",
+  },
+};
+
 export const STANDARD_VRAGEN = {
   nl: {
     vraag1: "Wat zou jij doen en waarom?",

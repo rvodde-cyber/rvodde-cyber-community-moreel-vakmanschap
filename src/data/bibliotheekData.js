@@ -44,6 +44,10 @@ const materiaalBron = {
     nl: "Gebaseerd op Nelson & Heckmann (1952), Karssing (2001) en Biesta (2015) — vrij te gebruiken met bronvermelding",
     en: "Based on Nelson & Heckmann (1952), Karssing (2001) and Biesta (2015) — free to use with attribution",
   },
+  MV_20: {
+    nl: "Rest (1986); Kidder (2005); Tjin A Djie & Zwaan (2010) — vrij te gebruiken met bronvermelding",
+    en: "Rest (1986); Kidder (2005); Tjin A Djie & Zwaan (2010) — free to use with attribution",
+  },
 };
 
 export const bibliotheekData = {
@@ -288,6 +292,18 @@ export const bibliotheekData = {
           map: 'gesprekskaarten',
         },
         {
+          id: 'MV_20',
+          titel: 'Vier werkvormen met gesprekskaarten',
+          omschrijving:
+            'Vier begeleide werkvormen — één per fase (Zien, Voelen, Wegen, Handelen) — om gesprekskaarten methodisch in te zetten in groepen van 4–8 deelnemers.',
+          themas: ['Gesprekskaarten', 'Zien', 'Voelen', 'Wegen', 'Handelen'],
+          niveau: 'getest',
+          bestand_nl: 'MV_20_VierWerkvormen_NL.docx',
+          bestand_en: 'MV_20_FourWorkForms_EN.docx',
+          map: 'gesprekskaarten',
+          bron: materiaalBron.MV_20,
+        },
+        {
           id: 'MAPS_01', titel: 'MAPS Trilogie',
           themas: ['Morele scenario\'s', 'Keuzes', 'Voorbereiding'],
           niveau: 'getest',
@@ -393,6 +409,18 @@ export const bibliotheekData = {
       intro: 'Knowing what is right is not enough. Moral craftsmanship requires the courage to act — even when it is uncomfortable, even when you stand alone. The tools for Acting help you take that step.',
       materialen: [
         { id: 'MM_01', titel: 'Moral Courage', themas: ['Courage', 'Taking a stand', 'Moral action'], niveau: 'getest', bestand_nl: 'GK_MM_Teaser_NL.docx', bestand_en: 'GK_MM_Teaser_EN.pdf', map: 'gesprekskaarten' },
+        {
+          id: 'MV_20',
+          titel: 'Four work forms with conversation cards',
+          omschrijving:
+            'Four guided work forms — one per phase (Seeing, Feeling, Weighing, Acting) — for using conversation cards methodically in groups of 4–8 participants.',
+          themas: ['Conversation cards', 'Seeing', 'Feeling', 'Weighing', 'Acting'],
+          niveau: 'getest',
+          bestand_nl: 'MV_20_VierWerkvormen_NL.docx',
+          bestand_en: 'MV_20_FourWorkForms_EN.docx',
+          map: 'gesprekskaarten',
+          bron: materiaalBron.MV_20,
+        },
         { id: 'MAPS_01', titel: 'MAPS Trilogy', themas: ['Moral scenarios', 'Choices', 'Preparation'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
       ],
     },

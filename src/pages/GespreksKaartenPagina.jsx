@@ -10,6 +10,7 @@ import {
   getFilterOptions,
   localizeCards,
 } from '../data/gesprekskaarten'
+import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -49,6 +50,9 @@ const pageContent = {
         'Basis voor een gestructureerd moreel beraad',
       ],
       niveaus: 'De kaarten zijn geordend in complexiteitsniveaus — van toegankelijke alledaagse dilemma\'s tot systemische situaties waarbij hiërarchie, wetgeving en ethiek tegelijk in het geding zijn.',
+      werkbladTitel: 'Vier werkvormen met gesprekskaarten',
+      werkbladTekst: 'Begeleidingswerkblad met vier werkvormen — één per fase (Zien, Voelen, Wegen, Handelen) — voor groepen van 4–8 deelnemers.',
+      werkbladDownload: 'Download werkblad (.docx)',
     },
     preview: {
       titel: 'Beschikbare kaarten',
@@ -98,6 +102,9 @@ const pageContent = {
         'The basis for a structured moral deliberation',
       ],
       niveaus: 'The cards are organised by complexity — from accessible, everyday dilemmas to systemic situations where hierarchy, regulation, and ethics are all in tension at once.',
+      werkbladTitel: 'Four work forms with conversation cards',
+      werkbladTekst: 'Facilitation worksheet with four work forms — one per phase (Seeing, Feeling, Weighing, Acting) — for groups of 4–8 participants.',
+      werkbladDownload: 'Download worksheet (.docx)',
     },
     preview: {
       titel: 'Available cards',
@@ -151,6 +158,7 @@ export default function GespreksKaartenPagina() {
     filename: TEASER_DOWNLOADS[taal].filename,
     label: t.gesprekskaart.downloadTeaserSet,
   }
+  const werkbladDownload = WORK_FORMS_DOWNLOADS[taal]
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
@@ -343,10 +351,55 @@ export default function GespreksKaartenPagina() {
 
           <motion.p
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}
-            style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--tekst-secundair, #5f5e5a)', fontStyle: 'italic' }}
+            style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--tekst-secundair, #5f5e5a)', fontStyle: 'italic', marginBottom: '1.75rem' }}
           >
             {copy.hoe.niveaus}
           </motion.p>
+
+          <motion.div
+            variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={4}
+            style={{
+              padding: '1.25rem 1.5rem',
+              borderRadius: '12px',
+              border: '1px solid var(--rand, #d8d3c9)',
+              backgroundColor: 'var(--surface, #fdfcfa)',
+            }}
+          >
+            <h3 style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.5rem',
+              color: '#534ab7',
+            }}>
+              {copy.hoe.werkbladTitel}
+            </h3>
+            <p style={{
+              fontFamily: 'DM Sans, sans-serif',
+              fontSize: '0.95rem',
+              lineHeight: 1.7,
+              color: 'var(--tekst-secundair, #5f5e5a)',
+              marginBottom: '1rem',
+            }}>
+              {copy.hoe.werkbladTekst}
+            </p>
+            <a
+              href={werkbladDownload.href}
+              download={werkbladDownload.filename}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                fontFamily: 'DM Sans, sans-serif',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                color: '#0f6e56',
+                textDecoration: 'none',
+              }}
+            >
+              {copy.hoe.werkbladDownload}
+            </a>
+          </motion.div>
         </div>
       </section>
       </details>

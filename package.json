@@ -15,7 +15,8 @@
     "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py",
     "cards:export-dl-compleet-a5-docx": "python scripts/export-dl-compleet-a5-docx.py",
     "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py",
-    "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py"
+    "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py",
+    "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",
