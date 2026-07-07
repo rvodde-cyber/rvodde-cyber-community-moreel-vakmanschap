@@ -9,6 +9,7 @@ import TaalRouteSync from "./components/TaalRouteSync";
 import TaalSchakelaar from "./components/TaalSchakelaar";
 
 import { TaalProvider, useTaal } from "./context/TaalContext";
+import { usesEnglishRoutes } from "./data/vertalingen";
 
 import AanbodPagina from "./pages/AanbodPagina";
 
@@ -77,9 +78,9 @@ function Navigatie() {
 
   const [scrolled, setScrolled] = useState(false);
 
-  const items = navItems[taal];
+  const items = navItems[taal] ?? navItems.en;
 
-  const homeHref = taal === "nl" ? "/welkom" : "/welcome";
+  const homeHref = usesEnglishRoutes(taal) ? "/welcome" : "/welkom";
 
 
 

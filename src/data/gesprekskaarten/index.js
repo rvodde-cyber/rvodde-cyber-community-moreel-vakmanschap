@@ -5,11 +5,12 @@ import {
   MOEILIJKHEID_MAX,
   TAALNIVEAUS,
   TEASER_SET,
-  STANDARD_VRAGEN,
   getCategorieKleur,
   getCategorieKleurLicht,
   getComplexityKey,
 } from "./constants.js";
+import { getGesprekskaartStrings } from "./i18n.js";
+import { getCardContentLang } from "../vertalingen.js";
 
 export { CATEGORIE_SLUGS, MOEILIJKHEID_MIN, MOEILIJKHEID_MAX, TAALNIVEAUS, TEASER_SET };
 
@@ -29,8 +30,9 @@ export async function loadCardById(id) {
 }
 
 export function localizeCard(card, taal) {
-  const content = card[taal] ?? card.nl;
-  const vragen = STANDARD_VRAGEN[taal] ?? STANDARD_VRAGEN.nl;
+  const contentLang = getCardContentLang(taal);
+  const content = card[contentLang] ?? card.nl ?? card.en;
+  const gk = getGesprekskaartStrings(taal);
 
   const kleur = getCategorieKleur(card.categorie);
 
@@ -45,13 +47,13 @@ export function localizeCard(card, taal) {
     stap: card.stap,
     titel: content.titel,
     verhaal: content.verhaal,
-    vraag1: content.vraag1 ?? vragen.vraag1,
-    vraag2: content.vraag2 ?? vragen.vraag2,
+    vraag1: content.vraag1 ?? gk.vraag1,
+    vraag2: content.vraag2 ?? gk.vraag2,
     vraag: content.titel,
     afbeelding: card.assets?.afbeelding ?? null,
     fireflyPrompt: card.assets?.fireflyPrompt ?? null,
-    pdfHref: card.assets?.[taal === "nl" ? "pdfNl" : "pdfEn"] ?? null,
-    woorden: card.meta?.[taal === "nl" ? "woordenNl" : "woordenEn"] ?? null,
+    pdfHref: card.assets?.[contentLang === "nl" ? "pdfNl" : "pdfEn"] ?? null,
+    woorden: card.meta?.[contentLang === "nl" ? "woordenNl" : "woordenEn"] ?? null,
     kleur,
     kleurLicht: getCategorieKleurLicht(kleur),
   };

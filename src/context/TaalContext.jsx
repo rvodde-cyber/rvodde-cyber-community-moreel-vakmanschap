@@ -1,23 +1,32 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { vertalingen } from '../data/vertalingen';
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import {
+  SITE_TAAL_CODES,
+  getVertalingenForLocale,
+} from "../data/vertalingen";
 
 const TaalContext = createContext();
-const TAAL_STORAGE_KEY = 'cmv-taal';
+const TAAL_STORAGE_KEY = "cmv-taal";
 
 function leesOpgeslagenTaal() {
   try {
     const opgeslagen = localStorage.getItem(TAAL_STORAGE_KEY);
-    if (opgeslagen === 'nl' || opgeslagen === 'en') return opgeslagen;
+    if (SITE_TAAL_CODES.includes(opgeslagen)) return opgeslagen;
   } catch {
     // localStorage niet beschikbaar (privacy-modus, etc.)
   }
-  return 'nl';
+  return "nl";
 }
 
 export function TaalProvider({ children }) {
-  const [taal, setTaal] = useState(leesOpgeslagenTaal);
-  const t = vertalingen[taal];
-  const wisselTaal = () => setTaal(taal === 'nl' ? 'en' : 'nl');
+  const [taal, setTaalState] = useState(leesOpgeslagenTaal);
+  const t = useMemo(() => getVertalingenForLocale(taal), [taal]);
+
+  const setTaal = (code) => {
+    if (SITE_TAAL_CODES.includes(code)) setTaalState(code);
+  };
+
+  /** @deprecated gebruik setTaal — behouden voor backwards compatibility */
+  const wisselTaal = () => setTaalState((prev) => (prev === "nl" ? "en" : "nl"));
 
   useEffect(() => {
     try {
@@ -28,7 +37,7 @@ export function TaalProvider({ children }) {
   }, [taal]);
 
   return (
-    <TaalContext.Provider value={{ taal, t, wisselTaal }}>
+    <TaalContext.Provider value={{ taal, t, setTaal, wisselTaal }}>
       {children}
     </TaalContext.Provider>
   );

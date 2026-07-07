@@ -1,6 +1,6 @@
-/** Gesprekskaart-strings — NL, EN, DE, SV, CS (Conversation Card Generator v3) */
+/** Gesprekskaart-strings — NL, EN, DE, SV, CS, DA (Conversation Card Generator v3) */
 
-export const GESPREKSKAART_TALEN = ["nl", "en", "de", "sv", "cs"];
+export const GESPREKSKAART_TALEN = ["nl", "en", "de", "sv", "cs", "da"];
 
 export const gesprekskaartI18n = {
   nl: {
@@ -87,6 +87,23 @@ export const gesprekskaartI18n = {
       'Model složitosti: Kim Meijer, „Impossible and Inevitable“ (Tilburg University)',
     vraag1: "Co byste udělali a proč?",
     vraag2: "Jaké hodnoty jsou zde v sázce?",
+  },
+  da: {
+    moeilijkheidLabel: "Kompleksitet",
+    complexiteitLabels: {
+      micro: "★☆☆ Mikro — personlig valg",
+      meso: "★★☆ Meso — organisatorisk dilemma",
+      macro: "★★★ Makro — systemisk dilemma",
+    },
+    complexiteitTooltips: {
+      micro: "Konflikt mellem to værdier på individniveau, konsekvenser umiddelbart synlige.",
+      meso: "Spænding mellem personlige værdier og organisationens regler, kultur eller interesser. Flere interessenter.",
+      macro: "Lovgivning, politik, kultur og menneskerettigheder krydser hinanden. Intet entydigt svar, konsekvenser usikre eller irreversible.",
+    },
+    complexiteitAttributie:
+      'Kompleksitetsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+    vraag1: "Hvad ville du gøre, og hvorfor?",
+    vraag2: "Hvilke værdier er på spil her?",
   },
 };
 

@@ -1,3 +1,6 @@
+import { getGesprekskaartStrings } from "./gesprekskaarten/i18n.js";
+import { gesprekskaartUiLocales } from "./gesprekskaartUiLocales.js";
+
 export const vertalingen = {
   nl: {
     meta: {
@@ -463,3 +466,50 @@ export const vertalingen = {
     },
   }
 };
+
+/** Ondersteunde sitetalen (HEROES: SV, CS, DA + NL/EN) */
+export const SITE_TALEN = [
+  { code: "nl", label: "NL" },
+  { code: "en", label: "EN" },
+  { code: "sv", label: "SV" },
+  { code: "cs", label: "CS" },
+  { code: "da", label: "DA" },
+];
+
+export const SITE_TAAL_CODES = SITE_TALEN.map((t) => t.code);
+
+function mergeGesprekskaartUi(taal, baseGk) {
+  const ui = gesprekskaartUiLocales[taal];
+  const gk = getGesprekskaartStrings(taal);
+  if (!ui) return baseGk;
+  return {
+    ...baseGk,
+    ...ui,
+    moeilijkheidLabel: gk.moeilijkheidLabel,
+    complexiteitLabels: gk.complexiteitLabels,
+    complexiteitTooltips: gk.complexiteitTooltips,
+    complexiteitAttributie: gk.complexiteitAttributie,
+  };
+}
+
+/** Volledige siteteksten; SV/CS/DA vallen terug op EN behalve gesprekskaart-UI */
+export function getVertalingenForLocale(taal) {
+  if (taal === "nl" || taal === "en") return vertalingen[taal];
+  if (gesprekskaartUiLocales[taal]) {
+    return {
+      ...vertalingen.en,
+      gesprekskaart: mergeGesprekskaartUi(taal, vertalingen.en.gesprekskaart),
+    };
+  }
+  return vertalingen.en;
+}
+
+/** Kaartverhalen: alleen NL/EN beschikbaar — overige talen → EN */
+export function getCardContentLang(taal) {
+  return taal === "nl" ? "nl" : "en";
+}
+
+/** Routetaal: NL-routes vs EN-routes */
+export function usesEnglishRoutes(taal) {
+  return taal !== "nl";
+}

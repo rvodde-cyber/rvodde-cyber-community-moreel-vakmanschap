@@ -11,6 +11,7 @@ import {
   localizeCards,
 } from '../data/gesprekskaarten'
 import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
+import { getCardContentLang, usesEnglishRoutes } from '../data/vertalingen'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -136,7 +137,8 @@ const fadeUp = {
 
 export default function GespreksKaartenPagina() {
   const { taal, t } = useTaal()
-  const copy = pageContent[taal]
+  const pageLang = taal === 'nl' ? 'nl' : 'en'
+  const copy = pageContent[pageLang]
   const stap4 = basisStappen[3]
   const [filters, setFilters] = useState(EMPTY_FILTERS)
   const allCards = getAllCards()
@@ -152,13 +154,13 @@ export default function GespreksKaartenPagina() {
       categorie: labels[card.categorieSlug] ?? card.categorieSlug,
     }))
   }, [filteredCards, taal, t.gesprekskaart.filters.categorieLabels])
-  const aanmeldenHref = taal === 'nl' ? '/aanmelden' : '/join'
+  const aanmeldenHref = usesEnglishRoutes(taal) ? '/join' : '/aanmelden'
   const teaserDownload = {
-    href: TEASER_DOWNLOADS[taal].href,
-    filename: TEASER_DOWNLOADS[taal].filename,
+    href: TEASER_DOWNLOADS[getCardContentLang(taal)].href,
+    filename: TEASER_DOWNLOADS[getCardContentLang(taal)].filename,
     label: t.gesprekskaart.downloadTeaserSet,
   }
-  const werkbladDownload = WORK_FORMS_DOWNLOADS[taal]
+  const werkbladDownload = WORK_FORMS_DOWNLOADS[getCardContentLang(taal)]
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
