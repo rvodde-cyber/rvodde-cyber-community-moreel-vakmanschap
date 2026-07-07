@@ -9,7 +9,9 @@
     "cards:normalize": "node scripts/normalize-gesprekskaarten.mjs",
     "cards:import-ethos": "node scripts/import-from-ethos.mjs",
     "cards:import-burgerschap": "node scripts/import-burgerschap-docx.mjs",
-    "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py"
+    "cards:import-dl-compleet-a5": "node scripts/import-dl-compleet-a5.mjs",
+    "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py",
+    "cards:export-dl-compleet-a5-docx": "python scripts/export-dl-compleet-a5-docx.py"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

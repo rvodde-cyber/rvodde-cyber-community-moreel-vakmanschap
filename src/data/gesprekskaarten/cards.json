@@ -988,5 +988,379 @@
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "DAILY LIFE"
     }
+  },
+  {
+    "id": "GK_DL_01",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Hulp",
+      "verhaal": "De trein schokt, een doffe dreun. Een meisje, amper achttien, ligt uitgestrekt op de koude vloer. Rillend, tandenklapperend. De conducteur alarmeert hulp, maar haar hoofd bonkt tegen het ijskoude staal. Jouw blik valt op de zachte, dierbare sjaal in je tas. Aarzeling. Diep vanbinnen weet je wat je moet doen. Je vingers tasten naar de zachte stof. Maar dan, die rillingen. Die klapperende tanden. Het dilemma snijdt door je heen: geven, of vasthouden?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Help",
+      "verhaal": "The train jolts — a dull thud. A girl, barely eighteen, lies stretched out on the cold floor. Shivering, teeth chattering. The conductor calls for help, but her head keeps knocking against the icy steel. Your eyes fall on the soft, cherished scarf in your bag. Hesitation. Deep down you know what you should do. Your fingers reach for the soft fabric. But then — those shivers. Those chattering teeth. The dilemma cuts through you: give it away, or hold on to it?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 73,
+      "woordenEn": 83,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "GK_DL_02",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Vriend rijdt onder invloed van alcohol",
+      "verhaal": "Sophie ziet met lede ogen hoe Tom, haar vriend, na een avondje drinken steevast achter het stuur kruipt. Angst knaagt aan haar: de risico's zijn enorm. Tom, maar ook anderen, lopen gevaar. Ze wil hem wakker schudden, maar vreest zijn reactie. Sophie worstelt met de afweging: Tom's veiligheid versus hun relatie.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Friend drives under the influence of alcohol",
+      "verhaal": "Sophie watches with dismay as Tom, her friend, climbs behind the wheel after an evening of drinking — as he always does. Fear gnaws at her: the risks are enormous. Tom, but also others, are in danger. She wants to shake him awake, but fears his reaction. Sophie struggles with the trade-off: Tom's safety versus their relationship.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 51,
+      "woordenEn": 57,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_DL_03",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Buurman dumpt afval in het park",
+      "verhaal": "David ziet met groeiende ergernis hoe meneer Bakker, zijn buurman, het park als vuilstortplaats gebruikt. Het ooit zo groene park verandert in een onsmakelijke plek, vol stinkend afval en ongedierte. De buurt morrelt, kinderen mijden de plek. David's geweten knaagt. Hij wil actie, maar de angst voor een confrontatie met meneer Bakker houdt hem tegen.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Neighbour dumps rubbish in the park",
+      "verhaal": "David watches with growing irritation as Mr Bakker, his neighbour, uses the park as a dump. The once green park turns into an unsightly place, full of stinking rubbish and pests. The neighbourhood grumbles; children avoid the spot. David's conscience gnaws at him. He wants to act, but fear of a confrontation with Mr Bakker holds him back.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 55,
+      "woordenEn": 58,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_DL_04",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Vriend pleegt winkeldiefstal",
+      "verhaal": "Delano ziet hoe Mark, zijn vriend, stelselmatig winkels berooft. Angst bekruipt hem: arrestatie, een strafblad, de gevolgen zijn enorm. Maar de vriendschap... die weegt ook zwaar. Loyaliteit versus geweten, een pijnlijke tweestrijd. Hoe bereikt hij Mark zonder hem te verliezen? Delano zoekt wanhopig naar een uitweg, een manier om Mark te redden van zelfdestructie, zonder hun vriendschap te gronde te richten.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Friend shoplifts",
+      "verhaal": "Delano sees how Mark, his friend, systematically robs shops. Fear grips him: arrest, a criminal record — the consequences are enormous. But the friendship... that weighs heavily too. Loyalty versus conscience, a painful conflict. How can he reach Mark without losing him? Delano desperately searches for a way to save Mark from self-destruction without destroying their friendship.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 61,
+      "woordenEn": 57,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "GK_DL_05",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Buurvrouw laat kinderen vaak alleen thuis",
+      "verhaal": "Emma's hart bonkt in haar keel. Mevrouw Jansen laat haar jonge kinderen weer alleen thuis, de deur klettert dicht. Kleine stemmen huilen, roepen om mama. Emma's bezorgdheid groeit met de minuut. Deze kinderen zijn kwetsbaar, onbeschermd. Ze wil ingrijpen, maar de angst voor mevrouw Jansens reactie verlamt haar. Een dilemma dat schuurt, een beslissing die zwaar weegt.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Neighbour often leaves children home alone",
+      "verhaal": "Emma's heart pounds in her throat. Mrs Jansen has left her young children home alone again; the door slams shut. Small voices cry, calling for mum. Emma's concern grows by the minute. These children are vulnerable, unprotected. She wants to intervene, but fear of Mrs Jansen's reaction paralyses her. A dilemma that chafes, a decision that weighs heavily.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 57,
+      "woordenEn": 58,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_DL_06",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Vriend rijdt te hard en overtreedt verkeersregels",
+      "verhaal": "Lisa maakt zich zorgen over Mark, haar vriend, die regelmatig te hard rijdt. Ze ziet hoe hij verkeersregels negeert en vreest voor ongelukken. Lisa voelt zich verantwoordelijk, maar durft Mark niet direct aan te spreken uit angst voor zijn reactie. Lisa wil dat Mark inziet hoe gevaarlijk zijn rijgedrag is, zonder hun relatie te schaden.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Friend drives too fast and breaks traffic rules",
+      "verhaal": "Lisa worries about Mark, her friend, who regularly drives too fast. She sees how he ignores traffic rules and fears accidents. Lisa feels responsible, but does not dare to confront Mark directly for fear of his reaction. Lisa wants Mark to see how dangerous his driving is, without damaging their relationship.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 55,
+      "woordenEn": 51,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_DL_07",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De gevonden portemonnee",
+      "verhaal": "Op een verlaten bankje ligt een zware, leren portemonnee. Geld en een identiteitskaart staren je aan. Niemand in de buurt, alleen jij. Verleidingen schieten door je hoofd: nieuwe schoenen, openstaande rekeningen. Maar dan denk je aan de mogelijke eigenaar: een student, een moeder, een onbekende die wanhopig zoekt.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The found wallet",
+      "verhaal": "On a deserted bench lies a heavy leather wallet. Money and an ID card stare back at you. Nobody nearby — only you. Temptations shoot through your head: new shoes, unpaid bills. But then you think of the possible owner: a student, a mother, a stranger searching desperately.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 48,
+      "woordenEn": 48,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "GK_DL_08",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De roddelende vriend",
+      "verhaal": "De muziek beukt, lichten flitsen, en dan hoor je het: je beste vriend verspreidt leugens over jullie vriendin. Pure roddel, reputatievernietigend. Je bloed kookt, je wilt hem stoppen. Maar hij is je beste vriend, al jaren. Hem afvallen voor de hele groep? De spanning is enorm. Wat doe je?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The gossiping friend",
+      "verhaal": "The music blares, lights flash, and then you hear it: your best friend is spreading lies about your mutual friend. Pure gossip, reputation-destroying. Your blood boils; you want to stop him. But he is your best friend, for years. Call him out in front of the whole group? The tension is enormous. What do you do?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 49,
+      "woordenEn": 56,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_DL_09",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het geleende geld",
+      "verhaal": "Je was bijna klaar, maar onverwachte rekeningen gooiden roet in het eten. Nu zit je in de penarie. Je vriend, die je met een glimlach hielp, heeft het geld zelf hard nodig. Elke keer dat zijn naam op je scherm verschijnt, voel je schaamte. Hoe leg je uit dat je je belofte niet kunt nakomen? De spanning tussen vriendschap en financiële problemen is voelbaar.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The borrowed money",
+      "verhaal": "You were almost there, but unexpected bills threw a spanner in the works. Now you are in trouble. Your friend, who helped you with a smile, needs the money back himself. Every time his name appears on your screen, you feel shame. How do you explain that you cannot keep your promise? The tension between friendship and financial problems is palpable.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 64,
+      "woordenEn": 61,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "GK_DL_10",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De gemanipuleerde online beoordeling",
+      "verhaal": "De nieuwe koffiezaak pronkt met verdacht perfecte reviews. Vijf sterren, jubelende reacties, allemaal in een paar dagen. Veel reviewers hebben slechts één review geschreven, die van de koffiezaak. Het is duidelijk nep, een oneerlijke praktijk. Moet je dit aankaarten? Het is niet jouw zaak, maar het schaadt wel de eerlijke concurrentie en misleidt consumenten. Laat je het gaan, of neem je actie? Wat is de juiste keuze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The manipulated online review",
+      "verhaal": "The new coffee shop displays suspiciously perfect reviews. Five stars, cheering reactions — all within a few days. Many reviewers have written only one review: that of the coffee shop. It is clearly fake, an unfair practice. Should you raise it? It is not your business, but it harms fair competition and misleads consumers. Do you let it go, or take action? What is the right choice?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 67,
+      "woordenEn": 67,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "GK_DL_11",
+    "set": "dl-compleet-a5",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Buurman mishandelt zijn vrouw",
+      "verhaal": "Emma is getuige van huiselijk geweld bij haar buurvrouw, mevrouw Janssen. Meneer Janssen mishandelt haar regelmatig, wat Emma grote zorgen baart. Ze hoort geschreeuw en ziet blauwe plekken. Emma worstelt met haar geweten: ze wil mevrouw Janssen helpen, maar is bang voor de reactie van meneer Janssen. Emma zoekt naar een veilige manier om mevrouw Janssen te helpen.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "Neighbour abuses his wife",
+      "verhaal": "Emma witnesses domestic violence at her neighbour Mrs Janssen's home. Mr Janssen regularly abuses her, which deeply worries Emma. She hears shouting and sees bruises. Emma struggles with her conscience: she wants to help Mrs Janssen, but is afraid of Mr Janssen's reaction. Emma searches for a safe way to help Mrs Janssen.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 58,
+      "woordenEn": 53,
+      "bron": "DL COMPLEET A5.docx",
+      "categorieEn": "DAILY LIFE"
+    },
+    "moeilijkheid": 3
   }
 ]
