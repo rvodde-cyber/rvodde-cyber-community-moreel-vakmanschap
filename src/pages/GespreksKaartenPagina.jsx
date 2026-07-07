@@ -11,7 +11,7 @@ import {
   localizeCards,
 } from '../data/gesprekskaarten'
 import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
-import { getCardContentLang, usesEnglishRoutes } from '../data/vertalingen'
+import { getCardContentLang, getPageContentLang, usesEnglishRoutes } from '../data/vertalingen'
 import { useTaal } from '../context/TaalContext'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -137,7 +137,7 @@ const fadeUp = {
 
 export default function GespreksKaartenPagina() {
   const { taal, t } = useTaal()
-  const pageLang = taal === 'nl' ? 'nl' : 'en'
+  const pageLang = getPageContentLang(taal)
   const copy = pageContent[pageLang]
   const stap4 = basisStappen[3]
   const [filters, setFilters] = useState(EMPTY_FILTERS)

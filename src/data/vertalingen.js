@@ -504,9 +504,14 @@ export function getVertalingenForLocale(taal) {
   return vertalingen.en;
 }
 
+/** Pagina-inhoud (welkom, bibliotheek, …): alleen NL/EN — SV/CS/DA → EN */
+export function getPageContentLang(taal) {
+  return taal === "nl" ? "nl" : "en";
+}
+
 /** Kaartverhalen: alleen NL/EN beschikbaar — overige talen → EN */
 export function getCardContentLang(taal) {
-  return taal === "nl" ? "nl" : "en";
+  return getPageContentLang(taal);
 }
 
 /** Routetaal: NL-routes vs EN-routes */

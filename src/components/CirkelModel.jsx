@@ -5,6 +5,7 @@ import ModelWheel from "./ModelWheel";
 import StapKaart from "./StapKaart";
 import { useTaal } from "../context/TaalContext";
 import { stappen as basisStappen } from "../data/stappen";
+import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
 
 const stapBibliotheekSlug = {
   nl: { 1: "zien", 2: "voelen", 3: "wegen", 4: "handelen", 5: "volhouden" },
@@ -28,7 +29,9 @@ export default function CirkelModel() {
   }));
 
   const activeStep = stappen.find((stap) => stap.nummer === activeStepNumber) || stappen[0];
-  const kern = kernLines[taal];
+  const pageLang = getPageContentLang(taal);
+  const enRoutes = usesEnglishRoutes(taal);
+  const kern = kernLines[pageLang];
 
   return (
     <section id="model" className="bg-achtergrond py-20 md:py-28">
@@ -92,14 +95,14 @@ export default function CirkelModel() {
               {activeStepNumber === stap.nummer && (
                 <Link
                   to={
-                    taal === "nl"
-                      ? `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`
-                      : `/library/${stapBibliotheekSlug.en[stap.nummer]}`
+                    enRoutes
+                      ? `/library/${stapBibliotheekSlug.en[stap.nummer]}`
+                      : `/bibliotheek/${stapBibliotheekSlug.nl[stap.nummer]}`
                   }
                   className="mt-4 inline-flex px-2 text-sm font-semibold"
                   style={{ color: stap.kleur }}
                 >
-                  {taal === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
+                  {pageLang === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
                 </Link>
               )}
             </div>

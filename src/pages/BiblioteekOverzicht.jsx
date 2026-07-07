@@ -3,6 +3,7 @@ import { Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
+import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
 
 const uiTekst = {
   nl: {
@@ -37,9 +38,9 @@ const stapSlug = {
   5: "volhouden",
 };
 
-function getStapRouteSlug(stapItem, taal) {
+function getStapRouteSlug(stapItem, pageLang) {
   if (stapItem.stapSlug) {
-    return taal === "nl" ? stapItem.stapSlug.nl : stapItem.stapSlug.en;
+    return pageLang === "nl" ? stapItem.stapSlug.nl : stapItem.stapSlug.en;
   }
   return stapSlug[stapItem.stap];
 }
@@ -65,13 +66,14 @@ function handleImageError(event, kleur) {
 
 export default function BiblioteekOverzicht() {
   const { taal } = useTaal();
-  const ui = uiTekst[taal];
-  const data = bibliotheekData[taal];
+  const pageLang = getPageContentLang(taal);
+  const ui = uiTekst[pageLang];
+  const data = bibliotheekData[pageLang];
   const navigate = useNavigate();
 
   const handleStapKlik = (stapItem) => {
-    const slug = getStapRouteSlug(stapItem, taal);
-    const route = taal === "nl" ? `/bibliotheek/${slug}` : `/library/${slug}`;
+    const slug = getStapRouteSlug(stapItem, pageLang);
+    const route = usesEnglishRoutes(taal) ? `/library/${slug}` : `/bibliotheek/${slug}`;
     navigate(route);
   };
 

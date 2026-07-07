@@ -2,6 +2,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData, niveauLabels, statusLabels } from "../data/bibliotheekData";
+import { getPageContentLang, usesEnglishRoutes } from "../data/vertalingen";
 
 const stapSlugNaarNummer = {
   zien: 1,
@@ -111,10 +112,10 @@ function handleImageError(event, kleur) {
   event.currentTarget.parentElement.style.backgroundColor = kleur;
 }
 
-function bronTekst(bron, taal) {
+function bronTekst(bron, pageLang) {
   if (!bron) return null;
   if (typeof bron === "string") return bron;
-  return bron[taal];
+  return bron[pageLang] ?? bron.en;
 }
 
 function downloadUrl(map, bestand) {
@@ -172,20 +173,21 @@ export default function StapPagina() {
   const { stap } = useParams();
   const { taal } = useTaal();
   const navigate = useNavigate();
-  const ui = uiTekst[taal];
-  const labels = niveauLabels[taal];
-  const status = statusLabels[taal];
+  const pageLang = getPageContentLang(taal);
+  const enRoutes = usesEnglishRoutes(taal);
+  const ui = uiTekst[pageLang];
+  const labels = niveauLabels[pageLang];
+  const status = statusLabels[pageLang];
 
   const stapNummer = stapSlugNaarNummer[stap];
-  const data = bibliotheekData[taal];
+  const data = bibliotheekData[pageLang];
   const stapData = data.find((item) => item.stap === stapNummer);
   const afbeeldingSlug = slugNaarAfbeelding[stap] || stap;
   const combineer = typeof stapNummer === "number" ? combineerKoppelingen[stapNummer] : null;
-  const combineerHref =
-    taal === "nl"
-      ? `/bibliotheek/${combineer?.volgendeNl}`
-      : `/library/${combineer?.volgendeEn}`;
-  const aanmeldenHref = taal === "nl" ? "/aanmelden" : "/join";
+  const combineerHref = enRoutes
+    ? `/library/${combineer?.volgendeEn}`
+    : `/bibliotheek/${combineer?.volgendeNl}`;
+  const aanmeldenHref = enRoutes ? "/join" : "/aanmelden";
 
   if (!stapData) {
     return (
@@ -195,7 +197,7 @@ export default function StapPagina() {
     );
   }
 
-  const terugRoute = taal === "nl" ? "/bibliotheek" : "/library";
+  const terugRoute = enRoutes ? "/library" : "/bibliotheek";
 
   return (
     <main style={{ backgroundColor: "var(--achtergrond, #fafaf8)", minHeight: "100vh" }}>
@@ -315,7 +317,7 @@ export default function StapPagina() {
                 e.currentTarget.style.color = stapData.kleur;
               }}
             >
-              {taal === "nl" ? combineer.nlLabel : combineer.enLabel}
+              {pageLang === "nl" ? combineer.nlLabel : combineer.enLabel}
             </Link>
           </motion.div>
         )}
@@ -458,7 +460,7 @@ export default function StapPagina() {
                       disabledTitle={ui.binnenkort}
                     />
                   </div>
-                  {bronTekst(mat.bron, taal) && (
+                  {bronTekst(mat.bron, pageLang) && (
                     <p
                       style={{
                         fontSize: "0.75rem",
@@ -468,7 +470,7 @@ export default function StapPagina() {
                         lineHeight: 1.6,
                       }}
                     >
-                      {ui.bronLabel} {bronTekst(mat.bron, taal)}
+                      {ui.bronLabel} {bronTekst(mat.bron, pageLang)}
                     </p>
                   )}
                 </>
