@@ -88,6 +88,17 @@ export const vertalingen = {
       teaserBadge: 'Voorbeeld',
       reflectieLabel: 'Reflectie',
       moeilijkheidLabel: 'Complexiteit',
+      complexiteitLabels: {
+        micro: '★☆☆ Micro — persoonlijke keuze',
+        meso: '★★☆ Meso — organisatorisch dilemma',
+        macro: '★★★ Macro — systemisch dilemma',
+      },
+      complexiteitTooltips: {
+        micro: 'Conflict tussen twee waarden op individueel niveau, gevolgen direct zichtbaar.',
+        meso: 'Spanning tussen persoonlijke waarden en de regels, cultuur of belangen van een organisatie. Meerdere stakeholders.',
+        macro: 'Wetgeving, politiek, cultuur en mensenrechten kruisen elkaar. Geen eenduidig antwoord, gevolgen onzeker of onomkeerbaar.',
+      },
+      complexiteitAttributie: 'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
       taalniveauLabel: 'Taalniveau',
       woordenLabel: '{count} woorden',
       filters: {
@@ -307,6 +318,17 @@ export const vertalingen = {
       teaserBadge: 'Sample',
       reflectieLabel: 'Reflection',
       moeilijkheidLabel: 'Complexity',
+      complexiteitLabels: {
+        micro: '★☆☆ Micro — direct, personal choice',
+        meso: '★★☆ Meso — organisational dilemma',
+        macro: '★★★ Macro — systemic dilemma',
+      },
+      complexiteitTooltips: {
+        micro: 'Conflict between two values at individual level, consequences immediately visible.',
+        meso: 'Tension between personal values and the rules, culture or interests of an organisation. Multiple stakeholders.',
+        macro: 'Legislation, politics, culture and human rights intersect. No clear answer, consequences uncertain or irreversible.',
+      },
+      complexiteitAttributie: 'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
       taalniveauLabel: 'Language level',
       woordenLabel: '{count} words',
       filters: {

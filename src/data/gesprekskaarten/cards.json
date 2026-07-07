@@ -5,6 +5,7 @@
     "stap": 4,
     "categorie": "dagelijks-leven",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -36,6 +37,7 @@
     "stap": 4,
     "categorie": "dagelijks-leven",
     "moeilijkheid": 3,
+    "complexiteit": "macro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -67,6 +69,7 @@
     "stap": 4,
     "categorie": "dagelijks-leven",
     "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -98,6 +101,7 @@
     "stap": 4,
     "categorie": "werk",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -129,6 +133,7 @@
     "stap": 4,
     "categorie": "werk",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -160,6 +165,7 @@
     "stap": 4,
     "categorie": "werk",
     "moeilijkheid": 3,
+    "complexiteit": "macro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -191,6 +197,7 @@
     "stap": 4,
     "categorie": "duurzaamheid",
     "moeilijkheid": 3,
+    "complexiteit": "macro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -222,6 +229,7 @@
     "stap": 4,
     "categorie": "duurzaamheid",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -253,6 +261,7 @@
     "stap": 4,
     "categorie": "duurzaamheid",
     "moeilijkheid": 3,
+    "complexiteit": "macro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -284,6 +293,7 @@
     "stap": 4,
     "categorie": "diversiteit-inclusie",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -315,6 +325,7 @@
     "stap": 4,
     "categorie": "diversiteit-inclusie",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -346,6 +357,7 @@
     "stap": 4,
     "categorie": "diversiteit-inclusie",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -377,6 +389,7 @@
     "stap": 4,
     "categorie": "social-media",
     "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -408,6 +421,7 @@
     "stap": 4,
     "categorie": "social-media",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -439,6 +453,7 @@
     "stap": 4,
     "categorie": "studentenleven",
     "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
@@ -462,6 +477,516 @@
     "meta": {
       "woordenNl": 86,
       "woordenEn": 87
+    }
+  },
+  {
+    "id": "GK_BG_01",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "werk",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De weggenomen kantoorspullen",
+      "verhaal": "Thomas ziet zijn collega Bas aan het einde van de dag een pak printerpapier en een nieuwe muis in zijn tas stoppen. Niemand anders let op. Bas werkt al twaalf jaar op de afdeling en geldt als onmisbaar; hij regelt altijd de roosters en springt bij wanneer iemand ziek is. Thomas twijfelt. Is dit diefstal, of gewoon een grijs gebied dat iedereen een beetje doet? Hij denkt aan de nieuwe collega die vorige maand werd aangesproken op een kapotte kopieerpas — een kleinigheid vergeleken met dit. Als hij het meldt, verstoort hij misschien de sfeer in het team voorgoed. Als hij zwijgt, voelt hij zich medeplichtig elke keer dat hij Bas ziet lachen bij het koffiezetapparaat. Meldt hij het bij zijn leidinggevende, spreekt hij Bas er zelf op aan, of doet hij niets?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The missing office supplies",
+      "verhaal": "Thomas sees his colleague Bas, at the end of the day, putting a pack of printer paper and a new mouse into his bag. Nobody else notices. Bas has worked in the department for twelve years and is considered indispensable; he always manages the rosters and covers when someone is sick. Thomas hesitates. Is this theft, or just a grey area everyone dabbles in? He thinks of the new colleague who was called out last month over a broken copy card — a small thing compared to this. If he reports it, he may ruin the team atmosphere for good. If he stays silent, he feels complicit every time he sees Bas laughing at the coffee machine. Does he tell his manager, speak to Bas directly, or do nothing?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 133,
+      "woordenEn": 129,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "WORK"
+    }
+  },
+  {
+    "id": "GK_BG_02",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De leugen voor de ouders",
+      "verhaal": "Sanne stapt net onder de douche als haar telefoon drie keer trilt. Haar beste vriendin Iris appt: \"Als mijn ouders bellen, ik was gister bij jou oké? Zeg maar dat we een film keken.\" Sanne weet niet waar Iris werkelijk was, alleen dat ze om twee uur 's nachts thuiskwam en er de hele ochtend stil over deed. Iris' ouders zijn streng; een leugen kan rust brengen, maar ook iets verbergen wat groter is dan een avondje uit. Over tien minuten belt Iris' moeder waarschijnlijk om te vragen of Sanne gezellig gefietst heeft naar huis. Sanne typt een antwoord, wist het weer, typt opnieuw. Vertelt ze de leugen voor haar vriendin, vraagt ze eerst door wat er precies gebeurd is, of laat ze Iris het zelf oplossen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The lie for the parents",
+      "verhaal": "Sanne has just stepped into the shower when her phone buzzes three times. Her best friend Iris texts: \"If my parents call, I was at yours last night, okay? Just say we watched a film.\" Sanne doesn't know where Iris really was, only that she came home at two in the morning and stayed quiet about it all morning. Iris's parents are strict; a lie might bring peace, but also hide something bigger than a night out. In ten minutes Iris's mother will probably call to ask if Sanne cycled home safely. Sanne types a reply, deletes it, types again. Does she tell the lie for her friend, ask first what really happened, or let Iris sort it out herself?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 127,
+      "woordenEn": 120,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DAILY LIFE"
+    }
+  },
+  {
+    "id": "GK_BG_03",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "werk",
+    "moeilijkheid": 2,
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Voor de goede sfeer",
+      "verhaal": "Het is vrijdagmiddag vijf uur en Youssef pakt net zijn jas als teamleider Marieke langsloopt. \"Zou je nog een uurtje kunnen blijven? De rapportage moet echt af, en het scheelt zo veel als we het nu afmaken in plaats van maandag.\" Ze glimlacht erbij: \"Gewoon voor de goede sfeer, hè, we doen het allemaal een keer.\" Youssef heeft dit kwartaal al negen keer onbetaald doorgewerkt. Zijn contract wordt over zes weken verlengd of niet, en Marieke zit in die beslissing. Zijn vriendin wacht al met het eten. Hij voelt de afweging tussen zijn eigen grenzen en het beeld dat hij achterlaat bij degene die over zijn toekomst beslist. Weigert hij deze keer, of blijft hij weer zitten om zijn baan niet in gevaar te brengen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "For the sake of team spirit",
+      "verhaal": "It's five o'clock on Friday afternoon and Youssef is grabbing his coat when team leader Marieke walks past. \"Could you stay another hour? The report really has to be done, and it helps so much if we finish it now instead of Monday.\" She smiles: \"Just for the good atmosphere, you know — we all do it sometimes.\" Youssef has already worked nine unpaid hours this quarter. His contract will be renewed or not in six weeks, and Marieke is part of that decision. His partner is already waiting with dinner. He feels the tension between his own boundaries and the impression he leaves with the person who decides his future. Does he refuse this time, or stay again so he doesn't put his job at risk?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 125,
+      "woordenEn": 127,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "WORK"
+    }
+  },
+  {
+    "id": "GK_BG_04",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "social-media",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De groepsapp",
+      "verhaal": "Om 23:40 uur licht Femkes telefoon op. In de klassengroepsapp verschijnen steeds meer berichten over Julian — screenshots van zijn slechte proefwerkcijfer, een bewerkte foto met een belachelijk onderschrift, tientallen lachende emoji's. Femke leest mee, typt niets. Ze kent Julian nauwelijks, maar ziet hoe drie klasgenoten, onder wie haar beste vriendin, actief meedoen. Als ze iets zegt, richt de aandacht zich misschien op haar. Als ze zwijgt, blijft het bericht staan tot morgenochtend, wanneer de hele klas het gezien heeft. Ze scrolt terug naar het eerste bericht en ziet dat niemand — geen leerkracht, geen ouder — dit gesprek kan zien. Grijpt Femke in, ook al kan ze daarmee zelf doelwit worden, of legt ze haar telefoon weg?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The group chat",
+      "verhaal": "At 11:40 p.m. Femke's phone lights up. More and more messages appear in the class group chat about Julian — screenshots of his poor test score, an edited photo with a ridiculous caption, dozens of laughing emojis. Femke reads along but says nothing. She barely knows Julian, but sees how three classmates, including her best friend, are actively joining in. If she speaks up, the attention may turn on her. If she stays silent, the message stays up until tomorrow morning, when the whole class will have seen it. She scrolls back to the first message and sees that nobody — no teacher, no parent — can see this conversation. Does Femke intervene, even if she becomes a target herself, or put her phone away?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 118,
+      "woordenEn": 125,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "SOCIAL MEDIA"
+    }
+  },
+  {
+    "id": "GK_BG_05",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De gevonden portemonnee",
+      "verhaal": "Tussen de fietsenstalling en de supermarkt ziet Daan iets bruins liggen. Een portemonnee. Hij raapt hem op: twee briefjes van honderd, wat kleingeld, en een pasje zonder naam of foto — alleen een klantnummer van een sportschool. Geen telefoonnummer, geen adres, niets waarmee hij de eigenaar kan bereiken. Daan staat er alleen bij, niemand kijkt mee. Hij heeft deze maand zelf krap gezeten na een onverwachte rekening. Het zou zo makkelijk zijn om het geld te houden en de portemonnee ergens neer te leggen alsof hij hem nooit vond. Maar ergens loopt iemand rond die net zijn geld kwijt is, misschien wel voor de huur. Daan kijkt om zich heen naar een politiebureau, een winkel, een brievenbus. Wat doet hij met de portemonnee, en waarom?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The found wallet",
+      "verhaal": "Between the bike rack and the supermarket Daan sees something brown on the ground. A wallet. He picks it up: two hundred-euro notes, some coins, and a card with no name or photo — only a gym membership number. No phone number, no address, nothing to reach the owner. Daan is alone; nobody is watching. Money has been tight for him this month after an unexpected bill. It would be so easy to keep the cash and leave the wallet somewhere as if he never found it. But somewhere someone is walking around who just lost their money, maybe even their rent. Daan looks around for a police station, a shop, a post box. What does he do with the wallet, and why?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 125,
+      "woordenEn": 123,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DAILY LIFE"
+    }
+  },
+  {
+    "id": "GK_BG_06",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "studentenleven",
+    "moeilijkheid": 2,
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De fout in het rapport",
+      "verhaal": "Lotte loopt stage bij een adviesbureau en heeft het eindrapport voor een grote klant net doorgenomen. Ze ziet een rekenfout in de kostenprognose — een fout die de klant honderdduizenden euro's te positief voorspiegelt. Haar begeleider, Rick, wuift het weg: \"Dat merkt niemand, en als we het nu aanpassen, missen we de deadline van morgen. We repareren het volgend kwartaal wel stilletjes.\" Lotte's eindbeoordeling hangt af van Ricks tevredenheid over haar functioneren de komende weken. Ze denkt aan de klant die morgen op basis van dit rapport een investeringsbeslissing neemt. Niemand anders bij het bureau heeft de fout gezien, en Rick beschouwt dit gesprek als afgesloten. Gaat Lotte mee in Ricks besluit, of vertelt ze het alsnog?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The error in the report",
+      "verhaal": "Lotte is interning at a consultancy and has just reviewed the final report for a major client. She spots a calculation error in the cost forecast — one that makes the client's situation look hundreds of thousands of euros better than it is. Her supervisor Rick dismisses it: \"Nobody will notice, and if we change it now we'll miss tomorrow's deadline. We'll fix it quietly next quarter.\" Lotte's final assessment depends on Rick's satisfaction with her performance in the coming weeks. She thinks of the client who will make an investment decision tomorrow based on this report. Nobody else at the firm has seen the error, and Rick considers the conversation closed. Does Lotte go along with Rick's decision, or speak up anyway?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 117,
+      "woordenEn": 123,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "STUDENT LIFE"
+    }
+  },
+  {
+    "id": "GK_BG_07",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "social-media",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De foto die rondgaat",
+      "verhaal": "In de vriendengroep-app verschijnt ineens een foto: een meisje van school, duidelijk niet wetend dat ze gefotografeerd werd, in een compromitterende situatie op een feestje. Kevin, die de foto deelde, schrijft erbij: \"Niet doorsturen hoor, dit blijft tussen ons.\" Binnen een minuut heeft Sami, die de foto ook zag, al drie schermafbeeldingen gemaakt. Hij kent het meisje niet persoonlijk, maar ziet hoe snel dit soort dingen normaal worden gevonden in de groep. Als hij hem stiekem doorstuurt, is hij zelf onderdeel van het probleem. Als hij Kevin erop aanspreekt, riskeert hij de sfeer in de groep waar hij al jaren bij hoort. Als hij het meldt bij school, weet iedereen straks dat hij het was. Wat doet Sami?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The photo going around",
+      "verhaal": "In the friends' group chat a photo suddenly appears: a girl from school, clearly unaware she was being photographed, in a compromising situation at a party. Kevin, who shared it, writes: \"Don't forward this, it stays between us.\" Within a minute Sami, who also saw the photo, has already taken three screenshots. He doesn't know the girl personally, but sees how quickly this kind of thing normally spreads in the group. If he forwards it secretly, he becomes part of the problem. If he confronts Kevin, he risks the atmosphere in the group he has belonged to for years. If he reports it to school, everyone will soon know it was him. What does Sami do?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 118,
+      "woordenEn": 116,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "SOCIAL MEDIA"
+    }
+  },
+  {
+    "id": "GK_BG_08",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "diversiteit-inclusie",
+    "moeilijkheid": 2,
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De klant aan de balie",
+      "verhaal": "Aisha werkt achter de balie van de bibliotheek wanneer een vaste bezoeker weigert door haar geholpen te worden. \"Ik wil iemand die hier normaal thuishoort,\" zegt hij hardop, wijzend naar haar hoofddoek. Haar collega Ben staat naast haar en hoort alles. De man komt wekelijks en doneert regelmatig aan de vriendenstichting van de bibliotheek — een belangrijke inkomstenbron. De leidinggevende is niet aanwezig. Aisha voelt haar wangen warm worden maar blijft glimlachen, zoals ze geleerd heeft te doen. Ben weet dat een confrontatie de man boos kan maken, met mogelijk gevolgen voor de donatie en de sfeer op de vloer. Grijpt Ben in, ook al kan dat een conflict opleveren, of laat hij Aisha dit alleen afhandelen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The customer at the desk",
+      "verhaal": "Aisha works at the library desk when a regular visitor refuses to be helped by her. \"I want someone who belongs here normally,\" he says loudly, pointing at her headscarf. Her colleague Ben is next to her and hears everything. The man comes weekly and donates regularly to the library's friends foundation — an important source of income. The manager is not present. Aisha feels her cheeks grow warm but keeps smiling, as she has learned to do. Ben knows a confrontation could anger the man, with possible consequences for the donation and the atmosphere on the floor. Does Ben step in, even if it leads to conflict, or leave Aisha to handle it alone?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 117,
+      "woordenEn": 115,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DIVERSITY & INCLUSION"
+    }
+  },
+  {
+    "id": "GK_BG_09",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "duurzaamheid",
+    "moeilijkheid": 3,
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De goedbetaalde bijbaan",
+      "verhaal": "Mila krijgt een berichtje: een modemerk waar ze eerder solliciteerde, biedt haar een bijbaan aan met een salaris dat twee keer zo hoog is als wat ze nu verdient bij de supermarkt. Ze weet uit een documentaire die ze vorig jaar zag dat dit merk kleding laat maken in fabrieken met slechte arbeidsomstandigheden en een enorme milieu-impact. Haar studieschuld loopt op en haar ouders kunnen niet bijspringen. Vrienden zeggen: \"Iedereen koopt daar toch, wat maakt jouw baantje nou uit.\" Het contract ligt klaar om te tekenen, de startdatum is over twee weken. Mila scrolt nog eens door haar documentaire-aantekeningen, dan naar haar bankrekening. Neemt ze de baan aan, of zoekt ze verder naar iets dat beter aansluit bij wat ze belangrijk vindt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The well-paid side job",
+      "verhaal": "Mila receives a message: a fashion brand she once applied to offers her a part-time job at twice what she earns at the supermarket. From a documentary she watched last year she knows this brand has clothes made in factories with poor working conditions and a huge environmental impact. Her student debt is rising and her parents can't help. Friends say: \"Everyone buys there anyway — what difference does your job make?\" The contract is ready to sign; the start date is in two weeks. Mila scrolls through her documentary notes again, then to her bank account. Does she take the job, or keep looking for something that better matches what she values?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 122,
+      "woordenEn": 113,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "SUSTAINABILITY"
+    }
+  },
+  {
+    "id": "GK_BG_10",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het antwoordblaadje",
+      "verhaal": "Tijdens het tussentijdse tentamen wiskunde ziet Noor, twee rijen verderop, hoe haar vriendin Elif een spiekbriefje uit haar mouw haalt. Ze kennen elkaar al sinds de brugklas; Elif heeft haar dit jaar geholpen toen Noor het zwaar had. De surveillant loopt net de andere kant op. Als Noor niets zegt, blijft het onopgemerkt en haalt Elif misschien net haar cijfer. Als ze het meldt, verliest Elif mogelijk het hele tentamen én het vertrouwen tussen hen. Als ze Elif er na afloop op aanspreekt, moet ze zelf ook iets doen met wat ze gezien heeft. Noor kijkt naar haar eigen antwoordblad, waar ze twee opgaven niet heeft afgemaakt terwijl de klok verder tikt. Meldt ze de fraude, ook al gaat het om haar vriendin?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The answer sheet",
+      "verhaal": "During the midterm maths exam Noor sees, two rows ahead, how her friend Elif pulls a cheat sheet from her sleeve. They have known each other since the first year of secondary school; Elif helped her this year when Noor was struggling. The invigilator has just walked the other way. If Noor says nothing, it goes unnoticed and Elif may just pass. If she reports it, Elif may lose the entire exam and their trust. If she speaks to Elif afterwards, she still has to act on what she saw. Noor looks at her own answer sheet, where she left two questions unfinished while the clock keeps ticking. Does she report the cheating, even though it's her friend?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 123,
+      "woordenEn": 118,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "EDUCATION"
+    }
+  },
+  {
+    "id": "GK_BG_11",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De review voor geld",
+      "verhaal": "Sven krijgt een privébericht van een webwinkel waar hij ooit een koptelefoon kocht: vijftig euro cadeaubon in ruil voor een \"eerlijke, positieve review van vijf sterren.\" De koptelefoon viel na drie weken uit elkaar en de klantenservice reageerde nooit op zijn mail. Vijftig euro is precies wat hij nodig heeft voor zijn energierekening deze maand. Niemand controleert of de review echt klopt met zijn ervaring; het systeem vertrouwt puur op zijn woord. Hij opent de reviewpagina en ziet honderden vijfsterrenreviews die er, nu hij beter kijkt, verdacht hetzelfde geformuleerd uitzien. De cadeaubon-code staat al klaar in zijn mail. Schrijft Sven de positieve review die niet klopt met zijn ervaring, of laat hij het geld liggen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The review for money",
+      "verhaal": "Sven receives a private message from a web shop where he once bought headphones: a fifty-euro gift voucher in exchange for an \"honest, positive five-star review.\" The headphones fell apart after three weeks and customer service never replied to his email. Fifty euros is exactly what he needs for his energy bill this month. Nobody checks whether the review matches his experience; the system relies purely on his word. He opens the review page and sees hundreds of five-star reviews that now, on closer look, seem suspiciously similar. The voucher code is already waiting in his inbox. Does Sven write the positive review that doesn't match his experience, or leave the money?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 112,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DAILY LIFE"
+    }
+  },
+  {
+    "id": "GK_BG_12",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "diversiteit-inclusie",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Maar het zijn maar grapjes",
+      "verhaal": "Aan de keukentafel van het studentenhuis maakt huisgenoot Ruben weer een grap — dit keer over Marokkaanse buren en \"wat je daar wel niet allemaal tegenkomt.\" De andere huisgenoten lachen mee, zoals altijd. Yara, die er als enige stil bij blijft, deelt dit huis al twee jaar met Ruben en moet nog een half jaar met hem door één huurcontract heen. Vorige week ging het over vrouwen op de fiets, de week ervoor over een collega met een handicap. Elke keer zegt iemand: \"Kom op, het zijn maar grapjes, niet zo serieus.\" Yara vraagt zich af of ze de enige is die zich hier ongemakkelijk bij voelt. Spreekt ze Ruben aan op wat hij zegt, of laat ze het gaan zoals de rest?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "But they're just jokes",
+      "verhaal": "At the student house kitchen table housemate Ruben makes another joke — this time about Moroccan neighbours and \"what you come across there.\" The other housemates laugh along, as always. Yara, the only one who stays quiet, has shared this house with Ruben for two years and still has six months left on the same lease. Last week it was about women on bikes, the week before about a colleague with a disability. Each time someone says: \"Come on, they're just jokes, don't be so serious.\" Yara wonders if she is the only one who feels uncomfortable. Does she call Ruben out on what he says, or let it go like the others?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 123,
+      "woordenEn": 113,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DIVERSITY & INCLUSION"
+    }
+  },
+  {
+    "id": "GK_BG_13",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "duurzaamheid",
+    "moeilijkheid": 3,
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De goedkope trui",
+      "verhaal": "In de winkel hangt een trui voor zes euro, in de uitverkoop nog goedkoper. Emma weet, na een schoolproject over de kledingindustrie, dat kleding in deze prijsklasse vaak wordt gemaakt in fabrieken waar ook kinderen werken — ze heeft de cijfers zelf opgezocht voor haar werkstuk. Haar eigen budget is krap; ze spaart voor een schoolreis en elke euro telt. De trui in haar handen is precies wat ze zocht, in de juiste maat en kleur, nergens anders voor deze prijs te vinden. Het kassapersoneel wacht, de rij achter haar wordt langer. Ze denkt aan het werkstuk dat ze zelf schreef en aan de schoolreis waarvoor ze spaart. Legt Emma de trui terug, of rekent ze hem toch af?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The cheap jumper",
+      "verhaal": "In the shop a jumper hangs for six euros, even cheaper in the sale. Emma knows, from a school project on the clothing industry, that clothes in this price range are often made in factories where children work too — she looked up the figures herself for her assignment. Her own budget is tight; she is saving for a school trip and every euro counts. The jumper in her hands is exactly what she wanted, the right size and colour, nowhere else at this price. The cashier waits; the queue behind her grows longer. She thinks of the project she wrote herself and of the school trip she is saving for. Does Emma put the jumper back, or pay for it anyway?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 119,
+      "woordenEn": 122,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "SUSTAINABILITY"
+    }
+  },
+  {
+    "id": "GK_BG_14",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "werk",
+    "moeilijkheid": 2,
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De vraag van de leidinggevende",
+      "verhaal": "Teamleider Iris vraagt Bram om in een klantpresentatie de resultaten van het project \"iets positiever te brengen dan ze eigenlijk zijn\" — niets liegen, gewoon \"de nadruk anders leggen.\" Wat ze vraagt is niet illegaal en gebeurt overal in de sector, zegt ze. Bram heeft de cijfers zelf verzameld en weet dat de klant een vervolgopdracht overweegt op basis van precies dit resultaat. Iris voert volgende maand zijn functioneringsgesprek en bepaalt of zijn tijdelijke contract wordt omgezet. Ze wacht niet op een lang antwoord; de presentatie moet morgenochtend klaar zijn. Bram opent het bestand en staart naar de grafiek die hij eerlijk heeft gemaakt. Doet hij wat Iris vraagt, of spreekt hij uit dat dit tegen zijn eigen waarden ingaat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The manager's request",
+      "verhaal": "Team leader Iris asks Bram to present the project results in the client meeting \"a bit more positively than they actually are\" — not lying, just \"shifting the emphasis.\" What she asks is not illegal and happens everywhere in the sector, she says. Bram collected the figures himself and knows the client is considering a follow-up contract based on exactly this outcome. Iris will hold his performance review next month and decide whether his temporary contract is made permanent. She is not waiting for a long answer; the presentation must be ready tomorrow morning. Bram opens the file and stares at the chart he made honestly. Does he do what Iris asks, or say that this goes against his own values?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 120,
+      "woordenEn": 121,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "WORK"
+    }
+  },
+  {
+    "id": "GK_BG_15",
+    "set": "burgerschap",
+    "stap": 1,
+    "categorie": "dagelijks-leven",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De dakloze op straat",
+      "verhaal": "Voor de supermarkt zit een man met een kartonnen bord: \"Elke euro helpt, dankjewel.\" Julia heeft net haar hele weekbudget uitgerekend voor de boodschappen die ze moet doen — precies genoeg, geen euro over. Ze kent het verhaal niet van de man: hoelang hij hier al zit, wat hij met het geld doet, of hij hulp zoekt. Vorige week las ze een artikel dat waarschuwde voor het geven van geld in plaats van eten. Ze heeft geen restje brood bij zich, geen extra pas voor een warme maaltijd, alleen haar portemonnee met precies genoeg voor haar eigen lijst. De rij bij de kassa wordt zichtbaar vanaf hier. Ze kan doorlopen, ze kan iets geven en zelf een product schrappen, of ze kan naar binnen gaan en iets voor hem kopen. Wat doet Julia, en waarom?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The homeless man on the street",
+      "verhaal": "In front of the supermarket a man sits with a cardboard sign: \"Every euro helps, thank you.\" Julia has just worked out her whole weekly budget for the shopping she needs to do — exactly enough, not a euro to spare. She doesn't know the man's story: how long he has been here, what he does with the money, or whether he seeks help. Last week she read an article warning against giving money instead of food. She has no leftover bread, no extra pass for a warm meal, only her wallet with exactly enough for her own list. The queue at the checkout is visible from here. She can walk on, give something and cut a product from her own list, or go inside and buy something for him. What does Julia do, and why?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "What values are at stake here?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 135,
+      "woordenEn": 136,
+      "bron": "gesprekskaarten-burgerschap.docx",
+      "categorieEn": "DAILY LIFE"
     }
   }
 ]

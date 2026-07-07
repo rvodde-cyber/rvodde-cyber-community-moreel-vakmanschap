@@ -20,6 +20,7 @@ const catalog = cards.map((card) => ({
   stap: card.stap,
   categorie: card.categorie,
   moeilijkheid: card.moeilijkheid,
+  complexiteit: card.complexiteit ?? (card.moeilijkheid === 1 ? "micro" : card.moeilijkheid === 3 ? "macro" : "meso"),
   taalniveau: card.taalniveau,
   status: card.status,
   titelNl: card.nl.titel,
@@ -27,6 +28,7 @@ const catalog = cards.map((card) => ({
   woordenNl: card.meta?.woordenNl ?? null,
   woordenEn: card.meta?.woordenEn ?? null,
   heeftAfbeelding: Boolean(card.assets?.afbeelding),
+  fireflyPrompt: card.assets?.fireflyPrompt ?? null,
 }));
 
 fs.mkdirSync(outDir, { recursive: true });

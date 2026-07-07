@@ -28,11 +28,11 @@ Je bent redacteur voor het platform Community Moreel Vakmanschap. Je verwerkt ge
 Kies precies één van:
 `dagelijks-leven` · `werk` · `duurzaamheid` · `diversiteit-inclusie` · `social-media` · `studentenleven` · `zorg` · `onderwijs` · `overheid`
 
-## Moeilijkheid (1–3 sterren)
+## Moeilijkheid (1–3 sterren) → complexiteit
 Beoordeel de **complexiteit van het dilemma**, niet de leesbaarheid:
-- **1** — herkenbaar, weinig stakeholders, duidelijke keuze
-- **2** — meerdere belangen, beroeps- of organisatiecontext
-- **3** — systeem/hiërarchie/wetgeving/meerdere waarden botsen hard
+- **1 / micro** — directe keuze tussen twee personen of waarden, gevolgen zichtbaar
+- **2 / meso** — regels, cultuur of meerdere stakeholders van een organisatie spelen mee
+- **3 / macro** — wetgeving, beleid, mensenrechten of sector-brede kwesties zonder duidelijke oplossing
 
 ## Modelstap (1–5)
 Welke stap van het Model Moreel Vakmanschap past het best?
@@ -43,16 +43,14 @@ Welke stap van het Model Moreel Vakmanschap past het best?
 `A2` · `B1` · `B2` · `C1` — beoordeel de **NL-tekst na redactie**.
 
 ## Firefly-prompt (Engels)
-- Photo / cinematic, **16:9**, photorealistic
-- **Geen tekst**, geen logo's, geen watermerk in beeld
-- Sfeer en **setting** van de casus — **niet** het dilemma letterlijk afbeelden
-- Liever geen herkenbare gezichten (silhouetten, van achteren, of lege scene mag)
-- Geen geweld expliciet; suggestie via sfeer is oké
-- Eén prompt van 1–3 zinnen, comma-separated keywords oké
+- Beschrijf: hoofdpersoon + emotionele staat, setting, lichtsfeer, vervaagde achtergrond
+- Sluit **altijd** af met deze vaste stijlzin (letterlijk):
+  `Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.`
+- Geen tekst, geen stockfoto-gevoel
 
 ## Outputformaat
 Lever **één markdown-tabel** met kolommen:
-| id | categorie | moeilijkheid | stap | taalniveau | titel_nl | verhaal_nl | woorden_nl | titel_en | verhaal_en | woorden_en | firefly_prompt | toelichting_metadata |
+| id | categorie | moeilijkheid | complexiteit | stap | taalniveau | titel_nl | verhaal_nl | woorden_nl | titel_en | verhaal_en | woorden_en | firefly_prompt | toelichting_metadata |
 
 - **toelichting_metadata**: 1 korte zin waarom categorie/sterren/stap (max. 20 woorden).
 - Daarna, per kaart, een **JSON-blok** klaar voor import (velden hieronder).
@@ -65,6 +63,7 @@ JSON-schema per kaart:
   "stap": 4,
   "categorie": "werk",
   "moeilijkheid": 2,
+  "complexiteit": "meso",
   "taalniveau": "B2",
   "status": "concept",
   "nl": { "titel": "...", "verhaal": "...", "vraag1": "Wat zou jij doen en waarom?", "vraag2": "Welke waarden zijn hier in het spel?" },

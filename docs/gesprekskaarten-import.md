@@ -15,7 +15,8 @@ Maak één **Google Sheet / Excel** met kolommen:
 | `titel_en` | The gossiping friend | Later vertalen |
 | `verhaal_en` | … | Max. 150 woorden |
 | `categorie` | dagelijks-leven | Zie lijst hieronder |
-| `moeilijkheid` | 1 / 2 / 3 | ★ = complexiteit casus |
+| `moeilijkheid` | 1 / 2 / 3 | ★ = complexiteit casus (1=micro, 2=meso, 3=macro) |
+| `complexiteit` | micro / meso / macro | Optioneel; wordt afgeleid uit `moeilijkheid` als leeg |
 | `taalniveau` | B1 / B2 / C1 | Leesniveau van de **casustekst** |
 | `stap` | 1–5 | Modelstap (Zien t/m Volhouden) |
 | `status` | concept / getest / aanbevolen | |
@@ -67,6 +68,7 @@ Elke kaart = één object in `src/data/gesprekskaarten/cards.json`:
   "stap": 4,
   "categorie": "werk",
   "moeilijkheid": 2,
+  "complexiteit": "meso",
   "taalniveau": "B2",
   "status": "getest",
   "nl": { "titel": "...", "verhaal": "...", "vraag1": "...", "vraag2": "..." },
@@ -83,9 +85,24 @@ Elke kaart = één object in `src/data/gesprekskaarten/cards.json`:
 
 Daarna:
 ```bash
-npm run cards:catalog   # public/data/gesprekskaarten/catalog.json
+npm run cards:normalize   # complexiteit ↔ moeilijkheid sync
+npm run cards:catalog     # public/data/gesprekskaarten/catalog.json
 npm run build
 ```
+
+### Ethos Studio → community
+
+Exporteer JSON uit Ethos Studio (één kaart of batch). Preview:
+```bash
+npm run cards:import-ethos -- --input ./ethos-export.json --id GK_042 --categorie werk --stap 4 --lang nl
+```
+
+Toevoegen aan `cards.json`:
+```bash
+npm run cards:import-ethos -- --input ./ethos-export.json --id GK_042 --categorie werk --append
+```
+
+Ethos-velden: `title`, `story`, `complexity` (micro/meso/macro), `image_prompt`, `values`, `facilitator_tip`. Firefly-prompt krijgt automatisch de vaste stijlzin uit de Conversation Card Generator-specificatie.
 
 ## 4. Hulp van AI (efficiënt)
 

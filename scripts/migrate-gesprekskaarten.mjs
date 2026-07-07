@@ -6,6 +6,11 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import {
+  normalizeCard,
+  wordCount,
+  MOEILIJKHEID_TO_COMPLEXITY,
+} from "./gesprekskaarten-shared.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -23,26 +28,22 @@ const CATEGORY_FROM_LEGACY = {
 };
 
 const MOEILIJKHEID = [2, 3, 1, 2, 2, 3, 3, 2, 3, 2, 2, 2, 1, 2, 2];
-const VRAGEN = {
-  nl: {
-    vraag1: "Wat zou jij doen en waarom?",
-    vraag2: "Welke waarden zijn hier in het spel?",
-  },
-  en: {
-    vraag1: "What would you do, and why?",
-    vraag2: "What values are at stake here?",
-  },
-};
-
-function wordCount(text) {
-  return text.trim().split(/\s+/).filter(Boolean).length;
-}
 
 function buildLang(item, lang) {
+  const vragen =
+    lang === "en"
+      ? {
+          vraag1: "What would you do, and why?",
+          vraag2: "What values are at stake here?",
+        }
+      : {
+          vraag1: "Wat zou jij doen en waarom?",
+          vraag2: "Welke waarden zijn hier in het spel?",
+        };
   return {
     titel: item.title,
     verhaal: item.story.replace(/\s+/g, " ").trim(),
-    ...VRAGEN[lang],
+    ...vragen,
   };
 }
 
@@ -52,12 +53,15 @@ const cards = legacy.nl.map((nlItem, index) => {
   const enItem = legacy.en[index];
   const id = `GK_MM_${String(index + 1).padStart(2, "0")}`;
 
-  return {
+  const moeilijkheid = MOEILIJKHEID[index] ?? 2;
+
+  return normalizeCard({
     id,
     set: "morele-moed-teaser",
     stap: 4,
-    categorie: CATEGORY_FROM_LEGACY[nlItem.category] || "algemeen",
-    moeilijkheid: MOEILIJKHEID[index] ?? 2,
+    categorie: CATEGORY_FROM_LEGACY[nlItem.category] || "dagelijks-leven",
+    moeilijkheid,
+    complexiteit: MOEILIJKHEID_TO_COMPLEXITY[moeilijkheid] ?? "meso",
     taalniveau: "B2",
     status: "getest",
     nl: buildLang(nlItem, "nl"),
@@ -78,7 +82,7 @@ const cards = legacy.nl.map((nlItem, index) => {
       woordenNl: wordCount(nlItem.story),
       woordenEn: wordCount(enItem.story.replace(/\n/g, " ")),
     },
-  };
+  });
 });
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });

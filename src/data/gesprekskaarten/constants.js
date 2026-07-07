@@ -1,4 +1,4 @@
-/** Vaste metadata — UI-labels komen uit vertalingen.js */
+/** Vaste metadata — UI-labels komen uit vertalingen.js (NL/EN) en i18n.js (DE/SV/CS) */
 
 export const CATEGORIE_SLUGS = [
   "dagelijks-leven",
@@ -14,6 +14,47 @@ export const CATEGORIE_SLUGS = [
 
 export const MOEILIJKHEID_MIN = 1;
 export const MOEILIJKHEID_MAX = 3;
+
+/** 1 = micro, 2 = meso, 3 = macro */
+export const COMPLEXITY_KEYS = ["micro", "meso", "macro"];
+
+export const MOEILIJKHEID_TO_COMPLEXITY = {
+  1: "micro",
+  2: "meso",
+  3: "macro",
+};
+
+export const COMPLEXITY_COLOR = "#993556";
+export const ATTRIBUTION_COLOR = "#5f5e5a";
+
+/** Categoriekleuren (v3.0 Conversation Card Generator) */
+export const CATEGORIE_KLEUREN = {
+  onderwijs: "#1a9080",
+  werk: "#e05a1a",
+  "dagelijks-leven": "#e0a01a",
+  duurzaamheid: "#c0392b",
+  "diversiteit-inclusie": "#27ae60",
+  "social-media": "#e8820a",
+  studentenleven: "#8e44ad",
+  zorg: "#0f6e56",
+  overheid: "#185fa5",
+};
+
+export function getCategorieKleur(slug) {
+  return CATEGORIE_KLEUREN[slug] ?? "#5f5e5a";
+}
+
+export function getCategorieKleurLicht(hex) {
+  const h = hex.replace("#", "");
+  const r = parseInt(h.substring(0, 2), 16);
+  const g = parseInt(h.substring(2, 4), 16);
+  const b = parseInt(h.substring(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, 0.12)`;
+}
+
+export function getComplexityKey(moeilijkheid) {
+  return MOEILIJKHEID_TO_COMPLEXITY[Number(moeilijkheid)] ?? "micro";
+}
 
 export const TAALNIVEAUS = ["A2", "B1", "B2", "C1"];
 

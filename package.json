@@ -5,7 +5,11 @@
     "build": "node scripts/generate-gesprekskaarten-catalog.mjs && vite build",
     "preview": "vite preview",
     "cards:migrate": "node scripts/migrate-gesprekskaarten.mjs",
-    "cards:catalog": "node scripts/generate-gesprekskaarten-catalog.mjs"
+    "cards:catalog": "node scripts/generate-gesprekskaarten-catalog.mjs",
+    "cards:normalize": "node scripts/normalize-gesprekskaarten.mjs",
+    "cards:import-ethos": "node scripts/import-from-ethos.mjs",
+    "cards:import-burgerschap": "node scripts/import-burgerschap-docx.mjs",
+    "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

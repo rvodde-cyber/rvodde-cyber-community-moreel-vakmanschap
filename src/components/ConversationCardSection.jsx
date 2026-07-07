@@ -24,8 +24,8 @@ export default function ConversationCardSection({
       ...kaart,
       stapNummer: step,
       stapNaam: t.stappen[step - 1].naam,
-      kleur,
-      kleurLicht,
+      kleur: kaart.kleur ?? kleur,
+      kleurLicht: kaart.kleurLicht ?? kleurLicht,
     };
   });
 

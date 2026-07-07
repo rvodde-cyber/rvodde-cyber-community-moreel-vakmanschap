@@ -6,6 +6,9 @@ import {
   TAALNIVEAUS,
   TEASER_SET,
   STANDARD_VRAGEN,
+  getCategorieKleur,
+  getCategorieKleurLicht,
+  getComplexityKey,
 } from "./constants.js";
 
 export { CATEGORIE_SLUGS, MOEILIJKHEID_MIN, MOEILIJKHEID_MAX, TAALNIVEAUS, TEASER_SET };
@@ -29,11 +32,14 @@ export function localizeCard(card, taal) {
   const content = card[taal] ?? card.nl;
   const vragen = STANDARD_VRAGEN[taal] ?? STANDARD_VRAGEN.nl;
 
+  const kleur = getCategorieKleur(card.categorie);
+
   return {
     id: card.id,
     set: card.set,
     categorieSlug: card.categorie,
     moeilijkheid: card.moeilijkheid,
+    complexiteit: card.complexiteit ?? getComplexityKey(card.moeilijkheid),
     taalniveau: card.taalniveau,
     status: card.status,
     stap: card.stap,
@@ -46,6 +52,8 @@ export function localizeCard(card, taal) {
     fireflyPrompt: card.assets?.fireflyPrompt ?? null,
     pdfHref: card.assets?.[taal === "nl" ? "pdfNl" : "pdfEn"] ?? null,
     woorden: card.meta?.[taal === "nl" ? "woordenNl" : "woordenEn"] ?? null,
+    kleur,
+    kleurLicht: getCategorieKleurLicht(kleur),
   };
 }
 

@@ -3,13 +3,22 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useTaal } from "../context/TaalContext";
 import { downloadGesprekskaartPdf } from "../utils/generateGesprekskaartPdf";
+import { getComplexityKey } from "../data/gesprekskaarten/constants";
+import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
-function StarRating({ value, max = 3, className = "" }) {
-  const filled = Math.max(0, Math.min(max, Number(value) || 0));
+function ComplexityBadge({ card, taal, className = "" }) {
+  const gk = getGesprekskaartStrings(taal);
+  const key = card.complexiteit ?? getComplexityKey(card.moeilijkheid);
+  const label = gk.complexiteitLabels?.[key] ?? key;
+  const tooltip = gk.complexiteitTooltips?.[key] ?? "";
+
   return (
-    <span className={className} aria-label={`${filled} of ${max}`} title={`${filled}/${max}`}>
-      {"★".repeat(filled)}
-      <span className="opacity-35">{"★".repeat(max - filled)}</span>
+    <span
+      className={`inline-flex items-center gap-1.5 rounded-full border border-rand bg-white/95 py-1 pl-2 pr-2.5 text-xs font-semibold text-complexiteit ${className}`}
+      style={{ borderLeftWidth: 3, borderLeftColor: "var(--complexity-color)" }}
+      title={tooltip}
+    >
+      {label}
     </span>
   );
 }
@@ -41,7 +50,7 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
     onMouseLeave: (e) => {
       e.currentTarget.style.backgroundColor = variant === "filled" ? accentColor : "transparent";
       e.currentTarget.style.color = variant === "filled" ? "#ffffff" : accentColor;
-    }
+    },
   };
 
   if (href) {
@@ -66,8 +75,8 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
 }
 
 export function ConversationCardPreview({ card, onOpen }) {
-  const { t } = useTaal();
-  const handleDownload = () => downloadGesprekskaartPdf(card, t);
+  const { taal, t } = useTaal();
+  const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
 
   return (
     <article
@@ -76,17 +85,22 @@ export function ConversationCardPreview({ card, onOpen }) {
     >
       <div className="relative h-36" style={{ backgroundColor: card.kleurLicht }}>
         <CardMedia card={card} />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-primair">
+        <span
+          className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
+          style={{ color: card.kleur }}
+        >
           {card.categorie}
         </span>
-        <span className="absolute right-3 top-3 flex items-center gap-1 rounded-full border border-rand bg-white px-2.5 py-1 text-xs font-semibold text-secundair">
-          <StarRating value={card.moeilijkheid} />
+        <span className="absolute right-3 top-3">
+          <ComplexityBadge card={card} taal={taal} />
         </span>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-secundair">
-          <span className="font-semibold uppercase tracking-wide">{card.categorie}</span>
+          <span className="font-semibold uppercase tracking-wide" style={{ color: card.kleur }}>
+            {card.categorie}
+          </span>
           {card.taalniveau && (
             <>
               <span aria-hidden="true">·</span>
@@ -125,9 +139,9 @@ function formatStapVerbinding(template, card, kernvraag) {
 }
 
 export default function ConversationCardModal({ card, isOpen, onClose }) {
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
-  const handleDownload = () => downloadGesprekskaartPdf(card, t);
+  const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -190,11 +204,11 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               >
                 {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
               </p>
-              <p className="mb-1 text-sm font-semibold text-secundair">{card.categorie}</p>
+              <p className="mb-2 text-sm font-semibold" style={{ color: card.kleur }}>
+                {card.categorie}
+              </p>
               <div className="mb-3 flex flex-wrap gap-3 text-xs text-secundair">
-                <span>
-                  {t.gesprekskaart.moeilijkheidLabel}: <StarRating value={card.moeilijkheid} className="text-accent" />
-                </span>
+                <ComplexityBadge card={card} taal={taal} />
                 {card.taalniveau && (
                   <span>
                     {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}

@@ -13,7 +13,10 @@ export default {
         "surface-muted": "var(--surface-muted)",
         primair: "var(--tekst-primair)",
         secundair: "var(--tekst-secundair)",
-        rand: "var(--rand)"
+        rand: "var(--rand)",
+        accent: "var(--complexity-color)",
+        complexiteit: "var(--complexity-color)",
+        attributie: "var(--attribution-color)"
       },
       boxShadow: {
         warm: "0 24px 80px rgba(26, 39, 68, 0.08)"

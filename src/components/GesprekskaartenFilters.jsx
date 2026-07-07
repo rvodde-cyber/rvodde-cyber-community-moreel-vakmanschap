@@ -1,5 +1,7 @@
 import { useMemo } from "react";
 import { useTaal } from "../context/TaalContext";
+import { getComplexityKey } from "../data/gesprekskaarten/constants";
+import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
 const EMPTY = {
   categorie: "",
@@ -9,8 +11,9 @@ const EMPTY = {
 };
 
 export default function GesprekskaartenFilters({ filters, onChange, options, resultCount, totalCount }) {
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
   const f = t.gesprekskaart.filters;
+  const gk = getGesprekskaartStrings(taal);
 
   const categorieLabels = useMemo(() => {
     const map = f.categorieLabels ?? {};
@@ -65,11 +68,15 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
             className="rounded-lg border border-rand bg-[#fafaf8] px-3 py-2 text-primair"
           >
             <option value="">{f.all}</option>
-            {(options.moeilijkheden ?? []).map((n) => (
-              <option key={n} value={String(n)}>
-                {"★".repeat(n)}{"☆".repeat(3 - n)} ({n}/3)
-              </option>
-            ))}
+            {(options.moeilijkheden ?? []).map((n) => {
+              const key = getComplexityKey(n);
+              const label = gk.complexiteitLabels?.[key] ?? `${"★".repeat(n)}${"☆".repeat(3 - n)}`;
+              return (
+                <option key={n} value={String(n)} title={gk.complexiteitTooltips?.[key] ?? ""}>
+                  {label}
+                </option>
+              );
+            })}
           </select>
         </label>
 
