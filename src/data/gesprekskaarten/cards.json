@@ -1502,5 +1502,110 @@
       "project": "HEROES"
     },
     "moeilijkheid": 1
+  },
+  {
+    "id": "GK_RI_01",
+    "set": "onderzoeksintegriteit",
+    "stap": 1,
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "meso",
+    "taalniveau": "C1",
+    "status": "getest",
+    "nl": {
+      "titel": "De volgorde van de namen",
+      "verhaal": "Lotte heeft veertien maanden aan dit artikel gewerkt — elk experiment, elke tabel, elke late avond waarin ze de discussiesectie herschreef. Haar promotor, professor Dekker, leest de definitieve versie in stilte en schuift het dan over het bureau terug. \"Zet mijn naam eerst,\" zegt hij, zonder op te kijken. \"Zo werkt het hier.\" Ze kent de normen: senior authorship betekent prestige, haalt de volgende subsidie binnen, houdt haar contractverlenging op zijn bureau in plaats van op dat van iemand anders. Haar naam zou nog wel verschijnen — derde, misschien vierde, begraven waar sollicitatiecommissies zelden kijken. Ze denkt aan de data die ze alleen in het weekend verzamelde, aan resultaten die onmiskenbaar van haar zijn. Weigeren kan haar de postdoc kosten die ze nodig heeft. Tekenen kan haar het enige kosten dat ze echt bezit. Ze opent de auteurslijst en zweeft boven de eerste regel. Wat doet ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The Order of Names",
+      "verhaal": "Lotte has spent fourteen months on this paper — every experiment, every table, every late night rewriting the discussion section. Her supervisor, Professor Dekker, reads the final draft in silence, then slides it back across the desk. \"Put my name first,\" he says, not looking up. \"That's how it works here.\" She knows the norms: senior authorship signals prestige, secures the next grant, keeps her contract renewal on his desk instead of someone else's. Her name would still appear — third, maybe fourth, buried where hiring committees rarely look. She thinks of the data she collected alone on weekends, the results that are unmistakably hers. Refusing might cost her the postdoc she needs. Signing might cost her the only thing she actually owns. She opens the author list and hovers over the first line. What does she do?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "Which values are at play?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 147,
+      "woordenEn": 138,
+      "bron": "gesprekskaarten_research_integrity_1.docx",
+      "categorieEn": "RESEARCH INTEGRITY",
+      "project": "HEROES"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "GK_RI_02",
+    "set": "onderzoeksintegriteit",
+    "stap": 1,
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "macro",
+    "taalniveau": "C1",
+    "status": "getest",
+    "nl": {
+      "titel": "De extra naam op de lijst",
+      "verhaal": "Het manuscript is klaar, gereviewd, geaccepteerd — tot er een e-mail binnenkomt van de uitgever. Een senior editor bij een partnerinstelling wil graag worden toegevoegd aan de redactieraad voor dit speciale nummer. Hij heeft geen enkel manuscript beoordeeld, geen enkele vergadering bijgewoond, geen enkel artikel gelezen. Maar zijn universiteit betaalt de open-accesskosten voor het hele nummer, en de contractverlenging is volgende maand aan de beurt. \"Het is maar een naam op een pagina,\" zegt de managing editor, niet helemaal iemand in de ogen kijkend. De echte editors, die maandenlang manuscripten lazen en reviewers achteraan jaagden, zeggen eerst niets. Weigeren kan betekenen dat de financiering verdwijnt waarmee het tijdschrift gratis blijft voor auteurs. Instemmen betekent stilletjes herschrijven wie het werk deed. De deadline voor de definitieve redactielijst is morgen twaalf uur. Iemand moet antwoorden op de e-mail.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The Extra Name on the List",
+      "verhaal": "The manuscript is ready, reviewed, accepted — until an email arrives from the publisher. A senior editor at a partner institution would like to be added to the editorial board for this special issue. He hasn't reviewed a single submission, hasn't attended a meeting, hasn't read the papers. But his university covers the open-access fees for the entire issue, and the contract renewal is due next month. \"It's just a name on a page,\" the managing editor says, not quite meeting anyone's eyes. The actual editors, who spent months reading manuscripts and chasing reviewers, say nothing at first. Refusing might mean losing the funding that keeps the journal free to authors. Agreeing means quietly rewriting who did the work. The deadline for the final editor list is tomorrow at noon. Someone has to reply to the email.",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "Which values are at play?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 136,
+      "woordenEn": 137,
+      "bron": "gesprekskaarten_research_integrity_1.docx",
+      "categorieEn": "RESEARCH INTEGRITY",
+      "project": "HEROES"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "GK_RI_03",
+    "set": "onderzoeksintegriteit",
+    "stap": 1,
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "meso",
+    "taalniveau": "C1",
+    "status": "getest",
+    "nl": {
+      "titel": "Hetzelfde resultaat, twee keer",
+      "verhaal": "Dr. Willemsens dataset van drie jaar geleden is solide — peer-reviewed, gepubliceerd, af. Maar de financieringscyclus sluit nooit echt. Ze past een variabele aan, herformuleert de onderzoeksvraag een beetje, dient het in als een nieuw voorstel. De commissie, die niet weet dat het bijna volledig overlapt met haar vorige gefinancierde project, keurt het goed. Ze presenteert de \"nieuwe\" bevindingen op een conferentie in Lissabon, en daarna, anders geformuleerd, in Porto. Niemand die haar aanvraag beoordeelt, ziet de eerdere versie; niemand die aan het podium applaudisseert, weet het ook. Elke subsidie financiert echt werk — reizen, een onderzoeksassistent, een paar maanden ademruimte. Niets aan de cijfers is verzonnen. Alleen het kader blijft verschuiven, net genoeg om nieuw te lijken. Ze is al bezig met de volgende herindiening wanneer de nieuwsbrief van het financieringsorgaan meldt dat dubbele indieningen strakker worden gecontroleerd. Wat gebeurt er als iemand de versies eindelijk naast elkaar legt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?"
+    },
+    "en": {
+      "titel": "The Same Result, Twice",
+      "verhaal": "Dr. Willemsen's dataset from three years ago is solid — peer-reviewed, published, done. But the funding cycle never really closes. She adjusts a variable, reframes the research question slightly, submits it as a new proposal. The committee, unaware it overlaps almost entirely with her last funded project, approves it. She presents the \"new\" findings at a conference in Lisbon, then again, reworded, in Porto. Nobody who reviews her application sees the earlier version; nobody who applauds at the podium knows either. Each grant funds real work — travel, a research assistant, a few months of breathing room. Nothing about the numbers is invented. Only the frame keeps shifting, just enough to look new. She's already drafting the next resubmission when the funding body's newsletter mentions a tightening of duplicate-submission checks. What happens if someone finally lines the versions up?",
+      "vraag1": "What would you do, and why?",
+      "vraag2": "Which values are at play?"
+    },
+    "assets": {
+      "afbeelding": null,
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 150,
+      "woordenEn": 139,
+      "bron": "gesprekskaarten_research_integrity_1.docx",
+      "categorieEn": "RESEARCH INTEGRITY",
+      "project": "HEROES"
+    },
+    "moeilijkheid": 2
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-07T11:15:38.502Z",
-  "count": 45,
+  "generatedAt": "2026-07-07T11:35:08.930Z",
+  "count": 48,
   "cards": [
     {
       "id": "GK_MM_01",
@@ -719,6 +719,54 @@
       "titelEn": "Between Compressions",
       "woordenNl": 141,
       "woordenEn": 146,
+      "heeftAfbeelding": false,
+      "fireflyPrompt": null
+    },
+    {
+      "id": "GK_RI_01",
+      "set": "onderzoeksintegriteit",
+      "stap": 1,
+      "categorie": "onderzoeksintegriteit",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
+      "taalniveau": "C1",
+      "status": "getest",
+      "titelNl": "De volgorde van de namen",
+      "titelEn": "The Order of Names",
+      "woordenNl": 147,
+      "woordenEn": 138,
+      "heeftAfbeelding": false,
+      "fireflyPrompt": null
+    },
+    {
+      "id": "GK_RI_02",
+      "set": "onderzoeksintegriteit",
+      "stap": 1,
+      "categorie": "onderzoeksintegriteit",
+      "moeilijkheid": 3,
+      "complexiteit": "macro",
+      "taalniveau": "C1",
+      "status": "getest",
+      "titelNl": "De extra naam op de lijst",
+      "titelEn": "The Extra Name on the List",
+      "woordenNl": 136,
+      "woordenEn": 137,
+      "heeftAfbeelding": false,
+      "fireflyPrompt": null
+    },
+    {
+      "id": "GK_RI_03",
+      "set": "onderzoeksintegriteit",
+      "stap": 1,
+      "categorie": "onderzoeksintegriteit",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
+      "taalniveau": "C1",
+      "status": "getest",
+      "titelNl": "Hetzelfde resultaat, twee keer",
+      "titelEn": "The Same Result, Twice",
+      "woordenNl": 150,
+      "woordenEn": 139,
       "heeftAfbeelding": false,
       "fireflyPrompt": null
     }

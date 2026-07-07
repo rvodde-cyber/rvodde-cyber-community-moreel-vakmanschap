@@ -11,9 +11,11 @@
     "cards:import-burgerschap": "node scripts/import-burgerschap-docx.mjs",
     "cards:import-dl-compleet-a5": "node scripts/import-dl-compleet-a5.mjs",
     "cards:import-nuclear-medicine": "node scripts/import-nuclear-medicine.mjs",
+    "cards:import-research-integrity": "node scripts/import-research-integrity.mjs",
     "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py",
     "cards:export-dl-compleet-a5-docx": "python scripts/export-dl-compleet-a5-docx.py",
-    "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py"
+    "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py",
+    "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

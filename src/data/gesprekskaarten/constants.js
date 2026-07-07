@@ -9,6 +9,7 @@ export const CATEGORIE_SLUGS = [
   "studentenleven",
   "zorg",
   "nucleaire-geneeskunde",
+  "onderzoeksintegriteit",
   "onderwijs",
   "overheid",
 ];
@@ -39,6 +40,7 @@ export const CATEGORIE_KLEUREN = {
   studentenleven: "#8e44ad",
   zorg: "#0f6e56",
   "nucleaire-geneeskunde": "#2563eb",
+  onderzoeksintegriteit: "#7c3aed",
   overheid: "#185fa5",
 };
 
@@ -76,6 +78,8 @@ export const CATEGORY_FROM_LEGACY = {
   "Student life": "studentenleven",
   "Nuclear medicine": "nucleaire-geneeskunde",
   "Nucleaire geneeskunde": "nucleaire-geneeskunde",
+  "Research integrity": "onderzoeksintegriteit",
+  Onderzoeksintegriteit: "onderzoeksintegriteit",
 };
 
 export const TEASER_SET = {
