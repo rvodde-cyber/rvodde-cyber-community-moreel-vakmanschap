@@ -80,6 +80,8 @@ export const CATEGORY_FROM_LEGACY = {
   "Nucleaire geneeskunde": "nucleaire-geneeskunde",
   "Research integrity": "onderzoeksintegriteit",
   Onderzoeksintegriteit: "onderzoeksintegriteit",
+  Onderwijs: "onderwijs",
+  EDUCATION: "onderwijs",
 };
 
 export const TEASER_SET = {
