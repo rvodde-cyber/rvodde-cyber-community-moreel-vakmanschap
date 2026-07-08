@@ -21,12 +21,14 @@
     "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.110.1",
     "framer-motion": "^11.0.0",
     "jspdf": "^4.2.1",
     "lucide-react": "^0.383.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^7.17.0"
+    "react-router-dom": "^7.17.0",
+    "recharts": "^3.9.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",

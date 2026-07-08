@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 import DocumentTaal from "./components/DocumentTaal";
 
@@ -27,6 +27,7 @@ import ModelPagina from "./pages/ModelPagina";
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
+import VerdenkApp from "./verdenk/VerdenkApp";
 
 
 
@@ -200,62 +201,46 @@ function PageRoute({ children }) {
 
 
 
-export default function App() {
+function AppShell() {
+  const location = useLocation();
+  const isVerdenk = location.pathname.startsWith("/verdenk");
 
   return (
-
-    <TaalProvider>
-
-      <BrowserRouter>
-
-        <DocumentTaal />
-
-        <TaalRouteSync />
-
-        <Navigatie />
-
-        <Routes>
-
-          <Route path="/" element={<PageRoute><WelkomPagina /></PageRoute>} />
-
-          <Route path="/welkom" element={<PageRoute><WelkomPagina /></PageRoute>} />
-
-          <Route path="/welcome" element={<PageRoute><WelkomPagina /></PageRoute>} />
-
-          <Route path="/model" element={<PageRoute><ModelPagina /></PageRoute>} />
-
-          <Route path="/over" element={<PageRoute><Over /></PageRoute>} />
-
-          <Route path="/about" element={<PageRoute><About /></PageRoute>} />
-
-          <Route path="/aanbod" element={<PageRoute><AanbodPagina /></PageRoute>} />
-
-          <Route path="/what-we-offer" element={<PageRoute><AanbodPagina /></PageRoute>} />
-
-          <Route path="/gesprekskaarten" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
-
-          <Route path="/conversation-cards" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
-
-          <Route path="/bibliotheek" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
-
-          <Route path="/library" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
-
-          <Route path="/bibliotheek/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
-
-          <Route path="/library/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
-
-          <Route path="/aanmelden" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
-
-          <Route path="/join" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
-
-        </Routes>
-
-      </BrowserRouter>
-
-    </TaalProvider>
-
+    <>
+      {!isVerdenk && <Navigatie />}
+      <Routes>
+        <Route path="/verdenk/*" element={<VerdenkApp />} />
+        <Route path="/" element={<PageRoute><WelkomPagina /></PageRoute>} />
+        <Route path="/welkom" element={<PageRoute><WelkomPagina /></PageRoute>} />
+        <Route path="/welcome" element={<PageRoute><WelkomPagina /></PageRoute>} />
+        <Route path="/model" element={<PageRoute><ModelPagina /></PageRoute>} />
+        <Route path="/over" element={<PageRoute><Over /></PageRoute>} />
+        <Route path="/about" element={<PageRoute><About /></PageRoute>} />
+        <Route path="/aanbod" element={<PageRoute><AanbodPagina /></PageRoute>} />
+        <Route path="/what-we-offer" element={<PageRoute><AanbodPagina /></PageRoute>} />
+        <Route path="/gesprekskaarten" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
+        <Route path="/conversation-cards" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
+        <Route path="/bibliotheek" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
+        <Route path="/library" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
+        <Route path="/bibliotheek/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
+        <Route path="/library/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
+        <Route path="/aanmelden" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
+        <Route path="/join" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
+      </Routes>
+    </>
   );
+}
 
+export default function App() {
+  return (
+    <TaalProvider>
+      <BrowserRouter>
+        <DocumentTaal />
+        <TaalRouteSync />
+        <AppShell />
+      </BrowserRouter>
+    </TaalProvider>
+  );
 }
 
 
