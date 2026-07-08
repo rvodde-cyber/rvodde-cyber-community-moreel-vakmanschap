@@ -1,4 +1,4 @@
-# De Verdenk-test
+# Scherpstellen
 
 Interactieve web-app voor congres 2027. Standalone module onder `/verdenk`.
 

@@ -18,13 +18,14 @@ export default function LandingPage() {
 
       <main className="relative mx-auto flex min-h-dvh max-w-2xl flex-col justify-center px-6 py-16 sm:px-8">
         <motion.div initial="hidden" animate="visible" className="space-y-8">
-          <motion.h1
-            custom={0}
-            variants={fadeUp}
-            className="font-display text-4xl font-semibold leading-tight text-nachtblauw sm:text-5xl md:text-6xl"
-          >
-            Durf jij te twijfelen?
-          </motion.h1>
+          <motion.div custom={0} variants={fadeUp} className="space-y-3">
+            <h1 className="font-display text-5xl font-semibold leading-tight text-nachtblauw sm:text-6xl md:text-7xl">
+              Scherpstellen
+            </h1>
+            <p className="font-display text-3xl font-medium text-nachtblauw/85 sm:text-4xl">
+              Durf jij te twijfelen?
+            </p>
+          </motion.div>
 
           <motion.div custom={1} variants={fadeUp} className="space-y-5 text-lg leading-relaxed text-nachtblauw/80 sm:text-xl">
             <p>
@@ -33,8 +34,8 @@ export default function LandingPage() {
               soms ook naar jezelf.
             </p>
             <p>
-              In zes korte stappen ontdek je hoe jij omgaat met twijfel — van de systemen om je heen
-              tot de vragen die je jezelf (niet) stelt. Geen goed of fout. Wel een spiegel.
+              In zes korte stappen stel je jezelf scherp — van de systemen om je heen tot de vragen
+              die je jezelf (niet) stelt. Geen goed of fout. Wel een spiegel.
             </p>
             <p className="text-base text-nachtblauw/60 sm:text-lg">
               Duurt 3 minuten. Je antwoorden zijn anoniem en worden vanavond, samen met die van de
@@ -47,7 +48,7 @@ export default function LandingPage() {
               to="/verdenk/test/1"
               className="inline-flex min-h-[3.5rem] w-full items-center justify-center rounded-2xl bg-koraal px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-koraal/25 transition hover:bg-koraal/90 active:scale-[0.98] sm:w-auto"
             >
-              Start de Verdenk-test
+              Start Scherpstellen
             </Link>
           </motion.div>
         </motion.div>

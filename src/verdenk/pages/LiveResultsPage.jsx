@@ -40,7 +40,7 @@ export default function LiveResultsPage() {
       <main className="mx-auto flex min-h-dvh max-w-6xl flex-col px-6 py-10 sm:px-10 lg:px-16">
         <header className="mb-6 text-center lg:mb-8">
           <p className="text-lg font-medium uppercase tracking-[0.2em] text-amber sm:text-xl">
-            De Verdenk-test · Live
+            Scherpstellen · Live
           </p>
           <h1 className="mt-2 font-display text-4xl font-semibold sm:text-5xl lg:text-6xl">
             Hoe verdenkt de zaal?

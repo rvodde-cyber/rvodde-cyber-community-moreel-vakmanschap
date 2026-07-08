@@ -3,7 +3,6 @@ import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import DimensionIllustration from "../components/DimensionIllustration";
 import LikertScale from "../components/LikertScale";
 import MistBackground from "../components/MistBackground";
-import ProgressMist from "../components/ProgressMist";
 import { useTest } from "../context/TestContext";
 import { DIMENSIONS } from "../data/dimensions";
 
@@ -38,7 +37,6 @@ export default function DimensionPage() {
   return (
     <div className="relative min-h-dvh">
       <MistBackground progress={stapNum} variant="test" />
-      <ProgressMist step={stapNum} />
 
       <main className="relative mx-auto max-w-2xl px-5 pb-28 pt-10 sm:px-8">
         <p className="mb-2 text-sm font-medium uppercase tracking-widest text-amber">

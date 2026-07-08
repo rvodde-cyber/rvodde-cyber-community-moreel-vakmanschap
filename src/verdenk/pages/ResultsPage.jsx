@@ -41,11 +41,11 @@ export default function ResultsPage() {
   async function deelResultaat() {
     const tekst = `${archetype.naam}\n\n${DIMENSIONS.map(
       (d) => `${d.naam}: ${scores[d.id]?.toFixed(1)}`,
-    ).join("\n")}\n\nDe Verdenk-test · Congres 2027`;
+    ).join("\n")}\n\nScherpstellen · Congres 2027`;
 
     if (navigator.share) {
       try {
-        await navigator.share({ title: "Mijn Verdenk-resultaat", text: tekst });
+        await navigator.share({ title: "Mijn Scherpstellen-resultaat", text: tekst });
         return;
       } catch {
         /* user cancelled */

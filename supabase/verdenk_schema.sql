@@ -1,4 +1,4 @@
--- De Verdenk-test: Supabase schema
+-- Scherpstellen: Supabase schema
 -- Voer dit uit in de Supabase SQL Editor
 
 create table if not exists public.verdenk_submissions (
