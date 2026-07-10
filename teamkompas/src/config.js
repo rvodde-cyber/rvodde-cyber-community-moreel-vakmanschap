@@ -74,3 +74,23 @@ export const metafoor = {
 };
 
 export const scanThreshold = 5; // pas in sessie 2 nodig (teamscan), alvast vastleggen
+
+export const ethischLeiderschap = {
+  titel: "Ethisch leiderschap — een spiegel voor jezelf",
+  intro:
+    "Ethisch leiderschap vraagt om twee dingen tegelijk: zelf integer handelen, én dat " +
+    "zichtbaar en bespreekbaar maken voor je team (Treviño; Heres, 2014). Onderzoek laat " +
+    "zien dat leidinggevenden dit bij zichzelf vaak overschatten. Dit is geen toets — " +
+    "niets wordt opgeslagen, gescoord of gedeeld. Alleen voor jezelf.",
+  vragen: [
+    "Is voor mijn team zichtbaar hoe ik omga met lastige ethische afwegingen, of gebeurt dat vooral achter de schermen?",
+    "Bespreek ik integriteits- of ethische kwesties expliciet met mijn team, of komt het alleen ter sprake als het al misgaat?",
+    "Reageer ik zichtbaar en consistent als iemand een grens overschrijdt, ook als dat ongemakkelijk is?",
+    "Nodig ik actief tegenspraak uit, of merk ik dat mensen hun twijfels liever voor zich houden?",
+    "Is er een principe waar ik middenin sta, waarvan ik weet dat vasthouden eraan me iets zou kunnen kosten — en houd ik het toch overeind?",
+  ],
+  bron:
+    "Gebaseerd op onderzoek naar ethisch leiderschap van Treviño en Heres (VU/Universiteit " +
+    "Utrecht/Erasmus Universiteit, 2014 e.v.), en op Kidder's definitie van morele moed " +
+    "(2005): principe, risico, en het bewust doorstaan daarvan.",
+};

@@ -10,6 +10,7 @@ import IntroScreen from "../components/IntroScreen";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
 import ImagePlaceholder from "../components/ImagePlaceholder";
+import EthischLeiderschap from "../components/EthischLeiderschap";
 
 function UitlegBlok({ titel, tekst }) {
   return (
@@ -158,6 +159,14 @@ export default function SelfReflection() {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
         <IntroScreen onStart={handleBeginReflection} />
+      </div>
+    );
+  }
+
+  if (phase === "ethisch") {
+    return (
+      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+        <EthischLeiderschap onBack={() => setPhase("result")} />
       </div>
     );
   }
@@ -322,6 +331,26 @@ export default function SelfReflection() {
               aspectRatio="21 / 9"
             />
           </div>
+
+          <button
+            type="button"
+            onClick={() => setPhase("ethisch")}
+            style={{
+              fontFamily: fonts.ui,
+              background: "none",
+              border: "none",
+              color: colors.labelAccent,
+              fontSize: "0.9rem",
+              opacity: 0.75,
+              cursor: "pointer",
+              marginTop: 20,
+              padding: 0,
+              textDecoration: "underline",
+              textUnderlineOffset: 3,
+            }}
+          >
+            Reflecteer ook op je eigen leiderschap →
+          </button>
 
           <button
             type="button"
