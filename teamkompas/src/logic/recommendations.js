@@ -25,11 +25,11 @@ export const recommendations = {
   },
   respect: {
     kwetsbaar:
-      "Maak afwijkende inzichten een vast agendapunt. (geïnspireerd door onderzoek naar psychologische veiligheid, Edmondson)",
+      "Maak afwijkende inzichten een vast agendapunt. (Geïnspireerd door onderzoek naar psychologische veiligheid, Edmondson; bevestigd door Google's Project Aristotle, 2012–2015.)",
     groeiend:
-      "Vraag bij besluiten expliciet naar minderheidsstandpunten vóórdat de knoop wordt doorgehakt.",
+      "Vraag bij besluiten expliciet naar minderheidsstandpunten vóórdat de knoop wordt doorgehakt, en let erop dat niet steeds dezelfde mensen het langst aan het woord zijn. (Project Aristotle: gelijke spreektijd was een van de sterkste voorspellers van teameffectiviteit.)",
     sterk:
-      "Wijs bij belangrijke besluiten bewust een 'advocaat van de duivel' aan, of laat mensen eerst onafhankelijk hun twijfels opschrijven vóór de groepsdiscussie. (geïnspireerd door onderzoek naar groupthink, Janis)",
+      "Gebruik bij belangrijke besluiten bewust de Lewis-methode van Deep Democracy: verzamel actief alle invalshoeken, zoek expliciet naar de afwijkende mening, en verwerk het minderheidsstandpunt in het besluit vóór de definitieve stemming. (Geïnspireerd door onderzoek naar groupthink, Janis; en de Lewis-methode van Deep Democracy, Lewis & Kramer.)",
   },
   communicatie: {
     kwetsbaar:
