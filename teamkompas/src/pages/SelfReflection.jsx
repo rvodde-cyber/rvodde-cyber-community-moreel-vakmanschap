@@ -229,7 +229,6 @@ export default function SelfReflection() {
                 }}
               >
                 <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
-                <UitlegBlok titel="Wat is een typering?" tekst={faseInfo.typering} />
                 <UitlegBlok
                   titel={
                     faseInfo.volgendeFase

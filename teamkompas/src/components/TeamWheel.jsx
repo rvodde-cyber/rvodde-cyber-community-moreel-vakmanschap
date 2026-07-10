@@ -11,6 +11,8 @@ const factors = [
 
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
+const NIVEAU_TRAVEL = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
   const angleRad = (angleDeg * Math.PI) / 180;
@@ -36,7 +38,11 @@ function rimPoint(index, rimRadius, cx, cy) {
   return nodePosition(index, rimRadius, cx, cy);
 }
 
-const DOT_SCALE = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+function knobTravelRadius(niveau, minRadius, maxRadius) {
+  if (!niveau) return maxRadius;
+  const t = NIVEAU_TRAVEL[niveau];
+  return minRadius + (maxRadius - minRadius) * t;
+}
 
 function wrapText(text, maxChars = 14) {
   const words = text.split(" ");
@@ -55,6 +61,19 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
+function KnobMarker({ x, y, fill, stroke = colors.hubRing, r, animate = true }) {
+  return (
+    <g
+      style={{
+        transform: `translate(${x}px, ${y}px)`,
+        transition: animate ? "transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1)" : undefined,
+      }}
+    >
+      <circle cx={0} cy={0} r={r} fill={fill} stroke={stroke} strokeWidth={2} />
+    </g>
+  );
+}
+
 export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style }) {
   const {
     viewBox,
@@ -65,6 +84,7 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
     spokeWidth,
     knobRadius,
     knobPositionRadius,
+    knobTravelMinRadius,
     factorLabelRadius,
     resultLabelRadius,
   } = wheelGeometry;
@@ -72,10 +92,14 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
 
   const isPreview = variant === "preview";
   const showResults = !isPreview;
+  const travelMax = knobPositionRadius;
+  const travelMin = knobTravelMinRadius;
 
-  const knobPositions = factors.map((_, i) =>
-    nodePosition(i, knobPositionRadius, cx, cy)
-  );
+  const scoredKnobPositions = factors.map((factor, i) => {
+    const radius = knobTravelRadius(scores[factor.key], travelMin, travelMax);
+    return nodePosition(i, radius, cx, cy);
+  });
+
   const factorLabelPositions = factors.map((_, i) =>
     nodePosition(i, factorLabelRadius, cx, cy)
   );
@@ -94,7 +118,7 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
     >
       {variant === "filled" && (
         <polygon
-          points={knobPositions.map((p) => `${p.x},${p.y}`).join(" ")}
+          points={scoredKnobPositions.map((p) => `${p.x},${p.y}`).join(" ")}
           fill={colors.dotsStrong}
           fillOpacity={0.15}
           stroke={colors.dotsStrong}
@@ -154,78 +178,68 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
         ))}
       </text>
 
-      {variant === "preview" ? (
-        factors.map((factor, i) => {
-          const pos = knobPositions[i];
-          return (
-            <circle
-              key={factor.key}
-              cx={pos.x}
-              cy={pos.y}
-              r={knobRadius}
-              fill={colors.dotsLight}
-              stroke={colors.hubRing}
-              strokeWidth={2}
-            />
-          );
-        })
-      ) : (
-        factors.map((factor, i) => {
-          const pos = knobPositions[i];
-          const niveau = scores[factor.key];
-          const dotScale = niveau ? DOT_SCALE[niveau] : 0;
-          const dotR = (knobRadius * 2 * dotScale) / 2;
-
-          let knobFill = colors.surface;
-          const knobStroke = colors.hubRing;
-
-          if (variant === "dots" && niveau === "sterk") {
-            knobFill = colors.dotsStrong;
-          }
-
-          return (
-            <g key={factor.key}>
-              <circle
-                cx={pos.x}
-                cy={pos.y}
+      {variant === "preview"
+        ? factors.map((factor, i) => {
+            const pos = nodePosition(i, travelMax, cx, cy);
+            return (
+              <KnobMarker
+                key={factor.key}
+                x={pos.x}
+                y={pos.y}
                 r={knobRadius}
-                fill={knobFill}
-                stroke={knobStroke}
-                strokeWidth={2}
+                fill={colors.dotsLight}
+                animate={false}
               />
-              {variant === "dots" && niveau && niveau !== "sterk" && (
-                <circle cx={pos.x} cy={pos.y} r={dotR} fill={colors.dotsLight} />
-              )}
-            </g>
-          );
-        })
-      )}
+            );
+          })
+        : factors.map((factor, i) => {
+            const pos = scoredKnobPositions[i];
+            const niveau = scores[factor.key];
+            let fill = colors.surface;
+
+            if (niveau === "sterk") {
+              fill = colors.dotsStrong;
+            } else if (niveau) {
+              fill = colors.dotsLight;
+            }
+
+            return (
+              <KnobMarker
+                key={factor.key}
+                x={pos.x}
+                y={pos.y}
+                r={knobRadius}
+                fill={fill}
+              />
+            );
+          })}
 
       {factors.map((factor, i) => {
-          const pos = factorLabelPositions[i];
-          const angleDeg = -90 + i * 60;
-          const anchor = Math.abs(((angleDeg % 360) + 360) % 360 - 90) < 1
+        const pos = factorLabelPositions[i];
+        const angleDeg = -90 + i * 60;
+        const anchor =
+          Math.abs((((angleDeg % 360) + 360) % 360) - 90) < 1
             ? "middle"
             : angleDeg > -90 && angleDeg < 90
               ? "start"
               : "end";
 
-          return wrapText(factor.label, 16).map((line, li, arr) => (
-            <text
-              key={`${factor.key}-${line}`}
-              x={pos.x}
-              y={pos.y + (li - (arr.length - 1) / 2) * 12}
-              textAnchor={anchor}
-              dominantBaseline="middle"
-              fill={colors.labelAccent}
-              fontFamily={fonts.ui}
-              fontSize={9}
-              fontWeight={500}
-            >
-              {line}
-            </text>
-          ));
-        })}
+        return wrapText(factor.label, 16).map((line, li, arr) => (
+          <text
+            key={`${factor.key}-${line}`}
+            x={pos.x}
+            y={pos.y + (li - (arr.length - 1) / 2) * 12}
+            textAnchor={anchor}
+            dominantBaseline="middle"
+            fill={colors.labelAccent}
+            fontFamily={fonts.ui}
+            fontSize={9}
+            fontWeight={500}
+          >
+            {line}
+          </text>
+        ));
+      })}
 
       {showResults &&
         results.map((result, i) => {
