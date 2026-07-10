@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { colors, fonts, wheelGeometry } from "../config";
 
 const factors = [
@@ -13,7 +13,7 @@ const factors = [
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
 const NIVEAU_TRAVEL = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
-const ANIMATION_MS = 700;
+const ANIMATION_MS = 900;
 
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
@@ -50,6 +50,10 @@ function easeOutCubic(t) {
   return 1 - Math.pow(1 - t, 3);
 }
 
+function positionsEqual(a, b) {
+  return a.length === b.length && a.every((p, i) => p.x === b[i].x && p.y === b[i].y);
+}
+
 function wrapText(text, maxChars = 14) {
   const words = text.split(" ");
   const lines = [];
@@ -67,62 +71,6 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
-function AnimatedKnob({ targetX, targetY, startX, startY, fill, stroke = colors.hubRing, r, visible }) {
-  const posRef = useRef({ x: startX, y: startY });
-  const [pos, setPos] = useState({ x: startX, y: startY });
-  const frameRef = useRef(null);
-
-  useEffect(() => {
-    if (!visible) {
-      posRef.current = { x: startX, y: startY };
-      setPos({ x: startX, y: startY });
-      return undefined;
-    }
-
-    const from = { ...posRef.current };
-    const to = { x: targetX, y: targetY };
-
-    if (from.x === to.x && from.y === to.y) return undefined;
-
-    const start = performance.now();
-
-    function tick(now) {
-      const t = Math.min(1, (now - start) / ANIMATION_MS);
-      const eased = easeOutCubic(t);
-      const next = {
-        x: from.x + (to.x - from.x) * eased,
-        y: from.y + (to.y - from.y) * eased,
-      };
-      posRef.current = next;
-      setPos(next);
-      if (t < 1) {
-        frameRef.current = requestAnimationFrame(tick);
-      } else {
-        posRef.current = to;
-        setPos(to);
-      }
-    }
-
-    frameRef.current = requestAnimationFrame(tick);
-    return () => {
-      if (frameRef.current) cancelAnimationFrame(frameRef.current);
-    };
-  }, [visible, targetX, targetY, startX, startY]);
-
-  if (!visible) return null;
-
-  return (
-    <circle
-      cx={pos.x}
-      cy={pos.y}
-      r={r}
-      fill={fill}
-      stroke={stroke}
-      strokeWidth={2}
-    />
-  );
-}
-
 export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style }) {
   const {
     viewBox,
@@ -132,8 +80,8 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
     rimStrokeWidth,
     spokeWidth,
     knobRadius,
-    knobPositionRadius,
     knobTravelMinRadius,
+    knobTravelMaxRadius,
     factorLabelRadius,
     resultLabelRadius,
   } = wheelGeometry;
@@ -141,13 +89,64 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
 
   const isPreview = variant === "preview";
   const showResults = !isPreview;
-  const travelMax = knobPositionRadius;
   const travelMin = knobTravelMinRadius;
+  const travelMax = knobTravelMaxRadius;
 
-  const scoredKnobPositions = factors.map((factor, i) => {
-    const radius = knobTravelRadius(scores[factor.key], travelMin, travelMax);
-    return nodePosition(i, radius, cx, cy);
-  });
+  const innerPositions = useMemo(
+    () => factors.map((_, i) => nodePosition(i, travelMin, cx, cy)),
+    [travelMin, cx, cy]
+  );
+
+  const targetPositions = useMemo(
+    () =>
+      factors.map((factor, i) => {
+        const radius = knobTravelRadius(scores[factor.key], travelMin, travelMax);
+        return nodePosition(i, radius, cx, cy);
+      }),
+    [scores, travelMin, travelMax, cx, cy]
+  );
+
+  const [displayPositions, setDisplayPositions] = useState(innerPositions);
+  const displayRef = useRef(innerPositions);
+  const frameRef = useRef(null);
+
+  useEffect(() => {
+    displayRef.current = innerPositions;
+    setDisplayPositions(innerPositions);
+  }, [innerPositions]);
+
+  useEffect(() => {
+    if (isPreview) return undefined;
+
+    const from = displayRef.current.map((p) => ({ ...p }));
+    const to = targetPositions.map((p) => ({ ...p }));
+
+    if (positionsEqual(from, to)) return undefined;
+
+    const start = performance.now();
+
+    function tick(now) {
+      const t = Math.min(1, (now - start) / ANIMATION_MS);
+      const eased = easeOutCubic(t);
+      const next = from.map((point, i) => ({
+        x: point.x + (to[i].x - point.x) * eased,
+        y: point.y + (to[i].y - point.y) * eased,
+      }));
+      displayRef.current = next;
+      setDisplayPositions(next);
+      if (t < 1) {
+        frameRef.current = requestAnimationFrame(tick);
+      } else {
+        displayRef.current = to;
+        setDisplayPositions(to);
+      }
+    }
+
+    frameRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (frameRef.current) cancelAnimationFrame(frameRef.current);
+    };
+  }, [targetPositions, isPreview]);
 
   const factorLabelPositions = factors.map((_, i) =>
     nodePosition(i, factorLabelRadius, cx, cy)
@@ -155,6 +154,10 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
   const resultLabelPositions = results.map((_, i) =>
     labelPosition(i, resultLabelRadius, cx, cy)
   );
+
+  const knobPositions = isPreview
+    ? factors.map((_, i) => nodePosition(i, travelMax, cx, cy))
+    : displayPositions;
 
   return (
     <svg
@@ -165,9 +168,12 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
       style={{ maxWidth: 600, display: "block", margin: "0 auto", ...style }}
       xmlns="http://www.w3.org/2000/svg"
     >
-      {variant === "filled" && (
+      {variant === "filled" && !isPreview && (
         <polygon
-          points={scoredKnobPositions.map((p) => `${p.x},${p.y}`).join(" ")}
+          points={knobPositions
+            .filter((_, i) => scores[factors[i].key])
+            .map((p) => `${p.x},${p.y}`)
+            .join(" ")}
           fill={colors.dotsStrong}
           fillOpacity={0.15}
           stroke={colors.dotsStrong}
@@ -227,47 +233,33 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
         ))}
       </text>
 
-      {variant === "preview"
-        ? factors.map((factor, i) => {
-            const pos = nodePosition(i, travelMax, cx, cy);
-            return (
-              <circle
-                key={factor.key}
-                cx={pos.x}
-                cy={pos.y}
-                r={knobRadius}
-                fill={colors.dotsLight}
-                stroke={colors.hubRing}
-                strokeWidth={2}
-              />
-            );
-          })
-        : factors.map((factor, i) => {
-            const pos = scoredKnobPositions[i];
-            const niveau = scores[factor.key];
-            let fill = colors.surface;
+      {factors.map((factor, i) => {
+        const pos = knobPositions[i];
+        const niveau = scores[factor.key];
+        let fill = colors.surface;
+        let opacity = isPreview ? 1 : niveau ? 1 : 0.35;
 
-            if (niveau === "sterk") {
-              fill = colors.dotsStrong;
-            } else if (niveau) {
-              fill = colors.dotsLight;
-            }
+        if (isPreview) {
+          fill = colors.dotsLight;
+        } else if (niveau === "sterk") {
+          fill = colors.dotsStrong;
+        } else if (niveau) {
+          fill = colors.dotsLight;
+        }
 
-            const startPos = nodePosition(i, travelMin, cx, cy);
-
-            return (
-              <AnimatedKnob
-                key={factor.key}
-                startX={startPos.x}
-                startY={startPos.y}
-                targetX={pos.x}
-                targetY={pos.y}
-                r={knobRadius}
-                fill={fill}
-                visible={Boolean(niveau)}
-              />
-            );
-          })}
+        return (
+          <circle
+            key={factor.key}
+            cx={pos.x}
+            cy={pos.y}
+            r={knobRadius}
+            fill={fill}
+            fillOpacity={opacity}
+            stroke={colors.hubRing}
+            strokeWidth={2}
+          />
+        );
+      })}
 
       {factors.map((factor, i) => {
         const pos = factorLabelPositions[i];

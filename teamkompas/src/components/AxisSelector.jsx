@@ -3,7 +3,7 @@ import { niveauUitleg } from "../data/niveauUitleg";
 
 const NIVEAU_VOLGORDE = ["kwetsbaar", "groeiend", "sterk"];
 
-export default function AxisSelector({ axis, selected, onSelect }) {
+export default function AxisSelector({ axis, selected, onSelect, disabled = false }) {
   return (
     <div>
       <h2
@@ -98,6 +98,7 @@ export default function AxisSelector({ axis, selected, onSelect }) {
             <button
               key={niveau}
               type="button"
+              disabled={disabled}
               onClick={() => onSelect(niveau)}
               style={{
                 fontFamily: fonts.ui,
@@ -108,7 +109,8 @@ export default function AxisSelector({ axis, selected, onSelect }) {
                   ? `2px solid ${colors.dotsStrong}`
                   : `1px solid ${colors.hubRing}`,
                 background: isSelected ? colors.surface2 : colors.surface,
-                cursor: "pointer",
+                cursor: disabled ? "wait" : "pointer",
+                opacity: disabled && !isSelected ? 0.55 : 1,
                 lineHeight: 1.5,
                 color: colors.labelAccent,
               }}

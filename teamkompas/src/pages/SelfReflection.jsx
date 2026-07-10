@@ -75,26 +75,33 @@ export default function SelfReflection() {
   const [faseKey, setFaseKey] = useState("");
   const [faseTekst, setFaseTekst] = useState("");
   const [aanbevelingTekst, setAanbevelingTekst] = useState("");
+  const [isAdvancing, setIsAdvancing] = useState(false);
   const wheelRef = useRef(null);
 
   const currentAxis = axesSelf[step];
 
   function handleSelect(niveau) {
+    if (isAdvancing) return;
+
     const key = currentAxis.key;
     const updated = { ...scores, [key]: niveau };
     setScores(updated);
+    setIsAdvancing(true);
 
-    if (step < axesSelf.length - 1) {
-      setStep(step + 1);
-    } else {
-      const balans = bepaalBalans(updated);
-      const fase = suggereerFase(updated);
-      const niveau = updated[balans.zwaksteFactor];
-      setFaseKey(fase);
-      setFaseTekst(faseLabels[fase] ?? fase);
-      setAanbevelingTekst(getRecommendation(balans.zwaksteFactor, niveau));
-      setPhase("result");
-    }
+    window.setTimeout(() => {
+      if (step < axesSelf.length - 1) {
+        setStep(step + 1);
+      } else {
+        const balans = bepaalBalans(updated);
+        const fase = suggereerFase(updated);
+        const niveauZwak = updated[balans.zwaksteFactor];
+        setFaseKey(fase);
+        setFaseTekst(faseLabels[fase] ?? fase);
+        setAanbevelingTekst(getRecommendation(balans.zwaksteFactor, niveauZwak));
+        setPhase("result");
+      }
+      setIsAdvancing(false);
+    }, 950);
   }
 
   function handleBeginReflection() {
@@ -357,6 +364,7 @@ export default function SelfReflection() {
           axis={currentAxis}
           selected={scores[currentAxis.key]}
           onSelect={handleSelect}
+          disabled={isAdvancing}
         />
 
         <div style={{ marginTop: 32 }}>

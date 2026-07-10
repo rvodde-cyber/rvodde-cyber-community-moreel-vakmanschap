@@ -47,7 +47,8 @@ export const wheelGeometry = {
   spokeWidth: 10,
   knobRadius: 22,
   knobPositionRadius: 220,
-  knobTravelMinRadius: 105,
+  knobTravelMinRadius: 95,
+  knobTravelMaxRadius: 218,
   factorLabelRadius: 280,
   resultLabelRadius: 235,
 };
