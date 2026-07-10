@@ -5,12 +5,20 @@
       "destination": "/wisselwerking/index.html"
     },
     {
-      "source": "/wisselwerking/:path*",
+      "source": "/wisselwerking/((?!assets/).*)",
       "destination": "/wisselwerking/index.html"
     },
     {
       "source": "/((?!downloads/|images/|wisselwerking).*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/wisselwerking/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
     }
   ]
 }

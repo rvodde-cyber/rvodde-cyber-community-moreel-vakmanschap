@@ -88,6 +88,7 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
       ref={svgRef}
       viewBox={viewBox}
       width="100%"
+      overflow="visible"
       style={{ maxWidth: 600, display: "block", margin: "0 auto", ...style }}
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -153,68 +154,78 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
         ))}
       </text>
 
-      {factors.map((factor, i) => {
-        const pos = knobPositions[i];
-        const niveau = scores[factor.key];
-        const dotScale = niveau ? DOT_SCALE[niveau] : 0;
-        const dotR = (knobRadius * 2 * dotScale) / 2;
-
-        let knobFill = colors.surface;
-        const knobStroke = colors.hubRing;
-
-        if (isPreview) {
-          knobFill = colors.dotsLight;
-        } else if (variant === "dots" && niveau === "sterk") {
-          knobFill = colors.dotsStrong;
-        }
-
-        return (
-          <g key={factor.key}>
+      {variant === "preview" ? (
+        factors.map((factor, i) => {
+          const pos = knobPositions[i];
+          return (
             <circle
+              key={factor.key}
               cx={pos.x}
               cy={pos.y}
               r={knobRadius}
-              fill={knobFill}
-              stroke={knobStroke}
+              fill={colors.dotsLight}
+              stroke={colors.hubRing}
               strokeWidth={2}
             />
-            {variant === "dots" && niveau && !isPreview && niveau !== "sterk" && (
+          );
+        })
+      ) : (
+        factors.map((factor, i) => {
+          const pos = knobPositions[i];
+          const niveau = scores[factor.key];
+          const dotScale = niveau ? DOT_SCALE[niveau] : 0;
+          const dotR = (knobRadius * 2 * dotScale) / 2;
+
+          let knobFill = colors.surface;
+          const knobStroke = colors.hubRing;
+
+          if (variant === "dots" && niveau === "sterk") {
+            knobFill = colors.dotsStrong;
+          }
+
+          return (
+            <g key={factor.key}>
               <circle
                 cx={pos.x}
                 cy={pos.y}
-                r={dotR}
-                fill={colors.dotsLight}
+                r={knobRadius}
+                fill={knobFill}
+                stroke={knobStroke}
+                strokeWidth={2}
               />
-            )}
-          </g>
-        );
-      })}
+              {variant === "dots" && niveau && niveau !== "sterk" && (
+                <circle cx={pos.x} cy={pos.y} r={dotR} fill={colors.dotsLight} />
+              )}
+            </g>
+          );
+        })
+      )}
 
       {factors.map((factor, i) => {
-        const pos = factorLabelPositions[i];
-        const angleDeg = -90 + i * 60;
-        const anchor = Math.abs(((angleDeg % 360) + 360) % 360 - 90) < 1
-          ? "middle"
-          : angleDeg > -90 && angleDeg < 90
-            ? "start"
-            : "end";
+          const pos = factorLabelPositions[i];
+          const angleDeg = -90 + i * 60;
+          const anchor = Math.abs(((angleDeg % 360) + 360) % 360 - 90) < 1
+            ? "middle"
+            : angleDeg > -90 && angleDeg < 90
+              ? "start"
+              : "end";
 
-        return wrapText(factor.label, 16).map((line, li, arr) => (
-          <text
-            key={`${factor.key}-${line}`}
-            x={pos.x}
-            y={pos.y + (li - (arr.length - 1) / 2) * 12}
-            textAnchor={anchor}
-            dominantBaseline="middle"
-            fill={colors.labelAccent}
-            fontFamily={fonts.ui}
-            fontSize={9}
-            fontWeight={500}
-          >
-            {line}
-          </text>
-        ));
-      })}
+          return wrapText(factor.label, 16).map((line, li, arr) => (
+            <text
+              key={`${factor.key}-${line}`}
+              x={pos.x}
+              y={pos.y + (li - (arr.length - 1) / 2) * 12}
+              textAnchor={anchor}
+              dominantBaseline="middle"
+              fill={colors.labelAccent}
+              fontFamily={fonts.ui}
+              fontSize={9}
+              fontWeight={500}
+            >
+              {line}
+            </text>
+          ));
+        })}
 
       {showResults &&
         results.map((result, i) => {

@@ -39,7 +39,7 @@ export const fonts = {
 };
 
 export const wheelGeometry = {
-  viewBox: "0 0 600 600",
+  viewBox: "-40 -40 680 680",
   center: { x: 300, y: 300 },
   hubRadius: 70,
   rimRadius: 235,
@@ -52,7 +52,7 @@ export const wheelGeometry = {
 };
 
 export const welkom = {
-  titel: "Welkom bij TeamKompas",
+  titel: "Welkom bij Wisselwerking",
   tekst: "Ontdek in een paar minuten waar jullie team staat — en wat er nodig is voor de volgende stap.",
 };
 
