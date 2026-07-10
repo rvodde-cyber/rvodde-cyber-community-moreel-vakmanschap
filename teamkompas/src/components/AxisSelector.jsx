@@ -1,14 +1,9 @@
 import { colors, fonts } from "../config";
+import { niveauUitleg } from "../data/niveauUitleg";
 
-const NIVEAU_LABELS = {
-  kwetsbaar: "Kwetsbaar",
-  groeiend: "Groeiend",
-  sterk: "Sterk",
-};
+const NIVEAU_VOLGORDE = ["kwetsbaar", "groeiend", "sterk"];
 
 export default function AxisSelector({ axis, selected, onSelect }) {
-  const niveaus = ["kwetsbaar", "groeiend", "sterk"];
-
   return (
     <div>
       <h2
@@ -33,8 +28,71 @@ export default function AxisSelector({ axis, selected, onSelect }) {
         Resultaat: {axis.resultaat}
       </p>
 
+      <div
+        style={{
+          background: colors.surface,
+          border: `1px solid ${colors.hubRing}`,
+          borderRadius: 8,
+          padding: "16px",
+          marginBottom: 20,
+        }}
+      >
+        <p
+          style={{
+            fontFamily: fonts.ui,
+            fontSize: "0.9rem",
+            color: colors.labelAccent,
+            lineHeight: 1.6,
+            margin: "0 0 14px",
+            opacity: 0.85,
+          }}
+        >
+          {niveauUitleg.intro}
+        </p>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          {NIVEAU_VOLGORDE.map((niveau) => (
+            <div key={niveau}>
+              <span
+                style={{
+                  fontFamily: fonts.ui,
+                  fontWeight: 600,
+                  fontSize: "0.85rem",
+                  color: colors.labelAccent,
+                }}
+              >
+                {niveauUitleg[niveau].label}
+              </span>
+              <span
+                style={{
+                  fontFamily: fonts.ui,
+                  fontSize: "0.85rem",
+                  color: colors.labelAccent,
+                  opacity: 0.75,
+                  lineHeight: 1.5,
+                }}
+              >
+                {" — "}
+                {niveauUitleg[niveau].tekst}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <p
+        style={{
+          fontFamily: fonts.ui,
+          fontSize: "0.9rem",
+          color: colors.labelAccent,
+          fontWeight: 500,
+          margin: "0 0 12px",
+        }}
+      >
+        Welke stelling past het beste?
+      </p>
+
       <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-        {niveaus.map((niveau) => {
+        {NIVEAU_VOLGORDE.map((niveau) => {
           const isSelected = selected === niveau;
           return (
             <button
@@ -56,7 +114,7 @@ export default function AxisSelector({ axis, selected, onSelect }) {
               }}
             >
               <span style={{ fontWeight: 600, display: "block", marginBottom: 4 }}>
-                {NIVEAU_LABELS[niveau]}
+                {niveauUitleg[niveau].label}
               </span>
               <span style={{ fontSize: "0.95rem", opacity: 0.85 }}>
                 {axis.niveaus[niveau]}

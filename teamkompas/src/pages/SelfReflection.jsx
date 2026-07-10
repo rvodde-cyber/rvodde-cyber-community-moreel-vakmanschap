@@ -4,17 +4,41 @@ import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
 import { suggereerFase } from "../logic/tuckman";
 import { getRecommendation } from "../logic/recommendations";
+import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
 import IntroScreen from "../components/IntroScreen";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
 import ImagePlaceholder from "../components/ImagePlaceholder";
 
-const FASE_LABELS = {
-  storming: "Storming — oriëntatie en spanning",
-  norming: "Norming — afspraken en ritme",
-  performing: "Performing — soepel samenwerken",
-  "gemengd beeld": "Gemengd beeld — geen eenduidige fase",
-};
+function UitlegBlok({ titel, tekst }) {
+  return (
+    <div style={{ marginTop: 14 }}>
+      <h3
+        style={{
+          fontFamily: fonts.ui,
+          fontSize: "0.9rem",
+          fontWeight: 600,
+          color: colors.labelAccent,
+          margin: "0 0 6px",
+        }}
+      >
+        {titel}
+      </h3>
+      <p
+        style={{
+          fontFamily: fonts.ui,
+          fontSize: "0.9rem",
+          color: colors.labelAccent,
+          lineHeight: 1.6,
+          margin: 0,
+          opacity: 0.85,
+        }}
+      >
+        {tekst}
+      </p>
+    </div>
+  );
+}
 
 function downloadWheelAsImage(svgElement) {
   if (!svgElement) return;
@@ -47,6 +71,7 @@ export default function SelfReflection() {
   const [phase, setPhase] = useState("intro");
   const [step, setStep] = useState(0);
   const [scores, setScores] = useState({});
+  const [faseKey, setFaseKey] = useState("");
   const [faseTekst, setFaseTekst] = useState("");
   const [aanbevelingTekst, setAanbevelingTekst] = useState("");
   const wheelRef = useRef(null);
@@ -64,7 +89,8 @@ export default function SelfReflection() {
       const balans = bepaalBalans(updated);
       const fase = suggereerFase(updated);
       const niveau = updated[balans.zwaksteFactor];
-      setFaseTekst(FASE_LABELS[fase] ?? fase);
+      setFaseKey(fase);
+      setFaseTekst(faseLabels[fase] ?? fase);
       setAanbevelingTekst(getRecommendation(balans.zwaksteFactor, niveau));
       setPhase("result");
     }
@@ -87,6 +113,7 @@ export default function SelfReflection() {
   if (phase === "result") {
     const balans = bepaalBalans(scores);
     const zwaksteAxis = axesSelf.find((a) => a.key === balans.zwaksteFactor);
+    const faseInfo = faseUitleg[faseKey];
 
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -181,6 +208,29 @@ export default function SelfReflection() {
             >
               Dit is een suggestie op basis van het patroon — klopt dit voor jullie team?
             </p>
+
+            {faseInfo && (
+              <div
+                style={{
+                  marginTop: 16,
+                  padding: "16px",
+                  background: colors.surface,
+                  border: `1px solid ${colors.hubRing}`,
+                  borderRadius: 8,
+                }}
+              >
+                <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
+                <UitlegBlok titel="Wat is een typering?" tekst={faseInfo.typering} />
+                <UitlegBlok
+                  titel={
+                    faseInfo.volgendeFase
+                      ? `Wat helpt richting ${volgendeFaseLabels[faseInfo.volgendeFase] ?? faseInfo.volgendeFase}?`
+                      : "Hoe houden jullie het team in beweging?"
+                  }
+                  tekst={faseInfo.naarVolgende}
+                />
+              </div>
+            )}
           </section>
 
           <section style={{ marginTop: 28 }}>
@@ -247,6 +297,7 @@ export default function SelfReflection() {
               setPhase("intro");
               setStep(0);
               setScores({});
+              setFaseKey("");
             }}
             style={{
               fontFamily: fonts.ui,
