@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { colors, fonts, wheelGeometry } from "../config";
 
 const factors = [
@@ -12,6 +13,7 @@ const factors = [
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
 const NIVEAU_TRAVEL = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+const ANIMATION_MS = 700;
 
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
@@ -39,9 +41,13 @@ function rimPoint(index, rimRadius, cx, cy) {
 }
 
 function knobTravelRadius(niveau, minRadius, maxRadius) {
-  if (!niveau) return maxRadius;
+  if (!niveau) return minRadius;
   const t = NIVEAU_TRAVEL[niveau];
   return minRadius + (maxRadius - minRadius) * t;
+}
+
+function easeOutCubic(t) {
+  return 1 - Math.pow(1 - t, 3);
 }
 
 function wrapText(text, maxChars = 14) {
@@ -61,16 +67,59 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
-function KnobMarker({ x, y, fill, stroke = colors.hubRing, r, animate = true }) {
+function AnimatedKnob({ targetX, targetY, startX, startY, fill, stroke = colors.hubRing, r, visible }) {
+  const posRef = useRef({ x: startX, y: startY });
+  const [pos, setPos] = useState({ x: startX, y: startY });
+  const frameRef = useRef(null);
+
+  useEffect(() => {
+    if (!visible) {
+      posRef.current = { x: startX, y: startY };
+      setPos({ x: startX, y: startY });
+      return undefined;
+    }
+
+    const from = { ...posRef.current };
+    const to = { x: targetX, y: targetY };
+
+    if (from.x === to.x && from.y === to.y) return undefined;
+
+    const start = performance.now();
+
+    function tick(now) {
+      const t = Math.min(1, (now - start) / ANIMATION_MS);
+      const eased = easeOutCubic(t);
+      const next = {
+        x: from.x + (to.x - from.x) * eased,
+        y: from.y + (to.y - from.y) * eased,
+      };
+      posRef.current = next;
+      setPos(next);
+      if (t < 1) {
+        frameRef.current = requestAnimationFrame(tick);
+      } else {
+        posRef.current = to;
+        setPos(to);
+      }
+    }
+
+    frameRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (frameRef.current) cancelAnimationFrame(frameRef.current);
+    };
+  }, [visible, targetX, targetY, startX, startY]);
+
+  if (!visible) return null;
+
   return (
-    <g
-      style={{
-        transform: `translate(${x}px, ${y}px)`,
-        transition: animate ? "transform 0.65s cubic-bezier(0.34, 1.2, 0.64, 1)" : undefined,
-      }}
-    >
-      <circle cx={0} cy={0} r={r} fill={fill} stroke={stroke} strokeWidth={2} />
-    </g>
+    <circle
+      cx={pos.x}
+      cy={pos.y}
+      r={r}
+      fill={fill}
+      stroke={stroke}
+      strokeWidth={2}
+    />
   );
 }
 
@@ -182,13 +231,14 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
         ? factors.map((factor, i) => {
             const pos = nodePosition(i, travelMax, cx, cy);
             return (
-              <KnobMarker
+              <circle
                 key={factor.key}
-                x={pos.x}
-                y={pos.y}
+                cx={pos.x}
+                cy={pos.y}
                 r={knobRadius}
                 fill={colors.dotsLight}
-                animate={false}
+                stroke={colors.hubRing}
+                strokeWidth={2}
               />
             );
           })
@@ -203,13 +253,18 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
               fill = colors.dotsLight;
             }
 
+            const startPos = nodePosition(i, travelMin, cx, cy);
+
             return (
-              <KnobMarker
+              <AnimatedKnob
                 key={factor.key}
-                x={pos.x}
-                y={pos.y}
+                startX={startPos.x}
+                startY={startPos.y}
+                targetX={pos.x}
+                targetY={pos.y}
                 r={knobRadius}
                 fill={fill}
+                visible={Boolean(niveau)}
               />
             );
           })}
