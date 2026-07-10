@@ -5,6 +5,7 @@ import { bepaalBalans } from "../logic/balans";
 import { suggereerFase } from "../logic/tuckman";
 import { getRecommendation } from "../logic/recommendations";
 import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
+import Startpagina from "../components/Startpagina";
 import IntroScreen from "../components/IntroScreen";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
@@ -68,7 +69,7 @@ function downloadWheelAsImage(svgElement) {
 }
 
 export default function SelfReflection() {
-  const [phase, setPhase] = useState("intro");
+  const [phase, setPhase] = useState("start");
   const [step, setStep] = useState(0);
   const [scores, setScores] = useState({});
   const [faseKey, setFaseKey] = useState("");
@@ -96,16 +97,24 @@ export default function SelfReflection() {
     }
   }
 
-  function handleStart() {
+  function handleBeginReflection() {
     setPhase("questions");
     setStep(0);
     setScores({});
   }
 
+  if (phase === "start") {
+    return (
+      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+        <Startpagina onStart={() => setPhase("intro")} />
+      </div>
+    );
+  }
+
   if (phase === "intro") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-        <IntroScreen onStart={handleStart} />
+        <IntroScreen onStart={handleBeginReflection} />
       </div>
     );
   }
@@ -294,7 +303,7 @@ export default function SelfReflection() {
           <button
             type="button"
             onClick={() => {
-              setPhase("intro");
+              setPhase("start");
               setStep(0);
               setScores({});
               setFaseKey("");

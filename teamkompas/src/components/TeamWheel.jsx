@@ -32,6 +32,10 @@ function hubEdgePoint(index, hubRadius, cx, cy) {
   };
 }
 
+function rimPoint(index, rimRadius, cx, cy) {
+  return nodePosition(index, rimRadius, cx, cy);
+}
+
 const DOT_SCALE = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
 
 function wrapText(text, maxChars = 14) {
@@ -51,15 +55,32 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
-export default function TeamWheel({ scores = {}, variant = "dots", svgRef }) {
-  const { viewBox, center, hubRadius, nodeRadius, nodeCircleRadius, labelRadius } = wheelGeometry;
+export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style }) {
+  const {
+    viewBox,
+    center,
+    hubRadius,
+    rimRadius,
+    rimStrokeWidth,
+    spokeWidth,
+    knobRadius,
+    knobPositionRadius,
+    factorLabelRadius,
+    resultLabelRadius,
+  } = wheelGeometry;
   const { x: cx, y: cy } = center;
 
-  const nodePositions = factors.map((_, i) =>
-    nodePosition(i, nodeRadius, cx, cy)
+  const isPreview = variant === "preview";
+  const showResults = !isPreview;
+
+  const knobPositions = factors.map((_, i) =>
+    nodePosition(i, knobPositionRadius, cx, cy)
   );
-  const labelPositions = results.map((_, i) =>
-    labelPosition(i, labelRadius, cx, cy)
+  const factorLabelPositions = factors.map((_, i) =>
+    nodePosition(i, factorLabelRadius, cx, cy)
+  );
+  const resultLabelPositions = results.map((_, i) =>
+    labelPosition(i, resultLabelRadius, cx, cy)
   );
 
   return (
@@ -67,25 +88,12 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef }) {
       ref={svgRef}
       viewBox={viewBox}
       width="100%"
-      style={{ maxWidth: 600, display: "block", margin: "0 auto" }}
+      style={{ maxWidth: 600, display: "block", margin: "0 auto", ...style }}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <defs>
-        <marker
-          id="arrowhead"
-          markerWidth="8"
-          markerHeight="8"
-          refX="6"
-          refY="4"
-          orient="auto"
-        >
-          <polygon points="0 0, 8 4, 0 8" fill={colors.dotsStrong} />
-        </marker>
-      </defs>
-
       {variant === "filled" && (
         <polygon
-          points={nodePositions.map((p) => `${p.x},${p.y}`).join(" ")}
+          points={knobPositions.map((p) => `${p.x},${p.y}`).join(" ")}
           fill={colors.dotsStrong}
           fillOpacity={0.15}
           stroke={colors.dotsStrong}
@@ -94,40 +102,28 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef }) {
         />
       )}
 
-      {factors.map((_, i) => {
-        const next = (i + 1) % 6;
-        const p1 = nodePositions[i];
-        const p2 = nodePositions[next];
-        const midX = (p1.x + p2.x) / 2;
-        const midY = (p1.y + p2.y) / 2;
-        const ctrlX = cx + (midX - cx) * 0.6;
-        const ctrlY = cy + (midY - cy) * 0.6;
-        return (
-          <path
-            key={`ring-${i}`}
-            d={`M ${p1.x} ${p1.y} Q ${ctrlX} ${ctrlY} ${p2.x} ${p2.y}`}
-            fill="none"
-            stroke={colors.hubRing}
-            strokeWidth={2}
-            markerStart="url(#arrowhead)"
-            markerEnd="url(#arrowhead)"
-          />
-        );
-      })}
+      <circle
+        cx={cx}
+        cy={cy}
+        r={rimRadius}
+        fill="none"
+        stroke={colors.hubRing}
+        strokeWidth={rimStrokeWidth}
+      />
 
       {factors.map((_, i) => {
         const edge = hubEdgePoint(i, hubRadius, cx, cy);
-        const node = nodePositions[i];
+        const rim = rimPoint(i, rimRadius, cx, cy);
         return (
           <line
             key={`spoke-${i}`}
             x1={edge.x}
             y1={edge.y}
-            x2={node.x}
-            y2={node.y}
+            x2={rim.x}
+            y2={rim.y}
             stroke={colors.hubRing}
-            strokeWidth={2}
-            markerEnd="url(#arrowhead)"
+            strokeWidth={spokeWidth}
+            strokeLinecap="round"
           />
         );
       })}
@@ -158,65 +154,87 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef }) {
       </text>
 
       {factors.map((factor, i) => {
-        const pos = nodePositions[i];
+        const pos = knobPositions[i];
         const niveau = scores[factor.key];
         const dotScale = niveau ? DOT_SCALE[niveau] : 0;
-        const dotR = (nodeCircleRadius * dotScale) / 2;
+        const dotR = (knobRadius * 2 * dotScale) / 2;
+
+        let knobFill = colors.surface;
+        const knobStroke = colors.hubRing;
+
+        if (isPreview) {
+          knobFill = colors.dotsLight;
+        } else if (variant === "dots" && niveau === "sterk") {
+          knobFill = colors.dotsStrong;
+        }
 
         return (
           <g key={factor.key}>
             <circle
               cx={pos.x}
               cy={pos.y}
-              r={nodeCircleRadius}
-              fill={colors.surface}
-              stroke={colors.hubRing}
+              r={knobRadius}
+              fill={knobFill}
+              stroke={knobStroke}
               strokeWidth={2}
             />
-            {variant === "dots" && niveau && (
+            {variant === "dots" && niveau && !isPreview && niveau !== "sterk" && (
               <circle
                 cx={pos.x}
                 cy={pos.y}
                 r={dotR}
-                fill={niveau === "sterk" ? colors.dotsStrong : colors.dotsLight}
+                fill={colors.dotsLight}
               />
             )}
-            {wrapText(factor.label, 12).map((line, li, arr) => (
-              <text
-                key={line}
-                x={pos.x}
-                y={pos.y + nodeCircleRadius + 14 + li * 13}
-                textAnchor="middle"
-                fill={colors.labelAccent}
-                fontFamily={fonts.ui}
-                fontSize={11}
-                fontWeight={500}
-              >
-                {line}
-              </text>
-            ))}
           </g>
         );
       })}
 
-      {results.map((result, i) => {
-        const pos = labelPositions[i];
-        return (
+      {factors.map((factor, i) => {
+        const pos = factorLabelPositions[i];
+        const angleDeg = -90 + i * 60;
+        const anchor = Math.abs(((angleDeg % 360) + 360) % 360 - 90) < 1
+          ? "middle"
+          : angleDeg > -90 && angleDeg < 90
+            ? "start"
+            : "end";
+
+        return wrapText(factor.label, 16).map((line, li, arr) => (
           <text
-            key={result}
+            key={`${factor.key}-${line}`}
             x={pos.x}
-            y={pos.y}
-            textAnchor="middle"
+            y={pos.y + (li - (arr.length - 1) / 2) * 12}
+            textAnchor={anchor}
             dominantBaseline="middle"
             fill={colors.labelAccent}
             fontFamily={fonts.ui}
-            fontSize={10}
-            opacity={0.75}
+            fontSize={9}
+            fontWeight={500}
           >
-            {result}
+            {line}
           </text>
-        );
+        ));
       })}
+
+      {showResults &&
+        results.map((result, i) => {
+          const pos = resultLabelPositions[i];
+          return (
+            <text
+              key={result}
+              x={pos.x}
+              y={pos.y}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fill={colors.labelAccent}
+              fontFamily={fonts.ui}
+              fontSize={9}
+              opacity={0.85}
+            >
+              {result}
+            </text>
+          );
+        })}
     </svg>
   );
 }

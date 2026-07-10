@@ -42,9 +42,18 @@ export const wheelGeometry = {
   viewBox: "0 0 600 600",
   center: { x: 300, y: 300 },
   hubRadius: 70,
-  nodeRadius: 220,
-  nodeCircleRadius: 60,
-  labelRadius: 145,
+  rimRadius: 235,
+  rimStrokeWidth: 14,
+  spokeWidth: 10,
+  knobRadius: 22,
+  knobPositionRadius: 220,
+  factorLabelRadius: 280,
+  resultLabelRadius: 235,
+};
+
+export const welkom = {
+  titel: "Welkom bij TeamKompas",
+  tekst: "Ontdek in een paar minuten waar jullie team staat — en wat er nodig is voor de volgende stap.",
 };
 
 export const bronvermelding =
