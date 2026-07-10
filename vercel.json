@@ -1,7 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/((?!downloads/|images/).*)",
+      "source": "/wisselwerking",
+      "destination": "/wisselwerking/index.html"
+    },
+    {
+      "source": "/wisselwerking/:path*",
+      "destination": "/wisselwerking/index.html"
+    },
+    {
+      "source": "/((?!downloads/|images/|wisselwerking).*)",
       "destination": "/index.html"
     }
   ]

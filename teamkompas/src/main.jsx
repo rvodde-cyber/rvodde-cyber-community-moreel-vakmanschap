@@ -24,7 +24,7 @@ function PlaceholderPage({ title }) {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/wisselwerking">
       <Routes>
         <Route path="/" element={<SelfReflection />} />
         <Route
