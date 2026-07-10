@@ -15,9 +15,15 @@
   ],
   "headers": [
     {
-      "source": "/wisselwerking/(.*)",
+      "source": "/wisselwerking/assets/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/wisselwerking/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]
     }
   ]

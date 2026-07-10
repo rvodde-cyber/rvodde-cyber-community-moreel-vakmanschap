@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, forwardRef } from "react";
 import { colors, fonts, wheelGeometry } from "../config";
 
 const factors = [
@@ -13,7 +13,9 @@ const factors = [
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
 const NIVEAU_TRAVEL = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
-const ANIMATION_MS = 900;
+
+const VIEWBOX_PARTS = wheelGeometry.viewBox.split(/\s+/).map(Number);
+const [VB_X, VB_Y, VB_W, VB_H] = VIEWBOX_PARTS;
 
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
@@ -46,12 +48,11 @@ function knobTravelRadius(niveau, minRadius, maxRadius) {
   return minRadius + (maxRadius - minRadius) * t;
 }
 
-function easeOutCubic(t) {
-  return 1 - Math.pow(1 - t, 3);
-}
-
-function positionsEqual(a, b) {
-  return a.length === b.length && a.every((p, i) => p.x === b[i].x && p.y === b[i].y);
+function toPercent(x, y) {
+  return {
+    left: `${((x - VB_X) / VB_W) * 100}%`,
+    top: `${((y - VB_Y) / VB_H) * 100}%`,
+  };
 }
 
 function wrapText(text, maxChars = 14) {
@@ -71,7 +72,7 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
-export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style }) {
+export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", style }, ref) {
   const {
     viewBox,
     center,
@@ -92,61 +93,20 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
   const travelMin = knobTravelMinRadius;
   const travelMax = knobTravelMaxRadius;
 
-  const innerPositions = useMemo(
-    () => factors.map((_, i) => nodePosition(i, travelMin, cx, cy)),
-    [travelMin, cx, cy]
-  );
-
-  const targetPositions = useMemo(
+  const knobPositions = useMemo(
     () =>
       factors.map((factor, i) => {
+        if (isPreview) return nodePosition(i, travelMax, cx, cy);
         const radius = knobTravelRadius(scores[factor.key], travelMin, travelMax);
         return nodePosition(i, radius, cx, cy);
       }),
-    [scores, travelMin, travelMax, cx, cy]
+    [scores, isPreview, travelMin, travelMax, cx, cy]
   );
 
-  const [displayPositions, setDisplayPositions] = useState(innerPositions);
-  const displayRef = useRef(innerPositions);
-  const frameRef = useRef(null);
-
-  useEffect(() => {
-    displayRef.current = innerPositions;
-    setDisplayPositions(innerPositions);
-  }, [innerPositions]);
-
-  useEffect(() => {
-    if (isPreview) return undefined;
-
-    const from = displayRef.current.map((p) => ({ ...p }));
-    const to = targetPositions.map((p) => ({ ...p }));
-
-    if (positionsEqual(from, to)) return undefined;
-
-    const start = performance.now();
-
-    function tick(now) {
-      const t = Math.min(1, (now - start) / ANIMATION_MS);
-      const eased = easeOutCubic(t);
-      const next = from.map((point, i) => ({
-        x: point.x + (to[i].x - point.x) * eased,
-        y: point.y + (to[i].y - point.y) * eased,
-      }));
-      displayRef.current = next;
-      setDisplayPositions(next);
-      if (t < 1) {
-        frameRef.current = requestAnimationFrame(tick);
-      } else {
-        displayRef.current = to;
-        setDisplayPositions(to);
-      }
-    }
-
-    frameRef.current = requestAnimationFrame(tick);
-    return () => {
-      if (frameRef.current) cancelAnimationFrame(frameRef.current);
-    };
-  }, [targetPositions, isPreview]);
+  const polygonPoints = knobPositions
+    .filter((_, i) => scores[factors[i].key])
+    .map((p) => `${p.x},${p.y}`)
+    .join(" ");
 
   const factorLabelPositions = factors.map((_, i) =>
     nodePosition(i, factorLabelRadius, cx, cy)
@@ -155,158 +115,198 @@ export default function TeamWheel({ scores = {}, variant = "dots", svgRef, style
     labelPosition(i, resultLabelRadius, cx, cy)
   );
 
-  const knobPositions = isPreview
-    ? factors.map((_, i) => nodePosition(i, travelMax, cx, cy))
-    : displayPositions;
+  const knobSizePct = (knobRadius * 2 / VB_W) * 100;
+  const knobOffsetPct = (knobRadius / VB_W) * 100;
+
+  const knobStyle = (pct, background, opacity = 1, animate = true) => ({
+    position: "absolute",
+    left: pct.left,
+    top: pct.top,
+    width: `${knobSizePct}%`,
+    aspectRatio: "1",
+    marginLeft: `-${knobOffsetPct}%`,
+    marginTop: `-${knobOffsetPct}%`,
+    borderRadius: "50%",
+    background,
+    border: `2px solid ${colors.hubRing}`,
+    opacity,
+    boxSizing: "border-box",
+    transition: animate
+      ? "left 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), top 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), background 0.3s ease"
+      : undefined,
+  });
 
   return (
-    <svg
-      ref={svgRef}
-      viewBox={viewBox}
-      width="100%"
-      overflow="visible"
-      style={{ maxWidth: 600, display: "block", margin: "0 auto", ...style }}
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      ref={ref}
+      style={{
+        position: "relative",
+        width: "100%",
+        maxWidth: 600,
+        margin: "0 auto",
+        ...style,
+      }}
     >
-      {variant === "filled" && !isPreview && (
-        <polygon
-          points={knobPositions
-            .filter((_, i) => scores[factors[i].key])
-            .map((p) => `${p.x},${p.y}`)
-            .join(" ")}
-          fill={colors.dotsStrong}
-          fillOpacity={0.15}
-          stroke={colors.dotsStrong}
-          strokeWidth={1}
-          strokeOpacity={0.4}
-        />
-      )}
-
-      <circle
-        cx={cx}
-        cy={cy}
-        r={rimRadius}
-        fill="none"
-        stroke={colors.hubRing}
-        strokeWidth={rimStrokeWidth}
-      />
-
-      {factors.map((_, i) => {
-        const edge = hubEdgePoint(i, hubRadius, cx, cy);
-        const rim = rimPoint(i, rimRadius, cx, cy);
-        return (
-          <line
-            key={`spoke-${i}`}
-            x1={edge.x}
-            y1={edge.y}
-            x2={rim.x}
-            y2={rim.y}
-            stroke={colors.hubRing}
-            strokeWidth={spokeWidth}
-            strokeLinecap="round"
-          />
-        );
-      })}
-
-      <circle
-        cx={cx}
-        cy={cy}
-        r={hubRadius}
-        fill={colors.hubFill}
-        stroke={colors.hubRing}
-        strokeWidth={3}
-      />
-      <text
-        x={cx}
-        y={cy}
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fill={colors.surface}
-        fontFamily={fonts.voice}
-        fontSize={13}
-        fontWeight={600}
+      <svg
+        viewBox={viewBox}
+        width="100%"
+        overflow="visible"
+        style={{ display: "block" }}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        {wrapText("Geïnspireerd samenwerken", 16).map((line, i, arr) => (
-          <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 7 : 14}>
-            {line}
-          </tspan>
-        ))}
-      </text>
-
-      {factors.map((factor, i) => {
-        const pos = knobPositions[i];
-        const niveau = scores[factor.key];
-        let fill = colors.surface;
-        let opacity = isPreview ? 1 : niveau ? 1 : 0.35;
-
-        if (isPreview) {
-          fill = colors.dotsLight;
-        } else if (niveau === "sterk") {
-          fill = colors.dotsStrong;
-        } else if (niveau) {
-          fill = colors.dotsLight;
-        }
-
-        return (
-          <circle
-            key={factor.key}
-            cx={pos.x}
-            cy={pos.y}
-            r={knobRadius}
-            fill={fill}
-            fillOpacity={opacity}
-            stroke={colors.hubRing}
-            strokeWidth={2}
+        {variant === "filled" && !isPreview && polygonPoints && (
+          <polygon
+            points={polygonPoints}
+            fill={colors.dotsStrong}
+            fillOpacity={0.15}
+            stroke={colors.dotsStrong}
+            strokeWidth={1}
+            strokeOpacity={0.4}
           />
-        );
-      })}
+        )}
 
-      {factors.map((factor, i) => {
-        const pos = factorLabelPositions[i];
-        const angleDeg = -90 + i * 60;
-        const anchor =
-          Math.abs((((angleDeg % 360) + 360) % 360) - 90) < 1
-            ? "middle"
-            : angleDeg > -90 && angleDeg < 90
-              ? "start"
-              : "end";
+        <circle
+          cx={cx}
+          cy={cy}
+          r={rimRadius}
+          fill="none"
+          stroke={colors.hubRing}
+          strokeWidth={rimStrokeWidth}
+        />
 
-        return wrapText(factor.label, 16).map((line, li, arr) => (
-          <text
-            key={`${factor.key}-${line}`}
-            x={pos.x}
-            y={pos.y + (li - (arr.length - 1) / 2) * 12}
-            textAnchor={anchor}
-            dominantBaseline="middle"
-            fill={colors.labelAccent}
-            fontFamily={fonts.ui}
-            fontSize={9}
-            fontWeight={500}
-          >
-            {line}
-          </text>
-        ));
-      })}
-
-      {showResults &&
-        results.map((result, i) => {
-          const pos = resultLabelPositions[i];
+        {factors.map((_, i) => {
+          const edge = hubEdgePoint(i, hubRadius, cx, cy);
+          const rim = rimPoint(i, rimRadius, cx, cy);
           return (
+            <line
+              key={`spoke-${i}`}
+              x1={edge.x}
+              y1={edge.y}
+              x2={rim.x}
+              y2={rim.y}
+              stroke={colors.hubRing}
+              strokeWidth={spokeWidth}
+              strokeLinecap="round"
+            />
+          );
+        })}
+
+        <circle
+          cx={cx}
+          cy={cy}
+          r={hubRadius}
+          fill={colors.hubFill}
+          stroke={colors.hubRing}
+          strokeWidth={3}
+        />
+        <text
+          x={cx}
+          y={cy}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fill={colors.surface}
+          fontFamily={fonts.voice}
+          fontSize={13}
+          fontWeight={600}
+        >
+          {wrapText("Geïnspireerd samenwerken", 16).map((line, i, arr) => (
+            <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 7 : 14}>
+              {line}
+            </tspan>
+          ))}
+        </text>
+
+        {factors.map((factor, i) => {
+          const pos = factorLabelPositions[i];
+          const angleDeg = -90 + i * 60;
+          const anchor =
+            Math.abs((((angleDeg % 360) + 360) % 360) - 90) < 1
+              ? "middle"
+              : angleDeg > -90 && angleDeg < 90
+                ? "start"
+                : "end";
+
+          return wrapText(factor.label, 16).map((line, li, arr) => (
             <text
-              key={result}
+              key={`${factor.key}-${line}`}
               x={pos.x}
-              y={pos.y}
-              textAnchor="middle"
+              y={pos.y + (li - (arr.length - 1) / 2) * 12}
+              textAnchor={anchor}
               dominantBaseline="middle"
               fill={colors.labelAccent}
               fontFamily={fonts.ui}
               fontSize={9}
-              opacity={0.85}
+              fontWeight={500}
             >
-              {result}
+              {line}
             </text>
+          ));
+        })}
+
+        {showResults &&
+          results.map((result, i) => {
+            const pos = resultLabelPositions[i];
+            return (
+              <text
+                key={result}
+                x={pos.x}
+                y={pos.y}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fill={colors.labelAccent}
+                fontFamily={fonts.ui}
+                fontSize={9}
+                opacity={0.85}
+              >
+                {result}
+              </text>
+            );
+          })}
+      </svg>
+
+      {!isPreview && (
+        <div
+          aria-hidden
+          style={{
+            position: "absolute",
+            inset: 0,
+            pointerEvents: "none",
+          }}
+        >
+          {factors.map((factor, i) => {
+            const pos = knobPositions[i];
+            const pct = toPercent(pos.x, pos.y);
+            const niveau = scores[factor.key];
+            let background = colors.surface;
+
+            if (niveau === "sterk") {
+              background = colors.dotsStrong;
+            } else if (niveau) {
+              background = colors.dotsLight;
+            }
+
+            return (
+              <div
+                key={factor.key}
+                style={knobStyle(pct, background, niveau ? 1 : 0.35)}
+              />
+            );
+          })}
+        </div>
+      )}
+
+      {isPreview &&
+        factors.map((factor, i) => {
+          const pos = knobPositions[i];
+          const pct = toPercent(pos.x, pos.y);
+          return (
+            <div
+              key={factor.key}
+              aria-hidden
+              style={knobStyle(pct, colors.dotsLight, 1, false)}
+            />
           );
         })}
-    </svg>
+    </div>
   );
-}
+});

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { colors, fonts } from "../config";
+import { colors, fonts, wheelGeometry } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
 import { suggereerFase } from "../logic/tuckman";
@@ -41,11 +41,47 @@ function UitlegBlok({ titel, tekst }) {
   );
 }
 
-function downloadWheelAsImage(svgElement) {
+function downloadWheelAsImage(container, scores) {
+  if (!container) return;
+
+  const svgElement = container.querySelector("svg");
   if (!svgElement) return;
 
   const serializer = new XMLSerializer();
-  const svgString = serializer.serializeToString(svgElement);
+  let svgString = serializer.serializeToString(svgElement);
+
+  const factorKeys = [
+    "doelen",
+    "initiatief",
+    "flexibiliteit",
+    "respect",
+    "communicatie",
+    "verantwoordelijkheid",
+  ];
+  const { center, knobRadius, knobTravelMinRadius, knobTravelMaxRadius } = wheelGeometry;
+  const travelMin = knobTravelMinRadius;
+  const travelMax = knobTravelMaxRadius;
+  const niveauTravel = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+
+  const knobMarkup = factorKeys
+    .map((key, i) => {
+      const niveau = scores[key];
+      if (!niveau) return "";
+      const t = niveauTravel[niveau];
+      const radius = travelMin + (travelMax - travelMin) * t;
+      const angleDeg = -90 + i * 60;
+      const angleRad = (angleDeg * Math.PI) / 180;
+      const x = center.x + radius * Math.cos(angleRad);
+      const y = center.y + radius * Math.sin(angleRad);
+      const fill = niveau === "sterk" ? colors.dotsStrong : colors.dotsLight;
+      return `<circle cx="${x}" cy="${y}" r="${knobRadius}" fill="${fill}" stroke="${colors.hubRing}" stroke-width="2" />`;
+    })
+    .join("");
+
+  if (knobMarkup) {
+    svgString = svgString.replace("</svg>", `${knobMarkup}</svg>`);
+  }
+
   const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
   const url = URL.createObjectURL(svgBlob);
 
@@ -145,7 +181,7 @@ export default function SelfReflection() {
             Jullie teamwiel
           </h1>
 
-          <TeamWheel scores={scores} variant="dots" svgRef={wheelRef} />
+          <TeamWheel ref={wheelRef} scores={scores} variant="dots" />
 
           <section style={{ marginTop: 32 }}>
             <h2
@@ -289,7 +325,7 @@ export default function SelfReflection() {
 
           <button
             type="button"
-            onClick={() => downloadWheelAsImage(wheelRef.current)}
+            onClick={() => downloadWheelAsImage(wheelRef.current, scores)}
             style={{
               fontFamily: fonts.ui,
               background: colors.hubFill,
