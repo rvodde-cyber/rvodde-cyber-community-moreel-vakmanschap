@@ -6,13 +6,13 @@
 
 export const framing = {
   onderwijs: {
-    appTitle: "TeamKompas",
+    appTitle: "Wisselwerking",
     teamScanTitle: (orgName) => `Teamscan ${orgName}`,
     introText:
       "Een kompas voor teamontwikkeling, gebaseerd op het Teamwiel van Vroemen.",
   },
   zakelijk: {
-    appTitle: "TeamKompas",
+    appTitle: "Wisselwerking",
     teamScanTitle: (orgName) => `Teamscan ${orgName}`,
     introText:
       "Inzicht in de balans van uw team, gebaseerd op het Teamwiel van Vroemen.",

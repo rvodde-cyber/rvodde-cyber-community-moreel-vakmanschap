@@ -36,7 +36,7 @@ function downloadWheelAsImage(svgElement) {
     URL.revokeObjectURL(url);
 
     const link = document.createElement("a");
-    link.download = "teamkompas-wiel.png";
+    link.download = "wisselwerking-wiel.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
   };
