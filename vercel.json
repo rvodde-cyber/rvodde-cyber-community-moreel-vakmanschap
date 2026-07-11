@@ -9,7 +9,7 @@
       "destination": "/wisselwerking/index.html"
     },
     {
-      "source": "/((?!downloads/|images/|wisselwerking).*)",
+      "source": "/((?!api/|downloads/|images/|wisselwerking).*)",
       "destination": "/index.html"
     }
   ],

@@ -1,0 +1,232 @@
+.workshop-root {
+  --workshop-teal: #1d9e75;
+  --workshop-teal-dark: #04342c;
+  --workshop-teal-muted: #0f5c47;
+  --workshop-surface: #f4fbf8;
+  --workshop-card: #ffffff;
+  --workshop-text: #04342c;
+  --workshop-text-muted: #3d6b5f;
+  --workshop-border: rgba(4, 52, 44, 0.12);
+  --workshop-error: #b42318;
+
+  min-height: 100vh;
+  background: linear-gradient(165deg, var(--workshop-surface) 0%, #e8f5f0 45%, #dff0ea 100%);
+  color: var(--workshop-text);
+  font-family: "DM Sans", sans-serif;
+}
+
+.workshop-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.workshop-card {
+  max-width: 440px;
+  margin: 48px auto 0;
+  padding: 32px;
+  background: var(--workshop-card);
+  border: 1px solid var(--workshop-border);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(4, 52, 44, 0.08);
+}
+
+.workshop-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--workshop-teal);
+}
+
+.workshop-title {
+  margin: 0 0 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--workshop-teal-dark);
+}
+
+.workshop-intro {
+  margin: 0 0 24px;
+  line-height: 1.65;
+  color: var(--workshop-text-muted);
+}
+
+.workshop-welcome {
+  margin: 0 0 12px;
+  font-weight: 600;
+  color: var(--workshop-teal-muted);
+}
+
+.workshop-form {
+  display: grid;
+  gap: 12px;
+}
+
+.workshop-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.workshop-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--workshop-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--workshop-text);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.workshop-input:focus {
+  outline: 2px solid rgba(29, 158, 117, 0.35);
+  border-color: var(--workshop-teal);
+}
+
+.workshop-button {
+  margin-top: 8px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--workshop-teal);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.workshop-button:hover:not(:disabled) {
+  background: var(--workshop-teal-muted);
+}
+
+.workshop-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.workshop-button-ghost {
+  padding: 10px 16px;
+  border: 1px solid var(--workshop-border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--workshop-teal-dark);
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.workshop-error {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--workshop-error);
+}
+
+.workshop-muted {
+  color: var(--workshop-text-muted);
+}
+
+.workshop-hub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.workshop-app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px;
+  background: var(--workshop-card);
+  border: 1px solid var(--workshop-border);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(4, 52, 44, 0.06);
+}
+
+.workshop-app-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.workshop-app-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.45rem;
+  color: var(--workshop-teal-dark);
+}
+
+.workshop-badge {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.workshop-badge-workshop {
+  background: rgba(29, 158, 117, 0.12);
+  color: var(--workshop-teal-muted);
+}
+
+.workshop-badge-altijd {
+  background: rgba(4, 52, 44, 0.08);
+  color: var(--workshop-teal-dark);
+}
+
+.workshop-app-desc {
+  margin: 0;
+  flex: 1;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--workshop-text-muted);
+}
+
+.workshop-app-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--workshop-teal);
+  text-decoration: none;
+}
+
+.workshop-app-link:hover {
+  color: var(--workshop-teal-dark);
+}
+
+.workshop-footer-note {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.workshop-link {
+  color: var(--workshop-teal-muted);
+  text-decoration: none;
+}
+
+.workshop-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .workshop-hub-header {
+    flex-direction: column;
+  }
+
+  .workshop-card {
+    margin-top: 24px;
+    padding: 24px;
+  }
+}

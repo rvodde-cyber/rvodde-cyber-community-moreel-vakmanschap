@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import DocumentTaal from "./components/DocumentTaal";
 
@@ -27,6 +27,8 @@ import ModelPagina from "./pages/ModelPagina";
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
+import WorkshopLogin from "./pages/workshop/WorkshopLogin";
+import WorkshopHub from "./pages/workshop/WorkshopHub";
 
 
 
@@ -212,11 +214,45 @@ export default function App() {
 
         <TaalRouteSync />
 
-        <Navigatie />
+        <AppRoutes />
 
-        <Routes>
+      </BrowserRouter>
 
-          <Route path="/" element={<PageRoute><WelkomPagina /></PageRoute>} />
+    </TaalProvider>
+
+  );
+
+}
+
+
+
+function AppRoutes() {
+
+  const location = useLocation();
+
+  const isWorkshop =
+
+    location.pathname.startsWith("/workshop") || location.pathname.startsWith("/besloten");
+
+
+
+  return (
+
+    <>
+
+      {!isWorkshop && <Navigatie />}
+
+      <Routes>
+
+        <Route path="/workshop" element={<WorkshopLogin />} />
+
+        <Route path="/workshop/apps" element={<WorkshopHub />} />
+
+        <Route path="/besloten" element={<Navigate to="/workshop/apps" replace />} />
+
+        <Route path="/besloten/*" element={<Navigate to="/workshop/apps" replace />} />
+
+        <Route path="/" element={<PageRoute><WelkomPagina /></PageRoute>} />
 
           <Route path="/welkom" element={<PageRoute><WelkomPagina /></PageRoute>} />
 
@@ -250,9 +286,7 @@ export default function App() {
 
         </Routes>
 
-      </BrowserRouter>
-
-    </TaalProvider>
+    </>
 
   );
 
