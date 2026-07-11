@@ -87,6 +87,21 @@ export default function WorkshopHub() {
             >
               Open app →
             </a>
+            {app.url_extra?.length > 0 && (
+              <div className="workshop-app-extra-links">
+                {app.url_extra.map((extraUrl) => (
+                  <a
+                    key={extraUrl}
+                    href={extraUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="workshop-app-link"
+                  >
+                    {extraUrl.replace("https://", "").split(".")[0]} →
+                  </a>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

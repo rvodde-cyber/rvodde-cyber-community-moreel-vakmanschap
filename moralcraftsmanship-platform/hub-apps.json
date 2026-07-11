@@ -3,8 +3,13 @@
     {
       "id": "maps-trilogie",
       "naam": "MAPS Trilogie",
-      "omschrijving": "Universele morele scenario's in drie lagen — neutraal en abstract, nooit zorg-specifiek.",
-      "url": "https://maps-trilogie.vercel.app",
+      "omschrijving": "Drieluik: The Beginning, Crossroads, Final Destination. Neutraal en abstract — nooit zorg-specifiek.",
+      "url": "https://moral-maps.vercel.app",
+      "url_extra": [
+        "https://moral-maps-2-crossroads.vercel.app",
+        "https://moral-maps-3-final-destination.vercel.app"
+      ],
+      "githubRepo": "rvodde-cyber/moral-maps",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -12,8 +17,9 @@
     {
       "id": "moral-maps",
       "naam": "Moral Maps",
-      "omschrijving": "GPS-flow voor moreel oriënteren en positioneren in complexe situaties.",
+      "omschrijving": "GPS-flow: kaart, kernwaarden en dilemma's — deel 1 van de MAPS-trilogie.",
       "url": "https://moral-maps.vercel.app",
+      "githubRepo": "rvodde-cyber/moral-maps",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -22,9 +28,10 @@
       "id": "dilemma-roulette",
       "naam": "Dilemma Roulette",
       "omschrijving": "Rad van Moreel Fortuin — interactieve dilemma-oefening voor groepsgesprekken.",
-      "url": "https://dilemma-roulette.vercel.app",
+      "url": "",
+      "githubRepo": "rvodde-cyber/dilemmagenerator",
       "categorie": "besloten",
-      "status": "live",
+      "status": "in-ontwikkeling",
       "hubBadge": "workshop"
     },
     {
@@ -32,6 +39,7 @@
       "naam": "Neuro Gym",
       "omschrijving": "Oefeningen rond moreel redeneren en cognitieve vooroordelen.",
       "url": "https://neuro-gym.vercel.app",
+      "githubRepo": null,
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -39,17 +47,19 @@
     {
       "id": "moreel-leiderschap",
       "naam": "Moreel Leiderschap",
-      "omschrijving": "Reflectietool voor zichtbaar ethisch leiderschap in teams.",
-      "url": "https://moreel-leiderschap.vercel.app",
+      "omschrijving": "Leergang-app: van bewustzijn naar moedige praktijk voor leidinggevenden.",
+      "url": "https://leergang-moreel-leiderschap.vercel.app",
+      "githubRepo": "rvodde-cyber/leergang-moreel-leiderschap",
       "categorie": "besloten",
-      "status": "in-ontwikkeling",
+      "status": "live",
       "hubBadge": "altijd"
     },
     {
       "id": "ethos-studio",
       "naam": "Ethos Studio — generator",
       "omschrijving": "Productietool voor het maken van gesprekskaarten (niet de publieke voorbeeldkaarten).",
-      "url": "https://ethos-studio.vercel.app",
+      "url": "https://rvodde-cyber.github.io/ethos-studio/",
+      "githubRepo": "rvodde-cyber/ethos-studio",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -57,8 +67,9 @@
     {
       "id": "lakmoesproef",
       "naam": "Morele Lakmoesproef",
-      "omschrijving": "Organisatie- en teamlakmoes — strikt gescheiden van MAPS.",
+      "omschrijving": "Organisatie Lakmoesproef — strikt gescheiden van MAPS.",
       "url": "https://lakmoesproef.vercel.app",
+      "githubRepo": "rvodde-cyber/Lakmoesproef",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -67,16 +78,18 @@
       "id": "scherpstellen",
       "naam": "Scherpstellen",
       "omschrijving": "Interactieve congres-app voor moreel scherpstellen.",
-      "url": "https://scherpstellen.vercel.app",
+      "url": "",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (branch cursor/verdenk-test-app-776c)",
       "categorie": "besloten",
-      "status": "live",
+      "status": "in-ontwikkeling",
       "hubBadge": "workshop"
     },
     {
       "id": "etz-gesprekskaarten",
       "naam": "ETZ Gesprekskaarten",
       "omschrijving": "ETZ-materiaal (wit met blauwe accenten) — gescheiden van algemene content.",
-      "url": "https://etz-gesprekskaarten.vercel.app",
+      "url": "https://etz.vercel.app",
+      "githubRepo": null,
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
@@ -85,7 +98,8 @@
       "id": "wisselwerking",
       "naam": "Wisselwerking",
       "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
-      "url": "https://wisselwerking.vercel.app",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (teamkompas/)",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "altijd"
@@ -94,7 +108,8 @@
       "id": "landingpage",
       "naam": "Community of Practice",
       "omschrijving": "Publieke landingpage, model en showcase-materiaal.",
-      "url": "https://moralcraftsmanship.com",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
       "categorie": "publiek",
       "status": "live",
       "hubBadge": null
@@ -103,7 +118,8 @@
       "id": "model-moreel-vakmanschap",
       "naam": "Model Moreel Vakmanschap",
       "omschrijving": "Interactief model (SVG NL/EN) op het publieke platform.",
-      "url": "https://moralcraftsmanship.com/model",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/model",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
       "categorie": "publiek",
       "status": "live",
       "hubBadge": null
@@ -112,7 +128,8 @@
       "id": "hr-dilemmakaarten",
       "naam": "HR Dilemmakaarten",
       "omschrijving": "Voorbeeldkaarten voor HR-dilemma's (geen generator).",
-      "url": "https://moralcraftsmanship.com/gesprekskaarten",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/gesprekskaarten",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
       "categorie": "publiek",
       "status": "live",
       "hubBadge": null
@@ -121,7 +138,8 @@
       "id": "werkbladen",
       "naam": "Educatieve werkbladen",
       "omschrijving": "Elf werkbladen gekoppeld aan het model Moreel Vakmanschap.",
-      "url": "https://moralcraftsmanship.com/bibliotheek",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/bibliotheek",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
       "categorie": "publiek",
       "status": "live",
       "hubBadge": null
@@ -130,7 +148,8 @@
       "id": "ethos-output",
       "naam": "Ethos Studio — output",
       "omschrijving": "Voorbeeldkaarten op het publieke deel (niet de generator).",
-      "url": "https://moralcraftsmanship.com/gesprekskaarten",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/gesprekskaarten",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
       "categorie": "publiek",
       "status": "live",
       "hubBadge": null
@@ -140,6 +159,7 @@
       "naam": "Diversiteits Monitor",
       "omschrijving": "Nog in ontwikkeling — indeling volgt bij eerste gebruik.",
       "url": "",
+      "githubRepo": null,
       "categorie": "onbepaald",
       "status": "in-ontwikkeling",
       "hubBadge": null

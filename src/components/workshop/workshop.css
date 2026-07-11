@@ -206,6 +206,18 @@
   color: var(--workshop-teal-dark);
 }
 
+.workshop-app-extra-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.workshop-app-extra-links .workshop-app-link {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
 .workshop-footer-note {
   margin-top: 40px;
   font-size: 0.9rem;

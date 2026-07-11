@@ -3,6 +3,9 @@
 **Single point of truth** voor indeling van apps op het platform.  
 Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:sync` draaien (of laat Cursor dat doen).
 
+**Platform-URL (Vercel):** https://rvodde-cyber-community-moreel-vakma.vercel.app  
+**Doel-domein:** moralcraftsmanship.com (koppelen in Vercel → Domains)
+
 ## Categorieën
 
 | Categorie | Betekenis |
@@ -13,28 +16,38 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 
 ## App-tabel
 
-| App-naam | Vercel-URL | Categorie | Status | Hub-badge | Omschrijving |
-|----------|------------|-----------|--------|-----------|--------------|
-| MAPS Trilogie | https://maps-trilogie.vercel.app | besloten | live | workshop | Universele morele scenario's — neutraal, nooit zorg-specifiek |
-| Moral Maps | https://moral-maps.vercel.app | besloten | live | workshop | GPS-flow voor moreel oriënteren |
-| Dilemma Roulette | https://dilemma-roulette.vercel.app | besloten | live | workshop | Rad van Moreel Fortuin (geen term "moreel kompas") |
-| Neuro Gym | https://neuro-gym.vercel.app | besloten | live | workshop | Oefeningen moreel redeneren |
-| Moreel Leiderschap | https://moreel-leiderschap.vercel.app | besloten | in-ontwikkeling | altijd | Reflectietool ethisch leiderschap |
-| Ethos Studio — generator | https://ethos-studio.vercel.app | besloten | live | workshop | Productietool gesprekskaarten |
-| Morele Lakmoesproef | https://lakmoesproef.vercel.app | besloten | live | workshop | Strikt gescheiden van MAPS |
-| Scherpstellen | https://scherpstellen.vercel.app | besloten | live | workshop | Interactieve congres-app |
-| ETZ Gesprekskaarten | https://etz-gesprekskaarten.vercel.app | besloten | live | workshop | ETZ-stijl: wit met blauwe accenten |
-| Wisselwerking | https://wisselwerking.vercel.app | besloten | live | altijd | Teamwiel zelfreflectie |
-| Community of Practice | https://moralcraftsmanship.com | publiek | live | — | Landingpage en showcase |
-| Model Moreel Vakmanschap | https://moralcraftsmanship.com/model | publiek | live | — | SVG model NL/EN |
-| HR Dilemmakaarten | https://moralcraftsmanship.com/gesprekskaarten | publiek | live | — | Voorbeeldkaarten, geen generator |
-| Educatieve werkbladen | https://moralcraftsmanship.com/bibliotheek | publiek | live | — | 11 werkbladen |
-| Ethos Studio — output | https://moralcraftsmanship.com/gesprekskaarten | publiek | live | — | Voorbeeldkaarten publiek |
-| Diversiteits Monitor | *(nog geen URL)* | onbepaald | in-ontwikkeling | — | Indeling volgt later |
+| App-naam | Vercel-URL | GitHub | Categorie | Status | Hub-badge |
+|----------|------------|--------|-----------|--------|-----------|
+| MAPS Trilogie (deel 1) | https://moral-maps.vercel.app | moral-maps | besloten | live | workshop |
+| MAPS Trilogie (deel 2) | https://moral-maps-2-crossroads.vercel.app | moral-maps | besloten | live | — |
+| MAPS Trilogie (deel 3) | https://moral-maps-3-final-destination.vercel.app | moral-maps | besloten | live | — |
+| Moral Maps (GPS) | https://moral-maps.vercel.app | moral-maps | besloten | live | workshop |
+| Dilemma Roulette | *(nog geen deploy)* | dilemmagenerator | besloten | in-ontwikkeling | workshop |
+| Neuro Gym | https://neuro-gym.vercel.app | — | besloten | live | workshop |
+| Moreel Leiderschap | https://leergang-moreel-leiderschap.vercel.app | leergang-moreel-leiderschap | besloten | live | altijd |
+| Ethos Studio — generator | https://rvodde-cyber.github.io/ethos-studio/ | ethos-studio | besloten | live | workshop |
+| Morele Lakmoesproef | https://lakmoesproef.vercel.app | Lakmoesproef | besloten | live | workshop |
+| Scherpstellen | *(alleen preview, nog geen productie)* | community (branch verdenk) | besloten | in-ontwikkeling | workshop |
+| ETZ Gesprekskaarten | https://etz.vercel.app | — | besloten | live | workshop |
+| Wisselwerking | https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/ | community/teamkompas | besloten | live | altijd |
+| Community of Practice | https://rvodde-cyber-community-moreel-vakma.vercel.app | community | publiek | live | — |
+| Model Moreel Vakmanschap | …/model | community | publiek | live | — |
+| HR Dilemmakaarten | …/gesprekskaarten | community | publiek | live | — |
+| Educatieve werkbladen | …/bibliotheek | community | publiek | live | — |
+| Ethos Studio — output | …/gesprekskaarten | community | publiek | live | — |
+| Diversiteits Monitor | *(nog geen URL)* | — | onbepaald | in-ontwikkeling | — |
+
+## Overige Vercel-projecten (niet in workshop-hub)
+
+| Naam | URL | Opmerking |
+|------|-----|-----------|
+| Machtskruising | https://wheel-of-privilege.vercel.app | Apart project, geen Dilemma Roulette |
+| HEROES Project | https://heroes-project-eight.vercel.app | Participant Reflection Form |
+| Moreel Vakmanschap (login) | https://moreel-leiderschap-app.vercel.app | Aparte login-app |
 
 ## Wachtwoord workshop
 
-Zie `workshop-config.json` in deze map. Wijzig alleen dat bestand om het wachtwoord te vernieuwen — geen code-aanpassing nodig.
+Zie `workshop-config.json` in deze map.
 
 ## Scheidingsregels (hard)
 
