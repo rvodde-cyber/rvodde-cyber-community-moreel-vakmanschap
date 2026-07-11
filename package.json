@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-gesprekskaarten-catalog.mjs && vite build && npm run build:wisselwerking",
+    "build": "node scripts/generate-gesprekskaarten-catalog.mjs && node scripts/sync-workshop-hub.mjs && vite build && npm run build:wisselwerking",
+    "workshop:sync": "node scripts/sync-workshop-hub.mjs",
     "build:wisselwerking": "cd teamkompas && npm install && VITE_BASE_PATH=/wisselwerking/ npm run build && rm -rf ../dist/wisselwerking && cp -r dist ../dist/wisselwerking",
     "preview": "vite preview",
     "cards:migrate": "node scripts/migrate-gesprekskaarten.mjs",

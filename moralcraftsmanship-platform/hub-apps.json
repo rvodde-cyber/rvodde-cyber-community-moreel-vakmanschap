@@ -1,0 +1,148 @@
+{
+  "apps": [
+    {
+      "id": "maps-trilogie",
+      "naam": "MAPS Trilogie",
+      "omschrijving": "Universele morele scenario's in drie lagen — neutraal en abstract, nooit zorg-specifiek.",
+      "url": "https://maps-trilogie.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "moral-maps",
+      "naam": "Moral Maps",
+      "omschrijving": "GPS-flow voor moreel oriënteren en positioneren in complexe situaties.",
+      "url": "https://moral-maps.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "dilemma-roulette",
+      "naam": "Dilemma Roulette",
+      "omschrijving": "Rad van Moreel Fortuin — interactieve dilemma-oefening voor groepsgesprekken.",
+      "url": "https://dilemma-roulette.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "neuro-gym",
+      "naam": "Neuro Gym",
+      "omschrijving": "Oefeningen rond moreel redeneren en cognitieve vooroordelen.",
+      "url": "https://neuro-gym.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "moreel-leiderschap",
+      "naam": "Moreel Leiderschap",
+      "omschrijving": "Reflectietool voor zichtbaar ethisch leiderschap in teams.",
+      "url": "https://moreel-leiderschap.vercel.app",
+      "categorie": "besloten",
+      "status": "in-ontwikkeling",
+      "hubBadge": "altijd"
+    },
+    {
+      "id": "ethos-studio",
+      "naam": "Ethos Studio — generator",
+      "omschrijving": "Productietool voor het maken van gesprekskaarten (niet de publieke voorbeeldkaarten).",
+      "url": "https://ethos-studio.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "lakmoesproef",
+      "naam": "Morele Lakmoesproef",
+      "omschrijving": "Organisatie- en teamlakmoes — strikt gescheiden van MAPS.",
+      "url": "https://lakmoesproef.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "scherpstellen",
+      "naam": "Scherpstellen",
+      "omschrijving": "Interactieve congres-app voor moreel scherpstellen.",
+      "url": "https://scherpstellen.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "etz-gesprekskaarten",
+      "naam": "ETZ Gesprekskaarten",
+      "omschrijving": "ETZ-materiaal (wit met blauwe accenten) — gescheiden van algemene content.",
+      "url": "https://etz-gesprekskaarten.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "wisselwerking",
+      "naam": "Wisselwerking",
+      "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
+      "url": "https://wisselwerking.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "altijd"
+    },
+    {
+      "id": "landingpage",
+      "naam": "Community of Practice",
+      "omschrijving": "Publieke landingpage, model en showcase-materiaal.",
+      "url": "https://moralcraftsmanship.com",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
+      "id": "model-moreel-vakmanschap",
+      "naam": "Model Moreel Vakmanschap",
+      "omschrijving": "Interactief model (SVG NL/EN) op het publieke platform.",
+      "url": "https://moralcraftsmanship.com/model",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
+      "id": "hr-dilemmakaarten",
+      "naam": "HR Dilemmakaarten",
+      "omschrijving": "Voorbeeldkaarten voor HR-dilemma's (geen generator).",
+      "url": "https://moralcraftsmanship.com/gesprekskaarten",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
+      "id": "werkbladen",
+      "naam": "Educatieve werkbladen",
+      "omschrijving": "Elf werkbladen gekoppeld aan het model Moreel Vakmanschap.",
+      "url": "https://moralcraftsmanship.com/bibliotheek",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
+      "id": "ethos-output",
+      "naam": "Ethos Studio — output",
+      "omschrijving": "Voorbeeldkaarten op het publieke deel (niet de generator).",
+      "url": "https://moralcraftsmanship.com/gesprekskaarten",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
+      "id": "diversiteits-monitor",
+      "naam": "Diversiteits Monitor",
+      "omschrijving": "Nog in ontwikkeling — indeling volgt bij eerste gebruik.",
+      "url": "",
+      "categorie": "onbepaald",
+      "status": "in-ontwikkeling",
+      "hubBadge": null
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-07-11T10:37:44.612Z",
+  "apps": [
+    {
+      "id": "maps-trilogie",
+      "naam": "MAPS Trilogie",
+      "omschrijving": "Universele morele scenario's in drie lagen — neutraal en abstract, nooit zorg-specifiek.",
+      "url": "https://maps-trilogie.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "moral-maps",
+      "naam": "Moral Maps",
+      "omschrijving": "GPS-flow voor moreel oriënteren en positioneren in complexe situaties.",
+      "url": "https://moral-maps.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "dilemma-roulette",
+      "naam": "Dilemma Roulette",
+      "omschrijving": "Rad van Moreel Fortuin — interactieve dilemma-oefening voor groepsgesprekken.",
+      "url": "https://dilemma-roulette.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "neuro-gym",
+      "naam": "Neuro Gym",
+      "omschrijving": "Oefeningen rond moreel redeneren en cognitieve vooroordelen.",
+      "url": "https://neuro-gym.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "ethos-studio",
+      "naam": "Ethos Studio — generator",
+      "omschrijving": "Productietool voor het maken van gesprekskaarten (niet de publieke voorbeeldkaarten).",
+      "url": "https://ethos-studio.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "lakmoesproef",
+      "naam": "Morele Lakmoesproef",
+      "omschrijving": "Organisatie- en teamlakmoes — strikt gescheiden van MAPS.",
+      "url": "https://lakmoesproef.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "scherpstellen",
+      "naam": "Scherpstellen",
+      "omschrijving": "Interactieve congres-app voor moreel scherpstellen.",
+      "url": "https://scherpstellen.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "etz-gesprekskaarten",
+      "naam": "ETZ Gesprekskaarten",
+      "omschrijving": "ETZ-materiaal (wit met blauwe accenten) — gescheiden van algemene content.",
+      "url": "https://etz-gesprekskaarten.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "wisselwerking",
+      "naam": "Wisselwerking",
+      "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
+      "url": "https://wisselwerking.vercel.app",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "altijd"
+    }
+  ]
+}
