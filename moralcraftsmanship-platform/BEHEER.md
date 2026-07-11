@@ -22,8 +22,8 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 | MAPS Trilogie (deel 2) | https://moral-maps-2-crossroads.vercel.app | moral-maps | besloten | live | — |
 | MAPS Trilogie (deel 3) | https://moral-maps-3-final-destination.vercel.app | moral-maps | besloten | live | — |
 | Moral Maps (GPS) | https://moral-maps.vercel.app | moral-maps | besloten | live | workshop |
-| Dilemma Roulette | *(nog geen deploy)* | dilemmagenerator | besloten | in-ontwikkeling | workshop |
-| Neuro Gym | https://neuro-gym.vercel.app | — | besloten | live | workshop |
+| Dilemma Roulette | https://rad-van-moreel-fortuin.vercel.app | Vercel: rad-van-moreel-fortuin | besloten | live | workshop |
+| Neuro Gym | https://neuro-gym.vercel.app | quiz-repetitie | besloten | live | workshop |
 | Moreel Leiderschap | https://leergang-moreel-leiderschap.vercel.app | leergang-moreel-leiderschap | besloten | live | altijd |
 | Ethos Studio — generator | https://rvodde-cyber.github.io/ethos-studio/ | ethos-studio | besloten | live | workshop |
 | Morele Lakmoesproef | https://lakmoesproef.vercel.app | Lakmoesproef | besloten | live | workshop |
@@ -37,11 +37,28 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 | Ethos Studio — output | …/gesprekskaarten | community | publiek | live | — |
 | Diversiteits Monitor | *(nog geen URL)* | — | onbepaald | in-ontwikkeling | — |
 
+## Vercel-projecten (jouw dashboard)
+
+| Vercel-naam | URL | GitHub |
+|-------------|-----|--------|
+| neuro-gym | neuro-gym.vercel.app | quiz-repetitie |
+| leergang-moreel-leiderschap | leergang-moreel-leiderschap.vercel.app | leergang-moreel-leiderschap |
+| moreel-leiderschap-app | moreel-leiderschap-app.vercel.app | moreel-leiderschap-app |
+| rad-van-moreel-fortuin | rad-van-moreel-fortuin.vercel.app | *(losgekoppeld)* |
+| moral-maps (+ hw6b, apjz) | moral-maps.vercel.app | moral-maps |
+| moral-maps-2-crossroads | moral-maps-2-crossroads.vercel.app | moral-maps |
+| moral-maps-3-final-destination | moral-maps-3-final-destination.vercel.app | moral-maps |
+| lakmoesproef | lakmoesproef.vercel.app | Lakmoesproef |
+| **wisselwerking** | *(nog aanmaken)* | community/teamkompas |
+
+**Wisselwerking** staat nog niet als apart project — maak aan via Vercel → Add New → Import `rvodde-cyber-community-moreel-vakmanschap` → Root Directory: `teamkompas`.
+
 ## Overige Vercel-projecten (niet in workshop-hub)
 
 | Naam | URL | Opmerking |
 |------|-----|-----------|
 | Machtskruising | https://wheel-of-privilege.vercel.app | Apart project, geen Dilemma Roulette |
+| Rad van Moreel Fortuin | https://rad-van-moreel-fortuin.vercel.app | = Dilemma Roulette (Git losgekoppeld in Vercel) |
 | HEROES Project | https://heroes-project-eight.vercel.app | Participant Reflection Form |
 | Moreel Vakmanschap (login) | https://moreel-leiderschap-app.vercel.app | Aparte login-app |
 

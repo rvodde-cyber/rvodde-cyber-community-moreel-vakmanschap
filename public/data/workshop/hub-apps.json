@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T10:43:54.886Z",
+  "generated_at": "2026-07-11T11:07:15.824Z",
   "apps": [
     {
       "id": "maps-trilogie",
@@ -26,11 +26,21 @@
       "hubBadge": "workshop"
     },
     {
+      "id": "dilemma-roulette",
+      "naam": "Dilemma Roulette",
+      "omschrijving": "Rad van Moreel Fortuin — interactieve dilemma-oefening voor groepsgesprekken.",
+      "url": "https://rad-van-moreel-fortuin.vercel.app",
+      "githubRepo": "rvodde-cyber/rad-van-moreel-fortuin (Vercel-project, Git losgekoppeld)",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
       "id": "neuro-gym",
       "naam": "Neuro Gym",
       "omschrijving": "Oefeningen rond moreel redeneren en cognitieve vooroordelen.",
       "url": "https://neuro-gym.vercel.app",
-      "githubRepo": null,
+      "githubRepo": "rvodde-cyber/quiz-repetitie (Vercel: neuro-gym)",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
