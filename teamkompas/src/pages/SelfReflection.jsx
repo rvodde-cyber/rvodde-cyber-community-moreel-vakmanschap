@@ -7,6 +7,7 @@ import { getRecommendation } from "../logic/recommendations";
 import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
 import Startpagina from "../components/Startpagina";
 import IntroScreen from "../components/IntroScreen";
+import Fundament from "../components/Fundament";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
 import ImagePlaceholder from "../components/ImagePlaceholder";
@@ -158,7 +159,15 @@ export default function SelfReflection() {
   if (phase === "intro") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-        <IntroScreen onStart={handleBeginReflection} />
+        <IntroScreen onStart={() => setPhase("fundament")} />
+      </div>
+    );
+  }
+
+  if (phase === "fundament") {
+    return (
+      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+        <Fundament onVerder={handleBeginReflection} />
       </div>
     );
   }

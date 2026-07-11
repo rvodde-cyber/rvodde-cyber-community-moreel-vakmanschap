@@ -75,6 +75,32 @@ export const metafoor = {
 
 export const scanThreshold = 5; // pas in sessie 2 nodig (teamscan), alvast vastleggen
 
+export const fundament = {
+  titel: "Het fundament onder de dynamiek",
+  intro:
+    "Van der Schoor & Van de Wiel (2013) onderscheiden vier dimensies van effectieve " +
+    "teams: bestaansrecht, inrichting, dynamiek en omgeving. Het teamwiel hierna gaat " +
+    "over dynamiek — hoe jullie samenwerken. Deze drie korte vragen gaan over het " +
+    "fundament daaronder. Niet verplicht, niet gescoord, niet opgeslagen.",
+  vragen: [
+    {
+      dimensie: "Bestaansrecht",
+      vraag: "Waarom bestaat dit team, en is dat voor iedereen nog steeds duidelijk?",
+    },
+    {
+      dimensie: "Inrichting",
+      vraag: "Past de manier waarop we georganiseerd zijn — rollen, verantwoordelijkheden, overlegstructuur — nog bij wat het team moet doen?",
+    },
+    {
+      dimensie: "Omgeving",
+      vraag: "Welke ontwikkelingen buiten het team — in de organisatie, bij klanten, technologisch — hebben op dit moment de meeste invloed op ons?",
+    },
+  ],
+  bron:
+    "Van der Schoor, J. & Van de Wiel, G. (2013). Teams van de toekomst: " +
+    "Leidinggeven aan het nieuwe samenwerken. Academic Service (BIM Media).",
+};
+
 export const ethischLeiderschap = {
   titel: "Ethisch leiderschap — een spiegel voor jezelf",
   intro:
