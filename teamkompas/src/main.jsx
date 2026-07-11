@@ -22,9 +22,11 @@ function PlaceholderPage({ title }) {
   );
 }
 
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/wisselwerking">
+    <BrowserRouter basename={routerBasename || undefined}>
       <Routes>
         <Route path="/" element={<SelfReflection />} />
         <Route
