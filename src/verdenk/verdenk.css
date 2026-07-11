@@ -1,0 +1,17 @@
+.verdenk-app {
+  --vd-nacht: #1b2a4a;
+  --vd-amber: #d9a441;
+  --vd-mist: #b8bcc2;
+  --vd-wit: #f7f5f0;
+  --vd-koraal: #d97757;
+  min-height: 100dvh;
+  background: var(--vd-wit);
+  color: var(--vd-nacht);
+  font-family: "DM Sans", sans-serif;
+}
+
+.verdenk-app h1,
+.verdenk-app h2,
+.verdenk-app h3 {
+  font-family: "Cormorant Garamond", serif;
+}
