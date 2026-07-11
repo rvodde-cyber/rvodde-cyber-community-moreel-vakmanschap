@@ -10,6 +10,7 @@ const BADGE_LABELS = {
 export default function WorkshopHub() {
   const [apps, setApps] = useState([]);
   const [workshopNaam, setWorkshopNaam] = useState("");
+  const [isVoorproef, setIsVoorproef] = useState(false);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
@@ -17,6 +18,9 @@ export default function WorkshopHub() {
   useEffect(() => {
     if (location.state?.workshop_naam) {
       setWorkshopNaam(location.state.workshop_naam);
+    }
+    if (location.state?.voorproef) {
+      setIsVoorproef(true);
     }
 
     Promise.all([
@@ -29,6 +33,7 @@ export default function WorkshopHub() {
           return;
         }
         setWorkshopNaam((prev) => session.workshop_naam || prev);
+        setIsVoorproef(Boolean(session.voorproef));
         setApps(hubData.apps || []);
       })
       .catch(() => navigate("/workshop", { replace: true }))
@@ -50,6 +55,12 @@ export default function WorkshopHub() {
 
   return (
     <WorkshopLayout>
+      {isVoorproef && (
+        <div className="workshop-preview-banner" role="status">
+          Voorvertoning — je kijkt rond zonder officiële workshoptoegang. Apps openen in een
+          nieuw tabblad.
+        </div>
+      )}
       <header className="workshop-hub-header">
         <div>
           <p className="workshop-eyebrow">Besloten workshopdeel</p>

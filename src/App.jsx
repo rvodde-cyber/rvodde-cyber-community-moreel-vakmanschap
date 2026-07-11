@@ -244,7 +244,8 @@ function AppRoutes() {
 
       <Routes>
 
-        <Route path="/workshop" element={<WorkshopLogin />} />
+        <Route path="/workshop" element={<WorkshopLogin mode="workshop" />} />
+        <Route path="/workshop/voorproef" element={<WorkshopLogin mode="voorproef" />} />
 
         <Route path="/workshop/apps" element={<WorkshopHub />} />
 

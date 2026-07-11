@@ -29,7 +29,7 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 | Morele Lakmoesproef | https://lakmoesproef.vercel.app | Lakmoesproef | besloten | live | workshop |
 | Scherpstellen | *(alleen preview, nog geen productie)* | community (branch verdenk) | besloten | in-ontwikkeling | workshop |
 | ETZ Gesprekskaarten | https://etz.vercel.app | — | besloten | live | workshop |
-| Wisselwerking | https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/ | community/teamkompas | besloten | live | altijd |
+| Wisselwerking | https://wisselwerking.vercel.app | community/teamkompas | besloten | live | altijd |
 | Community of Practice | https://rvodde-cyber-community-moreel-vakma.vercel.app | community | publiek | live | — |
 | Model Moreel Vakmanschap | …/model | community | publiek | live | — |
 | HR Dilemmakaarten | …/gesprekskaarten | community | publiek | live | — |
@@ -49,9 +49,19 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 | moral-maps-2-crossroads | moral-maps-2-crossroads.vercel.app | moral-maps |
 | moral-maps-3-final-destination | moral-maps-3-final-destination.vercel.app | moral-maps |
 | lakmoesproef | lakmoesproef.vercel.app | Lakmoesproef |
-| **wisselwerking** | *(nog aanmaken)* | community/teamkompas |
+| **wisselwerking** | wisselwerking.vercel.app *(na aanmaken)* | community/teamkompas |
 
-**Wisselwerking** staat nog niet als apart project — maak aan via Vercel → Add New → Import `rvodde-cyber-community-moreel-vakmanschap` → Root Directory: `teamkompas`.
+**Wisselwerking** als apart project: Vercel → Add New → Import `rvodde-cyber-community-moreel-vakmanschap` → Root Directory: `teamkompas` → Deploy. Tot die tijd werkt de embedded URL via het community-project.
+
+## Tijdelijk rondkijken (voorvertoning)
+
+Deel deze link met mensen die **zonder workshopwachtwoord** even willen rondkijken:
+
+**Link:** `https://rvodde-cyber-community-moreel-vakma.vercel.app/workshop/voorproef`  
+*(of moralcraftsmanship.com/workshop/voorproef zodra het domein gekoppeld is)*
+
+**Voorproefcode:** zie `voorproef.wachtwoord` in `workshop-config.json` (nu: `kijken-juli-2026`, geldig t/m datum in config).  
+Toegang duurt max. 24 uur per sessie. Pas alleen `workshop-config.json` aan om code of datum te wijzigen.
 
 ## Overige Vercel-projecten (niet in workshop-hub)
 

@@ -11,9 +11,24 @@ function loadConfig() {
   return JSON.parse(readFileSync(configPath, "utf8"));
 }
 
-function isConfigExpired(config) {
-  const deadline = new Date(`${config.geldig_tot}T23:59:59.999`);
+function isDateExpired(dateStr) {
+  if (!dateStr) return true;
+  const deadline = new Date(`${dateStr}T23:59:59.999`);
   return Number.isNaN(deadline.getTime()) || deadline < new Date();
+}
+
+async function sendSession(res, workshopNaam, deadlineDateStr, hours, preview) {
+  const deadline = new Date(`${deadlineDateStr}T23:59:59.999`).getTime();
+  const sessionExp = Math.min(Date.now() + hours * 60 * 60 * 1000, deadline);
+  const token = await createSessionToken(workshopNaam, sessionExp, { preview });
+  const maxAgeSeconds = Math.max(1, Math.floor((sessionExp - Date.now()) / 1000));
+
+  res.setHeader("Set-Cookie", sessionCookieHeader(token, maxAgeSeconds));
+  res.status(200).json({
+    ok: true,
+    workshop_naam: workshopNaam,
+    voorproef: preview,
+  });
 }
 
 export default async function handler(req, res) {
@@ -22,10 +37,35 @@ export default async function handler(req, res) {
     return;
   }
 
-  const { password } = req.body || {};
+  const { password, mode } = req.body || {};
   const config = loadConfig();
 
-  if (isConfigExpired(config)) {
+  if (mode === "voorproef" || (config.voorproef?.ingeschakeld && password === config.voorproef.wachtwoord)) {
+    const voorproef = config.voorproef || {};
+    if (!voorproef.ingeschakeld) {
+      res.status(403).json({ ok: false, error: "preview_disabled" });
+      return;
+    }
+    if (isDateExpired(voorproef.geldig_tot)) {
+      res.status(403).json({ ok: false, error: "preview_expired" });
+      return;
+    }
+    if (!password || password !== voorproef.wachtwoord) {
+      res.status(401).json({ ok: false, error: "invalid" });
+      return;
+    }
+
+    await sendSession(
+      res,
+      voorproef.label || "Voorvertoning",
+      voorproef.geldig_tot,
+      voorproef.duur_uren || 24,
+      true
+    );
+    return;
+  }
+
+  if (isDateExpired(config.geldig_tot)) {
     res.status(403).json({ ok: false, error: "expired" });
     return;
   }
@@ -35,11 +75,5 @@ export default async function handler(req, res) {
     return;
   }
 
-  const deadline = new Date(`${config.geldig_tot}T23:59:59.999`).getTime();
-  const sessionExp = Math.min(Date.now() + SESSION_HOURS * 60 * 60 * 1000, deadline);
-  const token = await createSessionToken(config.workshop_naam, sessionExp);
-  const maxAgeSeconds = Math.max(1, Math.floor((sessionExp - Date.now()) / 1000));
-
-  res.setHeader("Set-Cookie", sessionCookieHeader(token, maxAgeSeconds));
-  res.status(200).json({ ok: true, workshop_naam: config.workshop_naam });
+  await sendSession(res, config.workshop_naam, config.geldig_tot, SESSION_HOURS, false);
 }

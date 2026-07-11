@@ -98,7 +98,10 @@
       "id": "wisselwerking",
       "naam": "Wisselwerking",
       "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
-      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/",
+      "url": "https://wisselwerking.vercel.app",
+      "url_extra": [
+        "https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/"
+      ],
       "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (teamkompas/)",
       "categorie": "besloten",
       "status": "live",
