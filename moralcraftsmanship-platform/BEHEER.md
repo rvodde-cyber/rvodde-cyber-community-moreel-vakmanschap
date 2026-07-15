@@ -60,7 +60,7 @@ Deel deze link met mensen die **zonder workshopwachtwoord** even willen rondkijk
 **Link:** `https://rvodde-cyber-community-moreel-vakma.vercel.app/workshop/voorproef`  
 *(of moralcraftsmanship.com/workshop/voorproef zodra het domein gekoppeld is)*
 
-**Voorproefcode:** zie `voorproef.wachtwoord` in `workshop-config.json` (nu: `kijken-juli-2026`, geldig t/m datum in config).  
+**Voorproefcode:** zie `voorproef.wachtwoord` in `workshop-config.json` (nu: `kijken-juli-2026`, geldig t/m **31 juli 2026**).  
 Toegang duurt max. 24 uur per sessie. Pas alleen `workshop-config.json` aan om code of datum te wijzigen.
 
 ## Overige Vercel-projecten (niet in workshop-hub)
