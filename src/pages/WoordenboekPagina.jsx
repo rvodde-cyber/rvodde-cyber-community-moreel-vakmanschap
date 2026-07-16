@@ -64,7 +64,7 @@ const pageContent = {
     doel: "Aim",
     stappen: "Approach",
     reflectie: "Reflection questions",
-    pendingNote: "English translations of dictionary entries are pending; work forms are already bilingual.",
+    pendingNote: "Full English translation of the original lexicon is still pending; newly added core terms and all work forms are already bilingual.",
   },
 };
 

@@ -9,168 +9,168 @@
       "term_nl": "Morele stress",
       "definition_nl": "Spanning die ontstaat wanneer je weet wat moreel juist is, maar door omstandigheden niet (goed) kunt handelen.",
       "rationale_nl": "Kernbegrip in zorg/onderwijs; belangrijk voor theory-in-use en Volhouden.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c02",
       "term_nl": "Morele restschade",
       "definition_nl": "Blijvend moreel ongemak of litteken na een dilemma, ook als je hebt gehandeld naar beste weten.",
       "rationale_nl": "Past bij moreel vakmanschap en nazorg na lastige keuzes.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c03",
       "term_nl": "Espoused theory",
       "definition_nl": "De waarden en overtuigingen die mensen of organisaties zeggen te volgen (Argyris & Schön).",
       "rationale_nl": "Nodig voor de beleidsanalysetool en contrast met theory-in-use.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c04",
       "term_nl": "Theory-in-use",
       "definition_nl": "De waarden en overtuigingen die uit feitelijk handelen blijken, ongeacht wat officieel wordt beweerd (Argyris & Schön).",
       "rationale_nl": "Centraal concept voor de analysetool bij beleidsdocumenten.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c05",
       "term_nl": "Psychologische veiligheid",
       "definition_nl": "Gedeelde overtuiging dat het veilig is om risico’s te nemen in interpersoonlijke interactie: twijfel, fouten en tegenspraak mogen er zijn.",
       "rationale_nl": "Vaak in beleid; versterkt sociale veiligheid zonder synoniem te zijn.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c06",
       "term_nl": "Belangenverstrengeling",
       "definition_nl": "Situatie waarin persoonlijke, professionele of organisatorische belangen botsen en een integer oordeel kunnen beïnvloeden.",
       "rationale_nl": "Standaardterm in integriteitsbeleid en gedragscodes.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c07",
       "term_nl": "Moreel beraad",
       "definition_nl": "Gestructureerd gesprek waarin betrokkenen samen een moreel dilemma onderzoeken om tot een zorgvuldige afweging te komen.",
       "rationale_nl": "Al tool in het model (Wegen); hoort ook in het lexicon.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c08",
       "term_nl": "Morele moed",
       "definition_nl": "Bereidheid te handelen naar moreel inzicht, ook wanneer dat persoonlijk of professioneel risico met zich meebrengt.",
       "rationale_nl": "Complementeert bestaand ‘moed’; specifiek moreel geladen.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c09",
       "term_nl": "Machtsmisbruik",
       "definition_nl": "Het oneigenlijk gebruiken van hiërarchische, relationele of institutionele macht ten koste van anderen.",
       "rationale_nl": "Essentieel bij sociale veiligheid en grensoverschrijdend gedrag.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c10",
       "term_nl": "Speak-up cultuur",
       "definition_nl": "Organisatiecultuur waarin mensen zich veilig en gesteund voelen om misstanden, twijfel of afwijkende standpunten te benoemen.",
       "rationale_nl": "Vaak in beleidsstukken; raakt meldcultuur en psychologische veiligheid.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c11",
       "term_nl": "Bystander",
       "definition_nl": "Iemand die getuige is van (potentieel) schadelijk of ongewenst gedrag en (nog) niet ingrijpt.",
       "rationale_nl": "Didactisch sterk voor werkvormen rond verantwoordelijkheid.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c12",
       "term_nl": "Upstander",
       "definition_nl": "Iemand die getuige is van (potentieel) schadelijk gedrag en ervoor kiest om in te grijpen of steun te bieden.",
       "rationale_nl": "Positieve tegenhanger van bystander; actiegericht.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c13",
       "term_nl": "Ethical fading",
       "definition_nl": "Proces waarbij het morele karakter van een beslissing uit beeld verdwijnt, zodat die vooral als zakelijk of procedureel wordt gezien.",
       "rationale_nl": "Helpt theory-in-use te duiden in organisaties.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c14",
       "term_nl": "Moral disengagement",
       "definition_nl": "Psychologische mechanismen waarmee mensen morele zelfsancties uitschakelen zodat schadelijk handelen aanvaardbaar lijkt (Bandura).",
       "rationale_nl": "Verklaart kloof tussen espoused theory en praktijk.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c15",
       "term_nl": "Meldcultuur",
       "definition_nl": "Geheel van normen, procedures en ervaringen dat bepaalt of en hoe mensen misstanden of ongewenst gedrag durven te melden.",
       "rationale_nl": "Complementeert ‘klokkenluider’; praktischer beleidsbegrip.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c16",
       "term_nl": "Herstelrecht / herstelgericht werken",
       "definition_nl": "Benadering die na schade of conflict herstel van relaties, verantwoordelijkheid en rechtvaardigheid centraal stelt, naast of in plaats van pure sanctionering.",
       "rationale_nl": "Relevant naast straf/sanctioneren in sociale veiligheid.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c17",
       "term_nl": "Phronesis (praktische wijsheid)",
       "definition_nl": "Het vermogen om in concrete situaties het juiste te zien en te doen — kennis die groeit door ervaring, reflectie en oefening (Aristoteles).",
       "rationale_nl": "Fundament van Moreel Vakmanschap / Biesta / Karssing.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c18",
       "term_nl": "Hidden curriculum",
       "definition_nl": "De ongeschreven lessen, normen en voorbeelden die mensen oppikken uit de feitelijke praktijk, naast wat officieel wordt onderwezen of voorgeschreven.",
       "rationale_nl": "Sterke brug tussen onderwijs, beleid en theory-in-use.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c19",
       "term_nl": "Privilege",
       "definition_nl": "Ongelijk verdeelde voordelen of vanzelfsprekendheden die voortkomen uit sociale positie, vaak onzichtbaar voor wie ze heeft.",
       "rationale_nl": "Past bij diversiteit/inclusie en intersectionaliteitswerkbladen.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c20",
       "term_nl": "Gaslighting",
       "definition_nl": "Vorm van manipulatie waarbij iemands waarneming, geheugen of oordeel systematisch wordt ondermijnd, zodat die aan zichzelf gaat twijfelen.",
       "rationale_nl": "Komt voor in gesprekken over ongewenst gedrag en macht.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c21",
       "term_nl": "Waardeconflict",
       "definition_nl": "Situatie waarin twee of meer belangrijke waarden niet tegelijk volledig kunnen worden gehonoreerd.",
       "rationale_nl": "Kern van ethisch dilemma; maakt lexicon didactischer.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c22",
       "term_nl": "Organisatiecultuur",
       "definition_nl": "Gedeelde patronen van waarden, aannames en gedragingen die bepalen ‘hoe we hier dingen doen’.",
       "rationale_nl": "Contextbegrip voor beleidsanalyse en theory-in-use.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c23",
       "term_nl": "Tone at the top",
       "definition_nl": "Het voorbeeld en de morele toon die leidinggevenden zetten; sterk bepalend voor wat in de organisatie als normaal geldt.",
       "rationale_nl": "Beleidstaal; raakt integriteitscultuur en leiderschap.",
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "c24",
       "term_nl": "Zorgethiek",
       "definition_nl": "Ethische benadering die zorgrelaties, afhankelijkheid en verantwoordelijkheid voor concrete anderen centraal stelt.",
       "rationale_nl": "Complementeert deontologie/utilitarisme/deugdethiek die al in het lexicon staan.",
-      "status": "pending"
+      "status": "approved"
     }
   ]
 }

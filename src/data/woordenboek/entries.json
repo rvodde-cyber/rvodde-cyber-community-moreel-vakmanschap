@@ -2,8 +2,8 @@
   "meta": {
     "title_nl": "Moreel Woordenboek",
     "title_en": "Moral Dictionary",
-    "version": "def291025",
-    "count": 390,
+    "version": "def291025+candidates-20260716",
+    "count": 414,
     "intro_nl": "Dit Moreel Woordenboek brengt morele waarden en begrippen samen die vaak voorkomen in beleid, gedragscodes en discussies over integriteit en sociale veiligheid.",
     "intro_en": "This Moral Dictionary brings together moral values and concepts that often appear in policy, codes of conduct, and conversations about integrity and social safety."
   },
@@ -343,6 +343,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "belangenverstrengeling",
+      "term_nl": "Belangenverstrengeling",
+      "definition_nl": "Situatie waarin persoonlijke, professionele of organisatorische belangen botsen en een integer oordeel kunnen beïnvloeden.",
+      "term_en": "Conflict of interest",
+      "definition_en": "A situation in which personal, professional or organisational interests collide and may compromise sound judgement.",
+      "letter": "B",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "belangstellend",
       "term_nl": "Belangstellend",
       "definition_nl": "Oprechte interesse tonen in anderen of in bepaalde zaken.",
@@ -601,6 +614,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bystander",
+      "term_nl": "Bystander",
+      "definition_nl": "Iemand die getuige is van (potentieel) schadelijk of ongewenst gedrag en (nog) niet ingrijpt.",
+      "term_en": "Bystander",
+      "definition_en": "Someone who witnesses (potentially) harmful or unwanted behaviour and does not (yet) intervene.",
+      "letter": "B",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "categorisch-imperatief",
@@ -1231,6 +1257,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "espoused-theory",
+      "term_nl": "Espoused theory",
+      "definition_nl": "De waarden en overtuigingen die mensen of organisaties zeggen te volgen (Argyris & Schön).",
+      "term_en": "Espoused theory",
+      "definition_en": "The values and beliefs that people or organisations say they follow (Argyris & Schön).",
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "essentie",
       "term_nl": "Essentie",
       "definition_nl": "Kern of belangrijkste aspect van iets.",
@@ -1255,6 +1294,20 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethical-fading",
+      "term_nl": "Ethical fading",
+      "definition_nl": "Proces waarbij het morele karakter van een beslissing uit beeld verdwijnt, zodat die vooral als zakelijk of procedureel wordt gezien.",
+      "term_en": "Ethical fading",
+      "definition_en": "A process in which the moral character of a decision fades from view, so it is treated mainly as businesslike or procedural.",
+      "letter": "E",
+      "clusters": [
+        "integriteit-compliance",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "ethiek",
@@ -1451,6 +1504,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gaslighting",
+      "term_nl": "Gaslighting",
+      "definition_nl": "Vorm van manipulatie waarbij iemands waarneming, geheugen of oordeel systematisch wordt ondermijnd, zodat die aan zichzelf gaat twijfelen.",
+      "term_en": "Gaslighting",
+      "definition_en": "A form of manipulation that systematically undermines someone’s perception, memory or judgement so they begin to doubt themselves.",
+      "letter": "G",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "gastvrijheid",
@@ -1938,6 +2004,32 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "herstelrecht-herstelgericht-werken",
+      "term_nl": "Herstelrecht / herstelgericht werken",
+      "definition_nl": "Benadering die na schade of conflict herstel van relaties, verantwoordelijkheid en rechtvaardigheid centraal stelt, naast of in plaats van pure sanctionering.",
+      "term_en": "Restorative justice / restorative practice",
+      "definition_en": "An approach that, after harm or conflict, centres restoration of relationships, responsibility and justice, alongside or instead of pure sanctioning.",
+      "letter": "H",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "hidden-curriculum",
+      "term_nl": "Hidden curriculum",
+      "definition_nl": "De ongeschreven lessen, normen en voorbeelden die mensen oppikken uit de feitelijke praktijk, naast wat officieel wordt onderwezen of voorgeschreven.",
+      "term_en": "Hidden curriculum",
+      "definition_en": "The unwritten lessons, norms and examples people pick up from actual practice, alongside what is officially taught or prescribed.",
+      "letter": "H",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "hoffelijk",
       "term_nl": "Hoffelijk",
       "definition_nl": "Beschaafd, beleefd.",
@@ -2422,6 +2514,20 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "machtsmisbruik",
+      "term_nl": "Machtsmisbruik",
+      "definition_nl": "Het oneigenlijk gebruiken van hiërarchische, relationele of institutionele macht ten koste van anderen.",
+      "term_en": "Abuse of power",
+      "definition_en": "Improper use of hierarchical, relational or institutional power at the expense of others.",
+      "letter": "M",
+      "clusters": [
+        "veiligheid-grensoverschrijding",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "matigheid",
       "term_nl": "Matigheid",
       "definition_nl": "Het vermogen om verlangens en impulsen te reguleren en evenwichtige keuzes te maken.",
@@ -2472,6 +2578,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "meldcultuur",
+      "term_nl": "Meldcultuur",
+      "definition_nl": "Geheel van normen, procedures en ervaringen dat bepaalt of en hoe mensen misstanden of ongewenst gedrag durven te melden.",
+      "term_en": "Speak-up / reporting culture",
+      "definition_en": "The norms, procedures and experiences that shape whether and how people dare to report misconduct or unwanted behaviour.",
+      "letter": "M",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "mensgerichtheid",
@@ -2539,6 +2658,20 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "moral-disengagement",
+      "term_nl": "Moral disengagement",
+      "definition_nl": "Psychologische mechanismen waarmee mensen morele zelfsancties uitschakelen zodat schadelijk handelen aanvaardbaar lijkt (Bandura).",
+      "term_en": "Moral disengagement",
+      "definition_en": "Psychological mechanisms that disable moral self-sanctions, making harmful behaviour seem acceptable (Bandura).",
+      "letter": "M",
+      "clusters": [
+        "integriteit-compliance",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "moral-judgment-action-gap",
       "term_nl": "Moral-judgment-action gap",
       "definition_nl": "Verschil tussen het maken van morele oordelen en het daadwerkelijk handelen.",
@@ -2563,6 +2696,20 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-beraad",
+      "term_nl": "Moreel beraad",
+      "definition_nl": "Gestructureerd gesprek waarin betrokkenen samen een moreel dilemma onderzoeken om tot een zorgvuldige afweging te komen.",
+      "term_en": "Moral case deliberation",
+      "definition_en": "A structured conversation in which those involved jointly examine a moral dilemma to reach a careful judgement.",
+      "letter": "M",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "moreel-bewustzijn",
@@ -2643,6 +2790,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "morele-moed",
+      "term_nl": "Morele moed",
+      "definition_nl": "Bereidheid te handelen naar moreel inzicht, ook wanneer dat persoonlijk of professioneel risico met zich meebrengt.",
+      "term_en": "Moral courage",
+      "definition_en": "Willingness to act on moral insight, even when that entails personal or professional risk.",
+      "letter": "M",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "morele-nabijheid",
       "term_nl": "Morele nabijheid",
       "definition_nl": "Gevoel van verbondenheid en verantwoordelijkheid tegenover anderen die dicht(er)bij staan.",
@@ -2681,6 +2841,32 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-restschade",
+      "term_nl": "Morele restschade",
+      "definition_nl": "Blijvend moreel ongemak of litteken na een dilemma, ook als je hebt gehandeld naar beste weten.",
+      "term_en": "Moral residue",
+      "definition_en": "Lasting moral unease or scarring after a dilemma, even when you acted to the best of your knowledge.",
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "morele-stress",
+      "term_nl": "Morele stress",
+      "definition_nl": "Spanning die ontstaat wanneer je weet wat moreel juist is, maar door omstandigheden niet (goed) kunt handelen.",
+      "term_en": "Moral distress",
+      "definition_en": "Tension that arises when you know what is morally right but circumstances prevent you from acting (well) on it.",
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "morele-vaardigheden",
@@ -3090,6 +3276,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "organisatiecultuur",
+      "term_nl": "Organisatiecultuur",
+      "definition_nl": "Gedeelde patronen van waarden, aannames en gedragingen die bepalen ‘hoe we hier dingen doen’.",
+      "term_en": "Organisational culture",
+      "definition_en": "Shared patterns of values, assumptions and behaviours that define “how we do things here”.",
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "overgave",
       "term_nl": "Overgave",
       "definition_nl": "Volledige betrokkenheid bij iets.",
@@ -3207,6 +3406,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "phronesis-praktische-wijsheid",
+      "term_nl": "Phronesis (praktische wijsheid)",
+      "definition_nl": "Het vermogen om in concrete situaties het juiste te zien en te doen — kennis die groeit door ervaring, reflectie en oefening (Aristoteles).",
+      "term_en": "Phronesis (practical wisdom)",
+      "definition_en": "The capacity to see and do what is right in concrete situations — knowledge that grows through experience, reflection and practice (Aristotle).",
+      "letter": "P",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "pionieren",
       "term_nl": "Pionieren",
       "definition_nl": "Vooruitstrevend en vernieuwend handelen.",
@@ -3287,6 +3499,20 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "privilege",
+      "term_nl": "Privilege",
+      "definition_nl": "Ongelijk verdeelde voordelen of vanzelfsprekendheden die voortkomen uit sociale positie, vaak onzichtbaar voor wie ze heeft.",
+      "term_en": "Privilege",
+      "definition_en": "Unevenly distributed advantages or taken-for-granted benefits arising from social position, often invisible to those who have them.",
+      "letter": "P",
+      "clusters": [
+        "diversiteit-inclusie",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "professionaliteit",
       "term_nl": "Professionaliteit",
       "definition_nl": "Bekwaam, verantwoordelijk en integer optreden binnen een beroep.",
@@ -3337,6 +3563,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "psychologische-veiligheid",
+      "term_nl": "Psychologische veiligheid",
+      "definition_nl": "Gedeelde overtuiging dat het veilig is om risico’s te nemen in interpersoonlijke interactie: twijfel, fouten en tegenspraak mogen er zijn.",
+      "term_en": "Psychological safety",
+      "definition_en": "A shared belief that it is safe to take interpersonal risks: doubt, mistakes and dissent are allowed.",
+      "letter": "P",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "punctualiteit",
@@ -3755,6 +3994,20 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "speak-up-cultuur",
+      "term_nl": "Speak-up cultuur",
+      "definition_nl": "Organisatiecultuur waarin mensen zich veilig en gesteund voelen om misstanden, twijfel of afwijkende standpunten te benoemen.",
+      "term_en": "Speak-up culture",
+      "definition_en": "An organisational culture in which people feel safe and supported to raise concerns, doubt or dissenting views.",
+      "letter": "S",
+      "clusters": [
+        "integriteit-compliance",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "speelsheid",
       "term_nl": "Speelsheid",
       "definition_nl": "Lichtheid, humor en creativiteit in gedrag of houding.",
@@ -3937,6 +4190,19 @@
       "source": "moreel-woordenboek-def291025"
     },
     {
+      "id": "theory-in-use",
+      "term_nl": "Theory-in-use",
+      "definition_nl": "De waarden en overtuigingen die uit feitelijk handelen blijken, ongeacht wat officieel wordt beweerd (Argyris & Schön).",
+      "term_en": "Theory-in-use",
+      "definition_en": "The values and beliefs revealed by actual behaviour, regardless of what is officially claimed (Argyris & Schön).",
+      "letter": "T",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
       "id": "tijdloosheid",
       "term_nl": "Tijdloosheid",
       "definition_nl": "Eigenschap om waardevol of relevant te blijven ongeacht tijd of mode.",
@@ -4000,6 +4266,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tone-at-the-top",
+      "term_nl": "Tone at the top",
+      "definition_nl": "Het voorbeeld en de morele toon die leidinggevenden zetten; sterk bepalend voor wat in de organisatie als normaal geldt.",
+      "term_en": "Tone at the top",
+      "definition_en": "The example and moral tone set by leaders; strongly shapes what counts as normal in an organisation.",
+      "letter": "T",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "toorn",
@@ -4117,6 +4396,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "upstander",
+      "term_nl": "Upstander",
+      "definition_nl": "Iemand die getuige is van (potentieel) schadelijk gedrag en ervoor kiest om in te grijpen of steun te bieden.",
+      "term_en": "Upstander",
+      "definition_en": "Someone who witnesses (potentially) harmful behaviour and chooses to intervene or offer support.",
+      "letter": "U",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "utilitarisme",
@@ -4600,6 +4892,19 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waardeconflict",
+      "term_nl": "Waardeconflict",
+      "definition_nl": "Situatie waarin twee of meer belangrijke waarden niet tegelijk volledig kunnen worden gehonoreerd.",
+      "term_en": "Value conflict",
+      "definition_en": "A situation in which two or more important values cannot be fully honoured at the same time.",
+      "letter": "W",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "waarden-normen",
@@ -5095,6 +5400,20 @@
       ],
       "status": "active",
       "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zorgethiek",
+      "term_nl": "Zorgethiek",
+      "definition_nl": "Ethische benadering die zorgrelaties, afhankelijkheid en verantwoordelijkheid voor concrete anderen centraal stelt.",
+      "term_en": "Care ethics",
+      "definition_en": "An ethical approach that centres care relationships, dependency and responsibility for concrete others.",
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
     },
     {
       "id": "zorgplicht",
