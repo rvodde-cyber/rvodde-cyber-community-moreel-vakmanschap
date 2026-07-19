@@ -2,7 +2,7 @@
 
 **Live URL:** https://rvodde-cyber-community-moreel-vakma.vercel.app/  
 **Datum:** 19 juli 2026  
-**Methode:** code-inspectie (repo `main`) + HTTP-checks tegen live + headless Chrome (homepage, aanmelden, privacy, bibliotheek, gesprekskaarten)  
+**Methode:** code-inspectie + HTTP-checks tegen live + headless Chrome (homepage, aanmelden, privacy, bibliotheek, gesprekskaarten); deel 2: workshop-auth API’s, middleware, hub-apps  
 **Scope:** alleen inventariseren — geen codewijzigingen.
 
 Legenda: ✅ werkt · ⚠️ werkt deels · ❌ ontbreekt of kapot
