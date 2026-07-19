@@ -148,6 +148,16 @@
       "hubBadge": null
     },
     {
+      "id": "moreel-woordenboek",
+      "naam": "Moreel Woordenboek",
+      "omschrijving": "Digitaal lexicon + werkvormen (woordenjacht, espoused vs. in use, clusterdebat).",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/woordenboek",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap",
+      "categorie": "publiek",
+      "status": "live",
+      "hubBadge": null
+    },
+    {
       "id": "ethos-output",
       "naam": "Ethos Studio — output",
       "omschrijving": "Voorbeeldkaarten op het publieke deel (niet de generator).",

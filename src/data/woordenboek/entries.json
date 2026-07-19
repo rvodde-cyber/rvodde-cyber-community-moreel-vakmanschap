@@ -1,0 +1,5473 @@
+{
+  "meta": {
+    "title_nl": "Moreel Woordenboek",
+    "title_en": "Moral Dictionary",
+    "version": "def291025+candidates-20260716",
+    "count": 414,
+    "intro_nl": "Dit Moreel Woordenboek brengt morele waarden en begrippen samen die vaak voorkomen in beleid, gedragscodes en discussies over integriteit en sociale veiligheid.",
+    "intro_en": "This Moral Dictionary brings together moral values and concepts that often appear in policy, codes of conduct, and conversations about integrity and social safety."
+  },
+  "clusters": [
+    {
+      "id": "integriteit-compliance",
+      "label_nl": "Integriteit compliance",
+      "label_en": "integriteit-compliance"
+    },
+    {
+      "id": "zorg-relatie",
+      "label_nl": "Zorg relatie",
+      "label_en": "zorg-relatie"
+    },
+    {
+      "id": "moed-verantwoordelijkheid",
+      "label_nl": "Moed verantwoordelijkheid",
+      "label_en": "moed-verantwoordelijkheid"
+    },
+    {
+      "id": "veiligheid-grensoverschrijding",
+      "label_nl": "Veiligheid grensoverschrijding",
+      "label_en": "veiligheid-grensoverschrijding"
+    },
+    {
+      "id": "diversiteit-inclusie",
+      "label_nl": "Diversiteit inclusie",
+      "label_en": "diversiteit-inclusie"
+    },
+    {
+      "id": "transparantie-vertrouwen",
+      "label_nl": "Transparantie vertrouwen",
+      "label_en": "transparantie-vertrouwen"
+    },
+    {
+      "id": "reflectie-oordeel",
+      "label_nl": "Reflectie oordeel",
+      "label_en": "reflectie-oordeel"
+    },
+    {
+      "id": "rechtvaardigheid-macht",
+      "label_nl": "Rechtvaardigheid macht",
+      "label_en": "rechtvaardigheid-macht"
+    },
+    {
+      "id": "algemeen",
+      "label_nl": "Algemeen",
+      "label_en": "General"
+    }
+  ],
+  "entries": [
+    {
+      "id": "aandacht",
+      "term_nl": "Aandacht",
+      "definition_nl": "Het vermogen om zich bewust en gefocust te richten op mensen, taken of situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "aanpassing",
+      "term_nl": "Aanpassing",
+      "definition_nl": "Vermogen om flexibel en effectief te reageren op veranderende omstandigheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "aansporing",
+      "term_nl": "Aansporing",
+      "definition_nl": "het aansporen. (meervoud: aansporingen) middel dat aanspoort: die beloning was een goede aansporing",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "aanspreekbaarheid",
+      "term_nl": "Aanspreekbaarheid",
+      "definition_nl": "Eigenschap dat iemand openstaat om verantwoording af te leggen of feedback te ontvangen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "aanvaarding",
+      "term_nl": "Aanvaarding",
+      "definition_nl": "Het accepteren van mensen, situaties of omstandigheden zoals ze zijn, zonder verzet of oordeel.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "aanzien",
+      "term_nl": "Aanzien",
+      "definition_nl": "Waardering en respect die iemand geniet binnen een groep of samenleving.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "abject",
+      "term_nl": "Abject",
+      "definition_nl": "verachtelijk, laag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "accountability-verantwoordelijkheid-afleggen",
+      "term_nl": "Accountability / verantwoordelijkheid afleggen",
+      "definition_nl": "Het afleggen van rekenschap over je handelen, beslissingen en de gevolgen daarvan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "integriteit-compliance",
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "achterklap",
+      "term_nl": "Achterklap",
+      "definition_nl": "het kwaadspreken: roddel en achterklap ergerlijk, aanhoudend geroddel",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "agressie",
+      "term_nl": "Agressie",
+      "definition_nl": "daad waarbij sprake is van vijandigheid, bedreiging met geweld: agressie in het verkeer; agressie opwekken; hij kan zijn agressie niet kwijt",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "alertheid",
+      "term_nl": "Alertheid",
+      "definition_nl": "Eigenschap dat iemand snel opmerkzaam is en aandachtig reageert op signalen of veranderingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "altruisme",
+      "term_nl": "Altruïsme",
+      "definition_nl": "Eigenschap of houding waarbij men zich bekommert om het welzijn van anderen, vaak ten koste van eigen belang.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "amoreel",
+      "term_nl": "Amoreel",
+      "definition_nl": "Buiten de moraal staand, geen onderscheid makend tussen goed en kwaad.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "authenticiteit",
+      "term_nl": "Authenticiteit",
+      "definition_nl": "Eigenschap dat iets of iemand echt, oprecht en trouw aan zichzelf is.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "autonomie",
+      "term_nl": "Autonomie",
+      "definition_nl": "Het vermogen of recht om zelfstandig beslissingen te nemen; zelfbestuur",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "A",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "balans",
+      "term_nl": "Balans",
+      "definition_nl": "Toestand van evenwicht, bijvoorbeeld tussen belangen, plichten of emoties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "baldadig",
+      "term_nl": "Baldadig",
+      "definition_nl": "wild, uitgelaten, vernielzuchtig: baldadige jongeren",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "barmhartigheid",
+      "term_nl": "Barmhartigheid",
+      "definition_nl": "Medeleven tonen en hulp bieden aan mensen in nood.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "begrip",
+      "term_nl": "Begrip",
+      "definition_nl": "Vermogen om anderen en hun situatie te begrijpen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "beheerst",
+      "term_nl": "Beheerst",
+      "definition_nl": "In staat om emoties en impulsen onder controle te houden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "behoedzaamheid",
+      "term_nl": "Behoedzaamheid",
+      "definition_nl": "Voorzichtig en bedachtzaam handelen om risico’s te vermijden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "behulpzaam",
+      "term_nl": "Behulpzaam",
+      "definition_nl": "Bereidheid om anderen te ondersteunen of te helpen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "belangenverstrengeling",
+      "term_nl": "Belangenverstrengeling",
+      "definition_nl": "Situatie waarin persoonlijke, professionele of organisatorische belangen botsen en een integer oordeel kunnen beïnvloeden.",
+      "term_en": "Conflict of interest",
+      "definition_en": "A situation in which personal, professional or organisational interests collide and may compromise sound judgement.",
+      "letter": "B",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "belangstellend",
+      "term_nl": "Belangstellend",
+      "definition_nl": "Oprechte interesse tonen in anderen of in bepaalde zaken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "beleefdheid",
+      "term_nl": "Beleefdheid",
+      "definition_nl": "Respectvol en hoffelijk gedrag tegenover anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "benadelen",
+      "term_nl": "Benadelen",
+      "definition_nl": "nadeel, schade toebrengen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bereidwilligheid",
+      "term_nl": "Bereidwilligheid",
+      "definition_nl": "Eigenschap dat iemand bereid is moeite te doen of anderen tegemoet te komen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bescheidenheid",
+      "term_nl": "Bescheidenheid",
+      "definition_nl": "Het erkennen van eigen beperkingen en het vermijden van arrogantie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bestaansrecht",
+      "term_nl": "Bestaansrecht",
+      "definition_nl": "Recht op bestaan of erkenning van waarde en aanwezigheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bestaanszekerheid",
+      "term_nl": "Bestaanszekerheid",
+      "definition_nl": "Zekerheid van materiële en sociale basisvoorzieningen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "betekenis",
+      "term_nl": "Betekenis",
+      "definition_nl": "Waarde of zin die iemand aan een ervaring, relatie of activiteit toekent.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "betrokkenheid",
+      "term_nl": "Betrokkenheid",
+      "definition_nl": "Actieve en oprechte deelname of verbondenheid met anderen of met een zaak.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "betrouwbaarheid",
+      "term_nl": "Betrouwbaarheid",
+      "definition_nl": "Eigenschap dat je doet wat je zegt, afspraken nakomt en voorspelbaar handelt.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bevlogenheid",
+      "term_nl": "Bevlogenheid",
+      "definition_nl": "Enthousiasme en passie voor een activiteit of ideaal.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bevoogdend",
+      "term_nl": "Bevoogdend",
+      "definition_nl": "iem. of iets (als een onmondige) besturen, behandelen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bewustzijn",
+      "term_nl": "Bewustzijn",
+      "definition_nl": "Het vermogen tot reflectie en waarnemen van zichzelf en de omgeving.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bezieling",
+      "term_nl": "Bezieling",
+      "definition_nl": "Inspirerende energie en toewijding in handelen of werken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bezwaar",
+      "term_nl": "Bezwaar",
+      "definition_nl": "1 moeilijkheid, last, beletsel: een beetje regen is toch geen bezwaar",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "billijk",
+      "term_nl": "Billijk",
+      "definition_nl": "Rechtvaardig en redelijk",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "blijdschap",
+      "term_nl": "Blijdschap",
+      "definition_nl": "Sterk gevoel van tevredenheid, vreugde en welzijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bloei",
+      "term_nl": "Bloei",
+      "definition_nl": "Periode van optimale ontwikkeling, groei of succes.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bovennatuurlijk",
+      "term_nl": "Bovennatuurlijk",
+      "definition_nl": "de natuurwetten te boven gaand",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "burgerschap",
+      "term_nl": "Burgerschap",
+      "definition_nl": "Actief en verantwoord participeren in de samenleving.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "B",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "bystander",
+      "term_nl": "Bystander",
+      "definition_nl": "Iemand die getuige is van (potentieel) schadelijk of ongewenst gedrag en (nog) niet ingrijpt.",
+      "term_en": "Bystander",
+      "definition_en": "Someone who witnesses (potentially) harmful or unwanted behaviour and does not (yet) intervene.",
+      "letter": "B",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "categorisch-imperatief",
+      "term_nl": "Categorisch imperatief",
+      "definition_nl": "Moreel principe van Kant dat stelt dat men alleen moet handelen volgens regels die men als algemene wet zou willen zien.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "collegialiteit",
+      "term_nl": "Collegialiteit",
+      "definition_nl": "Behulpzaam en ondersteunend gedrag tegenover collega’s; het gezamenlijke belang boven eigen belang stellen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "compassie",
+      "term_nl": "Compassie",
+      "definition_nl": "Meeleven met en zorg tonen voor anderen; bewogenheid met het welzijn van een ander.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "compliance",
+      "term_nl": "Compliance",
+      "definition_nl": "Naleving van regels, wetten of richtlijnen, vaak extern opgelegd.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "complot",
+      "term_nl": "Complot",
+      "definition_nl": "1 Samenzwering 2 Bende samenzweerders",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "confidentialiteit",
+      "term_nl": "Confidentialiteit",
+      "definition_nl": "Geheimhouding van gevoelige informatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "conformiteit",
+      "term_nl": "Conformiteit",
+      "definition_nl": "Aanpassing aan regels, normen of verwachtingen van een groep of samenleving.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "congruentie",
+      "term_nl": "Congruentie",
+      "definition_nl": "De mate waarin gedrag overeenkomt of in harmonie is met overtuigingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "conscientieus",
+      "term_nl": "Consciëntieus",
+      "definition_nl": "Nauwgezet, plichtsgetrouw en gewetensvol.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "consensusgericht",
+      "term_nl": "Consensusgericht",
+      "definition_nl": "Gericht op overeenstemming en gezamenlijke besluitvorming.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "consequent",
+      "term_nl": "Consequent",
+      "definition_nl": "Handhaven van logica, consistentie en betrouwbaarheid in handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "consideratie",
+      "term_nl": "Consideratie",
+      "definition_nl": "Aandacht en respect tonen voor anderen bij beslissingen of gedrag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "consistentie",
+      "term_nl": "Consistentie",
+      "definition_nl": "De mate waarin gedrag logisch en stabiel is, zonder tegenstrijdigheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "continuiteit",
+      "term_nl": "Continuïteit",
+      "definition_nl": "Voortdurend en samenhang in acties, processen of beleid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "correctheid",
+      "term_nl": "Correctheid",
+      "definition_nl": "Nauwkeurigheid en juistheid in handelen of communicatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "cooperatief",
+      "term_nl": "Coöperatief",
+      "definition_nl": "Bereid om samen te werken en gezamenlijk doelen te bereiken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "C",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dankbaarheid",
+      "term_nl": "Dankbaarheid",
+      "definition_nl": "Gevoel van erkentelijkheid tegenover iemand die iets goeds voor je heeft gedaan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dapperheid",
+      "term_nl": "Dapperheid",
+      "definition_nl": "Vermogen angst of gevaar te overwinnen om juist te handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "degelijkheid",
+      "term_nl": "Degelijkheid",
+      "definition_nl": "Betrouwbaarheid en kwaliteit in werk of handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "diversiteit-inclusie",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "delict",
+      "term_nl": "Delict",
+      "definition_nl": "Strafbaar feit: plaats delict plaats waar een strafbaar feit heeft plaatsgevonden",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "demagogie",
+      "term_nl": "Demagogie",
+      "definition_nl": "De kunst om de mensen te (mis)leiden, m.n. door retorische middelen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "democratisch",
+      "term_nl": "Democratisch",
+      "definition_nl": "Systeem waarin gelijke inspraak en participatie mogelijk is.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "deontologie",
+      "term_nl": "Deontologie",
+      "definition_nl": "Morele theorie die stelt dat handelen moreel juist is wanneer het voldoet aan plichten en regels, ongeacht de gevolgen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "deskundigheid",
+      "term_nl": "Deskundigheid",
+      "definition_nl": "Professionele kennis en competentie in een bepaald vakgebied.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "deugden",
+      "term_nl": "Deugden",
+      "definition_nl": "Morele karaktereigenschappen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "deugdethiek",
+      "term_nl": "Deugdethiek",
+      "definition_nl": "Benadering van ethiek die de nadruk legt op het ontwikkelen van goede karaktereigenschappen om goed te handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dialoog",
+      "term_nl": "Dialoog",
+      "definition_nl": "Een open gesprek waarin verschillende perspectieven gelijkwaardig worden uitgewisseld.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dienstbaarheid",
+      "term_nl": "Dienstbaarheid",
+      "definition_nl": "Bereidheid en vermogen om anderen behulpzaam te zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "diepzinnigheid",
+      "term_nl": "Diepzinnigheid",
+      "definition_nl": "Vermogen tot grondige reflectie en begrip van situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "diplomatiek",
+      "term_nl": "Diplomatiek",
+      "definition_nl": "Tactvol en verstandig omgaan met mensen en situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "discipline",
+      "term_nl": "Discipline",
+      "definition_nl": "Vermogen om zichzelf regels en orde op te leggen en zich daaraan te houden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "discreet",
+      "term_nl": "Discreet",
+      "definition_nl": "Vertrouwelijk en zorgvuldig omgaan met informatie of situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "discriminatie",
+      "term_nl": "Discriminatie",
+      "definition_nl": "Ongeoorloofd onderscheid dat gemaakt wordt op grond van bepaalde, m.n. aangeboren kenmerken zoals ras, geslacht, leeftijd, seksuele geaardheid: rassendiscriminatie; positieve discriminatie waarbij bep. achtergestelde groepen een voorkeursbehandeling krijgen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "diversiteit",
+      "term_nl": "Diversiteit",
+      "definition_nl": "Het erkennen, waarderen en respecteren van verschillen tussen mensen op basis van bijvoorbeeld cultuur, achtergrond, overtuigingen of vaardigheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "diversiteit-inclusie",
+      "term_nl": "Diversiteit & inclusie",
+      "definition_nl": "Diversiteit: de aanwezigheid van verschillen (bijvoorbeeld in afkomst, leeftijd, gender). Inclusie: het actief waarderen en benutten van die verschillen in een gelijkwaardige omgeving.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dominant",
+      "term_nl": "Dominant",
+      "definition_nl": "1 overheersend 2 (biologie; van erfelijke factoren) de werking van andere factoren onderdrukkend",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "duidelijkheid",
+      "term_nl": "Duidelijkheid",
+      "definition_nl": "Helderheid in communicatie en intenties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "duurzaamheid",
+      "term_nl": "Duurzaamheid",
+      "definition_nl": "Eigenschap van iets dat lang meegaat en geen schade toebrengt aan mens of milieu; gericht op toekomstbestendigheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "dwepen",
+      "term_nl": "Dwepen",
+      "definition_nl": "Overdreven bewondering koesteren voor",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "D",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "eenvoud",
+      "term_nl": "Eenvoud",
+      "definition_nl": "Helderheid en terughoudendheid zonder overbodige complexiteit.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "eer",
+      "term_nl": "Eer",
+      "definition_nl": "Hoogachting en respect die iemand van anderen krijgt of zichzelf waardig acht; ook gevoel van persoonlijke trots.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "eerbied",
+      "term_nl": "Eerbied",
+      "definition_nl": "Diep respect, vaak voor iets of iemand dat/ die hoger of belangrijker wordt geacht.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "eerlijkheid",
+      "term_nl": "Eerlijkheid",
+      "definition_nl": "Eigenschap dat men oprecht, betrouwbaar en authentiek is, zonder te liegen of te misleiden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "eerzaam",
+      "term_nl": "Eerzaam",
+      "definition_nl": "Fatsoenlijk",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "empathie",
+      "term_nl": "Empathie",
+      "definition_nl": "Het vermogen zich in te leven in de gevoelens en gedachten van een ander.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "erewoord",
+      "term_nl": "Erewoord",
+      "definition_nl": "Een belofte die gebaseerd is op integriteit en vertrouwen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "integriteit-compliance",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "erkenning",
+      "term_nl": "Erkenning",
+      "definition_nl": "Het waarderen en bevestigen van iemands bestaan, inspanningen of kwaliteiten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ernst",
+      "term_nl": "Ernst",
+      "definition_nl": "Serieuze en oprechte houding tegenover situaties of taken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "espoused-theory",
+      "term_nl": "Espoused theory",
+      "definition_nl": "De waarden en overtuigingen die mensen of organisaties zeggen te volgen (Argyris & Schön).",
+      "term_en": "Espoused theory",
+      "definition_en": "The values and beliefs that people or organisations say they follow (Argyris & Schön).",
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "essentie",
+      "term_nl": "Essentie",
+      "definition_nl": "Kern of belangrijkste aspect van iets.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "esthetiek",
+      "term_nl": "Esthetiek",
+      "definition_nl": "Schoonheid die plezier of bewondering oproept.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethical-fading",
+      "term_nl": "Ethical fading",
+      "definition_nl": "Proces waarbij het morele karakter van een beslissing uit beeld verdwijnt, zodat die vooral als zakelijk of procedureel wordt gezien.",
+      "term_en": "Ethical fading",
+      "definition_en": "A process in which the moral character of a decision fades from view, so it is treated mainly as businesslike or procedural.",
+      "letter": "E",
+      "clusters": [
+        "integriteit-compliance",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "ethiek",
+      "term_nl": "Ethiek",
+      "definition_nl": "kritische reflectie op de moraal (het geheel van normen en waarden dat bepaalt wat goed of slecht, juist of onjuist is in menselijk handelen).",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethisch-dilemma",
+      "term_nl": "Ethisch dilemma",
+      "definition_nl": "Conflictvolle situatie die keuzes vereist tussen concurrerende (morele) waarden die niet beiden tegelijkertijd kunnen worden vervuld.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethisch-kompas",
+      "term_nl": "Ethisch kompas",
+      "definition_nl": "Intrinsieke motivatie om moreel te handelen, gebaseerd op kritisch denken, volgens persoonlijke en professionele waarden bij ethische dilemma’s.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethische-code",
+      "term_nl": "Ethische code",
+      "definition_nl": "Formeel document waarin de normen, waarden en gedragsregels van een organisatie of beroep zijn vastgelegd.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethische-kwesties",
+      "term_nl": "Ethische kwesties",
+      "definition_nl": "Specifieke problemen of vraagstukken die vragen om een moreel oordeel of ethische afweging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethische-principes",
+      "term_nl": "Ethische principes",
+      "definition_nl": "Fundamentele regels of overtuigingen die richting geven aan moreel handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ethische-reflectie",
+      "term_nl": "Ethische reflectie",
+      "definition_nl": "Het proces van nadenken over de morele juistheid van eigen of andermans handelen of beslissingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "evenwicht",
+      "term_nl": "Evenwicht",
+      "definition_nl": "Balans tussen tegenstrijdige krachten of belangen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "E",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "faam",
+      "term_nl": "Faam",
+      "definition_nl": "Bekendheid en reputatie verworven door prestaties of status.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "fair-play",
+      "term_nl": "Fair play",
+      "definition_nl": "Handelen volgens de regels en in de geest van eerlijkheid en respect, vooral in samenwerking of competitie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "transparantie-vertrouwen",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "fatsoen",
+      "term_nl": "Fatsoen",
+      "definition_nl": "Gedragsnormen die als beschaafd en respectvol gelden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "feitelijkheid",
+      "term_nl": "Feitelijkheid",
+      "definition_nl": "Objectiviteit en gebaseerd zijn op feiten in denken en handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "fijnzinnigheid",
+      "term_nl": "Fijnzinnigheid",
+      "definition_nl": "Vermogen subtiele verschillen of nuances te begrijpen en waarderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "finaliteit",
+      "term_nl": "Finaliteit",
+      "definition_nl": "Gerichtheid op een doel of uiteindelijke uitkomst.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "flexibiliteit",
+      "term_nl": "Flexibiliteit",
+      "definition_nl": "Vermogen om zich aan te passen aan veranderende omstandigheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "F",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gaslighting",
+      "term_nl": "Gaslighting",
+      "definition_nl": "Vorm van manipulatie waarbij iemands waarneming, geheugen of oordeel systematisch wordt ondermijnd, zodat die aan zichzelf gaat twijfelen.",
+      "term_en": "Gaslighting",
+      "definition_en": "A form of manipulation that systematically undermines someone’s perception, memory or judgement so they begin to doubt themselves.",
+      "letter": "G",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "gastvrijheid",
+      "term_nl": "Gastvrijheid",
+      "definition_nl": "Bereidheid om anderen welkom te heten en te ondersteunen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geborgenheid",
+      "term_nl": "Geborgenheid",
+      "definition_nl": "Gevoel van veiligheid en bescherming.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gedegenheid",
+      "term_nl": "Gedegenheid",
+      "definition_nl": "Zorgvuldigheid en betrouwbaarheid in werk of handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "zorg-relatie",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gedragscode",
+      "term_nl": "Gedragscode",
+      "definition_nl": "Specifieke richtlijnen die aangeven hoe men zich behoort te gedragen in een professionele of sociale context, met respect voor waarden en normen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gedrevenheid",
+      "term_nl": "Gedrevenheid",
+      "definition_nl": "Sterke motivatie en inzet om doelen te bereiken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geduld",
+      "term_nl": "Geduld",
+      "definition_nl": "In staat rustig te blijven in moeilijke situaties of bij vertraging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geestdrift",
+      "term_nl": "Geestdrift",
+      "definition_nl": "Enthousiasme en vurige inzet voor een zaak of activiteit.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geestkracht",
+      "term_nl": "Geestkracht",
+      "definition_nl": "Innerlijke kracht en veerkracht in denken en handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gelijkheid",
+      "term_nl": "Gelijkheid",
+      "definition_nl": "Erkennen dat iedereen dezelfde waarde heeft; eerlijke behandeling.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gelijkheid-gelijke-behandeling",
+      "term_nl": "Gelijkheid / gelijke behandeling",
+      "definition_nl": "Iedereen op dezelfde manier behandelen, ongeacht achtergrond of kenmerken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gelijkwaardig",
+      "term_nl": "Gelijkwaardig",
+      "definition_nl": "Van gelijke waarde",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geloof",
+      "term_nl": "Geloof",
+      "definition_nl": "Vertrouwen of overtuiging in principes, ideeën of hogere macht.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "transparantie-vertrouwen",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geluk",
+      "term_nl": "Geluk",
+      "definition_nl": "Gevoel van voldoening, vreugde en welzijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gemeenschappelijkheid",
+      "term_nl": "Gemeenschappelijkheid",
+      "definition_nl": "Het delen van belangen, waarden of doelen met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gemoedelijkheid",
+      "term_nl": "Gemoedelijkheid",
+      "definition_nl": "Vriendelijk, vergevingsgezind en geduldig in houding.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "generositeit",
+      "term_nl": "Generositeit",
+      "definition_nl": "Bereidheid om tijd, energie of middelen te delen zonder eigenbelang.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "genuanceerdheid",
+      "term_nl": "Genuanceerdheid",
+      "definition_nl": "Vermogen om subtiele verschillen en complexe aspecten te erkennen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gevolgenethiek-consequentialisme",
+      "term_nl": "Gevolgenethiek (consequentialisme)",
+      "definition_nl": "Ethische benadering waarbij de morele waarde van een handeling afhangt van de uitkomst.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "geweten",
+      "term_nl": "Geweten",
+      "definition_nl": "Innerlijk besef van goed en kwaad, waardoor men zijn daden beoordeelt.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetenloos",
+      "term_nl": "Gewetenloos",
+      "definition_nl": "Zonder moreel besef, niet gehinderd door morele overwegingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetensbezwaar",
+      "term_nl": "Gewetensbezwaar",
+      "definition_nl": "Bezwaar dat iemand maakt op grond van morele of levensbeschouwelijke overtuiging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetensnood",
+      "term_nl": "Gewetensnood",
+      "definition_nl": "Toestand waarin iemand hevig lijdt door botsing tussen plicht en geweten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetensvol",
+      "term_nl": "Gewetensvol",
+      "definition_nl": "Met zorg en nauwgezetheid, vanuit moreel besef handelend.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetensvraag",
+      "term_nl": "Gewetensvraag",
+      "definition_nl": "Moeilijke vraag die raakt aan iemands morele overtuiging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "gewetenswroeging",
+      "term_nl": "Gewetenswroeging",
+      "definition_nl": "Spijt of innerlijk lijden door het bewustzijn verkeerd gehandeld te hebben.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "giftig",
+      "term_nl": "Giftig",
+      "definition_nl": "1 Vergif bevattend, dodend door vergif: een giftige slang 2 Zeer boos: toen hij dat hoorde, werd hij giftig",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "grensoverschrijdend-gedrag",
+      "term_nl": "Grensoverschrijdend gedrag",
+      "definition_nl": "Handelingen of gedragingen die de fysieke, emotionele of sociale grenzen van een ander overschrijden en als ongewenst of schadelijk worden ervaren.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "grenzen-grensoverschrijdend-gedrag",
+      "term_nl": "Grenzen / grensoverschrijdend gedrag",
+      "definition_nl": "Grenzen: de persoonlijke of maatschappelijke limieten van wat acceptabel is. Grensoverschrijdend gedrag: gedrag dat deze limieten schendt of niet respecteert.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "groots",
+      "term_nl": "Groots",
+      "definition_nl": "Prachtig, indrukwekkend, luisterrijk",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "grootsheidswaanzin",
+      "term_nl": "Grootsheidswaanzin",
+      "definition_nl": "Psychische eigenschap waarbij je jezelf erg overschat. Megalomaan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "G",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "harmonie",
+      "term_nl": "Harmonie",
+      "definition_nl": "Evenwichtige samenklank of samenwerking tussen mensen of elementen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hebzucht",
+      "term_nl": "Hebzucht",
+      "definition_nl": "Sterk verlangen alles te willen hebben",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "heelheid",
+      "term_nl": "Heelheid",
+      "definition_nl": "Volledigheid en consistentie in karakter of handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "heiligheid",
+      "term_nl": "Heiligheid",
+      "definition_nl": "Eigenschap van iets dat als onaantastbaar, hoogwaardig of religieus verheven wordt beschouwd.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "heimelijk",
+      "term_nl": "Heimelijk",
+      "definition_nl": "In het geheim; = stiekem",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "helderheid",
+      "term_nl": "Helderheid",
+      "definition_nl": "Eigenschap van duidelijk en begrijpelijk zijn; ook innerlijke helderheid van denken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "heldhaftigheid",
+      "term_nl": "Heldhaftigheid",
+      "definition_nl": "Moed en vastberadenheid in het overwinnen van gevaar of tegenslag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "herstelrecht-herstelgericht-werken",
+      "term_nl": "Herstelrecht / herstelgericht werken",
+      "definition_nl": "Benadering die na schade of conflict herstel van relaties, verantwoordelijkheid en rechtvaardigheid centraal stelt, naast of in plaats van pure sanctionering.",
+      "term_en": "Restorative justice / restorative practice",
+      "definition_en": "An approach that, after harm or conflict, centres restoration of relationships, responsibility and justice, alongside or instead of pure sanctioning.",
+      "letter": "H",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "hidden-curriculum",
+      "term_nl": "Hidden curriculum",
+      "definition_nl": "De ongeschreven lessen, normen en voorbeelden die mensen oppikken uit de feitelijke praktijk, naast wat officieel wordt onderwezen of voorgeschreven.",
+      "term_en": "Hidden curriculum",
+      "definition_en": "The unwritten lessons, norms and examples people pick up from actual practice, alongside what is officially taught or prescribed.",
+      "letter": "H",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "hoffelijk",
+      "term_nl": "Hoffelijk",
+      "definition_nl": "Beschaafd, beleefd.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hoogmoed",
+      "term_nl": "Hoogmoed",
+      "definition_nl": "Te hoge dunk van zichzelf: hoogmoed komt voor de val wordt door ondergang gevolgd",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hoop",
+      "term_nl": "Hoop",
+      "definition_nl": "Verwachting of vertrouwen dat iets goeds zal gebeuren, ondanks onzekerheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hoor-en-wederhoor",
+      "term_nl": "Hoor en wederhoor",
+      "definition_nl": "Hoor en wederhoor is een belangrijk uitgangspunt in een gerechtelijke procedure om de partijen in het geschil de mogelijkheid te geven hun standpunt kenbaar te maken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "diversiteit-inclusie",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hopeloos",
+      "term_nl": "Hopeloos",
+      "definition_nl": "1 Geen hoop gevend 2 Zeer: hopeloos verliefd",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "hulpvaardigheid",
+      "term_nl": "Hulpvaardigheid",
+      "definition_nl": "Bereidheid om anderen te ondersteunen of bij te staan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "H",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ideaal",
+      "term_nl": "Ideaal",
+      "definition_nl": "1 Volmaakt: een ideale toestand 2 Gedachtevoorstelling van iets dat de volmaaktheid benadert en dat je graag verwerkelijkt ziet",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "immoreel",
+      "term_nl": "Immoreel",
+      "definition_nl": "In strijd met de moraal, onzedelijk.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "inclusiviteit",
+      "term_nl": "Inclusiviteit",
+      "definition_nl": "Eigenschap dat iedereen wordt toegelaten en gewaardeerd, ongeacht verschillen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "inefficient",
+      "term_nl": "Inefficiënt",
+      "definition_nl": "Niet doelmatig",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "infaam",
+      "term_nl": "Infaam",
+      "definition_nl": "Eerloos, schandelijk.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "informeren",
+      "term_nl": "Informeren",
+      "definition_nl": "1 Inlichtingen inwinnen 2 Inlichtingen verstrekken",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "inspireren",
+      "term_nl": "Inspireren",
+      "definition_nl": "1 Ingeven: dit verhaal is geïnspireerd op … is ingegeven door, berust op",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "integrale-verantwoordelijkheid",
+      "term_nl": "Integrale verantwoordelijkheid",
+      "definition_nl": "Verantwoordelijkheid dragen voor het geheel, inclusief de samenhang tussen onderdelen of disciplines.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "integriteit",
+      "term_nl": "Integriteit",
+      "definition_nl": "Eigenschap van eerlijk, oprecht en onomkoopbaar zijn; trouw blijven aan principes. Eerlijk en oprecht handelen, trouw aan waarden en principes, ook als niemand kijkt",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "intens",
+      "term_nl": "Intens",
+      "definition_nl": "Sterk, hevig, erg",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "intentie",
+      "term_nl": "Intentie",
+      "definition_nl": "Bedoeling; = voornemen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "intimidatie",
+      "term_nl": "Intimidatie",
+      "definition_nl": "het intimideren, schrik aanjagen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "intimiteit",
+      "term_nl": "Intimiteit",
+      "definition_nl": "Nabijheid en diepe verbondenheid met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "intrinsieke-motivatie",
+      "term_nl": "Intrinsieke motivatie",
+      "definition_nl": "Innerlijke drijfveer om te handelen volgens eigen waarden en overtuigingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "I",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "joviaal",
+      "term_nl": "Joviaal",
+      "definition_nl": "Hartelijk, vriendschappelijk",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "J",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "juistheid",
+      "term_nl": "Juistheid",
+      "definition_nl": "Nauwkeurigheid en juistheid in handelen of communicatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "J",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "kalmte",
+      "term_nl": "Kalmte",
+      "definition_nl": "Rustige en beheersbare houding in acties en emoties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "kameraadschap",
+      "term_nl": "Kameraadschap",
+      "definition_nl": "Vriendschap en steun binnen een groep of gemeenschap.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "klantvriendelijkheid",
+      "term_nl": "Klantvriendelijkheid",
+      "definition_nl": "Behulpzame en respectvolle houding tegenover klanten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "klokkenluider",
+      "term_nl": "Klokkenluider",
+      "definition_nl": "Iemand die misstanden, onrecht of illegaal gedrag binnen een organisatie openbaar maakt, vaak uit morele overtuiging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "kritisch-denken",
+      "term_nl": "Kritisch denken",
+      "definition_nl": "Vermogen om informatie en situaties analytisch te beoordelen, inclusief ethische implicaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "diversiteit-inclusie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "kwaliteit",
+      "term_nl": "Kwaliteit",
+      "definition_nl": "Mate van uitmuntendheid of waarde in werk, producten of handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "K",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "laf",
+      "term_nl": "Laf",
+      "definition_nl": "1 Niet moedig; bang, lafhartig 2 Zouteloos, smakeloos",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "leefbaarheid",
+      "term_nl": "Leefbaarheid",
+      "definition_nl": "Eigenschappen van een omgeving die comfortabel en gezond zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "leiderschap",
+      "term_nl": "Leiderschap",
+      "definition_nl": "Vermogen om richting, motivatie en voorbeeld te geven aan anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "leraarschap",
+      "term_nl": "Leraarschap",
+      "definition_nl": "Vermogen en bereidheid kennis over te dragen en anderen te begeleiden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "liefdadigheid",
+      "term_nl": "Liefdadigheid",
+      "definition_nl": "Actieve steun of hulp aan anderen zonder eigenbelang.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "liefde",
+      "term_nl": "Liefde",
+      "definition_nl": "Sterk gevoel van zorg, warmte en verbondenheid met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "lijdelijk",
+      "term_nl": "Lijdelijk",
+      "definition_nl": "1 Geduldig 2 Passief: lijdelijk verzet dat zich niet in daden uit",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "lijdzaam",
+      "term_nl": "Lijdzaam",
+      "definition_nl": "Kalm en zonder verzet; = gelaten: lijdzaam toezien",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "loyaliteit",
+      "term_nl": "Loyaliteit",
+      "definition_nl": "Trouw en betrouwbaarheid tegenover personen, groepen of idealen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "L",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "machtsmisbruik",
+      "term_nl": "Machtsmisbruik",
+      "definition_nl": "Het oneigenlijk gebruiken van hiërarchische, relationele of institutionele macht ten koste van anderen.",
+      "term_en": "Abuse of power",
+      "definition_en": "Improper use of hierarchical, relational or institutional power at the expense of others.",
+      "letter": "M",
+      "clusters": [
+        "veiligheid-grensoverschrijding",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "matigheid",
+      "term_nl": "Matigheid",
+      "definition_nl": "Het vermogen om verlangens en impulsen te reguleren en evenwichtige keuzes te maken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "mededogen",
+      "term_nl": "Mededogen",
+      "definition_nl": "Actief meevoelen met het lijden van anderen en verlangen om te helpen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "medelijden",
+      "term_nl": "Medelijden",
+      "definition_nl": "Medeleven met iemand die lijdt, met wens tot helpen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "medemenselijkheid",
+      "term_nl": "Medemenselijkheid",
+      "definition_nl": "Respect en zorg voor anderen als medemens.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "meldcultuur",
+      "term_nl": "Meldcultuur",
+      "definition_nl": "Geheel van normen, procedures en ervaringen dat bepaalt of en hoe mensen misstanden of ongewenst gedrag durven te melden.",
+      "term_en": "Speak-up / reporting culture",
+      "definition_en": "The norms, procedures and experiences that shape whether and how people dare to report misconduct or unwanted behaviour.",
+      "letter": "M",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "mensgerichtheid",
+      "term_nl": "Mensgerichtheid",
+      "definition_nl": "Focus op welzijn en behoeften van mensen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "menswaardig",
+      "term_nl": "Menswaardig",
+      "definition_nl": "Zoals de waardigheid van de mens verlangt",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "mindfulness",
+      "term_nl": "Mindfulness",
+      "definition_nl": "Houding van bewuste en niet-oordelende aandacht voor het huidige moment.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moed",
+      "term_nl": "Moed",
+      "definition_nl": "Vermogen om gevaar, angst of moeilijkheden te trotseren.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moraal",
+      "term_nl": "Moraal",
+      "definition_nl": "Het geheel van normen en waarden dat bepaalt wat goed of slecht, juist of onjuist is in menselijk handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moral-disengagement",
+      "term_nl": "Moral disengagement",
+      "definition_nl": "Psychologische mechanismen waarmee mensen morele zelfsancties uitschakelen zodat schadelijk handelen aanvaardbaar lijkt (Bandura).",
+      "term_en": "Moral disengagement",
+      "definition_en": "Psychological mechanisms that disable moral self-sanctions, making harmful behaviour seem acceptable (Bandura).",
+      "letter": "M",
+      "clusters": [
+        "integriteit-compliance",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "moral-judgment-action-gap",
+      "term_nl": "Moral-judgment-action gap",
+      "definition_nl": "Verschil tussen het maken van morele oordelen en het daadwerkelijk handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moralisme",
+      "term_nl": "Moralisme",
+      "definition_nl": "De neiging om morele oordelen te vellen over situaties of gedragingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-beraad",
+      "term_nl": "Moreel beraad",
+      "definition_nl": "Gestructureerd gesprek waarin betrokkenen samen een moreel dilemma onderzoeken om tot een zorgvuldige afweging te komen.",
+      "term_en": "Moral case deliberation",
+      "definition_en": "A structured conversation in which those involved jointly examine a moral dilemma to reach a careful judgement.",
+      "letter": "M",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "moreel-bewustzijn",
+      "term_nl": "Moreel bewustzijn",
+      "definition_nl": "Vermogen om ethische aspecten van een situatie te herkennen en te begrijpen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-erfgoed",
+      "term_nl": "Moreel erfgoed",
+      "definition_nl": "De waarden en normen die een gemeenschap van generatie op generatie doorgeeft.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-gedrag",
+      "term_nl": "Moreel gedrag",
+      "definition_nl": "Het daadwerkelijk uitvoeren van ethische handelingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-handelen",
+      "term_nl": "Moreel handelen",
+      "definition_nl": "Handelen in overeenstemming met ethische principes en overtuigingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "moreel-kompas",
+      "term_nl": "Moreel kompas",
+      "definition_nl": "Intern referentiepunt voor het beoordelen van goed of slecht gedrag en beslissingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-kennis",
+      "term_nl": "Morele kennis",
+      "definition_nl": "Kennis van ethische theorieën, normen en beroepscodes voor morele beslissingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-moed",
+      "term_nl": "Morele moed",
+      "definition_nl": "Bereidheid te handelen naar moreel inzicht, ook wanneer dat persoonlijk of professioneel risico met zich meebrengt.",
+      "term_en": "Moral courage",
+      "definition_en": "Willingness to act on moral insight, even when that entails personal or professional risk.",
+      "letter": "M",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "morele-nabijheid",
+      "term_nl": "Morele nabijheid",
+      "definition_nl": "Gevoel van verbondenheid en verantwoordelijkheid tegenover anderen die dicht(er)bij staan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "zorg-relatie",
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-ontwikkeling",
+      "term_nl": "Morele ontwikkeling",
+      "definition_nl": "Proces waarin iemand ethische competenties, waarden en vaardigheden ontwikkelt.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-rechtvaardiging",
+      "term_nl": "Morele rechtvaardiging",
+      "definition_nl": "Het rationaliseren van onethisch gedrag om het acceptabel te maken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-restschade",
+      "term_nl": "Morele restschade",
+      "definition_nl": "Blijvend moreel ongemak of litteken na een dilemma, ook als je hebt gehandeld naar beste weten.",
+      "term_en": "Moral residue",
+      "definition_en": "Lasting moral unease or scarring after a dilemma, even when you acted to the best of your knowledge.",
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "morele-stress",
+      "term_nl": "Morele stress",
+      "definition_nl": "Spanning die ontstaat wanneer je weet wat moreel juist is, maar door omstandigheden niet (goed) kunt handelen.",
+      "term_en": "Moral distress",
+      "definition_en": "Tension that arises when you know what is morally right but circumstances prevent you from acting (well) on it.",
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "morele-vaardigheden",
+      "term_nl": "Morele vaardigheden",
+      "definition_nl": "Vermogen om ethische overwegingen toe te passen in gedrag en besluitvorming.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-verwaarlozing",
+      "term_nl": "Morele verwaarlozing",
+      "definition_nl": "Het niet herkennen van de ethische implicaties van een situatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "morele-waarden",
+      "term_nl": "Morele waarden",
+      "definition_nl": "Waarden die als richtsnoer dienen voor moreel juist handelen, zoals integriteit, eerlijkheid en rechtvaardigheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "M",
+      "clusters": [
+        "integriteit-compliance",
+        "transparantie-vertrouwen",
+        "reflectie-oordeel",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "nauwgezet",
+      "term_nl": "Nauwgezet",
+      "definition_nl": "Nauwkeurig",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "nauwkeurigheid",
+      "term_nl": "Nauwkeurigheid",
+      "definition_nl": "Precisie en zorg in uitvoering of oordeel.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "nederigheid",
+      "term_nl": "Nederigheid",
+      "definition_nl": "Bescheidenheid in houding en erkenning van eigen beperkingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "negeren",
+      "term_nl": "Negeren",
+      "definition_nl": "Doen alsof je iem. niet ziet, iets niet merkt: iem. totaal negeren",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "neutraliteit",
+      "term_nl": "Neutraliteit",
+      "definition_nl": "Eigenschap van onpartijdig en onbevooroordeeld zijn, zonder partij te kiezen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "nieuwsgierigheid",
+      "term_nl": "Nieuwsgierigheid",
+      "definition_nl": "Interesse en verlangen om te leren en ontdekken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "noblesse-oblige-fr",
+      "term_nl": "Noblesse oblige (Fr.)",
+      "definition_nl": "Adeldom verplicht; hoge positie brengt morele plicht mee.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "nut",
+      "term_nl": "Nut",
+      "definition_nl": "Functionaliteit en praktische waarde van iets.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "N",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onafhankelijkheid",
+      "term_nl": "Onafhankelijkheid",
+      "definition_nl": "Vermogen zelfstandig te denken, handelen en beslissen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onbevangen",
+      "term_nl": "Onbevangen",
+      "definition_nl": "Open en onbevooroordeeld in houding en gedrag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onbezonnen",
+      "term_nl": "Onbezonnen",
+      "definition_nl": "Ondoordacht, lichtvaardig (in handelen, spreken)",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onderbuikgevoel",
+      "term_nl": "Onderbuikgevoel",
+      "definition_nl": "Intuïtief oordeel gebaseerd op gevoel in plaats van analyse.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ongewenst-gedrag",
+      "term_nl": "Ongewenst gedrag",
+      "definition_nl": "Ongewenst gedrag is gedrag dat de ontvanger als onprettig en soms als grensoverschrijdend ervaart. Dit kan zich uiten in verschillende vormen zoals bijvoorbeeld agressie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ongewenste-intimiteit",
+      "term_nl": "Ongewenste intimiteit",
+      "definition_nl": "avances, ongewenste handtastelijkheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onkreukbaarheid",
+      "term_nl": "Onkreukbaarheid",
+      "definition_nl": "eerlijk, niet omkoopbaar.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onpartijdigheid",
+      "term_nl": "Onpartijdigheid",
+      "definition_nl": "Handelen zonder vooroordelen of belangenverstrengeling; iedereen gelijk behandelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ontmoeten",
+      "term_nl": "Ontmoeten",
+      "definition_nl": "Actief contact maken en verbinden met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ontplooiing",
+      "term_nl": "Ontplooiing",
+      "definition_nl": "Persoonlijke of professionele groei en ontwikkeling tot volledige expressie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ontwapenend",
+      "term_nl": "Ontwapenend",
+      "definition_nl": "Op een manier handelen die vertrouwen wekt en weerstand vermindert.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ontwricht",
+      "term_nl": "Ontwricht",
+      "definition_nl": "1 Uit het gewricht rukken: zijn arm ontwrichten 2 Krachteloos maken; = verlammen: door de sneeuw raakte het verkeer ontwricht",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onverschillig",
+      "term_nl": "Onverschillig",
+      "definition_nl": "1 Zich om niets bekommerend: een onverschillige kerel 2 Om het even: het is mij onverschillig.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "onvoorwaardelijk",
+      "term_nl": "Onvoorwaardelijk",
+      "definition_nl": "Zonder beperkingen of voorwaarden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "oordeelsvermogen",
+      "term_nl": "Oordeelsvermogen",
+      "definition_nl": "Het vermogen om weloverwogen beslissingen te nemen en onderscheid te maken tussen verschillende informatiebronnen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "openheid",
+      "term_nl": "Openheid",
+      "definition_nl": "Transparant en toegankelijk zijn in communicatie, zonder verborgen agenda’s.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "oprechtheid",
+      "term_nl": "Oprechtheid",
+      "definition_nl": "Eerlijk en authentiek zijn in woorden en daden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "optimisme",
+      "term_nl": "Optimisme",
+      "definition_nl": "Positieve houding en vertrouwen in toekomstige uitkomsten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "orde",
+      "term_nl": "Orde",
+      "definition_nl": "1 Regelmatige plaatsing of schikking van iets; regel, regelmaat: hij stelde orde op zaken schiep orde 2 Geregelde toestand: de openbare orde de normen die gelden voor het gedrag van burgers in het openbaar; de gevestigde orde het bestaande maatschappelijk bestel, m.n. degenen die het daarin voor het zeggen hebben; orde houden rust onder de leerlingen; een onderwerp aan de orde stellen erover beginnen; alles is in orde naar behoren geregeld; iets in orde maken iets regelen; zijn leven op orde hebben goed geregeld hebben, onder controle hebben; voor de goede orde met het doel dat alles behoorlijk geregeld is; iem. tot de orde roepen (a) berispen; (b) (sport; m.b.t. een vluchter) achterhalen; dat is aan de orde van de dag dat komt vaak voor.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ordelijkheid",
+      "term_nl": "Ordelijkheid",
+      "definition_nl": "Systematisch en georganiseerd zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "organisatiecultuur",
+      "term_nl": "Organisatiecultuur",
+      "definition_nl": "Gedeelde patronen van waarden, aannames en gedragingen die bepalen ‘hoe we hier dingen doen’.",
+      "term_en": "Organisational culture",
+      "definition_en": "Shared patterns of values, assumptions and behaviours that define “how we do things here”.",
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "overgave",
+      "term_nl": "Overgave",
+      "definition_nl": "Volledige betrokkenheid bij iets.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "overtuigd",
+      "term_nl": "Overtuigd",
+      "definition_nl": "Zeker van eigen ideeën, waarden of keuzes.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "O",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "participatie",
+      "term_nl": "Participatie",
+      "definition_nl": "Actieve deelname aan activiteiten, discussie of besluitvorming.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "passie",
+      "term_nl": "Passie",
+      "definition_nl": "Sterke emotie en gedrevenheid voor een activiteit of ideaal.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "passiviteit",
+      "term_nl": "Passiviteit",
+      "definition_nl": "Afwezigheid van actie of initiatief; ontvankelijkheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "persoonlijke-ontwikkeling",
+      "term_nl": "Persoonlijke ontwikkeling",
+      "definition_nl": "Groei in kennis, vaardigheden en karakter.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "persoonlijke-vrijheid",
+      "term_nl": "Persoonlijke vrijheid",
+      "definition_nl": "Vermogen zelfstandig keuzes te maken en te handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "persoonlijke-waarden",
+      "term_nl": "Persoonlijke waarden",
+      "definition_nl": "Individuele overtuigingen over wat goed en belangrijk is, die keuzes beïnvloeden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "pesten",
+      "term_nl": "Pesten",
+      "definition_nl": "1 Treiteren 2 Een bep. kaartspel spelen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "phronesis-praktische-wijsheid",
+      "term_nl": "Phronesis (praktische wijsheid)",
+      "definition_nl": "Het vermogen om in concrete situaties het juiste te zien en te doen — kennis die groeit door ervaring, reflectie en oefening (Aristoteles).",
+      "term_en": "Phronesis (practical wisdom)",
+      "definition_en": "The capacity to see and do what is right in concrete situations — knowledge that grows through experience, reflection and practice (Aristotle).",
+      "letter": "P",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "pionieren",
+      "term_nl": "Pionieren",
+      "definition_nl": "Vooruitstrevend en vernieuwend handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "plicht",
+      "term_nl": "Plicht",
+      "definition_nl": "Morele verplichting",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "plichtenethiek-deontologie",
+      "term_nl": "Plichtenethiek (deontologie)",
+      "definition_nl": "Ethische benadering waarbij de morele waarde van een handeling afhangt van de naleving van regels of plichten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "plichtsbesef",
+      "term_nl": "Plichtsbesef",
+      "definition_nl": "Bewustzijn van verantwoordelijkheden en naleving daarvan.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "pragmatisme",
+      "term_nl": "Pragmatisme",
+      "definition_nl": "Praktische en doelgerichte benadering van problemen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "privacy",
+      "term_nl": "Privacy",
+      "definition_nl": "Recht op persoonlijke ruimte en vertrouwelijkheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "privilege",
+      "term_nl": "Privilege",
+      "definition_nl": "Ongelijk verdeelde voordelen of vanzelfsprekendheden die voortkomen uit sociale positie, vaak onzichtbaar voor wie ze heeft.",
+      "term_en": "Privilege",
+      "definition_en": "Unevenly distributed advantages or taken-for-granted benefits arising from social position, often invisible to those who have them.",
+      "letter": "P",
+      "clusters": [
+        "diversiteit-inclusie",
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "professionaliteit",
+      "term_nl": "Professionaliteit",
+      "definition_nl": "Bekwaam, verantwoordelijk en integer optreden binnen een beroep.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "professioneel-handelen",
+      "term_nl": "Professioneel handelen",
+      "definition_nl": "Gedrag dat past bij de normen en waarden van het beroep, deskundig en verantwoord optreden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "professionele-waarden",
+      "term_nl": "Professionele waarden",
+      "definition_nl": "Normen en principes die gelden binnen een beroep of professionele context.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "prudentie",
+      "term_nl": "Prudentie",
+      "definition_nl": "Voorzichtig en wijs handelen bij beslissingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "psychologische-veiligheid",
+      "term_nl": "Psychologische veiligheid",
+      "definition_nl": "Gedeelde overtuiging dat het veilig is om risico’s te nemen in interpersoonlijke interactie: twijfel, fouten en tegenspraak mogen er zijn.",
+      "term_en": "Psychological safety",
+      "definition_en": "A shared belief that it is safe to take interpersonal risks: doubt, mistakes and dissent are allowed.",
+      "letter": "P",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "punctualiteit",
+      "term_nl": "Punctualiteit",
+      "definition_nl": "Nauwkeurig op tijd zijn en deadlines respecteren.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "puurheid",
+      "term_nl": "Puurheid",
+      "definition_nl": "Reinheid of echtheid in intentie, gedrag of substantie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "P",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rationaliteit",
+      "term_nl": "Rationaliteit",
+      "definition_nl": "Redelijk en logisch denken en handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "realistisch",
+      "term_nl": "Realistisch",
+      "definition_nl": "Nuchter en werkelijkheidsgetrouw inzicht hebben.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rechtszekerheid",
+      "term_nl": "Rechtszekerheid",
+      "definition_nl": "Zekerheid dat je erop kunt rekenen dat je rechten geëerbiedigd zullen worden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rechtvaardigheid",
+      "term_nl": "Rechtvaardigheid",
+      "definition_nl": "Het streven naar eerlijke verdeling van kansen, middelen en behandeling.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "redelijk",
+      "term_nl": "Redelijk",
+      "definition_nl": "1 Met rede begaafd; = verstandelijk 2 Rechtvaardig, billijk: dat zijn redelijke voorstellen 3 Tamelijk: redelijk goed 4 Tamelijk groot, tamelijk goed enz.: een redelijk inkomen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "redeloos",
+      "term_nl": "Redeloos",
+      "definition_nl": "1 Zonder verstand 2 Niet naar rede luisterend: redeloze woede",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rein",
+      "term_nl": "Rein",
+      "definition_nl": "1 Proper, schoon: een rein geweten hebben zich onschuldig voelen; in het reine komen met zichzelf een oplossing vinden die in overeenstemming is met het eigen geweten",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "respect",
+      "term_nl": "Respect",
+      "definition_nl": "Eerbied en waardering tonen voor mensen, regels of waarden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "respectvolle-omgangsvormen",
+      "term_nl": "Respectvolle omgangsvormen",
+      "definition_nl": "Concreet gedrag dat getuigt van beleefdheid, fatsoen en zorgvuldigheid in interactie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "resultaat",
+      "term_nl": "Resultaat",
+      "definition_nl": "Het beoogde of behaalde effect van acties of inspanningen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "riskeren",
+      "term_nl": "Riskeren",
+      "definition_nl": "Op het spel zetten; = wagen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rivaliteit",
+      "term_nl": "Rivaliteit",
+      "definition_nl": "Wedijver",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "roem",
+      "term_nl": "Roem",
+      "definition_nl": "Breed erkende bekendheid of reputatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "ruimdenkendheid",
+      "term_nl": "Ruimdenkendheid",
+      "definition_nl": "Openstaan voor nieuwe ideeën, perspectieven of meningen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "rust",
+      "term_nl": "Rust",
+      "definition_nl": "Geestelijke of fysieke kalmte en ontspanning.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "R",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "saamhorigheid",
+      "term_nl": "Saamhorigheid",
+      "definition_nl": "Gevoel van verbondenheid en solidariteit binnen een groep.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "samenwerken",
+      "term_nl": "Samenwerken",
+      "definition_nl": "Gezamenlijk werken aan een doel of project.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "samenzijn",
+      "term_nl": "Samenzijn",
+      "definition_nl": "Aanwezig zijn en interactie hebben met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "scepsis",
+      "term_nl": "Scepsis",
+      "definition_nl": "Twijfel",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "schaamte",
+      "term_nl": "Schaamte",
+      "definition_nl": "Ongemakkelijk gevoel over eigen gedrag, gezien als moreel verwerpelijk.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "schenken",
+      "term_nl": "Schenken",
+      "definition_nl": "Vrijwillig geven van middelen, tijd of aandacht aan anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "schoonheid",
+      "term_nl": "Schoonheid",
+      "definition_nl": "Eigenschap die esthetisch of emotioneel plezier oproept.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "schuld",
+      "term_nl": "Schuld",
+      "definition_nl": "Gevoel van verantwoordelijkheid voor een fout of misdraging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "sensitiviteit",
+      "term_nl": "Sensitiviteit",
+      "definition_nl": "Openstaan voor en reageren op subtiele signalen of emoties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "slecht",
+      "term_nl": "Slecht",
+      "definition_nl": "1 Niet goed 2 Afkeurenswaardig: slechte manieren",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "smeuig",
+      "term_nl": "Smeuïg",
+      "definition_nl": "1 (van voedsel) goed smeerbaar; zacht en vettig 2 (van een verhaal) smakelijk",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "snode",
+      "term_nl": "Snode",
+      "definition_nl": "Boosaardig, misdadig: snode plannen",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "sociale-veiligheid-veiligheid",
+      "term_nl": "Sociale veiligheid / Veiligheid",
+      "definition_nl": "Een omgeving waarin iedereen zich vrij voelt van (psychische of fysieke) dreiging, discriminatie of uitsluiting.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "soevereiniteit",
+      "term_nl": "Soevereiniteit",
+      "definition_nl": "Onafhankelijkheid en gezag over eigen keuzes of domein.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "solidariteit",
+      "term_nl": "Solidariteit",
+      "definition_nl": "Gevoel van eenheid en bereidheid anderen te steunen, vooral in moeilijke situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "speak-up-cultuur",
+      "term_nl": "Speak-up cultuur",
+      "definition_nl": "Organisatiecultuur waarin mensen zich veilig en gesteund voelen om misstanden, twijfel of afwijkende standpunten te benoemen.",
+      "term_en": "Speak-up culture",
+      "definition_en": "An organisational culture in which people feel safe and supported to raise concerns, doubt or dissenting views.",
+      "letter": "S",
+      "clusters": [
+        "integriteit-compliance",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "speelsheid",
+      "term_nl": "Speelsheid",
+      "definition_nl": "Lichtheid, humor en creativiteit in gedrag of houding.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "spiritualiteit",
+      "term_nl": "Spiritualiteit",
+      "definition_nl": "Gevoel of overtuiging dat er een diepere, vaak niet-materiële dimensie aan het leven is.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "sportiviteit",
+      "term_nl": "Sportiviteit",
+      "definition_nl": "Eerlijke en respectvolle houding bij competitie of samenwerking.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "stabiliteit",
+      "term_nl": "Stabiliteit",
+      "definition_nl": "Standvastigheid en betrouwbaarheid in omstandigheden of karakter.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "stilte",
+      "term_nl": "Stilte",
+      "definition_nl": "Afwezigheid van lawaai of drukte; rust en concentratie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "stiptheid",
+      "term_nl": "Stiptheid",
+      "definition_nl": "Nauwkeurig en op tijd zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "straf",
+      "term_nl": "Straf",
+      "definition_nl": "1 Maatregel tegen iem. als vergelding voor een onrechtmatige daad, een verzuim of overtreding: op straffe van een boete met een boete als straf 2 Sterk, krachtig: een straffe wind; met straffe hand regeren streng.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "synergie",
+      "term_nl": "Synergie",
+      "definition_nl": "Gezamenlijk effect dat groter is dan de som van individuele bijdragen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "S",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tactvol",
+      "term_nl": "Tactvol",
+      "definition_nl": "Op een gevoelige en verstandige manier omgaan met mensen of situaties.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tederheid",
+      "term_nl": "Tederheid",
+      "definition_nl": "Zachtheid, zorgzaamheid en warmte in houding of gedrag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tekortschieten",
+      "term_nl": "Tekortschieten",
+      "definition_nl": "1 Zijn plichten niet naar behoren vervullen 2 Onvoldoende zijn",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "temperamentvol",
+      "term_nl": "Temperamentvol",
+      "definition_nl": "Eigenschap om levendig, krachtig en emotioneel te reageren.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "terughoudendheid",
+      "term_nl": "Terughoudendheid",
+      "definition_nl": "Voorzichtig en bedachtzaam optreden zonder overhaaste beslissingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tevredenheid",
+      "term_nl": "Tevredenheid",
+      "definition_nl": "Gevoel van voldoening en welzijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "theory-in-use",
+      "term_nl": "Theory-in-use",
+      "definition_nl": "De waarden en overtuigingen die uit feitelijk handelen blijken, ongeacht wat officieel wordt beweerd (Argyris & Schön).",
+      "term_en": "Theory-in-use",
+      "definition_en": "The values and beliefs revealed by actual behaviour, regardless of what is officially claimed (Argyris & Schön).",
+      "letter": "T",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "tijdloosheid",
+      "term_nl": "Tijdloosheid",
+      "definition_nl": "Eigenschap om waardevol of relevant te blijven ongeacht tijd of mode.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tirannie",
+      "term_nl": "Tirannie",
+      "definition_nl": "Heerschappij (als) van een tiran",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "rechtvaardigheid-macht"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "toegankelijkheid",
+      "term_nl": "Toegankelijkheid",
+      "definition_nl": "Openheid en beschikbaarheid voor anderen of informatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "toewijding",
+      "term_nl": "Toewijding",
+      "definition_nl": "Actieve en loyale inzet voor een doel of persoon.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tolerantie",
+      "term_nl": "Tolerantie",
+      "definition_nl": "Acceptatie en respect voor verschillen in mening, gedrag of cultuur.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "tone-at-the-top",
+      "term_nl": "Tone at the top",
+      "definition_nl": "Het voorbeeld en de morele toon die leidinggevenden zetten; sterk bepalend voor wat in de organisatie als normaal geldt.",
+      "term_en": "Tone at the top",
+      "definition_en": "The example and moral tone set by leaders; strongly shapes what counts as normal in an organisation.",
+      "letter": "T",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "toorn",
+      "term_nl": "Toorn",
+      "definition_nl": "Woede, drift",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "traditie",
+      "term_nl": "Traditie",
+      "definition_nl": "Overgeleverde gebruiken, normen en waarden die worden voortgezet.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "transformatie",
+      "term_nl": "Transformatie",
+      "definition_nl": "Proces van ingrijpende verandering of ontwikkeling.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "transparantie",
+      "term_nl": "Transparantie",
+      "definition_nl": "Eigenschap van openheid en duidelijkheid in communicatie, intenties of processen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "troost",
+      "term_nl": "Troost",
+      "definition_nl": "Steun en verlichting bieden bij verdriet of moeilijkheden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "trots",
+      "term_nl": "Trots",
+      "definition_nl": "Positief gevoel over eigen gedrag of prestaties in lijn met waarden/normen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "trouw",
+      "term_nl": "Trouw",
+      "definition_nl": "Loyaal en betrouwbaar in relaties, verplichtingen of idealen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "T",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "uniformiteit",
+      "term_nl": "Uniformiteit",
+      "definition_nl": "Gelijkheid en consistentie in vorm, gedrag of uitvoering.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "U",
+      "clusters": [
+        "diversiteit-inclusie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "universaliteit",
+      "term_nl": "Universaliteit",
+      "definition_nl": "Eigenschap om voor iedereen of alles van toepassing te zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "U",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "upstander",
+      "term_nl": "Upstander",
+      "definition_nl": "Iemand die getuige is van (potentieel) schadelijk gedrag en ervoor kiest om in te grijpen of steun te bieden.",
+      "term_en": "Upstander",
+      "definition_en": "Someone who witnesses (potentially) harmful behaviour and chooses to intervene or offer support.",
+      "letter": "U",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "utilitarisme",
+      "term_nl": "Utilitarisme",
+      "definition_nl": "Morele theorie die stelt dat de juistheid van een handeling afhangt van het bevorderen van het grootste geluk voor het grootste aantal mensen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "U",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vaderlandsliefde",
+      "term_nl": "Vaderlandsliefde",
+      "definition_nl": "Liefde en loyaliteit voor het eigen land.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vakmanschap",
+      "term_nl": "Vakmanschap",
+      "definition_nl": "Hoog niveau van vaardigheid en expertise in een beroep.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "veerkracht",
+      "term_nl": "Veerkracht",
+      "definition_nl": "Vermogen zich aan te passen en te herstellen na tegenslag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "veiligheid",
+      "term_nl": "Veiligheid",
+      "definition_nl": "Toestand waarin men beschermd is tegen gevaar, schade of bedreiging.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verantwoordelijkheid",
+      "term_nl": "Verantwoordelijkheid",
+      "definition_nl": "Plicht om zorg te dragen voor taken, gevolgen of anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "zorg-relatie",
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verantwoording",
+      "term_nl": "Verantwoording",
+      "definition_nl": "Het toelichten en verklaren van keuzes en handelingen tegenover anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "integriteit-compliance"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verbeeldingskracht",
+      "term_nl": "Verbeeldingskracht",
+      "definition_nl": "Vermogen creatieve en originele ideeën te vormen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verbetering",
+      "term_nl": "Verbetering",
+      "definition_nl": "Proces van vooruitgang of optimalisatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verbindend",
+      "term_nl": "Verbindend",
+      "definition_nl": "Eigenschap mensen samen te brengen en relaties te versterken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verbondenheid",
+      "term_nl": "Verbondenheid",
+      "definition_nl": "Gevoel van samenhang en relatie met anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verdienste",
+      "term_nl": "Verdienste",
+      "definition_nl": "1 Loon voor verricht werk: de verdiensten zijn goed 2 Verdienstelijkheid: lid van verdienste erelid; een man van verdienste die veel goeds heeft gedaan; het is haar verdienste dat het gelukt is dankzij haar is het gelukt",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vergevingsgezind",
+      "term_nl": "Vergevingsgezind",
+      "definition_nl": "Bereidheid anderen te vergeven of schuld los te laten.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vermoedelijk",
+      "term_nl": "Vermoedelijk",
+      "definition_nl": "Waarschijnlijk.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vernieuwing",
+      "term_nl": "Vernieuwing",
+      "definition_nl": "Introductie van iets nieuws of verbeterd.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verstandhouding",
+      "term_nl": "Verstandhouding",
+      "definition_nl": "Constructieve en verstandige omgang met anderen; vermogen verstandig te handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vertrouwen",
+      "term_nl": "Vertrouwen",
+      "definition_nl": "Geloof in de betrouwbaarheid of goede intenties van iemand of iets.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verwijten",
+      "term_nl": "Verwijten",
+      "definition_nl": "Berispend wijzen op ene tekortkoming.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verwondering",
+      "term_nl": "Verwondering",
+      "definition_nl": "Gevoel van verbazing en bewondering.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "verworvenheid",
+      "term_nl": "Verworvenheid",
+      "definition_nl": "Bereikte status, kennis of middelen door inzet of prestatie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vindingrijkheid",
+      "term_nl": "Vindingrijkheid",
+      "definition_nl": "Vermogen creatieve oplossingen te bedenken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "virtuositeit",
+      "term_nl": "Virtuositeit",
+      "definition_nl": "Uitzonderlijke vaardigheid of meesterlijk kunnen in een vak.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vitaliteit",
+      "term_nl": "Vitaliteit",
+      "definition_nl": "Energie en levenskracht.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vlammend",
+      "term_nl": "Vlammend",
+      "definition_nl": "1 Brandend 2 Vol verontwaardiging: een vlammend protest",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vlijt",
+      "term_nl": "Vlijt",
+      "definition_nl": "IJver en zorgvuldige inzet in werk of studie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "volgzaamheid",
+      "term_nl": "Volgzaamheid",
+      "definition_nl": "Bereidheid instructies of aanwijzingen te volgen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "volharding",
+      "term_nl": "Volharding",
+      "definition_nl": "Standvastig doorgaan ondanks moeilijkheden of tegenslag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "volmaaktheid",
+      "term_nl": "Volmaaktheid",
+      "definition_nl": "Hoogste graad van kwaliteit, afwerking of karakter.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vooringenomen",
+      "term_nl": "Vooringenomen",
+      "definition_nl": "Met een vooroordeel; = partijdig",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "voorkomendheid",
+      "term_nl": "Voorkomendheid",
+      "definition_nl": "Aandacht en zorg voor het welzijn van anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vooruitstrevendheid",
+      "term_nl": "Vooruitstrevendheid",
+      "definition_nl": "Streven naar vernieuwing en verbetering.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vrede",
+      "term_nl": "Vrede",
+      "definition_nl": "Afwezigheid van conflict en aanwezigheid van harmonie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vriendelijkheid",
+      "term_nl": "Vriendelijkheid",
+      "definition_nl": "Aardige, beleefde en behulpzame houding.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vriendschap",
+      "term_nl": "Vriendschap",
+      "definition_nl": "Hechte en ondersteunende relatie tussen mensen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vrijgevigheid",
+      "term_nl": "Vrijgevigheid",
+      "definition_nl": "Bereidheid om vrijelijk te geven of delen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vrijheid",
+      "term_nl": "Vrijheid",
+      "definition_nl": "Toestand waarin men kan handelen of denken zonder ongewenste beperkingen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "vrijmoedigheid",
+      "term_nl": "Vrijmoedigheid",
+      "definition_nl": "Durf en openheid in spreken of handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "V",
+      "clusters": [
+        "moed-verantwoordelijkheid",
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waardeconflict",
+      "term_nl": "Waardeconflict",
+      "definition_nl": "Situatie waarin twee of meer belangrijke waarden niet tegelijk volledig kunnen worden gehonoreerd.",
+      "term_en": "Value conflict",
+      "definition_en": "A situation in which two or more important values cannot be fully honoured at the same time.",
+      "letter": "W",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "waarden-normen",
+      "term_nl": "Waarden & normen",
+      "definition_nl": "Waarden: diepere overtuigingen over wat belangrijk is. Normen: de daaruit voortvloeiende gedragsregels.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waardevol",
+      "term_nl": "Waardevol",
+      "definition_nl": "Bezit van betekenis, nut of kwaliteit.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waardevrij",
+      "term_nl": "Waardevrij",
+      "definition_nl": "Zonder vooroordelen of morele beoordeling.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waardigheid",
+      "term_nl": "Waardigheid",
+      "definition_nl": "Eigenschap van respectvol en eervol zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waarheid",
+      "term_nl": "Waarheid",
+      "definition_nl": "Overeenkomst van uitspraken met de werkelijkheid; oprechtheid in woorden en daden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waarheidsgetrouw",
+      "term_nl": "Waarheidsgetrouw",
+      "definition_nl": "In overeenstemming met de waarheid.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "waarschuwing",
+      "term_nl": "Waarschuwing",
+      "definition_nl": "1 Het waarschuwen: zonder waarschuwing vooraf 2 Vermaning: iem. een waarschuwing geven; dit is de laatste waarschuwing: als je het nog één keer doet …",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "walging",
+      "term_nl": "Walging",
+      "definition_nl": "Sterke afkeer van gedrag dat als moreel verwerpelijk wordt gezien.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wappie",
+      "term_nl": "Wappie",
+      "definition_nl": "Iem. die niet goed wijs is, iem. met bizarre, niet op feiten gebaseerde opvattingen over een bepaalde kwestie: reliwappie, viruswappie",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wederkerig",
+      "term_nl": "Wederkerig",
+      "definition_nl": "Gebaseerd op wederzijdse uitwisseling of interactie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wederrechtelijk",
+      "term_nl": "Wederrechtelijk",
+      "definition_nl": "In strijd met het recht: zich wederrechtelijk iets toe-eigenen stelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "weldadigheid",
+      "term_nl": "Weldadigheid",
+      "definition_nl": "Goedheid en genereus handelen ten behoeve van anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "welgemanierdheid",
+      "term_nl": "Welgemanierdheid",
+      "definition_nl": "Beschaving en beleefdheid in gedrag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "welgevallig",
+      "term_nl": "Welgevallig",
+      "definition_nl": "Dat is hem welgevallig bevalt hem goed.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "welvaart",
+      "term_nl": "Welvaart",
+      "definition_nl": "Mate van rijkdom, welzijn en comfort.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "welwillendheid",
+      "term_nl": "Welwillendheid",
+      "definition_nl": "Bereidheid anderen positief te ondersteunen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "welzijn",
+      "term_nl": "Welzijn",
+      "definition_nl": "Een staat van lichamelijk, psychisch en sociaal welbevinden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "werkelijkheidsbesef",
+      "term_nl": "Werkelijkheidsbesef",
+      "definition_nl": "Vermogen de situatie objectief te beoordelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wijsheid",
+      "term_nl": "Wijsheid",
+      "definition_nl": "Vermogen juiste oordelen en beslissingen te nemen op basis van kennis en ervaring.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wispelturig",
+      "term_nl": "Wispelturig",
+      "definition_nl": "Veranderlijk.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "woede",
+      "term_nl": "Woede",
+      "definition_nl": "Intense emotie bij ervaren onrecht of schending van waarden/normen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wonderlijk",
+      "term_nl": "Wonderlijk",
+      "definition_nl": "1 Als een wonder 2 Vreemd, merkwaardig, zonderling.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wroeging",
+      "term_nl": "Wroeging",
+      "definition_nl": "Spijt of berouw over moreel verkeerd ervaren handelen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "wrok",
+      "term_nl": "Wrok",
+      "definition_nl": "(Opgekropte) bittere haat: wrok koesteren.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "W",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zachtmoedigheid",
+      "term_nl": "Zachtmoedigheid",
+      "definition_nl": "Zachtaardige, vergevende en geduldige houding.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "moed-verantwoordelijkheid"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zede",
+      "term_nl": "Zede",
+      "definition_nl": "gewoonte of gebruik dat als norm voor goed gedrag geldt.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zekerheid",
+      "term_nl": "Zekerheid",
+      "definition_nl": "Vertrouwen en zekerheid over kennis, situatie of uitkomst.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfbeheersing",
+      "term_nl": "Zelfbeheersing",
+      "definition_nl": "Vermogen impulsen en emoties onder controle te houden.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfbeschikking",
+      "term_nl": "Zelfbeschikking",
+      "definition_nl": "Vermogen zelfstandig beslissingen te nemen over eigen leven.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfkennis",
+      "term_nl": "Zelfkennis",
+      "definition_nl": "Inzicht in eigen gevoelens, gedachten en gedrag.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfontplooiing",
+      "term_nl": "Zelfontplooiing",
+      "definition_nl": "Proces van persoonlijke groei en volledige potentie bereiken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfopoffering",
+      "term_nl": "Zelfopoffering",
+      "definition_nl": "Het opgeven van eigen belangen ten behoeve van anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfrespect",
+      "term_nl": "Zelfrespect",
+      "definition_nl": "Gevoel van eigenwaarde; respect dat iemand voor zichzelf heeft.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfvertrouwen",
+      "term_nl": "Zelfvertrouwen",
+      "definition_nl": "Overtuiging dat je op je eigen capaciteiten en oordeel kunt vertrouwen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "transparantie-vertrouwen",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zelfzorg",
+      "term_nl": "Zelfzorg",
+      "definition_nl": "Actieve aandacht voor eigen gezondheid en welzijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zingeving",
+      "term_nl": "Zingeving",
+      "definition_nl": "Erkennen van betekenis en doel in het leven.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "algemeen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zonde",
+      "term_nl": "Zonde",
+      "definition_nl": "overtreding van een goddelijke of morele wet; moreel verwerpelijke daad.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zorgeloosheid",
+      "term_nl": "Zorgeloosheid",
+      "definition_nl": "Vrij van zorgen en spanning zijn.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zorgethiek",
+      "term_nl": "Zorgethiek",
+      "definition_nl": "Ethische benadering die zorgrelaties, afhankelijkheid en verantwoordelijkheid voor concrete anderen centraal stelt.",
+      "term_en": "Care ethics",
+      "definition_en": "An ethical approach that centres care relationships, dependency and responsibility for concrete others.",
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie",
+        "reflectie-oordeel"
+      ],
+      "status": "active",
+      "source": "candidate-approved-2026-07-16"
+    },
+    {
+      "id": "zorgplicht",
+      "term_nl": "Zorgplicht",
+      "definition_nl": "De plicht om te zorgen voor het welzijn en de veiligheid van anderen binnen je invloedssfeer.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie",
+        "moed-verantwoordelijkheid",
+        "veiligheid-grensoverschrijding"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zorgvuldigheid",
+      "term_nl": "Zorgvuldigheid",
+      "definition_nl": "Nauwkeurige en aandachtige uitvoering van taken.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zorgzaamheid",
+      "term_nl": "Zorgzaamheid",
+      "definition_nl": "Aandacht en inzet voor het welzijn van anderen.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "zorg-relatie"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    },
+    {
+      "id": "zuiverheid",
+      "term_nl": "Zuiverheid",
+      "definition_nl": "Reinheid, eerlijkheid en echtheid in gedrag, intentie of substantie.",
+      "term_en": null,
+      "definition_en": null,
+      "letter": "Z",
+      "clusters": [
+        "transparantie-vertrouwen"
+      ],
+      "status": "active",
+      "source": "moreel-woordenboek-def291025"
+    }
+  ]
+}
