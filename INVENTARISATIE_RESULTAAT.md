@@ -102,6 +102,58 @@ Legenda: ✅ werkt · ⚠️ werkt deels · ❌ ontbreekt of kapot
 
 ---
 
+## 10. Besloten gedeelte / login
+
+**Belangrijk onderscheid:** dit is **geen Fase-3-ledenomgeving** (geen accounts, profiel, uploads), maar een **Workshop Hub**: gedeeld sessiewachtwoord → overzicht van externe workshop-apps. Bewust gebouwd (commits o.a. “Add password-protected Workshop Hub”, “Add workshop preview access”).
+
+### Authenticatie
+
+| # | Check | Status | Toelichting |
+|---|--------|--------|-------------|
+| 10.1 | Supabase Auth of andere oplossing? | ⚠️ | **Geen Supabase** — tijdelijke shared-password + HMAC-cookie (`workshop_session`); secret via `WORKSHOP_SESSION_SECRET` of hardcoded fallback. |
+| 10.2 | Welke inlogmethoden actief? | ⚠️ | Alleen gedeeld wachtwoord / voorproefcode; geen e-mail/wachtwoord-accounts, magic link of Google OAuth. |
+| 10.3 | Registratieflow of alleen vooraf accounts? | ❌ | Geen registratie en geen user-accounts; iedereen met de juiste code krijgt dezelfde sessie. |
+| 10.4 | Waar staat de auth-logica? | ✅ | `api/workshop/verify.js` · `session.js` · `logout.js` · `lib/workshop-session.js` · `middleware.js` · UI: `WorkshopLogin.jsx` / `WorkshopHub.jsx` · codes: `moralcraftsmanship-platform/workshop-config.json`. |
+
+### Wat zit er achter het slot
+
+| # | Check | Status | Toelichting |
+|---|--------|--------|-------------|
+| 10.5 | Welke routes afgeschermd? | ⚠️ | Bedoeld: `/workshop/apps` en `/besloten/*` (middleware + client-check); loginpagina’s `/workshop` en `/workshop/voorproef` zijn open. |
+| 10.6 | Profielpagina + velden? | ❌ | Geen profielpagina; geen naam/instelling/focusstap/avatar — alleen `workshop_naam` in de sessie. |
+| 10.7 | Uploadmogelijkheid voor leden? | ❌ | Geen upload; hub linkt alleen naar externe apps. (Marketingtekst “Jouw materialen” is aspiratie, geen feature.) |
+| 10.8 | Exclusieve content voor ingelogden? | ⚠️ | Hub-lijst is het “besloten” deel, maar `hub-apps.json` is publiek én de meeste app-URL’s zijn zonder login bereikbaar; `/wisselwerking/` ook open. |
+
+### Status en risico
+
+| # | Check | Status | Toelichting |
+|---|--------|--------|-------------|
+| 10.9 | Bewust gebouwd of side-effect? | ✅ | Bewuste Cursor-/platformopdracht (Workshop Hub voor workshops), niet een toevallig experiment. |
+| 10.10 | Login volledig / half / onbeveiligd? | ❌ | API-login **werkt** (cookie + session), maar `/workshop/apps` en `/besloten` geven live **HTTP 500 `MIDDLEWARE_INVOCATION_FAILED`** — ook mét geldige cookie. Hub is dus kapot achter het slot. |
+| 10.11 | Testaccounts/wachtwoorden in repo? | ❌ | Ja — gedeelde codes staan in git + BEHEER.md; plus fallback-secret in code. Zie “Let op — voor Richard”. |
+| 10.12 | Rechtenbeheer (lid vs gast)? | ❌ | Geen rollen; hoogstens vlag `voorproef` (banner), verder iedereen gelijk. |
+
+### Impact op launch
+
+| # | Check | Status | Toelichting |
+|---|--------|--------|-------------|
+| 10.13 | Mag blijven staan bij publieke lancering? | ❌ | Niet als “ledenomgeving” presenteren; nu functioneel kapot (500) en wachtwoorden in repo → eerst verbergen of herstellen. |
+| 10.14 | Risico bezoekers in kapotte/lege omgeving? | ⚠️ | Geen link in publieke nav, maar `/workshop` is wel bereikbaar; wie die URL vindt ziet login, daarna 500 op de hub. |
+
+**Advies:** moet tijdelijk verborgen/uitgeschakeld worden (of minstens uit de publieke surface gehouden) tot de middleware werkt en secrets uit de repo zijn — dit is workshop-tooling, geen af Fase-3-ledenomgeving.
+
+### Let op — voor Richard
+
+Gevoelige / risicovolle vondsten (niet stilzwijgend aangepast):
+
+1. **Gedeelde wachtwoorden in de git-repo** — `moralcraftsmanship-platform/workshop-config.json`: workshopwachtwoord en voorproefcode (ook letterlijk genoemd in `BEHEER.md`).
+2. **Fallback session-secret in code** — `lib/workshop-session.js`: `"dev-only-change-in-production"` als `WORKSHOP_SESSION_SECRET` ontbreekt (forgeerbare sessies als die env-var leeg is).
+3. **Middleware faalt live** — `/workshop/apps` en `/besloten` → `MIDDLEWARE_INVOCATION_FAILED` (500), mét én zonder cookie.
+4. **“Besloten” apps zijn vaak publiek** — o.a. `moral-maps.vercel.app`, `neuro-gym.vercel.app`, embedded `/wisselwerking/` geven HTTP 200 zonder workshoplogin; de hub is vooral een linkpagina, geen echte content-firewall.
+5. **App-catalogus publiek** — `https://…/data/workshop/hub-apps.json` is zonder login opvraagbaar (namen + URL’s van alle hub-apps).
+
+---
+
 ## Kritieke blokkers
 
 Punten die een echte publieke lancering in de weg staan:
@@ -113,6 +165,7 @@ Punten die een echte publieke lancering in de weg staan:
 5. **Vampire Bosses-pakket ontbreekt** — genoemd als onderdeel van de MV-serie, maar nergens aanwezig.
 6. **Koers Houden / Atlantis niet echt gepubliceerd** — bestand wel online via directe URL, maar niet als download in de UI (gebruikers vinden het niet).
 7. **Terugkoppel-pijlen niet geïmplementeerd** — data klaar, UI/tooltips ontbreken (kern van het cyclische model).
+8. **Workshop Hub half-kapot + secrets in repo** — login-API werkt, hub-routes 500; gedeelde wachtwoorden/fallback-secret in git (zie §10 / “Let op”).
 
 ---
 
@@ -123,12 +176,13 @@ Punten die niet urgent zijn voor launch:
 1. **`KaartAfbeelding`-component met placeholder/dev-warning** — afbeeldingen werken nu al; dit is DX/robustheid.
 2. **Zoek/filter op bibliotheek-overzicht** — gesprekskaarten hebben dit al; werkbladen zijn per stap klein genoeg.
 3. **Per-pagina SEO / Open Graph** — basis title/description bestaat; fine-tuning kan na launch.
-4. **Supabase-integratie** — hardcoded content is voor v1 voldoende.
+4. **Supabase-integratie / echte ledenomgeving (Fase 3)** — Workshop Hub is geen vervanger; accounts/profiel/upload mogen later.
 5. **Map `public/downloads/handelen/`** — huidige Handelen-downloads zitten logisch in `gesprekskaarten/`; map herstructureren is cosmetisch.
 6. **EN pdfHeader/pdfFooter-restjes** — storend voor polish, niet blokkerend voor NL-lancering.
 7. **Footer `r.vodde@` vs aanmeld-`lectoraatethischwerken@`** — inconsistent maar beide geldig; afstemmen is wenselijk, geen harde blocker.
 8. **TechInnovators-extra's (MV_16 companions)** — bestanden liggen klaar, UI-koppeling optioneel.
 9. **Hero-image voor Verhaal (`stap-verhaal.jpg`)** — ontbreekt; pagina valt terug op kleurvlak.
+10. **Externe workshop-apps écht achter login zetten** — nu bewust losse Vercel-projecten; pas relevant als de hub weer live en bedoeld besloten is.
 
 ---
 
@@ -140,4 +194,5 @@ Punten die niet urgent zijn voor launch:
 | Content MV 01–20 | Downloads grotendeels compleet en live bereikbaar |
 | Vampire Bosses / Verhaal-UI / Terugkoppeling | Ontbreekt of niet aangesloten |
 | Aanmelding & juridisch | mailto-only; privacy/richtlijnen ontbreken |
+| Besloten / login | Workshop Hub (shared password), geen ledenomgeving; hub live 500; secrets in repo |
 | i18n / SEO / Supabase | Basis werkt; polish en backend nog open |
