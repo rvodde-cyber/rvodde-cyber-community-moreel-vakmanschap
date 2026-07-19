@@ -2,7 +2,12 @@ node_modules/
 dist/
 .env
 .env.local
+.env*.local
 .vercel
+
+# Lokale secret-bestanden (nooit committen)
+workshop-secrets*.txt
+**/workshop-secrets*.txt
 
 public/downloads/gesprekskaarten/_extract/
 public/downloads/gesprekskaarten/_extract_text.py
