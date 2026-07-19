@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import ConversationCardSection from '../components/ConversationCardSection'
+import GebruiksNotice from '../components/GebruiksNotice'
 import GesprekskaartenFilters, { EMPTY_FILTERS } from '../components/GesprekskaartenFilters'
 import { stappen as basisStappen } from '../data/stappen'
 import {
@@ -435,6 +436,11 @@ export default function GespreksKaartenPagina() {
           {taal === 'nl' ? 'en' : 'and'}{' '}
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
         </motion.p>
+
+        <GebruiksNotice
+          variant="gesprekskaarten"
+          style={{ textAlign: 'center', marginBottom: '1.25rem', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}
+        />
 
         <GesprekskaartenFilters
           filters={filters}

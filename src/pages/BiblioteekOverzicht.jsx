@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import GebruiksNotice from "../components/GebruiksNotice";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
@@ -15,12 +16,11 @@ const uiTekst = {
     stapLabel: "Stap",
     categorieLabel: "Categorie",
     disclaimerTitel: "Gebruik & bronvermelding",
-    disclaimerTekst:
-      "De werkbladen op dit platform zijn ontwikkeld door Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) als onderdeel van het Comenius Senior Fellowship. De onderliggende theoretische modellen worden gebruikt met bronvermelding en zijn bedoeld voor niet-commercieel educatief gebruik. Vrij te gebruiken met vermelding van de bron.",
     materialenEn: "materiaal",
     materialenMeervoud: "materialen",
   },
-  en: {    label: "Materials",
+  en: {
+    label: "Materials",
     titel: "Library",
     subtitel:
       "All tools, worksheets and conversation cards — organised by model step. Choose a step to get started.",
@@ -28,8 +28,6 @@ const uiTekst = {
     stapLabel: "Step",
     categorieLabel: "Category",
     disclaimerTitel: "Use & attribution",
-    disclaimerTekst:
-      "The worksheets on this platform were developed by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. The underlying theoretical models are used with full attribution and are intended for non-commercial educational purposes. Free to use with source acknowledgement.",
     materialenEn: "material",
     materialenMeervoud: "materials",
   },
@@ -293,17 +291,7 @@ export default function BiblioteekOverzicht() {
               {ui.disclaimerTitel}
             </h2>
           </div>
-          <p
-            style={{
-              fontFamily: "DM Sans, sans-serif",
-              fontSize: "0.9rem",
-              lineHeight: 1.75,
-              color: "var(--tekst-secundair, #5f5e5a)",
-              margin: 0,
-            }}
-          >
-            {ui.disclaimerTekst}
-          </p>
+          <GebruiksNotice variant="bibliotheek" />
         </div>
       </section>
     </main>  );
