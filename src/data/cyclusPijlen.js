@@ -63,8 +63,9 @@ export const interactievePijlen = terugkoppelmomenten.map((moment) => {
     labelEN,
     path: FEEDBACK_PATHS[moment.id],
     dashed: true,
-    strokeWidth: isHoofd ? 3.5 : moment.boog === "ruim" ? 2.4 : 2.2,
-    opacity: isHoofd ? 0.95 : moment.opacity ?? 0.4,
+    strokeWidth: isHoofd ? 3.5 : moment.boog === "ruim" ? 2.6 : 2.4,
+    // Iets sterker dan de datawaarden zodat alle zes arcs zichtbaar blijven
+    opacity: isHoofd ? 0.95 : moment.boog === "ruim" ? 0.55 : 0.65,
     isHoofdTerugkoppeling: isHoofd,
   };
 });
