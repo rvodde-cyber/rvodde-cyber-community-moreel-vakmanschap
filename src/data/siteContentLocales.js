@@ -88,6 +88,9 @@ export const siteContentLocales = {
       emailLabel: "E-postadress",
       vraagLabel: "Vad arbetar du med inom etikundervisning? (valfritt)",
       knop: "Skicka min anmälan",
+      privacyVoor: "By registering you agree to our ",
+      privacyLink: "privacy statement",
+      privacyNa: ".",
       emailSubject: "Anmälan Community Moral Craftsmanship",
       emailVraag: "Vad arbetar du med inom etikundervisning?",
       emailTo: "lectoraatethischwerken@fontys.nl",
@@ -98,6 +101,8 @@ export const siteContentLocales = {
         "Moral craftsmanship innebär: fortsätta se, känna, väga, handla och hålla kurs — även när något står på spel. Men det innebär också: våga gå tillbaka. Den som handlar väl tvivlar längs vägen. Den återkomsten är inte ett misslyckande — där bor praktiken.",
       lectoraat: "Lectoraat Ethisch Werken — Fontys Hogescholen",
       contact: "r.vodde@fontys.nl",
+      privacy: "Privacy statement",
+      communityrichtlijnen: "Community guidelines",
     },
     stapKaart: { tools: "Verktyg" },
     overPagina: {
@@ -206,12 +211,17 @@ export const siteContentLocales = {
       emailVraag: "Na čem pracujete v etické výchově?",
       emailTo: "lectoraatethischwerken@fontys.nl",
       nietIngevuld: "Neuvedeno",
+      privacyVoor: "By registering you agree to our ",
+      privacyLink: "privacy statement",
+      privacyNa: ".",
     },
     footer: {
       kernzin:
         "Moral craftsmanship znamená: pokračovat v vidění, cítění, vážení, jednání a držení kurzu — i když je něco v sázce. Ale také: odvážit se vrátit. Tento návrat není selhání — v něm žije praxe.",
       lectoraat: "Lectoraat Ethisch Werken — Fontys Hogescholen",
       contact: "r.vodde@fontys.nl",
+      privacy: "Privacy statement",
+      communityrichtlijnen: "Community guidelines",
     },
     stapKaart: { tools: "Nástroje" },
     overPagina: {
@@ -320,12 +330,17 @@ export const siteContentLocales = {
       emailVraag: "Hvad arbejder du med inden for etikundervisning?",
       emailTo: "lectoraatethischwerken@fontys.nl",
       nietIngevuld: "Ikke angivet",
+      privacyVoor: "By registering you agree to our ",
+      privacyLink: "privacy statement",
+      privacyNa: ".",
     },
     footer: {
       kernzin:
         "Moral craftsmanship betyder: blive ved med at se, føle, vægte, handle og holde kurs — også når noget står på spil. Men det betyder også: turde vende tilbage. Den tilbagevenden er ikke en fiasko — i den bor praksisen.",
       lectoraat: "Lectoraat Ethisch Werken — Fontys Hogescholen",
       contact: "r.vodde@fontys.nl",
+      privacy: "Privacy statement",
+      communityrichtlijnen: "Community guidelines",
     },
     stapKaart: { tools: "Værktøjer" },
     overPagina: {
