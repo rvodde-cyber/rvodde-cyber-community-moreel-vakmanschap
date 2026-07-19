@@ -61,6 +61,7 @@ export default function CirkelModel() {
               kernLine1={kern.line1}
               kernLine2={kern.line2}
               ariaLabel={t.model.titel}
+              taal={taal}
             />
           </div>
 
@@ -80,6 +81,7 @@ export default function CirkelModel() {
               kernLine1={kern.line1}
               kernLine2={kern.line2}
               ariaLabel={t.model.titel}
+              taal={taal}
             />
           </div>
 
