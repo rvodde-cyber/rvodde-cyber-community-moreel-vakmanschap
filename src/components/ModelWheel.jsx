@@ -69,13 +69,25 @@ function wrapLabel(label, maxChars = 32) {
   return lines.slice(0, 3);
 }
 
+function tooltipAnchor(pijl) {
+  const mid = midpointOnArc(pijl.path);
+  // Hoofd-terugkoppeling zit dicht bij stap Zien — tooltip iets naar links/beneden
+  if (pijl.isHoofdTerugkoppeling) {
+    return { x: mid.x - 18, y: mid.y + 28 };
+  }
+  return mid;
+}
+
 function ArrowTooltip({ pijl, label, anchor }) {
   const kleur = STAP_KLEUREN[pijl.naar];
-  const lines = wrapLabel(label, pijl.isHoofdTerugkoppeling ? 28 : 34);
+  const lines = wrapLabel(label, pijl.isHoofdTerugkoppeling ? 26 : 34);
   const width = Math.min(200, Math.max(100, Math.max(...lines.map((l) => l.length)) * 6.4 + 20));
   const height = 12 + lines.length * 14;
+  const preferBelow = Boolean(pijl.isHoofdTerugkoppeling);
   const x = Math.max(6, Math.min(360 - width - 6, anchor.x - width / 2));
-  const y = Math.max(6, Math.min(360 - height - 6, anchor.y - height - 10));
+  const y = preferBelow
+    ? Math.max(6, Math.min(360 - height - 6, anchor.y))
+    : Math.max(6, Math.min(360 - height - 6, anchor.y - height - 10));
 
   return (
     <motion.g
@@ -325,7 +337,7 @@ export default function ModelWheel({
 
       <AnimatePresence>
         {activePijl && (
-          <ArrowTooltip pijl={activePijl} label={activeLabel} anchor={midpointOnArc(activePijl.path)} />
+          <ArrowTooltip pijl={activePijl} label={activeLabel} anchor={tooltipAnchor(activePijl)} />
         )}
       </AnimatePresence>
     </svg>
