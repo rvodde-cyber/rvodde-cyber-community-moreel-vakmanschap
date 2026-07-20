@@ -1,6 +1,6 @@
 # Inventarisatie live-status — Community Moreel Vakmanschap
 
-**Live URL:** https://rvodde-cyber-community-moreel-vakma.vercel.app/  
+**Live URL:** https://moreelvakmanschap.nl/  
 **Datum:** 19 juli 2026  
 **Methode:** code-inspectie + HTTP-checks tegen live + headless Chrome (homepage, aanmelden, privacy, bibliotheek, gesprekskaarten); deel 2: workshop-auth API’s, middleware, hub-apps  
 **Scope:** alleen inventariseren — geen codewijzigingen.

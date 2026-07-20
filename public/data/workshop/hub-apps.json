@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:26:09.127Z",
+  "generated_at": "2026-07-20T14:01:37.701Z",
   "apps": [
     {
       "id": "maps-trilogie",
@@ -91,7 +91,7 @@
       "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
       "url": "https://wisselwerking.vercel.app",
       "url_extra": [
-        "https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/"
+        "https://moreelvakmanschap.nl/wisselwerking/"
       ],
       "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (teamkompas/)",
       "categorie": "besloten",

@@ -3,7 +3,8 @@
 **Single point of truth** voor indeling van apps op het platform.  
 Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:sync` draaien (of laat Cursor dat doen).
 
-**Platform-URL (Vercel):** https://rvodde-cyber-community-moreel-vakma.vercel.app  
+**Platform-URL:** https://moreelvakmanschap.nl  
+**Vercel-fallback:** https://rvodde-cyber-community-moreel-vakma.vercel.app  
 **Doel-domein:** moralcraftsmanship.com (koppelen in Vercel → Domains)
 
 ## Workshop Hub — status
@@ -51,7 +52,7 @@ Nieuwe codes / secrets: apart en veilig aan Richard doorgeven (niet via GitHub-c
 | Scherpstellen | *(alleen preview, nog geen productie)* | community (branch verdenk) | besloten | in-ontwikkeling | workshop |
 | ETZ Gesprekskaarten | https://etz.vercel.app | — | besloten | live | workshop |
 | Wisselwerking | https://wisselwerking.vercel.app | community/teamkompas | besloten | live | altijd |
-| Community of Practice | https://rvodde-cyber-community-moreel-vakma.vercel.app | community | publiek | live | — |
+| Community of Practice | https://moreelvakmanschap.nl | community | publiek | live | — |
 | Model Moreel Vakmanschap | …/model | community | publiek | live | — |
 | HR Dilemmakaarten | …/gesprekskaarten | community | publiek | live | — |
 | Educatieve werkbladen | …/bibliotheek | community | publiek | live | — |
@@ -78,7 +79,7 @@ Nieuwe codes / secrets: apart en veilig aan Richard doorgeven (niet via GitHub-c
 
 Alleen beschikbaar als de Workshop Hub is ingeschakeld (`WORKSHOP_HUB_ENABLED=true` én `VITE_WORKSHOP_HUB_ENABLED=true`).
 
-**Link:** `https://rvodde-cyber-community-moreel-vakma.vercel.app/workshop/voorproef`  
+**Link:** `https://moreelvakmanschap.nl/workshop/voorproef`  
 *(of moralcraftsmanship.com/workshop/voorproef zodra het domein gekoppeld is)*
 
 **Voorproefcode:** zie Vercel environment variable `WORKSHOP_VOORPROEF_PASSWORD` (niet in deze repo).  
