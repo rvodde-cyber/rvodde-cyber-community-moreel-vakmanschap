@@ -3,8 +3,10 @@
 **Single point of truth** voor indeling van apps op het platform.  
 Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:sync` draaien (of laat Cursor dat doen).
 
-**Platform-URL (Vercel):** https://rvodde-cyber-community-moreel-vakma.vercel.app  
-**Doel-domein:** moralcraftsmanship.com (koppelen in Vercel → Domains)
+**Platform-URL:** https://moreelvakmanschap.nl  
+**Vercel-fallback:** https://rvodde-cyber-community-moreel-vakma.vercel.app  
+**Internationaal (.eu):** https://moralcraftsmanship.eu → redirect naar `https://moreelvakmanschap.nl/welcome?lang=en`  
+**(www.)eu:** https://www.moralcraftsmanship.eu → zelfde redirect  
 
 ## Workshop Hub — status
 
