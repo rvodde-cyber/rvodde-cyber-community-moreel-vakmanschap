@@ -26,11 +26,6 @@ ONEDRIVE = Path(r"C:\Users\876409\OneDrive - Office 365 Fontys")
 PRINTS = ONEDRIVE / "Ethisch werken/prints"
 
 BUNDLE_SOURCES = {
-    "GK_NM": {
-        "docx": Path(r"C:\Users\876409\Downloads\heroes kaarten\gesprekskaarten_nuclear_medicine.docx"),
-        "count": 4,
-        "min_size": 100_000,
-    },
     "GK_RI": {
         "docx": Path(r"C:\Users\876409\Downloads\heroes kaarten\gesprekskaarten_research_integrity_1.docx"),
         "count": 3,

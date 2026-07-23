@@ -12,12 +12,10 @@
     "cards:import-ethos": "node scripts/import-from-ethos.mjs",
     "cards:import-burgerschap": "node scripts/import-burgerschap-docx.mjs",
     "cards:import-dl-compleet-a5": "node scripts/import-dl-compleet-a5.mjs",
-    "cards:import-nuclear-medicine": "node scripts/import-nuclear-medicine.mjs",
     "cards:import-research-integrity": "node scripts/import-research-integrity.mjs",
     "cards:import-onderwijs-v3": "node scripts/import-onderwijs-v3.mjs",
     "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py",
     "cards:export-dl-compleet-a5-docx": "python scripts/export-dl-compleet-a5-docx.py",
-    "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py",
     "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py",
     "cards:export-onderwijs-docx": "python scripts/export-onderwijs-docx.py",
     "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py"
