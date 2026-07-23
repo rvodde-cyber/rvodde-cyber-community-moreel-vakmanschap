@@ -81,11 +81,12 @@ export const fundament = {
     "Van der Schoor & Van de Wiel (2013) onderscheiden vier dimensies van effectieve " +
     "teams: bestaansrecht, inrichting, dynamiek en omgeving. Het teamwiel hierna gaat " +
     "over dynamiek — hoe jullie samenwerken. Deze drie korte vragen gaan over het " +
-    "fundament daaronder. Niet verplicht, niet gescoord, niet opgeslagen.",
+    "fundament daaronder — de eerste raakt direct aan de vraag of dit eigenlijk wel " +
+    "een team is, of vooral een groep. Niet verplicht, niet gescoord, niet opgeslagen.",
   vragen: [
     {
       dimensie: "Bestaansrecht",
-      vraag: "Waarom bestaat dit team, en is dat voor iedereen nog steeds duidelijk?",
+      vraag: "Bestaat dit team omdat de leden elkaar echt nodig hebben om het doel te bereiken — of zijn jullie vooral een verzameling mensen die toevallig hetzelfde project doen?",
     },
     {
       dimensie: "Inrichting",
@@ -97,8 +98,11 @@ export const fundament = {
     },
   ],
   bron:
-    "Van der Schoor, J. & Van de Wiel, G. (2013). Teams van de toekomst: " +
-    "Leidinggeven aan het nieuwe samenwerken. Academic Service (BIM Media).",
+    "Van der Schoor, J. & Van de Wiel, G. (2013). Teams van de toekomst: Leidinggeven " +
+    "aan het nieuwe samenwerken. Academic Service (BIM Media). De bestaansrecht-vraag " +
+    "sluit aan bij het onderscheid tussen groep en team van Katzenbach & Smith (1993) " +
+    "en Hackman & Wageman's 'real team'-criterium, zoals ook gebruikt in de " +
+    "estafette-metafoor.",
 };
 
 export const ethischLeiderschap = {
