@@ -10,7 +10,7 @@ import IntroScreen from "../components/IntroScreen";
 import Fundament from "../components/Fundament";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
-import ImagePlaceholder from "../components/ImagePlaceholder";
+import SceneImage, { sceneImages } from "../components/SceneImage";
 import EthischLeiderschap from "../components/EthischLeiderschap";
 import TuckmanCheck from "../components/TuckmanCheck";
 
@@ -327,9 +327,9 @@ export default function SelfReflection() {
           </section>
 
           <div style={{ marginTop: 32 }}>
-            <ImagePlaceholder
-              label="Finish: loper gaat over de streep"
-              description="Eén loper over de finishlijn — het teamresultaat, niet het individuele resultaat"
+            <SceneImage
+              src={sceneImages.finish}
+              alt="Loper gaat over de finishstreep — het teamresultaat"
               aspectRatio="21 / 9"
             />
           </div>
@@ -403,7 +403,12 @@ export default function SelfReflection() {
     );
   }
 
-  const showProgressPlaceholder = step === 2 || step === 4;
+  const progressImage =
+    step === 2
+      ? { src: sceneImages.tussenbeeld1, alt: "Loper onderweg met het stokje in de hand" }
+      : step === 4
+        ? { src: sceneImages.tussenbeeld2, alt: "Estafette: het stokje wordt overgedragen" }
+        : null;
 
   return (
     <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -420,10 +425,11 @@ export default function SelfReflection() {
           Stap {step + 1} van {axesSelf.length}
         </p>
 
-        {showProgressPlaceholder && (
+        {progressImage && (
           <div style={{ marginBottom: 24 }}>
-            <ImagePlaceholder
-              label="Loper onderweg, stokje in de hand"
+            <SceneImage
+              src={progressImage.src}
+              alt={progressImage.alt}
               aspectRatio="16 / 9"
             />
           </div>
