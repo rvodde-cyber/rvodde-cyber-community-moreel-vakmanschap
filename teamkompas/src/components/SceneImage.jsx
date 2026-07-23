@@ -1,12 +1,14 @@
 import { colors } from "../config";
-
-const base = import.meta.env.BASE_URL || "/";
+import hero from "../assets/images/hero-stokje-doorgeven.jpg";
+import tussenbeeld1 from "../assets/images/tussenbeeld-1-loper-onderweg.jpg";
+import tussenbeeld2 from "../assets/images/tussenbeeld-2-stokje-overdracht.jpg";
+import finish from "../assets/images/finish-teamresultaat.jpg";
 
 export const sceneImages = {
-  hero: `${base}images/hero-stokje-doorgeven.jpg`,
-  tussenbeeld1: `${base}images/tussenbeeld-1-loper-onderweg.jpg`,
-  tussenbeeld2: `${base}images/tussenbeeld-2-stokje-overdracht.jpg`,
-  finish: `${base}images/finish-teamresultaat.jpg`,
+  hero,
+  tussenbeeld1,
+  tussenbeeld2,
+  finish,
 };
 
 export default function SceneImage({ src, alt, aspectRatio = "16 / 9" }) {
