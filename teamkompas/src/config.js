@@ -61,8 +61,10 @@ export const welkom = {
 export const bronvermelding =
   "Geïnspireerd op het Teamwiel van Vroemen (Vroemen & Vroemen, 2009, " +
   '"Team op vleugels", Amsterdam University Press), gecombineerd met het ' +
-  "fasemodel van teamontwikkeling van Bruce Tuckman (1965) en het onderscheid " +
-  "tussen groep en team van Katzenbach & Smith (1993, The Wisdom of Teams).";
+  "fasemodel van Bruce Tuckman (1965), het onderscheid tussen groep en team van " +
+  "Katzenbach & Smith (1993, The Wisdom of Teams) en Hackman & Wageman's Team " +
+  "Effectiveness Conditions (Harvard University), geplaatst binnen de vier dimensies " +
+  "van effectieve teams van Van der Schoor & Van de Wiel (2013, Teams van de toekomst).";
 
 export const metafoor = {
   titel: "Groep of team?",
