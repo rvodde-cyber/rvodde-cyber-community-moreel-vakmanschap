@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import DocumentTaal from "./components/DocumentTaal";
 
@@ -9,7 +9,7 @@ import TaalRouteSync from "./components/TaalRouteSync";
 import TaalSchakelaar from "./components/TaalSchakelaar";
 
 import { TaalProvider, useTaal } from "./context/TaalContext";
-import { getNavItems, usesEnglishRoutes } from "./data/vertalingen";
+import { getBibliotheekDataLang, getNavItems, usesEnglishRoutes } from "./data/vertalingen";
 
 import AanbodPagina from "./pages/AanbodPagina";
 
@@ -27,10 +27,12 @@ import ModelPagina from "./pages/ModelPagina";
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
+import ColofonPagina from "./pages/ColofonPagina";
 import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
 import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
 import { isWorkshopHubEnabledClient } from "./config/workshopHub";
+import { getColofonPath, getGebruiksNotice } from "./data/colofon";
 
 
 
@@ -148,7 +150,13 @@ function Navigatie() {
 
 function Footer() {
 
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
+
+  const dataLang = getBibliotheekDataLang(taal);
+
+  const notice = getGebruiksNotice(dataLang);
+
+  const colofonHref = getColofonPath(dataLang);
 
 
 
@@ -167,6 +175,26 @@ function Footer() {
             {t.footer.contact}
 
           </a>
+
+          <p className="mt-3 text-sm leading-6 text-[#5f5e5a]">
+
+            {notice.footerVoor}
+
+            <Link
+
+              to={colofonHref}
+
+              className="font-medium text-[#534ab7] underline underline-offset-2 transition hover:text-primair"
+
+            >
+
+              {notice.footerLink}
+
+            </Link>
+
+            {notice.footerNa}
+
+          </p>
 
         </div>
 
@@ -329,6 +357,10 @@ function AppRoutes() {
           <Route path="/aanmelden" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
 
           <Route path="/join" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
+
+          <Route path="/colofon" element={<PageRoute><ColofonPagina /></PageRoute>} />
+
+          <Route path="/colophon" element={<PageRoute><ColofonPagina /></PageRoute>} />
 
         </Routes>
 

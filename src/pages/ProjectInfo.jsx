@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
+import { getColofonPath, getGebruiksNotice } from "../data/colofon";
 import { stappen as stappenMeta } from "../data/stappen";
+import { getBibliotheekDataLang } from "../data/vertalingen";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -12,8 +15,11 @@ const fadeUp = {
 };
 
 export default function ProjectInfo() {
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
   const { overPagina } = t;
+  const dataLang = getBibliotheekDataLang(taal);
+  const colofonHref = getColofonPath(dataLang);
+  const colofonLabel = getGebruiksNotice(dataLang).overLinkLabel;
 
   return (
     <main style={{ background: "#fafaf8", minHeight: "100vh", paddingTop: "80px" }}>
@@ -414,6 +420,28 @@ export default function ProjectInfo() {
             {t.visie.citaat}
           </p>
         </motion.blockquote>
+
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={6}
+          style={{
+            fontFamily: "DM Sans, sans-serif",
+            fontSize: "0.95rem",
+            lineHeight: 1.7,
+            color: "#5f5e5a",
+            marginTop: "2.5rem",
+          }}
+        >
+          <Link
+            to={colofonHref}
+            style={{ color: "#185fa5", fontWeight: 600, textDecoration: "underline" }}
+          >
+            {colofonLabel}
+          </Link>
+        </motion.p>
       </section>
     </main>
   );

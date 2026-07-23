@@ -1,5 +1,6 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import GebruiksNotice from "../components/GebruiksNotice";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData, niveauLabels, statusLabels } from "../data/bibliotheekData";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
@@ -328,6 +329,7 @@ export default function StapPagina() {
       </div>
 
       <section style={{ padding: "3rem 1.5rem 4rem", maxWidth: "900px", margin: "0 auto" }}>
+        <GebruiksNotice variant="bibliotheek" style={{ marginBottom: "1.5rem" }} />
         <div
           style={{
             display: "grid",

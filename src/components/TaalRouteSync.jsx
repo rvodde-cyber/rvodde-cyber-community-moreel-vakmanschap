@@ -10,6 +10,7 @@ const routePairs = [
   ["/gesprekskaarten", "/conversation-cards"],
   ["/bibliotheek", "/library"],
   ["/aanmelden", "/join"],
+  ["/colofon", "/colophon"],
 ];
 
 const stapSlugPairs = [
