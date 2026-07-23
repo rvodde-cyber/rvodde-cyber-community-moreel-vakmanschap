@@ -66,12 +66,17 @@ export const vertalingen = {
       emailSubject: 'Aanmelding Community Moreel Vakmanschap',
       emailVraag: 'Waar werk jij aan in ethiekonderwijs?',
       emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Niet ingevuld'
+      nietIngevuld: 'Niet ingevuld',
+      privacyVoor: 'Door je aan te melden ga je akkoord met onze ',
+      privacyLink: 'privacyverklaring',
+      privacyNa: '.',
     },
     footer: {
       kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
       lectoraat: 'Lectoraat Ethisch Werken — Fontys Hogescholen',
-      contact: 'r.vodde@fontys.nl'
+      contact: 'r.vodde@fontys.nl',
+      privacy: 'Privacyverklaring',
+      communityrichtlijnen: 'Communityrichtlijnen',
     },
     stapKaart: {
       tools: 'Tools'
@@ -298,12 +303,17 @@ export const vertalingen = {
       emailSubject: 'Registration Community Moral Craftsmanship',
       emailVraag: 'What are you working on in ethics education?',
       emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Not provided'
+      nietIngevuld: 'Not provided',
+      privacyVoor: 'By registering you agree to our ',
+      privacyLink: 'privacy statement',
+      privacyNa: '.',
     },
     footer: {
       kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
       lectoraat: 'Research Group on Ethical Practice — Fontys University of Applied Sciences',
-      contact: 'r.vodde@fontys.nl'
+      contact: 'r.vodde@fontys.nl',
+      privacy: 'Privacy statement',
+      communityrichtlijnen: 'Community guidelines',
     },
     stapKaart: {
       tools: 'Tools'

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 
@@ -5,6 +6,18 @@ const GOOGLE_FORM_URL = import.meta.env.VITE_GOOGLE_FORM_URL?.trim() || "";
 
 const inputClassName =
   "rounded-2xl border border-rand bg-surface px-4 py-3 text-base font-normal text-primair outline-none transition focus:border-[#534ab7] focus:ring-4 focus:ring-[#534ab7]/10";
+
+function PrivacyAkkoord({ a }) {
+  return (
+    <p className="text-sm leading-7 text-secundair">
+      {a.privacyVoor}
+      <Link to="/privacy" className="font-semibold text-primair underline decoration-[#185fa5]/40 underline-offset-2 transition hover:text-[#185fa5]">
+        {a.privacyLink}
+      </Link>
+      {a.privacyNa}
+    </p>
+  );
+}
 
 export default function Aanmelden() {
   const { t } = useTaal();
@@ -52,14 +65,17 @@ export default function Aanmelden() {
           </div>
 
           {GOOGLE_FORM_URL ? (
-            <div className="overflow-hidden rounded-2xl border border-rand bg-surface">
-              <iframe
-                src={GOOGLE_FORM_URL}
-                title={a.titel}
-                width="100%"
-                height="520"
-                className="border-0"
-              />
+            <div className="grid gap-4">
+              <div className="overflow-hidden rounded-2xl border border-rand bg-surface">
+                <iframe
+                  src={GOOGLE_FORM_URL}
+                  title={a.titel}
+                  width="100%"
+                  height="520"
+                  className="border-0"
+                />
+              </div>
+              <PrivacyAkkoord a={a} />
             </div>
           ) : (
             <form className="grid gap-5" onSubmit={handleSubmit}>
@@ -82,6 +98,8 @@ export default function Aanmelden() {
                 {a.vraagLabel}
                 <textarea name="ethiekonderwijs" rows={5} className={`${inputClassName} resize-none`} />
               </label>
+
+              <PrivacyAkkoord a={a} />
 
               <button
                 type="submit"

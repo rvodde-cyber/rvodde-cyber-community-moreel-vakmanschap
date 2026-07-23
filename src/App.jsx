@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import DocumentTaal from "./components/DocumentTaal";
 
@@ -27,6 +27,8 @@ import ModelPagina from "./pages/ModelPagina";
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
+import PrivacyPagina from "./pages/PrivacyPagina";
+import CommunityRichtlijnenPagina from "./pages/CommunityRichtlijnenPagina";
 import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
 import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
@@ -148,7 +150,11 @@ function Navigatie() {
 
 function Footer() {
 
-  const { t } = useTaal();
+  const { taal, t } = useTaal();
+
+  const privacyHref = "/privacy";
+
+  const richtlijnenHref = usesEnglishRoutes(taal) ? "/community-guidelines" : "/communityrichtlijnen";
 
 
 
@@ -167,6 +173,22 @@ function Footer() {
             {t.footer.contact}
 
           </a>
+
+          <nav className="mt-3 flex flex-wrap gap-x-4 gap-y-2" aria-label={usesEnglishRoutes(taal) ? "Legal" : "Juridisch"}>
+
+            <Link className="transition hover:text-primair" to={privacyHref}>
+
+              {t.footer.privacy}
+
+            </Link>
+
+            <Link className="transition hover:text-primair" to={richtlijnenHref}>
+
+              {t.footer.communityrichtlijnen}
+
+            </Link>
+
+          </nav>
 
         </div>
 
@@ -329,6 +351,12 @@ function AppRoutes() {
           <Route path="/aanmelden" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
 
           <Route path="/join" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
+
+          <Route path="/privacy" element={<PageRoute><PrivacyPagina /></PageRoute>} />
+
+          <Route path="/communityrichtlijnen" element={<PageRoute><CommunityRichtlijnenPagina /></PageRoute>} />
+
+          <Route path="/community-guidelines" element={<PageRoute><CommunityRichtlijnenPagina /></PageRoute>} />
 
         </Routes>
 
