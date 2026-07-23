@@ -1,5 +1,5 @@
 import { colors, fonts, wheelGeometry, bronvermelding, metafoor, framing, activeFraming } from "../config";
-import ImagePlaceholder from "./ImagePlaceholder";
+import SceneImage, { sceneImages } from "./SceneImage";
 
 const { appTitle, introText } = framing[activeFraming];
 
@@ -9,9 +9,9 @@ const theoreticalBasis =
 export default function IntroScreen({ onStart }) {
   return (
     <div style={{ maxWidth: 720, margin: "0 auto" }}>
-      <ImagePlaceholder
-        label="Hero: het stokje doorgeven"
-        description="Twee lopers naast elkaar, stokje wordt overgedragen"
+      <SceneImage
+        src={sceneImages.hero}
+        alt="Estafettelopers die het stokje doorgeven"
         aspectRatio="21 / 9"
       />
 

@@ -1,10 +1,15 @@
-export function suggereerFase(scores) {
-  const waarden = Object.values(scores).map((n) => ({ kwetsbaar: 1, groeiend: 2, sterk: 3 }[n]));
-  const gemiddelde = waarden.reduce((a, b) => a + b, 0) / waarden.length;
-  const spreiding = Math.max(...waarden) - Math.min(...waarden);
+export function bepaalFaseDirect(antwoorden) {
+  // antwoorden: array van 5 strings — elk 'forming' | 'storming' | 'norming' | 'performing'
+  const tellingen = { forming: 0, storming: 0, norming: 0, performing: 0 };
+  antwoorden.forEach((fase) => {
+    tellingen[fase] += 1;
+  });
 
-  if (spreiding >= 2) return "gemengd beeld"; // geen fase forceren
-  if (gemiddelde < 1.7) return "storming";
-  if (gemiddelde < 2.3) return "norming";
-  return "performing";
+  const maxAantal = Math.max(...Object.values(tellingen));
+  const kandidaten = Object.keys(tellingen).filter((fase) => tellingen[fase] === maxAantal);
+
+  if (kandidaten.length > 1) {
+    return { fase: "gemengd beeld", tellingen };
+  }
+  return { fase: kandidaten[0], tellingen };
 }

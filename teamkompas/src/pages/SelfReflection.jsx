@@ -1,47 +1,18 @@
 import { useRef, useState } from "react";
-import { colors, fonts, wheelGeometry } from "../config";
+import { colors, fonts, wheelGeometry, tuckmanAdvies } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
-import { suggereerFase } from "../logic/tuckman";
+import { bepaalFaseDirect } from "../logic/tuckman";
 import { getRecommendation } from "../logic/recommendations";
-import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
+import { faseLabels, volgendeFaseLabels } from "../data/faseUitleg";
 import Startpagina from "../components/Startpagina";
 import IntroScreen from "../components/IntroScreen";
 import Fundament from "../components/Fundament";
 import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
-import ImagePlaceholder from "../components/ImagePlaceholder";
+import SceneImage, { sceneImages } from "../components/SceneImage";
 import EthischLeiderschap from "../components/EthischLeiderschap";
-
-function UitlegBlok({ titel, tekst }) {
-  return (
-    <div style={{ marginTop: 14 }}>
-      <h3
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.9rem",
-          fontWeight: 600,
-          color: colors.labelAccent,
-          margin: "0 0 6px",
-        }}
-      >
-        {titel}
-      </h3>
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.9rem",
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          margin: 0,
-          opacity: 0.85,
-        }}
-      >
-        {tekst}
-      </p>
-    </div>
-  );
-}
+import TuckmanCheck from "../components/TuckmanCheck";
 
 function downloadWheelAsImage(container, scores) {
   if (!container) return;
@@ -131,12 +102,9 @@ export default function SelfReflection() {
         setStep(step + 1);
       } else {
         const balans = bepaalBalans(updated);
-        const fase = suggereerFase(updated);
         const niveauZwak = updated[balans.zwaksteFactor];
-        setFaseKey(fase);
-        setFaseTekst(faseLabels[fase] ?? fase);
         setAanbevelingTekst(getRecommendation(balans.zwaksteFactor, niveauZwak));
-        setPhase("result");
+        setPhase("tuckman");
       }
       setIsAdvancing(false);
     }, 950);
@@ -146,6 +114,13 @@ export default function SelfReflection() {
     setPhase("questions");
     setStep(0);
     setScores({});
+  }
+
+  function handleTuckmanVerder(antwoorden) {
+    const { fase } = bepaalFaseDirect(antwoorden);
+    setFaseKey(fase);
+    setFaseTekst(faseLabels[fase] ?? fase);
+    setPhase("result");
   }
 
   if (phase === "start") {
@@ -172,6 +147,14 @@ export default function SelfReflection() {
     );
   }
 
+  if (phase === "tuckman") {
+    return (
+      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+        <TuckmanCheck onVerder={handleTuckmanVerder} />
+      </div>
+    );
+  }
+
   if (phase === "ethisch") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -183,7 +166,10 @@ export default function SelfReflection() {
   if (phase === "result") {
     const balans = bepaalBalans(scores);
     const zwaksteAxis = axesSelf.find((a) => a.key === balans.zwaksteFactor);
-    const faseInfo = faseUitleg[faseKey];
+    const groeiAdvies = tuckmanAdvies[faseKey];
+    const volgendeLabel = groeiAdvies?.volgendeFase
+      ? volgendeFaseLabels[groeiAdvies.volgendeFase] ?? groeiAdvies.volgendeFase
+      : null;
 
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -246,26 +232,55 @@ export default function SelfReflection() {
                 margin: "0 0 8px",
               }}
             >
-              Fase-suggestie
+              Ontwikkelfase
             </h2>
-            <textarea
-              value={faseTekst}
-              onChange={(e) => setFaseTekst(e.target.value)}
-              rows={2}
+            <p
               style={{
-                width: "100%",
                 fontFamily: fonts.ui,
-                fontSize: "0.95rem",
                 color: colors.labelAccent,
-                border: `1px solid ${colors.hubRing}`,
-                borderRadius: 8,
-                padding: 12,
-                background: colors.surface,
-                lineHeight: 1.5,
-                resize: "vertical",
-                boxSizing: "border-box",
+                fontWeight: 600,
+                fontSize: "1.05rem",
+                margin: "0 0 12px",
               }}
-            />
+            >
+              {faseTekst}
+            </p>
+            {groeiAdvies && (
+              <div
+                style={{
+                  padding: "16px",
+                  background: colors.surface,
+                  border: `1px solid ${colors.hubRing}`,
+                  borderRadius: 8,
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: fonts.ui,
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    color: colors.labelAccent,
+                    margin: "0 0 6px",
+                  }}
+                >
+                  {volgendeLabel && groeiAdvies.volgendeFase !== faseKey
+                    ? `Wat helpt richting ${volgendeLabel}?`
+                    : "Wat helpt jullie verder?"}
+                </h3>
+                <p
+                  style={{
+                    fontFamily: fonts.ui,
+                    fontSize: "0.9rem",
+                    color: colors.labelAccent,
+                    lineHeight: 1.6,
+                    margin: 0,
+                    opacity: 0.85,
+                  }}
+                >
+                  {groeiAdvies.advies}
+                </p>
+              </div>
+            )}
             <p
               style={{
                 fontFamily: fonts.ui,
@@ -276,30 +291,8 @@ export default function SelfReflection() {
                 margin: "8px 0 0",
               }}
             >
-              Dit is een suggestie op basis van het patroon — klopt dit voor jullie team?
+              Dit is een suggestie op basis van jullie antwoorden — klopt dit voor jullie team?
             </p>
-
-            {faseInfo && (
-              <div
-                style={{
-                  marginTop: 16,
-                  padding: "16px",
-                  background: colors.surface,
-                  border: `1px solid ${colors.hubRing}`,
-                  borderRadius: 8,
-                }}
-              >
-                <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
-                <UitlegBlok
-                  titel={
-                    faseInfo.volgendeFase
-                      ? `Wat helpt richting ${volgendeFaseLabels[faseInfo.volgendeFase] ?? faseInfo.volgendeFase}?`
-                      : "Hoe houden jullie het team in beweging?"
-                  }
-                  tekst={faseInfo.naarVolgende}
-                />
-              </div>
-            )}
           </section>
 
           <section style={{ marginTop: 28 }}>
@@ -334,9 +327,9 @@ export default function SelfReflection() {
           </section>
 
           <div style={{ marginTop: 32 }}>
-            <ImagePlaceholder
-              label="Finish: loper gaat over de streep"
-              description="Eén loper over de finishlijn — het teamresultaat, niet het individuele resultaat"
+            <SceneImage
+              src={sceneImages.finish}
+              alt="Loper gaat over de finishstreep — het teamresultaat"
               aspectRatio="21 / 9"
             />
           </div>
@@ -387,6 +380,8 @@ export default function SelfReflection() {
               setStep(0);
               setScores({});
               setFaseKey("");
+              setFaseTekst("");
+              setAanbevelingTekst("");
             }}
             style={{
               fontFamily: fonts.ui,
@@ -408,7 +403,12 @@ export default function SelfReflection() {
     );
   }
 
-  const showProgressPlaceholder = step === 2 || step === 4;
+  const progressImage =
+    step === 2
+      ? { src: sceneImages.tussenbeeld1, alt: "Loper onderweg met het stokje in de hand" }
+      : step === 4
+        ? { src: sceneImages.tussenbeeld2, alt: "Estafette: het stokje wordt overgedragen" }
+        : null;
 
   return (
     <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -425,10 +425,11 @@ export default function SelfReflection() {
           Stap {step + 1} van {axesSelf.length}
         </p>
 
-        {showProgressPlaceholder && (
+        {progressImage && (
           <div style={{ marginBottom: 24 }}>
-            <ImagePlaceholder
-              label="Loper onderweg, stokje in de hand"
+            <SceneImage
+              src={progressImage.src}
+              alt={progressImage.alt}
               aspectRatio="16 / 9"
             />
           </div>

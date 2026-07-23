@@ -35,7 +35,7 @@ export const recommendations = {
     kwetsbaar:
       "Begin bij vertrouwen: kleine, terugkerende momenten waarin twijfels of fouten gedeeld mogen worden zonder gevolgen. (geïnspireerd door Lencioni's model van teamdisfuncties)",
     groeiend:
-      "Introduceer een vaste vorm voor kritische feedback (bv. 'wat werkt, wat kan beter') in plaats van dit aan toeval over te laten.",
+      "Introduceer een vaste vorm voor kritische feedback (bv. 'wat werkt, wat kan beter') in plaats van dit aan toeval over te laten. (Lencioni; mede onderbouwd door Woolley et al., 2010: teams presteren beter bij gelijke spreektijd en hoge sociale sensitiviteit.)",
     sterk:
       "Koppel elk open gesprek aan een concreet vervolg (wie doet wat), zodat openheid niet in vrijblijvendheid verzandt.",
   },
