@@ -34,7 +34,7 @@ function downloadWheelAsImage(container, scores) {
   const { center, knobRadius, knobTravelMinRadius, knobTravelMaxRadius } = wheelGeometry;
   const travelMin = knobTravelMinRadius;
   const travelMax = knobTravelMaxRadius;
-  const niveauTravel = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+  const niveauTravel = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
 
   const knobMarkup = factorKeys
     .map((key, i) => {
@@ -77,6 +77,29 @@ function downloadWheelAsImage(container, scores) {
   img.src = url;
 }
 
+function RevealButton({ onClick, children }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        fontFamily: fonts.ui,
+        background: colors.hubFill,
+        color: colors.surface,
+        border: "none",
+        borderRadius: 8,
+        padding: "12px 28px",
+        fontSize: "1rem",
+        fontWeight: 600,
+        cursor: "pointer",
+        marginTop: 28,
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
 export default function SelfReflection() {
   const [phase, setPhase] = useState("start");
   const [step, setStep] = useState(0);
@@ -85,6 +108,8 @@ export default function SelfReflection() {
   const [faseTekst, setFaseTekst] = useState("");
   const [aanbevelingTekst, setAanbevelingTekst] = useState("");
   const [isAdvancing, setIsAdvancing] = useState(false);
+  // 0 = alleen wiel · 1 = + slag · 2 = + fase · 3 = + aanbeveling/afronding
+  const [resultReveal, setResultReveal] = useState(0);
   const wheelRef = useRef(null);
 
   const currentAxis = axesSelf[step];
@@ -116,17 +141,31 @@ export default function SelfReflection() {
     setScores({});
   }
 
-  function handleTuckmanVerder(antwoorden) {
-    const { fase } = bepaalFaseDirect(antwoorden);
+  function handleTuckmanVerder(waarden) {
+    const { fase } = bepaalFaseDirect(waarden);
     setFaseKey(fase);
     setFaseTekst(faseLabels[fase] ?? fase);
+    setResultReveal(0);
     setPhase("result");
+  }
+
+  function resetToStart() {
+    setPhase("start");
+    setStep(0);
+    setScores({});
+    setFaseKey("");
+    setFaseTekst("");
+    setAanbevelingTekst("");
+    setResultReveal(0);
   }
 
   if (phase === "start") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-        <Startpagina onStart={() => setPhase("intro")} />
+        <Startpagina
+          onStart={() => setPhase("intro")}
+          onEthischLeiderschap={() => setPhase("ethisch")}
+        />
       </div>
     );
   }
@@ -158,7 +197,7 @@ export default function SelfReflection() {
   if (phase === "ethisch") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-        <EthischLeiderschap onBack={() => setPhase("result")} />
+        <EthischLeiderschap onBack={resetToStart} />
       </div>
     );
   }
@@ -187,217 +226,216 @@ export default function SelfReflection() {
 
           <TeamWheel ref={wheelRef} scores={scores} variant="dots" />
 
-          <section style={{ marginTop: 32 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Slag in het wiel
-            </h2>
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                color: colors.labelAccent,
-                lineHeight: 1.6,
-                margin: "0 0 12px",
-                opacity: 0.85,
-              }}
-            >
-              Een teamwiel draait soepel als alle succesfactoren in balans zijn. De zwakste
-              factor bepaalt waar het wiel het meest hapert — niet als oordeel, maar als
-              aanknopingspunt voor gesprek.
-            </p>
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                color: colors.labelAccent,
-                fontWeight: 600,
-                margin: 0,
-              }}
-            >
-              Zwakste factor: {zwaksteAxis?.label}
-            </p>
-          </section>
+          {resultReveal === 0 && (
+            <RevealButton onClick={() => setResultReveal(1)}>
+              Toon de slag in het wiel →
+            </RevealButton>
+          )}
 
-          <section style={{ marginTop: 28 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Ontwikkelfase
-            </h2>
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                color: colors.labelAccent,
-                fontWeight: 600,
-                fontSize: "1.05rem",
-                margin: "0 0 12px",
-              }}
-            >
-              {faseTekst}
-            </p>
-            {groeiAdvies && (
-              <div
+          {resultReveal >= 1 && (
+            <section style={{ marginTop: 32 }}>
+              <h2
                 style={{
-                  padding: "16px",
-                  background: colors.surface,
-                  border: `1px solid ${colors.hubRing}`,
-                  borderRadius: 8,
+                  fontFamily: fonts.voice,
+                  color: colors.labelAccent,
+                  fontSize: "1.25rem",
+                  margin: "0 0 8px",
                 }}
               >
-                <h3
+                Slag in het wiel
+              </h2>
+              <p
+                style={{
+                  fontFamily: fonts.ui,
+                  color: colors.labelAccent,
+                  lineHeight: 1.6,
+                  margin: "0 0 12px",
+                  opacity: 0.85,
+                }}
+              >
+                Een teamwiel draait soepel als alle succesfactoren in balans zijn. De zwakste
+                factor bepaalt waar het wiel het meest hapert — niet als oordeel, maar als
+                aanknopingspunt voor gesprek.
+              </p>
+              <p
+                style={{
+                  fontFamily: fonts.ui,
+                  color: colors.labelAccent,
+                  fontWeight: 600,
+                  margin: 0,
+                }}
+              >
+                Zwakste factor: {zwaksteAxis?.label}
+              </p>
+            </section>
+          )}
+
+          {resultReveal === 1 && (
+            <RevealButton onClick={() => setResultReveal(2)}>
+              Toon de ontwikkelfase →
+            </RevealButton>
+          )}
+
+          {resultReveal >= 2 && (
+            <section style={{ marginTop: 28 }}>
+              <h2
+                style={{
+                  fontFamily: fonts.voice,
+                  color: colors.labelAccent,
+                  fontSize: "1.25rem",
+                  margin: "0 0 8px",
+                }}
+              >
+                Ontwikkelfase
+              </h2>
+              <p
+                style={{
+                  fontFamily: fonts.ui,
+                  color: colors.labelAccent,
+                  fontWeight: 600,
+                  fontSize: "1.05rem",
+                  margin: "0 0 12px",
+                }}
+              >
+                {faseTekst}
+              </p>
+              {groeiAdvies && (
+                <div
                   style={{
-                    fontFamily: fonts.ui,
-                    fontSize: "0.9rem",
-                    fontWeight: 600,
-                    color: colors.labelAccent,
-                    margin: "0 0 6px",
+                    padding: "16px",
+                    background: colors.surface,
+                    border: `1px solid ${colors.hubRing}`,
+                    borderRadius: 8,
                   }}
                 >
-                  {volgendeLabel && groeiAdvies.volgendeFase !== faseKey
-                    ? `Wat helpt richting ${volgendeLabel}?`
-                    : "Wat helpt jullie verder?"}
-                </h3>
-                <p
+                  <h3
+                    style={{
+                      fontFamily: fonts.ui,
+                      fontSize: "0.9rem",
+                      fontWeight: 600,
+                      color: colors.labelAccent,
+                      margin: "0 0 6px",
+                    }}
+                  >
+                    {volgendeLabel && groeiAdvies.volgendeFase !== faseKey
+                      ? `Wat helpt richting ${volgendeLabel}?`
+                      : "Wat helpt jullie verder?"}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: fonts.ui,
+                      fontSize: "0.9rem",
+                      color: colors.labelAccent,
+                      lineHeight: 1.6,
+                      margin: 0,
+                      opacity: 0.85,
+                    }}
+                  >
+                    {groeiAdvies.advies}
+                  </p>
+                </div>
+              )}
+              <p
+                style={{
+                  fontFamily: fonts.ui,
+                  fontSize: "0.85rem",
+                  color: colors.labelAccent,
+                  opacity: 0.65,
+                  fontStyle: "italic",
+                  margin: "8px 0 0",
+                }}
+              >
+                Dit is een suggestie op basis van jullie antwoorden — klopt dit voor jullie team?
+              </p>
+            </section>
+          )}
+
+          {resultReveal === 2 && (
+            <RevealButton onClick={() => setResultReveal(3)}>
+              Toon de aanbeveling →
+            </RevealButton>
+          )}
+
+          {resultReveal >= 3 && (
+            <>
+              <section style={{ marginTop: 28 }}>
+                <h2
                   style={{
-                    fontFamily: fonts.ui,
-                    fontSize: "0.9rem",
+                    fontFamily: fonts.voice,
                     color: colors.labelAccent,
-                    lineHeight: 1.6,
-                    margin: 0,
-                    opacity: 0.85,
+                    fontSize: "1.25rem",
+                    margin: "0 0 8px",
                   }}
                 >
-                  {groeiAdvies.advies}
-                </p>
+                  Aanbeveling
+                </h2>
+                <textarea
+                  value={aanbevelingTekst}
+                  onChange={(e) => setAanbevelingTekst(e.target.value)}
+                  rows={4}
+                  style={{
+                    width: "100%",
+                    fontFamily: fonts.ui,
+                    fontSize: "0.95rem",
+                    color: colors.labelAccent,
+                    border: `1px solid ${colors.hubRing}`,
+                    borderRadius: 8,
+                    padding: 12,
+                    background: colors.surface,
+                    lineHeight: 1.5,
+                    resize: "vertical",
+                    boxSizing: "border-box",
+                  }}
+                />
+              </section>
+
+              <div style={{ marginTop: 32 }}>
+                <SceneImage
+                  src={sceneImages.finish}
+                  alt="Loper gaat over de finishstreep — het teamresultaat"
+                  aspectRatio="21 / 9"
+                />
               </div>
-            )}
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                fontSize: "0.85rem",
-                color: colors.labelAccent,
-                opacity: 0.65,
-                fontStyle: "italic",
-                margin: "8px 0 0",
-              }}
-            >
-              Dit is een suggestie op basis van jullie antwoorden — klopt dit voor jullie team?
-            </p>
-          </section>
 
-          <section style={{ marginTop: 28 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Aanbeveling
-            </h2>
-            <textarea
-              value={aanbevelingTekst}
-              onChange={(e) => setAanbevelingTekst(e.target.value)}
-              rows={4}
-              style={{
-                width: "100%",
-                fontFamily: fonts.ui,
-                fontSize: "0.95rem",
-                color: colors.labelAccent,
-                border: `1px solid ${colors.hubRing}`,
-                borderRadius: 8,
-                padding: 12,
-                background: colors.surface,
-                lineHeight: 1.5,
-                resize: "vertical",
-                boxSizing: "border-box",
-              }}
-            />
-          </section>
+              <button
+                type="button"
+                onClick={() => downloadWheelAsImage(wheelRef.current, scores)}
+                style={{
+                  fontFamily: fonts.ui,
+                  background: colors.hubFill,
+                  color: colors.surface,
+                  border: "none",
+                  borderRadius: 8,
+                  padding: "12px 28px",
+                  fontSize: "1rem",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  marginTop: 32,
+                }}
+              >
+                Download wiel als afbeelding
+              </button>
 
-          <div style={{ marginTop: 32 }}>
-            <SceneImage
-              src={sceneImages.finish}
-              alt="Loper gaat over de finishstreep — het teamresultaat"
-              aspectRatio="21 / 9"
-            />
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setPhase("ethisch")}
-            style={{
-              fontFamily: fonts.ui,
-              background: "none",
-              border: "none",
-              color: colors.labelAccent,
-              fontSize: "0.9rem",
-              opacity: 0.75,
-              cursor: "pointer",
-              marginTop: 20,
-              padding: 0,
-              textDecoration: "underline",
-              textUnderlineOffset: 3,
-            }}
-          >
-            Reflecteer ook op je eigen leiderschap →
-          </button>
-
-          <button
-            type="button"
-            onClick={() => downloadWheelAsImage(wheelRef.current, scores)}
-            style={{
-              fontFamily: fonts.ui,
-              background: colors.hubFill,
-              color: colors.surface,
-              border: "none",
-              borderRadius: 8,
-              padding: "12px 28px",
-              fontSize: "1rem",
-              fontWeight: 600,
-              cursor: "pointer",
-              marginTop: 32,
-            }}
-          >
-            Download wiel als afbeelding
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {
-              setPhase("start");
-              setStep(0);
-              setScores({});
-              setFaseKey("");
-              setFaseTekst("");
-              setAanbevelingTekst("");
-            }}
-            style={{
-              fontFamily: fonts.ui,
-              background: "transparent",
-              color: colors.labelAccent,
-              border: `1px solid ${colors.hubRing}`,
-              borderRadius: 8,
-              padding: "12px 28px",
-              fontSize: "1rem",
-              cursor: "pointer",
-              marginTop: 12,
-              marginLeft: 12,
-            }}
-          >
-            Opnieuw beginnen
-          </button>
+              <button
+                type="button"
+                onClick={resetToStart}
+                style={{
+                  fontFamily: fonts.ui,
+                  background: "transparent",
+                  color: colors.labelAccent,
+                  border: `1px solid ${colors.hubRing}`,
+                  borderRadius: 8,
+                  padding: "12px 28px",
+                  fontSize: "1rem",
+                  cursor: "pointer",
+                  marginTop: 12,
+                  marginLeft: 12,
+                }}
+              >
+                Opnieuw beginnen
+              </button>
+            </>
+          )}
         </div>
       </div>
     );

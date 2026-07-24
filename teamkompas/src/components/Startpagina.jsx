@@ -1,7 +1,7 @@
 import TeamWheel from "./TeamWheel";
 import { welkom, bronvermelding, colors, fonts } from "../config";
 
-export default function Startpagina({ onStart }) {
+export default function Startpagina({ onStart, onEthischLeiderschap }) {
   return (
     <div style={{ textAlign: "center", padding: "32px 16px", maxWidth: 480, margin: "0 auto" }}>
       <TeamWheel
@@ -48,6 +48,28 @@ export default function Startpagina({ onStart }) {
       >
         Start
       </button>
+      {onEthischLeiderschap && (
+        <div style={{ marginTop: 20 }}>
+          <button
+            type="button"
+            onClick={onEthischLeiderschap}
+            style={{
+              fontFamily: fonts.ui,
+              background: "none",
+              border: "none",
+              color: colors.labelAccent,
+              fontSize: "0.85rem",
+              opacity: 0.7,
+              cursor: "pointer",
+              padding: 0,
+              textDecoration: "underline",
+              textUnderlineOffset: 3,
+            }}
+          >
+            Ethisch leiderschap — alleen voor de teamleider, na de sessie →
+          </button>
+        </div>
+      )}
       <p
         style={{
           marginTop: 32,

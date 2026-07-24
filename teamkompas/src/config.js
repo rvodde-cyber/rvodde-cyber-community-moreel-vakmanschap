@@ -132,53 +132,52 @@ export const ethischLeiderschap = {
     "leiderschap direct samenhangt met de meldingsbereidheid van medewerkers.",
 };
 
-export const tuckmanVragen = [
-  {
-    thema: "Rolduidelijkheid",
-    opties: {
-      forming: "Rollen zijn nog niet duidelijk; we tasten af wie wat doet",
-      storming: "Er is onenigheid over wie welke rol zou moeten hebben",
-      norming: "Rollen zijn redelijk duidelijk, al passen we ze nog af en toe aan",
-      performing: "Rollen zijn duidelijk én flexibel — we wisselen moeiteloos als dat nodig is",
-    },
+export const tuckmanTyperingen = {
+  forming: {
+    titel: "Het eerste kennismakingsgevoel",
+    tekst:
+      "Iedereen is nog beleefd en voorzichtig. We stellen ons voor, tasten af hoe de " +
+      "ander werkt, en niemand wil als eerste een verkeerde toon zetten. Er is veel " +
+      "gevraag naar duidelijkheid — wat gaan we doen, wie doet wat — en de teamleider " +
+      "wordt vooral gevolgd, niet uitgedaagd. Het voelt nog wat afstandelijk, alsof we " +
+      "allemaal ons beste gedrag laten zien.",
   },
-  {
-    thema: "Omgang met conflict",
-    opties: {
-      forming: "Conflict komt nauwelijks voor — we zijn nog voorzichtig met elkaar",
-      storming: "Er is regelmatig onderlinge wrijving, soms onderhuids",
-      norming: "We kunnen het oneens zijn zonder dat het de sfeer verstoort",
-      performing: "Meningsverschil gebruiken we juist om tot een beter resultaat te komen",
-    },
+  storming: {
+    titel: "De confrontatiefase",
+    tekst:
+      "De beleefdheid begint te schuren. Er ontstaan meningsverschillen over de " +
+      "aanpak, over rollen, soms ook persoonlijk. Sommige mensen trekken zich terug, " +
+      "anderen worden juist feller. Er wordt getest wie waar staat, wie de leiding " +
+      "pakt, wie zich laat gelden. Het voelt ongemakkelijk — en dat is precies waarom " +
+      "het soms vermeden wordt, terwijl het juist een teken van groei kan zijn.",
   },
-  {
-    thema: "Saamhorigheid/vertrouwen",
-    opties: {
-      forming: "We kennen elkaar nog niet goed genoeg voor volledig vertrouwen",
-      storming: "Er zijn subgroepjes of 'kampen' binnen het team ontstaan",
-      norming: "Er groeit een gevoel van 'wij' in plaats van 'ik'",
-      performing: "Er is sterk onderling vertrouwen, ook onder druk",
-    },
+  norming: {
+    titel: "De fase van samen spelregels maken",
+    tekst:
+      "De scherpe kantjes zijn eraf. Er ontstaan ongeschreven regels: hoe we " +
+      "vergaderen, hoe we feedback geven, wie waarvoor verantwoordelijk is. Er groeit " +
+      "een gevoel van 'wij' — niet omdat het conflict weg is, maar omdat we weten hoe " +
+      "we ermee omgaan. Er is meer rust, meer voorspelbaarheid, en de teamleider " +
+      "hoeft minder te sturen.",
   },
-  {
-    thema: "Zelfstandigheid/leiderschap",
-    opties: {
-      forming: "We zijn sterk afhankelijk van de teamleider voor richting",
-      storming: "Er wordt getest wie de leiding neemt of zou moeten nemen",
-      norming: "De teamleider hoeft minder te sturen, het team pakt meer zelf op",
-      performing: "Het team functioneert grotendeels zelfstandig, ook zonder sturing",
-    },
+  performing: {
+    titel: "De fase van moeiteloos samenspel",
+    tekst:
+      "Het team draait. Rollen zijn helder én flexibel, er wordt gewisseld zonder " +
+      "gedoe. Conflict wordt niet vermeden maar juist gebruikt om scherper te worden. " +
+      "Er is vertrouwen, ook onder druk. De energie gaat naar het werk zelf, niet naar " +
+      "hoe we met elkaar omgaan — dat gaat vanzelf.",
   },
-  {
-    thema: "Focus (taak vs. proces)",
-    opties: {
-      forming: "We zijn vooral bezig elkaar te leren kennen en de opdracht scherp te krijgen",
-      storming: "We zijn meer bezig met hóe we samenwerken dan met het resultaat",
-      norming: "We vinden een goede balans tussen samenwerken en resultaat boeken",
-      performing: "We zijn vooral gericht op het resultaat — samenwerken kost geen energie meer",
-    },
+  adjourning: {
+    titel: "De afrondingsfase",
+    tekst:
+      "Het project of de opdracht loopt op zijn eind, of het team gaat op de schop — " +
+      "nieuwe samenstelling, andere opdracht, ontbinding. Er is soms opluchting, soms " +
+      "weemoed. Mensen kijken al vooruit naar wat hierna komt, en de betrokkenheid " +
+      "bij de gezamenlijke taak neemt vanzelf af. Dit is een normale, vaak " +
+      "onderbelichte fase — niet elk team hoeft voor altijd te blijven bestaan.",
   },
-];
+};
 
 export const tuckmanAdvies = {
   forming: {
@@ -206,6 +205,14 @@ export const tuckmanAdvies = {
       "Blijf periodiek reflecteren en successen vieren; blijf alert op momenten die het " +
       "team terugduwen naar forming (nieuwe leden, reorganisatie, wisseling van doelen).",
   },
+  adjourning: {
+    volgendeFase: null,
+    advies:
+      "Vier bewust wat het team heeft bereikt, en geef ruimte voor afscheid nemen in " +
+      "plaats van het project stilzwijgend te laten uitdoven. Als het team in een " +
+      "nieuwe vorm verdergaat, begint de cyclus feitelijk weer bij forming — benoem dat " +
+      "expliciet in plaats van te doen alsof er niets verandert.",
+  },
   "gemengd beeld": {
     volgendeFase: null,
     advies:
@@ -217,4 +224,4 @@ export const tuckmanAdvies = {
 
 export const tuckmanBron =
   "Gebaseerd op Tuckman's fasemodel van teamontwikkeling (Tuckman, 1965; Tuckman & " +
-  "Jensen, 1977): forming, storming, norming, performing.";
+  "Jensen, 1977): forming, storming, norming, performing en adjourning.";

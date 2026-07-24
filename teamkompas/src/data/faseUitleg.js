@@ -34,6 +34,7 @@ export const faseLabels = {
   storming: "Storming — spanning en positionering",
   norming: "Norming — afspraken en ritme",
   performing: "Performing — soepel samenwerken",
+  adjourning: "Adjourning — afronden en afscheid",
   "gemengd beeld": "Gemengd beeld — geen eenduidige fase",
 };
 

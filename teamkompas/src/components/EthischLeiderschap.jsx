@@ -100,7 +100,7 @@ export default function EthischLeiderschap({ onBack }) {
           cursor: "pointer",
         }}
       >
-        ← Terug naar het teamresultaat
+        ← Terug naar de start
       </button>
     </div>
   );
