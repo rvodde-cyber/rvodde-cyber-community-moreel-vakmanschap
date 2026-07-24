@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { colors, fonts, wheelGeometry, tuckmanAdvies } from "../config";
+import { colors, fonts, wheelGeometry, tuckmanAdvies, gallupNotitie } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
 import { bepaalFaseDirect } from "../logic/tuckman";
@@ -387,6 +387,19 @@ export default function SelfReflection() {
                     boxSizing: "border-box",
                   }}
                 />
+                <p
+                  style={{
+                    marginTop: 12,
+                    fontFamily: fonts.ui,
+                    fontSize: "0.85rem",
+                    color: colors.labelAccent,
+                    opacity: 0.75,
+                    fontStyle: "italic",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  {gallupNotitie}
+                </p>
               </section>
 
               <div style={{ marginTop: 32 }}>

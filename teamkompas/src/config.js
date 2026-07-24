@@ -89,6 +89,10 @@ export const fundament = {
     {
       dimensie: "Bestaansrecht",
       vraag: "Bestaat dit team omdat de leden elkaar echt nodig hebben om het doel te bereiken — of zijn jullie vooral een verzameling mensen die toevallig hetzelfde project doen?",
+      toelichting:
+        "Deze vraag doet ertoe: een meta-analyse van De Jong, Dirks & Gillespie (2016, " +
+        "112 studies, 7.700+ teams) laat zien dat vertrouwen zwaarder weegt naarmate " +
+        "teamleden meer van elkaar afhankelijk zijn.",
     },
     {
       dimensie: "Inrichting",
@@ -225,3 +229,8 @@ export const tuckmanAdvies = {
 export const tuckmanBron =
   "Gebaseerd op Tuckman's fasemodel van teamontwikkeling (Tuckman, 1965; Tuckman & " +
   "Jensen, 1977): forming, storming, norming, performing en adjourning.";
+
+export const gallupNotitie =
+  "Onderzoek van Gallup (2024, 183.806 teams) laat zien dat de teamleider tot 70% " +
+  "van de teambetrokkenheid verklaart — de aanbeveling hierboven ligt dus voor een " +
+  "groot deel in jouw handen.";

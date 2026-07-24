@@ -29,7 +29,7 @@ export const recommendations = {
     groeiend:
       "Vraag bij besluiten expliciet naar minderheidsstandpunten vóórdat de knoop wordt doorgehakt, en let erop dat niet steeds dezelfde mensen het langst aan het woord zijn. (Project Aristotle: gelijke spreektijd was een van de sterkste voorspellers van teameffectiviteit.)",
     sterk:
-      "Gebruik bij belangrijke besluiten bewust de Lewis-methode van Deep Democracy: verzamel actief alle invalshoeken, zoek expliciet naar de afwijkende mening, en verwerk het minderheidsstandpunt in het besluit vóór de definitieve stemming. (Geïnspireerd door onderzoek naar groupthink, Janis; en de Lewis-methode van Deep Democracy, Lewis & Kramer.)",
+      "Gebruik bij belangrijke besluiten bewust de Lewis-methode van Deep Democracy: verzamel actief alle invalshoeken, zoek expliciet naar de afwijkende mening, en verwerk het minderheidsstandpunt in het besluit vóór de definitieve stemming. (Geïnspireerd door onderzoek naar groupthink, Janis; de Lewis-methode van Deep Democracy, Lewis & Kramer; en bevestigd door een evidence review van het CIPD, 2023 — diversiteit op zich heeft nauwelijks effect op teamprestatie, alleen actief benutte diversiteit wel.)",
   },
   communicatie: {
     kwetsbaar:
