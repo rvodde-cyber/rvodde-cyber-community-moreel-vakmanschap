@@ -61,8 +61,10 @@ export const welkom = {
 export const bronvermelding =
   "Geïnspireerd op het Teamwiel van Vroemen (Vroemen & Vroemen, 2009, " +
   '"Team op vleugels", Amsterdam University Press), gecombineerd met het ' +
-  "fasemodel van teamontwikkeling van Bruce Tuckman (1965) en het onderscheid " +
-  "tussen groep en team van Katzenbach & Smith (1993, The Wisdom of Teams).";
+  "fasemodel van Bruce Tuckman (1965), het onderscheid tussen groep en team van " +
+  "Katzenbach & Smith (1993, The Wisdom of Teams) en Hackman & Wageman's Team " +
+  "Effectiveness Conditions (Harvard University), geplaatst binnen de vier dimensies " +
+  "van effectieve teams van Van der Schoor & Van de Wiel (2013, Teams van de toekomst).";
 
 export const metafoor = {
   titel: "Groep of team?",
@@ -81,11 +83,16 @@ export const fundament = {
     "Van der Schoor & Van de Wiel (2013) onderscheiden vier dimensies van effectieve " +
     "teams: bestaansrecht, inrichting, dynamiek en omgeving. Het teamwiel hierna gaat " +
     "over dynamiek — hoe jullie samenwerken. Deze drie korte vragen gaan over het " +
-    "fundament daaronder. Niet verplicht, niet gescoord, niet opgeslagen.",
+    "fundament daaronder — de eerste raakt direct aan de vraag of dit eigenlijk wel " +
+    "een team is, of vooral een groep. Niet verplicht, niet gescoord, niet opgeslagen.",
   vragen: [
     {
       dimensie: "Bestaansrecht",
-      vraag: "Waarom bestaat dit team, en is dat voor iedereen nog steeds duidelijk?",
+      vraag: "Bestaat dit team omdat de leden elkaar echt nodig hebben om het doel te bereiken — of zijn jullie vooral een verzameling mensen die toevallig hetzelfde project doen?",
+      toelichting:
+        "Deze vraag doet ertoe: een meta-analyse van De Jong, Dirks & Gillespie (2016, " +
+        "112 studies, 7.700+ teams) laat zien dat vertrouwen zwaarder weegt naarmate " +
+        "teamleden meer van elkaar afhankelijk zijn.",
     },
     {
       dimensie: "Inrichting",
@@ -97,8 +104,11 @@ export const fundament = {
     },
   ],
   bron:
-    "Van der Schoor, J. & Van de Wiel, G. (2013). Teams van de toekomst: " +
-    "Leidinggeven aan het nieuwe samenwerken. Academic Service (BIM Media).",
+    "Van der Schoor, J. & Van de Wiel, G. (2013). Teams van de toekomst: Leidinggeven " +
+    "aan het nieuwe samenwerken. Academic Service (BIM Media). De bestaansrecht-vraag " +
+    "sluit aan bij het onderscheid tussen groep en team van Katzenbach & Smith (1993) " +
+    "en Hackman & Wageman's 'real team'-criterium, zoals ook gebruikt in de " +
+    "estafette-metafoor.",
 };
 
 export const ethischLeiderschap = {
@@ -125,3 +135,102 @@ export const ethischLeiderschap = {
     "bewust doorstaan daarvan. Brown, Treviño & Harrison (2005) tonen aan dat ethisch " +
     "leiderschap direct samenhangt met de meldingsbereidheid van medewerkers.",
 };
+
+export const tuckmanTyperingen = {
+  forming: {
+    titel: "Het eerste kennismakingsgevoel",
+    tekst:
+      "Iedereen is nog beleefd en voorzichtig. We stellen ons voor, tasten af hoe de " +
+      "ander werkt, en niemand wil als eerste een verkeerde toon zetten. Er is veel " +
+      "gevraag naar duidelijkheid — wat gaan we doen, wie doet wat — en de teamleider " +
+      "wordt vooral gevolgd, niet uitgedaagd. Het voelt nog wat afstandelijk, alsof we " +
+      "allemaal ons beste gedrag laten zien.",
+  },
+  storming: {
+    titel: "De confrontatiefase",
+    tekst:
+      "De beleefdheid begint te schuren. Er ontstaan meningsverschillen over de " +
+      "aanpak, over rollen, soms ook persoonlijk. Sommige mensen trekken zich terug, " +
+      "anderen worden juist feller. Er wordt getest wie waar staat, wie de leiding " +
+      "pakt, wie zich laat gelden. Het voelt ongemakkelijk — en dat is precies waarom " +
+      "het soms vermeden wordt, terwijl het juist een teken van groei kan zijn.",
+  },
+  norming: {
+    titel: "De fase van samen spelregels maken",
+    tekst:
+      "De scherpe kantjes zijn eraf. Er ontstaan ongeschreven regels: hoe we " +
+      "vergaderen, hoe we feedback geven, wie waarvoor verantwoordelijk is. Er groeit " +
+      "een gevoel van 'wij' — niet omdat het conflict weg is, maar omdat we weten hoe " +
+      "we ermee omgaan. Er is meer rust, meer voorspelbaarheid, en de teamleider " +
+      "hoeft minder te sturen.",
+  },
+  performing: {
+    titel: "De fase van moeiteloos samenspel",
+    tekst:
+      "Het team draait. Rollen zijn helder én flexibel, er wordt gewisseld zonder " +
+      "gedoe. Conflict wordt niet vermeden maar juist gebruikt om scherper te worden. " +
+      "Er is vertrouwen, ook onder druk. De energie gaat naar het werk zelf, niet naar " +
+      "hoe we met elkaar omgaan — dat gaat vanzelf.",
+  },
+  adjourning: {
+    titel: "De afrondingsfase",
+    tekst:
+      "Het project of de opdracht loopt op zijn eind, of het team gaat op de schop — " +
+      "nieuwe samenstelling, andere opdracht, ontbinding. Er is soms opluchting, soms " +
+      "weemoed. Mensen kijken al vooruit naar wat hierna komt, en de betrokkenheid " +
+      "bij de gezamenlijke taak neemt vanzelf af. Dit is een normale, vaak " +
+      "onderbelichte fase — niet elk team hoeft voor altijd te blijven bestaan.",
+  },
+};
+
+export const tuckmanAdvies = {
+  forming: {
+    volgendeFase: "storming",
+    advies:
+      "Conflict niet langer vermijden maar toelaten — benoem spanningen expliciet in " +
+      "plaats van ze glad te strijken. Storming voelt ongemakkelijk maar is een " +
+      "noodzakelijke stap, geen mislukking.",
+  },
+  storming: {
+    volgendeFase: "norming",
+    advies:
+      "Maak heldere, gedeelde afspraken over besluitvorming, communicatie en " +
+      "rolverdeling — bijvoorbeeld een kort teamcontract waar iedereen input op geeft.",
+  },
+  norming: {
+    volgendeFase: "performing",
+    advies:
+      "Geef het team meer ruimte en verantwoordelijkheid; treed als leider bewust meer " +
+      "terug zodra het vertrouwen dat toelaat.",
+  },
+  performing: {
+    volgendeFase: "performing",
+    advies:
+      "Blijf periodiek reflecteren en successen vieren; blijf alert op momenten die het " +
+      "team terugduwen naar forming (nieuwe leden, reorganisatie, wisseling van doelen).",
+  },
+  adjourning: {
+    volgendeFase: null,
+    advies:
+      "Vier bewust wat het team heeft bereikt, en geef ruimte voor afscheid nemen in " +
+      "plaats van het project stilzwijgend te laten uitdoven. Als het team in een " +
+      "nieuwe vorm verdergaat, begint de cyclus feitelijk weer bij forming — benoem dat " +
+      "expliciet in plaats van te doen alsof er niets verandert.",
+  },
+  "gemengd beeld": {
+    volgendeFase: null,
+    advies:
+      "Jullie antwoorden wijzen niet duidelijk op één fase — dat kan betekenen dat " +
+      "verschillende onderdelen van het team in verschillende fasen zitten. Bespreek " +
+      "samen welke van de vijf thema's hierboven het meest speelt.",
+  },
+};
+
+export const tuckmanBron =
+  "Gebaseerd op Tuckman's fasemodel van teamontwikkeling (Tuckman, 1965; Tuckman & " +
+  "Jensen, 1977): forming, storming, norming, performing en adjourning.";
+
+export const gallupNotitie =
+  "Onderzoek van Gallup (2024, 183.806 teams) laat zien dat de teamleider tot 70% " +
+  "van de teambetrokkenheid verklaart — de aanbeveling hierboven ligt dus voor een " +
+  "groot deel in jouw handen.";
