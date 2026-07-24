@@ -19,6 +19,7 @@ export const gesprekskaartI18n = {
       'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
     vraag1: "Wat zou jij doen en waarom?",
     vraag2: "Welke waarden zijn hier in het spel?",
+    imagePlaceholder: "Afbeelding",
   },
   en: {
     moeilijkheidLabel: "Complexity",
@@ -36,6 +37,7 @@ export const gesprekskaartI18n = {
       'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
     vraag1: "What would you do, and why?",
     vraag2: "What values are at stake here?",
+    imagePlaceholder: "Image",
   },
   de: {
     moeilijkheidLabel: "Komplexität",
@@ -53,6 +55,7 @@ export const gesprekskaartI18n = {
       'Komplexitätsmodell: Kim Meijer, „Impossible and Inevitable“ (Tilburg University)',
     vraag1: "Was würdest du tun und warum?",
     vraag2: "Welche Werte stehen hier auf dem Spiel?",
+    imagePlaceholder: "Bild",
   },
   sv: {
     moeilijkheidLabel: "Komplexitet",
@@ -70,6 +73,7 @@ export const gesprekskaartI18n = {
       'Komplexitetsmodell: Kim Meijer, ”Impossible and Inevitable” (Tilburg University)',
     vraag1: "Vad skulle du göra och varför?",
     vraag2: "Vilka värderingar är i spel här?",
+    imagePlaceholder: "Bild",
   },
   cs: {
     moeilijkheidLabel: "Složitost",
@@ -87,6 +91,7 @@ export const gesprekskaartI18n = {
       'Model složitosti: Kim Meijer, „Impossible and Inevitable“ (Tilburg University)',
     vraag1: "Co byste udělali a proč?",
     vraag2: "Jaké hodnoty jsou zde v sázce?",
+    imagePlaceholder: "Obrázek",
   },
   da: {
     moeilijkheidLabel: "Kompleksitet",
@@ -104,6 +109,7 @@ export const gesprekskaartI18n = {
       'Kompleksitetsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
     vraag1: "Hvad ville du gøre, og hvorfor?",
     vraag2: "Hvilke værdier er på spil her?",
+    imagePlaceholder: "Billede",
   },
 };
 

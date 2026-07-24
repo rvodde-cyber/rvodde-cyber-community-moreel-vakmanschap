@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
@@ -28,6 +29,9 @@ const content = {
     ],
     cta: "Meld je aan",
     ctaSecundair: "Bekijk het model",
+    richtlijnenVoor: "Samenwerken in de community? Lees de ",
+    richtlijnenLink: "communityrichtlijnen",
+    richtlijnenNa: ".",
   },
   en: {
     label: "About this platform",
@@ -54,6 +58,9 @@ const content = {
     ],
     cta: "Join the community",
     ctaSecundair: "View the model",
+    richtlijnenVoor: "Working together in the community? Read the ",
+    richtlijnenLink: "community guidelines",
+    richtlijnenNa: ".",
   },
 };
 
@@ -70,6 +77,7 @@ export default function WelkomPagina() {
   const { taal } = useTaal();
   const t = getLocalizedPageContent(content, taal, "welkom");
   const aanmeldenHref = usesEnglishRoutes(taal) ? "/join" : "/aanmelden";
+  const richtlijnenHref = usesEnglishRoutes(taal) ? "/community-guidelines" : "/communityrichtlijnen";
 
   return (
     <main
@@ -221,6 +229,30 @@ export default function WelkomPagina() {
             </motion.div>
           ))}
         </div>
+
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          style={{
+            marginTop: "2.5rem",
+            textAlign: "center",
+            fontFamily: "DM Sans, sans-serif",
+            fontSize: "0.95rem",
+            lineHeight: 1.7,
+            color: "var(--tekst-secundair, #5f5e5a)",
+          }}
+        >
+          {t.richtlijnenVoor}
+          <Link
+            to={richtlijnenHref}
+            style={{ color: "#993c1d", fontWeight: 600, textDecoration: "underline" }}
+          >
+            {t.richtlijnenLink}
+          </Link>
+          {t.richtlijnenNa}
+        </motion.p>
       </section>
     </main>
   );

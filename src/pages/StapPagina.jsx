@@ -205,6 +205,8 @@ export default function StapPagina() {
         <img
           src={`/images/bibliotheek/stap-${afbeeldingSlug}.jpg`}
           alt={stapData.stapNaam}
+          loading="eager"
+          decoding="async"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           onError={(event) => handleImageError(event, stapData.kleur)}
         />

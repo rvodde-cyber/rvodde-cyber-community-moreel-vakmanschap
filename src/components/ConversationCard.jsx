@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useTaal } from "../context/TaalContext";
@@ -23,11 +23,17 @@ function ComplexityBadge({ card, taal, className = "" }) {
   );
 }
 
-function CardMedia({ card }) {
+function CardMedia({ card, priority = false }) {
   if (card.afbeelding) {
     return (
       <>
-        <img src={card.afbeelding} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={card.afbeelding}
+          alt=""
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
       </>
     );
@@ -140,22 +146,56 @@ function formatStapVerbinding(template, card, kernvraag) {
 
 export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { taal, t } = useTaal();
+  const closeButtonRef = useRef(null);
+  const previouslyFocusedRef = useRef(null);
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
   const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
 
   useEffect(() => {
     if (!isOpen) return undefined;
 
+    previouslyFocusedRef.current = document.activeElement;
+    document.body.style.overflow = "hidden";
+
+    const focusTimer = window.setTimeout(() => {
+      closeButtonRef.current?.focus();
+    }, 0);
+
     const onKeyDown = (event) => {
-      if (event.key === "Escape") onClose();
+      if (event.key === "Escape") {
+        onClose();
+        return;
+      }
+
+      if (event.key !== "Tab" || !closeButtonRef.current) return;
+
+      const dialog = closeButtonRef.current.closest('[role="dialog"]');
+      if (!dialog) return;
+
+      const focusable = dialog.querySelectorAll(
+        'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
 
-    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
+      window.clearTimeout(focusTimer);
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKeyDown);
+      previouslyFocusedRef.current?.focus?.();
     };
   }, [isOpen, onClose]);
 
@@ -176,6 +216,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             className="absolute inset-0 bg-primair/50 backdrop-blur-sm"
             onClick={onClose}
             aria-label={t.gesprekskaart.sluit}
+            tabIndex={-1}
           />
 
           <motion.div
@@ -186,8 +227,9 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             <div className="relative h-48 overflow-hidden" style={{ backgroundColor: card.kleurLicht }}>
-              <CardMedia card={card} />
+              <CardMedia card={card} priority />
               <button
+                ref={closeButtonRef}
                 type="button"
                 onClick={onClose}
                 className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-primair shadow-sm transition hover:bg-white"

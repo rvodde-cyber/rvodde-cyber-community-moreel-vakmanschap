@@ -105,12 +105,20 @@ export default function StapKaart({ stap, compact = false, isActive = false, onS
               );
             }
 
+            if (isComingSoon(tool)) {
+              return (
+                <span key={tool} className={pillClass} style={pillStyle}>
+                  {tool}
+                </span>
+              );
+            }
+
             return (
               <Link
                 key={tool}
                 to={bibliotheekHref}
                 onClick={(event) => event.stopPropagation()}
-                className={`${pillClass} ${isComingSoon(tool) ? "" : "cursor-pointer transition-opacity hover:opacity-80"}`}
+                className={`${pillClass} cursor-pointer transition-opacity hover:opacity-80`}
                 style={pillStyle}
               >
                 {tool}
@@ -126,7 +134,10 @@ export default function StapKaart({ stap, compact = false, isActive = false, onS
           className="mt-8 inline-flex text-sm font-semibold transition hover:opacity-80"
           style={{ color: stap.kleur }}
         >
-          {taal === "nl" ? "Bekijk materialen in de bibliotheek →" : "View materials in the library →"}
+          {t.stapKaart?.bibliotheekCta ??
+            (taal === "nl"
+              ? "Bekijk materialen in de bibliotheek →"
+              : "View materials in the library →")}
         </Link>
       )}
     </motion.article>

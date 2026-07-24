@@ -21,7 +21,12 @@ export default function WorkshopLogin({ mode = "workshop" }) {
   const [voorproefBeschikbaar, setVoorproefBeschikbaar] = useState(false);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const redirect = searchParams.get("redirect") || "/workshop/apps";
+  const rawRedirect = searchParams.get("redirect") || "/workshop/apps";
+  // Alleen interne workshop-/besloten-paden toestaan (geen open redirect).
+  const redirect =
+    rawRedirect.startsWith("/workshop/") || rawRedirect.startsWith("/besloten")
+      ? rawRedirect
+      : "/workshop/apps";
 
   useEffect(() => {
     fetch("/api/workshop/session")

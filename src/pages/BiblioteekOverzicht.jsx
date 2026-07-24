@@ -178,6 +178,8 @@ export default function BiblioteekOverzicht() {
                 <img
                   src={`/images/bibliotheek/stap-${getStapImageSlug(stap)}.jpg`}
                   alt={stap.stapNaam}
+                  loading="lazy"
+                  decoding="async"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   onError={(event) => handleImageError(event, stap.kleur)}
                 />
