@@ -20,7 +20,9 @@
     "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py",
     "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py",
     "cards:export-onderwijs-docx": "python scripts/export-onderwijs-docx.py",
-    "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py"
+    "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py",
+    "woordenboek:import": "python scripts/import-moreel-woordenboek.py",
+    "woordenboek:gen-werkvormen": "python scripts/gen-werkblad-woordenboek-werkvormen-docx.py"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

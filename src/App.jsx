@@ -27,6 +27,7 @@ import ModelPagina from "./pages/ModelPagina";
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
+import WoordenboekPagina from "./pages/WoordenboekPagina";
 import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
 import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
@@ -317,6 +318,10 @@ function AppRoutes() {
           <Route path="/gesprekskaarten" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
 
           <Route path="/conversation-cards" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
+
+          <Route path="/woordenboek" element={<PageRoute><WoordenboekPagina /></PageRoute>} />
+
+          <Route path="/dictionary" element={<PageRoute><WoordenboekPagina /></PageRoute>} />
 
           <Route path="/bibliotheek" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
 
