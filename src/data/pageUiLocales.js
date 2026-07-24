@@ -55,6 +55,9 @@ const welkomSv = {
   ],
   cta: "Gå med i communityn",
   ctaSecundair: "Se modellen",
+  richtlijnenVoor: "Working together in the community? Read the ",
+  richtlijnenLink: "community guidelines",
+  richtlijnenNa: ".",
 };
 
 const welkomCs = {
@@ -82,6 +85,9 @@ const welkomCs = {
   ],
   cta: "Připojte se ke komunitě",
   ctaSecundair: "Zobrazit model",
+  richtlijnenVoor: "Working together in the community? Read the ",
+  richtlijnenLink: "community guidelines",
+  richtlijnenNa: ".",
 };
 
 const welkomDa = {
@@ -109,6 +115,9 @@ const welkomDa = {
   ],
   cta: "Bliv en del af fællesskabet",
   ctaSecundair: "Se modellen",
+  richtlijnenVoor: "Working together in the community? Read the ",
+  richtlijnenLink: "community guidelines",
+  richtlijnenNa: ".",
 };
 
 const bibliotheekSv = {

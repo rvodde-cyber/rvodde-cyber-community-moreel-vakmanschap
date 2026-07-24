@@ -8,6 +8,7 @@ export default function ConversationCardSection({
   kleur,
   kleurLicht,
   titelKey,
+  titel,
   kaarten: kaartenOverride,
   sectionId = `gesprekskaarten-stap-${stapNummer}`,
   downloadLinks = null,
@@ -17,6 +18,7 @@ export default function ConversationCardSection({
   const stapData = t.bibliotheek[`stap${stapNummer}`];
   const kaarten = kaartenOverride ?? stapData?.kaarten ?? [];
   const [openCardId, setOpenCardId] = useState(null);
+  const sectionTitle = titel ?? stapData?.[titelKey];
 
   const enrichedKaarten = kaarten.map((kaart) => {
     const step = kaart.stap ?? stapNummer;
@@ -42,7 +44,7 @@ export default function ConversationCardSection({
       >
         <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <h3 className="font-display text-2xl font-semibold text-primair md:text-3xl">
-            {stapData?.[titelKey]}
+            {sectionTitle}
           </h3>
           {downloadLinks && (
             <a

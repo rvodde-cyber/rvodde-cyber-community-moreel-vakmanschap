@@ -67,8 +67,8 @@ export const gesprekskaartUiLocales = {
     stapLabel: "Steg",
     instructie: "Diskutera denna fråga tillsammans. Det finns inget rätt svar — bara ett äkta möte.",
     stapVerbinding: "Detta kort hör till steg {nummer} — {naam}: {kernvraag}",
-    pdfHeader: "Community Moreel Vakmanschap",
-    pdfFooter: "© Fontys Hogescholen — Lectoraat Ethisch Werken",
+    pdfHeader: "Community Moral Craftsmanship",
+    pdfFooter: "© Fontys University of Applied Sciences — Research Group on Ethical Practice",
   },
   cs: {
     bekijk: "Zobrazit kartu",
@@ -94,8 +94,8 @@ export const gesprekskaartUiLocales = {
     stapLabel: "Krok",
     instructie: "Projednejte tuto otázku společně. Neexistuje správná odpověď — jen skutečné setkání.",
     stapVerbinding: "Tato karta patří ke kroku {nummer} — {naam}: {kernvraag}",
-    pdfHeader: "Community Moreel Vakmanschap",
-    pdfFooter: "© Fontys Hogescholen — Lectoraat Ethisch Werken",
+    pdfHeader: "Community Moral Craftsmanship",
+    pdfFooter: "© Fontys University of Applied Sciences — Research Group on Ethical Practice",
   },
   da: {
     bekijk: "Se kort",
@@ -121,7 +121,7 @@ export const gesprekskaartUiLocales = {
     stapLabel: "Trin",
     instructie: "Drøft dette spørgsmål sammen. Der er ikke ét rigtigt svar — kun et ægte møde.",
     stapVerbinding: "Dette kort hører til trin {nummer} — {naam}: {kernvraag}",
-    pdfHeader: "Community Moreel Vakmanschap",
-    pdfFooter: "© Fontys Hogescholen — Lectoraat Ethisch Werken",
+    pdfHeader: "Community Moral Craftsmanship",
+    pdfFooter: "© Fontys University of Applied Sciences — Research Group on Ethical Practice",
   },
 };

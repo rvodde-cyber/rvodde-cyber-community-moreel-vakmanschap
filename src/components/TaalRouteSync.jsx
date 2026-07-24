@@ -10,6 +10,8 @@ const routePairs = [
   ["/gesprekskaarten", "/conversation-cards"],
   ["/bibliotheek", "/library"],
   ["/aanmelden", "/join"],
+  ["/privacy", "/privacy"],
+  ["/communityrichtlijnen", "/community-guidelines"],
 ];
 
 const stapSlugPairs = [

@@ -431,8 +431,8 @@ export default function GespreksKaartenPagina() {
           }}
         >
           {copy.preview.subtitel}{' '}
-          <em style={{ color: '#534ab7' }}>{copy.preview.vraag1}</em>{' '}
-          {taal === 'nl' ? 'en' : 'and'}{' '}
+          <em style={{ color: '#534ab7' }}>{copy.preview.vraag1}</em>
+          {' · '}
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
         </motion.p>
 
@@ -448,7 +448,7 @@ export default function GespreksKaartenPagina() {
           stapNummer={4}
           kleur={stap4.kleur}
           kleurLicht={stap4.kleurLicht}
-          titelKey="gesprekskaarten_titel"
+          titel={copy.preview.titel}
           kaarten={displayCards}
           downloadLinks={teaserDownload}
         />

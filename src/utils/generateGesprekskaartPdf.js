@@ -124,12 +124,13 @@ export function downloadGesprekskaartPdf(card, t, taal = "nl") {
 
   if (card.afbeelding) {
     try {
-      doc.addImage(card.afbeelding, "JPEG", margin, y, contentWidth, imgH);
+      const format = imageFormatFromSrc(card.afbeelding);
+      doc.addImage(card.afbeelding, format, margin, y, contentWidth, imgH);
     } catch {
-      drawImagePlaceholder(doc, margin, y, contentWidth, imgH);
+      drawImagePlaceholder(doc, margin, y, contentWidth, imgH, gk.imagePlaceholder);
     }
   } else {
-    drawImagePlaceholder(doc, margin, y, contentWidth, imgH);
+    drawImagePlaceholder(doc, margin, y, contentWidth, imgH, gk.imagePlaceholder);
   }
   y += imgH + 6;
 
@@ -144,7 +145,15 @@ export function downloadGesprekskaartPdf(card, t, taal = "nl") {
   doc.save(filename);
 }
 
-function drawImagePlaceholder(doc, x, y, w, h) {
+function imageFormatFromSrc(src) {
+  const path = String(src).split("?")[0].toLowerCase();
+  if (path.endsWith(".png")) return "PNG";
+  if (path.endsWith(".webp")) return "WEBP";
+  if (path.endsWith(".gif")) return "GIF";
+  return "JPEG";
+}
+
+function drawImagePlaceholder(doc, x, y, w, h, label = "Image") {
   doc.setDrawColor(216, 211, 201);
   doc.setLineWidth(0.5);
   doc.setFillColor(248, 248, 246);
@@ -152,5 +161,5 @@ function drawImagePlaceholder(doc, x, y, w, h) {
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
   doc.setTextColor(130, 128, 122);
-  doc.text("Afbeelding", x + w / 2, y + h / 2, { align: "center" });
+  doc.text(label, x + w / 2, y + h / 2, { align: "center" });
 }

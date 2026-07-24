@@ -66,15 +66,26 @@ export const vertalingen = {
       emailSubject: 'Aanmelding Community Moreel Vakmanschap',
       emailVraag: 'Waar werk jij aan in ethiekonderwijs?',
       emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Niet ingevuld'
+      nietIngevuld: 'Niet ingevuld',
+      privacyVoor: 'Door je aan te melden ga je akkoord met onze ',
+      privacyLink: 'privacyverklaring',
+      privacyNa: '.',
+      fallbackTitel: 'Bijna klaar — open je mailprogramma',
+      fallbackTekst: 'Opent je mailprogramma niet? Kopieer je aanmelding en stuur die handmatig naar het lectoraat.',
+      fallbackKopieer: 'Kopieer aanmelding',
+      fallbackGekopieerd: 'Gekopieerd',
+      fallbackOpnieuw: 'Formulier opnieuw',
     },
     footer: {
       kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
       lectoraat: 'Lectoraat Ethisch Werken — Fontys Hogescholen',
-      contact: 'r.vodde@fontys.nl'
+      contact: 'r.vodde@fontys.nl',
+      privacy: 'Privacyverklaring',
+      communityrichtlijnen: 'Communityrichtlijnen',
     },
     stapKaart: {
-      tools: 'Tools'
+      tools: 'Tools',
+      bibliotheekCta: 'Bekijk materialen in de bibliotheek →',
     },
     worksheets_supertitle: 'STAP 1 — ZIEN',
     worksheets_title: 'Werkbladen — Gnōthi seauton · Ken uzelf',
@@ -298,21 +309,32 @@ export const vertalingen = {
       emailSubject: 'Registration Community Moral Craftsmanship',
       emailVraag: 'What are you working on in ethics education?',
       emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Not provided'
+      nietIngevuld: 'Not provided',
+      privacyVoor: 'By registering you agree to our ',
+      privacyLink: 'privacy statement',
+      privacyNa: '.',
+      fallbackTitel: 'Almost done — open your mail app',
+      fallbackTekst: 'If your mail app did not open, copy your registration and send it manually to the research group.',
+      fallbackKopieer: 'Copy registration',
+      fallbackGekopieerd: 'Copied',
+      fallbackOpnieuw: 'Edit form again',
     },
     footer: {
       kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
       lectoraat: 'Research Group on Ethical Practice — Fontys University of Applied Sciences',
-      contact: 'r.vodde@fontys.nl'
+      contact: 'r.vodde@fontys.nl',
+      privacy: 'Privacy statement',
+      communityrichtlijnen: 'Community guidelines',
     },
     stapKaart: {
-      tools: 'Tools'
+      tools: 'Tools',
+      bibliotheekCta: 'View materials in the library →',
     },
     worksheets_supertitle: 'STEP 1 — SEEING',
     worksheets_title: 'Worksheets — Gnōthi seauton · Know Yourself',
     worksheets_subtitle: 'Eleven worksheets for self-inquiry and professional identity',
     worksheets_download: 'Download worksheet (.docx)',
-    worksheets_download_nl: '🇳🇱 Download werkblad (.docx)',
+    worksheets_download_nl: '🇳🇱 Download worksheet (.docx)',
     worksheets_download_en: '🇬🇧 Download worksheet (.docx)',
     worksheets_badge: 'Recommended',
     worksheets_wegen_supertitle: 'STEP 3 — WEIGHING',
@@ -366,8 +388,8 @@ export const vertalingen = {
       stapLabel: 'Step',
       instructie: 'Discuss this question together. There is no right answer — only a real encounter.',
       stapVerbinding: 'This card belongs to step {nummer} — {naam}: {kernvraag}',
-      pdfHeader: 'Community Moreel Vakmanschap',
-      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken'
+      pdfHeader: 'Community Moral Craftsmanship',
+      pdfFooter: '© Fontys University of Applied Sciences — Research Group on Ethical Practice'
     },
     bibliotheek: {
       stap1: {
