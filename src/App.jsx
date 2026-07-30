@@ -31,6 +31,7 @@ import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
 import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
 import { isWorkshopHubEnabledClient } from "./config/workshopHub";
+import RadVanMoreelFortuin from "./pages/RadVanMoreelFortuin";
 
 
 
@@ -234,7 +235,10 @@ function AppRoutes() {
 
   const isWorkshop =
 
-    location.pathname.startsWith("/workshop") || location.pathname.startsWith("/besloten");
+    location.pathname.startsWith("/workshop") ||
+    location.pathname.startsWith("/besloten") ||
+    location.pathname.startsWith("/rad") ||
+    location.pathname.startsWith("/wheel");
 
 
 
@@ -329,6 +333,9 @@ function AppRoutes() {
           <Route path="/aanmelden" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
 
           <Route path="/join" element={<PageRoute><AanmeldenPagina /></PageRoute>} />
+
+          <Route path="/rad" element={<RadVanMoreelFortuin />} />
+          <Route path="/wheel" element={<RadVanMoreelFortuin />} />
 
         </Routes>
 

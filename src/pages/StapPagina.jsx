@@ -350,6 +350,7 @@ export default function StapPagina() {
                 borderTop: `3px solid ${mat.binnenkort ? "var(--rand, #d8d3c9)" : stapData.kleur}`,
                 padding: "1.25rem",
                 opacity: mat.binnenkort ? 0.65 : 1,
+                cursor: mat.href ? "pointer" : "default",
                 display: "flex",
                 flexDirection: "column",
                 gap: "0.75rem",
@@ -388,7 +389,7 @@ export default function StapPagina() {
                   fontSize: "1.1rem",
                   fontWeight: 600,
                   margin: 0,
-                  color: mat.binnenkort ? "var(--tekst-secundair)" : "var(--tekst-primair)",
+                  color: (mat.binnenkort && !mat.href) ? "var(--tekst-secundair)" : "var(--tekst-primair)",
                 }}
               >
                 {mat.titel}
@@ -426,7 +427,31 @@ export default function StapPagina() {
                 ))}
               </div>
 
-              {mat.binnenkort ? (
+              {mat.href ? (
+                <a
+                  href={mat.href}
+                  style={{
+                    marginTop: "auto",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
+                    fontSize: "0.8rem",
+                    fontFamily: "DM Sans, sans-serif",
+                    fontWeight: 600,
+                    color: "#fff",
+                    backgroundColor: stapData.kleur,
+                    border: "none",
+                    borderRadius: "8px",
+                    padding: "0.45rem 1rem",
+                    textDecoration: "none",
+                    transition: "opacity 0.15s",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+                >
+                  Speel nu →
+                </a>
+              ) : mat.binnenkort ? (
                 <span
                   style={{
                     fontSize: "0.8rem",

@@ -172,7 +172,7 @@ export const bibliotheekData = {
           bestand_nl: null,
           bestand_en: null,
           map: 'voelen',
-          binnenkort: true,
+          href: '/rad',
         },
         {
           id: 'MV_14', titel: 'Morele verbeelding',
@@ -385,7 +385,7 @@ export const bibliotheekData = {
       stap: 2, stapNaam: 'Feeling', kleur: '#854f0b',
       intro: 'Moral craftsmanship requires knowing your own moral sources. What moves you? Where do you feel discomfort? The tools for Feeling help you discover and trust your inner moral compass.',
       materialen: [
-        { id: 'RAD_01', titel: 'Wheel of Moral Fortune', themas: ['Moral sources', 'Inner compass', 'Influence'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'voelen', binnenkort: true },
+        { id: 'RAD_01', titel: 'Wheel of Moral Fortune', themas: ['Moral sources', 'Inner compass', 'Influence'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'voelen', href: '/wheel' },
         { id: 'MV_14', titel: 'Moral Imagination', themas: ['Empathy', 'Perspective-taking', 'Moral imagination'], niveau: 'concept', bestand_nl: 'MV_14_Morele_Verbeelding_NL.docx', bestand_en: 'MV_14_Moral_Imagination_EN.docx', map: 'voelen', bron: materiaalBron.MV_14 },
       ],
     },
