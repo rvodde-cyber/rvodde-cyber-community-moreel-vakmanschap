@@ -24,6 +24,8 @@ import GespreksKaartenPagina from "./pages/GespreksKaartenPagina";
 
 import ModelPagina from "./pages/ModelPagina";
 
+import RadPagina from "./rad/RadPagina";
+
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
@@ -313,6 +315,10 @@ function AppRoutes() {
           <Route path="/aanbod" element={<PageRoute><AanbodPagina /></PageRoute>} />
 
           <Route path="/what-we-offer" element={<PageRoute><AanbodPagina /></PageRoute>} />
+
+          <Route path="/rad" element={<PageRoute><RadPagina /></PageRoute>} />
+
+          <Route path="/wheel" element={<PageRoute><RadPagina /></PageRoute>} />
 
           <Route path="/gesprekskaarten" element={<PageRoute><GespreksKaartenPagina /></PageRoute>} />
 
