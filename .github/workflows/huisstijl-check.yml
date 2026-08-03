@@ -1,0 +1,48 @@
+name: Huisstijl-consistentiecheck
+
+# Rapporteert bevindingen — wijzigt niets.
+# Drie controlegebieden:
+#   1. MAPS / Lakmoesproef-scheiding
+#   2. Bordeaux badges (kleurcanon stap 3 = #993556)
+#   3. ETZ-uniformen (wit + blauwe accenten, besloten, gescheiden)
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "src/data/**"
+      - "src/components/ModelWheel.jsx"
+      - "src/pages/workshop/WorkshopHub.jsx"
+      - "src/index.css"
+      - "moralcraftsmanship-platform/hub-apps.json"
+      - "public/data/workshop/hub-apps.json"
+      - "scripts/check-huisstijl.mjs"
+  pull_request:
+    paths:
+      - "src/data/**"
+      - "src/components/ModelWheel.jsx"
+      - "src/pages/workshop/WorkshopHub.jsx"
+      - "src/index.css"
+      - "moralcraftsmanship-platform/hub-apps.json"
+      - "public/data/workshop/hub-apps.json"
+      - "scripts/check-huisstijl.mjs"
+  workflow_dispatch: # handmatig starten via GitHub UI of API
+
+jobs:
+  huisstijl:
+    name: Huisstijl-consistentiecheck
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js instellen
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Huisstijl-checks uitvoeren
+        run: node scripts/check-huisstijl.mjs
