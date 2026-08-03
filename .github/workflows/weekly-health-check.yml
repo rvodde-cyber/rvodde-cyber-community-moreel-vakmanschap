@@ -1,0 +1,172 @@
+name: Wekelijkse Health-Check
+
+# Rapporteert alleen — wijzigt geen code, maakt geen commits.
+#
+# Vier controlegebieden:
+#   1. Liveness         — HTTP-statuscheck op alle live Vercel-URL's
+#   2. Vercel-deploys   — laatste GitHub-deployment per gekoppeld repo
+#   3. Afhankelijkheden — npm audit (alleen high + critical)
+#   4. Moral Maps       — Supabase keep-alive workflow ≤ 4 dagen geleden
+#
+# Output: comment op vaste GitHub-issue "🩺 Weekly Health Check"
+#         (issue wordt aangemaakt als het niet bestaat)
+#
+# Secrets die je kunt instellen in Cursor Dashboard → Cloud Agents → Secrets:
+#   GH_ORG_PAT         — PAT met actions:read + deployments:read voor cross-repo checks
+#                        (optioneel; zonder PAT degradeert de check gracefully)
+#   SLACK_WEBHOOK_URL  — Incoming Webhook URL voor Slack-notificatie
+#                        (optioneel; sla rapport over als niet ingesteld)
+
+on:
+  schedule:
+    # Elke maandag 07:00 UTC = 08:00 CET (wintertijd) / 09:00 CEST (zomertijd)
+    # Pas aan naar "0 6 * * 1" voor zomertijd als je altijd 08:00 lokaal wilt
+    - cron: "0 7 * * 1"
+
+  workflow_dispatch:
+    inputs:
+      stale_deploy_days:
+        description: "Drempel in dagen voor 'stale' deploy (default: 30)"
+        required: false
+        default: "30"
+      debug:
+        description: "Zet op 'true' voor uitgebreide logging"
+        required: false
+        default: "false"
+
+jobs:
+  health-check:
+    name: Health-check uitvoeren
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write      # voor het aanmaken/updaten van het health-check-issue
+
+    env:
+      GITHUB_TOKEN:        ${{ secrets.GITHUB_TOKEN }}
+      GH_ORG_PAT:          ${{ secrets.GH_ORG_PAT }}
+      STALE_DEPLOY_DAYS:   ${{ github.event.inputs.stale_deploy_days || '30' }}
+      HEALTH_REPORT_FILE:  /tmp/health-report.md
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js instellen
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Afhankelijkheden installeren (voor npm audit)
+        run: npm ci
+
+      - name: Health-check uitvoeren
+        id: health
+        run: node scripts/health-check.mjs
+
+      - name: Rapport lezen
+        id: report
+        run: |
+          BODY=$(cat /tmp/health-report.md)
+          # Gebruik een delimiter om multiline-output veilig door te geven
+          {
+            echo "body<<HEALTHREPORTEOF"
+            cat /tmp/health-report.md
+            echo "HEALTHREPORTEOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Health-check label aanmaken (indien nodig)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "health-check" \
+            --repo "$GITHUB_REPOSITORY" \
+            --description "Wekelijkse health-check rapporten" \
+            --color "0075ca" 2>/dev/null || true
+
+      - name: Health-check issue opzoeken of aanmaken
+        id: issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ISSUE_NUMBER=$(gh issue list \
+            --repo "$GITHUB_REPOSITORY" \
+            --label "health-check" \
+            --state open \
+            --json number \
+            --jq '.[0].number' 2>/dev/null || echo "")
+
+          if [ -z "$ISSUE_NUMBER" ]; then
+            echo "Health-check issue niet gevonden — aanmaken..."
+
+            cat > /tmp/issue-body.md <<'ISSUEBODY'
+Dit is het vaste issue voor de **wekelijkse health-check** van het Moreel Vakmanschap-platform.
+
+Elke maandag voegt de geautomatiseerde check een nieuw rapport toe als comment.
+
+**Controlegebieden:**
+- Liveness (HTTP-statuscheck op alle live Vercel-URL's)
+- Vercel-deploys (laatste deploy per GitHub-repo)
+- npm audit (high + critical kwetsbaarheden)
+- Moral Maps Supabase keep-alive (workflow ≤ 4 dagen geleden)
+
+_Dit issue is bewust open gehouden als log. Sluit het niet._
+ISSUEBODY
+
+            ISSUE_NUMBER=$(gh issue create \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "🩺 Weekly Health Check" \
+              --label "health-check" \
+              --body-file /tmp/issue-body.md \
+              --json number \
+              --jq '.number')
+            echo "Aangemaakt: issue #$ISSUE_NUMBER"
+          else
+            echo "Bestaand issue gevonden: #$ISSUE_NUMBER"
+          fi
+
+          echo "number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+
+      - name: Rapport als comment posten
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment "${{ steps.issue.outputs.number }}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body-file /tmp/health-report.md
+
+      - name: Slack-notificatie sturen (optioneel)
+        if: ${{ env.SLACK_WEBHOOK_URL != '' }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          # Bepaal kleur en emotie op basis van rapport-inhoud
+          if grep -q "🔴" /tmp/health-report.md; then
+            COLOR="danger"
+            EMOJI="🔴"
+            STATUS="Kritieke bevindingen"
+          elif grep -q "⚠️" /tmp/health-report.md; then
+            COLOR="warning"
+            EMOJI="⚠️"
+            STATUS="Aandacht nodig"
+          else
+            COLOR="good"
+            EMOJI="✅"
+            STATUS="Alles in orde"
+          fi
+
+          ISSUE_URL="https://github.com/$GITHUB_REPOSITORY/issues/${{ steps.issue.outputs.number }}"
+          DATE=$(date '+%d %b %Y')
+
+          curl -s -o /dev/null -X POST "$SLACK_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"attachments\": [{
+                \"color\": \"${COLOR}\",
+                \"title\": \"${EMOJI} Health-check ${DATE} — ${STATUS}\",
+                \"title_link\": \"${ISSUE_URL}\",
+                \"text\": \"Bekijk het volledige rapport in het GitHub-issue.\",
+                \"footer\": \"Moreel Vakmanschap Health-check\"
+              }]
+            }"

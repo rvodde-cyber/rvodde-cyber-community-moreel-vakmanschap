@@ -21,7 +21,8 @@
     "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py",
     "cards:export-onderwijs-docx": "python scripts/export-onderwijs-docx.py",
     "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py",
-    "huisstijl:check": "node scripts/check-huisstijl.mjs"
+    "huisstijl:check": "node scripts/check-huisstijl.mjs",
+    "health:check": "node scripts/health-check.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",
