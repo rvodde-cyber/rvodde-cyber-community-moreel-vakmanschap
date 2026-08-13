@@ -73,7 +73,9 @@ export default function Result({
           <Clover perLeaf={result.perLeaf} className="max-w-[30rem]" />
         </div>
 
-        <p className="mt-4 text-center text-xs text-ink-muted">{resultCopy.legend}</p>
+        <p className="mt-4 text-center text-xs text-ink-muted">
+          {resultCopy.legend} {resultCopy.tooltipHint}
+        </p>
 
         <div className="mt-8 border-t border-hairline pt-7">
           <h1 className="text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-3xl">

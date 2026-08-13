@@ -11,7 +11,6 @@ import {
 } from "../lib/leafShape";
 import { vitality } from "../lib/scoring";
 import { withAlpha } from "../lib/colors";
-import { result as resultCopy } from "../config/copy";
 
 /**
  * Het levende klavertje: vier bladeren die vanuit een neutrale stand naar hun
@@ -101,10 +100,6 @@ export default function Clover({ perLeaf, animate = true, interactive = true, cl
           <p className="mt-1 text-sm font-semibold text-ink">{activeLeaf.label}</p>
           <p className="mt-1 text-xs leading-relaxed text-ink-soft">{activeLeaf.note}</p>
         </div>
-      ) : null}
-
-      {interactive ? (
-        <p className="mt-2 text-center text-xs text-ink-muted">{resultCopy.tooltipHint}</p>
       ) : null}
     </div>
   );
