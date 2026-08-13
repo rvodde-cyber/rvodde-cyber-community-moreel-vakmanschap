@@ -26,7 +26,8 @@ export default function App() {
   const [view, setView] = useState(VIEWS.landing);
   const [companyName, setCompanyName] = useState("");
   const [answers, setAnswers] = useState({});
-  const [teamAnswerSets, setTeamAnswerSets] = useState([]);
+  const [team, setTeam] = useState({ answerSets: [], prefix: "" });
+  const teamAnswerSets = team.answerSets;
 
   const complete = statements.every((statement) => typeof answers[statement.id] === "number");
   const result = useMemo(() => (complete ? buildResult(answers) : null), [answers, complete]);
@@ -39,9 +40,13 @@ export default function App() {
     [teamAnswerSets]
   );
 
+  // Wie alleen codes komt verzamelen vult zelf geen bedrijfsnaam in; dan dient
+  // het voorvoegsel uit de codes als label op de team-PDF.
+  const teamLabel = companyName.trim() || team.prefix;
+
   const restart = () => {
     setAnswers({});
-    setTeamAnswerSets([]);
+    setTeam({ answerSets: [], prefix: "" });
     setView(VIEWS.landing);
   };
 
@@ -87,8 +92,8 @@ export default function App() {
           {view === VIEWS.collect ? (
             <Collector
               onBack={() => setView(complete ? VIEWS.result : VIEWS.landing)}
-              onSubmit={(answerSets) => {
-                setTeamAnswerSets(answerSets);
+              onSubmit={(collected) => {
+                setTeam(collected);
                 setView(VIEWS.team);
               }}
             />
@@ -98,7 +103,7 @@ export default function App() {
             <Result
               result={teamResult}
               variant="team"
-              companyName={companyName}
+              companyName={teamLabel}
               participantCount={teamAnswerSets.length}
               onRestart={restart}
             />

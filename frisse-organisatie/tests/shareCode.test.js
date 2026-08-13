@@ -59,6 +59,24 @@ describe("deel-code", () => {
     expect(decodeShareCode(code).ok).toBe(true);
   });
 
+  it("gebruikt geen tekens die met elkaar te verwarren zijn", () => {
+    // Codes worden meestal gekopieerd, maar wie er een overtypt of voorleest
+    // mag niet struikelen over I/1, O/0 of L/1.
+    for (let seed = 1; seed <= 12; seed += 1) {
+      const body = encodeShareCode(sampleAnswers(seed), "").toUpperCase();
+      expect(body).not.toMatch(/[ILOU]/);
+    }
+  });
+
+  it("herstelt de klassieke overtypfouten", () => {
+    const answers = sampleAnswers(5);
+    const code = encodeShareCode(answers, "Acme");
+    const mistyped = code.replace(/1/g, "I").replace(/0/g, "O");
+    const decoded = decodeShareCode(mistyped);
+    expect(decoded.ok).toBe(true);
+    expect(decoded.answers).toEqual(answers);
+  });
+
   it("weigert een onvolledige scan", () => {
     const partial = { ...sampleAnswers() };
     delete partial[statements[7].id];

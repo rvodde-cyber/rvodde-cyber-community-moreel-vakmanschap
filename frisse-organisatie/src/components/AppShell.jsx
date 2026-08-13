@@ -16,7 +16,7 @@ export default function AppShell({ children }) {
       <main className="flex-1">{children}</main>
 
       <footer className="mt-14 text-center text-xs text-ink-muted">
-        <p>Geen inlog · geen antwoorden per persoon · geen rapportcijfer</p>
+        <p>Geen inlog · geen opslag · geen rapportcijfer</p>
       </footer>
     </div>
   );

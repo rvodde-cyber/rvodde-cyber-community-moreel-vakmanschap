@@ -98,7 +98,7 @@ export const collector = {
   intro:
     "Plak hieronder de ontvangen deel-codes, één per regel. De berekening gebeurt in uw eigen browser: er wordt niets verstuurd en niets opgeslagen.",
   label: "Deel-codes",
-  placeholder: "ACME-A7X2K9M4P1Z3\nACME-A3B8L2N6Q4R7",
+  placeholder: "ACME-A7X2K9M4P1Z3\nACME-A3B8H2N6Q4R7",
   countLabel: (valid, total) =>
     `${valid} van ${total} ${total === 1 ? "code" : "codes"} gelezen`,
   singleWarning:
@@ -137,8 +137,11 @@ export const conclusions = {
   },
   balancedStrong: {
     title: () => "Geen van de vier springt eruit",
+    // Bewust niet "dit gaat goed": deze uitkomst begint al bij een gemiddelde
+    // van 3,5, en dan kunnen alle vier de bladeren nog "vraagt aandacht" zijn.
+    // De verwijzing naar de toelichting per blad voorkomt dat verschil.
     body: () =>
-      "De vier bladeren staan er ongeveer even goed bij. Dat is een gunstig beeld — en tegelijk zelf ook een signaal: waar alles gemiddeld goed scoort, is het de moeite waard om te controleren of de scan door genoeg verschillende mensen is ingevuld.",
+      "De vier bladeren liggen dicht bij elkaar; geen enkel domein springt eruit. Dat kan zelf ook een signaal zijn. Kijk hieronder hoe elk blad er precies bij staat, en controleer of de scan door genoeg verschillende mensen is ingevuld.",
   },
   balancedLow: {
     title: () => "Meerdere domeinen vragen tegelijk aandacht",

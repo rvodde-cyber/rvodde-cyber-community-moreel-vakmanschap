@@ -12,17 +12,24 @@
 //        │    └───────────── versie
 //        └────────────────── leesbaar voorvoegsel (optioneel)
 //
-// De antwoorden worden per blok van tien als grondtal-5-getal gepakt en in
-// base36 geschreven. Dat houdt de code kort genoeg om via WhatsApp of mail door
-// te sturen zonder afbreekfouten.
+// De antwoorden worden per blok van tien als grondtal-5-getal gepakt en
+// geschreven in het alfabet van Crockford: base32 zonder I, L, O en U. Daarmee
+// vallen de klassieke leesfouten weg — een 1 kan niet met een I verward worden,
+// een 0 niet met een O. Codes worden normaal gesproken gekopieerd, maar iemand
+// die er een overtypt of voorleest loopt zo niet vast.
 
 import { MAX_ANSWER, MIN_ANSWER, statements } from "../config/statements";
 
+const ALPHABET = "0123456789ABCDEFGHJKMNPQRSTVWXYZ";
+const BASE = ALPHABET.length;
+/** Tekens die mensen door elkaar halen, teruggemapt op wat ze bedoelen. */
+const CONFUSABLE = { O: "0", I: "1", L: "1" };
+
 const VERSION = "A";
 const ANSWERS_PER_BLOCK = 10;
-const BLOCK_LENGTH = 5; // 5^10 past ruim in 5 base36-tekens
+const BLOCK_LENGTH = 5; // 5^10 past ruim in 5 base32-tekens
 const CHECKSUM_LENGTH = 2;
-const CHECKSUM_MODULO = 36 ** CHECKSUM_LENGTH;
+const CHECKSUM_MODULO = BASE ** CHECKSUM_LENGTH;
 const PREFIX_MAX_LENGTH = 12;
 
 const BLOCK_COUNT = Math.ceil(statements.length / ANSWERS_PER_BLOCK);
@@ -74,9 +81,11 @@ export function decodeShareCode(raw) {
   const cleaned = trimmed.replace(/\s+/g, "").toUpperCase();
   const split = cleaned.lastIndexOf("-");
   const prefix = split === -1 ? "" : cleaned.slice(0, split);
-  const body = split === -1 ? cleaned : cleaned.slice(split + 1);
+  const body = normalise(split === -1 ? cleaned : cleaned.slice(split + 1));
 
-  if (!/^[0-9A-Z]+$/.test(body)) return { ok: false, error: ShareCodeError.MALFORMED };
+  if ([...body].some((char) => !ALPHABET.includes(char))) {
+    return { ok: false, error: ShareCodeError.MALFORMED };
+  }
   if (body.length !== BODY_LENGTH) return { ok: false, error: ShareCodeError.WRONG_LENGTH };
   if (body[0] !== VERSION) return { ok: false, error: ShareCodeError.UNKNOWN_VERSION };
 
@@ -132,7 +141,7 @@ function encodeBlocks(values) {
     for (let i = block.length - 1; i >= 0; i -= 1) {
       packed = packed * 5 + block[i];
     }
-    out += packed.toString(36).toUpperCase().padStart(BLOCK_LENGTH, "0");
+    out += toBase32(packed, BLOCK_LENGTH);
   }
   return out;
 }
@@ -140,8 +149,8 @@ function encodeBlocks(values) {
 function decodeBlocks(payload) {
   const values = [];
   for (let start = 0; start < payload.length; start += BLOCK_LENGTH) {
-    let packed = parseInt(payload.slice(start, start + BLOCK_LENGTH), 36);
-    if (!Number.isFinite(packed)) return null;
+    let packed = fromBase32(payload.slice(start, start + BLOCK_LENGTH));
+    if (packed === null) return null;
     const remaining = statements.length - values.length;
     for (let i = 0; i < Math.min(ANSWERS_PER_BLOCK, remaining); i += 1) {
       values.push(packed % 5);
@@ -157,7 +166,31 @@ function decodeBlocks(payload) {
 /** Gewogen checksum: verwisselde tekens vallen daardoor ook op. */
 function checksumOf(values) {
   const sum = values.reduce((total, value, index) => total + value * (index + 1), 7);
-  return (sum % CHECKSUM_MODULO).toString(36).toUpperCase().padStart(CHECKSUM_LENGTH, "0");
+  return toBase32(sum % CHECKSUM_MODULO, CHECKSUM_LENGTH);
+}
+
+function toBase32(value, length) {
+  let out = "";
+  let rest = value;
+  for (let i = 0; i < length; i += 1) {
+    out = ALPHABET[rest % BASE] + out;
+    rest = Math.floor(rest / BASE);
+  }
+  return rest === 0 ? out : null;
+}
+
+function fromBase32(text) {
+  let value = 0;
+  for (const char of text) {
+    const digit = ALPHABET.indexOf(char);
+    if (digit === -1) return null;
+    value = value * BASE + digit;
+  }
+  return value;
+}
+
+function normalise(body) {
+  return [...body].map((char) => CONFUSABLE[char] ?? char).join("");
 }
 
 function isValidAnswer(value) {

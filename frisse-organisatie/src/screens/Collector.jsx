@@ -89,7 +89,14 @@ export default function Collector({ onBack, onSubmit }) {
           </button>
           <button
             type="button"
-            onClick={() => onSubmit(valid.map((entry) => entry.answers))}
+            onClick={() =>
+              onSubmit({
+                answerSets: valid.map((entry) => entry.answers),
+                // Het voorvoegsel uit de codes dient als bedrijfslabel wanneer
+                // de verzamelaar zelf geen naam heeft ingevuld.
+                prefix: mostCommon(valid.map((entry) => entry.prefix).filter(Boolean)),
+              })
+            }
             disabled={valid.length === 0}
             className="btn-primary"
           >
@@ -124,4 +131,10 @@ function Notices({ single, mixedPrefixes, duplicates }) {
 
 function truncate(value, max = 24) {
   return value.length > max ? `${value.slice(0, max)}…` : value;
+}
+
+function mostCommon(values) {
+  const tally = new Map();
+  for (const value of values) tally.set(value, (tally.get(value) ?? 0) + 1);
+  return [...tally.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "";
 }
