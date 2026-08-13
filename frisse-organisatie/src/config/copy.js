@@ -53,8 +53,10 @@ export const scan = {
 export const result = {
   eyebrow: "Uw klavertje",
   // Briefing §3: expliciete disclaimer bij het resultaat.
+  // Formulering bewust plaatsonafhankelijk: dezelfde zin staat op het scherm
+  // onder het klavertje en in de voettekst van de PDF.
   disclaimer:
-    "Dit is een indicatie op basis van twaalf stellingen, geen diagnose. Het beeld hieronder is een startpunt voor een gesprek — niet een oordeel over uw organisatie.",
+    "Dit is een indicatie op basis van twaalf stellingen, geen diagnose. Het beeld is een startpunt voor een gesprek — geen oordeel over uw organisatie.",
   legend: "Hoe slapper het blad, hoe meer aandacht dat domein nu vraagt.",
   tooltipHint: "Tik of beweeg over een blad voor de toelichting.",
   perLeafTitle: "Per blad",

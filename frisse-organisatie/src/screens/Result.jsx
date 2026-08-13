@@ -46,7 +46,7 @@ export default function Result({ result, sessionCode, onRestart }) {
         <p className="eyebrow">{resultCopy.eyebrow}</p>
 
         <div className="mt-6">
-          <Clover perLeaf={result.perLeaf} />
+          <Clover perLeaf={result.perLeaf} className="max-w-[30rem]" />
         </div>
 
         <p className="mt-4 text-center text-xs text-ink-muted">{resultCopy.legend}</p>

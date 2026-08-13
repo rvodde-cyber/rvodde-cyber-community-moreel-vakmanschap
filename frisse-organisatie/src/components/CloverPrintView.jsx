@@ -2,8 +2,11 @@ import { LEAF_ANGLES, averageVitality, leafPath, leafTransform, stemPath, tipPoi
 import { printLeafColor, withAlpha } from "../lib/colors";
 import { palette } from "../config/brand";
 
-// Ruimte om de klaver heen voor de bladnamen.
-const PRINT_VIEWBOX = "-78 -24 476 356";
+// Ruimte om de klaver heen voor de bladnamen. Het midden van de viewBox valt
+// samen met het hart van de klaver (x = 160), zodat het beeld gecentreerd blijft
+// en de langste bladnaam er nog naast past zonder af te snijden.
+const PRINT_VIEWBOX = "-110 -24 540 356";
+const PRINT_SIZE = { width: 1080, height: 712 };
 
 /**
  * De printvariant van het klavertje (briefing §8.3).
@@ -29,19 +32,19 @@ export default function CloverPrintView({ perLeaf, showLabels = true, svgRef }) 
       ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
       viewBox={PRINT_VIEWBOX}
-      width="952"
-      height="712"
+      width={PRINT_SIZE.width}
+      height={PRINT_SIZE.height}
       aria-hidden="true"
     >
       <defs>
         <linearGradient id="print-gloss" x1="0" y1="0" x2="0.4" y2="1">
-          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.55" />
-          <stop offset="60%" stopColor="#FFFFFF" stopOpacity="0.08" />
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.4" />
+          <stop offset="60%" stopColor="#FFFFFF" stopOpacity="0.06" />
           <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
         </linearGradient>
       </defs>
 
-      <rect x="-78" y="-24" width="476" height="356" fill="#FFFFFF" />
+      <rect x="-110" y="-24" width="540" height="356" fill="#FFFFFF" />
 
       <path
         d={stemPath(stemVitality)}
@@ -55,6 +58,15 @@ export default function CloverPrintView({ perLeaf, showLabels = true, svgRef }) 
         const fill = printLeafColor(leaf.color, index, leaf.vitality);
         return (
           <g key={leaf.id} transform={leafTransform(LEAF_ANGLES[index], leaf.vitality)}>
+            {/* Witte rand onder het blad: houdt overlappende bladeren van
+                elkaar te onderscheiden, ook in grijstinten. */}
+            <path
+              d={leafPath(leaf.vitality)}
+              fill="none"
+              stroke="#FFFFFF"
+              strokeWidth="6"
+              strokeLinejoin="round"
+            />
             <path
               d={leafPath(leaf.vitality)}
               fill={fill}
@@ -66,8 +78,8 @@ export default function CloverPrintView({ perLeaf, showLabels = true, svgRef }) 
             <path
               d="M 0 -4 C 2 -30 1 -52 0 -70"
               fill="none"
-              stroke={withAlpha("#1C1917", 0.3)}
-              strokeWidth="1.4"
+              stroke={withAlpha("#1C1917", 0.18)}
+              strokeWidth="1.2"
               strokeLinecap="round"
             />
           </g>
@@ -81,8 +93,8 @@ export default function CloverPrintView({ perLeaf, showLabels = true, svgRef }) 
             const angle = LEAF_ANGLES[index];
             const tip = tipPoint(angle, leaf.vitality);
             const toTheRight = Math.sin((angle * Math.PI) / 180) > 0;
-            const x = tip.x + (toTheRight ? 22 : -22);
-            const y = tip.y + (Math.abs(angle) > 90 ? 16 : -6);
+            const x = tip.x + (toTheRight ? 18 : -18);
+            const y = tip.y + (Math.abs(angle) > 90 ? 18 : -8);
             return (
               <text
                 key={leaf.id}

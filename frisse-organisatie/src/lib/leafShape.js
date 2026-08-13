@@ -13,8 +13,11 @@ export const CLOVER_CENTER = { x: 160, y: 140 };
 /** Positie van de vier bladeren rond het midden, met de klok mee vanaf linksboven. */
 export const LEAF_ANGLES = [-45, 45, 135, -135];
 
-/** Maximale hoek waarover een blad doorhangt bij volledig verwelkt (§8.1). */
-const MAX_DROOP = 23;
+// Maximale hoek waarover een blad doorhangt bij volledig verwelkt (§8.1).
+// Begrensd op 14°: de twee onderste bladeren zakken naar elkaar toe, en bij een
+// grotere hoek gaan ze elkaar overlappen tot het klavertje niet meer als vier
+// losse bladeren leest.
+const MAX_DROOP = 14;
 
 // Twee vormvarianten; alles ertussenin wordt geïnterpoleerd op vitaliteit.
 // Elk blad bestaat uit vier cubic-bezier-segmenten vanaf het hart van de klaver,
@@ -67,7 +70,7 @@ export function droopFor(angle, v) {
 
 /** Verwelkte bladeren trekken zich ook iets samen. */
 export function scaleFor(v) {
-  return lerp(0.88, 1, clamp(v, 0, 1));
+  return lerp(0.91, 1, clamp(v, 0, 1));
 }
 
 /**

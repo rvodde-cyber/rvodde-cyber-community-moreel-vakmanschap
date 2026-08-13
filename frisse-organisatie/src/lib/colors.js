@@ -5,7 +5,11 @@
 // hoe lager de vitaliteit, hoe minder verzadiging en hoe verder de tint richting
 // bruin schuift.
 
-const BROWN_HUE = 30;
+// De tint waar een blad naartoe verkleurt als het verwelkt: een warm grijsbruin.
+// Bewust mengen in RGB en niet de tint over de kleurencirkel draaien — bij die
+// laatste aanpak schuift indigo via violet en oogt een dorstig blad juist
+// kleuriger dan een gezond blad.
+const WITHERED = "#8A7360";
 
 /** @typedef {{h: number, s: number, l: number}} Hsl */
 
@@ -71,22 +75,26 @@ export function luminance(hex) {
  */
 export function leafPalette(baseHex, v) {
   const t = clamp(v, 0, 1);
-  const base = hexToHsl(baseHex);
+  // Bij t = 1 blijft de bladkleur volledig zichzelf; bij t = 0 is hij grotendeels
+  // opgegaan in het grijsbruin.
+  const base = mixHex(baseHex, WITHERED, (1 - t) * 0.82);
+  const { h, s, l } = hexToHsl(base);
 
-  // Verzadiging: bij volledig verwelkt houden we ~40% over (§8.1: ~60% eraf).
-  const s = base.s * (0.4 + 0.6 * t);
-  // Tint schuift richting bruin naarmate het blad verwelkt.
-  const h = lerpHue(base.h, BROWN_HUE, (1 - t) * 0.55);
-  // Verwelkte bladeren worden iets doffer en donkerder.
-  const l = base.l + (0.44 - base.l) * (1 - t) * 0.55;
-
-  const mid = { h, s, l };
   return {
-    highlight: hslToHex({ h, s: s * 0.7, l: Math.min(0.94, l + 0.26) }),
-    base: hslToHex({ ...mid, s }),
+    highlight: hslToHex({ h, s: s * 0.8, l: Math.min(0.9, l + 0.17) }),
+    base,
     shade: hslToHex({ h, s: s * 1.02, l: Math.max(0.16, l - 0.14) }),
     outline: hslToHex({ h, s: s * 0.9, l: Math.max(0.12, l - 0.24) }),
   };
+}
+
+/** Mengt twee kleuren in RGB. */
+export function mixHex(from, to, amount) {
+  const t = clamp(amount, 0, 1);
+  const a = hexToRgb(from);
+  const b = hexToRgb(to);
+  const channel = (x, y) => Math.round(lerp(x, y, t)).toString(16).padStart(2, "0");
+  return `#${channel(a.r, b.r)}${channel(a.g, b.g)}${channel(a.b, b.b)}`;
 }
 
 /**
@@ -99,13 +107,23 @@ export function leafPalette(baseHex, v) {
  * @param {number} v vitaliteit 0–1
  */
 export function printLeafColor(baseHex, index, v) {
-  const ladder = [0.42, 0.54, 0.66, 0.78];
+  // Vaste sporten in helderheid; de vier bladeren blijven daardoor ook in
+  // grijstinten uit elkaar te houden.
+  const ladder = [0.37, 0.5, 0.61, 0.72];
   const { base } = leafPalette(baseHex, v);
   const hsl = hexToHsl(base);
   const target = ladder[index % ladder.length];
-  // Verwelkte bladeren mogen ook op papier iets valer zijn, maar blijven binnen
-  // hun eigen sport van de ladder zodat de vier onderling verschillend blijven.
-  return hslToHex({ h: hsl.h, s: hsl.s, l: target + (1 - v) * 0.06 });
+  return hslToHex({
+    // Op papier is minder verzadiging prettiger, en het houdt de bladeren
+    // onderling in dezelfde toonzetting.
+    h: hsl.h,
+    // Verzadiging volgt de vitaliteit stevig, zodat een blad dat aandacht
+    // vraagt op papier nooit kleuriger oogt dan een blad dat er goed bij staat.
+    s: Math.min(hsl.s, 0.5) * (0.55 + 0.45 * clamp(v, 0, 1)),
+    // Verwelkte bladeren worden iets donkerder, niet lichter: anders verdwijnt
+    // juist het blad dat de aandacht moet trekken.
+    l: target - (1 - clamp(v, 0, 1)) * 0.05,
+  });
 }
 
 export function withAlpha(hex, alpha) {
@@ -119,12 +137,6 @@ export function lerp(a, b, t) {
 
 export function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
-}
-
-/** Interpoleert tinten via de kortste weg over de kleurencirkel. */
-function lerpHue(from, to, t) {
-  const diff = ((to - from + 540) % 360) - 180;
-  return (from + diff * t + 360) % 360;
 }
 
 function hueSegment(hue, c, x) {

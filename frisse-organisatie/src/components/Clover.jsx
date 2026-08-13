@@ -21,8 +21,9 @@ import { result as resultCopy } from "../config/copy";
  * @param {import("../lib/scoring").LeafResult[]} props.perLeaf
  * @param {boolean} [props.animate] onthullingsanimatie vanuit een neutrale stand
  * @param {boolean} [props.interactive] tooltips per blad
+ * @param {string} [props.className] breedte van het beeld
  */
-export default function Clover({ perLeaf, animate = true, interactive = true }) {
+export default function Clover({ perLeaf, animate = true, interactive = true, className = "max-w-[26rem]" }) {
   const [activeId, setActiveId] = useState(null);
 
   const revealed = useStaggeredReveal(
@@ -35,7 +36,6 @@ export default function Clover({ perLeaf, animate = true, interactive = true }) 
     }
   );
 
-  const anyHighlighted = perLeaf.some((leaf) => leaf.highlighted);
   const stemVitality = averageVitality(revealed.map((score) => vitality(score)));
   const activeLeaf = perLeaf.find((leaf) => leaf.id === activeId) ?? null;
   const activeIndex = perLeaf.findIndex((leaf) => leaf.id === activeId);
@@ -45,7 +45,7 @@ export default function Clover({ perLeaf, animate = true, interactive = true }) 
       : null;
 
   return (
-    <div className="relative mx-auto w-full max-w-[26rem]">
+    <div className={`relative mx-auto w-full ${className}`}>
       <svg
         viewBox={`0 0 ${CLOVER_VIEWBOX.width} ${CLOVER_VIEWBOX.height}`}
         className="w-full overflow-visible"
@@ -69,7 +69,10 @@ export default function Clover({ perLeaf, animate = true, interactive = true }) 
             angle={LEAF_ANGLES[index]}
             interactive={interactive}
             active={activeId === leaf.id}
-            dimmed={anyHighlighted && !leaf.highlighted}
+            // Alleen dimmen tijdens het bekijken van één blad. Het uitgelichte
+            // blad structureel benadrukken door de andere te vervagen zou de
+            // metafoor omdraaien: dan ogen juist de gezonde bladeren slap.
+            dimmed={activeId !== null && activeId !== leaf.id}
             onActivate={() => setActiveId(leaf.id)}
             onDeactivate={() => setActiveId((current) => (current === leaf.id ? null : current))}
           />

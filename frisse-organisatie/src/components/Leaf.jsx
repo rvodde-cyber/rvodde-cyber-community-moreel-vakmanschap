@@ -1,6 +1,6 @@
 import { useId } from "react";
 import { leafPalette, withAlpha } from "../lib/colors";
-import { HIGHLIGHT, LEAF_ANGLES, leafPath, leafTransform } from "../lib/leafShape";
+import { HIGHLIGHT, LEAF_ANGLES, droopFor, leafPath, leafTransform } from "../lib/leafShape";
 import { vitality } from "../lib/scoring";
 
 /**
@@ -82,7 +82,7 @@ export default function Leaf({
       <defs>
         <linearGradient id={gradientId} x1="0" y1="0" x2="0.35" y2="1">
           <stop offset="0%" stopColor={palette.highlight} />
-          <stop offset="55%" stopColor={palette.base} />
+          <stop offset="38%" stopColor={palette.base} />
           <stop offset="100%" stopColor={palette.shade} />
         </linearGradient>
         <radialGradient id={glossId} cx="50%" cy="50%" r="50%">
@@ -96,6 +96,9 @@ export default function Leaf({
           CSS-transform-origin ook de plaatsing verschuift. */}
       <g transform={leafTransform(angle, v)}>
         <g className="leaf__breathe">
+          {/* Witte rand onder het blad: houdt overlappende bladeren van elkaar
+              te onderscheiden zonder een harde contourlijn. */}
+          <path d={path} fill="none" stroke="#FFFFFF" strokeWidth="5" strokeLinejoin="round" opacity="0.75" />
           <path
             d={path}
             fill={`url(#${gradientId})`}
@@ -118,23 +121,27 @@ export default function Leaf({
             ry={HIGHLIGHT.ry}
             transform={`rotate(${HIGHLIGHT.rotate} ${HIGHLIGHT.cx} ${HIGHLIGHT.cy})`}
             fill={`url(#${glossId})`}
-            opacity={0.15 + 0.85 * v}
+            opacity={0.08 + 0.62 * v}
           />
-          {thirsty ? <Droplet color={palette.outline} /> : null}
+          {thirsty ? <Droplet color={palette.outline} rotation={-(angle + droopFor(angle, v))} /> : null}
         </g>
       </g>
     </g>
   );
 }
 
-/** Klein druppel-icoontje bij een dorstig blad; knippert zacht (§8.1). */
-function Droplet({ color }) {
+/**
+ * Klein druppel-icoontje bij een dorstig blad; knippert zacht (§8.1).
+ * Draait tegen de plaatsing in, zodat de druppel altijd rechtop staat en niet
+ * met het blad meekantelt.
+ */
+function Droplet({ color, rotation }) {
   return (
-    <g className="leaf-droplet" transform="translate(34 -84)" aria-hidden="true">
+    <g className="leaf-droplet" transform={`translate(0 -114) rotate(${rotation})`} aria-hidden="true">
       <path
-        d="M 0 -9 C 5 -3 8 1 8 4 A 8 8 0 0 1 -8 4 C -8 1 -5 -3 0 -9 Z"
-        fill={withAlpha(color, 0.28)}
-        stroke={withAlpha(color, 0.45)}
+        d="M 0 -8 C 4.5 -2.5 7 0.5 7 3.5 A 7 7 0 0 1 -7 3.5 C -7 0.5 -4.5 -2.5 0 -8 Z"
+        fill={withAlpha(color, 0.3)}
+        stroke={withAlpha(color, 0.5)}
         strokeWidth="1"
       />
     </g>

@@ -60,29 +60,151 @@ export async function generateSummaryPdf({ svgElement, result, sessionCode = "" 
   const doc = new jsPDF({ unit: "mm", format: "a4", compress: true });
   const clover = await svgToPngDataUrl(svgElement);
 
-  let y = drawHeader(doc, result);
+  const headerBottom = drawHeader(doc, result);
+  const footerTop = PAGE.height - 30;
 
-  // Klavertje — schaal op breedte, met een bovengrens zodat de tekst eronder past.
-  const imageWidth = Math.min(112, CONTENT_WIDTH);
-  const imageHeight = (clover.height / clover.width) * imageWidth;
+  // Eerst de tekst opmeten, dan pas het beeld schalen. Zo vult de pagina zich
+  // netjes en kan de tekst nooit over de voettekst heen lopen — ook niet bij de
+  // langere conclusievarianten of bij twee uitgelichte bladeren.
+  const blocks = buildBlocks(doc, result);
+  const textHeight = blocks.reduce((total, block) => total + block.spaceBefore + block.height, 0);
+
+  const aspect = clover.width / clover.height;
+  const available = footerTop - headerBottom - textHeight - IMAGE_GAP;
+  const imageHeight = Math.max(52, Math.min(available, MAX_IMAGE_HEIGHT, CONTENT_WIDTH / aspect));
+  const imageWidth = imageHeight * aspect;
+
   doc.addImage(
     clover.dataUrl,
     "PNG",
     (PAGE.width - imageWidth) / 2,
-    y,
+    headerBottom,
     imageWidth,
     imageHeight,
     undefined,
     "FAST"
   );
-  y += imageHeight + 6;
 
-  y = drawConclusion(doc, result, y);
-  y = drawLeaves(doc, result, y);
-  drawNextStep(doc, result, y);
+  let y = headerBottom + imageHeight + IMAGE_GAP;
+  for (const block of blocks) {
+    y += block.spaceBefore;
+    block.draw(y);
+    y += block.height;
+  }
+
   drawFooter(doc, sessionCode);
-
   doc.save(fileName(sessionCode));
+}
+
+const IMAGE_GAP = 8;
+const MAX_IMAGE_HEIGHT = 92;
+
+/**
+ * Bouwt de tekstblokken van de pagina met hun hoogte, zonder al te tekenen.
+ * @returns {{height: number, spaceBefore: number, draw: (y: number) => void}[]}
+ */
+function buildBlocks(doc, result) {
+  const blocks = [];
+  const push = (block) => blocks.push({ spaceBefore: 0, ...block });
+
+  push(heading(doc, pdfCopy.conclusionHeading, 0));
+  push(text(doc, result.conclusion.title, { font: "bold", size: 13.5, lineHeight: 6, color: INK }));
+  push(text(doc, result.conclusion.body, { size: 10, lineHeight: 4.7, color: INK_SOFT, spaceBefore: 2 }));
+
+  push(heading(doc, pdfCopy.leavesHeading, 7));
+  result.perLeaf.forEach((leaf, index) => {
+    push(leafBlock(doc, leaf, index));
+  });
+
+  push(heading(doc, pdfCopy.nextStepHeading, 7));
+  const highlighted = result.perLeaf.filter((leaf) => leaf.highlighted);
+  if (!highlighted.length) {
+    push(text(doc, ctaCopy.broadBody, { size: 10, lineHeight: 4.7, color: INK_SOFT }));
+  } else {
+    highlighted.forEach((leaf, index) => {
+      push(text(doc, leaf.instrument.name, {
+        font: "bold",
+        size: 10,
+        lineHeight: 4.7,
+        color: INK,
+        spaceBefore: index === 0 ? 0 : 3,
+      }));
+      push(text(doc, leaf.instrument.promise, { size: 10, lineHeight: 4.7, color: INK_SOFT, spaceBefore: 1 }));
+    });
+  }
+
+  return blocks;
+}
+
+function heading(doc, label, spaceBefore) {
+  return {
+    spaceBefore,
+    height: 5.6,
+    draw: (y) => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(7.8);
+      doc.setTextColor(...rgb(INK_MUTED));
+      doc.text(label.toUpperCase(), MARGIN, y, { charSpace: 0.35 });
+    },
+  };
+}
+
+function text(doc, content, { font = "normal", size, lineHeight, color, spaceBefore = 0, x = MARGIN, width = CONTENT_WIDTH }) {
+  doc.setFont("helvetica", font);
+  doc.setFontSize(size);
+  const lines = doc.splitTextToSize(content, width);
+  return {
+    spaceBefore,
+    height: lines.length * lineHeight,
+    draw: (y) => {
+      doc.setFont("helvetica", font);
+      doc.setFontSize(size);
+      doc.setTextColor(...rgb(color));
+      doc.text(lines, x, y);
+    },
+  };
+}
+
+/** Eén blad: gekleurde stip, naam, kwalitatieve duiding en toelichting. */
+function leafBlock(doc, leaf, index) {
+  const noteX = MARGIN + 6;
+  const noteWidth = CONTENT_WIDTH - 6;
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(9.6);
+  const noteLines = doc.splitTextToSize(leaf.note, noteWidth);
+
+  // Breedte van de naam meten in het lettertype waarin hij ook getekend wordt,
+  // anders schuift de kwalitatieve duiding eroverheen.
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(10.2);
+  const labelWidth = doc.getTextWidth(leaf.label);
+
+  return {
+    spaceBefore: index === 0 ? 0 : 3.6,
+    height: 4.6 + noteLines.length * 4.5,
+    draw: (y) => {
+      doc.setFillColor(...rgb(printLeafColor(leaf.color, index, leaf.vitality)));
+      doc.setDrawColor(...rgb(INK_MUTED));
+      doc.setLineWidth(0.2);
+      doc.circle(MARGIN + 1.7, y - 1.1, 1.7, "FD");
+
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10.2);
+      doc.setTextColor(...rgb(INK));
+      doc.text(leaf.label, noteX, y);
+
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(9.4);
+      doc.setTextColor(...rgb(INK_MUTED));
+      doc.text(`— ${leaf.qualitative}`, noteX + labelWidth + 2.2, y);
+
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9.6);
+      doc.setTextColor(...rgb(INK_SOFT));
+      doc.text(noteLines, noteX, y + 4.6);
+    },
+  };
 }
 
 function drawHeader(doc, result) {
@@ -128,75 +250,6 @@ function drawCloverMark(doc, cx, cy, result) {
   });
 }
 
-function drawConclusion(doc, result, startY) {
-  let y = sectionHeading(doc, pdfCopy.conclusionHeading, startY);
-
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(13);
-  doc.setTextColor(...rgb(INK));
-  y = paragraph(doc, result.conclusion.title, y, 5.6);
-
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(9.6);
-  doc.setTextColor(...rgb(INK_SOFT));
-  y = paragraph(doc, result.conclusion.body, y + 1.4, 4.4);
-
-  return y + 3;
-}
-
-function drawLeaves(doc, result, startY) {
-  let y = sectionHeading(doc, pdfCopy.leavesHeading, startY);
-
-  result.perLeaf.forEach((leaf, index) => {
-    doc.setFillColor(...rgb(printLeafColor(leaf.color, index, leaf.vitality)));
-    doc.setDrawColor(...rgb(INK_MUTED));
-    doc.setLineWidth(0.2);
-    doc.circle(MARGIN + 1.6, y - 1.1, 1.6, "FD");
-
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(10);
-    doc.setTextColor(...rgb(INK));
-    doc.text(leaf.label, MARGIN + 6, y);
-
-    doc.setFont("helvetica", "italic");
-    doc.setFontSize(9);
-    doc.setTextColor(...rgb(INK_MUTED));
-    doc.text(`— ${leaf.qualitative}`, MARGIN + 6 + doc.getTextWidth(leaf.label) + 2, y);
-
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(9.2);
-    doc.setTextColor(...rgb(INK_SOFT));
-    y = paragraph(doc, leaf.note, y + 4.2, 4.1, MARGIN + 6, CONTENT_WIDTH - 6);
-    y += 3.4;
-  });
-
-  return y;
-}
-
-function drawNextStep(doc, result, startY) {
-  const y = sectionHeading(doc, pdfCopy.nextStepHeading, startY);
-  const highlighted = result.perLeaf.filter((leaf) => leaf.highlighted);
-
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(9.6);
-  doc.setTextColor(...rgb(INK_SOFT));
-
-  if (!highlighted.length) {
-    paragraph(doc, ctaCopy.broadBody, y, 4.4);
-    return;
-  }
-
-  let cursor = y;
-  highlighted.forEach((leaf) => {
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(...rgb(INK));
-    cursor = paragraph(doc, leaf.instrument.name, cursor, 4.4);
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(...rgb(INK_SOFT));
-    cursor = paragraph(doc, leaf.instrument.promise, cursor + 0.6, 4.2) + 2;
-  });
-}
-
 function drawFooter(doc, sessionCode) {
   const baseline = PAGE.height - 14;
 
@@ -218,20 +271,6 @@ function drawFooter(doc, sessionCode) {
 
   const disclaimer = doc.splitTextToSize(pdfCopy.disclaimer, CONTENT_WIDTH);
   doc.text(disclaimer, MARGIN, baseline + 1.5);
-}
-
-function sectionHeading(doc, text, y) {
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(7.6);
-  doc.setTextColor(...rgb(INK_MUTED));
-  doc.text(text.toUpperCase(), MARGIN, y, { charSpace: 0.35 });
-  return y + 5.4;
-}
-
-function paragraph(doc, text, y, lineHeight, x = MARGIN, width = CONTENT_WIDTH) {
-  const lines = doc.splitTextToSize(text, width);
-  doc.text(lines, x, y);
-  return y + lines.length * lineHeight;
 }
 
 function formatDate(date) {
