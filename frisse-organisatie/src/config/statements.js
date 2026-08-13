@@ -63,7 +63,7 @@ export const statements = [
   {
     id: "lei-2",
     leafId: "leiderschap",
-    text: "Er is ruimte om leidinggevenden aan te spreken zonder risico.",
+    text: "Je kunt een leidinggevende aanspreken zonder dat dat risico voor je oplevert.",
     reverse: false,
   },
   {
@@ -89,7 +89,7 @@ export const statements = [
   {
     id: "int-4",
     leafId: "integriteit",
-    text: "Ongewenst gedrag is hier bespreekbaar, zonder dat je bang hoeft te zijn voor de gevolgen.",
+    text: "Als je ongewenst gedrag aankaart, hoef je niet bang te zijn voor de gevolgen.",
     reverse: false,
   },
   {
@@ -141,7 +141,7 @@ export const statements = [
   {
     id: "team-5",
     leafId: "team",
-    text: "Om hulp vragen aan een collega voelt hier niet ongemakkelijk.",
+    text: "Om hulp vragen aan een collega voelt hier vanzelfsprekend.",
     reverse: false,
   },
   {

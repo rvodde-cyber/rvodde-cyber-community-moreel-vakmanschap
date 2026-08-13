@@ -80,6 +80,17 @@ naar de praktijk van een MKB-organisatie:
 De volledige referenties staan bij elk blad in `src/config/leaves.js` en worden
 op de landingspagina verkort getoond.
 
+De lijst zelf staat uitsluitend in `src/config/statements.js`; deze README
+herhaalt hem bewust niet, zodat tekst en toelichting niet uit elkaar kunnen
+lopen. Twee regels bij het herformuleren, uit een leesronde op de eerste versie:
+
+- **Geen dubbele ontkenning in een positief gescoorde stelling.** Mensen zien het
+  ontkennende woord en scoren instinctief laag, ook als de zin het omgekeerde
+  vraagt ("voelt niet ongemakkelijk" werd "voelt vanzelfsprekend").
+- **Geen stelling die twee dingen tegelijk vraagt.** Wie vraagt of iets
+  besprekbaar is én of het veilig is, weet bij een lage score niet welk van
+  beide het probleem is; kies de kern die het onderliggende instrument meet.
+
 ## Deel-codes
 
 Een deel-code ziet er zo uit:
