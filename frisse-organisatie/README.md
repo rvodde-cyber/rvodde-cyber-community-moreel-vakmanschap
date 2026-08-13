@@ -164,19 +164,30 @@ zelf licht blijft.
 
 ## Deployment
 
-Bedoeld als eigen Vercel-project op een eigen (sub)domein: `vercel.json` in deze
-map regelt de SPA-rewrites en de cache-headers. Er zijn geen environment
-variables nodig.
+Er zijn geen environment variables nodig.
 
-Onder een pad van een bestaande site plaatsen kan ook:
+**Eindbestemming: een eigen Vercel-project op een eigen (sub)domein.** De
+`vercel.json` in deze map regelt daarvoor de SPA-rewrites en de cache-headers.
+Dat past bij de positionering: het instrument is extern en MKB-gericht en hoeft
+niet onder de Fontys-community-site te hangen.
+
+**Voorlopig draait hij ook mee met het hoofdplatform**, op het pad
+`/frisse-organisatie`, zodat de scan te bekijken is zonder dat er al een apart
+project is aangemaakt. Dat pad staat nergens in de navigatie. Het zit vast aan
+twee plekken in de repo-root:
+
+- `package.json` → het script `build:frisse-organisatie`, aangehaakt aan `build`;
+- `vercel.json` → de rewrites en headers voor `/frisse-organisatie`.
+
+Zodra er een eigen project of subdomein is, kunnen die twee eruit en verandert
+er niets aan deze map.
+
+Los bouwen kan altijd:
 
 ```bash
-VITE_BASE_PATH=/frisse-organisatie/ npm run build
+npm run build                                     # standalone, base "/"
+VITE_BASE_PATH=/frisse-organisatie/ npm run build # onder een pad
 ```
-
-Dit is bewust géén onderdeel van de build van het hoofdplatform in deze repo:
-het instrument is extern/MKB-gericht en hoort niet automatisch onder de
-Fontys-community-site te hangen.
 
 ## Nog te bevestigen vóór livegang
 
