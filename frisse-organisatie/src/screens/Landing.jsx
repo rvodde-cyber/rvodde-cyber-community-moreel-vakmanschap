@@ -1,6 +1,7 @@
-import { ArrowRight, Clock, ListChecks, ShieldCheck, Users } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, BookOpen, Clock, ListChecks, ShieldCheck, Users } from "lucide-react";
 import Clover from "../components/Clover";
-import { landing } from "../config/copy";
+import { landing, sources } from "../config/copy";
 import { leaves } from "../config/leaves";
 import { statements } from "../config/statements";
 import { vitality } from "../lib/scoring";
@@ -19,9 +20,17 @@ const previewLeaves = leaves.map((leaf) => ({
   highlighted: false,
 }));
 
-export default function Landing({ sessionCode, onSessionCodeChange, onStart }) {
+export default function Landing({ companyName, onCompanyNameChange, onStart, onCollect }) {
   const { session } = landing;
-  const canStart = !session.required || sessionCode.trim().length > 0;
+  const [showMissing, setShowMissing] = useState(false);
+
+  const handleStart = () => {
+    if (session.required && !companyName.trim()) {
+      setShowMissing(true);
+      return;
+    }
+    onStart();
+  };
 
   return (
     <div className="space-y-6">
@@ -35,7 +44,7 @@ export default function Landing({ sessionCode, onSessionCodeChange, onStart }) {
         <div className="mt-6 flex flex-wrap gap-2">
           <Pill icon={Clock} label={landing.durationLabel} />
           <Pill icon={ListChecks} label={`${statements.length} stellingen`} />
-          <Pill icon={ShieldCheck} label="Geen inlog" />
+          <Pill icon={ShieldCheck} label="Geen inlog, geen opslag" />
         </div>
 
         <div className="mt-8">
@@ -84,35 +93,71 @@ export default function Landing({ sessionCode, onSessionCodeChange, onStart }) {
       </section>
 
       <section className="glass p-6 sm:p-7">
-        <label htmlFor="session-code" className="text-sm font-semibold text-ink">
+        <label htmlFor="company-name" className="text-sm font-semibold text-ink">
           {session.label}
-          {!session.required ? (
-            <span className="ml-2 text-xs font-normal text-ink-muted">optioneel</span>
-          ) : null}
         </label>
         <input
-          id="session-code"
+          id="company-name"
           type="text"
-          value={sessionCode}
-          onChange={(event) => onSessionCodeChange(event.target.value)}
+          value={companyName}
+          onChange={(event) => {
+            onCompanyNameChange(event.target.value);
+            setShowMissing(false);
+          }}
           placeholder={session.placeholder}
           maxLength={120}
           autoComplete="organization"
+          aria-invalid={showMissing}
           className="mt-2.5 w-full rounded-2xl border border-hairline bg-white/80 px-4 py-3 text-base
             text-ink placeholder:text-ink-muted/70 transition focus:border-ink/25 focus:outline-none
             focus:ring-2 focus:ring-ink/10"
         />
-        <p className="mt-2 text-xs leading-relaxed text-ink-muted">
-          {session.required ? session.requiredHint : session.optionalHint}
+        <p className="mt-2 text-xs leading-relaxed text-ink-muted" role={showMissing ? "alert" : undefined}>
+          {showMissing ? session.missing : session.hint}
         </p>
         <p className="mt-3 text-xs leading-relaxed text-ink-muted">{landing.privacyNote}</p>
 
-        <button type="button" onClick={onStart} disabled={!canStart} className="btn-primary mt-6 w-full sm:w-auto">
+        <button type="button" onClick={handleStart} className="btn-primary mt-6 w-full sm:w-auto">
           {landing.startLabel}
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </button>
+
+        <div className="mt-5 border-t border-hairline pt-4">
+          <button
+            type="button"
+            onClick={onCollect}
+            className="text-sm font-medium text-ink-soft underline decoration-ink-muted/40 underline-offset-4 transition hover:text-ink"
+          >
+            {landing.collectorLink}
+          </button>
+        </div>
       </section>
+
+      <Sources />
     </div>
+  );
+}
+
+/** Verantwoording van de stellingen (briefing §4). */
+function Sources() {
+  return (
+    <section className="glass-subtle p-6 sm:p-7">
+      <div className="flex items-start gap-3">
+        <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
+        <div>
+          <h2 className="text-sm font-semibold text-ink">{sources.title}</h2>
+          <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{sources.intro}</p>
+          <dl className="mt-3 space-y-2">
+            {leaves.map((leaf) => (
+              <div key={leaf.id} className="text-xs leading-relaxed">
+                <dt className="inline font-medium text-ink">{leaf.label}: </dt>
+                <dd className="inline text-ink-muted">{leaf.source.short}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </section>
   );
 }
 

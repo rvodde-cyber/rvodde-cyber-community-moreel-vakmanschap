@@ -111,13 +111,43 @@ export function deriveConclusion(scores) {
 }
 
 /**
+ * Het teamgemiddelde: eerst per invuller de bladgemiddelden, dán het gemiddelde
+ * daarvan (briefing §6). Niet de losse antwoorden over alle invullers middelen —
+ * dat zou iemand die overal extreem scoort onevenredig zwaar laten meetellen.
+ *
+ * @param {Record<string, number>[]} answerSets één set antwoorden per invuller
+ * @returns {Record<string, number>} blad-id → teamgemiddelde
+ */
+export function computeTeamScores(answerSets) {
+  const perPerson = answerSets.map((answers) => computeLeafScores(answers));
+  if (!perPerson.length) return Object.fromEntries(leaves.map((leaf) => [leaf.id, 0]));
+
+  return Object.fromEntries(
+    leaves.map((leaf) => [
+      leaf.id,
+      perPerson.reduce((total, scores) => total + (scores[leaf.id] ?? 0), 0) / perPerson.length,
+    ])
+  );
+}
+
+/**
  * Alles wat het resultaatscherm, de tooltips, de aria-labels en de PDF nodig
  * hebben — in één keer afgeleid, zodat scherm en print niet uiteen kunnen lopen.
  *
  * @param {Record<string, number>} answers
  */
 export function buildResult(answers) {
-  const scores = computeLeafScores(answers);
+  return buildResultFromScores(computeLeafScores(answers));
+}
+
+/**
+ * Dezelfde afleiding, maar vanaf kant-en-klare bladgemiddelden. Het
+ * teamresultaat gebruikt deze ingang, zodat individu en team gegarandeerd
+ * dezelfde duiding, drempels en teksten krijgen.
+ *
+ * @param {Record<string, number>} scores blad-id → gemiddelde (1–5)
+ */
+export function buildResultFromScores(scores) {
   const conclusion = deriveConclusion(scores);
 
   const perLeaf = leaves.map((leaf) => {

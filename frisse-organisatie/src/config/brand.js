@@ -4,15 +4,25 @@
 // ./copy.js — nooit verspreid door de componenten. Een latere white-label-modus
 // (buiten scope, zie briefing §9) hoeft dan alleen dit object te overschrijven.
 
+/**
+ * Contactgegevens voor de doorverwijzing (briefing §10).
+ *
+ * Mag leeg blijven tot vlak vóór livegang: zolang er niets is ingevuld toont de
+ * app overal de placeholder-tekst hieronder in plaats van een lege of kapotte
+ * knop. Vul `email` of `url` en de call-to-action wordt vanzelf klikbaar.
+ */
+export const CONTACT_INFO = {
+  organisation: "",
+  email: "",
+  url: "",
+  placeholder: "Contactgegevens volgen",
+};
+
 export const brand = {
   // Werktitel "Klavertje Vier" blijft de interne en visuele metafoor; de
   // productnaam hieronder is wat de gebruiker ziet.
   productName: "De Frisse Organisatie",
   tagline: "Verkennende instapscan",
-  // Generiek houden: geen eigennamen in de UI-teksten, zodat externe
-  // consultants het instrument ongewijzigd kunnen inzetten.
-  organisation: "",
-  contactEmail: "",
   fileNamePrefix: "de-frisse-organisatie",
 };
 

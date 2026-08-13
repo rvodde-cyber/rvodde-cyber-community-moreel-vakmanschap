@@ -1,31 +1,41 @@
-import { useEffect, useRef, useState } from "react";
-import { Download, DoorOpen, Info, RotateCcw } from "lucide-react";
+import { useRef, useState } from "react";
+import { Download, DoorOpen, Info, RotateCcw, Users } from "lucide-react";
 import Clover from "../components/Clover";
 import CloverPrintView from "../components/CloverPrintView";
-import { brand } from "../config/brand";
+import ShareCodePanel from "../components/ShareCodePanel";
+import { CONTACT_INFO } from "../config/brand";
 import { cta, result as resultCopy } from "../config/copy";
-import { saveScanResult, storageConfigured } from "../lib/storage";
 
-export default function Result({ result, sessionCode, onRestart }) {
+/**
+ * Het resultaatscherm, in twee varianten (briefing §5.A stap 3 en §5.B stap 8).
+ *
+ * Individueel en team delen bewust dezelfde component: dezelfde weergave,
+ * dezelfde drempellogica, dezelfde teksten. Alleen het label, de intro en de
+ * deel-code verschillen — zo kan het teambeeld nooit stiekem anders uitpakken
+ * dan het individuele beeld bij dezelfde scores.
+ *
+ * @param {object} props
+ * @param {ReturnType<import("../lib/scoring").buildResult>} props.result
+ * @param {"individual" | "team"} props.variant
+ * @param {string} props.companyName
+ * @param {number} [props.participantCount]
+ * @param {string} [props.shareCode] alleen bij de individuele variant
+ */
+export default function Result({
+  result,
+  variant,
+  companyName,
+  participantCount = 1,
+  shareCode = "",
+  onRestart,
+  onToCollector,
+}) {
   const printSvgRef = useRef(null);
-  const savedRef = useRef(false);
-  const [saveState, setSaveState] = useState(storageConfigured ? "saving" : "skipped");
   const [pdfState, setPdfState] = useState("idle");
 
+  const isTeam = variant === "team";
+  const copy = isTeam ? resultCopy.team : resultCopy.individual;
   const highlighted = result.perLeaf.filter((leaf) => leaf.highlighted);
-
-  useEffect(() => {
-    // Ref-guard: in StrictMode draait dit effect twee keer, en één scan hoort
-    // één rij in de database te zijn.
-    if (savedRef.current || !storageConfigured) return;
-    savedRef.current = true;
-
-    saveScanResult({
-      sessionCode,
-      scores: result.scores,
-      conclusionKind: result.conclusion.kind,
-    }).then(({ status }) => setSaveState(status));
-  }, [result, sessionCode]);
 
   const handleDownload = async () => {
     if (!printSvgRef.current) return;
@@ -33,7 +43,13 @@ export default function Result({ result, sessionCode, onRestart }) {
     try {
       // De PDF-generator is zwaar en alleen nodig als iemand hem echt opvraagt.
       const { generateSummaryPdf } = await import("../lib/pdf");
-      await generateSummaryPdf({ svgElement: printSvgRef.current, result, sessionCode });
+      await generateSummaryPdf({
+        svgElement: printSvgRef.current,
+        result,
+        variant,
+        companyName,
+        participantCount,
+      });
       setPdfState("idle");
     } catch {
       setPdfState("error");
@@ -43,7 +59,15 @@ export default function Result({ result, sessionCode, onRestart }) {
   return (
     <div className="space-y-6">
       <section className="glass result-glow overflow-hidden p-6 sm:p-9">
-        <p className="eyebrow">{resultCopy.eyebrow}</p>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <p className="eyebrow">{copy.eyebrow}</p>
+          <span className="rounded-full border border-hairline bg-white/70 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-ink-muted">
+            {copy.badge}
+          </span>
+        </div>
+        <p className="mt-2 text-sm text-ink-soft">
+          {isTeam ? copy.intro(participantCount) : copy.intro}
+        </p>
 
         <div className="mt-6">
           <Clover perLeaf={result.perLeaf} className="max-w-[30rem]" />
@@ -91,6 +115,8 @@ export default function Result({ result, sessionCode, onRestart }) {
         </ul>
       </section>
 
+      {!isTeam && shareCode ? <ShareCodePanel code={shareCode} /> : null}
+
       <CallToAction highlighted={highlighted} />
 
       <section className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -99,14 +125,22 @@ export default function Result({ result, sessionCode, onRestart }) {
             <Download className="h-4 w-4" aria-hidden="true" />
             {pdfState === "busy" ? resultCopy.pdfBusyLabel : resultCopy.pdfLabel}
           </button>
+          {!isTeam && onToCollector ? (
+            <button type="button" onClick={onToCollector} className="btn-ghost">
+              <Users className="h-4 w-4" aria-hidden="true" />
+              {resultCopy.toCollectorLabel}
+            </button>
+          ) : null}
           <button type="button" onClick={onRestart} className="btn-ghost">
             <RotateCcw className="h-4 w-4" aria-hidden="true" />
-            {resultCopy.restartLabel}
+            {isTeam ? resultCopy.backToStartLabel : resultCopy.restartLabel}
           </button>
         </div>
-        <p className="text-xs text-ink-muted" role="status">
-          {pdfState === "error" ? resultCopy.pdfErrorLabel : saveStatusLabel(saveState)}
-        </p>
+        {pdfState === "error" ? (
+          <p className="text-xs text-ink-muted" role="status">
+            {resultCopy.pdfErrorLabel}
+          </p>
+        ) : null}
       </section>
 
       {/* Buiten beeld, wél in de DOM: de bron voor de PDF-afbeelding. */}
@@ -135,7 +169,10 @@ function CallToAction({ highlighted }) {
           </h2>
 
           {broad ? (
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{cta.broadBody}</p>
+            <>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{cta.broadBody}</p>
+              <ContactAction />
+            </>
           ) : (
             <ul className="mt-3 space-y-4">
               {highlighted.map((leaf) => (
@@ -147,8 +184,6 @@ function CallToAction({ highlighted }) {
               ))}
             </ul>
           )}
-
-          {broad ? <ContactAction /> : null}
         </div>
       </div>
     </section>
@@ -158,34 +193,26 @@ function CallToAction({ highlighted }) {
 function InstrumentAction({ instrument }) {
   if (instrument.href) {
     return (
-      <a
-        href={instrument.href}
-        className="btn-ghost mt-3"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={instrument.href} className="btn-ghost mt-3" target="_blank" rel="noreferrer">
         {cta.instrumentLabel(instrument.name)}
       </a>
     );
   }
-  if (brand.contactEmail) return <ContactAction />;
-  return <p className="mt-2 text-xs italic text-ink-muted">{cta.placeholderNote}</p>;
+  return <ContactAction />;
 }
 
+/**
+ * Contactknop, of — zolang `CONTACT_INFO` nog niet is ingevuld — een zichtbare
+ * placeholder in plaats van een knop die nergens heen gaat (§10).
+ */
 function ContactAction() {
-  if (!brand.contactEmail) {
-    return <p className="mt-2 text-xs italic text-ink-muted">{cta.placeholderNote}</p>;
+  const href = CONTACT_INFO.email ? `mailto:${CONTACT_INFO.email}` : CONTACT_INFO.url;
+  if (!href) {
+    return <p className="mt-2 text-xs italic text-ink-muted">{cta.placeholder}</p>;
   }
   return (
-    <a href={`mailto:${brand.contactEmail}`} className="btn-ghost mt-3">
+    <a href={href} className="btn-ghost mt-3" target={CONTACT_INFO.email ? undefined : "_blank"} rel="noreferrer">
       {cta.contactLabel}
     </a>
   );
-}
-
-function saveStatusLabel(state) {
-  if (state === "saving") return resultCopy.savingLabel;
-  if (state === "saved") return resultCopy.savedLabel;
-  if (state === "error") return resultCopy.saveErrorLabel;
-  return "";
 }

@@ -9,7 +9,7 @@ import { usePrefersReducedMotion } from "../hooks/useReveal";
 const AUTO_ADVANCE_MS = 340;
 
 /**
- * De twaalf stellingen, één voor één.
+ * De twintig stellingen, één voor één.
  *
  * Bij welk blad een stelling hoort is bewust niet zichtbaar: dat zou het
  * antwoord kleuren en de scan weer als vier blokjes laten voelen (§5).

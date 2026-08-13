@@ -6,7 +6,7 @@
 // eindscores gebruikt als het scherm maar zonder animatie en zonder blur.
 
 import { jsPDF } from "jspdf";
-import { brand } from "../config/brand";
+import { brand, CONTACT_INFO } from "../config/brand";
 import { pdf as pdfCopy, cta as ctaCopy } from "../config/copy";
 import { hexToRgb, printLeafColor } from "./colors";
 
@@ -51,16 +51,27 @@ export async function svgToPngDataUrl(svgElement, scale = 3) {
 /**
  * Bouwt de A4-samenvatting en start de download.
  *
+ * Individueel en team gebruiken dezelfde opmaak; alleen het label in de kopregel
+ * en de bestandsnaam verschillen (briefing §8.3).
+ *
  * @param {object} params
  * @param {SVGSVGElement} params.svgElement de gerenderde <CloverPrintView>
  * @param {ReturnType<import("./scoring").buildResult>} params.result
- * @param {string} [params.sessionCode]
+ * @param {"individual" | "team"} [params.variant]
+ * @param {string} [params.companyName]
+ * @param {number} [params.participantCount] aantal invullers bij een teamresultaat
  */
-export async function generateSummaryPdf({ svgElement, result, sessionCode = "" }) {
+export async function generateSummaryPdf({
+  svgElement,
+  result,
+  variant = "individual",
+  companyName = "",
+  participantCount = 1,
+}) {
   const doc = new jsPDF({ unit: "mm", format: "a4", compress: true });
   const clover = await svgToPngDataUrl(svgElement);
 
-  const headerBottom = drawHeader(doc, result);
+  const headerBottom = drawHeader(doc, result, variant, participantCount);
   const footerTop = PAGE.height - 30;
 
   // Eerst de tekst opmeten, dan pas het beeld schalen. Zo vult de pagina zich
@@ -92,8 +103,8 @@ export async function generateSummaryPdf({ svgElement, result, sessionCode = "" 
     y += block.height;
   }
 
-  drawFooter(doc, sessionCode);
-  doc.save(fileName(sessionCode));
+  drawFooter(doc, companyName);
+  doc.save(fileName(variant, companyName));
 }
 
 const IMAGE_GAP = 8;
@@ -207,7 +218,7 @@ function leafBlock(doc, leaf, index) {
   };
 }
 
-function drawHeader(doc, result) {
+function drawHeader(doc, result, variant, participantCount) {
   // Placeholder voor asset 6 uit §8.2, native getekend: een licht vlak met de
   // vier bladkleuren als streep. Vervangbaar door het Firefly-beeld.
   doc.setFillColor(...rgb("#F5F5F4"));
@@ -224,10 +235,14 @@ function drawHeader(doc, result) {
   doc.setTextColor(...rgb(INK));
   doc.text(pdfCopy.title, MARGIN, 15);
 
+  // Expliciet labelen, zodat een individuele uitdraai nooit voor het
+  // teamresultaat wordt aangezien of andersom.
+  const subtitle =
+    variant === "team" ? pdfCopy.teamSubtitle(participantCount) : pdfCopy.individualSubtitle;
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
   doc.setTextColor(...rgb(INK_MUTED));
-  doc.text(pdfCopy.subtitle, MARGIN, 21);
+  doc.text(subtitle, MARGIN, 21);
 
   drawCloverMark(doc, PAGE.width - MARGIN - 9, 13, result);
 
@@ -250,7 +265,7 @@ function drawCloverMark(doc, cx, cy, result) {
   });
 }
 
-function drawFooter(doc, sessionCode) {
+function drawFooter(doc, companyName) {
   const baseline = PAGE.height - 14;
 
   doc.setDrawColor(...rgb(HAIRLINE));
@@ -261,13 +276,15 @@ function drawFooter(doc, sessionCode) {
   doc.setFontSize(7.8);
   doc.setTextColor(...rgb(INK_MUTED));
 
-  const left = [formatDate(new Date()), sessionCode.trim()].filter(Boolean).join(" · ");
+  const left = [formatDate(new Date()), companyName.trim()].filter(Boolean).join(" · ");
   doc.text(left, MARGIN, baseline - 3.5);
 
-  const contact = [brand.organisation, brand.contactEmail].filter(Boolean).join(" · ");
-  if (contact) {
-    doc.text(contact, PAGE.width - MARGIN, baseline - 3.5, { align: "right" });
-  }
+  const contact = [CONTACT_INFO.organisation, CONTACT_INFO.email || CONTACT_INFO.url]
+    .filter(Boolean)
+    .join(" · ");
+  doc.text(contact || CONTACT_INFO.placeholder, PAGE.width - MARGIN, baseline - 3.5, {
+    align: "right",
+  });
 
   const disclaimer = doc.splitTextToSize(pdfCopy.disclaimer, CONTENT_WIDTH);
   doc.text(disclaimer, MARGIN, baseline + 1.5);
@@ -277,9 +294,10 @@ function formatDate(date) {
   return new Intl.DateTimeFormat("nl-NL", { dateStyle: "long" }).format(date);
 }
 
-export function fileName(sessionCode) {
-  const slug = slugify(sessionCode) || isoDate(new Date());
-  return `${brand.fileNamePrefix}-${slug}.pdf`;
+export function fileName(variant, companyName) {
+  const kind = variant === "team" ? "teamresultaat" : "eigen-resultaat";
+  const slug = slugify(companyName) || isoDate(new Date());
+  return `${brand.fileNamePrefix}-${kind}-${slug}.pdf`;
 }
 
 function slugify(value) {

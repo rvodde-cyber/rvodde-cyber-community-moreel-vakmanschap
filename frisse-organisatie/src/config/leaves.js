@@ -13,6 +13,7 @@
  * @property {string} summary      één zin: waar gaat dit blad over
  * @property {Record<Band, string>} notes  1–2 zinnen toelichting per niveau
  * @property {{name: string, promise: string, href: string}} instrument
+ * @property {{short: string, full: string}} source  instrument waarop de stellingen zijn gebaseerd
  */
 
 /** @type {Leaf[]} */
@@ -36,6 +37,11 @@ export const leaves = [
         "Een gesprek over concrete dilemma's uit uw eigen praktijk: wat vinden we hier eigenlijk normaal, en willen we dat ook?",
       href: "",
     },
+    source: {
+      short: "Corporate Ethical Virtues Model (Kaptein, 2008)",
+      full:
+        "Kaptein, M. (2008). Developing and testing a measure for the ethical culture of organizations: the Corporate Ethical Virtues Model. Journal of Organizational Behavior, 29(7), 923–947. Gebruikte dimensies: clarity, congruency, transparency, discussability, sanctionability.",
+    },
   },
   {
     id: "team",
@@ -55,6 +61,11 @@ export const leaves = [
       promise:
         "Een teamkompas dat laat zien waar de samenwerking uit balans is en welke stap het team zelf kan zetten.",
       href: "",
+    },
+    source: {
+      short: "Psychologische veiligheid (Edmondson, 1999)",
+      full:
+        "Edmondson, A. C. (1999). Psychological Safety and Learning Behavior in Work Teams. Administrative Science Quarterly, 44(2), 350–383. Ook de basis onder Google's Project Aristotle-onderzoek naar teameffectiviteit.",
     },
   },
   {
@@ -76,6 +87,11 @@ export const leaves = [
         "Een gestructureerde blik op rollen, besluitvorming en lerend vermogen — en op wat er als eerste vastloopt.",
       href: "",
     },
+    source: {
+      short: "Readiness for Organizational Change (Armenakis e.a., 1993; Holt e.a., 2007)",
+      full:
+        "Armenakis, A. A., Harris, S. G., & Mossholder, K. W. (1993) en Holt, D. T. e.a. (2007). Readiness for Organizational Change. Journal of Applied Behavioral Science. Aangevuld met literatuur over rolonduidelijkheid als voorspeller van weerstand en fricties.",
+    },
   },
   {
     id: "leiderschap",
@@ -95,6 +111,11 @@ export const leaves = [
       promise:
         "Een spiegel voor leidinggevenden: wat zien anderen van uw afwegingen, en hoe aanspreekbaar bent u werkelijk?",
       href: "",
+    },
+    source: {
+      short: "Authentic Leadership Questionnaire (Walumbwa e.a., 2008)",
+      full:
+        "Walumbwa, F. O., Avolio, B. J., Gardner, W. L., Wernsing, T. S., & Peterson, S. J. (2008). Authentic Leadership: Development and Validation of a Theory-Based Measure. Journal of Management, 34(1), 89–126. Gebruikte dimensies: zelfbewustzijn, relationele transparantie, geïnternaliseerd moreel perspectief, gebalanceerde besluitvorming.",
     },
   },
 ];
