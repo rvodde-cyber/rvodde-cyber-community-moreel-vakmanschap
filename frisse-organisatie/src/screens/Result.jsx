@@ -102,13 +102,17 @@ export default function Result({
                 leaf.highlighted ? "border-ink/15 bg-white/80 shadow-glass" : "border-transparent bg-white/40",
               ].join(" ")}
             >
-              <div className="flex items-center gap-2.5">
-                <span
-                  className="h-3 w-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: leaf.color }}
-                  aria-hidden="true"
-                />
-                <h3 className="text-sm font-semibold text-ink">{leaf.label}</h3>
+              {/* Op smalle schermen zakt de duiding naar een eigen regel in
+                  plaats van in een smalle kolom naast de naam te worden geperst. */}
+              <div className="flex flex-wrap items-center gap-x-2.5 gap-y-0.5">
+                <span className="flex items-center gap-2.5">
+                  <span
+                    className="h-3 w-3 shrink-0 rounded-full"
+                    style={{ backgroundColor: leaf.color }}
+                    aria-hidden="true"
+                  />
+                  <h3 className="text-sm font-semibold text-ink">{leaf.label}</h3>
+                </span>
                 <span className="text-xs text-ink-muted">{leaf.qualitative}</span>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{leaf.note}</p>
