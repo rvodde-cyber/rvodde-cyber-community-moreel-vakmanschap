@@ -31,7 +31,7 @@ export const statements = [
   {
     id: "int-1",
     leafId: "integriteit",
-    text: "Het is voor iedereen duidelijk wat hier wel en niet acceptabel gedrag is.",
+    text: "Als hier iets misgaat, wordt dat eerlijk benoemd in plaats van goedgepraat.",
     reverse: false,
   },
   {
@@ -95,7 +95,7 @@ export const statements = [
   {
     id: "team-2",
     leafId: "team",
-    text: "Teamleden durven problemen en lastige kwesties bespreekbaar te maken.",
+    text: "Dit team weet waar het samen naartoe werkt.",
     reverse: false,
   },
   {
@@ -147,7 +147,7 @@ export const statements = [
   {
     id: "lei-5",
     leafId: "leiderschap",
-    text: "Leidinggevenden staan open voor afwijkende meningen voordat ze een besluit nemen.",
+    text: "Leidinggevenden weten het team te motiveren voor een gezamenlijke koers.",
     reverse: false,
   },
   {

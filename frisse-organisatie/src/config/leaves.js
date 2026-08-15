@@ -38,9 +38,9 @@ export const leaves = [
       href: "",
     },
     source: {
-      short: "Corporate Ethical Virtues Model (Kaptein, 2008)",
+      short: "Corporate Ethical Virtues Model (Kaptein, 2008); Ellemers & De Gilder (2020)",
       full:
-        "Kaptein, M. (2008). Developing and testing a measure for the ethical culture of organizations: the Corporate Ethical Virtues Model. Journal of Organizational Behavior, 29(7), 923–947. Gebruikte dimensies: clarity, congruency, transparency, discussability, sanctionability.",
+        "Kaptein, M. (2008). Developing and testing a measure for the ethical culture of organizations: the Corporate Ethical Virtues Model. Journal of Organizational Behavior, 29(7), 923–947. Gebruikte dimensies: congruency, transparency, discussability, sanctionability. Aangevuld met één item over de integriteitsparadox uit Ellemers, N. & De Gilder, D. (2020). De voorbeeldige organisatie.",
     },
   },
   {
@@ -63,9 +63,9 @@ export const leaves = [
       href: "",
     },
     source: {
-      short: "Psychologische veiligheid (Edmondson, 1999)",
+      short: "Psychologische veiligheid (Edmondson, 1999); Teamwiel (Vroemen)",
       full:
-        "Edmondson, A. C. (1999). Psychological Safety and Learning Behavior in Work Teams. Administrative Science Quarterly, 44(2), 350–383. Ook de basis onder Google's Project Aristotle-onderzoek naar teameffectiviteit.",
+        "Edmondson, A. C. (1999). Psychological Safety and Learning Behavior in Work Teams. Administrative Science Quarterly, 44(2), 350–383. Ook de basis onder Google's Project Aristotle-onderzoek naar teameffectiviteit. Aangevuld met één item over doelhelderheid uit Vroemen, M. Het Teamwiel.",
     },
   },
   {
@@ -113,9 +113,9 @@ export const leaves = [
       href: "",
     },
     source: {
-      short: "Authentic Leadership Questionnaire (Walumbwa e.a., 2008)",
+      short: "Authentic Leadership Questionnaire (Walumbwa e.a., 2008); transformationeel leiderschap (Bass & Avolio)",
       full:
-        "Walumbwa, F. O., Avolio, B. J., Gardner, W. L., Wernsing, T. S., & Peterson, S. J. (2008). Authentic Leadership: Development and Validation of a Theory-Based Measure. Journal of Management, 34(1), 89–126. Gebruikte dimensies: zelfbewustzijn, relationele transparantie, geïnternaliseerd moreel perspectief, gebalanceerde besluitvorming.",
+        "Walumbwa, F. O., Avolio, B. J., Gardner, W. L., Wernsing, T. S., & Peterson, S. J. (2008). Authentic Leadership: Development and Validation of a Theory-Based Measure. Journal of Management, 34(1), 89–126. Gebruikte dimensies: zelfbewustzijn, relationele transparantie, geïnternaliseerd moreel perspectief. Aangevuld met één item over inspirational motivation uit Bass, B. M. & Avolio, B. J., transformationeel leiderschap.",
     },
   },
 ];
