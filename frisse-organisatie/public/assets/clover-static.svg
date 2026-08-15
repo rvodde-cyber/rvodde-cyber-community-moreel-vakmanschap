@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Klavertje vier met vier gekleurde bladeren">
+  <title>De Frisse Organisatie</title>
+  <!-- Statische basisillustratie (briefing §8.2, asset 2): favicon, social share
+       en fallback voordat het levende klavertje geladen is. Zelfde bladvorm en
+       kleuren als de app, maar bewust onveranderlijk. -->
+  <defs>
+    <radialGradient id="gloss" cx="35%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="#FFFFFF" />
+
+  <path d="M 256 236 C 268 300 246 356 258 420" fill="none" stroke="#65A30D" stroke-width="10" stroke-linecap="round" opacity="0.75" />
+
+  <g>
+    <g transform="translate(256 236) rotate(-45) scale(1.45)">
+      <path d="M 0 0 C -52 -18 -80 -58 -58 -90 C -44 -108 -12 -106 0 -76 C 12 -106 44 -108 58 -90 C 80 -58 52 -18 0 0 Z" fill="#14B8A6" />
+      <ellipse cx="-13" cy="-60" rx="20" ry="33" transform="rotate(-20 -13 -60)" fill="url(#gloss)" />
+    </g>
+    <g transform="translate(256 236) rotate(45) scale(1.45)">
+      <path d="M 0 0 C -52 -18 -80 -58 -58 -90 C -44 -108 -12 -106 0 -76 C 12 -106 44 -108 58 -90 C 80 -58 52 -18 0 0 Z" fill="#F59E0B" />
+      <ellipse cx="-13" cy="-60" rx="20" ry="33" transform="rotate(-20 -13 -60)" fill="url(#gloss)" />
+    </g>
+    <g transform="translate(256 236) rotate(135) scale(1.45)">
+      <path d="M 0 0 C -52 -18 -80 -58 -58 -90 C -44 -108 -12 -106 0 -76 C 12 -106 44 -108 58 -90 C 80 -58 52 -18 0 0 Z" fill="#6366F1" />
+      <ellipse cx="-13" cy="-60" rx="20" ry="33" transform="rotate(-20 -13 -60)" fill="url(#gloss)" />
+    </g>
+    <g transform="translate(256 236) rotate(-135) scale(1.45)">
+      <path d="M 0 0 C -52 -18 -80 -58 -58 -90 C -44 -108 -12 -106 0 -76 C 12 -106 44 -108 58 -90 C 80 -58 52 -18 0 0 Z" fill="#FB7185" />
+      <ellipse cx="-13" cy="-60" rx="20" ry="33" transform="rotate(-20 -13 -60)" fill="url(#gloss)" />
+    </g>
+  </g>
+
+  <circle cx="256" cy="236" r="13" fill="#65A30D" opacity="0.5" />
+</svg>

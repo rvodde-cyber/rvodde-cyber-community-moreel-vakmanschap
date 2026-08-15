@@ -9,7 +9,15 @@
       "destination": "/wisselwerking/index.html"
     },
     {
-      "source": "/((?!api/|downloads/|images/|wisselwerking).*)",
+      "source": "/frisse-organisatie",
+      "destination": "/frisse-organisatie/index.html"
+    },
+    {
+      "source": "/frisse-organisatie/((?!assets/).*)",
+      "destination": "/frisse-organisatie/index.html"
+    },
+    {
+      "source": "/((?!api/|downloads/|images/|wisselwerking|frisse-organisatie).*)",
       "destination": "/index.html"
     }
   ],
@@ -22,6 +30,18 @@
     },
     {
       "source": "/wisselwerking/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/frisse-organisatie/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/frisse-organisatie/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]
