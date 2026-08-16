@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:26:09.127Z",
+  "generated_at": "2026-08-16T20:11:40.229Z",
   "apps": [
     {
       "id": "maps-trilogie",
@@ -84,6 +84,16 @@
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"
+    },
+    {
+      "id": "frisse-organisatie",
+      "naam": "De Frisse Organisatie",
+      "omschrijving": "Verkennende instapscan (klavertje vier): integriteit, team, organisatie en leiderschap. Wijst door naar het bijpassende verdiepende instrument.",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/frisse-organisatie",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (frisse-organisatie/)",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "altijd"
     },
     {
       "id": "wisselwerking",
