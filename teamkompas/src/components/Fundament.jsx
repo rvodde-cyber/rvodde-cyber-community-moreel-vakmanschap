@@ -56,13 +56,28 @@ export default function Fundament({ onVerder }) {
               fontWeight: 600,
               display: "block",
               marginTop: 4,
-              marginBottom: 8,
+              marginBottom: item.toelichting ? 4 : 8,
               color: colors.labelAccent,
               lineHeight: 1.5,
             }}
           >
             {item.vraag}
           </label>
+          {item.toelichting && (
+            <p
+              style={{
+                fontFamily: fonts.ui,
+                fontSize: "0.8rem",
+                color: colors.labelAccent,
+                opacity: 0.65,
+                fontStyle: "italic",
+                margin: "0 0 8px",
+                lineHeight: 1.5,
+              }}
+            >
+              {item.toelichting}
+            </p>
+          )}
           <textarea
             value={antwoorden[i]}
             onChange={(e) => updateAntwoord(i, e.target.value)}

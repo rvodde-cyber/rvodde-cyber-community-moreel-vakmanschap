@@ -5,7 +5,7 @@
       "destination": "/wisselwerking/index.html"
     },
     {
-      "source": "/wisselwerking/((?!assets/).*)",
+      "source": "/wisselwerking/((?!assets/|images/).*)",
       "destination": "/wisselwerking/index.html"
     },
     {
