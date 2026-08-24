@@ -26,19 +26,6 @@ function labelPosition(index, radius, cx, cy) {
   return { x: cx + radius * Math.cos(angleRad), y: cy + radius * Math.sin(angleRad) };
 }
 
-function hubEdgePoint(index, hubRadius, cx, cy) {
-  const angleDeg = -90 + index * 60;
-  const angleRad = (angleDeg * Math.PI) / 180;
-  return {
-    x: cx + hubRadius * Math.cos(angleRad),
-    y: cy + hubRadius * Math.sin(angleRad),
-  };
-}
-
-function rimPoint(index, rimRadius, cx, cy) {
-  return nodePosition(index, rimRadius, cx, cy);
-}
-
 function knobRadiusVoorNiveau(niveau, minRadius, maxRadius) {
   if (!niveau) return minRadius;
   const t = NIVEAU_TRAVEL[niveau];
@@ -163,13 +150,27 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id={ids.rim} x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient
+            id={ids.rim}
+            gradientUnits="userSpaceOnUse"
+            x1={cx}
+            y1={cy - rimRadius}
+            x2={cx}
+            y2={cy + rimRadius}
+          >
             <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
             <stop offset="45%" stopColor={colors.hubRing} stopOpacity="0.55" />
             <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
           </linearGradient>
 
-          <linearGradient id={ids.spoke} x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id={ids.spoke}
+            gradientUnits="userSpaceOnUse"
+            x1={cx - rimRadius}
+            y1={cy - rimRadius}
+            x2={cx + rimRadius}
+            y2={cy + rimRadius}
+          >
             <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
             <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
           </linearGradient>
@@ -216,16 +217,16 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           filter={`url(#${ids.softShadow})`}
         />
 
-        {factors.map((_, i) => {
-          const edge = hubEdgePoint(i, hubRadius, cx, cy);
-          const rim = rimPoint(i, rimRadius, cx, cy);
+        {factors.map((factor, i) => {
+          const hubEdge = nodePosition(i, hubRadius, cx, cy);
+          const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
           return (
             <line
-              key={`spoke-${i}`}
-              x1={edge.x}
-              y1={edge.y}
-              x2={rim.x}
-              y2={rim.y}
+              key={`spoke-${factor.key}`}
+              x1={hubEdge.x}
+              y1={hubEdge.y}
+              x2={knobPos.x}
+              y2={knobPos.y}
               stroke={`url(#${ids.spoke})`}
               strokeWidth={spokeWidth}
               strokeLinecap="round"
