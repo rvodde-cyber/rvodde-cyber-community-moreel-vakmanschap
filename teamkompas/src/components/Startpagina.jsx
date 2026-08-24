@@ -5,7 +5,7 @@ import { welkom, bronvermelding } from "../config";
 export default function Startpagina({ onStart }) {
   return (
     <div className="space-y-6">
-      <section className="glass droplet-accent relative overflow-hidden p-7 sm:p-10">
+      <section className="glass droplet-accent relative p-7 sm:p-10">
         <p className="eyebrow">Teamreflectie</p>
         <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
           {welkom.titel}
@@ -18,8 +18,8 @@ export default function Startpagina({ onStart }) {
           <Pill icon={ShieldCheck} label="Geen inlog, geen opslag" />
         </div>
 
-        <div className="mt-8">
-          <TeamWheel variant="preview" style={{ maxWidth: 360 }} />
+        <div className="mt-8 w-full">
+          <TeamWheel variant="preview" />
         </div>
 
         <button type="button" onClick={onStart} className="btn-primary mt-8 w-full sm:w-auto">

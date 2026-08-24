@@ -5,7 +5,7 @@ const { appTitle, tagline } = framing[activeFraming];
 /** Vaste omlijsting: rustige kop, ruime marges, één kolom — dezelfde taal als De Frisse Organisatie. */
 export default function AppShell({ children }) {
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col px-5 pb-16 pt-8 sm:px-8 sm:pt-12">
+    <div className="mx-auto flex min-h-screen w-full max-w-4xl flex-col px-5 pb-16 pt-8 sm:px-8 sm:pt-12">
       <header className="mb-8 flex items-center gap-3">
         <WheelMark />
         <div>

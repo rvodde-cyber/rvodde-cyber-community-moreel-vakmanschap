@@ -138,7 +138,6 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: 600,
         margin: "0 auto",
         ...style,
       }}
