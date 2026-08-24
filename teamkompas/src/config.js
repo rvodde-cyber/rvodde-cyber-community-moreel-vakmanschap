@@ -7,12 +7,14 @@
 export const framing = {
   onderwijs: {
     appTitle: "Wisselwerking",
+    tagline: "Kompas voor teamontwikkeling",
     teamScanTitle: (orgName) => `Teamscan ${orgName}`,
     introText:
       "Een kompas voor teamontwikkeling, gebaseerd op het Teamwiel van Vroemen.",
   },
   zakelijk: {
     appTitle: "Wisselwerking",
+    tagline: "Kompas voor teamontwikkeling",
     teamScanTitle: (orgName) => `Teamscan ${orgName}`,
     introText:
       "Inzicht in de balans van uw team, gebaseerd op het Teamwiel van Vroemen.",
@@ -23,29 +25,36 @@ export const activeFraming = "onderwijs"; // wissel hier tussen 'onderwijs' | 'z
 
 export const colors = {
   surface: "#FFFFFF",
-  surface2: "#FBF8F4",
-  dotsLight: "#FBD9A0",
-  dotsStrong: "#C9791C",
-  hubFill: "#C9791C",
-  hubRing: "#E3A65C",
-  projectionBg: "#231F1A",   // pas in sessie 3 nodig, alvast vastleggen
-  projectionText: "#F5F1EC",
-  labelAccent: "#8A4B0F",
+  surface2: "#FAFAF9",
+  canvas: "#FAFAF9",
+  canvasDeep: "#F5F5F4",
+  ink: "#1C1917",
+  inkSoft: "#57534E",
+  inkMuted: "#78716C",
+  dotsVulnerable: "#A8A29A",
+  dotsGrowing: "#F59E0B",
+  dotsLight: "#F59E0B",
+  dotsStrong: "#14B8A6",
+  hubFill: "#1C1917",
+  hubRing: "rgba(28, 25, 23, 0.16)",
+  projectionBg: "#1C1917",
+  projectionText: "#FAFAF9",
+  labelAccent: "#1C1917",
 };
 
 export const fonts = {
-  voice: "'Source Serif Pro', Georgia, serif", // titels en reflectievragen
-  ui: "'Inter', -apple-system, sans-serif",     // labels, knoppen
+  voice: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  ui: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
 };
 
 export const wheelGeometry = {
   viewBox: "-40 -40 680 680",
   center: { x: 300, y: 300 },
-  hubRadius: 70,
+  hubRadius: 64,
   rimRadius: 235,
-  rimStrokeWidth: 14,
-  spokeWidth: 10,
-  knobRadius: 22,
+  rimStrokeWidth: 3.5,
+  spokeWidth: 2,
+  knobRadius: 18,
   knobPositionRadius: 220,
   knobTravelMinRadius: 88,
   knobTravelMaxRadius: 225,

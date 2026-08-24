@@ -1,5 +1,6 @@
-import { colors, fonts, wheelGeometry, bronvermelding, metafoor, framing, activeFraming } from "../config";
+import { ArrowRight, BookOpen } from "lucide-react";
 import ImagePlaceholder from "./ImagePlaceholder";
+import { bronvermelding, metafoor, framing, activeFraming } from "../config";
 
 const { appTitle, introText } = framing[activeFraming];
 
@@ -8,103 +9,42 @@ const theoreticalBasis =
 
 export default function IntroScreen({ onStart }) {
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto" }}>
+    <div className="space-y-6">
       <ImagePlaceholder
         label="Hero: het stokje doorgeven"
         description="Twee lopers naast elkaar, stokje wordt overgedragen"
         aspectRatio="21 / 9"
       />
 
-      <div style={{ marginTop: 24 }}>
-        <h2
-          style={{
-            fontFamily: fonts.voice,
-            color: colors.labelAccent,
-            fontSize: "1.25rem",
-            margin: "0 0 8px",
-          }}
-        >
-          {metafoor.titel}
-        </h2>
-        <p
-          style={{
-            fontFamily: fonts.voice,
-            color: colors.labelAccent,
-            lineHeight: 1.6,
-            margin: "0 0 24px",
-          }}
-        >
-          {metafoor.tekst}
-        </p>
-      </div>
+      <section className="glass droplet-accent relative overflow-hidden p-7 sm:p-10">
+        <p className="eyebrow">Groep of team</p>
+        <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+          {appTitle}
+        </h1>
+        <p className="mt-4 max-w-xl text-[0.98rem] leading-relaxed text-ink-soft">{introText}</p>
 
-      <h1
-        style={{
-          fontFamily: fonts.voice,
-          color: colors.labelAccent,
-          fontSize: "2rem",
-          margin: "0 0 12px",
-        }}
-      >
-        {appTitle}
-      </h1>
+        <div className="mt-8 border-t border-hairline pt-6">
+          <h2 className="text-sm font-semibold text-ink">{metafoor.titel}</h2>
+          <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{metafoor.tekst}</p>
+        </div>
 
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          margin: "0 0 24px",
-          opacity: 0.85,
-        }}
-      >
-        {introText}
-      </p>
+        <p className="mt-6 text-sm leading-relaxed text-ink-muted">{theoreticalBasis}</p>
 
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.9rem",
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          margin: "0 0 24px",
-          opacity: 0.75,
-        }}
-      >
-        {theoreticalBasis}
-      </p>
+        <button type="button" onClick={onStart} className="btn-primary mt-8 w-full sm:w-auto">
+          Start reflectie
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </button>
+      </section>
 
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.8rem",
-          color: colors.labelAccent,
-          lineHeight: 1.5,
-          margin: "0 0 32px",
-          opacity: 0.6,
-          fontStyle: "italic",
-        }}
-      >
-        {bronvermelding}
-      </p>
-
-      <button
-        type="button"
-        onClick={onStart}
-        style={{
-          fontFamily: fonts.ui,
-          background: colors.hubFill,
-          color: colors.surface,
-          border: "none",
-          borderRadius: 8,
-          padding: "12px 28px",
-          fontSize: "1rem",
-          fontWeight: 600,
-          cursor: "pointer",
-        }}
-      >
-        Start reflectie
-      </button>
+      <section className="glass-subtle p-6 sm:p-7">
+        <div className="flex items-start gap-3">
+          <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
+          <div>
+            <h2 className="text-sm font-semibold text-ink">Bronnen</h2>
+            <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{bronvermelding}</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { fundament, colors, fonts } from "../config";
+import { ArrowRight } from "lucide-react";
+import { fundament } from "../config";
 
 export default function Fundament({ onVerder }) {
-  const [antwoorden, setAntwoorden] = useState(
-    Array(fundament.vragen.length).fill("")
-  );
+  const [antwoorden, setAntwoorden] = useState(Array(fundament.vragen.length).fill(""));
 
   function updateAntwoord(index, waarde) {
     const nieuw = [...antwoorden];
@@ -13,139 +12,43 @@ export default function Fundament({ onVerder }) {
   }
 
   return (
-    <div style={{ maxWidth: 560, margin: "0 auto", padding: "32px 16px" }}>
-      <h2
-        style={{
-          fontFamily: fonts.voice,
-          color: colors.labelAccent,
-          fontSize: "1.5rem",
-          margin: "0 0 12px",
-        }}
-      >
+    <div className="glass droplet-accent relative overflow-hidden p-6 sm:p-9">
+      <p className="eyebrow">Fundament</p>
+      <h2 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-3xl">
         {fundament.titel}
       </h2>
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          opacity: 0.85,
-          margin: 0,
-        }}
-      >
-        {fundament.intro}
-      </p>
+      <p className="mt-4 text-[0.98rem] leading-relaxed text-ink-soft">{fundament.intro}</p>
 
-      {fundament.vragen.map((item, i) => (
-        <div key={item.dimensie} style={{ marginTop: 24 }}>
-          <span
-            style={{
-              fontSize: "0.75em",
-              fontFamily: fonts.ui,
-              color: colors.labelAccent,
-              opacity: 0.6,
-              textTransform: "uppercase",
-              letterSpacing: "0.04em",
-            }}
-          >
-            {item.dimensie}
-          </span>
-          <label
-            style={{
-              fontFamily: fonts.voice,
-              fontWeight: 600,
-              display: "block",
-              marginTop: 4,
-              marginBottom: item.toelichting ? 4 : 8,
-              color: colors.labelAccent,
-              lineHeight: 1.5,
-            }}
-          >
-            {item.vraag}
-          </label>
-          {item.toelichting && (
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                fontSize: "0.8em",
-                color: colors.labelAccent,
-                opacity: 0.65,
-                fontStyle: "italic",
-                margin: "0 0 8px",
-                lineHeight: 1.5,
-              }}
-            >
-              {item.toelichting}
-            </p>
-          )}
-          <textarea
-            value={antwoorden[i]}
-            onChange={(e) => updateAntwoord(i, e.target.value)}
-            placeholder="Alleen zichtbaar voor jou — wordt nergens opgeslagen"
-            style={{
-              width: "100%",
-              minHeight: 64,
-              padding: 12,
-              fontFamily: fonts.ui,
-              fontSize: "0.95rem",
-              color: colors.labelAccent,
-              border: `1px solid ${colors.hubRing}`,
-              borderRadius: 8,
-              background: colors.surface,
-              lineHeight: 1.5,
-              resize: "vertical",
-              boxSizing: "border-box",
-            }}
-          />
-        </div>
-      ))}
+      <div className="mt-8 space-y-7">
+        {fundament.vragen.map((item, i) => (
+          <div key={item.dimensie}>
+            <span className="eyebrow">{item.dimensie}</span>
+            <label className="mt-2 block text-sm font-semibold leading-relaxed text-ink">
+              {item.vraag}
+            </label>
+            {item.toelichting ? (
+              <p className="mt-1.5 mb-3 text-xs italic leading-relaxed text-ink-muted">{item.toelichting}</p>
+            ) : (
+              <div className="mb-3" />
+            )}
+            <textarea
+              value={antwoorden[i]}
+              onChange={(e) => updateAntwoord(i, e.target.value)}
+              placeholder="Alleen zichtbaar voor jou — wordt nergens opgeslagen"
+              className="field min-h-[4.5rem] resize-y"
+            />
+          </div>
+        ))}
+      </div>
 
-      <p
-        style={{
-          marginTop: 24,
-          fontSize: "0.8em",
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          opacity: 0.6,
-          lineHeight: 1.5,
-        }}
-      >
-        {fundament.bron}
-      </p>
+      <p className="mt-6 text-xs leading-relaxed text-ink-muted">{fundament.bron}</p>
 
-      <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
-        <button
-          type="button"
-          onClick={onVerder}
-          style={{
-            fontFamily: fonts.ui,
-            background: colors.hubFill,
-            color: colors.surface,
-            border: "none",
-            borderRadius: 8,
-            padding: "12px 20px",
-            fontSize: "0.95rem",
-            fontWeight: 600,
-            cursor: "pointer",
-          }}
-        >
+      <div className="mt-7 flex flex-wrap items-center gap-3">
+        <button type="button" onClick={onVerder} className="btn-primary">
           Verder naar het teamwiel
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </button>
-        <button
-          type="button"
-          onClick={onVerder}
-          style={{
-            fontFamily: fonts.ui,
-            background: "none",
-            color: colors.labelAccent,
-            border: "none",
-            borderRadius: 8,
-            padding: "12px 20px",
-            fontSize: "0.95rem",
-            opacity: 0.7,
-            cursor: "pointer",
-          }}
-        >
+        <button type="button" onClick={onVerder} className="btn-ghost">
           Sla over
         </button>
       </div>

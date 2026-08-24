@@ -123,7 +123,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
   const knobSizePct = (knobRadius * 2 / VB_W) * 100;
   const knobOffsetPct = (knobRadius / VB_W) * 100;
 
-  const knobStyle = (pct, background, opacity = 1, animate = true) => ({
+  const knobStyle = (pct, background, opacity = 1, animate = true, border = "2px solid rgba(255,255,255,0.9)") => ({
     position: "absolute",
     left: pct.left,
     top: pct.top,
@@ -133,9 +133,10 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
     marginTop: `-${knobOffsetPct}%`,
     borderRadius: "50%",
     background,
-    border: `2px solid ${colors.hubRing}`,
+    border,
     opacity,
     boxSizing: "border-box",
+    boxShadow: "0 1px 4px rgba(28, 25, 23, 0.12)",
     transition: animate
       ? "left 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), top 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), background 0.3s ease"
       : undefined,
@@ -163,10 +164,10 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           <polygon
             points={polygonPoints}
             fill={colors.dotsStrong}
-            fillOpacity={0.15}
+            fillOpacity={0.12}
             stroke={colors.dotsStrong}
             strokeWidth={1}
-            strokeOpacity={0.4}
+            strokeOpacity={0.35}
           />
         )}
 
@@ -202,7 +203,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           r={hubRadius}
           fill={colors.hubFill}
           stroke={colors.hubRing}
-          strokeWidth={3}
+          strokeWidth={1.5}
         />
         <text
           x={cx}
@@ -283,17 +284,23 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             const pct = toPercent(pos.x, pos.y);
             const niveau = scores[factor.key];
             let background = colors.surface;
+            let border = "2px solid rgba(28, 25, 23, 0.12)";
 
             if (niveau === "sterk") {
               background = colors.dotsStrong;
+              border = "2px solid rgba(255,255,255,0.9)";
+            } else if (niveau === "groeiend") {
+              background = colors.dotsGrowing;
+              border = "2px solid rgba(255,255,255,0.9)";
             } else if (niveau) {
-              background = colors.dotsLight;
+              background = colors.dotsVulnerable;
+              border = "2px solid rgba(255,255,255,0.9)";
             }
 
             return (
               <div
                 key={factor.key}
-                style={knobStyle(pct, background, niveau ? 1 : 0.35)}
+                style={knobStyle(pct, background, niveau ? 1 : 0.35, true, border)}
               />
             );
           })}
@@ -308,7 +315,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             <div
               key={factor.key}
               aria-hidden
-              style={knobStyle(pct, colors.dotsLight, 1, false)}
+              style={knobStyle(pct, "#99F6E4", 1, false, "2px solid rgba(255,255,255,0.9)")}
             />
           );
         })}

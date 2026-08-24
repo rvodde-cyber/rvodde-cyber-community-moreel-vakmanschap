@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink antialiased;
+    background-image:
+      radial-gradient(60rem 40rem at 18% -10%, rgba(20, 184, 166, 0.1), transparent 60%),
+      radial-gradient(46rem 34rem at 92% 6%, rgba(99, 102, 241, 0.08), transparent 62%),
+      radial-gradient(52rem 36rem at 50% 108%, rgba(245, 158, 11, 0.07), transparent 60%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(28, 25, 23, 0.6);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-panel border border-hairline bg-white/65 shadow-glass;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-subtle {
+    @apply rounded-2xl border border-hairline bg-white/50;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3
+      text-sm font-semibold text-white shadow-lift transition duration-300 ease-soft
+      hover:-translate-y-0.5 hover:bg-black disabled:pointer-events-none disabled:opacity-40;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-hairline
+      bg-white/70 px-5 py-3 text-sm font-medium text-ink-soft transition duration-300 ease-soft
+      hover:-translate-y-0.5 hover:text-ink disabled:pointer-events-none disabled:opacity-40;
+  }
+
+  .eyebrow {
+    @apply text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-ink-muted;
+  }
+
+  .field {
+    @apply w-full rounded-2xl border border-hairline bg-white/80 px-4 py-3 text-base
+      text-ink placeholder:text-ink-muted/70 transition focus:border-ink/25 focus:outline-none
+      focus:ring-2 focus:ring-ink/10;
+  }
+}
+
+@layer utilities {
+  .result-glow {
+    background-image:
+      radial-gradient(38rem 26rem at 50% 22%, rgba(255, 255, 255, 0.9), transparent 70%),
+      radial-gradient(30rem 22rem at 24% 12%, rgba(20, 184, 166, 0.12), transparent 68%),
+      radial-gradient(30rem 22rem at 78% 18%, rgba(245, 158, 11, 0.12), transparent 68%);
+  }
+
+  .droplet-accent::after {
+    content: "";
+    position: absolute;
+    right: -2.5rem;
+    bottom: -3rem;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 60% 40% 55% 45% / 55% 50% 50% 45%;
+    background: radial-gradient(circle at 35% 30%, rgba(20, 184, 166, 0.22), rgba(255, 255, 255, 0));
+    filter: blur(18px);
+    pointer-events: none;
+  }
+}
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(28, 25, 23, 0.12);
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #1c1917;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(28, 25, 23, 0.22);
+}
+
+.range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 999px;
+  background: #1c1917;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(28, 25, 23, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .glass,
+  .glass-subtle {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
