@@ -176,8 +176,9 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
                 x2={knobPos.x}
                 y2={knobPos.y}
               >
-                <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.85" />
-                <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.9" />
+                <stop offset="0%" stopColor={colors.hubRing} stopOpacity="1" />
+                <stop offset="55%" stopColor="#FFFFFF" stopOpacity="0.45" />
+                <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="1" />
               </linearGradient>
             );
           })}
@@ -224,6 +225,13 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           filter={`url(#${ids.softShadow})`}
         />
 
+        <circle
+          cx={cx}
+          cy={cy + 4}
+          r={hubRadius}
+          fill={colors.labelAccent}
+          opacity="0.18"
+        />
         {factors.map((factor, i) => {
           const hubEdge = nodePosition(i, hubRadius, cx, cy);
           const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
@@ -247,7 +255,6 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           cy={cy}
           r={hubRadius}
           fill={`url(#${ids.hub})`}
-          filter={`url(#${ids.softShadow})`}
         />
         <ellipse
           cx={cx - hubRadius * 0.25}
