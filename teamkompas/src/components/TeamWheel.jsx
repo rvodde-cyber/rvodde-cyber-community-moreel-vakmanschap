@@ -158,22 +158,29 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             x2={cx}
             y2={cy + rimRadius}
           >
-            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
-            <stop offset="45%" stopColor={colors.hubRing} stopOpacity="0.55" />
-            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.75" />
+            <stop offset="45%" stopColor={colors.hubRing} stopOpacity="0.95" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.9" />
           </linearGradient>
 
-          <linearGradient
-            id={ids.spoke}
-            gradientUnits="userSpaceOnUse"
-            x1={cx - rimRadius}
-            y1={cy - rimRadius}
-            x2={cx + rimRadius}
-            y2={cy + rimRadius}
-          >
-            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
-            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
-          </linearGradient>
+          {factors.map((factor, i) => {
+            const hubEdge = nodePosition(i, hubRadius, cx, cy);
+            const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
+            return (
+              <linearGradient
+                key={`${ids.spoke}-${factor.key}`}
+                id={`${ids.spoke}-${factor.key}`}
+                gradientUnits="userSpaceOnUse"
+                x1={hubEdge.x}
+                y1={hubEdge.y}
+                x2={knobPos.x}
+                y2={knobPos.y}
+              >
+                <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.85" />
+                <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.9" />
+              </linearGradient>
+            );
+          })}
 
           <radialGradient id={ids.knob} cx="35%" cy="30%" r="70%">
             <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
@@ -182,9 +189,9 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           </radialGradient>
 
           <radialGradient id={ids.hub} cx="35%" cy="25%" r="80%">
-            <stop offset="0%" stopColor="#4A3420" stopOpacity="0.92" />
-            <stop offset="60%" stopColor={colors.projectionBg} stopOpacity="0.88" />
-            <stop offset="100%" stopColor="#151210" stopOpacity="0.92" />
+            <stop offset="0%" stopColor="#4A3420" stopOpacity="1" />
+            <stop offset="60%" stopColor={colors.projectionBg} stopOpacity="1" />
+            <stop offset="100%" stopColor="#151210" stopOpacity="1" />
           </radialGradient>
 
           <filter id={ids.softShadow} x="-50%" y="-50%" width="200%" height="200%">
@@ -227,13 +234,14 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
               y1={hubEdge.y}
               x2={knobPos.x}
               y2={knobPos.y}
-              stroke={`url(#${ids.spoke})`}
+              stroke={`url(#${ids.spoke}-${factor.key})`}
               strokeWidth={spokeWidth}
               strokeLinecap="round"
             />
           );
         })}
 
+        <circle cx={cx} cy={cy} r={hubRadius} fill={colors.projectionBg} />
         <circle
           cx={cx}
           cy={cy}
