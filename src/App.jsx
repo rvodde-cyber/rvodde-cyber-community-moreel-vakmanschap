@@ -30,6 +30,7 @@ import WelkomPagina from "./pages/WelkomPagina";
 import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
 import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
+import PreviewCode from "./pages/admin/PreviewCode";
 import { isWorkshopHubEnabledClient } from "./config/workshopHub";
 
 
@@ -233,8 +234,8 @@ function AppRoutes() {
   const location = useLocation();
 
   const isWorkshop =
-
     location.pathname.startsWith("/workshop") || location.pathname.startsWith("/besloten");
+  const isAdmin = location.pathname.startsWith("/admin");
 
 
 
@@ -242,11 +243,12 @@ function AppRoutes() {
 
     <>
 
-      {!isWorkshop && <Navigatie />}
+      {!isWorkshop && !isAdmin && <Navigatie />}
 
       <Routes>
 
         <Route path="/workshop/unavailable" element={<WorkshopUnavailable />} />
+        <Route path="/admin/preview-code" element={<PreviewCode />} />
 
         <Route
           path="/workshop"

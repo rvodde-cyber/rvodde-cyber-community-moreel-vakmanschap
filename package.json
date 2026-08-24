@@ -24,6 +24,7 @@
     "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py"
   },
   "dependencies": {
+    "@vercel/edge-config": "^1.5.1",
     "framer-motion": "^11.0.0",
     "jspdf": "^4.2.1",
     "lucide-react": "^0.383.0",
