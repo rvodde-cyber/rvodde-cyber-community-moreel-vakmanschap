@@ -278,11 +278,11 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           dominantBaseline="middle"
           fill={colors.surface}
           fontFamily={fonts.voice}
-          fontSize={13}
+          fontSize={16}
           fontWeight={600}
         >
           {wrapText("Geïnspireerd samenwerken", 16).map((line, i, arr) => (
-            <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 7 : 14}>
+            <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 9 : 18}>
               {line}
             </tspan>
           ))}
@@ -320,12 +320,12 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             <text
               key={`${factor.key}-${line}`}
               x={pos.x}
-              y={pos.y + (li - (arr.length - 1) / 2) * 12}
+              y={pos.y + (li - (arr.length - 1) / 2) * 15}
               textAnchor={anchor}
               dominantBaseline="middle"
               fill={colors.labelAccent}
               fontFamily={fonts.ui}
-              fontSize={9}
+              fontSize={12}
               fontWeight={500}
             >
               {line}
@@ -345,7 +345,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
                 dominantBaseline="middle"
                 fill={colors.labelAccent}
                 fontFamily={fonts.ui}
-                fontSize={9}
+                fontSize={12}
                 opacity={0.85}
               >
                 {result}

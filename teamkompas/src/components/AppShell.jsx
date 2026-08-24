@@ -9,14 +9,14 @@ export default function AppShell({ children }) {
       <header className="mb-8 flex items-center gap-3">
         <WheelMark />
         <div>
-          <p className="text-sm font-semibold leading-tight text-ink">{appTitle}</p>
-          <p className="text-xs leading-tight text-ink-muted">{tagline}</p>
+          <p className="text-base font-semibold leading-tight text-ink">{appTitle}</p>
+          <p className="text-sm leading-tight text-ink-muted">{tagline}</p>
         </div>
       </header>
 
       <main className="flex-1">{children}</main>
 
-      <footer className="mt-14 text-center text-xs text-ink-muted">
+      <footer className="mt-14 text-center text-sm text-ink-muted">
         <p>Geen inlog · geen opslag · geen rapportcijfer</p>
       </footer>
     </div>

@@ -9,8 +9,8 @@ function PlaceholderPage({ title }) {
   return (
     <AppShell>
       <section className="glass p-7 text-center sm:p-10">
-        <h1 className="text-2xl font-semibold tracking-tight text-ink">{title}</h1>
-        <p className="mt-3 text-sm text-ink-muted">Beschikbaar vanaf een volgende sessie.</p>
+        <h1 className="font-serif text-3xl font-semibold tracking-tight text-ink">{title}</h1>
+        <p className="mt-3 text-base text-ink-muted">Beschikbaar vanaf een volgende sessie.</p>
       </section>
     </AppShell>
   );

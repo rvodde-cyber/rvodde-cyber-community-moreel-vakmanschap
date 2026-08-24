@@ -9,16 +9,23 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    font-size: 17px;
   }
 
   body {
-    @apply bg-canvas text-ink antialiased;
+    @apply bg-canvas font-sans text-base text-ink antialiased;
     background-image:
       radial-gradient(60rem 40rem at 18% -10%, rgba(20, 184, 166, 0.1), transparent 60%),
       radial-gradient(46rem 34rem at 92% 6%, rgba(99, 102, 241, 0.08), transparent 62%),
       radial-gradient(52rem 36rem at 50% 108%, rgba(245, 158, 11, 0.07), transparent 60%);
     background-attachment: fixed;
     min-height: 100vh;
+  }
+
+  h1,
+  h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-optical-sizing: auto;
   }
 
   :focus-visible {
@@ -43,22 +50,22 @@
 
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3
-      text-sm font-semibold text-white shadow-lift transition duration-300 ease-soft
+      text-base font-semibold text-white shadow-lift transition duration-300 ease-soft
       hover:-translate-y-0.5 hover:bg-black disabled:pointer-events-none disabled:opacity-40;
   }
 
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-hairline
-      bg-white/70 px-5 py-3 text-sm font-medium text-ink-soft transition duration-300 ease-soft
+      bg-white/70 px-5 py-3 text-base font-medium text-ink-soft transition duration-300 ease-soft
       hover:-translate-y-0.5 hover:text-ink disabled:pointer-events-none disabled:opacity-40;
   }
 
   .eyebrow {
-    @apply text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-ink-muted;
+    @apply text-[0.8rem] font-semibold uppercase tracking-[0.16em] text-ink-muted;
   }
 
   .field {
-    @apply w-full rounded-2xl border border-hairline bg-white/80 px-4 py-3 text-base
+    @apply w-full rounded-2xl border border-hairline bg-white/80 px-4 py-3 text-lg
       text-ink placeholder:text-ink-muted/70 transition focus:border-ink/25 focus:outline-none
       focus:ring-2 focus:ring-ink/10;
   }

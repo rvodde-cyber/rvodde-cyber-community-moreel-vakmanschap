@@ -19,8 +19,8 @@ import TuckmanCheck from "../components/TuckmanCheck";
 function UitlegBlok({ titel, tekst }) {
   return (
     <div className="mt-3.5">
-      <h3 className="mb-1.5 text-sm font-semibold text-ink">{titel}</h3>
-      <p className="m-0 text-sm leading-relaxed text-ink-soft">{tekst}</p>
+      <h3 className="mb-1.5 text-base font-semibold text-ink">{titel}</h3>
+      <p className="m-0 text-base leading-relaxed text-ink-soft">{tekst}</p>
     </div>
   );
 }
@@ -171,7 +171,7 @@ export default function SelfReflection() {
                 Teamwiel
               </span>
             </div>
-            <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-3xl">
+            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
               Jullie teamwiel
             </h1>
             <div className="mt-6">
@@ -180,24 +180,24 @@ export default function SelfReflection() {
           </section>
 
           <section className="glass-subtle p-6 sm:p-7">
-            <h2 className="text-sm font-semibold text-ink">Slag in het wiel</h2>
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+            <h2 className="text-base font-semibold text-ink">Slag in het wiel</h2>
+            <p className="mt-2 text-base leading-relaxed text-ink-soft">
               Een teamwiel draait soepel als alle succesfactoren in balans zijn. De zwakste factor
               bepaalt waar het wiel het meest hapert — niet als oordeel, maar als aanknopingspunt
               voor gesprek.
             </p>
-            <p className="mt-3 text-sm font-semibold text-ink">Zwakste factor: {zwaksteAxis?.label}</p>
+            <p className="mt-3 text-base font-semibold text-ink">Zwakste factor: {zwaksteAxis?.label}</p>
           </section>
 
           <section className="glass p-6 sm:p-7">
-            <h2 className="text-sm font-semibold text-ink">Fase-suggestie</h2>
+            <h2 className="text-base font-semibold text-ink">Fase-suggestie</h2>
             <textarea
               value={faseTekst}
               onChange={(e) => setFaseTekst(e.target.value)}
               rows={2}
               className="field mt-3 resize-y"
             />
-            <p className="mt-2 text-xs italic leading-relaxed text-ink-muted">
+            <p className="mt-2 text-sm italic leading-relaxed text-ink-muted">
               Dit is een suggestie op basis van het patroon — klopt dit voor jullie team?
             </p>
 
@@ -217,14 +217,14 @@ export default function SelfReflection() {
           </section>
 
           <section className="glass p-6 sm:p-7">
-            <h2 className="text-sm font-semibold text-ink">Aanbeveling</h2>
+            <h2 className="text-base font-semibold text-ink">Aanbeveling</h2>
             <textarea
               value={aanbevelingTekst}
               onChange={(e) => setAanbevelingTekst(e.target.value)}
               rows={4}
               className="field mt-3 resize-y"
             />
-            <p className="mt-3 text-xs italic leading-relaxed text-ink-muted">{gallupNotitie}</p>
+            <p className="mt-3 text-sm italic leading-relaxed text-ink-muted">{gallupNotitie}</p>
           </section>
 
           <ImagePlaceholder
@@ -236,7 +236,7 @@ export default function SelfReflection() {
           <button
             type="button"
             onClick={() => setPhase("ethisch")}
-            className="text-sm font-medium text-ink-soft underline decoration-ink-muted/40 underline-offset-4 transition hover:text-ink"
+            className="text-base font-medium text-ink-soft underline decoration-ink-muted/40 underline-offset-4 transition hover:text-ink"
           >
             Reflecteer ook op je eigen leiderschap →
           </button>

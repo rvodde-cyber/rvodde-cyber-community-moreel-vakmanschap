@@ -5,14 +5,14 @@ const NIVEAU_VOLGORDE = ["kwetsbaar", "groeiend", "sterk"];
 export default function AxisSelector({ axis, selected, onSelect, disabled = false }) {
   return (
     <div>
-      <h2 className="text-xl font-medium leading-snug tracking-tight text-ink sm:text-2xl">{axis.label}</h2>
-      <p className="mt-1.5 text-sm text-ink-muted">Resultaat: {axis.resultaat}</p>
+      <h2 className="font-serif text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl">{axis.label}</h2>
+      <p className="mt-1.5 text-base text-ink-muted">Resultaat: {axis.resultaat}</p>
 
       <div className="glass-subtle mt-5 p-4 sm:p-5">
-        <p className="mb-3.5 text-sm leading-relaxed text-ink-soft">{niveauUitleg.intro}</p>
+        <p className="mb-3.5 text-base leading-relaxed text-ink-soft">{niveauUitleg.intro}</p>
         <div className="flex flex-col gap-2.5">
           {NIVEAU_VOLGORDE.map((niveau) => (
-            <p key={niveau} className="text-sm leading-relaxed text-ink-soft">
+            <p key={niveau} className="text-base leading-relaxed text-ink-soft">
               <span className="font-semibold text-ink">{niveauUitleg[niveau].label}</span>
               {" — "}
               {niveauUitleg[niveau].tekst}
@@ -21,7 +21,7 @@ export default function AxisSelector({ axis, selected, onSelect, disabled = fals
         </div>
       </div>
 
-      <p className="mb-3 mt-6 text-sm font-medium text-ink">Welke stelling past het beste?</p>
+      <p className="mb-3 mt-6 text-base font-medium text-ink">Welke stelling past het beste?</p>
 
       <div className="flex flex-col gap-2">
         {NIVEAU_VOLGORDE.map((niveau) => {
@@ -41,10 +41,10 @@ export default function AxisSelector({ axis, selected, onSelect, disabled = fals
                 disabled ? "cursor-wait" : "",
               ].join(" ")}
             >
-              <span className={isSelected ? "mb-1 block text-sm font-semibold text-ink" : "mb-1 block text-sm font-semibold text-ink-soft"}>
+              <span className={isSelected ? "mb-1 block text-base font-semibold text-ink" : "mb-1 block text-base font-semibold text-ink-soft"}>
                 {niveauUitleg[niveau].label}
               </span>
-              <span className="text-sm leading-relaxed text-ink-soft">{axis.niveaus[niveau]}</span>
+              <span className="text-base leading-relaxed text-ink-soft">{axis.niveaus[niveau]}</span>
             </button>
           );
         })}

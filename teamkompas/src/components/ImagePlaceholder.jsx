@@ -5,8 +5,8 @@ export default function ImagePlaceholder({ label, description, aspectRatio = "16
       style={{ aspectRatio }}
     >
       <div>
-        <div className="text-sm font-semibold text-ink">{label}</div>
-        {description ? <div className="mt-1 text-xs text-ink-muted">{description}</div> : null}
+        <div className="text-base font-semibold text-ink">{label}</div>
+        {description ? <div className="mt-1 text-sm text-ink-muted">{description}</div> : null}
       </div>
     </div>
   );

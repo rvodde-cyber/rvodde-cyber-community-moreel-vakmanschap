@@ -40,13 +40,13 @@ export default function TuckmanCheck({ onVerder }) {
         <ProgressBar value={(stap + 1) / faseVolgorde.length} />
       </div>
 
-      <h2 className="mt-7 text-xl font-medium leading-snug tracking-tight text-ink sm:text-2xl">
+      <h2 className="mt-7 font-serif text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl">
         {typering.titel}
       </h2>
-      <p className="mt-3 text-[0.98rem] leading-relaxed text-ink-soft">{typering.tekst}</p>
+      <p className="mt-3 text-lg leading-relaxed text-ink-soft">{typering.tekst}</p>
 
       <div className="mt-8">
-        <label className="mb-3 block text-sm font-semibold text-ink">
+        <label className="mb-3 block text-base font-semibold text-ink">
           In welke mate herken je dit bij jullie team?
         </label>
         <input
@@ -57,13 +57,13 @@ export default function TuckmanCheck({ onVerder }) {
           onChange={(e) => setWaarden({ ...waarden, [huidigeFase]: Number(e.target.value) })}
           className="range"
         />
-        <div className="mt-2 flex justify-between text-xs text-ink-muted">
+        <div className="mt-2 flex justify-between text-sm text-ink-muted">
           <span>Helemaal niet</span>
           <span>Helemaal wel</span>
         </div>
       </div>
 
-      <p className="mt-6 text-xs leading-relaxed text-ink-muted">{tuckmanBron}</p>
+      <p className="mt-6 text-sm leading-relaxed text-ink-muted">{tuckmanBron}</p>
 
       <div className="mt-7 flex items-center justify-between gap-3">
         {stap > 0 ? (

@@ -43,8 +43,8 @@ export const colors = {
 };
 
 export const fonts = {
-  voice: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-  ui: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  voice: "'Fraunces', Georgia, serif",
+  ui: "'Plus Jakarta Sans', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
 };
 
 export const wheelGeometry = {

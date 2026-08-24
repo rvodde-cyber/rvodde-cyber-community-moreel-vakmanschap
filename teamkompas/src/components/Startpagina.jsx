@@ -7,10 +7,10 @@ export default function Startpagina({ onStart }) {
     <div className="space-y-6">
       <section className="glass droplet-accent relative p-7 sm:p-10">
         <p className="eyebrow">Teamreflectie</p>
-        <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+        <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
           {welkom.titel}
         </h1>
-        <p className="mt-4 max-w-xl text-[0.98rem] leading-relaxed text-ink-soft">{welkom.tekst}</p>
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">{welkom.tekst}</p>
 
         <div className="mt-6 flex flex-wrap gap-2">
           <Pill icon={Clock} label="Een paar minuten" />
@@ -32,8 +32,8 @@ export default function Startpagina({ onStart }) {
         <div className="flex items-start gap-3">
           <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
           <div>
-            <h2 className="text-sm font-semibold text-ink">Bronnen</h2>
-            <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{bronvermelding}</p>
+            <h2 className="text-base font-semibold text-ink">Bronnen</h2>
+            <p className="mt-1.5 text-base leading-relaxed text-ink-muted">{bronvermelding}</p>
           </div>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Startpagina({ onStart }) {
 
 function Pill({ icon: Icon, label }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-white/60 px-3 py-1.5 text-xs font-medium text-ink-soft">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-white/60 px-3 py-1.5 text-sm font-medium text-ink-soft">
       <Icon className="h-3.5 w-3.5" aria-hidden="true" />
       {label}
     </span>

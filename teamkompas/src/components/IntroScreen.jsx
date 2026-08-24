@@ -18,17 +18,17 @@ export default function IntroScreen({ onStart }) {
 
       <section className="glass droplet-accent relative overflow-hidden p-7 sm:p-10">
         <p className="eyebrow">Groep of team</p>
-        <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+        <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
           {appTitle}
         </h1>
-        <p className="mt-4 max-w-xl text-[0.98rem] leading-relaxed text-ink-soft">{introText}</p>
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">{introText}</p>
 
         <div className="mt-8 border-t border-hairline pt-6">
-          <h2 className="text-sm font-semibold text-ink">{metafoor.titel}</h2>
-          <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{metafoor.tekst}</p>
+          <h2 className="text-base font-semibold text-ink">{metafoor.titel}</h2>
+          <p className="mt-1.5 text-base leading-relaxed text-ink-soft">{metafoor.tekst}</p>
         </div>
 
-        <p className="mt-6 text-sm leading-relaxed text-ink-muted">{theoreticalBasis}</p>
+        <p className="mt-6 text-base leading-relaxed text-ink-muted">{theoreticalBasis}</p>
 
         <button type="button" onClick={onStart} className="btn-primary mt-8 w-full sm:w-auto">
           Start reflectie
@@ -40,8 +40,8 @@ export default function IntroScreen({ onStart }) {
         <div className="flex items-start gap-3">
           <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
           <div>
-            <h2 className="text-sm font-semibold text-ink">Bronnen</h2>
-            <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">{bronvermelding}</p>
+            <h2 className="text-base font-semibold text-ink">Bronnen</h2>
+            <p className="mt-1.5 text-base leading-relaxed text-ink-muted">{bronvermelding}</p>
           </div>
         </div>
       </section>
