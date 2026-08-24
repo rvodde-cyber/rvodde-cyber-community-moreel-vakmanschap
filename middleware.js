@@ -128,10 +128,16 @@ export default async function middleware(request) {
     return fetch(request);
   }
 
-  // Lazy-load session crypto only when hub is on (avoids Edge issues while disabled).
-  const { COOKIE_NAME, verifySessionToken } = await import("./lib/workshop-session.js");
-  const token = request.cookies.get(COOKIE_NAME)?.value;
-  const session = await verifySessionToken(token);
+  // Session crypto is Edge-safe (Web Crypto only). Still wrapped so a
+  // missing secret or import failure becomes a login redirect, not a 500.
+  let session = null;
+  try {
+    const { COOKIE_NAME, verifySessionToken } = await import("./lib/workshop-session.js");
+    const token = request.cookies.get(COOKIE_NAME)?.value;
+    session = await verifySessionToken(token);
+  } catch {
+    session = null;
+  }
 
   if (!session) {
     const loginUrl = new URL("/workshop", request.url);
