@@ -12,7 +12,7 @@ const factors = [
 
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
-const NIVEAU_TRAVEL = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+const NIVEAU_TRAVEL = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
 
 const VIEWBOX_PARTS = wheelGeometry.viewBox.split(/\s+/).map(Number);
 const [VB_X, VB_Y, VB_W, VB_H] = VIEWBOX_PARTS;
@@ -42,10 +42,10 @@ function rimPoint(index, rimRadius, cx, cy) {
   return nodePosition(index, rimRadius, cx, cy);
 }
 
-function knobTravelRadius(niveau, minRadius, maxRadius) {
+function knobRadiusVoorNiveau(niveau, minRadius, maxRadius) {
   if (!niveau) return minRadius;
   const t = NIVEAU_TRAVEL[niveau];
-  return minRadius + (maxRadius - minRadius) * t;
+  return minRadius + t * (maxRadius - minRadius);
 }
 
 function toPercent(x, y) {
@@ -81,6 +81,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
     rimStrokeWidth,
     spokeWidth,
     knobRadius,
+    knobPositionRadius,
     knobTravelMinRadius,
     knobTravelMaxRadius,
     factorLabelRadius,
@@ -89,18 +90,22 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
   const { x: cx, y: cy } = center;
 
   const isPreview = variant === "preview";
+  const isFilled = variant === "filled";
   const showResults = !isPreview;
   const travelMin = knobTravelMinRadius;
   const travelMax = knobTravelMaxRadius;
+  const fixedKnobRadius = knobPositionRadius;
 
   const knobPositions = useMemo(
     () =>
       factors.map((factor, i) => {
-        if (isPreview) return nodePosition(i, travelMax, cx, cy);
-        const radius = knobTravelRadius(scores[factor.key], travelMin, travelMax);
+        if (isPreview || isFilled) {
+          return nodePosition(i, fixedKnobRadius, cx, cy);
+        }
+        const radius = knobRadiusVoorNiveau(scores[factor.key], travelMin, travelMax);
         return nodePosition(i, radius, cx, cy);
       }),
-    [scores, isPreview, travelMin, travelMax, cx, cy]
+    [scores, isPreview, isFilled, travelMin, travelMax, fixedKnobRadius, cx, cy]
   );
 
   const polygonPoints = knobPositions
