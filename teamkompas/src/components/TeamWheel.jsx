@@ -1,4 +1,4 @@
-import { useMemo, forwardRef } from "react";
+import { useId, useMemo, forwardRef } from "react";
 import { colors, fonts, wheelGeometry } from "../config";
 
 const factors = [
@@ -13,9 +13,6 @@ const factors = [
 const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderheid", "Verbinding"];
 
 const NIVEAU_TRAVEL = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
-
-const VIEWBOX_PARTS = wheelGeometry.viewBox.split(/\s+/).map(Number);
-const [VB_X, VB_Y, VB_W, VB_H] = VIEWBOX_PARTS;
 
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
@@ -48,13 +45,6 @@ function knobRadiusVoorNiveau(niveau, minRadius, maxRadius) {
   return minRadius + t * (maxRadius - minRadius);
 }
 
-function toPercent(x, y) {
-  return {
-    left: `${((x - VB_X) / VB_W) * 100}%`,
-    top: `${((y - VB_Y) / VB_H) * 100}%`,
-  };
-}
-
 function wrapText(text, maxChars = 14) {
   const words = text.split(" ");
   const lines = [];
@@ -72,7 +62,41 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
+function GlassKnob({ x, y, radius, opacity = 1, animate = true, fillId, shadowId }) {
+  return (
+    <g opacity={opacity}>
+      <circle
+        className={animate ? "wheel-knob" : "wheel-knob wheel-knob--static"}
+        cx={x}
+        cy={y}
+        r={radius}
+        fill={`url(#${fillId})`}
+        filter={`url(#${shadowId})`}
+      />
+      <ellipse
+        className={animate ? "wheel-knob-highlight" : "wheel-knob-highlight wheel-knob--static"}
+        cx={x - radius * 0.3}
+        cy={y - radius * 0.35}
+        rx={radius * 0.28}
+        ry={radius * 0.18}
+        fill="#FFFFFF"
+        opacity="0.55"
+      />
+    </g>
+  );
+}
+
 export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", style }, ref) {
+  const uid = useId().replace(/:/g, "");
+  const ids = {
+    rim: `rimGradient-${uid}`,
+    spoke: `spokeGradient-${uid}`,
+    knob: `knobGradient-${uid}`,
+    hub: `hubGradient-${uid}`,
+    softShadow: `softShadow-${uid}`,
+    knobShadow: `knobShadow-${uid}`,
+  };
+
   const {
     viewBox,
     center,
@@ -120,28 +144,6 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
     labelPosition(i, resultLabelRadius, cx, cy)
   );
 
-  const knobSizePct = (knobRadius * 2 / VB_W) * 100;
-  const knobOffsetPct = (knobRadius / VB_W) * 100;
-
-  const knobStyle = (pct, background, opacity = 1, animate = true, border = "2px solid rgba(255,255,255,0.9)") => ({
-    position: "absolute",
-    left: pct.left,
-    top: pct.top,
-    width: `${knobSizePct}%`,
-    aspectRatio: "1",
-    marginLeft: `-${knobOffsetPct}%`,
-    marginTop: `-${knobOffsetPct}%`,
-    borderRadius: "50%",
-    background,
-    border,
-    opacity,
-    boxSizing: "border-box",
-    boxShadow: "0 1px 4px rgba(28, 25, 23, 0.12)",
-    transition: animate
-      ? "left 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), top 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), background 0.3s ease"
-      : undefined,
-  });
-
   return (
     <div
       ref={ref}
@@ -160,6 +162,39 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
         style={{ display: "block" }}
         xmlns="http://www.w3.org/2000/svg"
       >
+        <defs>
+          <linearGradient id={ids.rim} x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
+            <stop offset="45%" stopColor={colors.hubRing} stopOpacity="0.55" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
+          </linearGradient>
+
+          <linearGradient id={ids.spoke} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.4" />
+          </linearGradient>
+
+          <radialGradient id={ids.knob} cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+            <stop offset="40%" stopColor={colors.dotsLight} stopOpacity="0.9" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.85" />
+          </radialGradient>
+
+          <radialGradient id={ids.hub} cx="35%" cy="25%" r="80%">
+            <stop offset="0%" stopColor="#4A3420" stopOpacity="0.92" />
+            <stop offset="60%" stopColor={colors.projectionBg} stopOpacity="0.88" />
+            <stop offset="100%" stopColor="#151210" stopOpacity="0.92" />
+          </radialGradient>
+
+          <filter id={ids.softShadow} x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor={colors.labelAccent} floodOpacity="0.22" />
+          </filter>
+
+          <filter id={ids.knobShadow} x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor={colors.labelAccent} floodOpacity="0.28" />
+          </filter>
+        </defs>
+
         {variant === "filled" && !isPreview && polygonPoints && (
           <polygon
             points={polygonPoints}
@@ -176,8 +211,9 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           cy={cy}
           r={rimRadius}
           fill="none"
-          stroke={colors.hubRing}
+          stroke={`url(#${ids.rim})`}
           strokeWidth={rimStrokeWidth}
+          filter={`url(#${ids.softShadow})`}
         />
 
         {factors.map((_, i) => {
@@ -190,7 +226,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
               y1={edge.y}
               x2={rim.x}
               y2={rim.y}
-              stroke={colors.hubRing}
+              stroke={`url(#${ids.spoke})`}
               strokeWidth={spokeWidth}
               strokeLinecap="round"
             />
@@ -201,9 +237,16 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           cx={cx}
           cy={cy}
           r={hubRadius}
-          fill={colors.hubFill}
-          stroke={colors.hubRing}
-          strokeWidth={1.5}
+          fill={`url(#${ids.hub})`}
+          filter={`url(#${ids.softShadow})`}
+        />
+        <ellipse
+          cx={cx - hubRadius * 0.25}
+          cy={cy - hubRadius * 0.4}
+          rx={hubRadius * 0.55}
+          ry={hubRadius * 0.3}
+          fill="#FFFFFF"
+          opacity="0.12"
         />
         <text
           x={cx}
@@ -221,6 +264,24 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             </tspan>
           ))}
         </text>
+
+        {factors.map((factor, i) => {
+          const pos = knobPositions[i];
+          const niveau = scores[factor.key];
+          const opacity = isPreview || niveau ? 1 : 0.35;
+          return (
+            <GlassKnob
+              key={factor.key}
+              x={pos.x}
+              y={pos.y}
+              radius={knobRadius}
+              opacity={opacity}
+              animate={!isPreview}
+              fillId={ids.knob}
+              shadowId={ids.knobShadow}
+            />
+          );
+        })}
 
         {factors.map((factor, i) => {
           const pos = factorLabelPositions[i];
@@ -269,56 +330,6 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             );
           })}
       </svg>
-
-      {!isPreview && (
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            inset: 0,
-            pointerEvents: "none",
-          }}
-        >
-          {factors.map((factor, i) => {
-            const pos = knobPositions[i];
-            const pct = toPercent(pos.x, pos.y);
-            const niveau = scores[factor.key];
-            let background = colors.surface;
-            let border = "2px solid rgba(28, 25, 23, 0.12)";
-
-            if (niveau === "sterk") {
-              background = colors.dotsStrong;
-              border = "2px solid rgba(255,255,255,0.9)";
-            } else if (niveau === "groeiend") {
-              background = colors.dotsGrowing;
-              border = "2px solid rgba(255,255,255,0.9)";
-            } else if (niveau) {
-              background = colors.dotsVulnerable;
-              border = "2px solid rgba(255,255,255,0.9)";
-            }
-
-            return (
-              <div
-                key={factor.key}
-                style={knobStyle(pct, background, niveau ? 1 : 0.35, true, border)}
-              />
-            );
-          })}
-        </div>
-      )}
-
-      {isPreview &&
-        factors.map((factor, i) => {
-          const pos = knobPositions[i];
-          const pct = toPercent(pos.x, pos.y);
-          return (
-            <div
-              key={factor.key}
-              aria-hidden
-              style={knobStyle(pct, "#99F6E4", 1, false, "2px solid rgba(255,255,255,0.9)")}
-            />
-          );
-        })}
     </div>
   );
 });

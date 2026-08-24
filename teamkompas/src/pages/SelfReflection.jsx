@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ArrowLeft, Download, RotateCcw } from "lucide-react";
-import { colors, wheelGeometry, tuckmanAdvies, gallupNotitie } from "../config";
+import { colors, tuckmanAdvies, gallupNotitie } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
 import { bepaalFaseDirect } from "../logic/tuckman";
@@ -25,54 +25,14 @@ function UitlegBlok({ titel, tekst }) {
   );
 }
 
-function knobFill(niveau) {
-  if (niveau === "sterk") return colors.dotsStrong;
-  if (niveau === "groeiend") return colors.dotsGrowing;
-  if (niveau === "kwetsbaar") return colors.dotsVulnerable;
-  return colors.dotsLight;
-}
-
-function downloadWheelAsImage(container, scores) {
+function downloadWheelAsImage(container) {
   if (!container) return;
 
   const svgElement = container.querySelector("svg");
   if (!svgElement) return;
 
   const serializer = new XMLSerializer();
-  let svgString = serializer.serializeToString(svgElement);
-
-  const factorKeys = [
-    "doelen",
-    "initiatief",
-    "flexibiliteit",
-    "respect",
-    "communicatie",
-    "verantwoordelijkheid",
-  ];
-  const { center, knobRadius, knobTravelMinRadius, knobTravelMaxRadius } = wheelGeometry;
-  const travelMin = knobTravelMinRadius;
-  const travelMax = knobTravelMaxRadius;
-  const niveauTravel = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
-
-  const knobMarkup = factorKeys
-    .map((key, i) => {
-      const niveau = scores[key];
-      if (!niveau) return "";
-      const t = niveauTravel[niveau];
-      const radius = travelMin + (travelMax - travelMin) * t;
-      const angleDeg = -90 + i * 60;
-      const angleRad = (angleDeg * Math.PI) / 180;
-      const x = center.x + radius * Math.cos(angleRad);
-      const y = center.y + radius * Math.sin(angleRad);
-      const fill = knobFill(niveau);
-      return `<circle cx="${x}" cy="${y}" r="${knobRadius}" fill="${fill}" stroke="rgba(255,255,255,0.9)" stroke-width="2" />`;
-    })
-    .join("");
-
-  if (knobMarkup) {
-    svgString = svgString.replace("</svg>", `${knobMarkup}</svg>`);
-  }
-
+  const svgString = serializer.serializeToString(svgElement);
   const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
   const url = URL.createObjectURL(svgBlob);
 
@@ -284,7 +244,7 @@ export default function SelfReflection() {
           <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <button
               type="button"
-              onClick={() => downloadWheelAsImage(wheelRef.current, scores)}
+              onClick={() => downloadWheelAsImage(wheelRef.current)}
               className="btn-primary"
             >
               <Download className="h-4 w-4" aria-hidden="true" />
