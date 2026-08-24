@@ -7,6 +7,8 @@ export const config = {
     "/besloten",
     "/besloten/:path*",
     "/data/workshop/:path*",
+    "/wisselwerking",
+    "/wisselwerking/:path*",
   ],
 };
 
@@ -113,7 +115,8 @@ export default async function middleware(request) {
     });
   }
 
-  // Hub enabled: protect apps/besloten; keep login pages public.
+  // Hub enabled: protect apps, besloten, and same-origin Wisselwerking;
+  // keep login pages public.
   const isPublicWorkshopPath =
     pathname === "/workshop" ||
     pathname === "/workshop/" ||
