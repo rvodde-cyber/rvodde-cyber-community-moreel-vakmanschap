@@ -164,7 +164,7 @@ export default function SelfReflection() {
     return (
       <AppShell>
         <div className="space-y-6">
-          <section className="glass result-glow overflow-hidden p-6 sm:p-9">
+          <section className="glass result-glow p-6 sm:p-9">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="eyebrow">Resultaat</p>
               <span className="rounded-full border border-hairline bg-white/70 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-ink-muted">
