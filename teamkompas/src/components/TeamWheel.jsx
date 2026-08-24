@@ -82,6 +82,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
     hub: `hubGradient-${uid}`,
     softShadow: `softShadow-${uid}`,
     knobShadow: `knobShadow-${uid}`,
+    spokeMask: `spokeMask-${uid}`,
   };
 
   const {
@@ -202,6 +203,11 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           <filter id={ids.knobShadow} x="-50%" y="-50%" width="200%" height="200%">
             <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor={colors.labelAccent} floodOpacity="0.28" />
           </filter>
+
+          <mask id={ids.spokeMask} maskUnits="userSpaceOnUse">
+            <rect x={-40} y={-40} width={680} height={680} fill="white" />
+            <circle cx={cx} cy={cy} r={hubRadius + 1} fill="black" />
+          </mask>
         </defs>
 
         {variant === "filled" && !isPreview && polygonPoints && (
@@ -232,22 +238,24 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           fill={colors.labelAccent}
           opacity="0.18"
         />
-        {factors.map((factor, i) => {
-          const hubEdge = nodePosition(i, hubRadius, cx, cy);
-          const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
-          return (
-            <line
-              key={`spoke-${factor.key}`}
-              x1={hubEdge.x}
-              y1={hubEdge.y}
-              x2={knobPos.x}
-              y2={knobPos.y}
-              stroke={`url(#${ids.spoke}-${factor.key})`}
-              strokeWidth={spokeWidth}
-              strokeLinecap="round"
-            />
-          );
-        })}
+        <g mask={`url(#${ids.spokeMask})`}>
+          {factors.map((factor, i) => {
+            const hubEdge = nodePosition(i, hubRadius, cx, cy);
+            const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
+            return (
+              <line
+                key={`spoke-${factor.key}`}
+                x1={hubEdge.x}
+                y1={hubEdge.y}
+                x2={knobPos.x}
+                y2={knobPos.y}
+                stroke={`url(#${ids.spoke}-${factor.key})`}
+                strokeWidth={spokeWidth}
+                strokeLinecap="round"
+              />
+            );
+          })}
+        </g>
 
         <circle cx={cx} cy={cy} r={hubRadius} fill={colors.projectionBg} />
         <circle
