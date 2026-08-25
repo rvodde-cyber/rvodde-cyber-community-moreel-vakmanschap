@@ -66,7 +66,9 @@ export default function AanmeldFormulier() {
       });
       const data = await response.json().catch(() => ({}));
 
-      if (response.ok) {
+      // data.ok in plaats van response.ok: als de API-route ontbreekt, levert de
+      // SPA-rewrite een HTTP 200 met HTML op, en dat is geen geslaagde aanmelding.
+      if (response.ok && data.ok === true) {
         setResultaat(data.status === "bijgewerkt" ? "bijgewerkt" : "nieuw");
         setStatus("gelukt");
         return;
