@@ -124,6 +124,7 @@ const bibliotheekSv = {
   disclaimerTitel: "Användning & källhänvisning",
   disclaimerTekst:
     "Arbetsbladen på plattformen har utvecklats av Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) som en del av Comenius Senior Fellowship. De underliggande teoretiska modellerna används med källhänvisning och är avsedda för icke-kommersiellt pedagogiskt bruk. Fritt att använda med källangivelse.",
+  overzichtLink: "Eller se allt på en sida — arbetsblad och kort →",
 };
 
 const bibliotheekCs = {
@@ -139,6 +140,7 @@ const bibliotheekCs = {
   disclaimerTitel: "Použití a uvedení zdroje",
   disclaimerTekst:
     "Pracovní listy na této platformě vyvinul Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) v rámci Comenius Senior Fellowship. Podkladové teoretické modely jsou používány s uvedením zdroje a jsou určeny pro nekomerční vzdělávací účely. Volně k použití s uvedením zdroje.",
+  overzichtLink: "Nebo si zobrazte vše na jedné stránce — listy i karty →",
 };
 
 const bibliotheekDa = {
@@ -154,6 +156,7 @@ const bibliotheekDa = {
   disclaimerTitel: "Brug & kildeangivelse",
   disclaimerTekst:
     "Arbejdsarkene på platformen er udviklet af Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) som en del af Comenius Senior Fellowship. De underliggende teoretiske modeller anvendes med kildeangivelse og er beregnet til ikke-kommerciel uddannelsesbrug. Fri at bruge med kildeangivelse.",
+  overzichtLink: "Eller se alt på én side — arbejdsark og kort →",
 };
 
 const stapPaginaSv = {
@@ -372,6 +375,126 @@ const gesprekskaartenDa = {
   },
 };
 
+const overzichtSv = {
+  label: "Allt på en sida",
+  titel: "Översikt över allt material",
+  subtitel:
+    "Varje arbetsblad, varje arbetsform och varje samtalskort på ett ställe — sökbart, filtrerbart och med nedladdningarna.",
+  zoekPlaceholder: "Sök på titel, tema eller nyckelord…",
+  zoekLabel: "Sök",
+  soortLabel: "Typ",
+  stapLabel: "Modellsteg",
+  taalLabel: "Språk",
+  beschikbaarLabel: "Tillgänglighet",
+  alles: "Alla",
+  werkbladen: "Arbetsblad och arbetsformer",
+  kaarten: "Samtalskort",
+  metDownload: "Med nedladdning",
+  binnenkort: "Under utveckling",
+  wisFilters: "Rensa filter",
+  geenResultaat: "Inget hittades med dessa filter.",
+  telWerkbladen: "arbetsblad och arbetsformer",
+  telKaarten: "samtalskort",
+  telDownloads: "nedladdningsbara filer",
+  resultaat: "resultat",
+  resultaatEnkel: "resultat",
+  downloadNl: "NL",
+  downloadEn: "EN",
+  nietBeschikbaar: "Kommer snart",
+  bekijkKaart: "Visa bland samtalskorten",
+  naarKaarten: "Till samtalskorten",
+  naarBibliotheek: "Till biblioteket per steg",
+  verhaalLabel: "Berättelse & reflektion",
+  setLabels: {
+    "morele-moed-teaser": "Moraliskt mod — smakprov",
+    burgerschap: "Medborgarskap",
+    "dl-compleet-a5": "Dilemman komplett (A5)",
+    "nucleaire-geneeskunde": "Nuklearmedicin",
+    onderzoeksintegriteit: "Forskningsintegritet",
+    "onderwijs-v3": "Utbildning",
+  },
+};
+
+const overzichtCs = {
+  label: "Vše na jedné stránce",
+  titel: "Přehled všech materiálů",
+  subtitel:
+    "Každý pracovní list, každá pracovní forma a každá dialogová karta na jednom místě — s vyhledáváním, filtry a soubory ke stažení.",
+  zoekPlaceholder: "Hledat podle názvu, tématu nebo klíčového slova…",
+  zoekLabel: "Hledat",
+  soortLabel: "Typ",
+  stapLabel: "Krok modelu",
+  taalLabel: "Jazyk",
+  beschikbaarLabel: "Dostupnost",
+  alles: "Vše",
+  werkbladen: "Pracovní listy a pracovní formy",
+  kaarten: "Dialogové karty",
+  metDownload: "Ke stažení",
+  binnenkort: "Ve vývoji",
+  wisFilters: "Zrušit filtry",
+  geenResultaat: "S těmito filtry nebylo nic nalezeno.",
+  telWerkbladen: "pracovních listů a forem",
+  telKaarten: "dialogových karet",
+  telDownloads: "souborů ke stažení",
+  resultaat: "výsledků",
+  resultaatEnkel: "výsledek",
+  downloadNl: "NL",
+  downloadEn: "EN",
+  nietBeschikbaar: "Již brzy",
+  bekijkKaart: "Zobrazit u dialogových karet",
+  naarKaarten: "Na dialogové karty",
+  naarBibliotheek: "Do knihovny podle kroků",
+  verhaalLabel: "Příběh a reflexe",
+  setLabels: {
+    "morele-moed-teaser": "Morální odvaha — ukázka",
+    burgerschap: "Občanství",
+    "dl-compleet-a5": "Dilemata kompletní (A5)",
+    "nucleaire-geneeskunde": "Nukleární medicína",
+    onderzoeksintegriteit: "Integrita výzkumu",
+    "onderwijs-v3": "Vzdělávání",
+  },
+};
+
+const overzichtDa = {
+  label: "Alt på én side",
+  titel: "Oversigt over alt materiale",
+  subtitel:
+    "Hvert arbejdsark, hver arbejdsform og hvert samtalekort ét sted — søgbart, med filtre og downloads.",
+  zoekPlaceholder: "Søg på titel, tema eller nøgleord…",
+  zoekLabel: "Søg",
+  soortLabel: "Type",
+  stapLabel: "Modeltrin",
+  taalLabel: "Sprog",
+  beschikbaarLabel: "Tilgængelighed",
+  alles: "Alle",
+  werkbladen: "Arbejdsark og arbejdsformer",
+  kaarten: "Samtalekort",
+  metDownload: "Med download",
+  binnenkort: "Under udvikling",
+  wisFilters: "Ryd filtre",
+  geenResultaat: "Intet fundet med disse filtre.",
+  telWerkbladen: "arbejdsark og arbejdsformer",
+  telKaarten: "samtalekort",
+  telDownloads: "filer til download",
+  resultaat: "resultater",
+  resultaatEnkel: "resultat",
+  downloadNl: "NL",
+  downloadEn: "EN",
+  nietBeschikbaar: "Kommer snart",
+  bekijkKaart: "Se ved samtalekortene",
+  naarKaarten: "Til samtalekortene",
+  naarBibliotheek: "Til biblioteket pr. trin",
+  verhaalLabel: "Fortælling & refleksion",
+  setLabels: {
+    "morele-moed-teaser": "Moralsk mod — smagsprøve",
+    burgerschap: "Medborgerskab",
+    "dl-compleet-a5": "Dilemmaer komplet (A5)",
+    "nucleaire-geneeskunde": "Nuklearmedicin",
+    onderzoeksintegriteit: "Forskningsintegritet",
+    "onderwijs-v3": "Undervisning",
+  },
+};
+
 export const pageUiLocales = {
   sv: {
     navItems: navItemsSv,
@@ -379,6 +502,7 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekSv,
     stapPagina: stapPaginaSv,
     gesprekskaarten: gesprekskaartenSv,
+    overzicht: overzichtSv,
   },
   cs: {
     navItems: navItemsCs,
@@ -386,6 +510,7 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekCs,
     stapPagina: stapPaginaCs,
     gesprekskaarten: gesprekskaartenCs,
+    overzicht: overzichtCs,
   },
   da: {
     navItems: navItemsDa,
@@ -393,5 +518,6 @@ export const pageUiLocales = {
     bibliotheek: bibliotheekDa,
     stapPagina: stapPaginaDa,
     gesprekskaarten: gesprekskaartenDa,
+    overzicht: overzichtDa,
   },
 };

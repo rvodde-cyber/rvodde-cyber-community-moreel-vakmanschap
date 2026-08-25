@@ -9,6 +9,7 @@ const routePairs = [
   ["/aanbod", "/what-we-offer"],
   ["/gesprekskaarten", "/conversation-cards"],
   ["/bibliotheek", "/library"],
+  ["/overzicht", "/overview"],
   ["/aanmelden", "/join"],
 ];
 
