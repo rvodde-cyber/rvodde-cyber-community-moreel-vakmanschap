@@ -66,7 +66,7 @@ export const vertalingen = {
       emailLabel: 'E-mailadres',
       vraagLabel: 'Waar werk jij aan in ethiekonderwijs? (optioneel)',
       consentLabel: 'Ja, houd mij per e-mail op de hoogte van de community — nieuw materiaal, bijeenkomsten en uitnodigingen. Je kunt je op elk moment afmelden.',
-      privacyNotitie: 'We bewaren alleen je naam, functie, organisatie en e-mailadres, en gebruiken die uitsluitend voor berichten van de Community Moreel Vakmanschap. Nooit gedeeld met derden.',
+      privacyNotitie: 'We bewaren alleen je naam, functie, organisatie en e-mailadres, en gebruiken die uitsluitend voor berichten van de Community Moreel Vakmanschap — nooit gedeeld met derden. De lijst wordt beheerd door Richard Voddé, Comenius Senior Fellow. Vragen of afmelden?',
       knop: 'Stuur mijn aanmelding',
       knopBezig: 'Bezig met versturen…',
       succesTitel: 'Je staat op de lijst',
@@ -84,7 +84,7 @@ export const vertalingen = {
       },
       emailSubject: 'Aanmelding Community Moreel Vakmanschap',
       emailVraag: 'Waar werk jij aan in ethiekonderwijs?',
-      emailTo: 'lectoraatethischwerken@fontys.nl',
+      emailTo: 'r.vodde@fontys.nl',
       nietIngevuld: 'Niet ingevuld'
     },
     footer: {
@@ -236,11 +236,12 @@ export const vertalingen = {
     maker: {
       label: 'De maker',
       titel: 'Richard Voddé',
+      rol: 'Comenius Senior Fellow — Lectoraat Ethisch Werken, Fontys Hogescholen',
       alineas: [
         'Richard Voddé is docent en onderzoeker Ethisch Werken aan Fontys Hogescholen in Tilburg. Als Comenius Senior Fellow werkt hij aan de vraag hoe ethiekonderwijs in het hoger beroepsonderwijs werkelijk vormt — niet alleen informeert.',
         'Hij ontwikkelde het Model Moreel Vakmanschap en de bijbehorende gesprekskaartenmethodiek, en bouwt daaromheen een Community of Practice voor docenten en onderzoekers bij hogescholen en universiteiten in Nederland en daarbuiten. Zijn klankbordgroep bestaat uit collega\'s bij HAN, Avans en Hogeschool Utrecht. Internationaal werkt hij samen met universitaire partners via het HEROES-project.',
       ],
-      contact: 'lectoraatethischwerken@fontys.nl',
+      contact: 'r.vodde@fontys.nl',
       contactLabel: 'Neem contact op',
     },
     visie: {
@@ -317,7 +318,7 @@ export const vertalingen = {
       emailLabel: 'Email address',
       vraagLabel: 'What are you working on in ethics education? (optional)',
       consentLabel: 'Yes, keep me informed by email about the community — new materials, meetings and invitations. You can unsubscribe at any time.',
-      privacyNotitie: 'We only store your name, role, organisation and email address, and use them solely for messages from the Community of Moral Craftsmanship. Never shared with third parties.',
+      privacyNotitie: 'We only store your name, role, organisation and email address, and use them solely for messages from the Community of Moral Craftsmanship — never shared with third parties. The list is kept by Richard Voddé, Comenius Senior Fellow. Questions, or want to unsubscribe?',
       knop: 'Send my registration',
       knopBezig: 'Sending…',
       succesTitel: 'You are on the list',
@@ -335,7 +336,7 @@ export const vertalingen = {
       },
       emailSubject: 'Registration Community Moral Craftsmanship',
       emailVraag: 'What are you working on in ethics education?',
-      emailTo: 'lectoraatethischwerken@fontys.nl',
+      emailTo: 'r.vodde@fontys.nl',
       nietIngevuld: 'Not provided'
     },
     footer: {
@@ -487,11 +488,12 @@ export const vertalingen = {
     maker: {
       label: 'The author',
       titel: 'Richard Voddé',
+      rol: 'Comenius Senior Fellow — Research Group Ethical Practice, Fontys University of Applied Sciences',
       alineas: [
         'Richard Voddé is a lecturer and researcher in Ethical Practice at Fontys University of Applied Sciences in Tilburg, the Netherlands. As a Comenius Senior Fellow, he works on the question of how ethics education in higher professional education can genuinely shape people — not merely inform them.',
         'He developed the Model of Moral Craftsmanship and the conversation card methodology, and is building a Community of Practice for ethics educators at universities of applied sciences and research universities in the Netherlands and internationally. His advisory group includes colleagues at HAN, Avans, and Hogeschool Utrecht. He collaborates with international university partners through the HEROES project.',
       ],
-      contact: 'lectoraatethischwerken@fontys.nl',
+      contact: 'r.vodde@fontys.nl',
       contactLabel: 'Get in touch',
     },
     visie: {
@@ -543,7 +545,7 @@ function mergeSiteOverlay(taal, base) {
     stappen: overlay.stappen ?? base.stappen,
     fundament: overlay.fundament ?? base.fundament,
     overPagina: overlay.overPagina ?? base.overPagina,
-    maker: overlay.maker ?? base.maker,
+    maker: { ...base.maker, ...overlay.maker },
     visie: overlay.visie ?? base.visie,
     aanmelden: { ...base.aanmelden, ...overlay.aanmelden },
     footer: overlay.footer ?? base.footer,

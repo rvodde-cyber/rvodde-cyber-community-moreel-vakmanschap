@@ -243,7 +243,12 @@ export default function AanmeldFormulier() {
         {bezig ? a.knopBezig : a.knop}
       </button>
 
-      <p className="text-xs leading-6 text-secundair">{a.privacyNotitie}</p>
+      <p className="text-xs leading-6 text-secundair">
+        {a.privacyNotitie}{" "}
+        <a href={`mailto:${a.emailTo}`} className="font-semibold text-[#534ab7] underline underline-offset-2">
+          {a.emailTo}
+        </a>
+      </p>
     </form>
   );
 }
