@@ -48,6 +48,10 @@ const materiaalBron = {
     nl: "Rest (1986); Kidder (2005); Tjin A Djie & Zwaan (2010) — vrij te gebruiken met bronvermelding",
     en: "Rest (1986); Kidder (2005); Tjin A Djie & Zwaan (2010) — free to use with attribution",
   },
+  MV_21: {
+    nl: "Eigen ontwikkeling Community Moreel Vakmanschap — gebaseerd op Argyris & Schön (espoused theory / theory-in-use); vrij te gebruiken met bronvermelding",
+    en: "Developed by the Community of Moral Craftsmanship — based on Argyris & Schön (espoused theory / theory-in-use); free to use with attribution",
+  },
 };
 
 export const bibliotheekData = {
@@ -156,6 +160,17 @@ export const bibliotheekData = {
           bestand_en: 'MV_11_LearysRose_EN.docx',
           map: 'zien',
           bron: materiaalBron.MV_11,
+        },
+        {
+          id: 'MV_21',
+          titel: 'Moreel Woordenboek — werkvormen',
+          themas: ['Morele taal', 'Beleid', 'Theory-in-use', 'Espoused theory'],
+          niveau: 'concept',
+          omschrijving: 'Vier werkvormen bij het digitale Moreel Woordenboek: woordenjacht, espoused vs. in use, clusterdebat en lexicon-uitbreiding. Digitaal lexicon: /woordenboek',
+          bestand_nl: 'MV_21_MoreelWoordenboek_Werkvormen_NL.docx',
+          bestand_en: 'MV_21_MoreelWoordenboek_Werkvormen_EN.docx',
+          map: 'zien',
+          bron: materiaalBron.MV_21,
         },
       ],
     },
@@ -379,6 +394,17 @@ export const bibliotheekData = {
         { id: 'MV_09', titel: 'Johari Window', themas: ['Self-awareness', 'Feedback', 'Blind spots'], niveau: 'aanbevolen', bestand_nl: 'MV_09_JohariVenster.docx', bestand_en: 'MV_09_JohariWindow_EN.docx', map: 'zien', bron: materiaalBron.MV_09 },
         { id: 'MV_10', titel: 'Bateson\'s Logical Levels', themas: ['Identity', 'Beliefs', 'Behaviour'], niveau: 'aanbevolen', bestand_nl: 'MV_10_LogischeNiveausBateson.docx', bestand_en: 'MV_10_LogicalLevelsBateson_EN.docx', map: 'zien', bron: materiaalBron.MV_10 },
         { id: 'MV_11', titel: 'Leary\'s Rose', themas: ['Interaction', 'Behaviour patterns', 'Relationships'], niveau: 'aanbevolen', bestand_nl: 'MV_11_RoosVanLeary.docx', bestand_en: 'MV_11_LearysRose_EN.docx', map: 'zien', bron: materiaalBron.MV_11 },
+        {
+          id: 'MV_21',
+          titel: 'Moral Dictionary — work forms',
+          themas: ['Moral language', 'Policy', 'Theory-in-use', 'Espoused theory'],
+          niveau: 'concept',
+          omschrijving: 'Four work forms for the digital Moral Dictionary: word hunt, espoused vs. in use, cluster debate and lexicon expansion. Digital lexicon: /dictionary',
+          bestand_nl: 'MV_21_MoreelWoordenboek_Werkvormen_NL.docx',
+          bestand_en: 'MV_21_MoreelWoordenboek_Werkvormen_EN.docx',
+          map: 'zien',
+          bron: materiaalBron.MV_21,
+        },
       ],
     },
     {

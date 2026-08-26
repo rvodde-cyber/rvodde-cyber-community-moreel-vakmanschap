@@ -6,6 +6,7 @@ const navItemsSv = [
   { label: "Om oss", href: "/about" },
   { label: "Vad vi erbjuder", href: "/what-we-offer" },
   { label: "Samtalskort", href: "/conversation-cards" },
+  { label: "Ordbok", href: "/dictionary" },
   { label: "Bibliotek", href: "/library" },
   { label: "Gå med", href: "/join", knop: true },
 ];
@@ -16,6 +17,7 @@ const navItemsCs = [
   { label: "O nás", href: "/about" },
   { label: "Co nabízíme", href: "/what-we-offer" },
   { label: "Konverzační karty", href: "/conversation-cards" },
+  { label: "Slovník", href: "/dictionary" },
   { label: "Knihovna", href: "/library" },
   { label: "Připojit se", href: "/join", knop: true },
 ];
@@ -26,6 +28,7 @@ const navItemsDa = [
   { label: "Om os", href: "/about" },
   { label: "Hvad vi tilbyder", href: "/what-we-offer" },
   { label: "Samtalekort", href: "/conversation-cards" },
+  { label: "Ordbog", href: "/dictionary" },
   { label: "Bibliotek", href: "/library" },
   { label: "Bliv medlem", href: "/join", knop: true },
 ];
