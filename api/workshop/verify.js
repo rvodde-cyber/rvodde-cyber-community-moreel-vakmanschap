@@ -1,15 +1,14 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import { isWorkshopHubEnabled } from "../../lib/workshop-flags.js";
+import {
+  getVoorproefPassword,
+  getWorkshopPassword,
+  loadWorkshopConfig,
+} from "../../lib/workshop-config.js";
 import {
   SESSION_HOURS,
   createSessionToken,
   sessionCookieHeader,
 } from "../../lib/workshop-session.js";
-
-function loadConfig() {
-  const configPath = join(process.cwd(), "moralcraftsmanship-platform/workshop-config.json");
-  return JSON.parse(readFileSync(configPath, "utf8"));
-}
 
 function isDateExpired(dateStr) {
   if (!dateStr) return true;
@@ -37,11 +36,29 @@ export default async function handler(req, res) {
     return;
   }
 
-  const { password, mode } = req.body || {};
-  const config = loadConfig();
+  if (!isWorkshopHubEnabled()) {
+    res.status(503).json({ ok: false, error: "hub_disabled" });
+    return;
+  }
 
-  if (mode === "voorproef" || (config.voorproef?.ingeschakeld && password === config.voorproef.wachtwoord)) {
-    const voorproef = config.voorproef || {};
+  const { password, mode } = req.body || {};
+
+  let config;
+  let workshopPassword;
+  let voorproefPassword;
+  try {
+    config = loadWorkshopConfig();
+    workshopPassword = getWorkshopPassword();
+    voorproefPassword = getVoorproefPassword();
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).json({ ok: false, error: "server_misconfigured" });
+    return;
+  }
+
+  const voorproef = config.voorproef || {};
+
+  if (mode === "voorproef" || (voorproef.ingeschakeld && password === voorproefPassword)) {
     if (!voorproef.ingeschakeld) {
       res.status(403).json({ ok: false, error: "preview_disabled" });
       return;
@@ -50,18 +67,23 @@ export default async function handler(req, res) {
       res.status(403).json({ ok: false, error: "preview_expired" });
       return;
     }
-    if (!password || password !== voorproef.wachtwoord) {
+    if (!password || password !== voorproefPassword) {
       res.status(401).json({ ok: false, error: "invalid" });
       return;
     }
 
-    await sendSession(
-      res,
-      voorproef.label || "Voorvertoning",
-      voorproef.geldig_tot,
-      voorproef.duur_uren || 24,
-      true
-    );
+    try {
+      await sendSession(
+        res,
+        voorproef.label || "Voorvertoning",
+        voorproef.geldig_tot,
+        voorproef.duur_uren || 24,
+        true
+      );
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).json({ ok: false, error: "server_misconfigured" });
+    }
     return;
   }
 
@@ -70,10 +92,15 @@ export default async function handler(req, res) {
     return;
   }
 
-  if (!password || password !== config.password) {
+  if (!password || password !== workshopPassword) {
     res.status(401).json({ ok: false, error: "invalid" });
     return;
   }
 
-  await sendSession(res, config.workshop_naam, config.geldig_tot, SESSION_HOURS, false);
+  try {
+    await sendSession(res, config.workshop_naam, config.geldig_tot, SESSION_HOURS, false);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).json({ ok: false, error: "server_misconfigured" });
+  }
 }

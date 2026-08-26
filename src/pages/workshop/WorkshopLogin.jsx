@@ -7,6 +7,8 @@ const ERROR_MESSAGES = {
   expired: "Deze workshoptoegang is verlopen. Vraag de facilitator om een nieuwe code.",
   preview_expired: "De voorvertoning is verlopen. Vraag om een nieuwe voorproefcode.",
   preview_disabled: "Voorvertoning is momenteel uitgeschakeld.",
+  hub_disabled: "Het workshopgedeelte is tijdelijk niet beschikbaar.",
+  server_misconfigured: "Serverconfiguratie ontbreekt. Neem contact op met de beheerder.",
   network: "Er ging iets mis. Controleer je verbinding en probeer opnieuw.",
 };
 
@@ -25,6 +27,10 @@ export default function WorkshopLogin({ mode = "workshop" }) {
     fetch("/api/workshop/session")
       .then((r) => r.json())
       .then((data) => {
+        if (data.hub_enabled === false) {
+          navigate("/workshop/unavailable", { replace: true });
+          return;
+        }
         setVoorproefBeschikbaar(Boolean(data.voorproef_beschikbaar));
         if (data.authenticated) {
           navigate(redirect, {

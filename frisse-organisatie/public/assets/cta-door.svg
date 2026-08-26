@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Een openstaande deur met licht dat naar binnen valt">
+  <title>Doorverwijzing</title>
+  <!-- Placeholder voor asset 5 (§8.2): effen kleurvlak met icoon-vorm, te
+       vervangen door de Firefly-illustratie. -->
+  <defs>
+    <linearGradient id="light" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F5F5F4" />
+  <path d="M 470 90 L 700 40 L 700 560 L 470 510 Z" fill="url(#light)" />
+  <rect x="250" y="120" width="220" height="360" rx="10" fill="none" stroke="#78716C" stroke-width="6" />
+  <circle cx="440" cy="310" r="8" fill="#78716C" />
+</svg>

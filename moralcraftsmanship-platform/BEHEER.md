@@ -6,12 +6,33 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 **Platform-URL (Vercel):** https://rvodde-cyber-community-moreel-vakma.vercel.app  
 **Doel-domein:** moralcraftsmanship.com (koppelen in Vercel → Domains)
 
+## Workshop Hub — status
+
+De Workshop Hub is **standaard uitgeschakeld** (`WORKSHOP_HUB_ENABLED=false`).  
+Zolang die vlag niet op `true` staat, tonen `/workshop`, `/workshop/apps` en `/besloten` een nette “Binnenkort beschikbaar”-pagina.
+
+### Secrets & wachtwoorden (niet in deze repo)
+
+Zet deze **alleen** in Vercel → Project → Settings → Environment Variables (Production + Preview):
+
+| Variabele | Doel |
+|-----------|------|
+| `WORKSHOP_HUB_ENABLED` | `true` om de hub in te schakelen; anders uit |
+| `VITE_WORKSHOP_HUB_ENABLED` | Zelfde waarde als hierboven (Vite build-time) |
+| `WORKSHOP_SESSION_SECRET` | HMAC-secret voor sessiecookies (sterk, uniek) |
+| `WORKSHOP_PASSWORD` | Gedeeld workshopwachtwoord |
+| `WORKSHOP_VOORPROEF_PASSWORD` | Code voor tijdelijke voorvertoning |
+
+Niet-geheime metadata (naam, geldigheidsdatum) staat in `workshop-config.json` — **zonder wachtwoorden**.
+
+Nieuwe codes / secrets: apart en veilig aan Richard doorgeven (niet via GitHub-commit of publieke chat). Oude codes die ooit in git stonden: als gecompromitteerd beschouwen en niet hergebruiken.
+
 ## Categorieën
 
 | Categorie | Betekenis |
 |-----------|-----------|
 | `publiek` | Open op moralcraftsmanship.com — geen wachtwoord |
-| `besloten` | Alleen via `/workshop` met wachtwoord |
+| `besloten` | Alleen via `/workshop` met wachtwoord (wanneer hub is ingeschakeld) |
 | `onbepaald` | Nog te bepalen (bijv. Diversiteits Monitor) |
 
 ## App-tabel
@@ -55,13 +76,13 @@ Pas dit bestand aan als een app van categorie wisselt; daarna `npm run workshop:
 
 ## Tijdelijk rondkijken (voorvertoning)
 
-Deel deze link met mensen die **zonder workshopwachtwoord** even willen rondkijken:
+Alleen beschikbaar als de Workshop Hub is ingeschakeld (`WORKSHOP_HUB_ENABLED=true` én `VITE_WORKSHOP_HUB_ENABLED=true`).
 
 **Link:** `https://rvodde-cyber-community-moreel-vakma.vercel.app/workshop/voorproef`  
 *(of moralcraftsmanship.com/workshop/voorproef zodra het domein gekoppeld is)*
 
-**Voorproefcode:** zie `voorproef.wachtwoord` in `workshop-config.json` (nu: `kijken-juli-2026`, geldig t/m **31 juli 2026**).  
-Toegang duurt max. 24 uur per sessie. Pas alleen `workshop-config.json` aan om code of datum te wijzigen.
+**Voorproefcode:** zie Vercel environment variable `WORKSHOP_VOORPROEF_PASSWORD` (niet in deze repo).  
+Geldigheid/metadata: `voorproef.geldig_tot` in `workshop-config.json`. Sessieduur: max. `voorproef.duur_uren` uur.
 
 ## Overige Vercel-projecten (niet in workshop-hub)
 
@@ -71,10 +92,6 @@ Toegang duurt max. 24 uur per sessie. Pas alleen `workshop-config.json` aan om c
 | Rad van Moreel Fortuin | https://rad-van-moreel-fortuin.vercel.app | = Dilemma Roulette (Git losgekoppeld in Vercel) |
 | HEROES Project | https://heroes-project-eight.vercel.app | Participant Reflection Form |
 | Moreel Vakmanschap (login) | https://moreel-leiderschap-app.vercel.app | Aparte login-app |
-
-## Wachtwoord workshop
-
-Zie `workshop-config.json` in deze map.
 
 ## Scheidingsregels (hard)
 

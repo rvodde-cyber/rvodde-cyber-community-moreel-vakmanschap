@@ -30,6 +30,8 @@ import WelkomPagina from "./pages/WelkomPagina";
 import WoordenboekPagina from "./pages/WoordenboekPagina";
 import WorkshopLogin from "./pages/workshop/WorkshopLogin";
 import WorkshopHub from "./pages/workshop/WorkshopHub";
+import WorkshopUnavailable from "./pages/workshop/WorkshopUnavailable";
+import { isWorkshopHubEnabledClient } from "./config/workshopHub";
 
 
 
@@ -245,14 +247,57 @@ function AppRoutes() {
 
       <Routes>
 
-        <Route path="/workshop" element={<WorkshopLogin mode="workshop" />} />
-        <Route path="/workshop/voorproef" element={<WorkshopLogin mode="voorproef" />} />
+        <Route path="/workshop/unavailable" element={<WorkshopUnavailable />} />
 
-        <Route path="/workshop/apps" element={<WorkshopHub />} />
+        <Route
+          path="/workshop"
+          element={
+            isWorkshopHubEnabledClient() ? (
+              <WorkshopLogin mode="workshop" />
+            ) : (
+              <WorkshopUnavailable />
+            )
+          }
+        />
+        <Route
+          path="/workshop/voorproef"
+          element={
+            isWorkshopHubEnabledClient() ? (
+              <WorkshopLogin mode="voorproef" />
+            ) : (
+              <WorkshopUnavailable />
+            )
+          }
+        />
 
-        <Route path="/besloten" element={<Navigate to="/workshop/apps" replace />} />
+        <Route
+          path="/workshop/apps"
+          element={
+            isWorkshopHubEnabledClient() ? <WorkshopHub /> : <WorkshopUnavailable />
+          }
+        />
 
-        <Route path="/besloten/*" element={<Navigate to="/workshop/apps" replace />} />
+        <Route
+          path="/besloten"
+          element={
+            isWorkshopHubEnabledClient() ? (
+              <Navigate to="/workshop/apps" replace />
+            ) : (
+              <WorkshopUnavailable />
+            )
+          }
+        />
+
+        <Route
+          path="/besloten/*"
+          element={
+            isWorkshopHubEnabledClient() ? (
+              <Navigate to="/workshop/apps" replace />
+            ) : (
+              <WorkshopUnavailable />
+            )
+          }
+        />
 
         <Route path="/" element={<PageRoute><WelkomPagina /></PageRoute>} />
 

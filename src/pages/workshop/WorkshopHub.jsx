@@ -28,6 +28,10 @@ export default function WorkshopHub() {
       fetch("/data/workshop/hub-apps.json").then((r) => r.json()),
     ])
       .then(([session, hubData]) => {
+        if (session.hub_enabled === false) {
+          navigate("/workshop/unavailable", { replace: true });
+          return;
+        }
         if (!session.authenticated) {
           navigate("/workshop", { replace: true });
           return;
@@ -36,7 +40,7 @@ export default function WorkshopHub() {
         setIsVoorproef(Boolean(session.voorproef));
         setApps(hubData.apps || []);
       })
-      .catch(() => navigate("/workshop", { replace: true }))
+      .catch(() => navigate("/workshop/unavailable", { replace: true }))
       .finally(() => setLoading(false));
   }, [location.state, navigate]);
 

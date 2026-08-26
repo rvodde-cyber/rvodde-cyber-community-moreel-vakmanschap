@@ -95,13 +95,20 @@
       "hubBadge": "workshop"
     },
     {
+      "id": "frisse-organisatie",
+      "naam": "De Frisse Organisatie",
+      "omschrijving": "Verkennende instapscan (klavertje vier): integriteit, team, organisatie en leiderschap. Wijst door naar het bijpassende verdiepende instrument.",
+      "url": "https://rvodde-cyber-community-moreel-vakma.vercel.app/frisse-organisatie",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (frisse-organisatie/)",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "altijd"
+    },
+    {
       "id": "wisselwerking",
       "naam": "Wisselwerking",
       "omschrijving": "Teamwiel voor zelfreflectie op teamsamenwerking (Vroemen + Tuckman).",
-      "url": "https://wisselwerking.vercel.app",
-      "url_extra": [
-        "https://rvodde-cyber-community-moreel-vakma.vercel.app/wisselwerking/"
-      ],
+      "url": "/wisselwerking/",
       "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (teamkompas/)",
       "categorie": "besloten",
       "status": "live",

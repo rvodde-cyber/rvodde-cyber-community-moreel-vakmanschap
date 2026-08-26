@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import { colors, fonts, wheelGeometry } from "../config";
+import { colors, fonts, wheelGeometry, tuckmanAdvies, gallupNotitie } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
-import { suggereerFase } from "../logic/tuckman";
+import { bepaalFaseDirect } from "../logic/tuckman";
 import { getRecommendation } from "../logic/recommendations";
 import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
 import Startpagina from "../components/Startpagina";
@@ -12,6 +12,7 @@ import AxisSelector from "../components/AxisSelector";
 import TeamWheel from "../components/TeamWheel";
 import ImagePlaceholder from "../components/ImagePlaceholder";
 import EthischLeiderschap from "../components/EthischLeiderschap";
+import TuckmanCheck from "../components/TuckmanCheck";
 
 function UitlegBlok({ titel, tekst }) {
   return (
@@ -63,7 +64,7 @@ function downloadWheelAsImage(container, scores) {
   const { center, knobRadius, knobTravelMinRadius, knobTravelMaxRadius } = wheelGeometry;
   const travelMin = knobTravelMinRadius;
   const travelMax = knobTravelMaxRadius;
-  const niveauTravel = { kwetsbaar: 0.33, groeiend: 0.66, sterk: 1 };
+  const niveauTravel = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
 
   const knobMarkup = factorKeys
     .map((key, i) => {
@@ -131,12 +132,9 @@ export default function SelfReflection() {
         setStep(step + 1);
       } else {
         const balans = bepaalBalans(updated);
-        const fase = suggereerFase(updated);
         const niveauZwak = updated[balans.zwaksteFactor];
-        setFaseKey(fase);
-        setFaseTekst(faseLabels[fase] ?? fase);
         setAanbevelingTekst(getRecommendation(balans.zwaksteFactor, niveauZwak));
-        setPhase("result");
+        setPhase("tuckman");
       }
       setIsAdvancing(false);
     }, 950);
@@ -146,6 +144,13 @@ export default function SelfReflection() {
     setPhase("questions");
     setStep(0);
     setScores({});
+  }
+
+  function handleTuckmanVerder(waarden) {
+    const { fase } = bepaalFaseDirect(waarden);
+    setFaseKey(fase);
+    setFaseTekst(faseLabels[fase] ?? fase);
+    setPhase("result");
   }
 
   if (phase === "start") {
@@ -172,6 +177,14 @@ export default function SelfReflection() {
     );
   }
 
+  if (phase === "tuckman") {
+    return (
+      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+        <TuckmanCheck onVerder={handleTuckmanVerder} />
+      </div>
+    );
+  }
+
   if (phase === "ethisch") {
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -184,6 +197,12 @@ export default function SelfReflection() {
     const balans = bepaalBalans(scores);
     const zwaksteAxis = axesSelf.find((a) => a.key === balans.zwaksteFactor);
     const faseInfo = faseUitleg[faseKey];
+    const groeiAdvies = tuckmanAdvies[faseKey];
+    const volgendeLabel = groeiAdvies?.volgendeFase
+      ? volgendeFaseLabels[groeiAdvies.volgendeFase] ?? groeiAdvies.volgendeFase
+      : faseInfo?.volgendeFase
+        ? volgendeFaseLabels[faseInfo.volgendeFase] ?? faseInfo.volgendeFase
+        : null;
 
     return (
       <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
@@ -279,7 +298,7 @@ export default function SelfReflection() {
               Dit is een suggestie op basis van het patroon — klopt dit voor jullie team?
             </p>
 
-            {faseInfo && (
+            {(faseInfo || groeiAdvies) && (
               <div
                 style={{
                   marginTop: 16,
@@ -289,14 +308,16 @@ export default function SelfReflection() {
                   borderRadius: 8,
                 }}
               >
-                <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
+                {faseInfo && (
+                  <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
+                )}
                 <UitlegBlok
                   titel={
-                    faseInfo.volgendeFase
-                      ? `Wat helpt richting ${volgendeFaseLabels[faseInfo.volgendeFase] ?? faseInfo.volgendeFase}?`
+                    volgendeLabel && groeiAdvies?.volgendeFase !== faseKey
+                      ? `Wat helpt richting ${volgendeLabel}?`
                       : "Hoe houden jullie het team in beweging?"
                   }
-                  tekst={faseInfo.naarVolgende}
+                  tekst={groeiAdvies?.advies ?? faseInfo?.naarVolgende}
                 />
               </div>
             )}
@@ -331,6 +352,19 @@ export default function SelfReflection() {
                 boxSizing: "border-box",
               }}
             />
+            <p
+              style={{
+                marginTop: 12,
+                fontFamily: fonts.ui,
+                fontSize: "0.85em",
+                color: colors.labelAccent,
+                opacity: 0.75,
+                fontStyle: "italic",
+                lineHeight: 1.5,
+              }}
+            >
+              {gallupNotitie}
+            </p>
           </section>
 
           <div style={{ marginTop: 32 }}>
