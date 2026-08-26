@@ -115,8 +115,15 @@ Begin pas als ik de batch plak. Bevestig kort met: “Klaar voor batch.”
 
 ## Hoe jij de batches maakt
 
-Uit `src/data/woordenboek/entries.json` de entries waar `term_en` null is.
-Per batch 40–50 stuks, alfabetisch of per cluster — dat maakt nalezen makkelijker.
+Gebruik het hulpscript (aanbevolen) — zie de volledige handleiding in
+`docs/handleiding-woordenboek-vertaling-en.md`:
+
+```bash
+npm run woordenboek:batch -- --size 40 --out tmp/woordenboek-batch-01.txt
+```
+
+Handmatig kan ook: uit `src/data/woordenboek/entries.json` de entries waar
+`term_en` null is. Per batch 40–50 stuks, alfabetisch of per cluster.
 
 Voorbeeld hoe je Claude voert ná de prompt:
 
@@ -132,10 +139,19 @@ Batch 1 — letter A (eerste 40 zonder EN):
 ## Na Claude: terug in de repo
 
 1. Controleer de batch (steekproef van 5–10 termen + alle items met `"note"`).
-2. Zet `term_en` en `definition_en` op de matching `id` in `entries.json`.
-3. Laat `term_nl`, `definition_nl`, `clusters`, `letter`, `status`, `source` onaangeroerd.
+2. Sla Claude’s JSON-array op als bestand en pas toe:
+   ```bash
+   npm run woordenboek:apply -- --dry-run tmp/woordenboek-antwoord-01.json
+   npm run woordenboek:apply -- tmp/woordenboek-antwoord-01.json
+   ```
+3. Of handmatig: zet `term_en` en `definition_en` op de matching `id` in
+   `entries.json`. Laat `term_nl`, `definition_nl`, `clusters`, `letter`,
+   `status` en `source` onaangeroerd.
 4. `npm run build` — de pagina `/dictionary` toont dan de nieuwe vertalingen via
    `getEntryDisplay`.
+
+Stap-voor-stap met proefbatch, nalezen en afronden:
+→ `docs/handleiding-woordenboek-vertaling-en.md`
 
 ## Planning (~390 termen)
 

@@ -22,6 +22,8 @@
     "cards:export-research-integrity-docx": "python scripts/export-research-integrity-docx.py",
     "cards:export-onderwijs-docx": "python scripts/export-onderwijs-docx.py",
     "worksheets:gen-vier-werkvormen": "python scripts/gen-werkblad-vier-werkvormen-docx.py",
+    "woordenboek:batch": "node scripts/woordenboek-batch-export.mjs",
+    "woordenboek:apply": "node scripts/woordenboek-batch-apply.mjs",
     "woordenboek:import": "python scripts/import-moreel-woordenboek.py",
     "woordenboek:gen-werkvormen": "python scripts/gen-werkblad-woordenboek-werkvormen-docx.py"
   },
