@@ -43,7 +43,8 @@ export const vertalingen = {
       items: [
         { icon: 'Upload', titel: 'Jouw materialen', tekst: 'Deel werkvormen, casuïstiek en tools. Getagd op modelstap. Drie niveaus: Concept, Getest, Aanbevolen.' },
         { icon: 'Users', titel: 'Online sessies', tekst: 'Elke zes weken een gezamenlijke sessie. Altijd opening met een gesprekskaart. Altijd een open vraag die je meeneemt.' },
-        { icon: 'Sprout', titel: 'Dilemma van de week', tekst: 'Elke week een nieuwe morele situatie, gekoppeld aan een stap van het model. Reageer, reflecteer, deel.' }
+        { icon: 'Sprout', titel: 'Dilemma van de week', tekst: 'Elke week een nieuwe morele situatie, gekoppeld aan een stap van het model. Reageer, reflecteer, deel.' },
+        { icon: 'Compass', titel: 'MAPS Trilogie', tekst: 'Een interactieve morele reis in drie delen: ontdek je waarden, oefen morele dilemma\'s en formuleer een persoonlijk actieplan.', url: 'https://moral-maps.vercel.app', linkLabel: 'Open MAPS Trilogie →' }
       ]
     },
     fundament: {
@@ -275,7 +276,8 @@ export const vertalingen = {
       items: [
         { icon: 'Upload', titel: 'Your materials', tekst: 'Share teaching methods, case studies and tools. Tagged by model step. Three levels: Concept, Tested, Recommended.' },
         { icon: 'Users', titel: 'Online sessions', tekst: 'Every six weeks a joint session. Always opened with a conversation card. Always a closing question to take with you.' },
-        { icon: 'Sprout', titel: 'Dilemma of the week', tekst: 'Every week a new moral situation, linked to a step of the model. Respond, reflect, share.' }
+        { icon: 'Sprout', titel: 'Dilemma of the week', tekst: 'Every week a new moral situation, linked to a step of the model. Respond, reflect, share.' },
+        { icon: 'Compass', titel: 'MAPS Trilogy', tekst: 'An interactive moral journey in three parts: discover your values, practice moral dilemmas and formulate a personal action plan.', url: 'https://moral-maps.vercel.app', linkLabel: 'Open MAPS Trilogy →' }
       ]
     },
     fundament: {
