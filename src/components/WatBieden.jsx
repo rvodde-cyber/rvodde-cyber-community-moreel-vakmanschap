@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Sprout, Upload, Users } from "lucide-react";
+import { Compass, Sprout, Upload, Users } from "lucide-react";
 import { useTaal } from "../context/TaalContext";
 
-const iconMap = { Upload, Users, Sprout };
+const iconMap = { Upload, Users, Sprout, Compass };
 
 export default function WatBieden() {
   const { t } = useTaal();
@@ -36,6 +36,17 @@ export default function WatBieden() {
                 </div>
                 <h3 className="font-display text-3xl font-semibold text-primair">{item.titel}</h3>
                 <p className="mt-4 leading-7 text-secundair">{item.tekst}</p>
+                {item.url && (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex text-sm font-semibold transition hover:opacity-80"
+                    style={{ color: "#534ab7" }}
+                  >
+                    {item.linkLabel || "Open →"}
+                  </a>
+                )}
               </article>
             );
           })}
