@@ -1,24 +1,10 @@
 {
-  "generated_at": "2026-08-26T17:35:45.067Z",
+  "generated_at": "2026-08-27T00:00:00.000Z",
   "apps": [
     {
       "id": "maps-trilogie",
       "naam": "MAPS Trilogie",
       "omschrijving": "Drieluik: The Beginning, Crossroads, Final Destination. Neutraal en abstract — nooit zorg-specifiek.",
-      "url": "https://moral-maps.vercel.app",
-      "url_extra": [
-        "https://moral-maps-2-crossroads.vercel.app",
-        "https://moral-maps-3-final-destination.vercel.app"
-      ],
-      "githubRepo": "rvodde-cyber/moral-maps",
-      "categorie": "besloten",
-      "status": "live",
-      "hubBadge": "workshop"
-    },
-    {
-      "id": "moral-maps",
-      "naam": "Moral Maps",
-      "omschrijving": "GPS-flow: kaart, kernwaarden en dilemma's — deel 1 van de MAPS-trilogie.",
       "url": "https://moral-maps.vercel.app",
       "githubRepo": "rvodde-cyber/moral-maps",
       "categorie": "besloten",
