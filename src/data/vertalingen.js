@@ -277,7 +277,7 @@ export const vertalingen = {
         { icon: 'Upload', titel: 'Your materials', tekst: 'Share teaching methods, case studies and tools. Tagged by model step. Three levels: Concept, Tested, Recommended.' },
         { icon: 'Users', titel: 'Online sessions', tekst: 'Every six weeks a joint session. Always opened with a conversation card. Always a closing question to take with you.' },
         { icon: 'Sprout', titel: 'Dilemma of the week', tekst: 'Every week a new moral situation, linked to a step of the model. Respond, reflect, share.' },
-        { icon: 'Compass', titel: 'MAPS Trilogy', tekst: 'An interactive moral journey in three parts: discover your values, practice moral dilemmas and formulate a personal action plan.', url: 'https://moral-maps.vercel.app', linkLabel: 'Open MAPS Trilogy →' }
+        { icon: 'Compass', titel: 'MAPS Trilogy', tekst: 'An interactive moral journey in three parts: discover your values, practice moral dilemmas and formulate a personal action plan. (Currently available in Dutch only — English version in development.)' }
       ]
     },
     fundament: {
