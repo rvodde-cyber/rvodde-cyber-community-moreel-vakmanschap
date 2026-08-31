@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink antialiased font-sans;
+    background-image:
+      radial-gradient(56rem 40rem at 12% -8%, rgba(11, 61, 46, 0.09), transparent 58%),
+      radial-gradient(48rem 36rem at 92% 4%, rgba(58, 79, 99, 0.07), transparent 60%),
+      radial-gradient(42rem 30rem at 50% 110%, rgba(11, 61, 46, 0.05), transparent 55%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(11, 61, 46, 0.55);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-panel border border-hairline bg-white/70 shadow-glass;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-subtle {
+    @apply rounded-2xl border border-hairline bg-white/55;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-racing px-6 py-3
+      text-sm font-semibold text-white shadow-lift transition duration-300 ease-soft
+      hover:-translate-y-0.5 hover:bg-racing-soft disabled:pointer-events-none disabled:opacity-40;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-hairline
+      bg-white/70 px-5 py-3 text-sm font-medium text-ink-soft transition duration-300 ease-soft
+      hover:-translate-y-0.5 hover:text-ink disabled:pointer-events-none disabled:opacity-40;
+  }
+
+  .eyebrow {
+    @apply text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-ink-muted;
+  }
+}

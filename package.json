@@ -2,10 +2,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-gesprekskaarten-catalog.mjs && node scripts/sync-workshop-hub.mjs && vite build && npm run build:wisselwerking && npm run build:frisse-organisatie",
+    "build": "node scripts/generate-gesprekskaarten-catalog.mjs && node scripts/sync-workshop-hub.mjs && vite build && npm run build:wisselwerking && npm run build:frisse-organisatie && npm run build:setup",
     "workshop:sync": "node scripts/sync-workshop-hub.mjs",
     "build:wisselwerking": "cd teamkompas && npm install && VITE_BASE_PATH=/wisselwerking/ npm run build && rm -rf ../dist/wisselwerking && cp -r dist ../dist/wisselwerking",
     "build:frisse-organisatie": "cd frisse-organisatie && npm install && VITE_BASE_PATH=/frisse-organisatie/ npm run build && rm -rf ../dist/frisse-organisatie && cp -r dist ../dist/frisse-organisatie",
+    "build:setup": "cd setup && npm install && VITE_BASE_PATH=/setup/ npm run build && rm -rf ../dist/setup && cp -r dist ../dist/setup",
+    "dev:setup-api": "node scripts/setup-dev-api.mjs",
     "preview": "vite preview",
     "cards:migrate": "node scripts/migrate-gesprekskaarten.mjs",
     "cards:catalog": "node scripts/generate-gesprekskaarten-catalog.mjs",
