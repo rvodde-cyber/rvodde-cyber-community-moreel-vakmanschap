@@ -36,6 +36,9 @@ export default function PreviewCode() {
     const data = await res.json().catch(() => ({}));
     if (!res.ok) {
       if (res.status === 401) throw new Error("Ongeldig admin-secret");
+      if (res.status === 503 && data.error === "admin_secret_niet_geconfigureerd") {
+        throw new Error("ADMIN_SECRET is nog niet gezet in Vercel.");
+      }
       if (res.status === 503) throw new Error("Edge Config is nog niet gekoppeld in Vercel.");
       throw new Error(data.error || `HTTP ${res.status}`);
     }
@@ -53,7 +56,9 @@ export default function PreviewCode() {
       setUnlocked(true);
     } catch (err) {
       setError(
-        err.message === "Ongeldig admin-secret" || err.message.includes("Edge Config")
+        err.message === "Ongeldig admin-secret" ||
+          err.message.includes("Edge Config") ||
+          err.message.includes("ADMIN_SECRET")
           ? err.message
           : "Toegang geweigerd."
       );
