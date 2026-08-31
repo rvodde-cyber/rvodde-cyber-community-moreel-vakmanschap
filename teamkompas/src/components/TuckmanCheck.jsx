@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { colors, fonts, tuckmanTyperingen, tuckmanBron } from "../config";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { tuckmanTyperingen, tuckmanBron } from "../config";
+import { ProgressBar } from "./AppShell";
 
 const faseVolgorde = ["forming", "storming", "norming", "performing", "adjourning"];
 
@@ -15,6 +17,7 @@ export default function TuckmanCheck({ onVerder }) {
 
   const huidigeFase = faseVolgorde[stap];
   const typering = tuckmanTyperingen[huidigeFase];
+  const isLast = stap === faseVolgorde.length - 1;
 
   function volgende() {
     if (stap < faseVolgorde.length - 1) {
@@ -29,50 +32,21 @@ export default function TuckmanCheck({ onVerder }) {
   }
 
   return (
-    <div style={{ maxWidth: 560, margin: "0 auto", padding: "32px 16px" }}>
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.75em",
-          color: colors.labelAccent,
-          opacity: 0.6,
-          margin: "0 0 8px",
-        }}
-      >
-        Typering {stap + 1} van {faseVolgorde.length}
-      </p>
-      <h2
-        style={{
-          fontFamily: fonts.voice,
-          color: colors.labelAccent,
-          fontSize: "1.5rem",
-          margin: "0 0 12px",
-        }}
-      >
+    <div className="glass droplet-accent relative overflow-hidden p-6 sm:p-9">
+      <div className="flex items-center justify-between gap-4">
+        <p className="eyebrow">
+          Typering {stap + 1} van {faseVolgorde.length}
+        </p>
+        <ProgressBar value={(stap + 1) / faseVolgorde.length} />
+      </div>
+
+      <h2 className="mt-7 font-serif text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl">
         {typering.titel}
       </h2>
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          margin: 0,
-          opacity: 0.85,
-        }}
-      >
-        {typering.tekst}
-      </p>
+      <p className="mt-3 text-lg leading-relaxed text-ink-soft">{typering.tekst}</p>
 
-      <div style={{ marginTop: 32 }}>
-        <label
-          style={{
-            fontFamily: fonts.ui,
-            fontWeight: 600,
-            display: "block",
-            marginBottom: 8,
-            color: colors.labelAccent,
-          }}
-        >
+      <div className="mt-8">
+        <label className="mb-3 block text-base font-semibold text-ink">
           In welke mate herken je dit bij jullie team?
         </label>
         <input
@@ -80,75 +54,29 @@ export default function TuckmanCheck({ onVerder }) {
           min={0}
           max={100}
           value={waarden[huidigeFase]}
-          onChange={(e) =>
-            setWaarden({ ...waarden, [huidigeFase]: Number(e.target.value) })
-          }
-          style={{ width: "100%", accentColor: colors.hubFill }}
+          onChange={(e) => setWaarden({ ...waarden, [huidigeFase]: Number(e.target.value) })}
+          className="range"
         />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            fontFamily: fonts.ui,
-            fontSize: "0.8em",
-            color: colors.labelAccent,
-            opacity: 0.7,
-            marginTop: 4,
-          }}
-        >
+        <div className="mt-2 flex justify-between text-sm text-ink-muted">
           <span>Helemaal niet</span>
           <span>Helemaal wel</span>
         </div>
       </div>
 
-      <p
-        style={{
-          marginTop: 24,
-          fontFamily: fonts.ui,
-          fontSize: "0.8em",
-          color: colors.labelAccent,
-          opacity: 0.6,
-          lineHeight: 1.5,
-        }}
-      >
-        {tuckmanBron}
-      </p>
+      <p className="mt-6 text-sm leading-relaxed text-ink-muted">{tuckmanBron}</p>
 
-      <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
-        {stap > 0 && (
-          <button
-            type="button"
-            onClick={vorige}
-            style={{
-              fontFamily: fonts.ui,
-              background: "transparent",
-              color: colors.labelAccent,
-              border: `1px solid ${colors.hubRing}`,
-              borderRadius: 8,
-              padding: "12px 20px",
-              fontSize: "0.95rem",
-              cursor: "pointer",
-            }}
-          >
+      <div className="mt-7 flex items-center justify-between gap-3">
+        {stap > 0 ? (
+          <button type="button" onClick={vorige} className="btn-ghost">
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             Vorige
           </button>
+        ) : (
+          <span />
         )}
-        <button
-          type="button"
-          onClick={volgende}
-          style={{
-            fontFamily: fonts.ui,
-            background: colors.hubFill,
-            color: colors.surface,
-            border: "none",
-            borderRadius: 8,
-            padding: "12px 28px",
-            fontSize: "1rem",
-            fontWeight: 600,
-            cursor: "pointer",
-          }}
-        >
-          {stap < faseVolgorde.length - 1 ? "Volgende" : "Verder naar het resultaat"}
+        <button type="button" onClick={volgende} className="btn-primary">
+          {isLast ? "Verder naar het resultaat" : "Volgende"}
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </button>
       </div>
     </div>

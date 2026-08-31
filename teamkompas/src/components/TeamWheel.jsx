@@ -1,4 +1,4 @@
-import { useMemo, forwardRef } from "react";
+import { useId, useMemo, forwardRef } from "react";
 import { colors, fonts, wheelGeometry } from "../config";
 
 const factors = [
@@ -14,9 +14,6 @@ const results = ["Uitdaging", "Energie", "Ontwikkeling", "Vertrouwen", "Helderhe
 
 const NIVEAU_TRAVEL = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
 
-const VIEWBOX_PARTS = wheelGeometry.viewBox.split(/\s+/).map(Number);
-const [VB_X, VB_Y, VB_W, VB_H] = VIEWBOX_PARTS;
-
 function nodePosition(index, radius, cx, cy) {
   const angleDeg = -90 + index * 60;
   const angleRad = (angleDeg * Math.PI) / 180;
@@ -29,30 +26,10 @@ function labelPosition(index, radius, cx, cy) {
   return { x: cx + radius * Math.cos(angleRad), y: cy + radius * Math.sin(angleRad) };
 }
 
-function hubEdgePoint(index, hubRadius, cx, cy) {
-  const angleDeg = -90 + index * 60;
-  const angleRad = (angleDeg * Math.PI) / 180;
-  return {
-    x: cx + hubRadius * Math.cos(angleRad),
-    y: cy + hubRadius * Math.sin(angleRad),
-  };
-}
-
-function rimPoint(index, rimRadius, cx, cy) {
-  return nodePosition(index, rimRadius, cx, cy);
-}
-
 function knobRadiusVoorNiveau(niveau, minRadius, maxRadius) {
   if (!niveau) return minRadius;
   const t = NIVEAU_TRAVEL[niveau];
   return minRadius + t * (maxRadius - minRadius);
-}
-
-function toPercent(x, y) {
-  return {
-    left: `${((x - VB_X) / VB_W) * 100}%`,
-    top: `${((y - VB_Y) / VB_H) * 100}%`,
-  };
 }
 
 function wrapText(text, maxChars = 14) {
@@ -72,7 +49,42 @@ function wrapText(text, maxChars = 14) {
   return lines;
 }
 
+function GlassKnob({ x, y, radius, opacity = 1, animate = true, fillId, shadowId }) {
+  return (
+    <g opacity={opacity}>
+      <circle
+        className={animate ? "wheel-knob" : "wheel-knob wheel-knob--static"}
+        cx={x}
+        cy={y}
+        r={radius}
+        fill={`url(#${fillId})`}
+        filter={`url(#${shadowId})`}
+      />
+      <ellipse
+        className={animate ? "wheel-knob-highlight" : "wheel-knob-highlight wheel-knob--static"}
+        cx={x - radius * 0.3}
+        cy={y - radius * 0.35}
+        rx={radius * 0.28}
+        ry={radius * 0.18}
+        fill="#FFFFFF"
+        opacity="0.55"
+      />
+    </g>
+  );
+}
+
 export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", style }, ref) {
+  const uid = useId().replace(/:/g, "");
+  const ids = {
+    rim: `rimGradient-${uid}`,
+    spoke: `spokeGradient-${uid}`,
+    knob: `knobGradient-${uid}`,
+    hub: `hubGradient-${uid}`,
+    softShadow: `softShadow-${uid}`,
+    knobShadow: `knobShadow-${uid}`,
+    spokeMask: `spokeMask-${uid}`,
+  };
+
   const {
     viewBox,
     center,
@@ -120,34 +132,12 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
     labelPosition(i, resultLabelRadius, cx, cy)
   );
 
-  const knobSizePct = (knobRadius * 2 / VB_W) * 100;
-  const knobOffsetPct = (knobRadius / VB_W) * 100;
-
-  const knobStyle = (pct, background, opacity = 1, animate = true) => ({
-    position: "absolute",
-    left: pct.left,
-    top: pct.top,
-    width: `${knobSizePct}%`,
-    aspectRatio: "1",
-    marginLeft: `-${knobOffsetPct}%`,
-    marginTop: `-${knobOffsetPct}%`,
-    borderRadius: "50%",
-    background,
-    border: `2px solid ${colors.hubRing}`,
-    opacity,
-    boxSizing: "border-box",
-    transition: animate
-      ? "left 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), top 0.9s cubic-bezier(0.34, 1.2, 0.64, 1), background 0.3s ease"
-      : undefined,
-  });
-
   return (
     <div
       ref={ref}
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: 600,
         margin: "0 auto",
         ...style,
       }}
@@ -159,14 +149,74 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
         style={{ display: "block" }}
         xmlns="http://www.w3.org/2000/svg"
       >
+        <defs>
+          <linearGradient
+            id={ids.rim}
+            gradientUnits="userSpaceOnUse"
+            x1={cx}
+            y1={cy - rimRadius}
+            x2={cx}
+            y2={cy + rimRadius}
+          >
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.75" />
+            <stop offset="45%" stopColor={colors.hubRing} stopOpacity="0.95" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.9" />
+          </linearGradient>
+
+          {factors.map((factor, i) => {
+            const hubEdge = nodePosition(i, hubRadius, cx, cy);
+            const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
+            return (
+              <linearGradient
+                key={`${ids.spoke}-${factor.key}`}
+                id={`${ids.spoke}-${factor.key}`}
+                gradientUnits="userSpaceOnUse"
+                x1={hubEdge.x}
+                y1={hubEdge.y}
+                x2={knobPos.x}
+                y2={knobPos.y}
+              >
+                <stop offset="0%" stopColor={colors.hubRing} stopOpacity="1" />
+                <stop offset="55%" stopColor="#FFFFFF" stopOpacity="0.45" />
+                <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="1" />
+              </linearGradient>
+            );
+          })}
+
+          <radialGradient id={ids.knob} cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+            <stop offset="40%" stopColor={colors.dotsLight} stopOpacity="0.9" />
+            <stop offset="100%" stopColor={colors.dotsStrong} stopOpacity="0.85" />
+          </radialGradient>
+
+          <radialGradient id={ids.hub} cx="35%" cy="25%" r="80%">
+            <stop offset="0%" stopColor="#4A3420" stopOpacity="1" />
+            <stop offset="60%" stopColor={colors.projectionBg} stopOpacity="1" />
+            <stop offset="100%" stopColor="#151210" stopOpacity="1" />
+          </radialGradient>
+
+          <filter id={ids.softShadow} x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor={colors.labelAccent} floodOpacity="0.22" />
+          </filter>
+
+          <filter id={ids.knobShadow} x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor={colors.labelAccent} floodOpacity="0.28" />
+          </filter>
+
+          <mask id={ids.spokeMask} maskUnits="userSpaceOnUse">
+            <rect x={-40} y={-40} width={680} height={680} fill="white" />
+            <circle cx={cx} cy={cy} r={hubRadius + 1} fill="black" />
+          </mask>
+        </defs>
+
         {variant === "filled" && !isPreview && polygonPoints && (
           <polygon
             points={polygonPoints}
             fill={colors.dotsStrong}
-            fillOpacity={0.15}
+            fillOpacity={0.12}
             stroke={colors.dotsStrong}
             strokeWidth={1}
-            strokeOpacity={0.4}
+            strokeOpacity={0.35}
           />
         )}
 
@@ -175,34 +225,51 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           cy={cy}
           r={rimRadius}
           fill="none"
-          stroke={colors.hubRing}
+          stroke={`url(#${ids.rim})`}
           strokeWidth={rimStrokeWidth}
+          filter={`url(#${ids.softShadow})`}
         />
 
-        {factors.map((_, i) => {
-          const edge = hubEdgePoint(i, hubRadius, cx, cy);
-          const rim = rimPoint(i, rimRadius, cx, cy);
-          return (
-            <line
-              key={`spoke-${i}`}
-              x1={edge.x}
-              y1={edge.y}
-              x2={rim.x}
-              y2={rim.y}
-              stroke={colors.hubRing}
-              strokeWidth={spokeWidth}
-              strokeLinecap="round"
-            />
-          );
-        })}
+        <circle
+          cx={cx}
+          cy={cy + 4}
+          r={hubRadius}
+          fill={colors.labelAccent}
+          opacity="0.18"
+        />
+        <g mask={`url(#${ids.spokeMask})`}>
+          {factors.map((factor, i) => {
+            const hubEdge = nodePosition(i, hubRadius, cx, cy);
+            const knobPos = nodePosition(i, knobPositionRadius, cx, cy);
+            return (
+              <line
+                key={`spoke-${factor.key}`}
+                x1={hubEdge.x}
+                y1={hubEdge.y}
+                x2={knobPos.x}
+                y2={knobPos.y}
+                stroke={`url(#${ids.spoke}-${factor.key})`}
+                strokeWidth={spokeWidth}
+                strokeLinecap="round"
+              />
+            );
+          })}
+        </g>
 
+        <circle cx={cx} cy={cy} r={hubRadius} fill={colors.projectionBg} />
         <circle
           cx={cx}
           cy={cy}
           r={hubRadius}
-          fill={colors.hubFill}
-          stroke={colors.hubRing}
-          strokeWidth={3}
+          fill={`url(#${ids.hub})`}
+        />
+        <ellipse
+          cx={cx - hubRadius * 0.25}
+          cy={cy - hubRadius * 0.4}
+          rx={hubRadius * 0.55}
+          ry={hubRadius * 0.3}
+          fill="#FFFFFF"
+          opacity="0.12"
         />
         <text
           x={cx}
@@ -211,15 +278,33 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
           dominantBaseline="middle"
           fill={colors.surface}
           fontFamily={fonts.voice}
-          fontSize={13}
+          fontSize={16}
           fontWeight={600}
         >
           {wrapText("Geïnspireerd samenwerken", 16).map((line, i, arr) => (
-            <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 7 : 14}>
+            <tspan key={line} x={cx} dy={i === 0 ? -(arr.length - 1) * 9 : 18}>
               {line}
             </tspan>
           ))}
         </text>
+
+        {factors.map((factor, i) => {
+          const pos = knobPositions[i];
+          const niveau = scores[factor.key];
+          const opacity = isPreview || niveau ? 1 : 0.35;
+          return (
+            <GlassKnob
+              key={factor.key}
+              x={pos.x}
+              y={pos.y}
+              radius={knobRadius}
+              opacity={opacity}
+              animate={!isPreview}
+              fillId={ids.knob}
+              shadowId={ids.knobShadow}
+            />
+          );
+        })}
 
         {factors.map((factor, i) => {
           const pos = factorLabelPositions[i];
@@ -235,12 +320,12 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             <text
               key={`${factor.key}-${line}`}
               x={pos.x}
-              y={pos.y + (li - (arr.length - 1) / 2) * 12}
+              y={pos.y + (li - (arr.length - 1) / 2) * 15}
               textAnchor={anchor}
               dominantBaseline="middle"
               fill={colors.labelAccent}
               fontFamily={fonts.ui}
-              fontSize={9}
+              fontSize={12}
               fontWeight={500}
             >
               {line}
@@ -260,7 +345,7 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
                 dominantBaseline="middle"
                 fill={colors.labelAccent}
                 fontFamily={fonts.ui}
-                fontSize={9}
+                fontSize={12}
                 opacity={0.85}
               >
                 {result}
@@ -268,50 +353,6 @@ export default forwardRef(function TeamWheel({ scores = {}, variant = "dots", st
             );
           })}
       </svg>
-
-      {!isPreview && (
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            inset: 0,
-            pointerEvents: "none",
-          }}
-        >
-          {factors.map((factor, i) => {
-            const pos = knobPositions[i];
-            const pct = toPercent(pos.x, pos.y);
-            const niveau = scores[factor.key];
-            let background = colors.surface;
-
-            if (niveau === "sterk") {
-              background = colors.dotsStrong;
-            } else if (niveau) {
-              background = colors.dotsLight;
-            }
-
-            return (
-              <div
-                key={factor.key}
-                style={knobStyle(pct, background, niveau ? 1 : 0.35)}
-              />
-            );
-          })}
-        </div>
-      )}
-
-      {isPreview &&
-        factors.map((factor, i) => {
-          const pos = knobPositions[i];
-          const pct = toPercent(pos.x, pos.y);
-          return (
-            <div
-              key={factor.key}
-              aria-hidden
-              style={knobStyle(pct, colors.dotsLight, 1, false)}
-            />
-          );
-        })}
     </div>
   );
 });

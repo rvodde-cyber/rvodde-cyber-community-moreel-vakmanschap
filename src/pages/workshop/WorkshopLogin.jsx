@@ -12,6 +12,13 @@ const ERROR_MESSAGES = {
   network: "Er ging iets mis. Controleer je verbinding en probeer opnieuw.",
 };
 
+function isEmbeddedAppPath(path) {
+  return (
+    path.startsWith("/wisselwerking") ||
+    path.startsWith("/frisse-organisatie")
+  );
+}
+
 export default function WorkshopLogin({ mode = "workshop" }) {
   const isVoorproef = mode === "voorproef";
   const [password, setPassword] = useState("");
@@ -23,6 +30,14 @@ export default function WorkshopLogin({ mode = "workshop" }) {
   const [searchParams] = useSearchParams();
   const redirect = searchParams.get("redirect") || "/workshop/apps";
 
+  function goAfterLogin(path, state) {
+    if (isEmbeddedAppPath(path)) {
+      window.location.replace(path);
+      return;
+    }
+    navigate(path, { replace: true, state });
+  }
+
   useEffect(() => {
     fetch("/api/workshop/session")
       .then((r) => r.json())
@@ -33,9 +48,9 @@ export default function WorkshopLogin({ mode = "workshop" }) {
         }
         setVoorproefBeschikbaar(Boolean(data.voorproef_beschikbaar));
         if (data.authenticated) {
-          navigate(redirect, {
-            replace: true,
-            state: { workshop_naam: data.workshop_naam, voorproef: data.voorproef },
+          goAfterLogin(redirect, {
+            workshop_naam: data.workshop_naam,
+            voorproef: data.voorproef,
           });
         }
       })
@@ -63,9 +78,9 @@ export default function WorkshopLogin({ mode = "workshop" }) {
         return;
       }
 
-      navigate(redirect, {
-        replace: true,
-        state: { workshop_naam: data.workshop_naam, voorproef: data.voorproef },
+      goAfterLogin(redirect, {
+        workshop_naam: data.workshop_naam,
+        voorproef: data.voorproef,
       });
     } catch {
       setErrorKey("network");

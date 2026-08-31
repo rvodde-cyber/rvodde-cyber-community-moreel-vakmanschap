@@ -1,65 +1,51 @@
+import { ArrowRight, BookOpen, Clock, ListChecks, ShieldCheck } from "lucide-react";
 import TeamWheel from "./TeamWheel";
-import { welkom, bronvermelding, colors, fonts } from "../config";
+import { welkom, bronvermelding } from "../config";
 
 export default function Startpagina({ onStart }) {
   return (
-    <div style={{ textAlign: "center", padding: "32px 16px", maxWidth: 480, margin: "0 auto" }}>
-      <TeamWheel
-        variant="preview"
-        style={{ width: "100%", maxWidth: 360, margin: "0 auto" }}
-      />
-      <h1
-        style={{
-          marginTop: 24,
-          fontFamily: fonts.voice,
-          color: colors.labelAccent,
-          fontSize: "1.75rem",
-          fontWeight: 600,
-        }}
-      >
-        {welkom.titel}
-      </h1>
-      <p
-        style={{
-          marginTop: 8,
-          opacity: 0.85,
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          lineHeight: 1.5,
-        }}
-      >
-        {welkom.tekst}
-      </p>
-      <button
-        type="button"
-        onClick={onStart}
-        style={{
-          marginTop: 24,
-          padding: "12px 28px",
-          fontFamily: fonts.ui,
-          background: colors.hubFill,
-          color: colors.surface,
-          border: "none",
-          borderRadius: 8,
-          fontSize: "1rem",
-          fontWeight: 600,
-          cursor: "pointer",
-        }}
-      >
-        Start
-      </button>
-      <p
-        style={{
-          marginTop: 32,
-          fontSize: "0.75em",
-          opacity: 0.6,
-          fontFamily: fonts.ui,
-          color: colors.labelAccent,
-          lineHeight: 1.5,
-        }}
-      >
-        {bronvermelding}
-      </p>
+    <div className="space-y-6">
+      <section className="glass droplet-accent relative p-7 sm:p-10">
+        <p className="eyebrow">Teamreflectie</p>
+        <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
+          {welkom.titel}
+        </h1>
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">{welkom.tekst}</p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          <Pill icon={Clock} label="Een paar minuten" />
+          <Pill icon={ListChecks} label="Zes succesfactoren" />
+          <Pill icon={ShieldCheck} label="Geen inlog, geen opslag" />
+        </div>
+
+        <div className="mt-8 w-full">
+          <TeamWheel variant="preview" />
+        </div>
+
+        <button type="button" onClick={onStart} className="btn-primary mt-8 w-full sm:w-auto">
+          Start
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </button>
+      </section>
+
+      <section className="glass-subtle p-6 sm:p-7">
+        <div className="flex items-start gap-3">
+          <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-ink-muted" aria-hidden="true" />
+          <div>
+            <h2 className="text-base font-semibold text-ink">Bronnen</h2>
+            <p className="mt-1.5 text-base leading-relaxed text-ink-muted">{bronvermelding}</p>
+          </div>
+        </div>
+      </section>
     </div>
+  );
+}
+
+function Pill({ icon: Icon, label }) {
+  return (
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-white/60 px-3 py-1.5 text-sm font-medium text-ink-soft">
+      <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+      {label}
+    </span>
   );
 }

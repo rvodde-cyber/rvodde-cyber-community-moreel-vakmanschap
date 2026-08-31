@@ -1,10 +1,12 @@
 import { useRef, useState } from "react";
-import { colors, fonts, wheelGeometry, tuckmanAdvies, gallupNotitie } from "../config";
+import { ArrowLeft, Download, RotateCcw } from "lucide-react";
+import { colors, tuckmanAdvies, gallupNotitie } from "../config";
 import { axesSelf } from "../data/axesSelf";
 import { bepaalBalans } from "../logic/balans";
 import { bepaalFaseDirect } from "../logic/tuckman";
 import { getRecommendation } from "../logic/recommendations";
 import { faseLabels, faseUitleg, volgendeFaseLabels } from "../data/faseUitleg";
+import AppShell, { ProgressBar } from "../components/AppShell";
 import Startpagina from "../components/Startpagina";
 import IntroScreen from "../components/IntroScreen";
 import Fundament from "../components/Fundament";
@@ -16,75 +18,21 @@ import TuckmanCheck from "../components/TuckmanCheck";
 
 function UitlegBlok({ titel, tekst }) {
   return (
-    <div style={{ marginTop: 14 }}>
-      <h3
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.9rem",
-          fontWeight: 600,
-          color: colors.labelAccent,
-          margin: "0 0 6px",
-        }}
-      >
-        {titel}
-      </h3>
-      <p
-        style={{
-          fontFamily: fonts.ui,
-          fontSize: "0.9rem",
-          color: colors.labelAccent,
-          lineHeight: 1.6,
-          margin: 0,
-          opacity: 0.85,
-        }}
-      >
-        {tekst}
-      </p>
+    <div className="mt-3.5">
+      <h3 className="mb-1.5 text-base font-semibold text-ink">{titel}</h3>
+      <p className="m-0 text-base leading-relaxed text-ink-soft">{tekst}</p>
     </div>
   );
 }
 
-function downloadWheelAsImage(container, scores) {
+function downloadWheelAsImage(container) {
   if (!container) return;
 
   const svgElement = container.querySelector("svg");
   if (!svgElement) return;
 
   const serializer = new XMLSerializer();
-  let svgString = serializer.serializeToString(svgElement);
-
-  const factorKeys = [
-    "doelen",
-    "initiatief",
-    "flexibiliteit",
-    "respect",
-    "communicatie",
-    "verantwoordelijkheid",
-  ];
-  const { center, knobRadius, knobTravelMinRadius, knobTravelMaxRadius } = wheelGeometry;
-  const travelMin = knobTravelMinRadius;
-  const travelMax = knobTravelMaxRadius;
-  const niveauTravel = { kwetsbaar: 0, groeiend: 0.5, sterk: 1 };
-
-  const knobMarkup = factorKeys
-    .map((key, i) => {
-      const niveau = scores[key];
-      if (!niveau) return "";
-      const t = niveauTravel[niveau];
-      const radius = travelMin + (travelMax - travelMin) * t;
-      const angleDeg = -90 + i * 60;
-      const angleRad = (angleDeg * Math.PI) / 180;
-      const x = center.x + radius * Math.cos(angleRad);
-      const y = center.y + radius * Math.sin(angleRad);
-      const fill = niveau === "sterk" ? colors.dotsStrong : colors.dotsLight;
-      return `<circle cx="${x}" cy="${y}" r="${knobRadius}" fill="${fill}" stroke="${colors.hubRing}" stroke-width="2" />`;
-    })
-    .join("");
-
-  if (knobMarkup) {
-    svgString = svgString.replace("</svg>", `${knobMarkup}</svg>`);
-  }
-
+  const svgString = serializer.serializeToString(svgElement);
   const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
   const url = URL.createObjectURL(svgBlob);
 
@@ -94,7 +42,7 @@ function downloadWheelAsImage(container, scores) {
     canvas.width = 1200;
     canvas.height = 1200;
     const ctx = canvas.getContext("2d");
-    ctx.fillStyle = colors.surface;
+    ctx.fillStyle = colors.surface2;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     URL.revokeObjectURL(url);
@@ -153,43 +101,52 @@ export default function SelfReflection() {
     setPhase("result");
   }
 
+  function handleRestart() {
+    setPhase("start");
+    setStep(0);
+    setScores({});
+    setFaseKey("");
+    setFaseTekst("");
+    setAanbevelingTekst("");
+  }
+
   if (phase === "start") {
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+      <AppShell>
         <Startpagina onStart={() => setPhase("intro")} />
-      </div>
+      </AppShell>
     );
   }
 
   if (phase === "intro") {
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+      <AppShell>
         <IntroScreen onStart={() => setPhase("fundament")} />
-      </div>
+      </AppShell>
     );
   }
 
   if (phase === "fundament") {
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+      <AppShell>
         <Fundament onVerder={handleBeginReflection} />
-      </div>
+      </AppShell>
     );
   }
 
   if (phase === "tuckman") {
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+      <AppShell>
         <TuckmanCheck onVerder={handleTuckmanVerder} />
-      </div>
+      </AppShell>
     );
   }
 
   if (phase === "ethisch") {
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
+      <AppShell>
         <EthischLeiderschap onBack={() => setPhase("result")} />
-      </div>
+      </AppShell>
     );
   }
 
@@ -205,112 +162,48 @@ export default function SelfReflection() {
         : null;
 
     return (
-      <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <h1
-            style={{
-              fontFamily: fonts.voice,
-              color: colors.labelAccent,
-              fontSize: "1.75rem",
-              margin: "0 0 24px",
-            }}
-          >
-            Jullie teamwiel
-          </h1>
-
-          <TeamWheel ref={wheelRef} scores={scores} variant="dots" />
-
-          <section style={{ marginTop: 32 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Slag in het wiel
-            </h2>
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                color: colors.labelAccent,
-                lineHeight: 1.6,
-                margin: "0 0 12px",
-                opacity: 0.85,
-              }}
-            >
-              Een teamwiel draait soepel als alle succesfactoren in balans zijn. De zwakste
-              factor bepaalt waar het wiel het meest hapert — niet als oordeel, maar als
-              aanknopingspunt voor gesprek.
-            </p>
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                color: colors.labelAccent,
-                fontWeight: 600,
-                margin: 0,
-              }}
-            >
-              Zwakste factor: {zwaksteAxis?.label}
-            </p>
+      <AppShell>
+        <div className="space-y-6">
+          <section className="glass result-glow p-6 sm:p-9">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="eyebrow">Resultaat</p>
+              <span className="rounded-full border border-hairline bg-white/70 px-3 py-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-ink-muted">
+                Teamwiel
+              </span>
+            </div>
+            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl">
+              Jullie teamwiel
+            </h1>
+            <div className="mt-6">
+              <TeamWheel ref={wheelRef} scores={scores} variant="dots" />
+            </div>
           </section>
 
-          <section style={{ marginTop: 28 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Fase-suggestie
-            </h2>
+          <section className="glass-subtle p-6 sm:p-7">
+            <h2 className="text-base font-semibold text-ink">Slag in het wiel</h2>
+            <p className="mt-2 text-base leading-relaxed text-ink-soft">
+              Een teamwiel draait soepel als alle succesfactoren in balans zijn. De zwakste factor
+              bepaalt waar het wiel het meest hapert — niet als oordeel, maar als aanknopingspunt
+              voor gesprek.
+            </p>
+            <p className="mt-3 text-base font-semibold text-ink">Zwakste factor: {zwaksteAxis?.label}</p>
+          </section>
+
+          <section className="glass p-6 sm:p-7">
+            <h2 className="text-base font-semibold text-ink">Fase-suggestie</h2>
             <textarea
               value={faseTekst}
               onChange={(e) => setFaseTekst(e.target.value)}
               rows={2}
-              style={{
-                width: "100%",
-                fontFamily: fonts.ui,
-                fontSize: "0.95rem",
-                color: colors.labelAccent,
-                border: `1px solid ${colors.hubRing}`,
-                borderRadius: 8,
-                padding: 12,
-                background: colors.surface,
-                lineHeight: 1.5,
-                resize: "vertical",
-                boxSizing: "border-box",
-              }}
+              className="field mt-3 resize-y"
             />
-            <p
-              style={{
-                fontFamily: fonts.ui,
-                fontSize: "0.85rem",
-                color: colors.labelAccent,
-                opacity: 0.65,
-                fontStyle: "italic",
-                margin: "8px 0 0",
-              }}
-            >
+            <p className="mt-2 text-sm italic leading-relaxed text-ink-muted">
               Dit is een suggestie op basis van het patroon — klopt dit voor jullie team?
             </p>
 
             {(faseInfo || groeiAdvies) && (
-              <div
-                style={{
-                  marginTop: 16,
-                  padding: "16px",
-                  background: colors.surface,
-                  border: `1px solid ${colors.hubRing}`,
-                  borderRadius: 8,
-                }}
-              >
-                {faseInfo && (
-                  <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />
-                )}
+              <div className="mt-4 rounded-2xl border border-hairline bg-white/55 p-4">
+                {faseInfo && <UitlegBlok titel="Wat betekent deze fase?" tekst={faseInfo.betekenis} />}
                 <UitlegBlok
                   titel={
                     volgendeLabel && groeiAdvies?.volgendeFase !== faseKey
@@ -323,182 +216,91 @@ export default function SelfReflection() {
             )}
           </section>
 
-          <section style={{ marginTop: 28 }}>
-            <h2
-              style={{
-                fontFamily: fonts.voice,
-                color: colors.labelAccent,
-                fontSize: "1.25rem",
-                margin: "0 0 8px",
-              }}
-            >
-              Aanbeveling
-            </h2>
+          <section className="glass p-6 sm:p-7">
+            <h2 className="text-base font-semibold text-ink">Aanbeveling</h2>
             <textarea
               value={aanbevelingTekst}
               onChange={(e) => setAanbevelingTekst(e.target.value)}
               rows={4}
-              style={{
-                width: "100%",
-                fontFamily: fonts.ui,
-                fontSize: "0.95rem",
-                color: colors.labelAccent,
-                border: `1px solid ${colors.hubRing}`,
-                borderRadius: 8,
-                padding: 12,
-                background: colors.surface,
-                lineHeight: 1.5,
-                resize: "vertical",
-                boxSizing: "border-box",
-              }}
+              className="field mt-3 resize-y"
             />
-            <p
-              style={{
-                marginTop: 12,
-                fontFamily: fonts.ui,
-                fontSize: "0.85em",
-                color: colors.labelAccent,
-                opacity: 0.75,
-                fontStyle: "italic",
-                lineHeight: 1.5,
-              }}
-            >
-              {gallupNotitie}
-            </p>
+            <p className="mt-3 text-sm italic leading-relaxed text-ink-muted">{gallupNotitie}</p>
           </section>
 
-          <div style={{ marginTop: 32 }}>
-            <ImagePlaceholder
-              label="Finish: loper gaat over de streep"
-              description="Eén loper over de finishlijn — het teamresultaat, niet het individuele resultaat"
-              aspectRatio="21 / 9"
-            />
-          </div>
+          <ImagePlaceholder
+            label="Finish: loper gaat over de streep"
+            description="Eén loper over de finishlijn — het teamresultaat, niet het individuele resultaat"
+            aspectRatio="21 / 9"
+          />
 
           <button
             type="button"
             onClick={() => setPhase("ethisch")}
-            style={{
-              fontFamily: fonts.ui,
-              background: "none",
-              border: "none",
-              color: colors.labelAccent,
-              fontSize: "0.9rem",
-              opacity: 0.75,
-              cursor: "pointer",
-              marginTop: 20,
-              padding: 0,
-              textDecoration: "underline",
-              textUnderlineOffset: 3,
-            }}
+            className="text-base font-medium text-ink-soft underline decoration-ink-muted/40 underline-offset-4 transition hover:text-ink"
           >
             Reflecteer ook op je eigen leiderschap →
           </button>
 
-          <button
-            type="button"
-            onClick={() => downloadWheelAsImage(wheelRef.current, scores)}
-            style={{
-              fontFamily: fonts.ui,
-              background: colors.hubFill,
-              color: colors.surface,
-              border: "none",
-              borderRadius: 8,
-              padding: "12px 28px",
-              fontSize: "1rem",
-              fontWeight: 600,
-              cursor: "pointer",
-              marginTop: 32,
-            }}
-          >
-            Download wiel als afbeelding
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {
-              setPhase("start");
-              setStep(0);
-              setScores({});
-              setFaseKey("");
-            }}
-            style={{
-              fontFamily: fonts.ui,
-              background: "transparent",
-              color: colors.labelAccent,
-              border: `1px solid ${colors.hubRing}`,
-              borderRadius: 8,
-              padding: "12px 28px",
-              fontSize: "1rem",
-              cursor: "pointer",
-              marginTop: 12,
-              marginLeft: 12,
-            }}
-          >
-            Opnieuw beginnen
-          </button>
+          <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <button
+              type="button"
+              onClick={() => downloadWheelAsImage(wheelRef.current)}
+              className="btn-primary"
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+              Download wiel als afbeelding
+            </button>
+            <button type="button" onClick={handleRestart} className="btn-ghost">
+              <RotateCcw className="h-4 w-4" aria-hidden="true" />
+              Opnieuw beginnen
+            </button>
+          </section>
         </div>
-      </div>
+      </AppShell>
     );
   }
 
   const showProgressPlaceholder = step === 2 || step === 4;
+  const progress = (step + (scores[currentAxis.key] ? 1 : 0)) / axesSelf.length;
 
   return (
-    <div style={{ padding: "32px 20px", background: colors.surface2, minHeight: "100vh" }}>
-      <div style={{ maxWidth: 720, margin: "0 auto" }}>
-        <p
-          style={{
-            fontFamily: fonts.ui,
-            fontSize: "0.85rem",
-            color: colors.labelAccent,
-            opacity: 0.65,
-            margin: "0 0 16px",
-          }}
-        >
-          Stap {step + 1} van {axesSelf.length}
-        </p>
+    <AppShell>
+      <div className="space-y-6">
+        <section className="glass droplet-accent relative overflow-hidden p-6 sm:p-9">
+          <div className="flex items-center justify-between gap-4">
+            <p className="eyebrow">
+              Stap {step + 1} van {axesSelf.length}
+            </p>
+            <ProgressBar value={progress} />
+          </div>
 
-        {showProgressPlaceholder && (
-          <div style={{ marginBottom: 24 }}>
-            <ImagePlaceholder
-              label="Loper onderweg, stokje in de hand"
-              aspectRatio="16 / 9"
+          {showProgressPlaceholder && (
+            <div className="mt-6">
+              <ImagePlaceholder label="Loper onderweg, stokje in de hand" aspectRatio="16 / 9" />
+            </div>
+          )}
+
+          <div className="mt-7">
+            <AxisSelector
+              axis={currentAxis}
+              selected={scores[currentAxis.key]}
+              onSelect={handleSelect}
+              disabled={isAdvancing}
             />
           </div>
-        )}
 
-        <AxisSelector
-          axis={currentAxis}
-          selected={scores[currentAxis.key]}
-          onSelect={handleSelect}
-          disabled={isAdvancing}
-        />
+          {step > 0 && (
+            <button type="button" onClick={() => setStep(step - 1)} className="btn-ghost mt-7">
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              Vorige stap
+            </button>
+          )}
+        </section>
 
-        <div style={{ marginTop: 32 }}>
+        <section className="glass-subtle p-4 sm:p-6">
           <TeamWheel scores={scores} variant="dots" />
-        </div>
-
-        {step > 0 && (
-          <button
-            type="button"
-            onClick={() => setStep(step - 1)}
-            style={{
-              fontFamily: fonts.ui,
-              background: "transparent",
-              color: colors.labelAccent,
-              border: `1px solid ${colors.hubRing}`,
-              borderRadius: 8,
-              padding: "10px 20px",
-              fontSize: "0.9rem",
-              cursor: "pointer",
-              marginTop: 24,
-            }}
-          >
-            Vorige stap
-          </button>
-        )}
+        </section>
       </div>
-    </div>
+    </AppShell>
   );
 }

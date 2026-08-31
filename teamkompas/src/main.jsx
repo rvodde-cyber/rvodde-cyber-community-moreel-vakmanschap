@@ -2,23 +2,17 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SelfReflection from "./pages/SelfReflection";
-import { colors, fonts } from "./config";
+import AppShell from "./components/AppShell";
+import "./index.css";
 
 function PlaceholderPage({ title }) {
   return (
-    <div
-      style={{
-        padding: "48px 20px",
-        textAlign: "center",
-        fontFamily: fonts.ui,
-        color: colors.labelAccent,
-        background: colors.surface2,
-        minHeight: "100vh",
-      }}
-    >
-      <h1 style={{ fontFamily: fonts.voice }}>{title}</h1>
-      <p style={{ opacity: 0.7 }}>Beschikbaar vanaf een volgende sessie.</p>
-    </div>
+    <AppShell>
+      <section className="glass p-7 text-center sm:p-10">
+        <h1 className="font-serif text-3xl font-semibold tracking-tight text-ink">{title}</h1>
+        <p className="mt-3 text-base text-ink-muted">Beschikbaar vanaf een volgende sessie.</p>
+      </section>
+    </AppShell>
   );
 }
 
@@ -29,14 +23,8 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter basename={routerBasename || undefined}>
       <Routes>
         <Route path="/" element={<SelfReflection />} />
-        <Route
-          path="/team/:teamCode"
-          element={<PlaceholderPage title="Teamscan" />}
-        />
-        <Route
-          path="/vergelijk/:teamCode"
-          element={<PlaceholderPage title="Vergelijking" />}
-        />
+        <Route path="/team/:teamCode" element={<PlaceholderPage title="Teamscan" />} />
+        <Route path="/vergelijk/:teamCode" element={<PlaceholderPage title="Vergelijking" />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
