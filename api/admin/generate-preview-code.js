@@ -1,10 +1,5 @@
+import { adminSecretIsConfigured, adminSecretOk } from "../../lib/admin-secret.js";
 import { genereerCode, getEdgeConfigClient, haalActieveCodeOp, normaliseerCode } from "../../lib/preview-code.js";
-
-function adminSecretOk(provided) {
-  const expected = process.env.ADMIN_SECRET?.trim();
-  if (!expected || !provided) return false;
-  return provided === expected;
-}
 
 function getEdgeConfigId() {
   if (process.env.EDGE_CONFIG_ID?.trim()) return process.env.EDGE_CONFIG_ID.trim();
@@ -24,6 +19,11 @@ function edgeConfigWriteUrl(id) {
 export default async function handler(req, res) {
   if (req.method !== "POST" && req.method !== "GET") {
     res.status(405).json({ error: "method_not_allowed" });
+    return;
+  }
+
+  if (!adminSecretIsConfigured()) {
+    res.status(503).json({ error: "admin_secret_niet_geconfigureerd" });
     return;
   }
 
