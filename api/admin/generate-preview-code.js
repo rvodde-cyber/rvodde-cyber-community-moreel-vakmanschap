@@ -1,4 +1,4 @@
-import { adminSecretIsConfigured, adminSecretOk } from "../../lib/admin-secret.js";
+import { authorizeAdminRequest } from "../../lib/admin-secret.js";
 import { genereerCode, getEdgeConfigClient, haalActieveCodeOp, normaliseerCode } from "../../lib/preview-code.js";
 
 function getEdgeConfigId() {
@@ -22,14 +22,9 @@ export default async function handler(req, res) {
     return;
   }
 
-  if (!adminSecretIsConfigured()) {
-    res.status(503).json({ error: "admin_secret_niet_geconfigureerd" });
-    return;
-  }
-
-  const secret = req.headers["x-admin-secret"];
-  if (!adminSecretOk(secret)) {
-    res.status(401).json({ error: "Ongeldig admin-secret" });
+  const auth = authorizeAdminRequest(req.headers["x-admin-secret"]);
+  if (!auth.ok) {
+    res.status(auth.status).json({ error: auth.error });
     return;
   }
 
