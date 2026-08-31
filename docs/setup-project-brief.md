@@ -48,11 +48,11 @@ Richard wil remote invullen ondersteunen (link vooraf sturen, mensen vullen op h
 
 1. De adviseur maakt een traject aan **client-side in de browser**. Genereert lokaal een symmetrische sleutel (WebCrypto, AES-GCM) en twee links (team + leidinggevende), met de sleutel in het **fragment** van de URL (het deel ná `#`) — dat deel wordt door browsers nooit naar een server verstuurd. De adviseur bewaart deze links zelf; kwijtraken betekent onherstelbaar verlies van toegang tot het rapport. Dat is de bewuste prijs van echte end-to-end-versleuteling, geen bug.
 2. Een respondent opent zijn link; de sleutel wordt uit het fragment gelezen en blijft in de browser. Elk antwoord wordt vóór verzending versleuteld en gepost naar `POST /api/setup/submit`.
-3. Die serverless function schrijft **alleen de cijferbrij** weg naar een tijdelijke key-value-opslag **met een verloopdatum (TTL)** — voorlopige keuze: **Vercel KV / Upstash Redis**, omdat dat naadloos aansluit op de bestaande Vercel-hosting en ingebouwde TTL heeft. De server ziet op geen enkel moment leesbare inhoud.
+3. Die serverless function schrijft **alleen de cijferbrij** weg naar een tijdelijke key-value-opslag **met een verloopdatum (TTL)** — **bevestigd: Upstash Redis via Vercel Marketplace** (niet via een los Upstash-account). De server ziet op geen enkel moment leesbare inhoud.
 4. De adviseur haalt via `GET /api/setup/fetch` de cijferbrij voor zijn traject op en ontsleutelt die **in zijn eigen browser** met de sleutel uit zijn eigen link. Pas daar worden aggregaten, spreiding, de 3-respondenten-anonimiteitscheck en de meters berekend.
 5. Na ophalen kan `POST /api/setup/purge` de blobs actief wissen (extra hygiëne, naast de TTL als vangnet).
 
-**Nog te bevestigen door Richard**: het gebruik van Vercel KV/Upstash als tussenopslag is een voorstel, geen vastgestelde keuze — bevestig dit bij het opzetten in Cursor, of vervang door een alternatief met dezelfde eigenschap (blind voor plaintext, TTL-ondersteuning).
+Zie `docs/setup-upstash.md` voor de Marketplace-koppelstap.
 
 ## 5. Vaste architecturale keuzes — niet zonder overleg wijzigen
 
@@ -79,9 +79,11 @@ Na elke fase: korte samenvatting + openstaande keuzes, niet doorbouwen zonder ak
 
 ## 7. Openstaande punten
 
-- **KV-store-keuze** (zie hoofdstuk 4): Vercel KV/Upstash is een voorstel, geen besluit.
-- **Firefly-illustraties**: er ligt al een kant-en-klare promptset (zes prompts, gedeelde stijlgids racing-green/staalblauw) uit een eerdere sessie — vraag Richard om `firefly-prompts.md` als die nog niet is meegegeven.
-- **GitHub-toegang**: op het moment van schrijven had de Claude-sessie geen push-toegang tot `rvodde-cyber-community-moreel-vakmanschap` (GitHub App wel geautoriseerd, niet geïnstalleerd met repository-toegang — fix via https://github.com/apps/claude/installations/select_target). Niet relevant voor Cursor, wel voor eventueel verder werk via Claude Code in deze repo.
+- **KV-store:** bevestigd — Upstash Redis via Vercel Marketplace (`docs/setup-upstash.md`). Richard moet de integratie nog koppelen in het Vercel-project.
+- **Instrument-spec:** `setup-instrument-spec.md` ontbreekt nog in de repo (`docs/setup-instrument-spec.MISSING.md`).
+- **Asymmetrische leesroute:** voorstel klaar, wacht op akkoord (`docs/setup-asymmetric-crypto-proposal.md`).
+- **Firefly-illustraties:** er ligt al een kant-en-klare promptset (zes prompts, gedeelde stijlgids racing-green/staalblauw) uit een eerdere sessie — vraag Richard om `firefly-prompts.md` als die nog niet is meegegeven.
+- **GitHub-toegang:** op het moment van schrijven had de Claude-sessie geen push-toegang tot `rvodde-cyber-community-moreel-vakmanschap` (GitHub App wel geautoriseerd, niet geïnstalleerd met repository-toegang — fix via https://github.com/apps/claude/installations/select_target). Niet relevant voor Cursor, wel voor eventueel verder werk via Claude Code in deze repo.
 
 ---
 

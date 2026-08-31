@@ -21,7 +21,9 @@ cd setup && npm install && npm run dev
 
 ## Productie / Vercel
 
-Zet secrets (niet committen):
+**Bevestigd:** Upstash Redis via **Vercel Marketplace** (“Upstash for Redis”), niet via een los Upstash-account. Zie `docs/setup-upstash.md`.
+
+Na Marketplace-koppeling landen automatisch:
 
 - `UPSTASH_REDIS_REST_URL`
 - `UPSTASH_REDIS_REST_TOKEN`

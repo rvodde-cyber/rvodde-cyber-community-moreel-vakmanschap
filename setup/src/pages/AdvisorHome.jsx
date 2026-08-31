@@ -1,5 +1,6 @@
-import { Copy, KeyRound, Link2 } from "lucide-react";
 import { useState } from "react";
+import { Copy, KeyRound, Link2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function LinkRow({ label, value }) {
   const [copied, setCopied] = useState(false);
@@ -58,6 +59,9 @@ export default function AdvisorHome({ created, busy, status, onCreate, onOpenAdv
               Open adviseurslink
             </button>
           ) : null}
+          <Link to="/chassis" className="btn-ghost">
+            Chassis-sjabloon
+          </Link>
         </div>
 
         {status ? <p className="mt-4 text-sm text-ink-soft">{status}</p> : null}
