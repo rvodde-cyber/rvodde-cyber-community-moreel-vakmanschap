@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import ConversationCardSection from '../components/ConversationCardSection'
 import GesprekskaartenFilters, { EMPTY_FILTERS } from '../components/GesprekskaartenFilters'
 import { stappen as basisStappen } from '../data/stappen'
@@ -434,6 +435,28 @@ export default function GespreksKaartenPagina() {
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag1}</em>{' '}
           {taal === 'nl' ? 'en' : 'and'}{' '}
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
+        </motion.p>
+
+        <motion.p
+          variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2}
+          style={{ textAlign: 'center', marginBottom: '1.5rem' }}
+        >
+          <Link
+            to={usesEnglishRoutes(taal) ? '/overview' : '/overzicht'}
+            style={{
+              fontFamily: 'DM Sans, sans-serif',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              color: '#534ab7',
+              textDecoration: 'none',
+              borderBottom: '1px solid rgba(83, 74, 183, 0.35)',
+              paddingBottom: '2px',
+            }}
+          >
+            {taal === 'nl'
+              ? 'Bekijk alle kaarten én werkbladen op één overzichtspagina →'
+              : 'View all cards and worksheets on one overview page →'}
+          </Link>
         </motion.p>
 
         <GesprekskaartenFilters

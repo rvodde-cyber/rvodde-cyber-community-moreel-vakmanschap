@@ -24,6 +24,8 @@ import GespreksKaartenPagina from "./pages/GespreksKaartenPagina";
 
 import ModelPagina from "./pages/ModelPagina";
 
+import OverzichtPagina from "./pages/OverzichtPagina";
+
 import Over from "./pages/Over";
 
 import WelkomPagina from "./pages/WelkomPagina";
@@ -66,6 +68,8 @@ function Navigatie() {
   return (
 
     <header
+
+      data-hoofdnavigatie
 
       className={`fixed inset-x-0 top-0 z-50 bg-achtergrond/95 backdrop-blur transition-shadow ${
 
@@ -326,6 +330,10 @@ function AppRoutes() {
           <Route path="/bibliotheek" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
 
           <Route path="/library" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
+
+          <Route path="/overzicht" element={<PageRoute><OverzichtPagina /></PageRoute>} />
+
+          <Route path="/overview" element={<PageRoute><OverzichtPagina /></PageRoute>} />
 
           <Route path="/bibliotheek/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
 

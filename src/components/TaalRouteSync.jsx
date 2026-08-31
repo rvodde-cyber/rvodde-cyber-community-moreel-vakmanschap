@@ -10,6 +10,7 @@ const routePairs = [
   ["/gesprekskaarten", "/conversation-cards"],
   ["/woordenboek", "/dictionary"],
   ["/bibliotheek", "/library"],
+  ["/overzicht", "/overview"],
   ["/aanmelden", "/join"],
 ];
 

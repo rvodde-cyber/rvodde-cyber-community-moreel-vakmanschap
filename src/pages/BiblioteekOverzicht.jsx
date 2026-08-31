@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
@@ -19,6 +19,7 @@ const uiTekst = {
       "De werkbladen op dit platform zijn ontwikkeld door Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) als onderdeel van het Comenius Senior Fellowship. De onderliggende theoretische modellen worden gebruikt met bronvermelding en zijn bedoeld voor niet-commercieel educatief gebruik. Vrij te gebruiken met vermelding van de bron.",
     materialenEn: "materiaal",
     materialenMeervoud: "materialen",
+    overzichtLink: "Of bekijk alles op één pagina — werkbladen én kaarten →",
   },
   en: {    label: "Materials",
     titel: "Library",
@@ -32,6 +33,7 @@ const uiTekst = {
       "The worksheets on this platform were developed by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. The underlying theoretical models are used with full attribution and are intended for non-commercial educational purposes. Free to use with source acknowledgement.",
     materialenEn: "material",
     materialenMeervoud: "materials",
+    overzichtLink: "Or view everything on one page — worksheets and cards →",
   },
 };
 const stapSlug = {
@@ -136,6 +138,24 @@ export default function BiblioteekOverzicht() {
         >
           {ui.subtitel}
         </motion.p>
+        <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={3}>
+          <Link
+            to={usesEnglishRoutes(taal) ? "/overview" : "/overzicht"}
+            style={{
+              display: "inline-block",
+              marginTop: "1.5rem",
+              fontFamily: "DM Sans, sans-serif",
+              fontSize: "0.95rem",
+              fontWeight: 600,
+              color: "#534ab7",
+              textDecoration: "none",
+              borderBottom: "1px solid rgba(83, 74, 183, 0.35)",
+              paddingBottom: "2px",
+            }}
+          >
+            {ui.overzichtLink ?? uiTekst.en.overzichtLink}
+          </Link>
+        </motion.div>
       </section>
 
       <section style={{ padding: "0 1.5rem 6rem", maxWidth: "1000px", margin: "0 auto" }}>
