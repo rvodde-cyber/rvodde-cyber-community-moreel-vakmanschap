@@ -65,8 +65,10 @@ export const vertalingen = {
       knop: 'Stuur mijn aanmelding',
       emailSubject: 'Aanmelding Community Moreel Vakmanschap',
       emailVraag: 'Waar werk jij aan in ethiekonderwijs?',
-      emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Niet ingevuld'
+      emailTo: 'r.vodde@fontys.nl',
+      nietIngevuld: 'Niet ingevuld',
+      privacy: 'Met dit formulier meld je je aan voor de Community Moreel Vakmanschap. We gebruiken je naam, instelling en e-mailadres alleen om je uit te nodigen voor sessies en relevant materiaal te delen — nooit voor iets anders en nooit gedeeld met derden. Afmelden kan altijd via r.vodde@fontys.nl.',
+      mailAlternatief: 'Liever per mail aanmelden? Mail naar'
     },
     footer: {
       kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
@@ -221,7 +223,7 @@ export const vertalingen = {
         'Richard Voddé is docent en onderzoeker Ethisch Werken aan Fontys Hogescholen in Tilburg. Als Comenius Senior Fellow werkt hij aan de vraag hoe ethiekonderwijs in het hoger beroepsonderwijs werkelijk vormt — niet alleen informeert.',
         'Hij ontwikkelde het Model Moreel Vakmanschap en de bijbehorende gesprekskaartenmethodiek, en bouwt daaromheen een Community of Practice voor docenten en onderzoekers bij hogescholen en universiteiten in Nederland en daarbuiten. Zijn klankbordgroep bestaat uit collega\'s bij HAN, Avans en Hogeschool Utrecht. Internationaal werkt hij samen met universitaire partners via het HEROES-project.',
       ],
-      contact: 'lectoraatethischwerken@fontys.nl',
+      contact: 'r.vodde@fontys.nl',
       contactLabel: 'Neem contact op',
     },
     visie: {
@@ -297,8 +299,10 @@ export const vertalingen = {
       knop: 'Send my registration',
       emailSubject: 'Registration Community Moral Craftsmanship',
       emailVraag: 'What are you working on in ethics education?',
-      emailTo: 'lectoraatethischwerken@fontys.nl',
-      nietIngevuld: 'Not provided'
+      emailTo: 'r.vodde@fontys.nl',
+      nietIngevuld: 'Not provided',
+      privacy: 'By submitting this form, you\'re signing up for the Community of Moral Craftsmanship. We use your name, institution and email only to invite you to sessions and share relevant materials — never for anything else, and never shared with third parties. You can unsubscribe at any time via r.vodde@fontys.nl.',
+      mailAlternatief: 'Prefer to sign up by email? Email'
     },
     footer: {
       kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
@@ -453,7 +457,7 @@ export const vertalingen = {
         'Richard Voddé is a lecturer and researcher in Ethical Practice at Fontys University of Applied Sciences in Tilburg, the Netherlands. As a Comenius Senior Fellow, he works on the question of how ethics education in higher professional education can genuinely shape people — not merely inform them.',
         'He developed the Model of Moral Craftsmanship and the conversation card methodology, and is building a Community of Practice for ethics educators at universities of applied sciences and research universities in the Netherlands and internationally. His advisory group includes colleagues at HAN, Avans, and Hogeschool Utrecht. He collaborates with international university partners through the HEROES project.',
       ],
-      contact: 'lectoraatethischwerken@fontys.nl',
+      contact: 'r.vodde@fontys.nl',
       contactLabel: 'Get in touch',
     },
     visie: {

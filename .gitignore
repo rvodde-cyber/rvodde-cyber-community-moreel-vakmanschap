@@ -1,5 +1,6 @@
 node_modules/
 dist/
+wheel-of-privilege/
 .env
 .env.local
 .vercel
