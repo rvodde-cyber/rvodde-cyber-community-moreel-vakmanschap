@@ -74,7 +74,7 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
   );
 }
 
-export function ConversationCardPreview({ card, onOpen }) {
+export function ConversationCardPreview({ card, onOpen, excerpt }) {
   const { taal, t } = useTaal();
   const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
 
@@ -117,6 +117,10 @@ export function ConversationCardPreview({ card, onOpen }) {
         <p className="mt-2 font-display text-xl font-semibold leading-snug text-primair md:text-2xl">
           {card.titel || card.vraag}
         </p>
+
+        {excerpt ? (
+          <p className="mt-3 line-clamp-3 text-sm leading-6 text-secundair">{excerpt}</p>
+        ) : null}
 
         <div className="mt-5 flex gap-2">
           <CardButton accentColor={card.kleur} onClick={onOpen}>

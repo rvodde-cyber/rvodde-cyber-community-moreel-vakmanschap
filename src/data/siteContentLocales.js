@@ -103,6 +103,15 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Verktyg" },
+    sneakPeek: {
+      titel: "A sample conversation card",
+      cta: "View all conversation cards →",
+      kaarten: {
+        GK_BG_05: "Daan finds a wallet with two hundred-euro notes. Nobody is watching — and money has been tight.",
+        GK_OW_02: "Ahmed is being bullied. The teacher has already tried everything. Does she escalate, or wait?",
+        GK_MM_01: "Your best friend is spreading lies about a friend. Do you intervene, in front of the whole group?",
+      },
+    },
     gesprekskaart: {
       licentie:
         "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",
@@ -226,6 +235,15 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Nástroje" },
+    sneakPeek: {
+      titel: "A sample conversation card",
+      cta: "View all conversation cards →",
+      kaarten: {
+        GK_BG_05: "Daan finds a wallet with two hundred-euro notes. Nobody is watching — and money has been tight.",
+        GK_OW_02: "Ahmed is being bullied. The teacher has already tried everything. Does she escalate, or wait?",
+        GK_MM_01: "Your best friend is spreading lies about a friend. Do you intervene, in front of the whole group?",
+      },
+    },
     gesprekskaart: {
       licentie:
         "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",
@@ -349,6 +367,15 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Værktøjer" },
+    sneakPeek: {
+      titel: "A sample conversation card",
+      cta: "View all conversation cards →",
+      kaarten: {
+        GK_BG_05: "Daan finds a wallet with two hundred-euro notes. Nobody is watching — and money has been tight.",
+        GK_OW_02: "Ahmed is being bullied. The teacher has already tried everything. Does she escalate, or wait?",
+        GK_MM_01: "Your best friend is spreading lies about a friend. Do you intervene, in front of the whole group?",
+      },
+    },
     gesprekskaart: {
       licentie:
         "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",

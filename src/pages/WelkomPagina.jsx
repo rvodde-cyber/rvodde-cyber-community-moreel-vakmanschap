@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
+import SneakPeekGesprekskaarten from "../components/SneakPeekGesprekskaarten";
 
 const content = {
   nl: {
@@ -168,6 +169,8 @@ export default function WelkomPagina() {
           </a>
         </motion.div>
       </section>
+
+      <SneakPeekGesprekskaarten />
 
       <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem" }}>
         <div style={{ height: "1px", backgroundColor: "var(--rand, #d3d1c7)" }} />

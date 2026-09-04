@@ -78,6 +78,15 @@ export const vertalingen = {
     stapKaart: {
       tools: 'Tools'
     },
+    sneakPeek: {
+      titel: 'Een voorbeeld uit de gesprekskaarten',
+      cta: 'Bekijk alle gesprekskaarten →',
+      kaarten: {
+        GK_BG_05: 'Daan vindt een portemonnee met twee briefjes van honderd. Niemand kijkt mee — en hij zit zelf krap.',
+        GK_OW_02: 'Ahmed wordt gepest. De docent heeft al van alles geprobeerd. Escaleert ze, of wacht ze nog?',
+        GK_MM_01: 'Je beste vriend verspreidt leugens over een vriendin. Grijp je in, voor de hele groep?',
+      },
+    },
     worksheets_supertitle: 'STAP 1 — ZIEN',
     worksheets_title: 'Werkbladen — Gnōthi seauton · Ken uzelf',
     worksheets_subtitle: 'Elf werkbladen voor zelfonderzoek en professionele identiteit',
@@ -315,6 +324,15 @@ export const vertalingen = {
     stapKaart: {
       tools: 'Tools'
     },
+    sneakPeek: {
+      titel: 'A sample conversation card',
+      cta: 'View all conversation cards →',
+      kaarten: {
+        GK_BG_05: 'Daan finds a wallet with two hundred-euro notes. Nobody is watching — and money has been tight.',
+        GK_OW_02: 'Ahmed is being bullied. The teacher has already tried everything. Does she escalate, or wait?',
+        GK_MM_01: 'Your best friend is spreading lies about a friend. Do you intervene, in front of the whole group?',
+      },
+    },
     worksheets_supertitle: 'STEP 1 — SEEING',
     worksheets_title: 'Worksheets — Gnōthi seauton · Know Yourself',
     worksheets_subtitle: 'Eleven worksheets for self-inquiry and professional identity',
@@ -520,6 +538,7 @@ function mergeSiteOverlay(taal, base) {
     aanmelden: overlay.aanmelden ?? base.aanmelden,
     footer: overlay.footer ?? base.footer,
     stapKaart: overlay.stapKaart ?? base.stapKaart,
+    sneakPeek: overlay.sneakPeek ?? base.sneakPeek,
   };
 }
 
