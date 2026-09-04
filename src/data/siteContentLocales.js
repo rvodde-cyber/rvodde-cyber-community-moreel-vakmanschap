@@ -78,6 +78,15 @@ export const siteContentLocales = {
       rechtsTitel: "Biestas tänkande",
       rechtsTekst:
         "Gert Biesta varnar för learnification — att reducera utbildning till mätbara lärresultat. Denna community tror att moralisk formning inte kommer från en lärobok. Den erbjuder inga färdiga svar. Den erbjuder utrymme — för frågorna som stannar kvar, för mötet som formar.",
+      titel: "About the foundation — model, Biesta & Talent-Driven Education",
+      tgoAlineas: [
+        "The Model of Moral Craftsmanship isn't separate from how Fontys shapes its education. Talent-Driven Education (Talentgericht Onderwijs, TGO) focuses on discovering and developing each student's unique talents and identity. Moral craftsmanship adds the compass: talent without moral direction has no course to steer.",
+        "In the first year, TGO is already about self-awareness — who am I, what do I stand for. Our conversation cards and case material work as a mirror for exactly that question, applied to moral situations. Later in the programme, the focus shifts to systematic moral decision-making in complex professional dilemmas — the moment talent has to prove itself, under pressure.",
+        "Where TGO gives students ownership of their own learning, moral craftsmanship gives them the repertoire to carry that ownership when it truly matters — and to stay resilient against what research calls moral distress: the sense of being stuck when ideals collide with organisational pressure.",
+      ],
+      tgoQuote:
+        "Talent-driven education gives our students the room to discover and develop their talents. But talent without a moral compass has no direction. This project provides the methodical and curricular foundation to connect that talent to craftsmanship, responsibility and societal values. It isn't a separate 'extra' subject, but the foundation in which talent can truly flourish, meaningfully and sustainably.",
+      tgoQuoteBron: "Richard Voddé, Comenius Senior Fellow",
     },
     aanmelden: {
       titel: "Gå med",
@@ -210,6 +219,15 @@ export const siteContentLocales = {
       rechtsTitel: "Biestovo uvažování",
       rechtsTekst:
         "Gert Biesta varuje před learnification — redukcí vzdělávání na měřitelné výsledky učení. Tato komunita věří, že morální formace nepochází z učebnice. Nenabízí hotové odpovědi. Nabízí prostor — pro otázky, které zůstávají, pro setkání, které formuje.",
+      titel: "About the foundation — model, Biesta & Talent-Driven Education",
+      tgoAlineas: [
+        "The Model of Moral Craftsmanship isn't separate from how Fontys shapes its education. Talent-Driven Education (Talentgericht Onderwijs, TGO) focuses on discovering and developing each student's unique talents and identity. Moral craftsmanship adds the compass: talent without moral direction has no course to steer.",
+        "In the first year, TGO is already about self-awareness — who am I, what do I stand for. Our conversation cards and case material work as a mirror for exactly that question, applied to moral situations. Later in the programme, the focus shifts to systematic moral decision-making in complex professional dilemmas — the moment talent has to prove itself, under pressure.",
+        "Where TGO gives students ownership of their own learning, moral craftsmanship gives them the repertoire to carry that ownership when it truly matters — and to stay resilient against what research calls moral distress: the sense of being stuck when ideals collide with organisational pressure.",
+      ],
+      tgoQuote:
+        "Talent-driven education gives our students the room to discover and develop their talents. But talent without a moral compass has no direction. This project provides the methodical and curricular foundation to connect that talent to craftsmanship, responsibility and societal values. It isn't a separate 'extra' subject, but the foundation in which talent can truly flourish, meaningfully and sustainably.",
+      tgoQuoteBron: "Richard Voddé, Comenius Senior Fellow",
     },
     aanmelden: {
       titel: "Připojit se",
@@ -342,6 +360,15 @@ export const siteContentLocales = {
       rechtsTitel: "Biestas tænkning",
       rechtsTekst:
         "Gert Biesta advarer mod learnification — reduktion af uddannelse til målbare læringsresultater. Dette fællesskab tror, at moralsk dannelse ikke kommer fra en lærebog. Det tilbyder ingen færdige svar. Det tilbyder rum — for spørgsmålene, der bliver, for mødet, der former.",
+      titel: "About the foundation — model, Biesta & Talent-Driven Education",
+      tgoAlineas: [
+        "The Model of Moral Craftsmanship isn't separate from how Fontys shapes its education. Talent-Driven Education (Talentgericht Onderwijs, TGO) focuses on discovering and developing each student's unique talents and identity. Moral craftsmanship adds the compass: talent without moral direction has no course to steer.",
+        "In the first year, TGO is already about self-awareness — who am I, what do I stand for. Our conversation cards and case material work as a mirror for exactly that question, applied to moral situations. Later in the programme, the focus shifts to systematic moral decision-making in complex professional dilemmas — the moment talent has to prove itself, under pressure.",
+        "Where TGO gives students ownership of their own learning, moral craftsmanship gives them the repertoire to carry that ownership when it truly matters — and to stay resilient against what research calls moral distress: the sense of being stuck when ideals collide with organisational pressure.",
+      ],
+      tgoQuote:
+        "Talent-driven education gives our students the room to discover and develop their talents. But talent without a moral compass has no direction. This project provides the methodical and curricular foundation to connect that talent to craftsmanship, responsibility and societal values. It isn't a separate 'extra' subject, but the foundation in which talent can truly flourish, meaningfully and sustainably.",
+      tgoQuoteBron: "Richard Voddé, Comenius Senior Fellow",
     },
     aanmelden: {
       titel: "Bliv medlem",

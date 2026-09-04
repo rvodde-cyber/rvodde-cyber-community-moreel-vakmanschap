@@ -47,12 +47,19 @@ export const vertalingen = {
       ]
     },
     fundament: {
-      titel: 'Over het fundament',
+      titel: 'Over het fundament — model, Biesta & Talentgericht Onderwijs',
       kernzin: 'Moreel vakmanschap betekent: blijven kijken, blijven voelen, blijven wegen, blijven handelen en koers houden — ook wanneer iets op het spel staat. Maar moreel vakmanschap betekent ook: durven terugkeren. Wie goed handelt, twijfelt onderweg. Heb ik het wel goed gezien? Klopt mijn gevoel, of is het iets anders? Heb ik te snel gewogen? Die terugkeer is geen falen — het is waar de praktijk zit.',
       linksTitel: 'Het model',
       linksTekst: 'Het Model Moreel Vakmanschap is ontwikkeld vanuit het Lectoraat Ethisch Werken van Fontys Hogescholen. Het is gebaseerd op het werk van Karssing, Rest, Biesta en Aristoteles\' concept van phronesis — praktische wijsheid die je ontwikkelt door te doen, te reflecteren en te volhouden.',
       rechtsTitel: 'Biesta\'s gedachtegoed',
-      rechtsTekst: 'Gert Biesta waarschuwt voor learnification — het reduceren van onderwijs tot meetbare leeruitkomsten. Deze community gelooft dat morele vorming niet uit een handboek komt. Ze biedt geen oplossingen. Ze biedt ruimte — voor de vragen die blijven, voor de ontmoeting die vormt.'
+      rechtsTekst: 'Gert Biesta waarschuwt voor learnification — het reduceren van onderwijs tot meetbare leeruitkomsten. Deze community gelooft dat morele vorming niet uit een handboek komt. Ze biedt geen oplossingen. Ze biedt ruimte — voor de vragen die blijven, voor de ontmoeting die vormt.',
+      tgoAlineas: [
+        'Het Model Moreel Vakmanschap staat niet los van hoe Fontys onderwijs vormgeeft. Talentgericht Onderwijs (TGO) richt zich op het ontdekken en ontplooien van de unieke talenten en identiteit van de student. Moreel vakmanschap voegt daar het kompas aan toe: talent zonder moreel richtingsgevoel is stuurloos.',
+        'In het eerste jaar draait TGO al om zelfbewustzijn — wie ben ik, waar sta ik voor. Onze gesprekskaarten en casuïstiek werken als spiegel voor precies die vraag, toegepast op morele situaties. Later in de opleiding verschuift de aandacht naar systematische morele besluitvorming bij complexe beroepsdilemma\'s — het moment waarop talent zich moet bewijzen, onder druk.',
+        'Waar TGO studenten eigenaarschap geeft over hun leerproces, geeft moreel vakmanschap ze het repertoire om dat eigenaarschap ook te dragen wanneer het ertoe doet — en om weerbaar te blijven tegen wat onderzoek moral distress noemt: het vastlopen wanneer idealen botsen met de druk van een organisatie.',
+      ],
+      tgoQuote: 'Talentgericht Onderwijs geeft onze studenten de ruimte om hun talenten te ontdekken en te ontplooien. Maar talent zonder moreel kompas is stuurloos. Dit project levert de methodische en curriculaire invulling om dat talent te verbinden aan vakmanschap, verantwoordelijkheid en maatschappelijke waardes. Het is geen losstaand \'extra\' vak, maar de fundamentele bedding waarin talent pas echt betekenisvol en duurzaam tot bloei komt.',
+      tgoQuoteBron: 'Richard Voddé, Comenius Senior Fellow',
     },
     aanmelden: {
       titel: 'Doe mee',
@@ -293,12 +300,19 @@ export const vertalingen = {
       ]
     },
     fundament: {
-      titel: 'About the foundation',
+      titel: 'About the foundation — model, Biesta & Talent-Driven Education',
       kernzin: 'Moral craftsmanship means: continuing to see, to feel, to weigh, to act, and to hold course — even when something is at stake. But moral craftsmanship also means: daring to go back. Those who act well doubt along the way. Did I really see this clearly? Is this feeling accurate, or something else? Did I weigh too quickly? That return is not failure — it is where the practice lives.',
       linksTitel: 'The model',
       linksTekst: 'The Model of Moral Craftsmanship was developed by the Research Group on Ethical Practice at Fontys University of Applied Sciences. It is grounded in the work of Karssing, Rest, Biesta and Aristotle\'s concept of phronesis — practical wisdom developed through action, reflection and perseverance.',
       rechtsTitel: 'Biesta\'s thinking',
-      rechtsTekst: 'Gert Biesta warns against learnification — the reduction of education to measurable learning outcomes. This community believes that moral formation does not come from a textbook. It offers no solutions. It offers space — for the questions that remain, for the encounter that forms.'
+      rechtsTekst: 'Gert Biesta warns against learnification — the reduction of education to measurable learning outcomes. This community believes that moral formation does not come from a textbook. It offers no solutions. It offers space — for the questions that remain, for the encounter that forms.',
+      tgoAlineas: [
+        'The Model of Moral Craftsmanship isn\'t separate from how Fontys shapes its education. Talent-Driven Education (Talentgericht Onderwijs, TGO) focuses on discovering and developing each student\'s unique talents and identity. Moral craftsmanship adds the compass: talent without moral direction has no course to steer.',
+        'In the first year, TGO is already about self-awareness — who am I, what do I stand for. Our conversation cards and case material work as a mirror for exactly that question, applied to moral situations. Later in the programme, the focus shifts to systematic moral decision-making in complex professional dilemmas — the moment talent has to prove itself, under pressure.',
+        'Where TGO gives students ownership of their own learning, moral craftsmanship gives them the repertoire to carry that ownership when it truly matters — and to stay resilient against what research calls moral distress: the sense of being stuck when ideals collide with organisational pressure.',
+      ],
+      tgoQuote: 'Talent-driven education gives our students the room to discover and develop their talents. But talent without a moral compass has no direction. This project provides the methodical and curricular foundation to connect that talent to craftsmanship, responsibility and societal values. It isn\'t a separate \'extra\' subject, but the foundation in which talent can truly flourish, meaningfully and sustainably.',
+      tgoQuoteBron: 'Richard Voddé, Comenius Senior Fellow',
     },
     aanmelden: {
       titel: 'Join us',
