@@ -137,7 +137,10 @@ export const vertalingen = {
       instructie: 'Bespreek deze vraag met elkaar. Er is geen goed antwoord — alleen een echte ontmoeting.',
       stapVerbinding: 'Deze kaart hoort bij stap {nummer} — {naam}: {kernvraag}',
       pdfHeader: 'Community Moreel Vakmanschap',
-      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken'
+      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken',
+      licentie: 'Alle werkvormen zijn vrij te gebruiken in je eigen onderwijs onder {cc} — met naamsvermelding, niet-commercieel, gelijk delen. Vragen over hergebruik? Mail r.vodde@fontys.nl.',
+      licentieLabel: 'CC BY-NC-SA 4.0',
+      licentieUrl: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl',
     },
     bibliotheek: {
       stap1: {
@@ -371,7 +374,10 @@ export const vertalingen = {
       instructie: 'Discuss this question together. There is no right answer — only a real encounter.',
       stapVerbinding: 'This card belongs to step {nummer} — {naam}: {kernvraag}',
       pdfHeader: 'Community Moreel Vakmanschap',
-      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken'
+      pdfFooter: '© Fontys Hogescholen — Lectoraat Ethisch Werken',
+      licentie: 'All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.',
+      licentieLabel: 'CC BY-NC-SA 4.0',
+      licentieUrl: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en',
     },
     bibliotheek: {
       stap1: {
@@ -522,9 +528,13 @@ export function getVertalingenForLocale(taal) {
   if (taal === "nl" || taal === "en") return vertalingen[taal];
   if (pageUiLocales[taal] || gesprekskaartUiLocales[taal]) {
     const base = mergeSiteOverlay(taal, vertalingen.en);
+    const overlayGk = siteContentLocales[taal]?.gesprekskaart;
     return {
       ...base,
-      gesprekskaart: mergeGesprekskaartUi(taal, vertalingen.en.gesprekskaart),
+      gesprekskaart: {
+        ...mergeGesprekskaartUi(taal, vertalingen.en.gesprekskaart),
+        ...(overlayGk ?? {}),
+      },
     };
   }
   return vertalingen.en;

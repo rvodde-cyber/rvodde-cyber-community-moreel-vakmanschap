@@ -103,6 +103,12 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Verktyg" },
+    gesprekskaart: {
+      licentie:
+        "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",
+      licentieLabel: "CC BY-NC-SA 4.0",
+      licentieUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+    },
     overPagina: {
       label: "Om projektet",
       titel: "Community Moral Craftsmanship",
@@ -220,6 +226,12 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Nástroje" },
+    gesprekskaart: {
+      licentie:
+        "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",
+      licentieLabel: "CC BY-NC-SA 4.0",
+      licentieUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+    },
     overPagina: {
       label: "O projektu",
       titel: "Community Moral Craftsmanship",
@@ -337,6 +349,12 @@ export const siteContentLocales = {
       contact: "r.vodde@fontys.nl",
     },
     stapKaart: { tools: "Værktøjer" },
+    gesprekskaart: {
+      licentie:
+        "All materials are free to use in your own teaching under {cc} — attribution, non-commercial, share-alike. Questions about reuse? Email r.vodde@fontys.nl.",
+      licentieLabel: "CC BY-NC-SA 4.0",
+      licentieUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en",
+    },
     overPagina: {
       label: "Om projektet",
       titel: "Community Moral Craftsmanship",

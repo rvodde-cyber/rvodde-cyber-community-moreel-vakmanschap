@@ -10,9 +10,28 @@ const EMPTY = {
   zoek: "",
 };
 
+function LicenseLine({ text, label, url }) {
+  const [voor, na] = String(text ?? "").split("{cc}");
+  return (
+    <p className="mt-4 border-t border-rand pt-4 text-sm leading-7 text-secundair">
+      {voor}
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-primair"
+      >
+        {label}
+      </a>
+      {na}
+    </p>
+  );
+}
+
 export default function GesprekskaartenFilters({ filters, onChange, options, resultCount, totalCount }) {
   const { taal, t } = useTaal();
-  const f = t.gesprekskaart.filters;
+  const gkUi = t.gesprekskaart;
+  const f = gkUi.filters;
   const gk = getGesprekskaartStrings(taal);
 
   const categorieLabels = useMemo(() => {
@@ -107,6 +126,12 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
           />
         </label>
       </div>
+
+      <LicenseLine
+        text={gkUi.licentie}
+        label={gkUi.licentieLabel}
+        url={gkUi.licentieUrl}
+      />
     </div>
   );
 }
