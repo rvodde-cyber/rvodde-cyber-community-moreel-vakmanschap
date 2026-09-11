@@ -292,6 +292,17 @@ export const bibliotheekData = {
           map: 'gesprekskaarten',
         },
         {
+          id: 'MV_22',
+          titel: 'Basiswerkvorm — werken met de gesprekskaarten',
+          omschrijving:
+            'Korte instructie voor de docent om één gesprekskaart klassikaal te introduceren, in groepen van vier te verdiepen en plenair na te bespreken — steeds via zien, wegen, handelen.',
+          themas: ['Gesprekskaarten', 'Zien', 'Wegen', 'Handelen', 'Onderwijsleergesprek'],
+          niveau: 'concept',
+          bestand_nl: 'MV_22_Basiswerkvorm_Gesprekskaarten_NL.docx',
+          bestand_en: 'MV_22_BasicWorkForm_ConversationCards_EN.docx',
+          map: 'gesprekskaarten',
+        },
+        {
           id: 'MV_20',
           titel: 'Vier werkvormen met gesprekskaarten',
           omschrijving:
@@ -409,6 +420,17 @@ export const bibliotheekData = {
       intro: 'Knowing what is right is not enough. Moral craftsmanship requires the courage to act — even when it is uncomfortable, even when you stand alone. The tools for Acting help you take that step.',
       materialen: [
         { id: 'MM_01', titel: 'Moral Courage', themas: ['Courage', 'Taking a stand', 'Moral action'], niveau: 'getest', bestand_nl: 'GK_MM_Teaser_NL.docx', bestand_en: 'GK_MM_Teaser_EN.pdf', map: 'gesprekskaarten' },
+        {
+          id: 'MV_22',
+          titel: 'Basic work form — working with the conversation cards',
+          omschrijving:
+            'Short instructions for the teacher to introduce one conversation card to the whole class, deepen it in groups of four, and close with a plenary discussion — always through seeing, weighing, acting.',
+          themas: ['Conversation cards', 'Seeing', 'Weighing', 'Acting', 'Teaching dialogue'],
+          niveau: 'concept',
+          bestand_nl: 'MV_22_Basiswerkvorm_Gesprekskaarten_NL.docx',
+          bestand_en: 'MV_22_BasicWorkForm_ConversationCards_EN.docx',
+          map: 'gesprekskaarten',
+        },
         {
           id: 'MV_20',
           titel: 'Four work forms with conversation cards',
