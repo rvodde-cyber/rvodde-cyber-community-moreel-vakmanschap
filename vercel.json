@@ -1,4 +1,18 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "moralcraftsmanship.eu" }],
+      "destination": "https://moreelvakmanschap.nl/welcome?lang=en",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.moralcraftsmanship.eu" }],
+      "destination": "https://moreelvakmanschap.nl/welcome?lang=en",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/wisselwerking",
