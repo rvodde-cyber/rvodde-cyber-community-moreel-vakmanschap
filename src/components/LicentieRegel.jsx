@@ -1,4 +1,4 @@
-import { LICENTIE } from "../data/licentie";
+import { LICENTIES, STANDAARD_LICENTIE, getLicentie } from "../data/licentie";
 import {
   heeftWerkvorm,
   werkbladHerkomstTekst,
@@ -30,10 +30,17 @@ export function MateriaalHerkomstRegel({ bronTekst, dataLang }) {
   return <HerkomstRegel>{materiaalHerkomstTekst(dataLang)}</HerkomstRegel>;
 }
 
-export default function LicentieRegel({ naamsvermelding, dataLang, isAdaptation }) {
+export default function LicentieRegel({
+  naamsvermelding,
+  dataLang,
+  isAdaptation,
+  licentie = STANDAARD_LICENTIE,
+}) {
   const lang = dataLang === "en" ? "en" : "nl";
   const adaptationSuffix =
     isAdaptation ? (lang === "en" ? " (adaptation)" : " (bewerking)") : "";
+  const code = LICENTIES[licentie] ? licentie : STANDAARD_LICENTIE;
+  const lic = getLicentie(code);
 
   return (
     <p
@@ -48,14 +55,14 @@ export default function LicentieRegel({ naamsvermelding, dataLang, isAdaptation 
       © {naamsvermelding}
       {adaptationSuffix} ·{" "}
       <a
-        href={LICENTIE.url[lang]}
+        href={lic.url[lang]}
         rel="license"
         style={{ color: "inherit", textDecoration: "underline" }}
       >
-        {LICENTIE.code}
+        {code}
       </a>
       {" — "}
-      {LICENTIE.kort[lang]}
+      {lic.kort[lang]}
     </p>
   );
 }
@@ -66,6 +73,7 @@ export function WerkbladLicentieRegel({ item, dataLang }) {
       naamsvermelding={item.naamsvermelding}
       dataLang={dataLang}
       isAdaptation={heeftWerkvorm(item.oorspronkelijke_werkvorm)}
+      licentie={item.licentie}
     />
   );
 }

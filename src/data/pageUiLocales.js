@@ -126,7 +126,7 @@ const bibliotheekSv = {
   materialenMeervoud: "material",
   disclaimerTitel: "Användning & källhänvisning",
   disclaimerTekst:
-    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nEach worksheet states the Creative Commons licence under which you may use it (CC BY-SA 4.0 or CC BY-NC-SA 4.0). Use is always free, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const bibliotheekCs = {
@@ -141,7 +141,7 @@ const bibliotheekCs = {
   materialenMeervoud: "materiály",
   disclaimerTitel: "Použití a uvedení zdroje",
   disclaimerTekst:
-    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nEach worksheet states the Creative Commons licence under which you may use it (CC BY-SA 4.0 or CC BY-NC-SA 4.0). Use is always free, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const bibliotheekDa = {
@@ -156,7 +156,7 @@ const bibliotheekDa = {
   materialenMeervoud: "materialer",
   disclaimerTitel: "Brug & kildeangivelse",
   disclaimerTekst:
-    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nEach worksheet states the Creative Commons licence under which you may use it (CC BY-SA 4.0 or CC BY-NC-SA 4.0). Use is always free, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const stapPaginaSv = {
