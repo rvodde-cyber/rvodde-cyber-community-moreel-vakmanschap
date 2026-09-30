@@ -1,1 +1,1786 @@
-[]
+[
+  {
+    "id": "MV_23",
+    "werkblad_code": "WB-MW01-HBO-HRM-NL",
+    "titel": {
+      "nl": "Wat is loyaliteit?",
+      "en": "What is loyalty?"
+    },
+    "omschrijving": {
+      "nl": "Een HR-trainee onderzoekt met de groep in een Socratisch gesprek wat loyaliteit werkelijk betekent, aan de hand van een eigen voorbeeld.",
+      "en": "An HR trainee and the group use a Socratic dialogue to explore what loyalty really means, starting from a lived example."
+    },
+    "themas": {
+      "nl": [
+        "Loyaliteit",
+        "Socratisch gesprek"
+      ],
+      "en": [
+        "Loyalty",
+        "Socratic dialogue"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "90 min",
+    "groep": "5–12 studenten",
+    "oorspronkelijke_werkvorm": "Socratisch gesprek",
+    "bronnen_apa": [
+      "Heckmann, G. (1981). Das sokratische Gespräch: Erfahrungen in philosophischen Hochschulseminaren. Schroedel. | Kessels, J., Boers, E., & Mostert, P. (2002). Vrije ruimte: Filosoferen in organisaties. Boom."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW01-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW01-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW01-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW01-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW01-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_24",
+    "werkblad_code": "WB-MW02-HBO-HRM-NL",
+    "titel": {
+      "nl": "Dilemma-overleg: de reorganisatie",
+      "en": "Dilemma deliberation: the reorganisation"
+    },
+    "omschrijving": {
+      "nl": "Een HR-adviseur moet kiezen: houdt ze zich aan het sociaal plan of haalt ze een onmisbare planner van de ontslaglijst? Uitgewerkt met de dilemmamethode van moreel beraad.",
+      "en": "An HR adviser must choose between the redundancy rules and keeping an indispensable planner. Worked through with the dilemma method of moral case deliberation."
+    },
+    "themas": {
+      "nl": [
+        "Reorganisatie",
+        "Moreel beraad",
+        "Rechtvaardigheid"
+      ],
+      "en": [
+        "Reorganisation",
+        "Moral case deliberation",
+        "Fairness"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "4–5 studenten",
+    "oorspronkelijke_werkvorm": "Moreel beraad – dilemmamethode",
+    "bronnen_apa": [
+      "Stolper, M., Molewijk, B., & Widdershoven, G. (2016). Bioethics education in clinical settings: Theory and practice of the dilemma method of moral case deliberation. BMC Medical Ethics, 17, Article 45. https://doi.org/10.1186/s12910-016-0125-1"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW02-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW02-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW02-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW02-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW02-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
+  },
+  {
+    "id": "MV_25",
+    "werkblad_code": "WB-MW03-HBO-HRM-NL",
+    "titel": {
+      "nl": "De vertrouwelijke melding",
+      "en": "The confidential report"
+    },
+    "omschrijving": {
+      "nl": "Een HR-adviseur ontvangt een vertrouwelijke melding over ongewenst gedrag van een manager. Studenten doorlopen de Nijmeegse methode in vier blokken.",
+      "en": "An HR adviser receives a confidential report about a manager's inappropriate behaviour. Students work through the Nijmegen method in four blocks."
+    },
+    "themas": {
+      "nl": [
+        "Ongewenst gedrag",
+        "Vertrouwelijkheid",
+        "Moreel beraad"
+      ],
+      "en": [
+        "Inappropriate behaviour",
+        "Confidentiality",
+        "Moral deliberation"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "4–10 studenten",
+    "oorspronkelijke_werkvorm": "Nijmeegse methode voor moreel beraad",
+    "bronnen_apa": [
+      "Steinkamp, N., & Gordijn, B. (2003). Ethical case deliberation on the ward: A comparison of four methods. Medicine, Health Care and Philosophy, 6(3), 235–246. https://doi.org/10.1023/A:1025928617468"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW03-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW03-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW03-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW03-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW03-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_26",
+    "werkblad_code": "WB-MW04-HBO-HRM-NL",
+    "titel": {
+      "nl": "Te aardig?",
+      "en": "Too nice?"
+    },
+    "omschrijving": {
+      "nl": "Een stagiair hoort dat hij 'te aardig' is. Als onderzoeksgemeenschap filosoferen studenten over eigen vragen bij dat voorval.",
+      "en": "An intern is told he is 'too nice'. As a community of inquiry, students philosophise about their own questions on this incident."
+    },
+    "themas": {
+      "nl": [
+        "Professionele identiteit",
+        "Filosoferen"
+      ],
+      "en": [
+        "Professional identity",
+        "Philosophical inquiry"
+      ]
+    },
+    "fasen": [
+      "zien"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "50 min",
+    "groep": "8–25 studenten",
+    "oorspronkelijke_werkvorm": "Filosoferen met studenten (onderzoeksgemeenschap)",
+    "bronnen_apa": [
+      "Lipman, M. (2003). Thinking in education (2nd ed.). Cambridge University Press."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW04-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW04-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW04-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW04-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW04-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_27",
+    "werkblad_code": "WB-MW05-HBO-HRM-NL",
+    "titel": {
+      "nl": "De stagelijst",
+      "en": "The internship list"
+    },
+    "omschrijving": {
+      "nl": "Studenten met gelijke cijfers worden ongelijk uitgenodigd voor een stage. In een cultuurcirkel analyseren studenten persoonlijke, organisatorische en systemische oorzaken.",
+      "en": "Students with equal grades are not equally invited for internships. In a culture circle, students analyse personal, organisational and systemic causes."
+    },
+    "themas": {
+      "nl": [
+        "Discriminatie",
+        "Kansengelijkheid",
+        "Systeemdenken"
+      ],
+      "en": [
+        "Discrimination",
+        "Equal opportunities",
+        "Systems thinking"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "macro",
+    "duur": "60 min",
+    "groep": "8–20 studenten",
+    "oorspronkelijke_werkvorm": "Cultuurcirkel",
+    "bronnen_apa": [
+      "Freire, P. (1970). Pedagogy of the oppressed. Herder and Herder."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW05-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW05-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW05-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW05-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW05-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_28",
+    "werkblad_code": "WB-MW06-HBO-HRM-NL",
+    "titel": {
+      "nl": "De stille lunch",
+      "en": "The silent lunch"
+    },
+    "omschrijving": {
+      "nl": "Na een pijnlijke reorganisatie is het stil in een HR-team. De teamleider twijfelt of een gesprekscirkel veilig genoeg is om te beginnen; studenten oefenen spreken en luisteren in een kring.",
+      "en": "After a painful reorganisation an HR team has fallen silent. The team leader wonders whether a talking circle is safe enough to start; students practise speaking and listening in a circle."
+    },
+    "themas": {
+      "nl": [
+        "Teamcultuur",
+        "Luisteren",
+        "Herstel"
+      ],
+      "en": [
+        "Team culture",
+        "Listening",
+        "Restoration"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "6–20 studenten",
+    "oorspronkelijke_werkvorm": "Gesprekscirkel",
+    "bronnen_apa": [
+      "Pranis, K. (2005). The little book of circle processes: A new/old approach to peacemaking. Good Books."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW06-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW06-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW06-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW06-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW06-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_29",
+    "werkblad_code": "WB-MW07-HBO-HRM-NL",
+    "titel": {
+      "nl": "Verpleegkundigen uit Ghana",
+      "en": "Nurses from Ghana"
+    },
+    "omschrijving": {
+      "nl": "Een ziekenhuis kan 25 verpleegkundigen uit Ghana aannemen. Vanuit een ubuntu- of indabagesprek zoeken studenten naar wat de gemeenschap en ieders waardigheid versterkt.",
+      "en": "A hospital can recruit 25 nurses from Ghana. Through an ubuntu/indaba dialogue, students look for what strengthens the community and everyone's dignity."
+    },
+    "themas": {
+      "nl": [
+        "Internationale werving",
+        "Ubuntu",
+        "Waardigheid"
+      ],
+      "en": [
+        "International recruitment",
+        "Ubuntu",
+        "Dignity"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "macro",
+    "duur": "75 min",
+    "groep": "8–30 studenten",
+    "oorspronkelijke_werkvorm": "Ubuntu-/indabagesprek",
+    "bronnen_apa": [
+      "Metz, T. (2011). Ubuntu as a moral theory and human rights in South Africa. African Human Rights Law Journal, 11(2), 532–559."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW07-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW07-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW07-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW07-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW07-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_30",
+    "werkblad_code": "WB-MW08-HBO-HRM-NL",
+    "titel": {
+      "nl": "Het prestatiescherm",
+      "en": "The performance screen"
+    },
+    "omschrijving": {
+      "nl": "In een magazijn toont een scherm live de productiviteit van orderpickers, met namen. Studenten analyseren de casus stap voor stap met de ethische cyclus.",
+      "en": "A warehouse screen shows live productivity of order pickers, with names. Students analyse the case step by step with the ethical cycle."
+    },
+    "themas": {
+      "nl": [
+        "Prestatiemeting",
+        "Privacy",
+        "Ethische cyclus"
+      ],
+      "en": [
+        "Performance monitoring",
+        "Privacy",
+        "Ethical cycle"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "90 min",
+    "groep": "Individueel of 3–5",
+    "oorspronkelijke_werkvorm": "Ethische cyclus",
+    "bronnen_apa": [
+      "Van de Poel, I., & Royakkers, L. (2011). Ethics, technology, and engineering. Wiley-Blackwell."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW08-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW08-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW08-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW08-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW08-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_31",
+    "werkblad_code": "WB-MW09-HBO-HRM-NL",
+    "titel": {
+      "nl": "Terug naar de vloer",
+      "en": "Back to the shop floor"
+    },
+    "omschrijving": {
+      "nl": "Een magazijnmedewerker keert na een rugoperatie terug. Met de vier-kwadrantenmethode ordenen studenten feiten, wensen, kwaliteit van leven en context.",
+      "en": "A warehouse worker returns after back surgery. With the four-quadrant method, students sort facts, preferences, quality of life and context."
+    },
+    "themas": {
+      "nl": [
+        "Re-integratie",
+        "Verzuim",
+        "Vier kwadranten"
+      ],
+      "en": [
+        "Return to work",
+        "Sick leave",
+        "Four quadrants"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "50 min",
+    "groep": "Individueel of 3–6",
+    "oorspronkelijke_werkvorm": "Vier-kwadrantenmethode",
+    "bronnen_apa": [
+      "Jonsen, A. R., Siegler, M., & Winslade, W. J. (2022). Clinical ethics (9th ed.). McGraw Hill."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW09-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW09-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW09-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW09-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW09-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_32",
+    "werkblad_code": "WB-MW10-HBO-HRM-NL",
+    "titel": {
+      "nl": "Het recht om offline te zijn",
+      "en": "The right to be offline"
+    },
+    "omschrijving": {
+      "nl": "Een wetsvoorstel verbiedt werkgevers medewerkers na zessen te benaderen. Met een ethische matrix brengen studenten gevolgen per belanghebbende in kaart.",
+      "en": "A bill bans employers from contacting staff after 6 pm. Using an ethical matrix, students map the consequences for each stakeholder."
+    },
+    "themas": {
+      "nl": [
+        "Bereikbaarheid",
+        "Werk-privébalans",
+        "Beleid"
+      ],
+      "en": [
+        "Availability",
+        "Work-life balance",
+        "Policy"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "macro",
+    "duur": "60 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Ethische matrix",
+    "bronnen_apa": [
+      "Mepham, B. (2000). A framework for the ethical analysis of novel foods: The ethical matrix. Journal of Agricultural and Environmental Ethics, 12(2), 165–176."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW10-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW10-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW10-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW10-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW10-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_33",
+    "werkblad_code": "WB-MW11-HBO-HRM-NL",
+    "titel": {
+      "nl": "De cv-scantool",
+      "en": "The CV scanning tool"
+    },
+    "omschrijving": {
+      "nl": "Een technisch bedrijf overweegt software die cv's automatisch selecteert. Studenten bekijken de keuze door zes ethische lenzen.",
+      "en": "A technical company considers software that screens CVs automatically. Students examine the choice through six ethical lenses."
+    },
+    "themas": {
+      "nl": [
+        "Werving",
+        "Algoritmes",
+        "Ethische lenzen"
+      ],
+      "en": [
+        "Recruitment",
+        "Algorithms",
+        "Ethical lenses"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "45 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Zes ethische lenzen",
+    "bronnen_apa": [
+      "Velasquez, M., Moberg, D., Meyer, M. J., Shanks, T., McLean, M. R., DeCosse, D., André, C., Hanson, K. O., Raicu, I., & Kwan, J. (2021). A framework for ethical decision making. Markkula Center for Applied Ethics, Santa Clara University. https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW11-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW11-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW11-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW11-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW11-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_34",
+    "werkblad_code": "WB-MW12-HBO-HRM-NL",
+    "titel": {
+      "nl": "Zwijgen of vertellen?",
+      "en": "Keep quiet or speak up?"
+    },
+    "omschrijving": {
+      "nl": "Een HR-medewerker kiest tussen trouw aan haar vriendin en eerlijkheid tegenover haar teamleider. Studenten analyseren het als botsing tussen twee goede waarden.",
+      "en": "An HR employee must choose between loyalty to her friend and honesty towards her team leader. Students analyse it as a clash between two right values."
+    },
+    "themas": {
+      "nl": [
+        "Loyaliteit",
+        "Eerlijkheid",
+        "Goed tegen goed"
+      ],
+      "en": [
+        "Loyalty",
+        "Honesty",
+        "Right versus right"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "35 min",
+    "groep": "2–4 studenten",
+    "oorspronkelijke_werkvorm": "Goed-tegen-goed-analyse",
+    "bronnen_apa": [
+      "Kidder, R. M. (1995). How good people make tough choices: Resolving the dilemmas of ethical living. William Morrow."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW12-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW12-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW12-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW12-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW12-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_35",
+    "werkblad_code": "WB-MW13-HBO-HRM-NL",
+    "titel": {
+      "nl": "Een regel voor de hele regio",
+      "en": "One rule for the whole region"
+    },
+    "omschrijving": {
+      "nl": "Een regionale arbeidsmarkttafel zoekt één regel voor vaste contracten van uitzendkrachten. Studenten ontwerpen die regel achter de sluier van onwetendheid.",
+      "en": "A regional labour market board seeks one rule on permanent contracts for agency workers. Students design that rule behind the veil of ignorance."
+    },
+    "themas": {
+      "nl": [
+        "Flexwerk",
+        "Rechtvaardigheid",
+        "Rawls"
+      ],
+      "en": [
+        "Flexible work",
+        "Justice",
+        "Rawls"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "macro",
+    "duur": "45 min",
+    "groep": "4–6 studenten",
+    "oorspronkelijke_werkvorm": "Sluier van onwetendheid",
+    "bronnen_apa": [
+      "Rawls, J. (1971). A theory of justice. Harvard University Press."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW13-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW13-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW13-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW13-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW13-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_36",
+    "werkblad_code": "WB-MW14-HBO-HRM-NL",
+    "titel": {
+      "nl": "Wie raakt de verzuimapp?",
+      "en": "Who is affected by the absence app?"
+    },
+    "omschrijving": {
+      "nl": "Een busbedrijf wil een app tegen hoog verzuim. Studenten brengen alle betrokkenen in kaart, ook de stille partijen.",
+      "en": "A bus company wants an app to tackle high absenteeism. Students map everyone involved, including the silent parties."
+    },
+    "themas": {
+      "nl": [
+        "Verzuim",
+        "Belanghebbenden",
+        "Technologie"
+      ],
+      "en": [
+        "Absenteeism",
+        "Stakeholders",
+        "Technology"
+      ]
+    },
+    "fasen": [
+      "zien"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "30 min",
+    "groep": "2–4 studenten",
+    "oorspronkelijke_werkvorm": "Belanghebbendenkaart",
+    "bronnen_apa": [
+      "Freeman, R. E. (1984). Strategic management: A stakeholder approach. Pitman."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW14-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW14-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW14-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW14-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW14-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_37",
+    "werkblad_code": "WB-MW15-HBO-HRM-NL",
+    "titel": {
+      "nl": "De activiteitsmeter",
+      "en": "The activity monitor"
+    },
+    "omschrijving": {
+      "nl": "Een IT-bedrijf wil software die registreert wanneer thuiswerkers typen en klikken. Studenten begeleiden de technologie in drie fasen: context, effecten en handelingsopties.",
+      "en": "An IT company wants software that records when remote workers type and click. Students guide the technology in three phases: context, effects and options for action."
+    },
+    "themas": {
+      "nl": [
+        "Thuiswerken",
+        "Monitoring",
+        "Begeleidingsethiek"
+      ],
+      "en": [
+        "Remote work",
+        "Monitoring",
+        "Guidance ethics"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "100 min",
+    "groep": "4–6 studenten per groepje",
+    "oorspronkelijke_werkvorm": "Begeleidingsethiek (drie fasen)",
+    "bronnen_apa": [
+      "Verbeek, P.-P., & Tijink, D. (2019). Aanpak begeleidingsethiek: Een methode om ethisch te kijken naar technologie in de praktijk. ECP | Platform voor de InformatieSamenleving. https://ecp.nl/project/aanpak-begeleidingsethiek/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW15-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW15-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW15-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW15-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW15-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_38",
+    "werkblad_code": "WB-MW16-HBO-HRM-NL",
+    "titel": {
+      "nl": "Tien seconden",
+      "en": "Ten seconds"
+    },
+    "omschrijving": {
+      "nl": "Een teamleider wil geen kandidaten boven de vijftig en niemand spreekt hem tegen. Een jonge recruiter heeft tien seconden; studenten oefenen hoe je je waarden een stem geeft.",
+      "en": "A team leader wants no candidates over fifty and nobody contradicts him. A young recruiter has ten seconds; students practise giving voice to their values."
+    },
+    "themas": {
+      "nl": [
+        "Morele moed",
+        "Leeftijdsdiscriminatie",
+        "Stem geven aan waarden"
+      ],
+      "en": [
+        "Moral courage",
+        "Age discrimination",
+        "Giving voice to values"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "2–5 studenten",
+    "oorspronkelijke_werkvorm": "Stem geven aan waarden",
+    "bronnen_apa": [
+      "Gentile, M. C. (2010). Giving voice to values: How to speak your mind when you know what's right. Yale University Press."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW16-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW16-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW16-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW16-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW16-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_39",
+    "werkblad_code": "WB-MW17-HBO-HRM-NL",
+    "titel": {
+      "nl": "Het rooster van Nadia",
+      "en": "Nadia's schedule"
+    },
+    "omschrijving": {
+      "nl": "Een medewerker met mantelzorgtaken loopt vast op haar rooster. Met forumtheater proberen studenten in een scène ander gedrag uit.",
+      "en": "An employee with caring responsibilities is stuck with her schedule. Using forum theatre, students try out different behaviour in a scene."
+    },
+    "themas": {
+      "nl": [
+        "Mantelzorg",
+        "Roosters",
+        "Forumtheater"
+      ],
+      "en": [
+        "Informal care",
+        "Scheduling",
+        "Forum theatre"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "90 min",
+    "groep": "10–30 studenten",
+    "oorspronkelijke_werkvorm": "Forumtheater",
+    "bronnen_apa": [
+      "Boal, A. (1979). Theatre of the oppressed. Urizen Books."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW17-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW17-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW17-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW17-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW17-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_40",
+    "werkblad_code": "WB-MW18-HBO-HRM-NL",
+    "titel": {
+      "nl": "De krantenkop van volgend jaar",
+      "en": "Next year's headline"
+    },
+    "omschrijving": {
+      "nl": "Een zorgorganisatie voert zelfroosteren in. Met een morele pre-mortem benoemen studenten vooraf wat er mis kan gaan en hoe ze dat voorkomen.",
+      "en": "A care organisation introduces self-scheduling. With a moral pre-mortem, students name in advance what could go wrong and how to prevent it."
+    },
+    "themas": {
+      "nl": [
+        "Zelfroosteren",
+        "Risico's",
+        "Pre-mortem"
+      ],
+      "en": [
+        "Self-scheduling",
+        "Risks",
+        "Pre-mortem"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "40 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Morele pre-mortem",
+    "bronnen_apa": [
+      "Klein, G. (2007). Performing a project premortem. Harvard Business Review, 85(9), 18–19."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW18-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW18-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW18-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW18-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW18-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_41",
+    "werkblad_code": "WB-MW19-HBO-HRM-NL",
+    "titel": {
+      "nl": "De mail aan Rosa",
+      "en": "The email to Rosa"
+    },
+    "omschrijving": {
+      "nl": "Een HR-assistent moet een mail sturen over een nieuwe regeling voor schoonmakers. Met de talisman van Gandhi toetsen studenten hun keuze aan de meest kwetsbare betrokkene.",
+      "en": "An HR assistant must send an email about a new arrangement for cleaners. Using Gandhi's talisman, students test their choice against the most vulnerable person involved."
+    },
+    "themas": {
+      "nl": [
+        "Kwetsbaarheid",
+        "Communicatie",
+        "Talisman van Gandhi"
+      ],
+      "en": [
+        "Vulnerability",
+        "Communication",
+        "Gandhi's talisman"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "20 min",
+    "groep": "Individueel",
+    "oorspronkelijke_werkvorm": "Talisman van Gandhi",
+    "bronnen_apa": [
+      "Pyarelal. (1958). Mahatma Gandhi: The last phase (Vol. 2). Navajivan."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW19-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW19-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW19-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW19-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW19-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_42",
+    "werkblad_code": "WB-MW20-HBO-HRM-NL",
+    "titel": {
+      "nl": "Binnen 24 uur bereikbaar",
+      "en": "Available within 24 hours"
+    },
+    "omschrijving": {
+      "nl": "Een winkelketen mag roosters tot een dag van tevoren wijzigen. In een ethiekcompetitie onderbouwen teams hun standpunt voor een jury.",
+      "en": "A retail chain may change schedules up to a day in advance. In an ethics competition, teams defend their position before a jury."
+    },
+    "themas": {
+      "nl": [
+        "Roosterbeleid",
+        "Argumentatie",
+        "Ethics Bowl"
+      ],
+      "en": [
+        "Scheduling policy",
+        "Argumentation",
+        "Ethics Bowl"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "75 min",
+    "groep": "2 teams van 3–5 + jury",
+    "oorspronkelijke_werkvorm": "Ethiekcompetitie (naar Ethics Bowl)",
+    "bronnen_apa": [
+      "Ladenson, R. F. (2001). The educational significance of the Ethics Bowl. Teaching Ethics, 1(1), 63–78."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW20-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW20-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW20-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW20-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW20-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_43",
+    "werkblad_code": "WB-MW21-HBO-HRM-NL",
+    "titel": {
+      "nl": "Salarissen op tafel?",
+      "en": "Salaries on the table?"
+    },
+    "omschrijving": {
+      "nl": "Moeten alle salarisschalen binnen een bouwbedrijf openbaar worden? Studenten werken argumenten voor en tegen uit in een academische controverse.",
+      "en": "Should all salary scales within a construction company be made public? Students develop arguments for and against in an academic controversy."
+    },
+    "themas": {
+      "nl": [
+        "Beloning",
+        "Transparantie",
+        "Controverse"
+      ],
+      "en": [
+        "Pay",
+        "Transparency",
+        "Controversy"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "Viertallen",
+    "oorspronkelijke_werkvorm": "Gestructureerde academische controverse",
+    "bronnen_apa": [
+      "Johnson, D. W., & Johnson, R. T. (1993). Creative and critical thinking through academic controversy. American Behavioral Scientist, 37(1), 40–53. https://doi.org/10.1177/0002764293037001005"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW21-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW21-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW21-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW21-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW21-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_44",
+    "werkblad_code": "WB-MW22-HBO-HRM-NL",
+    "titel": {
+      "nl": "De verkeerde bijschrijving",
+      "en": "The wrong payment"
+    },
+    "omschrijving": {
+      "nl": "Een salarisadministrateur ontdekt dat een collega maandenlang te veel heeft ontvangen. Studenten nemen stelling en wegen het beste argument van de andere kant.",
+      "en": "A payroll administrator discovers that a colleague has been overpaid for months. Students take a position and weigh the best argument of the other side."
+    },
+    "themas": {
+      "nl": [
+        "Integriteit",
+        "Collegialiteit",
+        "Dilemmadiscussie"
+      ],
+      "en": [
+        "Integrity",
+        "Collegiality",
+        "Dilemma discussion"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "60 min",
+    "groep": "10–30 studenten",
+    "oorspronkelijke_werkvorm": "Dilemmadiscussie",
+    "bronnen_apa": [
+      "Blatt, M. M., & Kohlberg, L. (1975). The effects of classroom moral discussion upon children's level of moral judgment. Journal of Moral Education, 4(2), 129–161. https://doi.org/10.1080/0305724750040207"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW22-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW22-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW22-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW22-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW22-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_45",
+    "werkblad_code": "WB-MW23-HBO-HRM-NL",
+    "titel": {
+      "nl": "Waar ga jij staan?",
+      "en": "Where do you stand?"
+    },
+    "omschrijving": {
+      "nl": "Tijdens een teamtraining kiezen HR-trainees positie op een waardenlijn. Studenten verkennen hun standpunt en merken hoe groepsdruk meespeelt.",
+      "en": "During a team training, HR trainees take a position on a values line. Students explore their stance and notice how group pressure plays a part."
+    },
+    "themas": {
+      "nl": [
+        "Waarden",
+        "Groepsdruk",
+        "Waardenlijn"
+      ],
+      "en": [
+        "Values",
+        "Group pressure",
+        "Values line"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "30 min",
+    "groep": "10–30 studenten",
+    "oorspronkelijke_werkvorm": "Waardenlijn",
+    "bronnen_apa": [
+      "Geen eigenaar; algemeen didactisch repertoire (achtergrond: Raths, Harmin & Simon, 1966)"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW23-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW23-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW23-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW23-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW23-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_46",
+    "werkblad_code": "WB-MW24-HBO-HRM-NL",
+    "titel": {
+      "nl": "De taxibon van Henk",
+      "en": "Henk's taxi receipt"
+    },
+    "omschrijving": {
+      "nl": "Een stagiaire ziet een declaratie die niet lijkt te kloppen. Via vier hoeken benoemen studenten hun eerste reactie en onderbouwen hun keuze.",
+      "en": "An intern notices an expense claim that does not seem right. Using four corners, students name their first reaction and justify their choice."
+    },
+    "themas": {
+      "nl": [
+        "Integriteit",
+        "Declaraties",
+        "Vier hoeken"
+      ],
+      "en": [
+        "Integrity",
+        "Expense claims",
+        "Four corners"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "25 min",
+    "groep": "12–30 studenten",
+    "oorspronkelijke_werkvorm": "Vier hoeken",
+    "bronnen_apa": [
+      "Geen eigenaar; algemeen didactisch repertoire (geen bron in dataset)"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW24-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW24-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW24-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW24-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW24-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_47",
+    "werkblad_code": "WB-MW25-HBO-HRM-NL",
+    "titel": {
+      "nl": "Werken zonder vergunning",
+      "en": "Working without a permit"
+    },
+    "omschrijving": {
+      "nl": "Een groenteverwerker vindt geen seizoenskrachten; een asielzoeker wil direct beginnen, maar de vergunning duurt weken. In een vissenkom voeren en observeren studenten het gesprek over dit systeemdilemma.",
+      "en": "A vegetable processor cannot find seasonal workers; an asylum seeker wants to start now, but the permit takes weeks. In a fishbowl, students hold and observe the conversation about this systemic dilemma."
+    },
+    "themas": {
+      "nl": [
+        "Arbeidsmigratie",
+        "Wet en moraal",
+        "Vissenkom"
+      ],
+      "en": [
+        "Labour migration",
+        "Law and morality",
+        "Fishbowl"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "macro",
+    "duur": "45 min",
+    "groep": "12–40 studenten",
+    "oorspronkelijke_werkvorm": "Vissenkom",
+    "bronnen_apa": [
+      "Geen eigenaar; algemeen didactisch repertoire (geen bron in dataset)"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW25-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW25-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW25-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW25-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW25-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_48",
+    "werkblad_code": "WB-MW26-HBO-HRM-NL",
+    "titel": {
+      "nl": "Niemand had bezwaar",
+      "en": "Nobody objected"
+    },
+    "omschrijving": {
+      "nl": "Een HR-team besluit eenstemmig dat sollicitanten met een gat in hun cv automatisch afvallen. Als advocaat van de duivel bevragen studenten dit groepsbesluit kritisch.",
+      "en": "An HR team unanimously decides that applicants with a gap in their CV are rejected automatically. As devil's advocate, students critically question this group decision."
+    },
+    "themas": {
+      "nl": [
+        "Groepsdenken",
+        "Werving",
+        "Advocaat van de duivel"
+      ],
+      "en": [
+        "Groupthink",
+        "Recruitment",
+        "Devil's advocate"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "30 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Advocaat van de duivel",
+    "bronnen_apa": [
+      "Geen eigenaar; algemeen repertoire tegen groepsdenken (achtergrond: Janis, 1972)"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW26-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW26-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW26-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW26-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW26-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_49",
+    "werkblad_code": "WB-MW27-HBO-HRM-NL",
+    "titel": {
+      "nl": "Wat ik zeg en wat ik doe",
+      "en": "What I say and what I do"
+    },
+    "omschrijving": {
+      "nl": "Een trainee zegt dat eerlijkheid en gezin het belangrijkst zijn, maar haar agenda vertelt iets anders. Studenten verhelderen hun eigen kernwaarden.",
+      "en": "A trainee says honesty and family matter most, but her diary tells a different story. Students clarify their own core values."
+    },
+    "themas": {
+      "nl": [
+        "Kernwaarden",
+        "Zelfreflectie",
+        "Waardenverheldering"
+      ],
+      "en": [
+        "Core values",
+        "Self-reflection",
+        "Values clarification"
+      ]
+    },
+    "fasen": [
+      "voelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "40 min",
+    "groep": "Individueel + duo",
+    "oorspronkelijke_werkvorm": "Waardenverheldering",
+    "bronnen_apa": [
+      "Raths, L. E., Harmin, M., & Simon, S. B. (1966). Values and teaching: Working with values in the classroom. Charles E. Merrill."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW27-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW27-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW27-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW27-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW27-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_50",
+    "werkblad_code": "WB-MW28-HBO-HRM-NL",
+    "titel": {
+      "nl": "De grap die niemand tegensprak",
+      "en": "The joke nobody challenged"
+    },
+    "omschrijving": {
+      "nl": "Tijdens een introductiebijeenkomst valt een grap die schuurt en niemand zegt iets. Studenten beschrijven een eigen kritisch incident langs alle vijf fasen.",
+      "en": "At an induction meeting a joke crosses a line and nobody speaks up. Students describe their own critical incident across all five phases."
+    },
+    "themas": {
+      "nl": [
+        "Kritisch incident",
+        "Moreel ongemak",
+        "Reflectie"
+      ],
+      "en": [
+        "Critical incident",
+        "Moral discomfort",
+        "Reflection"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "30 min",
+    "groep": "Individueel",
+    "oorspronkelijke_werkvorm": "Kritisch-incidentbeschrijving",
+    "bronnen_apa": [
+      "Flanagan, J. C. (1954). The critical incident technique. Psychological Bulletin, 51(4), 327–358. https://doi.org/10.1037/h0061470"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW28-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW28-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW28-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW28-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW28-HBO-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_51",
+    "werkblad_code": "WB-MW29-HBO-HRM-NL",
+    "titel": {
+      "nl": "De buddy-app",
+      "en": "The buddy app"
+    },
+    "omschrijving": {
+      "nl": "Een zorgorganisatie laat een app bouwen die nieuwe medewerkers aan een buddy koppelt. Met het Ethiekcanvas brengen studenten betrokkenen, risico's en maatregelen in kaart.",
+      "en": "A care organisation commissions an app that matches new staff with a buddy. With the Ethics Canvas, students map stakeholders, risks and measures."
+    },
+    "themas": {
+      "nl": [
+        "Onboarding",
+        "Technologie",
+        "Ethiekcanvas"
+      ],
+      "en": [
+        "Onboarding",
+        "Technology",
+        "Ethics Canvas"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "75 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Ethiekcanvas",
+    "bronnen_apa": [
+      "ADAPT Centre. (z.d.). The Ethics Canvas. Trinity College Dublin. https://www.ethicscanvas.org/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW29-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW29-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW29-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW29-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW29-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op The Ethics Canvas – ADAPT Centre & Trinity College Dublin – CC BY-SA 3.0 – https://www.ethicscanvas.org/"
+  },
+  {
+    "id": "MV_52",
+    "werkblad_code": "WB-MW30-HBO-HRM-NL",
+    "titel": {
+      "nl": "Wie vertrekt er volgend jaar?",
+      "en": "Who will leave next year?"
+    },
+    "omschrijving": {
+      "nl": "Een logistiek bedrijf wil met HR-data voorspellen wie vertrekt. Met het Data Ethics Canvas beoordelen studenten deze toepassing.",
+      "en": "A logistics company wants to use HR data to predict who will leave. With the Data Ethics Canvas, students assess this application."
+    },
+    "themas": {
+      "nl": [
+        "People analytics",
+        "Data-ethiek",
+        "Privacy"
+      ],
+      "en": [
+        "People analytics",
+        "Data ethics",
+        "Privacy"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "90 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Data-ethiekcanvas",
+    "bronnen_apa": [
+      "Open Data Institute. (2021). The Data Ethics Canvas. https://theodi.org/insights/tools/the-data-ethics-canvas-2021/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW30-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW30-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW30-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW30-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW30-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op The Data Ethics Canvas – Open Data Institute – CC BY-SA 4.0 – https://theodi.org/"
+  },
+  {
+    "id": "MV_53",
+    "werkblad_code": "WB-MW31-HBO-HRM-NL",
+    "titel": {
+      "nl": "De chatbot bij het personeelsloket",
+      "en": "The chatbot at the HR desk"
+    },
+    "omschrijving": {
+      "nl": "Een gemeente wil een AI-chatbot inzetten voor personeelsvragen. Met het AI-ethiekcanvas bepalen studenten betrokkenen, fouten en grenzen.",
+      "en": "A municipality wants to deploy an AI chatbot for staff questions. With the AI Ethics Canvas, students identify stakeholders, errors and limits."
+    },
+    "themas": {
+      "nl": [
+        "Kunstmatige intelligentie",
+        "HR-dienstverlening",
+        "Canvas"
+      ],
+      "en": [
+        "Artificial intelligence",
+        "HR services",
+        "Canvas"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "75 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "AI-ethiekcanvas",
+    "bronnen_apa": [
+      "Goetze, T. S. (2021). AI ethics canvas [Guidebook, CC BY-SA 4.0]. https://www.trystangoetze.ca/aicanvas.html"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW31-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW31-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW31-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW31-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW31-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op AI Ethics Canvas – Trystan S. Goetze – CC BY-SA 4.0 – https://www.trystangoetze.ca/aicanvas.html"
+  },
+  {
+    "id": "MV_54",
+    "werkblad_code": "WB-MW32-HBO-HRM-NL",
+    "titel": {
+      "nl": "De stemmingsvraag op vrijdag",
+      "en": "The Friday mood question"
+    },
+    "omschrijving": {
+      "nl": "De enige HR-medewerker van een klein bureau wil wekelijks de stemming meten. Met een gevolgenscan verkennen studenten bedoelde en onbedoelde gevolgen.",
+      "en": "The only HR employee of a small agency wants to measure the mood every week. With consequence scanning, students explore intended and unintended effects."
+    },
+    "themas": {
+      "nl": [
+        "Welzijn",
+        "Kleine organisatie",
+        "Gevolgenscan"
+      ],
+      "en": [
+        "Wellbeing",
+        "Small organisation",
+        "Consequence scanning"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "45 min",
+    "groep": "3–10 studenten",
+    "oorspronkelijke_werkvorm": "Gevolgenscan",
+    "bronnen_apa": [
+      "Doteveryone. (2019). Consequence scanning: An agile practice for responsible innovators. https://doteveryone.org.uk/project/consequence-scanning/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW32-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW32-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW32-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW32-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW32-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op Consequence Scanning – Doteveryone – https://doteveryone.org.uk/project/consequence-scanning/"
+  },
+  {
+    "id": "MV_55",
+    "werkblad_code": "WB-MW33-HBO-HRM-NL",
+    "titel": {
+      "nl": "De werkplekmeter",
+      "en": "The workplace sensor"
+    },
+    "omschrijving": {
+      "nl": "Een adviesbureau plaatst sensoren in bureaus om flexplekken te optimaliseren. Studenten verkennen systematisch de risicozones van deze technologie.",
+      "en": "A consultancy installs desk sensors to optimise hot-desking. Students systematically explore the risk zones of this technology."
+    },
+    "themas": {
+      "nl": [
+        "Werkplekmonitoring",
+        "Privacy",
+        "Technologierisico's"
+      ],
+      "en": [
+        "Workplace monitoring",
+        "Privacy",
+        "Technology risks"
+      ]
+    },
+    "fasen": [
+      "zien"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Risicozones van technologie",
+    "bronnen_apa": [
+      "Institute for the Future & Omidyar Network. (2018). Ethical OS toolkit: A guide to anticipating the future impact of today's technology. https://ethicalos.org/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW33-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW33-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW33-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW33-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW33-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op Ethical OS Toolkit – Institute for the Future & Omidyar Network – https://ethicalos.org/"
+  },
+  {
+    "id": "MV_56",
+    "werkblad_code": "WB-MW34-HBO-HRM-NL",
+    "titel": {
+      "nl": "De rit-app voor bezorgers",
+      "en": "The ride app for couriers"
+    },
+    "omschrijving": {
+      "nl": "Een koeriersbedrijf volgt bezorgers met een app die elke shift een score geeft. Met vragenkaarten beoordelen studenten de app op ethiek, recht, privacy en veiligheid.",
+      "en": "A courier company tracks riders with an app that scores every shift. Using question cards, students assess the app on ethics, law, privacy and security."
+    },
+    "themas": {
+      "nl": [
+        "Platformwerk",
+        "Algoritmisch management",
+        "Privacy"
+      ],
+      "en": [
+        "Platform work",
+        "Algorithmic management",
+        "Privacy"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "75 min",
+    "groep": "3–6 studenten",
+    "oorspronkelijke_werkvorm": "Vragenkaarten voor technologie (naar Moral-IT Deck)",
+    "bronnen_apa": [
+      "Urquhart, L. D., & Craigon, P. J. (2021). The Moral-IT Deck: A tool for ethics by design. Journal of Responsible Innovation, 8(1), 94–126. https://doi.org/10.1080/23299460.2021.1880112"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW34-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW34-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW34-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW34-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW34-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op The Moral-IT Deck – Urquhart & Craigon, University of Nottingham"
+  },
+  {
+    "id": "MV_57",
+    "werkblad_code": "WB-MW35-HBO-HRM-NL",
+    "titel": {
+      "nl": "De slimme badge",
+      "en": "The smart badge"
+    },
+    "omschrijving": {
+      "nl": "Een kantoor voert slimme badges in die ook registreren waar medewerkers zijn. In een ethiekmodule over privacy wegen studenten waarden en opties.",
+      "en": "An office introduces smart badges that also record where staff are. In an ethics module on privacy, students weigh values and options."
+    },
+    "themas": {
+      "nl": [
+        "Privacy",
+        "Toegangsbeheer",
+        "Ethiekmodule"
+      ],
+      "en": [
+        "Privacy",
+        "Access control",
+        "Ethics module"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "75 min",
+    "groep": "Klas (10–30)",
+    "oorspronkelijke_werkvorm": "Embedded EthiCS-module (privacy)",
+    "bronnen_apa": [
+      "Embedded EthiCS @ Harvard. (z.d.). Instructor guides and modules. Harvard University. https://embeddedethics.seas.harvard.edu/modules/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW35-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW35-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW35-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW35-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW35-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op Embedded EthiCS @ Harvard – Harvard University – CC BY 4.0 – https://embeddedethics.seas.harvard.edu/"
+  },
+  {
+    "id": "MV_58",
+    "werkblad_code": "WB-MW36-HBO-HRM-NL",
+    "titel": {
+      "nl": "Eén budget, twee opleidingen",
+      "en": "One budget, two programmes"
+    },
+    "omschrijving": {
+      "nl": "Een HR-adviseur moet kiezen: een leiderschapsprogramma voor acht talenten of een basistraining digitale vaardigheden voor zestig collega's. Studenten bekijken het dilemma langs vier ethische lenzen.",
+      "en": "An HR adviser must choose: a leadership programme for eight high potentials or basic digital skills training for sixty colleagues. Students examine the dilemma through four ethical lenses."
+    },
+    "themas": {
+      "nl": [
+        "Opleidingsbudget",
+        "Rechtvaardigheid",
+        "Ethische lenzen"
+      ],
+      "en": [
+        "Training budget",
+        "Fairness",
+        "Ethical lenses"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "2–4 studenten",
+    "oorspronkelijke_werkvorm": "Open leerboek Introduction to Philosophy: Ethics (vier ethische lenzen)",
+    "bronnen_apa": [
+      "Matthews, G. (Red.). (2019). Introduction to philosophy: Ethics. Rebus Community. https://press.rebus.community/intro-to-phil-ethics/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW36-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW36-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW36-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW36-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW36-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op Introduction to Philosophy: Ethics – G. Matthews (Red.), Rebus Community – CC BY 4.0"
+  },
+  {
+    "id": "MV_59",
+    "werkblad_code": "WB-MW37-HBO-HRM-NL",
+    "titel": {
+      "nl": "De vriend op de shortlist",
+      "en": "The friend on the shortlist"
+    },
+    "omschrijving": {
+      "nl": "Een recruiter vindt zijn beste vriend op de shortlist. Het verhaal komt in drie delen en studenten stellen hun oordeel steeds bij.",
+      "en": "A recruiter finds his best friend on the shortlist. The story unfolds in three parts and students adjust their judgement as they go."
+    },
+    "themas": {
+      "nl": [
+        "Belangenverstrengeling",
+        "Loyaliteit",
+        "Verhaal"
+      ],
+      "en": [
+        "Conflict of interest",
+        "Loyalty",
+        "Story"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "micro",
+    "duur": "50 min",
+    "groep": "2–3 studenten",
+    "oorspronkelijke_werkvorm": "Open leerboek Ethical Explorations (verhaal als casus-prikkel)",
+    "bronnen_apa": [
+      "Shea, B. (2023). Ethical explorations: Moral dilemmas in a universe of possibilities. Thoughtful Noodle Books. https://mlpp.pressbooks.pub/ethicalexplorations/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW37-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW37-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW37-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW37-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW37-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Geïnspireerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0 (alleen de aanpak; geen tekst overgenomen)"
+  },
+  {
+    "id": "MV_60",
+    "werkblad_code": "WB-MW38-HBO-HRM-NL",
+    "titel": {
+      "nl": "Nul tolerantie",
+      "en": "Zero tolerance"
+    },
+    "omschrijving": {
+      "nl": "Een heftruckchauffeur rijdt onder invloed bijna een collega aan. Het beleid zegt ontslag, maar hij vraagt om hulp. Voorbeeldcasus voor analyseren naar waarden, plichten en gevolgen, afwegen en beargumenteerd besluiten.",
+      "en": "A forklift driver nearly hits a colleague while under the influence. Policy says dismissal, but he asks for help. A model case for analysing values, duties and consequences, weighing, and making a reasoned decision."
+    },
+    "themas": {
+      "nl": [
+        "Beleid en zorgplicht",
+        "Veiligheid",
+        "Beargumenteerd besluiten"
+      ],
+      "en": [
+        "Policy and duty of care",
+        "Safety",
+        "Reasoned decision-making"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "4–5 studenten",
+    "oorspronkelijke_werkvorm": "Moreel beraad – dilemmamethode",
+    "bronnen_apa": [
+      "Stolper, M., Molewijk, B., & Widdershoven, G. (2016). Bioethics education in clinical settings: Theory and practice of the dilemma method of moral case deliberation. BMC Medical Ethics, 17, Article 45. https://doi.org/10.1186/s12910-016-0125-1"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW38-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW38-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW38-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW38-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW38-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
+  }
+]

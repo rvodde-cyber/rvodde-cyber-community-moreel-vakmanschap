@@ -2,6 +2,10 @@ import { readFileSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { COMPLEXITY_KEYS } from "../src/data/gesprekskaarten/constants.js";
+import { LICENTIES } from "../src/data/licentie.js";
+
+// Moet gelijk blijven aan sleutels in src/data/licentie.js
+const TOEGESTANE_LICENTIES = Object.keys(LICENTIES);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -148,8 +152,14 @@ for (const item of raw) {
   } else if (item.bronnen_apa.length === 0) {
     warn(`${id}: lege bronnen_apa`);
   }
-  if (item.licentie !== "CC BY-NC-SA 4.0") {
-    fail(`${id}: licentie moet "CC BY-NC-SA 4.0" zijn`);
+  if (!TOEGESTANE_LICENTIES.includes(item.licentie)) {
+    fail(`${id}: ongeldige licentie "${item.licentie}" (toegestaan: ${TOEGESTANE_LICENTIES.join(", ")})`);
+  }
+  if (item.werkblad_code !== undefined && typeof item.werkblad_code !== "string") {
+    fail(`${id}: werkblad_code moet een string zijn`);
+  }
+  if (item.naamsvermelding_bron !== undefined && typeof item.naamsvermelding_bron !== "string") {
+    fail(`${id}: naamsvermelding_bron moet een string zijn`);
   }
   if (typeof item.naamsvermelding !== "string") fail(`${id}: naamsvermelding ontbreekt`);
   if (!NIVEAUS.includes(item.niveau)) {

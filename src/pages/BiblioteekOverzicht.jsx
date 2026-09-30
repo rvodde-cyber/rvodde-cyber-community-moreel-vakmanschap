@@ -3,7 +3,6 @@ import { Shield } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
-import { LICENTIE } from "../data/licentie";
 import { getWerkbladenCount } from "../data/werkbladen";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
@@ -77,7 +76,6 @@ const disclaimerParaStyle = {
 };
 
 function BibliotheekDisclaimer({ dataLang }) {
-  const url = LICENTIE.url[dataLang === "en" ? "en" : "nl"];
   if (dataLang === "en") {
     return (
       <>
@@ -88,12 +86,8 @@ function BibliotheekDisclaimer({ dataLang }) {
           worksheet and in the document itself.
         </p>
         <p style={disclaimerParaStyle}>
-          The{" "}
-          <a href={url} rel="license" style={{ color: "inherit", textDecoration: "underline" }}>
-            CC BY-NC-SA 4.0
-          </a>{" "}
-          licence applies to our own contribution and adaptation: free to use for non-commercial education, with
-          attribution and under the same licence.
+          Each worksheet states the Creative Commons licence under which you may use it (CC BY-SA 4.0 or CC BY-NC-SA
+          4.0). Use is always free, with attribution and under the same licence.
         </p>
         <p style={{ ...disclaimerParaStyle, marginBottom: 0 }}>
           Rights to the original methods, models and texts remain with their respective authors. When reusing, please
@@ -111,12 +105,8 @@ function BibliotheekDisclaimer({ dataLang }) {
         het werkblad en in het document zelf.
       </p>
       <p style={disclaimerParaStyle}>
-        De licentie{" "}
-        <a href={url} rel="license" style={{ color: "inherit", textDecoration: "underline" }}>
-          CC BY-NC-SA 4.0
-        </a>{" "}
-        geldt voor onze eigen bijdrage en bewerking: gratis te gebruiken voor niet-commercieel onderwijs, met
-        naamsvermelding en onder dezelfde licentie.
+        Bij elk werkblad staat onder welke Creative Commons-licentie je het mag gebruiken (CC BY-SA 4.0 of CC
+        BY-NC-SA 4.0). Het gebruik is altijd gratis, met naamsvermelding en onder dezelfde licentie.
       </p>
       <p style={{ ...disclaimerParaStyle, marginBottom: 0 }}>
         De rechten op de oorspronkelijke werkvormen, modellen en teksten blijven bij de betreffende auteurs. Vermeld bij

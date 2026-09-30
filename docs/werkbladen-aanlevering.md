@@ -1,6 +1,8 @@
-# Werkbladen aanleveren (MV_22 t/m MV_58)
+# Werkbladen aanleveren (MV_23 t/m MV_59)
 
 Dit document beschrijft hoe nieuwe werkbladen in de bibliotheek worden toegevoegd. De data staat in `src/data/werkbladen.json`; bestaande materialen MV_01–MV_21 blijven in `src/data/bibliotheekData.js`.
+
+> **Nummering:** MV_22 is gereserveerd voor *Basiswerkvorm — werken met de gesprekskaarten* (staat nog in `backup/lokaal-2026-09-30`). Nieuwe werkbladen in `werkbladen.json` gebruiken **MV_23 t/m MV_59** (37 stuks).
 
 ## JSON-schema
 
@@ -20,18 +22,20 @@ Elk item in de array heeft deze velden:
 | `groep` | string | Vrije tekst (bijv. `4–6 personen`) |
 | `oorspronkelijke_werkvorm` | string | Naam van de onderliggende werkvorm |
 | `bronnen_apa` | string[] | APA-bronnen; lege array geeft build-waarschuwing |
-| `licentie` | string | Altijd `CC BY-NC-SA 4.0` |
+| `licentie` | string | `CC BY-SA 4.0` of `CC BY-NC-SA 4.0` (zie `src/data/licentie.js`) |
 | `naamsvermelding` | string | Standaard: Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen |
 | `niveau` | string | `concept`, `getest` of `aanbevolen` |
 | `bestanden` | object | `student_nl`, `docent_nl`, `student_en`, `docent_en` — bestandsnaam of `null` |
 | `sfeerbeeld` | string \| null | Bestandsnaam JPG in `public/images/werkbladen/`, of `null` |
+| `werkblad_code` | string, optioneel | Interne registercode (bijv. `WB-MW01-HBO-HRM-NL`) |
+| `naamsvermelding_bron` | string, optioneel | Verplichte naamsvermelding van een open bron (URLs worden klikbaar) |
 
 ## Voorbeeld (twee items)
 
 ```json
 [
   {
-    "id": "MV_22",
+    "id": "MV_23",
     "titel": { "nl": "Voorbeeld NL", "en": "Example EN" },
     "omschrijving": { "nl": "Korte omschrijving.", "en": "" },
     "themas": { "nl": ["Ethiek", "HRM"], "en": [] },
@@ -47,15 +51,15 @@ Elk item in de array heeft deze velden:
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "MV_22_Student_NL.docx",
-      "docent_nl": "MV_22_Docent_NL.docx",
+      "student_nl": "MV_23_Student_NL.docx",
+      "docent_nl": "MV_23_Docent_NL.docx",
       "student_en": null,
       "docent_en": null
     },
-    "sfeerbeeld": "MV_22.jpg"
+    "sfeerbeeld": "MV_23.jpg"
   },
   {
-    "id": "MV_23",
+    "id": "MV_24",
     "titel": { "nl": "Tweede werkblad", "en": "Second worksheet" },
     "omschrijving": { "nl": "…", "en": "…" },
     "themas": { "nl": ["Reflectie"], "en": ["Reflection"] },
@@ -71,10 +75,10 @@ Elk item in de array heeft deze velden:
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "getest",
     "bestanden": {
-      "student_nl": "MV_23_Student_NL.docx",
-      "docent_nl": "MV_23_Docent_NL.docx",
-      "student_en": "MV_23_Student_EN.docx",
-      "docent_en": "MV_23_Docent_EN.docx"
+      "student_nl": "MV_24_Student_NL.docx",
+      "docent_nl": "MV_24_Docent_NL.docx",
+      "student_en": "MV_24_Student_EN.docx",
+      "docent_en": "MV_24_Docent_EN.docx"
     },
     "sfeerbeeld": null
   }
@@ -104,7 +108,7 @@ Geen spaties of accenten in bestandsnamen. Maximaal 20 MB per bestand (waarschuw
 
 - Formaat: JPG, 1600×900 (16:9)
 - Kleinere dan 300 KB aanbevolen
-- Bestandsnaam in JSON: bijv. `MV_22.jpg`
+- Bestandsnaam in JSON: bijv. `MV_23.jpg`
 - Ontbreekt het beeld: fallback naar `/images/bibliotheek/stap-{hoofdfase}.jpg`
 
 ## Werkwijze
@@ -116,7 +120,7 @@ Geen spaties of accenten in bestandsnamen. Maximaal 20 MB per bestand (waarschuw
 
 ## Checklist
 
-- [ ] `id` uniek en niet in gebruik in `bibliotheekData.js`
+- [ ] `id` in bereik MV_23–MV_59 (MV_22 niet gebruiken) en uniek, niet in `bibliotheekData.js`
 - [ ] Alle verplichte velden ingevuld, `licentie` = CC BY-NC-SA 4.0
 - [ ] `fasen`, `complexiteit` en `niveau` geldig
 - [ ] NL-bestanden aanwezig op schijf als niet `null`
