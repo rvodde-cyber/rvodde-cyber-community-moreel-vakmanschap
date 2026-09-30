@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-hidden="true">
+  <!-- Placeholder voor asset 3 (§8.2): decoratief hoekaccent. Puur decoratief,
+       daarom aria-hidden en in de app een lege alt-tekst. -->
+  <defs>
+    <radialGradient id="droplet" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <path d="M 100 24 C 140 74 162 108 162 132 A 62 62 0 0 1 38 132 C 38 108 60 74 100 24 Z" fill="url(#droplet)" />
+</svg>

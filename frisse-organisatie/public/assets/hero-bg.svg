@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <!-- Placeholder voor asset 1 (§8.2). De app gebruikt op dit moment de
+       CSS-gradient uit index.css; dit bestand staat klaar als vervanging
+       zodra het Firefly-beeld er is. -->
+  <defs>
+    <radialGradient id="warm" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#F5F5F4" />
+      <stop offset="100%" stop-color="#FAFAF9" />
+    </radialGradient>
+    <radialGradient id="mint" cx="22%" cy="10%" r="45%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="indigo" cx="86%" cy="14%" r="42%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.11" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#warm)" />
+  <rect width="1920" height="1080" fill="url(#mint)" />
+  <rect width="1920" height="1080" fill="url(#indigo)" />
+</svg>

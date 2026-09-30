@@ -1,0 +1,350 @@
+[
+  {
+    "id": "GK_MM_01",
+    "title_en": "The gossiping friend",
+    "story_en": "The music pounds, lights flash across the room, and that's when he finally hears it clearly: his best friend is spreading lies about their mutual friend at the bar, the kind of gossip that could ruin her reputation among people who aren't even there to defend themselves. His blood boils. They've known each other since middle school, been through everything together, and that friendship feels heavier than the urge to call him out here, in front of the whole group. Yet he watches the story spread from ear to ear while she stands, unsuspecting, somewhere else on the dance floor. Does he step in right now, talk to his friend calmly tomorrow, or just let it slide tonight?",
+    "justification_en": "This is a meso-dilemma: the choice affects the social group and a third person's reputation, not only the two friends themselves."
+  },
+  {
+    "id": "GK_MM_02",
+    "title_en": "The neighbor who abuses his wife",
+    "story_en": "Emma hears it through the thin fence between the gardens: shouting, a dull thud, then silence. Mrs. Janssen, her neighbor of many years, appears the next morning with a bruise she half-hides under a scarf. It isn't the first time; the pattern has repeated for months now, each time a little worse. Emma wrestles with her conscience: she wants to help Mrs. Janssen, but is terrified of what Mr. Janssen might do if he finds out the neighbors are getting involved. Calling the police could escalate things; doing nothing leaves Mrs. Janssen alone with someone who keeps hurting her. Emma searches for a safe way to help, one that doesn't put Mrs. Janssen at even greater risk. Does she call the police, quietly knock on the door herself, or look for a middle way?",
+    "justification_en": "This is a macro-dilemma: it involves a structural pattern of domestic violence where intervening carries serious personal risk."
+  },
+  {
+    "id": "GK_MM_03",
+    "title_en": "The found wallet",
+    "story_en": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+  },
+  {
+    "id": "GK_MM_04",
+    "title_en": "A colleague claims unearned overtime",
+    "story_en": "For the third week in a row, Mark sees it in the hours overview: Emma is claiming overtime for evenings he personally watched her leave at five o'clock. No one else on the team seems to notice, or no one says anything. Emma is popular, always helpful when new colleagues are being trained, and the team atmosphere is already fragile after the last reorganization. Mark does the math: added up, it comes to hundreds of euros paid out monthly for hours that were never worked. He thinks of the colleagues who fill in their hours honestly, sometimes even underreporting out of caution. Does he report it to his manager, talk to Emma directly first, or let it go to keep the peace?",
+    "justification_en": "This is a meso-dilemma: it affects fairness within the team and whether Mark should act as a colleague or as an overseer."
+  },
+  {
+    "id": "GK_MM_05",
+    "title_en": "A colleague underperforms due to personal problems",
+    "story_en": "Sophie has noticed for weeks that Mark is consistently late and leaves tasks half-finished, forcing the rest of the team to cover his backlog. She knows, from an offhand remark, that he's going through a difficult divorce at home and barely sleeps. Two colleagues are already grumbling openly about his performance over lunch, unaware of what's going on. Sophie feels torn: she doesn't want to expose Mark to their manager, but she also sees how the extra workload is starting to wear other colleagues down. No one has informed management, and the project deadline is approaching fast. Does Sophie talk to Mark first, report it to their manager, or keep quietly absorbing the extra work?",
+    "justification_en": "This is a meso-dilemma: the trade-off between understanding for one colleague and the workload pressure on the whole team."
+  },
+  {
+    "id": "GK_MM_06",
+    "title_en": "A manager makes discriminatory remarks",
+    "story_en": "During the team meeting, Mr. Jansen makes another belittling comment about a colleague's accent, \"joking,\" as he calls it himself. Emma watches a colleague look away and stay silent for the rest of the meeting. It isn't the first time; she's now seen the pattern repeat for months, aimed at different people. Jansen has been a manager for fifteen years, respected by senior leadership for his results, and no one has ever formally confronted him. A report to HR could trigger an investigation that affects the whole department and puts Jansen's position at risk. Staying silent means the atmosphere for colleagues with a migration background stays unchanged. Does Emma report it formally, confront Jansen personally, or wait for someone else to take the first step?",
+    "justification_en": "This is a macro-dilemma: it involves the broader norm of a safe workplace and power dynamics across the whole organization."
+  },
+  {
+    "id": "GK_MM_07",
+    "title_en": "The cheap internship abroad",
+    "story_en": "Sophie is halfway through her dream internship at a renowned NGO in South America when she finds a payment record among internal documents. A large local company, known for illegal logging in the rainforest, turns out to be one of the NGO's biggest donors — funding that partly pays for her own internship position. Her supervisor dodges the question when she carefully brings it up. Flying home would mean delaying her studies and giving up a unique international experience. Staying means contributing to an organization that claims to protect trees while being funded by the very company cutting them down. She has four months left on her placement and no real alternative within reach. Does Sophie report her discovery externally, confront her supervisor, or simply finish her internship?",
+    "justification_en": "This is a macro-dilemma: it involves systemic issues of deforestation and the integrity of civil society organizations worldwide."
+  },
+  {
+    "id": "GK_MM_08",
+    "title_en": "The well-earned vacation",
+    "story_en": "For the third time this year, Laura books a cheap flight vacation, this time to a sunny island she desperately needs after a brutal shift schedule on the intensive care unit. Her colleagues fully understand; everyone needs rest after months of overwork during the flu season. Still, something has been nagging at her since she last spoke with her niece, who researched the CO2 emissions of short-haul flights for her thesis. The numbers stuck in her head: one flight's emissions equal months of her carefully sorted recycling and cycling to work. She knows a train journey would cost more time and money, time she simply doesn't have between shifts. Does Laura book the flight anyway, look for a more sustainable alternative, or postpone the vacation?",
+    "justification_en": "This is a meso-dilemma: a personal habit colliding with a broader, shared sense of responsibility for climate and sustainability."
+  },
+  {
+    "id": "GK_MM_09",
+    "title_en": "The animal testing research",
+    "story_en": "Pim has developed a promising alternative to a widely used animal test, after years of research funded by a pharmaceutical company. That exact company runs large-scale animal testing itself, and his results could make that practice unnecessary. His supervisor receives subtle signals from the funder: delay the publication, repeat the measurements once more, wait for \"additional validation\" that isn't actually needed. Pim sees his data clearly in his mind; further delay serves no one except the company profiting from the very tests he's trying to replace. His contract as a PhD candidate runs through that same company, and a conflict could jeopardize his entire trajectory. Does Pim publish his results as planned, seek an independent funder, or bend under the pressure?",
+    "justification_en": "This is a macro-dilemma: it involves the integrity of scientific research and the broader conflict of interest between funding and science."
+  },
+  {
+    "id": "GK_MM_10",
+    "title_en": "The anonymous application",
+    "story_en": "Two résumés lie side by side on the desk: identical education, identical work experience, almost word-for-word the same motivation letter. Only the names differ — Jan de Vries and Ahmed Khalil. The recruiter notices how her gaze relaxes automatically at Jan's name, and lingers a fraction longer, unconsciously, at Ahmed's. She knows the research on name discrimination, has completed the training, knows this is exactly the mechanism the organization claims to fight. Yet she notices a vague gut feeling that Jan would \"fit better\" with the team, without being able to explain exactly why. Her director is waiting for her recommendation by the end of the day, and the pressure to decide quickly is palpable. Does she strictly follow the qualifications on paper, ask a colleague for a second opinion, or go with her gut?",
+    "justification_en": "This is a meso-dilemma: it affects the fairness of the organization's hiring process and unconscious bias in the assessor herself."
+  },
+  {
+    "id": "GK_MM_11",
+    "title_en": "Friends' homophobic jokes",
+    "story_en": "Tom has had a knot in his stomach for weeks at every Friday night out with his friends. Homophobic jokes keep coming up more often, tossed off casually, followed by laughter that ripples through the whole group. He's known these guys since middle school, they've always been there for him, and none of them know he's himself struggling with his sexual identity. Each joke feels like a small blow, a signal that he'd better not speak up about who he really is. He considers saying something, but the fear of rejection, of losing the group he's belonged to his entire life, holds him back every time. Meanwhile, the jokes aren't getting any gentler, only bolder. Does Tom confront his friends about what they're saying, quietly withdraw, or keep laughing along in silence?",
+    "justification_en": "This is a meso-dilemma: it affects the dynamics and norms within a close friend group, not just an individual choice."
+  },
+  {
+    "id": "GK_MM_12",
+    "title_en": "The mixed relationship",
+    "story_en": "For the first time in months she feels completely herself, in love with someone whose culture and habits have opened up her whole world. But at her parents' dinner table hangs a silence louder than words. Her father pushes his plate away the moment she mentions his name; her mother asks in a whisper whether she's \"really thought this through.\" To them, the relationship is a break from traditions that have lived in the family for generations, a deviation they don't know how to place. She loves her parents, doesn't want to simply give up their approval, but also feels she can't let her own happiness depend on their acceptance. A family gathering is coming up where everyone expects her to \"be sensible.\" Does she bring her partner along, quietly put the relationship on hold, or choose to confront her family?",
+    "justification_en": "This is a meso-dilemma: it involves the tension between personal autonomy and the values and expectations of the wider family."
+  },
+  {
+    "id": "GK_MM_13",
+    "title_en": "The photo posted without consent",
+    "story_en": "The photo had barely been up for five minutes before the first reactions rolled in: funny, relatable, plenty of laughing emojis. It's a snapshot of a friend caught in an awkward moment at a housewarming, exactly the kind of image that always does well. Only when the friend himself texts her — short, clearly annoyed — does she realize she never asked for permission. \"Why would you post this without asking,\" he writes, \"everyone at my work can see this.\" The photo has already been forwarded by a few people into other groups, beyond her own reach. She can delete it immediately, say something to make it right, or wait and see if it blows over on its own. What does she do, and how does she make sure this doesn't happen again?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between one's own enjoyment of sharing and respecting someone else's boundaries."
+  },
+  {
+    "id": "GK_MM_14",
+    "title_en": "The fake review",
+    "story_en": "After a sleepless night full of stress over disappointing numbers, she types out a harsh, negative review of a direct competitor's business on impulse. She invents details that aren't true: poor hygiene, rude staff, things she's never actually experienced herself. Within a day the review has racked up dozens of views, and she watches the competitor's bookings slowly decline on a shared reservation platform. What she hadn't anticipated: the competing business is run by a single mother who just took out a loan to stay open. A colleague casually asks if she's seen that review too, not knowing who wrote it. The review is still there, untouched, as the days pass. Does she delete the review and apologize, or does she just let it stand?",
+    "justification_en": "This is a meso-dilemma: it affects fair competition between businesses and consumer trust in online information."
+  },
+  {
+    "id": "GK_MM_15",
+    "title_en": "Great group work",
+    "story_en": "Yip sighs deeply while finishing the last slides of the presentation, alone, as usual with group work involving Tijn. He's the star of the program, charismatic and quick-witted, but his work ethic is downright dismal: he brushes off agreements, misses deadlines, and his share of the work is consistently left undone until the last moment. As chairman of a student association he's always \"too busy,\" he says, while Yip spends evenings making up for his tasks. At the final presentation itself, Tijn steals the show again: with his smooth talk and confident presence he pulls in an eight for the whole group. None of the teachers see what happened behind the scenes. Does Yip report the unequal contribution to the teacher, confront Tijn herself, or just let it go for the grade?",
+    "justification_en": "This is a meso-dilemma: it affects the fair distribution of effort and credit within a shared, joint outcome."
+  },
+  {
+    "id": "GK_BG_01",
+    "title_en": "The taken office supplies",
+    "story_en": "Thomas watches his colleague Bas slip a pack of printer paper and a new mouse into his bag at the end of the day. No one else notices. Bas has worked in the department for twelve years and is considered indispensable; he always arranges the schedules and steps in whenever someone is sick. Thomas hesitates. Is this theft, or just a gray area everyone dabbles in a little? He thinks of the new colleague who was called out last month over a broken copy card — a trifle compared to this. If he reports it, he might disrupt the team atmosphere for good. If he stays silent, he feels complicit every time he sees Bas laughing by the coffee machine. Does he report it to his manager, confront Bas himself, or do nothing?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between loyalty to a colleague and reporting a violation."
+  },
+  {
+    "id": "GK_BG_02",
+    "title_en": "The lie for the parents",
+    "story_en": "Sanne has just stepped into the shower when her phone buzzes three times. Her best friend Iris texts: \"If my parents call, I was at your place last night, okay? Just say we watched a movie.\" Sanne doesn't know where Iris really was, only that she got home at two in the morning and has been quiet about it all day. Iris's parents are strict; a lie might bring calm, but could also cover up something bigger than a night out. In ten minutes, Iris's mother will probably call to ask if Sanne had a nice bike ride home. Sanne types a reply, deletes it, types again. Does she tell the lie for her friend, ask first what exactly happened, or let Iris sort it out herself?",
+    "justification_en": "This is a micro-dilemma: a direct choice between loyalty to a friend and honesty toward another person's parents."
+  },
+  {
+    "id": "GK_BG_03",
+    "title_en": "For the sake of the vibe",
+    "story_en": "It's five o'clock on a Friday afternoon and Youssef is just grabbing his coat when team leader Marieke walks by. \"Could you stay another hour? The report really needs to be finished, and it saves so much if we get it done now instead of Monday.\" She smiles as she says it: \"Just for the good vibe, you know, we all do it sometimes.\" Youssef has already worked nine unpaid extra hours this quarter. His contract will either be renewed or not in six weeks, and Marieke has a say in that decision. His girlfriend is already waiting with dinner. He feels the trade-off between his own limits and the impression he leaves with the person who decides his future. Does he say no this time, or stay again to avoid jeopardizing his job?",
+    "justification_en": "This is a meso-dilemma: the pressure to work unpaid overtime affects the employment relationship and the power imbalance within the organization."
+  },
+  {
+    "id": "GK_BG_04",
+    "title_en": "The group chat",
+    "story_en": "At 11:40 pm, Femke's phone lights up. In the class group chat, more and more messages appear about Julian — screenshots of his poor test score, an edited photo with a ridiculous caption, dozens of laughing emojis. Femke reads along, types nothing. She barely knows Julian, but sees how three classmates, including her best friend, are actively joining in. If she says something, the attention might turn to her. If she stays silent, the messages will still be there tomorrow morning, when the whole class has seen them. She scrolls back to the first message and realizes no one — no teacher, no parent — can see this conversation. Does Femke step in, even though she risks becoming a target herself, or does she put her phone away?",
+    "justification_en": "This is a micro-dilemma: a personal choice about whether to intervene in online bullying within a closed group."
+  },
+  {
+    "id": "GK_BG_05",
+    "title_en": "The found wallet",
+    "story_en": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+  },
+  {
+    "id": "GK_BG_06",
+    "title_en": "The mistake in the report",
+    "story_en": "Lotte is interning at a consulting firm and has just gone through the final report for a major client. She spots a calculation error in the cost forecast — an error that makes the outlook hundreds of thousands of euros too optimistic. Her supervisor, Rick, waves it off: \"No one will notice, and if we fix it now, we'll miss tomorrow's deadline. We'll quietly correct it next quarter.\" Lotte's final evaluation depends on Rick's satisfaction with her performance over the coming weeks. She thinks of the client who will make an investment decision tomorrow based on this exact report. No one else at the firm has spotted the error, and Rick considers the conversation closed. Does Lotte go along with Rick's decision, or does she tell someone anyway?",
+    "justification_en": "This is a meso-dilemma: the choice affects the relationship with a client and the organizational pressure from a supervisor who holds power over her evaluation."
+  },
+  {
+    "id": "GK_BG_07",
+    "title_en": "The photo that's making the rounds",
+    "story_en": "A photo suddenly appears in the friend group chat: a girl from school, clearly unaware she was being photographed, in a compromising moment at a party. Kevin, who shared it, adds: \"Don't forward this, it stays between us.\" Within a minute, Sami, who also saw the photo, has already taken three screenshots. He doesn't know the girl personally, but sees how quickly this kind of thing has become normal in the group. If he secretly forwards it, he becomes part of the problem himself. If he confronts Kevin, he risks the atmosphere in a group he's belonged to for years. If he reports it to the school, everyone will soon know it was him. What does Sami do?",
+    "justification_en": "This is a micro-dilemma: a personal choice about whether to forward or report an inappropriate photo."
+  },
+  {
+    "id": "GK_BG_08",
+    "title_en": "The customer at the counter",
+    "story_en": "Aisha is working the library front desk when a regular visitor refuses to be helped by her. \"I want someone who actually belongs here,\" he says loudly, pointing at her headscarf. Her colleague Ben stands right next to her and hears everything. The man visits weekly and regularly donates to the library's friends' foundation — an important source of income. The manager isn't present. Aisha feels her cheeks warm but keeps smiling, the way she's learned to do. Ben knows a confrontation could anger the man, possibly affecting the donation and the atmosphere on the floor. Does Ben step in, even though it might cause a conflict, or does he let Aisha handle this alone?",
+    "justification_en": "This is a meso-dilemma: discrimination in the workplace affects multiple colleagues and the trade-off between income and respect for staff."
+  },
+  {
+    "id": "GK_BG_09",
+    "title_en": "The well-paid side job",
+    "story_en": "Mila gets a message: a fashion brand she once applied to is offering her a part-time job with a salary twice what she currently earns at the supermarket. She knows from a documentary she watched last year that this brand has its clothes made in factories with poor working conditions and a massive environmental impact. Her student debt keeps growing and her parents can't help out. Friends say: \"Everyone shops there anyway, what difference does your little job make.\" The contract is ready to sign, the start date is two weeks away. Mila scrolls once more through her documentary notes, then checks her bank account. Does she take the job, or keep looking for something that better fits what she values?",
+    "justification_en": "This is a macro-dilemma: the choice affects broader systems of labor conditions and environmental impact in the global clothing industry."
+  },
+  {
+    "id": "GK_BG_10",
+    "title_en": "The answer sheet",
+    "story_en": "During the midterm math exam, Noor, two rows over, sees her friend Elif pull a cheat sheet from her sleeve. They've known each other since their first year of secondary school; Elif helped her through a hard time earlier this year. The invigilator is walking the other way. If Noor says nothing, it goes unnoticed and Elif might just scrape a passing grade. If she reports it, Elif could lose the entire exam and their trust in each other. If she confronts Elif afterward, she'll have to do something with what she saw herself either way. Noor looks at her own answer sheet, where she hasn't finished two questions while the clock keeps ticking. Does she report the cheating, even though it's her friend?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between friendship loyalty and reporting exam fraud."
+  },
+  {
+    "id": "GK_BG_11",
+    "title_en": "The review for money",
+    "story_en": "Sven receives a private message from an online store where he once bought headphones: a fifty-euro gift card in exchange for an \"honest, positive five-star review.\" The headphones fell apart after three weeks and customer service never replied to his email. Fifty euros is exactly what he needs for this month's energy bill. No one checks whether the review actually matches his experience; the system runs purely on trust. He opens the review page and sees hundreds of five-star reviews that, now that he looks closer, are suspiciously worded the same way. The gift card code is already sitting in his inbox. Does Sven write the positive review that doesn't match his experience, or does he leave the money on the table?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between financial gain and honestly informing other consumers."
+  },
+  {
+    "id": "GK_BG_12",
+    "title_en": "But they're just jokes",
+    "story_en": "At the shared house's kitchen table, housemate Ruben makes another joke — this time about Moroccan neighbors and \"the things you run into over there.\" The other housemates laugh along, as always. Yara, the only one who stays quiet, has shared this house with Ruben for two years and still has half a year left on the lease with him. Last week it was about women cyclists, the week before about a colleague with a disability. Every time, someone says: \"Come on, they're just jokes, don't take it so seriously.\" Yara wonders if she's the only one who feels uncomfortable about this. Does she confront Ruben about what he's saying, or let it go like everyone else?",
+    "justification_en": "This is a micro-dilemma: a personal choice about whether to raise recurring jokes from a housemate."
+  },
+  {
+    "id": "GK_BG_13",
+    "title_en": "The cheap sweater",
+    "story_en": "A sweater hangs in the store for six euros, even cheaper in the sale. Emma knows, from a school project on the clothing industry, that garments at this price point are often made in factories that also employ children — she looked up the figures herself for her paper. Her own budget is tight; she's saving for a school trip and every euro counts. The sweater in her hands is exactly what she was looking for, the right size and color, unavailable anywhere else at this price. The cashier is waiting, the line behind her growing. She thinks of the paper she wrote herself and the school trip she's saving for. Does Emma put the sweater back, or buy it anyway?",
+    "justification_en": "This is a macro-dilemma: the choice touches the systemic issue of child labor and working conditions in the global clothing supply chain."
+  },
+  {
+    "id": "GK_BG_14",
+    "title_en": "The manager's request",
+    "story_en": "Team leader Iris asks Bram to present the project results \"a bit more positively than they actually are\" in a client presentation — nothing untrue, just \"emphasizing things differently.\" What she's asking isn't illegal and happens all over the industry, she says. Bram gathered the figures himself and knows the client is considering a follow-up contract based on exactly this result. Iris will conduct his performance review next month and decide whether his temporary contract gets extended. She doesn't wait for a long answer; the presentation needs to be ready by tomorrow morning. Bram opens the file and stares at the graph he made honestly. Does he do what Iris asks, or speak up that this goes against his own values?",
+    "justification_en": "This is a meso-dilemma: the pressure to present figures more favorably affects the employment relationship and the organization's institutional interest with the client."
+  },
+  {
+    "id": "GK_BG_15",
+    "title_en": "The homeless man on the street",
+    "story_en": "Outside the supermarket sits a man with a cardboard sign: \"Every euro helps, thank you.\" Julia has just calculated her entire week's grocery budget — exactly enough, not a euro to spare. She doesn't know the man's story: how long he's been sitting here, what he does with the money, whether he's seeking help. Last week she read an article warning against giving cash instead of food. She has no leftover bread with her, no extra card for a warm meal, only her wallet with exactly enough for her own list. The checkout line is visible from here. She could walk past, give something and skip an item on her own list, or go inside and buy something for him. What does Julia do, and why?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice about how to respond to someone asking for help, on a tight budget of her own."
+  },
+  {
+    "id": "GK_DL_01",
+    "title_en": "The scarf on the train",
+    "story_en": "The train jolts hard, a dull thud through the carriage. On the cold floor lies a girl, barely eighteen, shivering with chattering teeth after a fall. The conductor calls for help, but until it arrives she stays there, exposed under the harsh train lighting. In her bag she feels the soft, cherished scarf her grandmother gave her, the only keepsake she still has of her. No one else in the compartment moves; everyone looks away nervously or stares at their phone. She could wrap the scarf around the girl against the cold, or find something else — her coat, a kind word, simply staying by her side. The minutes until help arrives feel endless. Does she give the scarf, or hold on to what's dear to her and find another gesture?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between holding on to a possession and offering immediate help to a stranger."
+  },
+  {
+    "id": "GK_DL_02",
+    "title_en": "The friend who drinks and drives",
+    "story_en": "Sophie watches, time and again, as Tom, her boyfriend, gets behind the wheel without hesitation after a night of heavy drinking. \"I'll be fine, I've always driven like this,\" he says with a laugh, keys already jingling in his hand. Tonight is no different; he's clearly had more than usual, his movements slower, his voice louder than normal. Sophie knows the risks: not just for Tom, but for everyone else on the road tonight. She's brought it up before, carefully, and got an irritated response. Their relationship sometimes feels fragile enough not to risk another confrontation. Yet now she watches him walk toward the car. Does Sophie intervene firmly, even if it puts the relationship on edge, or does she let it go once again?",
+    "justification_en": "This is a meso-dilemma: it affects not only the friendship but also the safety of others on the road."
+  },
+  {
+    "id": "GK_DL_03",
+    "title_en": "The neighbor and the waste",
+    "story_en": "The park behind his house, once the pride of the neighborhood, is turning month by month into an illegal dump. David regularly sees Mr. Bakker, his neighbor of fifteen years, dumping bags of trash there in the early morning — construction waste, old furniture, things that don't belong in household garbage. The stench attracts vermin, and neighborhood kids avoid the field where they used to play football. Other neighbors grumble among themselves, but no one dares confront Mr. Bakker directly; he's known as short-tempered and once had a dispute with the municipality over his fence. David considers calling the council, knowing this could mean a fine and years of strained neighborly relations. Does David confront Mr. Bakker himself first, report it anonymously to the council, or leave it to the rest of the neighborhood?",
+    "justification_en": "This is a meso-dilemma: it affects the shared living environment of the whole neighborhood, not only the relationship between two neighbors."
+  },
+  {
+    "id": "GK_DL_04",
+    "title_en": "The friend who steals",
+    "story_en": "Delano sees it for the third time now: Mark slipping a set of earbuds into his jacket pocket without so much as glancing at the checkout. It no longer feels like a one-time impulse, more like a pattern he no longer seems able to control. They've been friends since elementary school, through thick and thin, and Delano knows Mark's family has been financially tight since his parents' divorce. An arrest could shape his entire future: a criminal record, trouble with a degree, maybe with a future job. But staying silent doesn't feel right either, as if he's complicit in something slowly spiraling out of control. Does Delano confront him directly about it, tell someone else who could help, or pretend he saw nothing?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between loyalty to a friend and the risk that he's putting himself in deeper trouble."
+  },
+  {
+    "id": "GK_DL_05",
+    "title_en": "The neighbor and the children",
+    "story_en": "For the third time this month, Emma hears through the thin wall how Mrs. Jansen's door slams shut, followed by small children's voices calling \"mama.\" She knows Mrs. Jansen is a single parent working two jobs to get by, and that childcare is simply too expensive for her budget. Still, it keeps nagging at her: the children are barely six and seven years old, and the stretches they're left alone keep getting longer. A neighbor recently suggested, carefully, calling child protective services, but Emma fears what that could mean for the family — removal from the home, a stigma that never fully goes away. She could also knock on Mrs. Jansen's door herself, offer help instead of reporting. The children's voices go quiet again. Does Emma intervene through official channels, offer help herself, or wait and see?",
+    "justification_en": "This is a meso-dilemma: it affects the safety of vulnerable children and the question of when private care becomes a shared responsibility."
+  },
+  {
+    "id": "GK_DL_06",
+    "title_en": "The friend who speeds",
+    "story_en": "Lisa grips the armrest as Mark runs yet another yellow light and the speedometer climbs well above the limit. It isn't a one-time impulse; she's seen the pattern for months, every time she rides with him. Mark always laughs it off: \"I know this road, I know what I'm doing.\" Yet she was recently shaken by a near-collision with a cyclist who barely managed to swerve in time. She feels responsible for saying something, but is afraid Mark will see it as meddling and get defensive, like the last time she tried. Meanwhile, her unease grows every time he gets behind the wheel with her in the car. Does Lisa confront him now, directly and firmly, refuse to ride with him from now on, or keep riding along in silence?",
+    "justification_en": "This is a meso-dilemma: it affects not only the friendship but also the safety of other road users."
+  },
+  {
+    "id": "GK_DL_07",
+    "title_en": "The found wallet",
+    "story_en": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+  },
+  {
+    "id": "GK_DL_08",
+    "title_en": "The gossiping friend",
+    "story_en": "The music pounds, lights flash across the room, and that's when he finally hears it clearly: his best friend is spreading lies about their mutual friend at the bar, the kind of gossip that could ruin her reputation among people who aren't even there to defend themselves. His blood boils. They've known each other since middle school, been through everything together, and that friendship feels heavier than the urge to call him out here, in front of the whole group. Yet he watches the story spread from ear to ear while she stands, unsuspecting, somewhere else on the dance floor. Does he step in right now, talk to his friend calmly tomorrow, or just let it slide tonight?",
+    "justification_en": "This is a meso-dilemma: the choice affects the social group and a third person's reputation, not only the two friends themselves."
+  },
+  {
+    "id": "GK_DL_09",
+    "title_en": "The borrowed money",
+    "story_en": "Three months ago she borrowed a hundred and fifty euros from her friend, promising to pay it back within a few weeks. Then came the unexpected bills: a broken washing machine, a dentist visit that wasn't covered. Every time his name appears on her phone screen, she feels a sting of shame, and she keeps putting off the conversation. He needs the money himself, badly, she knows that, even though he's never said so directly. Today he texts again, casually, about a concert he'd like to book but can't quite afford right now. She knows the moment has come to be honest about her own situation instead of pushing the problem further ahead. Does she call him now to explain, keep quietly saving up, or keep avoiding the conversation?",
+    "justification_en": "This is a micro-dilemma: a direct, personal choice about honesty and responsibility within a friendship."
+  },
+  {
+    "id": "GK_DL_10",
+    "title_en": "The fake reviews",
+    "story_en": "The new coffee shop around the corner boasts a strikingly perfect score online: hundreds of five-star reviews, all posted within a few days of opening. She reads through them one by one and notices something odd: many of the accounts have never written another review, and the texts seem eerily similar, the same words rearranged just slightly. The coffee shop next door, where she's been a regular for years and which is struggling to stay afloat, is visibly losing customers to the newcomer. She isn't sure whether to get involved: it isn't her business, she has no proof beyond her own suspicion, and the platform is slow to respond to reports. Still, it feels unfair to the owner she knows, and to other customers relying on those reviews. Does she report her suspicion to the platform, confront the owner, or let it go?",
+    "justification_en": "This is a macro-dilemma: it affects the broader system of consumer trust and fair competition between business owners."
+  },
+  {
+    "id": "GK_DL_11",
+    "title_en": "The neighbor who abuses his wife",
+    "story_en": "Emma hears it through the thin fence between the gardens: shouting, a dull thud, then silence. Mrs. Janssen, her neighbor of many years, appears the next morning with a bruise she half-hides under a scarf. It isn't the first time; the pattern has repeated for months now, each time a little worse. Emma wrestles with her conscience: she wants to help Mrs. Janssen, but is terrified of what Mr. Janssen might do if he finds out the neighbors are getting involved. Calling the police could escalate things; doing nothing leaves Mrs. Janssen alone with someone who keeps hurting her. Emma searches for a safe way to help, one that doesn't put Mrs. Janssen at even greater risk. Does she call the police, quietly knock on the door herself, or look for a middle way?",
+    "justification_en": "This is a macro-dilemma: it involves a structural pattern of domestic violence where intervening carries serious personal risk."
+  },
+  {
+    "id": "GK_NM_01",
+    "title_en": "Thirty minutes ago",
+    "story_en": "Sanne glances at the schedule before the door opens. Room 3, next patient — lung cancer, diagnosed this morning, thirty minutes ago, maybe less. The scan has to happen today; the surgeons need it to plan the resection, and every hour the tracer decays is an hour lost. After this patient she has four more and a technologist called in sick. The woman who walks in looks hollowed out, her hands trembling as she signs a consent form she probably hasn't read. Sanne wants to sit with her for a moment, let the silence breathe before the camera starts, but the corridor outside is already filling with the next appointment. She lays the woman on the table, keeps her voice soft, and sets the timer in her head. How much of herself can she give this patient in twelve minutes?",
+    "justification_en": "This is a meso-dilemma: the department's time pressure and protocols collide with the personal attention this patient needs."
+  },
+  {
+    "id": "GK_NM_02",
+    "title_en": "The first one to ask",
+    "story_en": "Mr. Verhoeven is eighty-eight, and today is his first PET/CT since the diagnosis. Erik calls him in, explains the injection, the hour of waiting, the scanner. Halfway through, the older man shakes his head. \"I don't want this,\" he says quietly. \"No one has asked me what I want. They only tell me the next step.\" Erik is, in fact, the first person since treatment began who hasn't simply pushed him toward the next step. He could take the time now — really listen, ask what \"not wanting this\" means. But the tracer is already decaying in the vial upstairs, and three patients are waiting, one of whom loses their appointment entirely if this slot runs over. Erik pulls up a chair anyway. Does he sit down, or call it off?",
+    "justification_en": "This is a meso-dilemma: the department's waiting list and decaying tracer collide with one patient's personal wish to be heard."
+  },
+  {
+    "id": "GK_NM_03",
+    "title_en": "What she traded it for",
+    "story_en": "Eva is eleven and has weeks left, not months. The blood draws are still needed — to track the numbers that tell the team how much pain relief her body can still handle. She used to fight the needle with everything she had, twisting away from anyone who came near her line. Somewhere along the way an unspoken agreement formed between her and nurse Mira: a little more morphine, a little more comfort, in exchange for lying still. Mira knows how this looks from the outside. She also knows what untreated pain looks like in a child who can no longer describe it. No one wrote this into a protocol; it grew out of two people getting through the same impossible afternoon, over and over. When Eva died, half the team stood at the back of a small funeral, unsure whether they belonged there, certain they couldn't stay away. What do you call what happened in that room?",
+    "justification_en": "This is a meso-dilemma: it involves the unwritten agreements between caregiver and patient within the care team, outside any protocol."
+  },
+  {
+    "id": "GK_NM_04",
+    "title_en": "Between the compressions",
+    "story_en": "The compressions don't stop for anyone, not even for a blood draw. Tomas kneels beside the gurney, waiting for the half-second window between chest down and chest up. He needs a potassium value — clean, uncontaminated, no hemolysis — because that number could decide whether the team continues or stops. Draw too slowly, too much stasis, and the result lies: it says the heart can't be saved when it still might be. Draw fast and sloppy just to get a number, and the same mistake happens in reverse. Someone behind him says \"we need that potassium\" as if it's a formality. Tomas knows it isn't. He has one shot, one vein, and a room full of people who will act on whatever the lab says next. How certain does he need to be before he lets them stop?",
+    "justification_en": "This is a micro-dilemma: a direct, technical judgment call made by one caregiver under acute pressure, with major consequences for the patient."
+  },
+  {
+    "id": "GK_RI_01",
+    "title_en": "The order of the names",
+    "story_en": "Lotte has spent fourteen months on this paper — every experiment, every table, every late night rewriting the discussion section. Her supervisor, Professor Dekker, reads the final version in silence and slides it back across the desk. \"Put my name first,\" he says, without looking up. \"That's how it works here.\" She knows the norms: senior authorship means prestige, secures the next grant, keeps her contract renewal on his desk rather than someone else's. Her name would still appear — third, maybe fourth, buried where hiring committees rarely look. She thinks of the data she collected alone on weekends, of results unmistakably hers. Refusing could cost her the postdoc she needs. Signing could cost her the one thing she truly owns. She opens the author list and hovers over the first line. What does she do?",
+    "justification_en": "This is a meso-dilemma: it affects the power dynamic between a PhD candidate and her supervisor within the academic organization."
+  },
+  {
+    "id": "GK_RI_02",
+    "title_en": "The extra name on the list",
+    "story_en": "The manuscript is finished, reviewed, accepted — until an email arrives from the publisher. A senior editor at a partner institution wants to be added to the editorial board for this special issue. He hasn't reviewed a single manuscript, attended a single meeting, or read a single article. But his university is paying the open-access fees for the entire issue, and the contract renewal is due next month. \"It's just a name on a page,\" the managing editor says, not quite meeting anyone's eyes. The actual editors, who spent months reading manuscripts and chasing down reviewers, say nothing at first. Refusing could mean losing the funding that keeps the journal free for authors. Agreeing means quietly rewriting who actually did the work. The deadline for the final editorial list is noon tomorrow. Someone has to answer the email.",
+    "justification_en": "This is a macro-dilemma: it affects the integrity of the publishing system itself and the funding structure of an entire journal."
+  },
+  {
+    "id": "GK_RI_03",
+    "title_en": "The same result, twice",
+    "story_en": "Dr. Willemsen's dataset from three years ago is solid — peer-reviewed, published, done. But the funding cycle never really closes. She tweaks a variable, slightly reframes the research question, submits it as a new proposal. The committee, unaware it nearly fully overlaps with her previous funded project, approves it. She presents the \"new\" findings at a conference in Lisbon, and afterward, reworded, in Porto. No one reviewing her application sees the earlier version; no one applauding at the podium knows either. Each grant funds real work — travel, a research assistant, a few months of breathing room. Nothing about the numbers is fabricated. Only the framing keeps shifting, just enough to look new. She's already working on the next resubmission when the funding body's newsletter announces stricter checks on duplicate submissions. What happens when someone finally lays the versions side by side?",
+    "justification_en": "This is a meso-dilemma: it affects the trust of funding bodies and the research community in the integrity of one researcher."
+  },
+  {
+    "id": "GK_OW_01",
+    "title_en": "The unspoken rule",
+    "story_en": "Mr. Van Dijk sets down his coffee in the staff room when colleague Tessa pulls him aside. \"Did you know Smit and that boy from 5V are together?\" she whispers. Van Dijk feels the floor drop away beneath him. Mrs. Smit, the Dutch teacher, respected, always the first to call out inappropriate behavior in others. Now it turns out she herself has been in a relationship with a seventeen-year-old student for months. It's against every school rule, every power imbalance he's always tried to guard against. Does he report it to the school leadership, knowing it could cost her job and put the student in the spotlight? Or does he wait, hoping she'll end it herself? Van Dijk puts his hand on the office door handle. Does he open the door?",
+    "justification_en": "This is a meso-dilemma: it affects the norms and power dynamics across the whole school, not just one colleague."
+  },
+  {
+    "id": "GK_OW_02",
+    "title_en": "The empty chair in the back",
+    "story_en": "Mrs. Peters sees Ahmed leave the classroom last on Friday afternoon, head down, backpack zipped tight against his chest. For the third time this month she finds a crumpled note on his desk with a slur written on it. She's already addressed the class twice, held a mentor conversation, called his parents. Nothing changes. Ahmed barely speaks in class anymore, his grades are dropping, and the class acts as if nothing is wrong. Today she saw two boys snicker as he packed his bag. Does she escalate to the care coordinator and the parents of the perpetrators, risking that the bullying goes underground and gets worse? Or does she keep trying to solve it herself, while Ahmed continues to withdraw? She looks at the empty chair in the back. How much longer can she wait?",
+    "justification_en": "This is a meso-dilemma: it affects classroom dynamics and the question of when an individual problem needs a school-wide approach."
+  },
+  {
+    "id": "GK_OW_03",
+    "title_en": "The list in the cafeteria",
+    "story_en": "Mr. Janssen sits in the cafeteria on Tuesday afternoon with class 4B's grade list open on his laptop. He compares colleague Vermeulen's marking to the rubrics: three of her favorite students consistently score a point higher than their work justifies, while other, equally strong students stay at the average. A student made a remark about it recently: \"That's not really fair, sir, is it?\" He knows: a report to the exam board could cost Vermeulen her grading authority and thoroughly sour the team atmosphere. Staying silent means the inequality continues and students' trust in fair grading keeps eroding. He closes his laptop and walks toward the hallway where Vermeulen's classroom is. Does he knock, or walk past?",
+    "justification_en": "This is a meso-dilemma: it affects fair assessment across the whole teaching team, not just two colleagues."
+  },
+  {
+    "id": "GK_OW_04",
+    "title_en": "What lingers",
+    "story_en": "Mrs. Van der Meer is standing outside classroom 1.14 on Wednesday morning when, through the gap in the door, she hears Mr. Jansen's voice: a joke about a student in a headscarf, followed by laughter from part of the class. It isn't the first time; students have been whispering about it in the hallway for weeks, and two parents have raised concerns through the mentor. Jansen is a valued colleague, fifteen years in service, and no one has ever confronted him directly. She knows an official report to school leadership sets an investigation in motion that puts the team atmosphere on edge and could cost Jansen his position. A one-on-one conversation feels safer, but does it actually change anything? She knocks on his classroom door. What does she say when he opens it?",
+    "justification_en": "This is a meso-dilemma: it affects student safety and collegial relationships across the whole teaching team."
+  },
+  {
+    "id": "GK_OW_05",
+    "title_en": "The absent seat",
+    "story_en": "Mrs. Visser logs Kimberly's fourth absence this month into the attendance system on Thursday morning. She calls home; no one answers. When Kimberly does show up the next day, pale and with a broken look in her eyes, Visser carefully asks how she's doing. \"Just tired,\" Kimberly says, looking at the floor. Visser sees more and more signs — a neglected backpack, phone messages she quickly dismisses — pointing to something wrong at home. Kimberly has clearly asked her to \"just leave it.\" Does Visser report her suspicion to the care coordinator, risking that it breaks Kimberly's trust in her? Or does she wait, hoping Kimberly will eventually open up on her own, while the signs keep getting worse? Visser puts the phone back on her desk. Does she call?",
+    "justification_en": "This is a micro-dilemma: a direct, personal judgment call by one teacher about when a suspicion should be reported."
+  },
+  {
+    "id": "GK_OW_06",
+    "title_en": "Ten minutes before the assessment",
+    "story_en": "At 8:50 am, Lisa stands crying in the doorway of the exam room, ten minutes before her resit. Last night she heard that her fellow student and friend Fem had died. She could have stayed home, but wanted to come no matter what — missing this chance means waiting six months for another attempt, and she's already behind in her studies. The examiner sees a student who can barely finish a sentence, let alone an assessment form. The protocol is clear: whoever doesn't start must wait for the next round. But what is a \"fair\" result worth, taken from someone collapsing with grief? Allowing an exception outside the rules could set a precedent for other students in distress. The examiner glances at the clock. Does she let the assessment begin, or send Lisa home?",
+    "justification_en": "This is a meso-dilemma: it affects the program's exam regulations and how those regulations respond to human distress."
+  },
+  {
+    "id": "GK_OW_07",
+    "title_en": "5.3 on the screen",
+    "story_en": "Mr. De Groot stares at the grading system on Tuesday afternoon: 5.3, a fail. It's student Youssef's third attempt at this course. In the margins of his notes, De Groot sees progress the system doesn't capture — Youssef hasn't missed a single class this semester, participated actively, and his presentation was noticeably better than last time. Yet the rubric strictly adds up the sub-scores, and half a point under means an official fail and another six months of delay. De Groot could manually adjust the grade — the software allows it — but that means deviating from the very system meant to prevent arbitrariness. His finger hovers over the \"save\" button. Does he overwrite the grade, or let the system decide?",
+    "justification_en": "This is a meso-dilemma: it affects the program's system of objective assessment versus the teacher's human judgment."
+  },
+  {
+    "id": "GK_OW_08",
+    "title_en": "Mr. De Vries's schedule",
+    "story_en": "Mrs. Jansen keeps hearing it in the hallways: students complaining that Mr. De Vries's classes are \"a mess\" — no clear lesson plan, material improvised on the spot, a class that no longer knows what's expected of them. She knows why: De Vries is going through a difficult divorce and barely has time to prepare. Last week she found him alone in the staff room early in the morning, eyes red, a half-empty cup of coffee in front of him. She wants to be there for him as a colleague, but the student complaints are piling up and the team leader has already asked about it twice. Does she protect De Vries by staying silent about his situation, or does she go to the team leader for help, even though it isn't hers to share?",
+    "justification_en": "This is a meso-dilemma: it affects collegial duty of care versus a colleague's privacy, within the team."
+  },
+  {
+    "id": "GK_OW_09",
+    "title_en": "Outside the calibration",
+    "story_en": "In the staff room on Friday after school, Marieke watches colleague Ruud grade yet another stack of papers without so much as picking up the rubric. \"I just have a feel for what a good paper is,\" he says when she asks about it. She knows there have been calibration sessions, agreed-upon protocols, precisely to prevent inconsistency between teachers — and that students consistently receive different grades from Ruud than from colleagues for comparable work. A student recently complained about it to the curriculum committee, without naming names. Does Marieke confront Ruud directly, risking an uncomfortable atmosphere in a small team? Or does she report it to the curriculum committee, knowing it could have serious consequences for Ruud? She grabs her coat from the rack. Does she wait until Monday, or talk to him now?",
+    "justification_en": "This is a meso-dilemma: it affects fair assessment of students across the whole teaching team, not just two colleagues."
+  },
+  {
+    "id": "GK_OW_10",
+    "title_en": "Two essays side by side",
+    "story_en": "Mr. Bakker sits after school on Thursday afternoon with two essays side by side: Lisa's and her classmate Fenna's. In the third paragraph is the exact same sentence, typo and all. He knows that, under the exam regulations, copying means a failing grade and a note in the file. But he also knows Lisa's situation: last week she told him, in tears, that her parents \"simply won't accept\" a failing grade and that there's been months of conflict at home over her grades. If he follows the protocol, he risks the pressure at home getting worse. If he lets it go, he undermines the very rule meant to prevent dishonesty — and what does he then say to Fenna, who did her own work? Bakker lays the two essays side by side on his desk. Does he call the parents, or Lisa herself first?",
+    "justification_en": "This is a meso-dilemma: it affects the school's exam regulations and fairness toward other students."
+  }
+]

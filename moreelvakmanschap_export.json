@@ -1,0 +1,524 @@
+[
+  {
+    "id": "GK_MM_01",
+    "category": "Dagelijks leven",
+    "title": "De roddelende vriend",
+    "story": "De muziek beukt, lichten flitsen, en dan hoor je het: je beste vriend verspreidt leugens over jullie vriendin. Pure roddel, reputatievernietigend. Je bloed kookt, je wilt hem stoppen. Maar hij is je beste vriend, al jaren. Hem afvallen voor de hele groep? De spanning is enorm. Wat doe je?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_01.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_02",
+    "category": "Dagelijks leven",
+    "title": "Buurman mishandelt zijn vrouw",
+    "story": "Emma is getuige van huiselijk geweld bij haar buurvrouw, mevrouw Janssen. Meneer Janssen mishandelt haar regelmatig, wat Emma grote zorgen baart. Ze hoort geschreeuw en ziet blauwe plekken. Emma worstelt met haar geweten: ze wil mevrouw Janssen helpen, maar is bang voor de reactie van meneer Janssen. Emma zoekt naar een veilige manier om mevrouw Janssen te helpen.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_MM_02.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_03",
+    "category": "Dagelijks leven",
+    "title": "De gevonden portemonnee",
+    "story": "Op een verlaten bankje ligt een zware, leren portemonnee. Geld en een identiteitskaart staren je aan. Niemand in de buurt, alleen jij. Verleidingen schieten door je hoofd: nieuwe schoenen, openstaande rekeningen. Maar dan denk je aan de mogelijke eigenaar: een student, een moeder, een onbekende die wanhopig zoekt.",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_MM_03.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_04",
+    "category": "Werk",
+    "title": "Collega declareert onterecht overuren",
+    "story": "Mark ontdekt dat zijn collega Emma fraudeert met overuren. Dit veroorzaakt oneerlijkheid en ontevredenheid in het team. Mark voelt zich ongemakkelijk en weet niet hoe te handelen. Hij wil de eerlijkheid en moraal hooghouden, maar vreest de gevolgen als hij het meldt. Hij wil een manier vinden om het probleem aan te pakken zonder de sfeer op de werkvloer te verpesten.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_04.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_05",
+    "category": "Werk",
+    "title": "Collega presteert slecht wegens persoonlijke problemen",
+    "story": "Sophie merkt dat haar collega Mark vaak te laat komt en zijn werk niet goed uitvoert. Dit zorgt voor extra werkdruk bij het team, dat de achterstanden moet inhalen. Sophie weet dat Mark persoonlijke problemen heeft, maar maakt zich zorgen over de negatieve impact op het team.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_05.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_06",
+    "category": "Werk",
+    "title": "Leidinggevende maakt discriminerende opmerkingen",
+    "story": "Emma merkt dat haar leidinggevende, meneer Jansen, regelmatig discriminerende opmerkingen maakt over collega's. Dit creëert een onveilige werkomgeving en leidt tot ontevredenheid onder de medewerkers. Emma voelt zich ongemakkelijk en weet niet hoe ze moet handelen. Ze wil een oplossing vinden die zowel de problemen aanpakt als de relaties op de werkvloer behoudt.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_MM_06.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_07",
+    "category": "Duurzaamheid",
+    "title": "De goedkope stage in het buitenland",
+    "story": "Sophie, een ambitieuze student internationale betrekkingen, krijgt een onbetaalde stage aangeboden bij een gerenommeerde NGO in Zuid-Amerika. Deze stage biedt een unieke kans om ervaring op te doen in de sector. Tijdens haar verblijf ontdekt ze echter dat de NGO samenwerkt met een lokaal bedrijf dat illegaal regenwoud kapt. Het bedrijf doneert grote sommen geld aan de NGO, waardoor ze hun activiteiten kunnen voortzetten.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_MM_07.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_08",
+    "category": "Duurzaamheid",
+    "title": "De verdiende vakanties",
+    "story": "Als hardwerkende verpleegkundige geniet Laura van haar welverdiende vakanties. Zon, zee, strand, tegen spotprijzen. Maar een knagend schuldgevoel over de CO2-uitstoot van haar vlieggedrag overschaduwt haar ontspanning. Ze weet dat haar reizen niet duurzaam zijn, maar kan de behoefte aan rust moeilijk negeren.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_08.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_09",
+    "category": "Duurzaamheid",
+    "title": "Het onderzoek naar dierproeven",
+    "story": "Pim, een student diergeneeskunde, doet onderzoek naar alternatieven voor dierproeven. Zijn onderzoek wordt gefinancierd door een farmaceutisch bedrijf dat zelf dierproeven uitvoert. Het bedrijf oefent nu druk op hem uit om zijn onderzoek te vertragen, omdat succes de noodzaak van dierproeven zou verminderen en hun winst zou schaden.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_MM_09.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_10",
+    "category": "Diversiteit & inclusie",
+    "title": "De anonieme sollicitatie",
+    "story": "Een stapel cv's ligt voor je, kandidaten voor een felbegeerde functie. Twee cv's vallen op: Jan de Vries en Ahmed Khalil. Identieke kwalificaties, maar verschillende namen. Jan klinkt meer vertrouwd voor jou en je directeur, Ahmed exotisch. Onbewuste vooroordelen spelen op. Je weet dat iedereen ze heeft. Nu sta je voor een dilemma: de meest gekwalificeerde kandidaat kiezen, of je onderbuikgevoel volgen?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_10.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_11",
+    "category": "Diversiteit & inclusie",
+    "title": "Grappen",
+    "story": "Tom voelt zich al weken ongemakkelijk. Zijn vrienden, met wie hij al jaren optrekt, maken steeds vaker homofobe grappen. Elke keer als het gebeurt, krimpt hij ineen. Hij wil er iets van zeggen, maar de angst houdt hem tegen. Wat als ze hem niet meer accepteren? Hij wil niet de sfeer verpesten, niet de zeur zijn. Maar de grappen worden steeds kwetsender, en het wordt steeds moeilijker om ze te negeren.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_11.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_12",
+    "category": "Diversiteit & inclusie",
+    "title": "De gemengde relatie",
+    "story": "Je hart bonkt in je borst, een mix van opwinding en angst. Je bent hopeloos verliefd op iemand met een andere culturele achtergrond, een persoon die je wereld op zijn kop heeft gezet. Maar er is een schaduw over je geluk: je familie. Ze zijn conservatief, gehecht aan tradities, en ze keuren de relatie af. Ze zien het als een bedreiging voor hun waarden, een afwijking van wat ze altijd hebben gekend.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_12.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_13",
+    "category": "Social media",
+    "title": "Foto",
+    "story": "Je hebt een foto geplaatst van een vriend zonder toestemming, en de vriend is boos omdat de foto een gênant moment vastlegt. De vriend voelt zich verraden en schaamt zich omdat de foto al door meerdere mensen is gezien en gedeeld.",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_MM_13.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_14",
+    "category": "Social media",
+    "title": "Reputatie",
+    "story": "In een gestreste gemoedstoestand plaatst je een negatieve recensie van het bedrijf van een concurrent om hun reputatie te schaden. De recensie bevat valse informatie die potentiële klanten afschrikt, wat leidt tot een daling in de verkoop van het bedrijf.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_14.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_MM_15",
+    "category": "Studentenleven",
+    "title": "Fijn groepswerk",
+    "story": "Yip zucht. Samenwerken met Tijn is een ramp. Hij is de ster van de opleiding, met zijn vlotte babbel en charisma, maar zijn werkhouding is bedroevend. Afspraken? Daar doet Tijn niet aan. Te laat, niet komen opdagen, zijn deel van het werk niet doen — het is de norm. En als voorzitter van een studentenvereniging heeft hij het natuurlijk altijd druk met feesten. Toch, bij de eindpresentatie, steelt Tijn weer de show. Met zijn vlotte praatjes en presentatievaardigheden sleept hij een 8 voor de groep binnen.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_MM_15.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_01",
+    "category": "Werk",
+    "title": "De weggenomen kantoorspullen",
+    "story": "Thomas ziet zijn collega Bas aan het einde van de dag een pak printerpapier en een nieuwe muis in zijn tas stoppen. Niemand anders let op. Bas werkt al twaalf jaar op de afdeling en geldt als onmisbaar; hij regelt altijd de roosters en springt bij wanneer iemand ziek is. Thomas twijfelt. Is dit diefstal, of gewoon een grijs gebied dat iedereen een beetje doet? Hij denkt aan de nieuwe collega die vorige maand werd aangesproken op een kapotte kopieerpas — een kleinigheid vergeleken met dit. Als hij het meldt, verstoort hij misschien de sfeer in het team voorgoed. Als hij zwijgt, voelt hij zich medeplichtig elke keer dat hij Bas ziet lachen bij het koffiezetapparaat. Meldt hij het bij zijn leidinggevende, spreekt hij Bas er zelf op aan, of doet hij niets?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_01.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_02",
+    "category": "Dagelijks leven",
+    "title": "De leugen voor de ouders",
+    "story": "Sanne stapt net onder de douche als haar telefoon drie keer trilt. Haar beste vriendin Iris appt: \"Als mijn ouders bellen, ik was gister bij jou oké? Zeg maar dat we een film keken.\" Sanne weet niet waar Iris werkelijk was, alleen dat ze om twee uur 's nachts thuiskwam en er de hele ochtend stil over deed. Iris' ouders zijn streng; een leugen kan rust brengen, maar ook iets verbergen wat groter is dan een avondje uit. Over tien minuten belt Iris' moeder waarschijnlijk om te vragen of Sanne gezellig gefietst heeft naar huis. Sanne typt een antwoord, wist het weer, typt opnieuw. Vertelt ze de leugen voor haar vriendin, vraagt ze eerst door wat er precies gebeurd is, of laat ze Iris het zelf oplossen?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_02.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_03",
+    "category": "Werk",
+    "title": "Voor de goede sfeer",
+    "story": "Het is vrijdagmiddag vijf uur en Youssef pakt net zijn jas als teamleider Marieke langsloopt. \"Zou je nog een uurtje kunnen blijven? De rapportage moet echt af, en het scheelt zo veel als we het nu afmaken in plaats van maandag.\" Ze glimlacht erbij: \"Gewoon voor de goede sfeer, hè, we doen het allemaal een keer.\" Youssef heeft dit kwartaal al negen keer onbetaald doorgewerkt. Zijn contract wordt over zes weken verlengd of niet, en Marieke zit in die beslissing. Zijn vriendin wacht al met het eten. Hij voelt de afweging tussen zijn eigen grenzen en het beeld dat hij achterlaat bij degene die over zijn toekomst beslist. Weigert hij deze keer, of blijft hij weer zitten om zijn baan niet in gevaar te brengen?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_BG_03.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_04",
+    "category": "Social media",
+    "title": "De groepsapp",
+    "story": "Om 23:40 uur licht Femkes telefoon op. In de klassengroepsapp verschijnen steeds meer berichten over Julian — screenshots van zijn slechte proefwerkcijfer, een bewerkte foto met een belachelijk onderschrift, tientallen lachende emoji's. Femke leest mee, typt niets. Ze kent Julian nauwelijks, maar ziet hoe drie klasgenoten, onder wie haar beste vriendin, actief meedoen. Als ze iets zegt, richt de aandacht zich misschien op haar. Als ze zwijgt, blijft het bericht staan tot morgenochtend, wanneer de hele klas het gezien heeft. Ze scrolt terug naar het eerste bericht en ziet dat niemand — geen leerkracht, geen ouder — dit gesprek kan zien. Grijpt Femke in, ook al kan ze daarmee zelf doelwit worden, of legt ze haar telefoon weg?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_04.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_05",
+    "category": "Dagelijks leven",
+    "title": "De gevonden portemonnee",
+    "story": "Tussen de fietsenstalling en de supermarkt ziet Daan iets bruins liggen. Een portemonnee. Hij raapt hem op: twee briefjes van honderd, wat kleingeld, en een pasje zonder naam of foto — alleen een klantnummer van een sportschool. Geen telefoonnummer, geen adres, niets waarmee hij de eigenaar kan bereiken. Daan staat er alleen bij, niemand kijkt mee. Hij heeft deze maand zelf krap gezeten na een onverwachte rekening. Het zou zo makkelijk zijn om het geld te houden en de portemonnee ergens neer te leggen alsof hij hem nooit vond. Maar ergens loopt iemand rond die net zijn geld kwijt is, misschien wel voor de huur. Daan kijkt om zich heen naar een politiebureau, een winkel, een brievenbus. Wat doet hij met de portemonnee, en waarom?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_05.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_06",
+    "category": "Studentenleven",
+    "title": "De fout in het rapport",
+    "story": "Lotte loopt stage bij een adviesbureau en heeft het eindrapport voor een grote klant net doorgenomen. Ze ziet een rekenfout in de kostenprognose — een fout die de klant honderdduizenden euro's te positief voorspiegelt. Haar begeleider, Rick, wuift het weg: \"Dat merkt niemand, en als we het nu aanpassen, missen we de deadline van morgen. We repareren het volgend kwartaal wel stilletjes.\" Lotte's eindbeoordeling hangt af van Ricks tevredenheid over haar functioneren de komende weken. Ze denkt aan de klant die morgen op basis van dit rapport een investeringsbeslissing neemt. Niemand anders bij het bureau heeft de fout gezien, en Rick beschouwt dit gesprek als afgesloten. Gaat Lotte mee in Ricks besluit, of vertelt ze het alsnog?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_BG_06.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_07",
+    "category": "Social media",
+    "title": "De foto die rondgaat",
+    "story": "In de vriendengroep-app verschijnt ineens een foto: een meisje van school, duidelijk niet wetend dat ze gefotografeerd werd, in een compromitterende situatie op een feestje. Kevin, die de foto deelde, schrijft erbij: \"Niet doorsturen hoor, dit blijft tussen ons.\" Binnen een minuut heeft Sami, die de foto ook zag, al drie schermafbeeldingen gemaakt. Hij kent het meisje niet persoonlijk, maar ziet hoe snel dit soort dingen normaal worden gevonden in de groep. Als hij hem stiekem doorstuurt, is hij zelf onderdeel van het probleem. Als hij Kevin erop aanspreekt, riskeert hij de sfeer in de groep waar hij al jaren bij hoort. Als hij het meldt bij school, weet iedereen straks dat hij het was. Wat doet Sami?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_07.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_08",
+    "category": "Diversiteit & inclusie",
+    "title": "De klant aan de balie",
+    "story": "Aisha werkt achter de balie van de bibliotheek wanneer een vaste bezoeker weigert door haar geholpen te worden. \"Ik wil iemand die hier normaal thuishoort,\" zegt hij hardop, wijzend naar haar hoofddoek. Haar collega Ben staat naast haar en hoort alles. De man komt wekelijks en doneert regelmatig aan de vriendenstichting van de bibliotheek — een belangrijke inkomstenbron. De leidinggevende is niet aanwezig. Aisha voelt haar wangen warm worden maar blijft glimlachen, zoals ze geleerd heeft te doen. Ben weet dat een confrontatie de man boos kan maken, met mogelijk gevolgen voor de donatie en de sfeer op de vloer. Grijpt Ben in, ook al kan dat een conflict opleveren, of laat hij Aisha dit alleen afhandelen?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_BG_08.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_09",
+    "category": "Duurzaamheid",
+    "title": "De goedbetaalde bijbaan",
+    "story": "Mila krijgt een berichtje: een modemerk waar ze eerder solliciteerde, biedt haar een bijbaan aan met een salaris dat twee keer zo hoog is als wat ze nu verdient bij de supermarkt. Ze weet uit een documentaire die ze vorig jaar zag dat dit merk kleding laat maken in fabrieken met slechte arbeidsomstandigheden en een enorme milieu-impact. Haar studieschuld loopt op en haar ouders kunnen niet bijspringen. Vrienden zeggen: \"Iedereen koopt daar toch, wat maakt jouw baantje nou uit.\" Het contract ligt klaar om te tekenen, de startdatum is over twee weken. Mila scrolt nog eens door haar documentaire-aantekeningen, dan naar haar bankrekening. Neemt ze de baan aan, of zoekt ze verder naar iets dat beter aansluit bij wat ze belangrijk vindt?",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_BG_09.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_10",
+    "category": "Onderwijs",
+    "title": "Het antwoordblaadje",
+    "story": "Tijdens het tussentijdse tentamen wiskunde ziet Noor, twee rijen verderop, hoe haar vriendin Elif een spiekbriefje uit haar mouw haalt. Ze kennen elkaar al sinds de brugklas; Elif heeft haar dit jaar geholpen toen Noor het zwaar had. De surveillant loopt net de andere kant op. Als Noor niets zegt, blijft het onopgemerkt en haalt Elif misschien net haar cijfer. Als ze het meldt, verliest Elif mogelijk het hele tentamen én het vertrouwen tussen hen. Als ze Elif er na afloop op aanspreekt, moet ze zelf ook iets doen met wat ze gezien heeft. Noor kijkt naar haar eigen antwoordblad, waar ze twee opgaven niet heeft afgemaakt terwijl de klok verder tikt. Meldt ze de fraude, ook al gaat het om haar vriendin?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_10.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_11",
+    "category": "Dagelijks leven",
+    "title": "De review voor geld",
+    "story": "Sven krijgt een privébericht van een webwinkel waar hij ooit een koptelefoon kocht: vijftig euro cadeaubon in ruil voor een \"eerlijke, positieve review van vijf sterren.\" De koptelefoon viel na drie weken uit elkaar en de klantenservice reageerde nooit op zijn mail. Vijftig euro is precies wat hij nodig heeft voor zijn energierekening deze maand. Niemand controleert of de review echt klopt met zijn ervaring; het systeem vertrouwt puur op zijn woord. Hij opent de reviewpagina en ziet honderden vijfsterrenreviews die er, nu hij beter kijkt, verdacht hetzelfde geformuleerd uitzien. De cadeaubon-code staat al klaar in zijn mail. Schrijft Sven de positieve review die niet klopt met zijn ervaring, of laat hij het geld liggen?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_11.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_12",
+    "category": "Diversiteit & inclusie",
+    "title": "Maar het zijn maar grapjes",
+    "story": "Aan de keukentafel van het studentenhuis maakt huisgenoot Ruben weer een grap — dit keer over Marokkaanse buren en \"wat je daar wel niet allemaal tegenkomt.\" De andere huisgenoten lachen mee, zoals altijd. Yara, die er als enige stil bij blijft, deelt dit huis al twee jaar met Ruben en moet nog een half jaar met hem door één huurcontract heen. Vorige week ging het over vrouwen op de fiets, de week ervoor over een collega met een handicap. Elke keer zegt iemand: \"Kom op, het zijn maar grapjes, niet zo serieus.\" Yara vraagt zich af of ze de enige is die zich hier ongemakkelijk bij voelt. Spreekt ze Ruben aan op wat hij zegt, of laat ze het gaan zoals de rest?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_12.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_13",
+    "category": "Duurzaamheid",
+    "title": "De goedkope trui",
+    "story": "In de winkel hangt een trui voor zes euro, in de uitverkoop nog goedkoper. Emma weet, na een schoolproject over de kledingindustrie, dat kleding in deze prijsklasse vaak wordt gemaakt in fabrieken waar ook kinderen werken — ze heeft de cijfers zelf opgezocht voor haar werkstuk. Haar eigen budget is krap; ze spaart voor een schoolreis en elke euro telt. De trui in haar handen is precies wat ze zocht, in de juiste maat en kleur, nergens anders voor deze prijs te vinden. Het kassapersoneel wacht, de rij achter haar wordt langer. Ze denkt aan het werkstuk dat ze zelf schreef en aan de schoolreis waarvoor ze spaart. Legt Emma de trui terug, of rekent ze hem toch af?",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_BG_13.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_14",
+    "category": "Werk",
+    "title": "De vraag van de leidinggevende",
+    "story": "Teamleider Iris vraagt Bram om in een klantpresentatie de resultaten van het project \"iets positiever te brengen dan ze eigenlijk zijn\" — niets liegen, gewoon \"de nadruk anders leggen.\" Wat ze vraagt is niet illegaal en gebeurt overal in de sector, zegt ze. Bram heeft de cijfers zelf verzameld en weet dat de klant een vervolgopdracht overweegt op basis van precies dit resultaat. Iris voert volgende maand zijn functioneringsgesprek en bepaalt of zijn tijdelijke contract wordt omgezet. Ze wacht niet op een lang antwoord; de presentatie moet morgenochtend klaar zijn. Bram opent het bestand en staart naar de grafiek die hij eerlijk heeft gemaakt. Doet hij wat Iris vraagt, of spreekt hij uit dat dit tegen zijn eigen waarden ingaat?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_BG_14.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_BG_15",
+    "category": "Dagelijks leven",
+    "title": "De dakloze op straat",
+    "story": "Voor de supermarkt zit een man met een kartonnen bord: \"Elke euro helpt, dankjewel.\" Julia heeft net haar hele weekbudget uitgerekend voor de boodschappen die ze moet doen — precies genoeg, geen euro over. Ze kent het verhaal niet van de man: hoelang hij hier al zit, wat hij met het geld doet, of hij hulp zoekt. Vorige week las ze een artikel dat waarschuwde voor het geven van geld in plaats van eten. Ze heeft geen restje brood bij zich, geen extra pas voor een warme maaltijd, alleen haar portemonnee met precies genoeg voor haar eigen lijst. De rij bij de kassa wordt zichtbaar vanaf hier. Ze kan doorlopen, ze kan iets geven en zelf een product schrappen, of ze kan naar binnen gaan en iets voor hem kopen. Wat doet Julia, en waarom?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_BG_15.jpeg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_01",
+    "category": "Dagelijks leven",
+    "title": "Hulp",
+    "story": "De trein schokt, een doffe dreun. Een meisje, amper achttien, ligt uitgestrekt op de koude vloer. Rillend, tandenklapperend. De conducteur alarmeert hulp, maar haar hoofd bonkt tegen het ijskoude staal. Jouw blik valt op de zachte, dierbare sjaal in je tas. Aarzeling. Diep vanbinnen weet je wat je moet doen. Je vingers tasten naar de zachte stof. Maar dan, die rillingen. Die klapperende tanden. Het dilemma snijdt door je heen: geven, of vasthouden?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_DL_01.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_02",
+    "category": "Dagelijks leven",
+    "title": "Vriend rijdt onder invloed van alcohol",
+    "story": "Sophie ziet met lede ogen hoe Tom, haar vriend, na een avondje drinken steevast achter het stuur kruipt. Angst knaagt aan haar: de risico's zijn enorm. Tom, maar ook anderen, lopen gevaar. Ze wil hem wakker schudden, maar vreest zijn reactie. Sophie worstelt met de afweging: Tom's veiligheid versus hun relatie.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_DL_02.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_03",
+    "category": "Dagelijks leven",
+    "title": "Buurman dumpt afval in het park",
+    "story": "David ziet met groeiende ergernis hoe meneer Bakker, zijn buurman, het park als vuilstortplaats gebruikt. Het ooit zo groene park verandert in een onsmakelijke plek, vol stinkend afval en ongedierte. De buurt morrelt, kinderen mijden de plek. David's geweten knaagt. Hij wil actie, maar de angst voor een confrontatie met meneer Bakker houdt hem tegen.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_DL_03.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_04",
+    "category": "Dagelijks leven",
+    "title": "Vriend pleegt winkeldiefstal",
+    "story": "Delano ziet hoe Mark, zijn vriend, stelselmatig winkels berooft. Angst bekruipt hem: arrestatie, een strafblad, de gevolgen zijn enorm. Maar de vriendschap... die weegt ook zwaar. Loyaliteit versus geweten, een pijnlijke tweestrijd. Hoe bereikt hij Mark zonder hem te verliezen? Delano zoekt wanhopig naar een uitweg, een manier om Mark te redden van zelfdestructie, zonder hun vriendschap te gronde te richten.",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_DL_04.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_05",
+    "category": "Dagelijks leven",
+    "title": "Buurvrouw laat kinderen vaak alleen thuis",
+    "story": "Emma's hart bonkt in haar keel. Mevrouw Jansen laat haar jonge kinderen weer alleen thuis, de deur klettert dicht. Kleine stemmen huilen, roepen om mama. Emma's bezorgdheid groeit met de minuut. Deze kinderen zijn kwetsbaar, onbeschermd. Ze wil ingrijpen, maar de angst voor mevrouw Jansens reactie verlamt haar. Een dilemma dat schuurt, een beslissing die zwaar weegt.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_DL_05.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_06",
+    "category": "Dagelijks leven",
+    "title": "Vriend rijdt te hard en overtreedt verkeersregels",
+    "story": "Lisa maakt zich zorgen over Mark, haar vriend, die regelmatig te hard rijdt. Ze ziet hoe hij verkeersregels negeert en vreest voor ongelukken. Lisa voelt zich verantwoordelijk, maar durft Mark niet direct aan te spreken uit angst voor zijn reactie. Lisa wil dat Mark inziet hoe gevaarlijk zijn rijgedrag is, zonder hun relatie te schaden.",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_DL_06.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_07",
+    "category": "Dagelijks leven",
+    "title": "De gevonden portemonnee",
+    "story": "Op een verlaten bankje ligt een zware, leren portemonnee. Geld en een identiteitskaart staren je aan. Niemand in de buurt, alleen jij. Verleidingen schieten door je hoofd: nieuwe schoenen, openstaande rekeningen. Maar dan denk je aan de mogelijke eigenaar: een student, een moeder, een onbekende die wanhopig zoekt.",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_DL_07.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_08",
+    "category": "Dagelijks leven",
+    "title": "De roddelende vriend",
+    "story": "De muziek beukt, lichten flitsen, en dan hoor je het: je beste vriend verspreidt leugens over jullie vriendin. Pure roddel, reputatievernietigend. Je bloed kookt, je wilt hem stoppen. Maar hij is je beste vriend, al jaren. Hem afvallen voor de hele groep? De spanning is enorm. Wat doe je?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_DL_08.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_09",
+    "category": "Dagelijks leven",
+    "title": "Het geleende geld",
+    "story": "Je was bijna klaar, maar onverwachte rekeningen gooiden roet in het eten. Nu zit je in de penarie. Je vriend, die je met een glimlach hielp, heeft het geld zelf hard nodig. Elke keer dat zijn naam op je scherm verschijnt, voel je schaamte. Hoe leg je uit dat je je belofte niet kunt nakomen? De spanning tussen vriendschap en financiële problemen is voelbaar.",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_DL_09.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_10",
+    "category": "Dagelijks leven",
+    "title": "De gemanipuleerde online beoordeling",
+    "story": "De nieuwe koffiezaak pronkt met verdacht perfecte reviews. Vijf sterren, jubelende reacties, allemaal in een paar dagen. Veel reviewers hebben slechts één review geschreven, die van de koffiezaak. Het is duidelijk nep, een oneerlijke praktijk. Moet je dit aankaarten? Het is niet jouw zaak, maar het schaadt wel de eerlijke concurrentie en misleidt consumenten. Laat je het gaan, of neem je actie? Wat is de juiste keuze?",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_DL_10.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_DL_11",
+    "category": "Dagelijks leven",
+    "title": "Buurman mishandelt zijn vrouw",
+    "story": "Emma is getuige van huiselijk geweld bij haar buurvrouw, mevrouw Janssen. Meneer Janssen mishandelt haar regelmatig, wat Emma grote zorgen baart. Ze hoort geschreeuw en ziet blauwe plekken. Emma worstelt met haar geweten: ze wil mevrouw Janssen helpen, maar is bang voor de reactie van meneer Janssen. Emma zoekt naar een veilige manier om mevrouw Janssen te helpen.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_DL_11.png",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_NM_01",
+    "category": "Nucleaire geneeskunde",
+    "title": "Dertig minuten geleden",
+    "story": "Sanne werpt een blik op het rooster voordat de deur opengaat. Kamer 3, volgende patiënt — longkanker, vanmorgen vastgesteld. Dertig minuten geleden, misschien minder. De scan moet vandaag nog; de chirurgen hebben hem nodig om de resectie te plannen, en elk uur dat het tracer afbreekt is een verloren uur. Na deze patiënt heeft ze er nog vier en een technoloog is ziek thuis. De vrouw die binnenkomt ziet er uitgehold uit, haar handen trillen terwijl ze een informed-consentformulier tekent dat ze waarschijnlijk niet heeft gelezen. Sanne wil even bij haar zitten, de stilte laten ademen voordat de camera start. Maar de gang buiten vult zich al met de volgende afspraak. Ze legt de vrouw op de tafel, houdt haar stem zacht en zet de timer in haar hoofd. Hoeveel van zichzelf kan ze deze patiënt geven in twaalf minuten?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_NM_01.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_NM_02",
+    "category": "Nucleaire geneeskunde",
+    "title": "De eerste die het vraagt",
+    "story": "Meneer Verhoeven is achtentachtig en vandaag is het zijn eerste PET/CT sinds de diagnose. Erik roept hem binnen, legt de injectie uit, het uur wachten, de scanner. Halverwege schudt de oudere man zijn hoofd. \"Ik wil dit niet,\" zegt hij zacht. \"Niemand heeft me gevraagd wat ik wil. Ze vertellen me alleen wat de volgende stap is.\" Erik is, feitelijk, de eerste persoon met wie hij sinds het begin van de behandeling spreekt die hem niet naar de volgende stap duwt. Hij zou nu de tijd kunnen nemen — echt luisteren, vragen wat \"dit niet willen\" betekent. Maar het tracer breekt al af in het flacon boven, en drie patiënten wachten, waaronder een wiens afspraak volledig verdwijnt als dit tijdslot uitloopt. Erik schuift toch een stoel aan. Ergens verderop in de gang gaat een telefoon. Gaat hij zitten, of roept hij het af?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_NM_02.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_NM_03",
+    "category": "Nucleaire geneeskunde",
+    "title": "Waar zij het voor ruilde",
+    "story": "Eva is elf en heeft weken over, geen maanden. De bloedmonsters zijn nog steeds nodig — om de cijfers te volgen die het team vertellen hoeveel pijnbestrijding haar lichaam nog aankan. Ze vocht vroeger tegen de naald met alles wat ze had, kronkelde weg van iedereen die bij haar katheter kwam. Ergens onderweg ontstond een onuitgesproken afspraak: iets meer morfine, iets meer comfort, in ruil voor stil blijven liggen. Mira weet hoe dit er van buitenaf uitziet. Ze weet ook hoe onbehandelde pijn eruitziet bij een kind dat het niet meer kan beschrijven. Niemand schreef dit in een protocol; het groeide uit twee mensen die keer op keer dezelfde onmogelijke middag doorkwamen. Toen Eva stierf, stond de helft van het team achterin een kleine begrafenis, onzeker of ze er hoorde, zeker dat ze niet weg konden blijven. Hoe noem je wat er in die kamer gebeurde?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_NM_03.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_NM_04",
+    "category": "Nucleaire geneeskunde",
+    "title": "Tussen de compressies",
+    "story": "De compressies stoppen voor niemand, zelfs niet voor een bloedafname. Tomas knielt naast de brancard en wacht op het halve seconde venster tussen borst omlaag en borst omhoog. Hij heeft een kaliumwaarde nodig — schoon, niet verontreinigd, geen hemolyse — omdat dat getal kan beslissen of het team doorgaat of stopt. Te langzaam prikken, te veel stasis, en het resultaat liegt: het zegt dat het hart niet gered kan worden terwijl dat misschien nog wel kan. Snel en slordig prikken om maar een getal te hebben, en dezelfde fout gebeurt andersom. Iemand achter hem zegt \"we hebben dat kalium nodig\", alsof het een formaliteit is. Tomas weet dat het dat niet is. Hij heeft één kans, één ader, en een zaal vol mensen die handelen naar wat het lab straks zegt. Hoe zeker moet hij zijn voordat hij hen laat stoppen?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_NM_04.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_RI_01",
+    "category": "Onderzoeksintegriteit",
+    "title": "De volgorde van de namen",
+    "story": "Lotte heeft veertien maanden aan dit artikel gewerkt — elk experiment, elke tabel, elke late avond waarin ze de discussiesectie herschreef. Haar promotor, professor Dekker, leest de definitieve versie in stilte en schuift het dan over het bureau terug. \"Zet mijn naam eerst,\" zegt hij, zonder op te kijken. \"Zo werkt het hier.\" Ze kent de normen: senior authorship betekent prestige, haalt de volgende subsidie binnen, houdt haar contractverlenging op zijn bureau in plaats van op dat van iemand anders. Haar naam zou nog wel verschijnen — derde, misschien vierde, begraven waar sollicitatiecommissies zelden kijken. Ze denkt aan de data die ze alleen in het weekend verzamelde, aan resultaten die onmiskenbaar van haar zijn. Weigeren kan haar de postdoc kosten die ze nodig heeft. Tekenen kan haar het enige kosten dat ze echt bezit. Ze opent de auteurslijst en zweeft boven de eerste regel. Wat doet ze?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_RI_01.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_RI_02",
+    "category": "Onderzoeksintegriteit",
+    "title": "De extra naam op de lijst",
+    "story": "Het manuscript is klaar, gereviewd, geaccepteerd — tot er een e-mail binnenkomt van de uitgever. Een senior editor bij een partnerinstelling wil graag worden toegevoegd aan de redactieraad voor dit speciale nummer. Hij heeft geen enkel manuscript beoordeeld, geen enkele vergadering bijgewoond, geen enkel artikel gelezen. Maar zijn universiteit betaalt de open-accesskosten voor het hele nummer, en de contractverlenging is volgende maand aan de beurt. \"Het is maar een naam op een pagina,\" zegt de managing editor, niet helemaal iemand in de ogen kijkend. De echte editors, die maandenlang manuscripten lazen en reviewers achteraan jaagden, zeggen eerst niets. Weigeren kan betekenen dat de financiering verdwijnt waarmee het tijdschrift gratis blijft voor auteurs. Instemmen betekent stilletjes herschrijven wie het werk deed. De deadline voor de definitieve redactielijst is morgen twaalf uur. Iemand moet antwoorden op de e-mail.",
+    "complexity_level": "macro",
+    "image_path": "/images/gesprekskaarten/GK_RI_02.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_RI_03",
+    "category": "Onderzoeksintegriteit",
+    "title": "Hetzelfde resultaat, twee keer",
+    "story": "Dr. Willemsens dataset van drie jaar geleden is solide — peer-reviewed, gepubliceerd, af. Maar de financieringscyclus sluit nooit echt. Ze past een variabele aan, herformuleert de onderzoeksvraag een beetje, dient het in als een nieuw voorstel. De commissie, die niet weet dat het bijna volledig overlapt met haar vorige gefinancierde project, keurt het goed. Ze presenteert de \"nieuwe\" bevindingen op een conferentie in Lissabon, en daarna, anders geformuleerd, in Porto. Niemand die haar aanvraag beoordeelt, ziet de eerdere versie; niemand die aan het podium applaudisseert, weet het ook. Elke subsidie financiert echt werk — reizen, een onderzoeksassistent, een paar maanden ademruimte. Niets aan de cijfers is verzonnen. Alleen het kader blijft verschuiven, net genoeg om nieuw te lijken. Ze is al bezig met de volgende herindiening wanneer de nieuwsbrief van het financieringsorgaan meldt dat dubbele indieningen strakker worden gecontroleerd. Wat gebeurt er als iemand de versies eindelijk naast elkaar legt?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_RI_03.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_01",
+    "category": "Onderwijs",
+    "title": "De stille regel",
+    "story": "Meneer Van Dijk zet zijn koffie neer in de lerarenkamer als collega Tessa hem terzijde neemt. \"Weet jij dat Smit en die jongen uit 5V iets hebben?\" fluistert ze. Van Dijk voelt de grond onder zich wegzakken. Mevrouw Smit, docent Nederlands, gerespecteerd, altijd de eerste om anderen aan te spreken op grensoverschrijdend gedrag. Nu blijkt zij zelf al maanden een relatie te hebben met een zeventienjarige leerling. Het is tegen elke schoolregel, tegen elk machtsverschil dat hij zelf altijd heeft proberen te bewaken. Meldt hij het bij de directie, wetend dat dit haar baan kan kosten en de leerling in de schijnwerpers zet? Of wacht hij, in de hoop dat zij er zelf een einde aan maakt? Van Dijk legt zijn hand op de deurklink van het directiekantoor. Doet hij de deur open?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_01.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_02",
+    "category": "Onderwijs",
+    "title": "De lege stoel achterin",
+    "story": "Mevrouw Peters ziet Ahmed vrijdagmiddag als laatste het klaslokaal verlaten, hoofd gebogen, rugzak dichtgeritst tegen zijn borst. Voor de derde keer deze maand vindt ze een prop papier op zijn tafel met een scheldwoord erop. Ze heeft de klas al twee keer toegesproken, een mentorgesprek gehouden, de ouders gebeld. Niets verandert. Ahmed spreekt bijna niet meer in de les, zijn cijfers zakken, en de klas doet alsof er niets aan de hand is. Vandaag zag ze twee jongens grinniken toen hij zijn tas pakte. Escaleert ze naar de zorgcoördinator en de ouders van de daders, met het risico dat het pesten ondergronds gaat en erger wordt? Of blijft ze het zelf proberen op te lossen, terwijl Ahmed intussen verder wegzakt? Ze kijkt naar de lege stoel achterin. Hoelang kan ze nog wachten?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_02.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_03",
+    "category": "Onderwijs",
+    "title": "Het lijstje in de kantine",
+    "story": "Meneer Janssen zit dinsdagmiddag in de kantine met de cijferlijst van klas 4B open op zijn laptop. Hij vergelijkt het handschrift van collega Vermeulen met de rubrics: drie van haar favoriete leerlingen krijgen structureel een punt hoger dan hun werk rechtvaardigt, terwijl andere, net zo sterke, leerlingen op het gemiddelde blijven hangen. Een leerling maakte er laatst nog een opmerking over: \"Het is toch niet eerlijk, meneer?\" Hij weet: een melding bij de examencommissie kan Vermeulens beoordelingsbevoegdheid kosten en de sfeer in het team grondig verzieken. Zwijgen betekent dat de ongelijkheid doorgaat en het vertrouwen van leerlingen in eerlijke beoordeling verder afbrokkelt. Hij sluit zijn laptop en loopt richting de gang waar Vermeulens lokaal is. Klopt hij aan, of loopt hij door?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_03.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_04",
+    "category": "Onderwijs",
+    "title": "Wat er blijft hangen",
+    "story": "Mevrouw Van der Meer staat woensdagochtend voor lokaal 1.14 als ze door de kier van de deur meneer Jansens stem hoort: een grap over een leerling met een hoofddoek, gevolgd door gelach van een deel van de klas. Het is niet de eerste keer; leerlingen fluisteren er al weken over in de gang, en twee ouders hebben via de mentor hun zorgen geuit. Jansen is een gewaardeerde collega, al vijftien jaar in dienst, en niemand heeft hem ooit rechtstreeks aangesproken. Ze weet dat een officiële melding bij de schoolleiding een onderzoek in gang zet dat de sfeer in het team op scherp zet en Jansen zijn positie kan kosten. Een gesprek onder vier ogen voelt veiliger, maar verandert dat werkelijk iets? Ze klopt aan bij zijn lokaal. Wat zegt ze als hij opendoet?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_04.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_05",
+    "category": "Onderwijs",
+    "title": "De afwezige stoel",
+    "story": "Mevrouw Visser noteert donderdagochtend de vierde afwezigheid van Kimberly deze maand in het absentiesysteem. Ze belt naar huis; niemand neemt op. Wanneer Kimberly de volgende dag wel verschijnt, met een vale huid en gebroken blik, vraagt Visser voorzichtig hoe het gaat. \"Gewoon moe,\" zegt Kimberly, en ze kijkt naar de grond. Visser ziet steeds meer signalen — een verwaarloosde rugtas, telefoonberichten die ze snel wegdrukt — die wijzen op iets thuis dat niet klopt. Kimberly heeft haar duidelijk gevraagd om het \"gewoon te laten\". Meldt Visser haar vermoeden bij de zorgcoördinator, met het risico dat Kimberly's vertrouwen in haar breekt? Of wacht ze af, in de hoop dat Kimberly ooit uit zichzelf praat, terwijl de signalen intussen verergeren? Visser legt de telefoon terug op het bureau. Belt ze?",
+    "complexity_level": "micro",
+    "image_path": "/images/gesprekskaarten/GK_OW_05.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_06",
+    "category": "Onderwijs",
+    "title": "Tien minuten voor het assessment",
+    "story": "Om 08:50 uur staat Lisa huilend in de deuropening van het toetslokaal, tien minuten voor haar herkansing. Gisteravond hoorde ze dat haar studievriendin Fem is overleden. Ze had thuis kunnen blijven, maar wilde koste wat het kost komen — een gemiste kans betekent een half jaar wachten op een nieuwe poging, en ze loopt al achter in haar studie. De examinator ziet een studente die nauwelijks een zin kan afmaken, laat staan een beoordelingsformulier. Het protocol is helder: wie niet start, moet wachten tot de volgende ronde. Maar wat is een \"eerlijk\" resultaat waard, afgenomen bij iemand die instort van verdriet? Uitstel toestaan buiten het reglement om kan precedenten scheppen voor andere studenten in nood. De examinator kijkt op de klok. Laat ze het assessment beginnen, of stuurt ze Lisa naar huis?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_06.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_07",
+    "category": "Onderwijs",
+    "title": "5,3 op het scherm",
+    "story": "Meneer De Groot staart dinsdagmiddag naar het beoordelingssysteem: 5,3, onvoldoende. Het is de derde poging van student Youssef voor dit vak. In de kantlijn van zijn aantekeningen ziet De Groot de vooruitgang die het systeem niet meeneemt — Youssef is dit semester geen les gemist, heeft actief meegedaan, zijn presentatie was merkbaar beter dan vorige keer. Toch telt de rubric strikt de deelscores bij elkaar op, en een half punt eronder betekent officieel een onvoldoende en weer een half jaar vertraging. De Groot kan het cijfer handmatig aanpassen — de software staat dat toe — maar daarmee wijkt hij af van het systeem dat juist bedoeld is om willekeur te voorkomen. Zijn vinger zweeft boven de \"opslaan\"-knop. Overschrijft hij het cijfer, of laat hij het systeem beslissen?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_07.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_08",
+    "category": "Onderwijs",
+    "title": "Het rooster van meneer De Vries",
+    "story": "Mevrouw Jansen hoort het weer in de wandelgangen: leerlingen die klagen dat de lessen van meneer De Vries \"een chaos\" zijn — geen duidelijk lesplan, materiaal dat hij ter plekke improviseert, een klas die niet meer weet wat er van hen verwacht wordt. Ze weet waarom: De Vries maakt een moeilijke scheiding door en komt amper aan voorbereiding toe. Vorige week trof ze hem 's ochtends vroeg alleen in de docentenkamer, ogen rood, met een half leeg kopje koffie. Ze wil er voor hem zijn als collega, maar de klachten van leerlingen stapelen zich op en de teamleider heeft er al twee keer naar gevraagd. Beschermt ze De Vries door te zwijgen over zijn situatie, of stapt ze naar de teamleider om hulp te vragen, ook al is dat niet aan haar om te delen?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_08.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_09",
+    "category": "Onderwijs",
+    "title": "Buiten de kalibratie",
+    "story": "In de docentenkamer, vrijdag na schooltijd, ziet Marieke hoe collega Ruud voor de zoveelste keer een stapel werkstukken beoordeelt zonder de rubric erbij te pakken. \"Ik voel gewoon aan wat een goed werkstuk is,\" zegt hij, als ze ernaar vraagt. Ze weet dat er kalibratiesessies zijn geweest, protocollen zijn afgesproken, juist om willekeur tussen docenten te voorkomen — en dat leerlingen bij Ruud structureel andere cijfers krijgen dan bij collega's voor vergelijkbaar werk. Een student had er laatst over geklaagd bij de curriculumcommissie, zonder namen te noemen. Spreekt Marieke Ruud er rechtstreeks op aan, met het risico op een ongemakkelijke sfeer in een klein team? Of meldt ze het bij de curriculumcommissie, wetend dat dit voor Ruud verstrekkende gevolgen kan hebben? Ze pakt haar jas van de kapstok. Wacht ze tot maandag, of spreekt ze hem nu aan?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_09.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  },
+  {
+    "id": "GK_OW_10",
+    "category": "Onderwijs",
+    "title": "Twee opstellen naast elkaar",
+    "story": "Meneer Bakker zit donderdagmiddag na schooltijd met twee opstellen naast elkaar: dat van Lisa en dat van haar klasgenoot Fenna. Op de derde alinea staat exact dezelfde zin, tot en met de typefout. Hij weet dat overschrijven volgens het examenreglement een onvoldoende en een aantekening in het dossier betekent. Maar hij kent ook Lisa's situatie: vorige week vertelde ze hem, met tranen in haar ogen, dat haar ouders een onvoldoende \"gewoon niet accepteren\" en dat er thuis al maanden ruzie is over haar cijfers. Volgt hij het protocol, dan riskeert hij dat de druk thuis verder oploopt. Laat hij het gaan, dan ondermijnt hij de regel die oneerlijkheid moet tegengaan — en wat zegt hij dan tegen Fenna, die haar eigen werk maakte? Bakker legt de twee opstellen naast elkaar op zijn bureau. Belt hij de ouders, of eerst Lisa zelf?",
+    "complexity_level": "meso",
+    "image_path": "/images/gesprekskaarten/GK_OW_10.jpg",
+    "source_file": "src/data/gesprekskaarten/cards.json"
+  }
+]

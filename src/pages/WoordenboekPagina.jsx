@@ -65,6 +65,8 @@ const pageContent = {
     stappen: "Approach",
     reflectie: "Reflection questions",
     pendingNote: "Full English translation of the original lexicon is still pending; newly added core terms and all work forms are already bilingual.",
+    draftDownloadCaption: "A full draft translation exists and can be downloaded below. It is not yet finalised — the text is still awaiting final editorial review.",
+    draftDownloadLabel: "Download the draft English dictionary (PDF)",
   },
 };
 
@@ -110,7 +112,18 @@ export default function WoordenboekPagina() {
           <p className="mt-4 font-display text-2xl italic text-secundair">{ui.hero.subtitel}</p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-secundair">{ui.hero.intro}</p>
           {contentLang === "en" && (
-            <p className="mt-3 text-sm text-secundair/80">{ui.pendingNote}</p>
+            <div className="mt-3 max-w-2xl">
+              <p className="text-sm text-secundair/80">{ui.pendingNote}</p>
+              <p className="mt-2 text-sm text-secundair/80">
+                {ui.draftDownloadCaption}{" "}
+                <a
+                  href="/downloads/zien/A_Moral_Dictionary_Draft_EN.pdf"
+                  className="font-semibold text-[#185fa5] underline underline-offset-2"
+                >
+                  {ui.draftDownloadLabel}
+                </a>
+              </p>
+            </div>
           )}
         </motion.div>
       </section>

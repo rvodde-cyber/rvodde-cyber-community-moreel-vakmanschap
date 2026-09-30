@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 300" width="2100" height="300" aria-hidden="true">
+  <!-- Placeholder voor asset 6 (§8.2): kopregel van de PDF, A4-breedte op 96dpi.
+       De PDF-export tekent deze band op dit moment native met jsPDF (scherper
+       dan een afbeelding); dit bestand dient als visuele referentie en als
+       vervanging zodra het Firefly-beeld beschikbaar is. -->
+  <rect width="2100" height="300" fill="#F5F5F4" />
+  <rect x="0" y="0" width="525" height="24" fill="#14B8A6" />
+  <rect x="525" y="0" width="525" height="24" fill="#F59E0B" />
+  <rect x="1050" y="0" width="525" height="24" fill="#6366F1" />
+  <rect x="1575" y="0" width="525" height="24" fill="#FB7185" />
+  <g transform="translate(1930 150)">
+    <circle cx="-26" cy="-26" r="26" fill="#14B8A6" />
+    <circle cx="26" cy="-26" r="26" fill="#F59E0B" />
+    <circle cx="26" cy="26" r="26" fill="#6366F1" />
+    <circle cx="-26" cy="26" r="26" fill="#FB7185" />
+    <circle cx="0" cy="0" r="11" fill="#F5F5F4" />
+  </g>
+</svg>

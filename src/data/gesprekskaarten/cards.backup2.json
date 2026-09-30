@@ -16,10 +16,9 @@
     },
     "en": {
       "titel": "The gossiping friend",
-      "verhaal": "The music pounds, lights flash across the room, and that's when he finally hears it clearly: his best friend is spreading lies about their mutual friend at the bar, the kind of gossip that could ruin her reputation among people who aren't even there to defend themselves. His blood boils. They've known each other since middle school, been through everything together, and that friendship feels heavier than the urge to call him out here, in front of the whole group. Yet he watches the story spread from ear to ear while she stands, unsuspecting, somewhere else on the dance floor. Does he step in right now, talk to his friend calmly tomorrow, or just let it slide tonight?",
+      "verhaal": "The music is pounding, lights are flashing, and then you hear it: your best friend is spreading lies about one of your friends. Pure gossip, reputation-destroying. Your blood boils — you want to stop him. But he's your best friend, for years now. Turning against him in front of the whole group? The tension is intense.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the choice affects the social group and a third person's reputation, not only the two friends themselves."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_01.jpeg",
@@ -29,7 +28,7 @@
     },
     "meta": {
       "woordenNl": 124,
-      "woordenEn": 118
+      "woordenEn": 56
     },
     "justification": "Dit is een meso-dilemma: de keuze raakt de sociale groep en de reputatie van een derde persoon, niet alleen de twee vrienden zelf.",
     "sector_color": "e0a01a"
@@ -50,11 +49,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The neighbor who abuses his wife",
-      "verhaal": "Emma hears it through the thin fence between the gardens: shouting, a dull thud, then silence. Mrs. Janssen, her neighbor of many years, appears the next morning with a bruise she half-hides under a scarf. It isn't the first time; the pattern has repeated for months now, each time a little worse. Emma wrestles with her conscience: she wants to help Mrs. Janssen, but is terrified of what Mr. Janssen might do if he finds out the neighbors are getting involved. Calling the police could escalate things; doing nothing leaves Mrs. Janssen alone with someone who keeps hurting her. Emma searches for a safe way to help, one that doesn't put Mrs. Janssen at even greater risk. Does she call the police, quietly knock on the door herself, or look for a middle way?",
+      "titel": "Neighbor abuses his wife",
+      "verhaal": "Emma witnesses domestic violence involving her neighbor, Mrs. Janssen. Mr. Janssen regularly abuses her, which deeply worries Emma. She hears shouting and sees bruises. Emma struggles with her conscience: she wants to help Mrs. Janssen, but she's afraid of how Mr. Janssen might react. Emma searches for a safe way to support Mrs. Janssen.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it involves a structural pattern of domestic violence where intervening carries serious personal risk."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_02.jpeg",
@@ -64,7 +62,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 134
+      "woordenEn": 54
     },
     "justification": "Dit is een macro-dilemma: het raakt een structureel patroon van huiselijk geweld waarbij ingrijpen grote persoonlijke risico's met zich meebrengt.",
     "sector_color": "e0a01a"
@@ -86,10 +84,9 @@
     },
     "en": {
       "titel": "The found wallet",
-      "verhaal": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+      "verhaal": "On a deserted bench lies a heavy leather wallet. Cash and an ID card stare back at you. No one around — just you. Temptations race through your mind: new shoes, unpaid bills. But then you think of the possible owner: a student, a mother, a stranger desperately searching.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_03.jpeg",
@@ -99,7 +96,7 @@
     },
     "meta": {
       "woordenNl": 125,
-      "woordenEn": 123
+      "woordenEn": 49
     },
     "justification": "Dit is een micro-dilemma: een directe, persoonlijke keuze tussen eigen financieel gewin en eerlijkheid tegenover een onbekende ander.",
     "sector_color": "e0a01a"
@@ -120,11 +117,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "A colleague claims unearned overtime",
-      "verhaal": "For the third week in a row, Mark sees it in the hours overview: Emma is claiming overtime for evenings he personally watched her leave at five o'clock. No one else on the team seems to notice, or no one says anything. Emma is popular, always helpful when new colleagues are being trained, and the team atmosphere is already fragile after the last reorganization. Mark does the math: added up, it comes to hundreds of euros paid out monthly for hours that were never worked. He thinks of the colleagues who fill in their hours honestly, sometimes even underreporting out of caution. Does he report it to his manager, talk to Emma directly first, or let it go to keep the peace?",
+      "titel": "Colleague falsely claims overtime",
+      "verhaal": "Mark discovers that his colleague Emma is committing overtime fraud. This creates unfairness and dissatisfaction within the team. Mark feels uncomfortable and doesn't know how to act. He wants to uphold honesty and moral standards, but fears the consequences of reporting it. He's looking for a way to address the issue without damaging the atmosphere at work.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects fairness within the team and whether Mark should act as a colleague or as an overseer."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_04.jpeg",
@@ -134,7 +130,7 @@
     },
     "meta": {
       "woordenNl": 135,
-      "woordenEn": 122
+      "woordenEn": 57
     },
     "justification": "Dit is een meso-dilemma: het raakt de eerlijkheid binnen het team en de vraag of Mark zich als collega of als toezichthouder moet opstellen.",
     "sector_color": "e05a1a"
@@ -155,11 +151,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "A colleague underperforms due to personal problems",
-      "verhaal": "Sophie has noticed for weeks that Mark is consistently late and leaves tasks half-finished, forcing the rest of the team to cover his backlog. She knows, from an offhand remark, that he's going through a difficult divorce at home and barely sleeps. Two colleagues are already grumbling openly about his performance over lunch, unaware of what's going on. Sophie feels torn: she doesn't want to expose Mark to their manager, but she also sees how the extra workload is starting to wear other colleagues down. No one has informed management, and the project deadline is approaching fast. Does Sophie talk to Mark first, report it to their manager, or keep quietly absorbing the extra work?",
+      "titel": "Colleague underperforms due to personal problems",
+      "verhaal": "Sophie notices that her colleague Mark is often late and not performing his work properly. This increases the workload for the team, which has to make up for the delays. Sophie knows that Mark is dealing with personal problems, but she's concerned about the negative impact on the team.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the trade-off between understanding for one colleague and the workload pressure on the whole team."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_05.jpeg",
@@ -169,7 +164,7 @@
     },
     "meta": {
       "woordenNl": 121,
-      "woordenEn": 115
+      "woordenEn": 49
     },
     "justification": "Dit is een meso-dilemma: de afweging tussen begrip voor een individuele collega en de werkdruk die op het hele team drukt.",
     "sector_color": "e05a1a"
@@ -190,11 +185,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "A manager makes discriminatory remarks",
-      "verhaal": "During the team meeting, Mr. Jansen makes another belittling comment about a colleague's accent, \"joking,\" as he calls it himself. Emma watches a colleague look away and stay silent for the rest of the meeting. It isn't the first time; she's now seen the pattern repeat for months, aimed at different people. Jansen has been a manager for fifteen years, respected by senior leadership for his results, and no one has ever formally confronted him. A report to HR could trigger an investigation that affects the whole department and puts Jansen's position at risk. Staying silent means the atmosphere for colleagues with a migration background stays unchanged. Does Emma report it formally, confront Jansen personally, or wait for someone else to take the first step?",
+      "titel": "Manager makes discriminatory remarks",
+      "verhaal": "Emma notices that her manager, Mr. Jansen, regularly makes discriminatory remarks about colleagues. This creates an unsafe work environment and leads to dissatisfaction among employees. Emma feels uncomfortable and doesn't know how to respond. She wants to find a solution that addresses the issue while preserving workplace relationships.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it involves the broader norm of a safe workplace and power dynamics across the whole organization."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_06.jpeg",
@@ -204,7 +198,7 @@
     },
     "meta": {
       "woordenNl": 130,
-      "woordenEn": 125
+      "woordenEn": 48
     },
     "justification": "Dit is een macro-dilemma: het raakt de bredere norm van een veilige werkomgeving en machtsverhoudingen binnen de hele organisatie.",
     "sector_color": "e05a1a"
@@ -225,11 +219,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The cheap internship abroad",
-      "verhaal": "Sophie is halfway through her dream internship at a renowned NGO in South America when she finds a payment record among internal documents. A large local company, known for illegal logging in the rainforest, turns out to be one of the NGO's biggest donors — funding that partly pays for her own internship position. Her supervisor dodges the question when she carefully brings it up. Flying home would mean delaying her studies and giving up a unique international experience. Staying means contributing to an organization that claims to protect trees while being funded by the very company cutting them down. She has four months left on her placement and no real alternative within reach. Does Sophie report her discovery externally, confront her supervisor, or simply finish her internship?",
+      "titel": "The low-cost internship abroad",
+      "verhaal": "Sophie, an ambitious international relations student, is offered an unpaid internship at a renowned NGO in South America. The internship presents a unique opportunity to gain experience in the field. However, during her stay, she discovers that the NGO collaborates with a local company that is illegally logging rainforest. This company donates large sums of money to the NGO, enabling it to continue its operations.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it involves systemic issues of deforestation and the integrity of civil society organizations worldwide."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_07.jpeg",
@@ -239,7 +232,7 @@
     },
     "meta": {
       "woordenNl": 125,
-      "woordenEn": 128
+      "woordenEn": 65
     },
     "justification": "Dit is een macro-dilemma: het raakt systemische kwesties van ontbossing en de integriteit van maatschappelijke organisaties wereldwijd.",
     "sector_color": "c0392b"
@@ -260,11 +253,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The well-earned vacation",
-      "verhaal": "For the third time this year, Laura books a cheap flight vacation, this time to a sunny island she desperately needs after a brutal shift schedule on the intensive care unit. Her colleagues fully understand; everyone needs rest after months of overwork during the flu season. Still, something has been nagging at her since she last spoke with her niece, who researched the CO2 emissions of short-haul flights for her thesis. The numbers stuck in her head: one flight's emissions equal months of her carefully sorted recycling and cycling to work. She knows a train journey would cost more time and money, time she simply doesn't have between shifts. Does Laura book the flight anyway, look for a more sustainable alternative, or postpone the vacation?",
+      "titel": "The well-earned holidays",
+      "verhaal": "As a hardworking nurse, Laura enjoys her well-earned holidays. Sun, sea, and sand — all at bargain prices. But a nagging sense of guilt about the CO2 emissions from her air travel overshadows her relaxation. She knows her trips aren't sustainable, yet she finds it hard to ignore her need for rest.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: a personal habit colliding with a broader, shared sense of responsibility for climate and sustainability."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_08.jpeg",
@@ -274,7 +266,7 @@
     },
     "meta": {
       "woordenNl": 129,
-      "woordenEn": 125
+      "woordenEn": 52
     },
     "justification": "Dit is een meso-dilemma: een persoonlijke gewoonte die botst met een breder, gedeeld verantwoordelijkheidsgevoel voor klimaat en duurzaamheid.",
     "sector_color": "c0392b"
@@ -296,10 +288,9 @@
     },
     "en": {
       "titel": "The animal testing research",
-      "verhaal": "Pim has developed a promising alternative to a widely used animal test, after years of research funded by a pharmaceutical company. That exact company runs large-scale animal testing itself, and his results could make that practice unnecessary. His supervisor receives subtle signals from the funder: delay the publication, repeat the measurements once more, wait for \"additional validation\" that isn't actually needed. Pim sees his data clearly in his mind; further delay serves no one except the company profiting from the very tests he's trying to replace. His contract as a PhD candidate runs through that same company, and a conflict could jeopardize his entire trajectory. Does Pim publish his results as planned, seek an independent funder, or bend under the pressure?",
+      "verhaal": "Pim, a veterinary medicine student, is conducting research into alternatives to animal testing. His research is funded by a pharmaceutical company that conducts animal testing itself. The company is now pressuring him to slow down his research, as its success could reduce the need for animal testing and harm their profits.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it involves the integrity of scientific research and the broader conflict of interest between funding and science."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_09.jpeg",
@@ -309,7 +300,7 @@
     },
     "meta": {
       "woordenNl": 123,
-      "woordenEn": 121
+      "woordenEn": 51
     },
     "justification": "Dit is een macro-dilemma: het raakt de integriteit van wetenschappelijk onderzoek en de bredere belangenverstrengeling tussen financiering en wetenschap.",
     "sector_color": "c0392b"
@@ -330,11 +321,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The anonymous application",
-      "verhaal": "Two résumés lie side by side on the desk: identical education, identical work experience, almost word-for-word the same motivation letter. Only the names differ — Jan de Vries and Ahmed Khalil. The recruiter notices how her gaze relaxes automatically at Jan's name, and lingers a fraction longer, unconsciously, at Ahmed's. She knows the research on name discrimination, has completed the training, knows this is exactly the mechanism the organization claims to fight. Yet she notices a vague gut feeling that Jan would \"fit better\" with the team, without being able to explain exactly why. Her director is waiting for her recommendation by the end of the day, and the pressure to decide quickly is palpable. Does she strictly follow the qualifications on paper, ask a colleague for a second opinion, or go with her gut?",
+      "titel": "The anonymous job application",
+      "verhaal": "A stack of résumés lies before you — candidates for a highly sought-after position. Two stand out: Jan de Vries and Ahmed Khalil. Identical qualifications, but different names. Jan sounds more familiar to you and your director; Ahmed, more foreign. Unconscious biases begin to surface. You know everyone has them. Now you face a dilemma: choose the most qualified candidate, or follow your gut feeling?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the fairness of the organization's hiring process and unconscious bias in the assessor herself."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_10.png",
@@ -344,7 +334,7 @@
     },
     "meta": {
       "woordenNl": 137,
-      "woordenEn": 135
+      "woordenEn": 65
     },
     "justification": "Dit is een meso-dilemma: het raakt de eerlijkheid van het wervingsproces van de organisatie en onbewuste vooroordelen bij de beoordelaar zelf.",
     "sector_color": "27ae60"
@@ -365,11 +355,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Friends' homophobic jokes",
-      "verhaal": "Tom has had a knot in his stomach for weeks at every Friday night out with his friends. Homophobic jokes keep coming up more often, tossed off casually, followed by laughter that ripples through the whole group. He's known these guys since middle school, they've always been there for him, and none of them know he's himself struggling with his sexual identity. Each joke feels like a small blow, a signal that he'd better not speak up about who he really is. He considers saying something, but the fear of rejection, of losing the group he's belonged to his entire life, holds him back every time. Meanwhile, the jokes aren't getting any gentler, only bolder. Does Tom confront his friends about what they're saying, quietly withdraw, or keep laughing along in silence?",
+      "titel": "Jokes",
+      "verhaal": "Tom has been feeling uneasy for weeks. His friends, whom he's been close with for years, are making homophobic jokes more and more often. Every time it happens, he shrinks inside. He wants to speak up, but fear holds him back. What if they no longer accept him? He doesn't want to ruin the atmosphere or be seen as the complainer. But the jokes are becoming more hurtful, and it's getting harder and harder to ignore them.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the dynamics and norms within a close friend group, not just an individual choice."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_11.png",
@@ -379,7 +368,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 132
+      "woordenEn": 77
     },
     "justification": "Dit is een meso-dilemma: het raakt de dynamiek en normen binnen een hechte vriendengroep, niet enkel een individuele keuze.",
     "sector_color": "27ae60"
@@ -400,11 +389,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The mixed relationship",
-      "verhaal": "For the first time in months she feels completely herself, in love with someone whose culture and habits have opened up her whole world. But at her parents' dinner table hangs a silence louder than words. Her father pushes his plate away the moment she mentions his name; her mother asks in a whisper whether she's \"really thought this through.\" To them, the relationship is a break from traditions that have lived in the family for generations, a deviation they don't know how to place. She loves her parents, doesn't want to simply give up their approval, but also feels she can't let her own happiness depend on their acceptance. A family gathering is coming up where everyone expects her to \"be sensible.\" Does she bring her partner along, quietly put the relationship on hold, or choose to confront her family?",
+      "titel": "The intercultural relationship",
+      "verhaal": "Your heart is pounding — a mix of excitement and fear. You're hopelessly in love with someone from a different cultural background, a person who has turned your world upside down. But there's a shadow over your happiness: your family. They are conservative, deeply attached to tradition, and they disapprove of the relationship. They see it as a threat to their values, a departure from everything they've always known.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it involves the tension between personal autonomy and the values and expectations of the wider family."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_12.png",
@@ -414,7 +402,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 141
+      "woordenEn": 69
     },
     "justification": "Dit is een meso-dilemma: het raakt de spanning tussen persoonlijke autonomie en de waarden en verwachtingen van de bredere familie.",
     "sector_color": "27ae60"
@@ -435,11 +423,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The photo posted without consent",
-      "verhaal": "The photo had barely been up for five minutes before the first reactions rolled in: funny, relatable, plenty of laughing emojis. It's a snapshot of a friend caught in an awkward moment at a housewarming, exactly the kind of image that always does well. Only when the friend himself texts her — short, clearly annoyed — does she realize she never asked for permission. \"Why would you post this without asking,\" he writes, \"everyone at my work can see this.\" The photo has already been forwarded by a few people into other groups, beyond her own reach. She can delete it immediately, say something to make it right, or wait and see if it blows over on its own. What does she do, and how does she make sure this doesn't happen again?",
+      "titel": "Photo",
+      "verhaal": "You posted a photo of a friend without their permission, and the friend is angry because the photo captures an embarrassing moment. They feel betrayed and ashamed, especially since the photo has already been seen and shared by several people.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between one's own enjoyment of sharing and respecting someone else's boundaries."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_13.jpeg",
@@ -449,7 +436,7 @@
     },
     "meta": {
       "woordenNl": 129,
-      "woordenEn": 133
+      "woordenEn": 40
     },
     "justification": "Dit is een micro-dilemma: een directe, persoonlijke keuze tussen het eigen plezier van delen en het respecteren van andermans grenzen.",
     "sector_color": "e8820a"
@@ -470,11 +457,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The fake review",
-      "verhaal": "After a sleepless night full of stress over disappointing numbers, she types out a harsh, negative review of a direct competitor's business on impulse. She invents details that aren't true: poor hygiene, rude staff, things she's never actually experienced herself. Within a day the review has racked up dozens of views, and she watches the competitor's bookings slowly decline on a shared reservation platform. What she hadn't anticipated: the competing business is run by a single mother who just took out a loan to stay open. A colleague casually asks if she's seen that review too, not knowing who wrote it. The review is still there, untouched, as the days pass. Does she delete the review and apologize, or does she just let it stand?",
+      "titel": "Reputation",
+      "verhaal": "In a moment of stress, you post a negative review about a competitor's business with the intention of damaging their reputation. The review contains false information that discourages potential customers, leading to a drop in the company's sales.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects fair competition between businesses and consumer trust in online information."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_14.jpeg",
@@ -484,7 +470,7 @@
     },
     "meta": {
       "woordenNl": 132,
-      "woordenEn": 125
+      "woordenEn": 38
     },
     "justification": "Dit is een meso-dilemma: het raakt de eerlijke concurrentie tussen bedrijven en het vertrouwen van consumenten in online informatie.",
     "sector_color": "e8820a"
@@ -506,10 +492,9 @@
     },
     "en": {
       "titel": "Great group work",
-      "verhaal": "Yip sighs deeply while finishing the last slides of the presentation, alone, as usual with group work involving Tijn. He's the star of the program, charismatic and quick-witted, but his work ethic is downright dismal: he brushes off agreements, misses deadlines, and his share of the work is consistently left undone until the last moment. As chairman of a student association he's always \"too busy,\" he says, while Yip spends evenings making up for his tasks. At the final presentation itself, Tijn steals the show again: with his smooth talk and confident presence he pulls in an eight for the whole group. None of the teachers see what happened behind the scenes. Does Yip report the unequal contribution to the teacher, confront Tijn herself, or just let it go for the grade?",
+      "verhaal": "Yip sighs. Working with Tijn is a nightmare. He's the star of the program — smooth talker, full of charisma — but his work ethic is terrible. Agreements? Tijn doesn't do those. He's late, skips meetings, and never does his part of the work — it's become the norm. And as the president of a student association, he's always busy partying, of course. Still, during the final presentation, Tijn steals the show once again. With his charm and presentation skills, he secures an 8 for the group.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the fair distribution of effort and credit within a shared, joint outcome."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_15.jpeg",
@@ -519,7 +504,7 @@
     },
     "meta": {
       "woordenNl": 139,
-      "woordenEn": 132
+      "woordenEn": 87
     },
     "justification": "Dit is een meso-dilemma: het raakt de eerlijke verdeling van inzet en beoordeling binnen een gedeeld, gezamenlijk resultaat.",
     "sector_color": "8e44ad"
@@ -540,11 +525,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The taken office supplies",
-      "verhaal": "Thomas watches his colleague Bas slip a pack of printer paper and a new mouse into his bag at the end of the day. No one else notices. Bas has worked in the department for twelve years and is considered indispensable; he always arranges the schedules and steps in whenever someone is sick. Thomas hesitates. Is this theft, or just a gray area everyone dabbles in a little? He thinks of the new colleague who was called out last month over a broken copy card — a trifle compared to this. If he reports it, he might disrupt the team atmosphere for good. If he stays silent, he feels complicit every time he sees Bas laughing by the coffee machine. Does he report it to his manager, confront Bas himself, or do nothing?",
+      "titel": "The missing office supplies",
+      "verhaal": "Thomas sees his colleague Bas, at the end of the day, putting a pack of printer paper and a new mouse into his bag. Nobody else notices. Bas has worked in the department for twelve years and is considered indispensable; he always manages the rosters and covers when someone is sick. Thomas hesitates. Is this theft, or just a grey area everyone dabbles in? He thinks of the new colleague who was called out last month over a broken copy card — a small thing compared to this. If he reports it, he may ruin the team atmosphere for good. If he stays silent, he feels complicit every time he sees Bas laughing at the coffee machine. Does he tell his manager, speak to Bas directly, or do nothing?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between loyalty to a colleague and reporting a violation."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_01.jpeg",
@@ -554,7 +538,7 @@
     },
     "meta": {
       "woordenNl": 133,
-      "woordenEn": 133,
+      "woordenEn": 129,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "WORK"
     },
@@ -578,10 +562,9 @@
     },
     "en": {
       "titel": "The lie for the parents",
-      "verhaal": "Sanne has just stepped into the shower when her phone buzzes three times. Her best friend Iris texts: \"If my parents call, I was at your place last night, okay? Just say we watched a movie.\" Sanne doesn't know where Iris really was, only that she got home at two in the morning and has been quiet about it all day. Iris's parents are strict; a lie might bring calm, but could also cover up something bigger than a night out. In ten minutes, Iris's mother will probably call to ask if Sanne had a nice bike ride home. Sanne types a reply, deletes it, types again. Does she tell the lie for her friend, ask first what exactly happened, or let Iris sort it out herself?",
+      "verhaal": "Sanne has just stepped into the shower when her phone buzzes three times. Her best friend Iris texts: \"If my parents call, I was at yours last night, okay? Just say we watched a film.\" Sanne doesn't know where Iris really was, only that she came home at two in the morning and stayed quiet about it all morning. Iris's parents are strict; a lie might bring peace, but also hide something bigger than a night out. In ten minutes Iris's mother will probably call to ask if Sanne cycled home safely. Sanne types a reply, deletes it, types again. Does she tell the lie for her friend, ask first what really happened, or let Iris sort it out herself?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct choice between loyalty to a friend and honesty toward another person's parents."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_02.jpeg",
@@ -591,7 +574,7 @@
     },
     "meta": {
       "woordenNl": 127,
-      "woordenEn": 127,
+      "woordenEn": 120,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -614,11 +597,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "For the sake of the vibe",
-      "verhaal": "It's five o'clock on a Friday afternoon and Youssef is just grabbing his coat when team leader Marieke walks by. \"Could you stay another hour? The report really needs to be finished, and it saves so much if we get it done now instead of Monday.\" She smiles as she says it: \"Just for the good vibe, you know, we all do it sometimes.\" Youssef has already worked nine unpaid extra hours this quarter. His contract will either be renewed or not in six weeks, and Marieke has a say in that decision. His girlfriend is already waiting with dinner. He feels the trade-off between his own limits and the impression he leaves with the person who decides his future. Does he say no this time, or stay again to avoid jeopardizing his job?",
+      "titel": "For the sake of team spirit",
+      "verhaal": "It's five o'clock on Friday afternoon and Youssef is grabbing his coat when team leader Marieke walks past. \"Could you stay another hour? The report really has to be done, and it helps so much if we finish it now instead of Monday.\" She smiles: \"Just for the good atmosphere, you know — we all do it sometimes.\" Youssef has already worked nine unpaid hours this quarter. His contract will be renewed or not in six weeks, and Marieke is part of that decision. His partner is already waiting with dinner. He feels the tension between his own boundaries and the impression he leaves with the person who decides his future. Does he refuse this time, or stay again so he doesn't put his job at risk?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the pressure to work unpaid overtime affects the employment relationship and the power imbalance within the organization."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_03.jpg",
@@ -628,7 +610,7 @@
     },
     "meta": {
       "woordenNl": 125,
-      "woordenEn": 134,
+      "woordenEn": 127,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "WORK"
     },
@@ -652,10 +634,9 @@
     },
     "en": {
       "titel": "The group chat",
-      "verhaal": "At 11:40 pm, Femke's phone lights up. In the class group chat, more and more messages appear about Julian — screenshots of his poor test score, an edited photo with a ridiculous caption, dozens of laughing emojis. Femke reads along, types nothing. She barely knows Julian, but sees how three classmates, including her best friend, are actively joining in. If she says something, the attention might turn to her. If she stays silent, the messages will still be there tomorrow morning, when the whole class has seen them. She scrolls back to the first message and realizes no one — no teacher, no parent — can see this conversation. Does Femke step in, even though she risks becoming a target herself, or does she put her phone away?",
+      "verhaal": "At 11:40 p.m. Femke's phone lights up. More and more messages appear in the class group chat about Julian — screenshots of his poor test score, an edited photo with a ridiculous caption, dozens of laughing emojis. Femke reads along but says nothing. She barely knows Julian, but sees how three classmates, including her best friend, are actively joining in. If she speaks up, the attention may turn on her. If she stays silent, the message stays up until tomorrow morning, when the whole class will have seen it. She scrolls back to the first message and sees that nobody — no teacher, no parent — can see this conversation. Does Femke intervene, even if she becomes a target herself, or put her phone away?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a personal choice about whether to intervene in online bullying within a closed group."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_04.jpeg",
@@ -665,7 +646,7 @@
     },
     "meta": {
       "woordenNl": 118,
-      "woordenEn": 128,
+      "woordenEn": 125,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "SOCIAL MEDIA"
     },
@@ -689,10 +670,9 @@
     },
     "en": {
       "titel": "The found wallet",
-      "verhaal": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+      "verhaal": "Between the bike rack and the supermarket Daan sees something brown on the ground. A wallet. He picks it up: two hundred-euro notes, some coins, and a card with no name or photo — only a gym membership number. No phone number, no address, nothing to reach the owner. Daan is alone; nobody is watching. Money has been tight for him this month after an unexpected bill. It would be so easy to keep the cash and leave the wallet somewhere as if he never found it. But somewhere someone is walking around who just lost their money, maybe even their rent. Daan looks around for a police station, a shop, a post box. What does he do with the wallet, and why?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_05.jpeg",
@@ -725,11 +705,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The mistake in the report",
-      "verhaal": "Lotte is interning at a consulting firm and has just gone through the final report for a major client. She spots a calculation error in the cost forecast — an error that makes the outlook hundreds of thousands of euros too optimistic. Her supervisor, Rick, waves it off: \"No one will notice, and if we fix it now, we'll miss tomorrow's deadline. We'll quietly correct it next quarter.\" Lotte's final evaluation depends on Rick's satisfaction with her performance over the coming weeks. She thinks of the client who will make an investment decision tomorrow based on this exact report. No one else at the firm has spotted the error, and Rick considers the conversation closed. Does Lotte go along with Rick's decision, or does she tell someone anyway?",
+      "titel": "The error in the report",
+      "verhaal": "Lotte is interning at a consultancy and has just reviewed the final report for a major client. She spots a calculation error in the cost forecast — one that makes the client's situation look hundreds of thousands of euros better than it is. Her supervisor Rick dismisses it: \"Nobody will notice, and if we change it now we'll miss tomorrow's deadline. We'll fix it quietly next quarter.\" Lotte's final assessment depends on Rick's satisfaction with her performance in the coming weeks. She thinks of the client who will make an investment decision tomorrow based on this report. Nobody else at the firm has seen the error, and Rick considers the conversation closed. Does Lotte go along with Rick's decision, or speak up anyway?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the choice affects the relationship with a client and the organizational pressure from a supervisor who holds power over her evaluation."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_06.jpeg",
@@ -739,7 +718,7 @@
     },
     "meta": {
       "woordenNl": 117,
-      "woordenEn": 128,
+      "woordenEn": 123,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "STUDENT LIFE"
     },
@@ -762,11 +741,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The photo that's making the rounds",
-      "verhaal": "A photo suddenly appears in the friend group chat: a girl from school, clearly unaware she was being photographed, in a compromising moment at a party. Kevin, who shared it, adds: \"Don't forward this, it stays between us.\" Within a minute, Sami, who also saw the photo, has already taken three screenshots. He doesn't know the girl personally, but sees how quickly this kind of thing has become normal in the group. If he secretly forwards it, he becomes part of the problem himself. If he confronts Kevin, he risks the atmosphere in a group he's belonged to for years. If he reports it to the school, everyone will soon know it was him. What does Sami do?",
+      "titel": "The photo going around",
+      "verhaal": "In the friends' group chat a photo suddenly appears: a girl from school, clearly unaware she was being photographed, in a compromising situation at a party. Kevin, who shared it, writes: \"Don't forward this, it stays between us.\" Within a minute Sami, who also saw the photo, has already taken three screenshots. He doesn't know the girl personally, but sees how quickly this kind of thing normally spreads in the group. If he forwards it secretly, he becomes part of the problem. If he confronts Kevin, he risks the atmosphere in the group he has belonged to for years. If he reports it to school, everyone will soon know it was him. What does Sami do?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a personal choice about whether to forward or report an inappropriate photo."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_07.jpeg",
@@ -776,7 +754,7 @@
     },
     "meta": {
       "woordenNl": 118,
-      "woordenEn": 118,
+      "woordenEn": 116,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "SOCIAL MEDIA"
     },
@@ -799,11 +777,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The customer at the counter",
-      "verhaal": "Aisha is working the library front desk when a regular visitor refuses to be helped by her. \"I want someone who actually belongs here,\" he says loudly, pointing at her headscarf. Her colleague Ben stands right next to her and hears everything. The man visits weekly and regularly donates to the library's friends' foundation — an important source of income. The manager isn't present. Aisha feels her cheeks warm but keeps smiling, the way she's learned to do. Ben knows a confrontation could anger the man, possibly affecting the donation and the atmosphere on the floor. Does Ben step in, even though it might cause a conflict, or does he let Aisha handle this alone?",
+      "titel": "The customer at the desk",
+      "verhaal": "Aisha works at the library desk when a regular visitor refuses to be helped by her. \"I want someone who belongs here normally,\" he says loudly, pointing at her headscarf. Her colleague Ben is next to her and hears everything. The man comes weekly and donates regularly to the library's friends foundation — an important source of income. The manager is not present. Aisha feels her cheeks grow warm but keeps smiling, as she has learned to do. Ben knows a confrontation could anger the man, with possible consequences for the donation and the atmosphere on the floor. Does Ben step in, even if it leads to conflict, or leave Aisha to handle it alone?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: discrimination in the workplace affects multiple colleagues and the trade-off between income and respect for staff."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_08.jpeg",
@@ -837,10 +814,9 @@
     },
     "en": {
       "titel": "The well-paid side job",
-      "verhaal": "Mila gets a message: a fashion brand she once applied to is offering her a part-time job with a salary twice what she currently earns at the supermarket. She knows from a documentary she watched last year that this brand has its clothes made in factories with poor working conditions and a massive environmental impact. Her student debt keeps growing and her parents can't help out. Friends say: \"Everyone shops there anyway, what difference does your little job make.\" The contract is ready to sign, the start date is two weeks away. Mila scrolls once more through her documentary notes, then checks her bank account. Does she take the job, or keep looking for something that better fits what she values?",
+      "verhaal": "Mila receives a message: a fashion brand she once applied to offers her a part-time job at twice what she earns at the supermarket. From a documentary she watched last year she knows this brand has clothes made in factories with poor working conditions and a huge environmental impact. Her student debt is rising and her parents can't help. Friends say: \"Everyone buys there anyway — what difference does your job make?\" The contract is ready to sign; the start date is in two weeks. Mila scrolls through her documentary notes again, then to her bank account. Does she take the job, or keep looking for something that better matches what she values?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: the choice affects broader systems of labor conditions and environmental impact in the global clothing industry."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_09.jpeg",
@@ -850,7 +826,7 @@
     },
     "meta": {
       "woordenNl": 122,
-      "woordenEn": 121,
+      "woordenEn": 113,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "SUSTAINABILITY"
     },
@@ -874,10 +850,9 @@
     },
     "en": {
       "titel": "The answer sheet",
-      "verhaal": "During the midterm math exam, Noor, two rows over, sees her friend Elif pull a cheat sheet from her sleeve. They've known each other since their first year of secondary school; Elif helped her through a hard time earlier this year. The invigilator is walking the other way. If Noor says nothing, it goes unnoticed and Elif might just scrape a passing grade. If she reports it, Elif could lose the entire exam and their trust in each other. If she confronts Elif afterward, she'll have to do something with what she saw herself either way. Noor looks at her own answer sheet, where she hasn't finished two questions while the clock keeps ticking. Does she report the cheating, even though it's her friend?",
+      "verhaal": "During the midterm maths exam Noor sees, two rows ahead, how her friend Elif pulls a cheat sheet from her sleeve. They have known each other since the first year of secondary school; Elif helped her this year when Noor was struggling. The invigilator has just walked the other way. If Noor says nothing, it goes unnoticed and Elif may just pass. If she reports it, Elif may lose the entire exam and their trust. If she speaks to Elif afterwards, she still has to act on what she saw. Noor looks at her own answer sheet, where she left two questions unfinished while the clock keeps ticking. Does she report the cheating, even though it's her friend?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between friendship loyalty and reporting exam fraud."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_10.jpeg",
@@ -887,7 +862,7 @@
     },
     "meta": {
       "woordenNl": 123,
-      "woordenEn": 124,
+      "woordenEn": 118,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "EDUCATION"
     },
@@ -911,10 +886,9 @@
     },
     "en": {
       "titel": "The review for money",
-      "verhaal": "Sven receives a private message from an online store where he once bought headphones: a fifty-euro gift card in exchange for an \"honest, positive five-star review.\" The headphones fell apart after three weeks and customer service never replied to his email. Fifty euros is exactly what he needs for this month's energy bill. No one checks whether the review actually matches his experience; the system runs purely on trust. He opens the review page and sees hundreds of five-star reviews that, now that he looks closer, are suspiciously worded the same way. The gift card code is already sitting in his inbox. Does Sven write the positive review that doesn't match his experience, or does he leave the money on the table?",
+      "verhaal": "Sven receives a private message from a web shop where he once bought headphones: a fifty-euro gift voucher in exchange for an \"honest, positive five-star review.\" The headphones fell apart after three weeks and customer service never replied to his email. Fifty euros is exactly what he needs for his energy bill this month. Nobody checks whether the review matches his experience; the system relies purely on his word. He opens the review page and sees hundreds of five-star reviews that now, on closer look, seem suspiciously similar. The voucher code is already waiting in his inbox. Does Sven write the positive review that doesn't match his experience, or leave the money?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between financial gain and honestly informing other consumers."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_11.jpeg",
@@ -924,7 +898,7 @@
     },
     "meta": {
       "woordenNl": 115,
-      "woordenEn": 122,
+      "woordenEn": 112,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -948,10 +922,9 @@
     },
     "en": {
       "titel": "But they're just jokes",
-      "verhaal": "At the shared house's kitchen table, housemate Ruben makes another joke — this time about Moroccan neighbors and \"the things you run into over there.\" The other housemates laugh along, as always. Yara, the only one who stays quiet, has shared this house with Ruben for two years and still has half a year left on the lease with him. Last week it was about women cyclists, the week before about a colleague with a disability. Every time, someone says: \"Come on, they're just jokes, don't take it so seriously.\" Yara wonders if she's the only one who feels uncomfortable about this. Does she confront Ruben about what he's saying, or let it go like everyone else?",
+      "verhaal": "At the student house kitchen table housemate Ruben makes another joke — this time about Moroccan neighbours and \"what you come across there.\" The other housemates laugh along, as always. Yara, the only one who stays quiet, has shared this house with Ruben for two years and still has six months left on the same lease. Last week it was about women on bikes, the week before about a colleague with a disability. Each time someone says: \"Come on, they're just jokes, don't be so serious.\" Yara wonders if she is the only one who feels uncomfortable. Does she call Ruben out on what he says, or let it go like the others?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a personal choice about whether to raise recurring jokes from a housemate."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_12.jpeg",
@@ -961,7 +934,7 @@
     },
     "meta": {
       "woordenNl": 123,
-      "woordenEn": 117,
+      "woordenEn": 113,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "DIVERSITY & INCLUSION"
     },
@@ -984,11 +957,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The cheap sweater",
-      "verhaal": "A sweater hangs in the store for six euros, even cheaper in the sale. Emma knows, from a school project on the clothing industry, that garments at this price point are often made in factories that also employ children — she looked up the figures herself for her paper. Her own budget is tight; she's saving for a school trip and every euro counts. The sweater in her hands is exactly what she was looking for, the right size and color, unavailable anywhere else at this price. The cashier is waiting, the line behind her growing. She thinks of the paper she wrote herself and the school trip she's saving for. Does Emma put the sweater back, or buy it anyway?",
+      "titel": "The cheap jumper",
+      "verhaal": "In the shop a jumper hangs for six euros, even cheaper in the sale. Emma knows, from a school project on the clothing industry, that clothes in this price range are often made in factories where children work too — she looked up the figures herself for her assignment. Her own budget is tight; she is saving for a school trip and every euro counts. The jumper in her hands is exactly what she wanted, the right size and colour, nowhere else at this price. The cashier waits; the queue behind her grows longer. She thinks of the project she wrote herself and of the school trip she is saving for. Does Emma put the jumper back, or pay for it anyway?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: the choice touches the systemic issue of child labor and working conditions in the global clothing supply chain."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_13.jpeg",
@@ -998,7 +970,7 @@
     },
     "meta": {
       "woordenNl": 119,
-      "woordenEn": 121,
+      "woordenEn": 122,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "SUSTAINABILITY"
     },
@@ -1022,10 +994,9 @@
     },
     "en": {
       "titel": "The manager's request",
-      "verhaal": "Team leader Iris asks Bram to present the project results \"a bit more positively than they actually are\" in a client presentation — nothing untrue, just \"emphasizing things differently.\" What she's asking isn't illegal and happens all over the industry, she says. Bram gathered the figures himself and knows the client is considering a follow-up contract based on exactly this result. Iris will conduct his performance review next month and decide whether his temporary contract gets extended. She doesn't wait for a long answer; the presentation needs to be ready by tomorrow morning. Bram opens the file and stares at the graph he made honestly. Does he do what Iris asks, or speak up that this goes against his own values?",
+      "verhaal": "Team leader Iris asks Bram to present the project results in the client meeting \"a bit more positively than they actually are\" — not lying, just \"shifting the emphasis.\" What she asks is not illegal and happens everywhere in the sector, she says. Bram collected the figures himself and knows the client is considering a follow-up contract based on exactly this outcome. Iris will hold his performance review next month and decide whether his temporary contract is made permanent. She is not waiting for a long answer; the presentation must be ready tomorrow morning. Bram opens the file and stares at the chart he made honestly. Does he do what Iris asks, or say that this goes against his own values?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the pressure to present figures more favorably affects the employment relationship and the organization's institutional interest with the client."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_14.jpeg",
@@ -1059,10 +1030,9 @@
     },
     "en": {
       "titel": "The homeless man on the street",
-      "verhaal": "Outside the supermarket sits a man with a cardboard sign: \"Every euro helps, thank you.\" Julia has just calculated her entire week's grocery budget — exactly enough, not a euro to spare. She doesn't know the man's story: how long he's been sitting here, what he does with the money, whether he's seeking help. Last week she read an article warning against giving cash instead of food. She has no leftover bread with her, no extra card for a warm meal, only her wallet with exactly enough for her own list. The checkout line is visible from here. She could walk past, give something and skip an item on her own list, or go inside and buy something for him. What does Julia do, and why?",
+      "verhaal": "In front of the supermarket a man sits with a cardboard sign: \"Every euro helps, thank you.\" Julia has just worked out her whole weekly budget for the shopping she needs to do — exactly enough, not a euro to spare. She doesn't know the man's story: how long he has been here, what he does with the money, or whether he seeks help. Last week she read an article warning against giving money instead of food. She has no leftover bread, no extra pass for a warm meal, only her wallet with exactly enough for her own list. The queue at the checkout is visible from here. She can walk on, give something and cut a product from her own list, or go inside and buy something for him. What does Julia do, and why?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice about how to respond to someone asking for help, on a tight budget of her own."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_15.jpeg",
@@ -1072,7 +1042,7 @@
     },
     "meta": {
       "woordenNl": 135,
-      "woordenEn": 126,
+      "woordenEn": 136,
       "bron": "gesprekskaarten-burgerschap.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1094,11 +1064,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The scarf on the train",
-      "verhaal": "The train jolts hard, a dull thud through the carriage. On the cold floor lies a girl, barely eighteen, shivering with chattering teeth after a fall. The conductor calls for help, but until it arrives she stays there, exposed under the harsh train lighting. In her bag she feels the soft, cherished scarf her grandmother gave her, the only keepsake she still has of her. No one else in the compartment moves; everyone looks away nervously or stares at their phone. She could wrap the scarf around the girl against the cold, or find something else — her coat, a kind word, simply staying by her side. The minutes until help arrives feel endless. Does she give the scarf, or hold on to what's dear to her and find another gesture?",
+      "titel": "Help",
+      "verhaal": "The train jolts — a dull thud. A girl, barely eighteen, lies stretched out on the cold floor. Shivering, teeth chattering. The conductor calls for help, but her head keeps knocking against the icy steel. Your eyes fall on the soft, cherished scarf in your bag. Hesitation. Deep down you know what you should do. Your fingers reach for the soft fabric. But then — those shivers. Those chattering teeth. The dilemma cuts through you: give it away, or hold on to it?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between holding on to a possession and offering immediate help to a stranger."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_01.png",
@@ -1108,7 +1077,7 @@
     },
     "meta": {
       "woordenNl": 136,
-      "woordenEn": 131,
+      "woordenEn": 83,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1131,11 +1100,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The friend who drinks and drives",
-      "verhaal": "Sophie watches, time and again, as Tom, her boyfriend, gets behind the wheel without hesitation after a night of heavy drinking. \"I'll be fine, I've always driven like this,\" he says with a laugh, keys already jingling in his hand. Tonight is no different; he's clearly had more than usual, his movements slower, his voice louder than normal. Sophie knows the risks: not just for Tom, but for everyone else on the road tonight. She's brought it up before, carefully, and got an irritated response. Their relationship sometimes feels fragile enough not to risk another confrontation. Yet now she watches him walk toward the car. Does Sophie intervene firmly, even if it puts the relationship on edge, or does she let it go once again?",
+      "titel": "Friend drives under the influence of alcohol",
+      "verhaal": "Sophie watches with dismay as Tom, her friend, climbs behind the wheel after an evening of drinking — as he always does. Fear gnaws at her: the risks are enormous. Tom, but also others, are in danger. She wants to shake him awake, but fears his reaction. Sophie struggles with the trade-off: Tom's safety versus their relationship.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects not only the friendship but also the safety of others on the road."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_02.png",
@@ -1145,7 +1113,7 @@
     },
     "meta": {
       "woordenNl": 144,
-      "woordenEn": 125,
+      "woordenEn": 57,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1168,11 +1136,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The neighbor and the waste",
-      "verhaal": "The park behind his house, once the pride of the neighborhood, is turning month by month into an illegal dump. David regularly sees Mr. Bakker, his neighbor of fifteen years, dumping bags of trash there in the early morning — construction waste, old furniture, things that don't belong in household garbage. The stench attracts vermin, and neighborhood kids avoid the field where they used to play football. Other neighbors grumble among themselves, but no one dares confront Mr. Bakker directly; he's known as short-tempered and once had a dispute with the municipality over his fence. David considers calling the council, knowing this could mean a fine and years of strained neighborly relations. Does David confront Mr. Bakker himself first, report it anonymously to the council, or leave it to the rest of the neighborhood?",
+      "titel": "Neighbour dumps rubbish in the park",
+      "verhaal": "David watches with growing irritation as Mr Bakker, his neighbour, uses the park as a dump. The once green park turns into an unsightly place, full of stinking rubbish and pests. The neighbourhood grumbles; children avoid the spot. David's conscience gnaws at him. He wants to act, but fear of a confrontation with Mr Bakker holds him back.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the shared living environment of the whole neighborhood, not only the relationship between two neighbors."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_03.png",
@@ -1182,7 +1149,7 @@
     },
     "meta": {
       "woordenNl": 140,
-      "woordenEn": 134,
+      "woordenEn": 58,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1205,11 +1172,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The friend who steals",
-      "verhaal": "Delano sees it for the third time now: Mark slipping a set of earbuds into his jacket pocket without so much as glancing at the checkout. It no longer feels like a one-time impulse, more like a pattern he no longer seems able to control. They've been friends since elementary school, through thick and thin, and Delano knows Mark's family has been financially tight since his parents' divorce. An arrest could shape his entire future: a criminal record, trouble with a degree, maybe with a future job. But staying silent doesn't feel right either, as if he's complicit in something slowly spiraling out of control. Does Delano confront him directly about it, tell someone else who could help, or pretend he saw nothing?",
+      "titel": "Friend shoplifts",
+      "verhaal": "Delano sees how Mark, his friend, systematically robs shops. Fear grips him: arrest, a criminal record — the consequences are enormous. But the friendship... that weighs heavily too. Loyalty versus conscience, a painful conflict. How can he reach Mark without losing him? Delano desperately searches for a way to save Mark from self-destruction without destroying their friendship.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between loyalty to a friend and the risk that he's putting himself in deeper trouble."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_04.png",
@@ -1219,7 +1185,7 @@
     },
     "meta": {
       "woordenNl": 137,
-      "woordenEn": 123,
+      "woordenEn": 57,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1242,11 +1208,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The neighbor and the children",
-      "verhaal": "For the third time this month, Emma hears through the thin wall how Mrs. Jansen's door slams shut, followed by small children's voices calling \"mama.\" She knows Mrs. Jansen is a single parent working two jobs to get by, and that childcare is simply too expensive for her budget. Still, it keeps nagging at her: the children are barely six and seven years old, and the stretches they're left alone keep getting longer. A neighbor recently suggested, carefully, calling child protective services, but Emma fears what that could mean for the family — removal from the home, a stigma that never fully goes away. She could also knock on Mrs. Jansen's door herself, offer help instead of reporting. The children's voices go quiet again. Does Emma intervene through official channels, offer help herself, or wait and see?",
+      "titel": "Neighbour often leaves children home alone",
+      "verhaal": "Emma's heart pounds in her throat. Mrs Jansen has left her young children home alone again; the door slams shut. Small voices cry, calling for mum. Emma's concern grows by the minute. These children are vulnerable, unprotected. She wants to intervene, but fear of Mrs Jansen's reaction paralyses her. A dilemma that chafes, a decision that weighs heavily.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the safety of vulnerable children and the question of when private care becomes a shared responsibility."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_05.png",
@@ -1256,7 +1221,7 @@
     },
     "meta": {
       "woordenNl": 143,
-      "woordenEn": 137,
+      "woordenEn": 58,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1279,11 +1244,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The friend who speeds",
-      "verhaal": "Lisa grips the armrest as Mark runs yet another yellow light and the speedometer climbs well above the limit. It isn't a one-time impulse; she's seen the pattern for months, every time she rides with him. Mark always laughs it off: \"I know this road, I know what I'm doing.\" Yet she was recently shaken by a near-collision with a cyclist who barely managed to swerve in time. She feels responsible for saying something, but is afraid Mark will see it as meddling and get defensive, like the last time she tried. Meanwhile, her unease grows every time he gets behind the wheel with her in the car. Does Lisa confront him now, directly and firmly, refuse to ride with him from now on, or keep riding along in silence?",
+      "titel": "Friend drives too fast and breaks traffic rules",
+      "verhaal": "Lisa worries about Mark, her friend, who regularly drives too fast. She sees how he ignores traffic rules and fears accidents. Lisa feels responsible, but does not dare to confront Mark directly for fear of his reaction. Lisa wants Mark to see how dangerous his driving is, without damaging their relationship.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects not only the friendship but also the safety of other road users."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_06.png",
@@ -1293,7 +1257,7 @@
     },
     "meta": {
       "woordenNl": 143,
-      "woordenEn": 130,
+      "woordenEn": 51,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1317,10 +1281,9 @@
     },
     "en": {
       "titel": "The found wallet",
-      "verhaal": "Between the bike racks and the supermarket, Daan spots something brown lying on the ground. A wallet. He picks it up: two hundred-euro notes, some change, and a card with no name or photo — just a gym membership number. No phone number, no address, nothing to reach the owner with. Daan is alone, no one's watching. He's been financially tight this month after an unexpected bill. It would be so easy to keep the money and leave the wallet somewhere as if he'd never found it. But somewhere out there is someone who just lost their money, maybe money meant for rent. Daan looks around for a police station, a shop, a mailbox. What does he do with the wallet, and why?",
+      "verhaal": "On a deserted bench lies a heavy leather wallet. Money and an ID card stare back at you. Nobody nearby — only you. Temptations shoot through your head: new shoes, unpaid bills. But then you think of the possible owner: a student, a mother, a stranger searching desperately.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice between financial self-interest and honesty toward an unknown stranger."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_07.png",
@@ -1330,7 +1293,7 @@
     },
     "meta": {
       "woordenNl": 125,
-      "woordenEn": 123,
+      "woordenEn": 48,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1354,10 +1317,9 @@
     },
     "en": {
       "titel": "The gossiping friend",
-      "verhaal": "The music pounds, lights flash across the room, and that's when he finally hears it clearly: his best friend is spreading lies about their mutual friend at the bar, the kind of gossip that could ruin her reputation among people who aren't even there to defend themselves. His blood boils. They've known each other since middle school, been through everything together, and that friendship feels heavier than the urge to call him out here, in front of the whole group. Yet he watches the story spread from ear to ear while she stands, unsuspecting, somewhere else on the dance floor. Does he step in right now, talk to his friend calmly tomorrow, or just let it slide tonight?",
+      "verhaal": "The music blares, lights flash, and then you hear it: your best friend is spreading lies about your mutual friend. Pure gossip, reputation-destroying. Your blood boils; you want to stop him. But he is your best friend, for years. Call him out in front of the whole group? The tension is enormous. What do you do?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: the choice affects the social group and a third person's reputation, not only the two friends themselves."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_08.png",
@@ -1367,7 +1329,7 @@
     },
     "meta": {
       "woordenNl": 124,
-      "woordenEn": 118,
+      "woordenEn": 56,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1391,10 +1353,9 @@
     },
     "en": {
       "titel": "The borrowed money",
-      "verhaal": "Three months ago she borrowed a hundred and fifty euros from her friend, promising to pay it back within a few weeks. Then came the unexpected bills: a broken washing machine, a dentist visit that wasn't covered. Every time his name appears on her phone screen, she feels a sting of shame, and she keeps putting off the conversation. He needs the money himself, badly, she knows that, even though he's never said so directly. Today he texts again, casually, about a concert he'd like to book but can't quite afford right now. She knows the moment has come to be honest about her own situation instead of pushing the problem further ahead. Does she call him now to explain, keep quietly saving up, or keep avoiding the conversation?",
+      "verhaal": "You were almost there, but unexpected bills threw a spanner in the works. Now you are in trouble. Your friend, who helped you with a smile, needs the money back himself. Every time his name appears on your screen, you feel shame. How do you explain that you cannot keep your promise? The tension between friendship and financial problems is palpable.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal choice about honesty and responsibility within a friendship."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_09.png",
@@ -1404,7 +1365,7 @@
     },
     "meta": {
       "woordenNl": 143,
-      "woordenEn": 129,
+      "woordenEn": 61,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1427,11 +1388,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The fake reviews",
-      "verhaal": "The new coffee shop around the corner boasts a strikingly perfect score online: hundreds of five-star reviews, all posted within a few days of opening. She reads through them one by one and notices something odd: many of the accounts have never written another review, and the texts seem eerily similar, the same words rearranged just slightly. The coffee shop next door, where she's been a regular for years and which is struggling to stay afloat, is visibly losing customers to the newcomer. She isn't sure whether to get involved: it isn't her business, she has no proof beyond her own suspicion, and the platform is slow to respond to reports. Still, it feels unfair to the owner she knows, and to other customers relying on those reviews. Does she report her suspicion to the platform, confront the owner, or let it go?",
+      "titel": "The manipulated online review",
+      "verhaal": "The new coffee shop displays suspiciously perfect reviews. Five stars, cheering reactions — all within a few days. Many reviewers have written only one review: that of the coffee shop. It is clearly fake, an unfair practice. Should you raise it? It is not your business, but it harms fair competition and misleads consumers. Do you let it go, or take action? What is the right choice?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it affects the broader system of consumer trust and fair competition between business owners."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_10.png",
@@ -1441,7 +1401,7 @@
     },
     "meta": {
       "woordenNl": 150,
-      "woordenEn": 143,
+      "woordenEn": 67,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1464,11 +1424,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The neighbor who abuses his wife",
-      "verhaal": "Emma hears it through the thin fence between the gardens: shouting, a dull thud, then silence. Mrs. Janssen, her neighbor of many years, appears the next morning with a bruise she half-hides under a scarf. It isn't the first time; the pattern has repeated for months now, each time a little worse. Emma wrestles with her conscience: she wants to help Mrs. Janssen, but is terrified of what Mr. Janssen might do if he finds out the neighbors are getting involved. Calling the police could escalate things; doing nothing leaves Mrs. Janssen alone with someone who keeps hurting her. Emma searches for a safe way to help, one that doesn't put Mrs. Janssen at even greater risk. Does she call the police, quietly knock on the door herself, or look for a middle way?",
+      "titel": "Neighbour abuses his wife",
+      "verhaal": "Emma witnesses domestic violence at her neighbour Mrs Janssen's home. Mr Janssen regularly abuses her, which deeply worries Emma. She hears shouting and sees bruises. Emma struggles with her conscience: she wants to help Mrs Janssen, but is afraid of Mr Janssen's reaction. Emma searches for a safe way to help Mrs Janssen.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a macro-dilemma: it involves a structural pattern of domestic violence where intervening carries serious personal risk."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_11.png",
@@ -1478,7 +1437,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 134,
+      "woordenEn": 53,
       "bron": "DL COMPLEET A5.docx",
       "categorieEn": "DAILY LIFE"
     },
@@ -1501,11 +1460,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Thirty minutes ago",
-      "verhaal": "Sanne glances at the schedule before the door opens. Room 3, next patient — lung cancer, diagnosed this morning, thirty minutes ago, maybe less. The scan has to happen today; the surgeons need it to plan the resection, and every hour the tracer decays is an hour lost. After this patient she has four more and a technologist called in sick. The woman who walks in looks hollowed out, her hands trembling as she signs a consent form she probably hasn't read. Sanne wants to sit with her for a moment, let the silence breathe before the camera starts, but the corridor outside is already filling with the next appointment. She lays the woman on the table, keeps her voice soft, and sets the timer in her head. How much of herself can she give this patient in twelve minutes?",
+      "titel": "Thirty Minutes Ago",
+      "verhaal": "Sanne glances at the schedule before the door opens. Room 3, next patient — lung cancer, diagnosed this morning. Thirty minutes ago, maybe less. The scan has to happen today; the surgeons need it to plan the resection, and every hour the tracer waits is an hour lost. She has four more patients after this one and a technologist out sick. The woman who walks in looks hollow, her hands trembling as she signs a consent form she probably didn't read. Sanne wants to sit with her, to let the silence breathe before starting the camera. But the corridor outside is already filling with the next appointment. She positions the woman on the table, keeps her voice soft, and starts the timer in her head. How much of herself can she give this patient in twelve minutes?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a meso-dilemma: the department's time pressure and protocols collide with the personal attention this patient needs."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_NM_01.jpg",
@@ -1515,7 +1473,7 @@
     },
     "meta": {
       "woordenNl": 140,
-      "woordenEn": 140,
+      "woordenEn": 137,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES"
@@ -1539,11 +1497,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The first one to ask",
-      "verhaal": "Mr. Verhoeven is eighty-eight, and today is his first PET/CT since the diagnosis. Erik calls him in, explains the injection, the hour of waiting, the scanner. Halfway through, the older man shakes his head. \"I don't want this,\" he says quietly. \"No one has asked me what I want. They only tell me the next step.\" Erik is, in fact, the first person since treatment began who hasn't simply pushed him toward the next step. He could take the time now — really listen, ask what \"not wanting this\" means. But the tracer is already decaying in the vial upstairs, and three patients are waiting, one of whom loses their appointment entirely if this slot runs over. Erik pulls up a chair anyway. Does he sit down, or call it off?",
+      "titel": "The First Person Who Asks",
+      "verhaal": "Mr. Verhoeven is seventy-eight and today is his first PET/CT since the diagnosis. Erik calls him in, explains the injection, the hour of waiting, the scanner. Halfway through, the older man shakes his head. \"I don't want this,\" he says quietly. \"Nobody's asked me what I want. They just tell me what's next.\" Erik is, in fact, the first person he's spoken to since starting treatment who isn't rushing him toward the next step. He could take the time now — really listen, ask what \"not wanting this\" means. But the tracer is already decaying in the vial upstairs, and three more patients are waiting, including one whose appointment will vanish entirely if this slot runs over. Erik pulls up a chair anyway. Somewhere down the corridor, a phone starts ringing. Does he sit, or does he call it in?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a meso-dilemma: the department's waiting list and decaying tracer collide with one patient's personal wish to be heard."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_NM_02.jpg",
@@ -1553,7 +1510,7 @@
     },
     "meta": {
       "woordenNl": 137,
-      "woordenEn": 131,
+      "woordenEn": 140,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES"
@@ -1577,11 +1534,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "What she traded it for",
-      "verhaal": "Eva is eleven and has weeks left, not months. The blood draws are still needed — to track the numbers that tell the team how much pain relief her body can still handle. She used to fight the needle with everything she had, twisting away from anyone who came near her line. Somewhere along the way an unspoken agreement formed between her and nurse Mira: a little more morphine, a little more comfort, in exchange for lying still. Mira knows how this looks from the outside. She also knows what untreated pain looks like in a child who can no longer describe it. No one wrote this into a protocol; it grew out of two people getting through the same impossible afternoon, over and over. When Eva died, half the team stood at the back of a small funeral, unsure whether they belonged there, certain they couldn't stay away. What do you call what happened in that room?",
+      "titel": "What She Would Trade For",
+      "verhaal": "Eva is eleven and has weeks left, not months. The blood samples are still needed — to track the numbers that tell the team how much pain relief her body can still take. She used to fight the needle with everything she had, curling away from anyone who came near her catheter. Somewhere along the way, an unspoken arrangement formed: a little more morphine, a little more comfort, in exchange for holding still. Mira knows what this looks like from the outside. She also knows what unmanaged pain looks like in a child who can no longer describe it. Nobody wrote this into a protocol; it grew out of two people getting through the same impossible afternoon, over and over. When Eva died, half the team stood at the back of a small funeral, unsure if they belonged there, sure they couldn't have stayed away. What do you call what happened in that room?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a meso-dilemma: it involves the unwritten agreements between caregiver and patient within the care team, outside any protocol."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_NM_03.jpg",
@@ -1591,7 +1547,7 @@
     },
     "meta": {
       "woordenNl": 152,
-      "woordenEn": 158,
+      "woordenEn": 154,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES"
@@ -1615,11 +1571,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Between the compressions",
-      "verhaal": "The compressions don't stop for anyone, not even for a blood draw. Tomas kneels beside the gurney, waiting for the half-second window between chest down and chest up. He needs a potassium value — clean, uncontaminated, no hemolysis — because that number could decide whether the team continues or stops. Draw too slowly, too much stasis, and the result lies: it says the heart can't be saved when it still might be. Draw fast and sloppy just to get a number, and the same mistake happens in reverse. Someone behind him says \"we need that potassium\" as if it's a formality. Tomas knows it isn't. He has one shot, one vein, and a room full of people who will act on whatever the lab says next. How certain does he need to be before he lets them stop?",
+      "titel": "Between Compressions",
+      "verhaal": "The compressions don't stop for anyone, not even for a blood draw. Tomas kneels beside the gurney, waiting for the half-second window between the chest going down and the chest coming back up. He needs a potassium level — clean, uncontaminated, no hemolysis — because that number might decide whether the team keeps going or calls it. Draw too slow, apply too much stasis, and the result lies: it says the heart can't be saved when maybe it still could be. Draw fast and sloppy just to have a number, and the same mistake happens in reverse. Someone behind him says \"we need that potassium,\" like it's a formality. Tomas knows it isn't. He has one shot, one vein, and a room full of people who will act on whatever the lab says next. How sure does he need to be before he lets them stop?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a micro-dilemma: a direct, technical judgment call made by one caregiver under acute pressure, with major consequences for the patient."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_NM_04.jpg",
@@ -1629,7 +1584,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 138,
+      "woordenEn": 146,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES"
@@ -1653,11 +1608,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The order of the names",
-      "verhaal": "Lotte has spent fourteen months on this paper — every experiment, every table, every late night rewriting the discussion section. Her supervisor, Professor Dekker, reads the final version in silence and slides it back across the desk. \"Put my name first,\" he says, without looking up. \"That's how it works here.\" She knows the norms: senior authorship means prestige, secures the next grant, keeps her contract renewal on his desk rather than someone else's. Her name would still appear — third, maybe fourth, buried where hiring committees rarely look. She thinks of the data she collected alone on weekends, of results unmistakably hers. Refusing could cost her the postdoc she needs. Signing could cost her the one thing she truly owns. She opens the author list and hovers over the first line. What does she do?",
+      "titel": "The Order of Names",
+      "verhaal": "Lotte has spent fourteen months on this paper — every experiment, every table, every late night rewriting the discussion section. Her supervisor, Professor Dekker, reads the final draft in silence, then slides it back across the desk. \"Put my name first,\" he says, not looking up. \"That's how it works here.\" She knows the norms: senior authorship signals prestige, secures the next grant, keeps her contract renewal on his desk instead of someone else's. Her name would still appear — third, maybe fourth, buried where hiring committees rarely look. She thinks of the data she collected alone on weekends, the results that are unmistakably hers. Refusing might cost her the postdoc she needs. Signing might cost her the only thing she actually owns. She opens the author list and hovers over the first line. What does she do?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a meso-dilemma: it affects the power dynamic between a PhD candidate and her supervisor within the academic organization."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_RI_01.jpg",
@@ -1667,7 +1621,7 @@
     },
     "meta": {
       "woordenNl": 147,
-      "woordenEn": 136,
+      "woordenEn": 138,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES"
@@ -1691,11 +1645,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The extra name on the list",
-      "verhaal": "The manuscript is finished, reviewed, accepted — until an email arrives from the publisher. A senior editor at a partner institution wants to be added to the editorial board for this special issue. He hasn't reviewed a single manuscript, attended a single meeting, or read a single article. But his university is paying the open-access fees for the entire issue, and the contract renewal is due next month. \"It's just a name on a page,\" the managing editor says, not quite meeting anyone's eyes. The actual editors, who spent months reading manuscripts and chasing down reviewers, say nothing at first. Refusing could mean losing the funding that keeps the journal free for authors. Agreeing means quietly rewriting who actually did the work. The deadline for the final editorial list is noon tomorrow. Someone has to answer the email.",
+      "titel": "The Extra Name on the List",
+      "verhaal": "The manuscript is ready, reviewed, accepted — until an email arrives from the publisher. A senior editor at a partner institution would like to be added to the editorial board for this special issue. He hasn't reviewed a single submission, hasn't attended a meeting, hasn't read the papers. But his university covers the open-access fees for the entire issue, and the contract renewal is due next month. \"It's just a name on a page,\" the managing editor says, not quite meeting anyone's eyes. The actual editors, who spent months reading manuscripts and chasing reviewers, say nothing at first. Refusing might mean losing the funding that keeps the journal free to authors. Agreeing means quietly rewriting who did the work. The deadline for the final editor list is tomorrow at noon. Someone has to reply to the email.",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a macro-dilemma: it affects the integrity of the publishing system itself and the funding structure of an entire journal."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_RI_02.jpg",
@@ -1705,7 +1658,7 @@
     },
     "meta": {
       "woordenNl": 136,
-      "woordenEn": 138,
+      "woordenEn": 137,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES"
@@ -1729,11 +1682,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The same result, twice",
-      "verhaal": "Dr. Willemsen's dataset from three years ago is solid — peer-reviewed, published, done. But the funding cycle never really closes. She tweaks a variable, slightly reframes the research question, submits it as a new proposal. The committee, unaware it nearly fully overlaps with her previous funded project, approves it. She presents the \"new\" findings at a conference in Lisbon, and afterward, reworded, in Porto. No one reviewing her application sees the earlier version; no one applauding at the podium knows either. Each grant funds real work — travel, a research assistant, a few months of breathing room. Nothing about the numbers is fabricated. Only the framing keeps shifting, just enough to look new. She's already working on the next resubmission when the funding body's newsletter announces stricter checks on duplicate submissions. What happens when someone finally lays the versions side by side?",
+      "titel": "The Same Result, Twice",
+      "verhaal": "Dr. Willemsen's dataset from three years ago is solid — peer-reviewed, published, done. But the funding cycle never really closes. She adjusts a variable, reframes the research question slightly, submits it as a new proposal. The committee, unaware it overlaps almost entirely with her last funded project, approves it. She presents the \"new\" findings at a conference in Lisbon, then again, reworded, in Porto. Nobody who reviews her application sees the earlier version; nobody who applauds at the podium knows either. Each grant funds real work — travel, a research assistant, a few months of breathing room. Nothing about the numbers is invented. Only the frame keeps shifting, just enough to look new. She's already drafting the next resubmission when the funding body's newsletter mentions a tightening of duplicate-submission checks. What happens if someone finally lines the versions up?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "Which values are at play?",
-      "justification": "This is a meso-dilemma: it affects the trust of funding bodies and the research community in the integrity of one researcher."
+      "vraag2": "Which values are at play?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_RI_03.jpg",
@@ -1743,7 +1695,7 @@
     },
     "meta": {
       "woordenNl": 150,
-      "woordenEn": 142,
+      "woordenEn": 139,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES"
@@ -1768,10 +1720,9 @@
     },
     "en": {
       "titel": "The unspoken rule",
-      "verhaal": "Mr. Van Dijk sets down his coffee in the staff room when colleague Tessa pulls him aside. \"Did you know Smit and that boy from 5V are together?\" she whispers. Van Dijk feels the floor drop away beneath him. Mrs. Smit, the Dutch teacher, respected, always the first to call out inappropriate behavior in others. Now it turns out she herself has been in a relationship with a seventeen-year-old student for months. It's against every school rule, every power imbalance he's always tried to guard against. Does he report it to the school leadership, knowing it could cost her job and put the student in the spotlight? Or does he wait, hoping she'll end it herself? Van Dijk puts his hand on the office door handle. Does he open the door?",
+      "verhaal": "Mr Van Dijk sets down his coffee in the staff room when colleague Tessa takes him aside. \"Do you know that Smit and that boy from 5V have something going on?\" she whispers. Van Dijk feels the ground drop away beneath him. Ms Smit, Dutch teacher, respected, always the first to call others out on boundary-crossing behaviour. Now it turns out she herself has been in a relationship with a seventeen-year-old student for months. It violates every school rule, every power imbalance he has always tried to guard against. Does he report it to the principal, knowing this could cost her her job and put the student in the spotlight? Or does he wait, hoping she will end it herself? Van Dijk places his hand on the handle of the principal's door. Does he open it?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the norms and power dynamics across the whole school, not just one colleague."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_01.jpg",
@@ -1781,7 +1732,7 @@
     },
     "meta": {
       "woordenNl": 133,
-      "woordenEn": 131,
+      "woordenEn": 136,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1804,11 +1755,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The empty chair in the back",
-      "verhaal": "Mrs. Peters sees Ahmed leave the classroom last on Friday afternoon, head down, backpack zipped tight against his chest. For the third time this month she finds a crumpled note on his desk with a slur written on it. She's already addressed the class twice, held a mentor conversation, called his parents. Nothing changes. Ahmed barely speaks in class anymore, his grades are dropping, and the class acts as if nothing is wrong. Today she saw two boys snicker as he packed his bag. Does she escalate to the care coordinator and the parents of the perpetrators, risking that the bullying goes underground and gets worse? Or does she keep trying to solve it herself, while Ahmed continues to withdraw? She looks at the empty chair in the back. How much longer can she wait?",
+      "titel": "The empty chair at the back",
+      "verhaal": "Ms Peters sees Ahmed leave the classroom last on Friday afternoon, head bowed, backpack zipped tight against his chest. For the third time this month she finds a crumpled note on his desk with a slur on it. She has already addressed the class twice, held a mentor meeting, called the parents. Nothing changes. Ahmed hardly speaks in class anymore, his grades are falling, and the class acts as if nothing is wrong. Today she saw two boys grin when he picked up his bag. Does she escalate to the care coordinator and the perpetrators' parents, with the risk that the bullying goes underground and gets worse? Or does she keep trying to resolve it herself while Ahmed continues to slip away? She looks at the empty chair at the back. How much longer can she wait?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects classroom dynamics and the question of when an individual problem needs a school-wide approach."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_02.jpg",
@@ -1818,7 +1768,7 @@
     },
     "meta": {
       "woordenNl": 132,
-      "woordenEn": 135,
+      "woordenEn": 137,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1841,11 +1791,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "The list in the cafeteria",
-      "verhaal": "Mr. Janssen sits in the cafeteria on Tuesday afternoon with class 4B's grade list open on his laptop. He compares colleague Vermeulen's marking to the rubrics: three of her favorite students consistently score a point higher than their work justifies, while other, equally strong students stay at the average. A student made a remark about it recently: \"That's not really fair, sir, is it?\" He knows: a report to the exam board could cost Vermeulen her grading authority and thoroughly sour the team atmosphere. Staying silent means the inequality continues and students' trust in fair grading keeps eroding. He closes his laptop and walks toward the hallway where Vermeulen's classroom is. Does he knock, or walk past?",
+      "titel": "The list in the staff room",
+      "verhaal": "Mr Janssen sits in the staff room on Tuesday afternoon with class 4B's grade list open on his laptop. He compares colleague Vermeulen's marking with the rubrics: three of her favourite students consistently receive a point higher than their work justifies, while other, equally strong students stay at the average. A student commented recently: \"It's not fair, is it, sir?\" He knows: a report to the exam board could cost Vermeulen her assessment authority and seriously poison the team atmosphere. Staying silent means the inequality continues and students' trust in fair assessment erodes further. He closes his laptop and walks towards the corridor where Vermeulen's classroom is. Does he knock, or walk on?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects fair assessment across the whole teaching team, not just two colleagues."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_03.jpg",
@@ -1855,7 +1804,7 @@
     },
     "meta": {
       "woordenNl": 122,
-      "woordenEn": 117,
+      "woordenEn": 113,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1878,11 +1827,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "What lingers",
-      "verhaal": "Mrs. Van der Meer is standing outside classroom 1.14 on Wednesday morning when, through the gap in the door, she hears Mr. Jansen's voice: a joke about a student in a headscarf, followed by laughter from part of the class. It isn't the first time; students have been whispering about it in the hallway for weeks, and two parents have raised concerns through the mentor. Jansen is a valued colleague, fifteen years in service, and no one has ever confronted him directly. She knows an official report to school leadership sets an investigation in motion that puts the team atmosphere on edge and could cost Jansen his position. A one-on-one conversation feels safer, but does it actually change anything? She knocks on his classroom door. What does she say when he opens it?",
+      "titel": "What stays behind",
+      "verhaal": "Ms Van der Meer stands outside room 1.14 on Wednesday morning when she hears Mr Jansen's voice through the gap in the door: a joke about a student in a headscarf, followed by laughter from part of the class. It is not the first time; students have whispered about it in the corridor for weeks, and two parents have expressed their concerns through the mentor. Jansen is a valued colleague, fifteen years in the job, and nobody has ever confronted him directly. She knows an official report to school leadership will trigger an investigation that puts the team on edge and could cost Jansen his position. A private conversation feels safer, but will that actually change anything? She knocks at his classroom door. What does she say when he opens it?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects student safety and collegial relationships across the whole teaching team."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_04.jpg",
@@ -1892,7 +1840,7 @@
     },
     "meta": {
       "woordenNl": 133,
-      "woordenEn": 133,
+      "woordenEn": 131,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1916,10 +1864,9 @@
     },
     "en": {
       "titel": "The absent seat",
-      "verhaal": "Mrs. Visser logs Kimberly's fourth absence this month into the attendance system on Thursday morning. She calls home; no one answers. When Kimberly does show up the next day, pale and with a broken look in her eyes, Visser carefully asks how she's doing. \"Just tired,\" Kimberly says, looking at the floor. Visser sees more and more signs — a neglected backpack, phone messages she quickly dismisses — pointing to something wrong at home. Kimberly has clearly asked her to \"just leave it.\" Does Visser report her suspicion to the care coordinator, risking that it breaks Kimberly's trust in her? Or does she wait, hoping Kimberly will eventually open up on her own, while the signs keep getting worse? Visser puts the phone back on her desk. Does she call?",
+      "verhaal": "Ms Visser records Kimberly's fourth absence this month in the attendance system on Thursday morning. She calls home; nobody answers. When Kimberly does appear the next day, pale-skinned with a broken gaze, Visser asks gently how she is doing. \"Just tired,\" Kimberly says, and she looks at the floor. Visser sees more and more signs — a neglected backpack, text messages she quickly dismisses — pointing to something at home that is not right. Kimberly has clearly asked her to \"just leave it.\" Does Visser report her suspicion to the care coordinator, with the risk of breaking Kimberly's trust? Or does she wait, hoping Kimberly will talk on her own initiative while the signs worsen? Visser puts the phone back on the desk. Does she call?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a micro-dilemma: a direct, personal judgment call by one teacher about when a suspicion should be reported."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_05.jpg",
@@ -1929,7 +1876,7 @@
     },
     "meta": {
       "woordenNl": 128,
-      "woordenEn": 130,
+      "woordenEn": 126,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1953,10 +1900,9 @@
     },
     "en": {
       "titel": "Ten minutes before the assessment",
-      "verhaal": "At 8:50 am, Lisa stands crying in the doorway of the exam room, ten minutes before her resit. Last night she heard that her fellow student and friend Fem had died. She could have stayed home, but wanted to come no matter what — missing this chance means waiting six months for another attempt, and she's already behind in her studies. The examiner sees a student who can barely finish a sentence, let alone an assessment form. The protocol is clear: whoever doesn't start must wait for the next round. But what is a \"fair\" result worth, taken from someone collapsing with grief? Allowing an exception outside the rules could set a precedent for other students in distress. The examiner glances at the clock. Does she let the assessment begin, or send Lisa home?",
+      "verhaal": "At 08:50 Lisa stands crying in the doorway of the exam room, ten minutes before her resit. Last night she heard that her study friend Fem has died. She could have stayed home, but wanted to come at all costs — a missed attempt means waiting half a year for a new one, and she is already behind in her studies. The examiner sees a student who can barely finish a sentence, let alone an assessment form. The protocol is clear: whoever does not start must wait until the next round. But what is a \"fair\" result worth, administered to someone collapsing with grief? Allowing deferral outside the regulations can create precedents for other students in distress. The examiner looks at the clock. Does she let the assessment begin, or send Lisa home?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the program's exam regulations and how those regulations respond to human distress."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_06.jpg",
@@ -1966,7 +1912,7 @@
     },
     "meta": {
       "woordenNl": 132,
-      "woordenEn": 134,
+      "woordenEn": 133,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -1990,10 +1936,9 @@
     },
     "en": {
       "titel": "5.3 on the screen",
-      "verhaal": "Mr. De Groot stares at the grading system on Tuesday afternoon: 5.3, a fail. It's student Youssef's third attempt at this course. In the margins of his notes, De Groot sees progress the system doesn't capture — Youssef hasn't missed a single class this semester, participated actively, and his presentation was noticeably better than last time. Yet the rubric strictly adds up the sub-scores, and half a point under means an official fail and another six months of delay. De Groot could manually adjust the grade — the software allows it — but that means deviating from the very system meant to prevent arbitrariness. His finger hovers over the \"save\" button. Does he overwrite the grade, or let the system decide?",
+      "verhaal": "Mr De Groot stares at the assessment system on Tuesday afternoon: 5.3, fail. It is student Youssef's third attempt for this subject. In the margin of his notes De Groot sees the progress the system does not capture — Youssef has not missed a single class this semester, participated actively, his presentation was noticeably better than last time. Yet the rubric strictly adds up the sub-scores, and half a point below means officially a fail and another half year of delay. De Groot can adjust the grade manually — the software allows it — but that means deviating from the system meant precisely to prevent arbitrariness. His finger hovers over the \"save\" button. Does he override the grade, or let the system decide?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the program's system of objective assessment versus the teacher's human judgment."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_07.jpg",
@@ -2003,7 +1948,7 @@
     },
     "meta": {
       "woordenNl": 127,
-      "woordenEn": 121,
+      "woordenEn": 123,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -2026,11 +1971,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Mr. De Vries's schedule",
-      "verhaal": "Mrs. Jansen keeps hearing it in the hallways: students complaining that Mr. De Vries's classes are \"a mess\" — no clear lesson plan, material improvised on the spot, a class that no longer knows what's expected of them. She knows why: De Vries is going through a difficult divorce and barely has time to prepare. Last week she found him alone in the staff room early in the morning, eyes red, a half-empty cup of coffee in front of him. She wants to be there for him as a colleague, but the student complaints are piling up and the team leader has already asked about it twice. Does she protect De Vries by staying silent about his situation, or does she go to the team leader for help, even though it isn't hers to share?",
+      "titel": "Mr De Vries's timetable",
+      "verhaal": "Ms Jansen hears it again in the corridors: students complaining that Mr De Vries's lessons are \"a chaos\" — no clear lesson plan, material he improvises on the spot, a class that no longer knows what is expected of them. She knows why: De Vries is going through a difficult divorce and barely has time to prepare. Last week she found him alone in the staff room early in the morning, red-eyed, with a half-empty cup of coffee. She wants to be there for him as a colleague, but student complaints are piling up and the team leader has asked about it twice already. Does she protect De Vries by staying silent about his situation, or go to the team leader to ask for help, even though it is not hers to share?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects collegial duty of care versus a colleague's privacy, within the team."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_08.jpg",
@@ -2040,7 +1984,7 @@
     },
     "meta": {
       "woordenNl": 135,
-      "woordenEn": 135,
+      "woordenEn": 133,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
@@ -2063,11 +2007,10 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Outside the calibration",
-      "verhaal": "In the staff room on Friday after school, Marieke watches colleague Ruud grade yet another stack of papers without so much as picking up the rubric. \"I just have a feel for what a good paper is,\" he says when she asks about it. She knows there have been calibration sessions, agreed-upon protocols, precisely to prevent inconsistency between teachers — and that students consistently receive different grades from Ruud than from colleagues for comparable work. A student recently complained about it to the curriculum committee, without naming names. Does Marieke confront Ruud directly, risking an uncomfortable atmosphere in a small team? Or does she report it to the curriculum committee, knowing it could have serious consequences for Ruud? She grabs her coat from the rack. Does she wait until Monday, or talk to him now?",
+      "titel": "Outside calibration",
+      "verhaal": "In the staff room, Friday after school, Marieke sees colleague Ruud for the umpteenth time marking a pile of assignments without the rubric at hand. \"I just feel what a good piece of work is,\" he says when she asks. She knows calibration sessions have been held, protocols agreed — precisely to prevent arbitrariness between teachers — and that students in Ruud's classes consistently receive different grades than in colleagues' classes for comparable work. A student recently complained to the curriculum committee, without naming names. Does Marieke confront Ruud directly, with the risk of an awkward atmosphere in a small team? Or does she report it to the curriculum committee, knowing this could have far-reaching consequences for Ruud? She takes her coat from the rack. Does she wait until Monday, or speak to him now?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects fair assessment of students across the whole teaching team, not just two colleagues."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_09.jpg",
@@ -2101,10 +2044,9 @@
     },
     "en": {
       "titel": "Two essays side by side",
-      "verhaal": "Mr. Bakker sits after school on Thursday afternoon with two essays side by side: Lisa's and her classmate Fenna's. In the third paragraph is the exact same sentence, typo and all. He knows that, under the exam regulations, copying means a failing grade and a note in the file. But he also knows Lisa's situation: last week she told him, in tears, that her parents \"simply won't accept\" a failing grade and that there's been months of conflict at home over her grades. If he follows the protocol, he risks the pressure at home getting worse. If he lets it go, he undermines the very rule meant to prevent dishonesty — and what does he then say to Fenna, who did her own work? Bakker lays the two essays side by side on his desk. Does he call the parents, or Lisa herself first?",
+      "verhaal": "Mr Bakker sits after school on Thursday with two essays side by side: Lisa's and her classmate Fenna's. In the third paragraph the exact same sentence appears, typo included. He knows that copying according to the exam regulations means a fail and a note in the file. But he also knows Lisa's situation: last week she told him, in tears, that her parents \"simply won't accept\" a fail and that there has been conflict at home for months over her grades. If he follows protocol, he risks the pressure at home escalating further. If he lets it go, he undermines the rule meant to prevent unfairness — and what does he say to Fenna, who did her own work? Bakker lays the two essays side by side on his desk. Does he call the parents, or Lisa first?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?",
-      "justification": "This is a meso-dilemma: it affects the school's exam regulations and fairness toward other students."
+      "vraag2": "What values are at stake here?"
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_10.jpg",
@@ -2114,7 +2056,7 @@
     },
     "meta": {
       "woordenNl": 141,
-      "woordenEn": 144,
+      "woordenEn": 138,
       "bron": "Gesprekskaarten_Onderwijs_v3.docx",
       "categorieEn": "EDUCATION"
     },
