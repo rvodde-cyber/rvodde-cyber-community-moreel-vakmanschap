@@ -1,7 +1,19 @@
+import { useMemo, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
+import DownloadKnop from "../components/DownloadKnop";
+import LicentieRegel, { MateriaalHerkomstRegel } from "../components/LicentieRegel";
+import { bronIsEigenOntwikkeling } from "../data/attributie";
+import WerkbladKaart from "../components/WerkbladKaart";
+import WerkbladFilters, {
+  EMPTY_WERKBLAD_FILTERS,
+  filterWerkbladen,
+  collectFilterOptions,
+} from "../components/WerkbladFilters";
 import { bibliotheekData, niveauLabels, statusLabels } from "../data/bibliotheekData";
+import { STANDAARD_NAAMSVERMELDING } from "../data/licentie";
+import { getWerkbladenVoorStap } from "../data/werkbladen";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
 const stapSlugNaarNummer = {
@@ -81,6 +93,7 @@ const uiTekst = {
     ctaTekst:
       "Deel je ervaringen, leer van collega's en draag bij aan een community die ethiekonderwijs versterkt.",
     ctaKnop: "Doe mee →",
+    werkbladenTitel: "Werkbladen",
   },
   en: {
     terug: "← Back to library",
@@ -95,6 +108,7 @@ const uiTekst = {
     ctaTekst:
       "Share your experiences, learn from colleagues and contribute to a community that strengthens ethics education.",
     ctaKnop: "Join us →",
+    werkbladenTitel: "Worksheets",
   },
 };
 
@@ -118,57 +132,6 @@ function bronTekst(bron, pageLang) {
   return bron[pageLang] ?? bron.en;
 }
 
-function downloadUrl(map, bestand) {
-  return `/downloads/${map}/${bestand}`;
-}
-
-function DownloadKnop({ bestand, map, label, accentColor, variant, disabled, disabledTitle }) {
-  const baseStyle = {
-    padding: "0.45rem 0.9rem",
-    fontFamily: "DM Sans, sans-serif",
-    fontSize: "0.8rem",
-    borderRadius: "6px",
-    fontWeight: 500,
-    textAlign: "center",
-  };
-
-  if (disabled || !bestand) {
-    return (
-      <span
-        title={disabledTitle}
-        aria-disabled="true"
-        style={{
-          ...baseStyle,
-          backgroundColor: "#eeedea",
-          color: "#888780",
-          border: "1px solid #d3d1c7",
-          cursor: "not-allowed",
-        }}
-      >
-        {label}
-      </span>
-    );
-  }
-
-  const filled = variant === "filled";
-
-  return (
-    <a
-      href={downloadUrl(map, bestand)}
-      download={bestand}
-      style={{
-        ...baseStyle,
-        textDecoration: "none",
-        backgroundColor: filled ? accentColor : "transparent",
-        color: filled ? "#ffffff" : accentColor,
-        border: filled ? "none" : `1px solid ${accentColor}`,
-      }}
-    >
-      {label}
-    </a>
-  );
-}
-
 export default function StapPagina() {
   const { stap } = useParams();
   const { taal } = useTaal();
@@ -188,6 +151,17 @@ export default function StapPagina() {
     ? `/library/${combineer?.volgendeEn}`
     : `/bibliotheek/${combineer?.volgendeNl}`;
   const aanmeldenHref = enRoutes ? "/join" : "/aanmelden";
+  const nlStapSlug = slugNaarAfbeelding[stap] ?? stap;
+  const stapWerkbladen = useMemo(
+    () => getWerkbladenVoorStap(nlStapSlug, dataLang),
+    [nlStapSlug, dataLang],
+  );
+  const werkbladOptions = useMemo(() => collectFilterOptions(stapWerkbladen), [stapWerkbladen]);
+  const [werkbladFilters, setWerkbladFilters] = useState(EMPTY_WERKBLAD_FILTERS);
+  const gefilterdeWerkbladen = useMemo(
+    () => filterWerkbladen(stapWerkbladen, werkbladFilters),
+    [stapWerkbladen, werkbladFilters],
+  );
 
   if (!stapData) {
     return (
@@ -473,12 +447,65 @@ export default function StapPagina() {
                       {ui.bronLabel} {bronTekst(mat.bron, dataLang)}
                     </p>
                   )}
+                  <MateriaalHerkomstRegel
+                    bronTekst={bronTekst(mat.bron, dataLang)}
+                    dataLang={dataLang}
+                  />
+                  <LicentieRegel
+                    naamsvermelding={STANDAARD_NAAMSVERMELDING}
+                    dataLang={dataLang}
+                    isAdaptation={!bronIsEigenOntwikkeling(bronTekst(mat.bron, dataLang))}
+                  />
                 </>
               ) : null}
             </motion.div>
           ))}
         </div>
+
+        {stapWerkbladen.length > 0 && (
+          <div style={{ marginTop: "3rem" }}>
+            <h2
+              style={{
+                fontFamily: "Cormorant Garamond, serif",
+                fontSize: "1.75rem",
+                fontWeight: 600,
+                marginBottom: "1.25rem",
+                color: "var(--tekst-primair)",
+              }}
+            >
+              {ui.werkbladenTitel}
+            </h2>
+            <WerkbladFilters
+              filters={werkbladFilters}
+              onChange={setWerkbladFilters}
+              options={werkbladOptions}
+              resultCount={gefilterdeWerkbladen.length}
+              totalCount={stapWerkbladen.length}
+            />
+            <div
+              className="werkbladen-grid-stap"
+              style={{ display: "grid", gridTemplateColumns: "1fr", gap: "1.25rem" }}
+            >
+              {gefilterdeWerkbladen.map((item) => (
+                <WerkbladKaart key={item.id} item={item} />
+              ))}
+            </div>
+          </div>
+        )}
       </section>
+
+      <style>{`
+        @media (min-width: 640px) {
+          .werkbladen-grid-stap {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          }
+        }
+        @media (min-width: 1024px) {
+          .werkbladen-grid-stap {
+            grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          }
+        }
+      `}</style>
 
       <section style={{ backgroundColor: "#1a2744", padding: "4rem 1.5rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>

@@ -20,6 +20,7 @@ const stapSlugPairs = [
   ["handelen", "acting"],
   ["volhouden", "persisting"],
   ["verhaal", "story-reflection"],
+  ["werkbladen", "worksheets"],
 ];
 
 export default function TaalRouteSync() {

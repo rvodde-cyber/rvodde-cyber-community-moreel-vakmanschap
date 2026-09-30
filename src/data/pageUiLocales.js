@@ -126,7 +126,7 @@ const bibliotheekSv = {
   materialenMeervoud: "material",
   disclaimerTitel: "Användning & källhänvisning",
   disclaimerTekst:
-    "Arbetsbladen på plattformen har utvecklats av Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) som en del av Comenius Senior Fellowship. De underliggande teoretiska modellerna används med källhänvisning och är avsedda för icke-kommersiellt pedagogiskt bruk. Fritt att använda med källangivelse.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const bibliotheekCs = {
@@ -141,7 +141,7 @@ const bibliotheekCs = {
   materialenMeervoud: "materiály",
   disclaimerTitel: "Použití a uvedení zdroje",
   disclaimerTekst:
-    "Pracovní listy na této platformě vyvinul Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) v rámci Comenius Senior Fellowship. Podkladové teoretické modely jsou používány s uvedením zdroje a jsou určeny pro nekomerční vzdělávací účely. Volně k použití s uvedením zdroje.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const bibliotheekDa = {
@@ -156,7 +156,7 @@ const bibliotheekDa = {
   materialenMeervoud: "materialer",
   disclaimerTitel: "Brug & kildeangivelse",
   disclaimerTekst:
-    "Arbejdsarkene på platformen er udviklet af Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) som en del af Comenius Senior Fellowship. De underliggende teoretiske modeller anvendes med kildeangivelse og er beregnet til ikke-kommerciel uddannelsesbrug. Fri at bruge med kildeangivelse.",
+    "The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are adaptations of, or inspired by, existing methods and theories. The original source is always stated with the worksheet and in the document itself.\n\nThe CC BY-NC-SA 4.0 licence applies to our own contribution and adaptation: free to use for non-commercial education, with attribution and under the same licence.\n\nRights to the original methods, models and texts remain with their respective authors. When reusing, please credit both this platform and the original source.",
 };
 
 const stapPaginaSv = {

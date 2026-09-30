@@ -15,18 +15,19 @@
 // 'aanbevolen'  = ⭐ Aanbevolen — positief beoordeeld door meerdere leden
 // 'binnenkort'  = 🔜 Binnenkort beschikbaar
 
+// Gecontroleerd 30-09-2026: bron per ID gekoppeld aan titel (bevestigd door Richard)
 const materiaalBron = {
   MV_01: "Berne, E. (1964). Games People Play. Grove Press.",
   MV_02: "Gebaseerd op socialisatietheorie (geen specifieke auteursrechtelijk beschermde bron)",
   MV_03: "Hardy, K.V. & Laszloffy, T.A. (1995). The cultural genogram. Journal of Marital and Family Therapy, 21(3).",
   MV_04: "Algemeen coachingsinstrument (geen specifieke auteursrechtelijk beschermde bron)",
-  MV_05: "Deardorff, D.K. (2006). Identification and Assessment of Intercultural Competence. Journal of Studies in International Education, 10(3).",
-  MV_06: "Crenshaw, K. (1989). Demarginalizing the Intersection of Race and Sex. University of Chicago Legal Forum.",
-  MV_07: "George, B. (2003). Authentic Leadership. Jossey-Bass.",
-  MV_08: "Luft, J. & Ingham, H. (1955). The Johari Window. Proceedings of the Western Training Laboratory in Group Development. UCLA.",
-  MV_09: "Dilts, R. (1990). Changing Belief Systems with NLP. Meta Publications. (gebaseerd op Bateson, G., 1972)",
-  MV_10: "Leary, T. (1957). Interpersonal Diagnosis of Personality. Ronald Press.",
-  MV_11: "Eigen ontwikkeling Richard Voddé — geen externe bron",
+  MV_05: "Eigen ontwikkeling Richard Voddé — geen externe bron",
+  MV_06: "Deardorff, D.K. (2006). Identification and Assessment of Intercultural Competence. Journal of Studies in International Education, 10(3).",
+  MV_07: "Crenshaw, K. (1989). Demarginalizing the Intersection of Race and Sex. University of Chicago Legal Forum.",
+  MV_08: "George, B. (2003). Authentic Leadership. Jossey-Bass.",
+  MV_09: "Luft, J. & Ingham, H. (1955). The Johari Window. Proceedings of the Western Training Laboratory in Group Development. UCLA.",
+  MV_10: "Dilts, R. (1990). Changing Belief Systems with NLP. Meta Publications. (gebaseerd op Bateson, G., 1972)",
+  MV_11: "Leary, T. (1957). Interpersonal Diagnosis of Personality. Ronald Press.",
   MV_12: "Molewijk, B. et al. (2008). Implementing moral case deliberation. Science and Engineering Ethics, 14(4).",
   MV_13: {
     nl: "Gebaseerd op Torringa (2023) en Karssing (2001) — vrij te gebruiken met bronvermelding",

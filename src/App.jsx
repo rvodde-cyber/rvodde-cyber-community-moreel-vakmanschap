@@ -19,6 +19,7 @@ import About from "./pages/About";
 
 import BiblioteekOverzicht from "./pages/BiblioteekOverzicht";
 import StapPagina from "./pages/StapPagina";
+import WerkbladenOverzicht from "./pages/WerkbladenOverzicht";
 
 import GespreksKaartenPagina from "./pages/GespreksKaartenPagina";
 
@@ -326,6 +327,10 @@ function AppRoutes() {
           <Route path="/bibliotheek" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
 
           <Route path="/library" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
+
+          <Route path="/bibliotheek/werkbladen" element={<PageRoute><WerkbladenOverzicht /></PageRoute>} />
+
+          <Route path="/library/worksheets" element={<PageRoute><WerkbladenOverzicht /></PageRoute>} />
 
           <Route path="/bibliotheek/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
 

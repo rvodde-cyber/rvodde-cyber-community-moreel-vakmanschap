@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
+import { LICENTIE } from "../data/licentie";
+import { getWerkbladenCount } from "../data/werkbladen";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
 
 const uiTekst = {
@@ -15,8 +17,7 @@ const uiTekst = {
     stapLabel: "Stap",
     categorieLabel: "Categorie",
     disclaimerTitel: "Gebruik & bronvermelding",
-    disclaimerTekst:
-      "De werkbladen op dit platform zijn ontwikkeld door Richard Voddé (Lectoraat Ethisch Werken, Fontys Hogescholen) als onderdeel van het Comenius Senior Fellowship. De onderliggende theoretische modellen worden gebruikt met bronvermelding en zijn bedoeld voor niet-commercieel educatief gebruik. Vrij te gebruiken met vermelding van de bron.",
+    alleWerkbladen: "Alle werkbladen",
     materialenEn: "materiaal",
     materialenMeervoud: "materialen",
   },
@@ -28,8 +29,7 @@ const uiTekst = {
     stapLabel: "Step",
     categorieLabel: "Category",
     disclaimerTitel: "Use & attribution",
-    disclaimerTekst:
-      "The worksheets on this platform were developed by Richard Voddé (Research Group Ethical Practice, Fontys University of Applied Sciences) as part of the Comenius Senior Fellowship. The underlying theoretical models are used with full attribution and are intended for non-commercial educational purposes. Free to use with source acknowledgement.",
+    alleWerkbladen: "All worksheets",
     materialenEn: "material",
     materialenMeervoud: "materials",
   },
@@ -68,12 +68,72 @@ function handleImageError(event, kleur) {
   event.currentTarget.parentElement.style.backgroundColor = kleur;
 }
 
+const disclaimerParaStyle = {
+  fontFamily: "DM Sans, sans-serif",
+  fontSize: "0.9rem",
+  lineHeight: 1.75,
+  color: "var(--tekst-secundair, #5f5e5a)",
+  margin: "0 0 1rem",
+};
+
+function BibliotheekDisclaimer({ dataLang }) {
+  const url = LICENTIE.url[dataLang === "en" ? "en" : "nl"];
+  if (dataLang === "en") {
+    return (
+      <>
+        <p style={disclaimerParaStyle}>
+          The worksheets on this platform were compiled by Richard Voddé (Research Group Ethical Practice, Fontys
+          University of Applied Sciences) as part of the Comenius Senior Fellowship. Some are original work; others are
+          adaptations of, or inspired by, existing methods and theories. The original source is always stated with the
+          worksheet and in the document itself.
+        </p>
+        <p style={disclaimerParaStyle}>
+          The{" "}
+          <a href={url} rel="license" style={{ color: "inherit", textDecoration: "underline" }}>
+            CC BY-NC-SA 4.0
+          </a>{" "}
+          licence applies to our own contribution and adaptation: free to use for non-commercial education, with
+          attribution and under the same licence.
+        </p>
+        <p style={{ ...disclaimerParaStyle, marginBottom: 0 }}>
+          Rights to the original methods, models and texts remain with their respective authors. When reusing, please
+          credit both this platform and the original source.
+        </p>
+      </>
+    );
+  }
+  return (
+    <>
+      <p style={disclaimerParaStyle}>
+        De werkbladen op dit platform zijn samengesteld door Richard Voddé (Lectoraat Ethisch Werken, Fontys
+        Hogescholen) binnen het Comenius Senior Fellowship. Een deel is eigen ontwikkeling; andere zijn bewerkingen
+        van, of geïnspireerd op, bestaande werkvormen en theorieën. De oorspronkelijke bron staat steeds vermeld bij
+        het werkblad en in het document zelf.
+      </p>
+      <p style={disclaimerParaStyle}>
+        De licentie{" "}
+        <a href={url} rel="license" style={{ color: "inherit", textDecoration: "underline" }}>
+          CC BY-NC-SA 4.0
+        </a>{" "}
+        geldt voor onze eigen bijdrage en bewerking: gratis te gebruiken voor niet-commercieel onderwijs, met
+        naamsvermelding en onder dezelfde licentie.
+      </p>
+      <p style={{ ...disclaimerParaStyle, marginBottom: 0 }}>
+        De rechten op de oorspronkelijke werkvormen, modellen en teksten blijven bij de betreffende auteurs. Vermeld bij
+        hergebruik dus zowel dit platform als de oorspronkelijke bron.
+      </p>
+    </>
+  );
+}
+
 export default function BiblioteekOverzicht() {
   const { taal } = useTaal();
   const ui = getLocalizedPageContent(uiTekst, taal, "bibliotheek");
   const dataLang = getBibliotheekDataLang(taal);
   const data = bibliotheekData[dataLang];
   const navigate = useNavigate();
+  const werkbladenCount = getWerkbladenCount();
+  const werkbladenHref = usesEnglishRoutes(taal) ? "/library/worksheets" : "/bibliotheek/werkbladen";
 
   const handleStapKlik = (stapItem) => {
     const slug = getStapRouteSlug(stapItem, dataLang);
@@ -136,6 +196,32 @@ export default function BiblioteekOverzicht() {
         >
           {ui.subtitel}
         </motion.p>
+        {werkbladenCount > 0 && (
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+            custom={3}
+            style={{ marginTop: "1.75rem" }}
+          >
+            <Link
+              to={werkbladenHref}
+              style={{
+                display: "inline-block",
+                padding: "0.65rem 1.25rem",
+                borderRadius: "8px",
+                backgroundColor: "#534ab7",
+                color: "#ffffff",
+                fontFamily: "DM Sans, sans-serif",
+                fontSize: "0.9rem",
+                fontWeight: 500,
+                textDecoration: "none",
+              }}
+            >
+              {ui.alleWerkbladen} ({werkbladenCount})
+            </Link>
+          </motion.div>
+        )}
       </section>
 
       <section style={{ padding: "0 1.5rem 6rem", maxWidth: "1000px", margin: "0 auto" }}>
@@ -293,17 +379,9 @@ export default function BiblioteekOverzicht() {
               {ui.disclaimerTitel}
             </h2>
           </div>
-          <p
-            style={{
-              fontFamily: "DM Sans, sans-serif",
-              fontSize: "0.9rem",
-              lineHeight: 1.75,
-              color: "var(--tekst-secundair, #5f5e5a)",
-              margin: 0,
-            }}
-          >
-            {ui.disclaimerTekst}
-          </p>
+          <div>
+            <BibliotheekDisclaimer dataLang={dataLang} />
+          </div>
         </div>
       </section>
     </main>  );
