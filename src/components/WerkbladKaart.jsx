@@ -20,6 +20,7 @@ const uiTekst = {
     bronnen: "Bronnen",
     gebaseerdOp: "Gebaseerd op:",
     binnenkort: "Binnenkort beschikbaar",
+    registercode: "Registercode:",
   },
   en: {
     studentNl: "Studentenversie",
@@ -29,12 +30,34 @@ const uiTekst = {
     bronnen: "Sources",
     gebaseerdOp: "Based on:",
     binnenkort: "Coming soon",
+    registercode: "Register code:",
   },
 };
 
 function handleImageError(event, kleur) {
   event.currentTarget.style.display = "none";
   event.currentTarget.parentElement.style.backgroundColor = kleur;
+}
+
+const URL_SPLIT = /(https?:\/\/[^\s]+)/g;
+
+function TekstMetLinks({ text }) {
+  const parts = text.split(URL_SPLIT);
+  return parts.map((part, i) =>
+    /^https?:\/\//.test(part) ? (
+      <a
+        key={i}
+        href={part}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "inherit", textDecoration: "underline" }}
+      >
+        {part}
+      </a>
+    ) : (
+      part
+    ),
+  );
 }
 
 export default function WerkbladKaart({ item }) {
@@ -222,6 +245,11 @@ export default function WerkbladKaart({ item }) {
             <p style={{ margin: "0 0 0.5rem" }}>
               {ui.gebaseerdOp} {item.oorspronkelijke_werkvorm}
             </p>
+            {item.werkblad_code && (
+              <p style={{ margin: "0 0 0.5rem", fontSize: "0.7rem", color: "var(--tekst-secundair)" }}>
+                {ui.registercode} {item.werkblad_code}
+              </p>
+            )}
             <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
               {item.bronnen_apa.map((bron, i) => (
                 <li
@@ -241,6 +269,19 @@ export default function WerkbladKaart({ item }) {
         </details>
 
         <WerkbladHerkomstRegel oorspronkelijke_werkvorm={item.oorspronkelijke_werkvorm} dataLang={dataLang} />
+        {item.naamsvermelding_bron && (
+          <p
+            style={{
+              fontSize: "0.7rem",
+              fontFamily: "DM Sans, sans-serif",
+              color: "var(--attribution-color, #5f5e5a)",
+              margin: 0,
+              lineHeight: 1.5,
+            }}
+          >
+            <TekstMetLinks text={item.naamsvermelding_bron} />
+          </p>
+        )}
         <WerkbladLicentieRegel item={item} dataLang={dataLang} />
       </div>
     </article>

@@ -22,11 +22,13 @@ Elk item in de array heeft deze velden:
 | `groep` | string | Vrije tekst (bijv. `4–6 personen`) |
 | `oorspronkelijke_werkvorm` | string | Naam van de onderliggende werkvorm |
 | `bronnen_apa` | string[] | APA-bronnen; lege array geeft build-waarschuwing |
-| `licentie` | string | Altijd `CC BY-NC-SA 4.0` |
+| `licentie` | string | `CC BY-SA 4.0` of `CC BY-NC-SA 4.0` (zie `src/data/licentie.js`) |
 | `naamsvermelding` | string | Standaard: Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen |
 | `niveau` | string | `concept`, `getest` of `aanbevolen` |
 | `bestanden` | object | `student_nl`, `docent_nl`, `student_en`, `docent_en` — bestandsnaam of `null` |
 | `sfeerbeeld` | string \| null | Bestandsnaam JPG in `public/images/werkbladen/`, of `null` |
+| `werkblad_code` | string, optioneel | Interne registercode (bijv. `WB-MW01-HBO-HRM-NL`) |
+| `naamsvermelding_bron` | string, optioneel | Verplichte naamsvermelding van een open bron (URLs worden klikbaar) |
 
 ## Voorbeeld (twee items)
 
