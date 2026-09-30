@@ -1734,5 +1734,53 @@
     },
     "sfeerbeeld": "WB-MW37-HBO-HRM-NL.jpg",
     "naamsvermelding_bron": "Geïnspireerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0 (alleen de aanpak; geen tekst overgenomen)"
+  },
+  {
+    "id": "MV_60",
+    "werkblad_code": "WB-MW38-HBO-HRM-NL",
+    "titel": {
+      "nl": "Nul tolerantie",
+      "en": "Zero tolerance"
+    },
+    "omschrijving": {
+      "nl": "Een heftruckchauffeur rijdt onder invloed bijna een collega aan. Het beleid zegt ontslag, maar hij vraagt om hulp. Voorbeeldcasus voor analyseren naar waarden, plichten en gevolgen, afwegen en beargumenteerd besluiten.",
+      "en": "A forklift driver nearly hits a colleague while under the influence. Policy says dismissal, but he asks for help. A model case for analysing values, duties and consequences, weighing, and making a reasoned decision."
+    },
+    "themas": {
+      "nl": [
+        "Beleid en zorgplicht",
+        "Veiligheid",
+        "Beargumenteerd besluiten"
+      ],
+      "en": [
+        "Policy and duty of care",
+        "Safety",
+        "Reasoned decision-making"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60 min",
+    "groep": "4–5 studenten",
+    "oorspronkelijke_werkvorm": "Moreel beraad – dilemmamethode",
+    "bronnen_apa": [
+      "Stolper, M., Molewijk, B., & Widdershoven, G. (2016). Bioethics education in clinical settings: Theory and practice of the dilemma method of moral case deliberation. BMC Medical Ethics, 17, Article 45. https://doi.org/10.1186/s12910-016-0125-1"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW38-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW38-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW38-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW38-HBO-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW38-HBO-HRM-NL.jpg",
+    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
   }
 ]
