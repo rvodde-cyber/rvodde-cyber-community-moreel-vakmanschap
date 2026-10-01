@@ -241,11 +241,27 @@ export default function ProjectInfo() {
             fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
             fontWeight: 600,
             color: "var(--tekst-primair, #1a2744)",
-            marginBottom: "1.75rem",
+            marginBottom: "0.5rem",
           }}
         >
           {t.maker.titel}
         </motion.h2>
+
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={1}
+          style={{
+            fontFamily: "DM Sans, sans-serif",
+            fontSize: "0.95rem",
+            color: "var(--tekst-secundair, #5f5e5a)",
+            marginBottom: "1.75rem",
+          }}
+        >
+          {t.maker.rol}
+        </motion.p>
 
         <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
           <motion.img
