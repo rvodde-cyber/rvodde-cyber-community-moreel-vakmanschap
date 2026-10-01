@@ -10,6 +10,7 @@ import {
 } from "../data/werkbladen";
 import { getBibliotheekDataLang } from "../data/vertalingen";
 import { useTaal } from "../context/TaalContext";
+import WerkbladZieOok from "./WerkbladZieOok";
 
 const uiTekst = {
   nl: {
@@ -21,6 +22,8 @@ const uiTekst = {
     gebaseerdOp: "Gebaseerd op:",
     binnenkort: "Binnenkort beschikbaar",
     registercode: "Registercode:",
+    leeruitkomsten: "Leeruitkomsten",
+    pdfSuffix: " (PDF)",
   },
   en: {
     studentNl: "Studentenversie",
@@ -31,6 +34,8 @@ const uiTekst = {
     gebaseerdOp: "Based on:",
     binnenkort: "Coming soon",
     registercode: "Register code:",
+    leeruitkomsten: "Learning outcomes",
+    pdfSuffix: " (PDF)",
   },
 };
 
@@ -69,7 +74,7 @@ export default function WerkbladKaart({ item }) {
   const complexLabels = t.gesprekskaart?.complexiteitLabels ?? {};
   const imgSrc = sfeerbeeldPad(item);
 
-  const downloadRow = (studentKey, docentKey, studentLabel, docentLabel) => (
+  const downloadRow = (studentKey, docentKey, studentPdfKey, docentPdfKey, studentLabel, docentLabel) => (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
       <DownloadKnop
         bestand={item.bestanden[studentKey]}
@@ -84,6 +89,16 @@ export default function WerkbladKaart({ item }) {
         disabled={!item.bestanden[studentKey]}
         disabledTitle={ui.binnenkort}
       />
+      {item.bestanden[studentPdfKey] && (
+        <DownloadKnop
+          bestand={item.bestanden[studentPdfKey]}
+          href={downloadPad(item.id, item.bestanden[studentPdfKey])}
+          label={`${studentLabel}${ui.pdfSuffix}`}
+          accentColor={accent}
+          variant="outline"
+          disabled={false}
+        />
+      )}
       <DownloadKnop
         bestand={item.bestanden[docentKey]}
         href={
@@ -97,8 +112,22 @@ export default function WerkbladKaart({ item }) {
         disabled={!item.bestanden[docentKey]}
         disabledTitle={ui.binnenkort}
       />
+      {item.bestanden[docentPdfKey] && (
+        <DownloadKnop
+          bestand={item.bestanden[docentPdfKey]}
+          href={downloadPad(item.id, item.bestanden[docentPdfKey])}
+          label={`${docentLabel}${ui.pdfSuffix}`}
+          accentColor={accent}
+          variant="outline"
+          disabled={false}
+        />
+      )}
     </div>
   );
+
+  const niveauRegel = item.doelgroep
+    ? `${item.opleidingsniveau} · ${item.doelgroep}`
+    : labels[item.niveau];
 
   return (
     <article
@@ -146,7 +175,7 @@ export default function WerkbladKaart({ item }) {
             color: "var(--tekst-secundair)",
           }}
         >
-          {labels[item.niveau]}
+          {niveauRegel}
         </span>
 
         <h3
@@ -161,6 +190,20 @@ export default function WerkbladKaart({ item }) {
           {item.titel}
         </h3>
 
+        {item.ondertitel && (
+          <p
+            style={{
+              fontFamily: "DM Sans, sans-serif",
+              fontSize: "0.85rem",
+              fontStyle: "italic",
+              color: "var(--tekst-secundair)",
+              margin: 0,
+            }}
+          >
+            {item.ondertitel}
+          </p>
+        )}
+
         {item.omschrijving && (
           <p
             style={{
@@ -172,6 +215,20 @@ export default function WerkbladKaart({ item }) {
             }}
           >
             {item.omschrijving}
+          </p>
+        )}
+
+        {item.omschrijving_lang && (
+          <p
+            style={{
+              fontFamily: "DM Sans, sans-serif",
+              fontSize: "0.8rem",
+              lineHeight: 1.6,
+              color: "var(--tekst-secundair)",
+              margin: 0,
+            }}
+          >
+            {item.omschrijving_lang}
           </p>
         )}
 
@@ -191,18 +248,20 @@ export default function WerkbladKaart({ item }) {
               {getFaseNaam(fase, dataLang)}
             </span>
           ))}
-          <span
-            style={{
-              fontSize: "0.7rem",
-              fontFamily: "DM Sans, sans-serif",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "99px",
-              border: "1px solid var(--complexity-color, #993556)",
-              color: "var(--complexity-color, #993556)",
-            }}
-          >
-            {complexLabels[item.complexiteit] ?? item.complexiteit}
-          </span>
+          {item.complexiteit && (
+            <span
+              style={{
+                fontSize: "0.7rem",
+                fontFamily: "DM Sans, sans-serif",
+                padding: "0.2rem 0.6rem",
+                borderRadius: "99px",
+                border: "1px solid var(--complexity-color, #993556)",
+                color: "var(--complexity-color, #993556)",
+              }}
+            >
+              {complexLabels[item.complexiteit] ?? item.complexiteit}
+            </span>
+          )}
           <span
             style={{
               fontSize: "0.7rem",
@@ -232,10 +291,39 @@ export default function WerkbladKaart({ item }) {
           ))}
         </div>
 
+        {item.leeruitkomsten?.length > 0 && (
+          <div style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8rem" }}>
+            <p style={{ margin: "0 0 0.35rem", fontWeight: 600, color: "var(--tekst-primair)" }}>
+              {ui.leeruitkomsten}
+            </p>
+            <ul style={{ margin: 0, paddingLeft: "1.1rem", color: "var(--tekst-secundair)", lineHeight: 1.5 }}>
+              {item.leeruitkomsten.map((line, i) => (
+                <li key={i} style={{ marginBottom: "0.25rem" }}>{line}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginTop: "auto" }}>
-          {downloadRow("student_nl", "docent_nl", ui.studentNl, ui.docentNl)}
-          {downloadRow("student_en", "docent_en", ui.studentEn, ui.docentEn)}
+          {downloadRow(
+            "student_nl",
+            "docent_nl",
+            "student_nl_pdf",
+            "docent_nl_pdf",
+            ui.studentNl,
+            ui.docentNl,
+          )}
+          {downloadRow(
+            "student_en",
+            "docent_en",
+            "student_en_pdf",
+            "docent_en_pdf",
+            ui.studentEn,
+            ui.docentEn,
+          )}
         </div>
+
+        {item.zieOok?.length > 0 && <WerkbladZieOok ids={item.zieOok} accentColor={accent} />}
 
         <details style={{ fontFamily: "DM Sans, sans-serif", fontSize: "0.8rem" }}>
           <summary style={{ cursor: "pointer", color: "var(--tekst-primair)", fontWeight: 500 }}>
