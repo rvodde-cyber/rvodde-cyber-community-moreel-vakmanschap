@@ -16,7 +16,7 @@ export const gesprekskaartI18n = {
       macro: "Wetgeving, politiek, cultuur en mensenrechten kruisen elkaar. Geen eenduidig antwoord, gevolgen onzeker of onomkeerbaar.",
     },
     complexiteitAttributie:
-      'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+      "Complexiteitsmodel (werkdefinitie Lectoraat Ethisch Werken)",
     vraag1: "Wat zou jij doen en waarom?",
     vraag2: "Welke waarden zijn hier in het spel?",
   },
@@ -33,7 +33,7 @@ export const gesprekskaartI18n = {
       macro: "Legislation, politics, culture and human rights intersect. No clear answer, consequences uncertain or irreversible.",
     },
     complexiteitAttributie:
-      'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+      "Complexity model (working definition, Lectoraat Ethisch Werken)",
     vraag1: "What would you do, and why?",
     vraag2: "What values are at stake here?",
   },
@@ -50,7 +50,7 @@ export const gesprekskaartI18n = {
       macro: "Gesetzgebung, Politik, Kultur und Menschenrechte überschneiden sich. Keine eindeutige Antwort, Folgen unsicher oder irreversibel.",
     },
     complexiteitAttributie:
-      'Komplexitätsmodell: Kim Meijer, „Impossible and Inevitable“ (Tilburg University)',
+      "Komplexitätsmodell (Arbeitsdefinition Lectoraat Ethisch Werken)",
     vraag1: "Was würdest du tun und warum?",
     vraag2: "Welche Werte stehen hier auf dem Spiel?",
   },
@@ -67,7 +67,7 @@ export const gesprekskaartI18n = {
       macro: "Lagstiftning, politik, kultur och mänskliga rättigheter korsar varandra. Inget entydigt svar, konsekvenser osäkra eller oåterkalleliga.",
     },
     complexiteitAttributie:
-      'Komplexitetsmodell: Kim Meijer, ”Impossible and Inevitable” (Tilburg University)',
+      "Komplexitetsmodell (arbetsdefinition, Lectoraat Ethisch Werken)",
     vraag1: "Vad skulle du göra och varför?",
     vraag2: "Vilka värderingar är i spel här?",
   },
@@ -84,7 +84,7 @@ export const gesprekskaartI18n = {
       macro: "Právní předpisy, politika, kultura a lidská práva se prolínají. Žádná jednoznačná odpověď, důsledky nejisté nebo nevratné.",
     },
     complexiteitAttributie:
-      'Model složitosti: Kim Meijer, „Impossible and Inevitable“ (Tilburg University)',
+      "Model složitosti (pracovní definice Lectoraat Ethisch Werken)",
     vraag1: "Co byste udělali a proč?",
     vraag2: "Jaké hodnoty jsou zde v sázce?",
   },
@@ -101,7 +101,7 @@ export const gesprekskaartI18n = {
       macro: "Lovgivning, politik, kultur og menneskerettigheder krydser hinanden. Intet entydigt svar, konsekvenser usikre eller irreversible.",
     },
     complexiteitAttributie:
-      'Kompleksitetsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+      "Kompleksitetsmodel (arbejdsdefinition, Lectoraat Ethisch Werken)",
     vraag1: "Hvad ville du gøre, og hvorfor?",
     vraag2: "Hvilke værdier er på spil her?",
   },

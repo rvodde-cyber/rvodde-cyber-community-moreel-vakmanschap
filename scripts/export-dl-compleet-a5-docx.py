@@ -29,8 +29,8 @@ CATEGORY_LABELS = {
 }
 
 ATTRIBUTION = {
-    "nl": 'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
-    "en": 'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+    "nl": "Complexiteitsmodel (werkdefinitie Lectoraat Ethisch Werken)",
+    "en": "Complexity model (working definition, Lectoraat Ethisch Werken)",
 }
 
 

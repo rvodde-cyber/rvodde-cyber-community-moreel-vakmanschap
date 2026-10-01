@@ -37,8 +37,8 @@ COMPLEXITY_COLOR = RGBColor(0x99, 0x35, 0x56)
 ATTRIBUTION_COLOR = RGBColor(0x5F, 0x5E, 0x5A)
 
 ATTRIBUTION = {
-    "nl": 'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
-    "en": 'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+    "nl": "Complexiteitsmodel (werkdefinitie Lectoraat Ethisch Werken)",
+    "en": "Complexity model (working definition, Lectoraat Ethisch Werken)",
 }
 
 

@@ -104,7 +104,7 @@ export const vertalingen = {
         meso: 'Spanning tussen persoonlijke waarden en de regels, cultuur of belangen van een organisatie. Meerdere stakeholders.',
         macro: 'Wetgeving, politiek, cultuur en mensenrechten kruisen elkaar. Geen eenduidig antwoord, gevolgen onzeker of onomkeerbaar.',
       },
-      complexiteitAttributie: 'Complexiteitsmodel: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+      complexiteitAttributie: 'Complexiteitsmodel (werkdefinitie Lectoraat Ethisch Werken)',
       taalniveauLabel: 'Taalniveau',
       woordenLabel: '{count} woorden',
       filters: {
@@ -337,7 +337,7 @@ export const vertalingen = {
         meso: 'Tension between personal values and the rules, culture or interests of an organisation. Multiple stakeholders.',
         macro: 'Legislation, politics, culture and human rights intersect. No clear answer, consequences uncertain or irreversible.',
       },
-      complexiteitAttributie: 'Complexity model: Kim Meijer, "Impossible and Inevitable" (Tilburg University)',
+      complexiteitAttributie: 'Complexity model (working definition, Lectoraat Ethisch Werken)',
       taalniveauLabel: 'Language level',
       woordenLabel: '{count} words',
       filters: {
