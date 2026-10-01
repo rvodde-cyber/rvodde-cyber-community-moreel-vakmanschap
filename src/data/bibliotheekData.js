@@ -262,6 +262,7 @@ export const bibliotheekData = {
           bestand_nl: 'MV_18_MoralCrossroads_NL.docx',
           bestand_en: 'MV_18_MoralCrossroads_EN.docx',
           map: 'wegen',
+          zieOok: ['MV_61'],
         },
         {
           id: 'MV_19',
@@ -318,6 +319,7 @@ export const bibliotheekData = {
           bestand_en: 'MV_20_FourWorkForms_EN.docx',
           map: 'gesprekskaarten',
           bron: materiaalBron.MV_20,
+          zieOok: ['MV_61'],
         },
         {
           id: 'MAPS_01', titel: 'MAPS Trilogie',
@@ -425,7 +427,7 @@ export const bibliotheekData = {
         { id: 'MV_15', titel: 'Pitfalls in moral reasoning', themas: ['Pitfalls', 'Thinking errors', 'Moral blind spots'], niveau: 'concept', bestand_nl: 'MV_15_Valkuilen_NL.docx', bestand_en: 'MV_15_Pitfalls_EN.docx', map: 'wegen', bron: materiaalBron.MV_15 },
         { id: 'MV_16', titel: 'The Socratic Dialogue', themas: ['Socratic dialogue', 'Conversation', 'Inquiry-based learning'], niveau: 'concept', bestand_nl: 'MV_16_Socratisch_Gesprek_NL.docx', bestand_en: 'MV_16_Socratic_Dialogue_EN.docx', map: 'wegen', bron: materiaalBron.MV_16 },
         { id: 'MV_17', titel: 'AeroTech Innovations — Moral Undercurrent', omschrijving: 'Six professional case studies for Applied Psychology and HRM, with the moral undercurrent made visible.', themas: ['TP', 'HRM', 'HBO'], status: 'beschikbaar', bestand_nl: 'MV_17_AeroTech_NL.docx', bestand_en: 'MV_17_AeroTech_EN.docx', map: 'wegen' },
-        { id: 'MV_18', titel: 'Moral Crossroads', omschrijving: 'A structured method for working through moral dilemmas via three ethical routes: duty, consequences and virtue. Includes an analysis table and two cases.', themas: ['Duty', 'Consequences', 'Virtue'], status: 'beschikbaar', bestand_nl: 'MV_18_MoralCrossroads_NL.docx', bestand_en: 'MV_18_MoralCrossroads_EN.docx', map: 'wegen' },
+        { id: 'MV_18', titel: 'Moral Crossroads', omschrijving: 'A structured method for working through moral dilemmas via three ethical routes: duty, consequences and virtue. Includes an analysis table and two cases.', themas: ['Duty', 'Consequences', 'Virtue'], status: 'beschikbaar', bestand_nl: 'MV_18_MoralCrossroads_NL.docx', bestand_en: 'MV_18_MoralCrossroads_EN.docx', map: 'wegen', zieOok: ['MV_61'] },
         { id: 'MV_19', titel: 'Did I really see this clearly?', omschrijving: 'Worksheet on returning within the model — doubt as part of moral craftsmanship.', themas: ['Returning', 'Doubt', 'Reflection'], status: 'beschikbaar', bestand_nl: 'MV_19_Terugkeren_NL.docx', bestand_en: 'MV_19_Returning_EN.docx', map: 'wegen' },
         { id: 'VT_01', titel: 'Trust Mirror', themas: ['Trust', 'Moral relationships', 'Integrity'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
         { id: 'LM_01', titel: 'Moral Litmus Test', themas: ['Organisational culture', 'Integrity', 'Moral audit'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'wegen', binnenkort: true },
@@ -447,6 +449,7 @@ export const bibliotheekData = {
           bestand_en: 'MV_20_FourWorkForms_EN.docx',
           map: 'gesprekskaarten',
           bron: materiaalBron.MV_20,
+          zieOok: ['MV_61'],
         },
         { id: 'MAPS_01', titel: 'MAPS Trilogy', themas: ['Moral scenarios', 'Choices', 'Preparation'], niveau: 'getest', bestand_nl: null, bestand_en: null, map: 'handelen', binnenkort: true },
       ],

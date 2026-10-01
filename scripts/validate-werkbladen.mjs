@@ -12,8 +12,15 @@ const root = join(__dirname, "..");
 
 const FASEN = ["zien", "voelen", "wegen", "handelen", "volhouden"];
 const NIVEAUS = ["concept", "getest", "aanbevolen"];
-const BESTAND_KEYS = ["student_nl", "docent_nl", "student_en", "docent_en"];
+const DOCX_KEYS = ["student_nl", "docent_nl", "student_en", "docent_en"];
+const PDF_KEYS = ["student_nl_pdf", "docent_nl_pdf", "student_en_pdf", "docent_en_pdf"];
+const BESTAND_KEYS = [...DOCX_KEYS, ...PDF_KEYS];
 const ID_PATTERN = /^MV_\d{2}$/;
+const WERKBLAD_CODE_PATTERNS = [
+  /^WB-MW\d{2}-HBO-HRM-(NL|EN)$/,
+  /^WB-EX\d{2}-HBO-HRM-(NL|EN)$/,
+  /^WB-GK\d{2}-(MBO|HBO|WO)-(NL|EN)$/,
+];
 const SAFE_FILENAME = /^[A-Za-z0-9._-]+$/;
 
 const errors = [];
@@ -104,7 +111,16 @@ if (!Array.isArray(raw)) {
 }
 
 const seenIds = new Set();
-const fileCounts = { student_nl: 0, docent_nl: 0, student_en: 0, docent_en: 0 };
+const fileCounts = {
+  student_nl: 0,
+  docent_nl: 0,
+  student_en: 0,
+  docent_en: 0,
+  student_nl_pdf: 0,
+  docent_nl_pdf: 0,
+  student_en_pdf: 0,
+  docent_en_pdf: 0,
+};
 
 for (const item of raw) {
   const id = item?.id;
@@ -139,8 +155,10 @@ for (const item of raw) {
 
   if (typeof item.opleidingsniveau !== "string") fail(`${id}: opleidingsniveau ontbreekt`);
   if (typeof item.vakgebied !== "string") fail(`${id}: vakgebied ontbreekt`);
-  if (!COMPLEXITY_KEYS.includes(item.complexiteit)) {
-    fail(`${id}: ongeldige complexiteit "${item.complexiteit}"`);
+  if (item.complexiteit !== null && item.complexiteit !== undefined) {
+    if (!COMPLEXITY_KEYS.includes(item.complexiteit)) {
+      fail(`${id}: ongeldige complexiteit "${item.complexiteit}"`);
+    }
   }
   if (typeof item.duur !== "string") fail(`${id}: duur ontbreekt`);
   if (typeof item.groep !== "string") fail(`${id}: groep ontbreekt`);
@@ -157,6 +175,21 @@ for (const item of raw) {
   }
   if (item.werkblad_code !== undefined && typeof item.werkblad_code !== "string") {
     fail(`${id}: werkblad_code moet een string zijn`);
+  } else if (typeof item.werkblad_code === "string" && item.werkblad_code) {
+    if (!WERKBLAD_CODE_PATTERNS.some((re) => re.test(item.werkblad_code))) {
+      fail(`${id}: werkblad_code "${item.werkblad_code}" past niet bij het registerpatroon`);
+    }
+  }
+  if (item.zieOok !== undefined) {
+    if (!Array.isArray(item.zieOok) || item.zieOok.length > 3) {
+      fail(`${id}: zieOok moet een array zijn met max. 3 id's`);
+    } else {
+      for (const ref of item.zieOok) {
+        if (typeof ref !== "string" || !ID_PATTERN.test(ref)) {
+          fail(`${id}: ongeldige zieOok-referentie "${ref}"`);
+        }
+      }
+    }
   }
   if (item.naamsvermelding_bron !== undefined && typeof item.naamsvermelding_bron !== "string") {
     fail(`${id}: naamsvermelding_bron moet een string zijn`);
@@ -169,7 +202,7 @@ for (const item of raw) {
   if (!item.bestanden || typeof item.bestanden !== "object") {
     fail(`${id}: bestanden ontbreekt`);
   } else {
-    for (const key of BESTAND_KEYS) {
+    for (const key of DOCX_KEYS) {
       if (!(key in item.bestanden)) {
         fail(`${id}: bestanden.${key} ontbreekt`);
       } else if (!isStringOrNull(item.bestanden[key])) {
@@ -177,6 +210,16 @@ for (const item of raw) {
       } else if (item.bestanden[key]) {
         fileCounts[key]++;
         checkFile(id, item.bestanden[key], key);
+      }
+    }
+    for (const key of PDF_KEYS) {
+      if (key in item.bestanden) {
+        if (!isStringOrNull(item.bestanden[key])) {
+          fail(`${id}: bestanden.${key} moet string of null zijn`);
+        } else if (item.bestanden[key]) {
+          fileCounts[key]++;
+          checkFile(id, item.bestanden[key], key);
+        }
       }
     }
   }

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import DownloadKnop from "../components/DownloadKnop";
 import LicentieRegel, { MateriaalHerkomstRegel } from "../components/LicentieRegel";
+import WerkbladZieOok from "../components/WerkbladZieOok";
 import { bronIsEigenOntwikkeling } from "../data/attributie";
 import WerkbladKaart from "../components/WerkbladKaart";
 import WerkbladFilters, {
@@ -312,12 +313,14 @@ export default function StapPagina() {
           {stapData.materialen.map((mat, i) => (
             <motion.div
               key={mat.id}
+              id={mat.id}
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
               style={{
+                scrollMarginTop: "6rem",
                 backgroundColor: "var(--surface, #fdfcfa)",
                 borderRadius: "12px",
                 border: "1px solid var(--rand, #d8d3c9)",
@@ -456,6 +459,9 @@ export default function StapPagina() {
                     dataLang={dataLang}
                     isAdaptation={!bronIsEigenOntwikkeling(bronTekst(mat.bron, dataLang))}
                   />
+                  {mat.zieOok?.length > 0 && (
+                    <WerkbladZieOok ids={mat.zieOok} accentColor={stapData.kleur} />
+                  )}
                 </>
               ) : null}
             </motion.div>

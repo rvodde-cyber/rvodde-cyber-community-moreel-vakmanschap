@@ -743,7 +743,8 @@
       "student_en": "WB-MW16-HBO-HRM-EN_student-version.docx",
       "docent_en": "WB-MW16-HBO-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW16-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW16-HBO-HRM-NL.jpg",
+    "zieOok": ["MV_61"]
   },
   {
     "id": "MV_39",
@@ -1782,5 +1783,98 @@
     },
     "sfeerbeeld": "WB-EX01-HBO-HRM-NL.jpg",
     "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
+  },
+  {
+    "id": "MV_61",
+    "werkblad_code": "WB-GK01-HBO-NL",
+    "titel": {
+      "nl": "Van afwegen naar handelen",
+      "en": "From weighing to acting"
+    },
+    "ondertitel": {
+      "nl": "Drie ethische lenzen voor elke dilemmakaart",
+      "en": "Three ethical lenses for every dilemma card"
+    },
+    "omschrijving": {
+      "nl": "Vervolg op de gesprekskaarten voor gevorderden. Studenten bekijken een dilemma door drie ethische lenzen (plicht, gevolgen en deugd), wegen die tegen elkaar af en vertalen hun keuze naar een concrete eerste stap.",
+      "en": "A follow-up to the conversation cards for advanced students. Students examine a dilemma through three ethical lenses (duty, consequences and virtue), weigh them against each other and turn their choice into a concrete first step."
+    },
+    "omschrijving_lang": {
+      "nl": "De gesprekskaarten helpen studenten een dilemma te zien en te voelen wat er op het spel staat. Dit werkblad zet de volgende stap: wat doe je dan? Studenten analyseren het dilemma vanuit plichtethiek, gevolgenethiek en deugdethiek, leggen de drie lenzen naast elkaar en sluiten af met een concrete handeling, een eerste stap en de letterlijke eerste zin die ze zouden uitspreken. Het werkblad is casusonafhankelijk en past bij elke kaart uit de set.",
+      "en": "The conversation cards help students see a dilemma and feel what is at stake. This worksheet takes the next step: what do you do next? Students analyse the dilemma through deontology, consequentialism and virtue ethics, weigh the three lenses against each other and conclude with a concrete action, a first step and the literal first sentence they would say. The worksheet works with any card in the set."
+    },
+    "themas": {
+      "nl": [
+        "Gesprekskaarten",
+        "Drie ethische lenzen",
+        "Afwegen",
+        "Handelen"
+      ],
+      "en": [
+        "Conversation cards",
+        "Three ethical lenses",
+        "Weighing",
+        "Acting"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO",
+    "doelgroep": {
+      "nl": "Gevorderden (vanaf jaar 2)",
+      "en": "Advanced (year 2 and up)"
+    },
+    "vakgebied": "HRM",
+    "complexiteit": null,
+    "duur": "75–90 min",
+    "groep": "Individueel → tweetallen → plenair",
+    "oorspronkelijke_werkvorm": "eigen werk (Lectoraat Ethisch Werken)",
+    "bronnen_apa": [
+      "Aristoteles. (1999). Ethica Nicomachea (C. Pannier & J. Verhaeghe, Vert.). Historische Uitgeverij.",
+      "Bentham, J. (1789). An introduction to the principles of morals and legislation. T. Payne and Son.",
+      "Bolt, L. L. E., Verweij, M. F., & van Delden, J. J. M. (2003). Ethiek in praktijk. Van Gorcum.",
+      "Kant, I. (1997). Fundering voor de metafysica van de zeden (T. Mertens, Vert.). Boom. (Oorspronkelijk werk gepubliceerd in 1785)",
+      "Karssing, E. D. (2006). Integriteit in de beroepspraktijk (2e dr.). Van Gorcum.",
+      "MacIntyre, A. (1981). After virtue: A study in moral theory. Duckworth.",
+      "Meijer, K. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint BV.",
+      "Mill, J. S. (1863). Utilitarianism. Parker, Son, and Bourn.",
+      "Ross, W. D. (1930). The right and the good. Clarendon Press.",
+      "van Tongeren, P. (2003). Deugdelijk leven: Een inleiding in de deugdethiek. SUN."
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Lectoraat Ethisch Werken, Fontys Hogeschool HRM en Psychologie",
+    "niveau": "aanbevolen",
+    "bestanden": {
+      "student_nl": "WB-GK01-HBO-NL_studentenversie.docx",
+      "docent_nl": "WB-GK01-HBO-NL_docentenversie.docx",
+      "student_en": null,
+      "docent_en": null,
+      "student_nl_pdf": "WB-GK01-HBO-NL_studentenversie.pdf",
+      "docent_nl_pdf": "WB-GK01-HBO-NL_docentenversie.pdf"
+    },
+    "sfeerbeeld": "WB-GK01-HBO-NL.jpg",
+    "leeruitkomsten": {
+      "nl": [
+        "de kernvraag van plichtethiek, gevolgenethiek en deugdethiek benoemen en toepassen op een beroepsdilemma",
+        "juridische regels en morele plichten onderscheiden en uitleggen waar ze in een casus uiteenlopen",
+        "de gevolgen van een keuze systematisch in kaart brengen voor individu, organisatie en maatschappij, op korte en lange termijn",
+        "de uitkomsten van de drie lenzen tegen elkaar afwegen en een keuze beargumenteren, inclusief wat die keuze kost",
+        "die keuze vertalen naar een concrete, uitvoerbare eerste stap en een formulering die hij of zij in de praktijk kan uitspreken"
+      ],
+      "en": [
+        "name and apply the core questions of deontology, consequentialism and virtue ethics to a professional dilemma",
+        "distinguish legal rules from moral duties and explain where they diverge in a case",
+        "map the consequences of a choice systematically for the individual, organisation and society, in the short and long term",
+        "weigh the outcomes of the three lenses against each other and argue for a choice, including what that choice costs",
+        "translate that choice into a concrete, feasible first step and wording they can use in practice"
+      ]
+    },
+    "zieOok": [
+      "MV_20",
+      "MV_18",
+      "MV_38"
+    ]
   }
 ]

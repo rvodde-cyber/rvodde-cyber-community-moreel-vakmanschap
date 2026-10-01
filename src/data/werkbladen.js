@@ -31,11 +31,22 @@ function localizeThemas(field, dataLang) {
   return Array.isArray(field.nl) ? field.nl : [];
 }
 
+function localizeStringArray(field, dataLang) {
+  if (!field || typeof field !== "object") return [];
+  const en = field.en;
+  if (dataLang === "en" && Array.isArray(en) && en.length > 0) return en;
+  return Array.isArray(field.nl) ? field.nl : [];
+}
+
 function localizeItem(item, dataLang) {
   return {
     ...item,
     titel: localizeText(item.titel, dataLang),
+    ondertitel: item.ondertitel ? localizeText(item.ondertitel, dataLang) : "",
     omschrijving: localizeText(item.omschrijving, dataLang),
+    omschrijving_lang: item.omschrijving_lang ? localizeText(item.omschrijving_lang, dataLang) : "",
+    doelgroep: item.doelgroep ? localizeText(item.doelgroep, dataLang) : "",
+    leeruitkomsten: item.leeruitkomsten ? localizeStringArray(item.leeruitkomsten, dataLang) : [],
     themas: localizeThemas(item.themas, dataLang),
   };
 }
