@@ -13,6 +13,7 @@ import {
 import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
 import { getCardContentLang, getLocalizedPageContent, usesEnglishRoutes } from '../data/vertalingen'
 import { useTaal } from '../context/TaalContext'
+import DriedelingBronvermelding from '../components/DriedelingBronvermelding'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
 
@@ -352,10 +353,19 @@ export default function GespreksKaartenPagina() {
 
           <motion.p
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}
-            style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--tekst-secundair, #5f5e5a)', fontStyle: 'italic', marginBottom: '1.75rem' }}
+            style={{ fontFamily: 'DM Sans, sans-serif', fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--tekst-secundair, #5f5e5a)', fontStyle: 'italic', marginBottom: '0.75rem' }}
           >
             {copy.hoe.niveaus}
           </motion.p>
+
+          <motion.div
+            variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3.5}
+            style={{ marginBottom: '1.75rem' }}
+          >
+            <DriedelingBronvermelding
+              className="!border-l-[#534ab7] !text-[0.9rem] font-[DM_Sans,sans-serif]"
+            />
+          </motion.div>
 
           <motion.div
             variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={4}

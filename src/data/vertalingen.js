@@ -29,7 +29,16 @@ export const vertalingen = {
       subtitel: 'Klik op een stap om meer te lezen',
       kern: 'KERN',
       kernSub: 'Gesprekskaarten',
-      kernTekst: 'Morele situaties uit de praktijk'
+      kernTekst: 'Morele situaties uit de praktijk',
+      driedelingIntro:
+        'Materialen in deze community — gesprekskaarten en werkbladen — ordenen dilemma\'s met de driedeling micro, meso en macro (★☆☆ tot ★★★).',
+    },
+    driedeling: {
+      inspiratie:
+        'De driedeling micro – meso – macro is een werkdefinitie van het Lectoraat Ethisch Werken (Fontys), geïnspireerd op het werk van Kim Meijer (2023).',
+      apaLead: 'Meijer, K. (2023). ',
+      apaTitle: 'Impossible and inevitable: Reconstructing the critique of business ethics',
+      apaTail: ' [Proefschrift, Tilburg University]. Ridderprint BV.',
     },
     stappen: [
       { nummer: 1, naam: 'Zien', kernvraag: 'Wat gebeurt hier echt?', beschrijving: 'Je herkent dat er iets moreel speelt. Niet alles is een dilemma — maar sommige situaties vragen om aandacht. Zien is de eerste stap van moreel vakmanschap.', flowLabel: 'Bewustwording', tools: ['Gesprekskaarten', 'Moreel Woordenboek', 'Werkbladen'] },
@@ -262,7 +271,16 @@ export const vertalingen = {
       subtitel: 'Click a step to read more',
       kern: 'CORE',
       kernSub: 'Conversation Cards',
-      kernTekst: 'Moral situations from practice'
+      kernTekst: 'Moral situations from practice',
+      driedelingIntro:
+        'Materials in this community — conversation cards and worksheets — use the micro, meso and macro distinction (★☆☆ to ★★★) to order dilemmas.',
+    },
+    driedeling: {
+      inspiratie:
+        'The micro – meso – macro distinction is a working definition of the Lectoraat Ethisch Werken (Fontys), inspired by the work of Kim Meijer (2023).',
+      apaLead: 'Meijer, K. (2023). ',
+      apaTitle: 'Impossible and inevitable: Reconstructing the critique of business ethics',
+      apaTail: ' [Doctoral dissertation, Tilburg University]. Ridderprint BV.',
     },
     stappen: [
       { nummer: 1, naam: 'Seeing', kernvraag: 'What is really happening?', beschrijving: 'You recognise that something moral is at play. Not every situation is a dilemma — but some demand attention. Seeing is the first step of moral craftsmanship.', flowLabel: 'Awareness', tools: ['Conversation Cards', 'Moral Dictionary', 'Worksheets'] },
