@@ -45,8 +45,8 @@ CATEGORY_LABELS = {
 }
 
 ATTRIBUTION = {
-    "nl": "Complexiteitsmodel (werkdefinitie Lectoraat Ethisch Werken)",
-    "en": "Complexity model (working definition, Lectoraat Ethisch Werken)",
+    "nl": "Driedeling micro/meso/macro: werkdefinitie Lectoraat Ethisch Werken, geïnspireerd op Meijer (2023).",
+    "en": "Micro/meso/macro distinction: working definition Lectoraat Ethisch Werken, inspired by Meijer (2023).",
 }
 
 
@@ -103,3 +103,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+Meijer, K. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint BV.
