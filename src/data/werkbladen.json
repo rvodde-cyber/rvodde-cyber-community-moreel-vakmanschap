@@ -1737,7 +1737,7 @@
   },
   {
     "id": "MV_60",
-    "werkblad_code": "WB-MW38-HBO-HRM-NL",
+    "werkblad_code": "WB-EX01-HBO-HRM-NL",
     "titel": {
       "nl": "Nul tolerantie",
       "en": "Zero tolerance"
@@ -1775,12 +1775,12 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW38-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW38-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW38-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW38-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-EX01-HBO-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-EX01-HBO-HRM-NL_docentenversie.docx",
+      "student_en": "WB-EX01-HBO-HRM-EN_student-version.docx",
+      "docent_en": "WB-EX01-HBO-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW38-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-EX01-HBO-HRM-NL.jpg",
     "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
   }
 ]

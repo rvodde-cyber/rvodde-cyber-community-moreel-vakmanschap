@@ -4,6 +4,8 @@ Dit document beschrijft hoe nieuwe werkbladen in de bibliotheek worden toegevoeg
 
 > **Nummering:** MV_22 is gereserveerd voor *Basiswerkvorm — werken met de gesprekskaarten* (staat nog in `backup/lokaal-2026-09-30`). Nieuwe werkbladen in `werkbladen.json` gebruiken **MV_23 t/m MV_59** (37 stuks).
 
+> **Extra reeks:** Buiten MW01–MW37 valt het optionele extra werkblad **MV_60** met registercode **`WB-EX01-HBO-HRM-NL`** (niet `WB-MW38`; die code is elders in gebruik).
+
 ## JSON-schema
 
 Elk item in de array heeft deze velden:
