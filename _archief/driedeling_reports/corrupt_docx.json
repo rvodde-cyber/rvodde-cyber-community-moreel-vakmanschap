@@ -1,0 +1,34 @@
+[
+  {
+    "path": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\Document 2.docx",
+    "error": "File is not a zip file",
+    "backup_driedeling": "",
+    "backup_voor_naamswijziging": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\_archief\\backup_voor_naamswijziging\\Document 2.docx",
+    "backup_ok": false,
+    "verdict": "already_corrupt_before_batch"
+  },
+  {
+    "path": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\Document 3.docx",
+    "error": "File is not a zip file",
+    "backup_driedeling": "",
+    "backup_voor_naamswijziging": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\_archief\\backup_voor_naamswijziging\\Document 3.docx",
+    "backup_ok": false,
+    "verdict": "already_corrupt_before_batch"
+  },
+  {
+    "path": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\Document 4.docx",
+    "error": "File is not a zip file",
+    "backup_driedeling": "",
+    "backup_voor_naamswijziging": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\_archief\\backup_voor_naamswijziging\\Document 4.docx",
+    "backup_ok": false,
+    "verdict": "already_corrupt_before_batch"
+  },
+  {
+    "path": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\Afstudeermodule diversiteit en ethiek\\Docenthandreiking_Inclusie_Diversiteit_Ethiek.docx",
+    "error": "Error -3 while decompressing data: invalid distance too far back",
+    "backup_driedeling": "",
+    "backup_voor_naamswijziging": "C:\\Users\\876409\\OneDrive - Office 365 Fontys\\_archief\\backup_voor_naamswijziging\\Afstudeermodule diversiteit en ethiek\\Docenthandreiking_Inclusie_Diversiteit_Ethiek.docx",
+    "backup_ok": false,
+    "verdict": "already_corrupt_before_batch"
+  }
+]
