@@ -4,13 +4,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "dagelijks-leven",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De roddelende vriend",
-      "verhaal": "De muziek beukt, lichten flitsen, en dan hoor je het: je beste vriend verspreidt leugens over jullie vriendin. Pure roddel, reputatievernietigend. Je bloed kookt, je wilt hem stoppen. Maar hij is je beste vriend, al jaren. Hem afvallen voor de hele groep? De spanning is enorm. Wat doe je?",
+      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt een paar seconden voordat het tot je doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen — nieuwsgierig, geamuseerd, alsof het echte roddel is die het verdient om verder verteld te worden. Ruben is al jaren je beste vriend, degene die er altijd was, ook toen niemand anders er was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk. Je zou hem ook recht voor de groep kunnen tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -22,13 +22,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_01.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 49,
-      "woordenEn": 56
+      "woordenNl": 154,
+      "woordenEn": 56,
+      "bron": "v3-docx: DL8 roddel.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -36,13 +39,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "dagelijks-leven",
-    "moeilijkheid": 3,
-    "complexiteit": "macro",
+    "moeilijkheid": 2,
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Buurman mishandelt zijn vrouw",
-      "verhaal": "Emma is getuige van huiselijk geweld bij haar buurvrouw, mevrouw Janssen. Meneer Janssen mishandelt haar regelmatig, wat Emma grote zorgen baart. Ze hoort geschreeuw en ziet blauwe plekken. Emma worstelt met haar geweten: ze wil mevrouw Janssen helpen, maar is bang voor de reactie van meneer Janssen. Emma zoekt naar een veilige manier om mevrouw Janssen te helpen.",
+      "verhaal": "Door de dunne muur hoort Emma het geschreeuw weer, gevolgd door een doffe klap en daarna stilte — de stilte die haar altijd het meest beangstigt. De volgende ochtend ziet ze mevrouw Janssen in de tuin, een blauwe plek half verborgen onder make-up en een te grote zonnebril voor een bewolkte dag. Ze glimlacht naar Emma alsof er niets aan de hand is, zoals ze dat al maanden doet.\n\nEmma weet dat meneer Janssen aanzien heeft in de buurt — vriendelijk bij het buurtfeest, behulpzaam met de heg. Ze heeft het nummer van Veilig Thuis al eens opgezocht, de website weer gesloten voordat ze kon bellen. Ze twijfelt: is het aan haar om in te grijpen, of maakt haar zwijgen haar medeplichtig?\n\nEmma pakt haar telefoon. Belt ze nu, of wacht ze tot ze zeker weet wat ze hoorde?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -54,13 +57,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_02.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 58,
-      "woordenEn": 54
+      "woordenNl": 139,
+      "woordenEn": 54,
+      "bron": "v3-docx: DL11 Buurman mishandelt zijn vrouw.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -74,7 +80,7 @@
     "status": "getest",
     "nl": {
       "titel": "De gevonden portemonnee",
-      "verhaal": "Op een verlaten bankje ligt een zware, leren portemonnee. Geld en een identiteitskaart staren je aan. Niemand in de buurt, alleen jij. Verleidingen schieten door je hoofd: nieuwe schoenen, openstaande rekeningen. Maar dan denk je aan de mogelijke eigenaar: een student, een moeder, een onbekende die wanhopig zoekt.",
+      "verhaal": "Op het verlaten bankje in het park ligt een zware, leren portemonnee, half open. Er piept een stapel briefjes van twintig onderuit, naast een identiteitskaart met een foto van een jonge vrouw die serieus de camera inkijkt. Niemand in de buurt — geen fietsers, geen wandelaars, alleen het geritsel van bladeren.\n\nVoor Jasper voelt het alsof de portemonnee precies op tijd is gevallen: de huur van deze maand is nog niet rond, de nieuwe schoenen staan al wekenlang op zijn verlanglijst. Hij pakt hem op, voelt het gewicht in zijn hand. Op de identiteitskaart staat een adres, niet ver hiervandaan. Hij zou het geld kunnen houden en de portemonnee ergens laten liggen, zodat het lijkt of hij hem nooit vond.\n\nZijn duim glijdt over de stapel briefjes. Steekt hij de portemonnee in zijn zak, of zoekt hij de eigenaar op?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -86,13 +92,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_03.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 48,
-      "woordenEn": 49
+      "woordenNl": 140,
+      "woordenEn": 49,
+      "bron": "v3-docx: Dl7 Portemonnee.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -106,7 +115,7 @@
     "status": "getest",
     "nl": {
       "titel": "Collega declareert onterecht overuren",
-      "verhaal": "Mark ontdekt dat zijn collega Emma fraudeert met overuren. Dit veroorzaakt oneerlijkheid en ontevredenheid in het team. Mark voelt zich ongemakkelijk en weet niet hoe te handelen. Hij wil de eerlijkheid en moraal hooghouden, maar vreest de gevolgen als hij het meldt. Hij wil een manier vinden om het probleem aan te pakken zonder de sfeer op de werkvloer te verpesten.",
+      "verhaal": "Mark scrolt door het overzicht van gewerkte uren en fronst zijn wenkbrauwen. Voor de derde week op rij heeft Emma exact twee uur overwerk gedeclareerd op dagen dat hij haar rond vijf uur al zag vertrekken, jas al aan, op weg naar de fietsenstalling. Hij weet het zeker nu — dit is geen vergissing meer.\n\nHet team draait al maanden overuren om de deadlines te halen, en iedereen krijgt hetzelfde overurentarief volgens dezelfde regels. Als Mark niets zegt, betaalt de afdeling mee aan Emma's onterechte declaraties. Zegt hij het tegen Emma zelf, in de hoop dat ze het rechtzet? Of stapt hij meteen naar HR, met het risico dat de sfeer nooit meer hetzelfde wordt?\n\nMark sluit het overzicht af. Praat hij eerst met Emma, of gaat hij direct naar de leidinggevende?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -118,13 +127,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_04.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A man sitting at an office desk, looking closely at a timesheet spreadsheet on his screen, a colleague visible walking out the door in the background, late afternoon office light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 61,
-      "woordenEn": 57
+      "woordenNl": 132,
+      "woordenEn": 57,
+      "bron": "v3-docx: werk 1 Collega declareert onterecht overuren.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -138,7 +150,7 @@
     "status": "getest",
     "nl": {
       "titel": "Collega presteert slecht wegens persoonlijke problemen",
-      "verhaal": "Sophie merkt dat haar collega Mark vaak te laat komt en zijn werk niet goed uitvoert. Dit zorgt voor extra werkdruk bij het team, dat de achterstanden moet inhalen. Sophie weet dat Mark persoonlijke problemen heeft, maar maakt zich zorgen over de negatieve impact op het team.",
+      "verhaal": "Sophie kijkt voor de zoveelste keer naar de rode vlakken in het planningsoverzicht — taken die Mark had moeten afronden, nu overgenomen door een team dat al op zijn tandvlees loopt. Hij komt steeds vaker te laat, mist deadlines, reageert traag op berichten. Ze weet via een gemeenschappelijke vriendin dat hij thuis door een moeilijke scheiding gaat, iets waar hij nooit over praat op kantoor.\n\nHet team mort inmiddels openlijk in de koffiehoek, en de teamlead heeft al gevraagd of er iets aan de hand is met Mark. Sophie voelt zich verscheurd: loyaal aan een collega die het moeilijk heeft, maar ze ziet ook hoe de werkdruk bij de anderen oploopt door zijn afwezigheid.\n\nMeldt ze wat ze weet bij de leidinggevende, in de hoop dat er hulp komt? Of beschermt ze Marks privacy en zoekt ze zelf naar een manier om het team te ontlasten?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -150,13 +162,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_05.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A woman looking at a project planning board full of overdue red-flagged tasks in an open office, a distracted colleague visible at a desk in the background, daytime office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 47,
-      "woordenEn": 49
+      "woordenNl": 146,
+      "woordenEn": 49,
+      "bron": "v3-docx: werk 3. Collega presteert slecht vanwege persoonlijke problemen.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -170,7 +185,7 @@
     "status": "getest",
     "nl": {
       "titel": "Leidinggevende maakt discriminerende opmerkingen",
-      "verhaal": "Emma merkt dat haar leidinggevende, meneer Jansen, regelmatig discriminerende opmerkingen maakt over collega's. Dit creëert een onveilige werkomgeving en leidt tot ontevredenheid onder de medewerkers. Emma voelt zich ongemakkelijk en weet niet hoe ze moet handelen. Ze wil een oplossing vinden die zowel de problemen aanpakt als de relaties op de werkvloer behoudt.",
+      "verhaal": "Emma zit in de wekelijkse teamvergadering wanneer meneer Jansen weer een opmerking maakt — deze keer over een collega met een migratieachtergrond, verpakt als grapje, gevolgd door een blik door de kamer die om instemmend gelach vraagt. Het is niet de eerste keer. Ze ziet het patroon al maanden groeien.\n\nCollega's kijken ongemakkelijk naar hun laptop, niemand zegt iets, en de sfeer op de afdeling is zichtbaar veranderd. Emma weet dat een officiële melding bij HR een formeel onderzoek in gang zet, met gevolgen voor Jansens positie en haar eigen relatie met hem. Ze weet ook dat de wet op gelijke behandeling hier klip-en-klaar is.\n\nNa de vergadering blijft ze even zitten. Dient ze een formele melding in, of zoekt ze eerst het gesprek met Jansen zelf?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -182,13 +197,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_06.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A woman sitting at a conference table looking uncomfortable during a team meeting, other colleagues glancing down avoiding eye contact, a manager gesturing at the head of the table, corporate office setting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 53,
-      "woordenEn": 48
+      "woordenNl": 127,
+      "woordenEn": 48,
+      "bron": "v3-docx: werk 5. Leidinggevende maakt discriminerende opmerkingen.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -196,13 +214,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "duurzaamheid",
-    "moeilijkheid": 3,
-    "complexiteit": "macro",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De goedkope stage in het buitenland",
-      "verhaal": "Sophie, een ambitieuze student internationale betrekkingen, krijgt een onbetaalde stage aangeboden bij een gerenommeerde NGO in Zuid-Amerika. Deze stage biedt een unieke kans om ervaring op te doen in de sector. Tijdens haar verblijf ontdekt ze echter dat de NGO samenwerkt met een lokaal bedrijf dat illegaal regenwoud kapt. Het bedrijf doneert grote sommen geld aan de NGO, waardoor ze hun activiteiten kunnen voortzetten.",
+      "verhaal": "Sophie, student internationale betrekkingen, is dolblij met haar onbetaalde stageplek bij een gerenommeerde NGO in Zuid-Amerika — precies de ervaring die haar cv nodig heeft voor de baan waar ze van droomt. Ter plekke ontdekt ze tijdens het doorspitten van financiële documenten iets dat ze liever niet had gezien.\n\nDe NGO ontvangt substantiële donaties van een lokaal houtbedrijf, hetzelfde bedrijf dat volgens regionale nieuwsberichten illegaal regenwoud kapt vlak buiten het beschermde gebied. Haar begeleidster wuift haar vragen weg: \"Zonder die donaties bestaat dit programma niet meer, en dan help je hier niemand.\"\n\nSophie's aanbevelingsbrief, cruciaal voor haar volgende stap, hangt af van hoe dit traject verloopt. Spreekt ze haar begeleidster aan op de financiering, zoekt ze zelf uit hoe hard de beschuldigingen zijn, of maakt ze haar stage gewoon af?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -214,13 +232,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_07.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young intern standing in an NGO field office holding a folder of financial documents, looking out toward a distant logging site through the window, conflicted expression, warm tropical daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 64,
-      "woordenEn": 65
+      "woordenNl": 130,
+      "woordenEn": 65,
+      "bron": "v3-docx: Duurzaamheid 1 De goedkope stage in het buitenland.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -228,13 +249,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "duurzaamheid",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De verdiende vakanties",
-      "verhaal": "Als hardwerkende verpleegkundige geniet Laura van haar welverdiende vakanties. Zon, zee, strand, tegen spotprijzen. Maar een knagend schuldgevoel over de CO2-uitstoot van haar vlieggedrag overschaduwt haar ontspanning. Ze weet dat haar reizen niet duurzaam zijn, maar kan de behoefte aan rust moeilijk negeren.",
+      "verhaal": "Laura werkt al negen jaar als verpleegkundige op de IC, drie nachtdiensten per week, en heeft haar vakantie dit jaar tot op de minuut nodig. De vlucht naar een zonnig eiland staat al open in een ander tabblad — spotgoedkoop, vier uur vliegen, precies de rust die haar lichaam vraagt.\n\nVorige maand zag ze een documentaire over de klimaatimpact van korte vluchten die ze niet meer uit haar hoofd krijgt. Een treinreis zou twee dagen extra kosten die ze simpelweg niet heeft, en duurder zijn ook nog eens.\n\nHaar collega's boeken allemaal hetzelfde soort reizen zonder er ogenschijnlijk bij stil te staan. Laura's cursor zweeft boven de boekingsknop. Boekt ze de vlucht die ze nodig heeft om overeind te blijven, of kiest ze voor een alternatief dat meer opoffert?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -246,13 +267,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_08.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A tired nurse in scrubs sitting at her kitchen table late at night, laptop open on a flight booking page, conflicted contemplative expression, soft lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 43,
-      "woordenEn": 52
+      "woordenNl": 129,
+      "woordenEn": 52,
+      "bron": "v3-docx: Duurzaamheid 2 De verdiende vakanties.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -260,13 +284,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "duurzaamheid",
-    "moeilijkheid": 3,
-    "complexiteit": "macro",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Het onderzoek naar dierproeven",
-      "verhaal": "Pim, een student diergeneeskunde, doet onderzoek naar alternatieven voor dierproeven. Zijn onderzoek wordt gefinancierd door een farmaceutisch bedrijf dat zelf dierproeven uitvoert. Het bedrijf oefent nu druk op hem uit om zijn onderzoek te vertragen, omdat succes de noodzaak van dierproeven zou verminderen en hun winst zou schaden.",
+      "verhaal": "Pim, student diergeneeskunde, ontwikkelt al twee jaar een veelbelovend alternatief voor dierproeven — een doorbraak die, als het lukt, duizenden proefdieren per jaar kan besparen. Het onderzoek wordt gefinancierd door een farmaceutisch bedrijf dat zelf grootschalig dierproeven uitvoert.\n\nNaarmate zijn resultaten sterker worden, verandert de toon van zijn contactpersoon bij het bedrijf. Eerst subtiele vragen over de tijdlijn, dan een verzoek om \"nog wat extra validatiestappen\" toe te voegen die zijn publicatie met maanden vertragen. Succes zou de noodzaak van hun eigen proeven — en een deel van hun winst — ondermijnen.\n\nZijn promotieonderzoek, en zijn financiering voor volgend jaar, loopt via ditzelfde bedrijf. Publiceert Pim zijn resultaten zoals ze nu zijn, gaat hij mee in de vertragingstactiek, of zoekt hij een andere financier voor de rest van zijn onderzoek?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -278,13 +302,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_09.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A researcher in a lab coat standing at a lab bench reviewing data on a laptop, thoughtful conflicted expression, clinical laboratory lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 48,
-      "woordenEn": 51
+      "woordenNl": 130,
+      "woordenEn": 51,
+      "bron": "v3-docx: Duurzaamheid 8 Dierproeven.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -292,13 +319,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "diversiteit-inclusie",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De anonieme sollicitatie",
-      "verhaal": "Een stapel cv's ligt voor je, kandidaten voor een felbegeerde functie. Twee cv's vallen op: Jan de Vries en Ahmed Khalil. Identieke kwalificaties, maar verschillende namen. Jan klinkt meer vertrouwd voor jou en je directeur, Ahmed exotisch. Onbewuste vooroordelen spelen op. Je weet dat iedereen ze heeft. Nu sta je voor een dilemma: de meest gekwalificeerde kandidaat kiezen, of je onderbuikgevoel volgen?",
+      "verhaal": "Daniel bladert door de laatste stapel cv's voor de functie van teamleider, twee dossiers apart gelegd: Jan de Vries en Ahmed Khalil. Op papier zijn ze identiek — zelfde opleiding, zelfde jaren ervaring, vergelijkbare aanbevelingen. Toch merkt Daniel iets in zichzelf op zodra hij de namen leest: Jan voelt vertrouwd, iemand die 'past', terwijl Ahmed een lichte aarzeling oproept die hij niet meteen kan verklaren.\n\nHij kent de cijfers over onbewuste vooroordelen bij werving, heeft de training zelfs zelf gegeven aan nieuwe collega's. Zijn directeur wacht op zijn voordracht voor het gesprek van morgen, en de tijdsdruk laat weinig ruimte voor een uitgebreide herbeoordeling.\n\nDaniel weet dat als hij nu voor Jan kiest, hij nooit zeker zal weten of het om de kwalificaties ging of om dat vage gevoel van vertrouwdheid. Legt hij beide dossiers naast elkaar voor een collega, of vertrouwt hij op zijn eigen oordeel?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -310,13 +337,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_10.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A hiring manager sitting at a desk comparing two nearly identical resumes side by side, thoughtful conflicted expression, neutral office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 62,
-      "woordenEn": 65
+      "woordenNl": 147,
+      "woordenEn": 65,
+      "bron": "v3-docx: DEI 1.  Anoniem.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -324,13 +354,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "diversiteit-inclusie",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Grappen",
-      "verhaal": "Tom voelt zich al weken ongemakkelijk. Zijn vrienden, met wie hij al jaren optrekt, maken steeds vaker homofobe grappen. Elke keer als het gebeurt, krimpt hij ineen. Hij wil er iets van zeggen, maar de angst houdt hem tegen. Wat als ze hem niet meer accepteren? Hij wil niet de sfeer verpesten, niet de zeur zijn. Maar de grappen worden steeds kwetsender, en het wordt steeds moeilijker om ze te negeren.",
+      "verhaal": "Tom staat met zijn biertje in de hand in de vertrouwde kring van vrienden met wie hij al sinds de middelbare school optrekt, wanneer Bram weer een grap maakt over 'die homo's bij de sportschool', gevolgd door instemmend gelach van de rest. Het is de derde keer deze maand.\n\nTom voelt zijn maag samentrekken — niet omdat de grap hemzelf direct raakt, maar omdat hij weet hoe het voelt om anders te zijn in deze groep, en omdat de grappen de laatste tijd venijniger worden. Hij heeft er nooit iets van gezegd, bang om als de spelbreker gezien te worden.\n\nMaar vanavond voelt het net iets verder dan eerder, een grens die hij liever niet meer stilzwijgend laat passeren. Bram wacht op de volgende ronde bier, de groep lacht nog na. Zegt Tom nu iets, of neemt hij nog een slok en zwijgt hij weer?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -342,13 +372,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_11.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young man standing in a circle of friends holding a beer at an outdoor gathering, uneasy expression while others laugh, warm evening light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 71,
-      "woordenEn": 77
+      "woordenNl": 145,
+      "woordenEn": 77,
+      "bron": "v3-docx: DEI 6. Grappen.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -356,13 +389,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "diversiteit-inclusie",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De gemengde relatie",
-      "verhaal": "Je hart bonkt in je borst, een mix van opwinding en angst. Je bent hopeloos verliefd op iemand met een andere culturele achtergrond, een persoon die je wereld op zijn kop heeft gezet. Maar er is een schaduw over je geluk: je familie. Ze zijn conservatief, gehecht aan tradities, en ze keuren de relatie af. Ze zien het als een bedreiging voor hun waarden, een afwijking van wat ze altijd hebben gekend.",
+      "verhaal": "Naomi ligt naast Malik op de bank, zijn arm om haar heen, en voelt zich zoals ze zich in maanden niet heeft gevoeld — gezien, op haar gemak, volledig zichzelf. Malik komt uit een andere cultuur en een ander geloof dan haar familie, iets waar ze aanvankelijk niet bij stilstond totdat ze het aan haar ouders vertelde.\n\nSindsdien is het stil aan de telefoon, of juist niet stil genoeg: haar moeder die om de dag belt met subtiele opmerkingen, haar vader die weigert Maliks naam uit te spreken. Het kerstdiner van dit jaar staat gepland, en haar moeder heeft al laten doorschemeren dat Malik daar 'nog niet bij past'.\n\nNaomi weet dat ze moet kiezen tussen twee dingen die ze allebei liefheeft: de familie die haar heeft opgevoed, en de relatie die haar gelukkig maakt. Nodigt ze Malik toch uit voor het kerstdiner, tegen de wens van haar ouders in, of wacht ze nog een jaar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -374,13 +407,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_12.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman sitting close with her partner on a sofa, phone in hand showing a missed call from a family member, warm but tense home lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 72,
-      "woordenEn": 69
+      "woordenNl": 156,
+      "woordenEn": 69,
+      "bron": "v3-docx: DEI 7. Relatie.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -393,8 +429,8 @@
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "Foto",
-      "verhaal": "Je hebt een foto geplaatst van een vriend zonder toestemming, en de vriend is boos omdat de foto een gênant moment vastlegt. De vriend voelt zich verraden en schaamt zich omdat de foto al door meerdere mensen is gezien en gedeeld.",
+      "titel": "De foto zonder toestemming",
+      "verhaal": "Je plaatste de foto zonder er lang bij na te denken — een hilarisch moment van je vriend tijdens het feestje van afgelopen weekend, precies op het verkeerde moment vastgelegd. Binnen een uur had je tientallen likes en grappige reacties.\n\nDan appt je vriend, met een toon die je niet van hem kent: \"Kun je die foto weghalen? Iedereen op mijn werk heeft hem inmiddels gezien.\" Je beseft dat je nooit hebt gevraagd of het mocht, en dat de foto inmiddels door meerdere mensen is gedeeld buiten jouw eigen kring.\n\nJe kijkt naar je telefoon, waar de foto nog altijd bovenaan je profiel staat, terwijl het aantal reacties blijft groeien. Verwijder je hem meteen en app je een excuus, laat je hem staan omdat de schade toch al is aangericht, of vraag je hem eerst hoe erg het precies is?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -406,13 +442,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_13.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young man looking at his phone with a guilty expression after reading a message, sitting on a couch at home, evening lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 41,
-      "woordenEn": 40
+      "woordenNl": 140,
+      "woordenEn": 40,
+      "bron": "v3-docx: socialmedia 2 foto.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -420,13 +459,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "social-media",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "Reputatie",
-      "verhaal": "In een gestreste gemoedstoestand plaatst je een negatieve recensie van het bedrijf van een concurrent om hun reputatie te schaden. De recensie bevat valse informatie die potentiële klanten afschrikt, wat leidt tot een daling in de verkoop van het bedrijf.",
+      "titel": "De valse recensie",
+      "verhaal": "Na een bijzonder stressvolle week, waarin een grote klant naar de concurrent overstapte, type je in een opwelling een uitgebreide, vlammende recensie over dat concurrerende bedrijf — met details die je zelf hebt verzonnen om extra overtuigend te klinken. Je post hem onder een neutraal ogend account.\n\nDe recensie verspreidt zich sneller dan je had verwacht, gedeeld in een paar lokale ondernemersgroepen. Een week later hoor je via via dat het bedrijf, gerund door een klein team dat je persoonlijk kent van netwerkbijeenkomsten, een merkbare daling in nieuwe klanten ziet.\n\nNiemand heeft jouw account gelinkt aan de recensie. Je ziet de eigenaar van het bedrijf soms nog bij dezelfde bijeenkomsten, nietsvermoedend. Verwijder je de recensie stilletjes, plaats je een rectificatie onder je eigen naam, of laat je hem staan omdat niemand het ooit zal ontdekken?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -438,13 +477,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_14.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A person typing a review on a laptop late at night with a tense conflicted expression, dim home office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 40,
-      "woordenEn": 38
+      "woordenNl": 135,
+      "woordenEn": 38,
+      "bron": "v3-docx: socialmedia 6 reputatie.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -452,13 +494,13 @@
     "set": "morele-moed-teaser",
     "stap": 4,
     "categorie": "studentenleven",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Fijn groepswerk",
-      "verhaal": "Yip zucht. Samenwerken met Tijn is een ramp. Hij is de ster van de opleiding, met zijn vlotte babbel en charisma, maar zijn werkhouding is bedroevend. Afspraken? Daar doet Tijn niet aan. Te laat, niet komen opdagen, zijn deel van het werk niet doen — het is de norm. En als voorzitter van een studentenvereniging heeft hij het natuurlijk altijd druk met feesten. Toch, bij de eindpresentatie, steelt Tijn weer de show. Met zijn vlotte praatjes en presentatievaardigheden sleept hij een 8 voor de groep binnen.",
+      "verhaal": "Yip staart naar het gedeelde document, waar haar naam en die van Tijn allebei onder staan, terwijl zij de afgelopen twee weken vrijwel alles alleen heeft gedaan. Tijn, de charismatische ster van de opleiding, kwam twee keer niet opdagen voor de afspraak en stuurde zijn stuk uiteindelijk een dag te laat, half af.\n\nBij de eindpresentatie neemt hij moeiteloos het woord, boeit de hele zaal met zijn vlotte babbel, en incasseert de complimenten van de docent alsof het zijn project was. De groep krijgt een 8. Niemand van de docenten heeft enig idee hoe de taken werkelijk verdeeld waren.\n\nNa de les komt Tijn breed lachend naar haar toe: \"Zie je wel, kwam wel goed!\" Yip voelt de ergernis in haar keel opborrelen. Zegt ze nu iets tegen Tijn, meldt ze de werkverdeling bij de docent, of laat ze het gaan omdat het toch een goed cijfer werd?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -470,13 +512,16 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_MM_15.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A female student standing in a hallway after a presentation, arms crossed, looking at a confident male classmate being congratulated by others nearby, frustrated expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 86,
-      "woordenEn": 87
+      "woordenNl": 148,
+      "woordenEn": 87,
+      "bron": "v3-docx: Studentenleven9 groepswerk.docx",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -490,7 +535,7 @@
     "status": "getest",
     "nl": {
       "titel": "De weggenomen kantoorspullen",
-      "verhaal": "Thomas ziet zijn collega Bas aan het einde van de dag een pak printerpapier en een nieuwe muis in zijn tas stoppen. Niemand anders let op. Bas werkt al twaalf jaar op de afdeling en geldt als onmisbaar; hij regelt altijd de roosters en springt bij wanneer iemand ziek is. Thomas twijfelt. Is dit diefstal, of gewoon een grijs gebied dat iedereen een beetje doet? Hij denkt aan de nieuwe collega die vorige maand werd aangesproken op een kapotte kopieerpas — een kleinigheid vergeleken met dit. Als hij het meldt, verstoort hij misschien de sfeer in het team voorgoed. Als hij zwijgt, voelt hij zich medeplichtig elke keer dat hij Bas ziet lachen bij het koffiezetapparaat. Meldt hij het bij zijn leidinggevende, spreekt hij Bas er zelf op aan, of doet hij niets?",
+      "verhaal": "Thomas ziet zijn collega Bas aan het einde van de dag een pak printerpapier en een nieuwe muis in zijn tas stoppen. Niemand anders let op. Bas werkt al twaalf jaar op de afdeling en geldt als onmisbaar; hij regelt altijd de roosters en springt bij wanneer iemand ziek is.\n\nThomas twijfelt. Is dit diefstal, of gewoon een grijs gebied dat iedereen een beetje doet? Hij denkt aan de nieuwe collega die vorige maand werd aangesproken op een kapotte kopieerpas — een kleinigheid vergeleken met dit.\n\nAls hij het meldt, verstoort hij misschien de sfeer in het team voorgoed. Als hij zwijgt, voelt hij zich medeplichtig elke keer dat hij Bas ziet lachen bij het koffiezetapparaat. Meldt hij het bij zijn leidinggevende, spreekt hij Bas er zelf op aan, of doet hij niets?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -502,15 +547,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_01.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A man standing near an office supply cabinet at dusk, glancing over his shoulder toward a colleague packing items into a bag in the background, tense uncertain expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 133,
       "woordenEn": 129,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "WORK"
+      "bron": "v3-docx: Burgerschap 1. De weggenomen kantoorspullen.docx",
+      "categorieEn": "WORK",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A man standing near an office supply cabinet at dusk, glancing over his shoulder towa 948468.jpg"
     }
   },
   {
@@ -524,7 +572,7 @@
     "status": "getest",
     "nl": {
       "titel": "De leugen voor de ouders",
-      "verhaal": "Sanne stapt net onder de douche als haar telefoon drie keer trilt. Haar beste vriendin Iris appt: \"Als mijn ouders bellen, ik was gister bij jou oké? Zeg maar dat we een film keken.\" Sanne weet niet waar Iris werkelijk was, alleen dat ze om twee uur 's nachts thuiskwam en er de hele ochtend stil over deed. Iris' ouders zijn streng; een leugen kan rust brengen, maar ook iets verbergen wat groter is dan een avondje uit. Over tien minuten belt Iris' moeder waarschijnlijk om te vragen of Sanne gezellig gefietst heeft naar huis. Sanne typt een antwoord, wist het weer, typt opnieuw. Vertelt ze de leugen voor haar vriendin, vraagt ze eerst door wat er precies gebeurd is, of laat ze Iris het zelf oplossen?",
+      "verhaal": "Sanne stapt net onder de douche als haar telefoon drie keer trilt. Haar beste vriendin Iris appt: \"Als mijn ouders bellen, ik was gister bij jou oké? Zeg maar dat we een film keken.\" Sanne weet niet waar Iris werkelijk was, alleen dat ze om twee uur 's nachts thuiskwam en er de hele ochtend stil over deed.\n\nIris' ouders zijn streng; een leugen kan rust brengen, maar ook iets verbergen wat groter is dan een avondje uit. Over tien minuten belt Iris' moeder waarschijnlijk om te vragen of Sanne gezellig gefietst heeft naar huis.\n\nSanne typt een antwoord, wist het weer, typt opnieuw. Vertelt ze de leugen voor haar vriendin, vraagt ze eerst door wat er precies gebeurd is, of laat ze Iris het zelf oplossen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -536,15 +584,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_02.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman sitting on her bed wrapped in a towel, phone in hand, hesitant expression while reading a message, soft bathroom light spilling in.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 127,
       "woordenEn": 120,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: Burgerschap 2. De leugen voor de ouders.docx",
+      "categorieEn": "DAILY LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A young woman sitting on her bed wrapped in a towel, phone in hand, hesitant expressi 407183.jpg"
     }
   },
   {
@@ -552,13 +603,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "werk",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Voor de goede sfeer",
-      "verhaal": "Het is vrijdagmiddag vijf uur en Youssef pakt net zijn jas als teamleider Marieke langsloopt. \"Zou je nog een uurtje kunnen blijven? De rapportage moet echt af, en het scheelt zo veel als we het nu afmaken in plaats van maandag.\" Ze glimlacht erbij: \"Gewoon voor de goede sfeer, hè, we doen het allemaal een keer.\" Youssef heeft dit kwartaal al negen keer onbetaald doorgewerkt. Zijn contract wordt over zes weken verlengd of niet, en Marieke zit in die beslissing. Zijn vriendin wacht al met het eten. Hij voelt de afweging tussen zijn eigen grenzen en het beeld dat hij achterlaat bij degene die over zijn toekomst beslist. Weigert hij deze keer, of blijft hij weer zitten om zijn baan niet in gevaar te brengen?",
+      "verhaal": "Het is vrijdagmiddag vijf uur en Youssef pakt net zijn jas als teamleider Marieke langsloopt. \"Zou je nog een uurtje kunnen blijven? De rapportage moet echt af, en het scheelt zo veel als we het nu afmaken in plaats van maandag.\" Ze glimlacht erbij: \"Gewoon voor de goede sfeer, hè, we doen het allemaal een keer.\"\n\nYoussef heeft dit kwartaal al negen keer onbetaald doorgewerkt. Zijn contract wordt over zes weken verlengd of niet, en Marieke zit in die beslissing. Zijn vriendin wacht al met het eten.\n\nHij voelt de afweging tussen zijn eigen grenzen en het beeld dat hij achterlaat bij degene die over zijn toekomst beslist. Weigert hij deze keer, of blijft hij weer zitten om zijn baan niet in gevaar te brengen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -570,15 +621,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_03.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A tired office worker standing with his coat half on, looking back toward his manager in a nearly empty office at the end of the day, conflicted expression, late afternoon light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 125,
       "woordenEn": 127,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "WORK"
+      "bron": "v3-docx: Burgerschap 3. Voor de goede sfeer.docx",
+      "categorieEn": "WORK",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A tired office worker standing with his coat half on, looking back toward his manager 407183.jpg"
     }
   },
   {
@@ -592,7 +646,7 @@
     "status": "getest",
     "nl": {
       "titel": "De groepsapp",
-      "verhaal": "Om 23:40 uur licht Femkes telefoon op. In de klassengroepsapp verschijnen steeds meer berichten over Julian — screenshots van zijn slechte proefwerkcijfer, een bewerkte foto met een belachelijk onderschrift, tientallen lachende emoji's. Femke leest mee, typt niets. Ze kent Julian nauwelijks, maar ziet hoe drie klasgenoten, onder wie haar beste vriendin, actief meedoen. Als ze iets zegt, richt de aandacht zich misschien op haar. Als ze zwijgt, blijft het bericht staan tot morgenochtend, wanneer de hele klas het gezien heeft. Ze scrolt terug naar het eerste bericht en ziet dat niemand — geen leerkracht, geen ouder — dit gesprek kan zien. Grijpt Femke in, ook al kan ze daarmee zelf doelwit worden, of legt ze haar telefoon weg?",
+      "verhaal": "Om 23:40 uur licht Femkes telefoon op. In de klassengroepsapp verschijnen steeds meer berichten over Julian — screenshots van zijn slechte proefwerkcijfer, een bewerkte foto met een belachelijk onderschrift, tientallen lachende emoji's. Femke leest mee, typt niets.\n\nZe kent Julian nauwelijks, maar ziet hoe drie klasgenoten, onder wie haar beste vriendin, actief meedoen. Als ze iets zegt, richt de aandacht zich misschien op haar. Als ze zwijgt, blijft het bericht staan tot morgenochtend, wanneer de hele klas het gezien heeft.\n\nZe scrolt terug naar het eerste bericht en ziet dat niemand — geen leerkracht, geen ouder — dit gesprek kan zien. Grijpt Femke in, ook al kan ze daarmee zelf doelwit worden, of legt ze haar telefoon weg?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -604,15 +658,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_04.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teenage girl lying in bed at night, illuminated only by her phone screen, worried expression while scrolling through a group chat.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 118,
       "woordenEn": 125,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "SOCIAL MEDIA"
+      "bron": "v3-docx: Burgerschap 4. De groepsapp.docx",
+      "categorieEn": "SOCIAL MEDIA",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A teenage girl lying in bed at night, illuminated only by her phone screen, worried e 407183.jpg"
     }
   },
   {
@@ -626,7 +683,7 @@
     "status": "getest",
     "nl": {
       "titel": "De gevonden portemonnee",
-      "verhaal": "Tussen de fietsenstalling en de supermarkt ziet Daan iets bruins liggen. Een portemonnee. Hij raapt hem op: twee briefjes van honderd, wat kleingeld, en een pasje zonder naam of foto — alleen een klantnummer van een sportschool. Geen telefoonnummer, geen adres, niets waarmee hij de eigenaar kan bereiken. Daan staat er alleen bij, niemand kijkt mee. Hij heeft deze maand zelf krap gezeten na een onverwachte rekening. Het zou zo makkelijk zijn om het geld te houden en de portemonnee ergens neer te leggen alsof hij hem nooit vond. Maar ergens loopt iemand rond die net zijn geld kwijt is, misschien wel voor de huur. Daan kijkt om zich heen naar een politiebureau, een winkel, een brievenbus. Wat doet hij met de portemonnee, en waarom?",
+      "verhaal": "Tussen de fietsenstalling en de supermarkt ziet Daan iets bruins liggen. Een portemonnee. Hij raapt hem op: twee briefjes van honderd, wat kleingeld, en een pasje zonder naam of foto — alleen een klantnummer van een sportschool. Geen telefoonnummer, geen adres, niets waarmee hij de eigenaar kan bereiken.\n\nDaan staat er alleen bij, niemand kijkt mee. Hij heeft deze maand zelf krap gezeten na een onverwachte rekening. Het zou zo makkelijk zijn om het geld te houden en de portemonnee ergens neer te leggen alsof hij hem nooit vond.\n\nMaar ergens loopt iemand rond die net zijn geld kwijt is, misschien wel voor de huur. Daan kijkt om zich heen naar een politiebureau, een winkel, een brievenbus. Wat doet hij met de portemonnee, en waarom?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -638,15 +695,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_05.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young man crouching on a sidewalk between a bike rack and a supermarket entrance, holding a found wallet, thoughtful hesitant expression, overcast daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 125,
       "woordenEn": 123,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: Burgerschap 5. De gevonden portemonnee.docx",
+      "categorieEn": "DAILY LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A young man crouching on a sidewalk between a bike rack and a supermarket entrance, h 407183.jpg"
     }
   },
   {
@@ -654,13 +714,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "studentenleven",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De fout in het rapport",
-      "verhaal": "Lotte loopt stage bij een adviesbureau en heeft het eindrapport voor een grote klant net doorgenomen. Ze ziet een rekenfout in de kostenprognose — een fout die de klant honderdduizenden euro's te positief voorspiegelt. Haar begeleider, Rick, wuift het weg: \"Dat merkt niemand, en als we het nu aanpassen, missen we de deadline van morgen. We repareren het volgend kwartaal wel stilletjes.\" Lotte's eindbeoordeling hangt af van Ricks tevredenheid over haar functioneren de komende weken. Ze denkt aan de klant die morgen op basis van dit rapport een investeringsbeslissing neemt. Niemand anders bij het bureau heeft de fout gezien, en Rick beschouwt dit gesprek als afgesloten. Gaat Lotte mee in Ricks besluit, of vertelt ze het alsnog?",
+      "verhaal": "Lotte loopt stage bij een adviesbureau en heeft het eindrapport voor een grote klant net doorgenomen. Ze ziet een rekenfout in de kostenprognose — een fout die de klant honderdduizenden euro's te positief voorspiegelt. Haar begeleider, Rick, wuift het weg: \"Dat merkt niemand, en als we het nu aanpassen, missen we de deadline van morgen. We repareren het volgend kwartaal wel stilletjes.\"\n\nLotte's eindbeoordeling hangt af van Ricks tevredenheid over haar functioneren de komende weken. Ze denkt aan de klant die morgen op basis van dit rapport een investeringsbeslissing neemt.\n\nNiemand anders bij het bureau heeft de fout gezien, en Rick beschouwt dit gesprek als afgesloten. Gaat Lotte mee in Ricks besluit, of vertelt ze het alsnog?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -672,15 +732,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_06.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young intern sitting at a desk staring at a printed financial report with a highlighted error, conflicted expression, modern office setting, late afternoon light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 117,
       "woordenEn": 123,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "STUDENT LIFE"
+      "bron": "v3-docx: Burgerschap 6. De fout in het rapport.docx",
+      "categorieEn": "STUDENT LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A young intern sitting at a desk staring at a printed financial report with a highlig 268726.jpg"
     }
   },
   {
@@ -694,7 +757,7 @@
     "status": "getest",
     "nl": {
       "titel": "De foto die rondgaat",
-      "verhaal": "In de vriendengroep-app verschijnt ineens een foto: een meisje van school, duidelijk niet wetend dat ze gefotografeerd werd, in een compromitterende situatie op een feestje. Kevin, die de foto deelde, schrijft erbij: \"Niet doorsturen hoor, dit blijft tussen ons.\" Binnen een minuut heeft Sami, die de foto ook zag, al drie schermafbeeldingen gemaakt. Hij kent het meisje niet persoonlijk, maar ziet hoe snel dit soort dingen normaal worden gevonden in de groep. Als hij hem stiekem doorstuurt, is hij zelf onderdeel van het probleem. Als hij Kevin erop aanspreekt, riskeert hij de sfeer in de groep waar hij al jaren bij hoort. Als hij het meldt bij school, weet iedereen straks dat hij het was. Wat doet Sami?",
+      "verhaal": "In de vriendengroep-app verschijnt ineens een foto: een meisje van school, duidelijk niet wetend dat ze gefotografeerd werd, in een compromitterende situatie op een feestje. Kevin, die de foto deelde, schrijft erbij: \"Niet doorsturen hoor, dit blijft tussen ons.\"\n\nBinnen een minuut heeft Sami, die de foto ook zag, al drie schermafbeeldingen gemaakt. Hij kent het meisje niet persoonlijk, maar ziet hoe snel dit soort dingen normaal worden gevonden in de groep.\n\nAls hij hem stiekem doorstuurt, is hij zelf onderdeel van het probleem. Als hij Kevin erop aanspreekt, riskeert hij de sfeer in de groep waar hij al jaren bij hoort. Als hij het meldt bij school, weet iedereen straks dat hij het was. Wat doet Sami?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -706,15 +769,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_07.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teenage boy sitting alone at a party, phone in hand with a tense expression, dim string-lit backyard in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 118,
       "woordenEn": 116,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "SOCIAL MEDIA"
+      "bron": "v3-docx: Burgerschap 7. De foto die rondgaat.docx",
+      "categorieEn": "SOCIAL MEDIA",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A teenage boy sitting alone at a party, phone in hand with a tense expression, dim st 351675.jpg"
     }
   },
   {
@@ -722,13 +788,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "diversiteit-inclusie",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De klant aan de balie",
-      "verhaal": "Aisha werkt achter de balie van de bibliotheek wanneer een vaste bezoeker weigert door haar geholpen te worden. \"Ik wil iemand die hier normaal thuishoort,\" zegt hij hardop, wijzend naar haar hoofddoek. Haar collega Ben staat naast haar en hoort alles. De man komt wekelijks en doneert regelmatig aan de vriendenstichting van de bibliotheek — een belangrijke inkomstenbron. De leidinggevende is niet aanwezig. Aisha voelt haar wangen warm worden maar blijft glimlachen, zoals ze geleerd heeft te doen. Ben weet dat een confrontatie de man boos kan maken, met mogelijk gevolgen voor de donatie en de sfeer op de vloer. Grijpt Ben in, ook al kan dat een conflict opleveren, of laat hij Aisha dit alleen afhandelen?",
+      "verhaal": "Aisha werkt achter de balie van de bibliotheek wanneer een vaste bezoeker weigert door haar geholpen te worden. \"Ik wil iemand die hier normaal thuishoort,\" zegt hij hardop, wijzend naar haar hoofddoek. Haar collega Ben staat naast haar en hoort alles.\n\nDe man komt wekelijks en doneert regelmatig aan de vriendenstichting van de bibliotheek — een belangrijke inkomstenbron. De leidinggevende is niet aanwezig. Aisha voelt haar wangen warm worden maar blijft glimlachen, zoals ze geleerd heeft te doen.\n\nBen weet dat een confrontatie de man boos kan maken, met mogelijk gevolgen voor de donatie en de sfeer op de vloer. Grijpt Ben in, ook al kan dat een conflict opleveren, of laat hij Aisha dit alleen afhandelen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -740,15 +806,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_08.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A library colleague standing beside a coworker at the front desk, watching an interaction with a visitor with a concerned expression, warm indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 117,
       "woordenEn": 115,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DIVERSITY & INCLUSION"
+      "bron": "v3-docx: Burgerschap 8. De klant aan de balie.docx",
+      "categorieEn": "DIVERSITY & INCLUSION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A library colleague standing beside a coworker at the front desk, watching an interac 948468.jpg"
     }
   },
   {
@@ -756,13 +825,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "duurzaamheid",
-    "moeilijkheid": 3,
-    "complexiteit": "macro",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De goedbetaalde bijbaan",
-      "verhaal": "Mila krijgt een berichtje: een modemerk waar ze eerder solliciteerde, biedt haar een bijbaan aan met een salaris dat twee keer zo hoog is als wat ze nu verdient bij de supermarkt. Ze weet uit een documentaire die ze vorig jaar zag dat dit merk kleding laat maken in fabrieken met slechte arbeidsomstandigheden en een enorme milieu-impact. Haar studieschuld loopt op en haar ouders kunnen niet bijspringen. Vrienden zeggen: \"Iedereen koopt daar toch, wat maakt jouw baantje nou uit.\" Het contract ligt klaar om te tekenen, de startdatum is over twee weken. Mila scrolt nog eens door haar documentaire-aantekeningen, dan naar haar bankrekening. Neemt ze de baan aan, of zoekt ze verder naar iets dat beter aansluit bij wat ze belangrijk vindt?",
+      "verhaal": "Mila krijgt een berichtje: een modemerk waar ze eerder solliciteerde, biedt haar een bijbaan aan met een salaris dat twee keer zo hoog is als wat ze nu verdient bij de supermarkt. Ze weet uit een documentaire die ze vorig jaar zag dat dit merk kleding laat maken in fabrieken met slechte arbeidsomstandigheden en een enorme milieu-impact.\n\nHaar studieschuld loopt op en haar ouders kunnen niet bijspringen. Vrienden zeggen: \"Iedereen koopt daar toch, wat maakt jouw baantje nou uit.\" Het contract ligt klaar om te tekenen, de startdatum is over twee weken.\n\nMila scrolt nog eens door haar documentaire-aantekeningen, dan naar haar bankrekening. Neemt ze de baan aan, of zoekt ze verder naar iets dat beter aansluit bij wat ze belangrijk vindt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -774,15 +843,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_09.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman sitting at a kitchen table looking at her phone with a job offer notification, laptop open showing a bank balance, conflicted expression, evening light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 122,
       "woordenEn": 113,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "SUSTAINABILITY"
+      "bron": "v3-docx: Burgerschap 9. De goedbetaalde bijbaan.docx",
+      "categorieEn": "SUSTAINABILITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A young woman sitting at a kitchen table looking at her phone with a job offer notifi 268726.jpg"
     }
   },
   {
@@ -796,7 +868,7 @@
     "status": "getest",
     "nl": {
       "titel": "Het antwoordblaadje",
-      "verhaal": "Tijdens het tussentijdse tentamen wiskunde ziet Noor, twee rijen verderop, hoe haar vriendin Elif een spiekbriefje uit haar mouw haalt. Ze kennen elkaar al sinds de brugklas; Elif heeft haar dit jaar geholpen toen Noor het zwaar had. De surveillant loopt net de andere kant op. Als Noor niets zegt, blijft het onopgemerkt en haalt Elif misschien net haar cijfer. Als ze het meldt, verliest Elif mogelijk het hele tentamen én het vertrouwen tussen hen. Als ze Elif er na afloop op aanspreekt, moet ze zelf ook iets doen met wat ze gezien heeft. Noor kijkt naar haar eigen antwoordblad, waar ze twee opgaven niet heeft afgemaakt terwijl de klok verder tikt. Meldt ze de fraude, ook al gaat het om haar vriendin?",
+      "verhaal": "Tijdens het tussentijdse tentamen wiskunde ziet Noor, twee rijen verderop, hoe haar vriendin Elif een spiekbriefje uit haar mouw haalt. Ze kennen elkaar al sinds de brugklas; Elif heeft haar dit jaar geholpen toen Noor het zwaar had. De surveillant loopt net de andere kant op.\n\nAls Noor niets zegt, blijft het onopgemerkt en haalt Elif misschien net haar cijfer. Als ze het meldt, verliest Elif mogelijk het hele tentamen én het vertrouwen tussen hen. Als ze Elif er na afloop op aanspreekt, moet ze zelf ook iets doen met wat ze gezien heeft.\n\nNoor kijkt naar haar eigen antwoordblad, waar ze twee opgaven niet heeft afgemaakt terwijl de klok verder tikt. Meldt ze de fraude, ook al gaat het om haar vriendin?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -808,15 +880,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_10.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A student sitting at an exam desk in a quiet classroom, glancing sideways with a tense expression, other students focused on their papers in soft blur.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 123,
       "woordenEn": 118,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: Burgerschap 10. Het antwoordblaadje.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "firefly (nieuw)",
+      "afbeeldingBron": "Firefly_A student sitting at an exam desk in a quiet classroom, glancing sideways with a tens 351675.jpg"
     }
   },
   {
@@ -830,7 +905,7 @@
     "status": "getest",
     "nl": {
       "titel": "De review voor geld",
-      "verhaal": "Sven krijgt een privébericht van een webwinkel waar hij ooit een koptelefoon kocht: vijftig euro cadeaubon in ruil voor een \"eerlijke, positieve review van vijf sterren.\" De koptelefoon viel na drie weken uit elkaar en de klantenservice reageerde nooit op zijn mail. Vijftig euro is precies wat hij nodig heeft voor zijn energierekening deze maand. Niemand controleert of de review echt klopt met zijn ervaring; het systeem vertrouwt puur op zijn woord. Hij opent de reviewpagina en ziet honderden vijfsterrenreviews die er, nu hij beter kijkt, verdacht hetzelfde geformuleerd uitzien. De cadeaubon-code staat al klaar in zijn mail. Schrijft Sven de positieve review die niet klopt met zijn ervaring, of laat hij het geld liggen?",
+      "verhaal": "Sven krijgt een privébericht van een webwinkel waar hij ooit een koptelefoon kocht: vijftig euro cadeaubon in ruil voor een \"eerlijke, positieve review van vijf sterren.\" De koptelefoon viel na drie weken uit elkaar en de klantenservice reageerde nooit op zijn mail.\n\nVijftig euro is precies wat hij nodig heeft voor zijn energierekening deze maand. Niemand controleert of de review echt klopt met zijn ervaring; het systeem vertrouwt puur op zijn woord. Hij opent de reviewpagina en ziet honderden vijfsterrenreviews die er, nu hij beter kijkt, verdacht hetzelfde geformuleerd uitzien.\n\nDe cadeaubon-code staat al klaar in zijn mail. Schrijft Sven de positieve review die niet klopt met zijn ervaring, of laat hij het geld liggen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -842,15 +917,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_11.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young man sitting on his couch looking at his phone with a broken pair of headphones on the table beside him, conflicted expression, evening lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 115,
       "woordenEn": 112,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: Burgerschap 11. De review voor geld.docx",
+      "categorieEn": "DAILY LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -864,7 +941,7 @@
     "status": "getest",
     "nl": {
       "titel": "Maar het zijn maar grapjes",
-      "verhaal": "Aan de keukentafel van het studentenhuis maakt huisgenoot Ruben weer een grap — dit keer over Marokkaanse buren en \"wat je daar wel niet allemaal tegenkomt.\" De andere huisgenoten lachen mee, zoals altijd. Yara, die er als enige stil bij blijft, deelt dit huis al twee jaar met Ruben en moet nog een half jaar met hem door één huurcontract heen. Vorige week ging het over vrouwen op de fiets, de week ervoor over een collega met een handicap. Elke keer zegt iemand: \"Kom op, het zijn maar grapjes, niet zo serieus.\" Yara vraagt zich af of ze de enige is die zich hier ongemakkelijk bij voelt. Spreekt ze Ruben aan op wat hij zegt, of laat ze het gaan zoals de rest?",
+      "verhaal": "Aan de keukentafel van het studentenhuis maakt huisgenoot Ruben weer een grap — dit keer over Marokkaanse buren en \"wat je daar wel niet allemaal tegenkomt.\" De andere huisgenoten lachen mee, zoals altijd. Yara, die er als enige stil bij blijft, deelt dit huis al twee jaar met Ruben en moet nog een half jaar met hem door één huurcontract heen.\n\nVorige week ging het over vrouwen op de fiets, de week ervoor over een collega met een handicap. Elke keer zegt iemand: \"Kom op, het zijn maar grapjes, niet zo serieus.\"\n\nYara vraagt zich af of ze de enige is die zich hier ongemakkelijk bij voelt. Spreekt ze Ruben aan op wat hij zegt, of laat ze het gaan zoals de rest?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -876,15 +953,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_12.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman sitting quietly at a shared kitchen table while housemates laugh around her, uncomfortable withdrawn expression, warm domestic evening lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 123,
       "woordenEn": 113,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DIVERSITY & INCLUSION"
+      "bron": "v3-docx: Burgerschap 12. Maar het zijn maar grapjes.docx",
+      "categorieEn": "DIVERSITY & INCLUSION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -892,13 +971,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "duurzaamheid",
-    "moeilijkheid": 3,
-    "complexiteit": "macro",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De goedkope trui",
-      "verhaal": "In de winkel hangt een trui voor zes euro, in de uitverkoop nog goedkoper. Emma weet, na een schoolproject over de kledingindustrie, dat kleding in deze prijsklasse vaak wordt gemaakt in fabrieken waar ook kinderen werken — ze heeft de cijfers zelf opgezocht voor haar werkstuk. Haar eigen budget is krap; ze spaart voor een schoolreis en elke euro telt. De trui in haar handen is precies wat ze zocht, in de juiste maat en kleur, nergens anders voor deze prijs te vinden. Het kassapersoneel wacht, de rij achter haar wordt langer. Ze denkt aan het werkstuk dat ze zelf schreef en aan de schoolreis waarvoor ze spaart. Legt Emma de trui terug, of rekent ze hem toch af?",
+      "verhaal": "In de winkel hangt een trui voor zes euro, in de uitverkoop nog goedkoper. Emma weet, na een schoolproject over de kledingindustrie, dat kleding in deze prijsklasse vaak wordt gemaakt in fabrieken waar ook kinderen werken — ze heeft de cijfers zelf opgezocht voor haar werkstuk.\n\nHaar eigen budget is krap; ze spaart voor een schoolreis en elke euro telt. De trui in haar handen is precies wat ze zocht, in de juiste maat en kleur, nergens anders voor deze prijs te vinden. Het kassapersoneel wacht, de rij achter haar wordt langer.\n\nZe denkt aan het werkstuk dat ze zelf schreef en aan de schoolreis waarvoor ze spaart. Legt Emma de trui terug, of rekent ze hem toch af?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -910,15 +989,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_13.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teenage girl standing in a clothing store holding a sweater, thoughtful hesitant expression, checkout queue softly visible behind her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 119,
       "woordenEn": 122,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "SUSTAINABILITY"
+      "bron": "v3-docx: Burgerschap 13. De goedkope trui.docx",
+      "categorieEn": "SUSTAINABILITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -926,13 +1007,13 @@
     "set": "burgerschap",
     "stap": 1,
     "categorie": "werk",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
+    "moeilijkheid": 1,
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De vraag van de leidinggevende",
-      "verhaal": "Teamleider Iris vraagt Bram om in een klantpresentatie de resultaten van het project \"iets positiever te brengen dan ze eigenlijk zijn\" — niets liegen, gewoon \"de nadruk anders leggen.\" Wat ze vraagt is niet illegaal en gebeurt overal in de sector, zegt ze. Bram heeft de cijfers zelf verzameld en weet dat de klant een vervolgopdracht overweegt op basis van precies dit resultaat. Iris voert volgende maand zijn functioneringsgesprek en bepaalt of zijn tijdelijke contract wordt omgezet. Ze wacht niet op een lang antwoord; de presentatie moet morgenochtend klaar zijn. Bram opent het bestand en staart naar de grafiek die hij eerlijk heeft gemaakt. Doet hij wat Iris vraagt, of spreekt hij uit dat dit tegen zijn eigen waarden ingaat?",
+      "verhaal": "Teamleider Iris vraagt Bram om in een klantpresentatie de resultaten van het project \"iets positiever te brengen dan ze eigenlijk zijn\" — niets liegen, gewoon \"de nadruk anders leggen.\" Wat ze vraagt is niet illegaal en gebeurt overal in de sector, zegt ze.\n\nBram heeft de cijfers zelf verzameld en weet dat de klant een vervolgopdracht overweegt op basis van precies dit resultaat. Iris voert volgende maand zijn functioneringsgesprek en bepaalt of zijn tijdelijke contract wordt omgezet. Ze wacht niet op een lang antwoord; de presentatie moet morgenochtend klaar zijn.\n\nBram opent het bestand en staart naar de grafiek die hij eerlijk heeft gemaakt. Doet hij wat Iris vraagt, of spreekt hij uit dat dit tegen zijn eigen waarden ingaat?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -944,15 +1025,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_14.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A man sitting at his laptop late in the evening in an office, staring at a graph on the screen, thoughtful conflicted expression, desk lamp lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 120,
       "woordenEn": 121,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "WORK"
+      "bron": "v3-docx: Burgerschap 14. De vraag van de leidinggevende.docx",
+      "categorieEn": "WORK",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -966,7 +1049,7 @@
     "status": "getest",
     "nl": {
       "titel": "De dakloze op straat",
-      "verhaal": "Voor de supermarkt zit een man met een kartonnen bord: \"Elke euro helpt, dankjewel.\" Julia heeft net haar hele weekbudget uitgerekend voor de boodschappen die ze moet doen — precies genoeg, geen euro over. Ze kent het verhaal niet van de man: hoelang hij hier al zit, wat hij met het geld doet, of hij hulp zoekt. Vorige week las ze een artikel dat waarschuwde voor het geven van geld in plaats van eten. Ze heeft geen restje brood bij zich, geen extra pas voor een warme maaltijd, alleen haar portemonnee met precies genoeg voor haar eigen lijst. De rij bij de kassa wordt zichtbaar vanaf hier. Ze kan doorlopen, ze kan iets geven en zelf een product schrappen, of ze kan naar binnen gaan en iets voor hem kopen. Wat doet Julia, en waarom?",
+      "verhaal": "Voor de supermarkt zit een man met een kartonnen bord: \"Elke euro helpt, dankjewel.\" Julia heeft net haar hele weekbudget uitgerekend voor de boodschappen die ze moet doen — precies genoeg, geen euro over. Ze kent het verhaal niet van de man: hoelang hij hier al zit, wat hij met het geld doet, of hij hulp zoekt.\n\nVorige week las ze een artikel dat waarschuwde voor het geven van geld in plaats van eten. Ze heeft geen restje brood bij zich, geen extra pas voor een warme maaltijd, alleen haar portemonnee met precies genoeg voor haar eigen lijst.\n\nDe rij bij de kassa wordt zichtbaar vanaf hier. Ze kan doorlopen, ze kan iets geven en zelf een product schrappen, of ze kan naar binnen gaan en iets voor hem kopen. Wat doet Julia, en waarom?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -978,15 +1061,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_BG_15.jpeg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman standing outside a supermarket entrance, glancing toward a man sitting with a cardboard sign, thoughtful hesitant expression, overcast daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
       "woordenNl": 135,
       "woordenEn": 136,
-      "bron": "gesprekskaarten-burgerschap.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: Burgerschap 15. De dakloze op straat.docx",
+      "categorieEn": "DAILY LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     }
   },
   {
@@ -1028,12 +1113,12 @@
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Vriend rijdt onder invloed van alcohol",
-      "verhaal": "Sophie ziet met lede ogen hoe Tom, haar vriend, na een avondje drinken steevast achter het stuur kruipt. Angst knaagt aan haar: de risico's zijn enorm. Tom, maar ook anderen, lopen gevaar. Ze wil hem wakker schudden, maar vreest zijn reactie. Sophie worstelt met de afweging: Tom's veiligheid versus hun relatie.",
+      "verhaal": "Sophie staat in de deuropening en ziet Tom zijn autosleutels pakken. Het is twee uur ’s nachts, de wijnglazen op tafel zijn leeg, zijn ogen glazig. “Ik red het wel,” zegt hij, zoals altijd. Ze kent dit ritueel: het korte lachje, de overmoed, de deur die dichtvalt voordat ze iets kan zeggen.\n\nBuiten start de motor. Sophie voelt haar hart bonzen — niet alleen om Tom, maar om de fietser die straks misschien oversteekt, de automobilist die nietsvermoedend de rotonde nadert. Ze zou de sleutels kunnen afpakken, zijn ouders kunnen bellen, een scène kunnen maken op straat. Maar wat als hij haar dan nooit meer vertrouwt?\n\nHet raampje zoeft naar beneden. “Stap je nog in?” vraagt hij. Grijpt Sophie nu in, of laat ze het weer gaan?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1045,17 +1130,19 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_02.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A tense nighttime scene outside a house: a young woman standing in a doorway looking worried at a young man getting into a car, keys in hand, wine glasses visible through a window behind her. Documentary street photography, warm porch light against cool night air.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 51,
+      "woordenNl": 127,
       "woordenEn": 57,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL2_Vriend_rijdt_onder_invloed_van_alcohol.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_DL_03",
@@ -1067,7 +1154,7 @@
     "status": "getest",
     "nl": {
       "titel": "Buurman dumpt afval in het park",
-      "verhaal": "David ziet met groeiende ergernis hoe meneer Bakker, zijn buurman, het park als vuilstortplaats gebruikt. Het ooit zo groene park verandert in een onsmakelijke plek, vol stinkend afval en ongedierte. De buurt morrelt, kinderen mijden de plek. David's geweten knaagt. Hij wil actie, maar de angst voor een confrontatie met meneer Bakker houdt hem tegen.",
+      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw een berg vuilniszakken naast de border, half opengescheurd door een vos. Hij weet meteen wie erachter zit — meneer Bakker, twee huizen verderop, die zijn tuinafval en huisvuil al maanden stiekem hier dumpt in plaats van het netjes aan te bieden.\n\nHet park was ooit de trots van de buurt: kinderen speelden er, ouderen wandelden er hun hondjes uit. Nu mijden steeds meer buren de plek, klagen op de buurtapp, wijzen naar elkaar zonder iets te doen. David zou meneer Bakker rechtstreeks kunnen aanspreken, met het risico op een verhitte ruzie tussen buren die elkaar nog jaren tegen het lijf lopen. Hij zou ook de gemeente kunnen bellen, handhaving kunnen inschakelen.\n\nHij kijkt naar de opengescheurde zakken, dan naar het huis van meneer Bakker. Spreekt David hem zelf aan, of schakelt hij meteen de gemeente in?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1079,15 +1166,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_03.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A man standing at the edge of a public park, looking with concern at torn garbage bags dumped near flowerbeds, overcast daylight, a residential street visible in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 55,
+      "woordenNl": 153,
       "woordenEn": 58,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL3_Buurman_dumpt_afval_in_het_park.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
     "moeilijkheid": 2
   },
@@ -1101,7 +1190,7 @@
     "status": "getest",
     "nl": {
       "titel": "Vriend pleegt winkeldiefstal",
-      "verhaal": "Delano ziet hoe Mark, zijn vriend, stelselmatig winkels berooft. Angst bekruipt hem: arrestatie, een strafblad, de gevolgen zijn enorm. Maar de vriendschap... die weegt ook zwaar. Loyaliteit versus geweten, een pijnlijke tweestrijd. Hoe bereikt hij Mark zonder hem te verliezen? Delano zoekt wanhopig naar een uitweg, een manier om Mark te redden van zelfdestructie, zonder hun vriendschap te gronde te richten.",
+      "verhaal": "Delano staat achter het rek met energiedrankjes en ziet het gebeuren: Mark laat moeiteloos een deodorant in zijn jaszak glijden en loopt langs de kassa alsof er niets aan de hand is. Het is niet de eerste keer. Delano weet het al maanden, heeft het genegeerd, weggelachen, goedgepraat.\n\nMaar de bedragen worden groter, de winkels gevaarlijker — laatst nog bijna betrapt door een beveiliger die zijn gezicht nu al kent. Delano denkt aan wat er gebeurt als het misgaat: een aangifte, een strafblad dat Mark jarenlang achtervolgt. Hij denkt ook aan wat er gebeurt als hij nu iets zegt: de blik van verraad, tien jaar vriendschap die in één gesprek kan kantelen.\n\nBuiten wacht Mark ontspannen op zijn fiets, alsof er niets gebeurd is. Durft Delano het gesprek aan te gaan, of zwijgt hij nog één keer?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1113,15 +1202,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_04.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young man standing at the end of a supermarket aisle, watching his friend slip a small item into his jacket pocket near the checkout, tension visible in his posture, muted indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 61,
+      "woordenNl": 137,
       "woordenEn": 57,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL4_Vriend_pleegt_winkeldiefstal.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
     "moeilijkheid": 1
   },
@@ -1130,12 +1221,12 @@
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Buurvrouw laat kinderen vaak alleen thuis",
-      "verhaal": "Emma's hart bonkt in haar keel. Mevrouw Jansen laat haar jonge kinderen weer alleen thuis, de deur klettert dicht. Kleine stemmen huilen, roepen om mama. Emma's bezorgdheid groeit met de minuut. Deze kinderen zijn kwetsbaar, onbeschermd. Ze wil ingrijpen, maar de angst voor mevrouw Jansens reactie verlamt haar. Een dilemma dat schuurt, een beslissing die zwaar weegt.",
+      "verhaal": "Emma hoort het weer: gestommel achter de muur, een deur die dichtslaat, daarna stilte. Ze weet wat dat betekent — mevrouw Jansen is weg, de kinderen zijn alleen. Door de dunne scheidingswand hoort ze het jongste kind huilen, een geluid dat langzaam overgaat in vermoeide stilte.\n\nHet is de derde keer deze maand. Emma heeft de klok bijgehouden: soms een halfuur, soms bijna twee uur. Ze twijfelt: is dit nog een incidentje, of het begin van een patroon dat ze niet mag negeren? Ze zou kunnen aankloppen, of het meldpunt voor kindermishandeling kunnen bellen. Maar wat als ze het verkeerd inschat, een goede moeder in een lastige periode verdenkt van verwaarlozing?\n\nEmma legt haar hand op de deurklink. Klopt ze aan, of loopt ze door?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1147,29 +1238,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_05.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A woman standing in a hallway of an apartment building, hand raised near a neighbor's door, listening with a worried expression, soft muffled light glowing from under the door.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 57,
+      "woordenNl": 125,
       "woordenEn": 58,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL5_Buurvrouw_laat_kinderen_vaak_alleen_thuis.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_DL_06",
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Vriend rijdt te hard en overtreedt verkeersregels",
-      "verhaal": "Lisa maakt zich zorgen over Mark, haar vriend, die regelmatig te hard rijdt. Ze ziet hoe hij verkeersregels negeert en vreest voor ongelukken. Lisa voelt zich verantwoordelijk, maar durft Mark niet direct aan te spreken uit angst voor zijn reactie. Lisa wil dat Mark inziet hoe gevaarlijk zijn rijgedrag is, zonder hun relatie te schaden.",
+      "verhaal": "Lisa zit naast Mark in de auto en klemt haar handen om de armleuning. De teller klimt naar honderdveertig op een weg waar tachtig geldt, Mark neuriet mee met de radio alsof er niets aan de hand is. Bij het volgende kruispunt schiet hij door oranje, negeert een fietser die net op tijd remt.\n\nHet is niet de eerste keer dat ze dit meemaakt — vorige maand nog, met haar broertje achterin. Lisa weet dat ze iets moet zeggen, maar herinnert zich de laatste keer: Mark die geïrriteerd raakte, wekenlang afstandelijk deed. Ze houdt van zijn spontaniteit, van de vrijheid die hij haar geeft, maar dat gevoel weegt steeds minder op tegen de angst die nu in haar buik zit.\n\nZe kijkt naar de snelheidsmeter, dan naar zijn ontspannen gezicht. Zegt ze nu iets, midden op de snelweg, of wacht ze tot ze veilig thuis zijn?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1181,17 +1274,19 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_06.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young woman gripping the armrest inside a moving car, anxious expression, blurred road and motion visible through the windshield, the driver relaxed beside her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 55,
+      "woordenNl": 146,
       "woordenEn": 51,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL6_Vriend_rijdt_te_hard_en_overtreedt_verkeersregels.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_DL_07",
@@ -1203,7 +1298,7 @@
     "status": "getest",
     "nl": {
       "titel": "De gevonden portemonnee",
-      "verhaal": "Op een verlaten bankje ligt een zware, leren portemonnee. Geld en een identiteitskaart staren je aan. Niemand in de buurt, alleen jij. Verleidingen schieten door je hoofd: nieuwe schoenen, openstaande rekeningen. Maar dan denk je aan de mogelijke eigenaar: een student, een moeder, een onbekende die wanhopig zoekt.",
+      "verhaal": "Op het verlaten bankje in het park ligt een zware, leren portemonnee, half open. Er piept een stapel briefjes van twintig onderuit, naast een identiteitskaart met een foto van een jonge vrouw die serieus de camera inkijkt. Niemand in de buurt — geen fietsers, geen wandelaars, alleen het geritsel van bladeren.\n\nVoor Jasper voelt het alsof de portemonnee precies op tijd is gevallen: de huur van deze maand is nog niet rond, de nieuwe schoenen staan al wekenlang op zijn verlanglijst. Hij pakt hem op, voelt het gewicht in zijn hand. Op de identiteitskaart staat een adres, niet ver hiervandaan. Hij zou het geld kunnen houden en de portemonnee ergens laten liggen, zodat het lijkt of hij hem nooit vond.\n\nZijn duim glijdt over de stapel briefjes. Steekt hij de portemonnee in zijn zak, of zoekt hij de eigenaar op?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1215,15 +1310,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_07.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 48,
+      "woordenNl": 140,
       "woordenEn": 48,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: Dl7_Portemonnee.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
     "moeilijkheid": 1
   },
@@ -1232,12 +1329,12 @@
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De roddelende vriend",
-      "verhaal": "De muziek beukt, lichten flitsen, en dan hoor je het: je beste vriend verspreidt leugens over jullie vriendin. Pure roddel, reputatievernietigend. Je bloed kookt, je wilt hem stoppen. Maar hij is je beste vriend, al jaren. Hem afvallen voor de hele groep? De spanning is enorm. Wat doe je?",
+      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt een paar seconden voordat het tot je doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen — nieuwsgierig, geamuseerd, alsof het echte roddel is die het verdient om verder verteld te worden. Ruben is al jaren je beste vriend, degene die er altijd was, ook toen niemand anders er was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk. Je zou hem ook recht voor de groep kunnen tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1249,17 +1346,19 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_08.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 49,
+      "woordenNl": 154,
       "woordenEn": 56,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL8_roddel.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_DL_09",
@@ -1271,7 +1370,7 @@
     "status": "getest",
     "nl": {
       "titel": "Het geleende geld",
-      "verhaal": "Je was bijna klaar, maar onverwachte rekeningen gooiden roet in het eten. Nu zit je in de penarie. Je vriend, die je met een glimlach hielp, heeft het geld zelf hard nodig. Elke keer dat zijn naam op je scherm verschijnt, voel je schaamte. Hoe leg je uit dat je je belofte niet kunt nakomen? De spanning tussen vriendschap en financiële problemen is voelbaar.",
+      "verhaal": "Je hebt het bedrag al drie keer herrekend: de huur, de boodschappen, de onverwachte rekening van de tandarts die je vergeten was. Het klopt niet, en het geld dat je Milan drie maanden geleden leende, had je eigenlijk nu nodig. Milan hielp je toen zonder aarzelen, met een glimlach, alsof het de normaalste zaak van de wereld was.\n\nNu belt hij weer, opgewekt over het weekend, en je voelt de schaamte in je keel kruipen bij de gedachte om het onderwerp aan te snijden. Je weet ook dat Milan zelf krap bij kas zit sinds hij minder uren is gaan werken. Vraag je nu om je geld terug en zet je de vriendschap onder druk, of houd je je mond en red je jezelf op een andere manier?\n\nZijn naam licht op je scherm op. Neem je op, of laat je hem voor de derde keer naar de voicemail gaan?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1283,15 +1382,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_09.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A young adult sitting at a kitchen table with bills and a phone lit up with an incoming call, a conflicted, uneasy expression, warm domestic evening lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 64,
+      "woordenNl": 150,
       "woordenEn": 61,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL9_geleend_geld.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
     "moeilijkheid": 1
   },
@@ -1300,12 +1401,12 @@
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "macro",
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "De gemanipuleerde online beoordeling",
-      "verhaal": "De nieuwe koffiezaak pronkt met verdacht perfecte reviews. Vijf sterren, jubelende reacties, allemaal in een paar dagen. Veel reviewers hebben slechts één review geschreven, die van de koffiezaak. Het is duidelijk nep, een oneerlijke praktijk. Moet je dit aankaarten? Het is niet jouw zaak, maar het schaadt wel de eerlijke concurrentie en misleidt consumenten. Laat je het gaan, of neem je actie? Wat is de juiste keuze?",
+      "verhaal": "De koffiezaak op de hoek bestaat nog geen twee weken en pronkt al met tweehonderd vijfsterrenreviews, allemaal geschreven in dezelfde week, allemaal in bijna identieke bewoordingen over ‘de beste koffie van de stad’. Jij werkt zelf al jaren bij het cafeetje verderop, waar de eigenaar elke ochtend zelf de bonen selecteert en waar de reviews langzaam, eerlijk, over maanden zijn opgebouwd.\n\nToen je de profielen van een paar reviewers doorklikte, zag je het patroon: accounts die niets anders hebben gepost dan die ene lovende review, geen foto, geen geschiedenis. Het voelt oneerlijk — niet alleen voor je eigen werkgever, maar voor elke ondernemer in de straat die het wél netjes doet. Je zou een melding kunnen maken bij het reviewplatform, met screenshots als bewijs. Je zou ook niets kunnen doen.\n\nLaat je het los, of stuur je de melding die je al hebt voorbereid?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1317,29 +1418,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_10.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A person looking at a smartphone screen filled with five-star reviews while standing near a small coffee shop storefront, thoughtful and slightly skeptical expression, soft street-level daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 67,
+      "woordenNl": 144,
       "woordenEn": 67,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL10_Reviews.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 3
+    "moeilijkheid": 2
   },
   {
     "id": "GK_DL_11",
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "macro",
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Buurman mishandelt zijn vrouw",
-      "verhaal": "Emma is getuige van huiselijk geweld bij haar buurvrouw, mevrouw Janssen. Meneer Janssen mishandelt haar regelmatig, wat Emma grote zorgen baart. Ze hoort geschreeuw en ziet blauwe plekken. Emma worstelt met haar geweten: ze wil mevrouw Janssen helpen, maar is bang voor de reactie van meneer Janssen. Emma zoekt naar een veilige manier om mevrouw Janssen te helpen.",
+      "verhaal": "Door de dunne muur hoort Emma het geschreeuw weer, gevolgd door een doffe klap en daarna stilte — de stilte die haar altijd het meest beangstigt. De volgende ochtend ziet ze mevrouw Janssen in de tuin, een blauwe plek half verborgen onder make-up en een te grote zonnebril voor een bewolkte dag. Ze glimlacht naar Emma alsof er niets aan de hand is, zoals ze dat al maanden doet.\n\nEmma weet dat meneer Janssen aanzien heeft in de buurt — vriendelijk bij het buurtfeest, behulpzaam met de heg. Ze heeft het nummer van Veilig Thuis al eens opgezocht, de website weer gesloten voordat ze kon bellen. Ze twijfelt: is het aan haar om in te grijpen, of maakt haar zwijgen haar medeplichtig?\n\nEmma pakt haar telefoon. Belt ze nu, of wacht ze tot ze zeker weet wat ze hoorde?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1351,17 +1454,19 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_11.png",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 58,
+      "woordenNl": 139,
       "woordenEn": 53,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "bron": "v3-docx: DL11_Buurman_mishandelt_zijn_vrouw.docx",
+      "categorieEn": "DAILY LIFE",
+      "afbeeldingStatus": "oud (tijdelijk)",
+      "tekstVersie": "3.0"
     },
-    "moeilijkheid": 3
+    "moeilijkheid": 2
   },
   {
     "id": "GK_NM_01",
@@ -1394,7 +1499,9 @@
       "woordenEn": 137,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 2
   },
@@ -1429,7 +1536,9 @@
       "woordenEn": 140,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 2
   },
@@ -1464,7 +1573,9 @@
       "woordenEn": 154,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 2
   },
@@ -1499,7 +1610,9 @@
       "woordenEn": 146,
       "bron": "gesprekskaarten_nuclear_medicine.docx",
       "categorieEn": "NUCLEAR MEDICINE",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 1
   },
@@ -1534,7 +1647,9 @@
       "woordenEn": 138,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 2
   },
@@ -1569,7 +1684,9 @@
       "woordenEn": 137,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 3
   },
@@ -1604,7 +1721,9 @@
       "woordenEn": 139,
       "bron": "gesprekskaarten_research_integrity_1.docx",
       "categorieEn": "RESEARCH INTEGRITY",
-      "project": "HEROES"
+      "project": "HEROES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 2
   },
@@ -1613,12 +1732,12 @@
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "De stille regel",
-      "verhaal": "Meneer Van Dijk zet zijn koffie neer in de lerarenkamer als collega Tessa hem terzijde neemt. \"Weet jij dat Smit en die jongen uit 5V iets hebben?\" fluistert ze. Van Dijk voelt de grond onder zich wegzakken. Mevrouw Smit, docent Nederlands, gerespecteerd, altijd de eerste om anderen aan te spreken op grensoverschrijdend gedrag. Nu blijkt zij zelf al maanden een relatie te hebben met een zeventienjarige leerling. Het is tegen elke schoolregel, tegen elk machtsverschil dat hij zelf altijd heeft proberen te bewaken. Meldt hij het bij de directie, wetend dat dit haar baan kan kosten en de leerling in de schijnwerpers zet? Of wacht hij, in de hoop dat zij er zelf een einde aan maakt? Van Dijk legt zijn hand op de deurklink van het directiekantoor. Doet hij de deur open?",
+      "titel": "Relatie tussen docent en leerling",
+      "verhaal": "Meneer Van Dijk hoort het via via in de personeelskamer, half fluisterend tussen twee collega's: mevrouw Smit zou een relatie hebben met een van haar examenleerlingen. Als hij er later voorzichtig naar informeert, ontwijkt ze zijn blik en verandert ze van onderwerp.\n\nHij kent de schoolregels, weet dat dit ethisch onverantwoord is gezien het machtsverschil tussen docent en leerling. Mevrouw Smit is al vijftien jaar zijn collega, iemand die hem ooit wegwijs maakte toen hij zelf begon. Een melding zou het einde van haar carrière kunnen betekenen.\n\nTegelijkertijd denkt hij aan de leerling, wiens eindexamen dit jaar nota bene door mevrouw Smit wordt begeleid. Niemand anders lijkt iets te vermoeden. Meldt meneer Van Dijk dit bij de schoolleiding, spreekt hij mevrouw Smit er eerst zelf op aan, of wacht hij tot hij meer zekerheid heeft?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1630,29 +1749,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_01.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A male teacher standing in an empty school hallway, glancing thoughtfully toward a closed staff room door, quiet concerned expression, late afternoon light through windows.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 133,
+      "woordenNl": 135,
       "woordenEn": 136,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON1 Relatie tussen docent en leerling.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_02",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "De lege stoel achterin",
-      "verhaal": "Mevrouw Peters ziet Ahmed vrijdagmiddag als laatste het klaslokaal verlaten, hoofd gebogen, rugzak dichtgeritst tegen zijn borst. Voor de derde keer deze maand vindt ze een prop papier op zijn tafel met een scheldwoord erop. Ze heeft de klas al twee keer toegesproken, een mentorgesprek gehouden, de ouders gebeld. Niets verandert. Ahmed spreekt bijna niet meer in de les, zijn cijfers zakken, en de klas doet alsof er niets aan de hand is. Vandaag zag ze twee jongens grinniken toen hij zijn tas pakte. Escaleert ze naar de zorgcoördinator en de ouders van de daders, met het risico dat het pesten ondergronds gaat en erger wordt? Of blijft ze het zelf proberen op te lossen, terwijl Ahmed intussen verder wegzakt? Ze kijkt naar de lege stoel achterin. Hoelang kan ze nog wachten?",
+      "titel": "Pestgedrag dat niet stopt",
+      "verhaal": "Mevrouw Peters heeft het pesten van Ahmed nu drie keer klassikaal besproken, drie keer beloofden de leerlingen beterschap, en drie keer begon het een week later weer — subtieler dit keer, net buiten haar gezichtsveld. Ahmed zegt zelf steeds minder, meldt zich vaker ziek, en zijn cijfers zakken zichtbaar.\n\nZe heeft de mentor al ingelicht, die het \"in de gaten houdt.\" Een groepsgesprek alleen lijkt averechts te werken; sommige leerlingen leken het bijna als bevestiging te zien dat het hen raakte. Ahmed's ouders hebben nog niets gemeld, wat haar doet twijfelen of ze wel weten hoe erg het is.\n\nVandaag ziet ze weer een groepje giechelen zodra Ahmed voorbijloopt naar zijn plek. Schakelt mevrouw Peters de zorgcoördinator en ouders formeel in, probeert ze een individueel gesprek met de kopstukken van de groep, of zoekt ze eerst Ahmed zelf op om te horen wat hij wil?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1664,29 +1785,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_02.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher standing at the front of a classroom, watching a quiet student walk to his seat while other students glance and whisper, concerned expression, natural classroom light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 132,
+      "woordenNl": 145,
       "woordenEn": 137,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON3 Pestgedrag in de klas dat niet stopt.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_03",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Het lijstje in de kantine",
-      "verhaal": "Meneer Janssen zit dinsdagmiddag in de kantine met de cijferlijst van klas 4B open op zijn laptop. Hij vergelijkt het handschrift van collega Vermeulen met de rubrics: drie van haar favoriete leerlingen krijgen structureel een punt hoger dan hun werk rechtvaardigt, terwijl andere, net zo sterke, leerlingen op het gemiddelde blijven hangen. Een leerling maakte er laatst nog een opmerking over: \"Het is toch niet eerlijk, meneer?\" Hij weet: een melding bij de examencommissie kan Vermeulens beoordelingsbevoegdheid kosten en de sfeer in het team grondig verzieken. Zwijgen betekent dat de ongelijkheid doorgaat en het vertrouwen van leerlingen in eerlijke beoordeling verder afbrokkelt. Hij sluit zijn laptop en loopt richting de gang waar Vermeulens lokaal is. Klopt hij aan, of loopt hij door?",
+      "verhaal": "Meneer Janssen zit naast mevrouw Vermeulen in de nakijkvergadering en ziet toevallig haar cijferlijst over haar schouder. Drie leerlingen die hij zelf ook lesgeeft, met werk dat hij als middelmatig zou beoordelen, staan bij haar op een 8 of hoger — allemaal leerlingen die ze buiten de les om vaak prijst.\n\nAndere leerlingen, met naar zijn inschatting sterker werk, krijgen bij haar een 6. Hij heeft dit patroon nu bij drie opeenvolgende toetsperiodes gezien. Enkele leerlingen hebben er al mopperend over gesproken in de wandelgangen, zonder dat iemand het formeel heeft aangekaart.\n\nMevrouw Vermeulen is een gewaardeerde collega die al twintig jaar op school werkt en volgend jaar met pensioen gaat. Meneer Janssen sluit zijn laptop dicht na de vergadering. Bespreekt hij dit direct met haar, meldt hij het bij de teamleider, of laat hij het gaan omdat ze toch bijna stopt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1698,29 +1821,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_03.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher sitting at a meeting table glancing sideways at a colleague's grading spreadsheet on a laptop screen, thoughtful concerned expression, office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 122,
+      "woordenNl": 142,
       "woordenEn": 113,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON4 Docent geeft onterecht hoge cijfers aan favoriete leerlingen.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_04",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "Wat er blijft hangen",
-      "verhaal": "Mevrouw Van der Meer staat woensdagochtend voor lokaal 1.14 als ze door de kier van de deur meneer Jansens stem hoort: een grap over een leerling met een hoofddoek, gevolgd door gelach van een deel van de klas. Het is niet de eerste keer; leerlingen fluisteren er al weken over in de gang, en twee ouders hebben via de mentor hun zorgen geuit. Jansen is een gewaardeerde collega, al vijftien jaar in dienst, en niemand heeft hem ooit rechtstreeks aangesproken. Ze weet dat een officiële melding bij de schoolleiding een onderzoek in gang zet dat de sfeer in het team op scherp zet en Jansen zijn positie kan kosten. Een gesprek onder vier ogen voelt veiliger, maar verandert dat werkelijk iets? Ze klopt aan bij zijn lokaal. Wat zegt ze als hij opendoet?",
+      "titel": "Discriminerende opmerkingen van een collega",
+      "verhaal": "Mevrouw Van der Meer hoort het door de dunne wand tussen de lokalen: meneer Jansen die weer een \"grapje\" maakt over de achtergrond van een van zijn leerlingen, gevolgd door onzeker gelach uit de klas. Het is niet de eerste keer deze maand dat ze zoiets opvangt.\n\nTwee leerlingen uit die klas hebben er al met haar over gesproken na de les, duidelijk onzeker of ze het serieus moeten nemen of gewoon moeten lachen zoals de rest. Meneer Jansen is een ervaren collega met veel aanzien in het team, en niemand heeft hem tot nu toe aangesproken.\n\nZe weet dat een melding grote gevolgen kan hebben voor de werksfeer in het team, waarin ze nog jaren mee moet werken. Vandaag hoort ze via de deur weer een vergelijkbare opmerking. Spreekt ze meneer Jansen er zelf op aan, meldt ze het bij de schoolleiding, of praat ze eerst met de betrokken leerlingen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1732,17 +1857,19 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_04.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher standing in a school hallway near a classroom door, listening with a concerned expression, students visible through a window in the door behind her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 133,
+      "woordenNl": 151,
       "woordenEn": 131,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON5 Discriminerende opmerkingen door een collega-docent.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_05",
@@ -1753,8 +1880,8 @@
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "De afwezige stoel",
-      "verhaal": "Mevrouw Visser noteert donderdagochtend de vierde afwezigheid van Kimberly deze maand in het absentiesysteem. Ze belt naar huis; niemand neemt op. Wanneer Kimberly de volgende dag wel verschijnt, met een vale huid en gebroken blik, vraagt Visser voorzichtig hoe het gaat. \"Gewoon moe,\" zegt Kimberly, en ze kijkt naar de grond. Visser ziet steeds meer signalen — een verwaarloosde rugtas, telefoonberichten die ze snel wegdrukt — die wijzen op iets thuis dat niet klopt. Kimberly heeft haar duidelijk gevraagd om het \"gewoon te laten\". Meldt Visser haar vermoeden bij de zorgcoördinator, met het risico dat Kimberly's vertrouwen in haar breekt? Of wacht ze af, in de hoop dat Kimberly ooit uit zichzelf praat, terwijl de signalen intussen verergeren? Visser legt de telefoon terug op het bureau. Belt ze?",
+      "titel": "Een leerling met thuisproblemen",
+      "verhaal": "Mevrouw Visser merkt het al weken: Kimberly die steeds vaker afwezig is, die zich terugtrekt in de pauzes, die haar blik afwendt zodra iemand doorvraagt. Vandaag komt ze weer een uur te laat binnen, met een vage smoes over de bus.\n\nToen mevrouw Visser laatst voorzichtig vroeg of alles goed ging thuis, kreeg ze alleen een kort \"het gaat wel\" en een blik die duidelijk maakte dat het onderwerp gesloten was. Ze vermoedt dat er meer speelt, maar heeft geen concreet bewijs — alleen een groeiend onbehagen.\n\nDe zorgcoördinator inschakelen zonder Kimberly's medeweten voelt als een inbreuk op haar vertrouwen, dat toch al broos is. Niets doen voelt als wegkijken van iets dat mogelijk ernstig is. Kimberly loopt net haar lokaal weer binnen. Vraagt mevrouw Visser vandaag opnieuw door, schakelt ze de zorgcoördinator in, of wacht ze tot Kimberly zelf iets zegt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1766,15 +1893,17 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_05.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher standing near a classroom doorway watching a student walk in quietly and avoid eye contact, concerned thoughtful expression, soft morning light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 128,
+      "woordenNl": 142,
       "woordenEn": 126,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON6 Leerling met thuisproblemen.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 1
   },
@@ -1783,12 +1912,12 @@
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Tien minuten voor het assessment",
-      "verhaal": "Om 08:50 uur staat Lisa huilend in de deuropening van het toetslokaal, tien minuten voor haar herkansing. Gisteravond hoorde ze dat haar studievriendin Fem is overleden. Ze had thuis kunnen blijven, maar wilde koste wat het kost komen — een gemiste kans betekent een half jaar wachten op een nieuwe poging, en ze loopt al achter in haar studie. De examinator ziet een studente die nauwelijks een zin kan afmaken, laat staan een beoordelingsformulier. Het protocol is helder: wie niet start, moet wachten tot de volgende ronde. Maar wat is een \"eerlijk\" resultaat waard, afgenomen bij iemand die instort van verdriet? Uitstel toestaan buiten het reglement om kan precedenten scheppen voor andere studenten in nood. De examinator kijkt op de klok. Laat ze het assessment beginnen, of stuurt ze Lisa naar huis?",
+      "verhaal": "De studente staat huilend in de deuropening van het examenlokaal, tien minuten voor haar assessment moet beginnen. Ze heeft net gehoord dat een goede studievriendin is overleden, maar is toch gekomen — een herkansing zou pas over een half jaar mogelijk zijn, en die vertraging kan ze zich niet veroorloven.\n\nDe examinator kent het protocol: een assessment afleggen in deze emotionele toestand is eigenlijk niet verantwoord, de kans op een eerlijke beoordeling van haar kunnen is klein. Maar de standaardprocedure voor uitstel is star en traag, en biedt geen ruimte voor deze specifieke situatie.\n\nAndere studenten in de wachtruimte kijken toe, wetend dat een uitzondering voor haar ook vragen kan oproepen over hun eigen strikte deadlines. De klok tikt door richting het geplande tijdstip. Laat de examinator het assessment doorgaan zoals gepland, zoekt hij ter plekke naar een informele oplossing, of doorbreekt hij de procedure met een formeel uitstel?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1800,29 +1929,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_06.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A university examiner standing in a doorway comforting a visibly upset student outside an exam room, other students waiting in the hallway, empathetic concerned expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 132,
+      "woordenNl": 149,
       "woordenEn": 133,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON7 Procedure of Praktische Wijsheid.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_07",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "5,3 op het scherm",
-      "verhaal": "Meneer De Groot staart dinsdagmiddag naar het beoordelingssysteem: 5,3, onvoldoende. Het is de derde poging van student Youssef voor dit vak. In de kantlijn van zijn aantekeningen ziet De Groot de vooruitgang die het systeem niet meeneemt — Youssef is dit semester geen les gemist, heeft actief meegedaan, zijn presentatie was merkbaar beter dan vorige keer. Toch telt de rubric strikt de deelscores bij elkaar op, en een half punt eronder betekent officieel een onvoldoende en weer een half jaar vertraging. De Groot kan het cijfer handmatig aanpassen — de software staat dat toe — maar daarmee wijkt hij af van het systeem dat juist bedoeld is om willekeur te voorkomen. Zijn vinger zweeft boven de \"opslaan\"-knop. Overschrijft hij het cijfer, of laat hij het systeem beslissen?",
+      "titel": "Beoordelen is mensenwerk",
+      "verhaal": "Het beoordelingssysteem geeft zijn definitieve cijfer: een 5,3, een duidelijke onvoldoende. De docent kijkt nog eens naar het scherm en dan naar het dossier van de student ernaast — twee eerdere pogingen, allebei net onvoldoende, maar met een aantoonbare vooruitgang in aanwezigheid, inzet en studiegedrag die het systeem niet meeweegt.\n\nEen derde onvoldoende betekent voor deze student een half jaar studievertraging, met alle financiële en persoonlijke gevolgen van dien. De docent weet dat een handmatige aanpassing van 0,2 punt binnen zijn discretionaire ruimte valt, al wordt dat door collega's zelden gedaan.\n\nHet systeem staat er koud en onbewogen bij, cijfers zijn cijfers. Maar de docent heeft deze student twee jaar zien worstelen en groeien. Rondt hij het cijfer handmatig naar boven af, houdt hij vast aan wat het systeem aangeeft, of bespreekt hij de situatie eerst met de examencommissie?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1834,29 +1965,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_07.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher sitting at a desk looking at a grading screen showing a numeric score, thoughtful conflicted expression, a student file open beside the keyboard, warm desk lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 127,
+      "woordenNl": 139,
       "woordenEn": 123,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON8 Beoordelen is mensenwerk.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_08",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Het rooster van meneer De Vries",
-      "verhaal": "Mevrouw Jansen hoort het weer in de wandelgangen: leerlingen die klagen dat de lessen van meneer De Vries \"een chaos\" zijn — geen duidelijk lesplan, materiaal dat hij ter plekke improviseert, een klas die niet meer weet wat er van hen verwacht wordt. Ze weet waarom: De Vries maakt een moeilijke scheiding door en komt amper aan voorbereiding toe. Vorige week trof ze hem 's ochtends vroeg alleen in de docentenkamer, ogen rood, met een half leeg kopje koffie. Ze wil er voor hem zijn als collega, maar de klachten van leerlingen stapelen zich op en de teamleider heeft er al twee keer naar gevraagd. Beschermt ze De Vries door te zwijgen over zijn situatie, of stapt ze naar de teamleider om hulp te vragen, ook al is dat niet aan haar om te delen?",
+      "verhaal": "Mevrouw Jansen hoort de klachten inmiddels van meerdere kanten: leerlingen die niet meer weten wat er van hen verwacht wordt in de lessen van meneer De Vries, die steeds vaker te laat komt en zichtbaar onvoorbereid voor de klas staat. De cijfers van zijn groepen dalen, de frustratie stijgt.\n\nZe weet, via een terloopse opmerking die hij ooit maakte, dat hij thuis een lastige scheiding doormaakt. Dat verklaart misschien zijn afwezigheid van geest, maar de leerlingen ondervinden er wel de gevolgen van, ongeacht de reden erachter.\n\nEen melding bij de teamleider voelt als het in de rug aanvallen van een collega die het al moeilijk heeft. Niets zeggen voelt als de leerlingen in de steek laten. Vandaag hoort ze weer een groepje mopperen op de gang over zijn les. Spreekt mevrouw Jansen hem eerst zelf aan, meldt ze het bij de teamleider, of wacht ze af of het vanzelf beter wordt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1868,29 +2001,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_08.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher standing in a school corridor overhearing students complaining nearby, thoughtful concerned expression, lockers and classroom doors in soft background blur.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 135,
+      "woordenNl": 151,
       "woordenEn": 133,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON9 Collegiaal.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_09",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Buiten de kalibratie",
-      "verhaal": "In de docentenkamer, vrijdag na schooltijd, ziet Marieke hoe collega Ruud voor de zoveelste keer een stapel werkstukken beoordeelt zonder de rubric erbij te pakken. \"Ik voel gewoon aan wat een goed werkstuk is,\" zegt hij, als ze ernaar vraagt. Ze weet dat er kalibratiesessies zijn geweest, protocollen zijn afgesproken, juist om willekeur tussen docenten te voorkomen — en dat leerlingen bij Ruud structureel andere cijfers krijgen dan bij collega's voor vergelijkbaar werk. Een student had er laatst over geklaagd bij de curriculumcommissie, zonder namen te noemen. Spreekt Marieke Ruud er rechtstreeks op aan, met het risico op een ongemakkelijke sfeer in een klein team? Of meldt ze het bij de curriculumcommissie, wetend dat dit voor Ruud verstrekkende gevolgen kan hebben? Ze pakt haar jas van de kapstok. Wacht ze tot maandag, of spreekt ze hem nu aan?",
+      "verhaal": "Tijdens de kalibratiesessie valt het weer op: terwijl de rest van het team nauwgezet de rubrics volgt, becijfert deze collega naar eigen inzicht — globaal, subjectief, duidelijk afwijkend van de afgesproken criteria. Bij navraag wuift hij het weg: \"Ik zie het wel, ik hoef geen vinkjeslijst om te weten of iemand het snapt.\"\n\nDe protocollen en kalibratiesessies bestaan juist om studenten een eerlijke, vergelijkbare beoordeling te garanderen, ongeacht wie er nakijkt. Een paar studenten hebben al gemerkt dat hun cijfer bij hem opvallend anders uitvalt dan bij collega's die hetzelfde werk beoordelen.\n\nHij is een ervaren en graag geziene docent, met een informele autoriteit binnen het team die niemand graag op de proef stelt. Spreekt de waarnemer hem er zelf op aan, meldt ze het bij het management of de curriculumcommissie, of laat ze het gaan uit angst voor gedoe?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1902,29 +2037,31 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_09.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher observing a colleague grading papers by hand at a nearby desk during a calibration session, thoughtful skeptical expression, meeting room lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 138,
+      "woordenNl": 140,
       "woordenEn": 135,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON10 Eigenwijsheid.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   },
   {
     "id": "GK_OW_10",
     "set": "onderwijs-v3",
     "stap": 1,
     "categorie": "onderwijs",
-    "complexiteit": "meso",
+    "complexiteit": "micro",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "Twee opstellen naast elkaar",
-      "verhaal": "Meneer Bakker zit donderdagmiddag na schooltijd met twee opstellen naast elkaar: dat van Lisa en dat van haar klasgenoot Fenna. Op de derde alinea staat exact dezelfde zin, tot en met de typefout. Hij weet dat overschrijven volgens het examenreglement een onvoldoende en een aantekening in het dossier betekent. Maar hij kent ook Lisa's situatie: vorige week vertelde ze hem, met tranen in haar ogen, dat haar ouders een onvoldoende \"gewoon niet accepteren\" en dat er thuis al maanden ruzie is over haar cijfers. Volgt hij het protocol, dan riskeert hij dat de druk thuis verder oploopt. Laat hij het gaan, dan ondermijnt hij de regel die oneerlijkheid moet tegengaan — en wat zegt hij dan tegen Fenna, die haar eigen werk maakte? Bakker legt de twee opstellen naast elkaar op zijn bureau. Belt hij de ouders, of eerst Lisa zelf?",
+      "titel": "Plagiaat onder ouderlijke druk",
+      "verhaal": "Meneer Bakker herkent de zinnen meteen — woordelijk overgenomen uit het werk van Lisa's klasgenoot, tot en met een kleine typefout die ook in het origineel staat. Lisa zit twee rijen verderop, gespannen naar haar tafel starend terwijl de andere leerlingen hun spullen inpakken.\n\nHij weet van eerdere gesprekken dat Lisa's ouders elke onvoldoende bestraffen met huisarrest en ingetrokken privileges. Vorige week zag hij nog hoe ze in tranen het lokaal verliet na een tegenvallend proefwerk. Het protocol is duidelijk: plagiaat melden, een officiële waarschuwing, een aantekening in haar dossier.\n\nMeneer Bakker weet ook dat een aantekening voor Lisa's ouders reden kan zijn om nog harder in te grijpen thuis. Hij pakt zijn pen op om het formulier in te vullen. Volgt hij het protocol zoals bij elke andere leerling, of zoekt hij eerst het gesprek met Lisa over wat er thuis speelt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1936,16 +2073,18 @@
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_OW_10.jpg",
-      "fireflyPrompt": null,
+      "fireflyPrompt": "A teacher sitting at his desk holding two student papers side by side, comparing them with a concerned expression, a student visible sitting tensely at her desk in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 141,
+      "woordenNl": 143,
       "woordenEn": 138,
-      "bron": "Gesprekskaarten_Onderwijs_v3.docx",
-      "categorieEn": "EDUCATION"
+      "bron": "v3-docx: ON2 Plagiaat door een leerling onder druk van ouders.docx",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 1
   }
 ]

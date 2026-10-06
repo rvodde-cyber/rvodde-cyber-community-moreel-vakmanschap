@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T08:46:07.404Z",
+  "generatedAt": "2026-10-06T10:41:54.995Z",
   "count": 58,
   "cards": [
     {
@@ -7,32 +7,32 @@
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De roddelende vriend",
       "titelEn": "The gossiping friend",
-      "woordenNl": 49,
+      "woordenNl": 154,
       "woordenEn": 56,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_02",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Buurman mishandelt zijn vrouw",
       "titelEn": "Neighbor abuses his wife",
-      "woordenNl": 58,
+      "woordenNl": 139,
       "woordenEn": 54,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_03",
@@ -45,10 +45,10 @@
       "status": "getest",
       "titelNl": "De gevonden portemonnee",
       "titelEn": "The found wallet",
-      "woordenNl": 48,
+      "woordenNl": 140,
       "woordenEn": 49,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_04",
@@ -61,10 +61,10 @@
       "status": "getest",
       "titelNl": "Collega declareert onterecht overuren",
       "titelEn": "Colleague falsely claims overtime",
-      "woordenNl": 61,
+      "woordenNl": 132,
       "woordenEn": 57,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A man sitting at an office desk, looking closely at a timesheet spreadsheet on his screen, a colleague visible walking out the door in the background, late afternoon office light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_05",
@@ -77,10 +77,10 @@
       "status": "getest",
       "titelNl": "Collega presteert slecht wegens persoonlijke problemen",
       "titelEn": "Colleague underperforms due to personal problems",
-      "woordenNl": 47,
+      "woordenNl": 146,
       "woordenEn": 49,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A woman looking at a project planning board full of overdue red-flagged tasks in an open office, a distracted colleague visible at a desk in the background, daytime office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_06",
@@ -93,106 +93,106 @@
       "status": "getest",
       "titelNl": "Leidinggevende maakt discriminerende opmerkingen",
       "titelEn": "Manager makes discriminatory remarks",
-      "woordenNl": 53,
+      "woordenNl": 127,
       "woordenEn": 48,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A woman sitting at a conference table looking uncomfortable during a team meeting, other colleagues glancing down avoiding eye contact, a manager gesturing at the head of the table, corporate office setting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_07",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "duurzaamheid",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De goedkope stage in het buitenland",
       "titelEn": "The low-cost internship abroad",
-      "woordenNl": 64,
+      "woordenNl": 130,
       "woordenEn": 65,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young intern standing in an NGO field office holding a folder of financial documents, looking out toward a distant logging site through the window, conflicted expression, warm tropical daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_08",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "duurzaamheid",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De verdiende vakanties",
       "titelEn": "The well-earned holidays",
-      "woordenNl": 43,
+      "woordenNl": 129,
       "woordenEn": 52,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A tired nurse in scrubs sitting at her kitchen table late at night, laptop open on a flight booking page, conflicted contemplative expression, soft lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_09",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "duurzaamheid",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Het onderzoek naar dierproeven",
       "titelEn": "The animal testing research",
-      "woordenNl": 48,
+      "woordenNl": 130,
       "woordenEn": 51,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A researcher in a lab coat standing at a lab bench reviewing data on a laptop, thoughtful conflicted expression, clinical laboratory lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_10",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "diversiteit-inclusie",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De anonieme sollicitatie",
       "titelEn": "The anonymous job application",
-      "woordenNl": 62,
+      "woordenNl": 147,
       "woordenEn": 65,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A hiring manager sitting at a desk comparing two nearly identical resumes side by side, thoughtful conflicted expression, neutral office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_11",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "diversiteit-inclusie",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Grappen",
       "titelEn": "Jokes",
-      "woordenNl": 71,
+      "woordenNl": 145,
       "woordenEn": 77,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young man standing in a circle of friends holding a beer at an outdoor gathering, uneasy expression while others laugh, warm evening light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_12",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "diversiteit-inclusie",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De gemengde relatie",
       "titelEn": "The intercultural relationship",
-      "woordenNl": 72,
+      "woordenNl": 156,
       "woordenEn": 69,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman sitting close with her partner on a sofa, phone in hand showing a missed call from a family member, warm but tense home lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_13",
@@ -203,44 +203,44 @@
       "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "Foto",
+      "titelNl": "De foto zonder toestemming",
       "titelEn": "Photo",
-      "woordenNl": 41,
+      "woordenNl": 140,
       "woordenEn": 40,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young man looking at his phone with a guilty expression after reading a message, sitting on a couch at home, evening lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_14",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "social-media",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "Reputatie",
+      "titelNl": "De valse recensie",
       "titelEn": "Reputation",
-      "woordenNl": 40,
+      "woordenNl": 135,
       "woordenEn": 38,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A person typing a review on a laptop late at night with a tense conflicted expression, dim home office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_MM_15",
       "set": "morele-moed-teaser",
       "stap": 4,
       "categorie": "studentenleven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Fijn groepswerk",
       "titelEn": "Great group work",
-      "woordenNl": 86,
+      "woordenNl": 148,
       "woordenEn": 87,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A female student standing in a hallway after a presentation, arms crossed, looking at a confident male classmate being congratulated by others nearby, frustrated expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_01",
@@ -256,7 +256,7 @@
       "woordenNl": 133,
       "woordenEn": 129,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A man standing near an office supply cabinet at dusk, glancing over his shoulder toward a colleague packing items into a bag in the background, tense uncertain expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_02",
@@ -272,15 +272,15 @@
       "woordenNl": 127,
       "woordenEn": 120,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman sitting on her bed wrapped in a towel, phone in hand, hesitant expression while reading a message, soft bathroom light spilling in.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_03",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "werk",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Voor de goede sfeer",
@@ -288,7 +288,7 @@
       "woordenNl": 125,
       "woordenEn": 127,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A tired office worker standing with his coat half on, looking back toward his manager in a nearly empty office at the end of the day, conflicted expression, late afternoon light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_04",
@@ -304,7 +304,7 @@
       "woordenNl": 118,
       "woordenEn": 125,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teenage girl lying in bed at night, illuminated only by her phone screen, worried expression while scrolling through a group chat.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_05",
@@ -320,15 +320,15 @@
       "woordenNl": 125,
       "woordenEn": 123,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young man crouching on a sidewalk between a bike rack and a supermarket entrance, holding a found wallet, thoughtful hesitant expression, overcast daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_06",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "studentenleven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De fout in het rapport",
@@ -336,7 +336,7 @@
       "woordenNl": 117,
       "woordenEn": 123,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young intern sitting at a desk staring at a printed financial report with a highlighted error, conflicted expression, modern office setting, late afternoon light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_07",
@@ -352,15 +352,15 @@
       "woordenNl": 118,
       "woordenEn": 116,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teenage boy sitting alone at a party, phone in hand with a tense expression, dim string-lit backyard in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_08",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "diversiteit-inclusie",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De klant aan de balie",
@@ -368,15 +368,15 @@
       "woordenNl": 117,
       "woordenEn": 115,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A library colleague standing beside a coworker at the front desk, watching an interaction with a visitor with a concerned expression, warm indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_09",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "duurzaamheid",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De goedbetaalde bijbaan",
@@ -384,7 +384,7 @@
       "woordenNl": 122,
       "woordenEn": 113,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman sitting at a kitchen table looking at her phone with a job offer notification, laptop open showing a bank balance, conflicted expression, evening light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_10",
@@ -400,7 +400,7 @@
       "woordenNl": 123,
       "woordenEn": 118,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A student sitting at an exam desk in a quiet classroom, glancing sideways with a tense expression, other students focused on their papers in soft blur.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_11",
@@ -416,7 +416,7 @@
       "woordenNl": 115,
       "woordenEn": 112,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young man sitting on his couch looking at his phone with a broken pair of headphones on the table beside him, conflicted expression, evening lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_12",
@@ -432,15 +432,15 @@
       "woordenNl": 123,
       "woordenEn": 113,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman sitting quietly at a shared kitchen table while housemates laugh around her, uncomfortable withdrawn expression, warm domestic evening lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_13",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "duurzaamheid",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De goedkope trui",
@@ -448,15 +448,15 @@
       "woordenNl": 119,
       "woordenEn": 122,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teenage girl standing in a clothing store holding a sweater, thoughtful hesitant expression, checkout queue softly visible behind her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_14",
       "set": "burgerschap",
       "stap": 1,
       "categorie": "werk",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De vraag van de leidinggevende",
@@ -464,7 +464,7 @@
       "woordenNl": 120,
       "woordenEn": 121,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A man sitting at his laptop late in the evening in an office, staring at a graph on the screen, thoughtful conflicted expression, desk lamp lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_BG_15",
@@ -480,7 +480,7 @@
       "woordenNl": 135,
       "woordenEn": 136,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman standing outside a supermarket entrance, glancing toward a man sitting with a cardboard sign, thoughtful hesitant expression, overcast daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_01",
@@ -503,16 +503,16 @@
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Vriend rijdt onder invloed van alcohol",
       "titelEn": "Friend drives under the influence of alcohol",
-      "woordenNl": 51,
+      "woordenNl": 127,
       "woordenEn": 57,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A tense nighttime scene outside a house: a young woman standing in a doorway looking worried at a young man getting into a car, keys in hand, wine glasses visible through a window behind her. Documentary street photography, warm porch light against cool night air.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_03",
@@ -525,10 +525,10 @@
       "status": "getest",
       "titelNl": "Buurman dumpt afval in het park",
       "titelEn": "Neighbour dumps rubbish in the park",
-      "woordenNl": 55,
+      "woordenNl": 153,
       "woordenEn": 58,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A man standing at the edge of a public park, looking with concern at torn garbage bags dumped near flowerbeds, overcast daylight, a residential street visible in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_04",
@@ -541,42 +541,42 @@
       "status": "getest",
       "titelNl": "Vriend pleegt winkeldiefstal",
       "titelEn": "Friend shoplifts",
-      "woordenNl": 61,
+      "woordenNl": 137,
       "woordenEn": 57,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young man standing at the end of a supermarket aisle, watching his friend slip a small item into his jacket pocket near the checkout, tension visible in his posture, muted indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_05",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Buurvrouw laat kinderen vaak alleen thuis",
       "titelEn": "Neighbour often leaves children home alone",
-      "woordenNl": 57,
+      "woordenNl": 125,
       "woordenEn": 58,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A woman standing in a hallway of an apartment building, hand raised near a neighbor's door, listening with a worried expression, soft muffled light glowing from under the door.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_06",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Vriend rijdt te hard en overtreedt verkeersregels",
       "titelEn": "Friend drives too fast and breaks traffic rules",
-      "woordenNl": 55,
+      "woordenNl": 146,
       "woordenEn": 51,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young woman gripping the armrest inside a moving car, anxious expression, blurred road and motion visible through the windshield, the driver relaxed beside her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_07",
@@ -589,26 +589,26 @@
       "status": "getest",
       "titelNl": "De gevonden portemonnee",
       "titelEn": "The found wallet",
-      "woordenNl": 48,
+      "woordenNl": 140,
       "woordenEn": 48,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_08",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De roddelende vriend",
       "titelEn": "The gossiping friend",
-      "woordenNl": 49,
+      "woordenNl": 154,
       "woordenEn": 56,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_09",
@@ -621,42 +621,42 @@
       "status": "getest",
       "titelNl": "Het geleende geld",
       "titelEn": "The borrowed money",
-      "woordenNl": 64,
+      "woordenNl": 150,
       "woordenEn": 61,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A young adult sitting at a kitchen table with bills and a phone lit up with an incoming call, a conflicted, uneasy expression, warm domestic evening lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_10",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "De gemanipuleerde online beoordeling",
       "titelEn": "The manipulated online review",
-      "woordenNl": 67,
+      "woordenNl": 144,
       "woordenEn": 67,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A person looking at a smartphone screen filled with five-star reviews while standing near a small coffee shop storefront, thoughtful and slightly skeptical expression, soft street-level daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_DL_11",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 3,
-      "complexiteit": "macro",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Buurman mishandelt zijn vrouw",
       "titelEn": "Neighbour abuses his wife",
-      "woordenNl": 58,
+      "woordenNl": 139,
       "woordenEn": 53,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_NM_01",
@@ -775,64 +775,64 @@
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "De stille regel",
+      "titelNl": "Relatie tussen docent en leerling",
       "titelEn": "The unspoken rule",
-      "woordenNl": 133,
+      "woordenNl": 135,
       "woordenEn": 136,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A male teacher standing in an empty school hallway, glancing thoughtfully toward a closed staff room door, quiet concerned expression, late afternoon light through windows.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_02",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "De lege stoel achterin",
+      "titelNl": "Pestgedrag dat niet stopt",
       "titelEn": "The empty chair at the back",
-      "woordenNl": 132,
+      "woordenNl": 145,
       "woordenEn": 137,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher standing at the front of a classroom, watching a quiet student walk to his seat while other students glance and whisper, concerned expression, natural classroom light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_03",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Het lijstje in de kantine",
       "titelEn": "The list in the staff room",
-      "woordenNl": 122,
+      "woordenNl": 142,
       "woordenEn": 113,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher sitting at a meeting table glancing sideways at a colleague's grading spreadsheet on a laptop screen, thoughtful concerned expression, office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_04",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "Wat er blijft hangen",
+      "titelNl": "Discriminerende opmerkingen van een collega",
       "titelEn": "What stays behind",
-      "woordenNl": 133,
+      "woordenNl": 151,
       "woordenEn": 131,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher standing in a school hallway near a classroom door, listening with a concerned expression, students visible through a window in the door behind her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_05",
@@ -843,92 +843,92 @@
       "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "De afwezige stoel",
+      "titelNl": "Een leerling met thuisproblemen",
       "titelEn": "The absent seat",
-      "woordenNl": 128,
+      "woordenNl": 142,
       "woordenEn": 126,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher standing near a classroom doorway watching a student walk in quietly and avoid eye contact, concerned thoughtful expression, soft morning light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_06",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Tien minuten voor het assessment",
       "titelEn": "Ten minutes before the assessment",
-      "woordenNl": 132,
+      "woordenNl": 149,
       "woordenEn": 133,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A university examiner standing in a doorway comforting a visibly upset student outside an exam room, other students waiting in the hallway, empathetic concerned expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_07",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "5,3 op het scherm",
+      "titelNl": "Beoordelen is mensenwerk",
       "titelEn": "5.3 on the screen",
-      "woordenNl": 127,
+      "woordenNl": 139,
       "woordenEn": 123,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher sitting at a desk looking at a grading screen showing a numeric score, thoughtful conflicted expression, a student file open beside the keyboard, warm desk lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_08",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Het rooster van meneer De Vries",
       "titelEn": "Mr De Vries's timetable",
-      "woordenNl": 135,
+      "woordenNl": 151,
       "woordenEn": 133,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher standing in a school corridor overhearing students complaining nearby, thoughtful concerned expression, lockers and classroom doors in soft background blur.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_09",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Buiten de kalibratie",
       "titelEn": "Outside calibration",
-      "woordenNl": 138,
+      "woordenNl": 140,
       "woordenEn": 135,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher observing a colleague grading papers by hand at a nearby desk during a calibration session, thoughtful skeptical expression, meeting room lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     },
     {
       "id": "GK_OW_10",
       "set": "onderwijs-v3",
       "stap": 1,
       "categorie": "onderwijs",
-      "moeilijkheid": 2,
-      "complexiteit": "meso",
+      "moeilijkheid": 1,
+      "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "Twee opstellen naast elkaar",
+      "titelNl": "Plagiaat onder ouderlijke druk",
       "titelEn": "Two essays side by side",
-      "woordenNl": 141,
+      "woordenNl": 143,
       "woordenEn": 138,
       "heeftAfbeelding": true,
-      "fireflyPrompt": null
+      "fireflyPrompt": "A teacher sitting at his desk holding two student papers side by side, comparing them with a concerned expression, a student visible sitting tensely at her desk in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
     }
   ]
 }

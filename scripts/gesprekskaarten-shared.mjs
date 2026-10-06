@@ -33,7 +33,9 @@ export function getMoeilijkheidFromComplexity(complexity) {
 
 export function buildFireflyPrompt(imagePrompt) {
   if (!imagePrompt?.trim()) return null;
-  return `${imagePrompt.trim()}. ${FIREFLY_STYLE_SUFFIX}`;
+  const trimmed = imagePrompt.trim();
+  if (trimmed.includes("portrait orientation 3:4")) return trimmed;
+  return `${trimmed}. ${FIREFLY_STYLE_SUFFIX}`;
 }
 
 export function wordCount(text) {
