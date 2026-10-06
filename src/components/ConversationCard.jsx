@@ -23,6 +23,17 @@ function ComplexityBadge({ card, taal, className = "" }) {
   );
 }
 
+function SectorBadge({ card, className = "" }) {
+  return (
+    <span
+      className={`inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide ${className}`}
+      style={{ color: card.kleur }}
+    >
+      {card.categorie}
+    </span>
+  );
+}
+
 function CardMedia({ card }) {
   if (card.afbeelding) {
     return (
@@ -85,12 +96,7 @@ export function ConversationCardPreview({ card, onOpen }) {
     >
       <div className="relative h-36" style={{ backgroundColor: card.kleurLicht }}>
         <CardMedia card={card} />
-        <span
-          className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
-          style={{ color: card.kleur }}
-        >
-          {card.categorie}
-        </span>
+        <SectorBadge card={card} className="absolute left-3 top-3" />
         <span className="absolute right-3 top-3">
           <ComplexityBadge card={card} taal={taal} />
         </span>
@@ -138,6 +144,12 @@ function formatStapVerbinding(template, card, kernvraag) {
     .replace("{kernvraag}", kernvraag);
 }
 
+// Website-volgorde is bewust omgekeerd t.o.v. de printkaart (A5/PDF): hier staat
+// de foto bovenaan met de sector- en complexiteitsbadge eroverheen, daarna de
+// titel, het verhaal en pas onderaan de vragen (slotvraag, dan reflectievraag).
+// De printvolgorde (categorie → complexiteit → titel → verhaal → vragen → foto
+// onderaan) leeft in generateGesprekskaartPdf.js. Lijn deze twee niet op elkaar
+// uit: web en print hebben opzettelijk een eigen opmaak.
 export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { taal, t } = useTaal();
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
@@ -187,6 +199,10 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
           >
             <div className="relative h-48 overflow-hidden" style={{ backgroundColor: card.kleurLicht }}>
               <CardMedia card={card} />
+              <div className="absolute left-4 top-4 flex flex-wrap items-center gap-2 pr-14">
+                <SectorBadge card={card} />
+                <ComplexityBadge card={card} taal={taal} />
+              </div>
               <button
                 type="button"
                 onClick={onClose}
@@ -203,18 +219,10 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 style={{ color: card.kleur }}
               >
                 {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
-              </p>
-              <p className="mb-2 text-sm font-semibold" style={{ color: card.kleur }}>
-                {card.categorie}
-              </p>
-              <div className="mb-3 flex flex-wrap gap-3 text-xs text-secundair">
-                <ComplexityBadge card={card} taal={taal} />
                 {card.taalniveau && (
-                  <span>
-                    {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
-                  </span>
+                  <span className="text-secundair"> · {card.taalniveau}</span>
                 )}
-              </div>
+              </p>
               <h2
                 id="gesprekskaart-titel"
                 className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"
@@ -230,31 +238,31 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 </p>
               )}
 
-              {(card.vraag1 || card.vraag2) && (
-                <div className="mt-6 space-y-3 rounded-xl border border-rand bg-white/70 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
-                    {t.gesprekskaart.reflectieLabel}
-                  </p>
-                  {card.vraag1 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">1.</span> {card.vraag1}
-                    </p>
-                  )}
-                  {card.vraag2 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">2.</span> {card.vraag2}
-                    </p>
-                  )}
-                </div>
-              )}
+              <div className="mt-8 space-y-4">
+                <p className="text-sm font-semibold leading-6" style={{ color: card.kleur }}>
+                  {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}
+                </p>
 
-              {!card.verhaal && (
-                <p className="mt-5 leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
-              )}
-
-              <p className="mt-4 text-sm font-semibold leading-6" style={{ color: card.kleur }}>
-                {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}
-              </p>
+                {card.vraag1 || card.vraag2 ? (
+                  <div className="space-y-3 rounded-xl border border-rand bg-white/70 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
+                      {t.gesprekskaart.reflectieLabel}
+                    </p>
+                    {card.vraag1 && (
+                      <p className="text-sm leading-6 text-primair">
+                        <span className="font-semibold">1.</span> {card.vraag1}
+                      </p>
+                    )}
+                    {card.vraag2 && (
+                      <p className="text-sm leading-6 text-primair">
+                        <span className="font-semibold">2.</span> {card.vraag2}
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <p className="leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
+                )}
+              </div>
 
               <div className="mt-8">
                 <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>

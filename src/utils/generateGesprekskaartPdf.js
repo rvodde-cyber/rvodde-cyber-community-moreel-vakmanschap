@@ -26,6 +26,10 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
+// Printvolgorde (A5/PDF) is bewust anders dan de website. Op papier staat de
+// foto onderaan en loopt de kaart van categorie → complexiteit → titel → verhaal
+// → vragen → foto. De website (ConversationCard.jsx) keert dit om met de foto
+// bovenaan. Houd deze twee opmaken gescheiden: niet "corrigeren" naar elkaar.
 export function downloadGesprekskaartPdf(card, t, taal = "nl") {
   const gk = getGesprekskaartStrings(taal);
   const doc = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
