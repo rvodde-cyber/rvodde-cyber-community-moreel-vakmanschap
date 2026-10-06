@@ -82,7 +82,9 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Gå med",
       subtitel: "Bli en del av communityn",
-      hint: "Berätta vem du är och vad du arbetar med. Ditt e-postprogram öppnas med ett ifyllt anmälningsmeddelande till Lectoraat Ethisch Werken.",
+      privacy:
+        "By submitting this form, you're signing up for the Community of Moral Craftsmanship. We use your name, institution and email only to invite you to sessions and share relevant materials — never for anything else, and never shared with third parties. You can unsubscribe at any time via r.vodde@fontys.nl.",
+      mailAlternatief: "Prefer to sign up by email? Email",
       naamLabel: "Namn",
       instellingLabel: "Institution",
       emailLabel: "E-postadress",
@@ -90,7 +92,7 @@ export const siteContentLocales = {
       knop: "Skicka min anmälan",
       emailSubject: "Anmälan Community Moral Craftsmanship",
       emailVraag: "Vad arbetar du med inom etikundervisning?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Ej angivet",
     },
     footer: {
@@ -147,7 +149,7 @@ export const siteContentLocales = {
         "Richard Voddé är lektor och forskare i etiskt arbete vid Fontys Hogescholen i Tilburg. Som Comenius Senior Fellow arbetar han med frågan hur etikundervisning i högre yrkesutbildning verkligen formar — inte bara informerar.",
         "Han utvecklade modellen Moral Craftsmanship och samtalskortsmethodiken, och bygger en Community of Practice för lärare och forskare vid högskolor och universitet i Nederländerna och internationellt. Hans referensgrupp omfattar kollegor vid HAN, Avans och Hogeschool Utrecht. Internationellt samarbetar han via HEROES-projektet.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontakta oss",
     },
     visie: {
@@ -196,7 +198,9 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Připojit se",
       subtitel: "Staňte se součástí komunity",
-      hint: "Napište nám, kdo jste a na čem pracujete. Otevře se vám e-mail s předvyplněnou registrací pro Lectoraat Ethisch Werken.",
+      privacy:
+        "By submitting this form, you're signing up for the Community of Moral Craftsmanship. We use your name, institution and email only to invite you to sessions and share relevant materials — never for anything else, and never shared with third parties. You can unsubscribe at any time via r.vodde@fontys.nl.",
+      mailAlternatief: "Prefer to sign up by email? Email",
       naamLabel: "Jméno",
       instellingLabel: "Instituce",
       emailLabel: "E-mailová adresa",
@@ -204,7 +208,7 @@ export const siteContentLocales = {
       knop: "Odeslat registraci",
       emailSubject: "Registrace Community Moral Craftsmanship",
       emailVraag: "Na čem pracujete v etické výchově?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Neuvedeno",
     },
     footer: {
@@ -261,7 +265,7 @@ export const siteContentLocales = {
         "Richard Voddé je lektor a výzkumník etické praxe na Fontys Hogescholen v Tilburgu. Jako Comenius Senior Fellow pracuje na otázce, jak etická výchova ve vyšším odborném vzdělávání skutečně formuje — nejen informuje.",
         "Vyvinul model Moral Craftsmanship a metodiku konverzačních karet a buduje Community of Practice pro učitele a výzkumníky na vysokých školách a univerzitách v Nizozemsku i mezinárodně. Jeho poradní skupina zahrnuje kolegy z HAN, Avans a Hogeschool Utrecht. Mezinárodně spolupracuje v rámci projektu HEROES.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontaktujte nás",
     },
     visie: {
@@ -310,7 +314,9 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Bliv medlem",
       subtitel: "Bliv en del af fællesskabet",
-      hint: "Fortæl os, hvem du er, og hvad du arbejder med. Din e-mail åbnes med en udfyldt tilmelding til Lectoraat Ethisch Werken.",
+      privacy:
+        "By submitting this form, you're signing up for the Community of Moral Craftsmanship. We use your name, institution and email only to invite you to sessions and share relevant materials — never for anything else, and never shared with third parties. You can unsubscribe at any time via r.vodde@fontys.nl.",
+      mailAlternatief: "Prefer to sign up by email? Email",
       naamLabel: "Navn",
       instellingLabel: "Institution",
       emailLabel: "E-mailadresse",
@@ -318,7 +324,7 @@ export const siteContentLocales = {
       knop: "Send min tilmelding",
       emailSubject: "Tilmelding Community Moral Craftsmanship",
       emailVraag: "Hvad arbejder du med inden for etikundervisning?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Ikke angivet",
     },
     footer: {
@@ -375,7 +381,7 @@ export const siteContentLocales = {
         "Richard Voddé er lektor og forsker i etisk praksis ved Fontys Hogescholen i Tilburg. Som Comenius Senior Fellow arbejder han med spørgsmålet om, hvordan etikundervisning i erhvervsakademier virkelig former — ikke blot informerer.",
         "Han udviklede modellen Moral Craftsmanship og samtalekortmetodikken og bygger et Community of Practice for lærere og forskere ved højskoler og universiteter i Nederlandene og internationalt. Hans referencegruppe omfatter kolleger ved HAN, Avans og Hogeschool Utrecht. Internationalt samarbejder han via HEROES-projektet.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontakt os",
     },
     visie: {
