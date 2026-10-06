@@ -17,9 +17,9 @@ const PDF_KEYS = ["student_nl_pdf", "docent_nl_pdf", "student_en_pdf", "docent_e
 const BESTAND_KEYS = [...DOCX_KEYS, ...PDF_KEYS];
 const ID_PATTERN = /^MV_\d{2}$/;
 const WERKBLAD_CODE_PATTERNS = [
-  /^WB-MW\d{2}-HBO-HRM-(NL|EN)$/,
-  /^WB-EX\d{2}-HBO-HRM-(NL|EN)$/,
-  /^WB-GK\d{2}-(MBO|HBO|WO)-(NL|EN)$/,
+  /^WB-MW\d{2}-[A-Z]+-(NL|EN)$/,
+  /^WB-EX\d{2}-HRM-(NL|EN)$/,
+  /^WB-GK\d{2}-(NL|EN)$/,
 ];
 const SAFE_FILENAME = /^[A-Za-z0-9._-]+$/;
 
