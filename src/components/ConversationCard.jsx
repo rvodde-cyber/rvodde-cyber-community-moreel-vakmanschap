@@ -185,8 +185,22 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
+            {/* ── 1. FOTO met badges bovenin ── */}
             <div className="relative h-48 overflow-hidden" style={{ backgroundColor: card.kleurLicht }}>
               <CardMedia card={card} />
+
+              {/* Sectorbadge (links) + Complexiteitsbadge (naast sectorbadge) */}
+              <div className="absolute left-3 top-3 flex flex-wrap items-center gap-2">
+                <span
+                  className="rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
+                  style={{ color: card.kleur }}
+                >
+                  {card.categorie}
+                </span>
+                <ComplexityBadge card={card} taal={taal} />
+              </div>
+
+              {/* Sluitknop (rechts) */}
               <button
                 type="button"
                 onClick={onClose}
@@ -197,24 +211,9 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               </button>
             </div>
 
+            {/* ── 2. TITEL · 3. VERHAAL · 4. VRAGEN ── */}
             <div className="p-6 md:p-8" style={{ backgroundColor: `${card.kleurLicht}88` }}>
-              <p
-                className="mb-2 text-xs font-semibold uppercase tracking-[0.22em]"
-                style={{ color: card.kleur }}
-              >
-                {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
-              </p>
-              <p className="mb-2 text-sm font-semibold" style={{ color: card.kleur }}>
-                {card.categorie}
-              </p>
-              <div className="mb-3 flex flex-wrap gap-3 text-xs text-secundair">
-                <ComplexityBadge card={card} taal={taal} />
-                {card.taalniveau && (
-                  <span>
-                    {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
-                  </span>
-                )}
-              </div>
+              {/* 2. Titel */}
               <h2
                 id="gesprekskaart-titel"
                 className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"
@@ -222,6 +221,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 {card.titel || card.vraag}
               </h2>
 
+              {/* 3. Verhaal */}
               {card.verhaal ? (
                 <p className="mt-5 leading-7 text-secundair">{card.verhaal}</p>
               ) : (
@@ -230,19 +230,19 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 </p>
               )}
 
+              {/* 4. Vragen: slotvraag, daarna reflectievraag */}
               {(card.vraag1 || card.vraag2) && (
                 <div className="mt-6 space-y-3 rounded-xl border border-rand bg-white/70 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
-                    {t.gesprekskaart.reflectieLabel}
-                  </p>
                   {card.vraag1 && (
                     <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">1.</span> {card.vraag1}
+                      <span className="font-semibold" style={{ color: card.kleur }}>→</span>{" "}
+                      {card.vraag1}
                     </p>
                   )}
                   {card.vraag2 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">2.</span> {card.vraag2}
+                    <p className="text-sm leading-6 text-secundair">
+                      <span className="font-semibold" style={{ color: card.kleur }}>→</span>{" "}
+                      {card.vraag2}
                     </p>
                   )}
                 </div>
@@ -252,7 +252,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 <p className="mt-5 leading-7 text-secundair">{t.gesprekskaart.instructie}</p>
               )}
 
-              <p className="mt-4 text-sm font-semibold leading-6" style={{ color: card.kleur }}>
+              <p className="mt-4 text-xs text-secundair leading-6">
                 {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}
               </p>
 
