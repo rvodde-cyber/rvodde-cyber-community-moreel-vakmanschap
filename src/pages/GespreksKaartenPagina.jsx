@@ -14,6 +14,8 @@ import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
 import { getCardContentLang, getLocalizedPageContent, usesEnglishRoutes } from '../data/vertalingen'
 import { useTaal } from '../context/TaalContext'
 import DriedelingBronvermelding from '../components/DriedelingBronvermelding'
+import praktijkschokHrmMeta from '../data/gesprekskaarten/praktijkschok-hrm-meta.json'
+import { ATTRIBUTION_COLOR } from '../data/gesprekskaarten/constants'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
 
@@ -161,6 +163,9 @@ export default function GespreksKaartenPagina() {
     label: t.gesprekskaart.downloadTeaserSet,
   }
   const werkbladDownload = WORK_FORMS_DOWNLOADS[getCardContentLang(taal)]
+  const contentLang = getCardContentLang(taal)
+  const showHrmComplexityNote = displayCards.some((card) => card.set === 'praktijkschok-hrm')
+  const hrmComplexityNote = praktijkschokHrmMeta.complexityNote?.[contentLang]
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
@@ -453,6 +458,15 @@ export default function GespreksKaartenPagina() {
           resultCount={displayCards.length}
           totalCount={allCards.length}
         />
+
+        {showHrmComplexityNote && hrmComplexityNote && (
+          <p
+            className="mb-6 text-xs italic leading-relaxed"
+            style={{ color: ATTRIBUTION_COLOR }}
+          >
+            {hrmComplexityNote}
+          </p>
+        )}
 
         <ConversationCardSection
           stapNummer={4}

@@ -10,13 +10,13 @@
     "status": "getest",
     "nl": {
       "titel": "De roddelende vriend",
-      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt een paar seconden voordat het tot je doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen — nieuwsgierig, geamuseerd, alsof het echte roddel is die het verdient om verder verteld te worden. Ruben is al jaren je beste vriend, degene die er altijd was, ook toen niemand anders er was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk. Je zou hem ook recht voor de groep kunnen tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
+      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt even voor het doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen, nieuwsgierig en geamuseerd, alsof het echte roddel is. Ruben is al jaren je beste vriend, degene die er altijd was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk, of hem recht voor de groep tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
       "titel": "The gossiping friend",
-      "verhaal": "The music is pounding, lights are flashing, and then you hear it: your best friend is spreading lies about one of your friends. Pure gossip, reputation-destroying. Your blood boils — you want to stop him. But he's your best friend, for years now. Turning against him in front of the whole group? The tension is intense.",
+      "verhaal": "The bass pounds through the club, lights flash across the dance floor, and then you catch snatches of what Ruben is telling a group of classmates. It takes a moment to sink in: he is telling an invented story about Nina, your mutual friend, something about an affair that never happened.\n\nYou see the faces around him, curious and amused, as if this were real gossip. Ruben has been your best friend for years, the one who was always there. But Nina is your friend too, and this story could wreck her reputation in class before the night is over.\n\nYou could take him aside, gently but clearly, or contradict him right in front of the group, at the risk of humiliating him. Do you step in now, or walk on to the bar?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -27,8 +27,8 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 154,
-      "woordenEn": 56,
+      "woordenNl": 133,
+      "woordenEn": 134,
       "bron": "v3-docx: DL8 roddel.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -50,8 +50,8 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Neighbor abuses his wife",
-      "verhaal": "Emma witnesses domestic violence involving her neighbor, Mrs. Janssen. Mr. Janssen regularly abuses her, which deeply worries Emma. She hears shouting and sees bruises. Emma struggles with her conscience: she wants to help Mrs. Janssen, but she's afraid of how Mr. Janssen might react. Emma searches for a safe way to support Mrs. Janssen.",
+      "titel": "Neighbour abuses his wife",
+      "verhaal": "Through the thin wall Emma hears the shouting again, followed by a dull thud and then silence, the silence that always frightens her most. The next morning she sees Mrs Janssen in the garden, a bruise half hidden under make-up and sunglasses too big for such a cloudy day. She smiles at Emma as if nothing is wrong, as she has done for months.\n\nEmma knows Mr Janssen is well regarded in the neighbourhood: friendly at the street party, always helping with the hedge. She once looked up the number of Veilig Thuis, the Dutch domestic abuse helpline, and closed the website before she could call. She wonders: is it her place to step in, or does her silence make her complicit?\n\nEmma picks up her phone. Does she call now, or wait until she is sure of what she heard?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -63,7 +63,7 @@
     },
     "meta": {
       "woordenNl": 139,
-      "woordenEn": 54,
+      "woordenEn": 141,
       "bron": "v3-docx: DL11 Buurman mishandelt zijn vrouw.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -86,7 +86,7 @@
     },
     "en": {
       "titel": "The found wallet",
-      "verhaal": "On a deserted bench lies a heavy leather wallet. Cash and an ID card stare back at you. No one around — just you. Temptations race through your mind: new shoes, unpaid bills. But then you think of the possible owner: a student, a mother, a stranger desperately searching.",
+      "verhaal": "On the deserted bench in the park lies a heavy leather wallet, half open. A stack of twenty-euro notes peeks out from underneath, next to an ID card with a photo of a young woman looking seriously into the camera. Nobody is around: no cyclists, no walkers, only the rustle of leaves.\n\nTo Jasper it feels as if the wallet has fallen at exactly the right moment. This month's rent is not covered yet, and the new shoes have been on his wish list for weeks. He picks it up and feels its weight in his hand. The ID card shows an address, not far from here. He could keep the money and leave the wallet somewhere, as if he never found it.\n\nHis thumb slides over the notes. Does he slip the wallet into his pocket, or look for its owner?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -98,7 +98,7 @@
     },
     "meta": {
       "woordenNl": 140,
-      "woordenEn": 49,
+      "woordenEn": 142,
       "bron": "v3-docx: Dl7 Portemonnee.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -121,7 +121,7 @@
     },
     "en": {
       "titel": "Colleague falsely claims overtime",
-      "verhaal": "Mark discovers that his colleague Emma is committing overtime fraud. This creates unfairness and dissatisfaction within the team. Mark feels uncomfortable and doesn't know how to act. He wants to uphold honesty and moral standards, but fears the consequences of reporting it. He's looking for a way to address the issue without damaging the atmosphere at work.",
+      "verhaal": "Mark scrolls through the overview of hours worked and frowns. For the third week in a row, Emma has claimed exactly two hours of overtime on days when he saw her leave around five, coat already on, heading for the bike shed. He is certain now: this is no longer a mistake.\n\nThe team has been working overtime for months to meet deadlines, and everyone gets the same overtime rate under the same rules. If Mark says nothing, the department is paying for Emma's unjustified claims. Does he tell Emma herself, hoping she will put it right? Or does he go straight to HR, at the risk of the atmosphere never being the same again?\n\nMark closes the overview. Does he talk to Emma first, or go directly to the manager?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -133,7 +133,7 @@
     },
     "meta": {
       "woordenNl": 132,
-      "woordenEn": 57,
+      "woordenEn": 131,
       "bron": "v3-docx: werk 1 Collega declareert onterecht overuren.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -156,7 +156,7 @@
     },
     "en": {
       "titel": "Colleague underperforms due to personal problems",
-      "verhaal": "Sophie notices that her colleague Mark is often late and not performing his work properly. This increases the workload for the team, which has to make up for the delays. Sophie knows that Mark is dealing with personal problems, but she's concerned about the negative impact on the team.",
+      "verhaal": "For the umpteenth time, Sophie looks at the red blocks in the planning overview: tasks Mark should have finished, now taken over by a team already running on empty. He arrives late more and more often, misses deadlines, answers messages slowly. Through a mutual friend she knows he is going through a difficult divorce at home, something he never talks about at the office.\n\nThe team is now openly grumbling in the coffee corner, and the team lead has already asked whether something is going on with Mark. Sophie feels torn: loyal to a colleague who is struggling, but she also sees the workload growing for everyone else because of his absence.\n\nDoes she tell the manager what she knows, hoping help will follow? Or does she protect Mark's privacy and look for a way to relieve the team herself?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -168,7 +168,7 @@
     },
     "meta": {
       "woordenNl": 146,
-      "woordenEn": 49,
+      "woordenEn": 140,
       "bron": "v3-docx: werk 3. Collega presteert slecht vanwege persoonlijke problemen.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -191,7 +191,7 @@
     },
     "en": {
       "titel": "Manager makes discriminatory remarks",
-      "verhaal": "Emma notices that her manager, Mr. Jansen, regularly makes discriminatory remarks about colleagues. This creates an unsafe work environment and leads to dissatisfaction among employees. Emma feels uncomfortable and doesn't know how to respond. She wants to find a solution that addresses the issue while preserving workplace relationships.",
+      "verhaal": "Emma is sitting in the weekly team meeting when Mr Jansen makes another remark, this time about a colleague with a migrant background, packaged as a joke and followed by a glance around the room asking for approving laughter. It is not the first time. She has watched the pattern grow for months.\n\nColleagues look uncomfortably at their laptops, nobody says anything, and the atmosphere in the department has visibly changed. Emma knows that an official report to HR sets a formal investigation in motion, with consequences for Jansen's position and for her own relationship with him. She also knows the law on equal treatment is crystal clear here.\n\nAfter the meeting she stays seated for a moment. Does she file a formal report, or first seek a conversation with Jansen himself?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -203,7 +203,7 @@
     },
     "meta": {
       "woordenNl": 127,
-      "woordenEn": 48,
+      "woordenEn": 132,
       "bron": "v3-docx: werk 5. Leidinggevende maakt discriminerende opmerkingen.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -226,7 +226,7 @@
     },
     "en": {
       "titel": "The low-cost internship abroad",
-      "verhaal": "Sophie, an ambitious international relations student, is offered an unpaid internship at a renowned NGO in South America. The internship presents a unique opportunity to gain experience in the field. However, during her stay, she discovers that the NGO collaborates with a local company that is illegally logging rainforest. This company donates large sums of money to the NGO, enabling it to continue its operations.",
+      "verhaal": "Sophie, an international relations student, is thrilled with her unpaid internship at a renowned NGO in South America, exactly the experience her CV needs for the job she dreams of. On site, while going through financial documents, she discovers something she would rather not have seen.\n\nThe NGO receives substantial donations from a local timber company, the same company that, according to regional news reports, is illegally clearing rainforest just outside the protected area. Her supervisor waves away her questions: \"Without those donations this programme no longer exists, and then you are not helping anyone here.\"\n\nSophie's reference letter, crucial for her next step, depends on how this placement goes. Does she confront her supervisor about the funding, find out for herself how solid the accusations are, or simply finish her internship?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -238,7 +238,7 @@
     },
     "meta": {
       "woordenNl": 130,
-      "woordenEn": 65,
+      "woordenEn": 132,
       "bron": "v3-docx: Duurzaamheid 1 De goedkope stage in het buitenland.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -261,7 +261,7 @@
     },
     "en": {
       "titel": "The well-earned holidays",
-      "verhaal": "As a hardworking nurse, Laura enjoys her well-earned holidays. Sun, sea, and sand — all at bargain prices. But a nagging sense of guilt about the CO2 emissions from her air travel overshadows her relaxation. She knows her trips aren't sustainable, yet she finds it hard to ignore her need for rest.",
+      "verhaal": "Laura has worked as an ICU nurse for nine years, three night shifts a week, and needs her holiday this year down to the minute. The flight to a sunny island is already open in another tab: dirt cheap, four hours in the air, exactly the rest her body is asking for.\n\nLast month she saw a documentary about the climate impact of short flights that she cannot get out of her head. A train journey would cost two extra days she simply does not have, and would be more expensive too.\n\nHer colleagues all book the same kind of trips without seeming to give it a thought. Laura's cursor hovers over the booking button. Does she book the flight she needs to keep going, or choose an alternative that asks more of her?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -273,7 +273,7 @@
     },
     "meta": {
       "woordenNl": 129,
-      "woordenEn": 52,
+      "woordenEn": 134,
       "bron": "v3-docx: Duurzaamheid 2 De verdiende vakanties.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -296,7 +296,7 @@
     },
     "en": {
       "titel": "The animal testing research",
-      "verhaal": "Pim, a veterinary medicine student, is conducting research into alternatives to animal testing. His research is funded by a pharmaceutical company that conducts animal testing itself. The company is now pressuring him to slow down his research, as its success could reduce the need for animal testing and harm their profits.",
+      "verhaal": "Pim, a veterinary medicine student, has spent two years developing a promising alternative to animal testing, a breakthrough that, if it works, could spare thousands of laboratory animals a year. The research is funded by a pharmaceutical company that itself carries out animal testing on a large scale.\n\nAs his results get stronger, the tone of his contact at the company changes. First subtle questions about the timeline, then a request to add \"a few extra validation steps\" that delay his publication by months. Success would undermine the need for their own tests, and part of their profit.\n\nHis doctoral research, and his funding for next year, runs through this same company. Does Pim publish his results as they are, go along with the delaying tactics, or look for another funder for the rest of his research?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -308,7 +308,7 @@
     },
     "meta": {
       "woordenNl": 130,
-      "woordenEn": 51,
+      "woordenEn": 137,
       "bron": "v3-docx: Duurzaamheid 8 Dierproeven.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -331,7 +331,7 @@
     },
     "en": {
       "titel": "The anonymous job application",
-      "verhaal": "A stack of résumés lies before you — candidates for a highly sought-after position. Two stand out: Jan de Vries and Ahmed Khalil. Identical qualifications, but different names. Jan sounds more familiar to you and your director; Ahmed, more foreign. Unconscious biases begin to surface. You know everyone has them. Now you face a dilemma: choose the most qualified candidate, or follow your gut feeling?",
+      "verhaal": "Daniel leafs through the last pile of CVs for the team leader position, two files set apart: Jan de Vries and Ahmed Khalil. On paper they are identical: same education, same years of experience, similar references. Yet as soon as he reads the names, Daniel notices something in himself: Jan feels familiar, someone who \"fits\", while Ahmed triggers a slight hesitation he cannot immediately explain.\n\nHe knows the figures on unconscious bias in recruitment and has even given the training to new colleagues himself. His director is waiting for his recommendation for tomorrow's meeting, and the time pressure leaves little room for a thorough reassessment.\n\nDaniel knows that if he chooses Jan now, he will never be sure whether it was about the qualifications or about that vague feeling of familiarity. Does he put both files in front of a colleague, or trust his own judgement?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -343,7 +343,7 @@
     },
     "meta": {
       "woordenNl": 147,
-      "woordenEn": 65,
+      "woordenEn": 146,
       "bron": "v3-docx: DEI 1.  Anoniem.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -366,7 +366,7 @@
     },
     "en": {
       "titel": "Jokes",
-      "verhaal": "Tom has been feeling uneasy for weeks. His friends, whom he's been close with for years, are making homophobic jokes more and more often. Every time it happens, he shrinks inside. He wants to speak up, but fear holds him back. What if they no longer accept him? He doesn't want to ruin the atmosphere or be seen as the complainer. But the jokes are becoming more hurtful, and it's getting harder and harder to ignore them.",
+      "verhaal": "Tom is standing with a beer in his hand in the familiar circle of friends he has hung around with since secondary school, when Bram makes another joke about \"those gays at the gym\", followed by approving laughter from the rest. It is the third time this month.\n\nTom feels his stomach tighten, not because the joke hits him directly, but because he knows what it is like to be different in this group, and because the jokes have been getting nastier lately. He has never said anything, afraid of being seen as the killjoy.\n\nBut tonight it feels a little further than before, a line he would rather not let pass in silence any more. Bram is waiting for the next round of beer, the group is still laughing. Does Tom say something now, or take another sip and stay quiet again?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -378,7 +378,7 @@
     },
     "meta": {
       "woordenNl": 145,
-      "woordenEn": 77,
+      "woordenEn": 143,
       "bron": "v3-docx: DEI 6. Grappen.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -395,13 +395,13 @@
     "status": "getest",
     "nl": {
       "titel": "De gemengde relatie",
-      "verhaal": "Naomi ligt naast Malik op de bank, zijn arm om haar heen, en voelt zich zoals ze zich in maanden niet heeft gevoeld — gezien, op haar gemak, volledig zichzelf. Malik komt uit een andere cultuur en een ander geloof dan haar familie, iets waar ze aanvankelijk niet bij stilstond totdat ze het aan haar ouders vertelde.\n\nSindsdien is het stil aan de telefoon, of juist niet stil genoeg: haar moeder die om de dag belt met subtiele opmerkingen, haar vader die weigert Maliks naam uit te spreken. Het kerstdiner van dit jaar staat gepland, en haar moeder heeft al laten doorschemeren dat Malik daar 'nog niet bij past'.\n\nNaomi weet dat ze moet kiezen tussen twee dingen die ze allebei liefheeft: de familie die haar heeft opgevoed, en de relatie die haar gelukkig maakt. Nodigt ze Malik toch uit voor het kerstdiner, tegen de wens van haar ouders in, of wacht ze nog een jaar?",
+      "verhaal": "Naomi ligt naast Malik op de bank, zijn arm om haar heen, en voelt zich zoals ze zich in maanden niet heeft gevoeld: gezien, op haar gemak, volledig zichzelf. Malik komt uit een andere cultuur en een ander geloof dan haar familie, iets waar ze niet bij stilstond totdat ze het haar ouders vertelde.\n\nSindsdien belt haar moeder om de dag met subtiele opmerkingen, en weigert haar vader Maliks naam uit te spreken. Het kerstdiner staat gepland, en haar moeder heeft al laten doorschemeren dat Malik daar 'nog niet bij past'.\n\nNaomi moet kiezen tussen twee dingen waar ze van houdt: de familie die haar opvoedde en de relatie die haar gelukkig maakt. Nodigt ze Malik toch uit, tegen de wens van haar ouders in, of wacht ze nog een jaar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
       "titel": "The intercultural relationship",
-      "verhaal": "Your heart is pounding — a mix of excitement and fear. You're hopelessly in love with someone from a different cultural background, a person who has turned your world upside down. But there's a shadow over your happiness: your family. They are conservative, deeply attached to tradition, and they disapprove of the relationship. They see it as a threat to their values, a departure from everything they've always known.",
+      "verhaal": "Naomi lies next to Malik on the sofa, his arm around her, feeling the way she has not felt in months: seen, at ease, completely herself. Malik comes from a different culture and a different faith than her family, something she did not think about until she told her parents.\n\nSince then her mother calls every other day with subtle remarks, and her father refuses to say Malik's name. The Christmas dinner is planned, and her mother has already hinted that Malik \"doesn't fit in there yet\".\n\nNaomi has to choose between two things she loves: the family that raised her and the relationship that makes her happy. Does she invite Malik anyway, against her parents' wishes, or wait another year?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -412,8 +412,8 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 156,
-      "woordenEn": 69,
+      "woordenNl": 131,
+      "woordenEn": 121,
       "bron": "v3-docx: DEI 7. Relatie.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -435,8 +435,8 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Photo",
-      "verhaal": "You posted a photo of a friend without their permission, and the friend is angry because the photo captures an embarrassing moment. They feel betrayed and ashamed, especially since the photo has already been seen and shared by several people.",
+      "titel": "The photo without permission",
+      "verhaal": "You posted the photo without thinking much about it, a hilarious moment of your friend at last weekend's party, caught at exactly the wrong time. Within an hour you had dozens of likes and funny comments.\n\nThen your friend messages you, in a tone you do not know from him: \"Can you take that photo down? Everyone at work has seen it by now.\" You realise you never asked whether it was okay, and that the photo has since been shared by several people outside your own circle.\n\nYou look at your phone, where the photo is still at the top of your profile while the number of comments keeps growing. Do you delete it immediately and send an apology, leave it up because the damage is done anyway, or first ask him how bad it really is?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -448,7 +448,7 @@
     },
     "meta": {
       "woordenNl": 140,
-      "woordenEn": 40,
+      "woordenEn": 138,
       "bron": "v3-docx: socialmedia 2 foto.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -470,8 +470,8 @@
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Reputation",
-      "verhaal": "In a moment of stress, you post a negative review about a competitor's business with the intention of damaging their reputation. The review contains false information that discourages potential customers, leading to a drop in the company's sales.",
+      "titel": "The fake review",
+      "verhaal": "After an exceptionally stressful week, in which a major client switched to the competition, you impulsively type a long, fiery review of that competing company, with details you made up yourself to sound more convincing. You post it under a neutral-looking account.\n\nThe review spreads faster than you expected, shared in a few local business groups. A week later you hear through the grapevine that the company, run by a small team you know personally from networking events, is seeing a noticeable drop in new customers.\n\nNobody has linked your account to the review. You still sometimes see the owner at the same events, suspecting nothing. Do you quietly delete the review, post a correction under your own name, or leave it up because nobody will ever find out?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -483,7 +483,7 @@
     },
     "meta": {
       "woordenNl": 135,
-      "woordenEn": 38,
+      "woordenEn": 129,
       "bron": "v3-docx: socialmedia 6 reputatie.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -506,7 +506,7 @@
     },
     "en": {
       "titel": "Great group work",
-      "verhaal": "Yip sighs. Working with Tijn is a nightmare. He's the star of the program — smooth talker, full of charisma — but his work ethic is terrible. Agreements? Tijn doesn't do those. He's late, skips meetings, and never does his part of the work — it's become the norm. And as the president of a student association, he's always busy partying, of course. Still, during the final presentation, Tijn steals the show once again. With his charm and presentation skills, he secures an 8 for the group.",
+      "verhaal": "Yip stares at the shared document, where her name and Tijn's both appear at the bottom, even though she has done almost everything alone over the past two weeks. Tijn, the charismatic star of the programme, twice failed to show up for the meeting and finally sent his part a day late, half finished.\n\nAt the final presentation he effortlessly takes the floor, captivates the whole room with his easy charm, and collects the teacher's compliments as if it were his project. The group gets an 8. None of the teachers has any idea how the tasks were really divided.\n\nAfter class Tijn comes over with a broad grin: \"See, it worked out fine!\" Yip feels the irritation rising in her throat. Does she say something to Tijn now, report the division of work to the teacher, or let it go because the grade turned out well?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -518,7 +518,7 @@
     },
     "meta": {
       "woordenNl": 148,
-      "woordenEn": 87,
+      "woordenEn": 147,
       "bron": "v3-docx: Studentenleven9 groepswerk.docx",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "oud (tijdelijk)"
@@ -1083,14 +1083,14 @@
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
-      "titel": "Hulp",
-      "verhaal": "De trein schokt, een doffe dreun. Een meisje, amper achttien, ligt uitgestrekt op de koude vloer. Rillend, tandenklapperend. De conducteur alarmeert hulp, maar haar hoofd bonkt tegen het ijskoude staal. Jouw blik valt op de zachte, dierbare sjaal in je tas. Aarzeling. Diep vanbinnen weet je wat je moet doen. Je vingers tasten naar de zachte stof. Maar dan, die rillingen. Die klapperende tanden. Het dilemma snijdt door je heen: geven, of vasthouden?",
+      "titel": "De sjaal in de trein",
+      "verhaal": "De trein schokt, een doffe dreun. Op de koude vloer ligt een meisje, amper achttien, rillend met klapperende tanden. De conducteur roept om hulp, maar het duurt.\n\nNina, tegenover haar, ziet hoe het meisje verkleumt tegen het ijskoude staal. In haar tas zit een zachte sjaal, een cadeau van haar oma en het enige stukje warmte dat ze bij zich heeft op weg naar een sollicitatiegesprek. Haar hand raakt de stof, trekt terug, raakt hem weer aan. Het meisje kijkt haar aan, te uitgeput om iets te vragen.\n\nBuiten glijden de laatste stationslichten voorbij; hulp is nog minuten weg. Geeft Nina de sjaal weg en trotseert ze zelf de kou op het perron, of houdt ze vast aan wat haar dierbaar is?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
-      "titel": "Help",
-      "verhaal": "The train jolts — a dull thud. A girl, barely eighteen, lies stretched out on the cold floor. Shivering, teeth chattering. The conductor calls for help, but her head keeps knocking against the icy steel. Your eyes fall on the soft, cherished scarf in your bag. Hesitation. Deep down you know what you should do. Your fingers reach for the soft fabric. But then — those shivers. Those chattering teeth. The dilemma cuts through you: give it away, or hold on to it?",
+      "titel": "The scarf on the train",
+      "verhaal": "The train jolts, a dull thud. On the cold floor lies a girl, barely eighteen, shivering, her teeth chattering. The conductor calls for help, but it takes time.\n\nNina, sitting opposite, watches the girl chill against the icy steel. In her bag is a soft scarf, a gift from her grandmother and the only bit of warmth she has with her on the way to a job interview. Her hand touches the fabric, pulls back, touches it again. The girl looks at her, too exhausted to ask for anything.\n\nOutside, the last station lights glide past; help is still minutes away. Does Nina give the scarf away and face the cold on the platform herself, or hold on to what is dear to her?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1101,10 +1101,12 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 73,
-      "woordenEn": 83,
-      "bron": "DL COMPLEET A5.docx",
-      "categorieEn": "DAILY LIFE"
+      "woordenNl": 122,
+      "woordenEn": 124,
+      "bron": "v3-docx: DL1 Hulp.docx",
+      "categorieEn": "DAILY LIFE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 1
   },
@@ -1124,7 +1126,7 @@
     },
     "en": {
       "titel": "Friend drives under the influence of alcohol",
-      "verhaal": "Sophie watches with dismay as Tom, her friend, climbs behind the wheel after an evening of drinking — as he always does. Fear gnaws at her: the risks are enormous. Tom, but also others, are in danger. She wants to shake him awake, but fears his reaction. Sophie struggles with the trade-off: Tom's safety versus their relationship.",
+      "verhaal": "Sophie stands in the doorway and sees Tom pick up his car keys. It is two in the morning, the wine glasses on the table are empty, his eyes glazed. \"I'll be fine,\" he says, as he always does. She knows this ritual: the short laugh, the overconfidence, the door closing before she can say anything.\n\nOutside the engine starts. Sophie feels her heart pounding, not only for Tom, but for the cyclist who may be crossing, the driver approaching the roundabout unsuspecting. She could take the keys, call his parents, make a scene in the street. But what if he never trusts her again?\n\nThe window glides down. \"Are you getting in?\" he asks. Does Sophie step in now, or let it go again?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1136,7 +1138,7 @@
     },
     "meta": {
       "woordenNl": 127,
-      "woordenEn": 57,
+      "woordenEn": 125,
       "bron": "v3-docx: DL2_Vriend_rijdt_onder_invloed_van_alcohol.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1154,13 +1156,13 @@
     "status": "getest",
     "nl": {
       "titel": "Buurman dumpt afval in het park",
-      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw een berg vuilniszakken naast de border, half opengescheurd door een vos. Hij weet meteen wie erachter zit — meneer Bakker, twee huizen verderop, die zijn tuinafval en huisvuil al maanden stiekem hier dumpt in plaats van het netjes aan te bieden.\n\nHet park was ooit de trots van de buurt: kinderen speelden er, ouderen wandelden er hun hondjes uit. Nu mijden steeds meer buren de plek, klagen op de buurtapp, wijzen naar elkaar zonder iets te doen. David zou meneer Bakker rechtstreeks kunnen aanspreken, met het risico op een verhitte ruzie tussen buren die elkaar nog jaren tegen het lijf lopen. Hij zou ook de gemeente kunnen bellen, handhaving kunnen inschakelen.\n\nHij kijkt naar de opengescheurde zakken, dan naar het huis van meneer Bakker. Spreekt David hem zelf aan, of schakelt hij meteen de gemeente in?",
+      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw een berg vuilniszakken naast de border, half opengescheurd door een vos. Hij weet wie erachter zit: meneer Bakker, twee huizen verderop, die zijn tuinafval en huisvuil al maanden stiekem hier dumpt.\n\nHet park was ooit de trots van de buurt. Nu mijden steeds meer buren de plek, klagen ze op de buurtapp en wijzen ze naar elkaar zonder iets te doen. David zou meneer Bakker kunnen aanspreken, met het risico op een verhitte ruzie tussen buren die elkaar nog jaren tegenkomen. Hij zou ook de gemeente kunnen bellen en handhaving inschakelen.\n\nHij kijkt naar de opengescheurde zakken, dan naar het huis van meneer Bakker. Spreekt David hem zelf aan, of schakelt hij meteen de gemeente in?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
       "titel": "Neighbour dumps rubbish in the park",
-      "verhaal": "David watches with growing irritation as Mr Bakker, his neighbour, uses the park as a dump. The once green park turns into an unsightly place, full of stinking rubbish and pests. The neighbourhood grumbles; children avoid the spot. David's conscience gnaws at him. He wants to act, but fear of a confrontation with Mr Bakker holds him back.",
+      "verhaal": "David stands at the park gate and smells it before he sees it: another heap of rubbish bags next to the flower bed, half torn open by a fox. He knows who is behind it: Mr Bakker, two houses down, who has been secretly dumping his garden waste and household rubbish here for months.\n\nThe park used to be the pride of the neighbourhood. Now more and more neighbours avoid the place, complain on the neighbourhood app and point fingers at each other without doing anything. David could speak to Mr Bakker, at the risk of a heated quarrel between neighbours who will keep running into each other for years. He could also call the council and bring in enforcement.\n\nHe looks at the torn bags, then at Mr Bakker's house. Does David speak to him himself, or call the council straight away?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1171,8 +1173,8 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 153,
-      "woordenEn": 58,
+      "woordenNl": 133,
+      "woordenEn": 143,
       "bron": "v3-docx: DL3_Buurman_dumpt_afval_in_het_park.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1196,7 +1198,7 @@
     },
     "en": {
       "titel": "Friend shoplifts",
-      "verhaal": "Delano sees how Mark, his friend, systematically robs shops. Fear grips him: arrest, a criminal record — the consequences are enormous. But the friendship... that weighs heavily too. Loyalty versus conscience, a painful conflict. How can he reach Mark without losing him? Delano desperately searches for a way to save Mark from self-destruction without destroying their friendship.",
+      "verhaal": "Delano stands behind the rack of energy drinks and sees it happen: Mark effortlessly slips a deodorant into his jacket pocket and walks past the till as if nothing is going on. It is not the first time. Delano has known for months and has ignored it, laughed it off, talked it away.\n\nBut the amounts are getting bigger, the shops riskier; recently Mark was nearly caught by a security guard who now knows his face. Delano thinks about what happens if it goes wrong: a police report, a criminal record that follows Mark for years. He also thinks about what happens if he speaks up now: the look of betrayal, ten years of friendship that could tip over in one conversation.\n\nOutside, Mark waits calmly by his bike, as if nothing happened. Does Delano dare to start the conversation, or does he stay silent one more time?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1208,7 +1210,7 @@
     },
     "meta": {
       "woordenNl": 137,
-      "woordenEn": 57,
+      "woordenEn": 148,
       "bron": "v3-docx: DL4_Vriend_pleegt_winkeldiefstal.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1232,7 +1234,7 @@
     },
     "en": {
       "titel": "Neighbour often leaves children home alone",
-      "verhaal": "Emma's heart pounds in her throat. Mrs Jansen has left her young children home alone again; the door slams shut. Small voices cry, calling for mum. Emma's concern grows by the minute. These children are vulnerable, unprotected. She wants to intervene, but fear of Mrs Jansen's reaction paralyses her. A dilemma that chafes, a decision that weighs heavily.",
+      "verhaal": "Emma hears it again: shuffling behind the wall, a door slamming, then silence. She knows what it means: Mrs Jansen has gone out and the children are alone. Through the thin partition wall she hears the youngest child crying, a sound that slowly fades into tired silence.\n\nIt is the third time this month. Emma has kept track of the time: sometimes half an hour, sometimes almost two. She wonders: is this still an incident, or the start of a pattern she must not ignore? She could knock on the door, or call the child abuse helpline. But what if she misjudges it and suspects a good mother in a difficult period of neglect?\n\nEmma puts her hand on the door handle. Does she knock, or walk on?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1244,7 +1246,7 @@
     },
     "meta": {
       "woordenNl": 125,
-      "woordenEn": 58,
+      "woordenEn": 128,
       "bron": "v3-docx: DL5_Buurvrouw_laat_kinderen_vaak_alleen_thuis.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1268,7 +1270,7 @@
     },
     "en": {
       "titel": "Friend drives too fast and breaks traffic rules",
-      "verhaal": "Lisa worries about Mark, her friend, who regularly drives too fast. She sees how he ignores traffic rules and fears accidents. Lisa feels responsible, but does not dare to confront Mark directly for fear of his reaction. Lisa wants Mark to see how dangerous his driving is, without damaging their relationship.",
+      "verhaal": "Lisa sits next to Mark in the car and clenches her hands around the armrest. The speedometer climbs to 140 on a road with an 80 limit, and Mark hums along to the radio as if nothing is wrong. At the next junction he shoots through an amber light, ignoring a cyclist who brakes just in time.\n\nIt is not the first time she has experienced this, only last month with her little brother in the back. Lisa knows she should say something, but she remembers the last time: Mark getting irritated, staying distant for weeks. She loves his spontaneity and the freedom he gives her, but that feeling weighs less and less against the fear in her stomach.\n\nShe looks at the speedometer, then at his relaxed face. Does she say something now, in the middle of the motorway, or wait until they are safely home?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1280,7 +1282,7 @@
     },
     "meta": {
       "woordenNl": 146,
-      "woordenEn": 51,
+      "woordenEn": 147,
       "bron": "v3-docx: DL6_Vriend_rijdt_te_hard_en_overtreedt_verkeersregels.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1304,7 +1306,7 @@
     },
     "en": {
       "titel": "The found wallet",
-      "verhaal": "On a deserted bench lies a heavy leather wallet. Money and an ID card stare back at you. Nobody nearby — only you. Temptations shoot through your head: new shoes, unpaid bills. But then you think of the possible owner: a student, a mother, a stranger searching desperately.",
+      "verhaal": "On the deserted bench in the park lies a heavy leather wallet, half open. A stack of twenty-euro notes peeks out from underneath, next to an ID card with a photo of a young woman looking seriously into the camera. Nobody is around: no cyclists, no walkers, only the rustle of leaves.\n\nTo Jasper it feels as if the wallet has fallen at exactly the right moment. This month's rent is not covered yet, and the new shoes have been on his wish list for weeks. He picks it up and feels its weight in his hand. The ID card shows an address, not far from here. He could keep the money and leave the wallet somewhere, as if he never found it.\n\nHis thumb slides over the notes. Does he slip the wallet into his pocket, or look for its owner?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1316,7 +1318,7 @@
     },
     "meta": {
       "woordenNl": 140,
-      "woordenEn": 48,
+      "woordenEn": 142,
       "bron": "v3-docx: Dl7_Portemonnee.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1334,13 +1336,13 @@
     "status": "getest",
     "nl": {
       "titel": "De roddelende vriend",
-      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt een paar seconden voordat het tot je doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen — nieuwsgierig, geamuseerd, alsof het echte roddel is die het verdient om verder verteld te worden. Ruben is al jaren je beste vriend, degene die er altijd was, ook toen niemand anders er was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk. Je zou hem ook recht voor de groep kunnen tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
+      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt even voor het doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen, nieuwsgierig en geamuseerd, alsof het echte roddel is. Ruben is al jaren je beste vriend, degene die er altijd was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk, of hem recht voor de groep tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
     "en": {
       "titel": "The gossiping friend",
-      "verhaal": "The music blares, lights flash, and then you hear it: your best friend is spreading lies about your mutual friend. Pure gossip, reputation-destroying. Your blood boils; you want to stop him. But he is your best friend, for years. Call him out in front of the whole group? The tension is enormous. What do you do?",
+      "verhaal": "The bass pounds through the club, lights flash across the dance floor, and then you catch snatches of what Ruben is telling a group of classmates. It takes a moment to sink in: he is telling an invented story about Nina, your mutual friend, something about an affair that never happened.\n\nYou see the faces around him, curious and amused, as if this were real gossip. Ruben has been your best friend for years, the one who was always there. But Nina is your friend too, and this story could wreck her reputation in class before the night is over.\n\nYou could take him aside, gently but clearly, or contradict him right in front of the group, at the risk of humiliating him. Do you step in now, or walk on to the bar?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1351,8 +1353,8 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 154,
-      "woordenEn": 56,
+      "woordenNl": 133,
+      "woordenEn": 134,
       "bron": "v3-docx: DL8_roddel.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1376,7 +1378,7 @@
     },
     "en": {
       "titel": "The borrowed money",
-      "verhaal": "You were almost there, but unexpected bills threw a spanner in the works. Now you are in trouble. Your friend, who helped you with a smile, needs the money back himself. Every time his name appears on your screen, you feel shame. How do you explain that you cannot keep your promise? The tension between friendship and financial problems is palpable.",
+      "verhaal": "You have recalculated the amount three times: the rent, the groceries, the unexpected dentist's bill you had forgotten. It does not add up, and the money you lent Milan three months ago is exactly what you need now. Milan helped you then without hesitation, with a smile, as if it were the most normal thing in the world.\n\nNow he is calling again, cheerful about the weekend, and you feel the shame creeping into your throat at the thought of raising the subject. You also know Milan is short of cash himself since he started working fewer hours. Do you ask for your money back now and put the friendship under pressure, or do you keep quiet and get by some other way?\n\nHis name lights up your screen. Do you pick up, or let him go to voicemail for the third time?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1388,7 +1390,7 @@
     },
     "meta": {
       "woordenNl": 150,
-      "woordenEn": 61,
+      "woordenEn": 143,
       "bron": "v3-docx: DL9_geleend_geld.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1412,7 +1414,7 @@
     },
     "en": {
       "titel": "The manipulated online review",
-      "verhaal": "The new coffee shop displays suspiciously perfect reviews. Five stars, cheering reactions — all within a few days. Many reviewers have written only one review: that of the coffee shop. It is clearly fake, an unfair practice. Should you raise it? It is not your business, but it harms fair competition and misleads consumers. Do you let it go, or take action? What is the right choice?",
+      "verhaal": "The coffee shop on the corner has existed for less than two weeks and already boasts two hundred five-star reviews, all written in the same week, all in nearly identical wording about \"the best coffee in town\". You have worked for years at the little café down the road, where the owner selects the beans himself every morning and where the reviews have built up slowly, honestly, over months.\n\nWhen you clicked through the profiles of a few reviewers, you saw the pattern: accounts that have posted nothing but that one glowing review, no photo, no history. It feels unfair, not only to your own employer but to every business owner on the street who does it properly. You could report it to the review platform, with screenshots as evidence. You could also do nothing.\n\nDo you let it go, or send the report you have already prepared?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1424,7 +1426,7 @@
     },
     "meta": {
       "woordenNl": 144,
-      "woordenEn": 67,
+      "woordenEn": 148,
       "bron": "v3-docx: DL10_Reviews.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1448,7 +1450,7 @@
     },
     "en": {
       "titel": "Neighbour abuses his wife",
-      "verhaal": "Emma witnesses domestic violence at her neighbour Mrs Janssen's home. Mr Janssen regularly abuses her, which deeply worries Emma. She hears shouting and sees bruises. Emma struggles with her conscience: she wants to help Mrs Janssen, but is afraid of Mr Janssen's reaction. Emma searches for a safe way to help Mrs Janssen.",
+      "verhaal": "Through the thin wall Emma hears the shouting again, followed by a dull thud and then silence, the silence that always frightens her most. The next morning she sees Mrs Janssen in the garden, a bruise half hidden under make-up and sunglasses too big for such a cloudy day. She smiles at Emma as if nothing is wrong, as she has done for months.\n\nEmma knows Mr Janssen is well regarded in the neighbourhood: friendly at the street party, always helping with the hedge. She once looked up the number of Veilig Thuis, the Dutch domestic abuse helpline, and closed the website before she could call. She wonders: is it her place to step in, or does her silence make her complicit?\n\nEmma picks up her phone. Does she call now, or wait until she is sure of what she heard?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?"
     },
@@ -1460,7 +1462,7 @@
     },
     "meta": {
       "woordenNl": 139,
-      "woordenEn": 53,
+      "woordenEn": 141,
       "bron": "v3-docx: DL11_Buurman_mishandelt_zijn_vrouw.docx",
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "oud (tijdelijk)",
@@ -1845,7 +1847,7 @@
     "status": "getest",
     "nl": {
       "titel": "Discriminerende opmerkingen van een collega",
-      "verhaal": "Mevrouw Van der Meer hoort het door de dunne wand tussen de lokalen: meneer Jansen die weer een \"grapje\" maakt over de achtergrond van een van zijn leerlingen, gevolgd door onzeker gelach uit de klas. Het is niet de eerste keer deze maand dat ze zoiets opvangt.\n\nTwee leerlingen uit die klas hebben er al met haar over gesproken na de les, duidelijk onzeker of ze het serieus moeten nemen of gewoon moeten lachen zoals de rest. Meneer Jansen is een ervaren collega met veel aanzien in het team, en niemand heeft hem tot nu toe aangesproken.\n\nZe weet dat een melding grote gevolgen kan hebben voor de werksfeer in het team, waarin ze nog jaren mee moet werken. Vandaag hoort ze via de deur weer een vergelijkbare opmerking. Spreekt ze meneer Jansen er zelf op aan, meldt ze het bij de schoolleiding, of praat ze eerst met de betrokken leerlingen?",
+      "verhaal": "Mevrouw Van der Meer hoort het door de dunne wand tussen de lokalen: meneer Jansen maakt weer een 'grapje' over de achtergrond van een leerling, gevolgd door onzeker gelach uit de klas. Het is niet de eerste keer deze maand.\n\nTwee leerlingen hebben er na de les al met haar over gesproken, onzeker of ze het serieus moeten nemen of gewoon moeten lachen zoals de rest. Meneer Jansen is een ervaren collega met veel aanzien, en niemand heeft hem tot nu toe aangesproken.\n\nEen melding kan grote gevolgen hebben voor de sfeer in het team, waarin ze nog jaren moet samenwerken. Vandaag hoort ze weer zo'n opmerking. Spreekt ze meneer Jansen er zelf op aan, meldt ze het bij de schoolleiding, of praat ze eerst met de leerlingen?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1862,7 +1864,7 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 151,
+      "woordenNl": 128,
       "woordenEn": 131,
       "bron": "v3-docx: ON5 Discriminerende opmerkingen door een collega-docent.docx",
       "categorieEn": "EDUCATION",
@@ -1989,7 +1991,7 @@
     "status": "getest",
     "nl": {
       "titel": "Het rooster van meneer De Vries",
-      "verhaal": "Mevrouw Jansen hoort de klachten inmiddels van meerdere kanten: leerlingen die niet meer weten wat er van hen verwacht wordt in de lessen van meneer De Vries, die steeds vaker te laat komt en zichtbaar onvoorbereid voor de klas staat. De cijfers van zijn groepen dalen, de frustratie stijgt.\n\nZe weet, via een terloopse opmerking die hij ooit maakte, dat hij thuis een lastige scheiding doormaakt. Dat verklaart misschien zijn afwezigheid van geest, maar de leerlingen ondervinden er wel de gevolgen van, ongeacht de reden erachter.\n\nEen melding bij de teamleider voelt als het in de rug aanvallen van een collega die het al moeilijk heeft. Niets zeggen voelt als de leerlingen in de steek laten. Vandaag hoort ze weer een groepje mopperen op de gang over zijn les. Spreekt mevrouw Jansen hem eerst zelf aan, meldt ze het bij de teamleider, of wacht ze af of het vanzelf beter wordt?",
+      "verhaal": "Mevrouw Jansen hoort de klachten inmiddels van meerdere kanten: leerlingen van meneer De Vries weten niet meer wat er van hen verwacht wordt. Hij komt steeds vaker te laat en staat zichtbaar onvoorbereid voor de klas. De cijfers van zijn groepen dalen, de frustratie stijgt.\n\nZe weet via een terloopse opmerking dat hij thuis een lastige scheiding doormaakt. Dat verklaart misschien zijn afwezigheid van geest, maar de leerlingen ervaren de gevolgen, wat de reden ook is.\n\nEen melding bij de teamleider voelt als het aanvallen van een collega die het al moeilijk heeft. Niets zeggen voelt als de leerlingen in de steek laten. Vandaag hoort ze weer een groepje mopperen op de gang. Spreekt mevrouw Jansen hem eerst zelf aan, meldt ze het bij de teamleider, of wacht ze af of het vanzelf beter wordt?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -2006,7 +2008,7 @@
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 151,
+      "woordenNl": 135,
       "woordenEn": 133,
       "bron": "v3-docx: ON9 Collegiaal.docx",
       "categorieEn": "EDUCATION",
@@ -2086,5 +2088,680 @@
       "afbeeldingStatus": "oud (tijdelijk)"
     },
     "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps12",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Bevoegd tot betalen",
+      "verhaal": "Arjen werkt al tien jaar op de crediteurenadministratie. Op een dinsdagmiddag sluit hij de deur van Sophies kamer. Hij is midden in een scheiding, heeft schulden en slaapt slecht. ‘Ik vertel het alleen aan jou. Mijn leidinggevende mag het niet weten.’\n\nSophie, HR-adviseur, ziet hoe hij zijn handen wringt. Zijn werk is nog steeds in orde. Maar ze weet ook dat Arjen zelfstandig betalingen tot vijftigduizend euro mag fiatteren.\n\nAls ze zijn vertrouwen schendt, sluit hij zich misschien helemaal af. Als ze zwijgt en het gaat mis, heeft zij een risico laten bestaan dat ze zag aankomen. Wat weegt zwaarder: het vertrouwen dat Arjen haar geeft, of het risico dat ze ziet?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Sophie beslist zelf of zij het vertrouwen van Arjen bewaart of het risico voor de organisatie deelt."
+    },
+    "en": {
+      "titel": "Authorised to Pay",
+      "verhaal": "Arjen has worked in accounts payable for ten years. On a Tuesday afternoon he closes the door to Sophie's office. He is in the middle of a divorce, in debt, and sleeping badly. ‘I'm only telling you. My manager can't know.’\n\nSophie, an HR advisor, watches him wring his hands. His work is still fine. But she also knows that Arjen can approve payments of up to fifty thousand euros on his own.\n\nIf she breaks his trust, he may shut down completely. If she stays silent and it goes wrong, she has let a risk stand that she saw coming. What weighs more: the trust Arjen has placed in her, or the risk she can see?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Sophie decides for herself whether to keep Arjen's confidence or to share the risk with the organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS12-bevoegd-tot-betalen.jpg",
+      "altNl": "HR-adviseur en medewerker in een kantoorruimte, gesprek achter gesloten deur",
+      "altEn": "HR advisor and employee in an office, conversation behind a closed door",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 117,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS12",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps13",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Geen partij kiezen",
+      "verhaal": "Femke is drie maanden HR-medewerker als ze wordt gevraagd te bemiddelen tussen Lars en Yvonne. Het conflict loopt al weken; het team zucht onder de spanning. ‘Blijf neutraal,’ drukt haar leidinggevende haar op het hart.\n\nYvonne vertelt over opmerkingen, buitensluiten en mails waar ze buiten wordt gehouden. Lars noemt het ‘een botsing van karakters’. Femke heeft een paar van die mails gezien. Ze waren niet mis te verstaan.\n\nAls bemiddelaar hoort ze in het midden te staan. Maar het midden voelt niet neutraal als de verhouding scheef is. Kan Femke neutraal blijven als een van de twee duidelijk sterker staat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Femke kiest zelf hoe zij haar rol invult: als neutrale bemiddelaar of als iemand die onrecht benoemt."
+    },
+    "en": {
+      "titel": "Not Taking Sides",
+      "verhaal": "Femke has been in HR for three months when she is asked to mediate between Lars and Yvonne. The conflict has dragged on for weeks, and the team is groaning under the tension. ‘Stay neutral,’ her manager urges her.\n\nYvonne talks about remarks, being frozen out, and emails she is left off. Lars calls it ‘a clash of personalities’. Femke has seen a few of those emails. They were unmistakable.\n\nAs a mediator she is supposed to stand in the middle. But the middle doesn't feel neutral when the relationship is lopsided. Can Femke stay neutral when one of the two is clearly in the stronger position?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Femke decides for herself how to fill her role: as a neutral mediator or as someone who names injustice."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS13-geen-partij-kiezen.jpg",
+      "altNl": "Bemiddelingsgesprek aan een vergadertafel op kantoor, gespannen sfeer",
+      "altEn": "Mediation meeting at a conference table in an office, tense atmosphere",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 100,
+      "woordenEn": 107,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS13",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps31",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Dezelfde functie",
+      "verhaal": "Nadine is nog maar kort HR-businesspartner als Gert, ervaren monteur, verontwaardigd haar kamer binnenstapt. ‘Waarom verdient Kees meer dan ik? Zelfde functie, zelfde werk. Dat is raar en niet eerlijk.’\n\nNadine kent het antwoord. Kees heeft bij zijn sollicitatie stevig onderhandeld; Gert heeft dat nooit gedaan. De salarisgegevens zijn vertrouwelijk. Ze kan zich verschuilen achter beleid, maar ze voelt dat Gert gelijk heeft.\n\nEen eerlijk antwoord schendt de privacy van Kees en zet het hele loonbeleid onder druk. Een ontwijkend antwoord laat Gert achter met een terecht gevoel van onrecht. Wat zegt Nadine tegen iemand die gelijk heeft maar dat niet mag horen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Nadine beslist zelf hoe open zij is tegenover Gert; de keuze tussen vertrouwelijkheid en eerlijkheid ligt bij haar."
+    },
+    "en": {
+      "titel": "Same Job",
+      "verhaal": "Nadine has only just started as an HR business partner when Gert, an experienced mechanic, storms into her office. ‘Why does Kees earn more than I do? Same job, same work. That's strange and unfair.’\n\nNadine knows the answer. Kees negotiated hard when he applied; Gert never has. Salary data is confidential. She could hide behind policy, but she feels that Gert is right.\n\nAn honest answer violates Kees's privacy and puts the whole pay policy under pressure. An evasive answer leaves Gert with a justified sense of injustice. What does Nadine say to someone who is right but isn't allowed to hear it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Nadine decides for herself how open she is with Gert; the choice between confidentiality and honesty is hers."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS31-dezelfde-functie.jpg",
+      "altNl": "Medewerker bij HR-bureau met salarisdocumenten op tafel",
+      "altEn": "Employee at an HR desk with pay documents on the table",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 104,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS31",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps44",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Schichtig",
+      "verhaal": "Al een uur hoort Jeroen, HR-adviseur, een collega op de werkvloer hoesten. Hij loopt naar haar toe. Fatima kijkt op, haar ogen rood. ‘Het gaat wel. Gewoon veel deadlines.’ Haar stem trilt; het lijkt alsof ze elk moment kan gaan huilen.\n\nZe kijkt schichtig om zich heen, maar haar manager is nergens te zien. ‘Zeg alsjeblieft niets tegen hem,’ fluistert ze. ‘Dan wordt het alleen maar erger.’\n\nJeroen kan haar wens respecteren en een luisterend oor bieden, of de manager aanspreken op wat hij ziet, tegen haar zin in. Haar vertrouwen of haar gezondheid: ze lijken niet allebei te beschermen. Wat doe je met een noodsignaal dat je niet mag doorgeven?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Jeroen beslist zelf of hij het vertrouwen van Fatima respecteert of ingrijpt voor haar gezondheid."
+    },
+    "en": {
+      "titel": "Skittish",
+      "verhaal": "For an hour now, Jeroen, an HR advisor, has heard a colleague coughing on the shop floor. He walks over. Fatima looks up, her eyes red. ‘I'm fine. Just a lot of deadlines.’ Her voice trembles; she looks as if she might burst into tears at any moment.\n\nShe glances around nervously, but her manager is nowhere to be seen. ‘Please don't say anything to him,’ she whispers. ‘It will only make things worse.’\n\nJeroen can respect her wish and offer a listening ear, or he can confront the manager about what he sees, against her will. Her trust or her health: he can't seem to protect both. What do you do with a distress signal you aren't allowed to pass on?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Jeroen decides for himself whether to respect Fatima's trust or to step in for the sake of her health."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS44-schichtig.jpg",
+      "altNl": "Werknemer die onregelmatig op kantoor aanwezig is, collega's op de achtergrond",
+      "altEn": "Employee with irregular attendance at the office, colleagues in the background",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 111,
+      "woordenEn": 122,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS44",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps01",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Drie maanden stilte",
+      "verhaal": "Mirjam is drie weken HR-adviseur als de directeur haar kamer binnenloopt. ‘Jansen zit al drie maanden thuis. Niemand weet waarom. Zorg dat hij terugkomt.’ In het dossier vindt ze één ziekmelding, verder niets: geen gesprek, geen bedrijfsarts.\n\nZe belt. Jansen neemt na lang overgaan op, zijn stem vlak. Hij wil niet zeggen wat er speelt, alleen dat het ‘thuis niet goed gaat’ en dat hij het werk voorlopig niet trekt.\n\nDe directeur wil vrijdag een plan en laat vallen dat een loonstop ‘wonderen doet’. Mirjam weet dat ze Jansen zo aan tafel krijgt, maar ook dat ze dan het laatste beetje vertrouwen kwijtraakt. Hoeveel druk mag zij zetten op iemand die niet wil vertellen wat er aan de hand is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De privacy en het herstel van Jansen botsen met de druk van de directeur en de verzuimregels van de organisatie."
+    },
+    "en": {
+      "titel": "Three Months of Silence",
+      "verhaal": "Mirjam has been an HR advisor for three weeks when the director walks into her office. ‘Jansen has been at home for three months. Nobody knows why. Make sure he comes back.’ In the file she finds a single sick-leave notification and nothing else: no conversation, no occupational physician.\n\nShe calls. After a long time ringing, Jansen picks up, his voice flat. He won't say what is going on, only that things at home ‘aren't good’ and that he can't cope with work for now.\n\nThe director wants a plan by Friday and drops the remark that stopping his pay ‘works wonders’. Mirjam knows that would get Jansen to the table, but also that she would lose the last bit of trust he has in her. How much pressure may she put on someone who doesn't want to say what is wrong?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Jansen's privacy and recovery clash with the director's pressure and the organisation's absence rules."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS01-drie-maanden-stilte.jpg",
+      "altNl": "Nieuwe medewerker op eerste werkdag bij de receptie van een organisatie",
+      "altEn": "New employee on their first day at an organisation's reception",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 120,
+      "woordenEn": 142,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS01",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps08",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De verbouwde machine",
+      "verhaal": "Fouad, monteur op een tijdelijk contract, werkte aan een pas verbouwde machine toen twee onderdelen losschoten. Zijn rechterhand werd verbrijzeld. Nu zit hij arbeidsongeschikt thuis, en volgende maand loopt zijn contract af.\n\nLinda, HR-adviseur, krijgt van de jurist een helder advies: niet verlengen, niets toezeggen, geen schuld erkennen. Maar Linda zat bij het overleg waarin de technische dienst waarschuwde dat de machine ‘nog niet af’ was. Niemand luisterde.\n\nFouad belt haar. Hij vraagt of het ongeluk zijn eigen fout was, zoals hij hoort fluisteren. Linda kan zwijgen zoals haar is opgedragen, of hem vertellen wat ze weet. Wat is Linda verplicht aan Fouad, en wat aan haar werkgever?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Waarheid en zorg voor een getroffen medewerker botsen met de juridische belangen en geheimhoudingsverwachting van de organisatie."
+    },
+    "en": {
+      "titel": "The Rebuilt Machine",
+      "verhaal": "Fouad, a mechanic on a temporary contract, was working on a newly rebuilt machine when two components came loose. His right hand was crushed. He is now at home, unfit for work, and next month his contract ends.\n\nLinda, an HR advisor, receives clear advice from the legal department: don't renew, promise nothing, admit no fault. But Linda was in the meeting where the technical department warned that the machine was ‘not finished yet’. Nobody listened.\n\nFouad calls her. He asks whether the accident was his own fault, as he has heard whispered. Linda can stay silent as instructed, or tell him what she knows. What does Linda owe Fouad, and what does she owe her employer?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Truth and care for an injured employee clash with the organisation's legal interests and its expectation of confidentiality."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS08-de-verbouwde-machine.jpg",
+      "altNl": "Kantoor in verbouwing, medewerkers tussen stellingen en verhuisdozen",
+      "altEn": "Office under renovation, staff among scaffolding and moving boxes",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 117,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS08",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps18",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een vriend van de Rotary",
+      "verhaal": "Er moet een nieuwe directeur komen. Bas, senior recruiter, heeft net een zorgvuldige wervingsprocedure opgezet: open vacature, assessment, een diverse selectiecommissie. Dan legt de adjunct-directeur een cv op zijn bureau. ‘Een vriend van de Rotary. Uitstekende vent. Dit scheelt ons maanden.’\n\nBas leest het cv. De man is inderdaad goed, misschien zelfs de beste die ze kunnen krijgen. Maar het cv komt uit precies dezelfde kring als de vorige drie directeuren.\n\nEen snelle benoeming van een geschikte kandidaat, of een open procedure die anderen een eerlijke kans geeft maar maanden kost en de adjunct ergert. Wat is meer waard: de beste kandidaat die je kent, of een eerlijke kans voor wie je nog niet kent?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Eerlijke toegang en diversiteit botsen met snelheid en de informele netwerken binnen de bestuurslaag van de organisatie."
+    },
+    "en": {
+      "titel": "A Friend from the Rotary",
+      "verhaal": "A new director is needed. Bas, a senior recruiter, has just set up a careful recruitment procedure: an open vacancy, an assessment, a diverse selection committee. Then the deputy director puts a CV on his desk. ‘A friend from the Rotary. Excellent guy. This saves us months.’\n\nBas reads the CV. The man is indeed good, perhaps even the best they could get. But the CV comes from exactly the same circle as the previous three directors.\n\nA quick appointment of a suitable candidate, or an open procedure that gives others a fair chance but takes months and irritates the deputy. What is worth more: the best candidate you know, or a fair chance for the ones you don't know yet?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Fair access and diversity clash with speed and the informal networks within the organisation's leadership."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS18-een-vriend-van-de-rotary.jpg",
+      "altNl": "Informeel gesprek tussen twee collega's bij de koffieautomaat",
+      "altEn": "Informal conversation between two colleagues at the coffee machine",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 121,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS18",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps39",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Onbereikbaar",
+      "verhaal": "Na meldingen van ongewenst gedrag wordt Rob, teamleider met een vast contract, op non-actief gezet en uit zijn leidinggevende functie gehaald. Het interne onderzoek is nog bezig. De volgende dag meldt hij zich ziek, met fysieke en mentale klachten.\n\nDaarna is het stil. Rob neemt niet op en reageert niet op uitnodigingen voor koffie. Anouk, HR-adviseur, maakt zich zorgen: zijn vrouw liet doorschemeren dat hij ‘nergens meer uit komt’.\n\nTegelijk wachten de collega’s die de melding deden al weken op duidelijkheid en veiligheid. Elke extra aandacht voor Rob voelt voor hen als verraad. Hoeveel zorg ben je verschuldigd aan iemand die mogelijk anderen heeft beschadigd?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Zorgplicht voor de beschuldigde botst met veiligheid en erkenning voor de melders, binnen het onderzoek van de organisatie."
+    },
+    "en": {
+      "titel": "Unreachable",
+      "verhaal": "After reports of inappropriate behaviour, Rob, a team leader on a permanent contract, is suspended and removed from his managerial role. The internal investigation is still under way. The next day he calls in sick, with physical and mental complaints.\n\nAfter that, silence. Rob doesn't pick up and doesn't respond to invitations for coffee. Anouk, an HR advisor, is worried: his wife hinted that he ‘can't see a way out anymore’.\n\nAt the same time, the colleagues who made the report have been waiting for weeks for clarity and safety. For them, every bit of extra attention for Rob feels like betrayal. How much care do you owe someone who may have harmed others?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The duty of care for the accused clashes with safety and recognition for those who reported, within the organisation's investigation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS39-onbereikbaar.jpg",
+      "altNl": "Leeg kantoor met onbeantwoorde telefoon, werkdruk en afwezigheid",
+      "altEn": "Empty office with an unanswered phone, workload and absence",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 114,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS39",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps53",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Achteraf vastgelegd",
+      "verhaal": "Al maanden functioneert Peter onder de maat. Zijn teamleider heeft het meerdere keren mondeling gezegd, maar er is niets vastgelegd. Nu wil het management een verbetertraject dat juridisch waterdicht is. Tessa, HR-adviseur, moet het voorbereiden.\n\nIn een overleg schuift de manager haar een notitie toe. ‘Zet deze gesprekken alvast in het dossier. Dan klopt de tijdlijn.’ Het zijn verslagen met data van maanden geleden, nu pas opgeschreven, in een toon die scherper is dan het destijds ging.\n\nPeter functioneert echt niet goed, daar twijfelt Tessa niet aan. Maar dit dossier vertelt een verhaal dat niet helemaal waar is. Mag je de waarheid een beetje bijsturen als de uitkomst toch terecht lijkt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Integriteit van dossiervorming botst met de juridische en organisatorische belangen van het management."
+    },
+    "en": {
+      "titel": "Recorded Afterwards",
+      "verhaal": "For months Peter has been performing below standard. His team leader has said so several times, but only verbally, and nothing has been recorded. Now management wants an improvement plan that is legally watertight. Tessa, an HR advisor, has to prepare it.\n\nIn a meeting the manager slides a note across to her. ‘Put these conversations in the file now. Then the timeline adds up.’ They are reports dated months ago, only now written down, in a tone sharper than it really was at the time.\n\nPeter really is not performing well; Tessa has no doubt about that. But this file tells a story that isn't entirely true. May you bend the truth a little if the outcome seems justified anyway?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The integrity of record-keeping clashes with management's legal and organisational interests."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS53-achteraf-vastgelegd.jpg",
+      "altNl": "HR-medewerker die een dossier bekijkt na een incident op de werkvloer",
+      "altEn": "HR staff member reviewing a file after an incident on the work floor",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 111,
+      "woordenEn": 121,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS53",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps58",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Wie schreef dit?",
+      "verhaal": "Het medewerkersonderzoek is binnen en één team scoort opvallend slecht. Het MT legt de bal terug bij de teams zelf. De teamleider schakelt Zeynep, HR-businesspartner, in om de aanpak te begeleiden.\n\nTijdens het eerste overleg vraagt de teamleider iets wat Zeynep niet had verwacht. ‘Er staan een paar giftige opmerkingen in de open antwoorden. Jij hebt toegang tot de ruwe data. Kun je zien van wie ze zijn? Dan kan ik ze gericht aanspreken.’\n\nHet team is klein. Met een paar kenmerken is de afzender makkelijk te herleiden. Anonimiteit beloven en daarna toch herleiden voelt als verraad. Weigeren maakt de teamleider wantrouwig tegenover iedereen. Wat is anonimiteit waard als één klik genoeg is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De beloofde anonimiteit van medewerkers botst met de wens van de teamleider om problemen gericht aan te pakken."
+    },
+    "en": {
+      "titel": "Who Wrote This?",
+      "verhaal": "The employee survey is in, and one team scores strikingly badly. The management team hands the issue back to the teams themselves. The team leader brings in Zeynep, an HR business partner, to guide the approach.\n\nIn the first meeting the team leader asks something Zeynep hadn't expected. ‘There are a few toxic comments in the open answers. You have access to the raw data. Can you see who wrote them? Then I can address them directly.’\n\nThe team is small. With a few characteristics the author is easy to trace. Promising anonymity and then tracing it anyway feels like betrayal. Refusing makes the team leader distrustful of everyone. What is anonymity worth if one click is enough?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Promised anonymity for employees clashes with the team leader's wish to address problems directly."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS58-wie-schreef-dit.jpg",
+      "altNl": "Beoordelingsformulier en laptop op een bureau, functioneringsgesprek",
+      "altEn": "Appraisal form and laptop on a desk, performance review setting",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 118,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS58",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps66",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Niet ziek, wel vast",
+      "verhaal": "Hans, casemanager verzuim, voert een gesprek met Monique. Al snel wordt duidelijk dat ze niet ziek is. Er is een conflict met haar leidinggevende, en ze ziet er geen andere uitweg in dan thuisblijven.\n\nHans werkt in opdracht van de organisatie en wordt betaald door dezelfde directie waar haar leidinggevende onder valt. Volgens het protocol moet hij melden dat het om een arbeidsconflict gaat. Daarmee vervalt waarschijnlijk haar ziektestatus en komt zij nog sterker onder druk te staan.\n\nMonique vertrouwt hem, juist omdat hij ‘onafhankelijk’ zou zijn. Voor wie werkt Hans eigenlijk: voor de organisatie die hem betaalt, of voor de medewerker die hem vertrouwt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De onafhankelijkheid van de casemanager botst met de opdrachtgeversrol van de organisatie en het belang van de medewerker."
+    },
+    "en": {
+      "titel": "Not Sick, Just Stuck",
+      "verhaal": "Hans, an absence case manager, has a conversation with Monique. It soon becomes clear that she isn't sick. There is a conflict with her manager, and she sees no other way out than staying at home.\n\nHans works on behalf of the organisation and is paid by the same management board that her manager reports to. According to protocol he has to report that this is a labour conflict. That would probably end her sick-leave status and put her under even more pressure.\n\nMonique trusts him precisely because he is supposed to be ‘independent’. Who does Hans actually work for: the organisation that pays him, or the employee who trusts him?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The case manager's independence clashes with the organisation's role as client and with the employee's interest."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS66-niet-ziek-wel-vast.jpg",
+      "altNl": "Medewerker die ziek thuis meldt via telefoon, HR aan de lijn",
+      "altEn": "Employee reporting sick leave by phone, HR on the line",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS66",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps69",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Uit elkaar gaan",
+      "verhaal": "Wilma is al bijna anderhalf jaar ziek vanwege psychische klachten. Haar leidinggevende is er klaar mee. In een gesprek heeft hij haar voorgesteld met een vaststellingsovereenkomst uit elkaar te gaan, en nu vraagt hij Annelies, HR-adviseur, om het ‘netjes af te ronden’.\n\nWilma lijkt opgelucht, haast gretig. ‘Dan ben ik eindelijk van die druk af.’ Annelies vraagt zich af of Wilma overziet wat ze tekent: haar recht op loondoorbetaling, een uitkering, en het werk dat haar structuur gaf.\n\nJuridisch is het mogelijk, en het lijkt ook te zijn wat Wilma wil. Maar Annelies weet niet of dit een vrije keuze is of een vlucht. Hoe vrij is een keuze van iemand die ziek is en onder druk staat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De autonomie van een zieke medewerker botst met haar bescherming en met de wens van de leidinggevende om af te ronden."
+    },
+    "en": {
+      "titel": "Parting Ways",
+      "verhaal": "Wilma has been ill for almost a year and a half with psychological complaints. Her manager has had enough. In a conversation he has proposed that they part ways with a settlement agreement, and now he asks Annelies, an HR advisor, to ‘wrap it up neatly’.\n\nWilma seems relieved, almost eager. ‘Then I'll finally be rid of this pressure.’ Annelies wonders whether Wilma sees what she is signing away: her right to continued pay, a benefit, and the work that gave her structure.\n\nLegally it is possible, and it also seems to be what Wilma wants. But Annelies doesn't know whether this is a free choice or an escape. How free is a choice made by someone who is ill and under pressure?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The autonomy of a sick employee clashes with her protection and with the manager's wish to wrap things up."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS69-uit-elkaar-gaan.jpg",
+      "altNl": "Scheidingsgesprek in een vergaderruimte, emotionele spanning",
+      "altEn": "Separation meeting in a conference room, emotional tension",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 118,
+      "woordenEn": 123,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS69",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps54",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Na de pauze",
+      "verhaal": "Een collega betrapt Kevin in de pauze terwijl hij cocaïne snuift op het toilet. Volgens het bedrijfsbeleid volgt een officiële hoorzitting en daarna een advies aan de directeur. Ontslag is de regel. Stijn, beginnend HR-medewerker, moet het proces begeleiden: uitnodigen, verslag maken, advies schrijven.\n\nTijdens de hoorzitting breekt Kevin. Hij is verslaafd, al twee jaar, en heeft nooit durven vragen om hulp. ‘Als ik ontslagen word, verlies ik alles. Help me alsjeblieft.’\n\nHet beleid is helder en er is een strafbaar feit gepleegd. Maar Stijn ziet een zieke man voor zich, geen crimineel. Mag Stijn een advies schrijven dat afwijkt van een beleid dat hij net heeft leren toepassen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Handhaving van bedrijfsbeleid en veiligheid botst met zorg voor een verslaafde medewerker die om hulp vraagt."
+    },
+    "en": {
+      "titel": "After the Break",
+      "verhaal": "A colleague catches Kevin snorting cocaine in the toilets during the break. Company policy requires a formal hearing and then a recommendation to the director. Dismissal is the rule. Stijn, a junior HR employee, has to guide the process: send the invitation, take the minutes, write the recommendation.\n\nDuring the hearing Kevin breaks down. He has been addicted for two years and never dared to ask for help. ‘If I'm dismissed, I lose everything. Please help me.’\n\nThe policy is clear and an offence has been committed. But Stijn sees a sick man in front of him, not a criminal. May Stijn write a recommendation that departs from a policy he has only just learned to apply?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Enforcement of company policy and safety clashes with care for an addicted employee who asks for help."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS54-na-de-pauze.jpg",
+      "altNl": "Formeel hoorzitting in een vergaderruimte, HR en medewerker tegenover elkaar",
+      "altEn": "Formal hearing in a meeting room, HR and employee facing each other",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 117,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS54",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps14",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het klusje",
+      "verhaal": "Na maanden van afgezegde afspraken begint Dennis eindelijk te vertrouwen op Hanna, zijn jobcoach. Hij komt op tijd, solliciteert en lacht soms zelfs. Dan vertelt hij trots dat hij vorige week voor een buurman een schuur heeft geverfd. Tweehonderd euro, contant.\n\nHanna weet wat dat betekent. Met een bijstandsuitkering moet hij dit melden. Doet hij dat niet en komt het uit, dan volgen een korting, een boete en misschien het einde van het traject.\n\nMeldt zij het zelf, dan is het vertrouwen dat ze maandenlang heeft opgebouwd in één klap weg. Zwijgt ze, dan gaat ze buiten haar wettelijke kader. Wat is goede hulp, als de regels en de mens elkaar tegenspreken?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De kern ligt in de uitkeringsregels van de Participatiewet, die bepalen wat Hanna mag verzwijgen; zij of haar organisatie kan die niet veranderen."
+    },
+    "en": {
+      "titel": "The Odd Job",
+      "verhaal": "After months of cancelled appointments, Dennis is finally beginning to trust Hanna, his job coach. He arrives on time, applies for jobs and even smiles now and then. Then he proudly tells her that last week he painted a shed for a neighbour. Two hundred euros, in cash.\n\nHanna knows what that means. On social assistance he has to report this. If he doesn't and it comes out, a benefit reduction, a fine and perhaps the end of his support programme follow.\n\nIf she reports it herself, the trust she has built up for months is gone in one blow. If she stays silent, she steps outside her legal framework. What is good help when the rules and the person contradict each other?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "At its core lies the benefit rules of the Participation Act, which determine what Hanna may keep quiet about; neither she nor her organisation can change them."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS14-het-klusje.jpg",
+      "altNl": "Jobcoach en cliënt in gesprek in een informele ruimte",
+      "altEn": "Job coach and client in conversation in an informal setting",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 123,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS14",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hrm-ps43",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De lijst",
+      "verhaal": "Het internationale concern moet kosten besparen om een faillissement af te wenden. De Amerikaanse leidinggevende van Pieter, HR-adviseur, stuurt een korte mail met een lijst van zes namen. ‘Underperformers. Make sure they don’t come back next month.’\n\nPieter weet dat het Nederlandse ontslagrecht zo niet werkt: er is een ontslaggrond, een dossier, het UWV of de rechter nodig. Twee namen op de lijst zijn medewerkers die net een klacht hebben ingediend.\n\nZijn baas vindt Nederland ‘bureaucratisch’ en wil resultaat. Als het bedrijf omvalt, verliest iedereen zijn baan. Maar de lijst negeren of uitvoeren voelt allebei verkeerd. Hoe verdedigt Pieter rechten die zijn eigen baas niet erkent?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Het dilemma draait om de botsing tussen Nederlands ontslagrecht en internationale bedrijfsvoering, buiten het bereik van Pieter of de vestiging."
+    },
+    "en": {
+      "titel": "The List",
+      "verhaal": "The international group has to cut costs to avert bankruptcy. The American manager of Pieter, an HR advisor, sends a short email with a list of six names. ‘Underperformers. Make sure they don't come back next month.’\n\nPieter knows that Dutch dismissal law doesn't work that way: it requires a ground for dismissal, a file, and the UWV or a judge. Two of the names on the list are employees who have just filed a complaint.\n\nHis boss finds the Netherlands ‘bureaucratic’ and wants results. If the company collapses, everybody loses their job. But ignoring the list or carrying it out both feel wrong. How does Pieter defend rights that his own boss doesn't recognise?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The dilemma is the clash between Dutch dismissal law and international business practice, beyond the reach of Pieter or the local branch."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS43-de-lijst.jpg",
+      "altNl": "HR-adviseur achter laptop met e-mail over reorganisatie op het scherm",
+      "altEn": "HR advisor at a laptop with reorganisation email on the screen",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 115,
+      "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+      "kaartNummer": "PS43",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "definitief",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
   }
 ]

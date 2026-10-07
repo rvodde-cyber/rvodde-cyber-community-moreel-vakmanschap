@@ -8,6 +8,7 @@ import {
   getCategorieKleur,
   getCategorieKleurLicht,
   getComplexityKey,
+  sortCardSets,
 } from "./constants.js";
 import { getGesprekskaartStrings } from "./i18n.js";
 import { getCardContentLang } from "../vertalingen.js";
@@ -49,8 +50,15 @@ export function localizeCard(card, taal) {
     verhaal: content.verhaal,
     vraag1: content.vraag1 ?? gk.vraag1,
     vraag2: content.vraag2 ?? gk.vraag2,
+    complexiteitLabel: content.complexiteitLabel ?? null,
+    rechtvaardiging: content.rechtvaardiging ?? null,
     vraag: content.titel,
     afbeelding: card.assets?.afbeelding ?? null,
+    afbeeldingAlt:
+      (contentLang === "nl" ? card.assets?.altNl : card.assets?.altEn) ??
+      card.assets?.altNl ??
+      card.assets?.altEn ??
+      null,
     fireflyPrompt: card.assets?.fireflyPrompt ?? null,
     pdfHref: card.assets?.[contentLang === "nl" ? "pdfNl" : "pdfEn"] ?? null,
     woorden: card.meta?.[contentLang === "nl" ? "woordenNl" : "woordenEn"] ?? null,
@@ -86,6 +94,7 @@ export function filterCards(cardList, filters = {}) {
 
 export function getFilterOptions(cardList = cards) {
   return {
+    sets: sortCardSets([...new Set(cardList.map((c) => c.set).filter(Boolean))]),
     categorieen: [...new Set(cardList.map((c) => c.categorie))].sort(),
     moeilijkheden: [...new Set(cardList.map((c) => c.moeilijkheid))].sort(),
     taalniveaus: [...new Set(cardList.map((c) => c.taalniveau))].sort(),

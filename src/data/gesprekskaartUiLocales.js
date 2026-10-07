@@ -1,5 +1,35 @@
 /** Gesprekskaart-UI voor SV, CS, DA — sitetekst valt terug op EN */
 
+const setLabelsSv = {
+  "morele-moed-teaser": "Moral Courage (teaser)",
+  burgerschap: "Medborgarskap",
+  "dl-compleet-a5": "Vardagsliv (hela setet)",
+  "onderwijs-v3": "Utbildning",
+  "nucleaire-geneeskunde": "Nukleärmedicin",
+  onderzoeksintegriteit: "Forskningsintegritet",
+  "praktijkschok-hrm": "Praktijkschok HR",
+};
+
+const setLabelsCs = {
+  "morele-moed-teaser": "Moral Courage (teaser)",
+  burgerschap: "Občanství",
+  "dl-compleet-a5": "Každodenní život (celá sada)",
+  "onderwijs-v3": "Vzdělávání",
+  "nucleaire-geneeskunde": "Nukleární medicína",
+  onderzoeksintegriteit: "Integrita výzkumu",
+  "praktijkschok-hrm": "Praktijkschok HR",
+};
+
+const setLabelsDa = {
+  "morele-moed-teaser": "Moral Courage (teaser)",
+  burgerschap: "Medborgerskab",
+  "dl-compleet-a5": "Dagligdagen (fuld sæt)",
+  "onderwijs-v3": "Uddannelse",
+  "nucleaire-geneeskunde": "Nuklearmedicin",
+  onderzoeksintegriteit: "Forskningsintegritet",
+  "praktijkschok-hrm": "Praktijkschok HR",
+};
+
 const categorieLabelsSv = {
   "dagelijks-leven": "Vardagsliv",
   werk: "Arbete",
@@ -12,6 +42,7 @@ const categorieLabelsSv = {
   onderzoeksintegriteit: "Forskningsintegritet",
   onderwijs: "Utbildning",
   overheid: "Offentlig sektor",
+  hrm: "HR",
 };
 
 const categorieLabelsCs = {
@@ -26,6 +57,7 @@ const categorieLabelsCs = {
   onderzoeksintegriteit: "Integrita výzkumu",
   onderwijs: "Vzdělávání",
   overheid: "Veřejný sektor",
+  hrm: "HR",
 };
 
 const categorieLabelsDa = {
@@ -40,6 +72,7 @@ const categorieLabelsDa = {
   onderzoeksintegriteit: "Forskningsintegritet",
   onderwijs: "Uddannelse",
   overheid: "Offentlig sektor",
+  hrm: "HR",
 };
 
 export const gesprekskaartUiLocales = {
@@ -52,7 +85,9 @@ export const gesprekskaartUiLocales = {
     taalniveauLabel: "Språknivå",
     woordenLabel: "{count} ord",
     filters: {
-      categorie: "Kategori",
+      reeks: "Serie",
+      set: "Serie",
+      categorie: "Tema",
       moeilijkheid: "Komplexitet",
       taalniveau: "Språknivå i fallet",
       zoek: "Sök",
@@ -61,6 +96,7 @@ export const gesprekskaartUiLocales = {
       reset: "Rensa filter",
       showing: "{count} av {total} kort",
       empty: "Inga kort matchar dessa filter.",
+      setLabels: setLabelsSv,
       categorieLabels: categorieLabelsSv,
     },
     sluit: "Stäng",
@@ -79,7 +115,9 @@ export const gesprekskaartUiLocales = {
     taalniveauLabel: "Jazyková úroveň",
     woordenLabel: "{count} slov",
     filters: {
-      categorie: "Kategorie",
+      reeks: "Sada",
+      set: "Sada",
+      categorie: "Téma",
       moeilijkheid: "Složitost",
       taalniveau: "Jazyková úroveň případu",
       zoek: "Hledat",
@@ -88,6 +126,7 @@ export const gesprekskaartUiLocales = {
       reset: "Vymazat filtry",
       showing: "{count} z {total} karet",
       empty: "Žádné karty neodpovídají těmto filtrům.",
+      setLabels: setLabelsCs,
       categorieLabels: categorieLabelsCs,
     },
     sluit: "Zavřít",
@@ -106,7 +145,9 @@ export const gesprekskaartUiLocales = {
     taalniveauLabel: "Sprogniveau",
     woordenLabel: "{count} ord",
     filters: {
-      categorie: "Kategori",
+      reeks: "Serie",
+      set: "Serie",
+      categorie: "Tema",
       moeilijkheid: "Kompleksitet",
       taalniveau: "Sprogniveau for casus",
       zoek: "Søg",
@@ -115,6 +156,7 @@ export const gesprekskaartUiLocales = {
       reset: "Ryd filtre",
       showing: "{count} af {total} kort",
       empty: "Ingen kort matcher disse filtre.",
+      setLabels: setLabelsDa,
       categorieLabels: categorieLabelsDa,
     },
     sluit: "Luk",
