@@ -1,5 +1,22 @@
 /** Vaste metadata — UI-labels komen uit vertalingen.js (NL/EN) en i18n.js (DE/SV/CS) */
 
+/** Volgorde in filter dropdown (Reeks / set) */
+export const CARD_SET_ORDER = [
+  "morele-moed-teaser",
+  "burgerschap",
+  "dl-compleet-a5",
+  "onderwijs-v3",
+  "nucleaire-geneeskunde",
+  "onderzoeksintegriteit",
+  "praktijkschok-hrm",
+  "etz-passende-zorg",
+];
+
+export function sortCardSets(sets) {
+  const rank = new Map(CARD_SET_ORDER.map((id, i) => [id, i]));
+  return [...sets].sort((a, b) => (rank.get(a) ?? 99) - (rank.get(b) ?? 99) || a.localeCompare(b));
+}
+
 export const CATEGORIE_SLUGS = [
   "dagelijks-leven",
   "werk",
@@ -12,6 +29,8 @@ export const CATEGORIE_SLUGS = [
   "onderzoeksintegriteit",
   "onderwijs",
   "overheid",
+  "hrm",
+  "etz-passende-zorg",
 ];
 
 export const MOEILIJKHEID_MIN = 1;
@@ -42,6 +61,8 @@ export const CATEGORIE_KLEUREN = {
   "nucleaire-geneeskunde": "#2563eb",
   onderzoeksintegriteit: "#7c3aed",
   overheid: "#185fa5",
+  hrm: "#3949AB",
+  "etz-passende-zorg": "#005F73",
 };
 
 export function getCategorieKleur(slug) {
@@ -82,6 +103,8 @@ export const CATEGORY_FROM_LEGACY = {
   Onderzoeksintegriteit: "onderzoeksintegriteit",
   Onderwijs: "onderwijs",
   EDUCATION: "onderwijs",
+  HRM: "hrm",
+  HR: "hrm",
 };
 
 export const TEASER_SET = {

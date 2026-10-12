@@ -4,6 +4,7 @@ import { getComplexityKey } from "../data/gesprekskaarten/constants";
 import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
 const EMPTY = {
+  set: "",
   categorie: "",
   moeilijkheid: "",
   taalniveau: "",
@@ -15,6 +16,14 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
   const f = t.gesprekskaart.filters;
   const gk = getGesprekskaartStrings(taal);
 
+  const setLabels = useMemo(() => {
+    const map = f.setLabels ?? {};
+    return (options.sets ?? []).map((slug) => ({
+      value: slug,
+      label: map[slug] ?? slug,
+    }));
+  }, [options.sets, f.setLabels]);
+
   const categorieLabels = useMemo(() => {
     const map = f.categorieLabels ?? {};
     return (options.categorieen ?? []).map((slug) => ({
@@ -24,7 +33,7 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
   }, [options.categorieen, f.categorieLabels]);
 
   const hasActiveFilters =
-    filters.categorie || filters.moeilijkheid || filters.taalniveau || filters.zoek;
+    filters.set || filters.categorie || filters.moeilijkheid || filters.taalniveau || filters.zoek;
 
   return (
     <div className="mb-8 rounded-xl border border-rand bg-white p-4 shadow-warm md:p-5">
@@ -43,7 +52,23 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
         )}
       </div>
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <label className="flex flex-col gap-1.5 text-sm">
+          <span className="font-semibold text-primair">{f.reeks}</span>
+          <select
+            value={filters.set}
+            onChange={(e) => onChange({ ...filters, set: e.target.value })}
+            className="rounded-lg border border-rand bg-[#fafaf8] px-3 py-2 text-primair"
+          >
+            <option value="">{f.all}</option>
+            {setLabels.map(({ value, label }) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
+
         <label className="flex flex-col gap-1.5 text-sm">
           <span className="font-semibold text-primair">{f.categorie}</span>
           <select
@@ -96,7 +121,7 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
           </select>
         </label>
 
-        <label className="flex flex-col gap-1.5 text-sm md:col-span-2 lg:col-span-1">
+        <label className="flex flex-col gap-1.5 text-sm sm:col-span-2 lg:col-span-1 xl:col-span-1">
           <span className="font-semibold text-primair">{f.zoek}</span>
           <input
             type="search"

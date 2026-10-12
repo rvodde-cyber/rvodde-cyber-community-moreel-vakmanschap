@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/downloads/werkbladen/(.*)/WB-(MW\\d{2}|EX\\d{2})-HBO-HRM-(.*)",
+      "destination": "/downloads/werkbladen/$1/WB-$2-HRM-$3",
+      "permanent": true
+    },
+    {
+      "source": "/downloads/werkbladen/(.*)/WB-GK(\\d{2})-HBO-(.*)",
+      "destination": "/downloads/werkbladen/$1/WB-GK$2-$3",
+      "permanent": true
+    },
+    {
+      "source": "/images/werkbladen/WB-(MW\\d{2}|EX\\d{2})-HBO-HRM-(.*)",
+      "destination": "/images/werkbladen/WB-$1-HRM-$2",
+      "permanent": true
+    },
+    {
+      "source": "/images/werkbladen/WB-GK(\\d{2})-HBO-(.*)",
+      "destination": "/images/werkbladen/WB-GK$1-$2",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/wisselwerking",

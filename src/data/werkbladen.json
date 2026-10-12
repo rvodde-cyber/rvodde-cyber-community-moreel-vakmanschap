@@ -1,7 +1,7 @@
 [
   {
     "id": "MV_23",
-    "werkblad_code": "WB-MW01-HBO-HRM-NL",
+    "werkblad_code": "WB-MW01-HRM-NL",
     "titel": {
       "nl": "Wat is loyaliteit?",
       "en": "What is loyalty?"
@@ -37,16 +37,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW01-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW01-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW01-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW01-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW01-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW01-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW01-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW01-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW01-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW01-HRM-NL.jpg"
   },
   {
     "id": "MV_24",
-    "werkblad_code": "WB-MW02-HBO-HRM-NL",
+    "werkblad_code": "WB-MW02-HRM-NL",
     "titel": {
       "nl": "Dilemma-overleg: de reorganisatie",
       "en": "Dilemma deliberation: the reorganisation"
@@ -84,17 +84,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW02-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW02-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW02-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW02-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW02-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW02-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW02-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW02-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW02-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW02-HRM-NL.jpg",
     "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
   },
   {
     "id": "MV_25",
-    "werkblad_code": "WB-MW03-HBO-HRM-NL",
+    "werkblad_code": "WB-MW03-HRM-NL",
     "titel": {
       "nl": "De vertrouwelijke melding",
       "en": "The confidential report"
@@ -132,16 +132,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW03-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW03-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW03-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW03-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW03-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW03-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW03-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW03-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW03-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW03-HRM-NL.jpg"
   },
   {
     "id": "MV_26",
-    "werkblad_code": "WB-MW04-HBO-HRM-NL",
+    "werkblad_code": "WB-MW04-HRM-NL",
     "titel": {
       "nl": "Te aardig?",
       "en": "Too nice?"
@@ -176,16 +176,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW04-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW04-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW04-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW04-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW04-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW04-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW04-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW04-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW04-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW04-HRM-NL.jpg"
   },
   {
     "id": "MV_27",
-    "werkblad_code": "WB-MW05-HBO-HRM-NL",
+    "werkblad_code": "WB-MW05-HRM-NL",
     "titel": {
       "nl": "De stagelijst",
       "en": "The internship list"
@@ -223,16 +223,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW05-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW05-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW05-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW05-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW05-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW05-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW05-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW05-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW05-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW05-HRM-NL.jpg"
   },
   {
     "id": "MV_28",
-    "werkblad_code": "WB-MW06-HBO-HRM-NL",
+    "werkblad_code": "WB-MW06-HRM-NL",
     "titel": {
       "nl": "De stille lunch",
       "en": "The silent lunch"
@@ -270,16 +270,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW06-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW06-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW06-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW06-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW06-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW06-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW06-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW06-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW06-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW06-HRM-NL.jpg"
   },
   {
     "id": "MV_29",
-    "werkblad_code": "WB-MW07-HBO-HRM-NL",
+    "werkblad_code": "WB-MW07-HRM-NL",
     "titel": {
       "nl": "Verpleegkundigen uit Ghana",
       "en": "Nurses from Ghana"
@@ -316,16 +316,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW07-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW07-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW07-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW07-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW07-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW07-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW07-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW07-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW07-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW07-HRM-NL.jpg"
   },
   {
     "id": "MV_30",
-    "werkblad_code": "WB-MW08-HBO-HRM-NL",
+    "werkblad_code": "WB-MW08-HRM-NL",
     "titel": {
       "nl": "Het prestatiescherm",
       "en": "The performance screen"
@@ -364,16 +364,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW08-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW08-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW08-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW08-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW08-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW08-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW08-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW08-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW08-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW08-HRM-NL.jpg"
   },
   {
     "id": "MV_31",
-    "werkblad_code": "WB-MW09-HBO-HRM-NL",
+    "werkblad_code": "WB-MW09-HRM-NL",
     "titel": {
       "nl": "Terug naar de vloer",
       "en": "Back to the shop floor"
@@ -411,16 +411,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW09-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW09-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW09-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW09-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW09-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW09-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW09-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW09-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW09-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW09-HRM-NL.jpg"
   },
   {
     "id": "MV_32",
-    "werkblad_code": "WB-MW10-HBO-HRM-NL",
+    "werkblad_code": "WB-MW10-HRM-NL",
     "titel": {
       "nl": "Het recht om offline te zijn",
       "en": "The right to be offline"
@@ -458,16 +458,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW10-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW10-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW10-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW10-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW10-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW10-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW10-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW10-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW10-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW10-HRM-NL.jpg"
   },
   {
     "id": "MV_33",
-    "werkblad_code": "WB-MW11-HBO-HRM-NL",
+    "werkblad_code": "WB-MW11-HRM-NL",
     "titel": {
       "nl": "De cv-scantool",
       "en": "The CV scanning tool"
@@ -504,16 +504,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW11-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW11-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW11-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW11-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW11-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW11-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW11-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW11-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW11-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW11-HRM-NL.jpg"
   },
   {
     "id": "MV_34",
-    "werkblad_code": "WB-MW12-HBO-HRM-NL",
+    "werkblad_code": "WB-MW12-HRM-NL",
     "titel": {
       "nl": "Zwijgen of vertellen?",
       "en": "Keep quiet or speak up?"
@@ -551,16 +551,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW12-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW12-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW12-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW12-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW12-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW12-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW12-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW12-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW12-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW12-HRM-NL.jpg"
   },
   {
     "id": "MV_35",
-    "werkblad_code": "WB-MW13-HBO-HRM-NL",
+    "werkblad_code": "WB-MW13-HRM-NL",
     "titel": {
       "nl": "Een regel voor de hele regio",
       "en": "One rule for the whole region"
@@ -597,16 +597,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW13-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW13-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW13-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW13-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW13-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW13-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW13-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW13-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW13-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW13-HRM-NL.jpg"
   },
   {
     "id": "MV_36",
-    "werkblad_code": "WB-MW14-HBO-HRM-NL",
+    "werkblad_code": "WB-MW14-HRM-NL",
     "titel": {
       "nl": "Wie raakt de verzuimapp?",
       "en": "Who is affected by the absence app?"
@@ -643,16 +643,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW14-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW14-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW14-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW14-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW14-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW14-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW14-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW14-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW14-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW14-HRM-NL.jpg"
   },
   {
     "id": "MV_37",
-    "werkblad_code": "WB-MW15-HBO-HRM-NL",
+    "werkblad_code": "WB-MW15-HRM-NL",
     "titel": {
       "nl": "De activiteitsmeter",
       "en": "The activity monitor"
@@ -691,16 +691,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW15-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW15-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW15-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW15-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW15-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW15-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW15-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW15-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW15-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW15-HRM-NL.jpg"
   },
   {
     "id": "MV_38",
-    "werkblad_code": "WB-MW16-HBO-HRM-NL",
+    "werkblad_code": "WB-MW16-HRM-NL",
     "titel": {
       "nl": "Tien seconden",
       "en": "Ten seconds"
@@ -738,17 +738,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW16-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW16-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW16-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW16-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW16-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW16-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW16-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW16-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW16-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW16-HRM-NL.jpg",
     "zieOok": ["MV_61"]
   },
   {
     "id": "MV_39",
-    "werkblad_code": "WB-MW17-HBO-HRM-NL",
+    "werkblad_code": "WB-MW17-HRM-NL",
     "titel": {
       "nl": "Het rooster van Nadia",
       "en": "Nadia's schedule"
@@ -786,16 +786,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW17-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW17-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW17-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW17-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW17-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW17-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW17-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW17-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW17-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW17-HRM-NL.jpg"
   },
   {
     "id": "MV_40",
-    "werkblad_code": "WB-MW18-HBO-HRM-NL",
+    "werkblad_code": "WB-MW18-HRM-NL",
     "titel": {
       "nl": "De krantenkop van volgend jaar",
       "en": "Next year's headline"
@@ -833,16 +833,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW18-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW18-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW18-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW18-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW18-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW18-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW18-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW18-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW18-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW18-HRM-NL.jpg"
   },
   {
     "id": "MV_41",
-    "werkblad_code": "WB-MW19-HBO-HRM-NL",
+    "werkblad_code": "WB-MW19-HRM-NL",
     "titel": {
       "nl": "De mail aan Rosa",
       "en": "The email to Rosa"
@@ -880,16 +880,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW19-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW19-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW19-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW19-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW19-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW19-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW19-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW19-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW19-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW19-HRM-NL.jpg"
   },
   {
     "id": "MV_42",
-    "werkblad_code": "WB-MW20-HBO-HRM-NL",
+    "werkblad_code": "WB-MW20-HRM-NL",
     "titel": {
       "nl": "Binnen 24 uur bereikbaar",
       "en": "Available within 24 hours"
@@ -926,16 +926,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW20-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW20-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW20-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW20-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW20-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW20-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW20-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW20-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW20-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW20-HRM-NL.jpg"
   },
   {
     "id": "MV_43",
-    "werkblad_code": "WB-MW21-HBO-HRM-NL",
+    "werkblad_code": "WB-MW21-HRM-NL",
     "titel": {
       "nl": "Salarissen op tafel?",
       "en": "Salaries on the table?"
@@ -972,16 +972,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW21-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW21-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW21-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW21-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW21-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW21-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW21-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW21-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW21-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW21-HRM-NL.jpg"
   },
   {
     "id": "MV_44",
-    "werkblad_code": "WB-MW22-HBO-HRM-NL",
+    "werkblad_code": "WB-MW22-HRM-NL",
     "titel": {
       "nl": "De verkeerde bijschrijving",
       "en": "The wrong payment"
@@ -1018,16 +1018,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW22-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW22-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW22-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW22-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW22-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW22-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW22-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW22-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW22-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW22-HRM-NL.jpg"
   },
   {
     "id": "MV_45",
-    "werkblad_code": "WB-MW23-HBO-HRM-NL",
+    "werkblad_code": "WB-MW23-HRM-NL",
     "titel": {
       "nl": "Waar ga jij staan?",
       "en": "Where do you stand?"
@@ -1065,16 +1065,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW23-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW23-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW23-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW23-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW23-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW23-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW23-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW23-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW23-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW23-HRM-NL.jpg"
   },
   {
     "id": "MV_46",
-    "werkblad_code": "WB-MW24-HBO-HRM-NL",
+    "werkblad_code": "WB-MW24-HRM-NL",
     "titel": {
       "nl": "De taxibon van Henk",
       "en": "Henk's taxi receipt"
@@ -1112,16 +1112,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW24-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW24-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW24-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW24-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW24-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW24-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW24-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW24-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW24-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW24-HRM-NL.jpg"
   },
   {
     "id": "MV_47",
-    "werkblad_code": "WB-MW25-HBO-HRM-NL",
+    "werkblad_code": "WB-MW25-HRM-NL",
     "titel": {
       "nl": "Werken zonder vergunning",
       "en": "Working without a permit"
@@ -1158,16 +1158,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW25-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW25-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW25-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW25-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW25-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW25-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW25-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW25-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW25-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW25-HRM-NL.jpg"
   },
   {
     "id": "MV_48",
-    "werkblad_code": "WB-MW26-HBO-HRM-NL",
+    "werkblad_code": "WB-MW26-HRM-NL",
     "titel": {
       "nl": "Niemand had bezwaar",
       "en": "Nobody objected"
@@ -1204,16 +1204,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW26-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW26-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW26-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW26-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW26-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW26-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW26-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW26-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW26-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW26-HRM-NL.jpg"
   },
   {
     "id": "MV_49",
-    "werkblad_code": "WB-MW27-HBO-HRM-NL",
+    "werkblad_code": "WB-MW27-HRM-NL",
     "titel": {
       "nl": "Wat ik zeg en wat ik doe",
       "en": "What I say and what I do"
@@ -1250,16 +1250,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW27-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW27-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW27-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW27-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW27-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW27-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW27-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW27-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW27-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW27-HRM-NL.jpg"
   },
   {
     "id": "MV_50",
-    "werkblad_code": "WB-MW28-HBO-HRM-NL",
+    "werkblad_code": "WB-MW28-HRM-NL",
     "titel": {
       "nl": "De grap die niemand tegensprak",
       "en": "The joke nobody challenged"
@@ -1298,16 +1298,16 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW28-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW28-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW28-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW28-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW28-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW28-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW28-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW28-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW28-HBO-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW28-HRM-NL.jpg"
   },
   {
     "id": "MV_51",
-    "werkblad_code": "WB-MW29-HBO-HRM-NL",
+    "werkblad_code": "WB-MW29-HRM-NL",
     "titel": {
       "nl": "De buddy-app",
       "en": "The buddy app"
@@ -1345,17 +1345,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW29-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW29-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW29-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW29-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW29-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW29-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW29-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW29-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW29-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW29-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op The Ethics Canvas – ADAPT Centre & Trinity College Dublin – CC BY-SA 3.0 – https://www.ethicscanvas.org/"
   },
   {
     "id": "MV_52",
-    "werkblad_code": "WB-MW30-HBO-HRM-NL",
+    "werkblad_code": "WB-MW30-HRM-NL",
     "titel": {
       "nl": "Wie vertrekt er volgend jaar?",
       "en": "Who will leave next year?"
@@ -1394,17 +1394,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW30-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW30-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW30-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW30-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW30-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW30-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW30-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW30-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW30-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW30-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op The Data Ethics Canvas – Open Data Institute – CC BY-SA 4.0 – https://theodi.org/"
   },
   {
     "id": "MV_53",
-    "werkblad_code": "WB-MW31-HBO-HRM-NL",
+    "werkblad_code": "WB-MW31-HRM-NL",
     "titel": {
       "nl": "De chatbot bij het personeelsloket",
       "en": "The chatbot at the HR desk"
@@ -1442,17 +1442,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW31-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW31-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW31-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW31-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW31-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW31-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW31-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW31-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW31-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW31-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op AI Ethics Canvas – Trystan S. Goetze – CC BY-SA 4.0 – https://www.trystangoetze.ca/aicanvas.html"
   },
   {
     "id": "MV_54",
-    "werkblad_code": "WB-MW32-HBO-HRM-NL",
+    "werkblad_code": "WB-MW32-HRM-NL",
     "titel": {
       "nl": "De stemmingsvraag op vrijdag",
       "en": "The Friday mood question"
@@ -1490,17 +1490,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW32-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW32-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW32-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW32-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW32-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW32-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW32-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW32-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW32-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW32-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op Consequence Scanning – Doteveryone – https://doteveryone.org.uk/project/consequence-scanning/"
   },
   {
     "id": "MV_55",
-    "werkblad_code": "WB-MW33-HBO-HRM-NL",
+    "werkblad_code": "WB-MW33-HRM-NL",
     "titel": {
       "nl": "De werkplekmeter",
       "en": "The workplace sensor"
@@ -1537,17 +1537,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW33-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW33-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW33-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW33-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW33-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW33-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW33-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW33-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW33-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW33-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op Ethical OS Toolkit – Institute for the Future & Omidyar Network – https://ethicalos.org/"
   },
   {
     "id": "MV_56",
-    "werkblad_code": "WB-MW34-HBO-HRM-NL",
+    "werkblad_code": "WB-MW34-HRM-NL",
     "titel": {
       "nl": "De rit-app voor bezorgers",
       "en": "The ride app for couriers"
@@ -1586,17 +1586,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW34-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW34-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW34-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW34-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW34-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW34-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW34-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW34-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW34-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW34-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op The Moral-IT Deck – Urquhart & Craigon, University of Nottingham"
   },
   {
     "id": "MV_57",
-    "werkblad_code": "WB-MW35-HBO-HRM-NL",
+    "werkblad_code": "WB-MW35-HRM-NL",
     "titel": {
       "nl": "De slimme badge",
       "en": "The smart badge"
@@ -1634,17 +1634,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW35-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW35-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW35-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW35-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW35-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW35-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW35-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW35-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW35-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW35-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op Embedded EthiCS @ Harvard – Harvard University – CC BY 4.0 – https://embeddedethics.seas.harvard.edu/"
   },
   {
     "id": "MV_58",
-    "werkblad_code": "WB-MW36-HBO-HRM-NL",
+    "werkblad_code": "WB-MW36-HRM-NL",
     "titel": {
       "nl": "Eén budget, twee opleidingen",
       "en": "One budget, two programmes"
@@ -1681,17 +1681,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW36-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW36-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW36-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW36-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW36-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW36-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW36-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW36-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW36-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW36-HRM-NL.jpg",
     "naamsvermelding_bron": "Gebaseerd op Introduction to Philosophy: Ethics – G. Matthews (Red.), Rebus Community – CC BY 4.0"
   },
   {
     "id": "MV_59",
-    "werkblad_code": "WB-MW37-HBO-HRM-NL",
+    "werkblad_code": "WB-MW37-HRM-NL",
     "titel": {
       "nl": "De vriend op de shortlist",
       "en": "The friend on the shortlist"
@@ -1728,17 +1728,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-MW37-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-MW37-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-MW37-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-MW37-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-MW37-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW37-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW37-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW37-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW37-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-MW37-HRM-NL.jpg",
     "naamsvermelding_bron": "Geïnspireerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0 (alleen de aanpak; geen tekst overgenomen)"
   },
   {
     "id": "MV_60",
-    "werkblad_code": "WB-EX01-HBO-HRM-NL",
+    "werkblad_code": "WB-EX01-HRM-NL",
     "titel": {
       "nl": "Nul tolerantie",
       "en": "Zero tolerance"
@@ -1776,17 +1776,17 @@
     "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
     "niveau": "concept",
     "bestanden": {
-      "student_nl": "WB-EX01-HBO-HRM-NL_studentenversie.docx",
-      "docent_nl": "WB-EX01-HBO-HRM-NL_docentenversie.docx",
-      "student_en": "WB-EX01-HBO-HRM-EN_student-version.docx",
-      "docent_en": "WB-EX01-HBO-HRM-EN_teacher-version.docx"
+      "student_nl": "WB-EX01-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-EX01-HRM-NL_docentenversie.docx",
+      "student_en": "WB-EX01-HRM-EN_student-version.docx",
+      "docent_en": "WB-EX01-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-EX01-HBO-HRM-NL.jpg",
+    "sfeerbeeld": "WB-EX01-HRM-NL.jpg",
     "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
   },
   {
     "id": "MV_61",
-    "werkblad_code": "WB-GK01-HBO-NL",
+    "werkblad_code": "WB-GK01-NL",
     "titel": {
       "nl": "Van afwegen naar handelen",
       "en": "From weighing to acting"
@@ -1847,14 +1847,14 @@
     "naamsvermelding": "Lectoraat Ethisch Werken, Fontys Hogeschool HRM en Psychologie",
     "niveau": "aanbevolen",
     "bestanden": {
-      "student_nl": "WB-GK01-HBO-NL_studentenversie.docx",
-      "docent_nl": "WB-GK01-HBO-NL_docentenversie.docx",
+      "student_nl": "WB-GK01-NL_studentenversie.docx",
+      "docent_nl": "WB-GK01-NL_docentenversie.docx",
       "student_en": null,
       "docent_en": null,
-      "student_nl_pdf": "WB-GK01-HBO-NL_studentenversie.pdf",
-      "docent_nl_pdf": "WB-GK01-HBO-NL_docentenversie.pdf"
+      "student_nl_pdf": "WB-GK01-NL_studentenversie.pdf",
+      "docent_nl_pdf": "WB-GK01-NL_docentenversie.pdf"
     },
-    "sfeerbeeld": "WB-GK01-HBO-NL.jpg",
+    "sfeerbeeld": "WB-GK01-NL.jpg",
     "leeruitkomsten": {
       "nl": [
         "de kernvraag van plichtethiek, gevolgenethiek en deugdethiek benoemen en toepassen op een beroepsdilemma",
@@ -1876,5 +1876,968 @@
       "MV_18",
       "MV_38"
     ]
+  },
+  {
+    "id": "MV_62",
+    "werkblad_code": "WB-MW45-ONDERWIJS-NL",
+    "titel": {
+      "nl": "Wie verdient de beurs?",
+      "en": "Who deserves the scholarship?"
+    },
+    "omschrijving": {
+      "nl": "Een docent mag één student voordragen voor een beurs en moet kiezen tussen cijfers, doorzettingsvermogen en samenwerking. Een open verhaal zonder juiste afloop, om te oefenen met argumenteren over rechtvaardigheid.",
+      "en": "A teacher may nominate one student for a scholarship and must choose between grades, perseverance and cooperation. An open story without a right ending, to practise arguing about fairness."
+    },
+    "themas": {
+      "nl": [
+        "Rechtvaardigheid",
+        "Verdienste",
+        "Dilemmaverhaal"
+      ],
+      "en": [
+        "Fairness",
+        "Merit",
+        "Dilemma tale"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Onderwijs",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "8–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Dilemmaverhaal",
+    "bronnen_apa": [
+      "Bascom, W. R. (1975). African dilemma tales. Mouton.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW45-ONDERWIJS-NL_studentenversie.docx",
+      "docent_nl": "WB-MW45-ONDERWIJS-NL_docentenversie.docx",
+      "student_en": "WB-MW45-ONDERWIJS-EN_student-version.docx",
+      "docent_en": "WB-MW45-ONDERWIJS-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW45-ONDERWIJS-NL.jpg"
+  },
+  {
+    "id": "MV_63",
+    "werkblad_code": "WB-MW46-SOCIAALWERK-NL",
+    "titel": {
+      "nl": "Eerst alles zeggen",
+      "en": "Say everything first"
+    },
+    "omschrijving": {
+      "nl": "Een buurtwerker wil een conflict in het wijkcentrum snel oplossen. Het palavergesprek geeft iedereen eerst de ruimte om alles te zeggen, ook de tegenpartij.",
+      "en": "A community worker wants to settle a conflict at the neighbourhood centre quickly. The palaver gives everyone the space to say everything first, including the other party."
+    },
+    "themas": {
+      "nl": [
+        "Gehoord worden",
+        "Herstel van relaties",
+        "Palaver"
+      ],
+      "en": [
+        "Being heard",
+        "Restoring relationships",
+        "Palaver"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Sociaal werk",
+    "complexiteit": "meso",
+    "duur": "60–90 min",
+    "groep": "8–25 deelnemers",
+    "oorspronkelijke_werkvorm": "Palavergesprek",
+    "bronnen_apa": [
+      "Bidima, J.-G. (1997). La palabre: Une juridiction de la parole. Michalon.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW46-SOCIAALWERK-NL_studentenversie.docx",
+      "docent_nl": "WB-MW46-SOCIAALWERK-NL_docentenversie.docx",
+      "student_en": "WB-MW46-SOCIAALWERK-EN_student-version.docx",
+      "docent_en": "WB-MW46-SOCIAALWERK-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW46-SOCIAALWERK-NL.jpg"
+  },
+  {
+    "id": "MV_64",
+    "werkblad_code": "WB-MW47-HRM-NL",
+    "titel": {
+      "nl": "De voorzitter spreekt als laatste",
+      "en": "The chair speaks last"
+    },
+    "omschrijving": {
+      "nl": "Een HR-manager moet een roosterbesluit nemen na een open bijeenkomst. Ze oefent met luisteren, samenvatten en als laatste besluiten.",
+      "en": "An HR manager has to make a roster decision after an open meeting. She practises listening, summarising and deciding last."
+    },
+    "themas": {
+      "nl": [
+        "Leiderschap",
+        "Inspraak",
+        "Kgotla"
+      ],
+      "en": [
+        "Leadership",
+        "Participation",
+        "Kgotla"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "HRM",
+    "complexiteit": "meso",
+    "duur": "60–90 min",
+    "groep": "8–40 deelnemers",
+    "oorspronkelijke_werkvorm": "Kgotla-beraad (leider spreekt als laatste)",
+    "bronnen_apa": [
+      "Moumakwa, P. C. (2011). The Botswana kgotla system: A mechanism for traditional conflict resolution in modern Botswana [Masterscriptie, Universitetet i Tromsø]. https://munin.uit.no/handle/10037/3211",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW47-HRM-NL_studentenversie.docx",
+      "docent_nl": "WB-MW47-HRM-NL_docentenversie.docx",
+      "student_en": "WB-MW47-HRM-EN_student-version.docx",
+      "docent_en": "WB-MW47-HRM-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW47-HRM-NL.jpg"
+  },
+  {
+    "id": "MV_65",
+    "werkblad_code": "WB-MW48-BESTUURSKUNDE-NL",
+    "titel": {
+      "nl": "Een besluit waar iedereen mee kan leven",
+      "en": "A decision everyone can live with"
+    },
+    "omschrijving": {
+      "nl": "Een werkgroep zoekt een voorstel voor een digitale aanvraagprocedure waar iedereen mee kan leven, zonder te stemmen. Het gaat om instemming met het handelen, niet met elke mening.",
+      "en": "A working group seeks a proposal for a digital application procedure that everyone can live with, without voting. The aim is agreement on the action, not on every opinion."
+    },
+    "themas": {
+      "nl": [
+        "Consensus",
+        "Bestuur en beleid",
+        "Minderheidsstandpunten"
+      ],
+      "en": [
+        "Consensus",
+        "Governance and policy",
+        "Minority views"
+      ]
+    },
+    "fasen": [
+      "wegen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO, WO",
+    "vakgebied": "Bestuurskunde",
+    "complexiteit": "macro",
+    "duur": "60–90 min",
+    "groep": "6–15 deelnemers",
+    "oorspronkelijke_werkvorm": "Consensusberaad (naar Wiredu)",
+    "bronnen_apa": [
+      "Wiredu, K. (1996). Cultural universals and particulars: An African perspective. Indiana University Press.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW48-BESTUURSKUNDE-NL_studentenversie.docx",
+      "docent_nl": "WB-MW48-BESTUURSKUNDE-NL_docentenversie.docx",
+      "student_en": "WB-MW48-BESTUURSKUNDE-EN_student-version.docx",
+      "docent_en": "WB-MW48-BESTUURSKUNDE-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW48-BESTUURSKUNDE-NL.jpg"
+  },
+  {
+    "id": "MV_66",
+    "werkblad_code": "WB-MW49-PSYCHOLOGIE-NL",
+    "titel": {
+      "nl": "Wat is eerlijke troost?",
+      "en": "What is honest comfort?"
+    },
+    "omschrijving": {
+      "nl": "Een stagiaire twijfelt of troost die niet helemaal waar is toch goed kan zijn. Ze interviewt een ervaren professional en onderzoekt de redenering erachter.",
+      "en": "An intern wonders whether comfort that is not entirely true can still be good. She interviews an experienced professional and examines the reasoning behind the answer."
+    },
+    "themas": {
+      "nl": [
+        "Eerlijkheid",
+        "Troost",
+        "Sagefilosofie"
+      ],
+      "en": [
+        "Honesty",
+        "Comfort",
+        "Sage philosophy"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Psychologie",
+    "complexiteit": "micro",
+    "duur": "60 min + interview buiten de les",
+    "groep": "Duo",
+    "oorspronkelijke_werkvorm": "Wijzeninterview (sagefilosofie)",
+    "bronnen_apa": [
+      "Oruka, H. O. (Red.). (1990). Sage philosophy: Indigenous thinkers and modern debate on African philosophy. E. J. Brill.",
+      "Presbey, G. M. (z.d.). African sage philosophy. Internet Encyclopedia of Philosophy. https://iep.utm.edu/african-sage/",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW49-PSYCHOLOGIE-NL_studentenversie.docx",
+      "docent_nl": "WB-MW49-PSYCHOLOGIE-NL_docentenversie.docx",
+      "student_en": "WB-MW49-PSYCHOLOGIE-EN_student-version.docx",
+      "docent_en": "WB-MW49-PSYCHOLOGIE-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW49-PSYCHOLOGIE-NL.jpg"
+  },
+  {
+    "id": "MV_67",
+    "werkblad_code": "WB-MW50-FACILITAIR-NL",
+    "titel": {
+      "nl": "Eén hand kan geen bundel optillen",
+      "en": "One hand cannot lift a bundle"
+    },
+    "omschrijving": {
+      "nl": "Een nieuw contract vraagt een facilitair team om sneller te werken. Het team koppelt spreekwoorden aan de situatie en onderzoekt welke waarden erin zitten.",
+      "en": "A new contract asks a facility team to work faster. The team links proverbs to the situation and explores which values they carry."
+    },
+    "themas": {
+      "nl": [
+        "Samenwerking",
+        "Werkdruk",
+        "Spreekwoorden"
+      ],
+      "en": [
+        "Cooperation",
+        "Workload",
+        "Proverbs"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Facilitair",
+    "complexiteit": "meso",
+    "duur": "20–40 min",
+    "groep": "4–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Spreekwoordengesprek",
+    "bronnen_apa": [
+      "Gyekye, K. (1995). An essay on African philosophical thought: The Akan conceptual scheme (Rev. ed.). Temple University Press.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW50-FACILITAIR-NL_studentenversie.docx",
+      "docent_nl": "WB-MW50-FACILITAIR-NL_docentenversie.docx",
+      "student_en": "WB-MW50-FACILITAIR-EN_student-version.docx",
+      "docent_en": "WB-MW50-FACILITAIR-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW50-FACILITAIR-NL.jpg"
+  },
+  {
+    "id": "MV_68",
+    "werkblad_code": "WB-MW51-ZORG-NL",
+    "titel": {
+      "nl": "Slim of fout?",
+      "en": "Clever or wrong?"
+    },
+    "omschrijving": {
+      "nl": "De spin Anansi wint met list van een sterkere. Is slimheid een deugd, en wat doet een verpleegkundige met een kleine list om een patiënt sneller geholpen te krijgen?",
+      "en": "The spider Anansi beats a stronger opponent with cunning. Is cleverness a virtue, and what does a nurse do with a small trick to get a patient helped sooner?"
+    },
+    "themas": {
+      "nl": [
+        "List en eerlijkheid",
+        "Zorg",
+        "Verhaal"
+      ],
+      "en": [
+        "Cunning and honesty",
+        "Care",
+        "Story"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO",
+    "vakgebied": "Zorg",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "8–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Anansi-verhaal: slim of fout?",
+    "bronnen_apa": [
+      "Rattray, R. S. (1930). Akan-Ashanti folk-tales. Clarendon Press.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW51-ZORG-NL_studentenversie.docx",
+      "docent_nl": "WB-MW51-ZORG-NL_docentenversie.docx",
+      "student_en": "WB-MW51-ZORG-EN_student-version.docx",
+      "docent_en": "WB-MW51-ZORG-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW51-ZORG-NL.jpg",
+    "naamsvermelding_bron": "Verhaal naar Rattray, R. S. (1930), Akan-Ashanti folk-tales – publiek domein."
+  },
+  {
+    "id": "MV_69",
+    "werkblad_code": "WB-MW52-ONDERZOEKSINTEGRITEIT-NL",
+    "titel": {
+      "nl": "Licht of zwaar?",
+      "en": "Light or heavy?"
+    },
+    "omschrijving": {
+      "nl": "Een onderzoeker schrijft eigen verklaringen over haar integriteit en weegt welke licht en welke zwaar voelen. Een reflectie op eerlijk werken in onderzoek.",
+      "en": "A researcher writes her own statements about her integrity and weighs which feel light and which heavy. A reflection on honest work in research."
+    },
+    "themas": {
+      "nl": [
+        "Integriteit",
+        "Zelfreflectie",
+        "Ma’at"
+      ],
+      "en": [
+        "Integrity",
+        "Self-reflection",
+        "Ma’at"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Onderzoeksintegriteit",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "Individueel + groep",
+    "oorspronkelijke_werkvorm": "Ma’at-weging: eigen verklaringen",
+    "bronnen_apa": [
+      "Budge, E. A. W. (1895). The Book of the Dead: The Papyrus of Ani in the British Museum. British Museum.",
+      "Karenga, M. (2004). Maat, the moral ideal in ancient Egypt: A study in classical African ethics. Routledge.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW52-ONDERZOEKSINTEGRITEIT-NL_studentenversie.docx",
+      "docent_nl": "WB-MW52-ONDERZOEKSINTEGRITEIT-NL_docentenversie.docx",
+      "student_en": "WB-MW52-ONDERZOEKSINTEGRITEIT-EN_student-version.docx",
+      "docent_en": "WB-MW52-ONDERZOEKSINTEGRITEIT-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW52-ONDERZOEKSINTEGRITEIT-NL.jpg",
+    "naamsvermelding_bron": "Gebaseerd op Budge, E. A. W. (1895), The Book of the Dead – publiek domein."
+  },
+  {
+    "id": "MV_70",
+    "werkblad_code": "WB-MW53-OVERHEID-NL",
+    "titel": {
+      "nl": "Negen keer aankloppen",
+      "en": "Knocking nine times"
+    },
+    "omschrijving": {
+      "nl": "Een inwoner klopt negen keer aan bij de gemeente voor haar recht. Wat kan een ambtenaar binnen haar rol doen, en wat vraagt om verandering op een hoger niveau?",
+      "en": "A resident knocks nine times at the municipality for her rights. What can a civil servant do within her role, and what requires change at a higher level?"
+    },
+    "themas": {
+      "nl": [
+        "Macht aanspreken",
+        "Volhouden",
+        "Rechtvaardige instituties"
+      ],
+      "en": [
+        "Speaking to power",
+        "Perseverance",
+        "Just institutions"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Overheid (gemeente)",
+    "complexiteit": "macro",
+    "duur": "45–60 min",
+    "groep": "6–30 deelnemers",
+    "oorspronkelijke_werkvorm": "De welsprekende boer: pleidooi voor recht",
+    "bronnen_apa": [
+      "Lichtheim, M. (1973). Ancient Egyptian literature: Vol. 1. The Old and Middle Kingdoms. University of California Press.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW53-OVERHEID-NL_studentenversie.docx",
+      "docent_nl": "WB-MW53-OVERHEID-NL_docentenversie.docx",
+      "student_en": "WB-MW53-OVERHEID-EN_student-version.docx",
+      "docent_en": "WB-MW53-OVERHEID-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW53-OVERHEID-NL.jpg"
+  },
+  {
+    "id": "MV_71",
+    "werkblad_code": "WB-MW54-PEDAGOGIEK-NL",
+    "titel": {
+      "nl": "Terug en weer meenemen",
+      "en": "Going back and taking it along"
+    },
+    "omschrijving": {
+      "nl": "Een leerkracht kijkt terug op een moment dat ze te streng was. Ze vult de kolommen terug, halen en vooruit in en kiest één handeling voor morgen.",
+      "en": "A teacher looks back on a moment when she was too strict. She fills in the columns back, fetch and forward and chooses one action for tomorrow."
+    },
+    "themas": {
+      "nl": [
+        "Reflectie",
+        "Leren van fouten",
+        "Sankofa"
+      ],
+      "en": [
+        "Reflection",
+        "Learning from mistakes",
+        "Sankofa"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Pedagogiek",
+    "complexiteit": "micro",
+    "duur": "20–30 min",
+    "groep": "Individueel + duo",
+    "oorspronkelijke_werkvorm": "Sankofa-reflectie",
+    "bronnen_apa": [
+      "Temple, C. N. (2010). The emergence of Sankofa practice in the United States: A modern history. Journal of Black Studies, 41(1), 127–150. https://doi.org/10.1177/0021934709332464",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW54-PEDAGOGIEK-NL_studentenversie.docx",
+      "docent_nl": "WB-MW54-PEDAGOGIEK-NL_docentenversie.docx",
+      "student_en": "WB-MW54-PEDAGOGIEK-EN_student-version.docx",
+      "docent_en": "WB-MW54-PEDAGOGIEK-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW54-PEDAGOGIEK-NL.jpg"
+  },
+  {
+    "id": "MV_72",
+    "werkblad_code": "WB-MW55-MANAGEMENT-NL",
+    "titel": {
+      "nl": "Eén waarde voor het team",
+      "en": "One value for the team"
+    },
+    "omschrijving": {
+      "nl": "Een teamleider kiest een waarde voor haar team na een reorganisatie. Met woordelijke symboolkaarten en een eigen ontwerp onderzoeken deelnemers welke waarde zij in hun beroep willen dragen.",
+      "en": "A team leader chooses a value for her team after a reorganisation. With verbal symbol cards and a design of their own, participants explore which value they want to carry in their profession."
+    },
+    "themas": {
+      "nl": [
+        "Waarden",
+        "Leiderschap",
+        "Adinkra"
+      ],
+      "en": [
+        "Values",
+        "Leadership",
+        "Adinkra"
+      ]
+    },
+    "fasen": [
+      "voelen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Management",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "4–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Adinkra-waardensymbolen",
+    "bronnen_apa": [
+      "Willis, W. B. (1998). The Adinkra dictionary: A visual primer on the language of Adinkra. Pyramid Complex.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW55-MANAGEMENT-NL_studentenversie.docx",
+      "docent_nl": "WB-MW55-MANAGEMENT-NL_docentenversie.docx",
+      "student_en": "WB-MW55-MANAGEMENT-EN_student-version.docx",
+      "docent_en": "WB-MW55-MANAGEMENT-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW55-MANAGEMENT-NL.jpg"
+  },
+  {
+    "id": "MV_73",
+    "werkblad_code": "WB-MW56-POLITIE-NL",
+    "titel": {
+      "nl": "Een kleine fout in het proces-verbaal",
+      "en": "A small error in the report"
+    },
+    "omschrijving": {
+      "nl": "Een wijkagent ontdekt een kleine fout in haar proces-verbaal. Met de karakterkaart van de omoluabi onderzoekt zij welke deugden hier worden gevraagd.",
+      "en": "A community police officer finds a small error in her report. With the omoluabi character map she explores which virtues are called for."
+    },
+    "themas": {
+      "nl": [
+        "Integriteit",
+        "Karakter",
+        "Omoluabi"
+      ],
+      "en": [
+        "Integrity",
+        "Character",
+        "Omoluabi"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Politie",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "Individueel + groep",
+    "oorspronkelijke_werkvorm": "Karakterkaart van de omoluabi",
+    "bronnen_apa": [
+      "Gbadegesin, S. (1991). African philosophy: Traditional Yoruba philosophy and contemporary African realities. Peter Lang.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW56-POLITIE-NL_studentenversie.docx",
+      "docent_nl": "WB-MW56-POLITIE-NL_docentenversie.docx",
+      "student_en": "WB-MW56-POLITIE-EN_student-version.docx",
+      "docent_en": "WB-MW56-POLITIE-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW56-POLITIE-NL.jpg"
+  },
+  {
+    "id": "MV_74",
+    "werkblad_code": "WB-MW57-ZORG-NL",
+    "titel": {
+      "nl": "Wat houdt mij overeind?",
+      "en": "What keeps me standing?"
+    },
+    "omschrijving": {
+      "nl": "Een verpleegkundige op een drukke afdeling tekent wat haar overeind houdt en welke stormen haar waarden bedreigen. Alleen de reflectieve vorm, met een fictieve casus.",
+      "en": "A nurse on a busy ward draws what keeps her standing and which storms threaten her values. Reflective form only, with a fictional case."
+    },
+    "themas": {
+      "nl": [
+        "Morele stress",
+        "Veerkracht",
+        "Levensboom"
+      ],
+      "en": [
+        "Moral distress",
+        "Resilience",
+        "Tree of Life"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Zorg",
+    "complexiteit": "meso",
+    "duur": "60–90 min",
+    "groep": "Individueel + groep",
+    "oorspronkelijke_werkvorm": "Levensboom",
+    "bronnen_apa": [
+      "Denborough, D. (2008). Collective narrative practice: Responding to individuals, groups, and communities who have experienced trauma. Dulwich Centre Publications.",
+      "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children in Southern Africa. International Journal of Narrative Therapy and Community Work, 2006(1), 3–16.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW57-ZORG-NL_studentenversie.docx",
+      "docent_nl": "WB-MW57-ZORG-NL_docentenversie.docx",
+      "student_en": "WB-MW57-ZORG-EN_student-version.docx",
+      "docent_en": "WB-MW57-ZORG-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW57-ZORG-NL.jpg"
+  },
+  {
+    "id": "MV_75",
+    "werkblad_code": "WB-MW58-SCHOONMAAK-NL",
+    "titel": {
+      "nl": "Een moment van moed",
+      "en": "A moment of courage"
+    },
+    "omschrijving": {
+      "nl": "Een schoonmaker ziet in een leeg kantoor een open map met vertrouwelijke gegevens. Deelnemers maken een klein boek over hun eigen moment van morele moed.",
+      "en": "A cleaner finds an open folder with confidential data in an empty office. Participants make a small book about their own moment of moral courage."
+    },
+    "themas": {
+      "nl": [
+        "Morele moed",
+        "Vertrouwelijkheid",
+        "Heldenboek"
+      ],
+      "en": [
+        "Moral courage",
+        "Confidentiality",
+        "Hero book"
+      ]
+    },
+    "fasen": [
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO",
+    "vakgebied": "Schoonmaak",
+    "complexiteit": "micro",
+    "duur": "3 × 45 min",
+    "groep": "Individueel",
+    "oorspronkelijke_werkvorm": "Heldenboek",
+    "bronnen_apa": [
+      "Morgan, J. (2006). Making a hero book: A guide for facilitators. REPSSI.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW58-SCHOONMAAK-NL_studentenversie.docx",
+      "docent_nl": "WB-MW58-SCHOONMAAK-NL_docentenversie.docx",
+      "student_en": "WB-MW58-SCHOONMAAK-EN_student-version.docx",
+      "docent_en": "WB-MW58-SCHOONMAAK-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW58-SCHOONMAAK-NL.jpg"
+  },
+  {
+    "id": "MV_76",
+    "werkblad_code": "WB-MW60-DUURZAAMHEID-NL",
+    "titel": {
+      "nl": "Eerst luisteren, dan spelen",
+      "en": "Listen first, then play"
+    },
+    "omschrijving": {
+      "nl": "Bewoners voelen zich niet gehoord over een duurzaamheidsplan van de gemeente. Deelnemers onderzoeken eerst het probleem, maken een korte voorstelling en spreken daarna over actie.",
+      "en": "Residents feel unheard about a municipal sustainability plan. Participants first investigate the problem, make a short performance and then discuss action."
+    },
+    "themas": {
+      "nl": [
+        "Inspraak",
+        "Duurzaamheid",
+        "Theater"
+      ],
+      "en": [
+        "Participation",
+        "Sustainability",
+        "Theatre"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "handelen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Duurzaamheid",
+    "complexiteit": "meso",
+    "duur": "90–120 min",
+    "groep": "10–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Ontwikkelingstheater",
+    "bronnen_apa": [
+      "Mda, Z. (1993). When people play people: Development communication through theatre. Witwatersrand University Press.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW60-DUURZAAMHEID-NL_studentenversie.docx",
+      "docent_nl": "WB-MW60-DUURZAAMHEID-NL_docentenversie.docx",
+      "student_en": "WB-MW60-DUURZAAMHEID-EN_student-version.docx",
+      "docent_en": "WB-MW60-DUURZAAMHEID-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW60-DUURZAAMHEID-NL.jpg"
+  },
+  {
+    "id": "MV_77",
+    "werkblad_code": "WB-MW61-JURIDISCHEZAKEN-NL",
+    "titel": {
+      "nl": "Wat vraagt herstel?",
+      "en": "What does repair require?"
+    },
+    "omschrijving": {
+      "nl": "Een medewerker leed schade door een fout van de organisatie. In drie stappen (getuigen, erkennen, herstellen) onderzoeken deelnemers hoe erkenning en waarheid samengaan.",
+      "en": "An employee suffered harm because of a mistake by the organisation. In three steps (testimony, acknowledgement, repair) participants explore how acknowledgement and truth go together."
+    },
+    "themas": {
+      "nl": [
+        "Erkenning",
+        "Verantwoordelijkheid",
+        "Herstel"
+      ],
+      "en": [
+        "Acknowledgement",
+        "Responsibility",
+        "Repair"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "handelen"
+    ],
+    "opleidingsniveau": "HBO, WO",
+    "vakgebied": "Juridische zaken",
+    "complexiteit": "meso",
+    "duur": "90 min",
+    "groep": "6–20 deelnemers",
+    "oorspronkelijke_werkvorm": "Getuigen – erkennen – herstellen",
+    "bronnen_apa": [
+      "Tutu, D. (1999). No future without forgiveness. Doubleday.",
+      "Gobodo-Madikizela, P. (2003). A human being died that night: A South African story of forgiveness. Houghton Mifflin.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW61-JURIDISCHEZAKEN-NL_studentenversie.docx",
+      "docent_nl": "WB-MW61-JURIDISCHEZAKEN-NL_docentenversie.docx",
+      "student_en": "WB-MW61-JURIDISCHEZAKEN-EN_student-version.docx",
+      "docent_en": "WB-MW61-JURIDISCHEZAKEN-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW61-JURIDISCHEZAKEN-NL.jpg"
+  },
+  {
+    "id": "MV_78",
+    "werkblad_code": "WB-MW62-STUDENTENLEVEN-NL",
+    "titel": {
+      "nl": "Eerst luisteren, dan samen verder",
+      "en": "Listen first, then move on together"
+    },
+    "omschrijving": {
+      "nl": "Na een conflict in een studentenvereniging zoekt een projectgroep weer verbinding. Het kampvuurgesprek volgt vier stappen: consulteren, vertellen, erkennen en samen doen.",
+      "en": "After a conflict in a student association a project group seeks to reconnect. The bonfire dialogue follows four steps: consult, tell, acknowledge and act together."
+    },
+    "themas": {
+      "nl": [
+        "Verzoening",
+        "Groepscultuur",
+        "Kampvuurgesprek"
+      ],
+      "en": [
+        "Reconciliation",
+        "Group culture",
+        "Bonfire dialogue"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Studentenleven",
+    "complexiteit": "meso",
+    "duur": "60–90 min",
+    "groep": "8–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Kampvuurgesprek (naar Fambul Tok)",
+    "bronnen_apa": [
+      "Catalyst for Peace & Fambul Tok Sierra Leone. (z.d.). The nuts and bolts of the Fambul Tok process. https://www.fambultok.org/programs/reconciliation",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW62-STUDENTENLEVEN-NL_studentenversie.docx",
+      "docent_nl": "WB-MW62-STUDENTENLEVEN-NL_docentenversie.docx",
+      "student_en": "WB-MW62-STUDENTENLEVEN-EN_student-version.docx",
+      "docent_en": "WB-MW62-STUDENTENLEVEN-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW62-STUDENTENLEVEN-NL.jpg"
+  },
+  {
+    "id": "MV_79",
+    "werkblad_code": "WB-MW63-LOBBYISTEN-NL",
+    "titel": {
+      "nl": "Wat zou onze integriteitspersoon doen?",
+      "en": "What would our integrity person do?"
+    },
+    "omschrijving": {
+      "nl": "Een public-affairs-adviseur moet een grens bewaken in een gesprek met een beleidsmedewerker. Deelnemers stellen criteria op voor een integriteitspersoon in hun beroep.",
+      "en": "A public affairs adviser has to guard a boundary in a conversation with a policy officer. Participants draw up criteria for a person of integrity in their profession."
+    },
+    "themas": {
+      "nl": [
+        "Integriteit",
+        "Belangenbehartiging",
+        "Criteria"
+      ],
+      "en": [
+        "Integrity",
+        "Interest representation",
+        "Criteria"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "volhouden"
+    ],
+    "opleidingsniveau": "HBO, WO",
+    "vakgebied": "Public affairs en lobby",
+    "complexiteit": "meso",
+    "duur": "45–60 min",
+    "groep": "6–20 deelnemers",
+    "oorspronkelijke_werkvorm": "Integriteitsraad (naar de bashingantahe)",
+    "bronnen_apa": [
+      "Huyse, L., & Salter, M. (Red.). (2008). Traditional justice and reconciliation after violent conflict: Learning from African experiences. International IDEA.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW63-LOBBYISTEN-NL_studentenversie.docx",
+      "docent_nl": "WB-MW63-LOBBYISTEN-NL_docentenversie.docx",
+      "student_en": "WB-MW63-LOBBYISTEN-EN_student-version.docx",
+      "docent_en": "WB-MW63-LOBBYISTEN-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW63-LOBBYISTEN-NL.jpg"
+  },
+  {
+    "id": "MV_80",
+    "werkblad_code": "WB-MW64-DIVERSITEIT-NL",
+    "titel": {
+      "nl": "Samen trekken, ieder zijn deel",
+      "en": "Pulling together, each their part"
+    },
+    "omschrijving": {
+      "nl": "Een werkgroep diversiteit en inclusie plant een gezamenlijke actie, maar niet iedereen draagt bij. Wat maakt collectieve verantwoordelijkheid sterk of kwetsbaar?",
+      "en": "A diversity and inclusion working group plans a joint action, but not everyone contributes. What makes collective responsibility strong or fragile?"
+    },
+    "themas": {
+      "nl": [
+        "Collectieve verantwoordelijkheid",
+        "Inclusie",
+        "Actieplan"
+      ],
+      "en": [
+        "Collective responsibility",
+        "Inclusion",
+        "Action plan"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "volhouden"
+    ],
+    "opleidingsniveau": "MBO, HBO",
+    "vakgebied": "Diversiteit en inclusie",
+    "complexiteit": "meso",
+    "duur": "45–60 min",
+    "groep": "6–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Harambee-actieplan",
+    "bronnen_apa": [
+      "Ngau, P. M. (1987). Tensions in empowerment: The experience of the Harambee (self-help) movement in Kenya. Economic Development and Cultural Change, 35(3), 523–538.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW64-DIVERSITEIT-NL_studentenversie.docx",
+      "docent_nl": "WB-MW64-DIVERSITEIT-NL_docentenversie.docx",
+      "student_en": "WB-MW64-DIVERSITEIT-EN_student-version.docx",
+      "docent_en": "WB-MW64-DIVERSITEIT-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW64-DIVERSITEIT-NL.jpg"
+  },
+  {
+    "id": "MV_81",
+    "werkblad_code": "WB-MW65-DAGELIJKSLEVEN-NL",
+    "titel": {
+      "nl": "Te veel wisselgeld",
+      "en": "Too much change"
+    },
+    "omschrijving": {
+      "nl": "Een alledaagse marktscène als beeldcasus over eerlijkheid en delen. De docent kan er een open verhaal van African Storybook bij kiezen en vermeldt dan de naamsvermelding per verhaal.",
+      "en": "An everyday market scene as a picture case about honesty and sharing. The teacher may add an open story from African Storybook and then gives the attribution for that story."
+    },
+    "themas": {
+      "nl": [
+        "Eerlijkheid",
+        "Delen",
+        "Alledaagse keuzes"
+      ],
+      "en": [
+        "Honesty",
+        "Sharing",
+        "Everyday choices"
+      ]
+    },
+    "fasen": [
+      "zien"
+    ],
+    "opleidingsniveau": "MBO, HBO",
+    "vakgebied": "Dagelijks leven",
+    "complexiteit": "micro",
+    "duur": "30–40 min",
+    "groep": "Groep of duo",
+    "oorspronkelijke_werkvorm": "African Storybook (open verhalen)",
+    "bronnen_apa": [
+      "African Storybook. (z.d.). African Storybook [Open digitale bibliotheek]. Saide. https://www.africanstorybook.org/",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY-SA 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW65-DAGELIJKSLEVEN-NL_studentenversie.docx",
+      "docent_nl": "WB-MW65-DAGELIJKSLEVEN-NL_docentenversie.docx",
+      "student_en": "WB-MW65-DAGELIJKSLEVEN-EN_student-version.docx",
+      "docent_en": "WB-MW65-DAGELIJKSLEVEN-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW65-DAGELIJKSLEVEN-NL.jpg",
+    "naamsvermelding_bron": "Werkvorm geïnspireerd op African Storybook (Saide), CC BY 4.0. Bij gebruik van een verhaal vermeldt u titel, auteur en illustrator."
   }
 ]

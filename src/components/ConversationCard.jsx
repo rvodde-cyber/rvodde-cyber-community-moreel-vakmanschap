@@ -7,9 +7,12 @@ import { getComplexityKey } from "../data/gesprekskaarten/constants";
 import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
 function ComplexityBadge({ card, taal, className = "" }) {
+  if (card.hideComplexity || (card.complexiteit == null && card.moeilijkheid == null)) {
+    return null;
+  }
   const gk = getGesprekskaartStrings(taal);
   const key = card.complexiteit ?? getComplexityKey(card.moeilijkheid);
-  const label = gk.complexiteitLabels?.[key] ?? key;
+  const label = card.complexiteitLabel ?? gk.complexiteitLabels?.[key] ?? key;
   const tooltip = gk.complexiteitTooltips?.[key] ?? "";
 
   return (
@@ -23,12 +26,40 @@ function ComplexityBadge({ card, taal, className = "" }) {
   );
 }
 
-function CardMedia({ card }) {
+/** v3-fotozone ≈ 1,74:1; Firefly levert 3:4 — crop in UI, gezicht iets boven midden */
+const CARD_PHOTO_CLASS =
+  "absolute inset-0 h-full w-full object-cover object-[center_32%]";
+const CARD_A5_FULL_CLASS =
+  "absolute inset-0 h-full w-full object-contain object-center bg-[#f5f5f2]";
+
+function isA5FullCard(card) {
+  return card.imageLayout === "a5-full";
+}
+
+function cardMediaAspectClass(card) {
+  return isA5FullCard(card) ? "aspect-[1200/1701]" : "aspect-[87/50]";
+}
+
+function CardMedia({ card, variant = "preview" }) {
   if (card.afbeelding) {
+    const a5 = isA5FullCard(card);
     return (
       <>
-        <img src={card.afbeelding} alt="" className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+        <img
+          src={card.afbeelding}
+          alt={card.afbeeldingAlt ?? ""}
+          className={a5 ? CARD_A5_FULL_CLASS : CARD_PHOTO_CLASS}
+          width={a5 ? 1200 : undefined}
+          height={a5 ? 1701 : undefined}
+          loading="lazy"
+          decoding="async"
+        />
+        {!a5 && variant === "modal" && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+        )}
+        {!a5 && variant === "preview" && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
+        )}
       </>
     );
   }
@@ -77,19 +108,23 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
 export function ConversationCardPreview({ card, onOpen }) {
   const { taal, t } = useTaal();
   const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
+  const badgeLabel = card.afdeling ?? card.categorie;
 
   return (
     <article
       className="flex flex-col overflow-hidden rounded-xl border border-rand bg-surface shadow-warm transition-shadow hover:shadow-[0_20px_60px_rgba(26,39,68,0.12)]"
       style={{ borderTopWidth: 4, borderTopColor: card.kleur }}
     >
-      <div className="relative h-36" style={{ backgroundColor: card.kleurLicht }}>
-        <CardMedia card={card} />
+      <div
+        className={`relative ${cardMediaAspectClass(card)} w-full shrink-0 overflow-hidden`}
+        style={{ backgroundColor: card.kleurLicht }}
+      >
+        <CardMedia card={card} variant="preview" />
         <span
           className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
           style={{ color: card.kleur }}
         >
-          {card.categorie}
+          {badgeLabel}
         </span>
         <span className="absolute right-3 top-3">
           <ComplexityBadge card={card} taal={taal} />
@@ -99,7 +134,7 @@ export function ConversationCardPreview({ card, onOpen }) {
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-secundair">
           <span className="font-semibold uppercase tracking-wide" style={{ color: card.kleur }}>
-            {card.categorie}
+            {badgeLabel}
           </span>
           {card.taalniveau && (
             <>
@@ -142,6 +177,8 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { taal, t } = useTaal();
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
   const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
+  const setLabel =
+    card?.set ? (t.gesprekskaart.filters?.setLabels?.[card.set] ?? card.set) : null;
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -185,8 +222,20 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            <div className="relative h-48 overflow-hidden" style={{ backgroundColor: card.kleurLicht }}>
-              <CardMedia card={card} />
+            <div
+              className={`relative ${cardMediaAspectClass(card)} w-full shrink-0 overflow-hidden`}
+              style={{ backgroundColor: card.kleurLicht }}
+            >
+              <CardMedia card={card} variant="modal" />
+              <span
+                className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
+                style={{ color: card.kleur }}
+              >
+                {card.afdeling ?? card.categorie}
+              </span>
+              <span className="absolute right-14 top-3">
+                <ComplexityBadge card={card} taal={taal} />
+              </span>
               <button
                 type="button"
                 onClick={onClose}
@@ -197,24 +246,30 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               </button>
             </div>
 
-            <div className="p-6 md:p-8" style={{ backgroundColor: `${card.kleurLicht}88` }}>
+            <div className="border-t border-rand/60 bg-surface p-6 md:p-8">
               <p
-                className="mb-2 text-xs font-semibold uppercase tracking-[0.22em]"
-                style={{ color: card.kleur }}
+                className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-secundair"
               >
-                {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
-              </p>
-              <p className="mb-2 text-sm font-semibold" style={{ color: card.kleur }}>
-                {card.categorie}
-              </p>
-              <div className="mb-3 flex flex-wrap gap-3 text-xs text-secundair">
-                <ComplexityBadge card={card} taal={taal} />
-                {card.taalniveau && (
-                  <span>
-                    {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
-                  </span>
+                <span style={{ color: card.kleur }}>
+                  {t.gesprekskaart.stapLabel} {card.stapNummer} — {card.stapNaam}
+                </span>
+                {setLabel && (
+                  <>
+                    <span className="mx-2 font-normal text-rand">·</span>
+                    <span className="font-semibold normal-case tracking-normal text-primair">
+                      {setLabel}
+                    </span>
+                  </>
                 )}
-              </div>
+              </p>
+              {card.taalniveau && (
+                <p className="mb-4 text-xs text-secundair">
+                  {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
+                </p>
+              )}
+              {card.rechtvaardiging && (
+                <p className="mb-4 text-sm leading-6 text-secundair">{card.rechtvaardiging}</p>
+              )}
               <h2
                 id="gesprekskaart-titel"
                 className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"
@@ -223,28 +278,24 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
               </h2>
 
               {card.verhaal ? (
-                <p className="mt-5 leading-7 text-secundair">{card.verhaal}</p>
+                <p className="mt-5 whitespace-pre-line leading-7 text-secundair">{card.verhaal}</p>
               ) : (
                 <p className="mt-5 font-display text-2xl italic leading-snug text-primair">
                   &ldquo;{card.vraag}&rdquo;
                 </p>
               )}
 
-              {(card.vraag1 || card.vraag2) && (
+              {!card.hideReflectieVragen &&
+                (card.vraag1 || card.vraag2 || card.vraag3 || card.vraag4) && (
                 <div className="mt-6 space-y-3 rounded-xl border border-rand bg-white/70 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
                     {t.gesprekskaart.reflectieLabel}
                   </p>
-                  {card.vraag1 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">1.</span> {card.vraag1}
+                  {[card.vraag1, card.vraag2, card.vraag3, card.vraag4].filter(Boolean).map((vraag, i) => (
+                    <p key={i} className="text-sm leading-6 text-primair">
+                      <span className="font-semibold">{i + 1}.</span> {vraag}
                     </p>
-                  )}
-                  {card.vraag2 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">2.</span> {card.vraag2}
-                    </p>
-                  )}
+                  ))}
                 </div>
               )}
 

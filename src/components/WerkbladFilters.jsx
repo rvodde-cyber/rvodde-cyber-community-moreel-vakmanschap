@@ -39,12 +39,21 @@ const uiTekst = {
 
 const FASE_SLUGS = ["zien", "voelen", "wegen", "handelen", "volhouden"];
 
+/** Split comma-separated opleidingsniveau (e.g. "MBO, HBO, WO") into distinct levels. */
+export function parseOpleidingsniveaus(value) {
+  if (!value || typeof value !== "string") return [];
+  return value.split(",").map((s) => s.trim()).filter(Boolean);
+}
+
 export function filterWerkbladen(items, filters) {
   const q = filters.zoek.trim().toLowerCase();
   return items.filter((item) => {
     if (filters.complexiteit && item.complexiteit !== filters.complexiteit) return false;
     if (filters.vakgebied && item.vakgebied !== filters.vakgebied) return false;
-    if (filters.opleidingsniveau && item.opleidingsniveau !== filters.opleidingsniveau) return false;
+    if (filters.opleidingsniveau) {
+      const levels = parseOpleidingsniveaus(item.opleidingsniveau);
+      if (!levels.includes(filters.opleidingsniveau)) return false;
+    }
     if (filters.fasen?.length > 0) {
       const match = filters.fasen.some((f) => item.fasen.includes(f));
       if (!match) return false;
@@ -60,7 +69,9 @@ export function filterWerkbladen(items, filters) {
 
 export function collectFilterOptions(items) {
   const vakgebied = [...new Set(items.map((i) => i.vakgebied).filter(Boolean))].sort();
-  const opleidingsniveau = [...new Set(items.map((i) => i.opleidingsniveau).filter(Boolean))].sort();
+  const opleidingsniveau = [
+    ...new Set(items.flatMap((i) => parseOpleidingsniveaus(i.opleidingsniveau))),
+  ].sort();
   return { vakgebied, opleidingsniveau, complexiteit: COMPLEXITY_KEYS };
 }
 
