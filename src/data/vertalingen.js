@@ -136,6 +136,7 @@ export const vertalingen = {
           'nucleaire-geneeskunde': 'Nucleaire geneeskunde',
           onderzoeksintegriteit: 'Onderzoeksintegriteit',
           'praktijkschok-hrm': 'Praktijkschok HRM',
+          'etz-passende-zorg': 'ETZ Passende Zorg',
         },
         categorieLabels: {
           'dagelijks-leven': 'Dagelijks leven',
@@ -150,6 +151,7 @@ export const vertalingen = {
           onderwijs: 'Onderwijs',
           overheid: 'Overheid',
           hrm: 'HRM',
+          'etz-passende-zorg': 'ETZ Passende Zorg',
         },
       },
       sluit: 'Sluit',
@@ -390,6 +392,7 @@ export const vertalingen = {
           'nucleaire-geneeskunde': 'Nuclear medicine',
           onderzoeksintegriteit: 'Research integrity',
           'praktijkschok-hrm': 'Praktijkschok HR',
+          'etz-passende-zorg': 'ETZ Appropriate Care',
         },
         categorieLabels: {
           'dagelijks-leven': 'Daily life',
@@ -404,6 +407,7 @@ export const vertalingen = {
           onderwijs: 'Education',
           overheid: 'Public sector',
           hrm: 'HR',
+          'etz-passende-zorg': 'ETZ Appropriate Care',
         },
       },
       sluit: 'Close',

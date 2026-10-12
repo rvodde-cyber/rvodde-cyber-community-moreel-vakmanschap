@@ -17,6 +17,7 @@
     "cards:import-research-integrity": "node scripts/import-research-integrity.mjs",
     "cards:import-onderwijs-v3": "node scripts/import-onderwijs-v3.mjs",
     "cards:import-hrm": "node scripts/import-hrm-praktijkschok.mjs",
+    "cards:import-etz": "node scripts/import-etz-passende-zorg.mjs",
     "cards:export-burgerschap-docx": "python scripts/export-burgerschap-docx.py",
     "cards:export-dl-compleet-a5-docx": "python scripts/export-dl-compleet-a5-docx.py",
     "cards:export-nuclear-medicine-docx": "python scripts/export-nuclear-medicine-docx.py",

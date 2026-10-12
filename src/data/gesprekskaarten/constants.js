@@ -9,6 +9,7 @@ export const CARD_SET_ORDER = [
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
   "praktijkschok-hrm",
+  "etz-passende-zorg",
 ];
 
 export function sortCardSets(sets) {
@@ -29,6 +30,7 @@ export const CATEGORIE_SLUGS = [
   "onderwijs",
   "overheid",
   "hrm",
+  "etz-passende-zorg",
 ];
 
 export const MOEILIJKHEID_MIN = 1;
@@ -60,6 +62,7 @@ export const CATEGORIE_KLEUREN = {
   onderzoeksintegriteit: "#7c3aed",
   overheid: "#185fa5",
   hrm: "#3949AB",
+  "etz-passende-zorg": "#005F73",
 };
 
 export function getCategorieKleur(slug) {

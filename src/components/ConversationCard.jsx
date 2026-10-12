@@ -7,6 +7,9 @@ import { getComplexityKey } from "../data/gesprekskaarten/constants";
 import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
 function ComplexityBadge({ card, taal, className = "" }) {
+  if (card.hideComplexity || (card.complexiteit == null && card.moeilijkheid == null)) {
+    return null;
+  }
   const gk = getGesprekskaartStrings(taal);
   const key = card.complexiteit ?? getComplexityKey(card.moeilijkheid);
   const label = card.complexiteitLabel ?? gk.complexiteitLabels?.[key] ?? key;
@@ -26,22 +29,35 @@ function ComplexityBadge({ card, taal, className = "" }) {
 /** v3-fotozone ≈ 1,74:1; Firefly levert 3:4 — crop in UI, gezicht iets boven midden */
 const CARD_PHOTO_CLASS =
   "absolute inset-0 h-full w-full object-cover object-[center_32%]";
+const CARD_A5_FULL_CLASS =
+  "absolute inset-0 h-full w-full object-contain object-center bg-[#f5f5f2]";
+
+function isA5FullCard(card) {
+  return card.imageLayout === "a5-full";
+}
+
+function cardMediaAspectClass(card) {
+  return isA5FullCard(card) ? "aspect-[1200/1701]" : "aspect-[87/50]";
+}
 
 function CardMedia({ card, variant = "preview" }) {
   if (card.afbeelding) {
+    const a5 = isA5FullCard(card);
     return (
       <>
         <img
           src={card.afbeelding}
           alt={card.afbeeldingAlt ?? ""}
-          className={CARD_PHOTO_CLASS}
+          className={a5 ? CARD_A5_FULL_CLASS : CARD_PHOTO_CLASS}
+          width={a5 ? 1200 : undefined}
+          height={a5 ? 1701 : undefined}
           loading="lazy"
           decoding="async"
         />
-        {variant === "modal" && (
+        {!a5 && variant === "modal" && (
           <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
         )}
-        {variant === "preview" && (
+        {!a5 && variant === "preview" && (
           <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent" />
         )}
       </>
@@ -92,6 +108,7 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
 export function ConversationCardPreview({ card, onOpen }) {
   const { taal, t } = useTaal();
   const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
+  const badgeLabel = card.afdeling ?? card.categorie;
 
   return (
     <article
@@ -99,7 +116,7 @@ export function ConversationCardPreview({ card, onOpen }) {
       style={{ borderTopWidth: 4, borderTopColor: card.kleur }}
     >
       <div
-        className="relative aspect-[87/50] w-full shrink-0 overflow-hidden"
+        className={`relative ${cardMediaAspectClass(card)} w-full shrink-0 overflow-hidden`}
         style={{ backgroundColor: card.kleurLicht }}
       >
         <CardMedia card={card} variant="preview" />
@@ -107,7 +124,7 @@ export function ConversationCardPreview({ card, onOpen }) {
           className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
           style={{ color: card.kleur }}
         >
-          {card.categorie}
+          {badgeLabel}
         </span>
         <span className="absolute right-3 top-3">
           <ComplexityBadge card={card} taal={taal} />
@@ -117,7 +134,7 @@ export function ConversationCardPreview({ card, onOpen }) {
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-secundair">
           <span className="font-semibold uppercase tracking-wide" style={{ color: card.kleur }}>
-            {card.categorie}
+            {badgeLabel}
           </span>
           {card.taalniveau && (
             <>
@@ -206,7 +223,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             <div
-              className="relative aspect-[87/50] w-full shrink-0 overflow-hidden"
+              className={`relative ${cardMediaAspectClass(card)} w-full shrink-0 overflow-hidden`}
               style={{ backgroundColor: card.kleurLicht }}
             >
               <CardMedia card={card} variant="modal" />
@@ -214,7 +231,7 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
                 style={{ color: card.kleur }}
               >
-                {card.categorie}
+                {card.afdeling ?? card.categorie}
               </span>
               <span className="absolute right-14 top-3">
                 <ComplexityBadge card={card} taal={taal} />
@@ -268,21 +285,17 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 </p>
               )}
 
-              {(card.vraag1 || card.vraag2) && (
+              {!card.hideReflectieVragen &&
+                (card.vraag1 || card.vraag2 || card.vraag3 || card.vraag4) && (
                 <div className="mt-6 space-y-3 rounded-xl border border-rand bg-white/70 p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: card.kleur }}>
                     {t.gesprekskaart.reflectieLabel}
                   </p>
-                  {card.vraag1 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">1.</span> {card.vraag1}
+                  {[card.vraag1, card.vraag2, card.vraag3, card.vraag4].filter(Boolean).map((vraag, i) => (
+                    <p key={i} className="text-sm leading-6 text-primair">
+                      <span className="font-semibold">{i + 1}.</span> {vraag}
                     </p>
-                  )}
-                  {card.vraag2 && (
-                    <p className="text-sm leading-6 text-primair">
-                      <span className="font-semibold">2.</span> {card.vraag2}
-                    </p>
-                  )}
+                  ))}
                 </div>
               )}
 

@@ -47,6 +47,18 @@ export function wordCount(text) {
 export function normalizeCard(card) {
   const out = { ...card };
 
+  if (out.meta?.complexiteitOnbekend) {
+    out.complexiteit = null;
+    delete out.moeilijkheid;
+    if (out.assets?.fireflyPrompt) {
+      out.assets = {
+        ...out.assets,
+        fireflyPrompt: buildFireflyPrompt(out.assets.fireflyPrompt) ?? out.assets.fireflyPrompt,
+      };
+    }
+    return out;
+  }
+
   if (out.complexiteit) {
     out.complexiteit = normalizeComplexity(out.complexiteit);
     out.moeilijkheid = getMoeilijkheidFromComplexity(out.complexiteit);

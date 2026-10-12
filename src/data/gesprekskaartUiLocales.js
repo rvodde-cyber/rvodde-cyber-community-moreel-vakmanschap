@@ -8,6 +8,7 @@ const setLabelsSv = {
   "nucleaire-geneeskunde": "Nukleärmedicin",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 const setLabelsCs = {
@@ -18,6 +19,7 @@ const setLabelsCs = {
   "nucleaire-geneeskunde": "Nukleární medicína",
   onderzoeksintegriteit: "Integrita výzkumu",
   "praktijkschok-hrm": "Praktijkschok HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 const setLabelsDa = {
@@ -28,6 +30,7 @@ const setLabelsDa = {
   "nucleaire-geneeskunde": "Nuklearmedicin",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 const categorieLabelsSv = {
@@ -43,6 +46,7 @@ const categorieLabelsSv = {
   onderwijs: "Utbildning",
   overheid: "Offentlig sektor",
   hrm: "HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 const categorieLabelsCs = {
@@ -58,6 +62,7 @@ const categorieLabelsCs = {
   onderwijs: "Vzdělávání",
   overheid: "Veřejný sektor",
   hrm: "HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 const categorieLabelsDa = {
@@ -73,6 +78,7 @@ const categorieLabelsDa = {
   onderwijs: "Uddannelse",
   overheid: "Offentlig sektor",
   hrm: "HR",
+  "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
 export const gesprekskaartUiLocales = {

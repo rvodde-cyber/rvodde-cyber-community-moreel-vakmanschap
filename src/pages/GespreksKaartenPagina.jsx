@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ConversationCardSection from '../components/ConversationCardSection'
 import GesprekskaartenFilters, { EMPTY_FILTERS } from '../components/GesprekskaartenFilters'
@@ -15,6 +16,7 @@ import { getCardContentLang, getLocalizedPageContent, usesEnglishRoutes } from '
 import { useTaal } from '../context/TaalContext'
 import DriedelingBronvermelding from '../components/DriedelingBronvermelding'
 import praktijkschokHrmMeta from '../data/gesprekskaarten/praktijkschok-hrm-meta.json'
+import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
 import { ATTRIBUTION_COLOR } from '../data/gesprekskaarten/constants'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
@@ -60,7 +62,8 @@ const pageContent = {
     },
     preview: {
       titel: 'Beschikbare kaarten',
-      subtitel: 'Elke kaart sluit af met dezelfde twee vragen:',
+      subtitel:
+        'De meeste kaarten sluiten af met dezelfde twee vragen. Bij de ETZ-kaarten staan vier vragen op de kaart zelf.',
       vraag1: 'Wat zou jij doen en waarom?',
       vraag2: 'Welke waarden zijn hier in het spel?',
     },
@@ -112,7 +115,8 @@ const pageContent = {
     },
     preview: {
       titel: 'Available cards',
-      subtitel: 'Every card closes with the same two questions:',
+      subtitel:
+        'Most cards close with the same two questions. On the ETZ cards, four questions are printed on the card itself.',
       vraag1: 'What would you do, and why?',
       vraag2: 'What values are at stake here?',
     },
@@ -142,7 +146,21 @@ export default function GespreksKaartenPagina() {
   const { taal, t } = useTaal()
   const copy = getLocalizedPageContent(pageContent, taal, 'gesprekskaarten')
   const stap4 = basisStappen[3]
-  const [filters, setFilters] = useState(EMPTY_FILTERS)
+  const [searchParams] = useSearchParams()
+  const [filters, setFilters] = useState(() => {
+    const setFromUrl = searchParams.get('set')
+    if (setFromUrl) {
+      return { ...EMPTY_FILTERS, set: setFromUrl }
+    }
+    return EMPTY_FILTERS
+  })
+
+  useEffect(() => {
+    const setFromUrl = searchParams.get('set')
+    if (setFromUrl && setFromUrl !== filters.set) {
+      setFilters((prev) => ({ ...prev, set: setFromUrl }))
+    }
+  }, [searchParams, filters.set])
   const allCards = getAllCards()
   const filterOptions = useMemo(() => getFilterOptions(allCards), [allCards])
   const filteredCards = useMemo(
@@ -166,6 +184,10 @@ export default function GespreksKaartenPagina() {
   const contentLang = getCardContentLang(taal)
   const showHrmComplexityNote = displayCards.some((card) => card.set === 'praktijkschok-hrm')
   const hrmComplexityNote = praktijkschokHrmMeta.complexityNote?.[contentLang]
+  const showEtzColofon =
+    filters.set === 'etz-passende-zorg' ||
+    (displayCards.length > 0 && displayCards.every((card) => card.set === 'etz-passende-zorg'))
+  const etzColofon = etzPassendeZorgMeta.colofon?.[contentLang]
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
@@ -465,6 +487,15 @@ export default function GespreksKaartenPagina() {
             style={{ color: ATTRIBUTION_COLOR }}
           >
             {hrmComplexityNote}
+          </p>
+        )}
+
+        {showEtzColofon && etzColofon && (
+          <p
+            className="mb-6 text-sm leading-relaxed"
+            style={{ color: ATTRIBUTION_COLOR }}
+          >
+            {etzColofon}
           </p>
         )}
 

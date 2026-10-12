@@ -30,10 +30,29 @@ export async function loadCardById(id) {
   return getCardById(id);
 }
 
+function resolveCardContent(card, contentLang) {
+  const nl = card.nl ?? {};
+  const en = card.en ?? {};
+  if (contentLang === "en" && en.vertaling === false) {
+    return {
+      ...en,
+      titel: nl.titel,
+      verhaal: nl.verhaal,
+      vraag1: nl.vraag1,
+      vraag2: nl.vraag2,
+      vraag3: nl.vraag3,
+      vraag4: nl.vraag4,
+    };
+  }
+  return card[contentLang] ?? nl ?? en;
+}
+
 export function localizeCard(card, taal) {
   const contentLang = getCardContentLang(taal);
-  const content = card[contentLang] ?? card.nl ?? card.en;
+  const content = resolveCardContent(card, contentLang);
   const gk = getGesprekskaartStrings(taal);
+  const hideReflectieVragen = Boolean(card.meta?.hideReflectieVragen);
+  const nlOnlyEn = card.en?.vertaling === false;
 
   const kleur = getCategorieKleur(card.categorie);
 
@@ -42,20 +61,29 @@ export function localizeCard(card, taal) {
     set: card.set,
     categorieSlug: card.categorie,
     moeilijkheid: card.moeilijkheid,
-    complexiteit: card.complexiteit ?? getComplexityKey(card.moeilijkheid),
+    complexiteit:
+      card.meta?.complexiteitOnbekend || card.complexiteit === null
+        ? null
+        : card.complexiteit ?? getComplexityKey(card.moeilijkheid),
+    hideComplexity: Boolean(card.meta?.complexiteitOnbekend),
+    imageLayout: card.assets?.layout ?? "default",
+    afdeling: card.meta?.afdeling ?? null,
     taalniveau: card.taalniveau,
     status: card.status,
     stap: card.stap,
     titel: content.titel,
     verhaal: content.verhaal,
-    vraag1: content.vraag1 ?? gk.vraag1,
-    vraag2: content.vraag2 ?? gk.vraag2,
+    hideReflectieVragen,
+    vraag1: hideReflectieVragen ? null : content.vraag1 ?? gk.vraag1,
+    vraag2: hideReflectieVragen ? null : content.vraag2 ?? gk.vraag2,
+    vraag3: hideReflectieVragen ? null : content.vraag3 ?? null,
+    vraag4: hideReflectieVragen ? null : content.vraag4 ?? null,
     complexiteitLabel: content.complexiteitLabel ?? null,
     rechtvaardiging: content.rechtvaardiging ?? null,
     vraag: content.titel,
     afbeelding: card.assets?.afbeelding ?? null,
     afbeeldingAlt:
-      (contentLang === "nl" ? card.assets?.altNl : card.assets?.altEn) ??
+      (nlOnlyEn || contentLang === "nl" ? card.assets?.altNl : card.assets?.altEn) ??
       card.assets?.altNl ??
       card.assets?.altEn ??
       null,
