@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T11:39:57.030Z",
-  "count": 93,
+  "generatedAt": "2026-10-13T16:22:29.845Z",
+  "count": 97,
   "cards": [
     {
       "id": "GK_MM_01",
@@ -571,12 +571,12 @@
       "complexiteit": "micro",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "Vriend rijdt te hard en overtreedt verkeersregels",
+      "titelNl": "Vriend rijdt véél te hard",
       "titelEn": "Friend drives too fast and breaks traffic rules",
-      "woordenNl": 146,
+      "woordenNl": 115,
       "woordenEn": 147,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A young woman gripping the armrest inside a moving car, anxious expression, blurred road and motion visible through the windshield, the driver relaxed beside her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A young woman gripping the armrest inside a moving car, anxious expression, blurred road and motion visible through the windshield, the driver relaxed beside her. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_DL_07",
@@ -589,10 +589,10 @@
       "status": "getest",
       "titelNl": "De gevonden portemonnee",
       "titelEn": "The found wallet",
-      "woordenNl": 140,
+      "woordenNl": 116,
       "woordenEn": 142,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_DL_08",
@@ -605,10 +605,10 @@
       "status": "getest",
       "titelNl": "De roddelende vriend",
       "titelEn": "The gossiping friend",
-      "woordenNl": 133,
+      "woordenNl": 116,
       "woordenEn": 134,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_DL_09",
@@ -621,10 +621,10 @@
       "status": "getest",
       "titelNl": "Het geleende geld",
       "titelEn": "The borrowed money",
-      "woordenNl": 150,
+      "woordenNl": 125,
       "woordenEn": 143,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A young adult sitting at a kitchen table with bills and a phone lit up with an incoming call, a conflicted, uneasy expression, warm domestic evening lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A young adult sitting at a kitchen table with bills and a phone lit up with an incoming call, a conflicted, uneasy expression, warm domestic evening lighting. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_DL_10",
@@ -635,12 +635,12 @@
       "complexiteit": "meso",
       "taalniveau": "B2",
       "status": "getest",
-      "titelNl": "De gemanipuleerde online beoordeling",
+      "titelNl": "De gemanipuleerde review",
       "titelEn": "The manipulated online review",
-      "woordenNl": 144,
+      "woordenNl": 113,
       "woordenEn": 148,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A person looking at a smartphone screen filled with five-star reviews while standing near a small coffee shop storefront, thoughtful and slightly skeptical expression, soft street-level daylight.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A person looking at a smartphone screen filled with five-star reviews while standing near a small coffee shop storefront, thoughtful and slightly skeptical expression, soft street-level daylight. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_DL_11",
@@ -653,10 +653,74 @@
       "status": "getest",
       "titelNl": "Buurman mishandelt zijn vrouw",
       "titelEn": "Neighbour abuses his wife",
-      "woordenNl": 139,
+      "woordenNl": 114,
       "woordenEn": 141,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
+    },
+    {
+      "id": "GK_DL_12",
+      "set": "dl-compleet-a5",
+      "stap": 1,
+      "categorie": "dagelijks-leven",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
+      "taalniveau": "B2",
+      "status": "getest",
+      "titelNl": "De buurtapp",
+      "titelEn": "De buurtapp",
+      "woordenNl": 114,
+      "woordenEn": 114,
+      "heeftAfbeelding": true,
+      "fireflyPrompt": "A woman sitting on a sofa in a dim living room in the evening, looking at a smartphone with a hesitant thumb above the screen, a quiet residential street visible through the window behind her, soft lamp light. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
+    },
+    {
+      "id": "GK_DL_13",
+      "set": "dl-compleet-a5",
+      "stap": 1,
+      "categorie": "dagelijks-leven",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
+      "taalniveau": "B2",
+      "status": "getest",
+      "titelNl": "De trainer",
+      "titelEn": "De trainer",
+      "woordenNl": 118,
+      "woordenEn": 118,
+      "heeftAfbeelding": true,
+      "fireflyPrompt": "A woman standing at the fence of a youth football pitch at dusk, watching a coach in a club jacket speak sharply to a player, other parents standing apart, floodlights on, tense atmosphere. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
+    },
+    {
+      "id": "GK_DL_14",
+      "set": "dl-compleet-a5",
+      "stap": 1,
+      "categorie": "dagelijks-leven",
+      "moeilijkheid": 3,
+      "complexiteit": "macro",
+      "taalniveau": "B2",
+      "status": "getest",
+      "titelNl": "Zonder papieren",
+      "titelEn": "Zonder papieren",
+      "woordenNl": 123,
+      "woordenEn": 123,
+      "heeftAfbeelding": true,
+      "fireflyPrompt": "A woman standing in the doorway of her apartment in a quiet corridor, a man in his forties beside her holding two grocery bags, an unopened official letter in her hand, both with serious expressions, soft window light. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
+    },
+    {
+      "id": "GK_DL_15",
+      "set": "dl-compleet-a5",
+      "stap": 1,
+      "categorie": "dagelijks-leven",
+      "moeilijkheid": 3,
+      "complexiteit": "macro",
+      "taalniveau": "B2",
+      "status": "getest",
+      "titelNl": "De afgesloten stroom",
+      "titelEn": "De afgesloten stroom",
+      "woordenNl": 111,
+      "woordenEn": 111,
+      "heeftAfbeelding": true,
+      "fireflyPrompt": "A winter evening in a dark flat, an elderly woman wearing a coat indoors sitting at a kitchen table lit by a single candle, her neighbour standing in the doorway holding an orange extension cord, quiet tension. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4."
     },
     {
       "id": "GK_NM_01",
