@@ -67,6 +67,17 @@ function CardMedia({ card, variant = "preview" }) {
   return <div className="absolute inset-0" style={{ backgroundColor: card.kleur, opacity: 0.35 }} />;
 }
 
+function hasStoredPdfAsset(card) {
+  const href = card.pdfHref;
+  return typeof href === "string" && href.trim().length > 0;
+}
+
+/** ETZ-kaarten hebben alleen statische PDF’s in assets; andere sets blijven client-side jsPDF gebruiken. */
+function shouldShowPdfDownload(card) {
+  if (card.set === "etz-passende-zorg") return hasStoredPdfAsset(card);
+  return true;
+}
+
 function CardButton({ children, accentColor, variant = "outline", onClick, href, download }) {
   const className =
     "inline-flex flex-1 items-center justify-center rounded-full border-2 px-3 py-2.5 text-center text-sm font-semibold transition-colors";
@@ -105,10 +116,24 @@ function CardButton({ children, accentColor, variant = "outline", onClick, href,
   );
 }
 
+function handleGesprekskaartPdfDownload(card, t, taal) {
+  if (hasStoredPdfAsset(card)) {
+    const link = document.createElement("a");
+    link.href = card.pdfHref;
+    link.download = "";
+    link.rel = "noopener";
+    link.click();
+    return;
+  }
+  downloadGesprekskaartPdf(card, t, taal);
+}
+
 export function ConversationCardPreview({ card, onOpen }) {
   const { taal, t } = useTaal();
-  const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
+  const handleDownload = () => handleGesprekskaartPdfDownload(card, t, taal);
   const badgeLabel = card.afdeling ?? card.categorie;
+  const showMetaAfdeling = card.set !== "etz-passende-zorg";
+  const showPdf = shouldShowPdfDownload(card);
 
   return (
     <article
@@ -133,12 +158,14 @@ export function ConversationCardPreview({ card, onOpen }) {
 
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-secundair">
-          <span className="font-semibold uppercase tracking-wide" style={{ color: card.kleur }}>
-            {badgeLabel}
-          </span>
+          {showMetaAfdeling && (
+            <span className="font-semibold uppercase tracking-wide" style={{ color: card.kleur }}>
+              {badgeLabel}
+            </span>
+          )}
           {card.taalniveau && (
             <>
-              <span aria-hidden="true">·</span>
+              {showMetaAfdeling && <span aria-hidden="true">·</span>}
               <span>{card.taalniveau}</span>
             </>
           )}
@@ -157,9 +184,11 @@ export function ConversationCardPreview({ card, onOpen }) {
           <CardButton accentColor={card.kleur} onClick={onOpen}>
             {t.gesprekskaart.bekijk}
           </CardButton>
-          <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
-            {t.gesprekskaart.downloadPdf}
-          </CardButton>
+          {showPdf && (
+            <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
+              {t.gesprekskaart.downloadPdf}
+            </CardButton>
+          )}
         </div>
       </div>
     </article>
@@ -176,7 +205,8 @@ function formatStapVerbinding(template, card, kernvraag) {
 export default function ConversationCardModal({ card, isOpen, onClose }) {
   const { taal, t } = useTaal();
   const kernvraag = card ? t.stappen[card.stapNummer - 1].kernvraag : "";
-  const handleDownload = () => downloadGesprekskaartPdf(card, t, taal);
+  const handleDownload = () => handleGesprekskaartPdfDownload(card, t, taal);
+  const showPdf = shouldShowPdfDownload(card);
   const setLabel =
     card?.set ? (t.gesprekskaart.filters?.setLabels?.[card.set] ?? card.set) : null;
 
@@ -307,11 +337,13 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                 {formatStapVerbinding(t.gesprekskaart.stapVerbinding, card, kernvraag)}
               </p>
 
-              <div className="mt-8">
-                <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
-                  {t.gesprekskaart.downloadPdf}
-                </CardButton>
-              </div>
+              {showPdf && (
+                <div className="mt-8">
+                  <CardButton accentColor={card.kleur} variant="filled" onClick={handleDownload}>
+                    {t.gesprekskaart.downloadPdf}
+                  </CardButton>
+                </div>
+              )}
             </div>
           </motion.div>
         </motion.div>
