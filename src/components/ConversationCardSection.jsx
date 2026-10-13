@@ -11,6 +11,7 @@ export default function ConversationCardSection({
   kaarten: kaartenOverride,
   sectionId = `gesprekskaarten-stap-${stapNummer}`,
   downloadLinks = null,
+  sectionTitle = null,
   emptyMessage = null,
 }) {
   const { t } = useTaal();
@@ -42,7 +43,7 @@ export default function ConversationCardSection({
       >
         <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <h3 className="font-display text-2xl font-semibold text-primair md:text-3xl">
-            {stapData?.[titelKey]}
+            {sectionTitle ?? stapData?.[titelKey]}
           </h3>
           {downloadLinks && (
             <a

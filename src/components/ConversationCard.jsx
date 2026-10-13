@@ -74,6 +74,7 @@ function hasStoredPdfAsset(card) {
 
 /** ETZ-kaarten hebben alleen statische PDF’s in assets; andere sets blijven client-side jsPDF gebruiken. */
 function shouldShowPdfDownload(card) {
+  if (!card) return false;
   if (card.set === "etz-passende-zorg") return hasStoredPdfAsset(card);
   return true;
 }
