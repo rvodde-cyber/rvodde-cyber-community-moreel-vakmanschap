@@ -184,8 +184,10 @@ export default function GespreksKaartenPagina() {
   const contentLang = getCardContentLang(taal)
   const showHrmComplexityNote = displayCards.some((card) => card.set === 'praktijkschok-hrm')
   const hrmComplexityNote = praktijkschokHrmMeta.complexityNote?.[contentLang]
+  const isEtzSetView = filters.set === 'etz-passende-zorg'
+  const etzSectionTitle = t.gesprekskaart.filters?.setLabels?.['etz-passende-zorg'] ?? 'ETZ Passende Zorg'
   const showEtzColofon =
-    filters.set === 'etz-passende-zorg' ||
+    isEtzSetView ||
     (displayCards.length > 0 && displayCards.every((card) => card.set === 'etz-passende-zorg'))
   const etzColofon = etzPassendeZorgMeta.colofon?.[contentLang]
 
@@ -504,8 +506,9 @@ export default function GespreksKaartenPagina() {
           kleur={stap4.kleur}
           kleurLicht={stap4.kleurLicht}
           titelKey="gesprekskaarten_titel"
+          sectionTitle={isEtzSetView ? etzSectionTitle : null}
           kaarten={displayCards}
-          downloadLinks={teaserDownload}
+          downloadLinks={isEtzSetView ? null : teaserDownload}
         />
       </section>
 
