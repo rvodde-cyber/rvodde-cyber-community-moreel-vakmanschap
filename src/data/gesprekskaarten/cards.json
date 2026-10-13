@@ -1084,7 +1084,7 @@
     "status": "getest",
     "nl": {
       "titel": "De sjaal in de trein",
-      "verhaal": "De trein schokt, een doffe dreun. Op de koude vloer ligt een meisje, amper achttien, rillend met klapperende tanden. De conducteur roept om hulp, maar het duurt.\n\nNina, tegenover haar, ziet hoe het meisje verkleumt tegen het ijskoude staal. In haar tas zit een zachte sjaal, een cadeau van haar oma en het enige stukje warmte dat ze bij zich heeft op weg naar een sollicitatiegesprek. Haar hand raakt de stof, trekt terug, raakt hem weer aan. Het meisje kijkt haar aan, te uitgeput om iets te vragen.\n\nBuiten glijden de laatste stationslichten voorbij; hulp is nog minuten weg. Geeft Nina de sjaal weg en trotseert ze zelf de kou op het perron, of houdt ze vast aan wat haar dierbaar is?",
+      "verhaal": "De trein staat al twintig minuten stil in de kou, zonder verwarming. Tegenover Nina zit een meisje van amper achttien in een dun jasje. Ze rilt, met klapperende tanden, en kijkt naar niemand. De conducteur is ergens verderop en niemand zegt iets.\n\nIn Nina’s tas zit een zachte sjaal, een cadeau van haar oma. Het is het enige dierbare dat ze meeneemt naar haar sollicitatiegesprek, waarvoor ze zich net goed genoeg gekleed voelt. Haar hand raakt de stof, trekt terug, raakt hem weer aan. Het meisje kijkt haar aan, te moe om iets te vragen.\n\nHulp is nog minuten weg. Geeft Nina haar sjaal weg, of houdt ze vast aan wat haar dierbaar is?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1092,21 +1092,23 @@
       "titel": "The scarf on the train",
       "verhaal": "The train jolts, a dull thud. On the cold floor lies a girl, barely eighteen, shivering, her teeth chattering. The conductor calls for help, but it takes time.\n\nNina, sitting opposite, watches the girl chill against the icy steel. In her bag is a soft scarf, a gift from her grandmother and the only bit of warmth she has with her on the way to a job interview. Her hand touches the fabric, pulls back, touches it again. The girl looks at her, too exhausted to ask for anything.\n\nOutside, the last station lights glide past; help is still minutes away. Does Nina give the scarf away and face the cold on the platform herself, or hold on to what is dear to her?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
+      "vraag2": "What values are at stake here?",
+      "vertaling": false
     },
     "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_DL_01.png",
+      "afbeelding": "/images/gesprekskaarten/GK_DL_01.jpg",
       "fireflyPrompt": null,
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 122,
+      "woordenNl": 114,
       "woordenEn": 124,
-      "bron": "v3-docx: DL1 Hulp.docx",
+      "bron": "v3: DL1 Hulp.docx",
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "v3",
+      "vertalingEnVerouderd": true
     },
     "moeilijkheid": 1
   },
@@ -1120,7 +1122,7 @@
     "status": "getest",
     "nl": {
       "titel": "Vriend rijdt onder invloed van alcohol",
-      "verhaal": "Sophie staat in de deuropening en ziet Tom zijn autosleutels pakken. Het is twee uur ’s nachts, de wijnglazen op tafel zijn leeg, zijn ogen glazig. “Ik red het wel,” zegt hij, zoals altijd. Ze kent dit ritueel: het korte lachje, de overmoed, de deur die dichtvalt voordat ze iets kan zeggen.\n\nBuiten start de motor. Sophie voelt haar hart bonzen — niet alleen om Tom, maar om de fietser die straks misschien oversteekt, de automobilist die nietsvermoedend de rotonde nadert. Ze zou de sleutels kunnen afpakken, zijn ouders kunnen bellen, een scène kunnen maken op straat. Maar wat als hij haar dan nooit meer vertrouwt?\n\nHet raampje zoeft naar beneden. “Stap je nog in?” vraagt hij. Grijpt Sophie nu in, of laat ze het weer gaan?",
+      "verhaal": "Het is twee uur ’s nachts. Sophie staat in de deuropening en ziet Tom zijn autosleutels pakken. De wijnglazen op tafel zijn leeg, zijn ogen glazig. “Ik red het wel,” zegt hij, zoals altijd. Ze kent dit ritueel: het korte lachje, de overmoed, de deur die dichtvalt voordat ze iets kan zeggen.\n\nBuiten start de motor. Het is niet de eerste keer. Sophie denkt aan de fietser die straks misschien oversteekt, aan de rotonde, aan Tom zelf. Ze zou de sleutels kunnen afpakken, zijn ouders bellen, een scène maken op straat. Maar wat als hij haar daarna nooit meer vertrouwt?\n\nHet raampje zoeft naar beneden. “Stap je nog in?” Grijpt Sophie nu in, of laat ze hem rijden?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1128,21 +1130,23 @@
       "titel": "Friend drives under the influence of alcohol",
       "verhaal": "Sophie stands in the doorway and sees Tom pick up his car keys. It is two in the morning, the wine glasses on the table are empty, his eyes glazed. \"I'll be fine,\" he says, as he always does. She knows this ritual: the short laugh, the overconfidence, the door closing before she can say anything.\n\nOutside the engine starts. Sophie feels her heart pounding, not only for Tom, but for the cyclist who may be crossing, the driver approaching the roundabout unsuspecting. She could take the keys, call his parents, make a scene in the street. But what if he never trusts her again?\n\nThe window glides down. \"Are you getting in?\" he asks. Does Sophie step in now, or let it go again?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
+      "vraag2": "What values are at stake here?",
+      "vertaling": false
     },
     "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_DL_02.png",
-      "fireflyPrompt": "A tense nighttime scene outside a house: a young woman standing in a doorway looking worried at a young man getting into a car, keys in hand, wine glasses visible through a window behind her. Documentary street photography, warm porch light against cool night air.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
+      "afbeelding": "/images/gesprekskaarten/GK_DL_02.jpg",
+      "fireflyPrompt": null,
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 127,
+      "woordenNl": 118,
       "woordenEn": 125,
-      "bron": "v3-docx: DL2_Vriend_rijdt_onder_invloed_van_alcohol.docx",
+      "bron": "v3: DL2 Vriend rijdt onder invloed van alcohol.docx",
       "categorieEn": "DAILY LIFE",
-      "afbeeldingStatus": "oud (tijdelijk)",
-      "tekstVersie": "3.0"
+      "afbeeldingStatus": "v3",
+      "tekstVersie": "3.0",
+      "vertalingEnVerouderd": true
     },
     "moeilijkheid": 1
   },
@@ -1156,7 +1160,7 @@
     "status": "getest",
     "nl": {
       "titel": "Buurman dumpt afval in het park",
-      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw een berg vuilniszakken naast de border, half opengescheurd door een vos. Hij weet wie erachter zit: meneer Bakker, twee huizen verderop, die zijn tuinafval en huisvuil al maanden stiekem hier dumpt.\n\nHet park was ooit de trots van de buurt. Nu mijden steeds meer buren de plek, klagen ze op de buurtapp en wijzen ze naar elkaar zonder iets te doen. David zou meneer Bakker kunnen aanspreken, met het risico op een verhitte ruzie tussen buren die elkaar nog jaren tegenkomen. Hij zou ook de gemeente kunnen bellen en handhaving inschakelen.\n\nHij kijkt naar de opengescheurde zakken, dan naar het huis van meneer Bakker. Spreekt David hem zelf aan, of schakelt hij meteen de gemeente in?",
+      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw vuilniszakken naast de border, half opengescheurd door een vos. Hij weet wie erachter zit en heeft het eerder gezien zonder iets te zeggen. Meneer Bakker, twee huizen verderop, dumpt hier al maanden zijn tuinafval en huisvuil.\n\nHet park was de trots van de buurt. Nu mijden steeds meer buren de plek en klagen ze op de buurtapp, zonder iets te doen. David kan Bakker aanspreken, met het risico op ruzie tussen mensen die elkaar nog jaren tegenkomen. Hij kan ook handhaving van de gemeente bellen.\n\nZo kan het niet blijven. Spreekt David hem zelf aan, of schakelt hij de gemeente in?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1164,21 +1168,23 @@
       "titel": "Neighbour dumps rubbish in the park",
       "verhaal": "David stands at the park gate and smells it before he sees it: another heap of rubbish bags next to the flower bed, half torn open by a fox. He knows who is behind it: Mr Bakker, two houses down, who has been secretly dumping his garden waste and household rubbish here for months.\n\nThe park used to be the pride of the neighbourhood. Now more and more neighbours avoid the place, complain on the neighbourhood app and point fingers at each other without doing anything. David could speak to Mr Bakker, at the risk of a heated quarrel between neighbours who will keep running into each other for years. He could also call the council and bring in enforcement.\n\nHe looks at the torn bags, then at Mr Bakker's house. Does David speak to him himself, or call the council straight away?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
+      "vraag2": "What values are at stake here?",
+      "vertaling": false
     },
     "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_DL_03.png",
-      "fireflyPrompt": "A man standing at the edge of a public park, looking with concern at torn garbage bags dumped near flowerbeds, overcast daylight, a residential street visible in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
+      "afbeelding": "/images/gesprekskaarten/GK_DL_03.jpg",
+      "fireflyPrompt": null,
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 133,
+      "woordenNl": 118,
       "woordenEn": 143,
-      "bron": "v3-docx: DL3_Buurman_dumpt_afval_in_het_park.docx",
+      "bron": "v3: DL3 Buurman dumpt afval in het park.docx",
       "categorieEn": "DAILY LIFE",
-      "afbeeldingStatus": "oud (tijdelijk)",
-      "tekstVersie": "3.0"
+      "afbeeldingStatus": "v3",
+      "tekstVersie": "3.0",
+      "vertalingEnVerouderd": true
     },
     "moeilijkheid": 2
   },
@@ -1192,7 +1198,7 @@
     "status": "getest",
     "nl": {
       "titel": "Vriend pleegt winkeldiefstal",
-      "verhaal": "Delano staat achter het rek met energiedrankjes en ziet het gebeuren: Mark laat moeiteloos een deodorant in zijn jaszak glijden en loopt langs de kassa alsof er niets aan de hand is. Het is niet de eerste keer. Delano weet het al maanden, heeft het genegeerd, weggelachen, goedgepraat.\n\nMaar de bedragen worden groter, de winkels gevaarlijker — laatst nog bijna betrapt door een beveiliger die zijn gezicht nu al kent. Delano denkt aan wat er gebeurt als het misgaat: een aangifte, een strafblad dat Mark jarenlang achtervolgt. Hij denkt ook aan wat er gebeurt als hij nu iets zegt: de blik van verraad, tien jaar vriendschap die in één gesprek kan kantelen.\n\nBuiten wacht Mark ontspannen op zijn fiets, alsof er niets gebeurd is. Durft Delano het gesprek aan te gaan, of zwijgt hij nog één keer?",
+      "verhaal": "Delano staat achter het rek met energiedrankjes en ziet het gebeuren: Mark laat een deodorant in zijn jaszak glijden en loopt langs de kassa alsof er niets aan de hand is. Het is niet de eerste keer. Mark noemt het ‘gewoon even meenemen’. Delano weet het al maanden en lachte het steeds weg.\n\nMaar de bedragen worden groter. Laatst werd Mark bijna betrapt door een beveiliger die zijn gezicht nu kent. Gaat het mis, dan wacht een aangifte en een strafblad. Zegt Delano iets, dan kantelt tien jaar vriendschap misschien in één gesprek.\n\nDelano’s hart bonkt. Buiten wacht Mark ontspannen op zijn fiets. Durft Delano het gesprek aan, of zwijgt hij nog één keer?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1200,21 +1206,23 @@
       "titel": "Friend shoplifts",
       "verhaal": "Delano stands behind the rack of energy drinks and sees it happen: Mark effortlessly slips a deodorant into his jacket pocket and walks past the till as if nothing is going on. It is not the first time. Delano has known for months and has ignored it, laughed it off, talked it away.\n\nBut the amounts are getting bigger, the shops riskier; recently Mark was nearly caught by a security guard who now knows his face. Delano thinks about what happens if it goes wrong: a police report, a criminal record that follows Mark for years. He also thinks about what happens if he speaks up now: the look of betrayal, ten years of friendship that could tip over in one conversation.\n\nOutside, Mark waits calmly by his bike, as if nothing happened. Does Delano dare to start the conversation, or does he stay silent one more time?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
+      "vraag2": "What values are at stake here?",
+      "vertaling": false
     },
     "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_DL_04.png",
-      "fireflyPrompt": "A young man standing at the end of a supermarket aisle, watching his friend slip a small item into his jacket pocket near the checkout, tension visible in his posture, muted indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
+      "afbeelding": "/images/gesprekskaarten/GK_DL_04.jpg",
+      "fireflyPrompt": null,
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 137,
+      "woordenNl": 114,
       "woordenEn": 148,
-      "bron": "v3-docx: DL4_Vriend_pleegt_winkeldiefstal.docx",
+      "bron": "v3: DL4 Vriend pleegt winkeldiefstal.docx",
       "categorieEn": "DAILY LIFE",
-      "afbeeldingStatus": "oud (tijdelijk)",
-      "tekstVersie": "3.0"
+      "afbeeldingStatus": "v3",
+      "tekstVersie": "3.0",
+      "vertalingEnVerouderd": true
     },
     "moeilijkheid": 1
   },
@@ -1223,12 +1231,12 @@
     "set": "dl-compleet-a5",
     "stap": 1,
     "categorie": "dagelijks-leven",
-    "complexiteit": "micro",
+    "complexiteit": "meso",
     "taalniveau": "B2",
     "status": "getest",
     "nl": {
       "titel": "Buurvrouw laat kinderen vaak alleen thuis",
-      "verhaal": "Emma hoort het weer: gestommel achter de muur, een deur die dichtslaat, daarna stilte. Ze weet wat dat betekent — mevrouw Jansen is weg, de kinderen zijn alleen. Door de dunne scheidingswand hoort ze het jongste kind huilen, een geluid dat langzaam overgaat in vermoeide stilte.\n\nHet is de derde keer deze maand. Emma heeft de klok bijgehouden: soms een halfuur, soms bijna twee uur. Ze twijfelt: is dit nog een incidentje, of het begin van een patroon dat ze niet mag negeren? Ze zou kunnen aankloppen, of het meldpunt voor kindermishandeling kunnen bellen. Maar wat als ze het verkeerd inschat, een goede moeder in een lastige periode verdenkt van verwaarlozing?\n\nEmma legt haar hand op de deurklink. Klopt ze aan, of loopt ze door?",
+      "verhaal": "Emma hoort het weer door de muur: een kind dat roept, daarna stilte, en de voordeur die hard dichtvalt. Soms staat de televisie uren op volle sterkte. Mevrouw Jansen vertrekt in haar uniform. Achter het raam staan twee kleine gezichten.\n\nEmma weet dat school en jeugdzorg soms signalen oppikken, maar zij is alleen de buurvrouw. Ze kan Veilig Thuis bellen, het gesprek met Jansen aangaan of hopen dat het meevalt. Ze vraagt zich af wat er gebeurt als niemand kijkt.\n\nHet is niet de eerste keer. Die middag ziet ze de jongste alleen op het balkon staan. Belt Emma nu een instantie, of wacht ze tot ze zeker weet dat er iets aan de hand is?",
       "vraag1": "Wat zou jij doen en waarom?",
       "vraag2": "Welke waarden zijn hier in het spel?"
     },
@@ -1236,23 +1244,25 @@
       "titel": "Neighbour often leaves children home alone",
       "verhaal": "Emma hears it again: shuffling behind the wall, a door slamming, then silence. She knows what it means: Mrs Jansen has gone out and the children are alone. Through the thin partition wall she hears the youngest child crying, a sound that slowly fades into tired silence.\n\nIt is the third time this month. Emma has kept track of the time: sometimes half an hour, sometimes almost two. She wonders: is this still an incident, or the start of a pattern she must not ignore? She could knock on the door, or call the child abuse helpline. But what if she misjudges it and suspects a good mother in a difficult period of neglect?\n\nEmma puts her hand on the door handle. Does she knock, or walk on?",
       "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
+      "vraag2": "What values are at stake here?",
+      "vertaling": false
     },
     "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_DL_05.png",
-      "fireflyPrompt": "A woman standing in a hallway of an apartment building, hand raised near a neighbor's door, listening with a worried expression, soft muffled light glowing from under the door.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
+      "afbeelding": "/images/gesprekskaarten/GK_DL_05.jpg",
+      "fireflyPrompt": null,
       "pdfNl": null,
       "pdfEn": null
     },
     "meta": {
-      "woordenNl": 125,
+      "woordenNl": 116,
       "woordenEn": 128,
-      "bron": "v3-docx: DL5_Buurvrouw_laat_kinderen_vaak_alleen_thuis.docx",
+      "bron": "v3: DL5 Buurvrouw laat kinderen vaak alleen thuis.docx",
       "categorieEn": "DAILY LIFE",
-      "afbeeldingStatus": "oud (tijdelijk)",
-      "tekstVersie": "3.0"
+      "afbeeldingStatus": "v3",
+      "tekstVersie": "3.0",
+      "vertalingEnVerouderd": true
     },
-    "moeilijkheid": 1
+    "moeilijkheid": 2
   },
   {
     "id": "GK_DL_06",

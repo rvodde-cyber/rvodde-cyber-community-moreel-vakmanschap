@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T15:19:13.957Z",
+  "generatedAt": "2026-10-13T11:39:57.030Z",
   "count": 93,
   "cards": [
     {
@@ -493,7 +493,7 @@
       "status": "getest",
       "titelNl": "De sjaal in de trein",
       "titelEn": "The scarf on the train",
-      "woordenNl": 122,
+      "woordenNl": 114,
       "woordenEn": 124,
       "heeftAfbeelding": true,
       "fireflyPrompt": null
@@ -509,10 +509,10 @@
       "status": "getest",
       "titelNl": "Vriend rijdt onder invloed van alcohol",
       "titelEn": "Friend drives under the influence of alcohol",
-      "woordenNl": 127,
+      "woordenNl": 118,
       "woordenEn": 125,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A tense nighttime scene outside a house: a young woman standing in a doorway looking worried at a young man getting into a car, keys in hand, wine glasses visible through a window behind her. Documentary street photography, warm porch light against cool night air.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": null
     },
     {
       "id": "GK_DL_03",
@@ -525,10 +525,10 @@
       "status": "getest",
       "titelNl": "Buurman dumpt afval in het park",
       "titelEn": "Neighbour dumps rubbish in the park",
-      "woordenNl": 133,
+      "woordenNl": 118,
       "woordenEn": 143,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A man standing at the edge of a public park, looking with concern at torn garbage bags dumped near flowerbeds, overcast daylight, a residential street visible in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": null
     },
     {
       "id": "GK_DL_04",
@@ -541,26 +541,26 @@
       "status": "getest",
       "titelNl": "Vriend pleegt winkeldiefstal",
       "titelEn": "Friend shoplifts",
-      "woordenNl": 137,
+      "woordenNl": 114,
       "woordenEn": 148,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A young man standing at the end of a supermarket aisle, watching his friend slip a small item into his jacket pocket near the checkout, tension visible in his posture, muted indoor lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": null
     },
     {
       "id": "GK_DL_05",
       "set": "dl-compleet-a5",
       "stap": 1,
       "categorie": "dagelijks-leven",
-      "moeilijkheid": 1,
-      "complexiteit": "micro",
+      "moeilijkheid": 2,
+      "complexiteit": "meso",
       "taalniveau": "B2",
       "status": "getest",
       "titelNl": "Buurvrouw laat kinderen vaak alleen thuis",
       "titelEn": "Neighbour often leaves children home alone",
-      "woordenNl": 125,
+      "woordenNl": 116,
       "woordenEn": 128,
       "heeftAfbeelding": true,
-      "fireflyPrompt": "A woman standing in a hallway of an apartment building, hand raised near a neighbor's door, listening with a worried expression, soft muffled light glowing from under the door.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay."
+      "fireflyPrompt": null
     },
     {
       "id": "GK_DL_06",
