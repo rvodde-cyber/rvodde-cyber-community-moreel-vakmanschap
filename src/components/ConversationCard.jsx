@@ -298,9 +298,6 @@ export default function ConversationCardModal({ card, isOpen, onClose }) {
                   {t.gesprekskaart.taalniveauLabel}: {card.taalniveau}
                 </p>
               )}
-              {card.rechtvaardiging && (
-                <p className="mb-4 text-sm leading-6 text-secundair">{card.rechtvaardiging}</p>
-              )}
               <h2
                 id="gesprekskaart-titel"
                 className="font-display text-3xl font-semibold leading-snug text-primair md:text-4xl"

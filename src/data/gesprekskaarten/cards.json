@@ -3881,5 +3881,2345 @@
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
     }
+  },
+  {
+    "id": "hrm-ps02",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Bertje uittesten",
+      "verhaal": "Bert staat al acht maanden in het magazijn. Hij is stil, komt nooit te laat en tilt dozen die anderen laten staan. Toch twijfelt het hoofd productie. ‘Bij de verlenging wil ik er een proeftijd in. Dan kan ik Bertje nog eens goed uittesten.’\n\nKevin, HR-adviseur, weet dat een nieuwe proeftijd bij dezelfde functie juridisch niet houdbaar is. Maar hij ziet ook wat er gebeurt als hij nee zegt: het hoofd productie verlengt Bert dan gewoon niet.\n\nBert heeft gisteren in de kantine verteld dat hij eindelijk een huurwoning op het oog heeft, als zijn contract maar doorloopt. Kevin kan de regels volgen en Bert misschien zijn baan kosten, of een twijfelachtige clausule laten staan. Wat is het meest eerlijk tegenover Bert?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Kevin beslist niet alleen: het hoofd productie, het contractrecht en Berts woonplannen spelen wezenlijk mee in wat zijn keuze oplevert."
+    },
+    "en": {
+      "titel": "Testing Bertje",
+      "verhaal": "Bert has been working in the warehouse for eight months. He is quiet, never late, and lifts boxes that others leave standing. Still, the head of production hesitates. ‘When we renew, I want a probation period in there. That way I can really test Bertje once more.’\n\nKevin, an HR advisor, knows a new probation period for the same job is not legally tenable. But he also sees what happens if he says no: the head of production will simply not renew Bert.\n\nYesterday in the canteen Bert said he finally has a rental home in sight, as long as his contract continues. Kevin can follow the rules and perhaps cost Bert his job, or let a doubtful clause stand. What is most fair towards Bert?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Kevin does not decide alone: the head of production, employment law and Bert's housing plans play a real part in what his choice leads to."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS02-bertje-uittesten.jpg",
+      "altNl": "Anonieme werksituatie: bertje uittesten",
+      "altEn": "Anonymous workplace scene: bertje uittesten",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 122,
+      "woordenEn": 126,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS02",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps03",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De koffieautomaat",
+      "verhaal": "Henk onderhoudt al tweeëntwintig jaar de verpakkingslijnen. Als de koffieautomaat in de kantine lekt, vraagt de teamleider hem even te kijken. Henk weigert. ‘Ik ben monteur van hightech machines, geen klusjesman.’\n\nEen uur later staat de directeur bij Ilse, HR-adviseur, aan het bureau. ‘Werkweigering. Op staande voet eruit. Ik wil dat dit vandaag geregeld is.’ Hij wil een voorbeeld stellen; de laatste tijd ‘mopperen er te veel mensen’.\n\nIlse weet dat ontslag op staande voet hier waarschijnlijk geen stand houdt. Ze weet ook dat de directeur haar heeft aangenomen en haar loyaliteit verwacht. Henk is koppig, maar onmisbaar. Kiest Ilse voor de directeur die haar steunt, of voor de man die geen klusjesman wil zijn?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Ilse zit tussen directeur, arbeidsrecht en een onmisbare monteur; de organisatie en haar machtsverhoudingen spelen wezenlijk mee, niet alleen haar eigen keuze."
+    },
+    "en": {
+      "titel": "The Coffee Machine",
+      "verhaal": "Henk has maintained the packaging lines for twenty-two years. When the coffee machine in the canteen starts leaking, the team leader asks him to take a look. Henk refuses. ‘I'm a mechanic for high-tech machines, not a handyman.’\n\nAn hour later the director is standing at the desk of Ilse, an HR advisor. ‘Refusal to work. Dismissal on the spot. I want this settled today.’ He wants to set an example; lately ‘too many people are grumbling’.\n\nIlse knows that dismissal on the spot probably won't hold up here. She also knows the director hired her and expects her loyalty. Henk is stubborn, but indispensable. Does Ilse side with the director who supports her, or with the man who doesn't want to be a handyman?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Ilse is caught between the director, employment law and an indispensable mechanic; the organisation and its power relations play a real part, not only her own choice."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS03-de-koffieautomaat.jpg",
+      "altNl": "Anonieme werksituatie: de koffieautomaat",
+      "altEn": "Anonymous workplace scene: de koffieautomaat",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 125,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS03",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps04",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Eén op de drie",
+      "verhaal": "De vestiging lijdt al twee jaar verlies. Thomas, HR-manager, krijgt van de directie de opdracht een plan te maken: vijftig van de honderdvijftig medewerkers moeten weg, liefst ‘zonder ophef’.\n\nDe directie wil de jonge, goed opgeleide mensen houden. ‘Daar zit onze toekomst.’ Maar Thomas kent ook de oudere operators die hier dertig jaar staan, hun knieën versleten van de vloer. Voor hen is een nieuwe baan bijna onvindbaar.\n\nHij kan een plan schrijven dat het bedrijf de beste overlevingskans geeft, of een plan dat de kwetsbaarsten zoveel mogelijk spaart. Allebei is te verdedigen, en allebei laat slachtoffers achter. Welke toekomst weegt zwaarder: die van het bedrijf of die van de mensen die het hebben opgebouwd?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een reorganisatie raakt directie, honderdvijftig medewerkers en de regels rond ontslag; Thomas beslist niet alleen over een conflict tussen twee mensen."
+    },
+    "en": {
+      "titel": "One in Three",
+      "verhaal": "The site has been losing money for two years. Thomas, HR manager, is instructed by the board to draw up a plan: fifty of the hundred and fifty employees must go, preferably ‘without a fuss’.\n\nThe board wants to keep the young, well-educated people. ‘That's where our future is.’ But Thomas also knows the older operators who have stood on this floor for thirty years, their knees worn out. For them a new job is almost impossible to find.\n\nHe can write a plan that gives the company the best chance of survival, or a plan that spares the most vulnerable as much as possible. Both can be defended, and both leave victims behind. Which future weighs more: that of the company, or that of the people who built it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A reorganisation involves the board, a hundred and fifty employees and dismissal rules; Thomas is not deciding only about a conflict between two people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS04-een-op-de-drie.jpg",
+      "altNl": "Anonieme werksituatie: een op de drie",
+      "altEn": "Anonymous workplace scene: een op de drie",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 130,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS04",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps05",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Jong, mannelijk, commercieel",
+      "verhaal": "De verkoop van droneonderdelen schiet omhoog. Het hoofd Sales stuurt Noor, recruiter, een appje: ‘Tien nieuwe mensen. Commercieel, jong, goed in Nederlands en mannelijk. Liefst vóór het kwartaal.’\n\nNoor schrijft een keurige, neutrale vacature. Maar ze weet hoe het gaat: wie niet past in zijn plaatje, haalt bij hem het tweede gesprek niet. Vorig jaar zag ze drie sterke vrouwelijke kandidaten afvallen met de opmerking ‘geen klik’. Eén van hen werkt nu bij de concurrent, als salesmanager.\n\nZe kan de werving gewoon doen en hopen dat het deze keer anders loopt. Ze kan ook het gesprek aangaan met een man die haar bonus mede bepaalt. Wanneer wordt meewerken medeplichtig?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De werkwijze van Sales, het wervingsproces en de wet op gelijke behandeling spelen wezenlijk mee; Noors keuze raakt de cultuur van het bedrijf en niet alleen één kandidaat."
+    },
+    "en": {
+      "titel": "Young, Male, Commercial",
+      "verhaal": "Sales of drone parts are shooting up. The head of Sales sends Noor, a recruiter, a message: ‘Ten new people. Commercial, young, good Dutch and male. Preferably before the end of the quarter.’\n\nNoor writes a neat, neutral job ad. But she knows how it goes: anyone who doesn't fit his picture doesn't make it to the second interview. Last year she saw three strong female candidates drop out with the remark ‘no click’. One of them now works for the competitor, as a sales manager.\n\nShe can simply do the recruiting and hope it goes differently this time. She can also raise it with a man who helps determine her bonus. When does cooperating become complicity?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The Sales department's way of working, the recruitment process and equal-treatment law play a real part; Noor's choice touches the company culture, not just one candidate."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS05-jong-mannelijk-commercieel.jpg",
+      "altNl": "Anonieme werksituatie: jong mannelijk commercieel",
+      "altEn": "Anonymous workplace scene: jong mannelijk commercieel",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 117,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS05",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps06",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Achter de AI-trein",
+      "verhaal": "Iedereen moet op hoog niveau met AI leren werken, zo heeft de directie besloten. Marieke, hoofd HR, krijgt één budget en één jaar. Snel rekent ze uit dat het geld niet voor iedereen genoeg is.\n\nDe consultant adviseert: investeer in wie het snelst rendement oplevert. Maar Marieke denkt aan Ria van de planning, zestig, die nog steeds alles in Excel uitprint. En aan de jongens van de expeditie, die nooit voor een cursus worden gevraagd.\n\nWie achterblijft, wordt over twee jaar ‘niet meer passend’ genoemd. Dat weet iedereen, al zegt niemand het hardop. Moet Marieke investeren in wie het snelst rendeert, of in wie anders achterblijft?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Budget, directiebesluit en bedrijfscultuur bepalen wie meekomt; Marieke weegt een organisatiekeuze, geen persoonlijke keuze tussen twee mensen."
+    },
+    "en": {
+      "titel": "Left Behind by the AI Train",
+      "verhaal": "Everyone has to learn to work with AI at a high level, the board has decided. Marieke, head of HR, gets one budget and one year. She quickly calculates that the money won't be enough for everyone.\n\nThe consultant advises: invest in those who deliver returns fastest. But Marieke thinks of Ria in planning, sixty, who still prints everything out in Excel. And of the guys in dispatch, who are never asked to join a course.\n\nThose who fall behind will be called ‘no longer suitable’ in two years. Everyone knows it, though nobody says it out loud. Should Marieke invest in those who pay back fastest, or in those who would otherwise be left behind?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Budget, board decision and company culture determine who keeps up; Marieke weighs an organisational choice, not a personal choice between two people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS06-achter-de-ai-trein.jpg",
+      "altNl": "Anonieme werksituatie: achter de ai trein",
+      "altEn": "Anonymous workplace scene: achter de ai trein",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS06",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps07",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Hulp van de neefjes",
+      "verhaal": "Het is hoogzomer en de productie ligt half stil door vakanties. Collega’s draaien dubbele diensten; twee van hen hebben hun gezinsvakantie al afgezegd. Dan heeft de directeur een idee: zijn neefjes van dertien willen best komen helpen.\n\nSem, HR-adviseur, zegt meteen dat lopendebandwerk voor kinderen niet kan. De directeur knikt. ‘Dan laten we ze dozen vouwen in de kantine. Drie uurtjes per dag. Wat is daar nou mis mee?’ De jongens staan al te popelen.\n\nSem weet niet precies waar de grens ligt. Hij weet wel dat de directeur hem ooit een kans gaf die niemand anders hem gaf, en dat zijn uitgeputte collega’s snakken naar lucht. Moet Sem zijn twijfels uitspreken, terwijl iedereen om hem heen opgelucht lijkt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De directeur, de arbeidswetgeving voor jongeren en de druk op het team spelen wezenlijk mee; Sem beslist binnen een organisatie waarin zijn twijfel iets kost."
+    },
+    "en": {
+      "titel": "Help from the Nephews",
+      "verhaal": "It is high summer and production is half stalled by holidays. Colleagues are working double shifts; two of them have already cancelled their family holiday. Then the director has an idea: his thirteen-year-old nephews would be happy to help out.\n\nSem, an HR advisor, says right away that assembly-line work for children is out of the question. The director nods. ‘Then we'll have them fold boxes in the canteen. Three hours a day. What's wrong with that?’ The boys are already eager.\n\nSem doesn't know exactly where the line lies. He does know the director once gave him a chance nobody else would, and that his exhausted colleagues are gasping for air. Should Sem voice his doubts while everyone around him seems relieved?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The director, youth employment rules and the pressure on the team play a real part; Sem decides inside an organisation where voicing doubt has a price."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS07-hulp-van-de-neefjes.jpg",
+      "altNl": "Anonieme werksituatie: hulp van de neefjes",
+      "altEn": "Anonymous workplace scene: hulp van de neefjes",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 119,
+      "woordenEn": 123,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS07",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps09",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het flesje van de band",
+      "verhaal": "In de brouwerij is het al jaren gewoonte: wie dorst heeft, pakt een flesje van de band. Overdag een stuk of vier, ’s nachts het dubbele. Het management weet het en kijkt weg. Het verzuim is hoog, en bij Wim, zesenvijftig, is net levercirrose vastgesteld.\n\nRuud, de nieuwe HR-adviseur, wil een alcoholbeleid. De directie is enthousiast: ‘Nultolerantie. Wie nog drinkt, vliegt eruit.’\n\nMaar Ruud weet dat een deel van de ploeg verslaafd is geraakt aan een gewoonte die het bedrijf zelf in stand hield. Strengheid beschermt de gezondheid, maar treft vooral wie al het meest beschadigd is. Mag een bedrijf straffen voor een gewoonte die het jarenlang heeft gedoogd?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een jarenlange bedrijfsgewoonte, de directie en het alcoholbeleid spelen wezenlijk mee; Ruuds keuze raakt de cultuur van de hele ploeg."
+    },
+    "en": {
+      "titel": "The Bottle from the Line",
+      "verhaal": "In the brewery it has been a habit for years: if you're thirsty, you take a bottle off the line. Around four during the day, double that at night. Management knows and looks the other way. Absenteeism is high, and Wim, fifty-six, has just been diagnosed with cirrhosis of the liver.\n\nRuud, the new HR advisor, wants an alcohol policy. The board is enthusiastic: ‘Zero tolerance. Anyone who still drinks is out.’\n\nBut Ruud knows that part of the crew has become addicted to a habit the company itself kept alive. Strictness protects health, but mostly hits those who are already the most damaged. May a company punish a habit it tolerated for years?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A years-old company habit, the board and the alcohol policy play a real part; Ruud's choice affects the culture of the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS09-het-flesje-van-de-band.jpg",
+      "altNl": "Anonieme werksituatie: het flesje van de band",
+      "altEn": "Anonymous workplace scene: het flesje van de band",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 114,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS09",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps10",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De laatste met wie",
+      "verhaal": "Jalila werkt vier weken als secretaresse bij Joost, de eigenaar van een klein installatiebedrijf. Vanaf dag één maakt hij opmerkingen over haar uiterlijk. Als hij haar mee uit vraagt, zegt ze: ‘Joost, jij bent de laatste met wie ik op date zou gaan.’ De volgende ochtend hoort ze dat haar contract niet wordt verlengd ‘wegens functioneren’.\n\nZe zoekt Esther op, de externe HR-adviseur van het bedrijf. Jalila wil geen klacht indienen. Ze wil alleen haar baan houden en vraagt Esther om het ‘stil te regelen’.\n\nEsther werkt al jaren voor Joost en weet dat Jalila niet de eerste is. Kan Esther doen wat Jalila vraagt, als dat betekent dat Joost gewoon doorgaat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Esther werkt voor de eigenaar die de grens overschrijdt; de organisatie, haar opdrachtgever en de wet tegen ongewenst gedrag spelen wezenlijk mee."
+    },
+    "en": {
+      "titel": "The Last Person I'd Date",
+      "verhaal": "Jalila has worked for four weeks as a secretary for Joost, the owner of a small installation company. From day one he makes comments about her appearance. When he asks her out, she says: ‘Joost, you're the last person I'd go on a date with.’ The next morning she hears her contract won't be renewed ‘due to performance’.\n\nShe goes to Esther, the company's external HR advisor. Jalila doesn't want to file a complaint. She only wants to keep her job and asks Esther to ‘settle it quietly’.\n\nEsther has worked for Joost for years and knows Jalila is not the first. Can Esther do what Jalila asks, if it means Joost just carries on?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Esther works for the owner who crosses the line; the organisation, her client and the law on unwanted behaviour play a real part."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS10-de-laatste-met-wie.jpg",
+      "altNl": "Anonieme werksituatie: de laatste met wie",
+      "altEn": "Anonymous workplace scene: de laatste met wie",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 115,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS10",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps11",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een tweede kans op Sales",
+      "verhaal": "Het UWV belt Daan, HR-adviseur, met een kandidaat voor de onderbezette salesadministratie: Marco, die na een ernstig auto-ongeluk aan het re-integreren is. Gemotiveerd, ervaren, maar nog wisselend belastbaar.\n\nHet hoofd Sales wil er niets van weten. ‘Mijn team zit al op zijn tandvlees. Ik heb iemand nodig die meteen draait, niet iemand die we moeten begeleiden.’ Twee van zijn medewerkers zijn het afgelopen jaar al overspannen uitgevallen.\n\nDaan gelooft in tweede kansen, en het bedrijf zegt in elk jaarverslag dat het inclusief wil zijn. Maar ook het hoofd Sales heeft een punt: een team dat zelf omvalt, kan niemand opvangen. Wiens kwetsbaarheid gaat hier voor?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het UWV, het hoofd Sales en het inclusiebeleid van het bedrijf spelen wezenlijk mee; Daan beslist niet alleen over een keuze tussen twee mensen."
+    },
+    "en": {
+      "titel": "A Second Chance in Sales",
+      "verhaal": "The UWV (the Dutch employee insurance agency) calls Daan, an HR advisor, with a candidate for the understaffed sales administration: Marco, who is reintegrating after a serious car accident. Motivated, experienced, but his capacity still varies.\n\nThe head of Sales wants nothing to do with it. ‘My team is already running on fumes. I need someone who delivers right away, not someone we have to coach.’ Two of his employees have already dropped out with burnout this past year.\n\nDaan believes in second chances, and the company says in every annual report that it wants to be inclusive. But the head of Sales has a point too: a team that is itself collapsing cannot support anyone. Whose vulnerability comes first here?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The UWV, the head of Sales and the company's inclusion policy play a real part; Daan is not deciding only between two people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS11-een-tweede-kans-op-sales.jpg",
+      "altNl": "Anonieme werksituatie: een tweede kans op sales",
+      "altEn": "Anonymous workplace scene: een tweede kans op sales",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 121,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS11",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps15",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Er is voorzien in de vacature",
+      "verhaal": "Eva is gemotiveerd, ambitieus en dol op mode. Ze zit midden in haar transitie van man naar vrouw en mist geen enkele afspraak in het voortraject. Ahmed, haar jobcoach, ziet het talent. Toch komt na elk sollicitatiegesprek dezelfde mail: ‘Er is inmiddels voorzien in de vacature.’\n\nAhmed weet dat die vacatures nog openstaan. Een bevriende winkelmanager zegt het eerlijk: ‘Klanten zijn er nog niet klaar voor.’\n\nAhmed kan Eva adviseren voorlopig minder op te vallen, wat haar kansen vergroot maar haar iets ontneemt. Hij kan de werkgevers aanspreken, wat het netwerk raakt waar zijn andere cliënten van afhankelijk zijn. Moet Ahmed Eva helpen zich aan te passen, of moet de arbeidsmarkt veranderen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Het dilemma raakt het recht op gelijke behandeling van transgender personen; de oorzaak ligt in arbeidsmarkt en maatschappelijke normen, buiten het bereik van Ahmed of één werkgever."
+    },
+    "en": {
+      "titel": "The Vacancy Has Been Filled",
+      "verhaal": "Eva is motivated, ambitious and crazy about fashion. She is in the middle of her transition from man to woman and misses no appointment in the preparatory programme. Ahmed, her job coach, sees the talent. Yet after every job interview the same email arrives: ‘The vacancy has in the meantime been filled.’\n\nAhmed knows those vacancies are still open. A friendly shop manager puts it honestly: ‘Customers aren't ready for it yet.’\n\nAhmed can advise Eva to stand out less for now, which improves her chances but takes something from her. He can confront the employers, which affects the network his other clients depend on. Should Ahmed help Eva adapt, or should the labour market change?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The dilemma touches the right of transgender people to equal treatment; its cause lies in the labour market and social norms, beyond the reach of Ahmed or a single employer."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS15-er-is-voorzien-in-de-vacature.jpg",
+      "altNl": "Anonieme werksituatie: er is voorzien in de vacature",
+      "altEn": "Anonymous workplace scene: er is voorzien in de vacature",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS15",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hrm-ps16",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Coulant",
+      "verhaal": "Kevin, kandidaat in een proefplaatsing van twee maanden, kan sleutelen als de beste. Alleen ’s ochtends gaat het mis: drie keer per week komt hij een halfuur te laat. Lisa, zijn jobcoach, hoort het bij haar bezoek aan het technische bedrijf.\n\nDe werkgever haalt zijn schouders op. ‘Ach, hij doet het verder prima. Ik ben er coulant in.’ Kevin glimt, hij voelt zich eindelijk ergens welkom.\n\nLisa weet hoe het vaak afloopt: zodra de proefplaatsing een contract wordt, verandert ‘coulant’ in ‘niet betrouwbaar’. Als ze nu ingrijpt, verstoort ze een warme start. Als ze het laat lopen, valt hij misschien later hard. Moet Lisa een goede start verstoren om een latere val te voorkomen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Lisa beslist zelf, nu, of ze een goede start verstoort om een latere val te voorkomen; het is een directe keuze zonder dat een regel of instantie die overneemt."
+    },
+    "en": {
+      "titel": "Lenient",
+      "verhaal": "Kevin, a candidate on a two-month trial placement, is a brilliant mechanic. Only the mornings go wrong: three times a week he arrives half an hour late. Lisa, his job coach, hears about it during her visit to the technical company.\n\nThe employer shrugs. ‘Oh, he's doing fine otherwise. I'm being lenient about it.’ Kevin beams; he finally feels welcome somewhere.\n\nLisa knows how it often ends: once the trial placement becomes a contract, ‘lenient’ turns into ‘not reliable’. If she steps in now, she disrupts a warm start. If she lets it run, he may fall hard later. Should Lisa disturb a good start to prevent a later fall?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Lisa decides for herself, now, whether to disturb a good start to prevent a later fall; it is a direct choice with no rule or institution taking it over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS16-coulant.jpg",
+      "altNl": "Anonieme werksituatie: coulant",
+      "altEn": "Anonymous workplace scene: coulant",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 110,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS16",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps17",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Welkom, aan de slag",
+      "verhaal": "International Sales gaat verdubbelen: twaalf nieuwe collega’s uit vijf landen, binnen drie maanden. Iris, HR-adviseur, krijgt de opdracht de onboarding te regelen, zonder extra budget en zonder extra tijd.\n\nDe salesdirecteur is duidelijk: ‘Ze zijn professionals. Laptop mee, accounts aan en meteen de markt op.’ Iris weet hoe het vorig jaar ging: twee nieuwe collega’s uit het buitenland zaten na drie maanden eenzaam en uitgeput in een kale huurkamer. Een van hen vertrok.\n\nZe kan haar avonden opofferen om het toch goed te doen, of de directeur laten voelen wat ‘zonder budget’ betekent voor mensen die net hun land hebben verlaten. Wie betaalt de prijs van een snelle start?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Budget, directie en onboardingbeleid spelen wezenlijk mee; Iris beslist binnen een organisatie die het vertrek van nieuwe collega's al eerder liet gebeuren."
+    },
+    "en": {
+      "titel": "Welcome, Get Started",
+      "verhaal": "International Sales is going to double: twelve new colleagues from five countries within three months. Iris, an HR advisor, is told to arrange the onboarding, without extra budget and without extra time.\n\nThe sales director is clear: ‘They're professionals. Laptop, accounts, and straight into the market.’ Iris remembers how it went last year: two new colleagues from abroad sat lonely and exhausted in a bare rented room after three months. One of them left.\n\nShe can sacrifice her evenings to do it properly anyway, or let the director feel what ‘no budget’ means for people who have just left their country. Who pays the price of a fast start?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Budget, the board and onboarding policy play a real part; Iris decides inside an organisation that has already let new colleagues leave before."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS17-welkom-aan-de-slag.jpg",
+      "altNl": "Anonieme werksituatie: welkom aan de slag",
+      "altEn": "Anonymous workplace scene: welkom aan de slag",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 109,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS17",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps19",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het gat in het loongebouw",
+      "verhaal": "Yara heeft haar eerste HR-baan bij een snelgroeiend bedrijf. Ze brengt in kaart wie wat doet en wat iedereen verdient. Het plaatje is rommelig: dezelfde functies, verschillende salarissen.\n\nDan belt de operationeel manager. Hij heeft dringend een planner nodig en heeft al een kandidaat. ‘Ze wil vijfhonderd euro meer dan onze huidige planners. Regel het maar, anders gaat ze naar de concurrent.’\n\nYara denkt aan Jeanine, die al acht jaar planner is en nooit om opslag vroeg. Als ze ja zegt, is de vacature morgen vervuld en wordt het loongebouw nog schever. Zegt ze nee, dan staat de planning straks stil. Wat is eerlijker: de nieuwe goed betalen, of de oude niet passeren?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het loongebouw, de operationeel manager en collega's die al jaren meedraaien spelen wezenlijk mee; Yara's keuze raakt de beloningscultuur van het bedrijf."
+    },
+    "en": {
+      "titel": "The Gap in the Pay Structure",
+      "verhaal": "Yara has her first HR job at a fast-growing company. She maps out who does what and what everyone earns. The picture is messy: the same jobs, different salaries.\n\nThen the operations manager calls. He urgently needs a planner and already has a candidate. ‘She wants five hundred euros more than our current planners. Sort it out, or she goes to the competition.’\n\nYara thinks of Jeanine, who has been a planner for eight years and never asked for a raise. If she says yes, the vacancy is filled tomorrow and the pay structure becomes even more uneven. If she says no, the planning will soon stand still. What is fairer: paying the newcomer well, or not passing over the old hand?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The pay structure, the operations manager and colleagues who have been there for years play a real part; Yara's choice affects the company's reward culture."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS19-het-gat-in-het-loongebouw.jpg",
+      "altNl": "Anonieme werksituatie: het gat in het loongebouw",
+      "altEn": "Anonymous workplace scene: het gat in het loongebouw",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 122,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS19",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps20",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Vijftig brieven",
+      "verhaal": "Op een simpele vacature komen ineens vijftig sollicitaties binnen. Milan, junior HR-medewerker, krijgt het proces in handen. Zijn leidinggevende geeft een tip: ‘Lees de eerste twintig, de rest krijgt een standaardafwijzing. Niemand leest alles.’\n\nMilan bladert door de stapel. Brief achtendertig is van een vrouw van vijfenvijftig die twee jaar mantelzorger was. Brief zevenenveertig is van een statushouder met een ijzersterke motivatie. Allebei zouden ze in de stapel van ‘de rest’ belanden.\n\nAlles zorgvuldig lezen kost hem drie avonden die hij eigenlijk niet heeft. Afwijzen zonder te lezen voelt als een loterij met andermans toekomst. Hoeveel ben jij iemand verschuldigd die je nooit zult ontmoeten?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Milan beslist zelf hoe zorgvuldig hij leest; geen regel of instantie neemt de keuze over, het gaat om wat hij onbekenden verschuldigd is."
+    },
+    "en": {
+      "titel": "Fifty Letters",
+      "verhaal": "A simple job ad suddenly draws fifty applications. Milan, junior HR employee, is handed the process. His supervisor gives a tip: ‘Read the first twenty, the rest get a standard rejection. Nobody reads everything.’\n\nMilan flips through the pile. Letter thirty-eight is from a fifty-five-year-old woman who spent two years as a carer. Letter forty-seven is from a refugee with a rock-solid motivation. Both would end up in the pile of ‘the rest’.\n\nReading everything carefully costs him three evenings he doesn't really have. Rejecting without reading feels like a lottery with someone else's future. How much do you owe someone you will never meet?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Milan decides for himself how carefully he reads; no rule or institution takes the choice over, it is about what he owes people he will never meet."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS20-vijftig-brieven.jpg",
+      "altNl": "Anonieme werksituatie: vijftig brieven",
+      "altEn": "Anonymous workplace scene: vijftig brieven",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 105,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS20",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps21",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een bekend gezicht",
+      "verhaal": "Jesse werkt pas twee weken als HR-medewerker als zijn leidinggevende plotseling uitvalt. Over drie dagen staan de eerste sollicitatiegesprekken gepland; hij moet ze alleen voeren.\n\nOp de lijst ziet hij een naam die hij kent: Robin, zijn oud-huisgenoot. Ze hebben ruzie gehad, iets over geld, en sindsdien geen woord meer gewisseld. Robin is op papier een sterke kandidaat.\n\nJesse zou zich kunnen terugtrekken, maar er is niemand anders. Dan schuiven alle gesprekken weken op en haken goede kandidaten af. Als hij het gesprek voert, weet hij niet zeker of hij Robin eerlijk beoordeelt. Wanneer is je eigen oordeel nog te vertrouwen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Jesse beslist zelf of hij Robin eerlijk kan beoordelen; het is een persoonlijke afweging tussen eigen oordeel en tijdsdruk, zonder dat een regel of organisatie de keuze overneemt."
+    },
+    "en": {
+      "titel": "A Familiar Face",
+      "verhaal": "Jesse has worked as an HR employee for only two weeks when his supervisor suddenly drops out. In three days the first job interviews are scheduled; he has to conduct them alone.\n\nOn the list he sees a name he knows: Robin, his former housemate. They had a fight, something about money, and haven't exchanged a word since. On paper Robin is a strong candidate.\n\nJesse could withdraw, but there is nobody else. Then all the interviews shift by weeks and good candidates drop out. If he conducts the interview, he isn't sure he will assess Robin fairly. When can you still trust your own judgement?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Jesse decides for himself whether he can judge Robin fairly; it is a personal weighing of his own judgement against time pressure, with no rule or organisation taking the choice over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS21-een-bekend-gezicht.jpg",
+      "altNl": "Anonieme werksituatie: een bekend gezicht",
+      "altEn": "Anonymous workplace scene: een bekend gezicht",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 106,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS21",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps22",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Gratis proefdraaien",
+      "verhaal": "Het productiebedrijf zoekt dringend mensen voor montage en verpakking. Een werkconsulent van de gemeente stelt Ricardo voor, iemand uit het doelgroepregister. Eerst een proefplaatsing met behoud van uitkering, daarna een loonwaardemeting en loonkostensubsidie.\n\nDe productiemanager rekent het snel uit en glimlacht. ‘Twee maanden gratis. En als het niets is, nemen we de volgende.’ Rianne, HR-adviseur, hoort wat hij bedoelt. Ze heeft het bij een vorige werkgever zien gebeuren: vier proefplaatsingen op rij, geen enkel contract.\n\nDe regeling is bedoeld om mensen een kans te geven, maar kan ook een draaideur van gratis arbeid worden. Weigert Rianne, dan krijgt Ricardo misschien helemaal geen kans. Is een kans nog een kans als de regels uitnodigen tot misbruik?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De regeling zelf nodigt uit tot een draaideur van gratis arbeid; het dilemma komt voort uit wet- en beleidskaders buiten het bereik van Rianne of één organisatie."
+    },
+    "en": {
+      "titel": "Free Trial Run",
+      "verhaal": "The production company urgently needs people for assembly and packaging. A job consultant from the municipality proposes Ricardo, someone from the target group register. First a trial placement while keeping his benefit, then a wage-value assessment and wage-cost subsidy.\n\nThe production manager does the maths quickly and smiles. ‘Two months for free. And if it doesn't work out, we take the next one.’ Rianne, an HR advisor, hears what he means. At a previous employer she saw it happen: four trial placements in a row, not a single contract.\n\nThe scheme is meant to give people a chance, but it can also become a revolving door of free labour. If Rianne refuses, Ricardo may get no chance at all. Is a chance still a chance when the rules invite abuse?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The scheme itself invites a revolving door of free labour; the dilemma stems from legal and policy frameworks beyond the reach of Rianne or a single organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS22-gratis-proefdraaien.jpg",
+      "altNl": "Anonieme werksituatie: gratis proefdraaien",
+      "altEn": "Anonymous workplace scene: gratis proefdraaien",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 130,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS22",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hrm-ps23",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Werk op maat",
+      "verhaal": "Ingrid, administratief medewerker in het ziekenhuis, klaagt veel, verzuimt vaak en is soms niet vooruit te branden. Toch ziet Bram, HR-adviseur, haar talent: niemand regelt een complexe planning zo snel als zij. Met jobcrafting wil hij haar werk opnieuw vormgeven.\n\nIngrid fleurt op. Ze wil de planningen doen en af van de balie en de telefoon. Haar teamleider is voorzichtig: ‘Dan gaan die taken naar de rest. En die werken al hard.’\n\nBram ziet het dilemma scherp. Werk op maat voor de één kan meer last voor de ander betekenen, juist voor collega’s die nooit klagen. Is het eerlijk om iemand te belonen die zich laat horen, terwijl wie zwijgt het werk overneemt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Teamleider, collega's en de werkverdeling spelen wezenlijk mee; Brams keuze raakt de verdeling van lasten in het team."
+    },
+    "en": {
+      "titel": "Tailor-Made Work",
+      "verhaal": "Ingrid, an administrative employee at the hospital, complains a lot, is often absent and sometimes can't be motivated at all. Still, Bram, an HR advisor, sees her talent: nobody sorts out a complex schedule as fast as she does. With job crafting he wants to reshape her work.\n\nIngrid brightens up. She wants to do the scheduling and be rid of the front desk and the phone. Her team leader is cautious: ‘Then those tasks go to the rest. And they're already working hard.’\n\nBram sees the dilemma clearly. Work tailored for one person can mean more burden for another, precisely for colleagues who never complain. Is it fair to reward someone who makes herself heard, while those who stay quiet take over the work?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The team leader, colleagues and the division of work play a real part; Bram's choice affects how burdens are shared in the team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS23-werk-op-maat.jpg",
+      "altNl": "Anonieme werksituatie: werk op maat",
+      "altEn": "Anonymous workplace scene: werk op maat",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 125,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS23",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps24",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Representatief",
+      "verhaal": "Een grote klant, goed voor bijna een derde van de omzet, vraagt het uitzendbureau om tien administratief medewerkers. ‘Nederlandstalig, representatief, goede omgangsvormen.’ In een telefoontje wordt het accountmanager Chantal duidelijk wat ze werkelijk bedoelen: jong, wit, man, zonder beperking.\n\nHaar directeur zegt dat ze ‘slim moet selecteren, zonder iets op papier te zetten’. Raakt het bureau deze klant kwijt, dan staan er collega’s op straat. Op Chantals scherm staat al een shortlist, met een paar uitstekende kandidaten die niet in dat plaatje passen.\n\nChantal kan meegaan en de klant tevreden houden. Of ze weigert en riskeert het werk van haar collega’s. Wat doet Chantal, als haar eerlijkheid het werk van haar collega’s op het spel zet?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Klant, directie en collega's van het bureau spelen wezenlijk mee, en discriminatie bij werving is wettelijk verboden; Chantals keuze raakt meer dan haar eigen geweten."
+    },
+    "en": {
+      "titel": "Presentable",
+      "verhaal": "A major client, responsible for nearly a third of turnover, asks the temp agency for ten administrative employees. ‘Dutch-speaking, presentable, good manners.’ In a phone call it becomes clear to account manager Chantal what they really mean: young, white, male, without disability.\n\nHer director says she must ‘select smartly, without putting anything on paper’. If the agency loses this client, colleagues will be out on the street. On Chantal's screen is already a shortlist, with a few excellent candidates who don't fit that picture.\n\nChantal can go along and keep the client satisfied. Or she can refuse and risk her colleagues' jobs. What does Chantal do when her honesty puts her colleagues' work at stake?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The client, management and the agency's colleagues play a real part, and discrimination in recruitment is prohibited by law; Chantal's choice involves more than her own conscience."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS24-representatief.jpg",
+      "altNl": "Anonieme werksituatie: representatief",
+      "altEn": "Anonymous workplace scene: representatief",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 116,
+      "woordenEn": 115,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS24",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps25",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het vervuilende deel",
+      "verhaal": "Gerard werkt als HR-adviseur bij een productiebedrijf met tweehonderd medewerkers. Iedereen weet dat het bedrijf het niet zo nauw neemt met de milieuvoorschriften. Komt de inspectie, dan volgen stillegging, torenhoge boetes en waarschijnlijk een faillissement.\n\nNu moet Gerard de ondernemingsraad informeren over uitbreidingsplannen. Die gaan uitgerekend over de meest vervuilende en minst veilige productielijn. De directeur heeft zijn concepttekst al ‘wat ingekort’.\n\nVertelt Gerard de OR het hele verhaal, dan kan dat het einde betekenen van tweehonderd banen, ook die van hemzelf. Zwijgt hij, dan groeit een risico voor omwonenden en collega’s. Hoeveel banen mag een stilte kosten, en hoeveel gezondheid?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Het dilemma gaat over milieuwetgeving en handhaving, waar de gezondheid van omwonenden en tweehonderd banen tegenover staan; de oplossing ligt buiten het bereik van Gerard alleen."
+    },
+    "en": {
+      "titel": "The Polluting Part",
+      "verhaal": "Gerard works as an HR advisor at a manufacturing company with two hundred employees. Everyone knows the company doesn't take environmental regulations very seriously. If the inspectorate comes, closure, sky-high fines and probably bankruptcy follow.\n\nNow Gerard has to inform the works council about expansion plans. They concern precisely the most polluting and least safe production line. The director has already ‘shortened’ his draft text a bit.\n\nIf Gerard tells the works council the whole story, it could mean the end of two hundred jobs, his own included. If he stays silent, a risk grows for residents and colleagues. How many jobs may a silence cost, and how much health?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The dilemma concerns environmental law and enforcement, with residents' health and two hundred jobs at stake; the solution lies beyond Gerard's reach alone."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS25-het-vervuilende-deel.jpg",
+      "altNl": "Anonieme werksituatie: het vervuilende deel",
+      "altEn": "Anonymous workplace scene: het vervuilende deel",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 110,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS25",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hrm-ps26",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Aan de verjaardagstafel",
+      "verhaal": "Bij HR wordt in het grootste geheim een reorganisatie voorbereid. Er verdwijnen tientallen banen. Sanne heeft de lijst gezien. Haar oom en haar nicht staan erop.\n\nOp de verjaardag van haar moeder schuift haar oom naast haar. ‘Er wordt van alles gezegd op de zaak. Jij zit er toch dichtbij? Moeten we ons zorgen maken?’ Haar nicht kijkt mee; ze heeft net een huis gekocht.\n\nSanne heeft geheimhouding beloofd, en een lek kan onrust en problemen met de vakbond veroorzaken. Maar hier zitten mensen van wie ze houdt, die misschien op tijd een andere baan zouden kunnen zoeken. Wat is Sanne verschuldigd aan haar familie, en wat aan haar werkgever?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Sanne beslist zelf, aan tafel, tussen geheimhouding en loyaliteit aan haar familie; geen instantie neemt de keuze over."
+    },
+    "en": {
+      "titel": "At the Birthday Table",
+      "verhaal": "At HR a reorganisation is being prepared in the greatest secrecy. Dozens of jobs will disappear. Sanne has seen the list. Her uncle and her cousin are on it.\n\nAt her mother's birthday her uncle sits down next to her. ‘They're saying all sorts of things at the company. You're close to it, aren't you? Should we be worried?’ Her cousin looks on; she has just bought a house.\n\nSanne has promised confidentiality, and a leak could cause unrest and trouble with the union. But here sit people she loves, who might still find another job in time. What does Sanne owe her family, and what does she owe her employer?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Sanne decides for herself, at the table, between confidentiality and loyalty to her family; no institution takes the choice over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS26-aan-de-verjaardagstafel.jpg",
+      "altNl": "Anonieme werksituatie: aan de verjaardagstafel",
+      "altEn": "Anonymous workplace scene: aan de verjaardagstafel",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS26",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps27",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Eerste baan, eerste klap",
+      "verhaal": "Angelo is net afgestudeerd en werkt drie weken bij het bedrijf. Hij is nog zoekende. Zijn teamleider loopt langs, ziet een half afgemaakt rapport en valt hem waar iedereen bij is hard aan. Angelo kijkt de rest van de dag naar zijn scherm, rode vlekken in zijn nek.\n\nEen uur later belt de teamleider Nadia, HR-adviseur. ‘Ik wil zijn contract per direct ontbinden. Hij is het niet.’\n\nNadia weet dat het juridisch kan, binnen de proeftijd. Ze weet ook dat Angelo nooit een eerlijke kans heeft gehad, en dat de uitbarsting meer zegt over de teamleider dan over Angelo. Moet Nadia doen wat juridisch mag, of wat eerlijk voelt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De teamleider, de proeftijdregels en het werkklimaat spelen wezenlijk mee; Nadia's keuze raakt hoe de organisatie met nieuwe mensen omgaat."
+    },
+    "en": {
+      "titel": "First Job, First Blow",
+      "verhaal": "Angelo has just graduated and has worked at the company for three weeks. He is still finding his feet. His team leader walks by, sees a half-finished report and attacks him harshly in front of everyone. Angelo stares at his screen for the rest of the day, red blotches on his neck.\n\nAn hour later the team leader calls Nadia, an HR advisor. ‘I want his contract terminated immediately. He's not it.’\n\nNadia knows it is legally possible, within the probation period. She also knows Angelo never had a fair chance, and that the outburst says more about the team leader than about Angelo. Should Nadia do what is legally allowed, or what feels fair?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The team leader, probation rules and the working climate play a real part; Nadia's choice affects how the organisation treats new people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS27-eerste-baan-eerste-klap.jpg",
+      "altNl": "Anonieme werksituatie: eerste baan eerste klap",
+      "altEn": "Anonymous workplace scene: eerste baan eerste klap",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 115,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS27",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps28",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Meteen online",
+      "verhaal": "Het is de drukste zomer in jaren en de luchtvaartmaatschappij heeft overal personeelstekort. Sara, recruiter, krijgt een vacaturetekst van een directeur met één eis: vandaag nog online.\n\nSara leest mee en schrikt. ‘Wij zoeken een jonge, dynamische native speaker voor ons frisse team.’ Ze weet dat zo’n tekst oudere kandidaten en mensen met een migratieachtergrond ontmoedigt, en juridisch op het randje is.\n\nDe directeur reageert kortaf: ‘Geen tijd voor taalpolitie. Zet het erop.’ Ze kan zijn tekst plaatsen en de vacatures sneller vullen, of vertragen en een machtige collega tegen zich in het harnas jagen. Wanneer wordt haast een excuus om anderen uit te sluiten?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een directeur met macht, de wet op gelijke behandeling en een krappe arbeidsmarkt spelen wezenlijk mee; Sara beslist binnen een organisatie, niet alleen voor zichzelf."
+    },
+    "en": {
+      "titel": "Online Immediately",
+      "verhaal": "It is the busiest summer in years and the airline has staff shortages everywhere. Sara, a recruiter, receives a job ad text from a director with one requirement: online today.\n\nSara reads along and is alarmed. ‘We are looking for a young, dynamic native speaker for our fresh team.’ She knows such a text discourages older candidates and people with a migration background, and is legally borderline.\n\nThe director replies curtly: ‘No time for the language police. Put it up.’ She can post his text and fill the vacancies faster, or delay and set a powerful colleague against her. When does haste become an excuse to exclude others?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A powerful director, equal-treatment law and a tight labour market play a real part; Sara decides inside an organisation, not just for herself."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS28-meteen-online.jpg",
+      "altNl": "Anonieme werksituatie: meteen online",
+      "altEn": "Anonymous workplace scene: meteen online",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 108,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS28",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps29",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Kritiek op TikTok",
+      "verhaal": "Robin, collega op de afdeling, post filmpjes op TikTok en Instagram over ‘het circus’ waar hij werkt: lange wachttijden, vage leiding en loze beloftes. De filmpjes gaan rond. Sommige collega’s lachen. Anderen, die trots zijn op hun werk, voelen zich gekwetst.\n\nTim, HR-adviseur, krijgt van het management de opdracht ‘dit op te lossen’. Een officiële waarschuwing ligt al klaar, met de dreiging van ontslag bij herhaling.\n\nTim is het met een deel van Robins kritiek eens; hij heeft er zelf intern over geklaagd. Toch maken de filmpjes collega’s kapot die er niets aan kunnen doen. Waar eindigt vrije meningsuiting en begint schade aan anderen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Management, collega's en de grens tussen vrije meningsuiting en arbeidsrecht spelen wezenlijk mee; Tims keuze raakt de cultuur van de afdeling."
+    },
+    "en": {
+      "titel": "Criticism on TikTok",
+      "verhaal": "Robin, a colleague in the department, posts videos on TikTok and Instagram about ‘the circus’ where he works: long waiting times, vague leadership and empty promises. The videos go around. Some colleagues laugh. Others, who are proud of their work, feel hurt.\n\nTim, an HR advisor, is told by management to ‘fix this’. An official warning is already prepared, with the threat of dismissal if it happens again.\n\nTim agrees with part of Robin's criticism; he has complained about it internally himself. Still, the videos are wrecking colleagues who can do nothing about it. Where does free speech end and harm to others begin?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Management, colleagues and the line between free speech and employment law play a real part; Tim's choice affects the culture of the department."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS29-kritiek-op-tiktok.jpg",
+      "altNl": "Anonieme werksituatie: kritiek op tiktok",
+      "altEn": "Anonymous workplace scene: kritiek op tiktok",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 104,
+      "woordenEn": 104,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS29",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps30",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Appjes na tienen",
+      "verhaal": "Bij het bureau is iedereen fanatiek. Overwerken is normaal; om half elf ’s avonds pingen de teamapps nog. Lotte, HR-adviseur, ziet ook de andere kant: jonge ouders die zich ziek melden van vermoeidheid, oudere collega’s die de helft van de afspraken missen omdat ze niet in de groepsapp zitten.\n\nZe wil een regel: na zeven uur geen werkberichten meer. Het MT twijfelt. ‘Deze energie maakt ons groot. En de jongeren vinden het juist leuk.’\n\nLotte stuurt zelf ook weleens om elf uur nog een berichtje. Beschermt zij de kwetsbaren, of neemt zij de vrijheid weg van wie graag zo werkt? Wie bepaalt hoeveel werk iemand ’s avonds aankan?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Teamcultuur, MT en normen rond werktijden spelen wezenlijk mee; Lotte's keuze raakt de werkcultuur van het hele bureau."
+    },
+    "en": {
+      "titel": "Messages After Ten",
+      "verhaal": "At the agency everyone is driven. Working overtime is normal; at half past ten in the evening the team apps still ping. Lotte, an HR advisor, also sees the other side: young parents who call in sick from exhaustion, older colleagues who miss half the arrangements because they're not in the group chat.\n\nShe wants a rule: no work messages after seven. The management team hesitates. ‘This energy is what makes us big. And the young ones actually enjoy it.’\n\nLotte herself sometimes sends a message at eleven too. Is she protecting the vulnerable, or taking away the freedom of those who like working this way? Who decides how much work someone can handle in the evening?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Team culture, the management team and working-time norms play a real part; Lotte's choice affects the work culture of the whole agency."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS30-appjes-na-tienen.jpg",
+      "altNl": "Anonieme werksituatie: appjes na tienen",
+      "altEn": "Anonymous workplace scene: appjes na tienen",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 117,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS30",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps32",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Goede vrienden",
+      "verhaal": "Op Sales wordt gemopperd. Collega’s moeten steeds de fouten van Patrick herstellen. Teamleider Frank weet het. ‘Hij functioneert al een tijd niet. Maar ik ga hem geen verbetertraject geven. We zijn al vijftien jaar vrienden.’\n\nFrank voegt er snel aan toe dat het allemaal meevalt. ‘De sfeer is goed en iedereen heeft zijn talenten.’ Jolien, HR-adviseur, ziet ondertussen dat twee collega’s overwegen te vertrekken.\n\nIngrijpen kan de vriendschap en de goede sfeer kapotmaken, en zet Jolien recht tegenover Frank. Niets doen betekent dat anderen het werk blijven opvangen. Hoe lang mag vriendschap zwaarder wegen dan eerlijkheid naar de rest van het team?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Vriendschap met de teamleider, eerlijkheid naar het team en de bedrijfscultuur spelen wezenlijk mee; Jolien beslist binnen een organisatie met onderlinge afhankelijkheden."
+    },
+    "en": {
+      "titel": "Good Friends",
+      "verhaal": "There is grumbling in Sales. Colleagues keep having to fix Patrick's mistakes. Team leader Frank knows. ‘He hasn't been performing for a while. But I'm not going to put him on an improvement plan. We've been friends for fifteen years.’\n\nFrank quickly adds that it's not that bad. ‘The atmosphere is good and everyone has their talents.’ Jolien, an HR advisor, meanwhile sees two colleagues considering leaving.\n\nIntervening may break the friendship and the good atmosphere, and puts Jolien directly against Frank. Doing nothing means others keep absorbing the work. How long may friendship weigh more than honesty towards the rest of the team?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A friendship with the team leader, fairness to the team and the company culture play a real part; Jolien decides inside an organisation of mutual dependencies."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS32-goede-vrienden.jpg",
+      "altNl": "Anonieme werksituatie: goede vrienden",
+      "altEn": "Anonymous workplace scene: goede vrienden",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 104,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS32",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps33",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Vóór het einde van de maand",
+      "verhaal": "Ravi’s eerste echte slechtnieuwsgesprek. Hij moet Mariska vertellen dat de organisatie afscheid van haar neemt. Zijn manager wil dat het vóór het einde van de maand gebeurt, ‘voor de begroting’.\n\nEr ligt alleen geen dossier. Geen verbetertraject, geen gespreksverslag, niets. Mariska weet van niets; ze heeft vorige week nog een cursus aangevraagd.\n\nRavi weet dat het juridisch zwak staat en dat het voor Mariska als een klap uit het niets zal voelen. Zijn manager vindt dat ‘niet zijn probleem’. Ravi kan het gesprek voeren zoals gevraagd, of weigeren en zijn eigen positie riskeren. Wanneer mag een starter nee zeggen tegen zijn manager?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De manager, de begroting en het ontbreken van een dossier spelen wezenlijk mee; Ravi beslist binnen een hiërarchie waarin nee zeggen iets kost."
+    },
+    "en": {
+      "titel": "Before the End of the Month",
+      "verhaal": "Ravi's first real bad-news conversation. He has to tell Mariska that the organisation is parting with her. His manager wants it done before the end of the month, ‘for the budget’.\n\nBut there is no file. No improvement plan, no meeting notes, nothing. Mariska knows nothing; last week she even applied for a course.\n\nRavi knows it is legally weak and that it will feel to Mariska like a blow out of nowhere. His manager says that is ‘not his problem’. Ravi can hold the conversation as asked, or refuse and risk his own position. When may a newcomer say no to his manager?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The manager, the budget and the missing file play a real part; Ravi decides inside a hierarchy where saying no has a cost."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS33-voor-het-einde-van-de-maand.jpg",
+      "altNl": "Anonieme werksituatie: voor het einde van de maand",
+      "altEn": "Anonymous workplace scene: voor het einde van de maand",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 104,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS33",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps34",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Toegang geweigerd",
+      "verhaal": "Merel heeft zich grondig voorbereid op haar eerste ontslaggesprek. Over een kwartier komt Linda binnen. Dan hoort Merel dat de leidinggevende Linda vanochtend al uit alle systemen heeft gehaald.\n\nDe deur vliegt open. Linda is woedend. ‘Mijn wachtwoord werkt niet, mijn mail is weg. Word ik ontslagen? Zeg het nou gewoon!’\n\nMerel mag het pas vertellen als de leidinggevende erbij is, en die zit nog vast in een overleg aan de andere kant van het gebouw. Linda’s stem slaat over; collega’s op de gang kijken om. Ze kan Linda een kwartier aan het lijntje houden, of nu eerlijk zijn en daarmee de afgesproken procedure doorbreken. Wat is respectvoller: de procedure volgen of de waarheid vertellen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Merel beslist zelf, hier en nu, tussen de afgesproken procedure en eerlijkheid tegenover Linda; de keuze ligt direct bij haar."
+    },
+    "en": {
+      "titel": "Access Denied",
+      "verhaal": "Merel has prepared thoroughly for her first dismissal conversation. In a quarter of an hour Linda will come in. Then Merel hears that the manager has already removed Linda from all systems this morning.\n\nThe door flies open. Linda is furious. ‘My password doesn't work, my email is gone. Am I being fired? Just say it!’\n\nMerel may only tell her once the manager is present, and he is still stuck in a meeting on the other side of the building. Linda's voice cracks; colleagues in the corridor look round. She can keep Linda waiting for a quarter of an hour, or be honest now and break the agreed procedure. What is more respectful: following the procedure or telling the truth?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Merel decides for herself, here and now, between the agreed procedure and honesty towards Linda; the choice lies directly with her."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS34-toegang-geweigerd.jpg",
+      "altNl": "Anonieme werksituatie: toegang geweigerd",
+      "altEn": "Anonymous workplace scene: toegang geweigerd",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 121,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS34",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps35",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Uitgerekend nu",
+      "verhaal": "Bijna een jaar begeleidt Joris, casemanager, Wouter na een langdurige uitval. Eindelijk goed nieuws: volgens de bedrijfsarts kan Wouter over een maand voorzichtig beginnen met re-integreren.\n\nAlleen valt die maand precies samen met de uitgerekende datum van zijn vriendin. ‘Ik voel geen ruimte om dan te starten,’ zegt Wouter zacht. ‘Ik wil er voor mijn gezin zijn.’\n\nDe Wet verbetering poortwachter en de organisatie verwachten dat de re-integratie start zodra het kan. Uitstel kan Wouters herstel vertragen en risico’s opleveren voor zijn uitkering. Maar het moment is er maar één keer. Mag een re-integratieplan wijken voor het belangrijkste moment in iemands leven?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De Wet verbetering poortwachter, de bedrijfsarts en de organisatie spelen wezenlijk mee; Joris beslist niet alleen over een keuze tussen twee mensen."
+    },
+    "en": {
+      "titel": "Of All Times, Now",
+      "verhaal": "For almost a year Joris, a case manager, has been guiding Wouter after a long period of absence. Finally good news: according to the company doctor, Wouter can start carefully reintegrating in a month.\n\nBut that month coincides exactly with his partner's due date. ‘I don't feel I have room to start then,’ Wouter says softly. ‘I want to be there for my family.’\n\nThe Dutch Gatekeeper Improvement Act and the organisation expect reintegration to start as soon as possible. Postponing may slow Wouter's recovery and put his benefit at risk. But the moment only comes once. May a reintegration plan give way to the most important moment in someone's life?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The Gatekeeper Improvement Act, the company doctor and the organisation play a real part; Joris is not deciding only between two people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS35-uitgerekend-nu.jpg",
+      "altNl": "Anonieme werksituatie: uitgerekend nu",
+      "altEn": "Anonymous workplace scene: uitgerekend nu",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS35",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps36",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een projectmap en een mail",
+      "verhaal": "Alles zit mee voor Nina. Eerste baan als junior HR-medewerker, eindelijk een huis met haar vriend, de verbouwing net gestart. Dan stuurt haar manager een korte mail: zij neemt het hele Great Place to Work-traject over. De collega die het deed, is uitgevallen met een burn-out.\n\nEen projectmap, een deadline, geen uitleg. ‘Mooie kans om je te laten zien,’ schrijft de manager.\n\nNina ziet de bladzijden vol aantekeningen van haar uitgevallen collega en voelt de grond onder zich wiebelen. Ze kan ja zeggen en haar avonden en verbouwing opofferen, of nu al een grens trekken en het risico lopen als ‘weinig ambitieus’ te boek te staan. Hoe kies je tussen een kans en je eigen grens?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Nina beslist zelf of ze een kans aanneemt of een grens trekt; het is een persoonlijke afweging zonder dat een regel of instantie de keuze overneemt."
+    },
+    "en": {
+      "titel": "A Project Folder and an Email",
+      "verhaal": "Everything is going Nina's way. First job as junior HR employee, finally a house with her boyfriend, the renovation just started. Then her manager sends a short email: she is taking over the entire Great Place to Work programme. The colleague who ran it has dropped out with a burnout.\n\nA project folder, a deadline, no explanation. ‘Great chance to show yourself,’ the manager writes.\n\nNina sees the pages full of notes from her absent colleague and feels the ground wobble beneath her. She can say yes and sacrifice her evenings and her renovation, or draw a line now and risk being labelled ‘not ambitious’. How do you choose between an opportunity and your own limit?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Nina decides for herself whether to accept an opportunity or draw a line; it is a personal weighing with no rule or institution taking the choice over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS36-een-projectmap-en-een-mail.jpg",
+      "altNl": "Anonieme werksituatie: een projectmap en een mail",
+      "altEn": "Anonymous workplace scene: een projectmap en een mail",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 116,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS36",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps37",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Great Place to Work",
+      "verhaal": "Hanna komt net van de opleiding en coördineert nu het Great Place to Work-traject: de enquête, de actieplannen, het certificaat. De directie wil dat logo graag op de website.\n\nIn het voorbereidende overleg doet de financieel directeur een paar ‘slimme’ suggesties. Laat de enquête uitgaan vlak na de bonusuitbetaling. Laat de flexkrachten erbuiten, want ‘die zijn toch niet representatief’. En de afdeling met de meeste klachten: ‘die zit midden in een reorganisatie, die tellen we deze keer even niet mee’.\n\nHanna wil dat certificaat ook. Het zou haar eerste grote succes zijn. Maar ze vraagt zich af wat het nog waard is als je de meting zo inricht dat de uitkomst vooraf vaststaat. Wat is een keurmerk waard als je het zelf hebt ingekleurd?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Directie, financieel directeur en de integriteit van een keurmerk spelen wezenlijk mee; Hanna's keuze raakt de geloofwaardigheid van de hele organisatie."
+    },
+    "en": {
+      "titel": "Great Place to Work",
+      "verhaal": "Hanna has just come from her studies and now coordinates the Great Place to Work programme: the survey, the action plans, the certificate. The board would love to have that logo on the website.\n\nIn the preparatory meeting the finance director makes a few ‘smart’ suggestions. Send out the survey just after the bonus payout. Leave out the flex workers, because ‘they're not representative anyway’. And the department with the most complaints: ‘it's in the middle of a reorganisation, we'll leave it out this time’.\n\nHanna wants that certificate too. It would be her first big success. But she wonders what it is worth if you set up the measurement so the outcome is fixed in advance. What is a quality mark worth if you've coloured it in yourself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The board, the finance director and the integrity of a quality mark play a real part; Hanna's choice affects the credibility of the whole organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS37-great-place-to-work.jpg",
+      "altNl": "Anonieme werksituatie: great place to work",
+      "altEn": "Anonymous workplace scene: great place to work",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 124,
+      "woordenEn": 129,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS37",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps38",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Ziek van het nieuws",
+      "verhaal": "Na drie maanden zonder verbetering hoort Erik in een rustig gesprek dat zijn jaarcontract niet wordt verlengd. Mark, HR-adviseur, zit erbij. Op de werkvloer roept Erik dat hij ‘vernederd’ is en zich ‘wel ziek zal melden van de stress’.\n\nDe volgende ochtend is zijn werkplek leeg, zijn jas hangt nog aan de haak. Ziekmelding: psychische klachten, veroorzaakt door het werk.\n\nHet hoofd productie is woedend. ‘Toneelspel. Stop zijn loon maar.’ Mark twijfelt. Misschien is het een strategische zet. Misschien is Erik echt ingestort. Een loonstop kan terecht zijn of een zieke man nog verder kapotmaken. Hoe behandel je een ziekmelding waarvan je vermoedt dat die niet klopt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het hoofd productie, de verzuimregels en de bedrijfsarts spelen wezenlijk mee; Mark beslist binnen een organisatie met procedures en belangen."
+    },
+    "en": {
+      "titel": "Sick of the News",
+      "verhaal": "After three months without improvement, Erik hears in a calm conversation that his one-year contract will not be renewed. Mark, an HR advisor, is present. On the shop floor Erik shouts that he has been ‘humiliated’ and will ‘report sick from the stress’.\n\nThe next morning his workplace is empty, his coat still hanging on the hook. Sick report: psychological complaints, caused by work.\n\nThe head of production is furious. ‘Play-acting. Stop his pay.’ Mark hesitates. Perhaps it is a strategic move. Perhaps Erik has really broken down. Stopping his pay can be justified, or can break a sick man even further. How do you handle a sick report you suspect is not genuine?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The head of production, sick-leave rules and the company doctor play a real part; Mark decides inside an organisation with procedures and interests."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS38-ziek-van-het-nieuws.jpg",
+      "altNl": "Anonieme werksituatie: ziek van het nieuws",
+      "altEn": "Anonymous workplace scene: ziek van het nieuws",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 114,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS38",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps40",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Pas achteraf",
+      "verhaal": "Demi is in haar proeftijd ontslagen. Ze had zich twee keer niet volgens de regels ziekgemeld en er was al langer onrust in het team. Haar leidinggevende was er klaar mee.\n\nEen week later ligt er een brief bij Wendy, HR-adviseur. Demi blijkt een chronische ziekte te hebben die haar nachtrust en humeur verstoort. Ze dreigt naar de rechter te stappen wegens discriminatie.\n\nJuridisch staat de organisatie misschien sterk; in de proeftijd hoeft niets te worden gemotiveerd. Maar Wendy vraagt zich af of iemand ooit heeft gevraagd waarom Demi zich zo gedroeg. Ze kan het ontslag verdedigen, of erkennen dat er iets is gemist. Wat telt zwaarder: gelijk hebben of recht doen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De organisatie, het proeftijdontslag en de wet op gelijke behandeling spelen wezenlijk mee; Wendy's keuze raakt hoe het bedrijf met kwetsbare medewerkers omgaat."
+    },
+    "en": {
+      "titel": "Only Afterwards",
+      "verhaal": "Demi was dismissed during her probation period. Twice she had not reported sick according to the rules and there had been unrest in the team for some time. Her manager was done with it.\n\nA week later a letter lands on the desk of Wendy, an HR advisor. Demi turns out to have a chronic illness that disturbs her sleep and mood. She threatens to go to court for discrimination.\n\nLegally the organisation may be strong; during probation nothing has to be justified. But Wendy wonders whether anyone ever asked why Demi behaved the way she did. She can defend the dismissal, or admit that something was missed. What weighs more: being right, or doing right?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The organisation, dismissal during probation and equal-treatment law play a real part; Wendy's choice affects how the company treats vulnerable employees."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS40-pas-achteraf.jpg",
+      "altNl": "Anonieme werksituatie: pas achteraf",
+      "altEn": "Anonymous workplace scene: pas achteraf",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS40",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps41",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Yoga tegen werkdruk",
+      "verhaal": "Het medewerkersonderzoek is hard: de afdeling scoort slecht op herstel en energie. Mensen gaan uitgeput naar huis en komen moe terug. Het directieteam vraagt Kim, HR-adviseur, om een advies met concrete maatregelen.\n\nEr is één voorwaarde. ‘Geen extra formatie en geen discussie over targets.’ Wel graag iets met mindfulness, een yogales en een fruitschaal.\n\nKim weet dat de oorzaak in de werkdruk zit. Ze kan het gevraagde advies leveren en de goodwill van de directie behouden. Of ze schrijft wat ze werkelijk ziet, met het risico dat haar advies in een la verdwijnt. Kiest Kim voor een advies dat wordt gelezen, of voor een advies dat klopt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Directie, werkdruk en het medewerkersonderzoek spelen wezenlijk mee; Kims advies raakt de organisatie, niet alleen haar eigen positie."
+    },
+    "en": {
+      "titel": "Yoga Against Workload",
+      "verhaal": "The employee survey is harsh: the department scores poorly on recovery and energy. People go home exhausted and come back tired. The management team asks Kim, an HR advisor, for advice with concrete measures.\n\nThere is one condition. ‘No extra staff and no discussion about targets.’ But please something with mindfulness, a yoga class and a fruit bowl.\n\nKim knows the cause lies in the workload. She can deliver the requested advice and keep the board's goodwill. Or she writes what she really sees, at the risk that her advice disappears into a drawer. Does Kim choose advice that gets read, or advice that is right?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The board, workload and the employee survey play a real part; Kim's advice affects the organisation, not just her own position."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS41-yoga-tegen-werkdruk.jpg",
+      "altNl": "Anonieme werksituatie: yoga tegen werkdruk",
+      "altEn": "Anonymous workplace scene: yoga tegen werkdruk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 106,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS41",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps42",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Je komt pas net kijken",
+      "verhaal": "Lieke is beginnend P&O-adviseur voor twintig leidinggevenden. Ze zijn ouder, vakinhoudelijk sterk en gewend hun eigen gang te gaan. ‘Dat doen we al jaren zo,’ hoort ze vaak. Of: ‘Je komt toch pas net kijken.’\n\nLangzaam bouwt ze vertrouwen op. Dan ziet ze dat Jos, een van de invloedrijkste leidinggevenden, een zwangere medewerker stilletjes buiten een promotietraject houdt. ‘Ze is straks toch weg.’\n\nSpreekt Lieke Jos aan of stapt ze naar de directie, dan verspeelt ze waarschijnlijk alles wat ze heeft opgebouwd. Wacht ze tot ze sterker staat, dan betaalt een ander de prijs. Wanneer is wachten verstandig, en wanneer is het wegkijken?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De leidinggevenden, de directie en de bedrijfscultuur spelen wezenlijk mee, en benadeling bij zwangerschap is wettelijk verboden; Lieke's keuze raakt haar positie in de organisatie."
+    },
+    "en": {
+      "titel": "You've Only Just Started",
+      "verhaal": "Lieke is a junior HR advisor for twenty managers. They are older, strong in their field and used to going their own way. ‘We've been doing it this way for years,’ she often hears. Or: ‘You've only just started.’\n\nSlowly she builds trust. Then she sees that Jos, one of the most influential managers, is quietly keeping a pregnant employee out of a promotion programme. ‘She'll be gone soon anyway.’\n\nIf Lieke confronts Jos or goes to the board, she will probably lose everything she has built. If she waits until she is stronger, someone else pays the price. When is waiting wise, and when is it looking away?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The managers, the board and the company culture play a real part, and disadvantaging someone because of pregnancy is prohibited by law; Lieke's choice affects her position in the organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS42-je-komt-pas-net-kijken.jpg",
+      "altNl": "Anonieme werksituatie: je komt pas net kijken",
+      "altEn": "Anonymous workplace scene: je komt pas net kijken",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 109,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS42",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps45",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een sterk gevoel",
+      "verhaal": "Ellen is de enige HR-adviseur in de organisatie. Voor de derde keer in een halfjaar meldt Melissa zich ziek, steeds voor een paar dagen en steeds met een vage reden. Ellen heeft een sterk gevoel dat er iets anders speelt, misschien thuis.\n\nZe heeft niemand om mee te overleggen. Ze heeft geen bewijs, alleen een gevoel, en die vage blauwe plek die ze vorige keer op Melissa’s pols meende te zien.\n\nGaat Ellen erop af, dan kan ze iemand helpen die hulp nodig heeft, of een collega beschamen met een vermoeden dat niet klopt. Doet ze niets, dan blijft een mogelijk signaal liggen. Hoe ver mag je gaan op basis van alleen een gevoel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Ellen beslist zelf of ze afgaat op een gevoel; zij staat alleen en geen instantie of regel neemt de keuze over."
+    },
+    "en": {
+      "titel": "A Strong Feeling",
+      "verhaal": "Ellen is the only HR advisor in the organisation. For the third time in six months Melissa reports sick, each time for a few days and each time with a vague reason. Ellen has a strong feeling that something else is going on, perhaps at home.\n\nShe has nobody to consult. She has no evidence, only a feeling, and that faint bruise she thought she saw on Melissa's wrist last time.\n\nIf Ellen follows it up, she may help someone who needs help, or shame a colleague with a suspicion that isn't true. If she does nothing, a possible signal goes unheeded. How far may you go on a feeling alone?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Ellen decides for herself whether to act on a feeling; she is on her own and no institution or rule takes the choice over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS45-een-sterk-gevoel.jpg",
+      "altNl": "Anonieme werksituatie: een sterk gevoel",
+      "altEn": "Anonymous workplace scene: een sterk gevoel",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS45",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps46",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Op hun tandvlees",
+      "verhaal": "Het werk groeit en het technische team loopt op zijn tandvlees. Rick, beginnend HR-medewerker, zet een vacature online. Na twee weken: geen enkele reactie. De krapte op de arbeidsmarkt is echt.\n\nHij stelt een gespecialiseerd recruitmentbureau voor. Dat kost twintigduizend euro. De directie is verbaasd. ‘Jij bent toch de HR-medewerker?’ En dan: ‘Laat het team nog een paar maanden doorbijten. Na de zomer zien we verder.’\n\nRick heeft gisteren een monteur gesproken die al drie weekenden heeft doorgewerkt en zei dat zijn vrouw ‘er klaar mee is’. Zwijgen bespaart geld en houdt de directie tevreden; doorduwen kost hem krediet. Wie bewaakt de grens van een team dat zelf niet meer nee zegt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Directie, budget en de krappe arbeidsmarkt spelen wezenlijk mee; Ricks keuze raakt de belasting van een heel team."
+    },
+    "en": {
+      "titel": "On Their Last Legs",
+      "verhaal": "The work is growing and the technical team is running on its last legs. Rick, a junior HR employee, puts a vacancy online. After two weeks: not a single response. The tight labour market is real.\n\nHe proposes a specialised recruitment agency. That costs twenty thousand euros. The board is surprised. ‘Aren't you the HR employee?’ And then: ‘Let the team hold on for a few more months. We'll see after the summer.’\n\nYesterday Rick spoke to a mechanic who has worked three weekends in a row and said his wife is ‘done with it’. Staying quiet saves money and keeps the board happy; pushing costs him credit. Who guards the limit of a team that no longer says no itself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The board, budget and the tight labour market play a real part; Rick's choice affects the workload of a whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS46-op-hun-tandvlees.jpg",
+      "altNl": "Anonieme werksituatie: op hun tandvlees",
+      "altEn": "Anonymous workplace scene: op hun tandvlees",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 112,
+      "woordenEn": 121,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS46",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps47",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Gewoon een grapje",
+      "verhaal": "Tijdens de vrijdagmiddagborrel maakt een collega een seksueel getinte grap over Shirin. Het team lacht, ook de leidinggevende. De volgende ochtend staat Shirin bij Mila, HR-adviseur. Ze heeft slecht geslapen en kijkt nu anders naar haar collega’s.\n\nShirin wil geen formele melding. ‘Ik wil gewoon dat het niet meer gebeurt. En ik wil niet dat iedereen weet dat ik er last van heb.’\n\nDe leidinggevende vindt het onschuldig en wilde ‘de sfeer niet drukken’. Mila kan Shirin’s wens respecteren en informeel iets proberen, of de cultuur benoemen en het risico nemen dat Shirin alsnog in de schijnwerpers komt te staan. Hoe pak je een cultuur aan zonder het slachtoffer opnieuw bloot te stellen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De leidinggevende, het team en de bedrijfscultuur spelen wezenlijk mee; Mila beslist niet alleen over Shirin, maar ook over hoe de organisatie met grensoverschrijdend gedrag omgaat."
+    },
+    "en": {
+      "titel": "Just a Joke",
+      "verhaal": "During the Friday afternoon drinks a colleague makes a sexually charged joke about Shirin. The team laughs, the manager too. The next morning Shirin is at Mila's desk, an HR advisor. She has slept badly and now looks at her colleagues differently.\n\nShirin doesn't want a formal complaint. ‘I just want it to stop. And I don't want everyone to know it bothers me.’\n\nThe manager thinks it was harmless and didn't want to ‘dampen the mood’. Mila can respect Shirin's wish and try something informal, or name the culture and risk Shirin ending up in the spotlight after all. How do you tackle a culture without exposing the victim again?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The manager, the team and the company culture play a real part; Mila is deciding not only about Shirin but also about how the organisation handles boundary-crossing behaviour."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS47-gewoon-een-grapje.jpg",
+      "altNl": "Anonieme werksituatie: gewoon een grapje",
+      "altEn": "Anonymous workplace scene: gewoon een grapje",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS47",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps48",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Topresultaten",
+      "verhaal": "Voor de derde keer in korte tijd meldt Saskia zich ziek. In het verzuimgesprek komt het eruit: werkdruk, spanningen en een teamleider die iedereen constant opjaagt. ‘Ik trek het even niet meer. En ik ben echt niet de enige.’\n\nNiels, HR-adviseur, kent die teamleider. Zijn afdeling haalt al drie jaar de beste cijfers van het bedrijf. De directie noemt hem ‘onze motor’.\n\nEen kritisch signaal naar boven kan het team helpen, maar ook een succesvolle leidinggevende beschadigen en Niels’ eigen positie aantasten. Zwijgen houdt de cijfers hoog en mensen ziek. Wat zijn topresultaten waard als ze worden betaald met de gezondheid van het team?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De directie, een succesvolle teamleider en het verzuimbeleid spelen wezenlijk mee; Niels' keuze raakt de cultuur van de afdeling en zijn eigen positie."
+    },
+    "en": {
+      "titel": "Top Results",
+      "verhaal": "For the third time in a short while Saskia reports sick. In the absence conversation it comes out: workload, tension and a team leader who constantly drives everyone on. ‘I can't cope for the moment. And I'm really not the only one.’\n\nNiels, an HR advisor, knows that team leader. His department has had the best figures in the company for three years. The board calls him ‘our engine’.\n\nA critical signal upwards can help the team, but can also damage a successful manager and undermine Niels's own position. Staying silent keeps the figures high and people sick. What are top results worth if they are paid for with the health of the team?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The board, a successful team leader and the absence policy play a real part; Niels's choice affects the culture of the department and his own position."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS48-topresultaten.jpg",
+      "altNl": "Anonieme werksituatie: topresultaten",
+      "altEn": "Anonymous workplace scene: topresultaten",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 104,
+      "woordenEn": 114,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS48",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps49",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het archief",
+      "verhaal": "Jarenlang was Thea onmisbaar. Ze beheerde het archief volgens haar eigen systeem: elke map op zijn plek, elk dossier binnen een minuut gevonden. Maar digitalisering, de cloud en AI zijn volledig aan haar voorbijgegaan.\n\nDe directie vraagt Annemiek, HR-adviseur, hoe er ‘op korte termijn afscheid van haar kan worden genomen’. Thea is eenenzestig. Een vaststellingsovereenkomst is snel en voor iedereen overzichtelijk.\n\nAnnemiek denkt aan een omscholingstraject: duur, onzeker, en volgens de directie ‘weggegooid geld voor een paar jaar’. Maar Thea heeft haar hele werkzame leven aan dit bedrijf gegeven. Wat is een organisatie verschuldigd aan iemand die zij zelf heeft laten verouderen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De directie, het opleidingsbeleid en de regels rond ontslag van een oudere werknemer spelen wezenlijk mee; Annemiek beslist binnen een organisatie met verantwoordelijkheid voor haar mensen."
+    },
+    "en": {
+      "titel": "The Archive",
+      "verhaal": "For years Thea was indispensable. She managed the archive according to her own system: every folder in its place, every file found within a minute. But digitalisation, the cloud and AI have completely passed her by.\n\nThe board asks Annemiek, an HR advisor, how ‘to part with her at short notice’. Thea is sixty-one. A settlement agreement is quick and clear for everyone.\n\nAnnemiek thinks of a retraining programme: expensive, uncertain, and according to the board ‘money thrown away for a few years’. But Thea has given her whole working life to this company. What does an organisation owe someone it has let grow outdated itself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The board, training policy and the rules on dismissing an older employee play a real part; Annemiek decides inside an organisation with a responsibility towards its people."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS49-het-archief.jpg",
+      "altNl": "Anonieme werksituatie: het archief",
+      "altEn": "Anonymous workplace scene: het archief",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 106,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS49",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps50",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Spanningsklachten",
+      "verhaal": "Krisztina, administratief medewerker van eenendertig, meldt zich ziek met aanhoudende spanningsklachten. Het werk wordt haar te veel; ze krijgt haar taken niet meer af. Haar leidinggevende valt uit de lucht: ‘Ze functioneerde altijd prima.’\n\nJoyce, HR-adviseur, start het verzuimdossier en moet de leidinggevende begeleiden. In een apart gesprek vertelt Krisztina wat er werkelijk speelt: de manier waarop haar leidinggevende haar werk steeds overneemt en corrigeert. ‘Hij mag dit niet weten. Dan wordt het alleen maar erger.’\n\nDe verzuimregels vragen om een open gesprek tussen leidinggevende en medewerker. Krisztina’s vertrouwen vraagt om zwijgen. Hoe begeleid je een leidinggevende in een proces waarin hij zelf de oorzaak is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De verzuimregels, de leidinggevende en Krisztina's vertrouwen spelen wezenlijk mee; Joyce beslist binnen een proces van procedures en machtsverhoudingen."
+    },
+    "en": {
+      "titel": "Stress Complaints",
+      "verhaal": "Krisztina, an administrative employee aged thirty-one, reports sick with persistent stress complaints. The work is becoming too much for her; she no longer finishes her tasks. Her manager is taken aback: ‘She always performed fine.’\n\nJoyce, an HR advisor, starts the absence file and has to guide the manager. In a separate conversation Krisztina tells her what is really going on: the way her manager keeps taking over and correcting her work. ‘He can't know this. It will only get worse.’\n\nThe absence rules call for an open conversation between manager and employee. Krisztina's trust calls for silence. How do you guide a manager through a process in which he himself is the cause?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The absence rules, the manager and Krisztina's trust play a real part; Joyce decides inside a process of procedures and power relations."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS50-spanningsklachten.jpg",
+      "altNl": "Anonieme werksituatie: spanningsklachten",
+      "altEn": "Anonymous workplace scene: spanningsklachten",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 114,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS50",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps51",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Coachend bedoeld",
+      "verhaal": "Pascal van de klantenservice voelt zich niet serieus genomen. Volgens hem kleineert zijn teamleider hem in vrijwel elk werkoverleg. Hij wil het melden, maar is bang voor de gevolgen. De teamleider ziet het anders: ‘Ik probeer hem juist te coachen. Hij moet scherper worden.’\n\nLucas, HR-adviseur, moet een veilig gesprek begeleiden zonder partij te kiezen. Maar Lucas was vorige maand toevallig bij een werkoverleg. Hij hoorde de teamleider zeggen: ‘Pascal, probeer het nog één keer, maar nu in normaal Nederlands.’ Iedereen lachte.\n\nAls bemiddelaar hoort Lucas neutraal te zijn. Als getuige weet hij meer. Mag Lucas zijn eigen waarneming gebruiken in een gesprek waarin hij neutraal moet zijn?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Lucas beslist zelf of hij zijn eigen waarneming gebruikt; het gaat om zijn rol als bemiddelaar en getuige, zonder dat een regel de keuze overneemt."
+    },
+    "en": {
+      "titel": "Meant as Coaching",
+      "verhaal": "Pascal from customer service doesn't feel taken seriously. According to him his team leader belittles him in almost every team meeting. He wants to report it, but fears the consequences. The team leader sees it differently: ‘I'm trying to coach him. He needs to sharpen up.’\n\nLucas, an HR advisor, has to guide a safe conversation without taking sides. But last month Lucas happened to be at a team meeting. He heard the team leader say: ‘Pascal, try it once more, but this time in normal Dutch.’ Everyone laughed.\n\nAs a mediator Lucas should be neutral. As a witness he knows more. May Lucas use his own observation in a conversation in which he has to be neutral?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Lucas decides for himself whether to use his own observation; it concerns his role as mediator and witness, with no rule taking the choice over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS51-coachend-bedoeld.jpg",
+      "altNl": "Anonieme werksituatie: coachend bedoeld",
+      "altEn": "Anonymous workplace scene: coachend bedoeld",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 118,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS51",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps52",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Wat zijn mijn rechten?",
+      "verhaal": "Zoë werkt een maand als HR-medewerker als een hoogzwangere collega bij haar bureau staat. Hoeveel verlof krijgt ze? Wat wordt doorbetaald? Vriendinnen noemen allemaal andere getallen. Ze wil snel duidelijkheid.\n\nZoë kent het onderwerp nog niet goed en vraagt haar leidinggevende om hulp. Die geeft een opvallend kort antwoord: ‘Vertel haar wat ze wettelijk moet weten. Over betaald ouderschapsverlof hoef je niet uit jezelf te beginnen. We zitten krap in de bezetting.’\n\nZoë weet dat de collega recht heeft op meer dan ze nu weet. Ze kan het minimum vertellen en haar leidinggevende tevreden houden, of de collega volledig informeren. Is het oneerlijk om informatie achter te houden waar iemand niet om vraagt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De leidinggevende, de bezetting en de wettelijke verlofrechten spelen wezenlijk mee; Zoë beslist binnen een organisatie waarin zij afhankelijk is van haar leidinggevende."
+    },
+    "en": {
+      "titel": "What Are My Rights?",
+      "verhaal": "Zoë has worked for a month as an HR employee when a heavily pregnant colleague stops at her desk. How much leave does she get? What continues to be paid? Friends all quote different figures. She wants clarity quickly.\n\nZoë doesn't know the subject well yet and asks her manager for help. He gives a strikingly short answer: ‘Tell her what she is legally owed. You don't need to bring up paid parental leave on your own. We're short-staffed.’\n\nZoë knows the colleague is entitled to more than she currently knows. She can tell her the minimum and keep her manager satisfied, or inform the colleague fully. Is it unfair to withhold information that someone doesn't ask for?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The manager, staffing levels and statutory leave rights play a real part; Zoë decides inside an organisation where she depends on her manager."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS52-wat-zijn-mijn-rechten.jpg",
+      "altNl": "Anonieme werksituatie: wat zijn mijn rechten",
+      "altEn": "Anonymous workplace scene: wat zijn mijn rechten",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 118,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS52",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps55",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Thuis voor wie?",
+      "verhaal": "Meer aandacht voor werkdruk en balans, dat is het voornemen. Lieke, HR-adviseur, mag een thuiswerkbeleid opstellen. Op kantoor juicht iedereen: twee of drie dagen thuis, minder files, meer rust.\n\nDan loopt ze door de productiehal. ‘Mooi voor die lui boven,’ zegt een operator. ‘Wij kunnen onze machine niet mee naar huis nemen.’ Ook de receptie en de schoonmaak blijven gewoon komen.\n\nLieke kan een royale regeling maken voor wie het kan, en daarmee de kloof tussen kantoor en werkvloer vergroten. Of ze kiest voor gelijkheid en ontneemt de helft van de organisatie iets wat hen wel helpt. Is gelijke behandeling iedereen hetzelfde geven, of iedereen naar wat hij nodig heeft?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het thuiswerkbeleid raakt kantoor en werkvloer en de gelijke behandeling van beide groepen; Lieke's keuze raakt de hele organisatie."
+    },
+    "en": {
+      "titel": "Home for Whom?",
+      "verhaal": "More attention to workload and balance, that is the intention. Lieke, an HR advisor, is asked to draw up a home-working policy. In the office everyone cheers: two or three days at home, fewer traffic jams, more peace.\n\nThen she walks through the production hall. ‘Nice for those people upstairs,’ says an operator. ‘We can't take our machine home.’ Reception and cleaning also keep coming in as usual.\n\nLieke can make a generous arrangement for those who can, widening the gap between office and shop floor. Or she opts for equality and takes away from half the organisation something that does help them. Is equal treatment giving everyone the same, or giving everyone what they need?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The home-working policy affects both office and shop floor, and the equal treatment of both groups; Lieke's choice affects the whole organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS55-thuis-voor-wie.jpg",
+      "altNl": "Anonieme werksituatie: thuis voor wie",
+      "altEn": "Anonymous workplace scene: thuis voor wie",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS55",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps56",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De ketenregeling",
+      "verhaal": "Bij het inwerken van een nieuwe collega merkt Romy, junior HR-medewerker, dat de werkinstructie voor contractverlengingen verouderd is. Haar leidinggevende vraagt haar die volledig te herzien.\n\nBij het uitzoeken stuit Romy op iets ongemakkelijks. Bij minstens vier medewerkers is de ketenregeling overschreden. Zij hadden allang een vast contract moeten hebben. Een van hen kreeg vorig jaar geen hypotheek, omdat hij ‘maar tijdelijk’ was.\n\nHaar leidinggevende reageert kalm. ‘Mooi gevonden. Pas de instructie aan voor de toekomst. Dat oude laten we rusten.’ Rechtzetten kost het bedrijf geld en gezichtsverlies, zwijgen laat vier collega’s in onzekerheid. Moet je een fout herstellen waar niemand je om vraagt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het bedrijf, de wet (de ketenregeling) en vier medewerkers spelen wezenlijk mee; Romy beslist binnen een organisatie waarin rechtzetten geld en gezichtsverlies kost."
+    },
+    "en": {
+      "titel": "The Chain Rule",
+      "verhaal": "While onboarding a new colleague, Romy, a junior HR employee, notices that the work instruction for contract renewals is outdated. Her manager asks her to revise it completely.\n\nWhile looking into it, Romy stumbles on something uncomfortable. For at least four employees the chain rule on successive temporary contracts has been exceeded. They should have had a permanent contract long ago. One of them was refused a mortgage last year because he was ‘only temporary’.\n\nHer manager responds calmly. ‘Nicely spotted. Adjust the instruction for the future. We'll let the old stuff rest.’ Putting it right costs the company money and face; staying silent leaves four colleagues in uncertainty. Should you correct a mistake nobody asks you to?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The company, the law (the chain rule on temporary contracts) and four employees play a real part; Romy decides inside an organisation where setting it right costs money and face."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS56-de-ketenregeling.jpg",
+      "altNl": "Anonieme werksituatie: de ketenregeling",
+      "altEn": "Anonymous workplace scene: de ketenregeling",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 104,
+      "woordenEn": 118,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS56",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps57",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Dubbel werk",
+      "verhaal": "Twee HR-teams worden samengevoegd. Er komen één teamleider en vier coördinatoren. Joep merkt dat processen overlappen en dat contracten soms twee keer worden aangemaakt. Rollen en verantwoordelijkheden zijn nog onduidelijk.\n\nDe nieuwe teamleider vraagt Joep vertrouwelijk om bij te houden waar het misgaat, en bij wie. ‘Dat helpt me straks bij de keuze voor de coördinatoren.’\n\nJoep ziet dat de meeste fouten bij Marja liggen, zijn vroegere mentor, die hem alles heeft geleerd en nu worstelt met het nieuwe systeem. Een eerlijk overzicht kan haar de functie kosten. Een gekleurd overzicht is oneerlijk tegenover de anderen. Wat doe je als eerlijkheid iemand raakt aan wie je veel te danken hebt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Joep beslist zelf hoe eerlijk hij rapporteert over iemand aan wie hij veel te danken heeft; het is een persoonlijke afweging tussen loyaliteit en eerlijkheid."
+    },
+    "en": {
+      "titel": "Double Work",
+      "verhaal": "Two HR teams are being merged. There will be one team leader and four coordinators. Joep notices that processes overlap and that contracts are sometimes created twice. Roles and responsibilities are still unclear.\n\nThe new team leader asks Joep confidentially to keep track of where things go wrong, and with whom. ‘That will help me with the choice of coordinators.’\n\nJoep sees that most errors lie with Marja, his former mentor, who taught him everything and is now struggling with the new system. An honest overview may cost her the position. A coloured overview is unfair to the others. What do you do when honesty hurts someone you owe a great deal?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Joep decides for himself how honestly to report on someone he owes a lot to; it is a personal weighing of loyalty against honesty."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS57-dubbel-werk.jpg",
+      "altNl": "Anonieme werksituatie: dubbel werk",
+      "altEn": "Anonymous workplace scene: dubbel werk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 112,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS57",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps59",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Helemaal niet ziek",
+      "verhaal": "Er komt een ziekmelding van Esra binnen. Direct daarna belt haar leidinggevende Ilona, HR-adviseur. Eerder die dag had Esra een hoog oplopend conflict met een collega, midden op kantoor en waar iedereen bij was.\n\n‘Ze is helemaal niet ziek,’ zegt de leidinggevende. ‘Ze wil die collega’s gewoon niet zien. Ik wil dat je haar laat weten dat dit zo niet werkt.’\n\nIlona weet dat de bedrijfsarts over ziekte oordeelt, niet de leidinggevende. Ze weet ook dat een ziekmelding een conflict kan wegdrukken dat juist besproken moet worden. Ze kan Esra’s melding beschermen of het conflict op tafel leggen. Hoe ga je om met een ziekmelding die misschien geen ziekte is, maar wel ergens om vraagt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De leidinggevende, de bedrijfsarts en het verzuimbeleid spelen wezenlijk mee; Ilona beslist niet alleen over één medewerker, maar over hoe de organisatie met conflict en ziekmelding omgaat."
+    },
+    "en": {
+      "titel": "Not Sick at All",
+      "verhaal": "A sick report from Esra comes in. Right after, her manager calls Ilona, an HR advisor. Earlier that day Esra had a heated conflict with a colleague, in the middle of the office with everyone watching.\n\n‘She isn't sick at all,’ says the manager. ‘She just doesn't want to see those colleagues. I want you to let her know this doesn't work.’\n\nIlona knows that the company doctor judges illness, not the manager. She also knows a sick report can push away a conflict that really needs to be discussed. She can protect Esra's report or put the conflict on the table. How do you handle a sick report that may not be an illness, but does call for something?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The manager, the company doctor and the absence policy play a real part; Ilona is deciding not only about one employee but about how the organisation handles conflict and sick reports."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS59-helemaal-niet-ziek.jpg",
+      "altNl": "Anonieme werksituatie: helemaal niet ziek",
+      "altEn": "Anonymous workplace scene: helemaal niet ziek",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 120,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS59",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps63",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Achteraf verwerken",
+      "verhaal": "De manager staat bij Kim aan het bureau, dringend. ‘Je moet deze mutatie nog verwerken in de salarisadministratie. Ik heb het de nieuwe medewerker beloofd.’ De verwerkingsdatum is al voorbij. Achteraf invoeren raakt meerdere processen en zet de salarisadministrateur onder druk.\n\nKim weet hoe het afloopt. Doet ze het, dan wordt de salarisadministrateur boos en is de regel weer een keer omzeild. Doet ze het niet, dan krijgt de nieuwe medewerker, een alleenstaande moeder, deze maand geen salaris en kan ze haar huur niet betalen.\n\nDe fout ligt bij de manager, niet bij de nieuwe collega. Maar Kim moet beslissen wie de prijs betaalt. Mag je een regel breken om iemand te beschermen tegen andermans fout?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Kim beslist zelf of ze een regel breekt om iemand te beschermen tegen andermans fout; het is een directe keuze zonder dat een instantie die overneemt."
+    },
+    "en": {
+      "titel": "Processing Afterwards",
+      "verhaal": "The manager stands at Kim's desk, urgently. ‘You still have to process this change in the payroll. I promised the new employee.’ The processing date has already passed. Entering it afterwards affects several processes and puts the payroll administrator under pressure.\n\nKim knows how it ends. If she does it, the payroll administrator will be angry and the rule will have been bypassed once again. If she doesn't, the new employee, a single mother, won't get paid this month and can't pay her rent.\n\nThe mistake lies with the manager, not with the new colleague. But Kim has to decide who pays the price. May you break a rule to protect someone from another person's mistake?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Kim decides for herself whether to break a rule to protect someone from another person's mistake; it is a direct choice with no institution taking it over."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS63-achteraf-verwerken.jpg",
+      "altNl": "Anonieme werksituatie: achteraf verwerken",
+      "altEn": "Anonymous workplace scene: achteraf verwerken",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 116,
+      "woordenEn": 116,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS63",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hrm-ps64",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Een premie voor aanwezigheid",
+      "verhaal": "De business unit kampt met veel kort, frequent verzuim. De leidinggevende vraagt Hamid, HR-businesspartner, om advies en heeft zelf al een idee: een aanwezigheidspremie van tweehonderd euro per kwartaal voor wie zich niet ziek meldt. ‘Dat werkt bij mijn vorige werkgever ook.’\n\nHamid ziet dat het verzuim inderdaad zou kunnen dalen. Maar hij denkt aan Mirella met reuma en aan Kees, die net chemo achter de rug heeft. Zij zouden de premie nooit halen, hoe hard ze ook werken.\n\nEn wie zich nu ziek voelt, komt straks misschien toch, en steekt collega’s aan. Wanneer wordt een prikkel om te werken een straf voor wie ziek is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De leidinggevende, het verzuimbeleid en de gelijke behandeling van zieke medewerkers spelen wezenlijk mee; Hamids advies raakt de hele business unit."
+    },
+    "en": {
+      "titel": "A Bonus for Attendance",
+      "verhaal": "The business unit suffers from a lot of short, frequent absence. The manager asks Hamid, an HR business partner, for advice and already has an idea: an attendance bonus of two hundred euros per quarter for anyone who doesn't report sick. ‘It worked at my previous employer too.’\n\nHamid sees that absence could indeed fall. But he thinks of Mirella, who has rheumatism, and of Kees, who has just finished chemotherapy. They would never earn the bonus, however hard they work.\n\nAnd someone who feels ill now may come in anyway and infect colleagues. When does an incentive to work become a punishment for the sick?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The manager, the absence policy and the equal treatment of sick employees play a real part; Hamid's advice affects the whole business unit."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS64-een-premie-voor-aanwezigheid.jpg",
+      "altNl": "Anonieme werksituatie: een premie voor aanwezigheid",
+      "altEn": "Anonymous workplace scene: een premie voor aanwezigheid",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 106,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS64",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps65",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De lege stoelen",
+      "verhaal": "Jasmijn, L&D-adviseur bij een grote organisatie, heeft de workshop ‘Sociale veiligheid en ongewenst gedrag’ opgezet. De zaal zit vol. Maar ze ziet precies wie er niet zijn: de leidinggevenden over wie al maanden signalen binnenkomen.\n\nZe kan de workshop verplicht maken. Dan voelen de afwezigen zich aangewezen, terwijl er nergens iets formeel is vastgesteld. Of ze nodigt hen persoonlijk uit, wat het vertrouwelijke karakter van de signalen kan schaden.\n\nLaat ze het lopen, dan zitten alleen de mensen in de zaal die het al begrijpen, en verandert er niets voor wie meldingen deden. Hoe bereik je de mensen die het nodig hebben, zonder ze vooraf te veroordelen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Leidinggevenden, vertrouwelijke signalen en het beleid voor sociale veiligheid spelen wezenlijk mee; Jasmijns keuze raakt de cultuur van de hele organisatie."
+    },
+    "en": {
+      "titel": "The Empty Chairs",
+      "verhaal": "Jasmijn, an L&D advisor at a large organisation, has set up the workshop ‘Social safety and unwanted behaviour’. The room is full. But she sees exactly who is missing: the managers about whom signals have been coming in for months.\n\nShe can make the workshop mandatory. Then the absent ones feel singled out, while nothing has been formally established anywhere. Or she invites them personally, which may harm the confidential nature of the signals.\n\nIf she lets it go, only the people who already understand are in the room, and nothing changes for those who made reports. How do you reach the people who need it, without condemning them in advance?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Managers, confidential reports and the social safety policy play a real part; Jasmijn's choice affects the culture of the whole organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS65-de-lege-stoelen.jpg",
+      "altNl": "Anonieme werksituatie: de lege stoelen",
+      "altEn": "Anonymous workplace scene: de lege stoelen",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 111,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS65",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps67",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "In goed aanzien",
+      "verhaal": "Bij de organisatie wordt verschillend geïnvesteerd in mensen. Wie bij de directeur ‘in goed aanzien’ staat, krijgt een dure leergang of coaching. Anderen vragen al jaren tevergeefs om een simpele cursus. Olaf, HR-adviseur, wil dat veranderen met een eerlijk opleidingsbeleid.\n\nDan beseft hij iets ongemakkelijks. Twee jaar geleden kreeg hij zelf een masteropleiding van achttienduizend euro, zonder procedure, op persoonlijke toezegging van diezelfde directeur.\n\nAls hij het systeem aankaart, zet hij ook zijn eigen voordeel en zijn goede relatie met de directeur op het spel. Zwijgt hij, dan bevestigt hij een cultuur waar hij zelf van profiteert. Kun je onrecht aankaarten waar je zelf van hebt geprofiteerd?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De directeur, het opleidingsbeleid en de verdeling van kansen spelen wezenlijk mee; Olafs keuze raakt de cultuur van de organisatie en zijn eigen positie."
+    },
+    "en": {
+      "titel": "In Good Standing",
+      "verhaal": "The organisation invests unevenly in people. Those who are ‘in good standing’ with the director get an expensive leadership programme or coaching. Others have been asking for a simple course for years in vain. Olaf, an HR advisor, wants to change that with a fair training policy.\n\nThen he realises something uncomfortable. Two years ago he himself received a master's programme worth eighteen thousand euros, without a procedure, on the personal promise of that same director.\n\nIf he raises the system, he also puts his own advantage and his good relationship with the director at risk. If he stays silent, he confirms a culture he himself benefits from. Can you raise an injustice you yourself have profited from?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The director, training policy and the distribution of opportunities play a real part; Olaf's choice affects the culture of the organisation and his own position."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS67-in-goed-aanzien.jpg",
+      "altNl": "Anonieme werksituatie: in goed aanzien",
+      "altEn": "Anonymous workplace scene: in goed aanzien",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 118,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS67",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps68",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Precies genoeg",
+      "verhaal": "Op de afdeling groeit de spanning. Een groep medewerkers doet precies wat er in hun functieomschrijving staat, niet meer en niet minder. Om vijf uur gaat de laptop dicht. De anderen nemen steeds meer over, blijven langer en worden steeds bozer.\n\nHet afdelingsmanagement vraagt Maaike, HR-adviseur, om advies. ‘Pak die quiet quitters aan.’ Maar in de gesprekken hoort Maaike verhalen over jaren extra inzet die nooit werden erkend, en over een burn-out die hen heeft geleerd hun grenzen te bewaken.\n\nDe harde werkers voelen zich uitgebuit, de anderen voelen zich ten onrechte veroordeeld. Allebei hebben ze een punt. Is ‘precies genoeg doen’ een gebrek aan inzet, of een gezonde grens?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het afdelingsmanagement, de werkverdeling en de bedrijfscultuur spelen wezenlijk mee; Maaike's advies raakt de hele afdeling."
+    },
+    "en": {
+      "titel": "Exactly Enough",
+      "verhaal": "Tension is growing in the department. A group of employees does exactly what is in their job description, no more and no less. At five o'clock the laptop closes. The others take over more and more, stay longer and grow angrier.\n\nDepartment management asks Maaike, an HR advisor, for advice. ‘Deal with those quiet quitters.’ But in the conversations Maaike hears stories about years of extra effort that was never recognised, and about a burnout that taught them to guard their limits.\n\nThe hard workers feel exploited, the others feel wrongly judged. Both have a point. Is ‘doing exactly enough’ a lack of commitment, or a healthy boundary?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Department management, the division of work and the company culture play a real part; Maaike's advice affects the whole department."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS68-precies-genoeg.jpg",
+      "altNl": "Anonieme werksituatie: precies genoeg",
+      "altEn": "Anonymous workplace scene: precies genoeg",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 108,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS68",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hrm-ps70",
+    "set": "praktijkschok-hrm",
+    "stap": 3,
+    "categorie": "hrm",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Tussen twee vestigingen",
+      "verhaal": "Wouter is HR-businesspartner voor een bedrijf met meerdere vestigingen. Lotte, een uitblinker op vestiging A, wordt privé benaderd door de directeur van vestiging B. Hij biedt haar meer salaris. Lotte stapt over.\n\nDe directeur van vestiging A belt Wouter woedend. ‘Dit is diefstal binnen ons eigen bedrijf. Ik wil dat je die overstap terugdraait. Ze heeft verplichtingen hier.’\n\nWouter begrijpt de frustratie: vestiging A verliest zijn beste kracht zonder overleg. Maar Lotte heeft gewoon een betere kans gegrepen, en waarom zou zij moeten boeten voor een conflict tussen twee directeuren? Wiens belang dient Wouter: de vestiging, de organisatie of de medewerker?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De twee directeuren, de organisatiestructuur en Lotte's loopbaan spelen wezenlijk mee; Wouter beslist binnen een organisatie met botsende belangen."
+    },
+    "en": {
+      "titel": "Between Two Sites",
+      "verhaal": "Wouter is HR business partner for a company with several sites. Lotte, a high performer at site A, is approached privately by the director of site B. He offers her a higher salary. Lotte switches.\n\nThe director of site A calls Wouter, furious. ‘This is theft within our own company. I want you to reverse that move. She has obligations here.’\n\nWouter understands the frustration: site A loses its best employee without consultation. But Lotte simply seized a better opportunity, and why should she pay for a conflict between two directors? Whose interest does Wouter serve: the site, the organisation or the employee?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The two directors, the organisational structure and Lotte's career play a real part; Wouter decides inside an organisation with conflicting interests."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/PS70-tussen-twee-vestigingen.jpg",
+      "altNl": "Anonieme werksituatie: tussen twee vestigingen",
+      "altEn": "Anonymous workplace scene: tussen twee vestigingen",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 103,
+      "bron": "Praktijkschok HRM — aanvulling website (52 kaarten)",
+      "kaartNummer": "PS70",
+      "sectorColor": "#3949AB",
+      "categorieEn": "HR",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
   }
 ]

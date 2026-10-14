@@ -182,7 +182,8 @@ export default function GespreksKaartenPagina() {
   }
   const werkbladDownload = WORK_FORMS_DOWNLOADS[getCardContentLang(taal)]
   const contentLang = getCardContentLang(taal)
-  const showHrmComplexityNote = displayCards.some((card) => card.set === 'praktijkschok-hrm')
+  const showHrmSeriesMeta = displayCards.some((card) => card.set === 'praktijkschok-hrm')
+  const hrmSetDescription = praktijkschokHrmMeta.setDescription?.[contentLang]
   const hrmComplexityNote = praktijkschokHrmMeta.complexityNote?.[contentLang]
   const isEtzSetView = filters.set === 'etz-passende-zorg'
   const etzSectionTitle = t.gesprekskaart.filters?.setLabels?.['etz-passende-zorg'] ?? 'ETZ Passende Zorg'
@@ -483,7 +484,13 @@ export default function GespreksKaartenPagina() {
           totalCount={allCards.length}
         />
 
-        {showHrmComplexityNote && hrmComplexityNote && (
+        {showHrmSeriesMeta && hrmSetDescription && (
+          <p className="mb-4 text-sm leading-relaxed" style={{ color: ATTRIBUTION_COLOR }}>
+            {hrmSetDescription}
+          </p>
+        )}
+
+        {showHrmSeriesMeta && hrmComplexityNote && (
           <p
             className="mb-6 text-xs italic leading-relaxed"
             style={{ color: ATTRIBUTION_COLOR }}
