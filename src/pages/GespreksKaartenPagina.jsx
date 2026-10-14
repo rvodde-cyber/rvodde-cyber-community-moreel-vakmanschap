@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ConversationCardSection from '../components/ConversationCardSection'
 import GesprekskaartenFilters, { EMPTY_FILTERS } from '../components/GesprekskaartenFilters'
@@ -69,6 +69,13 @@ const pageContent = {
       vraag1: 'Wat zou jij doen en waarom?',
       vraag2: 'Welke waarden zijn hier in het spel?',
     },
+    printTip: {
+      titel: 'Tip: print ze op A5',
+      lead:
+        'De kaarten komen het best tot hun recht op A5, op wat dikker papier. Print je liever op een ander formaat, dan lukt dat eenvoudiger als je de kaarten eerst als pdf downloadt. Op deze site vind je ook voorbeelden van ',
+      linkLabel: 'werkvormen',
+      trail: ' waarmee je de kaarten kunt inzetten. Veel leerplezier!',
+    },
     introToggle: 'Over de methode — waarom en hoe?',
     cta: {
       titel: 'Wat is er beschikbaar?',
@@ -121,6 +128,13 @@ const pageContent = {
         'Most cards close with the same two questions. On the ETZ cards, four questions are printed on the card itself.',
       vraag1: 'What would you do, and why?',
       vraag2: 'What values are at stake here?',
+    },
+    printTip: {
+      titel: 'Tip: print them on A5',
+      lead:
+        'The cards look best printed on A5, on slightly thicker paper. If you prefer another size, it is easier to download the cards as a PDF first. You will also find examples of ',
+      linkLabel: 'activities',
+      trail: ' elsewhere on this site that show how to use the cards. Enjoy learning!',
     },
     introToggle: 'About the method — why and how?',
     cta: {
@@ -177,6 +191,7 @@ export default function GespreksKaartenPagina() {
     }))
   }, [filteredCards, taal, t.gesprekskaart.filters.categorieLabels])
   const aanmeldenHref = usesEnglishRoutes(taal) ? '/join' : '/aanmelden'
+  const werkvormenHref = usesEnglishRoutes(taal) ? '/library/acting' : '/bibliotheek/handelen'
   const teaserDownload = {
     href: TEASER_DOWNLOADS[getCardContentLang(taal)].href,
     filename: TEASER_DOWNLOADS[getCardContentLang(taal)].filename,
@@ -479,6 +494,58 @@ export default function GespreksKaartenPagina() {
           {taal === 'nl' ? 'en' : 'and'}{' '}
           <em style={{ color: '#534ab7' }}>{copy.preview.vraag2}</em>
         </motion.p>
+
+        <motion.aside
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={2}
+          aria-labelledby="gesprekskaarten-print-tip-titel"
+          style={{
+            marginBottom: '1.75rem',
+            padding: '1.25rem 1.35rem',
+            borderRadius: '12px',
+            border: '1px solid var(--rand, #d8d3c9)',
+            backgroundColor: 'var(--surface-muted, #f0ebe3)',
+          }}
+        >
+          <h3
+            id="gesprekskaarten-print-tip-titel"
+            style={{
+              fontFamily: 'DM Sans, sans-serif',
+              fontSize: '0.95rem',
+              fontWeight: 600,
+              color: 'var(--tekst-primair, #1a2744)',
+              marginBottom: '0.5rem',
+            }}
+          >
+            {copy.printTip.titel}
+          </h3>
+          <p
+            style={{
+              fontFamily: 'DM Sans, sans-serif',
+              fontSize: '0.9rem',
+              lineHeight: 1.7,
+              color: 'var(--tekst-secundair, #5f5e5a)',
+              margin: 0,
+            }}
+          >
+            {copy.printTip.lead}
+            <Link
+              to={werkvormenHref}
+              style={{
+                color: '#0f6e56',
+                fontWeight: 500,
+                textDecoration: 'underline',
+                textUnderlineOffset: '3px',
+              }}
+            >
+              {copy.printTip.linkLabel}
+            </Link>
+            {copy.printTip.trail}
+          </p>
+        </motion.aside>
 
         <GesprekskaartenFilters
           filters={filters}
