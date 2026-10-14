@@ -1,0 +1,305 @@
+[
+  {
+    "_voorbeeld": {
+      "id": "hrm-ps12",
+      "set": "praktijkschok-hrm",
+      "stap": 3,
+      "categorie": "hrm",
+      "complexiteit": "micro",
+      "taalniveau": "B2",
+      "status": "aanbevolen",
+      "nl": {
+        "titel": "Bevoegd tot betalen",
+        "verhaal": "Arjen werkt al tien jaar op de crediteurenadministratie. Op een dinsdagmiddag sluit hij de deur van Sophies kamer. Hij is midden in een scheiding, heeft schulden en slaapt slecht. ‘Ik vertel het alleen aan jou. Mijn leidinggevende mag het niet weten.’\n\nSophie, HR-adviseur, ziet hoe hij zijn handen wringt. Zijn werk is nog steeds in orde. Maar ze weet ook dat Arjen zelfstandig betalingen tot vijftigduizend euro mag fiatteren.\n\nAls ze zijn vertrouwen schendt, sluit hij zich misschien helemaal af. Als ze zwijgt en het gaat mis, heeft zij een risico laten bestaan dat ze zag aankomen. Wat weegt zwaarder: het vertrouwen dat Arjen haar geeft, of het risico dat ze ziet?",
+        "vraag1": "Wat zou jij doen en waarom?",
+        "vraag2": "Welke waarden zijn hier in het spel?",
+        "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+        "rechtvaardiging": "Sophie beslist zelf of zij het vertrouwen van Arjen bewaart of het risico voor de organisatie deelt."
+      },
+      "en": {
+        "titel": "Authorised to Pay",
+        "verhaal": "Arjen has worked in accounts payable for ten years. On a Tuesday afternoon he closes the door to Sophie's office. He is in the middle of a divorce, in debt, and sleeping badly. ‘I'm only telling you. My manager can't know.’\n\nSophie, an HR advisor, watches him wring his hands. His work is still fine. But she also knows that Arjen can approve payments of up to fifty thousand euros on his own.\n\nIf she breaks his trust, he may shut down completely. If she stays silent and it goes wrong, she has let a risk stand that she saw coming. What weighs more: the trust Arjen has placed in her, or the risk she can see?",
+        "vraag1": "What would you do and why?",
+        "vraag2": "Which values are at stake here?",
+        "complexiteitLabel": "★☆☆  MICRO — personal choice",
+        "rechtvaardiging": "Sophie decides for herself whether to keep Arjen's confidence or to share the risk with the organisation."
+      },
+      "assets": {
+        "afbeelding": "/images/gesprekskaarten/PS12-bevoegd-tot-betalen.jpg",
+        "altNl": "HR-adviseur en medewerker in een kantoorruimte, gesprek achter gesloten deur",
+        "altEn": "HR advisor and employee in an office, conversation behind a closed door",
+        "fireflyPrompt": null,
+        "pdfNl": null,
+        "pdfEn": null
+      },
+      "meta": {
+        "woordenNl": 112,
+        "woordenEn": 117,
+        "bron": "Praktijkschok HRM — selectie website (15 kaarten)",
+        "kaartNummer": "PS12",
+        "sectorColor": "#3949AB",
+        "categorieEn": "HR",
+        "tekstVersie": "3.0",
+        "afbeeldingStatus": "v3",
+        "project": "Lectoraat Ethisch Werken"
+      },
+      "moeilijkheid": 1
+    },
+    "_voorbeeldOpmerking": "Gevraagde id hrm-ps40 staat niet in cards.json; _voorbeeld is volledige kaart hrm-ps12."
+  },
+  {
+    "id": "GK_DL_01",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De sjaal in de trein",
+      "verhaal": "De trein staat al twintig minuten stil in de kou, zonder verwarming. Tegenover Nina zit een meisje van amper achttien in een dun jasje. Ze rilt, met klapperende tanden, en kijkt naar niemand. De conducteur is ergens verderop en niemand zegt iets.\n\nIn Nina’s tas zit een zachte sjaal, een cadeau van haar oma. Het is het enige dierbare dat ze meeneemt naar haar sollicitatiegesprek, waarvoor ze zich net goed genoeg gekleed voelt. Haar hand raakt de stof, trekt terug, raakt hem weer aan. Het meisje kijkt haar aan, te moe om iets te vragen.\n\nHulp is nog minuten weg. Geeft Nina haar sjaal weg, of houdt ze vast aan wat haar dierbaar is?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "The scarf on the train",
+      "verhaal": "The train jolts, a dull thud. On the cold floor lies a girl, barely eighteen, shivering, her teeth chattering. The conductor calls for help, but it takes time.\n\nNina, sitting opposite, watches the girl chill against the icy steel. In her bag is a soft scarf, a gift from her grandmother and the only bit of warmth she has with her on the way to a job interview. Her hand touches the fabric, pulls back, touches it again. The girl looks at her, too exhausted to ask for anything.\n\nOutside, the last station lights glide past; help is still minutes away. Does Nina give the scarf away and face the cold on the platform herself, or hold on to what is dear to her?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_02",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Vriend rijdt onder invloed van alcohol",
+      "verhaal": "Het is twee uur ’s nachts. Sophie staat in de deuropening en ziet Tom zijn autosleutels pakken. De wijnglazen op tafel zijn leeg, zijn ogen glazig. “Ik red het wel,” zegt hij, zoals altijd. Ze kent dit ritueel: het korte lachje, de overmoed, de deur die dichtvalt voordat ze iets kan zeggen.\n\nBuiten start de motor. Het is niet de eerste keer. Sophie denkt aan de fietser die straks misschien oversteekt, aan de rotonde, aan Tom zelf. Ze zou de sleutels kunnen afpakken, zijn ouders bellen, een scène maken op straat. Maar wat als hij haar daarna nooit meer vertrouwt?\n\nHet raampje zoeft naar beneden. “Stap je nog in?” Grijpt Sophie nu in, of laat ze hem rijden?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Friend drives under the influence of alcohol",
+      "verhaal": "Sophie stands in the doorway and sees Tom pick up his car keys. It is two in the morning, the wine glasses on the table are empty, his eyes glazed. \"I'll be fine,\" he says, as he always does. She knows this ritual: the short laugh, the overconfidence, the door closing before she can say anything.\n\nOutside the engine starts. Sophie feels her heart pounding, not only for Tom, but for the cyclist who may be crossing, the driver approaching the roundabout unsuspecting. She could take the keys, call his parents, make a scene in the street. But what if he never trusts her again?\n\nThe window glides down. \"Are you getting in?\" he asks. Does Sophie step in now, or let it go again?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_03",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Buurman dumpt afval in het park",
+      "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw vuilniszakken naast de border, half opengescheurd door een vos. Hij weet wie erachter zit en heeft het eerder gezien zonder iets te zeggen. Meneer Bakker, twee huizen verderop, dumpt hier al maanden zijn tuinafval en huisvuil.\n\nHet park was de trots van de buurt. Nu mijden steeds meer buren de plek en klagen ze op de buurtapp, zonder iets te doen. David kan Bakker aanspreken, met het risico op ruzie tussen mensen die elkaar nog jaren tegenkomen. Hij kan ook handhaving van de gemeente bellen.\n\nZo kan het niet blijven. Spreekt David hem zelf aan, of schakelt hij de gemeente in?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Neighbour dumps rubbish in the park",
+      "verhaal": "David stands at the park gate and smells it before he sees it: another heap of rubbish bags next to the flower bed, half torn open by a fox. He knows who is behind it: Mr Bakker, two houses down, who has been secretly dumping his garden waste and household rubbish here for months.\n\nThe park used to be the pride of the neighbourhood. Now more and more neighbours avoid the place, complain on the neighbourhood app and point fingers at each other without doing anything. David could speak to Mr Bakker, at the risk of a heated quarrel between neighbours who will keep running into each other for years. He could also call the council and bring in enforcement.\n\nHe looks at the torn bags, then at Mr Bakker's house. Does David speak to him himself, or call the council straight away?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_04",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Vriend pleegt winkeldiefstal",
+      "verhaal": "Delano staat achter het rek met energiedrankjes en ziet het gebeuren: Mark laat een deodorant in zijn jaszak glijden en loopt langs de kassa alsof er niets aan de hand is. Het is niet de eerste keer. Mark noemt het ‘gewoon even meenemen’. Delano weet het al maanden en lachte het steeds weg.\n\nMaar de bedragen worden groter. Laatst werd Mark bijna betrapt door een beveiliger die zijn gezicht nu kent. Gaat het mis, dan wacht een aangifte en een strafblad. Zegt Delano iets, dan kantelt tien jaar vriendschap misschien in één gesprek.\n\nDelano’s hart bonkt. Buiten wacht Mark ontspannen op zijn fiets. Durft Delano het gesprek aan, of zwijgt hij nog één keer?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Friend shoplifts",
+      "verhaal": "Delano stands behind the rack of energy drinks and sees it happen: Mark effortlessly slips a deodorant into his jacket pocket and walks past the till as if nothing is going on. It is not the first time. Delano has known for months and has ignored it, laughed it off, talked it away.\n\nBut the amounts are getting bigger, the shops riskier; recently Mark was nearly caught by a security guard who now knows his face. Delano thinks about what happens if it goes wrong: a police report, a criminal record that follows Mark for years. He also thinks about what happens if he speaks up now: the look of betrayal, ten years of friendship that could tip over in one conversation.\n\nOutside, Mark waits calmly by his bike, as if nothing happened. Does Delano dare to start the conversation, or does he stay silent one more time?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_05",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Buurvrouw laat kinderen vaak alleen thuis",
+      "verhaal": "Emma hoort het weer door de muur: een kind dat roept, daarna stilte, en de voordeur die hard dichtvalt. Soms staat de televisie uren op volle sterkte. Mevrouw Jansen vertrekt in haar uniform. Achter het raam staan twee kleine gezichten.\n\nEmma weet dat school en jeugdzorg soms signalen oppikken, maar zij is alleen de buurvrouw. Ze kan Veilig Thuis bellen, het gesprek met Jansen aangaan of hopen dat het meevalt. Ze vraagt zich af wat er gebeurt als niemand kijkt.\n\nHet is niet de eerste keer. Die middag ziet ze de jongste alleen op het balkon staan. Belt Emma nu een instantie, of wacht ze tot ze zeker weet dat er iets aan de hand is?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Neighbour often leaves children home alone",
+      "verhaal": "Emma hears it again: shuffling behind the wall, a door slamming, then silence. She knows what it means: Mrs Jansen has gone out and the children are alone. Through the thin partition wall she hears the youngest child crying, a sound that slowly fades into tired silence.\n\nIt is the third time this month. Emma has kept track of the time: sometimes half an hour, sometimes almost two. She wonders: is this still an incident, or the start of a pattern she must not ignore? She could knock on the door, or call the child abuse helpline. But what if she misjudges it and suspects a good mother in a difficult period of neglect?\n\nEmma puts her hand on the door handle. Does she knock, or walk on?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_06",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Vriend rijdt véél te hard",
+      "verhaal": "Lisa zit naast Mark in de auto en klemt haar handen om de armleuning. De teller klimt naar honderdveertig op een weg waar tachtig geldt. Mark neuriet mee met de radio. Bij het volgende kruispunt schiet hij door oranje, een fietser remt net op tijd.\n\nHet is niet de eerste keer. Vorige maand zat haar broertje nog achterin. Lisa weet dat ze iets moet zeggen, maar de vorige keer werd Mark geïrriteerd en deed hij weken afstandelijk. Ze houdt van zijn spontaniteit. Dat weegt steeds minder op tegen de angst in haar buik.\n\nZe kijkt naar de snelheidsmeter, dan naar zijn ontspannen gezicht. Zegt ze nu iets, of wacht ze tot ze veilig thuis zijn?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Friend drives too fast and breaks traffic rules",
+      "verhaal": "Lisa sits next to Mark in the car and clenches her hands around the armrest. The speedometer climbs to 140 on a road with an 80 limit, and Mark hums along to the radio as if nothing is wrong. At the next junction he shoots through an amber light, ignoring a cyclist who brakes just in time.\n\nIt is not the first time she has experienced this, only last month with her little brother in the back. Lisa knows she should say something, but she remembers the last time: Mark getting irritated, staying distant for weeks. She loves his spontaneity and the freedom he gives her, but that feeling weighs less and less against the fear in her stomach.\n\nShe looks at the speedometer, then at his relaxed face. Does she say something now, in the middle of the motorway, or wait until they are safely home?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_07",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De gevonden portemonnee",
+      "verhaal": "Op het verlaten bankje in het park ligt een zware leren portemonnee, half open. Er piept een stapel briefjes van twintig onderuit, naast een identiteitskaart van een jonge vrouw die serieus de camera inkijkt. Niemand in de buurt, alleen het geritsel van bladeren.\n\nVoor Jasper voelt het alsof de portemonnee precies op tijd is gevallen. De huur van deze maand is nog niet rond, de nieuwe schoenen staan al weken op zijn verlanglijst. Op de kaart staat een adres, niet ver hiervandaan. Hij kan het geld houden en de portemonnee laten liggen, alsof hij hem nooit vond.\n\nZijn duim glijdt over de briefjes. Steekt hij de portemonnee in zijn zak, of zoekt hij de eigenaar op?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "The found wallet",
+      "verhaal": "On the deserted bench in the park lies a heavy leather wallet, half open. A stack of twenty-euro notes peeks out from underneath, next to an ID card with a photo of a young woman looking seriously into the camera. Nobody is around: no cyclists, no walkers, only the rustle of leaves.\n\nTo Jasper it feels as if the wallet has fallen at exactly the right moment. This month's rent is not covered yet, and the new shoes have been on his wish list for weeks. He picks it up and feels its weight in his hand. The ID card shows an address, not far from here. He could keep the money and leave the wallet somewhere, as if he never found it.\n\nHis thumb slides over the notes. Does he slip the wallet into his pocket, or look for its owner?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_08",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De roddelende vriend",
+      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer. Ruben lacht, zijn glas in de hand. Yara blijft staan als ze Ruben aan een groepje klasgenoten hoort vertellen over Nina, hun gezamenlijke vriendin. Een verzonnen verhaal, over een slippertje dat nooit gebeurd is.\n\nZe ziet de gezichten om hem heen, nieuwsgierig en geamuseerd. Niemand lijkt te twijfelen. Ruben is al jaren haar beste vriend, degene die er was toen niemand anders er was. Maar Nina is ook haar vriendin, en dit verhaal kan haar reputatie kapotmaken voordat de avond voorbij is. Yara kan hem apart nemen, of hem recht voor de groep tegenspreken.\n\nGrijpt Yara nu in, of loopt ze door naar de bar?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "The gossiping friend",
+      "verhaal": "The bass pounds through the club, lights flash across the dance floor, and then you catch snatches of what Ruben is telling a group of classmates. It takes a moment to sink in: he is telling an invented story about Nina, your mutual friend, something about an affair that never happened.\n\nYou see the faces around him, curious and amused, as if this were real gossip. Ruben has been your best friend for years, the one who was always there. But Nina is your friend too, and this story could wreck her reputation in class before the night is over.\n\nYou could take him aside, gently but clearly, or contradict him right in front of the group, at the risk of humiliating him. Do you step in now, or walk on to the bar?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_09",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "moeilijkheid": 1,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Het geleende geld",
+      "verhaal": "Noor heeft het bedrag al drie keer herrekend: de huur, de boodschappen, de vergeten rekening van de tandarts. Het klopt niet. Het geld dat ze drie maanden geleden aan Milan leende, heeft ze nu zelf nodig. Milan hielp haar toen zonder aarzelen, met een glimlach.\n\nNu belt hij opgewekt over het weekend. Noor voelt de schaamte in haar keel bij de gedachte het onderwerp aan te snijden. Ze weet ook dat Milan zelf krap zit sinds hij minder uren werkt. Vraagt ze haar geld terug, dan zet ze de vriendschap onder druk. Zwijgt ze, dan moet ze het op een andere manier oplossen.\n\nZijn naam licht op haar scherm op. Neemt Noor op, of laat ze hem voor de derde keer naar de voicemail gaan?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "The borrowed money",
+      "verhaal": "You have recalculated the amount three times: the rent, the groceries, the unexpected dentist's bill you had forgotten. It does not add up, and the money you lent Milan three months ago is exactly what you need now. Milan helped you then without hesitation, with a smile, as if it were the most normal thing in the world.\n\nNow he is calling again, cheerful about the weekend, and you feel the shame creeping into your throat at the thought of raising the subject. You also know Milan is short of cash himself since he started working fewer hours. Do you ask for your money back now and put the friendship under pressure, or do you keep quiet and get by some other way?\n\nHis name lights up your screen. Do you pick up, or let him go to voicemail for the third time?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_10",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De gemanipuleerde review",
+      "verhaal": "De koffiezaak op de hoek bestaat nog geen twee weken en pronkt al met tweehonderd vijfsterrenreviews, allemaal in dezelfde week geschreven, bijna identiek over ‘de beste koffie van de stad’. Joost werkt al jaren bij het cafeetje verderop, waar de eigenaar elke ochtend zelf de bonen selecteert.\n\nToen hij een paar profielen doorklikte, zag hij het patroon: accounts zonder foto en zonder geschiedenis, met alleen die ene lovende review. Het voelt oneerlijk, voor zijn werkgever en voor elke ondernemer in de straat die het wél netjes doet. Hij kan melding maken bij het reviewplatform, met screenshots. Hij kan ook niets doen.\n\nLaat Joost het los, of verstuurt hij de melding die al klaarstaat?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "The manipulated online review",
+      "verhaal": "The coffee shop on the corner has existed for less than two weeks and already boasts two hundred five-star reviews, all written in the same week, all in nearly identical wording about \"the best coffee in town\". You have worked for years at the little café down the road, where the owner selects the beans himself every morning and where the reviews have built up slowly, honestly, over months.\n\nWhen you clicked through the profiles of a few reviewers, you saw the pattern: accounts that have posted nothing but that one glowing review, no photo, no history. It feels unfair, not only to your own employer but to every business owner on the street who does it properly. You could report it to the review platform, with screenshots as evidence. You could also do nothing.\n\nDo you let it go, or send the report you have already prepared?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_11",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Buurman mishandelt zijn vrouw",
+      "verhaal": "Door de dunne muur hoort Emma het geschreeuw weer, gevolgd door een doffe klap en daarna stilte, de stilte die haar het meest beangstigt. De volgende ochtend staat mevrouw Janssen in de tuin, een blauwe plek half verborgen onder make-up en een te grote zonnebril voor een bewolkte dag. Ze glimlacht, zoals al maanden.\n\nMeneer Janssen heeft aanzien in de buurt: vriendelijk op het buurtfeest, behulpzaam met de heg. Emma zocht het nummer van Veilig Thuis al eens op en sloot de website weer. Is het aan haar om in te grijpen, of maakt zwijgen haar medeplichtig?\n\nZe pakt haar telefoon. Belt ze nu, of wacht ze tot ze zeker weet wat ze hoorde?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Neighbour abuses his wife",
+      "verhaal": "Through the thin wall Emma hears the shouting again, followed by a dull thud and then silence, the silence that always frightens her most. The next morning she sees Mrs Janssen in the garden, a bruise half hidden under make-up and sunglasses too big for such a cloudy day. She smiles at Emma as if nothing is wrong, as she has done for months.\n\nEmma knows Mr Janssen is well regarded in the neighbourhood: friendly at the street party, always helping with the hedge. She once looked up the number of Veilig Thuis, the Dutch domestic abuse helpline, and closed the website before she could call. She wonders: is it her place to step in, or does her silence make her complicit?\n\nEmma picks up her phone. Does she call now, or wait until she is sure of what she heard?",
+      "vraag1": "What would you do, and why?"
+    }
+  },
+  {
+    "id": "GK_DL_12",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De buurtapp",
+      "verhaal": "Sinds vanmiddag staat op de buurtapp een wazige video van een jongen met een capuchon die langs gevels loopt. ‘Verdacht! Wie kent hem?’ Binnen een uur zijn er vijftig reacties, met tijden, foto’s en een straatnaam. Niemand vraagt zich af of het klopt.\n\nMarieke herkent hem meteen. Het is Jesse, de zoon van haar buurvrouw, die elke dinsdag zijn oma bezoekt. De groep gelooft op zo’n moment liever dan dat hij twijfelt. Reageert ze openlijk, dan wordt zij misschien de volgende die ter discussie staat. Zwijgt ze, dan staat zijn gezicht morgen overal.\n\nHaar duim hangt boven het scherm. Zet Marieke het recht in de groep, of stuurt ze alleen de beheerder een bericht?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "De buurtapp",
+      "verhaal": "Sinds vanmiddag staat op de buurtapp een wazige video van een jongen met een capuchon die langs gevels loopt. ‘Verdacht! Wie kent hem?’ Binnen een uur zijn er vijftig reacties, met tijden, foto’s en een straatnaam. Niemand vraagt zich af of het klopt.\n\nMarieke herkent hem meteen. Het is Jesse, de zoon van haar buurvrouw, die elke dinsdag zijn oma bezoekt. De groep gelooft op zo’n moment liever dan dat hij twijfelt. Reageert ze openlijk, dan wordt zij misschien de volgende die ter discussie staat. Zwijgt ze, dan staat zijn gezicht morgen overal.\n\nHaar duim hangt boven het scherm. Zet Marieke het recht in de groep, of stuurt ze alleen de beheerder een bericht?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    }
+  },
+  {
+    "id": "GK_DL_13",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "moeilijkheid": 2,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De trainer",
+      "verhaal": "Het is dinsdagavond, de schemer hangt boven het veld. Lotte staat bij het hek en hoort trainer Henk een speler van veertien toesnauwen, voor het hele team. Hij pakt de jongen bij zijn arm, net iets te hard, en duwt hem naar de kant. De andere jongens zwijgen.\n\nHenk draait al twaalf jaar onbetaald het team en de club wil hem niet kwijt. De andere ouders kijken weg: ‘zo gaat het hier nu eenmaal.’ Lottes eigen dochter speelt in hetzelfde team en is dol op hem. Lotte kan Henk aanspreken, naar het bestuur stappen of het laten rusten.\n\nHet is niet de eerste keer dat ze zoiets ziet. Stapt Lotte naar het bestuur, of laat ze het passeren?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "De trainer",
+      "verhaal": "Het is dinsdagavond, de schemer hangt boven het veld. Lotte staat bij het hek en hoort trainer Henk een speler van veertien toesnauwen, voor het hele team. Hij pakt de jongen bij zijn arm, net iets te hard, en duwt hem naar de kant. De andere jongens zwijgen.\n\nHenk draait al twaalf jaar onbetaald het team en de club wil hem niet kwijt. De andere ouders kijken weg: ‘zo gaat het hier nu eenmaal.’ Lottes eigen dochter speelt in hetzelfde team en is dol op hem. Lotte kan Henk aanspreken, naar het bestuur stappen of het laten rusten.\n\nHet is niet de eerste keer dat ze zoiets ziet. Stapt Lotte naar het bestuur, of laat ze het passeren?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    }
+  },
+  {
+    "id": "GK_DL_14",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "moeilijkheid": 3,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "Zonder papieren",
+      "verhaal": "Samir woont al drie jaar twee deuren verderop en draagt altijd Ilses boodschappen naar boven. Gisteren vertelde hij, bijna terloops en met een lach om het minder zwaar te maken, dat zijn asielaanvraag definitief is afgewezen. Hij heeft geen recht meer op opvang en mag niet werken, maar kan nergens heen.\n\nHaar man vindt dat het hun zaak niet is. Ilse weet dat de regels duidelijk zijn en dat helpen niet zonder risico is. Ze weet ook dat Samir niets misdeed en dat de hele straat hem kent. Ze kan hem een kamer aanbieden, hem naar een advocaat of kerkelijke opvang verwijzen, of de situatie laten zoals die is.\n\nHelpt Ilse hem, ook als dat tegen de regels ingaat, of houdt ze afstand?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "Zonder papieren",
+      "verhaal": "Samir woont al drie jaar twee deuren verderop en draagt altijd Ilses boodschappen naar boven. Gisteren vertelde hij, bijna terloops en met een lach om het minder zwaar te maken, dat zijn asielaanvraag definitief is afgewezen. Hij heeft geen recht meer op opvang en mag niet werken, maar kan nergens heen.\n\nHaar man vindt dat het hun zaak niet is. Ilse weet dat de regels duidelijk zijn en dat helpen niet zonder risico is. Ze weet ook dat Samir niets misdeed en dat de hele straat hem kent. Ze kan hem een kamer aanbieden, hem naar een advocaat of kerkelijke opvang verwijzen, of de situatie laten zoals die is.\n\nHelpt Ilse hem, ook als dat tegen de regels ingaat, of houdt ze afstand?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    }
+  },
+  {
+    "id": "GK_DL_15",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "moeilijkheid": 3,
+    "sectorColor": "#E0A01A",
+    "nl": {
+      "titel": "De afgesloten stroom",
+      "verhaal": "Het vriest, en al drie avonden brandt er bij mevrouw Dekker, tweehoog achter, alleen een kaars. Als Joost aanbelt, staat ze in haar jas in de gang, haar vingers blauw van de kou. De energieleverancier heeft haar afgesloten na maanden achterstand.\n\nZe zegt dat het wel gaat. Ze is 78, heeft een klein pensioen en wil geen ‘bedelaar’ zijn. Schuldhulp en de gemeente weigert ze: te beschamend. Joost kan een verlengsnoer vanuit zijn eigen meterkast naar haar woonkamer leggen. Dat helpt vanavond, maar het mag niet en het is een brandrisico. Hij kan ook zonder haar toestemming de gemeente bellen.\n\nLegt Joost het snoer, of belt hij over haar hoofd heen?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    },
+    "en": {
+      "titel": "De afgesloten stroom",
+      "verhaal": "Het vriest, en al drie avonden brandt er bij mevrouw Dekker, tweehoog achter, alleen een kaars. Als Joost aanbelt, staat ze in haar jas in de gang, haar vingers blauw van de kou. De energieleverancier heeft haar afgesloten na maanden achterstand.\n\nZe zegt dat het wel gaat. Ze is 78, heeft een klein pensioen en wil geen ‘bedelaar’ zijn. Schuldhulp en de gemeente weigert ze: te beschamend. Joost kan een verlengsnoer vanuit zijn eigen meterkast naar haar woonkamer leggen. Dat helpt vanavond, maar het mag niet en het is een brandrisico. Hij kan ook zonder haar toestemming de gemeente bellen.\n\nLegt Joost het snoer, of belt hij over haar hoofd heen?",
+      "vraag1": "Wat zou jij doen en waarom?"
+    }
+  }
+]
