@@ -1,113 +1,5 @@
 [
   {
-    "id": "GK_MM_01",
-    "set": "morele-moed-teaser",
-    "stap": 4,
-    "categorie": "dagelijks-leven",
-    "moeilijkheid": 1,
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "De roddelende vriend",
-      "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer, en dan vang je flarden op van wat Ruben net tegen een groepje klasgenoten zegt. Het duurt even voor het doordringt: hij vertelt een verzonnen verhaal over Nina, jullie gemeenschappelijke vriendin, iets over een slippertje dat nooit gebeurd is.\n\nJe ziet de gezichten om hem heen, nieuwsgierig en geamuseerd, alsof het echte roddel is. Ruben is al jaren je beste vriend, degene die er altijd was. Maar Nina is ook je vriendin, en dit verhaal kan haar reputatie in de klas kapotmaken voordat de avond voorbij is.\n\nJe zou hem apart kunnen nemen, zacht maar duidelijk, of hem recht voor de groep tegenspreken, met het risico dat hij zich vernederd voelt. Grijp je nu in, of loop je door naar de bar?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The gossiping friend",
-      "verhaal": "The bass pounds through the club, lights flash across the dance floor, and then you catch snatches of what Ruben is telling a group of classmates. It takes a moment to sink in: he is telling an invented story about Nina, your mutual friend, something about an affair that never happened.\n\nYou see the faces around him, curious and amused, as if this were real gossip. Ruben has been your best friend for years, the one who was always there. But Nina is your friend too, and this story could wreck her reputation in class before the night is over.\n\nYou could take him aside, gently but clearly, or contradict him right in front of the group, at the risk of humiliating him. Do you step in now, or walk on to the bar?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_MM_01.jpeg",
-      "fireflyPrompt": "A young person standing at the edge of a nightclub dance floor, colorful lights and blurred figures around them, overhearing a conversation with a tense, conflicted expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 133,
-      "woordenEn": 134,
-      "bron": "v3-docx: DL8 roddel.docx",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#E0A01A"
-    }
-  },
-  {
-    "id": "GK_MM_02",
-    "set": "morele-moed-teaser",
-    "stap": 4,
-    "categorie": "dagelijks-leven",
-    "moeilijkheid": 2,
-    "complexiteit": "meso",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Buurman mishandelt zijn vrouw",
-      "verhaal": "Door de dunne muur hoort Emma het geschreeuw weer, gevolgd door een doffe klap en daarna stilte — de stilte die haar altijd het meest beangstigt. De volgende ochtend ziet ze mevrouw Janssen in de tuin, een blauwe plek half verborgen onder make-up en een te grote zonnebril voor een bewolkte dag. Ze glimlacht naar Emma alsof er niets aan de hand is, zoals ze dat al maanden doet.\n\nEmma weet dat meneer Janssen aanzien heeft in de buurt — vriendelijk bij het buurtfeest, behulpzaam met de heg. Ze heeft het nummer van Veilig Thuis al eens opgezocht, de website weer gesloten voordat ze kon bellen. Ze twijfelt: is het aan haar om in te grijpen, of maakt haar zwijgen haar medeplichtig?\n\nEmma pakt haar telefoon. Belt ze nu, of wacht ze tot ze zeker weet wat ze hoorde?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "Neighbour abuses his wife",
-      "verhaal": "Through the thin wall Emma hears the shouting again, followed by a dull thud and then silence, the silence that always frightens her most. The next morning she sees Mrs Janssen in the garden, a bruise half hidden under make-up and sunglasses too big for such a cloudy day. She smiles at Emma as if nothing is wrong, as she has done for months.\n\nEmma knows Mr Janssen is well regarded in the neighbourhood: friendly at the street party, always helping with the hedge. She once looked up the number of Veilig Thuis, the Dutch domestic abuse helpline, and closed the website before she could call. She wonders: is it her place to step in, or does her silence make her complicit?\n\nEmma picks up her phone. Does she call now, or wait until she is sure of what she heard?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_MM_02.jpeg",
-      "fireflyPrompt": "A woman standing in a quiet garden, holding a phone, looking thoughtful and concerned toward a neighboring house, soft overcast daylight, a sense of hesitation in her posture.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 139,
-      "woordenEn": 141,
-      "bron": "v3-docx: DL11 Buurman mishandelt zijn vrouw.docx",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#E0A01A"
-    }
-  },
-  {
-    "id": "GK_MM_03",
-    "set": "morele-moed-teaser",
-    "stap": 4,
-    "categorie": "dagelijks-leven",
-    "moeilijkheid": 1,
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "De gevonden portemonnee",
-      "verhaal": "Op het verlaten bankje in het park ligt een zware, leren portemonnee, half open. Er piept een stapel briefjes van twintig onderuit, naast een identiteitskaart met een foto van een jonge vrouw die serieus de camera inkijkt. Niemand in de buurt — geen fietsers, geen wandelaars, alleen het geritsel van bladeren.\n\nVoor Jasper voelt het alsof de portemonnee precies op tijd is gevallen: de huur van deze maand is nog niet rond, de nieuwe schoenen staan al wekenlang op zijn verlanglijst. Hij pakt hem op, voelt het gewicht in zijn hand. Op de identiteitskaart staat een adres, niet ver hiervandaan. Hij zou het geld kunnen houden en de portemonnee ergens laten liggen, zodat het lijkt of hij hem nooit vond.\n\nZijn duim glijdt over de stapel briefjes. Steekt hij de portemonnee in zijn zak, of zoekt hij de eigenaar op?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The found wallet",
-      "verhaal": "On the deserted bench in the park lies a heavy leather wallet, half open. A stack of twenty-euro notes peeks out from underneath, next to an ID card with a photo of a young woman looking seriously into the camera. Nobody is around: no cyclists, no walkers, only the rustle of leaves.\n\nTo Jasper it feels as if the wallet has fallen at exactly the right moment. This month's rent is not covered yet, and the new shoes have been on his wish list for weeks. He picks it up and feels its weight in his hand. The ID card shows an address, not far from here. He could keep the money and leave the wallet somewhere, as if he never found it.\n\nHis thumb slides over the notes. Does he slip the wallet into his pocket, or look for its owner?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_MM_03.jpeg",
-      "fireflyPrompt": "A leather wallet lying open on an empty park bench, cash and an ID card visible inside, autumn leaves scattered nearby, no people in frame, quiet and still atmosphere.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 140,
-      "woordenEn": 142,
-      "bron": "v3-docx: Dl7 Portemonnee.docx",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#E0A01A"
-    }
-  },
-  {
     "id": "GK_MM_04",
     "set": "morele-moed-teaser",
     "stap": 4,
@@ -1116,14 +1008,16 @@
       "titel": "De sjaal in de trein",
       "verhaal": "De trein staat al twintig minuten stil in de kou, zonder verwarming. Tegenover Nina zit een meisje van amper achttien in een dun jasje. Ze rilt, met klapperende tanden, en kijkt naar niemand. De conducteur is ergens verderop en niemand zegt iets.\n\nIn Nina’s tas zit een zachte sjaal, een cadeau van haar oma. Het is het enige dierbare dat ze meeneemt naar haar sollicitatiegesprek, waarvoor ze zich net goed genoeg gekleed voelt. Haar hand raakt de stof, trekt terug, raakt hem weer aan. Het meisje kijkt haar aan, te moe om iets te vragen.\n\nHulp is nog minuten weg. Geeft Nina haar sjaal weg, of houdt ze vast aan wat haar dierbaar is?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Nina beslist zelf, ter plekke, tussen iets dierbaars en zorg voor een vreemde; geen instantie of regel neemt de keuze over."
     },
     "en": {
       "titel": "The scarf on the train",
       "verhaal": "The train jolts, a dull thud. On the cold floor lies a girl, barely eighteen, shivering, her teeth chattering. The conductor calls for help, but it takes time.\n\nNina, sitting opposite, watches the girl chill against the icy steel. In her bag is a soft scarf, a gift from her grandmother and the only bit of warmth she has with her on the way to a job interview. Her hand touches the fabric, pulls back, touches it again. The girl looks at her, too exhausted to ask for anything.\n\nOutside, the last station lights glide past; help is still minutes away. Does Nina give the scarf away and face the cold on the platform herself, or hold on to what is dear to her?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Nina decides for herself, on the spot, between something precious and caring for a stranger; no authority or rule takes the choice out of her hands."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_01.jpg",
@@ -1155,14 +1049,16 @@
       "titel": "Vriend rijdt onder invloed van alcohol",
       "verhaal": "Het is twee uur ’s nachts. Sophie staat in de deuropening en ziet Tom zijn autosleutels pakken. De wijnglazen op tafel zijn leeg, zijn ogen glazig. “Ik red het wel,” zegt hij, zoals altijd. Ze kent dit ritueel: het korte lachje, de overmoed, de deur die dichtvalt voordat ze iets kan zeggen.\n\nBuiten start de motor. Het is niet de eerste keer. Sophie denkt aan de fietser die straks misschien oversteekt, aan de rotonde, aan Tom zelf. Ze zou de sleutels kunnen afpakken, zijn ouders bellen, een scène maken op straat. Maar wat als hij haar daarna nooit meer vertrouwt?\n\nHet raampje zoeft naar beneden. “Stap je nog in?” Grijpt Sophie nu in, of laat ze hem rijden?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Sophie beslist zelf of ze ingrijpt of Tom laat gaan; het is een directe keuze tussen twee vrienden, zonder instanties of regels die de beslissing voor haar nemen."
     },
     "en": {
       "titel": "Friend drives under the influence of alcohol",
       "verhaal": "Sophie stands in the doorway and sees Tom pick up his car keys. It is two in the morning, the wine glasses on the table are empty, his eyes glazed. \"I'll be fine,\" he says, as he always does. She knows this ritual: the short laugh, the overconfidence, the door closing before she can say anything.\n\nOutside the engine starts. Sophie feels her heart pounding, not only for Tom, but for the cyclist who may be crossing, the driver approaching the roundabout unsuspecting. She could take the keys, call his parents, make a scene in the street. But what if he never trusts her again?\n\nThe window glides down. \"Are you getting in?\" he asks. Does Sophie step in now, or let it go again?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Sophie decides herself whether to step in or let Tom drive off; it is a direct choice between two friends, with no institutions or rules making the decision for her."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_02.jpg",
@@ -1194,14 +1090,16 @@
       "titel": "Buurman dumpt afval in het park",
       "verhaal": "David staat bij het hek van het park en ruikt het al voordat hij het ziet: opnieuw vuilniszakken naast de border, half opengescheurd door een vos. Hij weet wie erachter zit en heeft het eerder gezien zonder iets te zeggen. Meneer Bakker, twee huizen verderop, dumpt hier al maanden zijn tuinafval en huisvuil.\n\nHet park was de trots van de buurt. Nu mijden steeds meer buren de plek en klagen ze op de buurtapp, zonder iets te doen. David kan Bakker aanspreken, met het risico op ruzie tussen mensen die elkaar nog jaren tegenkomen. Hij kan ook handhaving van de gemeente bellen.\n\nZo kan het niet blijven. Spreekt David hem zelf aan, of schakelt hij de gemeente in?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "David staat niet alleen tegenover meneer Bakker: de hele buurt en de gemeente met haar handhaving spelen wezenlijk mee, naast zijn persoonlijke keuze."
     },
     "en": {
       "titel": "Neighbour dumps rubbish in the park",
       "verhaal": "David stands at the park gate and smells it before he sees it: another heap of rubbish bags next to the flower bed, half torn open by a fox. He knows who is behind it: Mr Bakker, two houses down, who has been secretly dumping his garden waste and household rubbish here for months.\n\nThe park used to be the pride of the neighbourhood. Now more and more neighbours avoid the place, complain on the neighbourhood app and point fingers at each other without doing anything. David could speak to Mr Bakker, at the risk of a heated quarrel between neighbours who will keep running into each other for years. He could also call the council and bring in enforcement.\n\nHe looks at the torn bags, then at Mr Bakker's house. Does David speak to him himself, or call the council straight away?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "David is not facing Mr Bakker alone: the whole neighbourhood and the municipality's enforcement play a real part, alongside his personal choice."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_03.jpg",
@@ -1233,14 +1131,16 @@
       "titel": "Vriend pleegt winkeldiefstal",
       "verhaal": "Delano staat achter het rek met energiedrankjes en ziet het gebeuren: Mark laat een deodorant in zijn jaszak glijden en loopt langs de kassa alsof er niets aan de hand is. Het is niet de eerste keer. Mark noemt het ‘gewoon even meenemen’. Delano weet het al maanden en lachte het steeds weg.\n\nMaar de bedragen worden groter. Laatst werd Mark bijna betrapt door een beveiliger die zijn gezicht nu kent. Gaat het mis, dan wacht een aangifte en een strafblad. Zegt Delano iets, dan kantelt tien jaar vriendschap misschien in één gesprek.\n\nDelano’s hart bonkt. Buiten wacht Mark ontspannen op zijn fiets. Durft Delano het gesprek aan, of zwijgt hij nog één keer?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Delano beslist zelf of hij zijn vriend aanspreekt; de spanning speelt tussen twee mensen en hun loyaliteit, zonder dat een organisatie de keuze overneemt."
     },
     "en": {
       "titel": "Friend shoplifts",
       "verhaal": "Delano stands behind the rack of energy drinks and sees it happen: Mark effortlessly slips a deodorant into his jacket pocket and walks past the till as if nothing is going on. It is not the first time. Delano has known for months and has ignored it, laughed it off, talked it away.\n\nBut the amounts are getting bigger, the shops riskier; recently Mark was nearly caught by a security guard who now knows his face. Delano thinks about what happens if it goes wrong: a police report, a criminal record that follows Mark for years. He also thinks about what happens if he speaks up now: the look of betrayal, ten years of friendship that could tip over in one conversation.\n\nOutside, Mark waits calmly by his bike, as if nothing happened. Does Delano dare to start the conversation, or does he stay silent one more time?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Delano decides himself whether to confront his friend; the tension lies between two people and their loyalty, with no organisation taking the choice over."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_04.jpg",
@@ -1272,14 +1172,16 @@
       "titel": "Buurvrouw laat kinderen vaak alleen thuis",
       "verhaal": "Emma hoort het weer door de muur: een kind dat roept, daarna stilte, en de voordeur die hard dichtvalt. Soms staat de televisie uren op volle sterkte. Mevrouw Jansen vertrekt in haar uniform. Achter het raam staan twee kleine gezichten.\n\nEmma weet dat school en jeugdzorg soms signalen oppikken, maar zij is alleen de buurvrouw. Ze kan Veilig Thuis bellen, het gesprek met Jansen aangaan of hopen dat het meevalt. Ze vraagt zich af wat er gebeurt als niemand kijkt.\n\nHet is niet de eerste keer. Die middag ziet ze de jongste alleen op het balkon staan. Belt Emma nu een instantie, of wacht ze tot ze zeker weet dat er iets aan de hand is?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Emma staat als buurvrouw buiten het gezin, terwijl Veilig Thuis, school en jeugdzorg wezenlijk meespelen in wat er na haar keuze gebeurt."
     },
     "en": {
       "titel": "Neighbour often leaves children home alone",
       "verhaal": "Emma hears it again: shuffling behind the wall, a door slamming, then silence. She knows what it means: Mrs Jansen has gone out and the children are alone. Through the thin partition wall she hears the youngest child crying, a sound that slowly fades into tired silence.\n\nIt is the third time this month. Emma has kept track of the time: sometimes half an hour, sometimes almost two. She wonders: is this still an incident, or the start of a pattern she must not ignore? She could knock on the door, or call the child abuse helpline. But what if she misjudges it and suspects a good mother in a difficult period of neglect?\n\nEmma puts her hand on the door handle. Does she knock, or walk on?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Emma is a neighbour outside the family, while Veilig Thuis (the child protection service), the school and youth care play a real part in what happens after her choice."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_05.jpg",
@@ -1311,14 +1213,16 @@
       "titel": "Vriend rijdt véél te hard",
       "verhaal": "Lisa zit naast Mark in de auto en klemt haar handen om de armleuning. De teller klimt naar honderdveertig op een weg waar tachtig geldt. Mark neuriet mee met de radio. Bij het volgende kruispunt schiet hij door oranje, een fietser remt net op tijd.\n\nHet is niet de eerste keer. Vorige maand zat haar broertje nog achterin. Lisa weet dat ze iets moet zeggen, maar de vorige keer werd Mark geïrriteerd en deed hij weken afstandelijk. Ze houdt van zijn spontaniteit. Dat weegt steeds minder op tegen de angst in haar buik.\n\nZe kijkt naar de snelheidsmeter, dan naar zijn ontspannen gezicht. Zegt ze nu iets, of wacht ze tot ze veilig thuis zijn?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Lisa beslist zelf of ze Mark in de auto aanspreekt; het is een directe keuze tussen twee vrienden, zonder regels of instanties die het dilemma oplossen."
     },
     "en": {
       "titel": "Friend drives too fast and breaks traffic rules",
       "verhaal": "Lisa sits next to Mark in the car and clenches her hands around the armrest. The speedometer climbs to 140 on a road with an 80 limit, and Mark hums along to the radio as if nothing is wrong. At the next junction he shoots through an amber light, ignoring a cyclist who brakes just in time.\n\nIt is not the first time she has experienced this, only last month with her little brother in the back. Lisa knows she should say something, but she remembers the last time: Mark getting irritated, staying distant for weeks. She loves his spontaneity and the freedom he gives her, but that feeling weighs less and less against the fear in her stomach.\n\nShe looks at the speedometer, then at his relaxed face. Does she say something now, in the middle of the motorway, or wait until they are safely home?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Lisa decides herself whether to speak up to Mark in the car; it is a direct choice between two friends, with no rules or institutions resolving the dilemma."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_06.jpg",
@@ -1350,14 +1254,16 @@
       "titel": "De gevonden portemonnee",
       "verhaal": "Op het verlaten bankje in het park ligt een zware leren portemonnee, half open. Er piept een stapel briefjes van twintig onderuit, naast een identiteitskaart van een jonge vrouw die serieus de camera inkijkt. Niemand in de buurt, alleen het geritsel van bladeren.\n\nVoor Jasper voelt het alsof de portemonnee precies op tijd is gevallen. De huur van deze maand is nog niet rond, de nieuwe schoenen staan al weken op zijn verlanglijst. Op de kaart staat een adres, niet ver hiervandaan. Hij kan het geld houden en de portemonnee laten liggen, alsof hij hem nooit vond.\n\nZijn duim glijdt over de briefjes. Steekt hij de portemonnee in zijn zak, of zoekt hij de eigenaar op?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Jasper beslist helemaal zelf, ongezien, tussen eigen gewin en eerlijkheid tegenover een onbekende; er speelt geen organisatie of regelgeving mee."
     },
     "en": {
       "titel": "The found wallet",
       "verhaal": "On the deserted bench in the park lies a heavy leather wallet, half open. A stack of twenty-euro notes peeks out from underneath, next to an ID card with a photo of a young woman looking seriously into the camera. Nobody is around: no cyclists, no walkers, only the rustle of leaves.\n\nTo Jasper it feels as if the wallet has fallen at exactly the right moment. This month's rent is not covered yet, and the new shoes have been on his wish list for weeks. He picks it up and feels its weight in his hand. The ID card shows an address, not far from here. He could keep the money and leave the wallet somewhere, as if he never found it.\n\nHis thumb slides over the notes. Does he slip the wallet into his pocket, or look for its owner?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Jasper decides entirely on his own, unobserved, between personal gain and honesty towards a stranger; no organisation or regulation is involved."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_07.jpg",
@@ -1389,14 +1295,16 @@
       "titel": "De roddelende vriend",
       "verhaal": "De bas dreunt door de club, lichten flitsen over de dansvloer. Ruben lacht, zijn glas in de hand. Yara blijft staan als ze Ruben aan een groepje klasgenoten hoort vertellen over Nina, hun gezamenlijke vriendin. Een verzonnen verhaal, over een slippertje dat nooit gebeurd is.\n\nZe ziet de gezichten om hem heen, nieuwsgierig en geamuseerd. Niemand lijkt te twijfelen. Ruben is al jaren haar beste vriend, degene die er was toen niemand anders er was. Maar Nina is ook haar vriendin, en dit verhaal kan haar reputatie kapotmaken voordat de avond voorbij is. Yara kan hem apart nemen, of hem recht voor de groep tegenspreken.\n\nGrijpt Yara nu in, of loopt ze door naar de bar?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Yara beslist zelf, op dit moment, of ze haar vriend Ruben tegenspreekt om haar vriendin Nina te beschermen; het is een directe keuze tussen twee vriendschappen."
     },
     "en": {
       "titel": "The gossiping friend",
-      "verhaal": "The bass pounds through the club, lights flash across the dance floor, and then you catch snatches of what Ruben is telling a group of classmates. It takes a moment to sink in: he is telling an invented story about Nina, your mutual friend, something about an affair that never happened.\n\nYou see the faces around him, curious and amused, as if this were real gossip. Ruben has been your best friend for years, the one who was always there. But Nina is your friend too, and this story could wreck her reputation in class before the night is over.\n\nYou could take him aside, gently but clearly, or contradict him right in front of the group, at the risk of humiliating him. Do you step in now, or walk on to the bar?",
+      "verhaal": "The bass thuds through the club, lights flash across the dance floor. Ruben laughs, glass in hand. Yara stops in her tracks when she hears Ruben telling a group of classmates about Nina, their mutual friend. An invented story, about a fling that never happened.\n\nShe sees the faces around him, curious and amused. Nobody seems to doubt it. Ruben has been her best friend for years, the one who was there when nobody else was. But Nina is her friend too, and this story could ruin her reputation before the night is over. Yara can take him aside, or contradict him in front of the whole group.\n\nDoes Yara step in now, or walk on to the bar?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Yara decides herself, right now, whether to contradict her friend Ruben to protect her friend Nina; it is a direct choice between two friendships."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_08.jpg",
@@ -1428,14 +1336,16 @@
       "titel": "Het geleende geld",
       "verhaal": "Noor heeft het bedrag al drie keer herrekend: de huur, de boodschappen, de vergeten rekening van de tandarts. Het klopt niet. Het geld dat ze drie maanden geleden aan Milan leende, heeft ze nu zelf nodig. Milan hielp haar toen zonder aarzelen, met een glimlach.\n\nNu belt hij opgewekt over het weekend. Noor voelt de schaamte in haar keel bij de gedachte het onderwerp aan te snijden. Ze weet ook dat Milan zelf krap zit sinds hij minder uren werkt. Vraagt ze haar geld terug, dan zet ze de vriendschap onder druk. Zwijgt ze, dan moet ze het op een andere manier oplossen.\n\nZijn naam licht op haar scherm op. Neemt Noor op, of laat ze hem voor de derde keer naar de voicemail gaan?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Noor beslist zelf of ze Milan om haar geld vraagt; het gaat om een persoonlijke afspraak tussen twee vrienden, zonder instanties of regels."
     },
     "en": {
       "titel": "The borrowed money",
-      "verhaal": "You have recalculated the amount three times: the rent, the groceries, the unexpected dentist's bill you had forgotten. It does not add up, and the money you lent Milan three months ago is exactly what you need now. Milan helped you then without hesitation, with a smile, as if it were the most normal thing in the world.\n\nNow he is calling again, cheerful about the weekend, and you feel the shame creeping into your throat at the thought of raising the subject. You also know Milan is short of cash himself since he started working fewer hours. Do you ask for your money back now and put the friendship under pressure, or do you keep quiet and get by some other way?\n\nHis name lights up your screen. Do you pick up, or let him go to voicemail for the third time?",
+      "verhaal": "Noor has recalculated the amount three times: the rent, the groceries, the forgotten dentist's bill. It doesn't add up. The money she lent Milan three months ago is money she now needs herself. Milan helped her back then without hesitation, with a smile.\n\nNow he calls cheerfully about the weekend. Noor feels the shame in her throat at the thought of bringing it up. She also knows Milan is short of money himself since he started working fewer hours. If she asks for her money back, she puts the friendship under strain. If she says nothing, she will have to solve it another way.\n\nHis name lights up her screen. Does Noor pick up, or does she let him go to voicemail for the third time?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Noor decides herself whether to ask Milan for her money; it is a personal agreement between two friends, with no institutions or rules involved."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_09.jpg",
@@ -1467,14 +1377,16 @@
       "titel": "De gemanipuleerde review",
       "verhaal": "De koffiezaak op de hoek bestaat nog geen twee weken en pronkt al met tweehonderd vijfsterrenreviews, allemaal in dezelfde week geschreven, bijna identiek over ‘de beste koffie van de stad’. Joost werkt al jaren bij het cafeetje verderop, waar de eigenaar elke ochtend zelf de bonen selecteert.\n\nToen hij een paar profielen doorklikte, zag hij het patroon: accounts zonder foto en zonder geschiedenis, met alleen die ene lovende review. Het voelt oneerlijk, voor zijn werkgever en voor elke ondernemer in de straat die het wél netjes doet. Hij kan melding maken bij het reviewplatform, met screenshots. Hij kan ook niets doen.\n\nLaat Joost het los, of verstuurt hij de melding die al klaarstaat?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Het reviewplatform, concurrerende ondernemers en Joosts werkgever spelen wezenlijk mee; zijn keuze om te melden raakt meer dan een conflict tussen twee personen."
     },
     "en": {
       "titel": "The manipulated online review",
-      "verhaal": "The coffee shop on the corner has existed for less than two weeks and already boasts two hundred five-star reviews, all written in the same week, all in nearly identical wording about \"the best coffee in town\". You have worked for years at the little café down the road, where the owner selects the beans himself every morning and where the reviews have built up slowly, honestly, over months.\n\nWhen you clicked through the profiles of a few reviewers, you saw the pattern: accounts that have posted nothing but that one glowing review, no photo, no history. It feels unfair, not only to your own employer but to every business owner on the street who does it properly. You could report it to the review platform, with screenshots as evidence. You could also do nothing.\n\nDo you let it go, or send the report you have already prepared?",
+      "verhaal": "The coffee shop on the corner has been open for less than two weeks and already boasts two hundred five-star reviews, all written in the same week, almost identical about 'the best coffee in town'. Joost has worked for years at the little café down the street, where the owner selects the beans himself every morning.\n\nWhen he clicked through a few profiles, he saw the pattern: accounts without a photo and without a history, with only that one glowing review. It feels unfair, to his employer and to every entrepreneur in the street who does things properly. He can report it to the review platform, with screenshots. He can also do nothing.\n\nDoes Joost let it go, or does he send the report that is already waiting?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "The review platform, competing entrepreneurs and Joost's employer play a real part; his choice to report affects more than a conflict between two people."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_10.jpg",
@@ -1506,14 +1418,16 @@
       "titel": "Buurman mishandelt zijn vrouw",
       "verhaal": "Door de dunne muur hoort Emma het geschreeuw weer, gevolgd door een doffe klap en daarna stilte, de stilte die haar het meest beangstigt. De volgende ochtend staat mevrouw Janssen in de tuin, een blauwe plek half verborgen onder make-up en een te grote zonnebril voor een bewolkte dag. Ze glimlacht, zoals al maanden.\n\nMeneer Janssen heeft aanzien in de buurt: vriendelijk op het buurtfeest, behulpzaam met de heg. Emma zocht het nummer van Veilig Thuis al eens op en sloot de website weer. Is het aan haar om in te grijpen, of maakt zwijgen haar medeplichtig?\n\nZe pakt haar telefoon. Belt ze nu, of wacht ze tot ze zeker weet wat ze hoorde?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Veilig Thuis, de buurt en meneer Janssens aanzien spelen wezenlijk mee in wat er na Emma’s keuze gebeurt; zij beslist niet alleen over een conflict tussen twee mensen."
     },
     "en": {
       "titel": "Neighbour abuses his wife",
       "verhaal": "Through the thin wall Emma hears the shouting again, followed by a dull thud and then silence, the silence that always frightens her most. The next morning she sees Mrs Janssen in the garden, a bruise half hidden under make-up and sunglasses too big for such a cloudy day. She smiles at Emma as if nothing is wrong, as she has done for months.\n\nEmma knows Mr Janssen is well regarded in the neighbourhood: friendly at the street party, always helping with the hedge. She once looked up the number of Veilig Thuis, the Dutch domestic abuse helpline, and closed the website before she could call. She wonders: is it her place to step in, or does her silence make her complicit?\n\nEmma picks up her phone. Does she call now, or wait until she is sure of what she heard?",
       "vraag1": "What would you do, and why?",
       "vraag2": "What values are at stake here?",
-      "vertaling": false
+      "vertaling": false,
+      "rechtvaardiging": "Veilig Thuis (the domestic abuse service), the neighbourhood and Mr Janssen's standing play a real part in what follows Emma's choice; she is not deciding only about a conflict between two people."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_11.jpg",
@@ -1545,14 +1459,16 @@
       "titel": "De buurtapp",
       "verhaal": "Sinds vanmiddag staat op de buurtapp een wazige video van een jongen met een capuchon die langs gevels loopt. ‘Verdacht! Wie kent hem?’ Binnen een uur zijn er vijftig reacties, met tijden, foto’s en een straatnaam. Niemand vraagt zich af of het klopt.\n\nMarieke herkent hem meteen. Het is Jesse, de zoon van haar buurvrouw, die elke dinsdag zijn oma bezoekt. De groep gelooft op zo’n moment liever dan dat hij twijfelt. Reageert ze openlijk, dan wordt zij misschien de volgende die ter discussie staat. Zwijgt ze, dan staat zijn gezicht morgen overal.\n\nHaar duim hangt boven het scherm. Zet Marieke het recht in de groep, of stuurt ze alleen de beheerder een bericht?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "De buurtgroep, het platform en de beheerder spelen wezenlijk mee; Mariekes keuze raakt de groepsnorm in de buurt en niet alleen Jesse."
     },
     "en": {
       "vertaling": false,
       "titel": "De buurtapp",
       "verhaal": "Sinds vanmiddag staat op de buurtapp een wazige video van een jongen met een capuchon die langs gevels loopt. ‘Verdacht! Wie kent hem?’ Binnen een uur zijn er vijftig reacties, met tijden, foto’s en een straatnaam. Niemand vraagt zich af of het klopt.\n\nMarieke herkent hem meteen. Het is Jesse, de zoon van haar buurvrouw, die elke dinsdag zijn oma bezoekt. De groep gelooft op zo’n moment liever dan dat hij twijfelt. Reageert ze openlijk, dan wordt zij misschien de volgende die ter discussie staat. Zwijgt ze, dan staat zijn gezicht morgen overal.\n\nHaar duim hangt boven het scherm. Zet Marieke het recht in de groep, of stuurt ze alleen de beheerder een bericht?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "The neighbourhood group, the platform and the moderator play a real part; Marieke's choice touches the group norm in the neighbourhood, not only Jesse."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_12.jpg",
@@ -1584,14 +1500,16 @@
       "titel": "De trainer",
       "verhaal": "Het is dinsdagavond, de schemer hangt boven het veld. Lotte staat bij het hek en hoort trainer Henk een speler van veertien toesnauwen, voor het hele team. Hij pakt de jongen bij zijn arm, net iets te hard, en duwt hem naar de kant. De andere jongens zwijgen.\n\nHenk draait al twaalf jaar onbetaald het team en de club wil hem niet kwijt. De andere ouders kijken weg: ‘zo gaat het hier nu eenmaal.’ Lottes eigen dochter speelt in hetzelfde team en is dol op hem. Lotte kan Henk aanspreken, naar het bestuur stappen of het laten rusten.\n\nHet is niet de eerste keer dat ze zoiets ziet. Stapt Lotte naar het bestuur, of laat ze het passeren?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Het gedrag van de trainer raakt de clubcultuur, het bestuur en de andere ouders, naast Lottes persoonlijke keuze."
     },
     "en": {
       "vertaling": false,
       "titel": "De trainer",
       "verhaal": "Het is dinsdagavond, de schemer hangt boven het veld. Lotte staat bij het hek en hoort trainer Henk een speler van veertien toesnauwen, voor het hele team. Hij pakt de jongen bij zijn arm, net iets te hard, en duwt hem naar de kant. De andere jongens zwijgen.\n\nHenk draait al twaalf jaar onbetaald het team en de club wil hem niet kwijt. De andere ouders kijken weg: ‘zo gaat het hier nu eenmaal.’ Lottes eigen dochter speelt in hetzelfde team en is dol op hem. Lotte kan Henk aanspreken, naar het bestuur stappen of het laten rusten.\n\nHet is niet de eerste keer dat ze zoiets ziet. Stapt Lotte naar het bestuur, of laat ze het passeren?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "The coach's behaviour affects the club culture, the board and the other parents, alongside Lotte's personal choice."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_13.jpg",
@@ -1623,14 +1541,16 @@
       "titel": "Zonder papieren",
       "verhaal": "Samir woont al drie jaar twee deuren verderop en draagt altijd Ilses boodschappen naar boven. Gisteren vertelde hij, bijna terloops en met een lach om het minder zwaar te maken, dat zijn asielaanvraag definitief is afgewezen. Hij heeft geen recht meer op opvang en mag niet werken, maar kan nergens heen.\n\nHaar man vindt dat het hun zaak niet is. Ilse weet dat de regels duidelijk zijn en dat helpen niet zonder risico is. Ze weet ook dat Samir niets misdeed en dat de hele straat hem kent. Ze kan hem een kamer aanbieden, hem naar een advocaat of kerkelijke opvang verwijzen, of de situatie laten zoals die is.\n\nHelpt Ilse hem, ook als dat tegen de regels ingaat, of houdt ze afstand?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Het dilemma komt voort uit asielwet en vreemdelingenbeleid en blijft bestaan, wat Ilse ook doet; de oplossing ligt buiten haar bereik en dat van de buurt."
     },
     "en": {
       "vertaling": false,
       "titel": "Zonder papieren",
       "verhaal": "Samir woont al drie jaar twee deuren verderop en draagt altijd Ilses boodschappen naar boven. Gisteren vertelde hij, bijna terloops en met een lach om het minder zwaar te maken, dat zijn asielaanvraag definitief is afgewezen. Hij heeft geen recht meer op opvang en mag niet werken, maar kan nergens heen.\n\nHaar man vindt dat het hun zaak niet is. Ilse weet dat de regels duidelijk zijn en dat helpen niet zonder risico is. Ze weet ook dat Samir niets misdeed en dat de hele straat hem kent. Ze kan hem een kamer aanbieden, hem naar een advocaat of kerkelijke opvang verwijzen, of de situatie laten zoals die is.\n\nHelpt Ilse hem, ook als dat tegen de regels ingaat, of houdt ze afstand?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "The dilemma stems from asylum law and immigration policy and remains whatever Ilse does; the solution lies beyond her reach and that of the neighbourhood."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_14.jpg",
@@ -1662,14 +1582,16 @@
       "titel": "De afgesloten stroom",
       "verhaal": "Het vriest, en al drie avonden brandt er bij mevrouw Dekker, tweehoog achter, alleen een kaars. Als Joost aanbelt, staat ze in haar jas in de gang, haar vingers blauw van de kou. De energieleverancier heeft haar afgesloten na maanden achterstand.\n\nZe zegt dat het wel gaat. Ze is 78, heeft een klein pensioen en wil geen ‘bedelaar’ zijn. Schuldhulp en de gemeente weigert ze: te beschamend. Joost kan een verlengsnoer vanuit zijn eigen meterkast naar haar woonkamer leggen. Dat helpt vanavond, maar het mag niet en het is een brandrisico. Hij kan ook zonder haar toestemming de gemeente bellen.\n\nLegt Joost het snoer, of belt hij over haar hoofd heen?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "Het dilemma komt voort uit afsluitbeleid en energiearmoede; wat Joost ook doet, het structurele probleem blijft buiten zijn bereik."
     },
     "en": {
       "vertaling": false,
       "titel": "De afgesloten stroom",
       "verhaal": "Het vriest, en al drie avonden brandt er bij mevrouw Dekker, tweehoog achter, alleen een kaars. Als Joost aanbelt, staat ze in haar jas in de gang, haar vingers blauw van de kou. De energieleverancier heeft haar afgesloten na maanden achterstand.\n\nZe zegt dat het wel gaat. Ze is 78, heeft een klein pensioen en wil geen ‘bedelaar’ zijn. Schuldhulp en de gemeente weigert ze: te beschamend. Joost kan een verlengsnoer vanuit zijn eigen meterkast naar haar woonkamer leggen. Dat helpt vanavond, maar het mag niet en het is een brandrisico. Hij kan ook zonder haar toestemming de gemeente bellen.\n\nLegt Joost het snoer, of belt hij over haar hoofd heen?",
       "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "rechtvaardiging": "The dilemma stems from disconnection policy and energy poverty; whatever Joost does, the structural problem remains beyond his reach."
     },
     "assets": {
       "afbeelding": "/images/gesprekskaarten/GK_DL_15.jpg",

@@ -1,35 +1,5 @@
 [
   {
-    "id": "GK_MM_01",
-    "titel": "De roddelende vriend",
-    "categorie": "dagelijks-leven",
-    "complexiteit": "micro",
-    "ontbreekt": [
-      "nl",
-      "en"
-    ]
-  },
-  {
-    "id": "GK_MM_02",
-    "titel": "Buurman mishandelt zijn vrouw",
-    "categorie": "dagelijks-leven",
-    "complexiteit": "meso",
-    "ontbreekt": [
-      "nl",
-      "en"
-    ]
-  },
-  {
-    "id": "GK_MM_03",
-    "titel": "De gevonden portemonnee",
-    "categorie": "dagelijks-leven",
-    "complexiteit": "micro",
-    "ontbreekt": [
-      "nl",
-      "en"
-    ]
-  },
-  {
     "id": "GK_MM_04",
     "titel": "Collega declareert onterecht overuren",
     "categorie": "werk",
