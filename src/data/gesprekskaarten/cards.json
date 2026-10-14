@@ -6331,5 +6331,680 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 1
+  },
+  {
+    "id": "bk-01",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De rapporten die nooit werden gedeeld",
+      "verhaal": "Rik werkt bij Handhaving en vindt in een oude ordner metingen die zijn leidinggevende nooit deelde: de fabriek van Van Diemen loost al sinds 2019 chemische restanten, ver boven de norm.\n\nVan Diemen is de grootste werkgever van de regio, driehonderdvijftig banen. De waterbeheerder zucht aan de telefoon: sluiten betekent dat half het dorp binnen een jaar op straat staat. Langs de rivier spelen kinderen precies waar de metingen het hoogst zijn. Zijn eigen oom werkt er al twintig jaar. Door het raam ziet Rik de schoorstenen gloeien.\n\nOp zijn scherm staat het cijfer dat alles kan veranderen. Zijn handhavingsrapport moet morgenochtend negen uur binnen zijn. Wat meldt Rik?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een lokale handhavingsbeslissing waarin de eerlijke rapportage van een medewerker botst met de belangen van werkgever, regio en leidinggevende."
+    },
+    "en": {
+      "titel": "The Reports That Were Never Shared",
+      "verhaal": "Rik works in Enforcement and finds measurements in an old binder that his manager never shared: the Van Diemen factory has been discharging chemical residues since 2019, far above the limit.\n\nVan Diemen is the region's largest employer, three hundred and fifty jobs. The water authority sighs on the phone: closing it down means half the village on the street within a year. Along the river, children play exactly where the readings are highest. His own uncle has worked there for twenty years. Through the window Rik sees the chimneys glowing.\n\nOn his screen is the figure that could change everything. His enforcement report is due at nine tomorrow morning. What does Rik report?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A local enforcement decision in which an employee's honest reporting clashes with the interests of employer, region and manager."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-01.jpg",
+      "altNl": "Anonieme situatie: bk 01",
+      "altEn": "Anonymous scene: bk 01",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 114,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK1",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-02",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Tachtig procent",
+      "verhaal": "Iris, data-analist bij Sociale Zaken, test een nieuw risicomodel voor uitkeringsfraude. Ze ziet het patroon meteen: van de honderd hoogst gescoorde dossiers heeft tachtig procent een niet-westerse achtergrond, terwijl het fraudepercentage in die groep niet hoger ligt.\n\nHet model is statistisch correct; het leert van de data die het kreeg. Haar teamleider wil volgende week live, de wethouder kondigde de aanpak al aan. Iris denkt aan de huisbezoeken die elke hoge score oplevert, bij mensen die niets deden. Ze weet dat zo’n patroon zich zelden vanzelf herstelt.\n\nOp haar tweede scherm staat de lijst met namen al klaar. Vrijdag moet haar akkoord voor productie er liggen. Wat adviseert ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De kern ligt bij non-discriminatie en grondrechten in landelijk fraudebeleid en algoritmegebruik; een systemisch patroon dat Iris niet alleen kan oplossen."
+    },
+    "en": {
+      "titel": "Eighty Percent",
+      "verhaal": "Iris, a data analyst at Social Affairs, is testing a new risk model for benefit fraud. She sees the pattern immediately: of the hundred highest-scoring cases, eighty percent have a non-Western background, while the fraud rate in that group is no higher.\n\nThe model is statistically correct; it learns from the data it was given. Her team leader wants to go live next week, and the alderman has already announced the approach. Iris thinks of the home visits that every high score will bring, to people who did nothing wrong. She knows that such a pattern rarely corrects itself.\n\nOn her second screen the list of names is already waiting. By Friday her approval for production must be on the table. What does she advise?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The core lies in non-discrimination and fundamental rights in national fraud policy and algorithm use; a systemic pattern that Iris cannot resolve alone."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-02.jpg",
+      "altNl": "Anonieme situatie: bk 02",
+      "altEn": "Anonymous scene: bk 02",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 125,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK2",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-03",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Achttien gezinnen",
+      "verhaal": "Wethouder Van Rooij krijgt vrijdagmiddag het overzicht van Jeugdzorg: het budget is het derde jaar op rij overschreden en zonder ingrijpen dreigt een tekort van twee miljoen. Buiten regent het al de hele middag.\n\nHaar ambtenaren stellen voor de wachtlijst voor niet-acute hulp te verlengen, waardoor achttien gezinnen langer moeten wachten. In één dossier noteerde een jeugdbeschermer twee weken geleden al verhoogde zorgen, net onder de acute grens. Maandag vergadert de raad en de pers stelt al vragen. Ze hoort de accountant nog zeggen dat er geen ruimte is.\n\nElke maand uitstel vergroot het risico bij gezinnen net buiten de acute zorg. Welke gezinnen laat Van Rooij wachten?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Een structureel tekort bij de wettelijke zorgplicht dat voortkomt uit landelijke financiering en beleid; buiten het bereik van één wethouder om op te lossen."
+    },
+    "en": {
+      "titel": "Eighteen Families",
+      "verhaal": "On Friday afternoon, Alderman Van Rooij receives the overview from Youth Care: the budget has been exceeded for the third year in a row and without intervention a shortfall of two million looms. Outside, it has been raining all afternoon.\n\nHer civil servants propose extending the waiting list for non-urgent help, making eighteen families wait longer. In one file, a child protection worker noted heightened concerns two weeks ago, just below the urgent threshold. The council meets on Monday and the press is already asking questions. She can still hear the accountant saying there is no room.\n\nEvery month of delay increases the risk for families just outside urgent care. Which families does Van Rooij let wait?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "A structural shortfall in the statutory duty of care that stems from national funding and policy; beyond the reach of a single alderman to solve."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-03.jpg",
+      "altNl": "Anonieme situatie: bk 03",
+      "altEn": "Anonymous scene: bk 03",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 117,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK3",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-04",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De zaal is verdeeld",
+      "verhaal": "Bram, beleidsmedewerker Energietransitie, staat voor een volle dorpshuiszaal waar het plan voor twaalf windmolens wordt gepresenteerd. Voorin zit boer Hendriks, wiens erf op driehonderd meter van de dichtstbijzijnde molen komt; zijn taxatie voorspelt dertig procent waardedaling. De zaal ruikt naar natte jassen en koffie.\n\nAchterin staan jongeren met spandoeken over het klimaat, onder wie Brams eigen nicht. Zonder dit park haalt de gemeente haar doel voor 2030 niet, en een andere locatie past niet in de planning. De meeste mensen kijken niet naar Bram, maar naar elkaar.\n\nZijn laptop staat nog open op de klimaatcijfers. Volgende week beslist het college. Wat adviseert Bram?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een gemeentelijk advies waarin lokale eigendomsbelangen en het klimaatdoel tegenover elkaar staan, met meerdere belanghebbenden en een college dat beslist."
+    },
+    "en": {
+      "titel": "The Room Is Divided",
+      "verhaal": "Bram, a policy officer for Energy Transition, stands in front of a packed village hall where the plan for twelve wind turbines is being presented. At the front sits farmer Hendriks, whose farmyard will be three hundred metres from the nearest turbine; his valuation predicts a thirty percent drop in value. The room smells of wet coats and coffee.\n\nAt the back stand young people with climate banners, among them Bram's own niece. Without this park the municipality will not meet its 2030 target, and another location does not fit the schedule. Most people are not looking at Bram, but at each other.\n\nHis laptop is still open on the climate figures. Next week the executive board decides. What does Bram advise?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A municipal advice in which local property interests and the climate goal are opposed, with several stakeholders and an executive board that decides."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-04.jpg",
+      "altNl": "Anonieme situatie: bk 04",
+      "altEn": "Anonymous scene: bk 04",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 122,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK4",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-05",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het buurthuis en de deal",
+      "verhaal": "Marcel van Wijkontwikkeling krijgt een telefoontje van projectontwikkelaar Van Leeuwen: die wil de hele renovatie van buurthuis De Schakel betalen, driehonderdduizend euro. De voorwaarde komt er losjes achteraan: snel groen licht voor zijn hoogbouwproject aan de haven, zonder al die inspraakavonden. Marcel kent de man als iemand die altijd krijgt wat hij vraagt.\n\nHet buurthuis staat al twee jaar op de wachtlijst voor onderhoud. De inspraak zou zes maanden kosten en leidt volgens Marcel waarschijnlijk tot een kleiner, trager plan. Het voorstel voor De Schakel ligt al klaar, wachtend op zijn handtekening.\n\nVan Leeuwen wil deze week een principeafspraak. Wat schrijft Marcel terug?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een aanbod dat de reguliere inspraakprocedure omzeilt raakt de bestuurlijke integriteit binnen één concreet gemeentelijk proces."
+    },
+    "en": {
+      "titel": "The Community Centre and the Deal",
+      "verhaal": "Marcel from Neighbourhood Development receives a call from developer Van Leeuwen: he wants to pay for the entire renovation of community centre De Schakel, three hundred thousand euros. The condition comes casually at the end: quick approval for his high-rise project at the harbour, without all those consultation evenings. Marcel knows him as someone who always gets what he asks for.\n\nThe community centre has been on the maintenance waiting list for two years. The consultation would take six months and, in Marcel's view, probably lead to a smaller, slower plan. The proposal for De Schakel is ready, awaiting his signature.\n\nVan Leeuwen wants an agreement in principle this week. What does Marcel write back?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "An offer that bypasses the regular consultation procedure touches administrative integrity within one concrete municipal process."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-05.jpg",
+      "altNl": "Anonieme situatie: bk 05",
+      "altEn": "Anonymous scene: bk 05",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 115,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK5",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-06",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Twintig minuten voor de persconferentie",
+      "verhaal": "Twee uur na een grote brand bij een chemisch opslagbedrijf krijgt burgemeester Willemsen het GGD-rapport: de rook bevat stoffen die bij langdurige blootstelling gezondheidsschade kunnen geven, vooral bij kinderen en ouderen. De veiligheidsregio adviseert volledige openheid. Vanuit zijn kantoor ruikt hij de rook nog.\n\nZijn communicatieadviseur waarschuwt: na de vorige ramp leidde zulk nieuws tot paniek, lege schappen en overvolle ziekenhuizen. Buiten hangt de rookpluim boven de wijk waar zijn kleinkinderen wonen. Zijn telefoon trilt al voor de derde keer.\n\nOver twintig minuten begint de persconferentie, en één zin in zijn tekst kan hij nog schrappen. Wat laat hij staan?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een persoonlijke afweging in het moment zelf: de burgemeester beslist zelf hoeveel hij vertelt, tussen openheid en het voorkomen van paniek."
+    },
+    "en": {
+      "titel": "Twenty Minutes Before the Press Conference",
+      "verhaal": "Two hours after a major fire at a chemical storage company, Mayor Willemsen receives the public health service report: the smoke contains substances that can cause health damage with prolonged exposure, especially in children and the elderly. The safety region advises complete openness. From his office he can still smell the smoke.\n\nHis communications adviser warns: after the previous disaster, such news led to panic, empty shelves and overcrowded hospitals. Outside, the smoke plume hangs over the neighbourhood where his grandchildren live. His phone is buzzing for the third time.\n\nThe press conference starts in twenty minutes, and he can still cross out one sentence in his text. What does he leave in?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A personal weighing in the moment itself: the mayor decides how much to tell, between openness and preventing panic."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-06.jpg",
+      "altNl": "Anonieme situatie: bk 06",
+      "altEn": "Anonymous scene: bk 06",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 100,
+      "woordenEn": 113,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK6",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "bk-07",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De wijk die nooit een aanvraag indient",
+      "verhaal": "Nadia verdeelt elk jaar het budget voor groenonderhoud en buurtveiligheid. Nu ziet ze het patroon zwart op wit: negentig procent van de aanvragen komt uit drie welgestelde wijken, waar bewonersverenigingen zorgvuldig onderbouwde voorstellen indienen. Ze kent de bewoners van die wijken bij naam.\n\nUit Zuidwest, met de hoogste jeugdwerkloosheid en het minste groen, kwam geen enkele aanvraag; daar regelt niemand de papierwinkel. Haar teamleider wil het geld laten gaan waar het snel resultaat oplevert. Doet Nadia niets, dan krijgt Zuidwest voor het vijfde jaar niets.\n\nHaar teamleider verwacht vrijdag een voorstel zonder gedoe. Past Nadia de verdeelsleutel aan, of volgt ze de aanvragen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De verdeelsleutel is gemeentelijk beleid waarbij een structureel ongelijk patroon speelt binnen één organisatie, met een teamleider en meerdere wijken als belanghebbenden."
+    },
+    "en": {
+      "titel": "The Neighbourhood That Never Applies",
+      "verhaal": "Nadia distributes the budget for green maintenance and neighbourhood safety every year. Now she sees the pattern in black and white: ninety percent of the applications come from three affluent neighbourhoods, where residents' associations submit carefully substantiated proposals. She knows the residents of those neighbourhoods by name.\n\nFrom Zuidwest, with the highest youth unemployment and the least green space, not a single application came in; nobody there handles the paperwork. Her team leader wants the money to go where it delivers quick results. If Nadia does nothing, Zuidwest gets nothing for the fifth year.\n\nHer team leader expects a proposal without fuss on Friday. Does Nadia adjust the allocation key, or follow the applications?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The allocation key is municipal policy involving a structurally unequal pattern within one organisation, with a team leader and several neighbourhoods as stakeholders."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-07.jpg",
+      "altNl": "Anonieme situatie: bk 07",
+      "altEn": "Anonymous scene: bk 07",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 114,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK7",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-08",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het rapport dat moet blijven liggen",
+      "verhaal": "Peter van Grondzaken vindt in oude dossiers een intern rapport dat nooit naar de raad ging: de grond voor woningbouwproject Meerzicht is vervuild, ver boven de norm. Het rapport bestond al vóór de aankoop. Zijn hartslag stijgt als hij de datum leest.\n\nHij meldt het netjes intern. Twee dagen later zegt zijn afdelingshoofd: dit vernielt het college vlak voor de verkiezingen, laat het rusten. Over acht maanden worden de eerste honderd woningen opgeleverd; gezinnen tekenden al hun koopcontract. Zijn afdelingshoofd glimlacht erbij, alsof het een gunst is.\n\nHet is al na zessen en de afdeling is leeg. Op Peters scherm staat het rapport, naast de naam van een journalist. Wat doet hij ermee?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Loyaliteit aan de eigen organisatie botst met integriteit en veiligheid; de afdeling en het college zijn direct betrokken, maar de keuze ligt binnen één organisatie."
+    },
+    "en": {
+      "titel": "The Report That Has to Stay Buried",
+      "verhaal": "Peter from Land Affairs finds in old files an internal report that never went to the council: the ground for the Meerzicht housing project is contaminated, far above the limit. The report existed before the purchase. His heart rate rises as he reads the date.\n\nHe reports it properly internally. Two days later his department head says: this will destroy the executive board just before the elections, let it rest. In eight months the first hundred homes will be delivered; families have already signed their purchase contracts. His department head smiles as if it were a favour.\n\nIt is already past six and the department is empty. On Peter's screen is the report, next to the name of a journalist. What does he do with it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Loyalty to one's own organisation clashes with integrity and safety; the department and executive board are directly involved, but the choice lies within one organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-08.jpg",
+      "altNl": "Anonieme situatie: bk 08",
+      "altEn": "Anonymous scene: bk 08",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 126,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK8",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-09",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Spandoeken aan de lantaarnpalen",
+      "verhaal": "Burgemeester De Wit krijgt van het Rijk het dringende verzoek om binnen twee weken noodopvang in te richten voor driehonderd asielzoekers in een sporthal midden in een rustige woonwijk. De Wit kent de buurt: ze ging er zelf naar de basisschool.\n\nEen avond later staat de buurthuiszaal vol boze bewoners. Iemand roept dat de politiek hen weer voor het blok zet, een ander dreigt de toegangsweg te blokkeren. De Wit begrijpt de nood, want elders slapen mensen al buiten, en ziet de angst in de zaal, deels gevoed door verhalen die niet kloppen. Haar telefoon blijft trillen.\n\nBuiten hangen al spandoeken aan de lantaarnpalen. Het Rijk wil morgen een akkoord. Wat tekent ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Een landelijk vraagstuk over humanitaire plicht en nationale spreiding, opgelegd aan één gemeente; geen uitkomst zonder verliezers."
+    },
+    "en": {
+      "titel": "Banners on the Lampposts",
+      "verhaal": "Mayor De Wit receives an urgent request from central government to set up emergency shelter within two weeks for three hundred asylum seekers in a sports hall in the middle of a quiet residential area. De Wit knows the neighbourhood: she went to primary school there herself.\n\nOne evening later, the community centre hall is full of angry residents. Someone shouts that politicians are forcing their hand again, another threatens to block the access road. De Wit understands the urgency, because elsewhere people are already sleeping outside, and sees the fear in the room, partly fed by stories that are not true. Her phone keeps buzzing.\n\nOutside, banners are already hanging from the lampposts. Central government wants an agreement tomorrow. What does she sign?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "A national issue of humanitarian duty and national distribution, imposed on a single municipality; no outcome without losers."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-09.jpg",
+      "altNl": "Anonieme situatie: bk 09",
+      "altEn": "Anonymous scene: bk 09",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 124,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK9",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-10",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het formulier voor mevrouw Boers",
+      "verhaal": "Yasmin behandelt bij Sociale Zaken het dossier van de familie Boers. Door een fout van de Belastingdienst moeten zij elfduizend euro terugbetalen, en het landelijke beleidskader schrijft voor dat dit zonder uitzondering wordt geïnd. Ze weet dat de fout nooit bij hen lag.\n\nDoor de aflossing zakt het gezin met twee schoolgaande kinderen onder het bestaansminimum. Yasmin kent de uitzonderingsclausule, maar haar leidinggevende noemt die onwerkbaar. Gisteren belde mevrouw Boers in tranen of er toch niet iets te regelen valt.\n\nMevrouw Boers wacht nog op een antwoord. Het standaardformulier ligt klaar. Verstuurt Yasmin het?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Rigide toepassing van landelijk beleid raakt bestaanszekerheid en rechtvaardigheid; een systeemfout waarvan de oplossing buiten het bereik van Yasmin ligt."
+    },
+    "en": {
+      "titel": "The Form for Mrs Boers",
+      "verhaal": "Yasmin handles the Boers family's case at Social Affairs. Because of a mistake by the Tax Authority, they must repay eleven thousand euros, and the national policy framework prescribes that this is collected without exception. She knows the mistake was never theirs.\n\nBecause of the repayment, the family with two school-age children falls below the subsistence minimum. Yasmin knows the exception clause, but her manager calls it unworkable. Yesterday Mrs Boers called in tears to ask whether anything could be arranged after all.\n\nMrs Boers is still waiting for an answer. The standard form is ready. Does Yasmin send it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Rigid application of national policy affects livelihood security and fairness; a system error whose solution lies beyond Yasmin's reach."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-10.jpg",
+      "altNl": "Anonieme situatie: bk 10",
+      "altEn": "Anonymous scene: bk 10",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 94,
+      "woordenEn": 100,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK10",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-11",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Zeven kilometer naar de bushalte",
+      "verhaal": "Karin onderzoekt voor de provincie of het busvervoer kan worden aanbesteed aan een private vervoerder, die twintig procent lagere kosten belooft. Dat lukt alleen door zes buitengebiedlijnen te schrappen, lijnen die vooral ouderen zonder auto en scholieren gebruiken. Karin kent de lijnen: als kind nam ze er zelf de bus naar school.\n\nHet dorp Ossenkamp verliest daarmee zijn enige verbinding; de dichtstbijzijnde halte ligt straks zeven kilometer ver. De gedeputeerde noemde een efficiencyslag onvermijdelijk. Op Karins kaart staan de te schrappen lijnen rood.\n\nZe voelt de druk van een provincie die geld wil terugzien. Volgende week moet haar advies naar Provinciale Staten. Wat schrijft ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een provinciaal adviesvraagstuk waarin efficiency en toegankelijkheid van basisvoorzieningen botsen binnen één bestuurlijk proces."
+    },
+    "en": {
+      "titel": "Seven Kilometres to the Bus Stop",
+      "verhaal": "Karin is investigating for the province whether bus transport can be put out to tender to a private operator, who promises twenty percent lower costs. That is only possible by cutting six rural lines, lines used mainly by elderly people without a car and by schoolchildren. Karin knows the lines: as a child she took the bus to school on them herself.\n\nThe village of Ossenkamp thereby loses its only connection; the nearest stop will soon be seven kilometres away. The deputy called an efficiency drive inevitable. On Karin's map, the lines to be cut are marked red.\n\nShe feels the pressure of a province that wants to see money back. Next week her advice must go to the Provincial Council. What does she write?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A provincial advisory issue in which efficiency and accessibility of basic services clash within one administrative process."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-11.jpg",
+      "altNl": "Anonieme situatie: bk 11",
+      "altEn": "Anonymous scene: bk 11",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 125,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK11",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-12",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De viswinkel van mevrouw Terpstra",
+      "verhaal": "Erik werkt bij Wonen en ziet het al drie jaar gebeuren: in de binnenstad maakt de ene buurtwinkel na de andere plaats voor souvenirs en vakantieverhuur. Mevrouw Terpstra, die veertig jaar boven haar viswinkel woont, kreeg een bod van het drievoudige voor haar pand. Erik ziet het ook buiten zijn raam.\n\nDe gemeente verdient miljoenen aan toeristenbelasting, geld dat ook naar de klagende bewoners terugvloeit. Een vergunningplicht voor vakantieverhuur verlaagt die inkomsten flink en roept fel verzet op. Terpstra dreigt te vertrekken als er niets verandert.\n\nOp zijn bureau liggen de cijfers en een stapel klachtbrieven. Woensdag vergadert het college. Wat laat Erik zwaarder wegen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een gemeentelijk beleidsadvies waarin structurele inkomsten tegenover de leefbaarheid voor bewoners staan, met meerdere belanghebbenden."
+    },
+    "en": {
+      "titel": "Mrs Terpstra's Fish Shop",
+      "verhaal": "Erik works at Housing and has seen it happen for three years: in the city centre, one neighbourhood shop after another gives way to souvenirs and holiday rentals. Mrs Terpstra, who has lived above her fish shop for forty years, received an offer of three times its value for her property. Erik sees it outside his own window too.\n\nThe municipality earns millions from tourist tax, money that also flows back to the complaining residents. A licence requirement for holiday rentals would sharply reduce that income and provoke fierce resistance. Terpstra threatens to leave if nothing changes.\n\nOn his desk lie the figures and a pile of complaint letters. On Wednesday the executive board meets. What does Erik give more weight to?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A municipal policy advice in which structural income is set against liveability for residents, with several stakeholders."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-12.jpg",
+      "altNl": "Anonieme situatie: bk 12",
+      "altEn": "Anonymous scene: bk 12",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 122,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK12",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "bk-13",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Het vakje akkoord",
+      "verhaal": "Tom beoordeelt bij Subsidies de aanvraag van een orthodox-religieuze stichting voor een jeugdprogramma. Op papier klopt alles: een sluitende begroting, een helder plan, referenties van andere gemeenten.\n\nIn zijn achtergrondonderzoek vertellen oud-leden dat jongeren er leren dat vrouwen zich aan mannen moeten onderwerpen en democratische besluiten ondergeschikt zijn aan hogere wetten. Niets daarvan is strafbaar, en de gemeente mag niet weigeren om geloofsovertuiging. Weigeren we hen, zegt zijn leidinggevende, dan straks elke religieuze organisatie.\n\nDe aanvraag moet deze maand af. Tom heeft de cursor boven het vakje akkoord. Wat vult hij in?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Wettelijke neutraliteit tegenover de bescherming van democratische waarden raakt grondrechten en de rechtsorde; geen oplossing voor één ambtenaar."
+    },
+    "en": {
+      "titel": "The Box for Agree",
+      "verhaal": "Tom, at Subsidies, assesses the application of an orthodox religious foundation for a youth programme. On paper everything is in order: a balanced budget, a clear plan, references from other municipalities.\n\nIn his background research, former members say that young people there learn that women must submit to men and that democratic decisions are subordinate to higher laws. None of this is punishable, and the municipality may not refuse on grounds of religious belief. If we refuse them, says his manager, then soon every religious organisation.\n\nThe application must be settled this month. Tom has the cursor above the box for agree. What does he fill in?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Statutory neutrality versus the protection of democratic values touches fundamental rights and the legal order; no solution for a single civil servant."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-13.jpg",
+      "altNl": "Anonieme situatie: bk 13",
+      "altEn": "Anonymous scene: bk 13",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 92,
+      "woordenEn": 107,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK13",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-14",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "De overgrootvader op het erf",
+      "verhaal": "Hendrik voert namens Rijkswaterstaat de uitkoopgesprekken met de familie Van der Wal, wier boerderij al vijf generaties staat waar het nieuwe knooppunt van de A12 moet komen. Het tracé is na jaren procedures vastgesteld; uitstel kost de regio minstens twee jaar en miljoenen.\n\nVader Van der Wal, tweeënzeventig, weigert nog steeds te tekenen. Mijn overgrootvader ligt hier begraven, zegt hij elke keer opnieuw. Onteigening kan hem dwingen te vertrekken, tegen een vergoeding die volgens de taxatie eerlijk is, maar zo nooit zal voelen.\n\nHet kruis tussen de bomen staat er nog. Volgende week moet Hendrik melden of hij onteigening in gang zet. Wat adviseert hij?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Een nationaal infrastructuurbelang tegenover individueel welzijn en cultuurbehoud raakt het onteigeningsrecht en het algemeen belang; onomkeerbaar voor het gezin."
+    },
+    "en": {
+      "titel": "The Great-Grandfather on the Farmyard",
+      "verhaal": "On behalf of Rijkswaterstaat, Hendrik conducts the buy-out talks with the Van der Wal family, whose farm has stood for five generations where the new A12 interchange is to be built. The route was fixed after years of procedures; delay would cost the region at least two years and millions.\n\nFather Van der Wal, seventy-two, still refuses to sign. \"My great-grandfather is buried here,\" he says every time. Expropriation can force him to leave, for compensation that according to the valuation is fair, but will never feel that way.\n\nThe cross between the trees is still there. Next week Hendrik must report whether he will set expropriation in motion. What does he advise?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "A national infrastructure interest versus individual well-being and cultural heritage touches expropriation law and the public interest; irreversible for the family."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-14.jpg",
+      "altNl": "Anonieme situatie: bk 14",
+      "altEn": "Anonymous scene: bk 14",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 113,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK14",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "bk-15",
+    "set": "bestuurskunde",
+    "stap": 3,
+    "categorie": "bestuurskunde",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "aanbevolen",
+    "nl": {
+      "titel": "Drie scenario's, geen zonder slachtoffers",
+      "verhaal": "Wethouder Bakker kreeg vorig jaar de jeugd-ggz van het Rijk, met een budget dat volgens haar eigen ambtenaren al bij de start twaalf procent te laag was berekend. Nu moet ze een derde daarvan alsnog bezuinigen om de begroting sluitend te krijgen.\n\nOp haar bureau liggen drie scenario's: de wachttijd voor lichte zorg verlengen, behandelplekken voor complexe gevallen schrappen of de eigen bijdrage verhogen. Elk raakt dezelfde kwetsbare gezinnen die de gemeente juist moet beschermen. Het Rijk wijst naar de beleidsvrijheid, de raad naar het Rijk.\n\nHet is al laat in het stadhuis. Donderdag moet de begroting sluitend zijn. Welk scenario kiest Bakker?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Decentralisatie zonder toereikend budget raakt bestuurlijke verantwoordelijkheid en sociale rechtvaardigheid; een structureel systeemprobleem tussen Rijk en gemeente."
+    },
+    "en": {
+      "titel": "Three Scenarios, None Without Victims",
+      "verhaal": "Alderman Bakker took over youth mental health care from central government last year, with a budget that, according to her own civil servants, was calculated twelve percent too low from the start. Now she has to cut a third of it after all to balance the budget.\n\nOn her desk lie three scenarios: lengthen the waiting time for light care, cut treatment places for complex cases, or raise the personal contribution. Each affects the same vulnerable families the municipality is supposed to protect. Central government points to the policy freedom, the council to central government.\n\nIt is already late at city hall. By Thursday the budget must balance. Which scenario does Bakker choose?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Decentralisation without adequate budget touches administrative responsibility and social justice; a structural system problem between central government and municipality."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/bk-15.jpg",
+      "altNl": "Anonieme situatie: bk 15",
+      "altEn": "Anonymous scene: bk 15",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 113,
+      "bron": "Bestuurskunde — v3 website (15 kaarten)",
+      "kaartNummer": "BK15",
+      "sectorColor": "#1F3F66",
+      "categorieEn": "Public administration",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
   }
 ]
