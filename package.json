@@ -14,6 +14,7 @@
     "cards:missing-rechtvaardigingen": "node scripts/generate-ontbrekende-rechtvaardigingen.mjs",
     "cards:import-rechtvaardigingen": "node scripts/import-rechtvaardigingen.mjs",
     "cards:import-hrm-52": "node scripts/import-hrm-52.mjs",
+    "cards:import-sector-v3": "node scripts/import-sector-v3.mjs",
     "cards:normalize": "node scripts/normalize-gesprekskaarten.mjs",
     "cards:import-ethos": "node scripts/import-from-ethos.mjs",
     "cards:import-burgerschap": "node scripts/import-burgerschap-docx.mjs",

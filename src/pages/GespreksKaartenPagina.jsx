@@ -16,6 +16,8 @@ import { getCardContentLang, getLocalizedPageContent, usesEnglishRoutes } from '
 import { useTaal } from '../context/TaalContext'
 import DriedelingBronvermelding from '../components/DriedelingBronvermelding'
 import praktijkschokHrmMeta from '../data/gesprekskaarten/praktijkschok-hrm-meta.json'
+import burgerschapMeta from '../data/gesprekskaarten/burgerschap-meta.json'
+import bestuurskundeMeta from '../data/gesprekskaarten/bestuurskunde-meta.json'
 import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
 import { ATTRIBUTION_COLOR } from '../data/gesprekskaarten/constants'
 
@@ -182,9 +184,11 @@ export default function GespreksKaartenPagina() {
   }
   const werkbladDownload = WORK_FORMS_DOWNLOADS[getCardContentLang(taal)]
   const contentLang = getCardContentLang(taal)
-  const showHrmSeriesMeta = displayCards.some((card) => card.set === 'praktijkschok-hrm')
-  const hrmSetDescription = praktijkschokHrmMeta.setDescription?.[contentLang]
-  const hrmComplexityNote = praktijkschokHrmMeta.complexityNote?.[contentLang]
+  const seriesMetaBlocks = [
+    { set: 'praktijkschok-hrm', meta: praktijkschokHrmMeta },
+    { set: 'burgerschap', meta: burgerschapMeta },
+    { set: 'bestuurskunde', meta: bestuurskundeMeta },
+  ].filter((block) => displayCards.some((card) => card.set === block.set))
   const isEtzSetView = filters.set === 'etz-passende-zorg'
   const etzSectionTitle = t.gesprekskaart.filters?.setLabels?.['etz-passende-zorg'] ?? 'ETZ Passende Zorg'
   const showEtzColofon =
@@ -484,20 +488,23 @@ export default function GespreksKaartenPagina() {
           totalCount={allCards.length}
         />
 
-        {showHrmSeriesMeta && hrmSetDescription && (
-          <p className="mb-4 text-sm leading-relaxed" style={{ color: ATTRIBUTION_COLOR }}>
-            {hrmSetDescription}
-          </p>
-        )}
-
-        {showHrmSeriesMeta && hrmComplexityNote && (
-          <p
-            className="mb-6 text-xs italic leading-relaxed"
-            style={{ color: ATTRIBUTION_COLOR }}
-          >
-            {hrmComplexityNote}
-          </p>
-        )}
+        {seriesMetaBlocks.map(({ set, meta }) => (
+          <div key={set} className="mb-4">
+            {meta.setDescription?.[contentLang] && (
+              <p className="mb-2 text-sm leading-relaxed" style={{ color: ATTRIBUTION_COLOR }}>
+                {meta.setDescription[contentLang]}
+              </p>
+            )}
+            {meta.complexityNote?.[contentLang] && (
+              <p
+                className="mb-4 text-xs italic leading-relaxed"
+                style={{ color: ATTRIBUTION_COLOR }}
+              >
+                {meta.complexityNote[contentLang]}
+              </p>
+            )}
+          </div>
+        ))}
 
         {showEtzColofon && etzColofon && (
           <p

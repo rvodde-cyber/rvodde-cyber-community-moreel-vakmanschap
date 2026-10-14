@@ -4,6 +4,7 @@
 export const CARD_SET_ORDER = [
   "morele-moed-teaser",
   "burgerschap",
+  "bestuurskunde",
   "dl-compleet-a5",
   "onderwijs-v3",
   "nucleaire-geneeskunde",
@@ -30,6 +31,8 @@ export const CATEGORIE_SLUGS = [
   "onderwijs",
   "overheid",
   "hrm",
+  "burgerschap",
+  "bestuurskunde",
   "etz-passende-zorg",
 ];
 
@@ -62,6 +65,8 @@ export const CATEGORIE_KLEUREN = {
   onderzoeksintegriteit: "#6E5773",
   overheid: "#185fa5",
   hrm: "#3949AB",
+  burgerschap: "#B5651D",
+  bestuurskunde: "#1F3F66",
   "etz-passende-zorg": "#005F73",
 };
 
@@ -105,6 +110,10 @@ export const CATEGORY_FROM_LEGACY = {
   EDUCATION: "onderwijs",
   HRM: "hrm",
   HR: "hrm",
+  Burgerschap: "burgerschap",
+  Citizenship: "burgerschap",
+  Bestuurskunde: "bestuurskunde",
+  "Public administration": "bestuurskunde",
 };
 
 export const TEASER_SET = {
