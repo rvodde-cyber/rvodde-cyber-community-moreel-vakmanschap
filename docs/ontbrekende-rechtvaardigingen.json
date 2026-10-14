@@ -1,0 +1,622 @@
+[
+  {
+    "id": "GK_MM_01",
+    "titel": "De roddelende vriend",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_02",
+    "titel": "Buurman mishandelt zijn vrouw",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_03",
+    "titel": "De gevonden portemonnee",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_04",
+    "titel": "Collega declareert onterecht overuren",
+    "categorie": "werk",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_05",
+    "titel": "Collega presteert slecht wegens persoonlijke problemen",
+    "categorie": "werk",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_06",
+    "titel": "Leidinggevende maakt discriminerende opmerkingen",
+    "categorie": "werk",
+    "complexiteit": "macro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_07",
+    "titel": "De goedkope stage in het buitenland",
+    "categorie": "duurzaamheid",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_08",
+    "titel": "De verdiende vakanties",
+    "categorie": "duurzaamheid",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_09",
+    "titel": "Het onderzoek naar dierproeven",
+    "categorie": "duurzaamheid",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_10",
+    "titel": "De anonieme sollicitatie",
+    "categorie": "diversiteit-inclusie",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_11",
+    "titel": "Grappen",
+    "categorie": "diversiteit-inclusie",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_12",
+    "titel": "De gemengde relatie",
+    "categorie": "diversiteit-inclusie",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_13",
+    "titel": "De foto zonder toestemming",
+    "categorie": "social-media",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_14",
+    "titel": "De valse recensie",
+    "categorie": "social-media",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_MM_15",
+    "titel": "Fijn groepswerk",
+    "categorie": "studentenleven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_01",
+    "titel": "De weggenomen kantoorspullen",
+    "categorie": "werk",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_02",
+    "titel": "De leugen voor de ouders",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_03",
+    "titel": "Voor de goede sfeer",
+    "categorie": "werk",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_04",
+    "titel": "De groepsapp",
+    "categorie": "social-media",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_05",
+    "titel": "De gevonden portemonnee",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_06",
+    "titel": "De fout in het rapport",
+    "categorie": "studentenleven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_07",
+    "titel": "De foto die rondgaat",
+    "categorie": "social-media",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_08",
+    "titel": "De klant aan de balie",
+    "categorie": "diversiteit-inclusie",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_09",
+    "titel": "De goedbetaalde bijbaan",
+    "categorie": "duurzaamheid",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_10",
+    "titel": "Het antwoordblaadje",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_11",
+    "titel": "De review voor geld",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_12",
+    "titel": "Maar het zijn maar grapjes",
+    "categorie": "diversiteit-inclusie",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_13",
+    "titel": "De goedkope trui",
+    "categorie": "duurzaamheid",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_14",
+    "titel": "De vraag van de leidinggevende",
+    "categorie": "werk",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_BG_15",
+    "titel": "De dakloze op straat",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_01",
+    "titel": "De sjaal in de trein",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_02",
+    "titel": "Vriend rijdt onder invloed van alcohol",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_03",
+    "titel": "Buurman dumpt afval in het park",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_04",
+    "titel": "Vriend pleegt winkeldiefstal",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_05",
+    "titel": "Buurvrouw laat kinderen vaak alleen thuis",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_06",
+    "titel": "Vriend rijdt véél te hard",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_07",
+    "titel": "De gevonden portemonnee",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_08",
+    "titel": "De roddelende vriend",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_09",
+    "titel": "Het geleende geld",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_10",
+    "titel": "De gemanipuleerde review",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_11",
+    "titel": "Buurman mishandelt zijn vrouw",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_12",
+    "titel": "De buurtapp",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_13",
+    "titel": "De trainer",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_14",
+    "titel": "Zonder papieren",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_DL_15",
+    "titel": "De afgesloten stroom",
+    "categorie": "dagelijks-leven",
+    "complexiteit": "macro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_NM_01",
+    "titel": "Dertig minuten geleden",
+    "categorie": "nucleaire-geneeskunde",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_NM_02",
+    "titel": "De eerste die het vraagt",
+    "categorie": "nucleaire-geneeskunde",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_NM_03",
+    "titel": "Waar zij het voor ruilde",
+    "categorie": "nucleaire-geneeskunde",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_NM_04",
+    "titel": "Tussen de compressies",
+    "categorie": "nucleaire-geneeskunde",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_RI_01",
+    "titel": "De volgorde van de namen",
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_RI_02",
+    "titel": "De extra naam op de lijst",
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "macro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_RI_03",
+    "titel": "Hetzelfde resultaat, twee keer",
+    "categorie": "onderzoeksintegriteit",
+    "complexiteit": "meso",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_01",
+    "titel": "Relatie tussen docent en leerling",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_02",
+    "titel": "Pestgedrag dat niet stopt",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_03",
+    "titel": "Het lijstje in de kantine",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_04",
+    "titel": "Discriminerende opmerkingen van een collega",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_05",
+    "titel": "Een leerling met thuisproblemen",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_06",
+    "titel": "Tien minuten voor het assessment",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_07",
+    "titel": "Beoordelen is mensenwerk",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_08",
+    "titel": "Het rooster van meneer De Vries",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_09",
+    "titel": "Buiten de kalibratie",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  },
+  {
+    "id": "GK_OW_10",
+    "titel": "Plagiaat onder ouderlijke druk",
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "ontbreekt": [
+      "nl",
+      "en"
+    ]
+  }
+]

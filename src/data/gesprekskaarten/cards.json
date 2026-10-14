@@ -31,7 +31,8 @@
       "woordenEn": 134,
       "bron": "v3-docx: DL8 roddel.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -66,7 +67,8 @@
       "woordenEn": 141,
       "bron": "v3-docx: DL11 Buurman mishandelt zijn vrouw.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -101,7 +103,8 @@
       "woordenEn": 142,
       "bron": "v3-docx: Dl7 Portemonnee.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -136,7 +139,8 @@
       "woordenEn": 131,
       "bron": "v3-docx: werk 1 Collega declareert onterecht overuren.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -171,7 +175,8 @@
       "woordenEn": 140,
       "bron": "v3-docx: werk 3. Collega presteert slecht vanwege persoonlijke problemen.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -206,7 +211,8 @@
       "woordenEn": 132,
       "bron": "v3-docx: werk 5. Leidinggevende maakt discriminerende opmerkingen.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -241,7 +247,8 @@
       "woordenEn": 132,
       "bron": "v3-docx: Duurzaamheid 1 De goedkope stage in het buitenland.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#C0392B"
     }
   },
   {
@@ -276,7 +283,8 @@
       "woordenEn": 134,
       "bron": "v3-docx: Duurzaamheid 2 De verdiende vakanties.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#C0392B"
     }
   },
   {
@@ -311,7 +319,8 @@
       "woordenEn": 137,
       "bron": "v3-docx: Duurzaamheid 8 Dierproeven.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#C0392B"
     }
   },
   {
@@ -346,7 +355,8 @@
       "woordenEn": 146,
       "bron": "v3-docx: DEI 1.  Anoniem.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#27AE60"
     }
   },
   {
@@ -381,7 +391,8 @@
       "woordenEn": 143,
       "bron": "v3-docx: DEI 6. Grappen.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#27AE60"
     }
   },
   {
@@ -416,7 +427,8 @@
       "woordenEn": 121,
       "bron": "v3-docx: DEI 7. Relatie.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#27AE60"
     }
   },
   {
@@ -451,7 +463,8 @@
       "woordenEn": 138,
       "bron": "v3-docx: socialmedia 2 foto.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E8820A"
     }
   },
   {
@@ -486,7 +499,8 @@
       "woordenEn": 129,
       "bron": "v3-docx: socialmedia 6 reputatie.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E8820A"
     }
   },
   {
@@ -521,7 +535,8 @@
       "woordenEn": 147,
       "bron": "v3-docx: Studentenleven9 groepswerk.docx",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#8E44AD"
     }
   },
   {
@@ -557,8 +572,9 @@
       "bron": "v3-docx: Burgerschap 1. De weggenomen kantoorspullen.docx",
       "categorieEn": "WORK",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A man standing near an office supply cabinet at dusk, glancing over his shoulder towa 948468.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A man standing near an office supply cabinet at dusk, glancing over his shoulder towa 948468.jpg",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -594,8 +610,9 @@
       "bron": "v3-docx: Burgerschap 2. De leugen voor de ouders.docx",
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A young woman sitting on her bed wrapped in a towel, phone in hand, hesitant expressi 407183.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A young woman sitting on her bed wrapped in a towel, phone in hand, hesitant expressi 407183.jpg",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -631,8 +648,9 @@
       "bron": "v3-docx: Burgerschap 3. Voor de goede sfeer.docx",
       "categorieEn": "WORK",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A tired office worker standing with his coat half on, looking back toward his manager 407183.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A tired office worker standing with his coat half on, looking back toward his manager 407183.jpg",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -668,8 +686,9 @@
       "bron": "v3-docx: Burgerschap 4. De groepsapp.docx",
       "categorieEn": "SOCIAL MEDIA",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A teenage girl lying in bed at night, illuminated only by her phone screen, worried e 407183.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A teenage girl lying in bed at night, illuminated only by her phone screen, worried e 407183.jpg",
+      "sectorColor": "#E8820A"
     }
   },
   {
@@ -705,8 +724,9 @@
       "bron": "v3-docx: Burgerschap 5. De gevonden portemonnee.docx",
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A young man crouching on a sidewalk between a bike rack and a supermarket entrance, h 407183.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A young man crouching on a sidewalk between a bike rack and a supermarket entrance, h 407183.jpg",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -742,8 +762,9 @@
       "bron": "v3-docx: Burgerschap 6. De fout in het rapport.docx",
       "categorieEn": "STUDENT LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A young intern sitting at a desk staring at a printed financial report with a highlig 268726.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A young intern sitting at a desk staring at a printed financial report with a highlig 268726.jpg",
+      "sectorColor": "#8E44AD"
     }
   },
   {
@@ -779,8 +800,9 @@
       "bron": "v3-docx: Burgerschap 7. De foto die rondgaat.docx",
       "categorieEn": "SOCIAL MEDIA",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A teenage boy sitting alone at a party, phone in hand with a tense expression, dim st 351675.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A teenage boy sitting alone at a party, phone in hand with a tense expression, dim st 351675.jpg",
+      "sectorColor": "#E8820A"
     }
   },
   {
@@ -816,8 +838,9 @@
       "bron": "v3-docx: Burgerschap 8. De klant aan de balie.docx",
       "categorieEn": "DIVERSITY & INCLUSION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A library colleague standing beside a coworker at the front desk, watching an interac 948468.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A library colleague standing beside a coworker at the front desk, watching an interac 948468.jpg",
+      "sectorColor": "#27AE60"
     }
   },
   {
@@ -853,8 +876,9 @@
       "bron": "v3-docx: Burgerschap 9. De goedbetaalde bijbaan.docx",
       "categorieEn": "SUSTAINABILITY",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A young woman sitting at a kitchen table looking at her phone with a job offer notifi 268726.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A young woman sitting at a kitchen table looking at her phone with a job offer notifi 268726.jpg",
+      "sectorColor": "#C0392B"
     }
   },
   {
@@ -890,8 +914,9 @@
       "bron": "v3-docx: Burgerschap 10. Het antwoordblaadje.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "firefly (nieuw)",
-      "afbeeldingBron": "Firefly_A student sitting at an exam desk in a quiet classroom, glancing sideways with a tens 351675.jpg"
+      "afbeeldingStatus": "oud",
+      "afbeeldingBron": "Firefly_A student sitting at an exam desk in a quiet classroom, glancing sideways with a tens 351675.jpg",
+      "sectorColor": "#1A9080"
     }
   },
   {
@@ -927,7 +952,8 @@
       "bron": "v3-docx: Burgerschap 11. De review voor geld.docx",
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -963,7 +989,8 @@
       "bron": "v3-docx: Burgerschap 12. Maar het zijn maar grapjes.docx",
       "categorieEn": "DIVERSITY & INCLUSION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#27AE60"
     }
   },
   {
@@ -999,7 +1026,8 @@
       "bron": "v3-docx: Burgerschap 13. De goedkope trui.docx",
       "categorieEn": "SUSTAINABILITY",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#C0392B"
     }
   },
   {
@@ -1035,7 +1063,8 @@
       "bron": "v3-docx: Burgerschap 14. De vraag van de leidinggevende.docx",
       "categorieEn": "WORK",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E05A1A"
     }
   },
   {
@@ -1071,7 +1100,8 @@
       "bron": "v3-docx: Burgerschap 15. De dakloze op straat.docx",
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#E0A01A"
     }
   },
   {
@@ -1108,7 +1138,8 @@
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "v3",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1146,7 +1177,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1184,7 +1216,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1222,7 +1255,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1260,7 +1294,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1298,7 +1333,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1336,7 +1372,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1374,7 +1411,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1412,7 +1450,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 1
   },
@@ -1450,7 +1489,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1488,7 +1528,8 @@
       "categorieEn": "DAILY LIFE",
       "afbeeldingStatus": "v3",
       "tekstVersie": "3.0",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1526,7 +1567,8 @@
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "v3",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1564,7 +1606,8 @@
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "v3",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 2
   },
@@ -1602,7 +1645,8 @@
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "v3",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 3
   },
@@ -1640,7 +1684,8 @@
       "categorieEn": "DAILY LIFE",
       "tekstVersie": "3.0",
       "afbeeldingStatus": "v3",
-      "vertalingEnVerouderd": true
+      "vertalingEnVerouderd": true,
+      "sectorColor": "#E0A01A"
     },
     "moeilijkheid": 3
   },
@@ -1677,7 +1722,8 @@
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#0D5C63"
     },
     "moeilijkheid": 2
   },
@@ -1714,7 +1760,8 @@
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#0D5C63"
     },
     "moeilijkheid": 2
   },
@@ -1751,7 +1798,8 @@
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#0D5C63"
     },
     "moeilijkheid": 2
   },
@@ -1788,7 +1836,8 @@
       "categorieEn": "NUCLEAR MEDICINE",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#0D5C63"
     },
     "moeilijkheid": 1
   },
@@ -1825,7 +1874,8 @@
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#6E5773"
     },
     "moeilijkheid": 2
   },
@@ -1862,7 +1912,8 @@
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#6E5773"
     },
     "moeilijkheid": 3
   },
@@ -1899,7 +1950,8 @@
       "categorieEn": "RESEARCH INTEGRITY",
       "project": "HEROES",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#6E5773"
     },
     "moeilijkheid": 2
   },
@@ -1935,7 +1987,8 @@
       "bron": "v3-docx: ON1 Relatie tussen docent en leerling.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -1971,7 +2024,8 @@
       "bron": "v3-docx: ON3 Pestgedrag in de klas dat niet stopt.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2007,7 +2061,8 @@
       "bron": "v3-docx: ON4 Docent geeft onterecht hoge cijfers aan favoriete leerlingen.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2043,7 +2098,8 @@
       "bron": "v3-docx: ON5 Discriminerende opmerkingen door een collega-docent.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2079,7 +2135,8 @@
       "bron": "v3-docx: ON6 Leerling met thuisproblemen.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2115,7 +2172,8 @@
       "bron": "v3-docx: ON7 Procedure of Praktische Wijsheid.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2151,7 +2209,8 @@
       "bron": "v3-docx: ON8 Beoordelen is mensenwerk.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2187,7 +2246,8 @@
       "bron": "v3-docx: ON9 Collegiaal.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2223,7 +2283,8 @@
       "bron": "v3-docx: ON10 Eigenwijsheid.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2259,7 +2320,8 @@
       "bron": "v3-docx: ON2 Plagiaat door een leerling onder druk van ouders.docx",
       "categorieEn": "EDUCATION",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud (tijdelijk)"
+      "afbeeldingStatus": "oud",
+      "sectorColor": "#1A9080"
     },
     "moeilijkheid": 1
   },
@@ -2303,7 +2365,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 1
@@ -2348,7 +2410,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 1
@@ -2393,7 +2455,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 1
@@ -2438,7 +2500,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 1
@@ -2483,7 +2545,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2528,7 +2590,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2573,7 +2635,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2618,7 +2680,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2663,7 +2725,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2708,7 +2770,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2753,7 +2815,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2798,7 +2860,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2843,7 +2905,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
@@ -2888,7 +2950,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 3
@@ -2933,7 +2995,7 @@
       "sectorColor": "#3949AB",
       "categorieEn": "HR",
       "tekstVersie": "3.0",
-      "afbeeldingStatus": "definitief",
+      "afbeeldingStatus": "v3",
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 3
@@ -2980,7 +3042,7 @@
       "afdeling": "MDL",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3028,7 +3090,7 @@
       "afdeling": "MDL",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3076,7 +3138,7 @@
       "afdeling": "Cardiologie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3124,7 +3186,7 @@
       "afdeling": "Oncologie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3172,7 +3234,7 @@
       "afdeling": "Oncologie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3220,7 +3282,7 @@
       "afdeling": "Geriatrie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3268,7 +3330,7 @@
       "afdeling": "Geriatrie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3316,7 +3378,7 @@
       "afdeling": "MPU",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3364,7 +3426,7 @@
       "afdeling": "Orthopedie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3412,7 +3474,7 @@
       "afdeling": "Orthopedie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3460,7 +3522,7 @@
       "afdeling": "Longziekten",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3508,7 +3570,7 @@
       "afdeling": "Verloskunde",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3556,7 +3618,7 @@
       "afdeling": "Verloskunde",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3604,7 +3666,7 @@
       "afdeling": "Neurologie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3652,7 +3714,7 @@
       "afdeling": "IC",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3700,7 +3762,7 @@
       "afdeling": "SEH",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3748,7 +3810,7 @@
       "afdeling": "SEH",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3796,7 +3858,7 @@
       "afdeling": "Naastenparticipatie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3844,7 +3906,7 @@
       "afdeling": "Naastenparticipatie",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
@@ -3892,7 +3954,7 @@
       "afdeling": "SEH",
       "sectorColor": "#005F73",
       "tekstVersie": "ETZ A5",
-      "afbeeldingStatus": "a5-print",
+      "afbeeldingStatus": "oud",
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true

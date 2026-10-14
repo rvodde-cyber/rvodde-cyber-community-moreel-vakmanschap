@@ -12,17 +12,36 @@ import {
 } from "./constants.js";
 import { getGesprekskaartStrings } from "./i18n.js";
 import { getCardContentLang } from "../vertalingen.js";
+import {
+  filterVisibleCards,
+  getGesprekskaartenSitemapPaths,
+  isCardHidden,
+  resolvePublicCardById,
+} from "./visibility.js";
 
-export { CATEGORIE_SLUGS, MOEILIJKHEID_MIN, MOEILIJKHEID_MAX, TAALNIVEAUS, TEASER_SET };
+export {
+  CATEGORIE_SLUGS,
+  MOEILIJKHEID_MIN,
+  MOEILIJKHEID_MAX,
+  TAALNIVEAUS,
+  TEASER_SET,
+  isCardHidden,
+  getGesprekskaartenSitemapPaths,
+};
 
 export const TEASER_DOWNLOADS = TEASER_SET.downloads;
 
 export function getAllCards() {
-  return cards;
+  return filterVisibleCards(cards);
 }
 
+/** Publiek: verborgen kaarten → null of vervanger via meta.vervangtDoor. */
 export function getCardById(id) {
-  return cards.find((card) => card.id === id) ?? null;
+  const resolved = resolvePublicCardById(id, cards);
+  if (resolved.kind === "ok" || resolved.kind === "redirect") {
+    return resolved.card;
+  }
+  return null;
 }
 
 /** Later: fetch(`/data/gesprekskaarten/${id}.json`) */
@@ -54,7 +73,7 @@ export function localizeCard(card, taal) {
   const hideReflectieVragen = Boolean(card.meta?.hideReflectieVragen);
   const nlOnlyEn = card.en?.vertaling === false;
 
-  const kleur = getCategorieKleur(card.categorie);
+  const kleur = card.meta?.sectorColor ?? getCategorieKleur(card.categorie);
 
   return {
     id: card.id,
@@ -95,7 +114,7 @@ export function localizeCard(card, taal) {
   };
 }
 
-export function localizeCards(taal, cardList = cards) {
+export function localizeCards(taal, cardList = getAllCards()) {
   return cardList.map((card) => localizeCard(card, taal));
 }
 
@@ -103,7 +122,7 @@ export function filterCards(cardList, filters = {}) {
   const { categorie, moeilijkheid, taalniveau, stap, set, zoek, taal = "nl" } = filters;
   const q = zoek?.trim().toLowerCase();
 
-  return cardList.filter((card) => {
+  return filterVisibleCards(cardList).filter((card) => {
     if (set && card.set !== set) return false;
     if (stap && card.stap !== Number(stap)) return false;
     if (categorie && card.categorie !== categorie) return false;
@@ -120,12 +139,13 @@ export function filterCards(cardList, filters = {}) {
   });
 }
 
-export function getFilterOptions(cardList = cards) {
+export function getFilterOptions(cardList = getAllCards()) {
+  const visible = filterVisibleCards(cardList);
   return {
-    sets: sortCardSets([...new Set(cardList.map((c) => c.set).filter(Boolean))]),
-    categorieen: [...new Set(cardList.map((c) => c.categorie))].sort(),
-    moeilijkheden: [...new Set(cardList.map((c) => c.moeilijkheid))].sort(),
-    taalniveaus: [...new Set(cardList.map((c) => c.taalniveau))].sort(),
-    stappen: [...new Set(cardList.map((c) => c.stap))].sort(),
+    sets: sortCardSets([...new Set(visible.map((c) => c.set).filter(Boolean))]),
+    categorieen: [...new Set(visible.map((c) => c.categorie))].sort(),
+    moeilijkheden: [...new Set(visible.map((c) => c.moeilijkheid))].sort(),
+    taalniveaus: [...new Set(visible.map((c) => c.taalniveau))].sort(),
+    stappen: [...new Set(visible.map((c) => c.stap))].sort(),
   };
 }
