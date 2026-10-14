@@ -131,6 +131,7 @@ export const vertalingen = {
         setLabels: {
           'morele-moed-teaser': 'Morele Moed (teaser)',
           burgerschap: 'Burgerschap',
+          bestuurskunde: 'Bestuurskunde',
           'dl-compleet-a5': 'Dagelijks leven (compleet)',
           'onderwijs-v3': 'Onderwijs',
           'nucleaire-geneeskunde': 'Nucleaire geneeskunde',
@@ -151,6 +152,8 @@ export const vertalingen = {
           onderwijs: 'Onderwijs',
           overheid: 'Overheid',
           hrm: 'HRM',
+          burgerschap: 'Burgerschap',
+          bestuurskunde: 'Bestuurskunde',
           'etz-passende-zorg': 'ETZ Passende Zorg',
         },
       },
@@ -387,6 +390,7 @@ export const vertalingen = {
         setLabels: {
           'morele-moed-teaser': 'Moral Courage (teaser)',
           burgerschap: 'Citizenship',
+          bestuurskunde: 'Public administration',
           'dl-compleet-a5': 'Daily life (full set)',
           'onderwijs-v3': 'Education',
           'nucleaire-geneeskunde': 'Nuclear medicine',
@@ -407,6 +411,8 @@ export const vertalingen = {
           onderwijs: 'Education',
           overheid: 'Public sector',
           hrm: 'HR',
+          burgerschap: 'Citizenship',
+          bestuurskunde: 'Public administration',
           'etz-passende-zorg': 'ETZ Appropriate Care',
         },
       },

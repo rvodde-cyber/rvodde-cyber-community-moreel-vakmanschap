@@ -3,6 +3,7 @@
 const setLabelsSv = {
   "morele-moed-teaser": "Moral Courage (teaser)",
   burgerschap: "Medborgarskap",
+  bestuurskunde: "Offentlig förvaltning",
   "dl-compleet-a5": "Vardagsliv (hela setet)",
   "onderwijs-v3": "Utbildning",
   "nucleaire-geneeskunde": "Nukleärmedicin",
@@ -14,6 +15,7 @@ const setLabelsSv = {
 const setLabelsCs = {
   "morele-moed-teaser": "Moral Courage (teaser)",
   burgerschap: "Občanství",
+  bestuurskunde: "Veřejná správa",
   "dl-compleet-a5": "Každodenní život (celá sada)",
   "onderwijs-v3": "Vzdělávání",
   "nucleaire-geneeskunde": "Nukleární medicína",
@@ -25,6 +27,7 @@ const setLabelsCs = {
 const setLabelsDa = {
   "morele-moed-teaser": "Moral Courage (teaser)",
   burgerschap: "Medborgerskab",
+  bestuurskunde: "Offentlig administration",
   "dl-compleet-a5": "Dagligdagen (fuld sæt)",
   "onderwijs-v3": "Uddannelse",
   "nucleaire-geneeskunde": "Nuklearmedicin",
@@ -46,6 +49,8 @@ const categorieLabelsSv = {
   onderwijs: "Utbildning",
   overheid: "Offentlig sektor",
   hrm: "HR",
+  burgerschap: "Medborgarskap",
+  bestuurskunde: "Offentlig förvaltning",
   "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
@@ -62,6 +67,8 @@ const categorieLabelsCs = {
   onderwijs: "Vzdělávání",
   overheid: "Veřejný sektor",
   hrm: "HR",
+  burgerschap: "Občanství",
+  bestuurskunde: "Veřejná správa",
   "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
@@ -78,6 +85,8 @@ const categorieLabelsDa = {
   onderwijs: "Uddannelse",
   overheid: "Offentlig sektor",
   hrm: "HR",
+  burgerschap: "Medborgerskab",
+  bestuurskunde: "Offentlig administration",
   "etz-passende-zorg": "ETZ Passende Zorg",
 };
 
