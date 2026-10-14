@@ -5,6 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { filterVisibleCards } from "../src/data/gesprekskaarten/visibility.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -12,7 +13,7 @@ const cardsPath = path.join(root, "src/data/gesprekskaarten/cards.json");
 const outDir = path.join(root, "public/data/gesprekskaarten");
 const outPath = path.join(outDir, "catalog.json");
 
-const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
+const cards = filterVisibleCards(JSON.parse(fs.readFileSync(cardsPath, "utf8")));
 
 const catalog = cards.map((card) => ({
   id: card.id,
