@@ -20,6 +20,7 @@ import burgerschapMeta from '../data/gesprekskaarten/burgerschap-meta.json'
 import bestuurskundeMeta from '../data/gesprekskaarten/bestuurskunde-meta.json'
 import onderwijsMeta from '../data/gesprekskaarten/onderwijs-meta.json'
 import hboDocentenMeta from '../data/gesprekskaarten/hbo-docenten-meta.json'
+import managementMeta from '../data/gesprekskaarten/management-meta.json'
 import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
 import { ATTRIBUTION_COLOR, resolveCardSetId, resolveCategorieSlug } from '../data/gesprekskaarten/constants'
 
@@ -217,6 +218,7 @@ export default function GespreksKaartenPagina() {
     { set: 'bestuurskunde', meta: bestuurskundeMeta },
     { set: 'onderwijs-v3', meta: onderwijsMeta },
     { set: 'hoger-onderwijs-v3', meta: hboDocentenMeta },
+    { set: 'management-v3', meta: managementMeta },
   ].filter((block) => displayCards.some((card) => card.set === block.set))
   const passendeZorgLabel =
     t.gesprekskaart.filters?.categorieLabels?.['passende-zorg'] ?? 'Passende zorg'
