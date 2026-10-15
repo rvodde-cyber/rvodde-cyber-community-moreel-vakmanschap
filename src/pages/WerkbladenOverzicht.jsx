@@ -1,26 +1,27 @@
-import { useMemo, useState } from "react";
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
-import WerkbladKaart from "../components/WerkbladKaart.jsx";
-import WerkbladFilters, {
-  EMPTY_WERKBLAD_FILTERS,
-  filterWerkbladen,
-  collectFilterOptions,
-} from "../components/WerkbladFilters.jsx";
-import { getWerkbladen } from "../data/werkbladen.js";
 import { getBibliotheekDataLang, usesEnglishRoutes } from "../data/vertalingen.js";
+
+const WerkbladenKiezerContent = lazy(() => import("./werkbladen/WerkbladenKiezerContent.jsx"));
 
 const uiTekst = {
   nl: {
     terug: "← Terug naar bibliotheek",
     titel: "Alle werkbladen",
-    subtitel: "Student- en docentenversies, per modelstap en thema doorzoekbaar.",
+    subtitel:
+      "Zoek uit morele werkbladen uit de hele wereld — filter op fase, tijd, groep, niveau, regio en status.",
+    werkbladSectie: "Gepubliceerde werkbladen op deze site",
+    laden: "Werkbladen laden…",
   },
   en: {
     terug: "← Back to library",
     titel: "All worksheets",
-    subtitel: "Student and teacher versions, searchable by model step and theme.",
+    subtitel:
+      "Search moral worksheets from around the world — filter by phase, duration, group, level, region and status.",
+    werkbladSectie: "Published worksheets on this site",
+    laden: "Loading worksheets…",
   },
 };
 
@@ -39,12 +40,6 @@ export default function WerkbladenOverzicht() {
   const ui = uiTekst[dataLang] ?? uiTekst.nl;
   const enRoutes = usesEnglishRoutes(taal);
   const terugRoute = enRoutes ? "/library" : "/bibliotheek";
-
-  const allItems = useMemo(() => getWerkbladen(dataLang), [dataLang]);
-  const options = useMemo(() => collectFilterOptions(allItems), [allItems]);
-  const [filters, setFilters] = useState(EMPTY_WERKBLAD_FILTERS);
-
-  const filtered = useMemo(() => filterWerkbladen(allItems, filters), [allItems, filters]);
 
   return (
     <main
@@ -89,45 +84,20 @@ export default function WerkbladenOverzicht() {
             fontFamily: "DM Sans, sans-serif",
             fontSize: "1rem",
             color: "var(--tekst-secundair)",
-            maxWidth: "640px",
+            maxWidth: "720px",
           }}
         >
           {ui.subtitel}
         </motion.p>
       </section>
 
-      <section style={{ padding: "1rem 1.5rem 4rem", maxWidth: "1100px", margin: "0 auto" }}>
-        <WerkbladFilters
-          filters={filters}
-          onChange={setFilters}
-          options={options}
-          resultCount={filtered.length}
-          totalCount={allItems.length}
-          showFaseFilter
-        />
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: "1.25rem",
-          }}
-          className="werkbladen-grid"
-        >
-          {filtered.map((item, i) => (
-            <motion.div
-              key={item.id}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              custom={i}
-            >
-              <WerkbladKaart item={item} />
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      <Suspense
+        fallback={
+          <p className="px-6 py-8 text-sm text-secundair" role="status">{ui.laden}</p>
+        }
+      >
+        <WerkbladenKiezerContent ui={ui} />
+      </Suspense>
 
       <style>{`
         @media (min-width: 640px) {

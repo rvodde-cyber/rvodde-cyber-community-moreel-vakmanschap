@@ -1,0 +1,6049 @@
+{
+ "versie": "1.2",
+ "datum": "2026-10-15",
+ "aantal": 128,
+ "toelichting": "Dataset voor werkvormenkiezer en wereldkaart op moreelvakmanschap.nl. Beheer: [werkvormen]. regio = slug uit regio_lijst (vaste NL/EN-namen). coordinaten = punt van de gemeenschap, plaats of instelling van herkomst, nooit van een persoon; null = brede traditie, toon op het regiopunt. 'algemeen' wordt niet op de kaart geplot. Status, context en complexiteit komen uit src/data/werkbladen.json.",
+ "regio_lijst": [
+  {
+   "slug": "afrika",
+   "nl": "Afrika",
+   "en": "Africa"
+  },
+  {
+   "slug": "arabische-wereld",
+   "nl": "Arabische wereld",
+   "en": "Arab world"
+  },
+  {
+   "slug": "azie",
+   "nl": "Azië",
+   "en": "Asia"
+  },
+  {
+   "slug": "europa",
+   "nl": "Europa",
+   "en": "Europe"
+  },
+  {
+   "slug": "latijns-amerika",
+   "nl": "Latijns-Amerika",
+   "en": "Latin America"
+  },
+  {
+   "slug": "noord-amerika",
+   "nl": "Noord-Amerika",
+   "en": "North America"
+  },
+  {
+   "slug": "oceanie",
+   "nl": "Oceanië",
+   "en": "Oceania"
+  },
+  {
+   "slug": "algemeen",
+   "nl": "Algemeen (geen specifieke herkomst)",
+   "en": "General (no specific origin)"
+  }
+ ],
+ "werkvormen": [
+  {
+   "id": "MW01",
+   "titel": {
+    "nl": "Socratisch gesprek",
+    "en": "Socratic dialogue"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "europa",
+   "herkomst": "Duitsland (Nelson, Heckmann); in NL o.a. Kessels",
+   "coordinaten": {
+    "lat": 51.54,
+    "lng": 9.93
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90–180 min",
+    "min": 90,
+    "max": 180,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "5–12",
+    "min": 5,
+    "max": 12
+   },
+   "beschrijving": {
+    "nl": "Groep onderzoekt één kernvraag (bijv. 'Wat is loyaliteit?') aan de hand van een concreet, zelf beleefd voorbeeld van een deelnemer. Uitspraken worden getoetst tot een gedeeld, onderbouwd inzicht ontstaat.",
+    "en": "The group explores one core question (e.g. 'What is loyalty?') through a concrete example that one participant experienced. Statements are tested until a shared, well-founded insight emerges."
+   },
+   "let_op": "Vraagt geoefende gespreksleider.",
+   "bron_kort": "Heckmann (1981); Kessels et al. (2002)",
+   "bronnen_apa": [
+    "Heckmann, G. (1981). Das sokratische Gespräch: Erfahrungen in philosophischen Hochschulseminaren. Schroedel.",
+    "Kessels, J., Boers, E., & Mostert, P. (2002). Vrije ruimte: Filosoferen in organisaties. Boom."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW02",
+   "titel": {
+    "nl": "Moreel beraad – dilemmamethode",
+    "en": "Moral case deliberation – dilemma method"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "europa",
+   "herkomst": "Nederland (Amsterdam UMC)",
+   "coordinaten": {
+    "lat": 52.37,
+    "lng": 4.9
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–12",
+    "min": 4,
+    "max": 12
+   },
+   "beschrijving": {
+    "nl": "Een deelnemer brengt een concrete casus in; de groep formuleert het dilemma (A vs. B), benoemt per optie waarden, normen en schade, en elk maakt een persoonlijke afweging vóór het gezamenlijk gesprek.",
+    "en": "A participant brings in a concrete case; the group formulates the dilemma (A vs. B), names the values, norms and harm for each option, and everyone makes a personal judgement before the joint conversation."
+   },
+   "let_op": "Veiligheid in de groep; casus van deelnemer zelf.",
+   "bron_kort": "Stolper et al. (2016)",
+   "bronnen_apa": [
+    "Stolper, M., Molewijk, B., & Widdershoven, G. (2016). Bioethics education in clinical settings: Theory and practice of the dilemma method of moral case deliberation. BMC Medical Ethics, 17, Article 45. https://doi.org/10.1186/s12910-016-0125-1"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW03",
+   "titel": {
+    "nl": "Nijmeegse methode voor moreel beraad",
+    "en": "Nijmegen method of ethical case deliberation"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "europa",
+   "herkomst": "Nederland (Radboudumc)",
+   "coordinaten": {
+    "lat": 51.84,
+    "lng": 5.86
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–10",
+    "min": 4,
+    "max": 10
+   },
+   "beschrijving": {
+    "nl": "Gestructureerde vragenreeks: probleem, feiten (medisch/verpleegkundig/sociaal), evaluatie vanuit waarden en besluitvorming.",
+    "en": "A structured series of questions: the problem, the facts (medical, nursing, social), evaluation from values, and decision-making."
+   },
+   "let_op": "Oorspronkelijk voor de zorg; vertaalslag naar andere sectoren nodig.",
+   "bron_kort": "Steinkamp & Gordijn (2003)",
+   "bronnen_apa": [
+    "Steinkamp, N., & Gordijn, B. (2003). Ethical case deliberation on the ward: A comparison of four methods. Medicine, Health Care and Philosophy, 6(3), 235–246. https://doi.org/10.1023/A:1025928617468"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW04",
+   "titel": {
+    "nl": "Filosoferen met studenten (onderzoeksgemeenschap)",
+    "en": "Community of Inquiry (Philosophy for Children)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Lipman); wereldwijd verspreid",
+   "coordinaten": {
+    "lat": 40.86,
+    "lng": -74.2
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–25",
+    "min": 8,
+    "max": 25
+   },
+   "beschrijving": {
+    "nl": "Na een prikkel (tekst, beeld, filmpje) stellen deelnemers zelf vragen, kiezen er één en onderzoeken die samen, met aandacht voor redenen, voorbeelden en tegenvoorbeelden.",
+    "en": "After a prompt (text, image, clip), participants formulate their own questions, choose one and explore it together, paying attention to reasons, examples and counterexamples."
+   },
+   "let_op": "Goed geschikt voor MBO-niveau.",
+   "bron_kort": "Lipman (2003)",
+   "bronnen_apa": [
+    "Lipman, M. (2003). Thinking in education (2nd ed.). Cambridge University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW05",
+   "titel": {
+    "nl": "Cultuurcirkel",
+    "en": "Culture circle (círculo de cultura)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "latijns-amerika",
+   "herkomst": "Brazilië (Freire)",
+   "coordinaten": {
+    "lat": -8.05,
+    "lng": -34.88
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–20",
+    "min": 8,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Een 'generatief thema' uit de leefwereld van de deelnemers wordt gecodeerd in een beeld; de groep decodeert: wat zie je, waarom is het zo, wie heeft er baat bij, wat kunnen we doen?",
+    "en": "A 'generative theme' from the participants' lives is coded into an image; the group decodes it: what do you see, why is it like this, who benefits, what can we do?"
+   },
+   "let_op": "Sterk op macht en ongelijkheid gericht.",
+   "bron_kort": "Freire (1970)",
+   "bronnen_apa": [
+    "Freire, P. (1970). Pedagogy of the oppressed. Herder and Herder."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW06",
+   "titel": {
+    "nl": "Gesprekscirkel",
+    "en": "Talking circle / peacemaking circle"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "noord-amerika",
+   "herkomst": "Inheemse tradities Noord-Amerika; uitgewerkt in herstelrecht (Pranis)",
+   "coordinaten": {
+    "lat": 60.72,
+    "lng": -135.06
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–90 min",
+    "min": 45,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–20",
+    "min": 6,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Deelnemers zitten in een kring; een spreekvoorwerp gaat rond. Wie het heeft spreekt, de rest luistert. Rondes over ervaring, waarden en wat nodig is.",
+    "en": "Participants sit in a circle and a talking piece is passed around. Whoever holds it speaks; the others listen. Rounds cover experience, values and what is needed."
+   },
+   "let_op": "Culturele toe-eigening vermijden.",
+   "bron_kort": "Pranis (2005)",
+   "bronnen_apa": [
+    "Pranis, K. (2005). The little book of circle processes: A new/old approach to peacemaking. Good Books."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW07",
+   "titel": {
+    "nl": "Ubuntu-/indabagesprek",
+    "en": "Ubuntu dialogue / indaba"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Zuidelijk Afrika",
+   "coordinaten": {
+    "lat": -28.53,
+    "lng": 30.9
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Gesprek in kleine kringen gericht op gemeenschap en relatie ('ik ben omdat wij zijn'). Kernvraag: welke keuze versterkt de gemeenschap en ieders menswaardigheid? Groepen delen daarna hun 'rode lijnen' en mogelijke bruggen.",
+    "en": "Conversation in small circles focused on community and relationship ('I am because we are'). Core question: which choice strengthens the community and everyone's dignity? Groups then share their 'red lines' and possible bridges."
+   },
+   "let_op": "Niet romantiseren; verbinden met filosofische bron.",
+   "bron_kort": "Metz (2011)",
+   "bronnen_apa": [
+    "Metz, T. (2011). Ubuntu as a moral theory and human rights in South Africa. African Human Rights Law Journal, 11(2), 532–559."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW08",
+   "titel": {
+    "nl": "Ethische cyclus",
+    "en": "Ethical cycle"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "europa",
+   "herkomst": "Nederland (TU Delft)",
+   "coordinaten": {
+    "lat": 52.01,
+    "lng": 4.36
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90–120 min",
+    "min": 90,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel of 3–5",
+    "min": 1,
+    "max": 5
+   },
+   "beschrijving": {
+    "nl": "Vijf stappen: probleemformulering, probleemanalyse (stakeholders, waarden, feiten), handelingsopties, ethische beoordeling vanuit meerdere theorieën, reflectie en besluit.",
+    "en": "Five steps: problem formulation, problem analysis (stakeholders, values, facts), options for action, ethical evaluation from several theories, reflection and decision."
+   },
+   "let_op": "Oorspronkelijk voor techniek; goed breder toepasbaar.",
+   "bron_kort": "Van de Poel & Royakkers (2011)",
+   "bronnen_apa": [
+    "Van de Poel, I., & Royakkers, L. (2011). Ethics, technology, and engineering: An introduction. Wiley-Blackwell."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW09",
+   "titel": {
+    "nl": "Vier-kwadrantenmethode",
+    "en": "Four Box Method"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "noord-amerika",
+   "herkomst": "VS (klinische ethiek)",
+   "coordinaten": {
+    "lat": 41.88,
+    "lng": -87.63
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel of 3–6",
+    "min": 1,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Casus analyseren in vier vakken: (1) professionele feiten/indicatie, (2) wensen van de betrokkene, (3) kwaliteit van leven, (4) context (familie, recht, organisatie, middelen).",
+    "en": "A case is analysed in four boxes: (1) professional facts and indications, (2) the wishes of the person concerned, (3) quality of life, (4) context (family, law, organisation, resources)."
+   },
+   "let_op": "Vertaling buiten de zorg nodig.",
+   "bron_kort": "Jonsen et al. (2022)",
+   "bronnen_apa": [
+    "Jonsen, A. R., Siegler, M., & Winslade, W. J. (2022). Clinical ethics: A practical approach to ethical decisions in clinical medicine (9th ed.). McGraw Hill."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW10",
+   "titel": {
+    "nl": "Ethische matrix",
+    "en": "Ethical matrix"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "europa",
+   "herkomst": "Verenigd Koninkrijk",
+   "coordinaten": {
+    "lat": 52.95,
+    "lng": -1.15
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Tabel met stakeholders (rijen) en drie principes (kolommen: welzijn, autonomie, rechtvaardigheid). Groep vult per cel in wat het besluit betekent en weegt vervolgens.",
+    "en": "A table with stakeholders (rows) and three principles (columns: well-being, autonomy, justice). The group fills in what the decision means for each cell and then weighs the whole."
+   },
+   "let_op": "Principes eventueel aanpassen aan MMV.",
+   "bron_kort": "Mepham (2000)",
+   "bronnen_apa": [
+    "Mepham, B. (2000). A framework for the ethical analysis of novel foods: The ethical matrix. Journal of Agricultural and Environmental Ethics, 12(2), 165–176. https://doi.org/10.1023/A:1009542714497"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW11",
+   "titel": {
+    "nl": "Zes ethische lenzen",
+    "en": "Six ethical lenses (framework for ethical decision making)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Markkula Center, Santa Clara University)",
+   "coordinaten": {
+    "lat": 37.35,
+    "lng": -121.94
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–60 min",
+    "min": 30,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel of 3–6",
+    "min": 1,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Eén casus wordt door zes 'lenzen' bekeken; elke subgroep neemt een lens en presenteert welke optie die lens het meest verdedigbaar vindt.",
+    "en": "One case is examined through six 'lenses'; each subgroup takes one lens and presents which option that lens finds most defensible."
+   },
+   "let_op": "Bronvermelding Markkula bij inspiratie.",
+   "bron_kort": "Velasquez et al. (2021)",
+   "bronnen_apa": [
+    "Velasquez, M., Moberg, D., Meyer, M. J., Shanks, T., McLean, M. R., DeCosse, D., André, C., Hanson, K. O., Raicu, I., & Kwan, J. (2021). A framework for ethical decision making. Markkula Center for Applied Ethics, Santa Clara University. https://www.scu.edu/ethics/ethics-resources/a-framework-for-ethical-decision-making/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW12",
+   "titel": {
+    "nl": "Goed-tegen-goed-analyse",
+    "en": "Right-versus-right paradigms"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Institute for Global Ethics)",
+   "coordinaten": {
+    "lat": 44.21,
+    "lng": -69.06
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–6",
+    "min": 2,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Dilemma's herkennen als botsing tussen twee goede dingen: waarheid vs. loyaliteit, individu vs. gemeenschap, korte vs. lange termijn, rechtvaardigheid vs. barmhartigheid. Daarna toetsen met drie beslisprincipes.",
+    "en": "Dilemmas are recognised as a clash between two good things: truth vs. loyalty, individual vs. community, short term vs. long term, justice vs. mercy. They are then tested with three decision principles."
+   },
+   "let_op": "Zeer toegankelijk; goede opstap.",
+   "bron_kort": "Kidder (1995)",
+   "bronnen_apa": [
+    "Kidder, R. M. (1995). How good people make tough choices: Resolving the dilemmas of ethical living. William Morrow."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW13",
+   "titel": {
+    "nl": "Sluier van onwetendheid",
+    "en": "Veil of ignorance exercise"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Rawls)",
+   "coordinaten": {
+    "lat": 42.37,
+    "lng": -71.11
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Deelnemers ontwerpen een regel (bijv. roosterbeleid) zonder te weten welke rol ze straks krijgen; daarna rollen trekken en de regel toetsen.",
+    "en": "Participants design a rule (e.g. a scheduling policy) without knowing which role they will later receive; they then draw roles and test the rule."
+   },
+   "let_op": "—",
+   "bron_kort": "Rawls (1971)",
+   "bronnen_apa": [
+    "Rawls, J. (1971). A theory of justice. Harvard University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW14",
+   "titel": {
+    "nl": "Belanghebbendenkaart",
+    "en": "Stakeholder mapping"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "noord-amerika",
+   "herkomst": "VS (stakeholdertheorie)",
+   "coordinaten": {
+    "lat": 44.98,
+    "lng": -93.27
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30 min",
+    "min": 30,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–6",
+    "min": 2,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Alle betrokkenen rond een keuze in kaart brengen (cirkels: direct – indirect – stil/afwezig) en per partij benoemen wat er op het spel staat.",
+    "en": "All parties involved in a choice are mapped (circles: direct – indirect – silent/absent), and for each party participants name what is at stake."
+   },
+   "let_op": "—",
+   "bron_kort": "Freeman (1984)",
+   "bronnen_apa": [
+    "Freeman, R. E. (1984). Strategic management: A stakeholder approach. Pitman."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW15",
+   "titel": {
+    "nl": "Begeleidingsethiek",
+    "en": "Guidance ethics approach"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "europa",
+   "herkomst": "Nederland (ECP, Universiteit Twente)",
+   "coordinaten": {
+    "lat": 52.22,
+    "lng": 6.89
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "2–3 uur",
+    "min": 120,
+    "max": 180,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–25",
+    "min": 8,
+    "max": 25
+   },
+   "beschrijving": {
+    "nl": "Drie fasen rond een concrete technologie: (1) de technologie in context, (2) dialoog over effecten en betrokken waarden, (3) handelingsopties voor technologie, omgeving en gebruiker.",
+    "en": "Three phases around a concrete technology: (1) the technology in context, (2) dialogue about effects and the values involved, (3) options for action for technology, environment and user."
+   },
+   "let_op": "Licentiecheck bij ECP als we meer dan de stappen willen gebruiken.",
+   "bron_kort": "Verbeek & Tijink (2019)",
+   "bronnen_apa": [
+    "Verbeek, P.-P., & Tijink, D. (2019). Aanpak begeleidingsethiek: Een methode om ethisch te kijken naar technologie in de praktijk. ECP | Platform voor de InformatieSamenleving. https://ecp.nl/project/aanpak-begeleidingsethiek/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW16",
+   "titel": {
+    "nl": "Stem geven aan waarden",
+    "en": "Giving Voice to Values (approach)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Gentile; Darden/Yale)",
+   "coordinaten": {
+    "lat": 38.03,
+    "lng": -78.48
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–90 min",
+    "min": 45,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–5",
+    "min": 2,
+    "max": 5
+   },
+   "beschrijving": {
+    "nl": "Uitgangspunt: je weet al wat goed is; de vraag is hoe je het doet. Deelnemers bedenken tegenargumenten ('rationalisaties'), bondgenoten en een concreet script, en oefenen dat met elkaar.",
+    "en": "Starting point: you already know what is right; the question is how to act on it. Participants anticipate counterarguments ('rationalisations'), allies and a concrete script, and rehearse it with each other."
+   },
+   "let_op": "Direct verbonden met Handelen en Volhouden in MMV.",
+   "bron_kort": "Gentile (2010)",
+   "bronnen_apa": [
+    "Gentile, M. C. (2010). Giving voice to values: How to speak your mind when you know what's right. Yale University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW17",
+   "titel": {
+    "nl": "Forumtheater",
+    "en": "Forum theatre (Theatre of the Oppressed)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "latijns-amerika",
+   "herkomst": "Brazilië (Boal)",
+   "coordinaten": {
+    "lat": -22.91,
+    "lng": -43.17
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–120 min",
+    "min": 60,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "10–30",
+    "min": 10,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een korte scène eindigt verkeerd. Bij herhaling mogen toeschouwers 'stop' roepen, de plaats van een speler innemen en ander handelen uitproberen.",
+    "en": "A short scene ends badly. When it is replayed, spectators may call 'stop', take a player's place and try out a different course of action."
+   },
+   "let_op": "Veilige begeleiding; geen echte personen naspelen.",
+   "bron_kort": "Boal (1979)",
+   "bronnen_apa": [
+    "Boal, A. (1979). Theatre of the oppressed. Urizen Books."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW18",
+   "titel": {
+    "nl": "Morele pre-mortem",
+    "en": "Ethical pre-mortem"
+   },
+   "categorie": "Actiegericht",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Klein); ethische variant",
+   "coordinaten": {
+    "lat": 39.81,
+    "lng": -83.89
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–8",
+    "min": 3,
+    "max": 8
+   },
+   "beschrijving": {
+    "nl": "'Stel: over een jaar staat ons project negatief in de krant. Wat is er misgegaan?' Groep schrijft oorzaken op en bedenkt voorzorgsmaatregelen.",
+    "en": "'Imagine: a year from now our project is in the news for the wrong reasons. What went wrong?' The group writes down causes and devises precautions."
+   },
+   "let_op": "—",
+   "bron_kort": "Klein (2007)",
+   "bronnen_apa": [
+    "Klein, G. (2007). Performing a project premortem. Harvard Business Review, 85(9), 18–19."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW19",
+   "titel": {
+    "nl": "Talisman van Gandhi",
+    "en": "Gandhi's talisman"
+   },
+   "categorie": "Actiegericht",
+   "regio": "azie",
+   "herkomst": "India",
+   "coordinaten": {
+    "lat": 28.61,
+    "lng": 77.21
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "10–15 min",
+    "min": 10,
+    "max": 15,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel",
+    "min": 1,
+    "max": 1
+   },
+   "beschrijving": {
+    "nl": "Toetsvraag bij twijfel: denk aan de kwetsbaarste persoon die je kent en vraag je af of je stap diegene iets oplevert.",
+    "en": "A test question in times of doubt: think of the most vulnerable person you know and ask whether your next step will benefit them."
+   },
+   "let_op": "Goede check-in of afsluiter.",
+   "bron_kort": "Pyarelal (1958)",
+   "bronnen_apa": [
+    "Pyarelal. (1958). Mahatma Gandhi: The last phase (Vol. 2). Navajivan."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW20",
+   "titel": {
+    "nl": "Ethics Bowl",
+    "en": "Ethics Bowl"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Illinois Institute of Technology, APPE)",
+   "coordinaten": {
+    "lat": 41.83,
+    "lng": -87.63
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–120 min",
+    "min": 60,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2 teams van 3–5 + jury",
+    "min": 9,
+    "max": 15
+   },
+   "beschrijving": {
+    "nl": "Teams bereiden casussen voor en beantwoorden een vraag; het andere team reageert niet als tegenstander maar als kritische vriend. Jury beoordeelt op redenering, niet op 'winnen'.",
+    "en": "Teams prepare cases and answer a question; the other team responds not as an opponent but as a critical friend. Judges assess the reasoning, not who 'wins'."
+   },
+   "let_op": "—",
+   "bron_kort": "Ladenson (2001)",
+   "bronnen_apa": [
+    "Ladenson, R. F. (2001). The educational significance of the Ethics Bowl. Teaching Ethics, 1(1), 63–78."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW21",
+   "titel": {
+    "nl": "Gestructureerde academische controverse",
+    "en": "Structured Academic Controversy"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Johnson & Johnson)",
+   "coordinaten": {
+    "lat": 44.97,
+    "lng": -93.23
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "50–90 min",
+    "min": 50,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Viertallen",
+    "min": 4,
+    "max": 32
+   },
+   "beschrijving": {
+    "nl": "Duo's verdedigen een standpunt, wisselen daarna van kant en zoeken tot slot samen een gedeelde, onderbouwde positie.",
+    "en": "Pairs defend a position, then switch sides, and finally look together for a shared, well-founded position."
+   },
+   "let_op": "—",
+   "bron_kort": "Johnson & Johnson (1993)",
+   "bronnen_apa": [
+    "Johnson, D. W., & Johnson, R. T. (1993). Creative and critical thinking through academic controversy. American Behavioral Scientist, 37(1), 40–53. https://doi.org/10.1177/0002764293037001005"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW22",
+   "titel": {
+    "nl": "Dilemmadiscussie",
+    "en": "Moral dilemma discussion"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Kohlberg, Blatt)",
+   "coordinaten": {
+    "lat": 42.37,
+    "lng": -71.12
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–90 min",
+    "min": 45,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "10–30",
+    "min": 10,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een fictief dilemma wordt voorgelegd; deelnemers kiezen positie, bespreken in groepjes met gelijke keuze de beste argumenten en gaan daarna in gesprek met de andere kant, waarbij ze de beste tegenargumenten waarderen.",
+    "en": "A fictional dilemma is presented; participants choose a position, discuss the best arguments in groups with the same choice, and then engage with the other side, acknowledging the best counterarguments."
+   },
+   "let_op": "—",
+   "bron_kort": "Blatt & Kohlberg (1975)",
+   "bronnen_apa": [
+    "Blatt, M. M., & Kohlberg, L. (1975). The effects of classroom moral discussion upon children's level of moral judgment. Journal of Moral Education, 4(2), 129–161. https://doi.org/10.1080/0305724750040207"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW23",
+   "titel": {
+    "nl": "Waardenlijn",
+    "en": "Values continuum / values line"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "algemeen",
+   "herkomst": "Algemeen didactisch repertoire",
+   "coordinaten": null,
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "15–30 min",
+    "min": 15,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "10–30",
+    "min": 10,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Stelling voorlezen; deelnemers gaan op een denkbeeldige lijn staan tussen 'helemaal eens' en 'helemaal oneens' en lichten hun plek toe. Wie verplaatst na het horen van argumenten?",
+    "en": "A statement is read aloud; participants stand on an imaginary line between 'fully agree' and 'fully disagree' and explain their position. Who moves after hearing the arguments?"
+   },
+   "let_op": "Druk om in de middengroep te blijven.",
+   "bron_kort": "—",
+   "bronnen_apa": [],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW24",
+   "titel": {
+    "nl": "Vier hoeken",
+    "en": "Four corners"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "algemeen",
+   "herkomst": "Algemeen didactisch repertoire",
+   "coordinaten": null,
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "20 min",
+    "min": 20,
+    "max": 20,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "12–30",
+    "min": 12,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Vier handelingsopties hangen in vier hoeken van het lokaal; deelnemers kiezen, overleggen per hoek en presenteren hun beste argument.",
+    "en": "Four options for action hang in the four corners of the room; participants choose, discuss in their corner and present their best argument."
+   },
+   "let_op": "—",
+   "bron_kort": "—",
+   "bronnen_apa": [],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW25",
+   "titel": {
+    "nl": "Vissenkom",
+    "en": "Fishbowl discussion"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "algemeen",
+   "herkomst": "Algemeen didactisch repertoire",
+   "coordinaten": null,
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "12–40",
+    "min": 12,
+    "max": 40
+   },
+   "beschrijving": {
+    "nl": "Binnenkring voert het gesprek, buitenkring observeert op gerichte vragen (wie komt niet aan bod? welke waarden spelen?). Daarna wisselen.",
+    "en": "An inner circle holds the conversation while an outer circle observes using focused questions (who is not heard? which values are at play?). Then they switch."
+   },
+   "let_op": "—",
+   "bron_kort": "—",
+   "bronnen_apa": [],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW26",
+   "titel": {
+    "nl": "Advocaat van de duivel",
+    "en": "Devil's advocate"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "europa",
+   "herkomst": "Algemeen (oorspr. kerkelijke procedure)",
+   "coordinaten": {
+    "lat": 41.9,
+    "lng": 12.45
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "15–30 min",
+    "min": 15,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Eén persoon krijgt de taak het groepsbesluit zo sterk mogelijk aan te vallen. Doel: groepsdenken doorbreken.",
+    "en": "One person is given the task of attacking the group's decision as strongly as possible. The aim is to break through groupthink."
+   },
+   "let_op": "Rol expliciet benoemen en afsluiten.",
+   "bron_kort": "—",
+   "bronnen_apa": [],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW27",
+   "titel": {
+    "nl": "Waardenverheldering",
+    "en": "Values clarification"
+   },
+   "categorie": "Reflectie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Raths, Harmin & Simon)",
+   "coordinaten": {
+    "lat": 40.73,
+    "lng": -73.99
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "voelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "20–45 min",
+    "min": 20,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + duo",
+    "min": 1,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Deelnemers ordenen of kiezen waarden (bijv. top 5 uit 30), verbinden die met recent eigen handelen en bespreken in duo's waar kloof zit tussen zeggen en doen.",
+    "en": "Participants rank or choose values (e.g. a top 5 out of 30), link them to their own recent actions and discuss in pairs where the gap lies between saying and doing."
+   },
+   "let_op": "Eigen waardenkaarten ontwerpen (bestaande sets zijn vaak ©).",
+   "bron_kort": "Raths et al. (1966)",
+   "bronnen_apa": [
+    "Raths, L. E., Harmin, M., & Simon, S. B. (1966). Values and teaching: Working with values in the classroom. Charles E. Merrill."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW28",
+   "titel": {
+    "nl": "Kritisch-incidentbeschrijving",
+    "en": "Critical incident analysis"
+   },
+   "categorie": "Reflectie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Flanagan); breed gebruikt in professionele reflectie",
+   "coordinaten": {
+    "lat": 40.44,
+    "lng": -79.99
+   },
+   "ronde": 1,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "20–30 min",
+    "min": 20,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel",
+    "min": 1,
+    "max": 1
+   },
+   "beschrijving": {
+    "nl": "Deelnemer beschrijft een concreet moment waarop iets moreel schuurde: wat gebeurde er, wat voelde ik, wat deed ik, wat zou ik nu anders doen?",
+    "en": "A participant describes a concrete moment when something felt morally wrong: what happened, what did I feel, what did I do, what would I do differently now?"
+   },
+   "let_op": "Basis voor portfolio / moreel dagboek.",
+   "bron_kort": "Flanagan (1954)",
+   "bronnen_apa": [
+    "Flanagan, J. C. (1954). The critical incident technique. Psychological Bulletin, 51(4), 327–358. https://doi.org/10.1037/h0061470"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW29",
+   "titel": {
+    "nl": "Ethiekcanvas",
+    "en": "Ethics Canvas"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "europa",
+   "herkomst": "Ierland (ADAPT Centre, Trinity College Dublin)",
+   "coordinaten": {
+    "lat": 53.34,
+    "lng": -6.25
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Canvas (naar het Business Model Canvas) waarop een team betrokkenen, gedrags- en relatieveranderingen, mogelijke conflicten en maatregelen in kaart brengt.",
+    "en": "A canvas (modelled on the Business Model Canvas) on which a team maps stakeholders, changes in behaviour and relationships, possible conflicts and measures."
+   },
+   "let_op": "Werkblad ook onder CC BY-SA publiceren.",
+   "bron_kort": "ADAPT Centre (z.d.)",
+   "bronnen_apa": [
+    "ADAPT Centre. (z.d.). The Ethics Canvas. Trinity College Dublin. https://www.ethicscanvas.org/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op The Ethics Canvas – ADAPT Centre & Trinity College Dublin – CC BY-SA 3.0 – https://www.ethicscanvas.org/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW30",
+   "titel": {
+    "nl": "Data-ethiekcanvas",
+    "en": "Data Ethics Canvas"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "europa",
+   "herkomst": "Verenigd Koninkrijk (Open Data Institute)",
+   "coordinaten": {
+    "lat": 51.52,
+    "lng": -0.08
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–120 min",
+    "min": 60,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Canvas met 15 vakken over databronnen, rechten, effecten op mensen, transparantie en acties.",
+    "en": "A canvas with 15 boxes on data sources, rights, effects on people, transparency and actions."
+   },
+   "let_op": "ShareAlike.",
+   "bron_kort": "Open Data Institute (2021)",
+   "bronnen_apa": [
+    "Open Data Institute. (2021). The Data Ethics Canvas. https://theodi.org/insights/tools/the-data-ethics-canvas-2021/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op The Data Ethics Canvas – Open Data Institute – CC BY-SA 4.0 – https://theodi.org/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW31",
+   "titel": {
+    "nl": "AI-ethiekcanvas",
+    "en": "AI Ethics Canvas"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "noord-amerika",
+   "herkomst": "Canada/VK (Goetze)",
+   "coordinaten": null,
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Variant van het ethiekcanvas specifiek voor AI-toepassingen, met handleiding.",
+    "en": "A variant of the ethics canvas specifically for AI applications, with a guide."
+   },
+   "let_op": "ShareAlike.",
+   "bron_kort": "Goetze (2021)",
+   "bronnen_apa": [
+    "Goetze, T. S. (2021). AI ethics canvas [Guidebook, CC BY-SA 4.0]. https://www.trystangoetze.ca/aicanvas.html"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op AI Ethics Canvas – Trystan S. Goetze – CC BY-SA 4.0 – https://www.trystangoetze.ca/aicanvas.html",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW32",
+   "titel": {
+    "nl": "Gevolgenscan",
+    "en": "Consequence Scanning"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "europa",
+   "herkomst": "Verenigd Koninkrijk (Doteveryone)",
+   "coordinaten": {
+    "lat": 51.51,
+    "lng": -0.13
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–10",
+    "min": 3,
+    "max": 10
+   },
+   "beschrijving": {
+    "nl": "Drie vragen: wat zijn de bedoelde én onbedoelde gevolgen? Welke positieve willen we versterken? Welke negatieve willen we beperken? Acties en eigenaar vastleggen.",
+    "en": "Three questions: what are the intended and unintended consequences? Which positive ones do we want to strengthen? Which negative ones do we want to limit? Actions and owners are recorded."
+   },
+   "let_op": "Niet-commercieel: past bij gratis website, niet bij betaalde training.",
+   "bron_kort": "Doteveryone (2019)",
+   "bronnen_apa": [
+    "Doteveryone. (2019). Consequence scanning: An agile practice for responsible innovators. https://doteveryone.org.uk/project/consequence-scanning/"
+   ],
+   "licentie_werkblad": "CC BY-NC-SA 4.0 (of methode in eigen woorden → CC BY-SA 4.0)",
+   "naamsvermelding_bron": "Gebaseerd op Consequence Scanning – Doteveryone – CC BY-NC-SA 4.0 – https://doteveryone.org.uk/project/consequence-scanning/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW33",
+   "titel": {
+    "nl": "Risicozones van technologie",
+    "en": "Ethical OS risk zones"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Institute for the Future, Omidyar Network)",
+   "coordinaten": {
+    "lat": 37.44,
+    "lng": -122.14
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–90 min",
+    "min": 45,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Acht risicozones (o.a. desinformatie, verslaving, ongelijkheid, algoritmische bias, surveillance, datagebruik) als checklist bij een product of beleid; aangevuld met toekomstscenario's.",
+    "en": "Eight risk zones (including disinformation, addiction, inequality, algorithmic bias, surveillance and data use) serve as a checklist for a product or policy, supplemented with future scenarios."
+   },
+   "let_op": "NC + SA.",
+   "bron_kort": "Institute for the Future & Omidyar Network (2018)",
+   "bronnen_apa": [
+    "Institute for the Future & Omidyar Network. (2018). Ethical OS toolkit: A guide to anticipating the future impact of today's technology. https://ethicalos.org/"
+   ],
+   "licentie_werkblad": "CC BY-NC-SA 4.0 (of methode in eigen woorden → CC BY-SA 4.0)",
+   "naamsvermelding_bron": "Gebaseerd op Ethical OS Toolkit – Institute for the Future & Omidyar Network – CC BY-NC-SA 4.0 – https://ethicalos.org/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW34",
+   "titel": {
+    "nl": "Moral-IT-kaartspel",
+    "en": "Moral-IT deck"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "europa",
+   "herkomst": "Verenigd Koninkrijk (University of Nottingham)",
+   "coordinaten": {
+    "lat": 52.94,
+    "lng": -1.2
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Kaarten met vragen over ethiek, recht, privacy en veiligheid, gebruikt op een procesbord: risico's benoemen, prioriteren, maatregelen kiezen.",
+    "en": "Cards with questions about ethics, law, privacy and security, used on a process board: identify risks, prioritise them and choose measures."
+   },
+   "let_op": "NC + SA.",
+   "bron_kort": "Urquhart & Craigon (2021)",
+   "bronnen_apa": [
+    "Urquhart, L. D., & Craigon, P. J. (2021). The Moral-IT Deck: A tool for ethics by design. Journal of Responsible Innovation, 8(1), 94–126. https://doi.org/10.1080/23299460.2021.1880112"
+   ],
+   "licentie_werkblad": "CC BY-NC-SA 4.0 (of methode in eigen woorden → CC BY-SA 4.0)",
+   "naamsvermelding_bron": "Gebaseerd op The Moral-IT Deck – Urquhart & Craigon, University of Nottingham – CC BY-NC-SA 4.0",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW35",
+   "titel": {
+    "nl": "Embedded EthiCS-modules",
+    "en": "Embedded EthiCS modules"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Harvard University)",
+   "coordinaten": {
+    "lat": 42.37,
+    "lng": -71.12
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "1 college",
+    "min": 90,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Klas",
+    "min": 15,
+    "max": 35
+   },
+   "beschrijving": {
+    "nl": "Kant-en-klare ethiekmodules ingebed in informaticavakken, met casus, discussievragen en opdrachten.",
+    "en": "Ready-made ethics modules embedded in computer science courses, with a case, discussion questions and assignments."
+   },
+   "let_op": "Controleer per module 'except where otherwise noted'.",
+   "bron_kort": "Embedded EthiCS @ Harvard (z.d.)",
+   "bronnen_apa": [
+    "Embedded EthiCS @ Harvard. (z.d.). Instructor guides and modules. Harvard University. https://embeddedethics.seas.harvard.edu/modules/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op Embedded EthiCS @ Harvard – Harvard University – CC BY 4.0 – https://embeddedethics.seas.harvard.edu/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW36",
+   "titel": {
+    "nl": "Open leerboek: Introduction to Philosophy: Ethics",
+    "en": "Open textbook: Introduction to Philosophy: Ethics"
+   },
+   "categorie": "Bronmateriaal",
+   "regio": "noord-amerika",
+   "herkomst": "Canada/internationaal (Rebus Community)",
+   "coordinaten": {
+    "lat": 45.5,
+    "lng": -73.57
+   },
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "—",
+    "min": null,
+    "max": null,
+    "type": "n.v.t."
+   },
+   "groep": {
+    "tekst": "—",
+    "min": null,
+    "max": null
+   },
+   "beschrijving": {
+    "nl": "Open leerboek met hoofdstukken over ethische theorieën; bruikbaar als achtergrondtekst en voor uitlegkaders bij werkbladen.",
+    "en": "An open textbook with chapters on ethical theories; useful as background reading and for explanatory boxes in worksheets."
+   },
+   "let_op": "Per hoofdstuk 'except where otherwise noted'.",
+   "bron_kort": "Matthews (2019)",
+   "bronnen_apa": [
+    "Matthews, G. (Red.). (2019). Introduction to philosophy: Ethics. Rebus Community. https://press.rebus.community/intro-to-phil-ethics/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op Introduction to Philosophy: Ethics – G. Matthews (Red.), Rebus Community – CC BY 4.0",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW37",
+   "titel": {
+    "nl": "Open leerboek: Ethical Explorations",
+    "en": "Open textbook: Ethical Explorations"
+   },
+   "categorie": "Bronmateriaal",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Shea)",
+   "coordinaten": null,
+   "ronde": 1,
+   "label": "B",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "—",
+    "min": null,
+    "max": null,
+    "type": "n.v.t."
+   },
+   "groep": {
+    "tekst": "—",
+    "min": null,
+    "max": null
+   },
+   "beschrijving": {
+    "nl": "Verhalende inleiding in ethische theorieën met vragen en dilemma's.",
+    "en": "A narrative introduction to ethical theories with questions and dilemmas."
+   },
+   "let_op": "NC.",
+   "bron_kort": "Shea (2023)",
+   "bronnen_apa": [
+    "Shea, B. (2023). Ethical explorations: Moral dilemmas in a universe of possibilities. Thoughtful Noodle Books. https://mlpp.pressbooks.pub/ethicalexplorations/"
+   ],
+   "licentie_werkblad": "CC BY-NC-SA 4.0 (of methode in eigen woorden → CC BY-SA 4.0)",
+   "naamsvermelding_bron": "Gebaseerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW38",
+   "titel": {
+    "nl": "Envisioning Cards (Value Sensitive Design)",
+    "en": "Envisioning Cards"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (University of Washington)",
+   "coordinaten": {
+    "lat": 47.66,
+    "lng": -122.3
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Kaartenset rond vier criteria (betrokkenen, tijd, waarden, alomtegenwoordigheid) om bij ontwerp aan waarden te denken.",
+    "en": "A card set built around four criteria (stakeholders, time, values, pervasiveness) to keep values in mind during design."
+   },
+   "let_op": "ND.",
+   "bron_kort": "Friedman et al. (2011)",
+   "bronnen_apa": [
+    "Friedman, B., Nathan, L. P., Kane, S., & Lin, J. (2011). Envisioning Cards: A value sensitive design toolkit. University of Washington. https://vsdesign.org/toolkits/envisioningcards/"
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW39",
+   "titel": {
+    "nl": "De Ethische Data Assistent (DEDA)",
+    "en": "Data Ethics Decision Aid"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "europa",
+   "herkomst": "Nederland (Utrecht Data School)",
+   "coordinaten": {
+    "lat": 52.09,
+    "lng": 5.12
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "2–3 uur",
+    "min": 120,
+    "max": 180,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–10",
+    "min": 4,
+    "max": 10
+   },
+   "beschrijving": {
+    "nl": "Poster/vragenlijst die teams door ethische vragen rond dataprojecten leidt.",
+    "en": "A poster and questionnaire that guide teams through ethical questions around data projects."
+   },
+   "let_op": "Contact: Data School.",
+   "bron_kort": "Utrecht Data School (z.d.)",
+   "bronnen_apa": [
+    "Utrecht Data School. (z.d.). De Ethische Data Assistent (DEDA). Universiteit Utrecht. https://dataschool.nl/en/tools/data-ethics-decision-aid-deda/"
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW40",
+   "titel": {
+    "nl": "Tarot Cards of Tech",
+    "en": "Tarot Cards of Tech"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "noord-amerika",
+   "herkomst": "VS (Artefact)",
+   "coordinaten": {
+    "lat": 47.61,
+    "lng": -122.33
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–60 min",
+    "min": 30,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Provocerende kaarten die ontwerpers laten nadenken over onbedoelde gevolgen.",
+    "en": "Provocative cards that make designers reflect on unintended consequences."
+   },
+   "let_op": "—",
+   "bron_kort": "Artefact (2018)",
+   "bronnen_apa": [
+    "Artefact. (2018). The tarot cards of tech. https://tarotcardsoftech.artefactgroup.com/"
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW41",
+   "titel": {
+    "nl": "Konstanz-methode voor dilemmadiscussie (KMDD®)",
+    "en": "Konstanz Method of Dilemma Discussion"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "europa",
+   "herkomst": "Duitsland (Lind)",
+   "coordinaten": {
+    "lat": 47.66,
+    "lng": 9.18
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90 min",
+    "min": 90,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "15–40",
+    "min": 15,
+    "max": 40
+   },
+   "beschrijving": {
+    "nl": "Streng gestructureerde dilemmadiscussie gericht op morele competentie.",
+    "en": "A strictly structured dilemma discussion aimed at developing moral competence."
+   },
+   "let_op": "Merknaam.",
+   "bron_kort": "Lind (2016)",
+   "bronnen_apa": [
+    "Lind, G. (2016). How to teach morality: Promoting deliberation and discussion, reducing violence and deceit. Logos."
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW42",
+   "titel": {
+    "nl": "Deep Democracy (Lewis-methode)",
+    "en": "Deep Democracy – The Lewis Method"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Zuid-Afrika (Lewis)",
+   "coordinaten": {
+    "lat": -26.2,
+    "lng": 28.05
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "voelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "variabel",
+    "min": null,
+    "max": null,
+    "type": "variabel"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Besluitvormingsmethode die ook de stem van de minderheid (het 'nee') expliciet een plek geeft.",
+    "en": "A decision-making method that explicitly gives a place to the voice of the minority (the 'no')."
+   },
+   "let_op": "—",
+   "bron_kort": "Lewis (2008)",
+   "bronnen_apa": [
+    "Lewis, M. (2008). Inside the no: Five steps to decisions that last. Myrna Lewis."
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW43",
+   "titel": {
+    "nl": "Zes denkhoeden",
+    "en": "Six Thinking Hats"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "europa",
+   "herkomst": "Malta/VK (De Bono)",
+   "coordinaten": {
+    "lat": 35.9,
+    "lng": 14.51
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–60 min",
+    "min": 30,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–8",
+    "min": 4,
+    "max": 8
+   },
+   "beschrijving": {
+    "nl": "Groep bekijkt een vraag vanuit vaste denkrollen (feiten, gevoel, risico, kansen, creativiteit, proces).",
+    "en": "The group examines a question from fixed thinking roles (facts, feelings, risks, opportunities, creativity, process)."
+   },
+   "let_op": "Merknaam.",
+   "bron_kort": "De Bono (1985)",
+   "bronnen_apa": [
+    "De Bono, E. (1985). Six thinking hats. Little, Brown."
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW44",
+   "titel": {
+    "nl": "Ethics Unwrapped (video's)",
+    "en": "Ethics Unwrapped"
+   },
+   "categorie": "Bronmateriaal",
+   "regio": "noord-amerika",
+   "herkomst": "VS (University of Texas at Austin)",
+   "coordinaten": {
+    "lat": 30.28,
+    "lng": -97.73
+   },
+   "ronde": 1,
+   "label": "C",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "3–10 min per video",
+    "min": 3,
+    "max": 10,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "—",
+    "min": null,
+    "max": null
+   },
+   "beschrijving": {
+    "nl": "Korte video's over gedragsethiek (o.a. morele blinde vlekken, conformiteit) met casussen.",
+    "en": "Short videos on behavioural ethics (including moral blind spots and conformity) with cases."
+   },
+   "let_op": "Engelstalig.",
+   "bron_kort": "Ethics Unwrapped (z.d.)",
+   "bronnen_apa": [
+    "Ethics Unwrapped. (z.d.). About. McCombs School of Business, The University of Texas at Austin. https://ethicsunwrapped.utexas.edu/about"
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW45",
+   "titel": {
+    "nl": "Dilemmaverhaal",
+    "en": "African dilemma tale"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "afrika",
+   "herkomst": "West- en Centraal-Afrika (orale traditie; verzameld door Bascom)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een kort verhaal eindigt met een open vraag (wie verdient de beloning? wie is schuldig?). Toehoorders debatteren; er is geen 'juiste' afloop. De vorm traint argumenteren over rechtvaardigheid en verantwoordelijkheid.",
+    "en": "A short story ends with an open question (who deserves the reward? who is to blame?). Listeners debate; there is no 'correct' ending. The form trains arguing about justice and responsibility."
+   },
+   "let_op": "Eigen verhalen schrijven in de geest van de traditie; geen verzamelde verhalen letterlijk overnemen.",
+   "bron_kort": "Bascom (1975)",
+   "bronnen_apa": [
+    "Bascom, W. R. (1975). African dilemma tales. Mouton."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW46",
+   "titel": {
+    "nl": "Palavergesprek",
+    "en": "Palaver (arbre à palabres)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "West- en Centraal-Afrika",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–25",
+    "min": 8,
+    "max": 25
+   },
+   "beschrijving": {
+    "nl": "Gesprek waarin het woord centraal staat: iedereen mag uitgebreid spreken, ook de 'tegenpartij'. Doel is niet winnen maar herstel van de relatie; de uitkomst wordt pas vastgesteld als alles gezegd is.",
+    "en": "A conversation in which the spoken word is central: everyone may speak at length, including the 'opposing party'. The aim is not to win but to restore the relationship; the outcome is decided only once everything has been said."
+   },
+   "let_op": "Niet romantiseren: traditioneel vaak hiërarchisch en mannelijk. Die kritiek (Bidima) meenemen.",
+   "bron_kort": "Bidima (1997)",
+   "bronnen_apa": [
+    "Bidima, J.-G. (1997). La palabre: Une juridiction de la parole. Michalon."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW47",
+   "titel": {
+    "nl": "Kgotla-beraad (leider spreekt als laatste)",
+    "en": "Kgotla deliberation"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Botswana / zuidelijk Afrika",
+   "coordinaten": {
+    "lat": -24.65,
+    "lng": 25.91
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–40",
+    "min": 8,
+    "max": 40
+   },
+   "beschrijving": {
+    "nl": "Openbare vergadering waarin iedere deelnemer vrij mag spreken. De voorzitter luistert, vat samen en spreekt pas als laatste een besluit uit dat recht doet aan wat gezegd is.",
+    "en": "A public meeting in which every participant may speak freely. The chair listens, summarises and speaks last, announcing a decision that does justice to what has been said."
+   },
+   "let_op": "Machtsverhoudingen bespreken. Geschikt om leiderschap te oefenen (HRM).",
+   "bron_kort": "Moumakwa (2011)",
+   "bronnen_apa": [
+    "Moumakwa, P. C. (2011). The Botswana kgotla system: A mechanism for traditional conflict resolution in modern Botswana [Masterscriptie, Universitetet i Tromsø]. https://munin.uit.no/handle/10037/3211"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW48",
+   "titel": {
+    "nl": "Consensusberaad (naar Wiredu)",
+    "en": "Consensus deliberation (Wiredu)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Ghana (Akan; Kwasi Wiredu)",
+   "coordinaten": {
+    "lat": 6.69,
+    "lng": -1.62
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–15",
+    "min": 6,
+    "max": 15
+   },
+   "beschrijving": {
+    "nl": "Geen besluit bij meerderheid: de groep zoekt een uitkomst waar iedereen mee kan leven. Het gaat om instemming met het handelen, niet per se met elke mening. Minderheidsstandpunten worden zichtbaar verwerkt.",
+    "en": "No decision by majority: the group seeks an outcome everyone can live with. It is about agreeing on action, not necessarily on every opinion. Minority positions are visibly taken into account."
+   },
+   "let_op": "Verschil tussen consensus over meningen en over handelen uitleggen.",
+   "bron_kort": "Wiredu (1996)",
+   "bronnen_apa": [
+    "Wiredu, K. (1996). Cultural universals and particulars: An African perspective. Indiana University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW49",
+   "titel": {
+    "nl": "Wijzeninterview (sagefilosofie)",
+    "en": "Sage philosophy interview"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Kenia (H. Odera Oruka)",
+   "coordinaten": {
+    "lat": -1.29,
+    "lng": 36.82
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min + interview buiten de les",
+    "min": 60,
+    "max": 60,
+    "type": "meerdere sessies"
+   },
+   "groep": {
+    "tekst": "Duo",
+    "min": 2,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Studenten interviewen een ervaren professional of 'wijze' uit hun omgeving over een morele kernvraag (bijv. wat is rechtvaardig?). Daarna onderzoeken ze de redenering: is dit volkswijsheid of een eigen, beredeneerd standpunt?",
+    "en": "Students interview an experienced professional or 'sage' from their surroundings about a core moral question (e.g. what is just?). They then examine the reasoning: is this folk wisdom or an independent, reasoned position?"
+   },
+   "let_op": "Toestemming van de geïnterviewde en anonimisering regelen.",
+   "bron_kort": "Oruka (1990); Presbey (z.d.)",
+   "bronnen_apa": [
+    "Oruka, H. O. (Red.). (1990). Sage philosophy: Indigenous thinkers and modern debate on African philosophy. E. J. Brill.",
+    "Presbey, G. M. (z.d.). African sage philosophy. Internet Encyclopedia of Philosophy. https://iep.utm.edu/african-sage/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW50",
+   "titel": {
+    "nl": "Spreekwoordengesprek",
+    "en": "Proverb dialogue"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Akan (Ghana), Swahili (methali), Yoruba",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "20–40 min",
+    "min": 20,
+    "max": 40,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Groep krijgt Afrikaanse spreekwoorden (bijv. 'Eén hand kan geen bundel optillen'), koppelt ze aan een casus en bespreekt: welke waarde zit erin, wanneer klopt het niet, welk spreekwoord spreekt het tegen?",
+    "en": "The group receives African proverbs (e.g. 'One hand cannot lift a bundle'), links them to a case and discusses: which value does it contain, when does it not hold, which proverb contradicts it?"
+   },
+   "let_op": "Taal en herkomst per spreekwoord vermelden; vertaling laten controleren.",
+   "bron_kort": "Gyekye (1995)",
+   "bronnen_apa": [
+    "Gyekye, K. (1995). An essay on African philosophical thought: The Akan conceptual scheme (Rev. ed.). Temple University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW51",
+   "titel": {
+    "nl": "Anansi-verhaal: slim of fout?",
+    "en": "Anansi story discussion"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "afrika",
+   "herkomst": "Ghana (Akan); ook Suriname en Caraïben (Anansitori)",
+   "coordinaten": {
+    "lat": 6.69,
+    "lng": -1.62
+   },
+   "ronde": 2,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "De spin Anansi bereikt zijn doel met list. Groep bespreekt: is slimheid hier een deugd? Wie betaalt de prijs? Wanneer is list tegenover de machtige gerechtvaardigd?",
+    "en": "Anansi the spider reaches his goal through cunning. The group discusses: is cleverness a virtue here? Who pays the price? When is cunning against the powerful justified?"
+   },
+   "let_op": "Bekend bij veel studenten met Surinaamse of Antilliaanse achtergrond – daarbij aansluiten.",
+   "bron_kort": "Rattray (1930)",
+   "bronnen_apa": [
+    "Rattray, R. S. (1930). Akan-Ashanti folk-tales. Clarendon Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Verhaal naar Rattray, R. S. (1930), Akan-Ashanti folk-tales – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW52",
+   "titel": {
+    "nl": "Ma'at-weging: eigen verklaringen",
+    "en": "Weighing of the heart (Ma'at)"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Oud-Egypte",
+   "coordinaten": {
+    "lat": 25.7,
+    "lng": 32.64
+   },
+   "ronde": 2,
+   "label": "B",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + groep",
+    "min": 1,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In het Dodenboek legt de overledene verklaringen af ('ik heb niet...') terwijl het hart wordt gewogen tegen de veer van Ma'at (waarheid, rechtvaardigheid). Deelnemers schrijven hun eigen tien professionele verklaringen en wegen: waar voel ik me licht, waar zwaar?",
+    "en": "In the Book of the Dead, the deceased makes declarations ('I have not…') while the heart is weighed against the feather of Ma'at (truth, justice). Participants write their own ten professional declarations and weigh them: where do I feel light, where heavy?"
+   },
+   "let_op": "Religieuze context duiden; niet als ritueel presenteren.",
+   "bron_kort": "Budge (1895); Karenga (2004)",
+   "bronnen_apa": [
+    "Budge, E. A. W. (1895). The Book of the Dead: The Papyrus of Ani in the British Museum. British Museum.",
+    "Karenga, M. (2004). Maat, the moral ideal in ancient Egypt: A study in classical African ethics. Routledge."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Gebaseerd op Budge, E. A. W. (1895), The Book of the Dead – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW53",
+   "titel": {
+    "nl": "De welsprekende boer: pleidooi voor recht",
+    "en": "The Eloquent Peasant"
+   },
+   "categorie": "Actiegericht",
+   "regio": "afrika",
+   "herkomst": "Oud-Egypte (Middenrijk)",
+   "coordinaten": {
+    "lat": 29.09,
+    "lng": 30.93
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een boer wordt beroofd door een ambtenaar en houdt negen pleidooien voor een hoge functionaris, die hem bewust laat wachten. Gesprek over macht aanspreken, volhouden en rechtvaardige instituties.",
+    "en": "A peasant is robbed by an official and makes nine pleas to a high official, who deliberately keeps him waiting. A conversation about confronting power, persevering and just institutions."
+   },
+   "let_op": "Sterke koppeling met Stem geven aan waarden (MW16).",
+   "bron_kort": "Lichtheim (1973)",
+   "bronnen_apa": [
+    "Lichtheim, M. (1973). Ancient Egyptian literature: Vol. 1. The Old and Middle Kingdoms. University of California Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW54",
+   "titel": {
+    "nl": "Sankofa-reflectie",
+    "en": "Sankofa reflection"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Ghana (Akan; Adinkra-symbool)",
+   "coordinaten": {
+    "lat": 6.69,
+    "lng": -1.62
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "20–30 min",
+    "min": 20,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + duo",
+    "min": 1,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Sankofa betekent 'ga terug en haal het': leren van het verleden om vooruit te komen. Deelnemers kijken terug op een moreel moment: wat nam ik mee, wat liet ik liggen, wat haal ik terug voor de toekomst?",
+    "en": "Sankofa means 'go back and get it': learning from the past in order to move forward. Participants look back on a moral moment: what did I take with me, what did I leave behind, what do I bring back for the future?"
+   },
+   "let_op": "Betekenis respectvol uitleggen.",
+   "bron_kort": "Temple (2010)",
+   "bronnen_apa": [
+    "Temple, C. N. (2010). The emergence of Sankofa practice in the United States: A modern history. Journal of Black Studies, 41(1), 127–150. https://doi.org/10.1177/0021934709332464"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW55",
+   "titel": {
+    "nl": "Adinkra-waardensymbolen",
+    "en": "Adinkra values symbols"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Ghana (Akan)",
+   "coordinaten": {
+    "lat": 6.83,
+    "lng": -1.53
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Adinkra-symbolen staan voor waarden (bijv. Dwennimmen: nederigheid en kracht; Nkyinkyim: veerkracht). Deelnemers kiezen een symbool voor een waarde die zij in hun beroep willen dragen en ontwerpen daarna een eigen symbool.",
+    "en": "Adinkra symbols stand for values (e.g. Dwennimmen: humility and strength; Nkyinkyim: resilience). Participants choose a symbol for a value they want to carry in their profession and then design a symbol of their own."
+   },
+   "let_op": "Betekenissen in meerdere bronnen controleren.",
+   "bron_kort": "Willis (1998)",
+   "bronnen_apa": [
+    "Willis, W. B. (1998). The Adinkra dictionary: A visual primer on the language of Adinkra. Pyramid Complex."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW56",
+   "titel": {
+    "nl": "Karakterkaart van de omoluabi",
+    "en": "Omoluabi character map"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Nigeria (Yoruba)",
+   "coordinaten": {
+    "lat": 7.47,
+    "lng": 4.56
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + groep",
+    "min": 1,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In de Yoruba-ethiek is goed karakter (ìwà) het hoogste goed; de omoluabi is iemand met integriteit, respect, eerlijkheid en werklust. Deelnemers maken een karakterkaart van de 'professionele omoluabi' en beoordelen zichzelf.",
+    "en": "In Yoruba ethics, good character (ìwà) is the highest good; the omoluabi is a person of integrity, respect, honesty and diligence. Participants create a character map of the 'professional omoluabi' and assess themselves."
+   },
+   "let_op": "Vergelijken met westerse deugdethiek.",
+   "bron_kort": "Gbadegesin (1991)",
+   "bronnen_apa": [
+    "Gbadegesin, S. (1991). African philosophy: Traditional Yoruba philosophy and contemporary African realities. Peter Lang."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW57",
+   "titel": {
+    "nl": "Levensboom",
+    "en": "Tree of Life (narrative approach)"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Zimbabwe/Zuid-Afrika (Ncube, REPSSI; Denborough, Dulwich Centre)",
+   "coordinaten": {
+    "lat": -17.83,
+    "lng": 31.05
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + groep",
+    "min": 1,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Deelnemers tekenen een boom: wortels (herkomst), grond (dagelijks leven), stam (vaardigheden en waarden), takken (hoop), bladeren (belangrijke mensen), vruchten (wat ze kregen). Daarna de 'stormen': wat bedreigt mijn waarden en hoe houd ik stand?",
+    "en": "Participants draw a tree: roots (origins), ground (daily life), trunk (skills and values), branches (hopes), leaves (important people), fruits (what they were given). Then come the 'storms': what threatens my values and how do I stand firm?"
+   },
+   "let_op": "Oorsprong is therapeutisch: in onderwijs alleen de reflectieve vorm gebruiken; doorverwijzen bij signalen.",
+   "bron_kort": "Ncube (2006); Denborough (2008)",
+   "bronnen_apa": [
+    "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children in Southern Africa. International Journal of Narrative Therapy and Community Work, 2006(1), 3–16.",
+    "Denborough, D. (2008). Collective narrative practice: Responding to individuals, groups, and communities who have experienced trauma. Dulwich Centre Publications."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW58",
+   "titel": {
+    "nl": "Heldenboek",
+    "en": "Hero Book"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Zuid-Afrika (REPSSI; J. Morgan)",
+   "coordinaten": {
+    "lat": -26.2,
+    "lng": 28.05
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "3 × 45 min",
+    "min": 45,
+    "max": 45,
+    "type": "meerdere sessies"
+   },
+   "groep": {
+    "tekst": "Individueel",
+    "min": 1,
+    "max": 1
+   },
+   "beschrijving": {
+    "nl": "Deelnemer maakt een klein boek waarin hij of zij de held is die een uitdaging overwint: het probleem een naam geven, eigen krachten, bondgenoten, momenten van moed. Hier gericht op een moment van morele moed.",
+    "en": "The participant makes a small book in which they are the hero who overcomes a challenge: naming the problem, their own strengths, allies and moments of courage. Here it focuses on a moment of moral courage."
+   },
+   "let_op": "Oorspronkelijk psychosociaal (kinderen in crisis) → vertalen naar professionele moed.",
+   "bron_kort": "Morgan (2006)",
+   "bronnen_apa": [
+    "Morgan, J. (2006). Making a hero book: A guide for facilitators. REPSSI."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW59",
+   "titel": {
+    "nl": "Mmogo-methode",
+    "en": "Mmogo-method"
+   },
+   "categorie": "Reflectie",
+   "regio": "afrika",
+   "herkomst": "Zuid-Afrika (V. Roos, North-West University)",
+   "coordinaten": {
+    "lat": -26.69,
+    "lng": 27.09
+   },
+   "ronde": 2,
+   "label": "C",
+   "fasen": [
+    "voelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90 min",
+    "min": 90,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–10",
+    "min": 4,
+    "max": 10
+   },
+   "beschrijving": {
+    "nl": "Deelnemers maken met klei, kralen en stokjes een beeld van hun relaties of gemeenschap en lichten het toe; de groep reflecteert op wat zichtbaar wordt.",
+    "en": "Using clay, beads and sticks, participants make an image of their relationships or community and explain it; the group reflects on what becomes visible."
+   },
+   "let_op": "Merknaam.",
+   "bron_kort": "Roos (2008)",
+   "bronnen_apa": [
+    "Roos, V. (2008). The Mmogo-method: Discovering symbolic community interactions. Journal of Psychology in Africa, 18(4), 659–668."
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW60",
+   "titel": {
+    "nl": "Ontwikkelingstheater",
+    "en": "Theatre for Development"
+   },
+   "categorie": "Actiegericht",
+   "regio": "afrika",
+   "herkomst": "Botswana (Laedza Batanani), Kenia (Kamĩrĩĩthũ), Zuid-Afrika",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90–120 min",
+    "min": 90,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "10–30",
+    "min": 10,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Deelnemers onderzoeken eerst een probleem in hun omgeving (gesprekken, interviews), maken er een korte voorstelling over en spelen die voor betrokkenen, gevolgd door een publiek gesprek over oplossingen en gezamenlijke actie.",
+    "en": "Participants first investigate a problem in their surroundings (conversations, interviews), turn it into a short performance and play it for those involved, followed by a public conversation about solutions and joint action."
+   },
+   "let_op": "Verschil met forumtheater (MW17): nadruk op onderzoek vooraf en actie achteraf.",
+   "bron_kort": "Mda (1993)",
+   "bronnen_apa": [
+    "Mda, Z. (1993). When people play people: Development communication through theatre. Witwatersrand University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW61",
+   "titel": {
+    "nl": "Getuigen – erkennen – herstellen",
+    "en": "Testimony – acknowledgement – repair (TRC)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Zuid-Afrika (Waarheids- en Verzoeningscommissie)",
+   "coordinaten": {
+    "lat": -33.92,
+    "lng": 18.42
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90 min",
+    "min": 90,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–20",
+    "min": 6,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Rollenspel of reflectie in drie stappen: (1) getuigenis van wie schade leed, (2) erkenning door wie verantwoordelijk is, (3) samen bepalen wat herstel vraagt. Kernvraag: hoe kom je tot verzoening zonder de waarheid te verzwijgen?",
+    "en": "Role play or reflection in three steps: (1) testimony from those who suffered harm, (2) acknowledgement by those responsible, (3) jointly deciding what repair requires. Core question: how do you reach reconciliation without silencing the truth?"
+   },
+   "let_op": "Nooit echte trauma's naspelen; fictieve casus en nazorg.",
+   "bron_kort": "Tutu (1999); Gobodo-Madikizela (2003)",
+   "bronnen_apa": [
+    "Tutu, D. (1999). No future without forgiveness. Doubleday.",
+    "Gobodo-Madikizela, P. (2003). A human being died that night: A South African story of forgiveness. Houghton Mifflin."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW62",
+   "titel": {
+    "nl": "Kampvuurgesprek (naar Fambul Tok)",
+    "en": "Bonfire dialogue (after Fambul Tok)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "afrika",
+   "herkomst": "Sierra Leone",
+   "coordinaten": {
+    "lat": 8.48,
+    "lng": -13.23
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Verzoening vanuit de gemeenschap: eerst consultatie (wat betekent verzoening voor ons?), dan een avondbijeenkomst rond een vuur waar mensen hun verhaal vertellen, daarna gezamenlijke vervolgacties (samen werken, sporten).",
+    "en": "Community-based reconciliation: first consultation (what does reconciliation mean for us?), then an evening gathering around a fire where people tell their stories, followed by joint activities (working, playing sport together)."
+   },
+   "let_op": "Ceremoniële en religieuze elementen (reiniging, plengoffer) niet overnemen.",
+   "bron_kort": "Catalyst for Peace & Fambul Tok Sierra Leone (z.d.)",
+   "bronnen_apa": [
+    "Catalyst for Peace & Fambul Tok Sierra Leone. (z.d.). The nuts and bolts of the Fambul Tok process. https://www.fambultok.org/programs/reconciliation"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW63",
+   "titel": {
+    "nl": "Integriteitsraad (naar de bashingantahe)",
+    "en": "Integrity council (bashingantahe)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "afrika",
+   "herkomst": "Burundi",
+   "coordinaten": {
+    "lat": -3.43,
+    "lng": 29.93
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–20",
+    "min": 6,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "De bashingantahe worden gekozen om hun integriteit (waarheid, rechtvaardigheid, zelfbeheersing, onkreukbaarheid) en beslechten geschillen. Groep stelt criteria op voor een 'integriteitspersoon' in hun beroep en bekijkt een casus vanuit diens perspectief.",
+    "en": "The bashingantahe are chosen for their integrity (truth, justice, self-control, incorruptibility) and settle disputes. The group draws up criteria for an 'integrity person' in their profession and looks at a case from that person's perspective."
+   },
+   "let_op": "Het instituut is politiek beladen geweest; genuanceerd presenteren.",
+   "bron_kort": "Huyse & Salter (2008)",
+   "bronnen_apa": [
+    "Huyse, L., & Salter, M. (Red.). (2008). Traditional justice and reconciliation after violent conflict: Learning from African experiences. International IDEA."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW64",
+   "titel": {
+    "nl": "Harambee-actieplan",
+    "en": "Harambee action plan"
+   },
+   "categorie": "Actiegericht",
+   "regio": "afrika",
+   "herkomst": "Kenia",
+   "coordinaten": {
+    "lat": -1.29,
+    "lng": 36.82
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "'Harambee' betekent 'laten we samen trekken'. Groep kiest een morele kwestie in de omgeving en maakt een gezamenlijk plan waarin ieder iets bijdraagt (tijd, kennis, netwerk). Reflectie: wat maakt collectieve verantwoordelijkheid sterk of kwetsbaar (meeliften, groepsdruk)?",
+    "en": "'Harambee' means 'let us all pull together'. The group chooses a moral issue in their surroundings and makes a joint plan to which everyone contributes (time, knowledge, network). Reflection: what makes collective responsibility strong or fragile (free-riding, peer pressure)?"
+   },
+   "let_op": "—",
+   "bron_kort": "Ngau (1987)",
+   "bronnen_apa": [
+    "Ngau, P. M. (1987). Tensions in empowerment: The experience of the Harambee (self-help) movement in Kenya. Economic Development and Cultural Change, 35(3), 523–538."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW65",
+   "titel": {
+    "nl": "African Storybook (open verhalen)",
+    "en": "African Storybook"
+   },
+   "categorie": "Bronmateriaal",
+   "regio": "afrika",
+   "herkomst": "Zuid-Afrika (Saide); pan-Afrikaans",
+   "coordinaten": {
+    "lat": -26.19,
+    "lng": 28.03
+   },
+   "ronde": 2,
+   "label": "B",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "—",
+    "min": null,
+    "max": null,
+    "type": "n.v.t."
+   },
+   "groep": {
+    "tekst": "—",
+    "min": null,
+    "max": null
+   },
+   "beschrijving": {
+    "nl": "Duizenden geïllustreerde verhalen in Afrikaanse talen en Engels; bruikbaar als korte prikkel of beeldcasus over eerlijkheid, delen en zorg.",
+    "en": "Thousands of illustrated stories in African languages and English; useful as a short prompt or visual case about honesty, sharing and care."
+   },
+   "let_op": "Veel verhalen zijn voor kinderen → selecteren of bewerken voor volwassenen.",
+   "bron_kort": "African Storybook (z.d.)",
+   "bronnen_apa": [
+    "African Storybook. (z.d.). African Storybook [Open digitale bibliotheek]. Saide. https://www.africanstorybook.org/"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Verhaal: [titel] – [auteur], illustraties [illustrator] – African Storybook (Saide) – CC BY 4.0 – https://www.africanstorybook.org/",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW66",
+   "titel": {
+    "nl": "Traditionele verzoening na conflict (IDEA-casusbundel)",
+    "en": "Traditional justice and reconciliation (IDEA)"
+   },
+   "categorie": "Bronmateriaal",
+   "regio": "afrika",
+   "herkomst": "Burundi, Mozambique, Rwanda, Sierra Leone, Oeganda",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "C",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "—",
+    "min": null,
+    "max": null,
+    "type": "n.v.t."
+   },
+   "groep": {
+    "tekst": "—",
+    "min": null,
+    "max": null
+   },
+   "beschrijving": {
+    "nl": "Handboek met casussen over o.a. mato oput (Acholi, Oeganda), gacaca (Rwanda), bashingantahe (Burundi) en praktijken in Mozambique en Sierra Leone, met sterke en zwakke kanten.",
+    "en": "A handbook with cases on, among others, mato oput (Acholi, Uganda), gacaca (Rwanda), bashingantahe (Burundi) and practices in Mozambique and Sierra Leone, with their strengths and weaknesses."
+   },
+   "let_op": "Ook beschikbaar in het Frans en Arabisch.",
+   "bron_kort": "Huyse & Salter (2008)",
+   "bronnen_apa": [
+    "Huyse, L., & Salter, M. (Red.). (2008). Traditional justice and reconciliation after violent conflict: Learning from African experiences. International IDEA."
+   ],
+   "licentie_werkblad": "n.v.t. – alleen verwijzen",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW67",
+   "titel": {
+    "nl": "Shura-beraad (raadplegen vóór besluiten)",
+    "en": "Shura (consultation)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische traditie",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–12",
+    "min": 4,
+    "max": 12
+   },
+   "beschrijving": {
+    "nl": "Wie besluit, raadpleegt eerst betrokkenen en deskundigen. De besluitnemer blijft verantwoordelijk, maar laat zien wat hij met de adviezen deed.",
+    "en": "Whoever decides first consults those involved and experts. The decision-maker remains responsible but shows what was done with the advice."
+   },
+   "let_op": "Religieuze herkomst respectvol en levensbeschouwelijk neutraal toelichten.",
+   "bron_kort": "Al-Raysuni (2011)",
+   "bronnen_apa": [
+    "Al-Raysuni, A. (2011). Al-shura: The Qur'anic principle of consultation. International Institute of Islamic Thought."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW68",
+   "titel": {
+    "nl": "Sulha – bemiddeling en verzoening",
+    "en": "Sulha (reconciliation)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "arabische-wereld",
+   "herkomst": "Levant en Arabisch schiereiland (gewoonterecht)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "handelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3 partijen + bemiddelaars",
+    "min": 5,
+    "max": 10
+   },
+   "beschrijving": {
+    "nl": "Na een conflict nemen gerespecteerde bemiddelaars (jaha) het initiatief. Er volgt een afkoelperiode, gesprekken met beide partijen, erkenning van schade, een herstelregeling en een openbaar verzoeningsmoment waarin de eer van beide partijen wordt hersteld.",
+    "en": "After a conflict, respected mediators (jaha) take the initiative. A cooling-off period follows, then talks with both parties, acknowledgement of harm, a settlement and a public moment of reconciliation in which the honour of both parties is restored."
+   },
+   "let_op": "Familie-eer en hiërarchie kritisch bespreken.",
+   "bron_kort": "Irani & Funk (1998); Pely (2016)",
+   "bronnen_apa": [
+    "Irani, G. E., & Funk, N. C. (1998). Rituals of reconciliation: Arab-Islamic perspectives. Arab Studies Quarterly, 20(4), 53–73.",
+    "Pely, D. (2016). Muslim/Arab mediation and conflict resolution: Understanding sulha. Routledge."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW69",
+   "titel": {
+    "nl": "Munazara – debat met etiquette",
+    "en": "Munazara (rules of disputation)"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische traditie (adab al-bahth wa-l-munazara); hedendaags o.a. QatarDebate",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2 teams + jury",
+    "min": 8,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Debat met vaste rollen (wie beweert en wie bevraagt) en etiquette: alleen om de waarheid, geen persoonlijke aanval, eerst de bewering precies herhalen, dan bewijs vragen of een tegenvoorbeeld geven.",
+    "en": "A debate with fixed roles (who claims and who questions) and etiquette: only for the sake of truth, no personal attacks, first restate the claim precisely, then ask for evidence or give a counterexample."
+   },
+   "let_op": "Goed te combineren met de ethiekcompetitie (MW20).",
+   "bron_kort": "Miller (2020)",
+   "bronnen_apa": [
+    "Miller, L. B. (2020). Islamic disputation theory: The uses & rules of argument in medieval Islam. Springer."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW70",
+   "titel": {
+    "nl": "Maqasid-afweging (te beschermen goederen)",
+    "en": "Maqasid analysis"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische rechtsfilosofie (al-Ghazali, al-Shatibi)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–6",
+    "min": 3,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Klassieke doelen die elke regel moet dienen: bescherming van leven, verstand, overtuiging, familie en bezit (later aangevuld met waardigheid). Matrix betrokkenen × goederen; daarna rangorde: noodzakelijk – nodig – verfraaiing.",
+    "en": "Classical aims that every rule must serve: protection of life, intellect, faith, family and property (later supplemented with dignity). A matrix of stakeholders × goods, followed by a ranking: necessary – needed – embellishment."
+   },
+   "let_op": "Vergelijken met de ethische matrix (MW10).",
+   "bron_kort": "Auda (2008); Kamali (2008)",
+   "bronnen_apa": [
+    "Auda, J. (2008). Maqasid al-shariah as philosophy of Islamic law: A systems approach. International Institute of Islamic Thought.",
+    "Kamali, M. H. (2008). Maqasid al-shariah made simple. International Institute of Islamic Thought."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW71",
+   "titel": {
+    "nl": "Rechtsmaximes-toets",
+    "en": "Legal maxims test"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische rechtstraditie (qawa'id fiqhiyya)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–6",
+    "min": 2,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Casus toetsen aan vijf klassieke maximes: (1) handelingen worden beoordeeld naar hun doel, (2) zekerheid wijkt niet voor twijfel, (3) moeilijkheid brengt verlichting, (4) schade moet worden weggenomen, (5) gewoonte heeft gezag. Aanvulling: schade voorkomen gaat vóór voordeel behalen.",
+    "en": "A case is tested against five classical maxims: (1) acts are judged by their purpose, (2) certainty is not removed by doubt, (3) hardship brings relief, (4) harm must be removed, (5) custom has authority. Addition: preventing harm comes before gaining benefit."
+   },
+   "let_op": "—",
+   "bron_kort": "Kamali (2006)",
+   "bronnen_apa": [
+    "Kamali, M. H. (2006). Legal maxims and other genres of literature in Islamic jurisprudence. Arab Law Quarterly, 20(1), 77–101."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW72",
+   "titel": {
+    "nl": "Hand–tong–hart-ladder",
+    "en": "Hand–tongue–heart ladder"
+   },
+   "categorie": "Actiegericht",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische traditie (overlevering over het afwijzen van onrecht)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–6",
+    "min": 2,
+    "max": 6
+   },
+   "beschrijving": {
+    "nl": "Bij een misstand drie treden: ingrijpen (hand), aanspreken of melden (tong), innerlijk afwijzen en niet meedoen (hart). Deelnemers plaatsen een casus op de ladder: wat kan ik, wat durf ik, wat is passend?",
+    "en": "When facing wrongdoing, three steps: intervene (hand), speak up or report (tongue), reject inwardly and refuse to take part (heart). Participants place a case on the ladder: what can I do, what do I dare, what is appropriate?"
+   },
+   "let_op": "Proportionaliteit en veiligheid bespreken; koppeling met MW16.",
+   "bron_kort": "Cook (2000)",
+   "bronnen_apa": [
+    "Cook, M. (2000). Commanding right and forbidding wrong in Islamic thought. Cambridge University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW73",
+   "titel": {
+    "nl": "Muhasaba – avondbalans",
+    "en": "Muhasaba (self-accounting)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Bagdad (al-Muhasibi, 9e eeuw); later al-Ghazali",
+   "coordinaten": {
+    "lat": 33.31,
+    "lng": 44.37
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "10 min per dag",
+    "min": 10,
+    "max": 10,
+    "type": "doorlopend"
+   },
+   "groep": {
+    "tekst": "Individueel",
+    "min": 1,
+    "max": 1
+   },
+   "beschrijving": {
+    "nl": "Dagelijkse zelfrekenschap: 's ochtends een voornemen, overdag aandacht, 's avonds terugblik: wat deed ik goed, waar schoot ik tekort, wat herstel ik morgen?",
+    "en": "Daily self-accounting: an intention in the morning, attention during the day, a review in the evening: what did I do well, where did I fall short, what will I repair tomorrow?"
+   },
+   "let_op": "Mooi te vergelijken met de stoïcijnse avondreflectie.",
+   "bron_kort": "Picken (2011)",
+   "bronnen_apa": [
+    "Picken, G. (2011). Spiritual purification in Islam: The life and works of al-Muhasibi. Routledge."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW74",
+   "titel": {
+    "nl": "Intentiecheck (niyya)",
+    "en": "Intention check (niyya)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabisch-islamitische traditie ('daden worden beoordeeld naar hun intenties')",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "voelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "15–20 min",
+    "min": 15,
+    "max": 20,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel / duo",
+    "min": 1,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Vóór een handeling: wat is mijn bedoeling, welke andere motieven spelen mee (status, angst, gemak), zou ik mijn intentie hardop durven uitspreken?",
+    "en": "Before acting: what is my intention, which other motives play a role (status, fear, convenience), would I dare to state my intention out loud?"
+   },
+   "let_op": "—",
+   "bron_kort": "An-Nawawi (1976)",
+   "bronnen_apa": [
+    "An-Nawawi. (1976). An-Nawawi's forty hadith (E. Ibrahim & D. Johnson-Davies, Vert.). Holy Koran Publishing House."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW75",
+   "titel": {
+    "nl": "Karakter oefenen (naar Miskawayh)",
+    "en": "Refinement of character (Miskawayh)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Rayy/Isfahan (Miskawayh, 10e–11e eeuw; schreef in het Arabisch)",
+   "coordinaten": {
+    "lat": 35.59,
+    "lng": 51.44
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "4 weken",
+    "min": null,
+    "max": null,
+    "type": "doorlopend"
+   },
+   "groep": {
+    "tekst": "Individueel + 'spiegelvriend'",
+    "min": 1,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Karakter vorm je door gewoonte. Kies een ondeugd (bijv. uitstellen, opvliegendheid), bepaal het juiste midden en oefen dagelijks gedrag naar de andere kant, met een vriend die eerlijk spiegelt.",
+    "en": "Character is formed by habit. Choose a vice (e.g. procrastination, short temper), determine the right mean and practise daily behaviour in the opposite direction, with a friend who honestly holds up a mirror."
+   },
+   "let_op": "—",
+   "bron_kort": "Miskawayh (1968)",
+   "bronnen_apa": [
+    "Miskawayh, A. (1968). The refinement of character (C. K. Zurayk, Vert.). American University of Beirut."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW76",
+   "titel": {
+    "nl": "Verdriet verdrijven (naar al-Kindi)",
+    "en": "Dispelling sorrows (al-Kindi)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Bagdad (al-Kindi, 9e eeuw)",
+   "coordinaten": {
+    "lat": 33.31,
+    "lng": 44.37
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + duo",
+    "min": 1,
+    "max": 2
+   },
+   "beschrijving": {
+    "nl": "Oefeningen tegen verdriet over verlies: besef wat werkelijk van jou is, kijk hoe anderen met tegenslag omgaan, herinner je eerdere tegenslag die je te boven kwam. Toegepast op morele teleurstelling (niet gehoord worden, idealen verliezen).",
+    "en": "Exercises against grief over loss: realise what truly belongs to you, look at how others deal with setbacks, remember an earlier setback you overcame. Applied to moral disappointment (not being heard, losing ideals)."
+   },
+   "let_op": "Geen vervanging van zorg bij rouw of burn-out.",
+   "bron_kort": "Adamson & Pormann (2012)",
+   "bronnen_apa": [
+    "Adamson, P., & Pormann, P. E. (Vert.). (2012). The philosophical works of al-Kindī. Oxford University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW77",
+   "titel": {
+    "nl": "Geestelijke geneeskunde (naar al-Razi)",
+    "en": "Spiritual physick (al-Razi)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Rayy/Bagdad (al-Razi, 9e–10e eeuw)",
+   "coordinaten": {
+    "lat": 35.59,
+    "lng": 51.44
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel + groep",
+    "min": 1,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Hartstochten zoals jaloezie, woede en ijdelheid worden behandeld als aandoeningen van de ziel die je met de rede onderzoekt: wat is de oorzaak, wat kost het me, wat is het tegenmiddel?",
+    "en": "Passions such as envy, anger and vanity are treated as ailments of the soul that you examine with reason: what is the cause, what does it cost me, what is the remedy?"
+   },
+   "let_op": "Combineren met MW76.",
+   "bron_kort": "Arberry (1950)",
+   "bronnen_apa": [
+    "Al-Razi, A. B. (1950). The spiritual physick of Rhazes (A. J. Arberry, Vert.). John Murray."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW78",
+   "titel": {
+    "nl": "Geduld en dankbaarheid (sabr en shukr)",
+    "en": "Patience and gratitude"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Damascus (Ibn Qayyim al-Jawziyya, 14e eeuw)",
+   "coordinaten": {
+    "lat": 33.51,
+    "lng": 36.29
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "15–20 min",
+    "min": 15,
+    "max": 20,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "Individueel",
+    "min": 1,
+    "max": 1
+   },
+   "beschrijving": {
+    "nl": "Geduld in drie vormen: volhouden in het goede, je onthouden van het verkeerde, en dragen wat je niet kunt veranderen; aangevuld met dankbaarheid voor wat er wel is. Deelnemers plaatsen een eigen morele beproeving in deze drie vormen.",
+    "en": "Patience in three forms: persevering in the good, refraining from the wrong, and bearing what you cannot change; supplemented with gratitude for what is there. Participants place a moral trial of their own within these three forms."
+   },
+   "let_op": "—",
+   "bron_kort": "Ibn Qayyim al-Jawziyya (1997)",
+   "bronnen_apa": [
+    "Ibn Qayyim al-Jawziyya. (1997). Patience and gratitude (N. al-Khattab, Vert.). Ta-Ha Publishers."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW79",
+   "titel": {
+    "nl": "Futuwwa – deugden van ridderlijkheid",
+    "en": "Futuwwa (chivalry)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Bagdad en Khorasan (soefi- en gildentraditie, 10e–13e eeuw)",
+   "coordinaten": {
+    "lat": 33.31,
+    "lng": 44.37
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–20",
+    "min": 4,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Futuwwa staat voor gulheid, trouw, bescherming van zwakkeren en het eigen belang achterstellen. Groep vertaalt de deugden naar 'beroepsridderlijkheid' en zoekt situaties waarin die op de proef wordt gesteld.",
+    "en": "Futuwwa stands for generosity, loyalty, protection of the weak and putting one's own interest second. The group translates these virtues into 'professional chivalry' and looks for situations that put it to the test."
+   },
+   "let_op": "—",
+   "bron_kort": "As-Sulami (1983)",
+   "bronnen_apa": [
+    "As-Sulami, I. H. (1983). The book of Sufi chivalry: Lessons to a son of the moment (futuwwah) (T. Bayrak, Vert.). Inner Traditions."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW80",
+   "titel": {
+    "nl": "Eigen beroepsadab (naar al-Ruhawi)",
+    "en": "Professional adab (al-Ruhawi)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "arabische-wereld",
+   "herkomst": "Syrië/Mesopotamië (al-Ruhawi, 9e eeuw)",
+   "coordinaten": {
+    "lat": 37.16,
+    "lng": 38.79
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "3–8",
+    "min": 3,
+    "max": 8
+   },
+   "beschrijving": {
+    "nl": "Een van de oudste teksten over beroepsethiek (de arts): houding, omgang met patiënt en collega's, en zelfzorg. Groep vergelijkt dit met hun huidige beroepscode en schrijft een eigen 'adab' voor hun beroep.",
+    "en": "One of the oldest texts on professional ethics (the physician): attitude, dealing with patients and colleagues, and self-care. The group compares it with their current professional code and writes their own 'adab' for their profession."
+   },
+   "let_op": "—",
+   "bron_kort": "Levey (1967)",
+   "bronnen_apa": [
+    "Levey, M. (1967). Medical ethics of medieval Islam with special reference to al-Ruhāwī's \"Practical ethics of the physician\". Transactions of the American Philosophical Society, 57(3), 1–100."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW81",
+   "titel": {
+    "nl": "Fabelgesprek: Kalila en Dimna",
+    "en": "Kalila and Dimna fables"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "arabische-wereld",
+   "herkomst": "Ibn al-Muqaffa' (Bagdad, 8e eeuw); via Perzisch uit het Indiase Panchatantra",
+   "coordinaten": {
+    "lat": 33.31,
+    "lng": 44.37
+   },
+   "ronde": 2,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Twee jakhalzen aan het hof van de leeuw: Dimna manipuleert uit eerzucht de koning tegen diens vriend de stier. Fabels over loyaliteit, roddel, macht en vriendschap. Wie is verantwoordelijk, wie had wat kunnen doen?",
+    "en": "Two jackals at the lion's court: out of ambition, Dimna turns the king against his friend the bull. Fables about loyalty, gossip, power and friendship. Who is responsible, who could have done what?"
+   },
+   "let_op": "Sterk voor HRM (manipulatie, vleierij). NB: Keith-Falconer vertaalde een latere Syrische versie.",
+   "bron_kort": "Keith-Falconer (1885); Ibn al-Muqaffa' (2023)",
+   "bronnen_apa": [
+    "Keith-Falconer, I. G. N. (1885). Kalīlah and Dimnah, or The fables of Bidpai. Cambridge University Press. https://archive.org/details/kalilahdimnahorf00bdpkuoft",
+    "Ibn al-Muqaffaʿ. (2023). Kalīlah and Dimnah: Fables of virtue and vice (M. Fishbein & J. E. Montgomery, Vert.). New York University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Fabel naar Keith-Falconer, I. G. N. (1885), Kalīlah and Dimnah – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW82",
+   "titel": {
+    "nl": "Juha-verhalen: perspectief wisselen",
+    "en": "Juha tales"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "arabische-wereld",
+   "herkomst": "Arabische volksverhalen (verwant aan Nasreddin Hodja)",
+   "coordinaten": null,
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO"
+   ],
+   "duur": {
+    "tekst": "20–30 min",
+    "min": 20,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Korte humoristische anekdotes (bijv. Juha, zijn zoon en de ezel: wat je ook doet, iemand heeft kritiek) als opstap naar een gesprek over oordelen, sociale druk en perspectief.",
+    "en": "Short humorous anecdotes (e.g. Juha, his son and the donkey: whatever you do, someone criticises you) as a starting point for a conversation about judging, social pressure and perspective."
+   },
+   "let_op": "Ook bekend in Turkse en Perzische versies; veel studenten kennen ze.",
+   "bron_kort": "Jayyusi (2007)",
+   "bronnen_apa": [
+    "Jayyusi, S. K. (Red.). (2007). Tales of Juha: Classic Arab folk humor. Interlink Books."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW83",
+   "titel": {
+    "nl": "Gedachte-experiment Hayy ibn Yaqzan",
+    "en": "Hayy ibn Yaqzan thought experiment"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "arabische-wereld",
+   "herkomst": "Al-Andalus (Ibn Tufayl, 12e eeuw)",
+   "coordinaten": {
+    "lat": 37.3,
+    "lng": -3.14
+   },
+   "ronde": 2,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–25",
+    "min": 6,
+    "max": 25
+   },
+   "beschrijving": {
+    "nl": "Een kind groeit alleen op een eiland op en ontdekt zelf wat waar en goed is. Vraag: welke morele inzichten bereik je zonder samenleving, en welke alleen dankzij anderen?",
+    "en": "A child grows up alone on an island and discovers for himself what is true and good. Question: which moral insights can you reach without society, and which only thanks to others?"
+   },
+   "let_op": "—",
+   "bron_kort": "Ibn Tufayl (1708/2009)",
+   "bronnen_apa": [
+    "Ibn Tufayl. (1708). The improvement of human reason, exhibited in the life of Hai Ebn Yokdhan (S. Ockley, Vert.). Edmund Powell.",
+    "Ibn Tufayl. (2009). Hayy ibn Yaqzan: A philosophical tale (L. E. Goodman, Vert.). University of Chicago Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Naar Ibn Tufayl, vertaling S. Ockley (1708) – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW84",
+   "titel": {
+    "nl": "De deugdzame organisatie (naar al-Farabi)",
+    "en": "The virtuous city (al-Farabi)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "arabische-wereld",
+   "herkomst": "Bagdad/Damascus (al-Farabi, 10e eeuw)",
+   "coordinaten": {
+    "lat": 33.31,
+    "lng": 44.37
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–8",
+    "min": 4,
+    "max": 8
+   },
+   "beschrijving": {
+    "nl": "Al-Farabi onderscheidt de deugdzame stad (gericht op het geluk van allen) van steden gericht op rijkdom, eer of genot. Groepen ontwerpen hun 'deugdzame organisatie' en analyseren hun echte organisatie: waar is die eigenlijk op gericht?",
+    "en": "Al-Farabi distinguishes the virtuous city (aimed at the happiness of all) from cities aimed at wealth, honour or pleasure. Groups design their 'virtuous organisation' and analyse their real organisation: what is it actually aimed at?"
+   },
+   "let_op": "—",
+   "bron_kort": "Al-Farabi (1985)",
+   "bronnen_apa": [
+    "Al-Farabi. (1985). Al-Farabi on the perfect state: Abū Naṣr al-Fārābī's Mabādiʾ ārāʾ ahl al-madīna al-fāḍila (R. Walzer, Vert.). Clarendon Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW85",
+   "titel": {
+    "nl": "Asabiyya-spiegel (loyaliteit in teams)",
+    "en": "Asabiyya mirror (group loyalty)"
+   },
+   "categorie": "Reflectie",
+   "regio": "arabische-wereld",
+   "herkomst": "Tunesië/Noord-Afrika (Ibn Khaldun, 14e eeuw)",
+   "coordinaten": {
+    "lat": 36.81,
+    "lng": 10.18
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–8",
+    "min": 4,
+    "max": 8
+   },
+   "beschrijving": {
+    "nl": "Groepssolidariteit (asabiyya) maakt een groep sterk, maar verslapt na succes in comfort en eigenbelang. Team bespreekt: waar ligt onze loyaliteit, wanneer wordt loyaliteit medeplichtigheid, hoe houden we morele scherpte vast?",
+    "en": "Group solidarity (asabiyya) makes a group strong, but after success it slackens into comfort and self-interest. The team discusses: where does our loyalty lie, when does loyalty become complicity, how do we keep our moral edge?"
+   },
+   "let_op": "—",
+   "bron_kort": "Ibn Khaldun (1958)",
+   "bronnen_apa": [
+    "Ibn Khaldun. (1958). The Muqaddimah: An introduction to history (F. Rosenthal, Vert.; Vols. 1–3). Pantheon Books."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW86",
+   "titel": {
+    "nl": "Pact van de deugdzamen (naar Hilf al-Fudul)",
+    "en": "Pact of the virtuous (Hilf al-Fudul)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "arabische-wereld",
+   "herkomst": "Mekka (ca. 590 n.Chr.)",
+   "coordinaten": {
+    "lat": 21.42,
+    "lng": 39.83
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Clans beloofden iedereen die onrecht werd aangedaan – ook een vreemdeling – bij te staan, los van afkomst. Groep stelt een eigen pact op: voor wie komen wij op, ook als het ons niets oplevert, en hoe houden we elkaar eraan?",
+    "en": "Clans promised to stand by anyone who suffered injustice – including a stranger – regardless of origin. The group draws up a pact of its own: whom do we stand up for, even when it gains us nothing, and how do we hold each other to it?"
+   },
+   "let_op": "Concreet en haalbaar formuleren.",
+   "bron_kort": "Watt (1953)",
+   "bronnen_apa": [
+    "Watt, W. M. (1953). Muhammad at Mecca. Clarendon Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW87",
+   "titel": {
+    "nl": "De zaak van de dieren tegen de mens",
+    "en": "The case of the animals versus man"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "arabische-wereld",
+   "herkomst": "Basra (Ikhwan al-Safa', 10e eeuw)",
+   "coordinaten": {
+    "lat": 30.51,
+    "lng": 47.78
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "voelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "10–30",
+    "min": 10,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In een allegorie klagen de dieren de mens aan voor de koning van de djinn: met welk recht heersen mensen over hen? Beide partijen pleiten. Rechtszaak-rollenspel over dierethiek, duurzaamheid of AI ('de zaak van X tegen de mens').",
+    "en": "In an allegory, the animals accuse humankind before the king of the jinn: by what right do humans rule over them? Both parties plead. Activity: courtroom role play on animal ethics, sustainability or AI ('the case of X versus humankind')."
+   },
+   "let_op": "—",
+   "bron_kort": "Ikhwan al-Safa' (2009)",
+   "bronnen_apa": [
+    "Ikhwan al-Safa'. (2009). The case of the animals versus man before the King of the Jinn (L. E. Goodman & R. McGregor, Vert.). Oxford University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW88",
+   "titel": {
+    "nl": "Nationale dialoog (naar het Tunesische Kwartet)",
+    "en": "National dialogue (Tunisian Quartet)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "arabische-wereld",
+   "herkomst": "Tunesië (2013–2014; Nobelprijs voor de Vrede 2015)",
+   "coordinaten": {
+    "lat": 36.81,
+    "lng": 10.18
+   },
+   "ronde": 2,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "90–120 min",
+    "min": 90,
+    "max": 120,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Vier maatschappelijke organisaties (vakbond, werkgevers, mensenrechtenliga, advocatenorde) bemiddelden tussen gepolariseerde partijen met een routekaart en deadlines. Simulatie: vier 'bemiddelaars' brengen een gepolariseerd conflict in een organisatie tot een akkoord.",
+    "en": "Four civil society organisations (trade union, employers, human rights league, bar association) mediated between polarised parties with a roadmap and deadlines. Simulation: four 'mediators' bring a polarised conflict within an organisation to an agreement."
+   },
+   "let_op": "Sterk voor HRM en medezeggenschap.",
+   "bron_kort": "Tunisian National Dialogue Quartet (2015)",
+   "bronnen_apa": [
+    "Tunisian National Dialogue Quartet. (2015). Nobel lecture [Toespraak]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/tndq-lecture.pdf"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW89",
+   "titel": {
+    "nl": "Namen rechtzetten (zhengming)",
+    "en": "Rectifying names (zhengming)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "azie",
+   "herkomst": "China (Confucius, Lunyu 13.3)",
+   "coordinaten": {
+    "lat": 35.6,
+    "lng": 116.99
+   },
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Volgens Confucius begint wanorde wanneer woorden niet meer kloppen met de werkelijkheid. Deelnemers onderzoeken welke woorden in een situatie worden gebruikt, wat er feitelijk gebeurt, en wat de juiste naam zou zijn. Eerlijke taal is hier een morele handeling.",
+    "en": "According to Confucius, disorder begins when words no longer match reality. Participants examine which words are used in a situation, what is actually happening and what the right name would be. Honest language is a moral act here."
+   },
+   "let_op": "Niet verwarren met 'politiek correct' taalgebruik; het gaat om overeenstemming tussen woord en daad.",
+   "bron_kort": "Legge (1861)",
+   "bronnen_apa": [
+    "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 1. Confucian analects, the great learning, and the doctrine of the mean. Trübner."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Tekst naar Legge, J. (1861), The Chinese classics, Vol. 1 – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW90",
+   "titel": {
+    "nl": "Kind bij de put (vier kiemen)",
+    "en": "Child at the well (four sprouts)"
+   },
+   "categorie": "Reflectie",
+   "regio": "azie",
+   "herkomst": "China (Mengzi 2A6)",
+   "coordinaten": {
+    "lat": 35.4,
+    "lng": 116.97
+   },
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "voelen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Mencius stelt dat iedereen die een kind bij een put ziet wankelen, onmiddellijk schrikt, niet uit berekening maar uit medeleven. Hij noemt vier morele kiemen: medeleven, schaamte, bescheidenheid en gevoel voor goed en fout. Deelnemers onderzoeken welke kiem in een situatie opspeelt en wat hem verstikt.",
+    "en": "Mencius argues that anyone who sees a child tottering at the edge of a well is instantly alarmed, not out of calculation but out of compassion. He names four moral sprouts: compassion, shame, modesty and a sense of right and wrong. Participants explore which sprout is at work in a situation and what stifles it."
+   },
+   "let_op": "Sterk voor fase Voelen; geen schuldgevoel aanpraten wanneer iemand iets niet voelt.",
+   "bron_kort": "Legge (1861)",
+   "bronnen_apa": [
+    "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 2. The works of Mencius. Trübner."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Tekst naar Legge, J. (1861), The Chinese classics, Vol. 2 – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW91",
+   "titel": {
+    "nl": "De nutteloze boom",
+    "en": "The useless tree"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "azie",
+   "herkomst": "China (Zhuangzi, hfst. 1 en 4)",
+   "coordinaten": {
+    "lat": 34.41,
+    "lng": 115.66
+   },
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een timmerman wijst een enorme, kromme boom af als nutteloos; juist daardoor wordt hij oud en biedt hij schaduw aan velen. Het verhaal bevraagt de maatstaf waarmee we waarde toekennen aan mensen en dingen.",
+    "en": "A carpenter dismisses a huge, gnarled tree as useless; precisely because of that it grows old and gives shade to many. The story questions the yardstick by which we assign value to people and things."
+   },
+   "let_op": "Niet romantiseren als pleidooi tegen elke prestatiemeting; het gaat om de blinde vlek van één maatstaf.",
+   "bron_kort": "Giles (1889)",
+   "bronnen_apa": [
+    "Giles, H. A. (Trans.). (1889). Chuang Tzŭ: Mystic, moralist, and social reformer. Bernard Quaritch."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Verhaal naar Giles, H. A. (1889), Chuang Tzŭ – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW92",
+   "titel": {
+    "nl": "Weten is doen (naar Wang Yangming)",
+    "en": "Knowing is doing (after Wang Yangming)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "azie",
+   "herkomst": "China (Wang Yangming, 15e–16e eeuw; zhi xing he yi)",
+   "coordinaten": {
+    "lat": 30.04,
+    "lng": 121.15
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Wang Yangming leerde dat kennen en handelen één zijn: wie weet wat goed is maar niet handelt, weet het nog niet echt. Deelnemers maken het gat zichtbaar tussen wat ze 'eigenlijk wel weten' en wat ze doen.",
+    "en": "Wang Yangming taught that knowing and acting are one: whoever knows what is right but does not act does not yet truly know it. Participants make visible the gap between what they 'actually know' and what they do."
+   },
+   "let_op": "Niet moraliseren; drempels (macht, angst, tijd) serieus nemen.",
+   "bron_kort": "Ivanhoe (2009)",
+   "bronnen_apa": [
+    "Ivanhoe, P. J. (Trans.). (2009). Readings from the Lu-Wang school of Neo-Confucianism. Hackett."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW93",
+   "titel": {
+    "nl": "Debat over zout en ijzer",
+    "en": "Debate on salt and iron"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "azie",
+   "herkomst": "China (Han-dynastie, 81 v.Chr.; Yantie lun)",
+   "coordinaten": {
+    "lat": 34.34,
+    "lng": 108.94
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In 81 v.Chr. debatteerden ambtenaren en geleerden aan het keizerlijk hof over staatsmonopolies op zout en ijzer: efficiëntie en staatsbelang tegenover rechtvaardigheid en het welzijn van gewone mensen. Deelnemers spelen een hedendaags beleidsdebat na in twee kampen met een verslaggever.",
+    "en": "In 81 BCE, officials and scholars at the imperial court debated state monopolies on salt and iron: efficiency and state interest versus justice and the welfare of ordinary people. Participants re-enact a present-day policy debate in two camps with a reporter."
+   },
+   "let_op": "Historische partijen niet één-op-één op hedendaagse partijen leggen.",
+   "bron_kort": "Gale (1931); Loewe (2006)",
+   "bronnen_apa": [
+    "Gale, E. M. (Trans.). (1931). Discourses on salt and iron: A debate on state control of commerce and industry in ancient China. Brill.",
+    "Loewe, M. (2006). The government of the Qin and Han empires, 221 BCE–220 CE. Hackett."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW94",
+   "titel": {
+    "nl": "Mens van nature goed of slecht? (Mencius–Xunzi)",
+    "en": "Human nature: good or bad? (Mencius–Xunzi)"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "azie",
+   "herkomst": "China (Mengzi en Xunzi, 4e–3e eeuw v.Chr.)",
+   "coordinaten": {
+    "lat": 36.8,
+    "lng": 118.3
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Mencius zag de mens als van nature goed, Xunzi als van nature geneigd tot eigenbelang die vorming en regels nodig heeft. Deelnemers onderzoeken welk mensbeeld achter een regeling, controle of vertrouwensaanpak zit.",
+    "en": "Mencius saw human beings as good by nature, Xunzi as inclined towards self-interest and in need of education and rules. Participants examine which view of human nature lies behind a rule, a control measure or a trust-based approach."
+   },
+   "let_op": "Geen eindoordeel nodig; doel is het mensbeeld zichtbaar maken.",
+   "bron_kort": "Hutton (2014); Legge (1861)",
+   "bronnen_apa": [
+    "Hutton, E. L. (Trans.). (2014). Xunzi: The complete text. Princeton University Press.",
+    "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 2. The works of Mencius. Trübner."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW95",
+   "titel": {
+    "nl": "Vikram en de vetala: raadseldilemma",
+    "en": "Vikram and the vetala: riddle dilemma"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "azie",
+   "herkomst": "India (Vetala Panchavimshati, ca. 11e eeuw)",
+   "coordinaten": {
+    "lat": 23.18,
+    "lng": 75.78
+   },
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Koning Vikram draagt een geest op zijn rug, die elk verhaal eindigt met een raadsel: wie had gelijk, wie is schuldig? Weet de koning het antwoord en zwijgt hij, dan volgt straf; spreekt hij, dan ontsnapt de geest. De vorm dwingt tot een onderbouwd oordeel.",
+    "en": "King Vikram carries a spirit on his back who ends every story with a riddle: who was right, who is guilty? If the king knows the answer and stays silent, punishment follows; if he speaks, the spirit escapes. The form compels a reasoned judgement."
+   },
+   "let_op": "Burton bevat koloniale en seksistische passages: alleen de structuur gebruiken.",
+   "bron_kort": "Burton (1870)",
+   "bronnen_apa": [
+    "Burton, R. F. (1870). Vikram and the vampire: Or tales of Hindu devilry. Longmans, Green."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Verhaal naar Burton, R. F. (1870), Vikram and the vampire – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW96",
+   "titel": {
+    "nl": "Jataka-gesprek: wat zou de wijze doen?",
+    "en": "Jataka dialogue"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "azie",
+   "herkomst": "India / Zuid- en Zuidoost-Azië (Jataka-verhalen)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Jataka-verhalen tonen een wijs personage dat in een lastige situatie kiest voor vrijgevigheid, moed of eerlijkheid. Deelnemers lezen een hervertelling, benoemen de deugd en vertalen die naar een eigen werksituatie.",
+    "en": "Jataka tales show a wise character who, in a difficult situation, chooses generosity, courage or honesty. Participants read a retelling, name the virtue and translate it to a work situation of their own."
+   },
+   "let_op": "Beschrijven als denktraditie; geen religieuze boodschap in de opdracht.",
+   "bron_kort": "Cowell (1895–1907)",
+   "bronnen_apa": [
+    "Cowell, E. B. (Ed.). (1895–1907). The Jātaka, or stories of the Buddha's former births (Vols. 1–6). Cambridge University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Verhaal naar Cowell, E. B. (Ed.) (1895–1907), The Jātaka – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW97",
+   "titel": {
+    "nl": "Arjuna's dilemma: plicht en gevolgen",
+    "en": "Arjuna's dilemma: duty and consequences"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "azie",
+   "herkomst": "India (Bhagavad Gita, Mahabharata)",
+   "coordinaten": {
+    "lat": 29.97,
+    "lng": 76.88
+   },
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "voelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Arjuna staat voor de strijd en verlamt: zijn rol vraagt iets wat zijn hart verwerpt. Deelnemers onderzoeken het spanningsveld tussen rolplicht, gevolgen voor dierbaren en innerlijke twijfel.",
+    "en": "Arjuna stands before the battle and freezes: his role demands something his heart rejects. Participants explore the tension between role duty, consequences for loved ones and inner doubt."
+   },
+   "let_op": "Geen verheerlijking van geweld; het gaat om het rolconflict. Neutraal formuleren.",
+   "bron_kort": "Arnold (1885)",
+   "bronnen_apa": [
+    "Arnold, E. (Trans.). (1885). The song celestial, or Bhagavad-gîtâ. Trübner."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Tekst naar Arnold, E. (1885), The song celestial – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW98",
+   "titel": {
+    "nl": "Yaksha-vragen: wijsheid onder druk",
+    "en": "Yaksha's questions"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "azie",
+   "herkomst": "India (Mahabharata, Vana Parva)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "B",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een geest bij een meer stelt Yudhishthira vragen voordat hij mag drinken; alleen wie nadenkt in plaats van grijpt, overleeft. Deelnemers beantwoorden in tweetallen snel achter elkaar korte morele vragen en reflecteren daarna op hun eerste antwoorden.",
+    "en": "A spirit at a lake questions Yudhishthira before he may drink; only those who reflect instead of grabbing survive. In pairs, participants quickly answer short moral questions one after another and then reflect on their first answers."
+   },
+   "let_op": "Tempo bewaken; veiligheid: geen persoonlijke vragen afdwingen.",
+   "bron_kort": "Ganguli (1883–1896)",
+   "bronnen_apa": [
+    "Ganguli, K. M. (Trans.). (1883–1896). The Mahabharata of Krishna-Dwaipayana Vyasa. Bharata Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "Tekst naar Ganguli, K. M. (1883–1896), The Mahabharata – publiek domein.",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW99",
+   "titel": {
+    "nl": "Eerlijk debat (vada) of winnen (jalpa)?",
+    "en": "Honest debate (vada) or winning (jalpa)?"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "azie",
+   "herkomst": "India (Nyaya-traditie, Nyaya Sutra 1.2.1–3)",
+   "coordinaten": {
+    "lat": 26.15,
+    "lng": 85.9
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "De Nyaya-traditie onderscheidt drie soorten debat: vada (samen de waarheid zoeken), jalpa (winnen met alle middelen) en vitanda (alleen afbreken). Deelnemers voeren hetzelfde debat in de drie standen en vergelijken wat ze leren.",
+    "en": "The Nyaya tradition distinguishes three kinds of debate: vada (seeking truth together), jalpa (winning by any means) and vitanda (only tearing down). Participants hold the same debate in all three modes and compare what they learn."
+   },
+   "let_op": "Jalpa- en vitanda-rondes kort houden en goed nabespreken.",
+   "bron_kort": "Matilal (1998)",
+   "bronnen_apa": [
+    "Matilal, B. K. (1998). The character of logic in India (J. Ganeri & H. Tiwari, Eds.). State University of New York Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW100",
+   "titel": {
+    "nl": "Vijf toetsen voor spreken",
+    "en": "Five tests for speech"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "azie",
+   "herkomst": "Zuid-Azië (vroegboeddhistische teksten, o.a. Anguttara Nikaya 5.198)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30 min",
+    "min": 30,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een uitspraak wordt getoetst op vijf vragen: is het waar, is het nuttig, is het nu het juiste moment, zeg ik het vriendelijk, en spreek ik met goede wil? Deelnemers toetsen een moeilijke boodschap voordat ze die uitspreken.",
+    "en": "A statement is tested against five questions: is it true, is it useful, is this the right moment, am I saying it kindly, and am I speaking with goodwill? Participants test a difficult message before they deliver it."
+   },
+   "let_op": "Niet gebruiken om noodzakelijke kritiek te smoren: 'vriendelijk' is niet 'zwijgen'.",
+   "bron_kort": "Bodhi (2012)",
+   "bronnen_apa": [
+    "Bodhi, B. (Trans.). (2012). The numerical discourses of the Buddha: A translation of the Aṅguttara Nikāya. Wisdom Publications."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW101",
+   "titel": {
+    "nl": "Panchayat: raad van vijf",
+    "en": "Panchayat: council of five"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "azie",
+   "herkomst": "India (dorpsraad; o.a. verhaal 'Panch Parmeshwar' van Premchand, 1916)",
+   "coordinaten": {
+    "lat": 25.32,
+    "lng": 82.97
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Vijf mensen beslechten een geschil. In Premchands verhaal moet een man oordelen over zijn beste vriend en kiest hij voor rechtvaardigheid boven vriendschap. Deelnemers vormen een raad van vijf met wisselende rollen en oordelen over een casus waarin loyaliteit botst met rechtvaardigheid.",
+    "en": "Five people settle a dispute. In Premchand's story a man must judge his best friend and chooses justice over friendship. Participants form a council of five with rotating roles and judge a case in which loyalty clashes with justice."
+   },
+   "let_op": "Kritiek op kaste- en genderuitsluiting in historische panchayats bespreken.",
+   "bron_kort": "Premchand (1916); Baviskar & Mathew (2009)",
+   "bronnen_apa": [
+    "Premchand. (1916). Panch Parmeshwar [Kort verhaal]. Sarasvati.",
+    "Baviskar, B. S., & Mathew, G. (Eds.). (2009). Inclusion and exclusion in local governance: Field studies from rural India. Sage."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW102",
+   "titel": {
+    "nl": "Naikan-reflectie: ontvangen, gegeven, last bezorgd",
+    "en": "Naikan reflection"
+   },
+   "categorie": "Reflectie",
+   "regio": "azie",
+   "herkomst": "Japan (Yoshimoto Ishin, 1940–1968)",
+   "coordinaten": {
+    "lat": 34.65,
+    "lng": 135.78
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "1–30",
+    "min": 1,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Drie vragen over één persoon: wat heb ik van deze persoon ontvangen, wat heb ik gegeven, welke last heb ik bezorgd? De vierde vraag (wat heeft de ander mij aangedaan?) wordt bewust niet gesteld. Dat verschuift het perspectief van klacht naar relatie.",
+    "en": "Three questions about one person: what have I received from this person, what have I given, what trouble have I caused? The fourth question (what has the other done to me?) is deliberately not asked. This shifts the perspective from complaint to relationship."
+   },
+   "let_op": "Niet gebruiken bij onveilige of grensoverschrijdende relaties; geen schuld afdwingen. Geen therapie.",
+   "bron_kort": "Krech (2002); Reynolds (1983)",
+   "bronnen_apa": [
+    "Krech, G. (2002). Naikan: Gratitude, grace, and the Japanese art of self-reflection. Stone Bridge Press.",
+    "Reynolds, D. K. (1983). Naikan psychotherapy: Meditation for self-development. University of Chicago Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW103",
+   "titel": {
+    "nl": "Driezijdig goed (sanpō yoshi)",
+    "en": "Three-way good (sanpō yoshi)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "azie",
+   "herkomst": "Japan (Ōmi-kooplieden, 17e–19e eeuw)",
+   "coordinaten": {
+    "lat": 35.13,
+    "lng": 136.1
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een transactie is pas goed als ze goed is voor de verkoper, de koper én de samenleving. Deelnemers toetsen een zakelijk besluit op de drie zijden en zoeken een variant die alle drie dient.",
+    "en": "A transaction is only good if it is good for the seller, the buyer and society. Participants test a business decision on all three sides and look for a variant that serves all three."
+   },
+   "let_op": "Romantisering vermijden: bespreek ook waar het ideaal in de praktijk tekortschoot.",
+   "bron_kort": "Suenaga (2020)",
+   "bronnen_apa": [
+    "Suenaga, K. (2020). The story of Japan's Ohmi merchants: The precept of sanpo-yoshi (L. Greenberg, Trans.). Japan Publishing Industry Foundation for Culture."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW104",
+   "titel": {
+    "nl": "Wortels losmaken (nemawashi): eerlijk draagvlak",
+    "en": "Root-binding (nemawashi): fair consensus building"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "azie",
+   "herkomst": "Japan (organisatiepraktijk)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Vóór een besluit worden betrokkenen één voor één gehoord, zoals een hovenier de wortels losmaakt voordat hij een boom verplant. Hier wordt onderzocht wanneer dit zorgvuldig draagvlak is en wanneer het achterkamertjespolitiek wordt.",
+    "en": "Before a decision, those involved are heard one by one, just as a gardener loosens the roots before transplanting a tree. The activity explores when this is careful consensus building and when it becomes backroom politics."
+   },
+   "let_op": "Niet als manipulatietechniek aanleren; nadruk op eerlijkheid en insluiting.",
+   "bron_kort": "Fetters (1995)",
+   "bronnen_apa": [
+    "Fetters, M. D. (1995). Nemawashi essential for conducting research in Japan. Social Science & Medicine, 41(3), 375–381. https://doi.org/10.1016/0277-9536(94)00347-T"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW105",
+   "titel": {
+    "nl": "Musyawarah-mufakat: beraad tot overeenstemming",
+    "en": "Musyawarah-mufakat: deliberation to consensus"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "azie",
+   "herkomst": "Indonesië (dorpsberaad; ook parlementair)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een groep beraadslaagt tot er een besluit is dat iedereen kan dragen; stemmen is het laatste redmiddel. Geduldig beraad oefenen en ook de keerzijde onderzoeken: druk om in te stemmen.",
+    "en": "A group deliberates until there is a decision everyone can support; voting is the last resort. The activity practises patient deliberation and also explores the downside: pressure to agree."
+   },
+   "let_op": "Bespreek dat consensus minderheden kan smoren (Kawamura, 2011).",
+   "bron_kort": "Kawamura (2011)",
+   "bronnen_apa": [
+    "Kawamura, K. (2011). Consensus and democracy in Indonesia: Musyawarah-mufakat revisited (IDE Discussion Paper No. 308). Institute of Developing Economies, JETRO."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW106",
+   "titel": {
+    "nl": "Kapwa: het gedeelde zelf",
+    "en": "Kapwa: the shared self"
+   },
+   "categorie": "Reflectie",
+   "regio": "azie",
+   "herkomst": "Filipijnen (Sikolohiyang Pilipino, Enriquez)",
+   "coordinaten": {
+    "lat": 14.65,
+    "lng": 121.07
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Kapwa betekent dat ik mezelf in de ander herken: de ander is geen buitenstaander maar deel van een gedeeld zelf. Enriquez onderscheidt 'een van ons' en 'niet een van ons'. Deelnemers onderzoeken wie in hun werk als buitenstaander wordt behandeld.",
+    "en": "Kapwa means that I recognise myself in the other: the other is not an outsider but part of a shared self. Enriquez distinguishes 'one of us' and 'not one of us'. Participants examine who is treated as an outsider in their work."
+   },
+   "let_op": "Niet exotiseren; begrip in zijn eigen context uitleggen.",
+   "bron_kort": "Enriquez (1992); Pe-Pua & Protacio-Marcelino (2000)",
+   "bronnen_apa": [
+    "Enriquez, V. G. (1992). From colonial to liberation psychology: The Philippine experience. University of the Philippines Press.",
+    "Pe-Pua, R., & Protacio-Marcelino, E. A. (2000). Sikolohiyang Pilipino (Filipino psychology): A legacy of Virgilio G. Enriquez. Asian Journal of Social Psychology, 3(1), 49–71. https://doi.org/10.1111/1467-839X.00054"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW107",
+   "titel": {
+    "nl": "De petitietrom (sinmungo): melden wanneer niemand luistert",
+    "en": "The petition drum (sinmungo)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "azie",
+   "herkomst": "Korea (Joseon, ingesteld 1401)",
+   "coordinaten": {
+    "lat": 37.58,
+    "lng": 126.98
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Wie in Joseon-Korea geen gehoor vond bij lagere instanties, kon de trom voor het paleis slaan. In de praktijk werd de toegang vaak geblokkeerd. Deelnemers onderzoeken de route van een melding, waar die vastloopt en hoe je toch gehoord wordt.",
+    "en": "In Joseon Korea, anyone who found no hearing with lower authorities could beat the drum in front of the palace. In practice, access was often blocked. Participants examine the route of a report, where it gets stuck and how you can still be heard."
+   },
+   "let_op": "Veiligheid: geen echte meldingen uitwerken; verwijzen naar vertrouwenspersoon.",
+   "bron_kort": "Kim (2015)",
+   "bronnen_apa": [
+    "Kim, J. M. (2015). The emotions of justice: Gender, status, and legal performance in Chosŏn Korea. University of Washington Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW108",
+   "titel": {
+    "nl": "Staand debat (naar het Tibetaanse kloosterdebat)",
+    "en": "Standing debate (after Tibetan monastic debate)"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "azie",
+   "herkomst": "Tibet (kloosteronderwijs, rtsod pa)",
+   "coordinaten": {
+    "lat": 29.7,
+    "lng": 91.13
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Een staande vraagsteller daagt een zittende verdediger uit met korte, logisch opgebouwde vragen; de verdediger antwoordt met 'ja', 'nee', 'waarom?' of 'reden niet bewezen'. De vorm traint precies redeneren over een morele stelling.",
+    "en": "A standing questioner challenges a seated defender with short, logically constructed questions; the defender answers 'yes', 'no', 'why?' or 'reason not established'. The form trains precise reasoning about a moral claim."
+   },
+   "let_op": "Geen klappen of andere rituele gebaren overnemen; herkomst respectvol noemen.",
+   "bron_kort": "Dreyfus (2003); Perdue (1992)",
+   "bronnen_apa": [
+    "Dreyfus, G. B. J. (2003). The sound of two hands clapping: The education of a Tibetan Buddhist monk. University of California Press.",
+    "Perdue, D. E. (1992). Debate in Tibetan Buddhism. Snow Lion."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW109",
+   "titel": {
+    "nl": "Buen vivir-toets (sumak kawsay)",
+    "en": "Buen vivir test (sumak kawsay)"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "latijns-amerika",
+   "herkomst": "Andes (Kichwa/Aymara; grondwetten Ecuador 2008 en Bolivia 2009)",
+   "coordinaten": {
+    "lat": -0.18,
+    "lng": -78.47
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Goed leven betekent hier: in evenwicht met de gemeenschap en de natuur, niet alleen meer welvaart. Deelnemers toetsen een besluit op mens, gemeenschap en natuur, en op de vraag wie 'genoeg' bepaalt.",
+    "en": "Living well here means living in balance with the community and nature, not just more prosperity. Participants test a decision against people, community and nature, and against the question of who decides what is 'enough'."
+   },
+   "let_op": "Niet romantiseren; bespreek ook spanning met extractivisme in de landen zelf (Gudynas, 2011).",
+   "bron_kort": "Acosta (2013); Gudynas (2011)",
+   "bronnen_apa": [
+    "Acosta, A. (2013). El buen vivir: Sumak kawsay, una oportunidad para imaginar otros mundos. Icaria.",
+    "Gudynas, E. (2011). Buen vivir: Today's tomorrow. Development, 54(4), 441–447. https://doi.org/10.1057/dev.2011.86"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW110",
+   "titel": {
+    "nl": "Ayni-balans: wederkerigheid",
+    "en": "Ayni balance: reciprocity"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Andes (Quechua/Aymara)",
+   "coordinaten": {
+    "lat": -13.53,
+    "lng": -71.97
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30 min",
+    "min": 30,
+    "max": 30,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Ayni is wederzijdse hulp: wat je ontvangt, geef je terug, vaak in arbeid. Deelnemers maken een balans van geven en nemen in een team en onderzoeken waar wederkerigheid scheef is geraakt.",
+    "en": "Ayni is mutual help: what you receive, you give back, often in labour. Participants draw up a balance of giving and taking in a team and examine where reciprocity has become lopsided."
+   },
+   "let_op": "Niet gebruiken om iemand af te rekenen; focus op het patroon.",
+   "bron_kort": "Mayer (2002)",
+   "bronnen_apa": [
+    "Mayer, E. (2002). The articulated peasant: Household economies in the Andes. Westview Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW111",
+   "titel": {
+    "nl": "Drie Andesgeboden: niet stelen, niet liegen, niet lui zijn",
+    "en": "Three Andean precepts"
+   },
+   "categorie": "Afwegingskader",
+   "regio": "latijns-amerika",
+   "herkomst": "Andes (Quechua: ama sua, ama llulla, ama quella; Grondwet Bolivia 2009, art. 8)",
+   "coordinaten": {
+    "lat": -16.5,
+    "lng": -68.15
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Drie korte geboden dienen als toetssteen. Deelnemers onderzoeken grijze zones: wanneer is iets 'een beetje' stelen, liegen of luieren, en wie bepaalt dat?",
+    "en": "Three short precepts serve as a touchstone. Participants explore grey areas: when is something 'a little' stealing, lying or idling, and who decides?"
+   },
+   "let_op": "Historische herkomst is omstreden (deels koloniale catechese); dat benoemen.",
+   "bron_kort": "Estado Plurinacional de Bolivia (2009)",
+   "bronnen_apa": [
+    "Estado Plurinacional de Bolivia. (2009). Constitución Política del Estado."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW112",
+   "titel": {
+    "nl": "Gezicht en hart (in ixtli in yollotl)",
+    "en": "Face and heart (in ixtli in yollotl)"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Mexico (Nahua-denken; León-Portilla)",
+   "coordinaten": {
+    "lat": 19.43,
+    "lng": -99.13
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In het Nahua-denken vormt opvoeding een 'wijs gezicht en een vast hart': een herkenbaar karakter naar buiten en een standvastige kern van binnen. Deelnemers vergelijken hun professionele 'gezicht' met hun 'hart'.",
+    "en": "In Nahua thought, upbringing forms 'a wise face and a firm heart': a recognisable character on the outside and a steadfast core within. Participants compare their professional 'face' with their 'heart'."
+   },
+   "let_op": "Respectvol vertalen; geen Azteekse rituelen of symbolen overnemen.",
+   "bron_kort": "León-Portilla (1963)",
+   "bronnen_apa": [
+    "León-Portilla, M. (1963). Aztec thought and culture: A study of the ancient Nahuatl mind (J. E. Davis, Trans.). University of Oklahoma Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW113",
+   "titel": {
+    "nl": "Woorden van de ouderen (huehuetlatolli)",
+    "en": "Words of the elders (huehuetlatolli)"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "latijns-amerika",
+   "herkomst": "Mexico (Nahua-vermaningen, 16e-eeuwse optekening)",
+   "coordinaten": {
+    "lat": 19.45,
+    "lng": -99.14
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "volhouden",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Ouderen gaven jongeren op belangrijke momenten een plechtige toespraak mee over goed leven. Deelnemers schrijven een korte 'ouderentoespraak' aan een nieuwkomer in hun beroep en ontvangen er een van een ervaren beroepsbeoefenaar.",
+    "en": "At important moments, elders gave young people a solemn speech about living well. Participants write a short 'elder's speech' to a newcomer in their profession and receive one from an experienced practitioner."
+   },
+   "let_op": "Niet paternalistisch; ook jong-naar-oud laten schrijven.",
+   "bron_kort": "León-Portilla & Silva Galeana (1991); Sahagún (1950–1982)",
+   "bronnen_apa": [
+    "León-Portilla, M., & Silva Galeana, L. (1991). Huehuehtlahtolli: Testimonios de la antigua palabra. Secretaría de Educación Pública / Fondo de Cultura Económica.",
+    "Sahagún, B. de. (1950–1982). Florentine codex: General history of the things of New Spain (A. J. O. Anderson & C. E. Dibble, Trans.; Vols. 1–13). School of American Research / University of Utah Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW114",
+   "titel": {
+    "nl": "Mensen van hout (naar de Popol Vuh)",
+    "en": "People of wood (after the Popol Vuh)"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "latijns-amerika",
+   "herkomst": "Guatemala (K'iche' Maya, Popol Vuh)",
+   "coordinaten": {
+    "lat": 14.94,
+    "lng": -91.11
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In de Popol Vuh maken de scheppers eerst mensen van hout: ze kunnen praten en werken, maar hebben geen hart en geen herinnering, en danken niemand. Ze worden vernietigd. Deelnemers gebruiken het beeld om te vragen wat een systeem of rol mist als het 'van hout' is.",
+    "en": "In the Popol Vuh, the creators first make people of wood: they can talk and work, but have no heart and no memory, and thank no one. They are destroyed. Participants use the image to ask what a system or role lacks when it is 'made of wood'."
+   },
+   "let_op": "Heilige tekst van een levende gemeenschap: respectvol en zonder rituelen.",
+   "bron_kort": "Christenson (2007); Tedlock (1996)",
+   "bronnen_apa": [
+    "Christenson, A. J. (Trans.). (2007). Popol Vuh: The sacred book of the Maya. University of Oklahoma Press.",
+    "Tedlock, D. (Trans.). (1996). Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings (Rev. ed.). Simon & Schuster."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW115",
+   "titel": {
+    "nl": "Het Valladolid-debat: wie telt als mens?",
+    "en": "The Valladolid debate"
+   },
+   "categorie": "Debat en dialoog",
+   "regio": "latijns-amerika",
+   "herkomst": "Spanje/Amerika's (Las Casas tegen Sepúlveda, 1550–1551)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In Valladolid debatteerden Las Casas en Sepúlveda over de vraag of de inheemse volken gelijkwaardige rechten hadden. Een jury besliste nooit. Deelnemers onderzoeken een hedendaagse kwestie waarin de gelijkwaardigheid van een groep wordt betwist, met pleiters en een jury.",
+    "en": "In Valladolid, Las Casas and Sepúlveda debated whether the Indigenous peoples had equal rights. A jury never decided. Participants examine a present-day issue in which the equal standing of a group is contested, with advocates and a jury."
+   },
+   "let_op": "Geen echte groepen laten 'ontmenselijken' in rollenspel; abstraheer de positie en bespreek koloniale context.",
+   "bron_kort": "Hanke (1974)",
+   "bronnen_apa": [
+    "Hanke, L. (1974). All mankind is one: A study of the disputation between Bartolomé de Las Casas and Juan Ginés de Sepúlveda in 1550 on the intellectual and religious capacity of the American Indians. Northern Illinois University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW116",
+   "titel": {
+    "nl": "'Zijn dit geen mensen?' (naar de preek van Montesinos)",
+    "en": "'Are these not human beings?' (after Montesinos)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "latijns-amerika",
+   "herkomst": "Hispaniola (Antonio de Montesinos, 1511; opgetekend door Las Casas)",
+   "coordinaten": {
+    "lat": 18.47,
+    "lng": -69.89
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "In 1511 sprak een monnik de koloniale elite toe met de vraag of de mensen die zij uitbuitten geen mensen waren. Deelnemers schrijven en houden een korte, moedige toespraak over een misstand in hun eigen werkomgeving, gericht aan de mensen die het beleid maken.",
+    "en": "In 1511 a friar addressed the colonial elite with the question of whether the people they exploited were not human beings. Participants write and deliver a short, courageous speech about a wrong in their own workplace, addressed to those who make the policy."
+   },
+   "let_op": "Levensbeschouwelijk neutraal; het gaat om de spreekhandeling, niet om de kerkelijke context.",
+   "bron_kort": "Las Casas (1875); Hanke (1949)",
+   "bronnen_apa": [
+    "Las Casas, B. de. (1875). Historia de las Indias (Vols. 1–5). Imprenta de Miguel Ginesta. (Oorspronkelijk geschreven ca. 1527–1561)",
+    "Hanke, L. (1949). The Spanish struggle for justice in the conquest of America. University of Pennsylvania Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW117",
+   "titel": {
+    "nl": "Brief aan de koning (naar Guaman Poma)",
+    "en": "Letter to the king (after Guaman Poma)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "latijns-amerika",
+   "herkomst": "Peru (Felipe Guaman Poma de Ayala, 1615)",
+   "coordinaten": {
+    "lat": -14.7,
+    "lng": -74.13
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Guaman Poma schreef 1200 pagina's met bijna 400 tekeningen aan de Spaanse koning om misstanden zichtbaar te maken en goed bestuur voor te stellen. Deelnemers maken een geïllustreerde brief aan de hoogste beslisser: wat gaat er mis, wat zou goed bestuur zijn?",
+    "en": "Guaman Poma wrote 1,200 pages with nearly 400 drawings to the Spanish king to expose abuses and propose good government. Participants create an illustrated letter to the highest decision-maker: what is going wrong, what would good government look like?"
+   },
+   "let_op": "Eigen tekeningen maken; geen reproducties van het manuscript zonder toestemming.",
+   "bron_kort": "Guaman Poma de Ayala (2004); Adorno (2000)",
+   "bronnen_apa": [
+    "Guaman Poma de Ayala, F. (2004). El primer nueva corónica y buen gobierno (R. Adorno, Ed.; digitale facsimile). Det Kongelige Bibliotek. (Oorspronkelijk voltooid 1615) https://poma.kb.dk",
+    "Adorno, R. (2000). Guaman Poma: Writing and resistance in colonial Peru (2nd ed.). University of Texas Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW118",
+   "titel": {
+    "nl": "Verweerschrift (naar Sor Juana)",
+    "en": "Letter of defence (after Sor Juana)"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Mexico (Sor Juana Inés de la Cruz, Respuesta a Sor Filotea, 1691)",
+   "coordinaten": {
+    "lat": 19.43,
+    "lng": -99.13
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Toen haar het recht op studeren en schrijven werd ontzegd, schreef Sor Juana een beheerst, scherp verweer. Deelnemers schrijven een verweerschrift waarin ze een omstreden professionele keuze rustig en onderbouwd verdedigen tegenover een gezaghebbende criticus.",
+    "en": "When she was denied the right to study and write, Sor Juana wrote a composed, incisive defence. Participants write a letter of defence in which they calmly and soundly defend a contested professional choice to an authoritative critic."
+   },
+   "let_op": "Gender- en machtscontext bespreken.",
+   "bron_kort": "Arenal & Powell (1994)",
+   "bronnen_apa": [
+    "Juana Inés de la Cruz. (1994). The answer / La respuesta (E. Arenal & A. Powell, Eds. & Trans.). Feminist Press. (Oorspronkelijk geschreven 1691)"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW119",
+   "titel": {
+    "nl": "Inventamos o erramos: vernieuwen of dwalen",
+    "en": "Invent or err"
+   },
+   "categorie": "Ontwerp en technologie",
+   "regio": "latijns-amerika",
+   "herkomst": "Venezuela (Simón Rodríguez, Sociedades americanas, 1828)",
+   "coordinaten": {
+    "lat": 10.49,
+    "lng": -66.88
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Rodríguez stelde dat de jonge republieken eigen instellingen moesten uitvinden in plaats van Europese modellen te kopiëren: 'we vinden uit of we dwalen'. Deelnemers onderzoeken een overgenomen werkwijze en ontwerpen een eigen, ethisch beter passend alternatief.",
+    "en": "Rodríguez argued that the young republics had to invent their own institutions instead of copying European models: 'we invent or we err'. Participants examine a borrowed way of working and design their own, ethically better-suited alternative."
+   },
+   "let_op": "Vernieuwen is geen doel op zich; toets het ontwerp op waarden.",
+   "bron_kort": "Rodríguez (1990)",
+   "bronnen_apa": [
+    "Rodríguez, S. (1990). Sociedades americanas (O. Rodríguez Ortiz, Ed.). Biblioteca Ayacucho. (Oorspronkelijk gepubliceerd 1828)"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW120",
+   "titel": {
+    "nl": "Sentipensar: denken met het hart",
+    "en": "Sentipensar: feeling-thinking"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Colombia (Orlando Fals Borda; vissers van de San Jorge-rivier)",
+   "coordinaten": {
+    "lat": 9.24,
+    "lng": -74.43
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Fals Borda leerde van rivierbewoners het woord 'sentipensante': iemand die tegelijk voelt en denkt. Deelnemers wegen een besluit eerst alleen rationeel, dan alleen vanuit gevoel, en voegen beide samen.",
+    "en": "Fals Borda learned the word 'sentipensante' from river dwellers: someone who feels and thinks at the same time. Participants first weigh a decision purely rationally, then purely from feeling, and then bring the two together."
+   },
+   "let_op": "Gevoel is informatie, geen eindoordeel.",
+   "bron_kort": "Fals Borda (2009)",
+   "bronnen_apa": [
+    "Fals Borda, O. (2009). Una sociología sentipensante para América Latina (V. M. Moncayo, Ed.). CLACSO / Siglo del Hombre."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW121",
+   "titel": {
+    "nl": "Ervaringen systematiseren (naar Jara)",
+    "en": "Systematising experiences (after Jara)"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Costa Rica/Latijns-Amerika (Oscar Jara; volkseducatie)",
+   "coordinaten": {
+    "lat": 9.93,
+    "lng": -84.08
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "volhouden"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–20",
+    "min": 4,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Een team reconstrueert samen een doorleefde ervaring in vijf momenten: vertrekpunt, plan, reconstructie van het proces, kritische reflectie en conclusies. Zo wordt praktijkkennis gedeelde kennis, inclusief morele lessen.",
+    "en": "A team jointly reconstructs a lived experience in five moments: starting point, plan, reconstruction of the process, critical reflection and conclusions. In this way practical knowledge becomes shared knowledge, including moral lessons."
+   },
+   "let_op": "Veiligheid: geen schuldvraag; machtsverschillen in het team benoemen.",
+   "bron_kort": "Jara Holliday (2018)",
+   "bronnen_apa": [
+    "Jara Holliday, O. (2018). La sistematización de experiencias: Práctica y teoría para otros mundos posibles. CINDE."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW122",
+   "titel": {
+    "nl": "Pedagogie van de tederheid",
+    "en": "Pedagogy of tenderness"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Peru (Alejandro Cussiánovich; werkende kinderen en jongeren)",
+   "coordinaten": {
+    "lat": -12.05,
+    "lng": -77.04
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "30–45 min",
+    "min": 30,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "2–30",
+    "min": 2,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Tederheid is hier geen zachtheid maar een politieke en pedagogische houding: kinderen serieus nemen als volwaardige personen met een stem. Deelnemers onderzoeken een situatie waarin regels en tederheid botsen.",
+    "en": "Tenderness here is not softness but a political and pedagogical stance: taking children seriously as full persons with a voice. Participants explore a situation in which rules and tenderness clash."
+   },
+   "let_op": "Grenzen en professionele afstand blijven belangrijk; tederheid is geen grensvervaging.",
+   "bron_kort": "Cussiánovich (2007)",
+   "bronnen_apa": [
+    "Cussiánovich, A. (2007). Aprender la condición humana: Ensayo sobre pedagogía de la ternura. Ifejant."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW123",
+   "titel": {
+    "nl": "Leerlingenraad met echte zeggenschap (naar Escuela Nueva)",
+    "en": "Student council with real voice (after Escuela Nueva)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "latijns-amerika",
+   "herkomst": "Colombia (Escuela Nueva, Colbert e.a., vanaf 1975)",
+   "coordinaten": {
+    "lat": 4.71,
+    "lng": -74.07
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60 min",
+    "min": 60,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Leerlingen besturen in comités mee aan hun school. Een groep richt een eigen raad in met mandaat en onderzoekt hoeveel zeggenschap echt is en hoeveel schijn.",
+    "en": "Pupils help run their school through committees. The activity has a group set up its own council with a mandate and explores how much of the say is real and how much is for show."
+   },
+   "let_op": "Geen schijninspraak organiseren; docent bepaalt vooraf wat écht beslist mag worden.",
+   "bron_kort": "Colbert & Arboleda (2016)",
+   "bronnen_apa": [
+    "Colbert, V., & Arboleda, J. (2016). Bringing a student-centered participatory pedagogy to scale in Colombia. Journal of Educational Change, 17(4), 385–410. https://doi.org/10.1007/s10833-016-9283-7"
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW124",
+   "titel": {
+    "nl": "Leiden door te gehoorzamen (mandar obedeciendo)",
+    "en": "Leading by obeying"
+   },
+   "categorie": "Gespreksmethode",
+   "regio": "latijns-amerika",
+   "herkomst": "Mexico (Chiapas, inheemse gemeenschappen; Zapatistische autonomie)",
+   "coordinaten": {
+    "lat": 16.74,
+    "lng": -92.64
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "handelen",
+    "wegen"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "6–30",
+    "min": 6,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Leiders voeren uit wat de gemeenschap besluit en zijn op elk moment terug te roepen. Deelnemers onderzoeken hun eigen leiderschap: wie geeft mij mandaat, aan wie leg ik verantwoording af, en wanneer ga ik over mijn mandaat heen?",
+    "en": "Leaders carry out what the community decides and can be recalled at any time. Participants examine their own leadership: who gives me my mandate, to whom am I accountable, and when do I overstep my mandate?"
+   },
+   "let_op": "Politiek neutraal behandelen; geen propaganda voor een beweging.",
+   "bron_kort": "Mora (2017)",
+   "bronnen_apa": [
+    "Mora, M. (2017). Kuxlejal politics: Indigenous autonomy, race, and decolonizing research in Zapatista communities. University of Texas Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW125",
+   "titel": {
+    "nl": "Burgerbegroting (naar Porto Alegre)",
+    "en": "Participatory budget (after Porto Alegre)"
+   },
+   "categorie": "Actiegericht",
+   "regio": "latijns-amerika",
+   "herkomst": "Brazilië (Porto Alegre, vanaf 1989)",
+   "coordinaten": {
+    "lat": -30.03,
+    "lng": -51.23
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "wegen",
+    "handelen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "8–30",
+    "min": 8,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Inwoners beslissen zelf over een deel van de gemeentebegroting, met criteria die arme wijken voorrang geven. Deelnemers verdelen een fictief budget met verdelingscriteria en onderzoeken wie er wel en niet aan tafel zit.",
+    "en": "Residents themselves decide on part of the municipal budget, using criteria that give priority to poorer neighbourhoods. Participants allocate a fictional budget using allocation criteria and examine who is and who is not at the table."
+   },
+   "let_op": "Bespreek ook kritiek: deelname en uitholling van het model.",
+   "bron_kort": "Santos (1998); Baiocchi (2005)",
+   "bronnen_apa": [
+    "Santos, B. de S. (1998). Participatory budgeting in Porto Alegre: Toward a redistributive democracy. Politics & Society, 26(4), 461–510. https://doi.org/10.1177/0032329298026004003",
+    "Baiocchi, G. (2005). Militants and citizens: The politics of participatory democracy in Porto Alegre. Stanford University Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW126",
+   "titel": {
+    "nl": "Ambtsverantwoording (naar de juicio de residencia)",
+    "en": "Accountability review (after the juicio de residencia)"
+   },
+   "categorie": "Reflectie",
+   "regio": "latijns-amerika",
+   "herkomst": "Spaans-Amerika (koloniaal bestuur, 16e–19e eeuw)",
+   "coordinaten": null,
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "volhouden",
+    "zien"
+   ],
+   "niveaus": [
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45 min",
+    "min": 45,
+    "max": 45,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Aan het einde van hun ambtstermijn moesten bestuurders blijven tot een openbaar onderzoek was afgerond; iedereen kon klachten indienen. Deelnemers houden een eerlijke terugblik op een afgeronde rol of project, inclusief de stemmen van wie last had van hun besluiten.",
+    "en": "At the end of their term, officials had to remain until a public inquiry was completed; anyone could file complaints. Participants hold an honest review of a completed role or project, including the voices of those who were burdened by their decisions."
+   },
+   "let_op": "Bespreek dat het historische instrument ook misbruikt werd voor politieke afrekening.",
+   "bron_kort": "Herzog (2004); Mariluz Urquijo (1952)",
+   "bronnen_apa": [
+    "Herzog, T. (2004). Upholding justice: Society, state, and the penal system in Quito (1650–1750). University of Michigan Press.",
+    "Mariluz Urquijo, J. M. (1952). Ensayo sobre los juicios de residencia indianos. Escuela de Estudios Hispano-Americanos."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW127",
+   "titel": {
+    "nl": "Arpillera-verhaal: onrecht in textiel",
+    "en": "Arpillera story: injustice in textile"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "latijns-amerika",
+   "herkomst": "Chili (arpilleristas, vanaf 1974)",
+   "coordinaten": {
+    "lat": -33.45,
+    "lng": -70.67
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "voelen",
+    "zien"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "60–90 min",
+    "min": 60,
+    "max": 90,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–20",
+    "min": 4,
+    "max": 20
+   },
+   "beschrijving": {
+    "nl": "Vrouwen maakten met stoflapjes taferelen van verdwijningen, armoede en hoop, toen spreken gevaarlijk was. Deelnemers maken met papier of stof een beeld van een (fictief) onrecht in hun werkveld en vertellen het verhaal erbij.",
+    "en": "Women used scraps of fabric to make scenes of disappearances, poverty and hope at a time when speaking out was dangerous. Participants use paper or fabric to make an image of a (fictional) injustice in their field and tell the story that goes with it."
+   },
+   "let_op": "Alleen fictieve casussen; geen eigen trauma's laten verbeelden; doorverwijzen bij signalen.",
+   "bron_kort": "Agosín (2008)",
+   "bronnen_apa": [
+    "Agosín, M. (2008). Tapestries of hope, threads of love: The arpillera movement in Chile (2nd ed.). Rowman & Littlefield."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  },
+  {
+   "id": "MW128",
+   "titel": {
+    "nl": "Cordel-dilemma: een moraal op rijm",
+    "en": "Cordel dilemma: a moral in rhyme"
+   },
+   "categorie": "Verhaal en verbeelding",
+   "regio": "latijns-amerika",
+   "herkomst": "Brazilië (literatura de cordel, Noordoost-Brazilië)",
+   "coordinaten": {
+    "lat": -7.21,
+    "lng": -39.32
+   },
+   "ronde": 3,
+   "label": "A",
+   "fasen": [
+    "zien",
+    "wegen"
+   ],
+   "niveaus": [
+    "MBO",
+    "HBO",
+    "WO"
+   ],
+   "duur": {
+    "tekst": "45–60 min",
+    "min": 45,
+    "max": 60,
+    "type": "eenmalig"
+   },
+   "groep": {
+    "tekst": "4–30",
+    "min": 4,
+    "max": 30
+   },
+   "beschrijving": {
+    "nl": "Cordel-boekjes hangen aan een touw op de markt en vertellen op rijm over helden, schurken en onrecht. Deelnemers schrijven een kort rijmverhaal over een dilemma uit hun werk, met twee mogelijke slotstrofen, en laten de groep kiezen.",
+    "en": "Cordel booklets hang on a string at the market and tell rhyming stories about heroes, villains and injustice. Participants write a short rhyming story about a dilemma from their work, with two possible final stanzas, and let the group choose."
+   },
+   "let_op": "Rijm is middel, geen doel; MBO-variant met vrij vers.",
+   "bron_kort": "Slater (1982)",
+   "bronnen_apa": [
+    "Slater, C. (1982). Stories on a string: The Brazilian literatura de cordel. University of California Press."
+   ],
+   "licentie_werkblad": "CC BY-SA 4.0",
+   "naamsvermelding_bron": "",
+   "status_bron": "verzameld"
+  }
+ ]
+}

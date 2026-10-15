@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
@@ -19,7 +19,7 @@ import About from "./pages/About";
 
 import BiblioteekOverzicht from "./pages/BiblioteekOverzicht";
 import StapPagina from "./pages/StapPagina";
-import WerkbladenOverzicht from "./pages/WerkbladenOverzicht";
+const WerkbladenOverzicht = lazy(() => import("./pages/WerkbladenOverzicht.jsx"));
 
 import GespreksKaartenPagina from "./pages/GespreksKaartenPagina";
 
@@ -328,9 +328,27 @@ function AppRoutes() {
 
           <Route path="/library" element={<PageRoute><BiblioteekOverzicht /></PageRoute>} />
 
-          <Route path="/bibliotheek/werkbladen" element={<PageRoute><WerkbladenOverzicht /></PageRoute>} />
+          <Route
+            path="/bibliotheek/werkbladen"
+            element={
+              <PageRoute>
+                <Suspense fallback={null}>
+                  <WerkbladenOverzicht />
+                </Suspense>
+              </PageRoute>
+            }
+          />
 
-          <Route path="/library/worksheets" element={<PageRoute><WerkbladenOverzicht /></PageRoute>} />
+          <Route
+            path="/library/worksheets"
+            element={
+              <PageRoute>
+                <Suspense fallback={null}>
+                  <WerkbladenOverzicht />
+                </Suspense>
+              </PageRoute>
+            }
+          />
 
           <Route path="/bibliotheek/:stap" element={<PageRoute><StapPagina /></PageRoute>} />
 
