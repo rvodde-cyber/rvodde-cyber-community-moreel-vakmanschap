@@ -3,7 +3,6 @@ import { useTaal } from "../context/TaalContext";
 import { COMPLEXITY_KEYS } from "../data/gesprekskaarten/constants";
 import { FASE_KLEUREN, getFaseNaam } from "../data/werkbladen";
 import { getBibliotheekDataLang } from "../data/vertalingen";
-import { getRegioLijst } from "../data/werkvormen";
 import {
   EMPTY_KIEZER_FILTERS,
   FASE_SLUGS,
@@ -134,12 +133,12 @@ export default function WerkvormKiezerFilters({
   options,
   resultCount,
   totalCount,
+  regioLijst = [],
 }) {
   const { taal, t } = useTaal();
   const dataLang = getBibliotheekDataLang(taal);
   const ui = uiTekst[dataLang] ?? uiTekst.nl;
   const complexLabels = t.gesprekskaart?.complexiteitLabels ?? {};
-  const regioLijst = useMemo(() => getRegioLijst(), []);
 
   const hasActive =
     filters.fasen?.length ||

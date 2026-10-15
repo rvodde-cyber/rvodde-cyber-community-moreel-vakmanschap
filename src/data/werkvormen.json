@@ -1,5 +1,5 @@
 {
- "versie": "1.1",
+ "versie": "1.2",
  "datum": "2026-10-15",
  "aantal": 128,
  "toelichting": "Dataset voor werkvormenkiezer en wereldkaart op moreelvakmanschap.nl. Beheer: [werkvormen]. regio = slug uit regio_lijst (vaste NL/EN-namen). coordinaten = punt van de gemeenschap, plaats of instelling van herkomst, nooit van een persoon; null = brede traditie, toon op het regiopunt. 'algemeen' wordt niet op de kaart geplot. Status, context en complexiteit komen uit src/data/werkbladen.json.",
@@ -4090,7 +4090,7 @@
     "max": 30
    },
    "beschrijving": {
-    "nl": "In een allegorie klagen de dieren de mens aan voor de koning van de djinn: met welk recht heersen mensen over hen? Beide partijen pleiten. Werkvorm: rechtszaak-rollenspel over dierethiek, duurzaamheid of AI ('de zaak van X tegen de mens').",
+    "nl": "In een allegorie klagen de dieren de mens aan voor de koning van de djinn: met welk recht heersen mensen over hen? Beide partijen pleiten. Rechtszaak-rollenspel over dierethiek, duurzaamheid of AI ('de zaak van X tegen de mens').",
     "en": "In an allegory, the animals accuse humankind before the king of the jinn: by what right do humans rule over them? Both parties plead. Activity: courtroom role play on animal ethics, sustainability or AI ('the case of X versus humankind')."
    },
    "let_op": "—",
@@ -4237,7 +4237,7 @@
     "nl": "Mencius stelt dat iedereen die een kind bij een put ziet wankelen, onmiddellijk schrikt, niet uit berekening maar uit medeleven. Hij noemt vier morele kiemen: medeleven, schaamte, bescheidenheid en gevoel voor goed en fout. Deelnemers onderzoeken welke kiem in een situatie opspeelt en wat hem verstikt.",
     "en": "Mencius argues that anyone who sees a child tottering at the edge of a well is instantly alarmed, not out of calculation but out of compassion. He names four moral sprouts: compassion, shame, modesty and a sense of right and wrong. Participants explore which sprout is at work in a situation and what stifles it."
    },
-   "let_op": "Sterke werkvorm voor Voelen; geen schuldgevoel aanpraten wanneer iemand iets niet voelt.",
+   "let_op": "Sterk voor fase Voelen; geen schuldgevoel aanpraten wanneer iemand iets niet voelt.",
    "bron_kort": "Legge (1861)",
    "bronnen_apa": [
     "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 2. The works of Mencius. Trübner."
@@ -4888,7 +4888,7 @@
     "max": 30
    },
    "beschrijving": {
-    "nl": "Vóór een besluit worden betrokkenen één voor één gehoord, zoals een hovenier de wortels losmaakt voordat hij een boom verplant. De werkvorm onderzoekt wanneer dit zorgvuldig draagvlak is en wanneer het achterkamertjespolitiek wordt.",
+    "nl": "Vóór een besluit worden betrokkenen één voor één gehoord, zoals een hovenier de wortels losmaakt voordat hij een boom verplant. Hier wordt onderzocht wanneer dit zorgvuldig draagvlak is en wanneer het achterkamertjespolitiek wordt.",
     "en": "Before a decision, those involved are heard one by one, just as a gardener loosens the roots before transplanting a tree. The activity explores when this is careful consensus building and when it becomes backroom politics."
    },
    "let_op": "Niet als manipulatietechniek aanleren; nadruk op eerlijkheid en insluiting.",
@@ -4933,7 +4933,7 @@
     "max": 30
    },
    "beschrijving": {
-    "nl": "Een groep beraadslaagt tot er een besluit is dat iedereen kan dragen; stemmen is het laatste redmiddel. De werkvorm oefent geduldig beraad en onderzoekt ook de keerzijde: druk om in te stemmen.",
+    "nl": "Een groep beraadslaagt tot er een besluit is dat iedereen kan dragen; stemmen is het laatste redmiddel. Geduldig beraad oefenen en ook de keerzijde onderzoeken: druk om in te stemmen.",
     "en": "A group deliberates until there is a decision everyone can support; voting is the last resort. The activity practises patient deliberation and also explores the downside: pressure to agree."
    },
    "let_op": "Bespreek dat consensus minderheden kan smoren (Kawamura, 2011).",
@@ -5796,7 +5796,7 @@
     "max": 30
    },
    "beschrijving": {
-    "nl": "Leerlingen besturen in comités mee aan hun school. De werkvorm laat een groep een eigen raad inrichten met mandaat, en onderzoekt de vraag hoeveel zeggenschap echt is en hoeveel schijn.",
+    "nl": "Leerlingen besturen in comités mee aan hun school. Een groep richt een eigen raad in met mandaat en onderzoekt hoeveel zeggenschap echt is en hoeveel schijn.",
     "en": "Pupils help run their school through committees. The activity has a group set up its own council with a mandate and explores how much of the say is real and how much is for show."
    },
    "let_op": "Geen schijninspraak organiseren; docent bepaalt vooraf wat écht beslist mag worden.",

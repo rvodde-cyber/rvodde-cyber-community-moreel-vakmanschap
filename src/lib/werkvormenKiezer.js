@@ -46,6 +46,7 @@ const GROUP_BLOCKS = {
 };
 
 const WERKBLAD_CODE_RE = /^WB-MW(\d{2,3})-/;
+const STANDALONE_CODE_RE = /^WB-(EX|GK)\d{2}/;
 
 export function parseMwNumericId(id) {
   const m = /^MW(\d+)$/.exec(String(id ?? ""));
@@ -124,6 +125,63 @@ export function matchesGroupFilter(groep, selectedGroupKeys) {
   });
 }
 
+export function isStandaloneWerkbladCode(code) {
+  return Boolean(code && STANDALONE_CODE_RE.test(code));
+}
+
+export function getStandaloneWerkbladen(werkbladenRaw) {
+  return (werkbladenRaw ?? []).filter(
+    (wb) => wb.werkblad_code && isStandaloneWerkbladCode(wb.werkblad_code),
+  );
+}
+
+export function countKiezerTotal(werkvormenData, werkbladenRaw) {
+  const mwCount = werkvormenData?.aantal ?? werkvormenData?.werkvormen?.length ?? 0;
+  return mwCount + getStandaloneWerkbladen(werkbladenRaw).length;
+}
+
+function parseDuurFromWerkbladString(duurStr) {
+  if (!duurStr || typeof duurStr !== "string") return null;
+  const range = duurStr.match(/(\d+)\s*[-–]\s*(\d+)/);
+  if (range) {
+    return { min: Number(range[1]), max: Number(range[2]), type: "eenmalig" };
+  }
+  const single = duurStr.match(/(\d+)/);
+  if (single) {
+    const n = Number(single[1]);
+    return { min: n, max: n, type: "eenmalig" };
+  }
+  return null;
+}
+
+function parseGroepFromWerkbladString(groepStr) {
+  if (!groepStr || typeof groepStr !== "string") return null;
+  const range = groepStr.match(/(\d+)\s*[-–]\s*(\d+)/);
+  if (range) {
+    return { min: Number(range[1]), max: Number(range[2]) };
+  }
+  const single = groepStr.match(/(\d+)/);
+  if (single) {
+    const n = Number(single[1]);
+    return { min: n, max: n };
+  }
+  return null;
+}
+
+function parseNiveausFromOpleiding(opleidingsniveau) {
+  if (!opleidingsniveau || typeof opleidingsniveau !== "string") return [];
+  const parts = opleidingsniveau.split(",").map((s) => s.trim());
+  return parts.filter((p) => NIVEAU_FILTER_KEYS.includes(p));
+}
+
+export function kiezerSortKey(item) {
+  const mw = /^MW(\d+)$/.exec(item.id ?? "");
+  if (mw) return Number(mw[1]);
+  const mv = /^MV_(\d+)$/.exec(item.id ?? "");
+  if (mv) return 10_000 + Number(mv[1]);
+  return 20_000;
+}
+
 function matchesZoek(item, q) {
   if (!q) return true;
   const hay = [
@@ -147,19 +205,30 @@ export function filterWerkvormKiezerItems(items, filters) {
     if (statusFilter.length && !statusFilter.includes(item.status)) return false;
 
     if (filters.fasen?.length) {
+      if (!item.filterableFase) return false;
       const ok = filters.fasen.some((f) => item.fasen.includes(f));
       if (!ok) return false;
     }
 
-    if (!matchesTimeFilter(item.duur, filters.tijd)) return false;
-    if (!matchesGroupFilter(item.groep, filters.groep)) return false;
+    if (filters.tijd?.length) {
+      if (!item.filterableTijd) return false;
+      if (!matchesTimeFilter(item.duur, filters.tijd)) return false;
+    }
+
+    if (filters.groep?.length) {
+      if (!item.filterableGroep) return false;
+      if (!matchesGroupFilter(item.groep, filters.groep)) return false;
+    }
 
     if (filters.niveaus?.length) {
       const ok = filters.niveaus.some((n) => item.niveaus.includes(n));
       if (!ok) return false;
     }
 
-    if (filters.regio?.length && !filters.regio.includes(item.regio)) return false;
+    if (filters.regio?.length) {
+      if (!item.filterableRegio) return false;
+      if (!filters.regio.includes(item.regio)) return false;
+    }
 
     if (filters.context?.length) {
       if (item.status !== "beschikbaar") return false;
@@ -189,15 +258,15 @@ export function sortWerkvormKiezerItems(items, sortKey) {
     if (key === "titel") {
       const ta = (a.titelDisplay ?? "").localeCompare(b.titelDisplay ?? "", "nl", { sensitivity: "base" });
       if (ta !== 0) return ta;
-      return parseMwNumericId(a.id) - parseMwNumericId(b.id);
+      return kiezerSortKey(a) - kiezerSortKey(b);
     }
     if (key === "tijd") {
       const da = durationSortKey(a.duur);
       const db = durationSortKey(b.duur);
       if (da !== db) return da - db;
-      return parseMwNumericId(a.id) - parseMwNumericId(b.id);
+      return kiezerSortKey(a) - kiezerSortKey(b);
     }
-    return parseMwNumericId(a.id) - parseMwNumericId(b.id);
+    return kiezerSortKey(a) - kiezerSortKey(b);
   });
 
   return copy;
@@ -288,17 +357,80 @@ export function buildKiezerItem(werkvorm, werkbladenForMw, regioLijst, dataLang)
     naamsvermeldingBron: werkvorm.naamsvermelding_bron ?? "",
     linkedWerkbladen: linked,
     primaryWerkbladId: primaryWerkblad?.id ?? null,
+    werkbladLicentie: primaryWerkblad?.licentie ?? null,
+    werkbladNaamsvermelding: primaryWerkblad?.naamsvermelding ?? null,
+    filterableFase: true,
+    filterableTijd: true,
+    filterableGroep: true,
+    filterableRegio: true,
     contexten,
     complexiteiten,
+  };
+}
+
+export function buildStandaloneKiezerItem(werkblad, dataLang) {
+  const titelNl = werkblad.titel?.nl ?? "";
+  const titelEn = werkblad.titel?.en ?? "";
+  const titelDisplay = dataLang === "en" && titelEn.trim() ? titelEn : titelNl;
+  const beschrijvingNl = werkblad.omschrijving?.nl ?? "";
+  const beschrijvingEn = werkblad.omschrijving?.en?.trim()
+    ? werkblad.omschrijving.en
+    : beschrijvingNl;
+  const beschrijvingDisplay = dataLang === "en" ? beschrijvingEn : beschrijvingNl;
+  const duur = parseDuurFromWerkbladString(werkblad.duur);
+  const groep = parseGroepFromWerkbladString(werkblad.groep);
+  const niveaus = parseNiveausFromOpleiding(werkblad.opleidingsniveau);
+  const fasen = werkblad.fasen ?? [];
+
+  return {
+    id: werkblad.id,
+    kind: "standalone_werkblad",
+    status: "beschikbaar",
+    titelNl,
+    titelEn,
+    titelDisplay,
+    herkomst: werkblad.oorspronkelijke_werkvorm ?? "",
+    regio: null,
+    regioNaam: "",
+    fasen,
+    hoofdfase: fasen[0] ?? "wegen",
+    niveaus,
+    duur,
+    duurTekst: werkblad.duur ?? "",
+    groep,
+    groepTekst: werkblad.groep ?? "",
+    beschrijvingNl,
+    beschrijvingEn,
+    beschrijvingDisplay,
+    enBeschrijvingPlaceholder:
+      dataLang === "en" && !werkblad.omschrijving?.en?.trim(),
+    letOp: "",
+    bronnenApa: werkblad.bronnen_apa ?? [],
+    bronKort: "",
+    linkedWerkbladen: [werkblad],
+    primaryWerkbladId: werkblad.id,
+    werkbladLicentie: werkblad.licentie ?? null,
+    werkbladNaamsvermelding: werkblad.naamsvermelding ?? null,
+    naamsvermeldingBron: werkblad.naamsvermelding_bron ?? "",
+    filterableFase: fasen.length > 0,
+    filterableTijd: Boolean(duur),
+    filterableGroep: Boolean(groep),
+    filterableRegio: false,
+    contexten: werkblad.vakgebied ? [werkblad.vakgebied] : [],
+    complexiteiten: werkblad.complexiteit ? [werkblad.complexiteit] : [],
   };
 }
 
 export function buildAllKiezerItems(werkvormenData, werkbladenRaw, dataLang) {
   const regioLijst = werkvormenData.regio_lijst ?? [];
   const byMw = buildWerkbladIndexByMw(werkbladenRaw);
-  return (werkvormenData.werkvormen ?? []).map((wv) =>
+  const mwItems = (werkvormenData.werkvormen ?? []).map((wv) =>
     buildKiezerItem(wv, byMw.get(normalizeMwId(wv.id)) ?? [], regioLijst, dataLang),
   );
+  const standalone = getStandaloneWerkbladen(werkbladenRaw).map((wb) =>
+    buildStandaloneKiezerItem(wb, dataLang),
+  );
+  return [...mwItems, ...standalone];
 }
 
 export function collectKiezerFilterOptions(items) {

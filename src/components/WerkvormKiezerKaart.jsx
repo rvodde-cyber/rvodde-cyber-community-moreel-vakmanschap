@@ -1,7 +1,6 @@
 import { useTaal } from "../context/TaalContext";
 import LicentieRegel from "./LicentieRegel";
 import { FASE_KLEUREN, getFaseNaam, hoofdfaseKleur } from "../data/werkbladen";
-import { STANDAARD_NAAMSVERMELDING } from "../data/licentie";
 import { getBibliotheekDataLang, usesEnglishRoutes } from "../data/vertalingen";
 
 const uiTekst = {
@@ -13,6 +12,8 @@ const uiTekst = {
     aandachtspunt: "Aandachtspunt",
     bronnen: "Bronnen",
     openWerkblad: "Naar werkblad",
+    licentieVolgt: "Licentie volgt met het werkblad",
+    licentieBron: "Zie de licentie van de oorspronkelijke bron",
     driedeling:
       "Indeling volgens de driedeling micro – meso – macro (werkdefinitie Lectoraat Ethisch Werken, Fontys; geïnspireerd op het werk van Meijer, 2023).",
   },
@@ -24,6 +25,8 @@ const uiTekst = {
     aandachtspunt: "Please note",
     bronnen: "Sources",
     openWerkblad: "Go to worksheet",
+    licentieVolgt: "Licence will be published with the worksheet",
+    licentieBron: "See the licence of the original source",
     driedeling:
       "Classified according to the micro – meso – macro distinction (working definition, Lectoraat Ethisch Werken / Professorship Ethical Work, Fontys; inspired by the work of Meijer, 2023).",
   },
@@ -143,6 +146,16 @@ export default function WerkvormKiezerKaart({
           </div>
         )}
 
+        {isBeschikbaar && item.werkbladLicentie && item.werkbladNaamsvermelding && (
+          <div className="mt-1">
+            <LicentieRegel
+              naamsvermelding={item.werkbladNaamsvermelding}
+              dataLang={dataLang}
+              licentie={item.werkbladLicentie}
+            />
+          </div>
+        )}
+
         {isBeschikbaar && item.primaryWerkbladId && (
           <span className="mt-auto text-sm font-semibold text-[#5B2D8E]">{ui.openWerkblad}</span>
         )}
@@ -174,14 +187,18 @@ export default function WerkvormKiezerKaart({
             </div>
           )}
 
-          {item.licentieWerkblad && (
-            <LicentieRegel
-              naamsvermelding={STANDAARD_NAAMSVERMELDING}
-              dataLang={dataLang}
-              licentie={item.licentieWerkblad}
-            />
+          {item.status === "in_voorbereiding" && (
+            <p className="mt-2 text-xs italic text-attributie">{ui.licentieVolgt}</p>
           )}
-          {item.naamsvermeldingBron && (
+
+          {item.status === "externe_methode" && (
+            <div className="mt-2 text-xs italic text-attributie">
+              <p>{ui.licentieBron}</p>
+              {item.bronKort && <p className="mt-1">{item.bronKort}</p>}
+            </div>
+          )}
+
+          {item.status === "in_voorbereiding" && item.naamsvermeldingBron && (
             <p className="mt-2 text-xs italic text-attributie">{item.naamsvermeldingBron}</p>
           )}
         </div>

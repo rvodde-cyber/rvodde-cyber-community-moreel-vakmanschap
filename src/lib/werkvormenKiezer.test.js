@@ -94,6 +94,10 @@ describe("filterWerkvormKiezerItems", () => {
       beschrijvingNl: "test",
       beschrijvingEn: "",
       titelDisplay: "Alpha",
+      filterableFase: true,
+      filterableTijd: true,
+      filterableGroep: true,
+      filterableRegio: true,
     },
     {
       id: "MW02",
@@ -111,8 +115,39 @@ describe("filterWerkvormKiezerItems", () => {
       beschrijvingNl: "",
       beschrijvingEn: "",
       titelDisplay: "Beta",
+      filterableFase: true,
+      filterableTijd: true,
+      filterableGroep: true,
+      filterableRegio: true,
     },
   ];
+
+  it("hides items without regio when regio filter active", () => {
+    const standalone = {
+      id: "MV_60",
+      status: "beschikbaar",
+      fasen: ["wegen"],
+      duur: { min: 60, max: 60, type: "eenmalig" },
+      groep: { min: 4, max: 5 },
+      niveaus: ["HBO"],
+      regio: null,
+      filterableFase: true,
+      filterableTijd: true,
+      filterableGroep: true,
+      filterableRegio: false,
+      contexten: ["HRM"],
+      complexiteiten: ["meso"],
+      titelNl: "Extra",
+      titelEn: "",
+      herkomst: "",
+      beschrijvingNl: "",
+      beschrijvingEn: "",
+      titelDisplay: "Extra",
+    };
+    const all = [...items, standalone];
+    const f = { ...EMPTY_KIEZER_FILTERS, regio: ["europa"] };
+    assert.equal(filterWerkvormKiezerItems(all, f).length, 1);
+  });
 
   it("filters by status and fase", () => {
     const f = { ...EMPTY_KIEZER_FILTERS, fasen: ["zien"] };
