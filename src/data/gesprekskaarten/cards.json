@@ -1313,376 +1313,6 @@
     "moeilijkheid": 2
   },
   {
-    "id": "GK_OW_01",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Relatie tussen docent en leerling",
-      "verhaal": "Meneer Van Dijk hoort het via via in de personeelskamer, half fluisterend tussen twee collega's: mevrouw Smit zou een relatie hebben met een van haar examenleerlingen. Als hij er later voorzichtig naar informeert, ontwijkt ze zijn blik en verandert ze van onderwerp.\n\nHij kent de schoolregels, weet dat dit ethisch onverantwoord is gezien het machtsverschil tussen docent en leerling. Mevrouw Smit is al vijftien jaar zijn collega, iemand die hem ooit wegwijs maakte toen hij zelf begon. Een melding zou het einde van haar carrière kunnen betekenen.\n\nTegelijkertijd denkt hij aan de leerling, wiens eindexamen dit jaar nota bene door mevrouw Smit wordt begeleid. Niemand anders lijkt iets te vermoeden. Meldt meneer Van Dijk dit bij de schoolleiding, spreekt hij mevrouw Smit er eerst zelf op aan, of wacht hij tot hij meer zekerheid heeft?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The unspoken rule",
-      "verhaal": "Mr Van Dijk sets down his coffee in the staff room when colleague Tessa takes him aside. \"Do you know that Smit and that boy from 5V have something going on?\" she whispers. Van Dijk feels the ground drop away beneath him. Ms Smit, Dutch teacher, respected, always the first to call others out on boundary-crossing behaviour. Now it turns out she herself has been in a relationship with a seventeen-year-old student for months. It violates every school rule, every power imbalance he has always tried to guard against. Does he report it to the principal, knowing this could cost her her job and put the student in the spotlight? Or does he wait, hoping she will end it herself? Van Dijk places his hand on the handle of the principal's door. Does he open it?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_01.jpg",
-      "fireflyPrompt": "A male teacher standing in an empty school hallway, glancing thoughtfully toward a closed staff room door, quiet concerned expression, late afternoon light through windows.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 135,
-      "woordenEn": 136,
-      "bron": "v3-docx: ON1 Relatie tussen docent en leerling.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_02",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Pestgedrag dat niet stopt",
-      "verhaal": "Mevrouw Peters heeft het pesten van Ahmed nu drie keer klassikaal besproken, drie keer beloofden de leerlingen beterschap, en drie keer begon het een week later weer — subtieler dit keer, net buiten haar gezichtsveld. Ahmed zegt zelf steeds minder, meldt zich vaker ziek, en zijn cijfers zakken zichtbaar.\n\nZe heeft de mentor al ingelicht, die het \"in de gaten houdt.\" Een groepsgesprek alleen lijkt averechts te werken; sommige leerlingen leken het bijna als bevestiging te zien dat het hen raakte. Ahmed's ouders hebben nog niets gemeld, wat haar doet twijfelen of ze wel weten hoe erg het is.\n\nVandaag ziet ze weer een groepje giechelen zodra Ahmed voorbijloopt naar zijn plek. Schakelt mevrouw Peters de zorgcoördinator en ouders formeel in, probeert ze een individueel gesprek met de kopstukken van de groep, of zoekt ze eerst Ahmed zelf op om te horen wat hij wil?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The empty chair at the back",
-      "verhaal": "Ms Peters sees Ahmed leave the classroom last on Friday afternoon, head bowed, backpack zipped tight against his chest. For the third time this month she finds a crumpled note on his desk with a slur on it. She has already addressed the class twice, held a mentor meeting, called the parents. Nothing changes. Ahmed hardly speaks in class anymore, his grades are falling, and the class acts as if nothing is wrong. Today she saw two boys grin when he picked up his bag. Does she escalate to the care coordinator and the perpetrators' parents, with the risk that the bullying goes underground and gets worse? Or does she keep trying to resolve it herself while Ahmed continues to slip away? She looks at the empty chair at the back. How much longer can she wait?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_02.jpg",
-      "fireflyPrompt": "A teacher standing at the front of a classroom, watching a quiet student walk to his seat while other students glance and whisper, concerned expression, natural classroom light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 145,
-      "woordenEn": 137,
-      "bron": "v3-docx: ON3 Pestgedrag in de klas dat niet stopt.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_03",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Het lijstje in de kantine",
-      "verhaal": "Meneer Janssen zit naast mevrouw Vermeulen in de nakijkvergadering en ziet toevallig haar cijferlijst over haar schouder. Drie leerlingen die hij zelf ook lesgeeft, met werk dat hij als middelmatig zou beoordelen, staan bij haar op een 8 of hoger — allemaal leerlingen die ze buiten de les om vaak prijst.\n\nAndere leerlingen, met naar zijn inschatting sterker werk, krijgen bij haar een 6. Hij heeft dit patroon nu bij drie opeenvolgende toetsperiodes gezien. Enkele leerlingen hebben er al mopperend over gesproken in de wandelgangen, zonder dat iemand het formeel heeft aangekaart.\n\nMevrouw Vermeulen is een gewaardeerde collega die al twintig jaar op school werkt en volgend jaar met pensioen gaat. Meneer Janssen sluit zijn laptop dicht na de vergadering. Bespreekt hij dit direct met haar, meldt hij het bij de teamleider, of laat hij het gaan omdat ze toch bijna stopt?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The list in the staff room",
-      "verhaal": "Mr Janssen sits in the staff room on Tuesday afternoon with class 4B's grade list open on his laptop. He compares colleague Vermeulen's marking with the rubrics: three of her favourite students consistently receive a point higher than their work justifies, while other, equally strong students stay at the average. A student commented recently: \"It's not fair, is it, sir?\" He knows: a report to the exam board could cost Vermeulen her assessment authority and seriously poison the team atmosphere. Staying silent means the inequality continues and students' trust in fair assessment erodes further. He closes his laptop and walks towards the corridor where Vermeulen's classroom is. Does he knock, or walk on?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_03.jpg",
-      "fireflyPrompt": "A teacher sitting at a meeting table glancing sideways at a colleague's grading spreadsheet on a laptop screen, thoughtful concerned expression, office lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 142,
-      "woordenEn": 113,
-      "bron": "v3-docx: ON4 Docent geeft onterecht hoge cijfers aan favoriete leerlingen.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_04",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Discriminerende opmerkingen van een collega",
-      "verhaal": "Mevrouw Van der Meer hoort het door de dunne wand tussen de lokalen: meneer Jansen maakt weer een 'grapje' over de achtergrond van een leerling, gevolgd door onzeker gelach uit de klas. Het is niet de eerste keer deze maand.\n\nTwee leerlingen hebben er na de les al met haar over gesproken, onzeker of ze het serieus moeten nemen of gewoon moeten lachen zoals de rest. Meneer Jansen is een ervaren collega met veel aanzien, en niemand heeft hem tot nu toe aangesproken.\n\nEen melding kan grote gevolgen hebben voor de sfeer in het team, waarin ze nog jaren moet samenwerken. Vandaag hoort ze weer zo'n opmerking. Spreekt ze meneer Jansen er zelf op aan, meldt ze het bij de schoolleiding, of praat ze eerst met de leerlingen?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "What stays behind",
-      "verhaal": "Ms Van der Meer stands outside room 1.14 on Wednesday morning when she hears Mr Jansen's voice through the gap in the door: a joke about a student in a headscarf, followed by laughter from part of the class. It is not the first time; students have whispered about it in the corridor for weeks, and two parents have expressed their concerns through the mentor. Jansen is a valued colleague, fifteen years in the job, and nobody has ever confronted him directly. She knows an official report to school leadership will trigger an investigation that puts the team on edge and could cost Jansen his position. A private conversation feels safer, but will that actually change anything? She knocks at his classroom door. What does she say when he opens it?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_04.jpg",
-      "fireflyPrompt": "A teacher standing in a school hallway near a classroom door, listening with a concerned expression, students visible through a window in the door behind her.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 128,
-      "woordenEn": 131,
-      "bron": "v3-docx: ON5 Discriminerende opmerkingen door een collega-docent.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_05",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Een leerling met thuisproblemen",
-      "verhaal": "Mevrouw Visser merkt het al weken: Kimberly die steeds vaker afwezig is, die zich terugtrekt in de pauzes, die haar blik afwendt zodra iemand doorvraagt. Vandaag komt ze weer een uur te laat binnen, met een vage smoes over de bus.\n\nToen mevrouw Visser laatst voorzichtig vroeg of alles goed ging thuis, kreeg ze alleen een kort \"het gaat wel\" en een blik die duidelijk maakte dat het onderwerp gesloten was. Ze vermoedt dat er meer speelt, maar heeft geen concreet bewijs — alleen een groeiend onbehagen.\n\nDe zorgcoördinator inschakelen zonder Kimberly's medeweten voelt als een inbreuk op haar vertrouwen, dat toch al broos is. Niets doen voelt als wegkijken van iets dat mogelijk ernstig is. Kimberly loopt net haar lokaal weer binnen. Vraagt mevrouw Visser vandaag opnieuw door, schakelt ze de zorgcoördinator in, of wacht ze tot Kimberly zelf iets zegt?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "The absent seat",
-      "verhaal": "Ms Visser records Kimberly's fourth absence this month in the attendance system on Thursday morning. She calls home; nobody answers. When Kimberly does appear the next day, pale-skinned with a broken gaze, Visser asks gently how she is doing. \"Just tired,\" Kimberly says, and she looks at the floor. Visser sees more and more signs — a neglected backpack, text messages she quickly dismisses — pointing to something at home that is not right. Kimberly has clearly asked her to \"just leave it.\" Does Visser report her suspicion to the care coordinator, with the risk of breaking Kimberly's trust? Or does she wait, hoping Kimberly will talk on her own initiative while the signs worsen? Visser puts the phone back on the desk. Does she call?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_05.jpg",
-      "fireflyPrompt": "A teacher standing near a classroom doorway watching a student walk in quietly and avoid eye contact, concerned thoughtful expression, soft morning light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 142,
-      "woordenEn": 126,
-      "bron": "v3-docx: ON6 Leerling met thuisproblemen.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_06",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Tien minuten voor het assessment",
-      "verhaal": "De studente staat huilend in de deuropening van het examenlokaal, tien minuten voor haar assessment moet beginnen. Ze heeft net gehoord dat een goede studievriendin is overleden, maar is toch gekomen — een herkansing zou pas over een half jaar mogelijk zijn, en die vertraging kan ze zich niet veroorloven.\n\nDe examinator kent het protocol: een assessment afleggen in deze emotionele toestand is eigenlijk niet verantwoord, de kans op een eerlijke beoordeling van haar kunnen is klein. Maar de standaardprocedure voor uitstel is star en traag, en biedt geen ruimte voor deze specifieke situatie.\n\nAndere studenten in de wachtruimte kijken toe, wetend dat een uitzondering voor haar ook vragen kan oproepen over hun eigen strikte deadlines. De klok tikt door richting het geplande tijdstip. Laat de examinator het assessment doorgaan zoals gepland, zoekt hij ter plekke naar een informele oplossing, of doorbreekt hij de procedure met een formeel uitstel?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "Ten minutes before the assessment",
-      "verhaal": "At 08:50 Lisa stands crying in the doorway of the exam room, ten minutes before her resit. Last night she heard that her study friend Fem has died. She could have stayed home, but wanted to come at all costs — a missed attempt means waiting half a year for a new one, and she is already behind in her studies. The examiner sees a student who can barely finish a sentence, let alone an assessment form. The protocol is clear: whoever does not start must wait until the next round. But what is a \"fair\" result worth, administered to someone collapsing with grief? Allowing deferral outside the regulations can create precedents for other students in distress. The examiner looks at the clock. Does she let the assessment begin, or send Lisa home?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_06.jpg",
-      "fireflyPrompt": "A university examiner standing in a doorway comforting a visibly upset student outside an exam room, other students waiting in the hallway, empathetic concerned expression.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 149,
-      "woordenEn": 133,
-      "bron": "v3-docx: ON7 Procedure of Praktische Wijsheid.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_07",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Beoordelen is mensenwerk",
-      "verhaal": "Het beoordelingssysteem geeft zijn definitieve cijfer: een 5,3, een duidelijke onvoldoende. De docent kijkt nog eens naar het scherm en dan naar het dossier van de student ernaast — twee eerdere pogingen, allebei net onvoldoende, maar met een aantoonbare vooruitgang in aanwezigheid, inzet en studiegedrag die het systeem niet meeweegt.\n\nEen derde onvoldoende betekent voor deze student een half jaar studievertraging, met alle financiële en persoonlijke gevolgen van dien. De docent weet dat een handmatige aanpassing van 0,2 punt binnen zijn discretionaire ruimte valt, al wordt dat door collega's zelden gedaan.\n\nHet systeem staat er koud en onbewogen bij, cijfers zijn cijfers. Maar de docent heeft deze student twee jaar zien worstelen en groeien. Rondt hij het cijfer handmatig naar boven af, houdt hij vast aan wat het systeem aangeeft, of bespreekt hij de situatie eerst met de examencommissie?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "5.3 on the screen",
-      "verhaal": "Mr De Groot stares at the assessment system on Tuesday afternoon: 5.3, fail. It is student Youssef's third attempt for this subject. In the margin of his notes De Groot sees the progress the system does not capture — Youssef has not missed a single class this semester, participated actively, his presentation was noticeably better than last time. Yet the rubric strictly adds up the sub-scores, and half a point below means officially a fail and another half year of delay. De Groot can adjust the grade manually — the software allows it — but that means deviating from the system meant precisely to prevent arbitrariness. His finger hovers over the \"save\" button. Does he override the grade, or let the system decide?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_07.jpg",
-      "fireflyPrompt": "A teacher sitting at a desk looking at a grading screen showing a numeric score, thoughtful conflicted expression, a student file open beside the keyboard, warm desk lamp light.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 139,
-      "woordenEn": 123,
-      "bron": "v3-docx: ON8 Beoordelen is mensenwerk.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_08",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Het rooster van meneer De Vries",
-      "verhaal": "Mevrouw Jansen hoort de klachten inmiddels van meerdere kanten: leerlingen van meneer De Vries weten niet meer wat er van hen verwacht wordt. Hij komt steeds vaker te laat en staat zichtbaar onvoorbereid voor de klas. De cijfers van zijn groepen dalen, de frustratie stijgt.\n\nZe weet via een terloopse opmerking dat hij thuis een lastige scheiding doormaakt. Dat verklaart misschien zijn afwezigheid van geest, maar de leerlingen ervaren de gevolgen, wat de reden ook is.\n\nEen melding bij de teamleider voelt als het aanvallen van een collega die het al moeilijk heeft. Niets zeggen voelt als de leerlingen in de steek laten. Vandaag hoort ze weer een groepje mopperen op de gang. Spreekt mevrouw Jansen hem eerst zelf aan, meldt ze het bij de teamleider, of wacht ze af of het vanzelf beter wordt?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "Mr De Vries's timetable",
-      "verhaal": "Ms Jansen hears it again in the corridors: students complaining that Mr De Vries's lessons are \"a chaos\" — no clear lesson plan, material he improvises on the spot, a class that no longer knows what is expected of them. She knows why: De Vries is going through a difficult divorce and barely has time to prepare. Last week she found him alone in the staff room early in the morning, red-eyed, with a half-empty cup of coffee. She wants to be there for him as a colleague, but student complaints are piling up and the team leader has asked about it twice already. Does she protect De Vries by staying silent about his situation, or go to the team leader to ask for help, even though it is not hers to share?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_08.jpg",
-      "fireflyPrompt": "A teacher standing in a school corridor overhearing students complaining nearby, thoughtful concerned expression, lockers and classroom doors in soft background blur.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 135,
-      "woordenEn": 133,
-      "bron": "v3-docx: ON9 Collegiaal.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_09",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Buiten de kalibratie",
-      "verhaal": "Tijdens de kalibratiesessie valt het weer op: terwijl de rest van het team nauwgezet de rubrics volgt, becijfert deze collega naar eigen inzicht — globaal, subjectief, duidelijk afwijkend van de afgesproken criteria. Bij navraag wuift hij het weg: \"Ik zie het wel, ik hoef geen vinkjeslijst om te weten of iemand het snapt.\"\n\nDe protocollen en kalibratiesessies bestaan juist om studenten een eerlijke, vergelijkbare beoordeling te garanderen, ongeacht wie er nakijkt. Een paar studenten hebben al gemerkt dat hun cijfer bij hem opvallend anders uitvalt dan bij collega's die hetzelfde werk beoordelen.\n\nHij is een ervaren en graag geziene docent, met een informele autoriteit binnen het team die niemand graag op de proef stelt. Spreekt de waarnemer hem er zelf op aan, meldt ze het bij het management of de curriculumcommissie, of laat ze het gaan uit angst voor gedoe?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "Outside calibration",
-      "verhaal": "In the staff room, Friday after school, Marieke sees colleague Ruud for the umpteenth time marking a pile of assignments without the rubric at hand. \"I just feel what a good piece of work is,\" he says when she asks. She knows calibration sessions have been held, protocols agreed — precisely to prevent arbitrariness between teachers — and that students in Ruud's classes consistently receive different grades than in colleagues' classes for comparable work. A student recently complained to the curriculum committee, without naming names. Does Marieke confront Ruud directly, with the risk of an awkward atmosphere in a small team? Or does she report it to the curriculum committee, knowing this could have far-reaching consequences for Ruud? She takes her coat from the rack. Does she wait until Monday, or speak to him now?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_09.jpg",
-      "fireflyPrompt": "A teacher observing a colleague grading papers by hand at a nearby desk during a calibration session, thoughtful skeptical expression, meeting room lighting.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 140,
-      "woordenEn": 135,
-      "bron": "v3-docx: ON10 Eigenwijsheid.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
-    "id": "GK_OW_10",
-    "set": "onderwijs-v3",
-    "stap": 1,
-    "categorie": "onderwijs",
-    "complexiteit": "micro",
-    "taalniveau": "B2",
-    "status": "getest",
-    "nl": {
-      "titel": "Plagiaat onder ouderlijke druk",
-      "verhaal": "Meneer Bakker herkent de zinnen meteen — woordelijk overgenomen uit het werk van Lisa's klasgenoot, tot en met een kleine typefout die ook in het origineel staat. Lisa zit twee rijen verderop, gespannen naar haar tafel starend terwijl de andere leerlingen hun spullen inpakken.\n\nHij weet van eerdere gesprekken dat Lisa's ouders elke onvoldoende bestraffen met huisarrest en ingetrokken privileges. Vorige week zag hij nog hoe ze in tranen het lokaal verliet na een tegenvallend proefwerk. Het protocol is duidelijk: plagiaat melden, een officiële waarschuwing, een aantekening in haar dossier.\n\nMeneer Bakker weet ook dat een aantekening voor Lisa's ouders reden kan zijn om nog harder in te grijpen thuis. Hij pakt zijn pen op om het formulier in te vullen. Volgt hij het protocol zoals bij elke andere leerling, of zoekt hij eerst het gesprek met Lisa over wat er thuis speelt?",
-      "vraag1": "Wat zou jij doen en waarom?",
-      "vraag2": "Welke waarden zijn hier in het spel?"
-    },
-    "en": {
-      "titel": "Two essays side by side",
-      "verhaal": "Mr Bakker sits after school on Thursday with two essays side by side: Lisa's and her classmate Fenna's. In the third paragraph the exact same sentence appears, typo included. He knows that copying according to the exam regulations means a fail and a note in the file. But he also knows Lisa's situation: last week she told him, in tears, that her parents \"simply won't accept\" a fail and that there has been conflict at home for months over her grades. If he follows protocol, he risks the pressure at home escalating further. If he lets it go, he undermines the rule meant to prevent unfairness — and what does he say to Fenna, who did her own work? Bakker lays the two essays side by side on his desk. Does he call the parents, or Lisa first?",
-      "vraag1": "What would you do, and why?",
-      "vraag2": "What values are at stake here?"
-    },
-    "assets": {
-      "afbeelding": "/images/gesprekskaarten/GK_OW_10.jpg",
-      "fireflyPrompt": "A teacher sitting at his desk holding two student papers side by side, comparing them with a concerned expression, a student visible sitting tensely at her desk in the background.. Photorealistic, editorial photography style, natural lighting with slight drama, shallow depth of field, real people in authentic settings, no text, no graphics, no illustrations, cinematic composition, suitable for A5 print, portrait orientation 3:4, bottom 20% slightly dark or uncluttered for text overlay.",
-      "pdfNl": null,
-      "pdfEn": null
-    },
-    "meta": {
-      "woordenNl": 143,
-      "woordenEn": 138,
-      "bron": "v3-docx: ON2 Plagiaat door een leerling onder druk van ouders.docx",
-      "categorieEn": "EDUCATION",
-      "tekstVersie": "3.0",
-      "afbeeldingStatus": "oud",
-      "sectorColor": "#1A9080"
-    },
-    "moeilijkheid": 1
-  },
-  {
     "id": "hrm-ps12",
     "set": "praktijkschok-hrm",
     "stap": 3,
@@ -7006,5 +6636,545 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 3
+  },
+  {
+    "id": "ow-01",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Relatie tussen docent en leerling",
+      "verhaal": "Meneer Van Dijk hoort het via via in de personeelskamer, half fluisterend tussen twee collega’s: mevrouw Smit zou een relatie hebben met een van haar examenleerlingen. Als hij er later voorzichtig naar informeert, ontwijkt ze zijn blik en verandert ze van onderwerp.\n\nHij kent de schoolregels en het machtsverschil tussen docent en leerling. Mevrouw Smit is al vijftien jaar zijn collega, iemand die hem ooit wegwijs maakte. Een melding zou het einde van haar carrière kunnen betekenen.\n\nTegelijkertijd denkt hij aan de leerling, wiens eindexamen dit jaar door mevrouw Smit wordt begeleid. Niemand anders lijkt iets te vermoeden. Meldt meneer Van Dijk het bij de schoolleiding, spreekt hij mevrouw Smit eerst zelf aan, of wacht hij op meer zekerheid?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het melden van een collega raakt de institutionele verantwoordelijkheid van de school en het machtsverschil tussen docent en leerling."
+    },
+    "en": {
+      "titel": "Relationship Between Teacher and Student",
+      "verhaal": "Mr Van Dijk hears it through the grapevine in the staff room, half whispered between two colleagues: Ms Smit is said to be in a relationship with one of her final-year students. When he carefully asks her about it later, she avoids his eyes and changes the subject.\n\nHe knows the school rules and the power imbalance between teacher and student. Ms Smit has been his colleague for fifteen years, the person who once showed him the ropes. A report could mean the end of her career.\n\nAt the same time he thinks of the student, whose final exam is being supervised by Ms Smit this year. Nobody else seems to suspect anything. Does Mr Van Dijk report it to the school management, speak to Ms Smit first himself, or wait for more certainty?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Reporting a colleague touches the school's institutional responsibility and the power imbalance between teacher and student."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-01.jpg",
+      "altNl": "Onderwijssituatie: Relatie tussen docent en leerling",
+      "altEn": "Education scene: Relationship Between Teacher and Student",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 119,
+      "woordenEn": 134,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON1",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-02",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Plagiaat onder ouderlijke druk",
+      "verhaal": "Meneer Bakker herkent de zinnen meteen — woordelijk overgenomen uit het werk van Lisa’s klasgenoot, tot en met een typefout die ook in het origineel staat. Lisa zit twee rijen verderop, gespannen naar haar tafel starend terwijl de andere leerlingen hun spullen inpakken.\n\nHij weet dat Lisa’s ouders elke onvoldoende bestraffen met huisarrest. Vorige week verliet ze nog in tranen het lokaal. Het protocol is duidelijk: plagiaat melden, een officiële waarschuwing, een aantekening in haar dossier.\n\nMeneer Bakker weet ook dat die aantekening thuis voor nog meer druk kan zorgen. Hij pakt zijn pen om het formulier in te vullen. Volgt hij het protocol zoals bij elke andere leerling, of zoekt hij eerst het gesprek met Lisa over wat er thuis speelt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Meneer Bakker beslist zelf of hij het protocol volgt of eerst het gesprek zoekt over de thuissituatie van de leerling."
+    },
+    "en": {
+      "titel": "Plagiarism Under Parental Pressure",
+      "verhaal": "Mr Bakker recognises the sentences immediately — copied word for word from a classmate's work, down to a typo that is also in the original. Lisa sits two rows away, staring tensely at her desk while the other students pack up.\n\nHe knows Lisa's parents punish every failing grade with house arrest. Last week she left the classroom in tears. The protocol is clear: report the plagiarism, an official warning, a note in her file.\n\nMr Bakker also knows that this note may cause even more pressure at home. He picks up his pen to fill in the form. Does he follow the protocol as with any other student, or does he first talk to Lisa about what is going on at home?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Mr Bakker decides for himself whether to follow the protocol or first seek a conversation about the student's home situation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-02.jpg",
+      "altNl": "Onderwijssituatie: Plagiaat onder ouderlijke druk",
+      "altEn": "Education scene: Plagiarism Under Parental Pressure",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 122,
+      "woordenEn": 123,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON2",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "ow-03",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Pestgedrag dat niet stopt",
+      "verhaal": "Mevrouw Peters bespreekt het pesten van Ahmed voor de derde keer klassikaal. Drie keer beloofde de klas beterschap, drie keer begon het een week later weer, subtieler nu, net buiten haar gezichtsveld. Ahmed zegt steeds minder, meldt zich vaker ziek en zijn cijfers zakken.\n\nDe mentor houdt het ‘in de gaten’. Een groepsgesprek lijkt averechts te werken: sommige leerlingen zien het bijna als bevestiging dat het hen raakt. Ahmeds ouders hebben niets gemeld, misschien weten ze niet hoe erg het is.\n\nVandaag giechelt weer een groepje zodra Ahmed voorbijloopt. Schakelt mevrouw Peters de zorgcoördinator en ouders formeel in, spreekt ze de kopstukken van de groep apart aan, of zoekt ze eerst Ahmed zelf op?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het pestgedrag speelt zich af in de groepsdynamiek van de klas en vraagt om een aanpak met de school, de zorgcoördinator en de ouders."
+    },
+    "en": {
+      "titel": "Bullying That Won't Stop",
+      "verhaal": "Ms Peters discusses the bullying of Ahmed with the class for the third time. Three times the class promised to do better, three times it started again a week later, more subtly now, just outside her field of vision. Ahmed says less and less, reports sick more often and his grades are dropping.\n\nThe mentor is 'keeping an eye on it.' A group conversation seems to backfire: some students almost take it as confirmation that it affects him. Ahmed's parents have said nothing; perhaps they don't know how bad it is.\n\nToday a small group giggles again as soon as Ahmed walks past. Does Ms Peters formally involve the care coordinator and parents, take the ringleaders aside, or first seek out Ahmed himself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The bullying takes place in the group dynamics of the class and calls for an approach involving the school, the care coordinator and the parents."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-03.jpg",
+      "altNl": "Onderwijssituatie: Pestgedrag dat niet stopt",
+      "altEn": "Education scene: Bullying That Won't Stop",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 123,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON3",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-04",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Onterecht hoge cijfers",
+      "verhaal": "Meneer Janssen zit naast mevrouw Vermeulen in de nakijkvergadering en ziet toevallig haar cijferlijst. Drie leerlingen die hij zelf ook lesgeeft, met werk dat hij middelmatig vindt, staan bij haar op een 8 of hoger — allemaal leerlingen die ze buiten de les vaak prijst.\n\nAndere leerlingen, met naar zijn inschatting sterker werk, krijgen bij haar een 6. Hij ziet dit patroon nu voor de derde toetsperiode op rij. Leerlingen mopperen erover in de wandelgangen, maar niemand heeft het formeel aangekaart.\n\nMevrouw Vermeulen is een gewaardeerde collega die volgend jaar met pensioen gaat. Meneer Janssen sluit zijn laptop. Bespreekt hij dit met haar, meldt hij het bij de teamleider, of laat hij het gaan omdat ze toch bijna stopt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De bevooroordeelde beoordeling raakt de integriteit van het beoordelingssysteem en het vertrouwen van meerdere leerlingen, binnen de collegiale verhoudingen."
+    },
+    "en": {
+      "titel": "Undeserved High Grades",
+      "verhaal": "Mr Janssen sits next to Ms Vermeulen in the marking meeting and happens to see her grade sheet. Three students he teaches himself, with work he considers mediocre, have an 8 or higher with her — all students she often praises outside class.\n\nOther students, whose work he judges stronger, get a 6 from her. He now sees this pattern for the third assessment period in a row. Students grumble about it in the corridors, but nobody has formally raised it.\n\nMs Vermeulen is a valued colleague who retires next year. Mr Janssen closes his laptop. Does he discuss it with her, report it to the team leader, or let it go because she is almost leaving anyway?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Biased grading touches the integrity of the assessment system and the trust of several students, within collegial relationships."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-04.jpg",
+      "altNl": "Onderwijssituatie: Onterecht hoge cijfers",
+      "altEn": "Education scene: Undeserved High Grades",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 119,
+      "woordenEn": 118,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON4",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-05",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Discriminerende opmerkingen van een collega",
+      "verhaal": "Mevrouw Van der Meer hoort het door de dunne wand tussen de lokalen: meneer Jansen maakt weer een ‘grapje’ over de achtergrond van een van zijn leerlingen, gevolgd door onzeker gelach uit de klas. Het is niet de eerste keer deze maand.\n\nTwee leerlingen uit die klas hebben er na de les met haar over gesproken, onzeker of ze het serieus moeten nemen of gewoon moeten lachen. Meneer Jansen is een ervaren collega met veel aanzien in het team, en niemand heeft hem tot nu toe aangesproken.\n\nEen melding kan grote gevolgen hebben voor de sfeer in het team, waarin ze nog jaren moet werken. Spreekt ze meneer Jansen er zelf op aan, meldt ze het bij de schoolleiding, of praat ze eerst met de betrokken leerlingen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De opmerkingen raken de veiligheid van de klas en de verantwoordelijkheid van de school tegenover collega’s en leerlingen."
+    },
+    "en": {
+      "titel": "Discriminatory Remarks by a Colleague",
+      "verhaal": "Ms Van der Meer hears it through the thin wall between the classrooms: Mr Jansen makes another 'joke' about the background of one of his students, followed by uncertain laughter from the class. It is not the first time this month.\n\nTwo students from that class spoke to her about it after the lesson, unsure whether to take it seriously or just laugh along. Mr Jansen is an experienced colleague with great standing in the team, and nobody has spoken to him so far.\n\nA report could have major consequences for the atmosphere in the team, where she will have to work for years to come. Does she speak to Mr Jansen herself, report it to the school management, or first talk to the students involved?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The remarks affect the safety of the class and the school's responsibility towards colleagues and students."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-05.jpg",
+      "altNl": "Onderwijssituatie: Discriminerende opmerkingen van een collega",
+      "altEn": "Education scene: Discriminatory Remarks by a Colleague",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 127,
+      "woordenEn": 126,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON5",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-06",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Een leerling met thuisproblemen",
+      "verhaal": "Mevrouw Visser merkt het al weken: Kimberly is vaker afwezig, trekt zich terug in de pauzes en wendt haar blik af zodra iemand doorvraagt. Vandaag komt ze weer een uur te laat binnen, met een vage smoes over de bus.\n\nToen mevrouw Visser voorzichtig vroeg of alles goed ging thuis, kreeg ze alleen een kort ‘het gaat wel’. Ze vermoedt dat er meer speelt, maar heeft geen bewijs, alleen een groeiend onbehagen.\n\nDe zorgcoördinator inschakelen zonder Kimberly’s medeweten voelt als een inbreuk op haar broze vertrouwen. Niets doen voelt als wegkijken. Vraagt mevrouw Visser vandaag opnieuw door, schakelt ze de zorgcoördinator in, of wacht ze tot Kimberly zelf iets zegt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Mevrouw Visser beslist zelf of zij doorvraagt, de zorgcoördinator inschakelt of het vertrouwen van de leerling respecteert."
+    },
+    "en": {
+      "titel": "A Student With Problems at Home",
+      "verhaal": "Ms Visser has noticed it for weeks: Kimberly is absent more often, withdraws during breaks and looks away as soon as someone asks further. Today she again arrives an hour late, with a vague excuse about the bus.\n\nWhen Ms Visser carefully asked whether everything was alright at home, she only got a short 'I'm fine'. She suspects there is more going on, but has no proof, only a growing unease.\n\nInvolving the care coordinator without Kimberly's knowledge feels like a breach of her fragile trust. Doing nothing feels like looking away. Does Ms Visser ask again today, involve the care coordinator, or wait until Kimberly says something herself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Ms Visser decides for herself whether to keep asking, involve the care coordinator or respect the student's trust."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-06.jpg",
+      "altNl": "Onderwijssituatie: Een leerling met thuisproblemen",
+      "altEn": "Education scene: A Student With Problems at Home",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 109,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON6",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "ow-07",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Procedure of praktische wijsheid",
+      "verhaal": "De studente staat huilend in de deuropening van het examenlokaal, tien minuten voor haar assessment. Ze heeft net gehoord dat een goede studievriendin is overleden, maar is toch gekomen: een herkansing is pas over een half jaar mogelijk, en die vertraging kan ze zich niet veroorloven.\n\nDe examinator kent het protocol: een assessment afleggen in deze toestand is eigenlijk niet verantwoord. Maar de standaardprocedure voor uitstel is star en traag, en biedt geen ruimte voor deze situatie.\n\nAndere studenten in de wachtruimte kijken toe; een uitzondering voor haar roept ook vragen op over hun eigen deadlines. Laat de examinator het assessment doorgaan, zoekt hij ter plekke een informele oplossing, of regelt hij formeel uitstel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De starre procedure van de instelling staat tegenover de acute situatie van de studente, met gevolgen voor de andere studenten."
+    },
+    "en": {
+      "titel": "Procedure or Practical Wisdom",
+      "verhaal": "The student stands crying in the doorway of the exam room, ten minutes before her assessment. She has just heard that a good fellow student has died, but came anyway: a resit is only possible in six months, and she cannot afford that delay.\n\nThe examiner knows the protocol: taking an assessment in this state is really not responsible. But the standard procedure for postponement is rigid and slow, and offers no room for this situation.\n\nOther students in the waiting area are watching; an exception for her also raises questions about their own deadlines. Does the examiner let the assessment go ahead, look for an informal solution on the spot, or arrange formal postponement?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The institution's rigid procedure is set against the student's acute situation, with consequences for the other students."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-07.jpg",
+      "altNl": "Onderwijssituatie: Procedure of praktische wijsheid",
+      "altEn": "Education scene: Procedure or Practical Wisdom",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 115,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON7",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-08",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Beoordelen is mensenwerk",
+      "verhaal": "Het systeem geeft het definitieve cijfer: een 5,3, een duidelijke onvoldoende. De docent kijkt naar het scherm en dan naar het dossier van de student: twee eerdere pogingen, allebei net onvoldoende, maar met aantoonbare vooruitgang in aanwezigheid en inzet die het systeem niet meeweegt.\n\nEen derde onvoldoende betekent een half jaar studievertraging, met alle financiële en persoonlijke gevolgen. Een handmatige aanpassing van 0,2 punt valt binnen zijn ruimte, al doen collega’s dat zelden.\n\nCijfers zijn cijfers, maar hij zag deze student twee jaar worstelen en groeien. Rondt hij het cijfer handmatig af, houdt hij vast aan wat het systeem aangeeft, of legt hij het eerst voor aan de examencommissie?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "De docent beslist zelf binnen zijn discretionaire ruimte tussen het systeemcijfer en de erkenning van de vooruitgang van de student."
+    },
+    "en": {
+      "titel": "Grading Is Human Work",
+      "verhaal": "The system gives the final grade: a 5.3, a clear fail. The teacher looks at the screen and then at the student's file: two earlier attempts, both just failing, but with demonstrable progress in attendance and effort that the system does not weigh.\n\nA third fail means a six-month study delay, with all the financial and personal consequences. A manual adjustment of 0.2 points is within his discretion, although colleagues rarely do it.\n\nGrades are grades, but he has seen this student struggle and grow for two years. Does he round the grade up manually, stick to what the system says, or first put it to the examination board?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "The teacher decides for himself, within his discretionary space, between the system grade and recognising the student's progress."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-08.jpg",
+      "altNl": "Onderwijssituatie: Beoordelen is mensenwerk",
+      "altEn": "Education scene: Grading Is Human Work",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 109,
+      "woordenEn": 109,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON8",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "ow-09",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Collegiaal",
+      "verhaal": "Mevrouw Jansen hoort de klachten inmiddels van meerdere kanten: leerlingen weten niet meer wat er van hen verwacht wordt in de lessen van meneer De Vries, die steeds vaker te laat komt en onvoorbereid voor de klas staat. De cijfers dalen, de frustratie stijgt.\n\nZe weet via een terloopse opmerking dat hij thuis een lastige scheiding doormaakt. Dat verklaart misschien veel, maar de leerlingen ondervinden de gevolgen, wat de reden ook is.\n\nEen melding bij de teamleider voelt als een collega in de rug aanvallen die het al moeilijk heeft. Niets zeggen voelt als de leerlingen in de steek laten. Spreekt mevrouw Jansen hem eerst zelf aan, meldt ze het, of wacht ze af?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De aanpak van een disfunctionerende collega raakt zowel het onderwijs aan de leerlingen als de collegiale verhoudingen in het team."
+    },
+    "en": {
+      "titel": "Collegial",
+      "verhaal": "Ms Jansen now hears the complaints from several sides: students no longer know what is expected of them in the lessons of Mr De Vries, who increasingly arrives late and stands unprepared in front of the class. Grades are dropping, frustration is rising.\n\nShe knows from a passing remark that he is going through a difficult divorce at home. That may explain a lot, but the students bear the consequences, whatever the reason.\n\nReporting to the team leader feels like attacking a colleague who is already struggling. Saying nothing feels like abandoning the students. Does Ms Jansen speak to him herself first, report it, or wait and see?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Dealing with a struggling colleague touches both the teaching of the students and the collegial relationships in the team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-09.jpg",
+      "altNl": "Onderwijssituatie: Collegiaal",
+      "altEn": "Education scene: Collegial",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 108,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON9",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-10",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Eigenwijsheid",
+      "verhaal": "Tijdens de kalibratiesessie valt het weer op: terwijl het team nauwgezet de rubrics volgt, becijfert deze collega naar eigen inzicht — globaal, subjectief, afwijkend van de afgesproken criteria. Bij navraag wuift hij het weg: ‘Ik zie het wel, ik hoef geen vinkjeslijst om te weten of iemand het snapt.’\n\nDe protocollen bestaan juist om studenten een eerlijke, vergelijkbare beoordeling te garanderen, ongeacht wie nakijkt. Een paar studenten hebben al gemerkt dat hun cijfer bij hem opvallend anders uitvalt dan bij collega’s.\n\nHij is een ervaren en graag geziene docent, met een informele autoriteit die niemand graag op de proef stelt. Spreekt de waarnemer hem er zelf op aan, meldt ze het bij het management of de curriculumcommissie, of laat ze het gaan uit angst voor gedoe?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het afwijken van de beoordelingsprotocollen raakt de eerlijkheid van de beoordeling voor alle studenten en de informele autoriteit binnen het team."
+    },
+    "en": {
+      "titel": "Stubborn Judgment",
+      "verhaal": "During the calibration session it stands out again: while the team carefully follows the rubrics, this colleague grades by his own judgment — global, subjective, deviating from the agreed criteria. When asked, he waves it away: 'I can see it, I don't need a checklist to know whether someone gets it.'\n\nThe protocols exist precisely to guarantee students a fair, comparable assessment, regardless of who marks. A few students have already noticed that their grade with him turns out noticeably different from with colleagues.\n\nHe is an experienced and well-liked teacher, with an informal authority that nobody likes to challenge. Does the observer speak to him herself, report it to management or the curriculum committee, or let it go for fear of trouble?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Deviating from the assessment protocols touches the fairness of grading for all students and the informal authority within the team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-10.jpg",
+      "altNl": "Onderwijssituatie: Eigenwijsheid",
+      "altEn": "Education scene: Stubborn Judgment",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 126,
+      "woordenEn": 123,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON10",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "ow-11",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Liever geen defensie",
+      "verhaal": "Als decaan op een scholengemeenschap krijgt Mohamed een verzoek van de ouders van Daan, vijftien. Ze willen dat hij hun zoon begeleidt naar een ‘passende’ studiekeuze, zolang het maar niet in de richting van defensie gaat.\n\nDaan wil juist dat. Al zijn testresultaten wijzen erop: verantwoordelijkheid, techniek, samenwerken. In het gesprek zegt hij zacht: ‘Mijn ouders snappen het niet. Kunt u het niet voor me opnemen?’ Zijn moeder belde de dag erna al om te vragen hoe het gesprek was gegaan.\n\nMohamed wil de ouders niet passeren; zij zijn verantwoordelijk voor hun kind. Maar het is Daans toekomst. Kiest hij voor de wens van de ouders, of voor de stem van de leerling?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Mohamed beslist zelf hoe hij zich opstelt tussen de ouders en de leerling."
+    },
+    "en": {
+      "titel": "Rather Not Defence",
+      "verhaal": "As dean at a secondary school, Mohamed receives a request from the parents of Daan, fifteen. They want him to guide their son towards a 'suitable' study choice, as long as it is not in the direction of defence.\n\nDaan wants exactly that. All his test results point to it: responsibility, technology, teamwork. In the conversation he says softly: 'My parents don't understand. Can't you stand up for me?' His mother called the next day to ask how the conversation had gone.\n\nMohamed does not want to bypass the parents; they are responsible for their child. But it is Daan's future. Does he choose the parents' wish, or the student's voice?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Mohamed decides for himself how to position himself between the parents and the student."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-11.jpg",
+      "altNl": "Onderwijssituatie: Liever geen defensie",
+      "altEn": "Education scene: Rather Not Defence",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 111,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON11",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "ow-12",
+    "set": "onderwijs-v3",
+    "stap": 1,
+    "categorie": "onderwijs",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Alleen de universiteit",
+      "verhaal": "Floor is beginnend decaan. De afdelingsleider van het vwo is duidelijk. ‘Onze leerlingen gaan naar de universiteit. Op de ouderavond geven we geen informatie over het hbo. Dat past niet bij onze visie.’\n\nFloor kent de leerlingen. Ze denkt aan Mees, die dol is op toegepast werk en al twee keer is vastgelopen op theorie. En aan Sarah, die hardop twijfelt en zich schaamt dat ze ‘maar’ hbo overweegt.\n\nZe kan de lijn van de school volgen en haar baan veilig stellen. Of ze geeft eerlijke informatie aan wie erom vraagt, en zet haar afdelingsleider tegen zich op. Waar ligt de loyaliteit van een decaan: bij de visie van de school of bij de leerling?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Loyaliteit aan de schoolvisie en de afdelingsleider botst met eerlijk en passend advies aan de leerling."
+    },
+    "en": {
+      "titel": "Only the University",
+      "verhaal": "Floor is a new dean. The head of the pre-university department is clear. 'Our students go to university. At parents' evening we give no information about universities of applied sciences. That does not fit our vision.'\n\nFloor knows the students. She thinks of Mees, who loves applied work and has already got stuck twice on theory. And of Sarah, who doubts out loud and is ashamed that she is 'only' considering applied sciences.\n\nShe can follow the school's line and secure her job. Or she gives honest information to anyone who asks, and turns her department head against her. Where does a dean's loyalty lie: with the school's vision or with the student?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Loyalty to the school's vision and the department head clashes with honest, fitting advice to the student."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/ow-12.jpg",
+      "altNl": "Onderwijssituatie: Alleen de universiteit",
+      "altEn": "Education scene: Only the University",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 113,
+      "bron": "Onderwijs — v3 website (12 kaarten)",
+      "kaartNummer": "ON12",
+      "sectorColor": "#1A9080",
+      "categorieEn": "EDUCATION",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
   }
 ]

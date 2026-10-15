@@ -1,6 +1,6 @@
 /**
- * Import Burgerschap of Bestuurskunde v3-pakket + optionele opruiming oude kaarten.
- * Usage: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde
+ * Import v3-pakket (Burgerschap, Bestuurskunde, Onderwijs) + optionele opruiming oude kaarten.
+ * Usage: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs [--skip-cleanup] [--cleanup-only]
  */
 import fs from "fs";
 import path from "path";
@@ -33,6 +33,18 @@ const PACK_CONFIG = {
     bron: "Bestuurskunde — v3 website (15 kaarten)",
     cleanupIds: () => false,
   },
+  onderwijs: {
+    packDir: "Cursor_Onderwijs",
+    jsonFile: "cards_ow.json",
+    categorie: "onderwijs",
+    set: "onderwijs-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "EDUCATION",
+    metaPath: path.join(root, "src/data/gesprekskaarten/onderwijs-meta.json"),
+    bron: "Onderwijs — v3 website (12 kaarten)",
+    cleanupIds: (id) => /^GK_OW_\d{2}$/.test(id),
+  },
 };
 
 function splitReflection(text) {
@@ -46,11 +58,21 @@ function splitReflection(text) {
 
 function altFromImagePath(imageRel) {
   const base = path.basename(imageRel, path.extname(imageRel));
-  const slug = base.replace(/^(bg|bk)-\d+-/i, "").replace(/^(bg|bk)-\d+$/i, "scene").replace(/-/g, " ");
+  const slug = base
+    .replace(/^(bg|bk|ow)-\d+-/i, "")
+    .replace(/^(bg|bk|ow)-\d+$/i, "scene")
+    .replace(/-/g, " ");
   const label = slug === "scene" ? base.replace(/-/g, " ") : slug;
   return {
     nl: `Anonieme situatie: ${label}`,
     en: `Anonymous scene: ${label}`,
+  };
+}
+
+function altFromTitle(entry) {
+  return {
+    nl: `Onderwijssituatie: ${entry.title.nl}`,
+    en: `Education scene: ${entry.title.en}`,
   };
 }
 
@@ -88,16 +110,17 @@ function toCommunityCard(entry, config) {
   }
   optimizeImage(resolvedSrc, destFile);
 
-  const alt = altFromImagePath(entry.image);
+  const alt =
+    config.categorie === "onderwijs" ? altFromTitle(entry) : altFromImagePath(entry.image);
 
   return normalizeCard({
     id: entry.id,
     set: config.set,
-    stap: 3,
+    stap: config.stap ?? 3,
     categorie: config.categorie,
     complexiteit: entry.complexity.level,
     taalniveau: "B2",
-    status: "aanbevolen",
+    status: config.status ?? "aanbevolen",
     nl: {
       titel: entry.title.nl,
       verhaal: verhaalNl,
@@ -128,7 +151,7 @@ function toCommunityCard(entry, config) {
       bron: config.bron,
       kaartNummer: entry.number,
       sectorColor: entry.sector.sector_color,
-      categorieEn: entry.sector.en,
+      categorieEn: config.categorieEn ?? entry.sector.en,
       tekstVersie: "3.0",
       afbeeldingStatus: "v3",
       project: "Lectoraat Ethisch Werken",
@@ -151,11 +174,35 @@ function removeOrphanImages(removedCards, remainingCards) {
   }
 }
 
+function runCleanup(cards, config) {
+  const removed = [];
+  if (!config.cleanupIds) return { cards, removed };
+  const keep = [];
+  for (const card of cards) {
+    if (config.cleanupIds(card.id)) {
+      removed.push(card);
+    } else {
+      keep.push(card);
+    }
+  }
+  removeOrphanImages(removed, keep);
+  console.log(`Opruiming: ${removed.length} oude kaarten verwijderd`);
+  for (const r of removed) {
+    console.log(`  - ${r.id}: ${r.nl?.titel}`);
+  }
+  return { cards: keep, removed };
+}
+
 function main() {
-  const sector = process.argv[2];
+  const args = process.argv.slice(2);
+  const skipCleanup = args.includes("--skip-cleanup");
+  const cleanupOnly = args.includes("--cleanup-only");
+  const sector = args.find((a) => !a.startsWith("--"));
   const config = PACK_CONFIG[sector];
   if (!config) {
-    console.error("Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde");
+    console.error(
+      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs [--skip-cleanup] [--cleanup-only]"
+    );
     process.exit(1);
   }
 
@@ -167,43 +214,40 @@ function main() {
 
   const pack = JSON.parse(fs.readFileSync(sourceJson, "utf8"));
   let cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
-  const existingIds = new Set(cards.map((c) => c.id));
 
-  for (const entry of pack.cards) {
-    if (existingIds.has(entry.id)) {
-      console.error(`Id bestaat al: ${entry.id}`);
-      process.exit(1);
-    }
-  }
+  let addedCount = 0;
+  if (cleanupOnly) {
+    const result = runCleanup(cards, config);
+    cards = result.cards;
+  } else {
+    const existingIds = new Set(cards.map((c) => c.id));
 
-  const newCards = pack.cards.map((e) => toCommunityCard(e, config));
-  cards = [...cards, ...newCards];
-
-  const removed = [];
-  if (config.cleanupIds) {
-    const keep = [];
-    for (const card of cards) {
-      if (config.cleanupIds(card.id)) {
-        removed.push(card);
-      } else {
-        keep.push(card);
+    for (const entry of pack.cards) {
+      if (existingIds.has(entry.id)) {
+        console.error(`Id bestaat al: ${entry.id}`);
+        process.exit(1);
       }
     }
-    cards = keep;
-    removeOrphanImages(removed, cards);
-    console.log(`Opruiming: ${removed.length} oude kaarten verwijderd`);
-    for (const r of removed) {
-      console.log(`  - ${r.id}: ${r.nl?.titel}`);
+
+    const newCards = pack.cards.map((e) => toCommunityCard(e, config));
+    addedCount = newCards.length;
+    cards = [...cards, ...newCards];
+
+    if (!skipCleanup && config.cleanupIds) {
+      const result = runCleanup(cards, config);
+      cards = result.cards;
     }
   }
 
   fs.writeFileSync(cardsPath, JSON.stringify(cards, null, 2) + "\n", "utf8");
 
-  const meta = {
-    complexityNote: pack.meta.complexity_note,
-    setDescription: pack.meta.set_description,
-  };
-  fs.writeFileSync(config.metaPath, JSON.stringify(meta, null, 2) + "\n", "utf8");
+  if (!cleanupOnly) {
+    const meta = {
+      complexityNote: pack.meta.complexity_note,
+      setDescription: pack.meta.set_description,
+    };
+    fs.writeFileSync(config.metaPath, JSON.stringify(meta, null, 2) + "\n", "utf8");
+  }
 
   const spread = cards
     .filter((c) => c.categorie === config.categorie)
@@ -212,7 +256,9 @@ function main() {
       return acc;
     }, {});
 
-  console.log(`Sector ${sector}: +${newCards.length} kaarten`);
+  if (!cleanupOnly) {
+    console.log(`Sector ${sector}: +${addedCount} kaarten`);
+  }
   console.log(`Totaal cards.json: ${cards.length}`);
   console.log(`${config.categorie} spreiding:`, spread);
 }
