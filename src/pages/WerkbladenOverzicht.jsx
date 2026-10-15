@@ -1,26 +1,34 @@
-import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import WerkbladKaart from "../components/WerkbladKaart.jsx";
-import WerkbladFilters, {
-  EMPTY_WERKBLAD_FILTERS,
-  filterWerkbladen,
-  collectFilterOptions,
-} from "../components/WerkbladFilters.jsx";
+import WerkvormKiezerFilters from "../components/WerkvormKiezerFilters.jsx";
+import WerkvormKiezerKaart, { werkbladHashHref } from "../components/WerkvormKiezerKaart.jsx";
 import { getWerkbladen } from "../data/werkbladen.js";
 import { getBibliotheekDataLang, usesEnglishRoutes } from "../data/vertalingen.js";
+import { getKiezerItems, getWerkvormenCount } from "../data/werkvormen.js";
+import {
+  collectKiezerFilterOptions,
+  filterWerkvormKiezerItems,
+  sortWerkvormKiezerItems,
+} from "../lib/werkvormenKiezer.js";
+import { filtersFromSearchParams, filtersToSearchParams } from "../lib/werkvormenKiezerUrl.js";
 
 const uiTekst = {
   nl: {
     terug: "← Terug naar bibliotheek",
     titel: "Alle werkbladen",
-    subtitel: "Student- en docentenversies, per modelstap en thema doorzoekbaar.",
+    subtitel:
+      "Zoek uit 128 morele werkbladen uit de hele wereld — filter op fase, tijd, groep, niveau, regio en status.",
+    werkbladSectie: "Gepubliceerde werkbladen op deze site",
   },
   en: {
     terug: "← Back to library",
     titel: "All worksheets",
-    subtitel: "Student and teacher versions, searchable by model step and theme.",
+    subtitel:
+      "Search 128 moral worksheets from around the world — filter by phase, duration, group, level, region and status.",
+    werkbladSectie: "Published worksheets on this site",
   },
 };
 
@@ -39,12 +47,59 @@ export default function WerkbladenOverzicht() {
   const ui = uiTekst[dataLang] ?? uiTekst.nl;
   const enRoutes = usesEnglishRoutes(taal);
   const terugRoute = enRoutes ? "/library" : "/bibliotheek";
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const allItems = useMemo(() => getWerkbladen(dataLang), [dataLang]);
-  const options = useMemo(() => collectFilterOptions(allItems), [allItems]);
-  const [filters, setFilters] = useState(EMPTY_WERKBLAD_FILTERS);
+  const allKiezerItems = useMemo(() => getKiezerItems(dataLang), [dataLang]);
+  const totalCount = getWerkvormenCount() || allKiezerItems.length;
+  const regioSlugs = useMemo(
+    () => [...new Set(allKiezerItems.map((i) => i.regio).filter(Boolean))],
+    [allKiezerItems],
+  );
+  const options = useMemo(() => collectKiezerFilterOptions(allKiezerItems), [allKiezerItems]);
 
-  const filtered = useMemo(() => filterWerkbladen(allItems, filters), [allItems, filters]);
+  const filters = useMemo(
+    () => filtersFromSearchParams(searchParams, regioSlugs),
+    [searchParams, regioSlugs],
+  );
+
+  const setFilters = useCallback(
+    (next) => {
+      const params = filtersToSearchParams(next, regioSlugs);
+      setSearchParams(params, { replace: true });
+    },
+    [regioSlugs, setSearchParams],
+  );
+
+  const filtered = useMemo(() => {
+    const list = filterWerkvormKiezerItems(allKiezerItems, filters);
+    return sortWerkvormKiezerItems(list, filters.sort);
+  }, [allKiezerItems, filters]);
+
+  const [expandedId, setExpandedId] = useState(null);
+
+  const werkbladenPublished = useMemo(() => getWerkbladen(dataLang), [dataLang]);
+
+  const openWerkblad = useCallback(
+    (werkbladId) => {
+      navigate(werkbladHashHref(werkbladId, taal));
+      requestAnimationFrame(() => {
+        const el = document.getElementById(werkbladId);
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+        el?.focus?.({ preventScroll: true });
+      });
+    },
+    [navigate, taal],
+  );
+
+  useEffect(() => {
+    const hash = window.location.hash?.replace("#", "");
+    if (hash) {
+      requestAnimationFrame(() => {
+        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, [werkbladenPublished.length]);
 
   return (
     <main
@@ -89,21 +144,20 @@ export default function WerkbladenOverzicht() {
             fontFamily: "DM Sans, sans-serif",
             fontSize: "1rem",
             color: "var(--tekst-secundair)",
-            maxWidth: "640px",
+            maxWidth: "720px",
           }}
         >
           {ui.subtitel}
         </motion.p>
       </section>
 
-      <section style={{ padding: "1rem 1.5rem 4rem", maxWidth: "1100px", margin: "0 auto" }}>
-        <WerkbladFilters
+      <section style={{ padding: "1rem 1.5rem 2rem", maxWidth: "1100px", margin: "0 auto" }}>
+        <WerkvormKiezerFilters
           filters={filters}
           onChange={setFilters}
           options={options}
           resultCount={filtered.length}
-          totalCount={allItems.length}
-          showFaseFilter
+          totalCount={totalCount}
         />
 
         <div
@@ -115,6 +169,49 @@ export default function WerkbladenOverzicht() {
           className="werkbladen-grid"
         >
           {filtered.map((item, i) => (
+            <motion.div
+              key={item.id}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={i}
+            >
+              <WerkvormKiezerKaart
+                item={item}
+                expanded={expandedId === item.id}
+                onToggleExpand={(id) => setExpandedId((cur) => (cur === id ? null : id))}
+                onOpenWerkblad={openWerkblad}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        style={{ padding: "2rem 1.5rem 4rem", maxWidth: "1100px", margin: "0 auto" }}
+        aria-labelledby="werkbladen-gepubliceerd"
+      >
+        <h2
+          id="werkbladen-gepubliceerd"
+          style={{
+            fontFamily: "Cormorant Garamond, serif",
+            fontSize: "1.5rem",
+            marginBottom: "1.25rem",
+            color: "var(--tekst-primair)",
+          }}
+        >
+          {ui.werkbladSectie}
+        </h2>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr",
+            gap: "1.25rem",
+          }}
+          className="werkbladen-grid"
+        >
+          {werkbladenPublished.map((item, i) => (
             <motion.div
               key={item.id}
               variants={fadeUp}

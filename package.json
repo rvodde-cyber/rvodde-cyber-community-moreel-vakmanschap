@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/validate-werkbladen.mjs && node scripts/generate-gesprekskaarten-catalog.mjs && node scripts/sync-workshop-hub.mjs && vite build && npm run build:wisselwerking && npm run build:frisse-organisatie",
+    "build": "node scripts/validate-werkbladen.mjs && node scripts/validate-werkvormen.mjs && node scripts/generate-gesprekskaarten-catalog.mjs && node scripts/sync-workshop-hub.mjs && vite build && npm run build:wisselwerking && npm run build:frisse-organisatie",
+    "test": "node --test src/lib/**/*.test.js",
     "workshop:sync": "node scripts/sync-workshop-hub.mjs",
     "build:wisselwerking": "cd teamkompas && npm install && npx cross-env VITE_BASE_PATH=/wisselwerking/ npm run build && npx shx rm -rf ../dist/wisselwerking && npx shx cp -r dist ../dist/wisselwerking",
     "build:frisse-organisatie": "cd frisse-organisatie && npm install && npx cross-env VITE_BASE_PATH=/frisse-organisatie/ npm run build && npx shx rm -rf ../dist/frisse-organisatie && npx shx cp -r dist ../dist/frisse-organisatie",

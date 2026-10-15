@@ -12,6 +12,13 @@ import { getBibliotheekDataLang } from "../data/vertalingen";
 import { useTaal } from "../context/TaalContext";
 import WerkbladZieOok from "./WerkbladZieOok";
 
+const driedelingVoet = {
+  nl:
+    "Indeling volgens de driedeling micro – meso – macro (werkdefinitie Lectoraat Ethisch Werken, Fontys; geïnspireerd op het werk van Meijer, 2023).",
+  en:
+    "Classified according to the micro – meso – macro distinction (working definition, Lectoraat Ethisch Werken / Professorship Ethical Work, Fontys; inspired by the work of Meijer, 2023).",
+};
+
 const uiTekst = {
   nl: {
     studentNl: "Studentenversie",
@@ -132,6 +139,7 @@ export default function WerkbladKaart({ item }) {
   return (
     <article
       id={item.id}
+      tabIndex={-1}
       style={{
         scrollMarginTop: "6rem",
         backgroundColor: "var(--surface, #fdfcfa)",
@@ -249,18 +257,33 @@ export default function WerkbladKaart({ item }) {
             </span>
           ))}
           {item.complexiteit && (
-            <span
-              style={{
-                fontSize: "0.7rem",
-                fontFamily: "DM Sans, sans-serif",
-                padding: "0.2rem 0.6rem",
-                borderRadius: "99px",
-                border: "1px solid var(--complexity-color, #993556)",
-                color: "var(--complexity-color, #993556)",
-              }}
-            >
-              {complexLabels[item.complexiteit] ?? item.complexiteit}
-            </span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+              <span
+                style={{
+                  fontSize: "0.7rem",
+                  fontFamily: "DM Sans, sans-serif",
+                  padding: "0.2rem 0.6rem",
+                  borderRadius: "99px",
+                  border: "1px solid var(--complexity-color, #993556)",
+                  color: "var(--complexity-color, #993556)",
+                  width: "fit-content",
+                }}
+              >
+                {complexLabels[item.complexiteit] ?? item.complexiteit}
+              </span>
+              <span
+                style={{
+                  fontSize: "0.65rem",
+                  fontFamily: "DM Sans, sans-serif",
+                  fontStyle: "italic",
+                  color: "#5F5E5A",
+                  maxWidth: "28rem",
+                  lineHeight: 1.4,
+                }}
+              >
+                {driedelingVoet[dataLang] ?? driedelingVoet.nl}
+              </span>
+            </div>
           )}
           <span
             style={{
