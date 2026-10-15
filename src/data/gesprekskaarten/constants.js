@@ -154,6 +154,8 @@ export const CATEGORY_FROM_LEGACY = {
   "HBO-docenten": "hoger-onderwijs",
   "Lecturers in universities of applied sciences": "hoger-onderwijs",
   "HBO LECTURERS": "hoger-onderwijs",
+  Management: "management",
+  MANAGEMENT: "management",
   "ETZ Passende Zorg": "passende-zorg",
   "ETZ Appropriate Care": "passende-zorg",
   HRM: "hrm",

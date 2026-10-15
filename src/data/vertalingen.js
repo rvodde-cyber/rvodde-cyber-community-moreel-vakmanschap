@@ -436,11 +436,15 @@ export const vertalingen = {
           onderwijs: 'Education',
           'hoger-onderwijs': 'Higher Education',
           'hbo-docenten': 'Higher Education',
+<<<<<<< HEAD
           neurodivergentie: 'Neurodivergence',
           'mensen-met-een-beperking': 'People with disabilities',
           'toegepaste-psychologie': 'Applied psychology',
           management: 'Management',
           'gender-en-seksualiteit': 'Gender and sexuality',
+=======
+          management: 'Management',
+>>>>>>> 0c24e08 (feat(gesprekskaarten): Management v3 — 20 kaarten (mg-01–20))
           overheid: 'Public sector',
           hrm: 'HR',
           burgerschap: 'Citizenship',
