@@ -51,9 +51,9 @@ function sourceToCommunityCard(entry) {
 
   return {
     id: entry.id,
-    set: "etz-passende-zorg",
+    set: "passende-zorg",
     stap: 4,
-    categorie: "etz-passende-zorg",
+    categorie: "passende-zorg",
     complexiteit: null,
     taalniveau: "B2",
     status: "aanbevolen",

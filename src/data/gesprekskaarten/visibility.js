@@ -33,6 +33,8 @@ export function resolvePublicCardById(id, cardList) {
   return { kind: "not_found" };
 }
 
+import { CARD_SET_ALIASES } from "./constants.js";
+
 /** Set-URLs voor sitemap (geen per-kaart-routes op de site). */
 export function getGesprekskaartenSitemapPaths(visibleCards) {
   const paths = ["/gesprekskaarten", "/conversation-cards"];
@@ -40,6 +42,10 @@ export function getGesprekskaartenSitemapPaths(visibleCards) {
   for (const set of sets) {
     paths.push(`/gesprekskaarten?set=${encodeURIComponent(set)}`);
     paths.push(`/conversation-cards?set=${encodeURIComponent(set)}`);
+  }
+  for (const legacySet of Object.keys(CARD_SET_ALIASES)) {
+    paths.push(`/gesprekskaarten?set=${encodeURIComponent(legacySet)}`);
+    paths.push(`/conversation-cards?set=${encodeURIComponent(legacySet)}`);
   }
   return paths;
 }

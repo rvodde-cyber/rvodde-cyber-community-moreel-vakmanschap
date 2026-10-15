@@ -75,7 +75,7 @@ function hasStoredPdfAsset(card) {
 /** ETZ-kaarten hebben alleen statische PDF’s in assets; andere sets blijven client-side jsPDF gebruiken. */
 function shouldShowPdfDownload(card) {
   if (!card) return false;
-  if (card.set === "etz-passende-zorg") return hasStoredPdfAsset(card);
+  if (card.set === "passende-zorg") return hasStoredPdfAsset(card);
   return true;
 }
 
@@ -133,7 +133,7 @@ export function ConversationCardPreview({ card, onOpen }) {
   const { taal, t } = useTaal();
   const handleDownload = () => handleGesprekskaartPdfDownload(card, t, taal);
   const badgeLabel = card.afdeling ?? card.categorie;
-  const showMetaAfdeling = card.set !== "etz-passende-zorg";
+  const showMetaAfdeling = card.set !== "passende-zorg";
   const showPdf = shouldShowPdfDownload(card);
 
   return (

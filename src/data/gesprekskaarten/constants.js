@@ -7,12 +7,35 @@ export const CARD_SET_ORDER = [
   "bestuurskunde",
   "dl-compleet-a5",
   "onderwijs-v3",
-  "hbo-docenten-v3",
+  "hoger-onderwijs-v3",
+  "passende-zorg",
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
   "praktijkschok-hrm",
-  "etz-passende-zorg",
 ];
+
+/** Oude ?set=…-waarden blijven werken in URL en filters. */
+export const CARD_SET_ALIASES = {
+  "hbo-docenten-v3": "hoger-onderwijs-v3",
+  "etz-passende-zorg": "passende-zorg",
+};
+
+export function resolveCardSetId(setId) {
+  if (!setId) return setId;
+  return CARD_SET_ALIASES[setId] ?? setId;
+}
+
+/** Oude categorie-slugs in links/filters. */
+export const CATEGORIE_ALIASES = {
+  "hbo-docenten": "hoger-onderwijs",
+  "etz-passende-zorg": "passende-zorg",
+  "nucleaire-geneeskunde": "passende-zorg",
+};
+
+export function resolveCategorieSlug(slug) {
+  if (!slug) return slug;
+  return CATEGORIE_ALIASES[slug] ?? slug;
+}
 
 export function sortCardSets(sets) {
   const rank = new Map(CARD_SET_ORDER.map((id, i) => [id, i]));
@@ -27,15 +50,14 @@ export const CATEGORIE_SLUGS = [
   "social-media",
   "studentenleven",
   "zorg",
-  "nucleaire-geneeskunde",
+  "passende-zorg",
   "onderzoeksintegriteit",
   "onderwijs",
-  "hbo-docenten",
+  "hoger-onderwijs",
   "overheid",
   "hrm",
   "burgerschap",
   "bestuurskunde",
-  "etz-passende-zorg",
 ];
 
 export const MOEILIJKHEID_MIN = 1;
@@ -56,7 +78,7 @@ export const ATTRIBUTION_COLOR = "#5f5e5a";
 /** Categoriekleuren (v3.0 Conversation Card Generator) */
 export const CATEGORIE_KLEUREN = {
   onderwijs: "#1a9080",
-  "hbo-docenten": "#6C5B7B",
+  "hoger-onderwijs": "#6C5B7B",
   werk: "#e05a1a",
   "dagelijks-leven": "#e0a01a",
   duurzaamheid: "#c0392b",
@@ -64,13 +86,12 @@ export const CATEGORIE_KLEUREN = {
   "social-media": "#e8820a",
   studentenleven: "#8e44ad",
   zorg: "#0f6e56",
-  "nucleaire-geneeskunde": "#0D5C63",
+  "passende-zorg": "#005F73",
   onderzoeksintegriteit: "#6E5773",
   overheid: "#185fa5",
   hrm: "#3949AB",
   burgerschap: "#B5651D",
   bestuurskunde: "#1F3F66",
-  "etz-passende-zorg": "#005F73",
 };
 
 export function getCategorieKleur(slug) {
@@ -105,15 +126,21 @@ export const CATEGORY_FROM_LEGACY = {
   "Social Media": "social-media",
   Studentenleven: "studentenleven",
   "Student life": "studentenleven",
-  "Nuclear medicine": "nucleaire-geneeskunde",
-  "Nucleaire geneeskunde": "nucleaire-geneeskunde",
+  "Nuclear medicine": "passende-zorg",
+  "Nucleaire geneeskunde": "passende-zorg",
+  "Appropriate care": "passende-zorg",
+  "Passende zorg": "passende-zorg",
   "Research integrity": "onderzoeksintegriteit",
   Onderzoeksintegriteit: "onderzoeksintegriteit",
   Onderwijs: "onderwijs",
   EDUCATION: "onderwijs",
-  "HBO-docenten": "hbo-docenten",
-  "Lecturers in universities of applied sciences": "hbo-docenten",
-  "HBO LECTURERS": "hbo-docenten",
+  "Hoger Onderwijs": "hoger-onderwijs",
+  "Higher Education": "hoger-onderwijs",
+  "HBO-docenten": "hoger-onderwijs",
+  "Lecturers in universities of applied sciences": "hoger-onderwijs",
+  "HBO LECTURERS": "hoger-onderwijs",
+  "ETZ Passende Zorg": "passende-zorg",
+  "ETZ Appropriate Care": "passende-zorg",
   HRM: "hrm",
   HR: "hrm",
   Burgerschap: "burgerschap",

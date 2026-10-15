@@ -21,7 +21,7 @@ import bestuurskundeMeta from '../data/gesprekskaarten/bestuurskunde-meta.json'
 import onderwijsMeta from '../data/gesprekskaarten/onderwijs-meta.json'
 import hboDocentenMeta from '../data/gesprekskaarten/hbo-docenten-meta.json'
 import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
-import { ATTRIBUTION_COLOR } from '../data/gesprekskaarten/constants'
+import { ATTRIBUTION_COLOR, resolveCardSetId, resolveCategorieSlug } from '../data/gesprekskaarten/constants'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
 
@@ -67,7 +67,7 @@ const pageContent = {
     preview: {
       titel: 'Beschikbare kaarten',
       subtitel:
-        'De meeste kaarten sluiten af met dezelfde twee vragen. Bij de ETZ-kaarten staan vier vragen op de kaart zelf.',
+        'De meeste kaarten sluiten af met dezelfde twee vragen. Bij de Passende zorg-kaarten staan vier vragen op de kaart zelf.',
       vraag1: 'Wat zou jij doen en waarom?',
       vraag2: 'Welke waarden zijn hier in het spel?',
     },
@@ -127,7 +127,7 @@ const pageContent = {
     preview: {
       titel: 'Available cards',
       subtitel:
-        'Most cards close with the same two questions. On the ETZ cards, four questions are printed on the card itself.',
+        'Most cards close with the same two questions. On the Appropriate care cards, four questions are printed on the card itself.',
       vraag1: 'What would you do, and why?',
       vraag2: 'What values are at stake here?',
     },
@@ -168,17 +168,27 @@ export default function GespreksKaartenPagina() {
   const [filters, setFilters] = useState(() => {
     const setFromUrl = searchParams.get('set')
     if (setFromUrl) {
-      return { ...EMPTY_FILTERS, set: setFromUrl }
+      return { ...EMPTY_FILTERS, set: resolveCardSetId(setFromUrl) }
+    }
+    const categorieFromUrl = searchParams.get('categorie')
+    if (categorieFromUrl) {
+      return { ...EMPTY_FILTERS, categorie: resolveCategorieSlug(categorieFromUrl) }
     }
     return EMPTY_FILTERS
   })
 
   useEffect(() => {
     const setFromUrl = searchParams.get('set')
-    if (setFromUrl && setFromUrl !== filters.set) {
-      setFilters((prev) => ({ ...prev, set: setFromUrl }))
+    const resolvedSet = setFromUrl ? resolveCardSetId(setFromUrl) : ''
+    if (resolvedSet && resolvedSet !== filters.set) {
+      setFilters((prev) => ({ ...prev, set: resolvedSet }))
     }
-  }, [searchParams, filters.set])
+    const categorieFromUrl = searchParams.get('categorie')
+    const resolvedCategorie = categorieFromUrl ? resolveCategorieSlug(categorieFromUrl) : ''
+    if (resolvedCategorie && resolvedCategorie !== filters.categorie) {
+      setFilters((prev) => ({ ...prev, categorie: resolvedCategorie }))
+    }
+  }, [searchParams, filters.set, filters.categorie])
   const allCards = getAllCards()
   const filterOptions = useMemo(() => getFilterOptions(allCards), [allCards])
   const filteredCards = useMemo(
@@ -206,14 +216,18 @@ export default function GespreksKaartenPagina() {
     { set: 'burgerschap', meta: burgerschapMeta },
     { set: 'bestuurskunde', meta: bestuurskundeMeta },
     { set: 'onderwijs-v3', meta: onderwijsMeta },
-    { set: 'hbo-docenten-v3', meta: hboDocentenMeta },
+    { set: 'hoger-onderwijs-v3', meta: hboDocentenMeta },
   ].filter((block) => displayCards.some((card) => card.set === block.set))
-  const isEtzSetView = filters.set === 'etz-passende-zorg'
-  const etzSectionTitle = t.gesprekskaart.filters?.setLabels?.['etz-passende-zorg'] ?? 'ETZ Passende Zorg'
-  const showEtzColofon =
-    isEtzSetView ||
-    (displayCards.length > 0 && displayCards.every((card) => card.set === 'etz-passende-zorg'))
-  const etzColofon = etzPassendeZorgMeta.colofon?.[contentLang]
+  const passendeZorgLabel =
+    t.gesprekskaart.filters?.categorieLabels?.['passende-zorg'] ?? 'Passende zorg'
+  const isPassendeZorgView =
+    filters.categorie === 'passende-zorg' ||
+    filters.set === 'passende-zorg' ||
+    filters.set === 'nucleaire-geneeskunde' ||
+    (displayCards.length > 0 &&
+      displayCards.every((card) => card.categorieSlug === 'passende-zorg'))
+  const showPassendeZorgColofon = isPassendeZorgView
+  const passendeZorgColofon = etzPassendeZorgMeta.colofon?.[contentLang]
 
   return (
     <main style={{ backgroundColor: 'var(--achtergrond, #fafaf8)', color: 'var(--tekst-primair, #1a2744)', paddingTop: '80px' }}>
@@ -577,12 +591,12 @@ export default function GespreksKaartenPagina() {
           </div>
         ))}
 
-        {showEtzColofon && etzColofon && (
+        {showPassendeZorgColofon && passendeZorgColofon && (
           <p
             className="mb-6 text-sm leading-relaxed"
             style={{ color: ATTRIBUTION_COLOR }}
           >
-            {etzColofon}
+            {passendeZorgColofon}
           </p>
         )}
 
@@ -591,9 +605,9 @@ export default function GespreksKaartenPagina() {
           kleur={stap4.kleur}
           kleurLicht={stap4.kleurLicht}
           titelKey="gesprekskaarten_titel"
-          sectionTitle={isEtzSetView ? etzSectionTitle : null}
+          sectionTitle={isPassendeZorgView ? passendeZorgLabel : null}
           kaarten={displayCards}
-          downloadLinks={isEtzSetView ? null : teaserDownload}
+          downloadLinks={isPassendeZorgView ? null : teaserDownload}
         />
       </section>
 

@@ -63,7 +63,7 @@ function parseCards(raw) {
         id: `GK_NM_${String(index).padStart(2, "0")}`,
         set: "nucleaire-geneeskunde",
         stap: 1,
-        categorie: "nucleaire-geneeskunde",
+        categorie: "passende-zorg",
         complexiteit: COMPLEXITY_MAP[complexityKey],
         taalniveau: "C1",
         status: "getest",
