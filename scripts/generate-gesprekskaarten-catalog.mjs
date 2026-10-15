@@ -20,6 +20,7 @@ const catalog = cards.map((card) => ({
   set: card.set,
   stap: card.stap,
   categorie: card.categorie,
+  subcategorie: card.subcategorie ?? null,
   moeilijkheid: card.moeilijkheid,
   complexiteit: card.complexiteit ?? (card.moeilijkheid === 1 ? "micro" : card.moeilijkheid === 3 ? "macro" : "meso"),
   taalniveau: card.taalniveau,

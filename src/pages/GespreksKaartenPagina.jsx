@@ -9,6 +9,7 @@ import {
   filterCards,
   getAllCards,
   getFilterOptions,
+  getPassendeZorgSubcategorieCounts,
   localizeCards,
 } from '../data/gesprekskaarten'
 import { WORK_FORMS_DOWNLOADS } from '../data/gesprekskaarten/constants'
@@ -21,7 +22,11 @@ import bestuurskundeMeta from '../data/gesprekskaarten/bestuurskunde-meta.json'
 import onderwijsMeta from '../data/gesprekskaarten/onderwijs-meta.json'
 import hboDocentenMeta from '../data/gesprekskaarten/hbo-docenten-meta.json'
 import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
-import { ATTRIBUTION_COLOR, resolveCardSetId, resolveCategorieSlug } from '../data/gesprekskaarten/constants'
+import {
+  ATTRIBUTION_COLOR,
+  parseCategorieSearchParam,
+  parseSetSearchParam,
+} from '../data/gesprekskaarten/constants'
 
 // ── CONTENT DATA ────────────────────────────────────────────────
 
@@ -167,30 +172,89 @@ export default function GespreksKaartenPagina() {
   const [searchParams] = useSearchParams()
   const [filters, setFilters] = useState(() => {
     const setFromUrl = searchParams.get('set')
-    if (setFromUrl) {
-      return { ...EMPTY_FILTERS, set: resolveCardSetId(setFromUrl) }
-    }
     const categorieFromUrl = searchParams.get('categorie')
+    const subFromUrl = searchParams.get('subcategorie') ?? ''
+    if (setFromUrl) {
+      const parsed = parseSetSearchParam(setFromUrl)
+      return {
+        ...EMPTY_FILTERS,
+        set: parsed.set,
+        categorie: parsed.categorie,
+        subcategorie: parsed.subcategorie || subFromUrl,
+      }
+    }
     if (categorieFromUrl) {
-      return { ...EMPTY_FILTERS, categorie: resolveCategorieSlug(categorieFromUrl) }
+      const parsed = parseCategorieSearchParam(categorieFromUrl)
+      return {
+        ...EMPTY_FILTERS,
+        categorie: parsed.categorie,
+        subcategorie: parsed.subcategorie || subFromUrl,
+      }
+    }
+    if (subFromUrl) {
+      return { ...EMPTY_FILTERS, categorie: 'passende-zorg', subcategorie: subFromUrl }
     }
     return EMPTY_FILTERS
   })
 
   useEffect(() => {
     const setFromUrl = searchParams.get('set')
-    const resolvedSet = setFromUrl ? resolveCardSetId(setFromUrl) : ''
-    if (resolvedSet && resolvedSet !== filters.set) {
-      setFilters((prev) => ({ ...prev, set: resolvedSet }))
-    }
     const categorieFromUrl = searchParams.get('categorie')
-    const resolvedCategorie = categorieFromUrl ? resolveCategorieSlug(categorieFromUrl) : ''
-    if (resolvedCategorie && resolvedCategorie !== filters.categorie) {
-      setFilters((prev) => ({ ...prev, categorie: resolvedCategorie }))
+    const subFromUrl = searchParams.get('subcategorie') ?? ''
+
+    if (setFromUrl) {
+      const parsed = parseSetSearchParam(setFromUrl)
+      setFilters((prev) => {
+        const next = {
+          ...prev,
+          set: parsed.set,
+          categorie: parsed.categorie || prev.categorie,
+          subcategorie: parsed.subcategorie || subFromUrl,
+        }
+        if (
+          next.set === prev.set &&
+          next.categorie === prev.categorie &&
+          next.subcategorie === prev.subcategorie
+        ) {
+          return prev
+        }
+        return next
+      })
+      return
     }
-  }, [searchParams, filters.set, filters.categorie])
+
+    if (categorieFromUrl) {
+      const parsed = parseCategorieSearchParam(categorieFromUrl)
+      setFilters((prev) => {
+        const next = {
+          ...prev,
+          categorie: parsed.categorie,
+          subcategorie: parsed.subcategorie || subFromUrl,
+        }
+        if (next.categorie === prev.categorie && next.subcategorie === prev.subcategorie) {
+          return prev
+        }
+        return next
+      })
+      return
+    }
+
+    if (subFromUrl) {
+      setFilters((prev) => {
+        const next = { ...prev, categorie: 'passende-zorg', subcategorie: subFromUrl }
+        if (next.subcategorie === prev.subcategorie && prev.categorie === 'passende-zorg') {
+          return prev
+        }
+        return next
+      })
+    }
+  }, [searchParams])
   const allCards = getAllCards()
   const filterOptions = useMemo(() => getFilterOptions(allCards), [allCards])
+  const passendeZorgSubcategorieCounts = useMemo(
+    () => getPassendeZorgSubcategorieCounts(allCards),
+    [allCards]
+  )
   const filteredCards = useMemo(
     () => filterCards(allCards, { ...filters, taal }),
     [allCards, filters, taal]
@@ -223,9 +287,10 @@ export default function GespreksKaartenPagina() {
   const isPassendeZorgView =
     filters.categorie === 'passende-zorg' ||
     filters.set === 'passende-zorg' ||
-    filters.set === 'nucleaire-geneeskunde' ||
+    Boolean(filters.subcategorie) ||
     (displayCards.length > 0 &&
       displayCards.every((card) => card.categorieSlug === 'passende-zorg'))
+  const showPassendeZorgSubfilter = isPassendeZorgView
   const showPassendeZorgColofon = isPassendeZorgView
   const passendeZorgColofon = etzPassendeZorgMeta.colofon?.[contentLang]
 
@@ -571,6 +636,8 @@ export default function GespreksKaartenPagina() {
           options={filterOptions}
           resultCount={displayCards.length}
           totalCount={allCards.length}
+          showPassendeZorgSubfilter={showPassendeZorgSubfilter}
+          passendeZorgSubcategorieCounts={passendeZorgSubcategorieCounts}
         />
 
         {seriesMetaBlocks.map(({ set, meta }) => (

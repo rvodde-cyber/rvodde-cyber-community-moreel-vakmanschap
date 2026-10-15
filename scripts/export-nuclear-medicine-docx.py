@@ -8,7 +8,7 @@ from docx.shared import Pt, RGBColor
 ROOT = Path(__file__).resolve().parents[1]
 CARDS_PATH = ROOT / "src/data/gesprekskaarten/cards.json"
 OUT_DIR = ROOT / "public/downloads/gesprekskaarten/nucleaire-geneeskunde"
-SET_ID = "nucleaire-geneeskunde"
+SUBCATEGORIE_ID = "nucleaire-geneeskunde"
 
 COMPLEXITY_LABELS = {
     "nl": {
@@ -37,7 +37,8 @@ ATTRIBUTION = {
 def write_card_doc(card, lang):
     content = card[lang]
     doc = Document()
-    cat = CATEGORY_LABELS[lang].get(card["categorie"], card["categorie"])
+    sub = card.get("subcategorie") or SUBCATEGORIE_ID
+    cat = CATEGORY_LABELS[lang].get(sub, sub)
     complexity = COMPLEXITY_LABELS[lang][card["complexiteit"]]
 
     p = doc.add_paragraph(cat.upper())
@@ -74,7 +75,12 @@ def write_card_doc(card, lang):
 
 def main():
     cards = json.loads(CARDS_PATH.read_text(encoding="utf-8"))
-    subset = [c for c in cards if c.get("set") == SET_ID]
+    subset = [
+        c
+        for c in cards
+        if c.get("subcategorie") == SUBCATEGORIE_ID
+        or c.get("id", "").startswith("GK_NM_")
+    ]
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     for card in subset:

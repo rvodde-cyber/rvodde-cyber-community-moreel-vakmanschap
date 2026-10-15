@@ -11,6 +11,8 @@ import {
   sortCardSets,
   resolveCardSetId,
   resolveCategorieSlug,
+  getPassendeZorgSubcategorie,
+  PASSENDE_ZORG_SUBCATEGORIEEN,
 } from "./constants.js";
 import { getGesprekskaartStrings } from "./i18n.js";
 import { getCardContentLang } from "../vertalingen.js";
@@ -121,7 +123,7 @@ export function localizeCards(taal, cardList = getAllCards()) {
 }
 
 export function filterCards(cardList, filters = {}) {
-  const { categorie, moeilijkheid, taalniveau, stap, set, zoek, taal = "nl" } = filters;
+  const { categorie, moeilijkheid, taalniveau, stap, set, zoek, taal = "nl", subcategorie } = filters;
   const q = zoek?.trim().toLowerCase();
   const resolvedSet = set ? resolveCardSetId(set) : "";
   const resolvedCategorie = categorie ? resolveCategorieSlug(categorie) : "";
@@ -130,6 +132,10 @@ export function filterCards(cardList, filters = {}) {
     if (resolvedSet && card.set !== resolvedSet) return false;
     if (stap && card.stap !== Number(stap)) return false;
     if (resolvedCategorie && card.categorie !== resolvedCategorie) return false;
+    if (subcategorie) {
+      if (card.categorie !== "passende-zorg") return false;
+      if (getPassendeZorgSubcategorie(card) !== subcategorie) return false;
+    }
     if (moeilijkheid && card.moeilijkheid !== Number(moeilijkheid)) return false;
     if (taalniveau && card.taalniveau !== taalniveau) return false;
 
@@ -152,4 +158,13 @@ export function getFilterOptions(cardList = getAllCards()) {
     taalniveaus: [...new Set(visible.map((c) => c.taalniveau))].sort(),
     stappen: [...new Set(visible.map((c) => c.stap))].sort(),
   };
+}
+
+export function getPassendeZorgSubcategorieCounts(cardList = getAllCards()) {
+  const passende = filterVisibleCards(cardList).filter((c) => c.categorie === "passende-zorg");
+  const counts = { all: passende.length };
+  for (const slug of PASSENDE_ZORG_SUBCATEGORIEEN) {
+    counts[slug] = passende.filter((c) => getPassendeZorgSubcategorie(c) === slug).length;
+  }
+  return counts;
 }

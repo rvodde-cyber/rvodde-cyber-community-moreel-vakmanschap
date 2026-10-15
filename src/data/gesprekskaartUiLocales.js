@@ -1,5 +1,32 @@
 /** Gesprekskaart-UI voor SV, CS, DA — sitetekst valt terug op EN */
 
+const passendeZorgSubfilterSv = {
+  label: "Del",
+  all: "Alla",
+  subcategorieLabels: {
+    algemeen: "Allmänt",
+    "nucleaire-geneeskunde": "Nukleärmedicin",
+  },
+};
+
+const passendeZorgSubfilterCs = {
+  label: "Část",
+  all: "Vše",
+  subcategorieLabels: {
+    algemeen: "Obecné",
+    "nucleaire-geneeskunde": "Nukleární medicína",
+  },
+};
+
+const passendeZorgSubfilterDa = {
+  label: "Del",
+  all: "Alle",
+  subcategorieLabels: {
+    algemeen: "Generelt",
+    "nucleaire-geneeskunde": "Nuklearmedicin",
+  },
+};
+
 const setLabelsSv = {
   "morele-moed-teaser": "Moral Courage (teaser)",
   burgerschap: "Medborgarskap",
@@ -9,7 +36,6 @@ const setLabelsSv = {
   "hoger-onderwijs-v3": "Högre utbildning",
   "hbo-docenten-v3": "Högre utbildning",
   "passende-zorg": "Passande vård",
-  "nucleaire-geneeskunde": "Passande vård (nukleärmedicin)",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
   "etz-passende-zorg": "Passande vård",
@@ -24,7 +50,6 @@ const setLabelsCs = {
   "hoger-onderwijs-v3": "Vyšší vzdělávání",
   "hbo-docenten-v3": "Vyšší vzdělávání",
   "passende-zorg": "Přiměřená péče",
-  "nucleaire-geneeskunde": "Přiměřená péče (nukleární medicína)",
   onderzoeksintegriteit: "Integrita výzkumu",
   "praktijkschok-hrm": "Praktijkschok HR",
   "etz-passende-zorg": "Přiměřená péče",
@@ -39,7 +64,6 @@ const setLabelsDa = {
   "hoger-onderwijs-v3": "Højere uddannelse",
   "hbo-docenten-v3": "Højere uddannelse",
   "passende-zorg": "Passende pleje",
-  "nucleaire-geneeskunde": "Passende pleje (nuklearmedicin)",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
   "etz-passende-zorg": "Passende pleje",
@@ -54,7 +78,6 @@ const categorieLabelsSv = {
   studentenleven: "Studentliv",
   zorg: "Vård",
   "passende-zorg": "Passande vård",
-  "nucleaire-geneeskunde": "Passande vård",
   onderzoeksintegriteit: "Forskningsintegritet",
   onderwijs: "Utbildning",
   "hoger-onderwijs": "Högre utbildning",
@@ -75,7 +98,6 @@ const categorieLabelsCs = {
   studentenleven: "Studentský život",
   zorg: "Zdravotnictví",
   "passende-zorg": "Přiměřená péče",
-  "nucleaire-geneeskunde": "Přiměřená péče",
   onderzoeksintegriteit: "Integrita výzkumu",
   onderwijs: "Vzdělávání",
   "hoger-onderwijs": "Vyšší vzdělávání",
@@ -96,8 +118,7 @@ const categorieLabelsDa = {
   studentenleven: "Studieliv",
   zorg: "Sundhedsvæsen",
   "passende-zorg": "Passende pleje",
-  "nucleaire-geneeskunde": "Passende pleje",
-  onderzoeksintegriteit: "Forskningsintegritet",
+  onderzoeksintegriteit: "Forskningsintegriteit",
   onderwijs: "Uddannelse",
   "hoger-onderwijs": "Højere uddannelse",
   "hbo-docenten": "Højere uddannelse",
@@ -131,6 +152,7 @@ export const gesprekskaartUiLocales = {
       empty: "Inga kort matchar dessa filter.",
       setLabels: setLabelsSv,
       categorieLabels: categorieLabelsSv,
+      passendeZorgSubfilter: passendeZorgSubfilterSv,
     },
     sluit: "Stäng",
     stapLabel: "Steg",
@@ -161,6 +183,7 @@ export const gesprekskaartUiLocales = {
       empty: "Žádné karty neodpovídají těmto filtrům.",
       setLabels: setLabelsCs,
       categorieLabels: categorieLabelsCs,
+      passendeZorgSubfilter: passendeZorgSubfilterCs,
     },
     sluit: "Zavřít",
     stapLabel: "Krok",
@@ -191,6 +214,7 @@ export const gesprekskaartUiLocales = {
       empty: "Ingen kort matcher disse filtre.",
       setLabels: setLabelsDa,
       categorieLabels: categorieLabelsDa,
+      passendeZorgSubfilter: passendeZorgSubfilterDa,
     },
     sluit: "Luk",
     stapLabel: "Trin",
