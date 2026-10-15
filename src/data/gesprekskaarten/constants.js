@@ -7,6 +7,7 @@ export const CARD_SET_ORDER = [
   "bestuurskunde",
   "dl-compleet-a5",
   "onderwijs-v3",
+  "hbo-docenten-v3",
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
   "praktijkschok-hrm",
@@ -29,6 +30,7 @@ export const CATEGORIE_SLUGS = [
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
   "onderwijs",
+  "hbo-docenten",
   "overheid",
   "hrm",
   "burgerschap",
@@ -54,6 +56,7 @@ export const ATTRIBUTION_COLOR = "#5f5e5a";
 /** Categoriekleuren (v3.0 Conversation Card Generator) */
 export const CATEGORIE_KLEUREN = {
   onderwijs: "#1a9080",
+  "hbo-docenten": "#6C5B7B",
   werk: "#e05a1a",
   "dagelijks-leven": "#e0a01a",
   duurzaamheid: "#c0392b",
@@ -108,6 +111,9 @@ export const CATEGORY_FROM_LEGACY = {
   Onderzoeksintegriteit: "onderzoeksintegriteit",
   Onderwijs: "onderwijs",
   EDUCATION: "onderwijs",
+  "HBO-docenten": "hbo-docenten",
+  "Lecturers in universities of applied sciences": "hbo-docenten",
+  "HBO LECTURERS": "hbo-docenten",
   HRM: "hrm",
   HR: "hrm",
   Burgerschap: "burgerschap",

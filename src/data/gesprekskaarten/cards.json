@@ -7176,5 +7176,455 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
+  },
+  {
+    "id": "hd-01",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Ik ga gewoon door",
+      "verhaal": "Marleen Verbeek schuift de map van Bilal naar het midden van de tafel. Eerstejaars Sociaal Werk, 22 van de 60 studiepunten, drie keer afwezig bij de praktijktoets. Sinds dit jaar is het studieadvies niet meer bindend; wat zij schrijft, is een advies en meer niet.\n\n‘Ik ga gewoon door,’ zegt Bilal. ‘Mijn vader heeft het collegegeld al betaald.’ In zijn jaarplan staat dat hij drie nachten per week vakken vult in een distributiecentrum. Marleen weet dat jaar twee voortbouwt op precies de vakken die hij niet haalde, en dat niets haar toestaat hem te weigeren.\n\nOp de gang wacht de volgende student. Het verslag ligt tussen hen in, alleen de regel ‘advies’ is nog leeg. Schrijft ze wat hij wil horen, of wat ze zelf denkt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De opleiding laat de beslissing bij de docent, maar Marleens afweging botst met Bilals recht om door te gaan en met de regels van de instelling."
+    },
+    "en": {
+      "titel": "I’m Just Carrying On",
+      "verhaal": "Marleen Verbeek slides Bilal’s file to the middle of the table. First-year Social Work, 22 of 60 credits, absent three times from the practical assessment. Since this year the study advice is no longer binding; what she writes is advice and nothing more.\n\n‘I’m just carrying on,’ says Bilal. ‘My father has already paid the tuition.’ His year plan says he fills shelves three nights a week in a distribution centre. Marleen knows year two builds on exactly the courses he failed, and that nothing allows her to refuse him.\n\nIn the corridor the next student is waiting. The report lies between them, only the line ‘advice’ still empty. Does she write what he wants to hear, or what she thinks herself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The programme leaves the decision to the lecturer, but Marleen’s judgement clashes with Bilal’s right to continue and with institutional rules."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-01.jpg",
+      "altNl": "HBO-docentensituatie: Ik ga gewoon door",
+      "altEn": "Lecturer scene: I’m Just Carrying On",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 126,
+      "woordenEn": 122,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD1",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hd-02",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Eén cijfer voor vier",
+      "verhaal": "Tim Hendriks legt de beoordelingen van het wijkproject naast elkaar. De groep van vier krijgt één cijfer, zo staat het in het toetsplan. Het product haalt de minimumeisen, net. Sanne en Ilse geven elkaar steeds een negen; achter de namen van Tijn en Yusuf staat bij elke vraag: ‘kwam niet’.\n\nGisteren stond Sanne na de les bij zijn bureau. ‘We hebben alles zelf gedaan,’ zei ze zacht, en ze vroeg niets. Vanochtend mailde Yusuf: ‘Ik hoop dat het goed komt met ons cijfer.’\n\nEen zes voor iedereen is te verdedigen, een onvoldoende voor de hele groep ook. Om 17.00 uur sluit het cijfersysteem. Hoe eerlijk is één cijfer als de inzet zo ongelijk was?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "De beslissing ligt bij Tim zelf: een directe afweging tussen individuele verdienste en groepscijfer."
+    },
+    "en": {
+      "titel": "One Grade for Four",
+      "verhaal": "Tim Hendriks lays out the assessments of the neighbourhood project side by side. The group of four receives one grade, as the assessment plan says. The product just meets the minimum requirements. Sanne and Ilse keep giving each other a nine; behind Tijn’s and Yusuf’s names, every question says the same: ‘did not show up’.\n\nYesterday Sanne stood at his desk after class. ‘We did everything ourselves,’ she said softly, and asked for nothing. This morning Yusuf emailed: ‘I hope things will work out with our grade.’\n\nA six for everyone is defensible, and so is a fail for the whole group. At 5 p.m. the grading system closes. How fair is one grade when the effort was so unequal?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "The decision rests with Tim himself: a direct weighing of individual contribution against a group grade."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-02.jpg",
+      "altNl": "HBO-docentensituatie: Eén cijfer voor vier",
+      "altEn": "Lecturer scene: One Grade for Four",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 120,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD2",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hd-03",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Ik mag toch zeggen wat ik vind?",
+      "verhaal": "Het college over migratie en gezondheidszorg loopt goed, tot Thijs, derdejaars, het woord neemt. Selma Demir blijft rustig terwijl hij een zin uitspreekt die met ‘die mensen’ begint en op een grove generalisatie eindigt. Het wordt stil. Achterin kijkt Amina strak naar haar laptop, haar kaken op elkaar.\n\n‘Het is toch een discussie?’ zegt Thijs. ‘Dit is een hogeschool, geen kerk. Ik mag zeggen wat ik vind.’ Selma weet dat ze het lokaal moet beschermen. Ze weet ook dat een docent die elke felle uitspraak afkapt uiteindelijk niemand meer laat spreken.\n\nEr is nog veertig minuten. Amina heeft haar hand niet opgestoken, maar kijkt nu wel omhoog. Beschermt Selma de student die zwijgt, of de vrijheid van de student die spreekt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De kern ligt bij vrijheid van meningsuiting versus gelijke behandeling en veiligheid: grondrechten die geen enkele docent of opleiding alleen kan oplossen."
+    },
+    "en": {
+      "titel": "Am I Not Allowed to Say What I Think?",
+      "verhaal": "The lecture on migration and healthcare is going well, until Thijs, a third-year student, takes the floor. Selma Demir stays calm while he says a sentence that begins with ‘those people’ and ends in a crude generalisation. It goes quiet. At the back Amina stares at her laptop, jaw clenched.\n\n‘It’s a discussion, isn’t it?’ says Thijs. ‘This is a university, not a church. I’m allowed to say what I think.’ Selma knows she has to protect the room. She also knows that a lecturer who cuts off every heated remark ends up leaving nobody to speak.\n\nThere are forty minutes left. Amina has not raised her hand, but is now looking up. Does Selma protect the student who stays silent, or the freedom of the student who speaks?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The core lies in freedom of expression versus equal treatment and safety: fundamental rights that no single lecturer or programme can resolve alone."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-03.jpg",
+      "altNl": "HBO-docentensituatie: Ik mag toch zeggen wat ik vind?",
+      "altEn": "Lecturer scene: Am I Not Allowed to Say What I Think?",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 121,
+      "woordenEn": 129,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD3",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hd-04",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Kritisch tegen het licht",
+      "verhaal": "Judith van der Meer heeft de tentamenanalyse van Statistiek voor zich: 46 procent onvoldoende, het hoogste percentage in vier jaar. De toets is geldig, de cesuur onderbouwd, de vragen zijn door twee collega’s gereviewd. Dat staat in haar eigen rapport.\n\nBij de koffieautomaat blijft opleidingsmanager Rob staan. ‘De visitatie is in maart. Misschien kunnen we de normering nog eens kritisch tegen het licht houden? Ik zeg niet dat het moet.’ Judith weet wat een lager slagingspercentage betekent voor de bekostiging en de reputatie van de opleiding. Ze weet ook wat een zes betekent voor studenten die straks bij een werkgever staan.\n\nOp haar telefoon licht een berichtje op: ‘Hoi mevrouw, is de uitslag al bekend?’ Past ze de norm aan, of verdedigt ze haar cijfers?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De druk komt van de organisatie en de visitatie: Judiths professionele oordeel botst met institutionele belangen."
+    },
+    "en": {
+      "titel": "A Critical Look",
+      "verhaal": "Judith van der Meer has the exam analysis for Statistics in front of her: 46 per cent fail, the highest in four years. The test is valid, the cut-off score justified, the questions reviewed by two colleagues. It says so in her own report.\n\nBy the coffee machine, programme manager Rob stops. ‘The accreditation visit is in March. Maybe we could take another critical look at the grading scale? I’m not saying we must.’ Judith knows what a lower pass rate means for funding and for the programme’s reputation. She also knows what a six means for students who will soon stand in front of an employer.\n\nA message lights up on her phone: ‘Hi, is the result out yet?’ Does she adjust the standard, or defend her grades?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The pressure comes from the organisation and the accreditation visit: Judith’s professional judgement clashes with institutional interests."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-04.jpg",
+      "altNl": "HBO-docentensituatie: Kritisch tegen het licht",
+      "altEn": "Lecturer scene: A Critical Look",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 125,
+      "woordenEn": 129,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD4",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hd-05",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Even tussendoor",
+      "verhaal": "Lin Chen staat al bij de deur als Sara, tweedejaars, vraagt of ze nog even mag praten. Haar handen trillen; sinds een paar weken slaapt ze bij haar zus omdat het thuis ‘niet goed gaat’. Meer zegt ze niet. ‘U bent de enige aan wie ik het durf te vertellen.’\n\nLin zegt dat de deadline mag schuiven. Dat is het makkelijke deel. Het is de derde student deze maand, haar inbox telt na tienen nog berichten en de studentendecaan heeft een wachtlijst van vijf weken. Ze is docent Communicatie, geen hulpverlener.\n\n‘Mag ik volgende week ook even langskomen?’ vraagt Sara. Achter haar wacht al een groepje voor het volgende college. Zegt Lin ja, of verwijst ze door?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Het is een persoonlijke keuze van Lin in een direct contact met één student, zonder dat een regel of beleid de uitkomst bepaalt."
+    },
+    "en": {
+      "titel": "Just Quickly",
+      "verhaal": "Lin Chen is already at the door when Sara, a second-year student, asks if she can talk for a moment. Her hands are shaking; for a few weeks she has been sleeping at her sister’s because things at home are ‘not good’. She says no more. ‘You’re the only one I dare to tell.’\n\nLin says the deadline can move. That is the easy part. It is the third student this month, her inbox still gets messages after ten p.m., and the student counsellor has a five-week waiting list. She teaches Communication; she is not a care professional.\n\n‘May I come by next week as well?’ asks Sara. Behind her a small group is already waiting for the next class. Does Lin say yes, or does she refer her on?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "It is Lin’s personal choice in direct contact with one student, without a rule or policy deciding the outcome."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-05.jpg",
+      "altNl": "HBO-docentensituatie: Even tussendoor",
+      "altEn": "Lecturer scene: Just Quickly",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 117,
+      "woordenEn": 130,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD5",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "hd-06",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Te goed om waar te zijn",
+      "verhaal": "Samantha Ramdin leest het verslag van Lars voor de tweede keer. Veertien pagina’s, een heldere probleemstelling, kloppende bronnen, soepele zinnen. Vorige maand leverde dezelfde student werk in met drie taalfouten per alinea. De detector van de opleiding geeft 62 procent kans op AI, al markeert het programma ook schoon taalgebruik onterecht.\n\nHet reglement dateert van augustus vorig jaar en zegt dat AI ‘in overleg is toegestaan’. Wat overleg is, staat er niet bij. ‘Ik heb dit echt zelf geschreven, mevrouw,’ mailt Lars binnen vijf minuten. ‘Ik heb er dagen aan gewerkt.’\n\nEr is geen bewijs, alleen haar gevoel en een cijferlijst die maandag dicht moet. Samantha laat haar pen boven het vakje ‘voldoende’ hangen. Gelooft ze Lars, of haar gevoel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Generatieve AI raakt aan wetgeving, toetsbeleid en bewijsvoering die buiten het bereik van één docent of opleiding liggen."
+    },
+    "en": {
+      "titel": "Too Good to Be True",
+      "verhaal": "Samantha Ramdin reads Lars’s report for the second time. Fourteen pages, a clear problem statement, accurate sources, smooth sentences. Last month the same student handed in work with three language errors per paragraph. The programme’s detector gives a 62 per cent chance of AI, though it also wrongly flags clean writing.\n\nThe regulations date from last August and say that AI is ‘permitted in consultation’. What consultation means is not stated. ‘I really wrote this myself, Ms Ramdin,’ Lars emails within five minutes. ‘I worked on it for days.’\n\nThere is no proof, only her gut feeling and a grade list that closes on Monday. Samantha lets her pen hover over the ‘pass’ box. Does she believe Lars, or her feeling?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Generative AI touches legislation, assessment policy and standards of proof that lie beyond the reach of one lecturer or programme."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-06.jpg",
+      "altNl": "HBO-docentensituatie: Te goed om waar te zijn",
+      "altEn": "Lecturer scene: Too Good to Be True",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 120,
+      "woordenEn": 121,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD6",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hd-07",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De opdrachtgever",
+      "verhaal": "De presentatie is dinsdag, en Anouk Visser heeft het conceptrapport van haar studenten net gelezen. Het onderzoek voor Van Lith Logistiek is degelijk: 31 procent van de magazijnmedewerkers voelt zich onveilig tijdens nachtdiensten en de meldprocedure werkt niet. Eén medewerker sprak alleen anoniem, uit angst voor zijn contract.\n\nVan Lith biedt veertien stageplekken per jaar, sponsort het leslab en zit in de adviesraad. Vanochtend belde de directeur, joviaal: ‘Kunnen jullie ‘tekortkoming’ misschien ‘aandachtspunt’ noemen? Voor de goede verstandhouding.’\n\nKwame, de projectleider, wacht in de gang. Zijn groep is trots op ‘eindelijk iets echts’. De definitieve versie moet vandaag naar het bedrijf. Past Anouk één woord aan, of houdt ze de tekst zoals de studenten hem schreven?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Wetenschappelijke integriteit botst met de belangen van een partner van de opleiding en met de relatie met meerdere stakeholders."
+    },
+    "en": {
+      "titel": "The Client",
+      "verhaal": "The presentation is on Tuesday, and Anouk Visser has just read her students’ draft report. The research for Van Lith Logistics is solid: 31 per cent of warehouse staff feel unsafe during night shifts and the reporting procedure does not work. One employee would only speak anonymously, afraid for his contract.\n\nVan Lith offers fourteen internships a year, sponsors the teaching lab and sits on the programme’s advisory board. This morning the director called, jovial: ‘Could you perhaps call ‘shortcoming’ an ‘area of attention’? For the good relationship.’\n\nKwame, the project leader, waits in the corridor. His group is proud of finally making ‘something real’. The final version must go to the company today. Does Anouk change one word, or keep the text as the students wrote it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Research integrity clashes with the interests of a partner of the programme and with relationships among several stakeholders."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-07.jpg",
+      "altNl": "HBO-docentensituatie: De opdrachtgever",
+      "altEn": "Lecturer scene: The Client",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 116,
+      "woordenEn": 128,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD7",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hd-08",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Wat vindt u zelf?",
+      "verhaal": "Na het college over ethiek in de beroepspraktijk blijven er studenten hangen. Het debat over de nieuwe opvangwet domineert de sociale media en de gangen, en Bram de Wit merkt hoe de sfeer in zijn klas is verschoven. ‘U praat de hele les over waarden,’ zegt Noor, gedreven en scherp. ‘Wat vindt u zelf, meneer? Zwijgen is toch ook een keuze?’\n\nAchter haar knikken drie studenten. Daan kijkt naar zijn schoenen; hij zei eerder dat hij hier komt om te leren, niet om te horen wat zijn docent vindt. Een collega zei vorige week dat een docent ‘er niet in moet trekken’.\n\nIn de gedragsafspraken van de opleiding staat alleen dat docenten ‘professioneel’ zijn. Bram heeft een stevige mening. Noor houdt haar tas nog vast en wacht. ‘Nou?’",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De professionele normen van de opleiding zijn vaag, waardoor Brams persoonlijke overtuiging botst met de verwachtingen van de beroepsgroep en zijn studenten."
+    },
+    "en": {
+      "titel": "What Do You Think Yourself?",
+      "verhaal": "After the lecture on ethics in professional practice, some students linger. The debate about the new shelter law dominates social media and the corridors, and Bram de Wit notices how the mood in his class has shifted. ‘You talk about values all lesson,’ says Noor, driven and sharp. ‘What do you think yourself, sir? Staying silent is also a choice, isn’t it?’\n\nBehind her three students nod. Daan looks at his shoes; he said earlier that he comes here to learn, not to hear what his teacher thinks. Last week a colleague remarked that a teacher ‘should not stir things up’.\n\nThe programme’s code of conduct only says that teachers are ‘professional’. Bram has a firm opinion. Noor is still holding her bag, waiting. ‘Well?’",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The programme’s professional norms are vague, so Bram’s personal conviction clashes with the expectations of the profession and his students."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-08.jpg",
+      "altNl": "HBO-docentensituatie: Wat vindt u zelf?",
+      "altEn": "Lecturer scene: What Do You Think Yourself?",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 128,
+      "woordenEn": 125,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD8",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "hd-09",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De praktijkopdracht",
+      "verhaal": "Kees de Groot bladert door de groepsindeling voor de workshop bij het jongerencentrum over seksuele diversiteit in de wijk. Na de les komt Gert-Jan, derdejaars, naar zijn bureau. Vriendelijk en helder zegt hij dat hij hieraan niet kan meewerken. ‘Ik heb niets tegen die jongeren, maar mijn geloof laat het niet toe.’\n\nKees kent hem drie jaar en had nooit reden om aan zijn inzet te twijfelen. De beroepscode vraagt dat elke jongere dezelfde zorg krijgt. De Grondwet kent ook de vrijheid van godsdienst. Het stagebedrijf verwacht dat iedere afgestudeerde met iedere jongere kan werken.\n\nKees weet niet zeker of hij hier een grens trekt of een deur sluit. ‘En nu?’ vraagt Gert-Jan, zonder boosheid.",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Vrijheid van godsdienst en gelijke behandeling zijn grondrechten die botsen, buiten het bereik van één docent of opleiding."
+    },
+    "en": {
+      "titel": "The Placement Assignment",
+      "verhaal": "Kees de Groot browses the group allocation for the workshop at the youth centre on sexual diversity in the neighbourhood. After class Gert-Jan, a third-year student, comes to his desk. Friendly and clear, he says he cannot take part in this. ‘I have nothing against those young people, but my faith does not allow it.’\n\nKees has known him three years and never had reason to doubt his commitment. The professional code asks that every young person receives the same care. The Constitution also recognises freedom of religion. The placement organisation expects every graduate to be able to work with every young person.\n\nKees is not sure whether he is drawing a line or closing a door. ‘And now?’ asks Gert-Jan, without anger.",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Freedom of religion and equal treatment are fundamental rights that clash, beyond the reach of one lecturer or programme."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-09.jpg",
+      "altNl": "HBO-docentensituatie: De praktijkopdracht",
+      "altEn": "Lecturer scene: The Placement Assignment",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 123,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD9",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "hd-10",
+    "set": "hbo-docenten-v3",
+    "stap": 1,
+    "categorie": "hbo-docenten",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Vrijdag, 21.40 uur",
+      "verhaal": "Hodan Abdi opent de tweeëndertigste feedback. Het is vrijdag, 21.40 uur. Haar groepen groeiden dit jaar van 25 naar 34 studenten, twee collega’s vertrokken en werden niet vervangen, en het registratiesysteem vraagt elke week een uur administratie. In haar rooster staat acht uur per week voor feedback; ze besteedt er bijna het dubbele aan.\n\nEr staat een mailtje van Dilan, eerstejaars: ‘Kunt u nog even naar mijn versie kijken? Ik durf het bijna niet in te leveren.’ Dilan is een van de studenten die het echt nodig heeft. Vorige maand las Hodan in de nieuwsbrief dat de opleiding ‘klaar is voor groei’.\n\nNiemand heeft het haar gevraagd en niemand merkt het als ze het niet doet. Behalve de studenten. Opent ze Dilans bestand, of sluit ze de laptop?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Bezuinigingen en werkdruk in de organisatie zetten Hodans zorg voor haar studenten onder druk, tegenover haar eigen grenzen."
+    },
+    "en": {
+      "titel": "Friday, 9.40 p.m.",
+      "verhaal": "Hodan Abdi opens the thirty-second piece of feedback. It is Friday, 9.40 p.m. Her groups grew this year from 25 to 34 students, two colleagues left and were not replaced, and the new registration system demands an hour of administration every week. Her timetable allows eight hours a week for feedback; she spends nearly twice that.\n\nThere is an email from Dilan, a first-year student: ‘Could you take another look at my version? I hardly dare to hand it in.’ Dilan is one of the students who really needs it. Last month Hodan read in the newsletter that the programme is ‘ready for growth’.\n\nNobody asked it of her and nobody notices if she does not do it. Except the students. Does she open Dilan’s file, or close the laptop?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Budget cuts and workload in the organisation put Hodan’s care for her students under pressure, against her own limits."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/hd-10.jpg",
+      "altNl": "HBO-docentensituatie: Vrijdag, 21.40 uur",
+      "altEn": "Lecturer scene: Friday, 9.40 p.m.",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 128,
+      "woordenEn": 130,
+      "bron": "HBO-docenten — v3 website (10 kaarten)",
+      "kaartNummer": "HD10",
+      "sectorColor": "#6C5B7B",
+      "categorieEn": "HBO LECTURERS",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
   }
 ]
