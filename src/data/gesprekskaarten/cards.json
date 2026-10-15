@@ -7626,5 +7626,905 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
+  },
+  {
+    "id": "mg-01",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Vijftien jaar trouw dienst",
+      "verhaal": "Sander leidt sinds drie jaar de afdeling logistiek en kent Ruud vanaf zijn eerste werkdag. Ruud werkt er al vijftien jaar, kent iedereen bij naam en brengt taart mee op verjaardagen.\n\nMaar zijn scanlijsten kloppen steeds minder. Twee keer deze maand bleef het hele team over om zijn fouten in de nachtzending recht te zetten, en Priya zuchtte hoorbaar toen zijn naam weer op de foutenlijst stond. Het functioneringsgesprek stelde Sander al twee keer uit, uit gêne en uit loyaliteit. Het verbetertraject ligt klaar om te tekenen.\n\nRuud groet hem opgewekt door de deur, zoals elke ochtend al vijftien jaar. Tekent Sander vandaag?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt het functioneren van het hele team en het precedent voor andere medewerkers, niet alleen de band tussen Sander en Ruud."
+    },
+    "en": {
+      "titel": "Fifteen Years of Loyal Service",
+      "verhaal": "Sander has headed the logistics department for three years and has known Ruud since his first day. Ruud has worked there for fifteen years, knows everyone by name and brings cake on birthdays.\n\nBut his scan lists are becoming less and less accurate. Twice this month the whole team stayed late to put his errors in the night shipment right, and Priya sighed audibly when his name appeared on the error list again. Sander has postponed the performance review twice, out of embarrassment and out of loyalty. The improvement plan is ready to be signed.\n\nRuud greets him cheerfully through the door, as he has every morning for fifteen years. Does Sander sign today?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects how the whole team functions and sets a precedent for other employees, not just the bond between Sander and Ruud."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-01.jpg",
+      "altNl": "Magazijn: leidinggevende met klembord en veiligheidshelm, collega op de achtergrond",
+      "altEn": "Warehouse: manager with clipboard and hard hat, colleague in the background",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 114,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG1",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-02",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Drie maanden garantie",
+      "verhaal": "Femke presenteert overmorgen de nieuwe planningsmodule aan Bergmans Logistiek, een klant die goed is voor een kwart van de jaaromzet. Ze weet dat de koppeling met oudere systemen soms vastloopt, een bug die pas over drie maanden is opgelost.\n\nHaar salesmanager appte gisteren: ‘Noem het niet, tenzij ze ernaar vragen.’ De IT-manager van Bergmans vraagt altijd eerst naar bekende problemen. Gaat de deal door, dan blijven twee banen in haar team behouden. Komt het probleem later aan het licht, dan verliest ze meer dan een klant: ook zijn vertrouwen.\n\nFemke opent haar slides. De IT-manager buigt zich naar voren en stelt zijn vaste openingsvraag. Wat zegt ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Femkes integriteit botst met een instructie van haar organisatie en met de banen en de klantrelatie van het hele team."
+    },
+    "en": {
+      "titel": "Three Months' Warranty",
+      "verhaal": "The day after tomorrow Femke presents the new planning module to Bergmans Logistics, a client worth a quarter of annual revenue. She knows the link with older systems sometimes freezes, a bug that will not be fixed for three months.\n\nHer sales manager texted yesterday: ‘Don’t mention it unless they ask.’ Bergmans’ IT manager always asks about known problems first. If the deal goes through, two jobs in her team are saved. If the problem comes to light later, she loses more than a client: she also loses his trust.\n\nFemke opens her slides. The IT manager leans forward and asks his standard opening question. What does she say?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Femke’s integrity clashes with an instruction from her organisation and with the jobs and the client relationship of the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-02.jpg",
+      "altNl": "Vergadertafel: vrouw met hijab achter open laptop, collega's op de achtergrond",
+      "altEn": "Meeting table: woman wearing a hijab at an open laptop, colleagues in the background",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 109,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG2",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-03",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Tien procent",
+      "verhaal": "Linh, hoofd marketing, moet voor vrijdag tien procent bezuinigen. De financieel directeur legt twee opties voor: Mila, de jongste copywriter, ontslaan, of het hele opleidingsbudget schrappen, inclusief de cursus die twee seniors al goedgekeurd kregen.\n\nMila’s proeftijd loopt over zes weken af en ze tekende net een huurcontract, in de veronderstelling dat haar baan vaststaat. Bram en Willemijn rekenen op de cursus om door te groeien naar teamlead. Het gemis aan opleiding voelt het team pas over een jaar of twee.\n\nBeide scenario’s staan naast elkaar op haar scherm, met één vakje om aan te vinken. Welke kiest ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De bezuiniging raakt beleid en ontwikkelkansen van het hele team en niet de positie van één medewerker."
+    },
+    "en": {
+      "titel": "Ten Percent",
+      "verhaal": "Linh, head of marketing, has to cut ten percent by Friday. The finance director puts two options on the table: dismiss Mila, the youngest copywriter, or scrap the entire training budget, including the course two seniors have already had approved.\n\nMila’s probation ends in six weeks and she has just signed a rental contract, assuming her job is secure. Bram and Willemijn are counting on the course to grow into team lead. The team will only feel the lack of training in a year or two.\n\nBoth scenarios sit side by side on her screen, with a single box to tick. Which one does she choose?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The cut affects policy and development opportunities for the whole team, not the position of a single employee."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-03.jpg",
+      "altNl": "Kantoor: vrouw leest papieren aan bureau met grafiek op whiteboard",
+      "altEn": "Office: woman reading papers at a desk with a chart on a whiteboard",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 99,
+      "woordenEn": 106,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG3",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-04",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De cijfers van Kevin",
+      "verhaal": "Kevin haalt voor het vierde kwartaal op rij met afstand de beste cijfers van het salesteam. Denise moet deze week beslissen wie de vrijgekomen teamleadfunctie krijgt. Op papier is Kevin de logische keuze.\n\nIn de wandelgangen hoort ze steeds dezelfde klachten: hij onderbreekt collega’s, deelt zijn scripts niet met nieuwkomers en noemde iemand ‘dood gewicht’ waar drie mensen bij stonden. Farah haalt net minder dan het gemiddelde, maar elk teamlid dat zij begeleidt groeit binnen een half jaar uit tot topverkoper.\n\nHet salesteam draait grotendeels op Kevins cijfers. Het functieprofiel ligt klaar, de naam bovenaan nog leeg. Wie zet Denise erin?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De promotiekeuze bepaalt welk gedrag en welke cultuur in het hele salesteam wordt beloond."
+    },
+    "en": {
+      "titel": "Kevin’s Numbers",
+      "verhaal": "For the fourth quarter in a row, Kevin has by far the best figures in the sales team. This week Denise has to decide who gets the vacant team lead position. On paper, Kevin is the logical choice.\n\nIn the corridors she keeps hearing the same complaints: he interrupts colleagues, does not share his scripts with newcomers and called someone ‘dead weight’ with three people standing there. Farah scores just below average, but every team member she coaches grows into a top seller within six months.\n\nThe sales team largely runs on Kevin’s numbers. The job profile is ready, the name at the top still blank. Whose name does Denise put there?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The promotion decision determines which behaviour and which culture are rewarded in the whole sales team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-04.jpg",
+      "altNl": "Open kantoor: vrouw in pak houdt een document omhoog aan haar bureau",
+      "altEn": "Open office: woman in a suit holding up a document at her desk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 112,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG4",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-05",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De aanbetaling",
+      "verhaal": "De directie vertelt Anne dat er over een maand een reorganisatie komt waarbij haar teamlid Tobias zijn functie verliest. Pas over drie weken mag dat bekend worden. Diezelfde middag vertelt Tobias enthousiast dat hij een aanbetaling deed op een rijtjeshuis; de sleuteloverdracht is over zes weken.\n\nAnne kent de instructie: niemand informeren vóór de aankondiging, om paniek en vertrek te voorkomen. Ze weet ook dat Tobias de koop misschien nog kan afblazen als hij het nu hoort, want de bank geeft hem tot volgende week de tijd om definitief te tekenen.\n\nHij zit tegenover haar, zijn telefoon met foto’s van het huis al open. Wat zegt Anne?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De vertrouwelijkheidsinstructie van de directie en de reorganisatie raken de hele organisatie, niet alleen Annes verhouding tot Tobias."
+    },
+    "en": {
+      "titel": "The Down Payment",
+      "verhaal": "Management tells Anne that a reorganisation is coming in a month, in which her team member Tobias will lose his position. It may only be announced in three weeks. That same afternoon Tobias tells her excitedly that he has put down a deposit on a terraced house; the keys will be handed over in six weeks.\n\nAnne knows the instruction: tell no one before the announcement, to prevent panic and departures. She also knows Tobias may still be able to call off the purchase if he hears now, because the bank gives him until next week to sign for good.\n\nHe sits across from her, his phone already open on photos of the house. What does Anne say?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Management’s confidentiality instruction and the reorganisation affect the whole organisation, not just Anne’s relationship with Tobias."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-05.jpg",
+      "altNl": "Twee collega's in pak bekijken samen een smartphone aan een bureau",
+      "altEn": "Two colleagues in suits look at a smartphone together at a desk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 118,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG5",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-06",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Extra verlof voor Marijke",
+      "verhaal": "Marijke, senior projectleider en al acht jaar in dienst, zit midden in een zware scheiding. Ze vraagt haar manager Otto om drie weken extra onbetaald verlof, meer dan het personeelsbeleid toestaat. Otto kent haar als een van zijn betrouwbaarste mensen en ziet hoe uitgeput ze de laatste maanden is.\n\nMaakt hij een uitzondering, dan moet hij die kunnen verantwoorden aan het team. Vorige maand wees hij een vergelijkbaar verzoek van een andere collega af, onder verwijzing naar het beleid, en twee teamleden mopperden toen bij de koffieautomaat over ‘wie de gunsteling is’.\n\nHR wil vrijdag zijn besluit. Marijke wacht aan de lijn, haar stem trillend. Wat antwoordt Otto?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een uitzondering op het verlofbeleid raakt de gelijke behandeling en het rechtvaardigheidsgevoel in het hele team."
+    },
+    "en": {
+      "titel": "Extra Leave for Marijke",
+      "verhaal": "Marijke, a senior project leader who has worked there for eight years, is in the middle of a difficult divorce. She asks her manager Otto for three weeks of extra unpaid leave, more than the HR policy allows. Otto knows her as one of his most reliable people and sees how exhausted she has been these past months.\n\nIf he makes an exception, he must be able to justify it to the team. Last month he turned down a similar request from another colleague, citing the policy, and two team members grumbled by the coffee machine about ‘who the favourite is’.\n\nHR wants his decision by Friday. Marijke waits on the line, her voice trembling. What does Otto answer?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "An exception to the leave policy affects equal treatment and the sense of fairness in the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-06.jpg",
+      "altNl": "Avond op kantoor: man belt en werkt aan een groot scherm met stadslichten buiten",
+      "altEn": "Evening at the office: man on the phone working at a large screen with city lights outside",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 119,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG6",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-07",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het idee van Zineb",
+      "verhaal": "Tijdens een informele lunch vertelt Zineb, twee maanden in dienst als junior marketeer, over een campagne-idee dat de klantenwerving kan verdubbelen. Haar leidinggevende Peter luistert en beseft meteen: pitcht hij het zelf bij de directie, dan wordt het waarschijnlijk goedgekeurd.\n\nPitcht Zineb het zelf, dan zal de directie, die zelden naar junioren luistert, het net als haar twee vorige voorstellen wegwuiven. Peter heeft morgen overleg met de directie en nog één open plek op de agenda. Zineb noemde haar idee terloops, alsof ze het nog uitwerkte.\n\nPeter opent zijn agenda en typt een titel voor zijn eigen bijdrage. Wiens naam zet hij erboven?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Peter beslist zelf, op dit moment, tussen eigen gewin en eerlijke erkenning van Zinebs idee; er zijn geen regels of stakeholders die de keuze bepalen."
+    },
+    "en": {
+      "titel": "Zineb’s Idea",
+      "verhaal": "Over an informal lunch, Zineb, two months into her job as junior marketer, describes a campaign idea that could double customer acquisition. Her manager Peter listens and realises at once: if he pitches it himself to the board, it will probably be approved.\n\nIf Zineb pitches it herself, the board, which rarely listens to juniors, will brush it aside as it did her two previous proposals. Peter has a meeting with the board tomorrow and one open slot on the agenda. Zineb mentioned her idea in passing, as if she were still working it out.\n\nPeter opens his calendar and types a title for his own contribution. Whose name does he put above it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Peter decides for himself, right now, between his own gain and fair credit for Zineb’s idea; no rules or stakeholders determine the choice."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-07.jpg",
+      "altNl": "Licht kantoor: man in pak typt op laptop aan een bureau bij het raam",
+      "altEn": "Bright office: man in a suit typing on a laptop at a desk by the window",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 114,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG7",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mg-08",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Zeven avonden",
+      "verhaal": "Een cruciale deadline nadert en het team van Bas ligt twee weken achter. Werkt iedereen de komende week elke avond tot negen uur door, dan halen ze het net, een resultaat dat de afdeling het hele jaar op de kaart zet.\n\nBas ziet dat Daan al drie weken met wallen rondloopt sinds zijn tweede kind is geboren, en hoorde Priya zeggen dat ze ‘gewoon doorgaat tot het breekt’. Zijn eigen manager appte net: ‘Dit is hét moment om te laten zien wat het team waard is.’\n\nOver twintig minuten begint het teamoverleg. Wat kondigt Bas aan: het overwerkschema, of een alternatief dat de deadline in gevaar brengt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt het welzijn van het hele team en de normen van de afdeling voor werk-privébalans."
+    },
+    "en": {
+      "titel": "Seven Evenings",
+      "verhaal": "A crucial deadline is approaching and Bas’s team is two weeks behind. If everyone works until nine every evening for the coming week, they will just make it, a result that puts the department on the map for the whole year.\n\nBas sees that Daan has been walking around with dark circles for three weeks, since his second child was born, and he heard Priya say she will ‘just keep going until it breaks’. His own manager just texted: ‘This is the moment to show what this team is worth.’\n\nThe team meeting starts in twenty minutes. What does Bas announce: the overtime schedule, or an alternative that puts the deadline at risk?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the wellbeing of the whole team and the department’s norms for work-life balance."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-08.jpg",
+      "altNl": "Vergaderzaal op de achtergrond; man op de voorgrond kijkt de camera aan",
+      "altEn": "Meeting room in the background; man in the foreground looks toward the camera",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 113,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG8",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-09",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De herkomst van het staal",
+      "verhaal": "De grootste klant van Rob, goed voor dertig procent van de omzet van zijn productiebedrijf, belt met een verzoek: kan de herkomst van bepaald staal in de kwartaalrapportage worden ‘vereenvoudigd’? Het voldoet niet aan de duurzaamheidseisen van de klant zelf. ‘Niets illegaals,’ zegt de inkoper, ‘gewoon iets minder specifiek.’\n\nWeigeren betekent vrijwel zeker het einde van een relatie van twaalf jaar, en van fulltime werk voor twee van zijn mensen. Instemmen betekent meewerken aan een rapportage die zijn kwaliteitsmanager Iris drie weken geleden nog trots aan een auditor liet zien.\n\nRob legt de telefoon neer. Iris klopt aan, het conceptrapport klaar om te versturen. Wat zegt hij?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De manier van rapporteren over herkomst raakt de integriteit van de hele organisatie en haar relatie met klanten en auditors."
+    },
+    "en": {
+      "titel": "The Origin of the Steel",
+      "verhaal": "Rob’s biggest client, worth thirty percent of his manufacturing company’s revenue, calls with a request: can the origin of a certain steel be ‘simplified’ in the quarterly report? It does not meet the client’s own sustainability requirements. ‘Nothing illegal,’ says the buyer, ‘just a bit less specific.’\n\nRefusing almost certainly means the end of a twelve-year relationship, and of full-time work for two of his people. Agreeing means going along with a report that his quality manager Iris proudly showed an auditor only three weeks ago.\n\nRob puts down the phone. Iris knocks on the door, the draft report ready to send. What does he say?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "How to report on origin affects the integrity of the whole organisation and its relationship with clients and auditors."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-09.jpg",
+      "altNl": "Kantoor in productieruimte: vrouw aan bureau, man met tekening bij machines",
+      "altEn": "Office in a production area: woman at a desk, man with a drawing near machinery",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 106,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG9",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-10",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Veertig procent",
+      "verhaal": "Willem, hoofd operations bij een verzekeraar, vond software die de verwerkingstijd van claims met veertig procent verkort. De business case is sterk en de directie wacht al maanden op een oplossing voor de oplopende wachttijden.\n\nMaar invoering maakt drie functies overbodig, onder wie die van Hassan. Hij werkt er elf jaar en heeft een aanvraag voor gezinshereniging lopen die afhangt van een vast dienstverband. Willem kan het voorstel indienen zoals het is, of een langzamer tijdpad voorstellen. Elke week vertraging betekent langere wachttijden voor klanten.\n\nOp zijn scherm staan twee versies van dezelfde slide, met een andere startdatum voor de invoering. Welke stuurt hij door?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De invoering raakt de werkgelegenheid van de hele afdeling en de dienstverlening aan alle klanten, een organisatiebrede afweging."
+    },
+    "en": {
+      "titel": "Forty Percent",
+      "verhaal": "Willem, head of operations at an insurer, found software that cuts claims processing time by forty percent. The business case is strong and the board has been waiting for months for a solution to the growing waiting times.\n\nBut introducing it makes three positions redundant, including Hassan’s. He has worked there for eleven years and has a family reunification application pending that depends on a permanent contract. Willem can submit the proposal as it stands, or propose a slower timeline. Every week of delay means longer waiting times for customers.\n\nOn his screen are two versions of the same slide, with a different start date for the rollout. Which one does he send on?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The rollout affects the jobs of the whole department and the service to all customers, an organisation-wide trade-off."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-10.jpg",
+      "altNl": "Twee mannen in pak bekijken 's avonds data en kaarten op een laptop",
+      "altEn": "Two men in suits review data and maps on a laptop in the evening",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 114,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG10",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-11",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De koffieautomaat",
+      "verhaal": "Milan en Guus zijn sinds de middelbare school beste vrienden en werken nu vier jaar samen, Milan als teamleider, Guus als medewerker. De laatste maanden levert Guus werk in dat anderen stilletjes moeten corrigeren. Twee keer ving iemand een fout net op tijd op, voordat een klant het zag.\n\nBij de koffieautomaat zei Guus laatst dat het thuis ‘even niet lekker loopt’. Milan weet dat een functioneringsgesprek via HR nu het logische vervolg is, precies wat hij bij ieder ander allang had gedaan. Maar zijn oudste vriend op papier aanspreken voelt als verraad van iets groters dan werk.\n\nMilan pakt zijn agenda om het gesprek in te plannen. Als teamleider, of eerst als vriend?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Milan beslist zelf, in de relatie tussen twee mensen, tussen vriendschap en professionele verantwoordelijkheid."
+    },
+    "en": {
+      "titel": "The Coffee Machine",
+      "verhaal": "Milan and Guus have been best friends since secondary school and have now worked together for four years, Milan as team leader, Guus as employee. In recent months Guus has been handing in work that others quietly have to correct. Twice someone caught a mistake just in time, before a client saw it.\n\nAt the coffee machine Guus recently said that things at home are ‘not going great at the moment’. Milan knows that a performance review through HR is now the logical next step, exactly what he would have done long ago with anyone else. But putting his oldest friend on record feels like a betrayal of something bigger than work.\n\nMilan picks up his calendar to schedule the conversation. As team leader, or first as a friend?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Milan decides for himself, within a relationship between two people, between friendship and professional responsibility."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-11.jpg",
+      "altNl": "Café: man in colbert met open notitieboek kijkt naar de bar",
+      "altEn": "Café: man in a blazer with an open notebook looks toward the counter",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 129,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG11",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mg-12",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het voorstel van IT",
+      "verhaal": "De IT-afdeling wil software installeren die toetsaanslagen en actieve vensters van medewerkers bijhoudt, om onderpresteerders vroeg te signaleren. Chantal, hoofd klantenservice, moet vrijdag de directie adviseren. Twee van haar medewerkers presteren al maanden onder, zonder duidelijke reden.\n\nDe software zou dat sneller blootleggen dan haar eigen observaties. Maar gisteren hoorde ze twee andere teamleden fluisteren: ‘Als dit doorgaat, ben ik weg. Ik laat me niet elke minuut natrekken.’ Sinds de reorganisatie is het vertrouwen al broos.\n\nDe directie wil vrijdag een advies: voor, tegen of een tussenvorm. Chantal opent het conceptdocument van IT, de cursor knippert. Wat typt ze?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Monitoringsbeleid raakt privacy en vertrouwen van de hele afdeling en is een organisatiebreed besluit, geen individuele beoordeling."
+    },
+    "en": {
+      "titel": "IT’s Proposal",
+      "verhaal": "The IT department wants to install software that tracks employees’ keystrokes and active windows, to spot underperformers early. Chantal, head of customer service, has to advise the board on Friday. Two of her employees have been underperforming for months, for no clear reason.\n\nThe software would reveal that faster than her own observations. But yesterday she overheard two other team members whispering: ‘If this goes ahead, I’m gone. I’m not having every minute checked.’ Since the reorganisation, trust has already been fragile.\n\nThe board wants advice by Friday: for, against or something in between. Chantal opens IT’s draft document, the cursor blinking. What does she type?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Monitoring policy affects privacy and trust across the whole department and is an organisation-wide decision, not an individual assessment."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-12.jpg",
+      "altNl": "Kantoor: vrouw met bril op kin bekijkt een scherm met tekst en tabellen",
+      "altEn": "Office: woman with glasses on her chin studies a screen with text and tables",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 99,
+      "woordenEn": 106,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG12",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-13",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Na het onderzoek",
+      "verhaal": "Yara, hoofd HR, rondt het onderzoek af naar de officiële klacht van Nadia tegen collega Robbert wegens pesterijen. Na drie weken gesprekken en e-mails natrekken is haar conclusie: de klacht is grotendeels verzonnen, waarschijnlijk uit frustratie omdat Robbert de promotie kreeg waar Nadia op hoopte.\n\nRobbert, die op kantoor nauwelijks nog eet, wil weten wat er met de klacht gebeurt. Een directe confrontatie met Nadia vergroot het risico op escalatie; ze dreigde eerder al met een advocaat. Maar niets doen laat de aantekening in Robberts dossier staan.\n\nHet eindrapport ligt klaar, met een leeg vak bij ‘vervolgstappen’. Wat schrijft Yara daar?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De uitkomst raakt het formele dossier en het vertrouwen in de hele organisatie, niet alleen de twee betrokkenen."
+    },
+    "en": {
+      "titel": "After the Investigation",
+      "verhaal": "Yara, head of HR, is finishing the investigation into Nadia’s formal complaint of bullying against colleague Robbert. After three weeks of interviews and checking e-mails, her conclusion is that the complaint is largely invented, probably out of frustration because Robbert got the promotion Nadia had hoped for.\n\nRobbert, who now hardly eats at the office, wants to know what will happen to the complaint. A direct confrontation with Nadia raises the risk of escalation; she has already threatened to bring in a lawyer. But doing nothing leaves the note in Robbert’s file.\n\nThe final report is ready, with an empty box under ‘next steps’. What does Yara write there?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The outcome affects the formal file and trust in the whole organisation, not just the two people involved."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-13.jpg",
+      "altNl": "Leidinggevende in donker pak zit achter bureau met papieren",
+      "altEn": "Manager in a dark suit sits at a desk with papers",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 109,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG13",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-14",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het ene vakje",
+      "verhaal": "Sanne heeft een vast bonusbudget te verdelen over haar team van acht. Ze kan alles geven aan Thijs, die dit jaar drie grote klanten binnenhaalde en overduidelijk de beste verkoper was.\n\nOf ze verdeelt het gelijk, ook over Nienke, die het hele jaar onzichtbaar administratief werk deed zonder wie geen deal werd afgerond, en Kasper, die door persoonlijke omstandigheden een zwaar jaar had maar altijd voor anderen klaarstond. Twee teamleden vroegen al voorzichtig hoe de verdeling zou gaan. Thijs verwacht een fors bedrag.\n\nHR wil het formulier morgenmiddag. Sanne opent de spreadsheet: acht namen, naast elke naam een leeg vakje. Wat vult ze in?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De verdeling bepaalt de norm voor beloning en waardering in het hele team."
+    },
+    "en": {
+      "titel": "The One Box",
+      "verhaal": "Sanne has a fixed bonus budget to divide among her team of eight. She can give all of it to Thijs, who landed three big clients this year and was clearly the best seller.\n\nOr she can divide it equally, also giving it to Nienke, who did invisible administrative work all year without which no deal was completed, and to Kasper, who had a hard year because of personal circumstances but was always there for others. Two team members have already carefully asked how the division will work. Thijs expects a substantial amount.\n\nHR wants the form by tomorrow afternoon. Sanne opens the spreadsheet: eight names, an empty box next to each. What does she fill in?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The division sets the norm for reward and appreciation in the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-14.jpg",
+      "altNl": "Vrouw aan bureau peinst over een groot spreadsheet op het scherm",
+      "altEn": "Woman at a desk ponders a large spreadsheet on the monitor",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 104,
+      "woordenEn": 117,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG14",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-15",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Eén controle",
+      "verhaal": "Eriks team werkt op locatie aan nieuwe leidingen bij een fabriekscomplex met strikte veiligheidsprotocollen. Ze lopen twee dagen achter. Als ze één tijdrovende drukcontrole overslaan, halen ze morgenavond de deadline die de opdrachtgever al twee keer ‘niet-onderhandelbaar’ noemde.\n\nDe kans op een incident is klein: het systeem is nieuw, de onderdelen zijn gecertificeerd. Maar niet nul, en toen een team elders dezelfde controle oversloeg, liep het goed af, op één keer na. Een gemiste deadline kost de klant een productieweek en Eriks project een boete.\n\nErik staat met de checklist in zijn hand, de controle het enige open punt. Zijn ploegleider kijkt hem aan. Geeft hij het teken?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De beslissing raakt de veiligheid van het hele team op locatie en de verantwoordelijkheid tegenover de opdrachtgever."
+    },
+    "en": {
+      "titel": "One Inspection",
+      "verhaal": "Erik’s team is installing new pipes on site at a factory complex with strict safety protocols. They are two days behind. If they skip one time-consuming pressure test, they will make tomorrow evening’s deadline, which the client has already called ‘non-negotiable’ twice.\n\nThe chance of an incident is small: the system is new and the components are certified. But it is not zero, and when a team elsewhere skipped the same test, it went well, except once. A missed deadline costs the client a week of production and Erik’s project a penalty.\n\nErik stands with the checklist in his hand, the test the only open item. His foreman looks at him. Does he give the signal?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The decision affects the safety of the whole team on site and the responsibility towards the client."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-15.jpg",
+      "altNl": "Industrieterrein: inspecteur met klembord en veiligheidsvest bij tanks",
+      "altEn": "Industrial site: inspector with clipboard and safety vest near storage tanks",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 116,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG15",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-16",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Twee beloftes",
+      "verhaal": "Sara neemt de leiding over van haar voorganger, die drie maanden geleden vertrok. In haar eerste weken ontdekt ze dat hij informele promotiebeloftes deed aan twee medewerkers, Bo en Lieke. Gezien hun prestaties en het krappe budget kan ze ze allebei niet waarmaken.\n\nBo heeft het al aan zijn partner verteld en rekent zichtbaar op de nieuwe titel. Lieke vroeg vorige week voorzichtig wanneer ‘het rond is’. Sara kan eerlijk zijn over wat haalbaar is, met het risico dat een van beiden vertrekt, of een vage tussenweg zoeken die de teleurstelling uitstelt.\n\nMorgenochtend staat het eerste functioneringsgesprek met Bo gepland. Wat zegt ze hem?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De omgang met de beloftes van een voorganger raakt vertrouwen en verwachtingen in het hele team en het budget van de organisatie."
+    },
+    "en": {
+      "titel": "Two Promises",
+      "verhaal": "Sara takes over from her predecessor, who left three months ago. In her first weeks she discovers that he made informal promises of promotion to two employees, Bo and Lieke. Given their performance and the tight budget, she cannot keep both.\n\nBo has already told his partner and is visibly counting on the new title. Lieke carefully asked last week when ‘it will be settled’. Sara can be honest about what is feasible, at the risk that one of them leaves, or look for a vague middle road that postpones the disappointment.\n\nTomorrow morning her first performance review with Bo is scheduled. What does she tell him?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "How to handle a predecessor’s promises affects trust and expectations in the whole team and the organisation’s budget."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-16.jpg",
+      "altNl": "Twee collega's in pak praten aan een bureau met map en laptop",
+      "altEn": "Two colleagues in suits talk at a desk with a folder and laptop",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 104,
+      "woordenEn": 107,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG16",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-17",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De voorwaarde van de opdrachtgever",
+      "verhaal": "Naomi, projectleider bij een communicatiebureau, krijgt van een grote opdrachtgever een eis: minder diversiteit in de gezinnen op de campagnebeelden, ‘om aan te sluiten bij onze kernmarkt’. Zo formuleert de marketingdirecteur van de klant het.\n\nHet bureau profileert zich nadrukkelijk met inclusiviteit als kernwaarde, op de website en in elke pitch. Meegaan houdt een contract binnen dat een groot deel van de jaaromzet vormt. Weigeren verdedigt die waarde, maar riskeert het project en het werk van twee freelancers die al aan de productie zijn begonnen.\n\nNaomi moet morgenochtend antwoorden. Het conceptmailtje staat open, de cursor knippert achter ‘Beste Marcel,’. Wat typt ze verder?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt de kernwaarden en reputatie van het hele bureau en het werk van meerdere freelancers."
+    },
+    "en": {
+      "titel": "The Client’s Condition",
+      "verhaal": "Naomi, a project leader at a communications agency, receives a demand from a major client: less diversity in the families in the campaign images, ‘to match our core market’. That is how the client’s marketing director puts it.\n\nThe agency explicitly presents itself with inclusivity as a core value, on its website and in every pitch. Going along keeps a contract that makes up a large part of annual revenue. Refusing defends that value, but risks the project and the work of two freelancers who have already started production.\n\nNaomi has to reply tomorrow morning. The draft e-mail is open, the cursor blinking after ‘Dear Marcel,’. What does she write next?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the core values and reputation of the whole agency and the work of several freelancers."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-17.jpg",
+      "altNl": "Creatief kantoor: vrouw bij laptop, muur met portretfoto's op de achtergrond",
+      "altEn": "Creative office: woman at a laptop, wall of portrait photos in the background",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 111,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG17",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mg-18",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Elke maandag",
+      "verhaal": "Karin merkt al maanden een patroon bij Devon: hij meldt zich opvallend vaak ziek, bijna altijd op maandag of vlak voor een lang weekend. Bewijs heeft ze niet, alleen een groeiend vermoeden en de irritatie van een team dat zijn taken erbij neemt.\n\nVorige week moest Malik, zelf al onder druk, voor de tweede keer deze maand Devons rapportage overnemen. Een gesprek zonder harde bewijzen riskeert een vertrouwensbreuk of een klacht wegens onterechte verdenking. Zwijgen betekent dat de rest de rekening blijft betalen.\n\nDevon komt glimlachend binnen, net terug van alweer een maandag thuis, en vraagt luchtig hoe het weekend was. Begint Karin het gesprek?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Karin beslist zelf, in dit ene gesprek tussen twee mensen en op basis van een vermoeden, of ze het onderwerp aansnijdt."
+    },
+    "en": {
+      "titel": "Every Monday",
+      "verhaal": "For months Karin has noticed a pattern with Devon: he reports sick strikingly often, almost always on a Monday or just before a long weekend. She has no proof, only a growing suspicion and the irritation of a team that takes over his tasks.\n\nLast week Malik, himself already under pressure, had to take over Devon’s reporting for the second time this month. A conversation without hard evidence risks a breach of trust or a complaint of unjustified suspicion. Staying silent means the rest keep paying the bill.\n\nDevon walks in smiling, just back from yet another Monday at home, and asks lightly how her weekend was. Does Karin start the conversation?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Karin decides for herself, in this one conversation between two people and on the basis of a suspicion, whether to raise the subject."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-18.jpg",
+      "altNl": "Kantoor: vrouw met potlood aan bureau, collega met koffie op de achtergrond",
+      "altEn": "Office: woman with a pencil at her desk, colleague with coffee in the background",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 112,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG18",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mg-19",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De vergissing in het rapport",
+      "verhaal": "Els, de leidinggevende van Bram, maakte een flinke rekenfout in het kwartaalrapport dat gisteren naar de directie ging. Een verkeerd omzetcijfer zet zijn hele team nu in een ongunstig daglicht. Vanochtend neemt ze hem apart: ‘Kun je zeggen dat de fout bij jouw team lag? Ik maak het goed, dat beloof ik.’\n\nEls doet zijn functioneringsgesprekken en noemde zijn naam bij de laatste promotieronde. Weigeren zet hun relatie op scherp, precies nu Bram zelf voor promotie in aanmerking komt. Instemmen betekent liegen tegen de directie over iets wat zijn eigen reputatie raakt.\n\nOver een uur begint de vervolgvergadering. Els kijkt hem aan en wacht. Wat zegt hij?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Bram beslist zelf, op dit moment, op een direct verzoek van zijn leidinggevende; de keuze ligt bij één persoon."
+    },
+    "en": {
+      "titel": "The Mistake in the Report",
+      "verhaal": "Els, Bram’s manager, made a serious calculation error in the quarterly report that went to the board yesterday. A wrong revenue figure now puts his whole team in an unfavourable light. This morning she takes him aside: ‘Can you say the error was in your team? I’ll make it right, I promise.’\n\nEls conducts his performance reviews and mentioned his name in the last promotion round. Refusing puts their relationship on edge, precisely now that Bram himself is up for promotion. Agreeing means lying to the board about something that affects his own reputation.\n\nThe follow-up meeting starts in an hour. Els looks at him and waits. What does he say?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Bram decides for himself, at this moment, on a direct request from his manager; the choice rests with one person."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-19.jpg",
+      "altNl": "Twee collega's in pak lezen samen een papier aan een bureau",
+      "altEn": "Two colleagues in suits read a paper together at a desk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 107,
+      "woordenEn": 111,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG19",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mg-20",
+    "set": "management-v3",
+    "stap": 1,
+    "categorie": "management",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het jaarverslag",
+      "verhaal": "Het project waar Lottes team een jaar aan werkte, de klantenportal ‘Connect’, wordt volgende maand stopgezet: te duur, te traag, en amper gebruikt door de klanten voor wie het bedoeld was. Vrijdag presenteert ze het aan de directie en de rest van de organisatie.\n\nZe kan het inkaderen als ‘waardevolle leerervaring’ en de cijfers zacht formuleren, wat haar team en haarzelf waarschijnlijk buiten schot houdt. Of ze is volledig open over de verkeerde aannames vooraf en de signalen die onderweg zijn genegeerd, met harde vragen over haar eigen beslissingen.\n\nTwee teamleden vroegen al hoe eerlijk ze wordt. Lotte opent de slides: de titel van dia twaalf is nog leeg. Wat zet ze erboven?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De manier van rapporteren raakt het vertrouwen in en de leercultuur van het hele bedrijf, niet alleen Lottes persoonlijke verantwoording."
+    },
+    "en": {
+      "titel": "The Annual Report",
+      "verhaal": "The project Lotte’s team worked on for a year, the customer portal ‘Connect’, will be shut down next month: too expensive, too slow, and barely used by the customers it was meant for. On Friday she presents it to the board and the rest of the organisation.\n\nShe can frame it as a ‘valuable learning experience’ and word the figures softly, which will probably keep her team and herself out of the line of fire. Or she can be fully open about the wrong assumptions at the start and the signals ignored along the way, with hard questions about her own decisions.\n\nTwo team members have already asked how honest she will be. Lotte opens the slides: the title of slide twelve is still empty. What does she put above it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The way of reporting affects trust in and the learning culture of the whole company, not just Lotte’s personal accountability."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mg-20.jpg",
+      "altNl": "Hoge kantoorverdieping: vrouw in pak denkt na bij groot scherm en raam",
+      "altEn": "High-rise office: woman in a suit thinking beside a large screen and window",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 113,
+      "woordenEn": 131,
+      "bron": "Management — v3 website (20 kaarten)",
+      "kaartNummer": "MG20",
+      "sectorColor": "#3D5A73",
+      "categorieEn": "MANAGEMENT",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
   }
 ]
