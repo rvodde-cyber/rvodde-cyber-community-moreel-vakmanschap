@@ -1,6 +1,6 @@
 /**
  * Import v3-pakket (Burgerschap, Bestuurskunde, Onderwijs) + optionele opruiming oude kaarten.
- * Usage: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs [--skip-cleanup] [--cleanup-only]
+ * Usage: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]
  */
 import fs from "fs";
 import path from "path";
@@ -41,9 +41,27 @@ const PACK_CONFIG = {
     stap: 1,
     status: "getest",
     categorieEn: "EDUCATION",
+    useTitleAlt: true,
+    altSceneNl: "Onderwijssituatie",
+    altSceneEn: "Education scene",
     metaPath: path.join(root, "src/data/gesprekskaarten/onderwijs-meta.json"),
     bron: "Onderwijs — v3 website (12 kaarten)",
     cleanupIds: (id) => /^GK_OW_\d{2}$/.test(id),
+  },
+  "hbo-docenten": {
+    packDir: "Cursor_HBO_docenten",
+    jsonFile: "cards_hbo.json",
+    categorie: "hbo-docenten",
+    set: "hbo-docenten-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "HBO LECTURERS",
+    useTitleAlt: true,
+    altSceneNl: "HBO-docentensituatie",
+    altSceneEn: "Lecturer scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/hbo-docenten-meta.json"),
+    bron: "HBO-docenten — v3 website (10 kaarten)",
+    cleanupIds: () => false,
   },
 };
 
@@ -59,8 +77,8 @@ function splitReflection(text) {
 function altFromImagePath(imageRel) {
   const base = path.basename(imageRel, path.extname(imageRel));
   const slug = base
-    .replace(/^(bg|bk|ow)-\d+-/i, "")
-    .replace(/^(bg|bk|ow)-\d+$/i, "scene")
+    .replace(/^(bg|bk|ow|hd)-\d+-/i, "")
+    .replace(/^(bg|bk|ow|hd)-\d+$/i, "scene")
     .replace(/-/g, " ");
   const label = slug === "scene" ? base.replace(/-/g, " ") : slug;
   return {
@@ -69,10 +87,12 @@ function altFromImagePath(imageRel) {
   };
 }
 
-function altFromTitle(entry) {
+function altFromTitle(entry, config) {
+  const nlPrefix = config.altSceneNl ?? "Onderwijssituatie";
+  const enPrefix = config.altSceneEn ?? "Education scene";
   return {
-    nl: `Onderwijssituatie: ${entry.title.nl}`,
-    en: `Education scene: ${entry.title.en}`,
+    nl: `${nlPrefix}: ${entry.title.nl}`,
+    en: `${enPrefix}: ${entry.title.en}`,
   };
 }
 
@@ -110,8 +130,9 @@ function toCommunityCard(entry, config) {
   }
   optimizeImage(resolvedSrc, destFile);
 
-  const alt =
-    config.categorie === "onderwijs" ? altFromTitle(entry) : altFromImagePath(entry.image);
+  const alt = config.useTitleAlt
+    ? altFromTitle(entry, config)
+    : altFromImagePath(entry.image);
 
   return normalizeCard({
     id: entry.id,
@@ -201,7 +222,7 @@ function main() {
   const config = PACK_CONFIG[sector];
   if (!config) {
     console.error(
-      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs [--skip-cleanup] [--cleanup-only]"
+      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]"
     );
     process.exit(1);
   }
@@ -246,6 +267,9 @@ function main() {
       complexityNote: pack.meta.complexity_note,
       setDescription: pack.meta.set_description,
     };
+    if (pack.meta.sources?.length) {
+      meta.sources = pack.meta.sources;
+    }
     fs.writeFileSync(config.metaPath, JSON.stringify(meta, null, 2) + "\n", "utf8");
   }
 
