@@ -9,7 +9,6 @@ export const CARD_SET_ORDER = [
   "onderwijs-v3",
   "hoger-onderwijs-v3",
   "passende-zorg",
-  "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
   "praktijkschok-hrm",
 ];
@@ -18,11 +17,40 @@ export const CARD_SET_ORDER = [
 export const CARD_SET_ALIASES = {
   "hbo-docenten-v3": "hoger-onderwijs-v3",
   "etz-passende-zorg": "passende-zorg",
+  "nucleaire-geneeskunde": "passende-zorg",
 };
+
+/** Oude ?set=nucleaire-geneeskunde → Passende zorg + subfilter. */
+export const LEGACY_SET_SUBCATEGORIE = {
+  "nucleaire-geneeskunde": "nucleaire-geneeskunde",
+};
+
+export const PASSENDE_ZORG_SUBCATEGORIEEN = ["algemeen", "nucleaire-geneeskunde"];
+
+export function getPassendeZorgSubcategorie(card) {
+  if (card.categorie !== "passende-zorg") return null;
+  if (card.subcategorie) return card.subcategorie;
+  if (String(card.id || "").startsWith("GK_NM_")) return "nucleaire-geneeskunde";
+  return "algemeen";
+}
 
 export function resolveCardSetId(setId) {
   if (!setId) return setId;
   return CARD_SET_ALIASES[setId] ?? setId;
+}
+
+/** URL ?set=… → filters (incl. legacy nucleair als subfilter). */
+export function parseSetSearchParam(setFromUrl) {
+  if (!setFromUrl) {
+    return { set: "", subcategorie: "", categorie: "" };
+  }
+  const sub = LEGACY_SET_SUBCATEGORIE[setFromUrl];
+  if (sub) {
+    return { set: "passende-zorg", subcategorie: sub, categorie: "passende-zorg" };
+  }
+  const set = resolveCardSetId(setFromUrl);
+  const categorie = set === "passende-zorg" ? "passende-zorg" : "";
+  return { set, subcategorie: "", categorie };
 }
 
 /** Oude categorie-slugs in links/filters. */
@@ -35,6 +63,17 @@ export const CATEGORIE_ALIASES = {
 export function resolveCategorieSlug(slug) {
   if (!slug) return slug;
   return CATEGORIE_ALIASES[slug] ?? slug;
+}
+
+/** URL ?categorie=… → filters (nucleair → passende zorg + subfilter). */
+export function parseCategorieSearchParam(slug) {
+  if (!slug) {
+    return { categorie: "", subcategorie: "" };
+  }
+  if (slug === "nucleaire-geneeskunde") {
+    return { categorie: "passende-zorg", subcategorie: "nucleaire-geneeskunde" };
+  }
+  return { categorie: resolveCategorieSlug(slug), subcategorie: "" };
 }
 
 export function sortCardSets(sets) {

@@ -1,20 +1,30 @@
 import { useMemo } from "react";
 import { useTaal } from "../context/TaalContext";
-import { getComplexityKey } from "../data/gesprekskaarten/constants";
+import { getComplexityKey, PASSENDE_ZORG_SUBCATEGORIEEN } from "../data/gesprekskaarten/constants";
 import { getGesprekskaartStrings } from "../data/gesprekskaarten/i18n";
 
 const EMPTY = {
   set: "",
   categorie: "",
+  subcategorie: "",
   moeilijkheid: "",
   taalniveau: "",
   zoek: "",
 };
 
-export default function GesprekskaartenFilters({ filters, onChange, options, resultCount, totalCount }) {
+export default function GesprekskaartenFilters({
+  filters,
+  onChange,
+  options,
+  resultCount,
+  totalCount,
+  showPassendeZorgSubfilter = false,
+  passendeZorgSubcategorieCounts = null,
+}) {
   const { taal, t } = useTaal();
   const f = t.gesprekskaart.filters;
   const gk = getGesprekskaartStrings(taal);
+  const subCopy = f.passendeZorgSubfilter ?? {};
 
   const setLabels = useMemo(() => {
     const map = f.setLabels ?? {};
@@ -33,7 +43,14 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
   }, [options.categorieen, f.categorieLabels]);
 
   const hasActiveFilters =
-    filters.set || filters.categorie || filters.moeilijkheid || filters.taalniveau || filters.zoek;
+    filters.set ||
+    filters.categorie ||
+    filters.subcategorie ||
+    filters.moeilijkheid ||
+    filters.taalniveau ||
+    filters.zoek;
+
+  const subLabelMap = subCopy.subcategorieLabels ?? {};
 
   return (
     <div className="mb-8 rounded-xl border border-rand bg-white p-4 shadow-warm md:p-5">
@@ -57,7 +74,12 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
           <span className="font-semibold text-primair">{f.reeks}</span>
           <select
             value={filters.set}
-            onChange={(e) => onChange({ ...filters, set: e.target.value })}
+            onChange={(e) => {
+              const set = e.target.value;
+              const next = { ...filters, set };
+              if (set !== "passende-zorg") next.subcategorie = "";
+              onChange(next);
+            }}
             className="rounded-lg border border-rand bg-[#fafaf8] px-3 py-2 text-primair"
           >
             <option value="">{f.all}</option>
@@ -73,7 +95,12 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
           <span className="font-semibold text-primair">{f.categorie}</span>
           <select
             value={filters.categorie}
-            onChange={(e) => onChange({ ...filters, categorie: e.target.value })}
+            onChange={(e) => {
+              const categorie = e.target.value;
+              const next = { ...filters, categorie };
+              if (categorie !== "passende-zorg") next.subcategorie = "";
+              onChange(next);
+            }}
             className="rounded-lg border border-rand bg-[#fafaf8] px-3 py-2 text-primair"
           >
             <option value="">{f.all}</option>
@@ -132,6 +159,45 @@ export default function GesprekskaartenFilters({ filters, onChange, options, res
           />
         </label>
       </div>
+
+      {showPassendeZorgSubfilter && passendeZorgSubcategorieCounts && (
+        <div className="mt-4 border-t border-rand pt-4">
+          <p className="mb-2 text-sm font-semibold text-primair">{subCopy.label ?? "Onderdeel"}</p>
+          <div className="flex flex-wrap gap-2" role="group" aria-label={subCopy.label ?? "Onderdeel"}>
+            <button
+              type="button"
+              onClick={() => onChange({ ...filters, subcategorie: "" })}
+              className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                !filters.subcategorie
+                  ? "border-accent bg-accent text-white"
+                  : "border-rand bg-[#fafaf8] text-primair hover:border-accent"
+              }`}
+            >
+              {subCopy.all ?? "Alle"} ({passendeZorgSubcategorieCounts.all})
+            </button>
+            {PASSENDE_ZORG_SUBCATEGORIEEN.map((slug) => (
+              <button
+                key={slug}
+                type="button"
+                onClick={() =>
+                  onChange({
+                    ...filters,
+                    categorie: filters.categorie || "passende-zorg",
+                    subcategorie: slug,
+                  })
+                }
+                className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${
+                  filters.subcategorie === slug
+                    ? "border-accent bg-accent text-white"
+                    : "border-rand bg-[#fafaf8] text-primair hover:border-accent"
+                }`}
+              >
+                {subLabelMap[slug] ?? slug} ({passendeZorgSubcategorieCounts[slug] ?? 0})
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

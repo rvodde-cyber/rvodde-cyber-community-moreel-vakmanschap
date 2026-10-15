@@ -61,7 +61,8 @@ function parseCards(raw) {
     cards.push(
       normalizeCard({
         id: `GK_NM_${String(index).padStart(2, "0")}`,
-        set: "nucleaire-geneeskunde",
+        set: "passende-zorg",
+        subcategorie: "nucleaire-geneeskunde",
         stap: 1,
         categorie: "passende-zorg",
         complexiteit: COMPLEXITY_MAP[complexityKey],

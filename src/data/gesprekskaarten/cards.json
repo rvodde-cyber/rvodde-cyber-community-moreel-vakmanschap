@@ -1048,7 +1048,7 @@
   },
   {
     "id": "GK_NM_01",
-    "set": "nucleaire-geneeskunde",
+    "set": "passende-zorg",
     "stap": 1,
     "categorie": "passende-zorg",
     "complexiteit": "meso",
@@ -1082,11 +1082,12 @@
       "afbeeldingStatus": "oud",
       "sectorColor": "#0D5C63"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 2,
+    "subcategorie": "nucleaire-geneeskunde"
   },
   {
     "id": "GK_NM_02",
-    "set": "nucleaire-geneeskunde",
+    "set": "passende-zorg",
     "stap": 1,
     "categorie": "passende-zorg",
     "complexiteit": "meso",
@@ -1120,11 +1121,12 @@
       "afbeeldingStatus": "oud",
       "sectorColor": "#0D5C63"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 2,
+    "subcategorie": "nucleaire-geneeskunde"
   },
   {
     "id": "GK_NM_03",
-    "set": "nucleaire-geneeskunde",
+    "set": "passende-zorg",
     "stap": 1,
     "categorie": "passende-zorg",
     "complexiteit": "meso",
@@ -1158,11 +1160,12 @@
       "afbeeldingStatus": "oud",
       "sectorColor": "#0D5C63"
     },
-    "moeilijkheid": 2
+    "moeilijkheid": 2,
+    "subcategorie": "nucleaire-geneeskunde"
   },
   {
     "id": "GK_NM_04",
-    "set": "nucleaire-geneeskunde",
+    "set": "passende-zorg",
     "stap": 1,
     "categorie": "passende-zorg",
     "complexiteit": "micro",
@@ -1196,7 +1199,8 @@
       "afbeeldingStatus": "oud",
       "sectorColor": "#0D5C63"
     },
-    "moeilijkheid": 1
+    "moeilijkheid": 1,
+    "subcategorie": "nucleaire-geneeskunde"
   },
   {
     "id": "GK_RI_01",
@@ -2033,7 +2037,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-02",
@@ -2081,7 +2086,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-06",
@@ -2129,7 +2135,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-09",
@@ -2177,7 +2184,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-11",
@@ -2225,7 +2233,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-14",
@@ -2273,7 +2282,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-16",
@@ -2321,7 +2331,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-18",
@@ -2369,7 +2380,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-21",
@@ -2417,7 +2429,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-23",
@@ -2465,7 +2478,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-26",
@@ -2513,7 +2527,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-28",
@@ -2561,7 +2576,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-31",
@@ -2609,7 +2625,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-33",
@@ -2657,7 +2674,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-36",
@@ -2705,7 +2723,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-42",
@@ -2753,7 +2772,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-43",
@@ -2801,7 +2821,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-46",
@@ -2849,7 +2870,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-47",
@@ -2897,7 +2919,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "etz-49",
@@ -2945,7 +2968,8 @@
       "project": "Elisabeth-TweeSteden Ziekenhuis — Passende Zorg",
       "complexiteitOnbekend": true,
       "hideReflectieVragen": true
-    }
+    },
+    "subcategorie": "algemeen"
   },
   {
     "id": "hrm-ps02",
