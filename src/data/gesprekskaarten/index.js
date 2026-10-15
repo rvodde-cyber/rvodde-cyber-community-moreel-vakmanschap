@@ -9,6 +9,8 @@ import {
   getCategorieKleurLicht,
   getComplexityKey,
   sortCardSets,
+  resolveCardSetId,
+  resolveCategorieSlug,
 } from "./constants.js";
 import { getGesprekskaartStrings } from "./i18n.js";
 import { getCardContentLang } from "../vertalingen.js";
@@ -121,11 +123,13 @@ export function localizeCards(taal, cardList = getAllCards()) {
 export function filterCards(cardList, filters = {}) {
   const { categorie, moeilijkheid, taalniveau, stap, set, zoek, taal = "nl" } = filters;
   const q = zoek?.trim().toLowerCase();
+  const resolvedSet = set ? resolveCardSetId(set) : "";
+  const resolvedCategorie = categorie ? resolveCategorieSlug(categorie) : "";
 
   return filterVisibleCards(cardList).filter((card) => {
-    if (set && card.set !== set) return false;
+    if (resolvedSet && card.set !== resolvedSet) return false;
     if (stap && card.stap !== Number(stap)) return false;
-    if (categorie && card.categorie !== categorie) return false;
+    if (resolvedCategorie && card.categorie !== resolvedCategorie) return false;
     if (moeilijkheid && card.moeilijkheid !== Number(moeilijkheid)) return false;
     if (taalniveau && card.taalniveau !== taalniveau) return false;
 

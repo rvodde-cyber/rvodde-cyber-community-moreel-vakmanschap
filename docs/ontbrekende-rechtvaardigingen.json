@@ -422,7 +422,7 @@
   {
     "id": "GK_NM_01",
     "titel": "Dertig minuten geleden",
-    "categorie": "nucleaire-geneeskunde",
+    "categorie": "passende-zorg",
     "complexiteit": "meso",
     "ontbreekt": [
       "nl",
@@ -432,7 +432,7 @@
   {
     "id": "GK_NM_02",
     "titel": "De eerste die het vraagt",
-    "categorie": "nucleaire-geneeskunde",
+    "categorie": "passende-zorg",
     "complexiteit": "meso",
     "ontbreekt": [
       "nl",
@@ -442,7 +442,7 @@
   {
     "id": "GK_NM_03",
     "titel": "Waar zij het voor ruilde",
-    "categorie": "nucleaire-geneeskunde",
+    "categorie": "passende-zorg",
     "complexiteit": "meso",
     "ontbreekt": [
       "nl",
@@ -452,7 +452,7 @@
   {
     "id": "GK_NM_04",
     "titel": "Tussen de compressies",
-    "categorie": "nucleaire-geneeskunde",
+    "categorie": "passende-zorg",
     "complexiteit": "micro",
     "ontbreekt": [
       "nl",

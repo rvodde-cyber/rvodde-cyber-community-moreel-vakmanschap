@@ -6,11 +6,13 @@ const setLabelsSv = {
   bestuurskunde: "Offentlig förvaltning",
   "dl-compleet-a5": "Vardagsliv (hela setet)",
   "onderwijs-v3": "Utbildning",
-  "hbo-docenten-v3": "HBO-lärare",
-  "nucleaire-geneeskunde": "Nukleärmedicin",
+  "hoger-onderwijs-v3": "Högre utbildning",
+  "hbo-docenten-v3": "Högre utbildning",
+  "passende-zorg": "Passande vård",
+  "nucleaire-geneeskunde": "Passande vård (nukleärmedicin)",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Passande vård",
 };
 
 const setLabelsCs = {
@@ -19,11 +21,13 @@ const setLabelsCs = {
   bestuurskunde: "Veřejná správa",
   "dl-compleet-a5": "Každodenní život (celá sada)",
   "onderwijs-v3": "Vzdělávání",
-  "hbo-docenten-v3": "Vyučující na vysokých školách",
-  "nucleaire-geneeskunde": "Nukleární medicína",
+  "hoger-onderwijs-v3": "Vyšší vzdělávání",
+  "hbo-docenten-v3": "Vyšší vzdělávání",
+  "passende-zorg": "Přiměřená péče",
+  "nucleaire-geneeskunde": "Přiměřená péče (nukleární medicína)",
   onderzoeksintegriteit: "Integrita výzkumu",
   "praktijkschok-hrm": "Praktijkschok HR",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Přiměřená péče",
 };
 
 const setLabelsDa = {
@@ -32,11 +36,13 @@ const setLabelsDa = {
   bestuurskunde: "Offentlig administration",
   "dl-compleet-a5": "Dagligdagen (fuld sæt)",
   "onderwijs-v3": "Uddannelse",
-  "hbo-docenten-v3": "HBO-undervisere",
-  "nucleaire-geneeskunde": "Nuklearmedicin",
+  "hoger-onderwijs-v3": "Højere uddannelse",
+  "hbo-docenten-v3": "Højere uddannelse",
+  "passende-zorg": "Passende pleje",
+  "nucleaire-geneeskunde": "Passende pleje (nuklearmedicin)",
   onderzoeksintegriteit: "Forskningsintegritet",
   "praktijkschok-hrm": "Praktijkschok HR",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Passende pleje",
 };
 
 const categorieLabelsSv = {
@@ -47,15 +53,17 @@ const categorieLabelsSv = {
   "social-media": "Sociala medier",
   studentenleven: "Studentliv",
   zorg: "Vård",
-  "nucleaire-geneeskunde": "Nukleärmedicin",
+  "passende-zorg": "Passande vård",
+  "nucleaire-geneeskunde": "Passande vård",
   onderzoeksintegriteit: "Forskningsintegritet",
   onderwijs: "Utbildning",
-  "hbo-docenten": "HBO-lärare",
+  "hoger-onderwijs": "Högre utbildning",
+  "hbo-docenten": "Högre utbildning",
   overheid: "Offentlig sektor",
   hrm: "HR",
   burgerschap: "Medborgarskap",
   bestuurskunde: "Offentlig förvaltning",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Passande vård",
 };
 
 const categorieLabelsCs = {
@@ -66,15 +74,17 @@ const categorieLabelsCs = {
   "social-media": "Sociální média",
   studentenleven: "Studentský život",
   zorg: "Zdravotnictví",
-  "nucleaire-geneeskunde": "Nukleární medicína",
+  "passende-zorg": "Přiměřená péče",
+  "nucleaire-geneeskunde": "Přiměřená péče",
   onderzoeksintegriteit: "Integrita výzkumu",
   onderwijs: "Vzdělávání",
-  "hbo-docenten": "Vyučující na vysokých školách",
+  "hoger-onderwijs": "Vyšší vzdělávání",
+  "hbo-docenten": "Vyšší vzdělávání",
   overheid: "Veřejný sektor",
   hrm: "HR",
   burgerschap: "Občanství",
   bestuurskunde: "Veřejná správa",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Přiměřená péče",
 };
 
 const categorieLabelsDa = {
@@ -85,15 +95,17 @@ const categorieLabelsDa = {
   "social-media": "Sociale medier",
   studentenleven: "Studieliv",
   zorg: "Sundhedsvæsen",
-  "nucleaire-geneeskunde": "Nuklearmedicin",
+  "passende-zorg": "Passende pleje",
+  "nucleaire-geneeskunde": "Passende pleje",
   onderzoeksintegriteit: "Forskningsintegritet",
   onderwijs: "Uddannelse",
-  "hbo-docenten": "HBO-undervisere",
+  "hoger-onderwijs": "Højere uddannelse",
+  "hbo-docenten": "Højere uddannelse",
   overheid: "Offentlig sektor",
   hrm: "HR",
   burgerschap: "Medborgerskab",
   bestuurskunde: "Offentlig administration",
-  "etz-passende-zorg": "ETZ Passende Zorg",
+  "etz-passende-zorg": "Passende pleje",
 };
 
 export const gesprekskaartUiLocales = {
