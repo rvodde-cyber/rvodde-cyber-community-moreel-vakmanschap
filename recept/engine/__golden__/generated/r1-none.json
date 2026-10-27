@@ -1,0 +1,18 @@
+{
+  "scenario": "r1-none",
+  "ids": [],
+  "q": 1,
+  "meters": {
+    "W": 42,
+    "B": 37,
+    "P0": 68,
+    "P1": 67,
+    "V": 50,
+    "rep": 50,
+    "verz": 10.1,
+    "anb": 27,
+    "betr": 12,
+    "syn": false,
+    "contra": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "scenario": "r1-D",
+  "ids": [
+    "D"
+  ],
+  "q": 1,
+  "meters": {
+    "W": 48,
+    "B": 38,
+    "P0": 63,
+    "P1": 74,
+    "V": 53,
+    "rep": 50,
+    "verz": 8.6,
+    "anb": 26,
+    "betr": 13,
+    "syn": false,
+    "contra": false
+  }
+}
