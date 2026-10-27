@@ -1,15 +1,19 @@
 # Besluiten Cursor — Recept
 
+## 2026-10-27 — Piotr-lijn (Richard)
+
+Volledige tekst: `docs/PIOTR-LIJN.md`. Data: `data/dilemmas/ep4-piotr.ts`, `data/personen.ts` (flexkracht). UI dilemma/berichten/slot: stap 5–6.
+
+- Herkomst in spel **niet** expliciet benoemen; screening op verdenking, niet op landnaam.
+- Defensie-contract altijd door; dilemma alleen eerlijkheid + menselijke maat.
+- Vaste aanname Piotr ronde 2: MT-keuze + begroting (TODO koppeling motor).
+- Testament/schuur 2031 en Erik doorgestreept 2036: verhaaldata, nog niet in React-slot.
+
 ## 2026-10-27 — Start bouw
 
-### Ontbrekende bronnen (niet in git/workspace gevonden)
+### Bronnen
 
-- `referentie/demo-aflevering4-ronde1.html`
-- `docs/spelmotor.md`
-- `docs/dronefabriek-deel1.md`
-- Optioneel genoemd in prompt: `serieconcept.md`, `keuzes-en-dashboard.md`, `introteksten.md`, `morele-dilemmas.md`, `beeldbank.md`, `overzicht.md`
-
-Zoekactie: repository-root, OneDrive Fontys-map, zip `Publicatiepakket_VanAfwegenNaarHandelen_1.zip` — geen hits.
+Bouwpakket staat in `Cursor projecten/Recept/` en is gesynchroniseerd naar `recept/` (demo v6, docs, tien beelden). Voortgang: `docs/VOORTGANG.md`.
 
 ### Bronmap OneDrive (leidend voor sync)
 

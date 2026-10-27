@@ -62,8 +62,9 @@ export const PERSONEN: Persoon[] = [
     slug: 'piotr-nowak',
     naam: 'Piotr Nowak',
     leeftijd: 34,
-    rol: 'Engineer',
-    tekst: 'Engineer in de assemblage; zijn dilemma raakt de defensieorder en vertrouwen op de vloer.',
-    portretAlt: 'Portret van Piotr Nowak, engineer',
+    rol: 'Flexkracht assemblage',
+    tekst:
+      'Flexkracht op de assemblagelijn via Brabantse Personeelsdiensten. In ronde 2 kan het MT hem in vaste dienst nemen; zijn verhaal raakt de defensie-screening.',
+    portretAlt: 'Portret van Piotr Nowak, flexkracht assemblage',
   },
 ];

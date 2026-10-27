@@ -12,11 +12,11 @@
 - **serieconcept (leidend voor leeftijden):** geboren 1955 → 29 in 1984.
 - **Besluit:** leeftijden en alt-teksten volgen serieconcept; introtekst aflevering 1 wordt later aangepast in de bron.
 
-### Piotr (dilemma vs personagebestand)
+### Piotr (canon 27 oktober 2026)
 
-- **morele-dilemmas.md:** engineer.
-- **dronefabriek-deel1 / demo:** assemblage/flex.
-- **Besluit:** speelteksten volgen demo en dronefabriek; dilemma-tekst in data kan beide benoemen waar nodig.
+- **Leidend:** `docs/PIOTR-LIJN.md` (flex ronde 1, optioneel vast ronde 2, dilemma privé, geen landnaam in UI).
+- **Oudere teksten:** `morele-dilemmas.md` / `beeldbank-codes.md` noemen soms „engineer” of „Pools” — game volgt Piotr-lijn, niet die labels.
+- **Demo v6:** bericht „elf jaar” vs bureau-flex; tekst in `data/dilemmas/ep4-piotr.ts` aangepast naar „jaren via het bureau”.
 
 ## Proefberekening ronde 1 vs golden (referentie v6)
 
