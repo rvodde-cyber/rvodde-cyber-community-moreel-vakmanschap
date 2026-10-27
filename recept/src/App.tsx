@@ -1,12 +1,28 @@
+import { useState } from 'react';
+import { useGame } from './hooks/useGame';
+import { GameShell } from './screens/GameShell';
+import { HomeScreen } from './screens/HomeScreen';
+
 export default function App() {
-  return (
-    <main className="mx-auto flex min-h-screen max-w-lg flex-col items-center justify-center gap-4 p-8 text-center">
-      <p className="text-sm font-medium uppercase tracking-wide text-slate-500">Recept</p>
-      <h1 className="text-2xl font-semibold text-slate-900">Van Gorp Drones</h1>
-      <p className="text-slate-600">
-        HR-businessgame — bouw in uitvoering. Spelmotor en tests staan in{' '}
-        <code className="rounded bg-slate-200 px-1 text-sm">engine/</code>.
-      </p>
-    </main>
-  );
+  const { state, dispatch, hasSave } = useGame();
+  const [playing, setPlaying] = useState(false);
+  const [draftName, setDraftName] = useState(state.playerName);
+
+  if (!playing) {
+    return (
+      <HomeScreen
+        name={draftName}
+        hasSave={hasSave}
+        onName={setDraftName}
+        dispatch={dispatch}
+        onStart={() => setPlaying(true)}
+        onResume={() => {
+          setDraftName(state.playerName);
+          setPlaying(true);
+        }}
+      />
+    );
+  }
+
+  return <GameShell state={state} dispatch={dispatch} />;
 }
