@@ -23,6 +23,5 @@
       "@content/*": ["./content/*"]
     }
   },
-  "include": ["src", "engine", "data", "content", "scripts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "engine", "data", "content", "themes", "scripts"]
 }

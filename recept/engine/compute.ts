@@ -28,13 +28,16 @@ export function compute(
 
   for (const k of sel) {
     const f = k.fit ? 1.3 : 1.0;
-    eff[k.id] = {};
+    const cardEff: Record<string, number> = {};
+    eff[k.id] = cardEff;
     for (const key of Object.keys(k.e) as (keyof typeof k.e)[]) {
-      let v = k.e[key] * f * q;
+      const base = k.e[key];
+      if (base === undefined) continue;
+      let v = base * f * q;
       if (contra && v > 0 && has(RESOURCE_DRIVER_KEYS, key)) {
         v *= 0.75;
       }
-      eff[k.id][key] = v;
+      cardEff[key] = v;
       sum[key] = (sum[key] ?? 0) + v;
     }
   }
@@ -50,7 +53,9 @@ export function compute(
     const beEntry = R.BE[pid];
     if (!beEntry) continue;
     for (const key of Object.keys(beEntry) as (keyof typeof beEntry)[]) {
-      const v = beEntry[key] * u[pid];
+      const base = beEntry[key];
+      if (base === undefined) continue;
+      const v = base * (u[pid] ?? 0);
       beff[pid][key] = v;
       sum[key] = (sum[key] ?? 0) + v;
     }

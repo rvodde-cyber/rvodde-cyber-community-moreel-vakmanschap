@@ -22,7 +22,7 @@ describe('golden snapshots ronde 1', () => {
     ['r1-D-E.json', ['D', 'E']],
   ] as const)('match %s', (file, ids) => {
     const golden = loadGolden(file);
-    const res = compute(1, ids, golden.q, ctx, bud);
+    const res = compute(1, [...ids], golden.q, ctx, bud);
     expect(meterSnapshot(res)).toEqual(golden.meters);
   });
 });

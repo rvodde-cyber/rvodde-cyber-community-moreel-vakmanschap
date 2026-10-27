@@ -18,4 +18,15 @@
 - **dronefabriek-deel1 / demo:** assemblage/flex.
 - **Besluit:** speelteksten volgen demo en dronefabriek; dilemma-tekst in data kan beide benoemen waar nodig.
 
-_(Verdere afwijkingen t.o.v. proefberekeningstabellen in `docs/spelmotor.md` volgen na golden-run.)_
+## Proefberekening ronde 1 vs golden (referentie v6)
+
+Golden snapshots volgen `referentie/demo-aflevering4-v6.html` (`compute`). Afwijking t.o.v. de proeftabel in `docs/spelmotor.md`:
+
+| Scenario | Veld | spelmotor.md | Golden v6 |
+| --- | --- | --- | --- |
+| Geen interventie | P1 | 68 | 67 |
+| D | P1 | 73 | 74 |
+| D + E | P1 | 77 | 79 |
+| E | W | 46 | 45 |
+
+W/B voor geen interventie, D en D+E komen overeen op hele punten. P1 wijkt enkele punten; goldens zijn leidend voor tests tot kalibratie.
