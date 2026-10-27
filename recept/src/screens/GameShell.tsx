@@ -2,6 +2,7 @@ import { ROUNDS } from '@data/rounds';
 import { budgetOf } from '@engine/helpers';
 import { DashboardColumn } from '../components/DashboardColumn';
 import { StepsNav } from '../components/StepsNav';
+import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
 import { engineContext } from '../game/budgetUi';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
@@ -27,14 +28,30 @@ function Ticker({ round }: { round: 1 | 2 }) {
 
 export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { phase, round } = state;
+  const { openPause } = useUiModals();
   const ctx = engineContext(state);
   const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
 
-  if (phase === 'intro') return <IntroPhase dispatch={dispatch} />;
-  if (phase === 'cold') return <ColdPhase roundUi={state.rounds[round]} dispatch={dispatch} />;
+  if (phase === 'intro') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <IntroPhase dispatch={dispatch} />
+      </>
+    );
+  }
+  if (phase === 'cold') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <ColdPhase roundUi={state.rounds[round]} dispatch={dispatch} />
+      </>
+    );
+  }
 
   return (
     <>
+      <SyncModalRound round={round} />
       <header className="top">
         <div className="wrap">
           <div className="brand">
@@ -45,9 +62,19 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
           <div className="clocks">
             <span className="clock" id="clock">MA 09:14:00</span>
-            <button type="button" className="timer" aria-label="Timer">
+            <button
+              type="button"
+              className="timer"
+              aria-label="Beslistijd, tik om te pauzeren"
+              onClick={openPause}
+            >
               <small>Beslistijd</small>
               {pad2(Math.floor(state.tLeft / 60))}:{pad2(state.tLeft % 60)}
+            </button>
+            <button type="button" className="ib" aria-label="Menu" onClick={openPause}>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
             </button>
             <div className="hbud">
               <small>Budget ronde {round}</small>

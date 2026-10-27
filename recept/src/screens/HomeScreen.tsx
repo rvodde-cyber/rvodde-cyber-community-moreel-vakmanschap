@@ -1,3 +1,5 @@
+import { HelpLinks } from '../components/HelpLinks';
+import { useUiModals } from '../context/UiModalsContext';
 import type { GameAction } from '../game/gameReducer';
 
 type Props = {
@@ -10,6 +12,7 @@ type Props = {
 };
 
 export function HomeScreen({ name, hasSave, onName, dispatch, onStart, onResume }: Props) {
+  const { openHowto, openGloss } = useUiModals();
   return (
     <div className="setup">
       <div className="setup-in">
@@ -47,6 +50,7 @@ export function HomeScreen({ name, hasSave, onName, dispatch, onStart, onResume 
             </button>
           ) : null}
         </div>
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import { HelpLinks } from '../../components/HelpLinks';
+import { useUiModals } from '../../context/UiModalsContext';
 import type { GameAction } from '../../game/gameReducer';
 
 const base = import.meta.env.BASE_URL;
@@ -12,6 +14,7 @@ function bg(code: string) {
 }
 
 export function IntroPhase({ dispatch }: { dispatch: (a: GameAction) => void }) {
+  const { openHowto, openGloss } = useUiModals();
   return (
     <div className="cine">
       {bg('T4')}
@@ -50,6 +53,7 @@ export function IntroPhase({ dispatch }: { dispatch: (a: GameAction) => void }) 
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder
         </button>
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} />
       </div>
     </div>
   );

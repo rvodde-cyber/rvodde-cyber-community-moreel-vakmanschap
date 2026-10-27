@@ -16,6 +16,7 @@ export type GameAction =
   | { type: 'SET_PILOT'; mode: 'pilot' | 'zelf' }
   | { type: 'TOGGLE_CARD'; id: string }
   | { type: 'TOGGLE_ROLE'; id: string }
+  | { type: 'MARK_ROLE_SPOKE'; id: string }
   | { type: 'SET_FIELD'; field: 'mot' | 'min' | 'w0' | 'w1' | 'w2'; value: string }
   | { type: 'TOGGLE_MIN' }
   | { type: 'SET_BUD'; id: string; value: number }
@@ -102,6 +103,14 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       const has = r.spoken.includes(action.id);
       const spoken = has ? r.spoken.filter((x) => x !== action.id) : [...r.spoken, action.id];
       return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, spoken } } };
+    }
+    case 'MARK_ROLE_SPOKE': {
+      const r = roundState(state);
+      if (r.spoken.includes(action.id)) return state;
+      return {
+        ...state,
+        rounds: { ...state.rounds, [state.round]: { ...r, spoken: [...r.spoken, action.id] } },
+      };
     }
     case 'SET_FIELD': {
       const r = roundState(state);

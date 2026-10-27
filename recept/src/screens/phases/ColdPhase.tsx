@@ -1,4 +1,6 @@
 import { COLD_OPEN } from '@data/coldOpen';
+import { HelpLinks } from '../../components/HelpLinks';
+import { useUiModals } from '../../context/UiModalsContext';
 import type { GameAction } from '../../game/gameReducer';
 import type { RoundUiState } from '../../game/uiTypes';
 
@@ -11,6 +13,7 @@ export function ColdPhase({
   roundUi: RoundUiState;
   dispatch: (a: GameAction) => void;
 }) {
+  const { openHowto, openGloss } = useUiModals();
   const sb = COLD_OPEN[1];
   const head = (
     <>
@@ -44,6 +47,7 @@ export function ColdPhase({
             </button>
           </div>
           <p className="note">Trailer en geluid volgen in stap 6; nu ga je direct naar de cold open.</p>
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} />
         </div>
       </div>
     );
@@ -92,6 +96,7 @@ export function ColdPhase({
             </>
           )}
         </div>
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} />
       </div>
     </div>
   );

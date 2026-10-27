@@ -1,5 +1,11 @@
 # Besluiten Cursor — Recept
 
+## 2026-10-27 — Stap 4 UX (duidelijkheid)
+
+- Modals: **Hoe het werkt** (knop Duidelijk), **Wie is wie en begrippen** (PersonCard + begrippen), **Pauze** (timer + hamburgermenu), bereikbaar vanuit hoofdmenu, intro, cold open en spel.
+- **Rondje MT**: twee stappen in modal (belang tonen → standpunt), zoals referentie v6; geen directe toggle meer voor “standpunt gegeven”.
+- Besluitscherm blijft één doorlopend scherm (geen genummerde substappen); dat volgt de CURSOR-PROMPT §3.4. Later herbeoordelen of substappen de duidelijkheid vergroten.
+
 ## 2026-10-27 — Piotr-lijn (Richard)
 
 Volledige tekst: `docs/PIOTR-LIJN.md`. Data: `data/dilemmas/ep4-piotr.ts`, `data/personen.ts` (flexkracht). UI dilemma/berichten/slot: stap 5–6.

@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { ROUNDS } from '@data/rounds';
 import { MT_ROLLEN } from '@data/rollen';
 import { TaskBar } from '../../components/TaskBar';
+import { useUiModals } from '../../context/UiModalsContext';
 import { needText, okBesluit } from '../../game/besluitRules';
 import { bcalc, engineContext } from '../../game/budgetUi';
 import { eur, kostEur } from '../../lib/format';
@@ -8,6 +10,11 @@ import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
+  const { openRole, setRoleSpokeHandler } = useUiModals();
+  useEffect(() => {
+    setRoleSpokeHandler((id) => dispatch({ type: 'MARK_ROLE_SPOKE', id }));
+  }, [dispatch, setRoleSpokeHandler]);
+
   const round = state.round;
   const R = state.rounds[round];
   const D = ROUNDS[round];
@@ -130,7 +137,10 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
                 type="button"
                 className="role"
                 aria-pressed={on}
-                onClick={() => dispatch({ type: 'TOGGLE_ROLE', id: ro.id })}
+                onClick={() => {
+                  if (on) dispatch({ type: 'TOGGLE_ROLE', id: ro.id });
+                  else openRole(ro.id);
+                }}
               >
                 <span className="n">{ro.n}</span>
                 <span className="s">{on ? '✓ STANDPUNT GEGEVEN' : 'BEKIJK JE BELANG'}</span>
