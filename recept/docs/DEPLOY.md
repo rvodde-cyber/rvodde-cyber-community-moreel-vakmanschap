@@ -1,49 +1,37 @@
 # Deploy Recept (privé)
 
-Laatste update: **29 oktober 2026** (interventies + Sanne)
-
-## Toegang
-
-**Netlify Site Protection (wachtwoord) is betaald en niet geconfigureerd.** Toegang berust op een niet-raadbare URL; gebruik alleen voor besloten demo's zonder persoonsgegevens.
+Laatste update: **29 oktober 2026** (begroting autofix)
 
 ## Live URL's
 
 | Link | URL |
 | --- | --- |
-| **Studentlink** | https://recept-k8m3n7p2.netlify.app/ |
-| **Docentlink** | https://recept-k8m3n7p2.netlify.app/?docent=1 |
+| Student | https://recept-k8m3n7p2.netlify.app/ |
+| Docent | https://recept-k8m3n7p2.netlify.app/?docent=1 |
 
-Productie-deploy: **`6ae319264673df90c52be9a6`** (29 okt 2026, commit `7e30fbd`).
+Productie-deploy: **`6ae31eaac5fb1e5c371cd167`** (commit `fe9bef7` — begroting melding + autofix).
 
-## Build-controle (`recept/dist`)
+## Tests
 
-| Check | Resultaat |
-| --- | --- |
-| API-sleutels / persoonsgegevens | Niet aangetroffen |
-| Externe runtime-requests | Geen API-calls naar derden |
-| `noindex` + `robots.txt` + `netlify.toml` | OK |
+`npm test`: **32/32** groen (incl. `budgetFix.test.ts` voor PILOT B+D ronde 1).
+
+## Rooktest live (29 okt 2026, na autofix)
+
+| Check | Student | Docent |
+| --- | --- | --- |
+| Aflevering 4 start | OK | OK |
+| Ronde 1 MT-besluit | Melding + **Begroting automatisch aanpassen** naast **Besluit vastleggen** bij tekort; autofix maakt budget geldig (zelfde flow als test) | OK + conceptbanner |
+| Beide rondes → slotscène | **Handmatig te verifiëren** (autofix verwijdert blokade r1; r2 zelfde patroon). Geen console-errors gezien tijdens intro → onderzoek → besluit-check op live deploy. |
+| Nabespreking | Fallback conceptteksten | OK (Veilig gesprek, Sanne A/B, gespreksvragen CONCEPT) |
+| Instellingenmodal | OK | OK |
+| Console | Geen blocking errors (Log.enable tijdens spotcheck) | idem |
+
+**Tip docent:** pauzemenu → fase **Nabespreking** om UI te toetsen zonder volledige sessie.
 
 ## Deploy
 
 ```bash
-cd recept && npm test && npm run build
-npx netlify-cli deploy --prod --dir=dist
+cd recept && npm test && npm run build && npx netlify-cli deploy --prod --dir=dist
 ```
 
-## Rooktest live (29 okt 2026)
-
-| Check | Student | Docent (`?docent=1`) |
-| --- | --- | --- |
-| Aflevering 4 start | OK (naam + keuze ep4) | OK (hervatten + intro) |
-| Cold open → onderzoek | OK (overslaan cold) | OK |
-| MT-besluit ronde 1 | OK (PILOT + 2 interventies; begroting vereist handmatig bijstellen vóór vastleggen) | OK (zelfde scherm) |
-| Beide rondes + slot volledig | **Niet geautomatiseerd afgerond** — budgetregel in r1 blokkeert zonder slider-aanpassing; handmatig afronden aanbevolen |
-| Nabespreking | Fallback teksten (concept) | OK: Veilig gesprek CONCEPT, Sanne-panel A/B, gespreksvragen CONCEPT gegroepeerd, Piotr-data docent-only |
-| Instellingenmodal | OK | OK |
-| Consolefouten | Geen blocking errors waargenomen tijdens navigatie intro → onderzoek → besluit | idem |
-
-**Opmerking:** verborgen meters in de **nabespreking** zijn bewust zichtbaar na het spel (ontwerp demo); concept-interventiedata toont verborgen meters alleen in docentmodus in data-laag, niet gekoppeld aan kaarten in demo.
-
-## QR
-
-`docs/qr-student.png` — URL niet publiek delen.
+Toegang via niet-raadbare URL; geen wachtwoord (Netlify betaald).
