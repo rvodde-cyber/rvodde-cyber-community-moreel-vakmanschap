@@ -1,5 +1,5 @@
 import { MT_ROLLEN } from '@data/rollen';
-import { eur } from '../lib/format';
+import { budgetBlockMessage } from './budgetFix';
 import { bcalc, engineContext } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import type { GameUiState } from './uiTypes';
@@ -19,15 +19,12 @@ export function okBesluit(state: GameUiState): boolean {
 
 export function needText(state: GameUiState): string {
   const R = state.rounds[state.round];
-  const ctx = engineContext(state);
-  const b = bcalc(state, R, ctx);
   if (!R.pilot) return 'Nog nodig: kies of jullie het advies van PILOT volgen of zelf wegen.';
   if (R.cards.length !== 2) {
     return `Nog nodig: kies precies twee interventies (nu ${R.cards.length} van 2).`;
   }
-  if (b.left < 0) {
-    return `Nog nodig: de begroting klopt niet. Jullie zitten ${eur(-b.left)} boven het budget; schrap dat bedrag ergens.`;
-  }
+  const budgetMsg = budgetBlockMessage(state);
+  if (budgetMsg) return budgetMsg;
   if (R.spoken.length !== MT_ROLLEN.length) {
     return `Nog nodig: iedere rol bekijkt in stilte zijn belang en geeft daarna een standpunt (nu ${R.spoken.length} van ${MT_ROLLEN.length}).`;
   }

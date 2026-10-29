@@ -5,6 +5,7 @@ import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { useDocentMode } from '../../hooks/useDocentMode';
 import { useUiModals } from '../../context/UiModalsContext';
 import { needText, okBesluit } from '../../game/besluitRules';
+import { budgetBlockMessage, canAutoFixBudget } from '../../game/budgetFix';
 import { bcalc, engineContext } from '../../game/budgetUi';
 import { roundDefFor } from '../../game/roundSource';
 import { eur, kostEur } from '../../lib/format';
@@ -25,6 +26,9 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
   const b = bcalc(state, R, ctx);
   const pl = R.pilot === 'pilot';
   const zelf = R.pilot === 'zelf';
+  const blockMsg = needText(state);
+  const budgetMsg = budgetBlockMessage(state);
+  const showAutoFix = budgetMsg != null && canAutoFixBudget(state);
 
   return (
     <>
@@ -176,18 +180,39 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
           </>
         ) : null}
       </section>
-      <button
-        type="button"
-        className="btn gold big"
-        disabled={!okBesluit(state)}
-        onClick={() => dispatch({ type: 'CONFIRM_BESLUIT' })}
-      >
-        Besluit vastleggen
-      </button>
+      <div className="besluit-submit" role="region" aria-labelledby="besluit-submit-heading">
+        <h2 id="besluit-submit-heading" className="sr-only">
+          Besluit vastleggen
+        </h2>
+        {blockMsg ? (
+          <p className="need besluit-need" id="need" role="status" aria-live="polite">
+            {blockMsg}
+          </p>
+        ) : null}
+        <div className="besluit-submit-actions">
+          {showAutoFix ? (
+            <button
+              type="button"
+              className="btn ghost"
+              onClick={() => dispatch({ type: 'AUTO_FIX_BUDGET' })}
+            >
+              Begroting automatisch aanpassen
+            </button>
+          ) : null}
+          <button
+            type="button"
+            className="btn gold big"
+            disabled={!okBesluit(state)}
+            aria-describedby={blockMsg ? 'need' : undefined}
+            onClick={() => dispatch({ type: 'CONFIRM_BESLUIT' })}
+          >
+            Besluit vastleggen
+          </button>
+        </div>
+      </div>
       <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'onderzoek' })}>
         Terug naar onderzoek
       </button>
-      <p className="need" id="need">{needText(state)}</p>
     </>
   );
 }

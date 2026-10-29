@@ -5,6 +5,7 @@ import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
 import { dilemmaGroepBerichten } from '@data/berichten';
 import type { ChatChannel } from '@data/berichten';
 import { useSkeletonMotor } from '@data/interventieFlags';
+import { applyAutoFixBud } from './budgetFix';
 import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import { stubComputeResult } from './stubCompute';
@@ -30,6 +31,7 @@ export type GameAction =
   | { type: 'SET_FIELD'; field: 'mot' | 'min' | 'w0' | 'w1' | 'w2'; value: string }
   | { type: 'TOGGLE_MIN' }
   | { type: 'SET_BUD'; id: string; value: number }
+  | { type: 'AUTO_FIX_BUDGET' }
   | { type: 'CONFIRM_BESLUIT' }
   | { type: 'FINISH_SCAN' }
   | { type: 'TRY_AGAIN' }
@@ -183,6 +185,8 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         },
       };
     }
+    case 'AUTO_FIX_BUDGET':
+      return applyAutoFixBud(state);
     case 'CONFIRM_BESLUIT': {
       const r = roundState(state);
       const cards = pilotLockedCards(state);
