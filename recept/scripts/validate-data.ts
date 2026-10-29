@@ -2,6 +2,7 @@ import { PERSONEN } from '../data/personen';
 import { DILEMMA_STUBS } from '../data/dilemmas/stubs';
 import { validateNabesprekingEp4 } from '../data/nabespreking-ep4';
 import { validatePiotrLijn } from '../data/piotr-lijn';
+import { INTERVENTIES_SKELET } from '../data/interventies-skelet';
 import { assertInterventieFlagsConsistent, INTERVENTIE_FLAGS } from '../data/interventieFlags';
 import { ROUNDS } from '../data/rounds';
 import { SKELETON_ROUNDS } from '../data/skeleton/rounds';
@@ -19,6 +20,11 @@ function main() {
   }
 
   validatePiotrLijn();
+
+  if (INTERVENTIES_SKELET.some((i) => i.interventieDefinitief !== false)) {
+    console.error('INTERVENTIES_SKELET: interventieDefinitief moet false zijn');
+    process.exit(1);
+  }
 
   const rounds = roundsRecordSchema.safeParse(ROUNDS);
   if (!rounds.success) {

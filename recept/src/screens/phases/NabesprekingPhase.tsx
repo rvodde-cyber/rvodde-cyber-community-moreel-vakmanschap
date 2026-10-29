@@ -179,9 +179,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
               ))}
         </section>
       ) : state.episode === 4 ? (
-        <p className="note">
-          Gespreksvragen Piotr-lijn volgen zodra ze definitief zijn (zie docs/GESPREKSVRAGEN-EP4-VOORSTEL.md).
-        </p>
+        <p className="note">Gespreksvragen Piotr-lijn volgen zodra ze definitief zijn (nu alleen concept in docentmodus).</p>
       ) : null}
 
       {state.opvolging ? (
