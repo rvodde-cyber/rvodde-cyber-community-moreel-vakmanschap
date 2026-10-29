@@ -1,31 +1,35 @@
 # Open vragen en aanleveringen
 
-Laatste update: **27 oktober 2026**. Zie ook `docs/overzicht.md` (besluitenlog) en `docs/PIOTR-LIJN.md`.
+Laatste update: **29 oktober 2026**. Zie ook `docs/overzicht.md`, `docs/PIOTR-LIJN.md`, `docs/BEELDEN-CHECK.md`.
 
-## Inhoud en ontwerp
+## Aflevering 4
 
-- Greiner-crisis aflevering 4: serie (bureaucratie) vs demo (leiderschap/autonomie) — voorlopig demo in data.
-- Definitieve interventies aflevering 1, 2, 3 en 5 (nu concept-skelet gepland).
-- Reactie van **Sanne** op de Piotr-lijn en opvolgingsverhaal.
-- Gespreksvragen nabespreking Piotr-dilemma (facilitator).
-- Kosten en kalibratie verborgen meters bij dilemma-keuzes (nu: demo-waarden in `data/dilemmas/ep4-piotr.ts`).
+- **Gespreksvragen nabespreking Piotr-lijn** — Claude levert concepten → `docs/CONCEPT-GESPREKSVRAGEN-EP4.md` → `data/nabespreking-ep4.ts` (status `definitief`).
+- **Sanne-reactie** — slot `sanneReactieEp4` in `data/ep4ContentSlots.ts` (nu leeg).
+- **Greiner-crisis** — slot `greinerCrisisEp4` vs demo in `data/rounds.ts` (zie `docs/AFWIJKINGEN.md`).
+- Facilitatorvragen Piotr-dilemma (docent).
+- Kalibratie verborgen meters dilemma (nu demo in `ep4-piotr.ts`).
+
+## Afleveringen 1, 2, 3, 5
+
+- Definitieve interventies + `interventieDefinitief` / `gevolgenCompleet` in `data/interventieFlags.ts`.
+- Opvolgingsgevolgen ep 4/5 (`gevolgEp4` / `gevolgEp5` in `data/opvolging.ts` — TODO).
+- Dilemma’s 1/2/3/5 speelbaar koppelen (data in `data/dilemmas/stubs.ts`).
 
 ## Media
 
-- 8 portretten → `public/portretten/` (`PORTRETTEN-PROMPTS.md`, gestileerd).
-- Overige Firefly-beelden → `public/beelden/<code>.webp`.
-- Bevestiging portretstijl vs fotorealistische beeldbank.
+- Portretten 8× WebP → `public/portretten/`; akkoord in `docs/BEELDEN-CHECK.md` / Richard.
+- Beelden I1–I5 (+ overige codes) → `public/beelden/`; `akkoordRichard: true` in `data/beeldenCheck.ts`.
 
 ## Technisch / proces
 
-- Zevendeling toetsing `spelmotor.md` als volledige golden-suite (nu 4 scenario’s ronde 1).
-- Expertcheck scenariotests door twee collega’s.
-- Multiplayer/regiekamer (bewust niet v1).
+- **Live deploy URL** invullen in `docs/DEPLOY.md` na Netlify-koppeling.
+- `git push origin main` (lokaal commits ahead).
+- Golden-suite uitbreiden (`docs/spelmotor.md` zevendeling).
+- Expertcheck scenariotests.
 
-## Wat Richard nog moet aanleveren (samenvatting)
+## Wat Richard / Claude nog aanleveren (top)
 
-1. Portretten en resterende beelden.
-2. Getoetste interventies aflevering 1, 2, 3, 5.
-3. Besluit Greiner aflevering 4 (of demo houden).
-4. Sanne-reactie + nabesprekingsvragen Piotr.
-5. Definitieve sync Introteksten / Morele dilemma’s uit Drive indien gewijzigd t.o.v. `docs/`.
+1. Conceptgespreksvragen ep4 (Claude) + Sanne/Greiner-voorstel (Claude).
+2. Portretten + beeldakkoord I1–I5.
+3. Getoetste interventies 1/2/3/5 en opvolgingsgevolgen.

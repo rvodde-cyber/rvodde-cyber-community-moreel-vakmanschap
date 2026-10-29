@@ -1,27 +1,44 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **27 oktober 2026**
+Laatste update: **29 oktober 2026**
 
-Bronmap ontwerp: `Cursor projecten\Recept` (sync naar `recept/` in monorepo). Hervatten: zie `START-HIER.md`.
+## Paragraaf 11 — bouwvolgorde (CURSOR-PROMPT)
 
-## Paragraaf 11 — bouwvolgorde
+| Stap | Status |
+| --- | --- |
+| 1–8 | Klaar (zie eerdere commits) |
+
+## Vervolg CURSOR-PROMPT (post-§11)
 
 | Stap | Omschrijving | Status |
 | --- | --- | --- |
-| 1 | Projectopzet, thema’s, data, validatie, SessionAdapter | Grotendeels klaar (`themes/periods.ts`, `src/session/`) |
-| 2 | Spelmotor, tests, golden ronde 1 (v6) | Klaar (10 tests) |
-| 3 | Aflevering 4 ronde 1 speelbaar (controlekamer) | Eerste versie klaar; grafiek/HR-detail/chat/trailer nog open |
-| 4 | Opdrachtbalk (deels), Wie is wie, Hoe het werkt, pauze/menu, rondje MT-modal | Klaar (instellingen-stub stap 8) |
-| 5 | Groepsapp, reacties, dilemma Piotr + verborgen meters | Klaar (zichtbaar in nabespreking stap 8) |
-| 6 | Trailer/geluid, slotscène, pauzekaart, ronde 2 | Klaar (nabespreking stap 8) |
-| 7 | Afleveringen 1–3 & 5 skelet, opvolging | Klaar (docentbanner, periodethema, TODO-gevolgen opvolging) |
-| 8 | Portretten, docentmodus, nabespreking, README | Klaar (instellingen-stub open) |
+| 1 | Richard test aflevering 4 + docent + nabespreking | Klaar (door Richard) |
+| 2 | Private deploy (build, robots, Netlify, DEPLOY.md) | Config klaar; **live URL nog open** |
+| 3 | Inhoudsslots, flags, BEELDEN-CHECK, geen ethische invulling | Klaar |
+| 4 | Instellingenmodal, a11y, 3 tests | Klaar (Lighthouse/axe handmatig nog) |
+| 5 | LATER.md, geen trackers | Klaar |
 
-## Commits (monorepo `recept/`)
+### Tests (29 okt 2026)
 
-- `Recept: projectopzet, bronnen en spelmotor met tests`
-- `Recept: SessionAdapter, thema-types en bouwplanning bijgewerkt`
-- `Recept stap 3: aflevering 4 ronde 1 speelbaar (controlekamer)`
+- `npm test`: **15 tests** (10 motor + 2 interventie-flags + 3 a11y).
+- `npm run build`: groen.
+
+### Live URL / rooktest
+
+- Deploy: zie `docs/DEPLOY.md`. Push naar origin en Netlify-koppeling door Richard.
+- Rooktest live: **nog uit te voeren** na deploy.
+
+### Geblokkeerd op Richard / Claude
+
+1. Conceptgespreksvragen ep4 + Sanne/Greiner-teksten.
+2. Beelden/portretten + akkoord vlaggen.
+3. Definitieve interventies skeletafleveringen + opvolgingsgevolgen.
+
+### Top-3 volgende acties
+
+1. **`git push origin main`** en Netlify-site met niet-raadbare naam; rooktest + URL in `DEPLOY.md`.
+2. **Claude:** conceptvragen ep4 + Sanne/Greiner → data vullen.
+3. **Richard:** portretten/beelden akkoord (`beeldenCheck.ts`) en interventies 1/2/3/5 toetsen.
 
 ## Lokaal draaien
 
@@ -30,4 +47,4 @@ cd recept
 npm run dev
 ```
 
-Tests: `npm test` · Build: `npm run build`
+Docentmodus: `?docent=1`
