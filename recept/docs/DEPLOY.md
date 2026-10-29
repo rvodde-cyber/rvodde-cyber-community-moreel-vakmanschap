@@ -12,7 +12,7 @@ Laatste update: **29 oktober 2026**
 
 ### Deploy uitvoeren (Richard / beheerder)
 
-1. Push naar GitHub: `git push origin main` (8+ commits Recept; lokaal ahead of origin).
+1. Push naar GitHub: `git push origin main` (13 commits Recept; lokaal ahead of origin).
 2. Netlify: **Add new site** → Import from Git → monorepo, base directory **`recept`**, build **`npm run build`**, publish **`dist`** (of gebruik meegeleverde `recept/netlify.toml`).
 3. Kies site name: bijv. `recept-x7k2m9` (niet voorspelbaar).
 4. Noteer URL hieronder en voer rooktest uit.
