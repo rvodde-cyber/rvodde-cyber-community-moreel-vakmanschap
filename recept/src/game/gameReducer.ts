@@ -10,6 +10,7 @@ import { pilotLockedCards } from './besluitRules';
 import { chatTimeLabel } from './chatHelpers';
 import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
 import type { GameUiState, Phase } from './uiTypes';
+import type { FilmKind } from './uiTypes';
 
 export type GameAction =
   | { type: 'RESET' }
@@ -38,7 +39,11 @@ export type GameAction =
   | { type: 'SET_DILEMMA_TEXT'; text: string }
   | { type: 'CONFIRM_DILEMMA' }
   | { type: 'REGISTER_DYNAMIC'; berichten: BerichtDef[] }
-  | { type: 'CLEAR_PENDING_REACTIES' };
+  | { type: 'CLEAR_PENDING_REACTIES' }
+  | { type: 'PLAY_FILM'; kind: FilmKind }
+  | { type: 'END_FILM' }
+  | { type: 'START_ROUND_2' }
+  | { type: 'SET_GOK'; id: string };
 
 function roundState(state: GameUiState) {
   return state.rounds[state.round];
@@ -72,6 +77,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           ...state.rounds,
           [state.round]: { ...roundState(state), trailerDone: true },
         },
+        filmKind: null,
       };
     case 'COLD_NEXT': {
       const r = roundState(state);
@@ -276,6 +282,45 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         rounds: { ...state.rounds, [state.round]: { ...r, reacted: true } },
       };
     }
+    case 'PLAY_FILM':
+      return { ...state, filmKind: action.kind };
+    case 'END_FILM': {
+      const kind = state.filmKind;
+      if (!kind) return state;
+      let next: GameUiState = { ...state, filmKind: null };
+      if (kind === 'trailer-r1' || kind === 'trailer-r2') {
+        next = {
+          ...next,
+          rounds: {
+            ...next.rounds,
+            [next.round]: { ...roundState(next), trailerDone: true },
+          },
+        };
+      } else if (kind === 'slot-r1') {
+        next = { ...next, phase: 'tussen' };
+      } else if (kind === 'finale') {
+        next = { ...next, phase: 'voorspel' };
+      }
+      return next;
+    }
+    case 'START_ROUND_2': {
+      const delivered: Record<string, true> = {};
+      for (const [k, v] of Object.entries(state.deliveredPhases)) {
+        if (!k.startsWith('2-')) delivered[k] = v;
+      }
+      return {
+        ...state,
+        round: 2,
+        phase: 'intro',
+        tLeft: 600,
+        filmKind: null,
+        pendingReacties: false,
+        deliveredPhases: delivered,
+        rounds: { ...state.rounds, 2: freshRoundUi(2) },
+      };
+    }
+    case 'SET_GOK':
+      return { ...state, gok: action.id };
     default:
       return state;
   }

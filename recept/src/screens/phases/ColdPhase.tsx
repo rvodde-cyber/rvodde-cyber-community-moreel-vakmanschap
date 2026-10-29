@@ -1,52 +1,61 @@
 import { COLD_OPEN } from '@data/coldOpen';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
+import { unlockAudio } from '../../audio/sfx';
 import type { GameAction } from '../../game/gameReducer';
-import type { RoundUiState } from '../../game/uiTypes';
+import type { GameUiState } from '../../game/uiTypes';
 
 const base = import.meta.env.BASE_URL;
 
 export function ColdPhase({
-  roundUi,
+  state,
   dispatch,
 }: {
-  roundUi: RoundUiState;
+  state: GameUiState;
   dispatch: (a: GameAction) => void;
 }) {
   const { openHowto, openGloss } = useUiModals();
-  const sb = COLD_OPEN[1];
+  const round = state.round;
+  const roundUi = state.rounds[round];
+  const sb = COLD_OPEN[round];
   const head = (
     <>
       <div className="cine-bar t" />
       <div className="cine-bar b" />
     </>
   );
+  const epTitle = round === 1 ? 'Het dashboard liegt niet' : 'Wie tekent er eigenlijk?';
+  const trailerKind = round === 1 ? 'trailer-r1' : 'trailer-r2';
+  const coldImg = round === 1 ? 'T4' : 'R2';
 
   if (!roundUi.trailerDone) {
     return (
       <div className="cine">
-        <div
-          className="cine-img"
-          style={{ backgroundImage: `url(${base}beelden/T4.jpg)` }}
-        />
+        <div className="cine-img" style={{ backgroundImage: `url(${base}beelden/${coldImg}.jpg)` }} />
         <div className="cine-shade" />
         {head}
         <div className="cine-in">
-          <p className="kick">AFLEVERING 4 / RONDE 1</p>
-          <p className="ep">Het dashboard liegt niet</p>
+          <p className="kick">AFLEVERING 4 / RONDE {round}</p>
+          <p className="ep">{epTitle}</p>
           <p className="task-line">
             Stap 1 van 4. Kijk eerst de trailer en de scène, met geluid als het kan. Daarna beginnen jullie aan het
             onderzoek.
           </p>
           <div className="filmbtns">
-            <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'TRAILER_DONE' })}>
+            <button
+              type="button"
+              className="btn gold big"
+              onClick={() => {
+                unlockAudio();
+                dispatch({ type: 'PLAY_FILM', kind: trailerKind });
+              }}
+            >
               ▶ Speel de trailer
             </button>
             <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'TRAILER_DONE' })}>
               Naar de scène
             </button>
           </div>
-          <p className="note">Trailer en geluid volgen in stap 6; nu ga je direct naar de cold open.</p>
           <HelpLinks onHowto={openHowto} onGloss={openGloss} />
         </div>
       </div>

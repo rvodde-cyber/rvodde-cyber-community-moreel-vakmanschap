@@ -1,5 +1,11 @@
 # Besluiten Cursor — Recept
 
+## 2026-10-29 — Stap 6 trailer, slot, pauze, ronde 2
+
+- `FilmOverlay` + Web Audio (`src/audio/sfx.ts`), trailers ronde 1/2, slot na ronde 1, finale na ronde 2 (`slotLine` uit referentie).
+- Pauzekaart (`TussenPhase`) met tafelvragen; `START_ROUND_2` met padeffect via `startOf(2)`.
+- Ronde 2: intro, cold open, onderzoek/besluit/uitkomst; `VoorspelPhase` stub tot nabespreking stap 8.
+
 ## 2026-10-29 — Stap 5 berichten & dilemma
 
 - Groepsapp (GROEP/PRIVÉ), toast, typt-indicator, fase-gestuurde berichten uit `data/berichten.ts`.

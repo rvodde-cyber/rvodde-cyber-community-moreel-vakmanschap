@@ -29,5 +29,7 @@ export function migrateGameState(raw: unknown): GameUiState | null {
     pendingReacties: s.pendingReacties ?? false,
     dilemma: s.dilemma ?? base.dilemma,
     hidden: s.hidden ?? freshHidden(),
+    filmKind: s.filmKind ?? null,
+    gok: s.gok ?? null,
   };
 }

@@ -8,7 +8,11 @@ export type Phase =
   | 'onderzoek'
   | 'besluit'
   | 'uitkomst'
-  | 'scan';
+  | 'scan'
+  | 'tussen'
+  | 'voorspel';
+
+export type FilmKind = 'trailer-r1' | 'trailer-r2' | 'slot-r1' | 'finale';
 
 export interface RoundUiState {
   acties: string[];
@@ -61,6 +65,8 @@ export interface GameUiState {
   pendingReacties: boolean;
   dilemma: DilemmaState;
   hidden: HiddenMetersState;
+  filmKind: FilmKind | null;
+  gok: string | null;
 }
 
 export type BerichtFaseKey = `${1 | 2}-onderzoek` | `${1 | 2}-besluit`;

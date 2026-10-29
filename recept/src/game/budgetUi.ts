@@ -83,5 +83,7 @@ export function freshGame(): GameUiState {
     pendingReacties: false,
     dilemma: { choice: null, text: '', done: false },
     hidden: freshHidden(),
+    filmKind: null,
+    gok: null,
   };
 }

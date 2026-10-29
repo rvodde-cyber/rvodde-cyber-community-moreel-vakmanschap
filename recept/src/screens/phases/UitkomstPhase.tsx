@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { compute } from '@engine/compute';
 import { ROUNDS } from '@data/rounds';
 import { TaskBar } from '../../components/TaskBar';
@@ -9,7 +8,6 @@ import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
-  const [deelKlaar, setDeelKlaar] = useState(false);
   const res = state.results[state.round];
   if (!res) return null;
   const ctx = engineContext(state);
@@ -122,14 +120,18 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
         <span className="tag">MT-VRAAG</span>
         <p>{D.q3}</p>
       </div>
-      <button type="button" className="btn gold big" onClick={() => setDeelKlaar(true)}>
+      <button
+        type="button"
+        className="btn gold big"
+        onClick={() =>
+          dispatch({
+            type: 'PLAY_FILM',
+            kind: state.round === 1 ? 'slot-r1' : 'finale',
+          })
+        }
+      >
         Einde van dit deel
       </button>
-      {deelKlaar ? (
-        <p className="note" role="status">
-          Slotscène en pauzekaart bouwen we in stap 6. Bespreek nu de MT-vraag aan tafel.
-        </p>
-      ) : null}
       <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'TRY_AGAIN' })}>
         Ander besluit proberen
       </button>

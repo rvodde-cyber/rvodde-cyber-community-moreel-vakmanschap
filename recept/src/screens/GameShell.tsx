@@ -1,12 +1,14 @@
 import { ROUNDS } from '@data/rounds';
 import { budgetOf } from '@engine/helpers';
 import { DashboardColumn } from '../components/DashboardColumn';
+import { FilmOverlay } from '../components/FilmOverlay';
 import { StepsNav } from '../components/StepsNav';
 import { PhonePanel } from '../components/PhonePanel';
 import { MessageToastHost } from '../components/MessageToast';
 import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
 import { useMessageDelivery } from '../hooks/useMessageDelivery';
 import { engineContext } from '../game/budgetUi';
+import { resolveFilmScript } from '../game/filmResolve';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
 import { mln, pad2 } from '../lib/format';
@@ -15,7 +17,9 @@ import { ColdPhase } from './phases/ColdPhase';
 import { IntroPhase } from './phases/IntroPhase';
 import { OnderzoekPhase } from './phases/OnderzoekPhase';
 import { ScanPhase } from './phases/ScanPhase';
+import { TussenPhase } from './phases/TussenPhase';
 import { UitkomstPhase } from './phases/UitkomstPhase';
+import { VoorspelPhase } from './phases/VoorspelPhase';
 
 function Ticker({ round }: { round: 1 | 2 }) {
   const items = ROUNDS[round].ticker;
@@ -29,18 +33,33 @@ function Ticker({ round }: { round: 1 | 2 }) {
   );
 }
 
+function FilmLayer({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
+  const script = resolveFilmScript(state);
+  if (!script) return null;
+  return (
+    <FilmOverlay
+      script={script}
+      onDone={() => dispatch({ type: 'END_FILM' })}
+      onSkip={() => dispatch({ type: 'END_FILM' })}
+    />
+  );
+}
+
 export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { phase, round } = state;
   const { openPause } = useUiModals();
   useMessageDelivery(state, dispatch);
   const ctx = engineContext(state);
   const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
+  const film = state.filmKind ? <FilmLayer state={state} dispatch={dispatch} /> : null;
 
   if (phase === 'intro') {
     return (
       <>
         <SyncModalRound round={round} />
-        <IntroPhase dispatch={dispatch} />
+        <IntroPhase state={state} dispatch={dispatch} />
+        {film}
+        <MessageToastHost />
       </>
     );
   }
@@ -48,7 +67,29 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
     return (
       <>
         <SyncModalRound round={round} />
-        <ColdPhase roundUi={state.rounds[round]} dispatch={dispatch} />
+        <ColdPhase state={state} dispatch={dispatch} />
+        {film}
+        <MessageToastHost />
+      </>
+    );
+  }
+  if (phase === 'tussen') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <TussenPhase state={state} dispatch={dispatch} />
+        {film}
+        <MessageToastHost />
+      </>
+    );
+  }
+  if (phase === 'voorspel') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <VoorspelPhase state={state} dispatch={dispatch} />
+        {film}
+        <MessageToastHost />
       </>
     );
   }
@@ -65,7 +106,9 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
             </p>
           </div>
           <div className="clocks">
-            <span className="clock" id="clock">MA 09:14:00</span>
+            <span className="clock" id="clock">
+              {round === 2 ? 'DI' : 'MA'} 09:14:00
+            </span>
             <button
               type="button"
               className="timer"
@@ -93,13 +136,15 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
         {showRoom ? (
           <div className="grid">
             <main>
-              {phase === 'onderzoek' ? <OnderzoekPhase roundUi={state.rounds[round]} dispatch={dispatch} /> : null}
+              {phase === 'onderzoek' ? (
+                <OnderzoekPhase round={round} roundUi={state.rounds[round]} dispatch={dispatch} />
+              ) : null}
               {phase === 'besluit' ? <BesluitPhase state={state} dispatch={dispatch} /> : null}
               {phase === 'scan' ? <ScanPhase dispatch={dispatch} /> : null}
               {phase === 'uitkomst' ? <UitkomstPhase state={state} dispatch={dispatch} /> : null}
             </main>
             <aside>
-              {(phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst') ? (
+              {phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' ? (
                 <PhonePanel state={state} dispatch={dispatch} />
               ) : null}
               <section className="panel">
@@ -113,6 +158,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
         ) : null}
       </div>
+      {film}
       <MessageToastHost />
     </>
   );

@@ -1,20 +1,75 @@
+import { startOf } from '@engine/startOf';
+import { budgetOf } from '@engine/helpers';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
+import { engineContext } from '../../game/budgetUi';
+import { mln } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
+import type { GameUiState } from '../../game/uiTypes';
 
 const base = import.meta.env.BASE_URL;
 
 function bg(code: string) {
-  const url = `${base}beelden/${code}.jpg`;
-  return (
-    <>
-      <div className="cine-img" style={{ backgroundImage: `url(${url})` }} />
-    </>
-  );
+  return <div className="cine-img" style={{ backgroundImage: `url(${base}beelden/${code}.jpg)` }} />;
 }
 
-export function IntroPhase({ dispatch }: { dispatch: (a: GameAction) => void }) {
+export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { openHowto, openGloss } = useUiModals();
+  const round = state.round;
+  const ctx = engineContext(state);
+
+  if (round === 2) {
+    const notes = startOf(2, ctx).notes;
+    return (
+      <div className="cine">
+        {bg('R2')}
+        <div className="cine-shade" />
+        <div className="cine-in">
+          <p className="kick">AFLEVERING 4 / RONDE 2 / 2027</p>
+          <p className="ep">Zes maanden later</p>
+          <div className="carry">
+            <h4>WAT JULLIE MEENEMEN UIT RONDE 1</h4>
+            <ul className="body" style={{ margin: 0, paddingLeft: 20 }}>
+              {notes.map((n) => (
+                <li key={n.slice(0, 40)}>{n}</li>
+              ))}
+            </ul>
+          </div>
+          <h4>GESCHIEDENIS</h4>
+          <p className="body">
+            Van Gorp Drones groeit. De civiele lijn levert pakjesdrones aan heel Brabant, en Defensie wil een order van €
+            4,2 miljoen tekenen voor verkenningsdrones. Er komen nieuwe regels, nieuwe formulieren en een afgeschermde hal
+            3. Marco noemt het volwassen worden.
+          </p>
+          <h4>UITDAGINGEN</h4>
+          <p className="body">
+            Ploegleiders zitten meer in overleg dan op de vloer. Negen engineers hebben bezwaar tegen defensiewerk. En
+            Defensie stelt voorwaarden die verder gaan dan de wet toestaat. Jullie budget deze ronde:{' '}
+            {mln(budgetOf(2, ctx))}.
+          </p>
+          <div className="hintbox">
+            <h4>HINT</h4>
+            <p>
+              Groei voelt als succes, totdat de regels het werk overnemen. Vraag bij elke nieuwe regel: wie heeft er last
+              van, en wie heeft er eigenlijk om gevraagd?
+            </p>
+          </div>
+          <div className="carry">
+            <h4>JULLIE OPDRACHT</h4>
+            <p className="body">
+              Dezelfde werkwijze als in ronde 1: eerst onderzoeken, dan besluiten, dan kijken wat er gebeurt. Let op: wat
+              jullie in ronde 1 hebben gekozen, werkt door in deze ronde. Jullie hebben weer ongeveer tien minuten.
+            </p>
+          </div>
+          <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
+            Verder
+          </button>
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="cine">
       {bg('T4')}

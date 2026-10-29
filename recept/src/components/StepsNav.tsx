@@ -12,6 +12,25 @@ const phaseIndex: Partial<Record<Phase, number>> = {
 };
 
 export function StepsNav({ phase }: { phase: Phase }) {
+  if (phase === 'tussen') {
+    return (
+      <ol className="steps">
+        <li className="now" style={{ gridColumn: '1 / -1' }}>
+          PAUZE / EINDE VAN RONDE 1
+        </li>
+      </ol>
+    );
+  }
+  if (phase === 'voorspel') {
+    return (
+      <ol className="steps">
+        <li className="now" style={{ gridColumn: '1 / -1' }}>
+          EINDE VAN AFLEVERING 4
+        </li>
+      </ol>
+    );
+  }
+
   const i0 = phaseIndex[phase] ?? 0;
   return (
     <ol className="steps">

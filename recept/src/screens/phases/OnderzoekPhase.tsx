@@ -4,13 +4,15 @@ import type { GameAction } from '../../game/gameReducer';
 import type { RoundUiState } from '../../game/uiTypes';
 
 export function OnderzoekPhase({
+  round,
   roundUi,
   dispatch,
 }: {
+  round: 1 | 2;
   roundUi: RoundUiState;
   dispatch: (a: GameAction) => void;
 }) {
-  const D = ROUNDS[1];
+  const D = ROUNDS[round];
   const n = roundUi.acties.length;
   const ok = n >= 1 && roundUi.verm;
 
