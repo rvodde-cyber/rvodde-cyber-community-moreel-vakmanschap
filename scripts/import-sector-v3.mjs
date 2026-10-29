@@ -63,6 +63,19 @@ const PACK_CONFIG = {
     bron: "HBO-docenten — v3 website (10 kaarten)",
     cleanupIds: () => false,
   },
+  management: {
+    packDir: "website import v3",
+    jsonFile: "cards_management.json",
+    categorie: "management",
+    set: "management-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "MANAGEMENT",
+    altMapPath: path.join(__dirname, "management-v3-alts.json"),
+    metaPath: path.join(root, "src/data/gesprekskaarten/management-meta.json"),
+    bron: "Management — v3 website (20 kaarten)",
+    cleanupIds: () => false,
+  },
 };
 
 function splitReflection(text) {
@@ -108,7 +121,12 @@ function optimizeImage(srcFile, destFile) {
   }
 }
 
-function toCommunityCard(entry, config) {
+function loadAltMap(config) {
+  if (!config.altMapPath || !fs.existsSync(config.altMapPath)) return {};
+  return JSON.parse(fs.readFileSync(config.altMapPath, "utf8"));
+}
+
+function toCommunityCard(entry, config, altMap = {}) {
   const verhaalNl = entry.story.nl.join("\n\n");
   const verhaalEn = entry.story.en.join("\n\n");
   const refNl = splitReflection(entry.reflection.nl);
@@ -130,9 +148,12 @@ function toCommunityCard(entry, config) {
   }
   optimizeImage(resolvedSrc, destFile);
 
-  const alt = config.useTitleAlt
-    ? altFromTitle(entry, config)
-    : altFromImagePath(entry.image);
+  const altOverride = altMap[entry.id];
+  const alt = altOverride
+    ? { nl: altOverride.nl, en: altOverride.en }
+    : config.useTitleAlt
+      ? altFromTitle(entry, config)
+      : altFromImagePath(entry.image);
 
   return normalizeCard({
     id: entry.id,
@@ -222,7 +243,7 @@ function main() {
   const config = PACK_CONFIG[sector];
   if (!config) {
     console.error(
-      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]"
+      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten|management [--skip-cleanup] [--cleanup-only]"
     );
     process.exit(1);
   }
@@ -250,7 +271,8 @@ function main() {
       }
     }
 
-    const newCards = pack.cards.map((e) => toCommunityCard(e, config));
+    const altMap = loadAltMap(config);
+    const newCards = pack.cards.map((e) => toCommunityCard(e, config, altMap));
     addedCount = newCards.length;
     cards = [...cards, ...newCards];
 
