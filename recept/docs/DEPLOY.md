@@ -9,7 +9,7 @@ Laatste update: **29 oktober 2026** (Piotr varianten + definitief)
 | Student | https://recept-k8m3n7p2.netlify.app/ |
 | Docent | https://recept-k8m3n7p2.netlify.app/?docent=1 |
 
-Productie-deploy: _(na push — zie commit hash hieronder bijwerken)_.
+Productie-deploy: **`6ae327acc4ae630cddf6043a`** (commit `b73bd16` — Piotr varianten + handelenvraag definitief).
 
 ## Tests
 
