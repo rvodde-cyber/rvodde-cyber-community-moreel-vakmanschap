@@ -2,49 +2,87 @@
 
 Laatste update: **29 oktober 2026**
 
-## Live URL
+## Toegang
 
-| Veld | Waarde |
+**Netlify Site Protection (wachtwoord) is betaald en niet geconfigureerd.** Toegang berust op een niet-raadbare URL; gebruik alleen voor besloten demo's zonder persoonsgegevens.
+
+## Live URL's
+
+| Link | URL |
 | --- | --- |
-| **URL** | _Nog niet gedeployed — zie hieronder_ |
-| **Sitenaam (voorstel)** | `recept-<6 willekeurige tekens>.netlify.app` |
-| **Wachtwoord** | Netlify Site Protection is betaald; **niet geconfigureerd**. Alleen obscuriëren via sitenaam + `noindex`. |
+| **Studentlink** | _Nog niet live — zie deploy hieronder_ |
+| **Docentlink** | _`<student-url>?docent=1`_ |
 
-### Deploy uitvoeren (Richard / beheerder)
+Sitenaam (voorstel): `recept-` + 8 willekeurige tekens (kleine letters/cijfers), bijv. `recept-m4k7n2p9`.
 
-1. Push naar GitHub: `git push origin main` (13 commits Recept; lokaal ahead of origin).
-2. Netlify: **Add new site** → Import from Git → monorepo, base directory **`recept`**, build **`npm run build`**, publish **`dist`** (of gebruik meegeleverde `recept/netlify.toml`).
-3. Kies site name: bijv. `recept-x7k2m9` (niet voorspelbaar).
-4. Noteer URL hieronder en voer rooktest uit.
+## Git push
 
-## Build lokaal
+**29 okt 2026:** `git push origin main` uitgevoerd (Recept-commits incl. Piotr-lijn).
+
+## Build-controle (`recept/dist`)
+
+| Check | Resultaat 29 okt 2026 |
+| --- | --- |
+| API-sleutels / wachtwoorden | Niet aangetroffen |
+| Persoonsgegevens / testaccounts | Niet aangetroffen |
+| Externe requests in app-runtime | Geen `fetch` naar derden in bron; bundle bevat alleen Vite modulepreload voor eigen assets |
+| `noindex` + `robots.txt` + `netlify.toml` | Aanwezig |
+
+## Deploy — optie A (CLI)
 
 ```bash
 cd recept
-npm test
-npm run build
+npm test && npm run build
+npx netlify-cli login          # Richard bevestigt in browser
+npx netlify-cli sites:create --name recept-m4k7n2p9
+npx netlify-cli deploy --prod --dir=dist
 ```
 
-Controle: geen API-sleutels of persoonsgegevens in `dist/` (alleen gebundelde spelcode + statische assets).
+Vul daarna **Studentlink** hierboven in, genereer QR:
+
+```bash
+npm run qr -- https://recept-m4k7n2p9.netlify.app/
+```
+
+Output: `docs/qr-student.png` (lokaal, geen externe QR-dienst).
+
+**Status CLI 29 okt:** `npx netlify-cli status` → *Not logged in*.
+
+## Deploy — optie B (handmatig, zonder CLI)
+
+1. `cd recept && npm run build`
+2. Open [Netlify Drop](https://app.netlify.com/drop)
+3. Sleep de map **`recept/dist`** naar het venster
+4. Hernoem site naar een niet-raadbare naam (Site configuration → Domain management)
+5. Noteer URL's in deze file + `docs/VOORTGANG.md`, rooktest, QR zoals hierboven
+
+## Deploy — optie C (Git)
+
+Netlify → Import from Git → base **`recept`**, build `npm run build`, publish `dist` (zie `netlify.toml`).
 
 ## Opnieuw deployen
 
-Netlify deployt automatisch bij push naar de gekoppelde branch, of handmatig **Deploys → Trigger deploy**.
+Push naar `main` (Git-koppeling) of **Deploys → Trigger deploy** / opnieuw Drop.
 
 ## Offline halen
 
-Netlify: **Site configuration → General → Delete site**, of stop auto-deploy en zet een lege placeholder.
+**Site configuration → General → Delete site**, of auto-deploy uitzetten.
 
 ## Rooktest (live)
 
-| Check | Resultaat |
-| --- | --- |
-| Aflevering 4 start | _uit te voeren na deploy_ |
-| `?docent=1` (pauze, export) | _uit te voeren_ |
-| Nabespreking | _uit te voeren_ |
-| Consolefouten | _uit te voeren_ |
+| Check | Student | Docent (`?docent=1`) |
+| --- | --- | --- |
+| Aflevering 4 start | _ | _ |
+| Nabespreking | _ | _ |
+| Instellingenmodal | _ | _ |
+| Consolefouten | _ | _ |
 
 ## SEO / crawlers
 
 - `<meta name="robots" content="noindex,nofollow">` in `index.html`
 - `public/robots.txt`: `Disallow: /`
+- SPA: `netlify.toml` redirect `/*` → `/index.html` 200
+
+## QR
+
+Student-QR: `docs/qr-student.png` na `npm run qr`. **URL niet publiek delen** (zie `README.md`).

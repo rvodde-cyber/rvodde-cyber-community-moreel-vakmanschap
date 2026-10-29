@@ -25,8 +25,9 @@ Laatste update: **29 oktober 2026** (Piotr-lijn + demo-link prompt)
 
 ### Tests (29 okt 2026, na Piotr-lijn)
 
-- `npm test`: zie laatste run (was 18 na contentStatus-test).
-- `npm run build`: groen na validate.
+- `npm test`: **18** groen.
+- `npm run build`: groen.
+- `git push origin main`: **uitgevoerd** (29 okt).
 
 ### Live URL's
 
@@ -46,9 +47,9 @@ Rooktest live: zie tabel onderaan na deploy.
 
 ### Top-3 volgende acties
 
-1. Netlify deploy + QR + rooktest invullen in `DEPLOY.md`.
-2. Claude: gespreksvragen + stereotypencriteria.
-3. Richard: scènes/interventie akkoord (`interventieDefinitief`).
+1. **Netlify:** `netlify login` of Drop van `recept/dist` → URL + rooktest + `npm run qr`.
+2. Claude: `GESPREKSVRAGEN-EP4-VOORSTEL.md` + `STEREOTYPENCHECK-CRITERIA.md`.
+3. Richard: scèneteksten definitief + variant slotscène + `interventieDefinitief`.
 
 ## Lokaal
 
