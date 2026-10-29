@@ -82,15 +82,38 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Gå med",
       subtitel: "Bli en del av communityn",
-      hint: "Berätta vem du är och vad du arbetar med. Ditt e-postprogram öppnas med ett ifyllt anmälningsmeddelande till Lectoraat Ethisch Werken.",
+      hint: "Berätta vem du är och vad du arbetar med. Din anmälan hamnar direkt i deltagarlistan hos Lectoraat Ethisch Werken.",
       naamLabel: "Namn",
+      functieLabel: "Roll",
+      functiePlaceholder: "Till exempel: lärare i etik, programansvarig, forskare",
       instellingLabel: "Institution",
+      organisatieLabel: "Organisation eller institution (valfritt)",
       emailLabel: "E-postadress",
       vraagLabel: "Vad arbetar du med inom etikundervisning? (valfritt)",
+      consentLabel:
+        "Ja, håll mig informerad via e-post om communityn — nytt material, träffar och inbjudningar. Du kan avsluta prenumerationen när som helst.",
+      privacyNotitie:
+        "Vi sparar endast ditt namn, din roll, din organisation och din e-postadress, och använder dem uteslutande för meddelanden från Community Moral Craftsmanship — delas aldrig med tredje part. Listan förvaltas av Richard Voddé, Comenius Senior Fellow. Frågor eller vill du avsluta prenumerationen?",
       knop: "Skicka min anmälan",
+      knopBezig: "Skickar…",
+      succesTitel: "Du står på listan",
+      succesNieuw: "Tack för din anmälan. Vi hör av oss när det finns nytt material eller en träff.",
+      succesBijgewerkt: "Du fanns redan i listan — vi har uppdaterat dina uppgifter.",
+      nogIemand: "Anmäl någon annan",
+      foutAlgemeen:
+        "Något gick fel vid sändningen. Försök igen om en stund, eller skicka din anmälan via e-post.",
+      fallbackTekst:
+        "Anmälan online är inte tillgänglig just nu. Du kan skicka din anmälan via e-post i stället.",
+      fallbackKnop: "Skicka anmälan via e-post",
+      veldFout: {
+        verplicht: "Det här fältet behövs för att anmäla dig.",
+        ongeldig: "Kontrollera det här fältet.",
+        te_lang: "Det här fältet är för långt.",
+        consent: "Kryssa i rutan för att kunna anmäla dig.",
+      },
       emailSubject: "Anmälan Community Moral Craftsmanship",
       emailVraag: "Vad arbetar du med inom etikundervisning?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Ej angivet",
     },
     footer: {
@@ -143,11 +166,12 @@ export const siteContentLocales = {
     maker: {
       label: "Skaparen",
       titel: "Richard Voddé",
+      rol: "Comenius Senior Fellow — Lectoraat Ethisch Werken, Fontys Hogescholen",
       alineas: [
         "Richard Voddé är lektor och forskare i etiskt arbete vid Fontys Hogescholen i Tilburg. Som Comenius Senior Fellow arbetar han med frågan hur etikundervisning i högre yrkesutbildning verkligen formar — inte bara informerar.",
         "Han utvecklade modellen Moral Craftsmanship och samtalskortsmethodiken, och bygger en Community of Practice för lärare och forskare vid högskolor och universitet i Nederländerna och internationellt. Hans referensgrupp omfattar kollegor vid HAN, Avans och Hogeschool Utrecht. Internationellt samarbetar han via HEROES-projektet.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontakta oss",
     },
     visie: {
@@ -196,15 +220,38 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Připojit se",
       subtitel: "Staňte se součástí komunity",
-      hint: "Napište nám, kdo jste a na čem pracujete. Otevře se vám e-mail s předvyplněnou registrací pro Lectoraat Ethisch Werken.",
+      hint: "Napište nám, kdo jste a na čem pracujete. Vaše registrace putuje přímo do seznamu účastníků Lectoraat Ethisch Werken.",
       naamLabel: "Jméno",
+      functieLabel: "Role",
+      functiePlaceholder: "Například: vyučující etiky, vedoucí programu, výzkumník",
       instellingLabel: "Instituce",
+      organisatieLabel: "Organizace nebo instituce (volitelné)",
       emailLabel: "E-mailová adresa",
       vraagLabel: "Na čem pracujete v etické výchově? (volitelné)",
+      consentLabel:
+        "Ano, informujte mě e-mailem o komunitě — nové materiály, setkání a pozvánky. Odhlásit se můžete kdykoli.",
+      privacyNotitie:
+        "Ukládáme pouze vaše jméno, roli, organizaci a e-mailovou adresu a používáme je výhradně pro zprávy komunity Moral Craftsmanship — nikdy je nesdílíme s třetími stranami. Seznam spravuje Richard Voddé, Comenius Senior Fellow. Máte dotaz nebo se chcete odhlásit?",
       knop: "Odeslat registraci",
+      knopBezig: "Odesílání…",
+      succesTitel: "Jste na seznamu",
+      succesNieuw: "Děkujeme za registraci. Ozveme se, jakmile bude nový materiál nebo setkání.",
+      succesBijgewerkt: "V seznamu jste už byli — vaše údaje jsme aktualizovali.",
+      nogIemand: "Zaregistrovat někoho dalšího",
+      foutAlgemeen:
+        "Při odesílání se něco pokazilo. Zkuste to prosím za chvíli znovu, nebo pošlete registraci e-mailem.",
+      fallbackTekst:
+        "Online registrace není momentálně dostupná. Registraci můžete poslat e-mailem.",
+      fallbackKnop: "Poslat registraci e-mailem",
+      veldFout: {
+        verplicht: "Toto pole je pro registraci nutné.",
+        ongeldig: "Zkontrolujte prosím toto pole.",
+        te_lang: "Toto pole je příliš dlouhé.",
+        consent: "Zaškrtněte prosím toto pole, abyste se mohli zaregistrovat.",
+      },
       emailSubject: "Registrace Community Moral Craftsmanship",
       emailVraag: "Na čem pracujete v etické výchově?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Neuvedeno",
     },
     footer: {
@@ -257,11 +304,12 @@ export const siteContentLocales = {
     maker: {
       label: "Autor",
       titel: "Richard Voddé",
+      rol: "Comenius Senior Fellow — Lectoraat Ethisch Werken, Fontys Hogescholen",
       alineas: [
         "Richard Voddé je lektor a výzkumník etické praxe na Fontys Hogescholen v Tilburgu. Jako Comenius Senior Fellow pracuje na otázce, jak etická výchova ve vyšším odborném vzdělávání skutečně formuje — nejen informuje.",
         "Vyvinul model Moral Craftsmanship a metodiku konverzačních karet a buduje Community of Practice pro učitele a výzkumníky na vysokých školách a univerzitách v Nizozemsku i mezinárodně. Jeho poradní skupina zahrnuje kolegy z HAN, Avans a Hogeschool Utrecht. Mezinárodně spolupracuje v rámci projektu HEROES.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontaktujte nás",
     },
     visie: {
@@ -310,15 +358,38 @@ export const siteContentLocales = {
     aanmelden: {
       titel: "Bliv medlem",
       subtitel: "Bliv en del af fællesskabet",
-      hint: "Fortæl os, hvem du er, og hvad du arbejder med. Din e-mail åbnes med en udfyldt tilmelding til Lectoraat Ethisch Werken.",
+      hint: "Fortæl os, hvem du er, og hvad du arbejder med. Din tilmelding går direkte til deltagerlisten hos Lectoraat Ethisch Werken.",
       naamLabel: "Navn",
+      functieLabel: "Rolle",
+      functiePlaceholder: "For eksempel: underviser i etik, uddannelsesleder, forsker",
       instellingLabel: "Institution",
+      organisatieLabel: "Organisation eller institution (valgfrit)",
       emailLabel: "E-mailadresse",
       vraagLabel: "Hvad arbejder du med inden for etikundervisning? (valgfrit)",
+      consentLabel:
+        "Ja, hold mig opdateret pr. e-mail om fællesskabet — nyt materiale, møder og invitationer. Du kan afmelde dig når som helst.",
+      privacyNotitie:
+        "Vi gemmer kun dit navn, din rolle, din organisation og din e-mailadresse og bruger dem udelukkende til beskeder fra Community Moral Craftsmanship — deles aldrig med tredjepart. Listen forvaltes af Richard Voddé, Comenius Senior Fellow. Spørgsmål, eller vil du afmelde dig?",
       knop: "Send min tilmelding",
+      knopBezig: "Sender…",
+      succesTitel: "Du er på listen",
+      succesNieuw: "Tak for din tilmelding. Vi vender tilbage, når der er nyt materiale eller et møde.",
+      succesBijgewerkt: "Du stod allerede på listen — vi har opdateret dine oplysninger.",
+      nogIemand: "Tilmeld en anden",
+      foutAlgemeen:
+        "Noget gik galt under afsendelsen. Prøv igen om lidt, eller send din tilmelding pr. e-mail.",
+      fallbackTekst:
+        "Online tilmelding er ikke tilgængelig lige nu. Du kan i stedet sende din tilmelding pr. e-mail.",
+      fallbackKnop: "Send tilmelding pr. e-mail",
+      veldFout: {
+        verplicht: "Dette felt er nødvendigt for at tilmelde dig.",
+        ongeldig: "Tjek lige dette felt.",
+        te_lang: "Dette felt er for langt.",
+        consent: "Sæt kryds her for at kunne tilmelde dig.",
+      },
       emailSubject: "Tilmelding Community Moral Craftsmanship",
       emailVraag: "Hvad arbejder du med inden for etikundervisning?",
-      emailTo: "lectoraatethischwerken@fontys.nl",
+      emailTo: "r.vodde@fontys.nl",
       nietIngevuld: "Ikke angivet",
     },
     footer: {
@@ -371,11 +442,12 @@ export const siteContentLocales = {
     maker: {
       label: "Skaberen",
       titel: "Richard Voddé",
+      rol: "Comenius Senior Fellow — Lectoraat Ethisch Werken, Fontys Hogescholen",
       alineas: [
         "Richard Voddé er lektor og forsker i etisk praksis ved Fontys Hogescholen i Tilburg. Som Comenius Senior Fellow arbejder han med spørgsmålet om, hvordan etikundervisning i erhvervsakademier virkelig former — ikke blot informerer.",
         "Han udviklede modellen Moral Craftsmanship og samtalekortmetodikken og bygger et Community of Practice for lærere og forskere ved højskoler og universiteter i Nederlandene og internationalt. Hans referencegruppe omfatter kolleger ved HAN, Avans og Hogeschool Utrecht. Internationalt samarbejder han via HEROES-projektet.",
       ],
-      contact: "lectoraatethischwerken@fontys.nl",
+      contact: "r.vodde@fontys.nl",
       contactLabel: "Kontakt os",
     },
     visie: {

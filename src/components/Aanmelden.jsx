@@ -1,35 +1,12 @@
 import { motion } from "framer-motion";
+import AanmeldFormulier from "./AanmeldFormulier";
 import { useTaal } from "../context/TaalContext";
 
 const GOOGLE_FORM_URL = import.meta.env.VITE_GOOGLE_FORM_URL?.trim() || "";
 
-const inputClassName =
-  "rounded-2xl border border-rand bg-surface px-4 py-3 text-base font-normal text-primair outline-none transition focus:border-[#534ab7] focus:ring-4 focus:ring-[#534ab7]/10";
-
 export default function Aanmelden() {
   const { t } = useTaal();
   const a = t.aanmelden;
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(event.currentTarget);
-    const naam = formData.get("naam") || "";
-    const instelling = formData.get("instelling") || "";
-    const email = formData.get("email") || "";
-    const ethiekonderwijs = formData.get("ethiekonderwijs") || "";
-
-    const body = [
-      `${a.naamLabel}: ${naam}`,
-      `${a.instellingLabel}: ${instelling}`,
-      `${a.emailLabel}: ${email}`,
-      "",
-      a.emailVraag,
-      ethiekonderwijs || a.nietIngevuld,
-    ].join("\n");
-
-    window.location.href = `mailto:${a.emailTo}?subject=${encodeURIComponent(a.emailSubject)}&body=${encodeURIComponent(body)}`;
-  };
 
   return (
     <section id="aanmelden" className="bg-surface-muted py-16 md:py-24">
@@ -62,34 +39,7 @@ export default function Aanmelden() {
               />
             </div>
           ) : (
-            <form className="grid gap-5" onSubmit={handleSubmit}>
-              <label className="grid gap-2 text-sm font-semibold text-primair">
-                {a.naamLabel}
-                <input required name="naam" type="text" className={inputClassName} />
-              </label>
-
-              <label className="grid gap-2 text-sm font-semibold text-primair">
-                {a.instellingLabel}
-                <input required name="instelling" type="text" className={inputClassName} />
-              </label>
-
-              <label className="grid gap-2 text-sm font-semibold text-primair">
-                {a.emailLabel}
-                <input required name="email" type="email" className={inputClassName} />
-              </label>
-
-              <label className="grid gap-2 text-sm font-semibold text-primair">
-                {a.vraagLabel}
-                <textarea name="ethiekonderwijs" rows={5} className={`${inputClassName} resize-none`} />
-              </label>
-
-              <button
-                type="submit"
-                className="mt-2 rounded-full bg-[#534ab7] px-8 py-4 text-base font-semibold text-white shadow-warm transition hover:-translate-y-0.5 hover:bg-[#433aa0] focus:outline-none focus:ring-4 focus:ring-[#534ab7]/20"
-              >
-                {a.knop}
-              </button>
-            </form>
+            <AanmeldFormulier />
           )}
         </div>
       </motion.div>
