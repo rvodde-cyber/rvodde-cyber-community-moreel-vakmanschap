@@ -1,5 +1,5 @@
 import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
-import { INTRO_BEELD, INTRO_TEKSTEN } from '@content/intros.nl';
+import { INTRO_TEKSTEN } from '@content/intros.nl';
 import { startOf } from '@engine/startOf';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { HelpLinks } from '../../components/HelpLinks';
@@ -10,25 +10,24 @@ import { mln } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
-const base = import.meta.env.BASE_URL;
-
-function bg(code: string) {
-  return <div className="cine-img" style={{ backgroundImage: `url(${base}beelden/${code}.jpg)` }} />;
-}
+import { INTRO_SCENE } from '@data/sceneCodes';
+import { SceneBackground } from '../../components/SceneBackground';
 
 export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
-  const { openHowto, openGloss } = useUiModals();
+  const { openHowto, openGloss, openSettings } = useUiModals();
   const round = state.round;
   const ctx = engineContext(state);
 
   if (!isFullEpisode(state.episode) && round === 1) {
     const meta = episodeMeta(state.episode);
     const intro = INTRO_TEKSTEN[state.episode];
-    const img = INTRO_BEELD[state.episode];
+    const sc = INTRO_SCENE[state.episode];
     const D = roundDefFor(state);
     return (
       <div className="cine">
-        {bg(img)}
+        {(() => {
+          return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
+        })()}
         <div className="cine-shade" />
         <div className="cine-in">
           <p className="kick">{meta.kick}</p>
@@ -49,7 +48,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
           </button>
-          <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
         </div>
       </div>
     );
@@ -59,7 +58,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const notes = startOf(2, ctx).notes;
     return (
       <div className="cine">
-        {bg('R2')}
+        <SceneBackground checkCode="I4" fileCode="R2" />
         <div className="cine-shade" />
         <div className="cine-in">
           <p className="kick">AFLEVERING 4 / RONDE 2 / 2027</p>
@@ -101,7 +100,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
           </button>
-          <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
         </div>
       </div>
     );
@@ -109,7 +108,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
 
   return (
     <div className="cine">
-      {bg('T4')}
+      <SceneBackground checkCode={INTRO_SCENE[4].checkCode} fileCode={INTRO_SCENE[4].fileCode} />
       <div className="cine-shade" />
       <div className="cine-in">
         <p className="kick">AFLEVERING 4 / RONDE 1 / 2026</p>
@@ -145,7 +144,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder
         </button>
-        <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
       </div>
     </div>
   );

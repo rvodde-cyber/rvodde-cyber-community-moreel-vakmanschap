@@ -4,7 +4,7 @@ import type { BerichtDef } from '@data/berichten';
 import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
 import { dilemmaGroepBerichten } from '@data/berichten';
 import type { ChatChannel } from '@data/berichten';
-import { isFullEpisode } from '@data/episodes/meta';
+import { useSkeletonMotor } from '@data/interventieFlags';
 import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import { stubComputeResult } from './stubCompute';
@@ -186,7 +186,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     case 'CONFIRM_BESLUIT': {
       const r = roundState(state);
       const cards = pilotLockedCards(state);
-      if (!isFullEpisode(state.episode)) {
+      if (useSkeletonMotor(state.episode)) {
         const D = roundDefFor(state);
         const res = stubComputeResult(D, cards, r.bud);
         const conceptLog = [...state.conceptLog];
@@ -327,7 +327,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           },
         };
       } else if (kind === 'slot-r1') {
-        if (!isFullEpisode(state.episode)) {
+        if (useSkeletonMotor(state.episode)) {
           next = { ...next, phase: state.episode === 3 ? 'opvolging' : 'pauze' };
         } else {
           next = { ...next, phase: 'tussen' };

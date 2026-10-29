@@ -3,6 +3,8 @@ import { episodeMeta } from '@data/episodes/meta';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
 import { MT_ROLLEN } from '@data/rollen';
 import { ROL_BELANG } from '@data/rolBelang';
+import { greinerCrisisEp4, sanneReactieEp4, slotTekst } from '@data/ep4ContentSlots';
+import { NABESPREKING_EP4 } from '@data/nabespreking-ep4';
 import { MV_DIMENSIES, PORTRAIT_ETHIEK } from '@content/moreelVakmanschap.nl';
 import { PersonCard, personenInGlossarium } from '../../components/PersonCard';
 import { useDocentMode } from '../../hooks/useDocentMode';
@@ -17,6 +19,9 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
   const roundNums = isFullEpisode(state.episode) ? ([1, 2] as const) : ([1] as const);
   const personen = personenInGlossarium(state.round);
   const h = state.hidden;
+  const ep4Vragen = NABESPREKING_EP4.filter(
+    (v) => v.status === 'definitief' || (docent && v.status === 'concept'),
+  );
 
   return (
     <div className="wrap nabespreking" style={{ paddingTop: 24, paddingBottom: 48 }}>
@@ -84,6 +89,16 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
         );
       })}
 
+      {state.episode === 4 ? (
+        <section className="panel">
+          <div className="ph">
+            <h2>CONTEXT AFLEVERING 4</h2>
+          </div>
+          <p className="note">{slotTekst(greinerCrisisEp4, docent)}</p>
+          <p className="note">{slotTekst(sanneReactieEp4, docent)}</p>
+        </section>
+      ) : null}
+
       {state.dilemma.done && state.episode === 4 ? (
         <section className="panel">
           <div className="ph">
@@ -95,6 +110,27 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
             {state.dilemma.choice === 'prive' && state.dilemma.text ? ` — “${state.dilemma.text}”` : null}
           </p>
         </section>
+      ) : null}
+
+      {state.episode === 4 && ep4Vragen.length > 0 ? (
+        <section className="panel">
+          <div className="ph">
+            <h2>GESPREK Piotr-lijn</h2>
+          </div>
+          {ep4Vragen.map((v) => (
+            <div className="q" key={v.id}>
+              <span className="tag">
+                {v.fase.toUpperCase()}
+                {v.status === 'concept' ? ' · CONCEPT' : ''}
+              </span>
+              <p>{v.tekst}</p>
+            </div>
+          ))}
+        </section>
+      ) : state.episode === 4 ? (
+        <p className="note">
+          Gespreksvragen Piotr-lijn volgen zodra ze definitief zijn (zie docs/CONCEPT-GESPREKSVRAGEN-EP4.md).
+        </p>
       ) : null}
 
       {state.opvolging ? (

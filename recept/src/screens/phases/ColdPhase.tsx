@@ -1,13 +1,22 @@
 import { COLD_OPEN } from '@data/coldOpen';
+import { COLD_SCENE, INTRO_SCENE } from '@data/sceneCodes';
 import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
 import { SKELETON_COLD } from '@data/skeleton/coldOpen';
+import { SceneBackground } from '../../components/SceneBackground';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
 import { unlockAudio } from '../../audio/sfx';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
-const base = import.meta.env.BASE_URL;
+function coldBackground(state: GameUiState, round: 1 | 2) {
+  if (!isFullEpisode(state.episode)) {
+    const sc = COLD_SCENE[state.episode as keyof typeof COLD_SCENE];
+    return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
+  }
+  const file = round === 1 ? 'T4' : 'R2';
+  return <SceneBackground checkCode={INTRO_SCENE[4].checkCode} fileCode={file} />;
+}
 
 export function ColdPhase({
   state,
@@ -30,13 +39,12 @@ export function ColdPhase({
   );
   const epTitle = skeleton ? meta.titel : round === 1 ? 'Het dashboard liegt niet' : 'Wie tekent er eigenlijk?';
   const trailerKind = skeleton ? 'trailer-r1' : round === 1 ? 'trailer-r1' : 'trailer-r2';
-  const coldImg = skeleton ? sb.img : round === 1 ? 'T4' : 'R2';
   const kick = skeleton ? meta.kick : `AFLEVERING 4 / RONDE ${round}`;
 
   if (!roundUi.trailerDone) {
     return (
       <div className="cine">
-        <div className="cine-img" style={{ backgroundImage: `url(${base}beelden/${coldImg}.jpg)` }} />
+        {coldBackground(state, round)}
         <div className="cine-shade" />
         {head}
         <div className="cine-in">
@@ -72,7 +80,7 @@ export function ColdPhase({
 
   return (
     <div className="cine">
-      <div className="cine-img" style={{ backgroundImage: `url(${base}beelden/${sb.img}.jpg)` }} />
+      {coldBackground(state, round)}
       <div className="cine-shade" style={{ background: 'linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.2) 70%)' }} />
       {head}
       <div className="cine-in">

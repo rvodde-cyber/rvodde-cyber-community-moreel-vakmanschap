@@ -1,5 +1,7 @@
-import { DILEMMA_STUBS } from '../data/dilemmas/stubs';
 import { PERSONEN } from '../data/personen';
+import { DILEMMA_STUBS } from '../data/dilemmas/stubs';
+import { validateNabesprekingEp4 } from '../data/nabespreking-ep4';
+import { assertInterventieFlagsConsistent, INTERVENTIE_FLAGS } from '../data/interventieFlags';
 import { ROUNDS } from '../data/rounds';
 import { SKELETON_ROUNDS } from '../data/skeleton/rounds';
 import { dilemmaStubSchema } from '../data/schemas/dilemma.schema';
@@ -7,6 +9,14 @@ import { personenSchema } from '../data/schemas/personen.schema';
 import { roundDefinitionSchema, roundsRecordSchema } from '../data/schemas/rounds.schema';
 
 function main() {
+  assertInterventieFlagsConsistent(INTERVENTIE_FLAGS);
+
+  const nab = validateNabesprekingEp4();
+  if (!nab.success) {
+    console.error('NABESPREKING_EP4 validatie mislukt:', nab.error.flatten());
+    process.exit(1);
+  }
+
   const rounds = roundsRecordSchema.safeParse(ROUNDS);
   if (!rounds.success) {
     console.error('ROUNDS validatie mislukt:', rounds.error.flatten());
