@@ -31,6 +31,13 @@ export function useGame() {
     save(state);
   }, [state]);
 
+  useEffect(() => {
+    if (!state.timerOn) return;
+    if (state.phase !== 'onderzoek' && state.phase !== 'besluit') return;
+    const id = window.setInterval(() => dispatch({ type: 'TICK' }), 1000);
+    return () => window.clearInterval(id);
+  }, [state.timerOn, state.phase]);
+
   const act = (action: GameAction) => dispatch(action);
 
   return { state, dispatch: act, hasSave: !!load() };

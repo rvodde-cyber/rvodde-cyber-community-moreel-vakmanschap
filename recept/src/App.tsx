@@ -19,7 +19,11 @@ export default function App() {
   };
 
   return (
-    <UiModalsProvider onExitMenu={() => setPlaying(false)}>
+    <UiModalsProvider
+      onExitMenu={() => setPlaying(false)}
+      gameState={playing ? state : null}
+      gameDispatch={playing ? dispatchGame : undefined}
+    >
       {!playing ? (
         <HomeScreen
           name={draftName}

@@ -9,6 +9,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'President-commissaris',
     tekst: 'Jullie broer, 71 jaar en president-commissaris van Van Gorp Drones.',
     portretAlt: 'Portret van Harrie van Gorp, president-commissaris',
+    portret: 'portretten/harrie-van-gorp.webp',
   },
   {
     slug: 'marco-van-gorp',
@@ -17,6 +18,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'Directeur',
     tekst: 'Harries zoon en jullie neef. Hij stelde de begroting op en wil vrijdag een plan zien.',
     portretAlt: 'Portret van Marco van Gorp, directeur',
+    portret: 'portretten/marco-van-gorp.webp',
   },
   {
     slug: 'ans-willems',
@@ -25,6 +27,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'Ploegleider',
     tekst: 'Ploegleider op de vloer. Zij voert de normen uit die TEMPO bepaalt.',
     portretAlt: 'Portret van Ans Willems, ploegleider',
+    portret: 'portretten/ans-willems.webp',
   },
   {
     slug: 'erik-verhoeven',
@@ -33,6 +36,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'Adviseur Optivora',
     tekst: 'Adviseur van Optivora, de leverancier van TEMPO en PILOT. Hij heeft ook iets te verkopen.',
     portretAlt: 'Portret van Erik Verhoeven, adviseur Optivora',
+    portret: 'portretten/erik-verhoeven.webp',
   },
   {
     slug: 'joost-hendriks',
@@ -41,6 +45,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'Medewerkersvertegenwoordiging',
     tekst: 'Denkt mee vanuit de medewerkers en vraagt of de OR wordt betrokken.',
     portretAlt: 'Portret van Joost Hendriks, medewerkersvertegenwoordiging',
+    portret: 'portretten/joost-hendriks.webp',
   },
   {
     slug: 'dennis-kuijpers',
@@ -49,6 +54,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'Financieel directeur',
     tekst: 'Financieel directeur in het MT; zijn beloning hangt af van het halfjaarresultaat.',
     portretAlt: 'Portret van Dennis Kuijpers, financieel directeur',
+    portret: 'portretten/dennis-kuijpers.webp',
   },
   {
     slug: 'yasmin-el-amrani',
@@ -57,6 +63,7 @@ export const PERSONEN: Persoon[] = [
     rol: 'HR-manager',
     tekst: 'HR-manager; PILOT en personeelsbeleid vallen onder haar verantwoordelijkheid.',
     portretAlt: 'Portret van Yasmin El Amrani, HR-manager',
+    portret: 'portretten/yasmin-el-amrani.webp',
   },
   {
     slug: 'piotr-nowak',
@@ -66,5 +73,6 @@ export const PERSONEN: Persoon[] = [
     tekst:
       'Flexkracht op de assemblagelijn via Brabantse Personeelsdiensten. In ronde 2 kan het MT hem in vaste dienst nemen; zijn verhaal raakt de defensie-screening.',
     portretAlt: 'Portret van Piotr Nowak, flexkracht assemblage',
+    portret: 'portretten/piotr-nowak.webp',
   },
 ];

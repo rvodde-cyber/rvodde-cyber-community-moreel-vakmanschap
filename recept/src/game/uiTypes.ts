@@ -14,7 +14,8 @@ export type Phase =
   | 'tussen'
   | 'voorspel'
   | 'opvolging'
-  | 'pauze';
+  | 'pauze'
+  | 'nabespreking';
 
 export type FilmKind = 'trailer-r1' | 'trailer-r2' | 'slot-r1' | 'finale';
 

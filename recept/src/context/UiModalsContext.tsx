@@ -32,9 +32,11 @@ const Ctx = createContext<UiModalsValue | null>(null);
 type ProviderProps = {
   children: ReactNode;
   onExitMenu: () => void;
+  gameState?: import('../game/uiTypes').GameUiState | null;
+  gameDispatch?: (a: import('../game/gameReducer').GameAction) => void;
 };
 
-export function UiModalsProvider({ children, onExitMenu }: ProviderProps) {
+export function UiModalsProvider({ children, onExitMenu, gameState = null, gameDispatch }: ProviderProps) {
   const [kind, setKind] = useState<ModalKind>(null);
   const [round, setRound] = useState<1 | 2>(1);
   const [roleId, setRoleId] = useState<string | null>(null);
@@ -42,10 +44,13 @@ export function UiModalsProvider({ children, onExitMenu }: ProviderProps) {
   const roleSpokeRef = useRef<(id: string) => void>(() => {});
 
   const close = useCallback(() => {
-    setKind(null);
+    setKind((k) => {
+      if (k === 'pause') gameDispatch?.({ type: 'SET_TIMER_ON', on: true });
+      return null;
+    });
     setRoleId(null);
     setRoleRevealed(false);
-  }, []);
+  }, [gameDispatch]);
 
   const setRoleSpokeHandler = useCallback((fn: (roleId: string) => void) => {
     roleSpokeRef.current = fn;
@@ -55,7 +60,10 @@ export function UiModalsProvider({ children, onExitMenu }: ProviderProps) {
     () => ({
       openHowto: () => setKind('howto'),
       openGloss: () => setKind('gloss'),
-      openPause: () => setKind('pause'),
+      openPause: () => {
+        gameDispatch?.({ type: 'SET_TIMER_ON', on: false });
+        setKind('pause');
+      },
       openRole: (id) => {
         setRoleId(id);
         setRoleRevealed(false);
@@ -66,7 +74,7 @@ export function UiModalsProvider({ children, onExitMenu }: ProviderProps) {
       setRound,
       setRoleSpokeHandler,
     }),
-    [close, round, setRoleSpokeHandler],
+    [close, round, setRoleSpokeHandler, gameDispatch],
   );
 
   const handleRoleSpoke = () => {
@@ -92,6 +100,8 @@ export function UiModalsProvider({ children, onExitMenu }: ProviderProps) {
             close();
             onExitMenu();
           }}
+          gameState={gameState}
+          gameDispatch={gameDispatch}
         />
       </Modal>
       {roleId ? (

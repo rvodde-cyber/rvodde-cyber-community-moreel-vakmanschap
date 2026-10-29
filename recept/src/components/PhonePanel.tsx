@@ -3,7 +3,9 @@ import { ROUNDS } from '@data/rounds';
 import { NAAM_KLEUR } from '@data/berichten';
 import { DilemmaChoices } from './DilemmaChoices';
 import { notifyChatToast } from './MessageToast';
+import { PersonAvatar } from './PersonAvatar';
 import { berichtDef } from '../game/chatHelpers';
+import { persoonByVan } from '../lib/persoonLookup';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
 
@@ -100,6 +102,7 @@ export function PhonePanel({ state, dispatch }: Props) {
               );
             }
             const isDil = def.dil && def.id === 'piotr';
+            const persoon = persoonByVan(def.van);
             return (
               <div key={def.id}>
                 {dayEl}
@@ -107,9 +110,12 @@ export function PhonePanel({ state, dispatch }: Props) {
                   {def.channel === 'p' ? (
                     <span className="lock">{isDil ? 'PRIVÉ  /  MOREEL DILEMMA' : 'PRIVÉ'}</span>
                   ) : null}
-                  <span className="n" style={{ color: NAAM_KLEUR[first] ?? 'var(--soft)' }}>
-                    {def.van}
-                  </span>
+                  <div className="bub-head">
+                    {persoon ? <PersonAvatar persoon={persoon} size="sm" /> : null}
+                    <span className="n" style={{ color: NAAM_KLEUR[first] ?? 'var(--soft)' }}>
+                      {def.van}
+                    </span>
+                  </div>
                   {def.fwd ? <span className="fw">↪ Doorgestuurd</span> : null}
                   <span className="x">{state.msgText[def.id] ?? ''}</span>
                   {isDil ? (

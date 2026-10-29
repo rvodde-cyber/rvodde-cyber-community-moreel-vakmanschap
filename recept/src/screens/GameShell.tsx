@@ -25,6 +25,7 @@ import { PauzePhase } from './phases/PauzePhase';
 import { ScanPhase } from './phases/ScanPhase';
 import { TussenPhase } from './phases/TussenPhase';
 import { UitkomstPhase } from './phases/UitkomstPhase';
+import { NabesprekingPhase } from './phases/NabesprekingPhase';
 import { VoorspelPhase } from './phases/VoorspelPhase';
 
 function Ticker({ state }: { state: GameUiState }) {
@@ -101,6 +102,15 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
       <>
         <PauzePhase state={state} dispatch={dispatch} />
         {film}
+        <MessageToastHost />
+      </>
+    );
+  }
+  if (phase === 'nabespreking') {
+    return (
+      <>
+        <ConceptDocentBanner />
+        <NabesprekingPhase state={state} dispatch={dispatch} />
         <MessageToastHost />
       </>
     );

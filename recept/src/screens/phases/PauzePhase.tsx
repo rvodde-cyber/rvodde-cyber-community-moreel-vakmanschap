@@ -32,6 +32,9 @@ export function PauzePhase({ state, dispatch }: { state: GameUiState; dispatch: 
             Conceptinterventies gespeeld: {state.conceptLog.join(', ')}
           </p>
         ) : null}
+        <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'nabespreking' })}>
+          Naar de nabespreking
+        </button>
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'EXIT_TO_HOME' })}>
           Terug naar afleveringen
         </button>

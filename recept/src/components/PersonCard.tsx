@@ -1,16 +1,6 @@
 import { PERSONEN } from '@data/personen';
 import type { Persoon } from '@data/schemas/personen.schema';
-
-const INITIALS: Record<string, string> = {
-  'harrie-van-gorp': 'HG',
-  'marco-van-gorp': 'MG',
-  'ans-willems': 'AW',
-  'erik-verhoeven': 'EV',
-  'joost-hendriks': 'JH',
-  'dennis-kuijpers': 'DK',
-  'yasmin-el-amrani': 'YA',
-  'piotr-nowak': 'PN',
-};
+import { PersonAvatar } from './PersonAvatar';
 
 type Props = {
   persoon: Persoon;
@@ -18,53 +8,14 @@ type Props = {
 };
 
 export function PersonCard({ persoon, size = 'md' }: Props) {
-  const base = import.meta.env.BASE_URL;
-  const px = size === 'sm' ? 38 : 96;
-  const src = persoon.portret ? `${base}${persoon.portret}` : null;
-  const init = INITIALS[persoon.slug] ?? persoon.naam.slice(0, 2).toUpperCase();
-
   return (
-    <div className="person-card" style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-      {src ? (
-        <img
-          src={src}
-          alt={persoon.portretAlt}
-          width={px}
-          height={px}
-          loading="lazy"
-          style={{
-            width: px,
-            height: px,
-            objectFit: 'cover',
-            borderRadius: size === 'sm' ? '50%' : 8,
-            border: '1px solid var(--cyan)',
-            flexShrink: 0,
-          }}
-        />
-      ) : (
-        <span
-          aria-hidden="true"
-          style={{
-            width: px,
-            height: px,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderRadius: size === 'sm' ? '50%' : 8,
-            border: '1px solid var(--cyan)',
-            background: 'var(--cyan-dim)',
-            color: 'var(--cyan)',
-            fontFamily: 'var(--data)',
-            fontWeight: 600,
-            flexShrink: 0,
-          }}
-        >
-          {init}
-        </span>
-      )}
+    <div className={`person-card${size === 'md' ? ' person-card-md' : ''}`}>
+      <PersonAvatar persoon={persoon} size={size} />
       <div>
         <strong>{persoon.naam}</strong>
-        <p className="note" style={{ margin: '4px 0 0' }}>{persoon.tekst}</p>
+        <p className="note" style={{ margin: '4px 0 0' }}>
+          {persoon.tekst}
+        </p>
       </div>
     </div>
   );

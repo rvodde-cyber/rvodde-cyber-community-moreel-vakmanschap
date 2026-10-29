@@ -44,7 +44,12 @@ export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatc
           ))}
         </div>
       </section>
-      <p className="note">De volledige nabespreking met verborgen meters volgt in stap 8 (docentmodus).</p>
+      <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'nabespreking' })}>
+        Naar de nabespreking
+      </button>
+      <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'EXIT_TO_HOME' })}>
+        Terug naar afleveringen
+      </button>
     </div>
   );
 }

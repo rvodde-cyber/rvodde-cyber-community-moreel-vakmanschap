@@ -48,7 +48,10 @@ export type GameAction =
   | { type: 'SET_GOK'; id: string }
   | { type: 'START_EPISODE'; episode: import('@data/episodes/meta').EpisodeId }
   | { type: 'SET_OPVOLGING'; keuze: import('@data/opvolging').OpvolgingKeuze }
-  | { type: 'EXIT_TO_HOME' };
+  | { type: 'EXIT_TO_HOME' }
+  | { type: 'TICK' }
+  | { type: 'ADJUST_TIMER'; delta: number }
+  | { type: 'SET_TIMER_ON'; on: boolean };
 
 function roundState(state: GameUiState) {
   return state.rounds[state.round];
@@ -352,6 +355,15 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     }
     case 'SET_GOK':
       return { ...state, gok: action.id };
+    case 'TICK': {
+      if (!state.timerOn || state.tLeft <= 0) return state;
+      if (state.phase !== 'onderzoek' && state.phase !== 'besluit') return state;
+      return { ...state, tLeft: state.tLeft - 1 };
+    }
+    case 'ADJUST_TIMER':
+      return { ...state, tLeft: Math.max(0, Math.min(3600, state.tLeft + action.delta)) };
+    case 'SET_TIMER_ON':
+      return { ...state, timerOn: action.on };
     default:
       return state;
   }
