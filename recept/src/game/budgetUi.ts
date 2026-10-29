@@ -48,12 +48,22 @@ export function freshRoundUi(round: 1 | 2): RoundUiState {
     bud: marcoBud(round),
     coldSub: 0,
     trailerDone: false,
+    reacted: false,
+  };
+}
+
+export function freshHidden() {
+  return {
+    menselijkeMaat: 50,
+    eerlijkheid: 50,
+    logMm: [] as string[],
+    logEer: [] as string[],
   };
 }
 
 export function freshGame(): GameUiState {
   return {
-    v: 3,
+    v: 4,
     playerName: '',
     team: '',
     round: 1,
@@ -62,5 +72,16 @@ export function freshGame(): GameUiState {
     results: {},
     tLeft: 600,
     timerOn: true,
+    chatTab: 'g',
+    inbox: [],
+    msgText: {},
+    msgTimes: {},
+    read: {},
+    typingId: null,
+    dynamicBerichten: {},
+    deliveredPhases: {},
+    pendingReacties: false,
+    dilemma: { choice: null, text: '', done: false },
+    hidden: freshHidden(),
   };
 }

@@ -1,15 +1,15 @@
 import { useEffect, useReducer } from 'react';
 import { freshGame, gameReducer, type GameAction } from '../game/gameReducer';
+import { migrateGameState } from '../game/migrateState';
 import type { GameUiState } from '../game/uiTypes';
 
-const KEY = 'recept-game-v3';
+const KEY = 'recept-game-v4';
 
 function load(): GameUiState | null {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(KEY) ?? localStorage.getItem('recept-game-v3');
     if (!raw) return null;
-    const s = JSON.parse(raw) as GameUiState;
-    return s.v === 3 ? s : null;
+    return migrateGameState(JSON.parse(raw));
   } catch {
     return null;
   }

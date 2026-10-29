@@ -2,7 +2,10 @@ import { ROUNDS } from '@data/rounds';
 import { budgetOf } from '@engine/helpers';
 import { DashboardColumn } from '../components/DashboardColumn';
 import { StepsNav } from '../components/StepsNav';
+import { PhonePanel } from '../components/PhonePanel';
+import { MessageToastHost } from '../components/MessageToast';
 import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
+import { useMessageDelivery } from '../hooks/useMessageDelivery';
 import { engineContext } from '../game/budgetUi';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
@@ -29,6 +32,7 @@ function Ticker({ round }: { round: 1 | 2 }) {
 export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { phase, round } = state;
   const { openPause } = useUiModals();
+  useMessageDelivery(state, dispatch);
   const ctx = engineContext(state);
   const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
 
@@ -95,6 +99,9 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
               {phase === 'uitkomst' ? <UitkomstPhase state={state} dispatch={dispatch} /> : null}
             </main>
             <aside>
+              {(phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst') ? (
+                <PhonePanel state={state} dispatch={dispatch} />
+              ) : null}
               <section className="panel">
                 <div className="ph">
                   <h2>CONTROLEKAMER</h2>
@@ -106,6 +113,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
         ) : null}
       </div>
+      <MessageToastHost />
     </>
   );
 }

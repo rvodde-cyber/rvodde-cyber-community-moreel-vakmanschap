@@ -1,5 +1,12 @@
 # Besluiten Cursor — Recept
 
+## 2026-10-29 — Stap 5 berichten & dilemma
+
+- Groepsapp (GROEP/PRIVÉ), toast, typt-indicator, fase-gestuurde berichten uit `data/berichten.ts`.
+- Reacties na uitkomst via `reactiesVoorRonde` (referentie v6).
+- Dilemma Piotr in privé-tab (ronde 2); verborgen meters in state (`hiddenMeters.ts`), nog niet zichtbaar in UI tot nabespreking (stap 8).
+- Save-key `recept-game-v4` met migratie van v3.
+
 ## 2026-10-27 — Stap 4 UX (duidelijkheid)
 
 - Modals: **Hoe het werkt** (knop Duidelijk), **Wie is wie en begrippen** (PersonCard + begrippen), **Pauze** (timer + hamburgermenu), bereikbaar vanuit hoofdmenu, intro, cold open en spel.

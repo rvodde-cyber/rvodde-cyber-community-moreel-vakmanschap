@@ -1,7 +1,14 @@
 import { compute } from '@engine/compute';
+import { BERICHTEN } from '@data/berichten';
+import type { BerichtDef } from '@data/berichten';
+import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
+import { dilemmaGroepBerichten } from '@data/berichten';
 import { ROUNDS } from '@data/rounds';
+import type { ChatChannel } from '@data/berichten';
 import { freshGame, freshRoundUi, vermoedenQ } from './budgetUi';
 import { pilotLockedCards } from './besluitRules';
+import { chatTimeLabel } from './chatHelpers';
+import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
 import type { GameUiState, Phase } from './uiTypes';
 
 export type GameAction =
@@ -22,10 +29,30 @@ export type GameAction =
   | { type: 'SET_BUD'; id: string; value: number }
   | { type: 'CONFIRM_BESLUIT' }
   | { type: 'FINISH_SCAN' }
-  | { type: 'TRY_AGAIN' };
+  | { type: 'TRY_AGAIN' }
+  | { type: 'SET_CHAT_TAB'; tab: ChatChannel }
+  | { type: 'CHAT_TYPING'; id: string }
+  | { type: 'CHAT_DELIVER'; id: string; text: string }
+  | { type: 'MARK_PHASE_DELIVERED'; key: string }
+  | { type: 'SET_DILEMMA_CHOICE'; choice: DilemmaKeuze }
+  | { type: 'SET_DILEMMA_TEXT'; text: string }
+  | { type: 'CONFIRM_DILEMMA' }
+  | { type: 'REGISTER_DYNAMIC'; berichten: BerichtDef[] }
+  | { type: 'CLEAR_PENDING_REACTIES' };
 
 function roundState(state: GameUiState) {
   return state.rounds[state.round];
+}
+
+function deliverMessage(state: GameUiState, id: string, text: string): GameUiState {
+  if (state.inbox.includes(id)) return state;
+  return {
+    ...state,
+    typingId: null,
+    inbox: [...state.inbox, id],
+    msgText: { ...state.msgText, [id]: text },
+    msgTimes: { ...state.msgTimes, [id]: chatTimeLabel(state.round) },
+  };
 }
 
 export function gameReducer(state: GameUiState, action: GameAction): GameUiState {
@@ -148,15 +175,17 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
       const q = vermoedenQ(state.round, r.verm);
       const res = compute(state.round, cards, q, ctx, r.bud);
+      const hidden = applyHiddenAfterRound(state.hidden, state.round, { ...r, cards }, res);
       return {
         ...state,
         phase: 'scan',
+        hidden,
         results: { ...state.results, [state.round]: res },
         rounds: { ...state.rounds, [state.round]: { ...r, cards } },
       };
     }
     case 'FINISH_SCAN':
-      return { ...state, phase: 'uitkomst' };
+      return { ...state, phase: 'uitkomst', pendingReacties: true };
     case 'TRY_AGAIN': {
       const r = roundState(state);
       const pc = ROUNDS[state.round].pilotCard;
@@ -165,6 +194,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         ...r,
         cards,
         spoken: [],
+        reacted: false,
         bud: freshRoundUi(state.round).bud,
       };
       const results = { ...state.results };
@@ -173,8 +203,77 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         ...state,
         phase: 'besluit',
         results,
+        pendingReacties: false,
         rounds: { ...state.rounds, [state.round]: nextR },
         tLeft: state.tLeft > 0 ? state.tLeft : 600,
+      };
+    }
+    case 'SET_CHAT_TAB': {
+      const tab = action.tab;
+      const read = { ...state.read };
+      for (const id of state.inbox) {
+        const def = state.dynamicBerichten[id] ?? BERICHTEN.find((m) => m.id === id);
+        if (def?.channel === tab) read[id] = true;
+      }
+      return { ...state, chatTab: tab, read };
+    }
+    case 'CHAT_TYPING':
+      return { ...state, typingId: action.id };
+    case 'CHAT_DELIVER':
+      return deliverMessage(state, action.id, action.text);
+    case 'MARK_PHASE_DELIVERED':
+      return {
+        ...state,
+        deliveredPhases: { ...state.deliveredPhases, [action.key]: true },
+      };
+    case 'SET_DILEMMA_CHOICE':
+      return {
+        ...state,
+        dilemma: { ...state.dilemma, choice: action.choice },
+      };
+    case 'SET_DILEMMA_TEXT':
+      return {
+        ...state,
+        dilemma: { ...state.dilemma, text: action.text.slice(0, 400) },
+      };
+    case 'CONFIRM_DILEMMA': {
+      const { choice, text } = state.dilemma;
+      if (!choice) return state;
+      if (choice === 'prive' && text.replace(/\s/g, '').length < 10) return state;
+
+      let next: GameUiState = {
+        ...state,
+        dilemma: { ...state.dilemma, done: true },
+        hidden: applyDilemmaHidden(state.hidden, choice, text),
+      };
+
+      if (choice === 'groep') {
+        const defs = dilemmaGroepBerichten(state.playerName);
+        const dynamicBerichten = { ...next.dynamicBerichten };
+        for (const d of defs) dynamicBerichten[d.id] = d;
+        const own = defs[0]!;
+        const ownText = typeof own.tekst === 'string' ? own.tekst : own.tekst({ playerName: state.playerName });
+        next = {
+          ...next,
+          dynamicBerichten,
+          chatTab: 'g',
+          read: { ...next.read, [own.id]: true },
+        };
+        next = deliverMessage(next, own.id, ownText);
+      }
+      return next;
+    }
+    case 'REGISTER_DYNAMIC': {
+      const dynamicBerichten = { ...state.dynamicBerichten };
+      for (const b of action.berichten) dynamicBerichten[b.id] = b;
+      return { ...state, dynamicBerichten };
+    }
+    case 'CLEAR_PENDING_REACTIES': {
+      const r = roundState(state);
+      return {
+        ...state,
+        pendingReacties: false,
+        rounds: { ...state.rounds, [state.round]: { ...r, reacted: true } },
       };
     }
     default:
