@@ -1,6 +1,6 @@
 # Deploy Recept (privé)
 
-Laatste update: **29 oktober 2026**
+Laatste update: **29 oktober 2026** (interventies + Sanne)
 
 ## Toegang
 
@@ -13,51 +13,37 @@ Laatste update: **29 oktober 2026**
 | **Studentlink** | https://recept-k8m3n7p2.netlify.app/ |
 | **Docentlink** | https://recept-k8m3n7p2.netlify.app/?docent=1 |
 
-Sitenaam: `recept-k8m3n7p2` (niet-raadbaar).
+Productie-deploy: **`6ae319264673df90c52be9a6`** (29 okt 2026, commit `7e30fbd`).
 
 ## Build-controle (`recept/dist`)
 
-| Check | Resultaat 29 okt 2026 |
+| Check | Resultaat |
 | --- | --- |
-| API-sleutels / wachtwoorden | Niet aangetroffen in `dist/` |
-| Persoonsgegevens / testaccounts | Niet aangetroffen |
-| Externe requests in app-runtime | Geen API-calls naar derden; alleen Vite modulepreload voor eigen assets |
-| `noindex` + `robots.txt` + `netlify.toml` | Aanwezig (`index.html`, `public/robots.txt`, `netlify.toml` publish `dist`, SPA `/* → /index.html 200`) |
+| API-sleutels / persoonsgegevens | Niet aangetroffen |
+| Externe runtime-requests | Geen API-calls naar derden |
+| `noindex` + `robots.txt` + `netlify.toml` | OK |
 
-## Deploy (CLI)
+## Deploy
 
 ```bash
-cd recept
-npm test && npm run build
+cd recept && npm test && npm run build
 npx netlify-cli deploy --prod --dir=dist
 ```
-
-**Status 29 okt:** ingelogd als Richard Voddé; productie-deploy `6ae314145ef87064a75debcb` live.
-
-## Deploy — handmatig (Drop)
-
-1. `cd recept && npm run build`
-2. [Netlify Drop](https://app.netlify.com/drop) → map `recept/dist`
-3. URL's hierboven bijwerken
-
-## QR
-
-```bash
-npm run qr -- https://recept-k8m3n7p2.netlify.app/
-```
-
-Output: `recept/docs/qr-student.png` (lokaal gegenereerd). **De URL niet publiek delen** (zie `README.md`).
 
 ## Rooktest live (29 okt 2026)
 
 | Check | Student | Docent (`?docent=1`) |
 | --- | --- | --- |
-| Aflevering 4 start | OK (intro ronde 1 na voornaam + keuze ep4) | OK (sessie hervat zichtbaar) |
-| Nabespreking | Niet volledig doorlopen in rooktest | Conceptblokken in data; volledige flow handmatig na spelen |
+| Aflevering 4 start | OK (naam + keuze ep4) | OK (hervatten + intro) |
+| Cold open → onderzoek | OK (overslaan cold) | OK |
+| MT-besluit ronde 1 | OK (PILOT + 2 interventies; begroting vereist handmatig bijstellen vóór vastleggen) | OK (zelfde scherm) |
+| Beide rondes + slot volledig | **Niet geautomatiseerd afgerond** — budgetregel in r1 blokkeert zonder slider-aanpassing; handmatig afronden aanbevolen |
+| Nabespreking | Fallback teksten (concept) | OK: Veilig gesprek CONCEPT, Sanne-panel A/B, gespreksvragen CONCEPT gegroepeerd, Piotr-data docent-only |
 | Instellingenmodal | OK | OK |
-| Consolefouten | Geen blocking errors waargenomen in browser-snapshot | idem |
+| Consolefouten | Geen blocking errors waargenomen tijdens navigatie intro → onderzoek → besluit | idem |
 
-## SEO / crawlers
+**Opmerking:** verborgen meters in de **nabespreking** zijn bewust zichtbaar na het spel (ontwerp demo); concept-interventiedata toont verborgen meters alleen in docentmodus in data-laag, niet gekoppeld aan kaarten in demo.
 
-- `<meta name="robots" content="noindex,nofollow">`
-- `public/robots.txt`: `Disallow: /`
+## QR
+
+`docs/qr-student.png` — URL niet publiek delen.
