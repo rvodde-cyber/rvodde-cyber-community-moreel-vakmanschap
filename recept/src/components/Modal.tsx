@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { trapFocus } from '../lib/a11ySettings';
 
 type Props = {
   open: boolean;
@@ -15,6 +16,7 @@ export function Modal({ open, titleId = 'modh', label, onClose, children }: Prop
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+      if (ref.current) trapFocus(ref.current, e);
     };
     window.addEventListener('keydown', onKey);
     const btn = ref.current?.querySelector('button');

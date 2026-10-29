@@ -6,12 +6,13 @@ type Props = {
   onResume: () => void;
   onHowto: () => void;
   onGloss: () => void;
+  onSettings?: () => void;
   onMenu: () => void;
   gameState?: GameUiState | null;
   gameDispatch?: (a: GameAction) => void;
 };
 
-export function PauseModal({ onResume, onHowto, onGloss, onMenu, gameState, gameDispatch }: Props) {
+export function PauseModal({ onResume, onHowto, onGloss, onSettings, onMenu, gameState, gameDispatch }: Props) {
   return (
     <>
       <p className="k">GEPAUZEERD</p>
@@ -21,6 +22,9 @@ export function PauseModal({ onResume, onHowto, onGloss, onMenu, gameState, game
       <button type="button" className="btn" onClick={onResume}>Hervatten</button>
       <button type="button" className="btn ghost" onClick={onHowto}>Hoe het werkt</button>
       <button type="button" className="btn ghost" onClick={onGloss}>Wie is wie en begrippen</button>
+      {onSettings ? (
+        <button type="button" className="btn ghost" onClick={onSettings}>Instellingen</button>
+      ) : null}
       <button type="button" className="btn ghost" onClick={onMenu}>Naar het hoofdmenu</button>
     </>
   );

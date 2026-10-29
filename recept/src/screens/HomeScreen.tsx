@@ -24,7 +24,7 @@ export function HomeScreen({
   onStart,
   onResume,
 }: Props) {
-  const { openHowto, openGloss } = useUiModals();
+  const { openHowto, openGloss, openSettings } = useUiModals();
 
   const start = (episode: GameUiState['episode']) => {
     dispatch({ type: 'SET_NAME', name: name.trim() });
@@ -75,7 +75,7 @@ export function HomeScreen({
             {savedEpisode ? ` (aflevering ${savedEpisode}: ${episodeMeta(savedEpisode).titel})` : ''}
           </button>
         ) : null}
-        <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
       </div>
     </div>
   );

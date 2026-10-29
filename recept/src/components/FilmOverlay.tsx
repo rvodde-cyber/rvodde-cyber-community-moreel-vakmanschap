@@ -125,10 +125,16 @@ function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setReduced(mq.matches);
-    const fn = () => setReduced(mq.matches);
-    mq.addEventListener('change', fn);
-    return () => mq.removeEventListener('change', fn);
+    const sync = () =>
+      setReduced(mq.matches || document.documentElement.classList.contains('reduce-motion'));
+    sync();
+    mq.addEventListener('change', sync);
+    const obs = new MutationObserver(sync);
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'data-reduce-motion'] });
+    return () => {
+      mq.removeEventListener('change', sync);
+      obs.disconnect();
+    };
   }, []);
   return reduced;
 }

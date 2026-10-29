@@ -12,14 +12,16 @@ import { Modal } from '../components/Modal';
 import { GlossaryModal } from '../components/modals/GlossaryModal';
 import { HowItWorksModal } from '../components/modals/HowItWorksModal';
 import { PauseModal } from '../components/modals/PauseModal';
+import { SettingsModal } from '../components/modals/SettingsModal';
 import { RoleBelangModal } from '../components/modals/RoleBelangModal';
 
-export type ModalKind = 'howto' | 'gloss' | 'pause' | 'role' | null;
+export type ModalKind = 'howto' | 'gloss' | 'pause' | 'role' | 'settings' | null;
 
 type UiModalsValue = {
   openHowto: () => void;
   openGloss: () => void;
   openPause: () => void;
+  openSettings: () => void;
   openRole: (roleId: string) => void;
   close: () => void;
   round: 1 | 2;
@@ -64,6 +66,7 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
         gameDispatch?.({ type: 'SET_TIMER_ON', on: false });
         setKind('pause');
       },
+      openSettings: () => setKind('settings'),
       openRole: (id) => {
         setRoleId(id);
         setRoleRevealed(false);
@@ -96,6 +99,7 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
           onResume={close}
           onHowto={() => setKind('howto')}
           onGloss={() => setKind('gloss')}
+          onSettings={() => setKind('settings')}
           onMenu={() => {
             close();
             onExitMenu();
@@ -103,6 +107,9 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
           gameState={gameState}
           gameDispatch={gameDispatch}
         />
+      </Modal>
+      <Modal open={kind === 'settings'} label="Instellingen" onClose={close}>
+        <SettingsModal onClose={close} />
       </Modal>
       {roleId ? (
         <Modal open={kind === 'role'} label="Rondje MT" onClose={close}>
