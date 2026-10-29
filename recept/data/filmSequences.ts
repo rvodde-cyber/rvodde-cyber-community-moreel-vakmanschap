@@ -92,31 +92,42 @@ export function buildSlotRonde1(place: string, line: string): FilmScript {
   };
 }
 
-export function buildFinale(a: [string, string], b: [string, string]): FilmScript {
+export function buildFinale(
+  a: [string, string],
+  b: [string, string],
+  testament?: { base: string; variant: string },
+): FilmScript {
+  const cues: FilmScript['cues'] = [
+    { at: 200, kind: 'shot', img: 'D1', zoom: 'in' },
+    { at: 200, kind: 'sub', who: a[0], text: a[1] },
+    { at: 4800, kind: 'shot', img: 'PIOTR', zoom: 'in' },
+    { at: 4800, kind: 'sub', who: b[0], text: b[1] },
+    { at: 9000, kind: 'blank' },
+    { at: 9400, kind: 'text', text: '2031' },
+    { at: 9400, kind: 'boom' },
+    { at: 11800, kind: 'shot', img: 'Y1', zoom: 'in' },
+    { at: 11800, kind: 'sub', text: 'Zondagochtend, 06:12. De telefoon gaat al voor de derde keer.' },
+    { at: 14800, kind: 'sub', who: 'MARCO', text: 'Pap?' },
+    { at: 16200, kind: 'blank' },
+    { at: 16600, kind: 'text', text: 'Harrie van Gorp  1955–2031' },
+    { at: 16600, kind: 'boom', soft: true },
+    { at: 19200, kind: 'shot', img: 'C4', zoom: 'in' },
+    { at: 19200, kind: 'sub', who: 'DE NOTARIS', text: 'Er is één zin in het testament doorgestreept.' },
+  ];
+  if (testament?.base.trim()) {
+    cues.push({ at: 20400, kind: 'sub', text: testament.base });
+  }
+  if (testament?.variant.trim()) {
+    cues.push({ at: 21800, kind: 'sub', text: testament.variant });
+  }
+  cues.push({ at: 23400, kind: 'title' });
   return {
     id: 'finale',
     label: 'Einde van aflevering 4',
     titleMark: 'Wordt vervolgd',
     titleAfter: 'RECEPT  /  AFLEVERING 5: WIE HEEFT HET SCHRIFT?',
-    duration: 22000,
-    cues: [
-      { at: 200, kind: 'shot', img: 'D1', zoom: 'in' },
-      { at: 200, kind: 'sub', who: a[0], text: a[1] },
-      { at: 4800, kind: 'shot', img: 'PIOTR', zoom: 'in' },
-      { at: 4800, kind: 'sub', who: b[0], text: b[1] },
-      { at: 9000, kind: 'blank' },
-      { at: 9400, kind: 'text', text: '2031' },
-      { at: 9400, kind: 'boom' },
-      { at: 11800, kind: 'shot', img: 'Y1', zoom: 'in' },
-      { at: 11800, kind: 'sub', text: 'Zondagochtend, 06:12. De telefoon gaat al voor de derde keer.' },
-      { at: 14800, kind: 'sub', who: 'MARCO', text: 'Pap?' },
-      { at: 16200, kind: 'blank' },
-      { at: 16600, kind: 'text', text: 'Harrie van Gorp  1955–2031' },
-      { at: 16600, kind: 'boom', soft: true },
-      { at: 19200, kind: 'shot', img: 'C4', zoom: 'in' },
-      { at: 19200, kind: 'sub', who: 'DE NOTARIS', text: 'Er is één zin in het testament doorgestreept.' },
-      { at: 21000, kind: 'title' },
-    ],
+    duration: 24600,
+    cues,
   };
 }
 

@@ -1,17 +1,16 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **29 oktober 2026** — Piotr-lijn definitief (deels)
+Laatste update: **29 oktober 2026** — Piotr varianten + definitief
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
-| Piotr-lijn | 7 scènes `definitief` in `data/piotr-lijn.ts`; intro r1 + privébericht gekoppeld aan student-UI via `data/piotrSpel.ts` |
-| Tekst | Kramer-citaat + zin over zwijgen; privéberichtregel „Ik zeg meestal niets…” |
-| Nog concept | `a4r2-keuze-contract`; `variantZonderContract` blijft `leeg`; interventie `a4-2-1` / `interventieDefinitief=false` |
-| Interventies A1–A5 | 40 items concept; demo ep4 onaangetast |
-| Sanne / nabespreking | Nog `concept` |
-| Tests | **33** groen (incl. `piotrSpel.test.ts`) |
+| Piotr-lijn | 7 scènes `definitief`; intro + privébericht in student-UI |
+| Slot 2031 | `variantMetContract` / `variantZonderContract` definitief, gekoppeld aan begroting `piotr-vast` (≥ €25.000) |
+| Nabespreking | Vraag handelen definitief: „Wat maakte dat jullie die kans wel of niet pakten?” |
+| Nog concept | `a4r2-keuze-contract`, Sanne, overige nabespreking, interventies A1–A5; `a4-2-1` / `interventieDefinitief=false` |
+| Tests | **38** groen |
 | Beelden | Silhouet tot akkoord `BEELDEN-CHECK.md` |
 
 ## Live demo
@@ -23,9 +22,9 @@ Laatste update: **29 oktober 2026** — Piotr-lijn definitief (deels)
 
 ## Richard — top-3
 
-1. Besluit aflevering 4: demo v6 houden vs concept-interventies 4.1/4.2.
-2. Sanne + nabespreking ep4 → `definitief`; akkoord interventies / `a4-2-1` na variant testament.
-3. Beeldakkoord I1–I5 en portretten.
+1. Demo ep4 vs concept-interventies (4.1/4.2) — sync of demo houden.
+2. Sanne + overige nabespreking ep4 → `definitief`.
+3. Beeldakkoord I1–I5; eventueel `a4-2-1` + spelmotor (pas na expliciet akkoord).
 
 ## Lokaal
 

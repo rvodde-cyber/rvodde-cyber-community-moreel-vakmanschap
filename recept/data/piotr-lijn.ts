@@ -5,8 +5,9 @@ export type PiotrBeeldRef = 'I1' | 'I2' | 'I3' | 'I4' | 'I5' | 'placeholder';
 export type PiotrScene = Scene & {
   fase: MvFase;
   beeld: PiotrBeeldRef;
-  /** Slotscène ep4: vertakking zonder MT-contract ronde 2 — wacht op Richard */
+  /** Slotscène ep4: vertakking na MT-keuze Piotr in dienst (ronde 2) */
   variantZonderContract?: { tekst: string; status: Status; bron?: string };
+  variantMetContract?: { tekst: string; status: Status; bron?: string };
 };
 
 /** Piotr-lijn — bron docs/VOORSTELLEN-RECEPT-29-10-2026.md §2; per scène status leeg | concept | definitief. */
@@ -71,10 +72,16 @@ export const PIOTR_SCENES: PiotrScene[] = [
     beeld: 'placeholder',
     bron: 'docs/VOORSTELLEN-RECEPT-29-10-2026.md §2',
     variantZonderContract: {
-      tekst: '',
-      status: 'leeg',
-      bron:
-        'OPEN-VRAGEN: vertakking zonder MT-contract ronde 2 — zonder MT-contract had Harrie het zelf geregeld; het MT mist die kans (Richard bevestigen)',
+      tekst:
+        'Harrie had het jullie laten doen. Een contract, een kleine post, een kans om iets goeds te doen terwijl het nog kon. Jullie lieten die voorbijgaan. Dus regelde hij het zelf, op zijn manier: in één zin, zonder iemand te vragen.',
+      status: 'definitief',
+      bron: 'docs/VOORSTELLEN-RECEPT-29-10-2026.md §2; MT koos Piotr niet in vaste dienst',
+    },
+    variantMetContract: {
+      tekst:
+        'Jullie gaven Piotr een contract toen het kon. Harrie hoefde alleen nog de laatste stap te zetten, en dat deed hij, in één zin.',
+      status: 'definitief',
+      bron: 'docs/VOORSTELLEN-RECEPT-29-10-2026.md §2; MT koos Piotr in vaste dienst',
     },
   },
   {
@@ -105,6 +112,13 @@ export function sceneById(id: string): PiotrScene | undefined {
 
 export function validatePiotrLijn(): void {
   assertScenesConsistent(PIOTR_SCENES);
+  const slot = PIOTR_SCENES.find((s) => s.id === 'a4-slot-testament');
+  for (const key of ['variantZonderContract', 'variantMetContract'] as const) {
+    const v = slot?.[key];
+    if (v?.status === 'definitief' && !v.tekst.trim()) {
+      throw new Error(`a4-slot-testament.${key}: definitief zonder tekst`);
+    }
+  }
 }
 
 validatePiotrLijn();

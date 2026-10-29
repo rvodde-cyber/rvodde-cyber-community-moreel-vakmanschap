@@ -220,6 +220,12 @@ export const ROUNDS: Record<1 | 2, RoundDefinition> = {
       { id: 'directie', t: 'Directie', d: 'Nieuw hoofdkantoor in de Spoorzone', marco: 300000 },
       { id: 'dividend', t: 'Dividend', d: 'Uitkering familie Van Gorp', marco: 320000 },
       { id: 'reserve', t: 'Reserve', d: 'Buffer voor de volgende aflevering', marco: 80000 },
+      {
+        id: 'piotr-vast',
+        t: 'Piotr in vaste dienst',
+        d: 'Aanname via Brabantse Personeelsdiensten (loyaliteit)',
+        marco: 0,
+      },
     ],
     BE: {
       mensen: { ontwikkeling: 4, vaardigheden: 2, steunlg: 1.5, collegas: 1.5 },

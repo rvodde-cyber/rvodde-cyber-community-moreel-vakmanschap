@@ -54,6 +54,13 @@ export const NABESPREKING_EP4: NabesprekingVraagEp4[] = [
     thema: 'piotr-lijn',
   },
   {
+    id: 'ep4-nb-handelen-piotr-kans',
+    fase: 'handelen',
+    status: 'definitief',
+    tekst: 'Wat maakte dat jullie die kans wel of niet pakten?',
+    thema: 'piotr-lijn',
+  },
+  {
     id: 'ep4-nb-8',
     fase: 'handelen',
     status: 'concept',

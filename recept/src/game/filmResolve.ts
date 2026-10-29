@@ -8,6 +8,7 @@ import {
 import { isFullEpisode } from '@data/episodes/meta';
 import { SKELETON_SLOTS, SKELETON_TRAILERS } from '@data/skeleton/film';
 import { slotLineRonde1, slotLinesFinale } from '@data/slotLines';
+import { mtKoosPiotrInDienst, resolveTestamentForSpel } from '@data/piotrSpel';
 import type { GameUiState } from './uiTypes';
 
 export function resolveFilmScript(state: GameUiState): FilmScript | null {
@@ -38,7 +39,12 @@ export function resolveFilmScript(state: GameUiState): FilmScript | null {
       const res = state.results[2];
       if (!res) return null;
       const [a, b] = slotLinesFinale(res, state.rounds[2], state.dilemma.choice);
-      return buildFinale(a, b);
+      const inDienst = mtKoosPiotrInDienst(state.rounds[2].bud);
+      const testament = resolveTestamentForSpel(inDienst, false);
+      return buildFinale(a, b, {
+        base: testament.base.isFallback ? '' : testament.base.tekst,
+        variant: testament.variant.isFallback ? '' : testament.variant.tekst,
+      });
     }
     default:
       return null;

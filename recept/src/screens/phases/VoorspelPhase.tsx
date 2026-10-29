@@ -1,5 +1,7 @@
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
+import { mtKoosPiotrInDienst, resolveTestamentForSpel } from '@data/piotrSpel';
+import { useDocentMode } from '../../hooks/useDocentMode';
 
 const GOK = [
   { id: 'marco', t: 'Marco' },
@@ -9,6 +11,10 @@ const GOK = [
 ] as const;
 
 export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
+  const docent = useDocentMode();
+  const inDienst = mtKoosPiotrInDienst(state.rounds[2].bud);
+  const testament = resolveTestamentForSpel(inDienst, docent);
+
   return (
     <div className="wrap" style={{ paddingTop: 24 }}>
       <section className="panel">
@@ -17,6 +23,20 @@ export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatc
           <span className="live">EINDE AFLEVERING 4</span>
         </div>
         <p className="big">Harrie overlijdt in 2031. In zijn testament is één zin doorgestreept.</p>
+        {!testament.base.isFallback ? (
+          <>
+            <h3 className="data" style={{ marginTop: 16 }}>
+              2031 — TESTAMENT
+            </h3>
+            <p className="body">{testament.base.tekst}</p>
+            {!testament.variant.isFallback ? (
+              <p className="body">
+                {testament.variant.showConceptLabel ? <span className="concept-tag">CONCEPT </span> : null}
+                {testament.variant.tekst}
+              </p>
+            ) : null}
+          </>
+        ) : null}
       </section>
       <div className="q">
         <span className="tag">TAFELVRAAG</span>

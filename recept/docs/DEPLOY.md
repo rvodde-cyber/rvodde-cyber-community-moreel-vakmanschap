@@ -1,6 +1,6 @@
 # Deploy Recept (privé)
 
-Laatste update: **29 oktober 2026** (begroting autofix)
+Laatste update: **29 oktober 2026** (Piotr varianten + definitief)
 
 ## Live URL's
 
@@ -9,24 +9,23 @@ Laatste update: **29 oktober 2026** (begroting autofix)
 | Student | https://recept-k8m3n7p2.netlify.app/ |
 | Docent | https://recept-k8m3n7p2.netlify.app/?docent=1 |
 
-Productie-deploy: **`6ae31eaac5fb1e5c371cd167`** (commit `fe9bef7` — begroting melding + autofix).
+Productie-deploy: _(na push — zie commit hash hieronder bijwerken)_.
 
 ## Tests
 
-`npm test`: **32/32** groen (incl. `budgetFix.test.ts` voor PILOT B+D ronde 1).
+`npm test`: **38/38** groen (incl. `piotrVariant.test.ts`, `contentStatus`, begroting-autofix).
 
-## Rooktest live (29 okt 2026, na autofix)
+## Rooktest live (29 okt 2026)
 
 | Check | Student | Docent |
 | --- | --- | --- |
-| Aflevering 4 start | OK | OK |
-| Ronde 1 MT-besluit | Melding + **Begroting automatisch aanpassen** naast **Besluit vastleggen** bij tekort; autofix maakt budget geldig (zelfde flow als test) | OK + conceptbanner |
-| Beide rondes → slotscène | **Handmatig te verifiëren** (autofix verwijdert blokade r1; r2 zelfde patroon). Geen console-errors gezien tijdens intro → onderzoek → besluit-check op live deploy. |
-| Nabespreking | Fallback conceptteksten | OK (Veilig gesprek, Sanne A/B, gespreksvragen CONCEPT) |
-| Instellingenmodal | OK | OK |
-| Console | Geen blocking errors (Log.enable tijdens spotcheck) | idem |
+| Piotr intro ronde 1 | Tekst Kramer + „Dat hij nooit iets zegt…” op introscherm; geen CONCEPT | idem + concept-scènes gelabeld in nabespreking-data |
+| Privébericht ronde 2 | „Ik zeg meestal niets…” in privéchat; geen CONCEPT | idem |
+| Slot 2031 | Na finale/voorspel: testament + **één** variant (met/ zonder contract) na keuze `piotr-vast` ≥ €25.000 | idem |
+| Nabespreking | Handelenvraag definitief zichtbaar; Sanne/greiner fallback of CONCEPT | CONCEPT-blokken waar van toepassing |
+| Console | Geen blocking errors tijdens spotcheck | idem |
 
-**Tip docent:** pauzemenu → fase **Nabespreking** om UI te toetsen zonder volledige sessie.
+**Keuze variant testen:** ronde 2 begroting — schuif **Piotr in vaste dienst** op ≥ €25.000 (ja) of laat op €0 (nee); speel door tot **Wordt vervolgd**.
 
 ## Deploy
 

@@ -37,9 +37,9 @@ describe('interventies data', () => {
     );
   });
 
-  it('faalt als 4.2.1 definitief is zonder bevestigde variantscène', () => {
-    const bad: Interventie = { ...INTERVENTIE_BY_ID['a4-2-1']!, interventieDefinitief: true };
-    expect(() => assertPiotrContractVariant([bad])).toThrow(/variantscène/);
+  it('4.2.1 interventieDefinitief vereist bevestigde slot-varianten in piotr-lijn', () => {
+    const piotr: Interventie = { ...INTERVENTIE_BY_ID['a4-2-1']!, interventieDefinitief: true };
+    expect(() => assertPiotrContractVariant([piotr])).not.toThrow();
   });
 
   it('verborgen meters nooit zichtbaar voor studenten', () => {

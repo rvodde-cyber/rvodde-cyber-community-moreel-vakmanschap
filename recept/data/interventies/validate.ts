@@ -75,6 +75,10 @@ export function assertPiotrContractVariant(items: Interventie[]): void {
   if (!variant || variant.status !== 'definitief' || !variant.tekst.trim()) {
     throw new Error('a4-2-1: interventieDefinitief zonder bevestigde variantscène variantZonderContract');
   }
+  const met = slot?.variantMetContract;
+  if (!met || met.status !== 'definitief' || !met.tekst.trim()) {
+    throw new Error('a4-2-1: interventieDefinitief zonder bevestigde variantscène variantMetContract');
+  }
 }
 
 /** Studentmodus mag verborgen meters nooit tonen. */
