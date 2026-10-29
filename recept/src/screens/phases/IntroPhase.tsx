@@ -1,8 +1,11 @@
+import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
+import { INTRO_BEELD, INTRO_TEKSTEN } from '@content/intros.nl';
 import { startOf } from '@engine/startOf';
-import { budgetOf } from '@engine/helpers';
+import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
 import { engineContext } from '../../game/budgetUi';
+import { roundDefFor } from '../../game/roundSource';
 import { mln } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
@@ -17,6 +20,40 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
   const { openHowto, openGloss } = useUiModals();
   const round = state.round;
   const ctx = engineContext(state);
+
+  if (!isFullEpisode(state.episode) && round === 1) {
+    const meta = episodeMeta(state.episode);
+    const intro = INTRO_TEKSTEN[state.episode];
+    const img = INTRO_BEELD[state.episode];
+    const D = roundDefFor(state);
+    return (
+      <div className="cine">
+        {bg(img)}
+        <div className="cine-shade" />
+        <div className="cine-in">
+          <p className="kick">{meta.kick}</p>
+          <p className="ep">{meta.titel}</p>
+          <h4>GESCHIEDENIS</h4>
+          <p className="body">{intro.geschiedenis}</p>
+          <h4>UITDAGINGEN</h4>
+          <p className="body">{intro.uitdagingen}</p>
+          <div className="hintbox">
+            <h4>HINT</h4>
+            <p>{intro.hint}</p>
+          </div>
+          <div className="carry">
+            <h4>JULLIE OPDRACHT</h4>
+            <p className="body">{intro.opdracht}</p>
+            <p className="body">Budget deze ronde: {mln(budgetOfDef(D, 1, ctx))}.</p>
+          </div>
+          <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
+            Verder
+          </button>
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} />
+        </div>
+      </div>
+    );
+  }
 
   if (round === 2) {
     const notes = startOf(2, ctx).notes;

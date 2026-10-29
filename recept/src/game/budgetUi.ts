@@ -1,8 +1,10 @@
-import { ROUNDS } from '@data/rounds';
-import { budgetOf, marcoBud } from '@engine/helpers';
+import { isFullEpisode } from '@data/episodes/meta';
+import type { EpisodeId } from '@data/episodes/meta';
+import { budgetOf, budgetOfDef, marcoBud, marcoBudFromPosten } from '@engine/helpers';
 import type { GameContext } from '@engine/types';
 import { kostEur } from '../lib/format';
 import type { GameUiState, RoundUiState } from './uiTypes';
+import { roundDefEpisode, roundDefFor } from './roundSource';
 
 export function engineContext(state: GameUiState): GameContext {
   return {
@@ -14,8 +16,8 @@ export function engineContext(state: GameUiState): GameContext {
   };
 }
 
-export function bcalc(round: 1 | 2, r: RoundUiState, ctx: GameContext) {
-  const D = ROUNDS[round];
+export function bcalc(state: GameUiState, r: RoundUiState, ctx: GameContext) {
+  const D = roundDefFor(state);
   let iv = 0;
   let po = 0;
   for (const k of D.cards) {
@@ -24,17 +26,18 @@ export function bcalc(round: 1 | 2, r: RoundUiState, ctx: GameContext) {
   for (const p of D.posten) {
     po += r.bud[p.id] ?? 0;
   }
-  const left = budgetOf(round, ctx) - iv - po;
+  const left = (isFullEpisode(state.episode) ? budgetOf(state.round, ctx) : budgetOfDef(D, state.round, ctx)) - iv - po;
   return { iv, po, left };
 }
 
-export function vermoedenQ(round: 1 | 2, vermId: string | null): number {
+export function vermoedenQ(state: GameUiState, vermId: string | null): number {
   if (!vermId) return 1;
-  const v = ROUNDS[round].verm.find((x) => x.id === vermId);
+  const v = roundDefFor(state).verm.find((x) => x.id === vermId);
   return v?.q ?? 1;
 }
 
-export function freshRoundUi(round: 1 | 2): RoundUiState {
+export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
+  const def = roundDefEpisode(episode, round);
   return {
     acties: [],
     verm: null,
@@ -45,7 +48,7 @@ export function freshRoundUi(round: 1 | 2): RoundUiState {
     mot: '',
     minOn: false,
     min: '',
-    bud: marcoBud(round),
+    bud: isFullEpisode(episode) ? marcoBud(round) : marcoBudFromPosten(def.posten),
     coldSub: 0,
     trailerDone: false,
     reacted: false,
@@ -62,13 +65,20 @@ export function freshHidden() {
 }
 
 export function freshGame(): GameUiState {
+  return freshEpisode(4);
+}
+
+export function freshEpisode(episode: EpisodeId): GameUiState {
   return {
     v: 4,
+    episode,
+    opvolging: null,
+    conceptLog: [],
     playerName: '',
     team: '',
     round: 1,
     phase: 'intro',
-    rounds: { 1: freshRoundUi(1), 2: freshRoundUi(2) },
+    rounds: { 1: freshRoundUi(episode, 1), 2: freshRoundUi(episode, 2) },
     results: {},
     tLeft: 600,
     timerOn: true,

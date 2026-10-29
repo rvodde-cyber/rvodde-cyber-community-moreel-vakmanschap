@@ -14,7 +14,7 @@ Bronmap ontwerp: `Cursor projecten\Recept` (sync naar `recept/` in monorepo). He
 | 4 | Opdrachtbalk (deels), Wie is wie, Hoe het werkt, pauze/menu, rondje MT-modal | Klaar (instellingen-stub stap 8) |
 | 5 | Groepsapp, reacties, dilemma Piotr + verborgen meters | Klaar (zichtbaar in nabespreking stap 8) |
 | 6 | Trailer/geluid, slotscène, pauzekaart, ronde 2 | Klaar (nabespreking stap 8) |
-| 7 | Afleveringen 1–3 & 5 skelet, opvolging | Open |
+| 7 | Afleveringen 1–3 & 5 skelet, opvolging | Klaar (docentbanner, periodethema, TODO-gevolgen opvolging) |
 | 8 | Portretten, docentmodus, nabespreking, README | Open |
 
 ## Commits (monorepo `recept/`)

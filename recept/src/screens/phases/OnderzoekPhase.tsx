@@ -1,18 +1,17 @@
-import { ROUNDS } from '@data/rounds';
+import { roundDefFor } from '../../game/roundSource';
 import { TaskBar } from '../../components/TaskBar';
 import type { GameAction } from '../../game/gameReducer';
-import type { RoundUiState } from '../../game/uiTypes';
+import type { GameUiState } from '../../game/uiTypes';
 
 export function OnderzoekPhase({
-  round,
-  roundUi,
+  state,
   dispatch,
 }: {
-  round: 1 | 2;
-  roundUi: RoundUiState;
+  state: GameUiState;
   dispatch: (a: GameAction) => void;
 }) {
-  const D = ROUNDS[round];
+  const roundUi = state.rounds[state.round];
+  const D = roundDefFor(state);
   const n = roundUi.acties.length;
   const ok = n >= 1 && roundUi.verm;
 

@@ -1,8 +1,10 @@
 import { compute } from '@engine/compute';
-import { ROUNDS } from '@data/rounds';
+import { isFullEpisode } from '@data/episodes/meta';
 import { TaskBar } from '../../components/TaskBar';
+import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { engineContext } from '../../game/budgetUi';
 import { outcomeHeadline } from '../../game/headline';
+import { roundDefFor } from '../../game/roundSource';
 import { eur } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
@@ -10,9 +12,44 @@ import type { GameUiState } from '../../game/uiTypes';
 export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const res = state.results[state.round];
   if (!res) return null;
+
+  if (!isFullEpisode(state.episode)) {
+    const D = roundDefFor(state);
+    return (
+      <>
+        <ConceptDocentBanner />
+        <TaskBar
+          step={4}
+          title="UITKOMST (CONCEPT)"
+          lead="Dit skelet rekent nog niet met de volledige spelmotor. Jullie keuzes zijn wel vastgelegd voor docent en nabespreking."
+          sub='Druk op “Einde van dit deel” voor de slotscène.'
+        />
+        <section className="panel">
+          <p className="body">
+            Interventies: {res.sel.map((c) => c.id).join(' en ')}. Crisis: {D.crisis}.
+          </p>
+        </section>
+        <div className="q">
+          <span className="tag">MT-VRAAG</span>
+          <p>{D.q3}</p>
+        </div>
+        <button
+          type="button"
+          className="btn gold big"
+          onClick={() => dispatch({ type: 'PLAY_FILM', kind: 'slot-r1' })}
+        >
+          Einde van dit deel
+        </button>
+        <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'TRY_AGAIN' })}>
+          Ander besluit proberen
+        </button>
+      </>
+    );
+  }
+
   const ctx = engineContext(state);
   const base = compute(state.round, [], 1, ctx);
-  const D = ROUNDS[state.round];
+  const D = roundDefFor(state);
   const v = D.verm.find((x) => x.id === state.rounds[state.round].verm);
   const fits = res.sel.filter((k) => k.fit).length;
 

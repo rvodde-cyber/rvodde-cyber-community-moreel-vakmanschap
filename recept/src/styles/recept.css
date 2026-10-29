@@ -498,3 +498,61 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .hud .ep { display: none; }
   .mi { font-size: 19px; } .mi.prime { font-size: 24px; }
 }
+
+.docent-banner {
+  background: #5c3d00;
+  color: #fff8e7;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+.concept-tag {
+  display: inline-block;
+  font-family: var(--data);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  background: #5c3d00;
+  color: #fff;
+  padding: 2px 6px;
+  margin-left: 6px;
+}
+.ep-picker {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: grid;
+  gap: 8px;
+}
+.ep-picker .btn {
+  width: 100%;
+  text-align: left;
+}
+.period-scope .period-label {
+  font-family: var(--period-data-font, var(--data));
+  font-size: 12px;
+  color: var(--period-muted, var(--soft));
+  margin: 0 0 4px;
+}
+.period-scope .period-widgets {
+  font-size: 11px;
+  color: var(--period-muted, var(--soft));
+  margin: 0 0 8px;
+}
+.period-panel {
+  background: var(--period-panel, var(--panel));
+  color: var(--period-text, inherit);
+  border-color: var(--period-accent, var(--line));
+}
+.opvolg-grid {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+.opvolg-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+}

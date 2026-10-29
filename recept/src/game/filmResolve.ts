@@ -5,10 +5,24 @@ import {
   TRAILER_RONDE_2,
   type FilmScript,
 } from '@data/filmSequences';
+import { isFullEpisode } from '@data/episodes/meta';
+import { SKELETON_SLOTS, SKELETON_TRAILERS } from '@data/skeleton/film';
 import { slotLineRonde1, slotLinesFinale } from '@data/slotLines';
 import type { GameUiState } from './uiTypes';
 
 export function resolveFilmScript(state: GameUiState): FilmScript | null {
+  if (!isFullEpisode(state.episode)) {
+    const ep = state.episode as keyof typeof SKELETON_TRAILERS;
+    switch (state.filmKind) {
+      case 'trailer-r1':
+        return SKELETON_TRAILERS[ep];
+      case 'slot-r1':
+        return SKELETON_SLOTS[ep];
+      default:
+        return null;
+    }
+  }
+
   switch (state.filmKind) {
     case 'trailer-r1':
       return TRAILER_RONDE_1;

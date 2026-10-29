@@ -1,4 +1,6 @@
 import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
+import type { OpvolgingKeuze } from '@data/opvolging';
+import type { EpisodeId } from '@data/episodes/meta';
 import type { ComputeResult } from '@engine/types';
 import type { BerichtDef, ChatChannel } from '@data/berichten';
 
@@ -10,7 +12,9 @@ export type Phase =
   | 'uitkomst'
   | 'scan'
   | 'tussen'
-  | 'voorspel';
+  | 'voorspel'
+  | 'opvolging'
+  | 'pauze';
 
 export type FilmKind = 'trailer-r1' | 'trailer-r2' | 'slot-r1' | 'finale';
 
@@ -45,6 +49,10 @@ export interface HiddenMetersState {
 
 export interface GameUiState {
   v: number;
+  episode: EpisodeId;
+  opvolging: OpvolgingKeuze | null;
+  /** Conceptinterventies gekozen (docent/export); ids zoals ep1-A */
+  conceptLog: string[];
   playerName: string;
   team: string;
   round: 1 | 2;

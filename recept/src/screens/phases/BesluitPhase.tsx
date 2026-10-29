@@ -1,30 +1,34 @@
 import { useEffect } from 'react';
-import { ROUNDS } from '@data/rounds';
 import { MT_ROLLEN } from '@data/rollen';
 import { TaskBar } from '../../components/TaskBar';
+import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
+import { useDocentMode } from '../../hooks/useDocentMode';
 import { useUiModals } from '../../context/UiModalsContext';
 import { needText, okBesluit } from '../../game/besluitRules';
 import { bcalc, engineContext } from '../../game/budgetUi';
+import { roundDefFor } from '../../game/roundSource';
 import { eur, kostEur } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { openRole, setRoleSpokeHandler } = useUiModals();
+  const docent = useDocentMode();
   useEffect(() => {
     setRoleSpokeHandler((id) => dispatch({ type: 'MARK_ROLE_SPOKE', id }));
   }, [dispatch, setRoleSpokeHandler]);
 
   const round = state.round;
   const R = state.rounds[round];
-  const D = ROUNDS[round];
+  const D = roundDefFor(state);
   const ctx = engineContext(state);
-  const b = bcalc(round, R, ctx);
+  const b = bcalc(state, R, ctx);
   const pl = R.pilot === 'pilot';
   const zelf = R.pilot === 'zelf';
 
   return (
     <>
+      <ConceptDocentBanner />
       <TaskBar
         step={3}
         title="MT-BESLUIT"
@@ -78,6 +82,7 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
                 onClick={() => dispatch({ type: 'TOGGLE_CARD', id: k.id })}
               >
                 {k.id === D.pilotCard ? <span className="pl">PILOT</span> : null}
+                {docent && k.status === 'concept' ? <span className="concept-tag">CONCEPT</span> : null}
                 <span className="id">{k.id}</span>
                 <span className="t">{k.t}</span>
                 <span className="d">{k.d}</span>

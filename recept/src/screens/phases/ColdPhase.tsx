@@ -1,4 +1,6 @@
 import { COLD_OPEN } from '@data/coldOpen';
+import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
+import { SKELETON_COLD } from '@data/skeleton/coldOpen';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
 import { unlockAudio } from '../../audio/sfx';
@@ -17,16 +19,19 @@ export function ColdPhase({
   const { openHowto, openGloss } = useUiModals();
   const round = state.round;
   const roundUi = state.rounds[round];
-  const sb = COLD_OPEN[round];
+  const skeleton = !isFullEpisode(state.episode);
+  const meta = episodeMeta(state.episode);
+  const sb = skeleton ? SKELETON_COLD[state.episode as keyof typeof SKELETON_COLD] : COLD_OPEN[round];
   const head = (
     <>
       <div className="cine-bar t" />
       <div className="cine-bar b" />
     </>
   );
-  const epTitle = round === 1 ? 'Het dashboard liegt niet' : 'Wie tekent er eigenlijk?';
-  const trailerKind = round === 1 ? 'trailer-r1' : 'trailer-r2';
-  const coldImg = round === 1 ? 'T4' : 'R2';
+  const epTitle = skeleton ? meta.titel : round === 1 ? 'Het dashboard liegt niet' : 'Wie tekent er eigenlijk?';
+  const trailerKind = skeleton ? 'trailer-r1' : round === 1 ? 'trailer-r1' : 'trailer-r2';
+  const coldImg = skeleton ? sb.img : round === 1 ? 'T4' : 'R2';
+  const kick = skeleton ? meta.kick : `AFLEVERING 4 / RONDE ${round}`;
 
   if (!roundUi.trailerDone) {
     return (
@@ -35,7 +40,7 @@ export function ColdPhase({
         <div className="cine-shade" />
         {head}
         <div className="cine-in">
-          <p className="kick">AFLEVERING 4 / RONDE {round}</p>
+          <p className="kick">{kick}</p>
           <p className="ep">{epTitle}</p>
           <p className="task-line">
             Stap 1 van 4. Kijk eerst de trailer en de scène, met geluid als het kan. Daarna beginnen jullie aan het

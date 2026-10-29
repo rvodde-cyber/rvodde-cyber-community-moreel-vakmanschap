@@ -1,5 +1,5 @@
-import { ROUNDS } from '@data/rounds';
 import { mln } from '../lib/format';
+import { roundDefFor } from '../game/roundSource';
 import type { GameUiState } from '../game/uiTypes';
 import { GaugeRing } from './GaugeRing';
 
@@ -17,7 +17,7 @@ function distBar(betr: number) {
 
 export function DashboardColumn({ state }: { state: GameUiState }) {
   const res = state.results[state.round];
-  const eb = ROUNDS[state.round].eurBase;
+  const eb = roundDefFor(state).eurBase;
 
   if (!res) {
     return (

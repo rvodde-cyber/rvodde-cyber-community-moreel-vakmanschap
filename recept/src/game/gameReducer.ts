@@ -3,9 +3,11 @@ import { BERICHTEN } from '@data/berichten';
 import type { BerichtDef } from '@data/berichten';
 import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
 import { dilemmaGroepBerichten } from '@data/berichten';
-import { ROUNDS } from '@data/rounds';
 import type { ChatChannel } from '@data/berichten';
-import { freshGame, freshRoundUi, vermoedenQ } from './budgetUi';
+import { isFullEpisode } from '@data/episodes/meta';
+import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
+import { roundDefFor } from './roundSource';
+import { stubComputeResult } from './stubCompute';
 import { pilotLockedCards } from './besluitRules';
 import { chatTimeLabel } from './chatHelpers';
 import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
@@ -43,7 +45,10 @@ export type GameAction =
   | { type: 'PLAY_FILM'; kind: FilmKind }
   | { type: 'END_FILM' }
   | { type: 'START_ROUND_2' }
-  | { type: 'SET_GOK'; id: string };
+  | { type: 'SET_GOK'; id: string }
+  | { type: 'START_EPISODE'; episode: import('@data/episodes/meta').EpisodeId }
+  | { type: 'SET_OPVOLGING'; keuze: import('@data/opvolging').OpvolgingKeuze }
+  | { type: 'EXIT_TO_HOME' };
 
 function roundState(state: GameUiState) {
   return state.rounds[state.round];
@@ -63,6 +68,12 @@ function deliverMessage(state: GameUiState, id: string, text: string): GameUiSta
 export function gameReducer(state: GameUiState, action: GameAction): GameUiState {
   switch (action.type) {
     case 'RESET':
+      return freshGame();
+    case 'START_EPISODE':
+      return { ...freshEpisode(action.episode), playerName: state.playerName, team: state.team };
+    case 'SET_OPVOLGING':
+      return { ...state, opvolging: action.keuze, phase: 'pauze' };
+    case 'EXIT_TO_HOME':
       return freshGame();
     case 'SET_NAME':
       return { ...state, playerName: action.name.slice(0, 12) };
@@ -109,7 +120,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
     case 'SET_PILOT': {
       const r = roundState(state);
-      const pc = ROUNDS[state.round].pilotCard;
+      const pc = roundDefFor(state).pilotCard;
       let cards = r.cards;
       if (action.mode === 'pilot' && !cards.includes(pc)) {
         cards = [pc, ...cards].slice(0, 2);
@@ -124,7 +135,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     }
     case 'TOGGLE_CARD': {
       const r = roundState(state);
-      if (r.pilot === 'pilot' && action.id === ROUNDS[state.round].pilotCard) return state;
+      if (r.pilot === 'pilot' && action.id === roundDefFor(state).pilotCard) return state;
       const has = r.cards.includes(action.id);
       let cards = r.cards;
       if (has) cards = cards.filter((x) => x !== action.id);
@@ -172,6 +183,22 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     case 'CONFIRM_BESLUIT': {
       const r = roundState(state);
       const cards = pilotLockedCards(state);
+      if (!isFullEpisode(state.episode)) {
+        const D = roundDefFor(state);
+        const res = stubComputeResult(D, cards, r.bud);
+        const conceptLog = [...state.conceptLog];
+        for (const id of cards) {
+          const c = D.cards.find((x) => x.id === id);
+          if (c?.status === 'concept') conceptLog.push(`ep${state.episode}-${id}`);
+        }
+        return {
+          ...state,
+          phase: 'uitkomst',
+          conceptLog,
+          results: { ...state.results, [state.round]: res },
+          rounds: { ...state.rounds, [state.round]: { ...r, cards } },
+        };
+      }
       const ctx = {
         results: state.results,
         rounds: {
@@ -179,7 +206,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           [state.round]: { cards, bud: r.bud },
         },
       };
-      const q = vermoedenQ(state.round, r.verm);
+      const q = vermoedenQ(state, r.verm);
       const res = compute(state.round, cards, q, ctx, r.bud);
       const hidden = applyHiddenAfterRound(state.hidden, state.round, { ...r, cards }, res);
       return {
@@ -194,14 +221,14 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       return { ...state, phase: 'uitkomst', pendingReacties: true };
     case 'TRY_AGAIN': {
       const r = roundState(state);
-      const pc = ROUNDS[state.round].pilotCard;
+      const pc = roundDefFor(state).pilotCard;
       const cards = r.pilot === 'pilot' ? [pc] : [];
       const nextR = {
         ...r,
         cards,
         spoken: [],
         reacted: false,
-        bud: freshRoundUi(state.round).bud,
+        bud: freshRoundUi(state.episode, state.round).bud,
       };
       const results = { ...state.results };
       delete results[state.round];
@@ -297,7 +324,11 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           },
         };
       } else if (kind === 'slot-r1') {
-        next = { ...next, phase: 'tussen' };
+        if (!isFullEpisode(state.episode)) {
+          next = { ...next, phase: state.episode === 3 ? 'opvolging' : 'pauze' };
+        } else {
+          next = { ...next, phase: 'tussen' };
+        }
       } else if (kind === 'finale') {
         next = { ...next, phase: 'voorspel' };
       }
@@ -316,7 +347,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         filmKind: null,
         pendingReacties: false,
         deliveredPhases: delivered,
-        rounds: { ...state.rounds, 2: freshRoundUi(2) },
+        rounds: { ...state.rounds, 2: freshRoundUi(state.episode, 2) },
       };
     }
     case 'SET_GOK':
@@ -326,4 +357,4 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
   }
 }
 
-export { freshGame };
+export { freshGame, freshEpisode } from './budgetUi';

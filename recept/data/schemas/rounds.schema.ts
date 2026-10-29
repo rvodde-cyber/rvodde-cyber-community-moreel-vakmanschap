@@ -34,6 +34,7 @@ export const interventionCardSchema = z.object({
   er: z.number(),
   rep: z.number(),
   cap: z.number(),
+  status: z.enum(['concept', 'goedgekeurd']).optional(),
 });
 
 export const roundDefinitionSchema = z.object({

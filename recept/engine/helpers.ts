@@ -1,4 +1,5 @@
-import { ROUNDS } from '../data/rounds';
+import { ROUNDS } from '@data/rounds';
+import type { RoundDefinition } from '@data/schemas/rounds.schema';
 import type { GameContext } from './types';
 
 export function has(list: readonly string[], x: string): boolean {
@@ -18,12 +19,14 @@ export function roundInt(x: number): number {
   return Math.round(x);
 }
 
-export function marcoBud(roundNum: 1 | 2): Record<string, number> {
+export function marcoBudFromPosten(posten: RoundDefinition['posten']): Record<string, number> {
   const b: Record<string, number> = {};
-  for (const p of ROUNDS[roundNum].posten) {
-    b[p.id] = p.marco;
-  }
+  for (const p of posten) b[p.id] = p.marco;
   return b;
+}
+
+export function marcoBud(roundNum: 1 | 2): Record<string, number> {
+  return marcoBudFromPosten(ROUNDS[roundNum].posten);
 }
 
 export function budgetOf(roundNum: 1 | 2, ctx: GameContext): number {
@@ -32,6 +35,13 @@ export function budgetOf(roundNum: 1 | 2, ctx: GameContext): number {
     return base + ctx.rounds[1].bud.reserve;
   }
   return base;
+}
+
+export function budgetOfDef(def: RoundDefinition, roundNum: 1 | 2, ctx: GameContext): number {
+  if (roundNum === 2 && ctx.rounds[1]?.bud.reserve !== undefined) {
+    return def.budget + ctx.rounds[1].bud.reserve;
+  }
+  return def.budget;
 }
 
 export function emptyContext(): GameContext {

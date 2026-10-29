@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { UiModalsProvider } from './context/UiModalsContext';
 import { useGame } from './hooks/useGame';
+import type { GameAction } from './game/gameReducer';
 import { GameShell } from './screens/GameShell';
 import { HomeScreen } from './screens/HomeScreen';
 
@@ -9,14 +10,23 @@ export default function App() {
   const [playing, setPlaying] = useState(false);
   const [draftName, setDraftName] = useState(state.playerName);
 
+  const dispatchGame = (action: GameAction) => {
+    dispatch(action);
+    if (action.type === 'EXIT_TO_HOME') {
+      setPlaying(false);
+      setDraftName('');
+    }
+  };
+
   return (
     <UiModalsProvider onExitMenu={() => setPlaying(false)}>
       {!playing ? (
         <HomeScreen
           name={draftName}
           hasSave={hasSave}
+          savedEpisode={state.playerName ? state.episode : undefined}
           onName={setDraftName}
-          dispatch={dispatch}
+          dispatch={dispatchGame}
           onStart={() => setPlaying(true)}
           onResume={() => {
             setDraftName(state.playerName);
@@ -24,7 +34,7 @@ export default function App() {
           }}
         />
       ) : (
-        <GameShell state={state} dispatch={dispatch} />
+        <GameShell state={state} dispatch={dispatchGame} />
       )}
     </UiModalsProvider>
   );
