@@ -1,38 +1,45 @@
 # Open vragen en aanleveringen
 
-Laatste update: **29 oktober 2026** (prompt Piotr-lijn + demo-link). Zie `docs/VOORSTELLEN-RECEPT-29-10-2026.md` §8.
+Laatste update: **29 oktober 2026** (interventies A1–A5 + Sanne-slots).
 
-## Wat Cursor niet kon / Richard moet doen
+## Aflevering 4 — conceptdata vs demo (`data/rounds.ts`, v6)
+
+De demo blijft leidend tot Richard beslist. **Niet overschreven.**
+
+| Onderwerp | Demo (speelbaar) | Concept `data/interventies-a4.ts` |
+| --- | --- | --- |
+| Interventies per ronde | 5 kaarten (A–E / F–J) | 4 per ronde (4.1.x / 4.2.x) |
+| Setting / crisis ronde 1 | `leiderschapscrisis`, H2 2026 | Greiner coördinatie/bureaucratie, doc ±2031 |
+| Ronde 1 thema's | Vitaliteit, bonus, flex, TEMPO-plafond, coaching | Defensie-hal, civiele lijn, TEMPO AI, flexploeg |
+| Ronde 2 thema's | Gewetensclausule, Defensie via TEMPO, regels schrappen, ploegleiders, compliance | Piotr contract, PILOT, admin verlagen, gewetens-loket |
+| Piotr in dienst | Onderzoeksactie + `ep4Interventies` / post `piotr-vast`, niet als kaart 4.2.1 | Interventie `a4-2-1` in data |
+| Nabespreking ep4 | Piotr-vragen in `nabespreking-ep4.ts` | A4-interventienabespreking ook in `NABESPREKING_A4` (concept) |
+
+Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
+
+## Wat op Richard wacht
 
 | Onderwerp | Status |
 | --- | --- |
-| **Live deploy** | https://recept-k8m3n7p2.netlify.app/ (29 okt, deploy `6ae314145ef87064a75debcb`). |
-| **Wachtwoord op URL** | Netlify Site Protection is betaald; niet geconfigureerd. Toegang via niet-raadbare URL only. |
-| **Scèneteksten definitief** | Alle Piotr-scènes staan op `concept` in `data/piotr-lijn.ts`; studenten zien fallback. Richard akkoord → `definitief`. |
-| **Variant slotscène `variantZonderContract`** | Veld `leeg`; vertakking afhankelijk van MT-contract ronde 2 moet Richard bevestigen (voorstel §2 opmerking). |
-| **Interventie Piotr in dienst** | `interventieDefinitief: false` in `data/ep4Interventies.ts` tot Richard akkoord. |
-| **Nabespreking studenten** | 12 vragen + Veilig gesprek ingelezen als `concept`; studenten zien pas vragen bij `definitief`. |
-| **Beelden** | Geen enkel beeld met akkoord Richard; app toont silhouet/placeholder — zie `docs/BEELDEN-CHECK.md`. |
-| **Sanne standaardvariant** | Data bevat A én B; standaard A (SANNE-UITWERKING). Richard kiest definitieve variant. |
-| **Greiner A4** | Concept bureaucratie in slot; demo in spel kan nog leiderschap/autonomie tonen — Richard besluit sync met serie. |
-| **Privébericht toon** | Voorstel gebruikt "u"; open vraag informeel "jij" (voorstel §8.4). |
-| **Meelezen migratieachtergrond** | Procesvraag Richard (voorstel §8.5). |
-| **Interventies skelet 1/2/3/5** | 16 items in `data/interventies-skelet.ts`, niet aan spelmotor gekoppeld. Richard schrapt/toevoegt (§8.6). |
+| **Live deploy** | https://recept-k8m3n7p2.netlify.app/ |
+| **Wachtwoord URL** | Niet geconfigureerd (betaald). |
+| **Piotr / Sanne / nabespreking definitief** | Alles `concept`; studenten zien fallback waar van toepassing. |
+| **`variantZonderContract`** | Nog `leeg` — bevestiging variant slotscène. |
+| **`a4-2-1` definitief** | Pas na variantscène + Richard (`interventieDefinitief` in data). |
+| **Beelden** | Geen akkoord — zie `BEELDEN-CHECK.md`. |
+| **Sanne toon** | Standaard A; B via docent-schakelaar. Contract ja/nee nog niet aan motor. |
+| **Interventies kalibratie** | 40 concept-items A1–A5; geen bedragen; niet aan motor. |
 
-## Inhoud al ingelezen (concept, niet definitief)
+## Inhoud ingelezen (concept)
 
-- Piotr-scènes §2 → `data/piotr-lijn.ts`
-- Sanne §3 + SANNE-UITWERKING → `sanneReactieEp4`
-- Greiner §4 → `greinerCrisisEp4`
-- Nabespreking §5 → `data/nabespreking-ep4.ts` + `VEILIG_GESPREK_EP4`
-- Interventies §7 → `data/interventies-skelet.ts`
-
-## Media
-
-- 8 portretten → `public/portretten/` (`PORTRETTEN-PROMPTS.md`)
-- Beeldbank I1–I5 → `public/beelden/`
+- `data/interventies-a1.ts` … `a5.ts` + `data/interventies/all.ts`
+- Echo's sectie 6 (addendum-tests)
+- `data/sanne.ts` (reactie contract × toon, slot ep4, onthulling ep5)
+- Sanne-vragen → `nabespreking-ep4.ts`
+- Greiner → `greinerCrisisEp4` (niet aan motor)
 
 ## Technisch
 
-- Golden-suite zevendeling `spelmotor.md` (nu 18 tests waarvan 4 golden ronde 1)
-- Multiplayer/regiekamer: bewust niet v1
+- Tests: 29 (incl. interventies + Sanne)
+- Golden-suite zevendeling `spelmotor.md`: nog open
+- Multiplayer: bewust niet v1

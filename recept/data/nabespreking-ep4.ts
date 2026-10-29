@@ -88,6 +88,34 @@ export const NABESPREKING_EP4: NabesprekingVraagEp4[] = [
     tekst: 'Wat neem je mee naar je eigen werkplek of stage?',
     thema: 'piotr-lijn',
   },
+  {
+    id: 'ep4-nb-sanne-1',
+    fase: 'zien',
+    status: 'concept',
+    tekst: 'Wat viel je op aan hoe Sanne reageerde? Wat vroeg ze wel, en wat vroeg ze niet?',
+    thema: 'sanne',
+  },
+  {
+    id: 'ep4-nb-sanne-2',
+    fase: 'wegen',
+    status: 'concept',
+    tekst: 'Wat betekent het dat zij "de stukken tekende"? Wat kun je met een handtekening wel en niet zien?',
+    thema: 'sanne',
+  },
+  {
+    id: 'ep4-nb-sanne-3',
+    fase: 'handelen',
+    status: 'concept',
+    tekst: 'Welke vraag had jij Sanne willen stellen, en welke vraag zou zij jou stellen?',
+    thema: 'sanne',
+  },
+  {
+    id: 'ep4-nb-sanne-4',
+    fase: 'wegen',
+    status: 'concept',
+    tekst: 'Wanneer helpt een procedure om zorgvuldig te zijn, en wanneer verhult ze juist iets?',
+    thema: 'sanne',
+  },
 ];
 
 export function validateNabesprekingEp4() {

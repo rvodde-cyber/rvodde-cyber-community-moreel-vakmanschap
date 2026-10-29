@@ -3,13 +3,14 @@ import { episodeMeta } from '@data/episodes/meta';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
 import { MT_ROLLEN } from '@data/rollen';
 import { ROL_BELANG } from '@data/rolBelang';
-import { greinerCrisisEp4, sanneReactieEp4, slotTekst } from '@data/ep4ContentSlots';
+import { greinerCrisisEp4, slotTekst } from '@data/ep4ContentSlots';
 import { NABESPREKING_EP4 } from '@data/nabespreking-ep4';
 import { veiligGesprekIsConcept, veiligGesprekTekst } from '@data/nabesprekingEp4Docent';
 import { PIOTR_SCENES } from '@data/piotr-lijn';
 import { resolveScene } from '@data/contentStatus';
 import { MV_DIMENSIES, PORTRAIT_ETHIEK } from '@content/moreelVakmanschap.nl';
 import { PersonCard, personenInGlossarium } from '../../components/PersonCard';
+import { SannePanel } from '../../components/SannePanel';
 import { useDocentMode } from '../../hooks/useDocentMode';
 import { downloadTeamExport } from '../../game/teamExport';
 import { roundDefFor } from '../../game/roundSource';
@@ -99,7 +100,10 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
             <h2>CONTEXT AFLEVERING 4</h2>
           </div>
           <p className="note">{slotTekst(greinerCrisisEp4, docent)}</p>
-          <p className="note">{slotTekst(sanneReactieEp4, docent)}</p>
+          <div className="ph" style={{ marginTop: 16 }}>
+            <h2>SANNE</h2>
+          </div>
+          <SannePanel contract="ja" />
         </section>
       ) : null}
 
