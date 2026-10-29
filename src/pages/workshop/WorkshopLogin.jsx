@@ -15,6 +15,7 @@ const ERROR_MESSAGES = {
 export default function WorkshopLogin({ mode = "workshop" }) {
   const isVoorproef = mode === "voorproef";
   const [password, setPassword] = useState("");
+  const [previewCode, setPreviewCode] = useState("");
   const [errorKey, setErrorKey] = useState("");
   const [loading, setLoading] = useState(false);
   const [checking, setChecking] = useState(true);
@@ -74,6 +75,16 @@ export default function WorkshopLogin({ mode = "workshop" }) {
     }
   }
 
+  function handlePreviewCode(e) {
+    e.preventDefault();
+    const code = previewCode.trim().toUpperCase();
+    if (!code) return;
+    const targetPath = redirect.startsWith("/") ? redirect : "/wisselwerking/";
+    const next = new URL(targetPath, window.location.origin);
+    next.searchParams.set("code", code);
+    window.location.assign(`${next.pathname}${next.search}`);
+  }
+
   if (checking) {
     return (
       <WorkshopLayout>
@@ -119,6 +130,35 @@ export default function WorkshopLogin({ mode = "workshop" }) {
             {loading ? "Bezig…" : isVoorproef ? "Start voorvertoning" : "Toegang tot workshop"}
           </button>
         </form>
+
+        {!isVoorproef && (
+          <form onSubmit={handlePreviewCode} className="workshop-form" style={{ marginTop: 28 }}>
+            <label htmlFor="preview-code" className="workshop-label">
+              Previewcode
+            </label>
+            <p className="workshop-muted" style={{ margin: 0, fontSize: "0.88rem" }}>
+              Alleen voor een losse app (bijvoorbeeld Wisselwerking), niet voor de hele Workshop Hub.
+            </p>
+            <input
+              id="preview-code"
+              type="text"
+              autoComplete="off"
+              spellCheck={false}
+              value={previewCode}
+              onChange={(e) => setPreviewCode(e.target.value.toUpperCase())}
+              className="workshop-input"
+              disabled={loading}
+              placeholder="Bijv. K7H2NQ"
+            />
+            <button
+              type="submit"
+              className="workshop-button-ghost"
+              disabled={loading || !previewCode.trim()}
+            >
+              Open met previewcode
+            </button>
+          </form>
+        )}
 
         {!isVoorproef && voorproefBeschikbaar && (
           <p className="workshop-preview-hint">
