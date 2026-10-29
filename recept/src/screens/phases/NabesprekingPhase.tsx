@@ -135,7 +135,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
           <div className="ph">
             <h2>PIOTR-LIJN (DATA)</h2>
           </div>
-          <p className="note">Scènes met status concept — niet zichtbaar voor studenten. Zie data/piotr-lijn.ts.</p>
+          <p className="note">Scènes met status concept zijn niet zichtbaar voor studenten. Zie data/piotr-lijn.ts.</p>
           <ul className="note">
             {PIOTR_SCENES.map((s) => {
               const r = resolveScene(s, true);

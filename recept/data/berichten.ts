@@ -1,5 +1,5 @@
 import type { ComputeResult } from '@engine/types';
-import { DILEMMA_EP4_PIOTR } from './dilemmas/ep4-piotr';
+import { piotrPrivéBerichtQuote } from './piotrSpel';
 
 export type ChatChannel = 'g' | 'p';
 export type BerichtFase = 'onderzoek' | 'besluit';
@@ -94,7 +94,7 @@ export const BERICHTEN: BerichtDef[] = [
     van: 'Piotr Nowak',
     delay: 26000,
     dil: true,
-    tekst: DILEMMA_EP4_PIOTR.privéBericht.tekst,
+    tekst: () => piotrPrivéBerichtQuote(false),
   },
   {
     id: 'ans2',

@@ -11,6 +11,7 @@ import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 import { INTRO_SCENE } from '@data/sceneCodes';
+import { piotrIntroResolved } from '@data/piotrSpel';
 import { SceneBackground } from '../../components/SceneBackground';
 
 export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
@@ -113,6 +114,16 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
       <div className="cine-in">
         <p className="kick">AFLEVERING 4 / RONDE 1 / 2026</p>
         <p className="ep">Het dashboard liegt niet</p>
+        {(() => {
+          const piotr = piotrIntroResolved(false);
+          if (piotr.isFallback) return null;
+          return (
+            <>
+              <h4>PIOTR OP DE LIJN</h4>
+              <p className="body">{piotr.tekst}</p>
+            </>
+          );
+        })()}
         <h4>GESCHIEDENIS</h4>
         <p className="body">
           Van Gorp Drones, Vossenberg, Tilburg. Geen lopende band meer, maar robotarmen en schermen vol grafieken.

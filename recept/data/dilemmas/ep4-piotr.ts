@@ -3,6 +3,8 @@
  * Effecten op verborgen meters: port referentie hidden() (demo v6).
  * Defensie-contract: altijd door; geen spelmotor-effect.
  */
+import { piotrPrivéBerichtQuote } from '../piotrSpel';
+
 export type DilemmaKeuze = 'niets' | 'groep' | 'prive';
 
 export const DILEMMA_EP4_PIOTR = {
@@ -13,8 +15,9 @@ export const DILEMMA_EP4_PIOTR = {
   titel: 'De order van Defensie en de verdenking van Piotr',
   privéBericht: {
     van: 'Piotr Nowak',
-    tekst:
-      'Mijn pas werkt niet meer bij hal 3. Beveiliging zegt dat ik een veiligheidsrisico ben. Niemand kan zeggen waarom. Ik werk hier al jaren via het bureau.',
+    get tekst() {
+      return piotrPrivéBerichtQuote(false);
+    },
     dil: true,
   },
   keuzes: [

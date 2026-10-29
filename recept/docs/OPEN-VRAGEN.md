@@ -1,6 +1,6 @@
 # Open vragen en aanleveringen
 
-Laatste update: **29 oktober 2026** (interventies A1–A5 + Sanne-slots).
+Laatste update: **29 oktober 2026** (Piotr-lijn deels definitief).
 
 ## Aflevering 4 — conceptdata vs demo (`data/rounds.ts`, v6)
 
@@ -23,10 +23,11 @@ Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
 | --- | --- |
 | **Live deploy** | https://recept-k8m3n7p2.netlify.app/ |
 | **Wachtwoord URL** | Niet geconfigureerd (betaald). |
-| **Piotr / Sanne / nabespreking definitief** | Alles `concept`; studenten zien fallback waar van toepassing. |
+| **Piotr-lijn** | **Definitief:** `a4r1-piotr-intro`, `a4r2-harrie-belt`, `a4r2-erik-twijfel`, `a4r2-dilemma-privebericht`, `a4-slot-testament`, `a5-onthulling`, `a5-overdracht`. **Concept:** `a4r2-keuze-contract`. Student ziet intro (ronde 1) + privébericht (ronde 2) via `piotrSpel.ts`. Overige scènes nog niet in hoofdflow. |
+| **Sanne / nabespreking definitief** | Nog `concept`; studenten zien fallback waar van toepassing. |
 | **`variantZonderContract`** | Nog `leeg` — bevestiging variant slotscène. |
 | **`a4-2-1` definitief** | Pas na variantscène + Richard (`interventieDefinitief` in data). |
-| **Beelden** | Geen akkoord — zie `BEELDEN-CHECK.md`. |
+| **Beelden** | Geen akkoord — zie `BEELDEN-CHECK.md` (silhouet in app). |
 | **Sanne toon** | Standaard A; B via docent-schakelaar. Contract ja/nee nog niet aan motor. |
 | **Interventies kalibratie** | 40 concept-items A1–A5; geen bedragen; niet aan motor. |
 
@@ -40,6 +41,6 @@ Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
 
 ## Technisch
 
-- Tests: 29 (incl. interventies + Sanne)
+- Tests: 33 (incl. interventies, Sanne, piotrSpel)
 - Golden-suite zevendeling `spelmotor.md`: nog open
 - Multiplayer: bewust niet v1
