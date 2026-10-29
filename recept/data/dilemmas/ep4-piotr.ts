@@ -39,7 +39,7 @@ export const DILEMMA_EP4_PIOTR = {
     bedrag: 25000,
     label: 'Piotr in vaste dienst (loyaliteit)',
     beschrijving: 'Aanname via Brabantse Personeelsdiensten; pas na een jaar zonder bureau mogelijk.',
-    status: 'TODO-dataveld' as const,
+    /** Zie data/ep4Interventies.ts — interventieDefinitief false tot Richard akkoord */
   },
   ethiekNoot:
     'Geen juist antwoord. Herkomst niet expliciet benoemen in UI. Nabespreking: stereotypen en beeld bij personages (Bianchi et al., 2023).',

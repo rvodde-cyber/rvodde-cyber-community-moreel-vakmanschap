@@ -39,6 +39,8 @@ Ontbrekende portretten tonen initialen (WCAG-contrast) via `PersonAvatar`.
 
 Geen accounts, geen analytics, geen cookies van derden. Spelstatus alleen in `localStorage` (`recept-game-v4`). Alleen een fictieve voornaam invoeren.
 
+**Demo-URL:** deel de studentlink alleen besloten (geen openbare posts). Zie `docs/DEPLOY.md` voor student- en docentlink.
+
 ## Documentatie
 
 - `CURSOR-PROMPT.md` — volledige specificatie

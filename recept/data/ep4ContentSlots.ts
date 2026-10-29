@@ -1,6 +1,8 @@
 /** Inhoudsslots — Richard/Claude vullen; app toont fallback zolang status !== definitief */
 
-export type ContentSlotStatus = 'leeg' | 'concept' | 'definitief';
+import type { Status } from './contentStatus';
+
+export type ContentSlotStatus = Status;
 
 export type ContentSlot<T> = {
   status: ContentSlotStatus;

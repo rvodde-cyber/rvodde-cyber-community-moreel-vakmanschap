@@ -5,6 +5,9 @@ import { MT_ROLLEN } from '@data/rollen';
 import { ROL_BELANG } from '@data/rolBelang';
 import { greinerCrisisEp4, sanneReactieEp4, slotTekst } from '@data/ep4ContentSlots';
 import { NABESPREKING_EP4 } from '@data/nabespreking-ep4';
+import { veiligGesprekIsConcept, veiligGesprekTekst } from '@data/nabesprekingEp4Docent';
+import { PIOTR_SCENES } from '@data/piotr-lijn';
+import { resolveScene } from '@data/contentStatus';
 import { MV_DIMENSIES, PORTRAIT_ETHIEK } from '@content/moreelVakmanschap.nl';
 import { PersonCard, personenInGlossarium } from '../../components/PersonCard';
 import { useDocentMode } from '../../hooks/useDocentMode';
@@ -22,6 +25,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
   const ep4Vragen = NABESPREKING_EP4.filter(
     (v) => v.status === 'definitief' || (docent && v.status === 'concept'),
   );
+  const fases = ['zien', 'voelen', 'wegen', 'handelen', 'volhouden'] as const;
 
   return (
     <div className="wrap nabespreking" style={{ paddingTop: 24, paddingBottom: 48 }}>
@@ -112,24 +116,71 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
         </section>
       ) : null}
 
+      {state.episode === 4 && docent ? (
+        <section className="panel docent-only">
+          <div className="ph">
+            <h2>VEILIG GESPREK</h2>
+            <span className="concept-tag">{veiligGesprekIsConcept() ? 'CONCEPT' : 'DOCENT'}</span>
+          </div>
+          <p className="note">{veiligGesprekTekst(true)}</p>
+        </section>
+      ) : null}
+
+      {state.episode === 4 && docent ? (
+        <section className="panel docent-only">
+          <div className="ph">
+            <h2>PIOTR-LIJN (DATA)</h2>
+          </div>
+          <p className="note">Scènes met status concept — niet zichtbaar voor studenten. Zie data/piotr-lijn.ts.</p>
+          <ul className="note">
+            {PIOTR_SCENES.map((s) => {
+              const r = resolveScene(s, true);
+              return (
+                <li key={s.id}>
+                  <strong>{s.id}</strong> · {s.fase}
+                  {r.showConceptLabel ? ' · CONCEPT' : ''}: {r.tekst.slice(0, 120)}
+                  {r.tekst.length > 120 ? '…' : ''}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ) : null}
+
       {state.episode === 4 && ep4Vragen.length > 0 ? (
         <section className="panel">
           <div className="ph">
             <h2>GESPREK Piotr-lijn</h2>
           </div>
-          {ep4Vragen.map((v) => (
-            <div className="q" key={v.id}>
-              <span className="tag">
-                {v.fase.toUpperCase()}
-                {v.status === 'concept' ? ' · CONCEPT' : ''}
-              </span>
-              <p>{v.tekst}</p>
-            </div>
-          ))}
+          {docent
+            ? fases.map((f) => {
+                const vragen = ep4Vragen.filter((v) => v.fase === f);
+                if (!vragen.length) return null;
+                return (
+                  <div key={f}>
+                    <h3 className="data">{f.toUpperCase()}</h3>
+                    {vragen.map((v) => (
+                      <div className="q" key={v.id}>
+                        <span className="tag">
+                          {v.fase.toUpperCase()}
+                          {v.status === 'concept' ? ' · CONCEPT' : ''}
+                        </span>
+                        <p>{v.tekst}</p>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })
+            : ep4Vragen.map((v) => (
+                <div className="q" key={v.id}>
+                  <span className="tag">{v.fase.toUpperCase()}</span>
+                  <p>{v.tekst}</p>
+                </div>
+              ))}
         </section>
       ) : state.episode === 4 ? (
         <p className="note">
-          Gespreksvragen Piotr-lijn volgen zodra ze definitief zijn (zie docs/CONCEPT-GESPREKSVRAGEN-EP4.md).
+          Gespreksvragen Piotr-lijn volgen zodra ze definitief zijn (zie docs/GESPREKSVRAGEN-EP4-VOORSTEL.md).
         </p>
       ) : null}
 
