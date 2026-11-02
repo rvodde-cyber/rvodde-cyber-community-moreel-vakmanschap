@@ -1,6 +1,8 @@
 import { makeConceptInterventie } from './interventies/types';
 import type { Interventie } from './interventies/types';
 
+/** Notatie: + / - = richting van de meterwaarde. Verzuim '-' = verzuim daalt (gunstig). Budget '-' = budget daalt (uitgave). (later) = effect in de volgende ronde of aflevering. */
+
 const BRON = 'docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md';
 
 const ECHO_BONUS_KWALITEIT = [

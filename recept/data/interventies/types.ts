@@ -41,11 +41,25 @@ export type Interventie = {
 export const KEUZES_PER_RONDE = 2;
 export const INTERVENTIES_PER_RONDE = 4;
 
+/** Legenda meter-notatie (data + docs). */
+export const INTERVENTIE_METER_NOTATIE_LEGEND =
+  "+ / - = richting van de meterwaarde. Verzuim '-' = verzuim daalt (gunstig). Budget '-' = budget daalt (uitgave). (later) = effect in de volgende ronde of aflevering.";
+
+/** Begrotingspost-id's die als echo-bron mogen (geen interventie-id). */
+export const ECHO_BRON_BEGROTING_IDS = ['piotr-vast'] as const;
+
+export function interventiesBeschikbaarPerRonde(episode: 1 | 2 | 3 | 4 | 5, ronde: 1 | 2): number {
+  if (episode === 4 && ronde === 2) return 3;
+  return INTERVENTIES_PER_RONDE;
+}
+
 export type NabesprekingInterventieVraag = {
   id: string;
   fase: 'zien' | 'voelen' | 'wegen' | 'handelen' | 'volhouden';
   tekst: string;
   status: 'concept' | 'definitief';
+  /** Vraag alleen tonen als al deze interventie-id's eerder zijn gekozen. */
+  tonenAlsGekozen?: string[];
 };
 
 const BRON_DEFAULT = 'docs/INTERVENTIES-AFLEVERING-1-29-10-2026.md';

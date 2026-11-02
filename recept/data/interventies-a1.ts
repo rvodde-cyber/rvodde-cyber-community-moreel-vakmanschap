@@ -1,6 +1,8 @@
 import { makeConceptInterventie } from './interventies/types';
 import type { Interventie } from './interventies/types';
 
+/** Notatie: + / - = richting van de meterwaarde. Verzuim '-' = verzuim daalt (gunstig). Budget '-' = budget daalt (uitgave). (later) = effect in de volgende ronde of aflevering. */
+
 const BRON = 'docs/INTERVENTIES-AFLEVERING-1-29-10-2026.md';
 
 export const INTERVENTIES_A1: Interventie[] = [
@@ -14,7 +16,7 @@ export const INTERVENTIES_A1: Interventie[] = [
     kostenCategorie: '€',
     anker: 'Greiner (1972): na de creatieve fase is meer richting nodig.',
     effect: { productiviteit: '+', betrokkenheid: '0', verzuim: '0', verloop: '-', budget: '-' },
-    effectLater: { verloop: '-' },
+    effectLater: { verloop: '+' },
     verborgen: { eerlijkheid: '+', menselijkeMaat: '0' },
     ethischRisico: 'regels kunnen de informele zorg verdringen die het bedrijf nu draagt.',
     uitkomsttekst: 'Het is rustiger op de vloer. Maar oudgedienden missen het gevoel van "we regelen het wel".',
@@ -60,7 +62,7 @@ export const INTERVENTIES_A1: Interventie[] = [
     episode: 1,
     ronde: 1,
     nummer: '1.4',
-    naam: 'Flexibele jongeren inhuren voor piekdrukte',
+    naam: 'Flexkrachten inhuren voor piekdrukte',
     omschrijving: 'Via een bureau komen tijdelijke mensen erbij als het druk is.',
     kostenCategorie: '€€',
     anker: 'kostenflexibiliteit; spanning met betrokkenheid en vaste kern.',
@@ -96,11 +98,12 @@ export const INTERVENTIES_A1: Interventie[] = [
     omschrijving: 'Extra beloning als de productie hoger is.',
     kostenCategorie: '€€€',
     anker: 'zelfbeschikkingstheorie (Deci & Ryan, 2000): externe prikkels kunnen intrinsieke motivatie verdringen.',
-    effect: { productiviteit: '++', betrokkenheid: '-', verzuim: '+', verloop: '0', budget: '--' },
+    effect: { productiviteit: '++', betrokkenheid: '-', verzuim: '-', verloop: '0', budget: '--' },
     effectLater: { betrokkenheid: '-', verzuim: '+' },
     verborgen: { eerlijkheid: '-', menselijkeMaat: '-' },
     ethischRisico: 'mensen sparen energie voor de bonus; kwaliteit en veiligheid kunnen eronder lijden.',
-    uitkomsttekst: 'De productie stijgt direct. Wie ziek is, meldt zich minder snel af.',
+    uitkomsttekst:
+      'De productie stijgt direct. Wie ziek is, meldt zich minder snel af – voorlopig.',
     opvolging: 'kwaliteitsproblemen en verzuim in aflevering 2 en 3.',
     bron: BRON,
   }),

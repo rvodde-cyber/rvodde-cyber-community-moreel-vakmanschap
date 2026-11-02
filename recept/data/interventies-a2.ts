@@ -1,6 +1,8 @@
 import { makeConceptInterventie } from './interventies/types';
 import type { Interventie } from './interventies/types';
 
+/** Notatie: + / - = richting van de meterwaarde. Verzuim '-' = verzuim daalt (gunstig). Budget '-' = budget daalt (uitgave). (later) = effect in de volgende ronde of aflevering. */
+
 const BRON = 'docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md';
 
 export const INTERVENTIES_A2: Interventie[] = [
@@ -106,7 +108,8 @@ export const INTERVENTIES_A2: Interventie[] = [
     echo: [
       {
         bron: 'a1-2-2',
-        tekst: 'Het volume stijgt opnieuw. Een klacht uit de kwaliteitscontrole wordt wéér niet gehoord.',
+        tekst:
+          'Het volume stijgt opnieuw. Het klinkt bekend: ook in de schuur werd de bonus een reden om door te werken.',
       },
     ],
     bron: BRON,
@@ -165,6 +168,14 @@ export const NABESPREKING_A2 = [
     fase: 'wegen' as const,
     tekst: 'Welke afweging maakten jullie tussen vertrouwen en controle?',
     status: 'concept' as const,
+  },
+  {
+    id: 'a2-nb-bonus-echo',
+    fase: 'wegen' as const,
+    tekst:
+      'Jullie kozen in de schuur al een bonus op output. Wat maakte dat jullie die keuze nu herhaalden, of juist niet?',
+    status: 'concept' as const,
+    tonenAlsGekozen: ['a1-2-2', 'a2-2-2'],
   },
   {
     id: 'a2-nb-4',

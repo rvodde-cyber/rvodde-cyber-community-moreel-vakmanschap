@@ -6,8 +6,6 @@ import {
   type TestamentVariantKey,
 } from '../../data/piotrSpel';
 import { sceneById, validatePiotrLijn } from '../../data/piotr-lijn';
-import { assertPiotrContractVariant } from '../../data/interventies/validate';
-import { INTERVENTIE_BY_ID } from '../../data/interventies/all';
 
 describe('piotr testament varianten', () => {
   it('toont nooit beide variantteksten tegelijk', () => {
@@ -55,10 +53,5 @@ describe('piotr testament varianten', () => {
       ]),
     ).toThrow(/definitief zonder tekst/);
     expect(() => validatePiotrLijn()).not.toThrow();
-  });
-
-  it('a4-2-1 definitief mag nu met bevestigde variantZonderContract', () => {
-    const piotr = { ...INTERVENTIE_BY_ID['a4-2-1']!, interventieDefinitief: true as const };
-    expect(() => assertPiotrContractVariant([piotr])).not.toThrow();
   });
 });

@@ -1,6 +1,9 @@
-import { PIOTR_SCENES } from '../piotr-lijn';
 import type { Interventie } from './types';
-import { INTERVENTIES_PER_RONDE, KEUZES_PER_RONDE } from './types';
+import {
+  ECHO_BRON_BEGROTING_IDS,
+  interventiesBeschikbaarPerRonde,
+  KEUZES_PER_RONDE,
+} from './types';
 
 const REQUIRED_STRING_KEYS: (keyof Interventie)[] = [
   'id',
@@ -47,37 +50,25 @@ export function assertTweeKeuzesPerRonde(items: Interventie[]): void {
   }
   for (const ep of [1, 2, 3, 4, 5] as const) {
     for (const ronde of [1, 2] as const) {
+      const verwacht = interventiesBeschikbaarPerRonde(ep, ronde);
       const n = items.filter((i) => i.episode === ep && i.ronde === ronde).length;
-      if (n !== INTERVENTIES_PER_RONDE) {
-        throw new Error(`Aflevering ${ep} ronde ${ronde}: verwacht ${INTERVENTIES_PER_RONDE} interventies, got ${n}`);
+      if (n !== verwacht) {
+        throw new Error(`Aflevering ${ep} ronde ${ronde}: verwacht ${verwacht} interventies, got ${n}`);
       }
     }
   }
 }
+
+const ECHO_BRON_BEGROTING = new Set<string>(ECHO_BRON_BEGROTING_IDS);
 
 export function assertEchoBronnenBestaan(items: Interventie[]): void {
   const ids = new Set(items.map((i) => i.id));
   for (const i of items) {
     for (const e of i.echo ?? []) {
-      if (!ids.has(e.bron)) {
+      if (!ids.has(e.bron) && !ECHO_BRON_BEGROTING.has(e.bron)) {
         throw new Error(`Interventie ${i.id}: echo verwijst naar onbekende bron ${e.bron}`);
       }
     }
-  }
-}
-
-/** 4.2.1 mag pas definitief als variantZonderContract bevestigd is (Richard). */
-export function assertPiotrContractVariant(items: Interventie[]): void {
-  const piotr = items.find((i) => i.id === 'a4-2-1');
-  if (!piotr?.interventieDefinitief) return;
-  const slot = PIOTR_SCENES.find((s) => s.id === 'a4-slot-testament');
-  const variant = slot?.variantZonderContract;
-  if (!variant || variant.status !== 'definitief' || !variant.tekst.trim()) {
-    throw new Error('a4-2-1: interventieDefinitief zonder bevestigde variantscène variantZonderContract');
-  }
-  const met = slot?.variantMetContract;
-  if (!met || met.status !== 'definitief' || !met.tekst.trim()) {
-    throw new Error('a4-2-1: interventieDefinitief zonder bevestigde variantscène variantMetContract');
   }
 }
 
@@ -91,5 +82,4 @@ export function assertInterventieBundles(items: Interventie[]): void {
   assertInterventieDefinitiefCompleet(items);
   assertTweeKeuzesPerRonde(items);
   assertEchoBronnenBestaan(items);
-  assertPiotrContractVariant(items);
 }

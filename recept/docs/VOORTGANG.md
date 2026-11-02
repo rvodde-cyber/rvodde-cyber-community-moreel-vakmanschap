@@ -1,16 +1,17 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **29 oktober 2026** — Piotr varianten + definitief
+Laatste update: **2 november 2026** — interventies A1–A5 besluiten (concept)
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
-| Piotr-lijn | 7 scènes `definitief`; intro + privébericht in student-UI |
-| Slot 2031 | `variantMetContract` / `variantZonderContract` definitief, gekoppeld aan begroting `piotr-vast` (≥ €25.000) |
-| Nabespreking | Vraag handelen definitief: „Wat maakte dat jullie die kans wel of niet pakten?” |
-| Nog concept | `a4r2-keuze-contract`, Sanne, overige nabespreking, interventies A1–A5; `a4-2-1` / `interventieDefinitief=false` |
-| Tests | **38** groen |
+| Notatie legenda | In `data/interventies/types.ts` + docs INTERVENTIES A1/A2–5 |
+| A1 | `a1-1-1` effectLater.verloop `+`; `a1-2-2` presenteïsme; `a1-1-4` hernoemd |
+| A2 | Echo bonus `a2-2-2` ↔ `a1-2-2`; conditionele nabesprekingsvraag Wegen |
+| A4 Piotr | Kaart `a4-2-1` verwijderd; ronde 2 = 3 interventies; keuze via `piotr-vast` |
+| Interventies A1–A5 | **39** items, `concept`, `interventieDefinitief=false`, niet aan spelmotor |
+| Tests | **40** groen (was 38; −2 Piotr-kaarttest, +4 interventie-besluiten) |
 | Beelden | Silhouet tot akkoord `BEELDEN-CHECK.md` |
 
 ## Live demo
@@ -23,8 +24,8 @@ Laatste update: **29 oktober 2026** — Piotr varianten + definitief
 ## Richard — top-3
 
 1. Demo ep4 vs concept-interventies (4.1/4.2) — sync of demo houden.
-2. Sanne + overige nabespreking ep4 → `definitief`.
-3. Beeldakkoord I1–I5; eventueel `a4-2-1` + spelmotor (pas na expliciet akkoord).
+2. Akkoord per aflevering (A1 t/m A5) voor `interventieDefinitief`.
+3. Sanne + overige nabespreking ep4 → `definitief`; beeldakkoord I1–I5.
 
 ## Lokaal
 

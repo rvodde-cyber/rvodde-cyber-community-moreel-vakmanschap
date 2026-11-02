@@ -52,7 +52,7 @@ function main() {
   }
 
   console.log(
-    'Data OK: ronden 1–2, skeleton 1/2/3/5, interventies A1–A5 (40),',
+    'Data OK: ronden 1–2, skeleton 1/2/3/5, interventies A1–A5 (39),',
     DILEMMA_STUBS.length,
     'dilemma-stubs,',
     PERSONEN.length,

@@ -1,6 +1,8 @@
 import { makeConceptInterventie } from './interventies/types';
 import type { Interventie } from './interventies/types';
 
+/** Notatie: + / - = richting van de meterwaarde. Verzuim '-' = verzuim daalt (gunstig). Budget '-' = budget daalt (uitgave). (later) = effect in de volgende ronde of aflevering. */
+
 const BRON = 'docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md';
 
 export const INTERVENTIES_A4: Interventie[] = [
@@ -80,23 +82,6 @@ export const INTERVENTIES_A4: Interventie[] = [
         tekst: 'Alleen één naam op de flexlijst is bekend — een echo van het snelle werven via bureaus uit aflevering 2.',
       },
     ],
-    bron: BRON,
-  }),
-  makeConceptInterventie({
-    id: 'a4-2-1',
-    episode: 4,
-    ronde: 2,
-    nummer: '4.2.1',
-    naam: 'Piotr in dienst nemen',
-    omschrijving: 'Loyaliteit, kleine post (aanname € 25.000; pas na een jaar via het bureau).',
-    kostenCategorie: '€',
-    anker: 'Eerlijkheid en menselijke maat; zie Piotr-lijn.',
-    effect: { productiviteit: '0', betrokkenheid: '+', verzuim: '0', verloop: '-', budget: '-' },
-    verborgen: { eerlijkheid: '++', menselijkeMaat: '++' },
-    ethischRisico: 'signaal richting anderen; zakelijke argumenten van Erik.',
-    uitkomsttekst: 'Piotr krijgt een contract. Het Defensie-contract loopt gewoon door.',
-    opvolging: 'bepaalt de slotscène 2031 en aflevering 5. interventieDefinitief pas true na akkoord.',
-    interventieDefinitief: false,
     bron: BRON,
   }),
   makeConceptInterventie({
