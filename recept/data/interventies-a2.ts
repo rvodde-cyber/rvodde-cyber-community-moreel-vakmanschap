@@ -148,7 +148,7 @@ export const INTERVENTIES_A2: Interventie[] = [
     opvolging: 'voorbode van controlecultuur (A3).',
     bron: BRON,
   }),
-];
+].map((i) => ({ ...i, status: 'definitief' as const, interventieDefinitief: true }));
 
 export const NABESPREKING_A2 = [
   {

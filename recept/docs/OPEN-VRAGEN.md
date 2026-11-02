@@ -1,12 +1,14 @@
 # Open vragen en aanleveringen
 
-Laatste update: **2 november 2026** (interventies A1–A5 besluiten, concept).
+Laatste update: **2 november 2026** (A2-interventies definitief).
 
 ## Besloten (2 nov 2026)
 
 | Onderwerp | Besluit |
 | --- | --- |
 | **Notatie** | Legenda in data + docs: `+`/`-` = richting meter; verzuim `-` gunstig; budget `-` = uitgave; `(later)` → `effectLater`. |
+| **A1 interventies** | Alle **8** kaarten **definitief**; velden compleet; niet aan spelmotor. |
+| **A2 interventies** | Alle **8** kaarten **definitief**; echo's ongewijzigd; velden compleet; niet aan spelmotor. |
 | **A1 1.4** | Naam **Flexkrachten inhuren voor piekdrukte** (was „Flexibele jongeren…”). |
 | **A1 2.2 / A2 2.2.2** | Bewuste bonus-echo + conditionele nabesprekingsvraag (alleen als `a1-2-2` én `a2-2-2` gekozen). |
 | **Piotr** | Geen interventie `a4-2-1`; contract alleen via begroting **`piotr-vast`** (≥ €25.000) + slotvariant 2031. Echo-bron `piotr-vast` toegestaan naast interventie-id's. |
@@ -43,15 +45,17 @@ Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
 | **Live deploy** | https://recept-k8m3n7p2.netlify.app/ |
 | **Wachtwoord URL** | Niet geconfigureerd (betaald). |
 | **Piotr-lijn** | Scènes + varianten **definitief**; student ziet intro, privébericht, testament + één variant (finale / voorspel). **`a4r2-keuze-contract`** blijft concept. |
-| **`interventieDefinitief` A1–A5** | Nog **false** — akkoord per aflevering gewenst. |
+| **Nabespreking A1 + A2** | Nog **concept** (incl. conditionele Wegen-vraag A2 in `data/interventies-a2.ts`). |
+| **`interventieDefinitief` A3–A5** | Nog **false** — akkoord per aflevering gewenst. |
 | **Sanne / overige nabespreking** | Nog `concept` (behalve één handelenvraag definitief). |
 | **Beelden** | Geen akkoord — zie `BEELDEN-CHECK.md`. |
 | **Sanne toon** | Standaard A; B via docent-schakelaar. Contract ja/nee nog niet aan motor. |
-| **Interventies kalibratie** | 39 concept-items A1–A5; niet aan spelmotor. |
+| **Interventies kalibratie** | A3–A5: 23 concept-items; niet aan spelmotor. |
 
 ## Inhoud ingelezen (concept)
 
-- `data/interventies-a1.ts` … `a5.ts` + `data/interventies/all.ts`
+- `data/interventies-a3.ts` … `a5.ts` + `data/interventies/all.ts`
+- `data/interventies-a1.ts` / `a2.ts` — interventies **definitief**; nabespreking **concept**
 - Echo's + `echoTekstenVoorGekozenInterventies` (bonus-lijn)
 - `data/sanne.ts` (reactie contract × toon, slot ep4, onthulling ep5)
 - Sanne-vragen → `nabespreking-ep4.ts`
@@ -59,6 +63,6 @@ Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
 
 ## Technisch
 
-- Tests: **40** (incl. piotrSpel, piotrVariant, contentStatus, interventie-besluiten)
+- Tests: **47** (incl. piotrSpel, piotrVariant, contentStatus, interventie-besluiten, A1/A2-definitief)
 - Golden-suite zevendeling `spelmotor.md`: nog open
 - Multiplayer: bewust niet v1

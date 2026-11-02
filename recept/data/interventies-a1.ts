@@ -139,7 +139,7 @@ export const INTERVENTIES_A1: Interventie[] = [
     opvolging: 'vergroot geloofwaardigheid van het MT in aflevering 2; link met de rol van de zus.',
     bron: BRON,
   }),
-];
+].map((i) => ({ ...i, status: 'definitief' as const, interventieDefinitief: true }));
 
 export const NABESPREKING_A1 = [
   {

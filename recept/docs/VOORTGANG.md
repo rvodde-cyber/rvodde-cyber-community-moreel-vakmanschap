@@ -1,17 +1,19 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **2 november 2026** — interventies A1–A5 besluiten (concept)
+Laatste update: **2 november 2026** — A1- en A2-interventies definitief
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **A1 interventies** | **8× definitief**; velden gevalideerd; niet aan spelmotor |
+| **A2 interventies** | **8× definitief**; echo `a2-2-2` → `a1-2-2`; velden gevalideerd; niet aan spelmotor |
 | Notatie legenda | In `data/interventies/types.ts` + docs INTERVENTIES A1/A2–5 |
-| A1 | `a1-1-1` effectLater.verloop `+`; `a1-2-2` presenteïsme; `a1-1-4` hernoemd |
-| A2 | Echo bonus `a2-2-2` ↔ `a1-2-2`; conditionele nabesprekingsvraag Wegen |
+| A2 nabespreking | Conditionele Wegen-vraag (`a2-nb-bonus-echo`); nog **concept** |
 | A4 Piotr | Kaart `a4-2-1` verwijderd; ronde 2 = 3 interventies; keuze via `piotr-vast` |
-| Interventies A1–A5 | **39** items, `concept`, `interventieDefinitief=false`, niet aan spelmotor |
-| Tests | **40** groen (was 38; −2 Piotr-kaarttest, +4 interventie-besluiten) |
+| Interventies A3–A5 | **23** items, `concept`, `interventieDefinitief=false`, niet aan spelmotor |
+| Nabespreking A1 + A2 | Nog **concept** |
+| Tests | **47** groen (was 43; +4 A2-definitief) |
 | Beelden | Silhouet tot akkoord `BEELDEN-CHECK.md` |
 
 ## Live demo
@@ -24,8 +26,8 @@ Laatste update: **2 november 2026** — interventies A1–A5 besluiten (concept)
 ## Richard — top-3
 
 1. Demo ep4 vs concept-interventies (4.1/4.2) — sync of demo houden.
-2. Akkoord per aflevering (A1 t/m A5) voor `interventieDefinitief`.
-3. Sanne + overige nabespreking ep4 → `definitief`; beeldakkoord I1–I5.
+2. Akkoord interventies **A3–A5** voor `interventieDefinitief` (A1 + A2 afgerond 2 nov).
+3. Nabespreking A1 + A2 + Sanne + overige nabespreking ep4 → `definitief`; beeldakkoord I1–I5.
 
 ## Lokaal
 

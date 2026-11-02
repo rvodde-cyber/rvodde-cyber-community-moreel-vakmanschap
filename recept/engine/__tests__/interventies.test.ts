@@ -8,8 +8,13 @@ import {
 } from '@data/interventies/validate';
 import {
   echoTekstenVoorGekozenInterventies,
+  interventieToontConceptLabel,
+  interventieZichtbaarInModus,
+  interventieZichtbaarVoorStudent,
   studentZietVerborgenMeterInInterventie,
 } from '@data/interventies/display';
+import { INTERVENTIES_A1, NABESPREKING_A1 } from '@data/interventies-a1';
+import { INTERVENTIES_A2, NABESPREKING_A2 } from '@data/interventies-a2';
 import { interventiesBeschikbaarPerRonde, KEUZES_PER_RONDE, type Interventie } from '@data/interventies/types';
 
 describe('interventies data', () => {
@@ -71,5 +76,75 @@ describe('interventies data', () => {
     for (const i of ALL_INTERVENTIES) {
       expect(studentZietVerborgenMeterInInterventie(i, false)).toBe(false);
     }
+  });
+
+  const A1_IDS = ['a1-1-1', 'a1-1-2', 'a1-1-3', 'a1-1-4', 'a1-2-1', 'a1-2-2', 'a1-2-3', 'a1-2-4'] as const;
+
+  it('alle acht A1-interventies zijn definitief en velden compleet', () => {
+    expect(INTERVENTIES_A1).toHaveLength(8);
+    for (const id of A1_IDS) {
+      const i = INTERVENTIE_BY_ID[id]!;
+      expect(i.status).toBe('definitief');
+      expect(i.interventieDefinitief).toBe(true);
+      expect(interventieVeldenCompleet(i)).toBe(true);
+    }
+    expect(() => assertInterventieDefinitiefCompleet(ALL_INTERVENTIES)).not.toThrow();
+  });
+
+  it('studentmodus toont A1-interventies zonder verborgen meter; docent geen CONCEPT bij A1', () => {
+    for (const i of INTERVENTIES_A1) {
+      expect(interventieZichtbaarInModus(i, false)).toBe(true);
+      expect(interventieToontConceptLabel(i, true)).toBe(false);
+      expect(studentZietVerborgenMeterInInterventie(i, false)).toBe(false);
+      const z = interventieZichtbaarVoorStudent(i);
+      expect('verborgen' in z).toBe(false);
+    }
+  });
+
+  it('nabespreking A1 blijft concept', () => {
+    expect(NABESPREKING_A1.length).toBeGreaterThan(0);
+    for (const v of NABESPREKING_A1) {
+      expect(v.status).toBe('concept');
+    }
+  });
+
+  const A2_IDS = ['a2-1-1', 'a2-1-2', 'a2-1-3', 'a2-1-4', 'a2-2-1', 'a2-2-2', 'a2-2-3', 'a2-2-4'] as const;
+
+  it('alle acht A2-interventies zijn definitief en velden compleet', () => {
+    expect(INTERVENTIES_A2).toHaveLength(8);
+    for (const id of A2_IDS) {
+      const i = INTERVENTIE_BY_ID[id]!;
+      expect(i.status).toBe('definitief');
+      expect(i.interventieDefinitief).toBe(true);
+      expect(interventieVeldenCompleet(i)).toBe(true);
+    }
+    expect(() => assertInterventieDefinitiefCompleet(ALL_INTERVENTIES)).not.toThrow();
+  });
+
+  it('studentmodus toont A2-interventies zonder verborgen meter; docent geen CONCEPT bij A2', () => {
+    for (const i of INTERVENTIES_A2) {
+      expect(interventieZichtbaarInModus(i, false)).toBe(true);
+      expect(interventieToontConceptLabel(i, true)).toBe(false);
+      expect(studentZietVerborgenMeterInInterventie(i, false)).toBe(false);
+      const z = interventieZichtbaarVoorStudent(i);
+      expect('verborgen' in z).toBe(false);
+    }
+  });
+
+  it('nabespreking A2 blijft concept (inclusief conditionele Wegen-vraag)', () => {
+    expect(NABESPREKING_A2.length).toBeGreaterThan(0);
+    for (const v of NABESPREKING_A2) {
+      expect(v.status).toBe('concept');
+    }
+    const bonus = NABESPREKING_A2.find((v) => v.id === 'a2-nb-bonus-echo');
+    expect(bonus?.fase).toBe('wegen');
+    expect(bonus?.tonenAlsGekozen).toEqual(['a1-2-2', 'a2-2-2']);
+  });
+
+  it('A2: echo a2-2-2 alleen zichtbaar als a1-2-2 eerder gekozen is', () => {
+    const a2Bonus = INTERVENTIE_BY_ID['a2-2-2']!;
+    expect(a2Bonus.status).toBe('definitief');
+    expect(echoTekstenVoorGekozenInterventies(a2Bonus, new Set(['a2-2-2']))).toHaveLength(0);
+    expect(echoTekstenVoorGekozenInterventies(a2Bonus, new Set(['a1-2-2']))).toHaveLength(1);
   });
 });

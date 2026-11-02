@@ -12,6 +12,17 @@ export function studentZietVerborgenMeterInInterventie(i: Interventie, docent: b
   return 'verborgen' in z && z.verborgen != null;
 }
 
+/** Studentmodus: alleen status definitief; docent ziet alles. */
+export function interventieZichtbaarInModus(i: Interventie, docent: boolean): boolean {
+  if (docent) return true;
+  return i.status === 'definitief';
+}
+
+/** CONCEPT-label in docentmodus voor interventies die nog concept zijn. */
+export function interventieToontConceptLabel(i: Interventie, docent: boolean): boolean {
+  return docent && i.status === 'concept';
+}
+
 /** Echo-regels alleen als de bron-interventie (of begrotingskeuze) eerder is gekozen. */
 export function echoTekstenVoorGekozenInterventies(
   i: Interventie,
