@@ -65,6 +65,18 @@
       "hubBadge": "workshop"
     },
     {
+      "id": "kaartenatelier",
+      "naam": "Kaartenatelier",
+      "naamEn": "Card Atelier",
+      "omschrijving": "Bouw v3-gesprekskaarten uit een kaartpakket en Firefly-foto's. Alles blijft in je browser.",
+      "omschrijvingEn": "Build v3 conversation cards from a card package and Firefly photos. Everything stays in your browser.",
+      "url": "/workshop/kaartenatelier/",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (tools/kaartenatelier/)",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
       "id": "lakmoesproef",
       "naam": "Morele Lakmoesproef",
       "omschrijving": "Organisatie Lakmoesproef — strikt gescheiden van MAPS.",

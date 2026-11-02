@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T15:16:29.511Z",
+  "generated_at": "2026-11-02T13:19:25.189Z",
   "apps": [
     {
       "id": "maps-trilogie",
@@ -61,6 +61,18 @@
       "omschrijving": "Productietool voor het maken van gesprekskaarten (niet de publieke voorbeeldkaarten).",
       "url": "https://rvodde-cyber.github.io/ethos-studio/",
       "githubRepo": "rvodde-cyber/ethos-studio",
+      "categorie": "besloten",
+      "status": "live",
+      "hubBadge": "workshop"
+    },
+    {
+      "id": "kaartenatelier",
+      "naam": "Kaartenatelier",
+      "naamEn": "Card Atelier",
+      "omschrijving": "Bouw v3-gesprekskaarten uit een kaartpakket en Firefly-foto's. Alles blijft in je browser.",
+      "omschrijvingEn": "Build v3 conversation cards from a card package and Firefly photos. Everything stays in your browser.",
+      "url": "/workshop/kaartenatelier/",
+      "githubRepo": "rvodde-cyber/rvodde-cyber-community-moreel-vakmanschap (tools/kaartenatelier/)",
       "categorie": "besloten",
       "status": "live",
       "hubBadge": "workshop"

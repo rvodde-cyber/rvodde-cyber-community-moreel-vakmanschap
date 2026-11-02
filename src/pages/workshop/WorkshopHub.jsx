@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import WorkshopLayout from "../../components/workshop/WorkshopLayout";
+import { useTaal } from "../../context/TaalContext";
 
 const BADGE_LABELS = {
   workshop: "Beschikbaar tijdens deze workshop",
@@ -8,6 +9,7 @@ const BADGE_LABELS = {
 };
 
 export default function WorkshopHub() {
+  const { taal } = useTaal();
   const [apps, setApps] = useState([]);
   const [workshopNaam, setWorkshopNaam] = useState("");
   const [isVoorproef, setIsVoorproef] = useState(false);
@@ -83,17 +85,22 @@ export default function WorkshopHub() {
       </header>
 
       <div className="workshop-grid">
-        {apps.map((app) => (
+        {apps.map((app) => {
+          const useEn = taal === "en";
+          const title = useEn && app.naamEn ? app.naamEn : app.naam;
+          const description =
+            useEn && app.omschrijvingEn ? app.omschrijvingEn : app.omschrijving;
+          return (
           <article key={app.id} className="workshop-app-card">
             <div className="workshop-app-card-top">
-              <h2 className="workshop-app-title">{app.naam}</h2>
+              <h2 className="workshop-app-title">{title}</h2>
               {app.hubBadge && (
                 <span className={`workshop-badge workshop-badge-${app.hubBadge}`}>
                   {BADGE_LABELS[app.hubBadge]}
                 </span>
               )}
             </div>
-            <p className="workshop-app-desc">{app.omschrijving}</p>
+            <p className="workshop-app-desc">{description}</p>
             <a
               href={app.url}
               target="_blank"
@@ -118,7 +125,8 @@ export default function WorkshopHub() {
               </div>
             )}
           </article>
-        ))}
+        );
+        })}
       </div>
 
       <p className="workshop-footer-note">

@@ -39,7 +39,19 @@
       "destination": "/frisse-organisatie/index.html"
     },
     {
-      "source": "/((?!api/|downloads/|images/|wisselwerking|frisse-organisatie).*)",
+      "source": "/workshop/kaartenatelier",
+      "destination": "/workshop/kaartenatelier/index.html"
+    },
+    {
+      "source": "/workshop/kaartenatelier/",
+      "destination": "/workshop/kaartenatelier/index.html"
+    },
+    {
+      "source": "/workshop/kaartenatelier/((?!assets/).*)",
+      "destination": "/workshop/kaartenatelier/index.html"
+    },
+    {
+      "source": "/((?!api/|downloads/|images/|wisselwerking|frisse-organisatie|workshop/kaartenatelier).*)",
       "destination": "/index.html"
     }
   ],
@@ -64,6 +76,18 @@
     },
     {
       "source": "/frisse-organisatie/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/workshop/kaartenatelier/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/workshop/kaartenatelier/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]

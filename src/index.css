@@ -69,3 +69,29 @@ details > summary::after {
 details[open] > summary::after {
   content: " ▴";
 }
+
+.juristenzelftest-tegel-link {
+  width: 100%;
+  max-width: none;
+}
+
+@media (min-width: 480px) {
+  .juristenzelftest-tegel-link {
+    max-width: 420px;
+    margin-inline: auto;
+  }
+}
+
+.juristenzelftest-tegel-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.juristenzelftest-tegel-link:focus {
+  outline: none;
+}
+
+.juristenzelftest-tegel-link:focus-visible {
+  outline: 3px solid #534ab7;
+  outline-offset: 3px;
+}

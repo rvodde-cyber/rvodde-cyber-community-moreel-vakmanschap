@@ -1,5 +1,7 @@
 node_modules/
 dist/
+public/workshop/kaartenatelier/
+tools/kaartenatelier/_ref_extract/
 .env
 .env.local
 .env*.local
