@@ -27,6 +27,41 @@ Niet-geheime metadata (naam, geldigheidsdatum) staat in `workshop-config.json` �
 
 Nieuwe codes / secrets: apart en veilig aan Richard doorgeven (niet via GitHub-commit of publieke chat). Oude codes die ooit in git stonden: als gecompromitteerd beschouwen en niet hergebruiken.
 
+## Deelnemersregistratie
+
+Bezoekers melden zich aan op `/aanmelden` met naam, functie, organisatie (optioneel),
+e-mailadres en een expliciet vinkje voor e-mailcontact. De aanmelding gaat naar de
+tabel `deelnemers` in Supabase.
+
+### Eenmalig instellen
+
+1. Maak een Supabase-project aan en draai `supabase/deelnemers_schema.sql` in de SQL Editor.
+2. Zet in Vercel → Settings → Environment Variables (Production + Preview):
+
+| Variabele | Doel |
+|-----------|------|
+| `SUPABASE_URL` | Project-URL, bijv. `https://xxxx.supabase.co` |
+| `SUPABASE_SERVICE_ROLE_KEY` | Service role key — **alleen server-side**, nooit in de frontend |
+| `DEELNEMERS_EXPORT_TOKEN` | Zelfgekozen lange, willekeurige string voor de export |
+
+3. Redeploy. Zonder deze variabelen blijft het formulier werken, maar valt het terug
+   op een aanmelding per e-mail — er gaat dus nooit een aanmelding verloren.
+
+### De groep mailen
+
+De export vraag je op met je token. Vervang `TOKEN` door `DEELNEMERS_EXPORT_TOKEN`:
+
+| Doel | URL |
+|------|-----|
+| Excel/CSV-bestand | `https://moreelvakmanschap.nl/api/deelnemers/export?token=TOKEN` |
+| Alle adressen op één regel (voor BCC) | `…/api/deelnemers/export?format=emails&token=TOKEN` |
+| Ruwe data (JSON) | `…/api/deelnemers/export?format=json&token=TOKEN` |
+
+Mail de groep altijd via **BCC**, zodat deelnemers elkaars adres niet zien.
+
+Afmelden gaat voorlopig handmatig: zet `afgemeld_op` in Supabase op de huidige datum,
+dan verdwijnt de deelnemer uit alle exports zonder dat de aanmelding verloren gaat.
+
 ## Categorieën
 
 | Categorie | Betekenis |
