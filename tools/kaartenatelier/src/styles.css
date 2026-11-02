@@ -1,0 +1,132 @@
+/* Zelfde tokens als src/index.css (community-site), zonder externe webfonts */
+:root {
+  --kleur-zien: #185fa5;
+  --kleur-voelen: #854f0b;
+  --kleur-wegen: #993556;
+  --kleur-handelen: #0f6e56;
+  --kleur-volhouden: #993c1d;
+  --kleur-kern: #534ab7;
+  --achtergrond: #f5f2ec;
+  --surface: #fdfcfa;
+  --surface-muted: #f0ebe3;
+  --tekst-primair: #1a2744;
+  --tekst-secundair: #5f5e5a;
+  --rand: #d8d3c9;
+  --complexity-color: #993556;
+  --attribution-color: #5f5e5a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--achtergrond);
+  color: var(--tekst-primair);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kleur-handelen);
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.85rem, 4vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--tekst-primair);
+}
+
+.lead {
+  margin: 1.25rem 0 0;
+  font-size: 1.05rem;
+  color: var(--tekst-secundair);
+}
+
+.notice {
+  margin-top: 2rem;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--rand);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: var(--tekst-primair);
+}
+
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--rand);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang-toggle button {
+  border: none;
+  background: transparent;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--tekst-secundair);
+}
+
+.lang-toggle button[aria-pressed="true"] {
+  background: var(--kleur-handelen);
+  color: #fff;
+}
+
+.sources {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rand);
+}
+
+.sources h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sources p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--attribution-color);
+  line-height: 1.55;
+}
+
+.sources p:last-child {
+  margin-bottom: 0;
+}
