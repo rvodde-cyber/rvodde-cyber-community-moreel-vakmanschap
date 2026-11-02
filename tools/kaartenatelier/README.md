@@ -19,6 +19,7 @@ Open de URL die Vite toont (base `/workshop/kaartenatelier/`).
 
 ```bash
 npm run test
+npm run test:golden   # optioneel: KAARTENATELIER_REF_DL15=pad/naar/DL15.docx
 ```
 
 ## Productie-build (via community-site)

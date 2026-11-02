@@ -1,21 +1,26 @@
 import { COMPLEXITY_LABEL_NL, COMPLEXITY_STARS, REFLECTIE_TEKST } from "./lib/constants";
 import { calculatePhotoLayout } from "./lib/layout";
+import { measureCardTextFit } from "./lib/textFit";
 import type { KaartPakket, KaartPakketKaart } from "./lib/types";
 
 export function CardPreview({
   pakket,
   card,
   label,
+  overflowLabel,
 }: {
   pakket: KaartPakket;
   card: KaartPakketKaart;
   label: string;
+  overflowLabel?: string;
 }) {
   const layout = calculatePhotoLayout();
   const total = layout.u;
+  const fit = measureCardTextFit(card.titel_nl, card.verhaal_nl);
   return (
     <div className="card-preview-wrap">
       <p className="preview-disclaimer">{label}</p>
+      {fit.overflow && overflowLabel && <p className="warn">{overflowLabel}</p>}
       <div
         className="card-preview"
         style={{

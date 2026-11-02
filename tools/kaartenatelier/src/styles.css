@@ -295,3 +295,14 @@ h1 {
   font-size: 0.85rem;
   color: var(--tekst-secundair);
 }
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.package-confirm {
+  max-width: 28rem;
+}

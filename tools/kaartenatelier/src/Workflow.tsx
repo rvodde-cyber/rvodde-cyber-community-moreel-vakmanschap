@@ -14,6 +14,19 @@ import {
 } from "./lib/imageCrop";
 import { calculatePhotoLayoutAspect } from "./lib/layout";
 import { buildExportZip, downloadBlob } from "./lib/exportZip";
+import { collectExportFiles } from "./lib/exportBundle";
+import {
+  buildFireflyPromptsDocx,
+  buildPromptlijstDocx,
+  fireflyPromptsFilename,
+  promptlijstFilename,
+} from "./lib/buildPromptDocx";
+import {
+  blobToUint8,
+  supportsDirectoryPicker,
+  writeFilesToDirectoryHandle,
+  type WriteLogEntry,
+} from "./lib/directoryExport";
 import type { KaartPakket } from "./lib/types";
 import type { Locale } from "./strings";
 import { strings } from "./strings";
@@ -27,6 +40,7 @@ type PhotoState = {
   jpeg?: Uint8Array;
   lowRes?: boolean;
   confirmed: boolean;
+  viaPackage?: boolean;
 };
 
 export function Workflow({ locale }: { locale: Locale }) {
@@ -38,6 +52,8 @@ export function Workflow({ locale }: { locale: Locale }) {
   const [previewId, setPreviewId] = useState<string | null>(null);
   const [photos, setPhotos] = useState<Record<string, PhotoState>>({});
   const [exporting, setExporting] = useState(false);
+  const [allowAanpassen, setAllowAanpassen] = useState<Set<string>>(() => new Set());
+  const [exportLog, setExportLog] = useState<WriteLogEntry[] | null>(null);
 
   const cardWarnings = useMemo(() => {
     if (!pakket) return {};
@@ -53,12 +69,31 @@ export function Workflow({ locale }: { locale: Locale }) {
   }, [pakket, photos]);
 
   const spread = pakket ? complexitySpread(pakket.kaarten) : null;
+  const dirPickerOk = supportsDirectoryPicker();
+
+  function exportPhotoMap() {
+    return Object.fromEntries(
+      Object.entries(photos).map(([k, v]) => [
+        k,
+        v.jpeg
+          ? {
+              jpeg: v.jpeg,
+              fileName: v.file.name.replace(/\.[^.]+$/, ".jpg"),
+              confirmed: v.confirmed,
+            }
+          : undefined,
+      ])
+    );
+  }
 
   function ingest(raw: string) {
     const result = parseKaartpakketJson(raw);
     setIssues(result.issues);
     if (result.data) {
       setPakket(result.data);
+      setPhotos({});
+      setAllowAanpassen(new Set());
+      setExportLog(null);
       setStep(2);
     } else {
       setPakket(null);
@@ -74,7 +109,7 @@ export function Workflow({ locale }: { locale: Locale }) {
       const match = matchPhotoToCard(card, list, assigned);
       if (match.kind === "package" || match.kind === "nummer" || match.kind === "prompt") {
         assigned.add(match.file.name);
-        await attachPhoto(card.nummer, match.file, next);
+        await attachPhoto(card.nummer, match.file, next, match.kind === "package");
       }
     }
     setPhotos(next);
@@ -83,7 +118,8 @@ export function Workflow({ locale }: { locale: Locale }) {
   async function attachPhoto(
     nummer: string,
     file: File,
-    target: Record<string, PhotoState>
+    target: Record<string, PhotoState>,
+    viaPackage = false
   ) {
     const img = await loadImageFromFile(file);
     const aspect = calculatePhotoLayoutAspect(500);
@@ -97,6 +133,7 @@ export function Workflow({ locale }: { locale: Locale }) {
       jpeg,
       lowRes,
       confirmed: false,
+      viaPackage,
     };
   }
 
@@ -124,26 +161,16 @@ export function Workflow({ locale }: { locale: Locale }) {
     [photos]
   );
 
-  async function doExport() {
+  async function doExportZip() {
     if (!pakket) return;
     setExporting(true);
+    setExportLog(null);
     try {
       const zip = await buildExportZip({
         pakket,
-        photos: Object.fromEntries(
-          Object.entries(photos).map(([k, v]) => [
-            k,
-            v.jpeg
-              ? {
-                  jpeg: v.jpeg,
-                  fileName: v.file.name.replace(/\.[^.]+$/, ".jpg"),
-                  confirmed: v.confirmed,
-                }
-              : undefined,
-          ])
-        ),
+        photos: exportPhotoMap(),
         cardWarnings,
-        allowAanpassen: new Set(),
+        allowAanpassen,
       });
       await downloadBlob(zip, `kaartenatelier_${pakket.categorie.naam_nl}.zip`);
     } finally {
@@ -151,7 +178,50 @@ export function Workflow({ locale }: { locale: Locale }) {
     }
   }
 
+  async function doExportFolder() {
+    if (!pakket || !dirPickerOk) return;
+    setExporting(true);
+    try {
+      // @ts-expect-error File System Access API
+      const dir = await window.showDirectoryPicker({ mode: "readwrite" });
+      const { files } = await collectExportFiles({
+        pakket,
+        photos: exportPhotoMap(),
+        cardWarnings,
+        allowAanpassen,
+      });
+      const entries = await Promise.all(
+        files.map(async (f) => ({
+          relativePath: f.relativePath,
+          data: await blobToUint8(f.data),
+        }))
+      );
+      const logs = await writeFilesToDirectoryHandle(dir, entries);
+      setExportLog(logs);
+    } catch (e) {
+      if (e instanceof DOMException && e.name === "AbortError") {
+        setExportLog([{ path: "—", outcome: "cancelled", detail: "Geannuleerd door gebruiker" }]);
+      } else {
+        setExportLog([{ path: "—", outcome: "error", detail: String(e) }]);
+      }
+    } finally {
+      setExporting(false);
+    }
+  }
+
+  async function downloadPromptDocs(which: "firefly" | "lijst") {
+    if (!pakket) return;
+    if (which === "firefly") {
+      const blob = await buildFireflyPromptsDocx(pakket);
+      await downloadBlob(blob, fireflyPromptsFilename(pakket));
+    } else {
+      const blob = await buildPromptlijstDocx(pakket);
+      await downloadBlob(blob, promptlijstFilename(pakket));
+    }
+  }
+
   const previewCard = pakket?.kaarten.find((c) => c.nummer === previewId);
+  const aanpassenCards = pakket?.kaarten.filter((c) => c.foto_status === "aanpassen") ?? [];
 
   return (
     <div className="workflow">
@@ -258,7 +328,12 @@ export function Workflow({ locale }: { locale: Locale }) {
 
       {previewCard && pakket && (
         <div className="modal" role="dialog">
-          <CardPreview pakket={pakket} card={previewCard} label={t.previewLabel} />
+          <CardPreview
+            pakket={pakket}
+            card={previewCard}
+            label={t.previewLabel}
+            overflowLabel={t.textOverflowWarn}
+          />
           <button type="button" onClick={() => setPreviewId(null)}>
             Sluiten
           </button>
@@ -272,6 +347,14 @@ export function Workflow({ locale }: { locale: Locale }) {
             {pakket.kaarten.length} {t.promptCount} {pakket.kaarten.length}{" "}
             {t.promptsHavePrompt}
           </p>
+          <div className="button-row">
+            <button type="button" onClick={() => downloadPromptDocs("firefly")}>
+              {t.downloadFireflyDoc}
+            </button>
+            <button type="button" onClick={() => downloadPromptDocs("lijst")}>
+              {t.downloadPromptlijst}
+            </button>
+          </div>
           <ul className="prompt-list">
             {pakket.kaarten.map((c) => {
               const full = composeFireflyPrompt(c.firefly_prompt_en);
@@ -306,10 +389,16 @@ export function Workflow({ locale }: { locale: Locale }) {
             return (
               <div key={c.nummer} className="photo-row">
                 <span>{c.nummer}</span>
+                {c.foto_bestand?.trim() && (
+                  <span className="hint">foto_bestand: {c.foto_bestand}</span>
+                )}
                 {ph ? (
                   <>
                     <img src={ph.previewUrl} alt="" className="thumb" />
                     {ph.lowRes && <span className="warn"> &lt;1200px</span>}
+                    {ph.viaPackage && (
+                      <p className="hint package-confirm">{t.packagePhotoConfirm}</p>
+                    )}
                     <label>
                       Focus X
                       <input
@@ -349,9 +438,54 @@ export function Workflow({ locale }: { locale: Locale }) {
         <section className="panel">
           <p>{t.exportNote}</p>
           <p className="hint">{t.exportDisclaimer}</p>
-          <button type="button" className="primary" disabled={exporting} onClick={doExport}>
-            {t.exportZip}
-          </button>
+          {aanpassenCards.length > 0 && (
+            <ul>
+              {aanpassenCards.map((c) => (
+                <li key={c.nummer}>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={allowAanpassen.has(c.nummer)}
+                      onChange={(e) => {
+                        setAllowAanpassen((prev) => {
+                          const next = new Set(prev);
+                          if (e.target.checked) next.add(c.nummer);
+                          else next.delete(c.nummer);
+                          return next;
+                        });
+                      }}
+                    />
+                    {c.nummer}: {t.allowAanpassen}
+                  </label>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="button-row">
+            <button type="button" className="primary" disabled={exporting} onClick={doExportZip}>
+              {t.exportZip}
+            </button>
+            {dirPickerOk ? (
+              <button type="button" disabled={exporting} onClick={doExportFolder}>
+                {t.exportFolder}
+              </button>
+            ) : (
+              <p className="hint">{t.exportFolderUnavailable}</p>
+            )}
+          </div>
+          {exportLog && (
+            <>
+              <h3>{t.exportLogHeading}</h3>
+              <ul>
+                {exportLog.map((l) => (
+                  <li key={l.path + l.outcome}>
+                    {l.path}: {l.outcome}
+                    {l.detail ? ` (${l.detail})` : ""}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </section>
       )}
     </div>

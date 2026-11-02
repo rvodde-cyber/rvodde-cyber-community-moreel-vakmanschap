@@ -25,12 +25,22 @@ export const strings = {
     mesoWarn: "Meso is meer dan 60% — controleer de set.",
     previewLabel: "Voorbeeld; het Word-bestand is leidend.",
     copyPrompt: "Kopiëren",
+    downloadFireflyDoc: "Download Firefly_prompts (.docx)",
+    downloadPromptlijst: "Download Promptlijst (.docx)",
     promptCount: "van",
     promptsHavePrompt: "kaarten hebben een prompt",
     fireflyHint:
       "Laat afkomst, leeftijd en gender variëren (Nederland is divers), zonder stereotypen, herkenbare personen, logo's of tekst in beeld.",
     dropPhotos: "Sleep foto's (JPG, PNG, WEBP)",
+    packagePhotoConfirm:
+      "Gekoppeld via foto_bestand uit het pakket (heeft voorrang). Controleer of dit het juiste bestand is.",
+    textOverflowWarn: "Tekst lijkt de witzone te overschrijden — verkort of splits alinea's.",
     exportZip: "Download export-ZIP",
+    exportFolder: "Opslaan in map",
+    exportFolderUnavailable:
+      "Direct opslaan in een map werkt alleen in Chrome en Edge. Gebruik hier de export-ZIP.",
+    exportLogHeading: "Resultaat per bestand",
+    allowAanpassen: "Toch exporteren (foto_status: aanpassen)",
     exportNote:
       "Casussen zijn fictief; afbeeldingen zijn met AI gemaakt (Adobe Firefly) — overnemen in eigen publicaties.",
     exportDisclaimer:
@@ -66,12 +76,22 @@ export const strings = {
     mesoWarn: "Meso is over 60% — review the set.",
     previewLabel: "Preview; the Word file is authoritative.",
     copyPrompt: "Copy",
+    downloadFireflyDoc: "Download Firefly_prompts (.docx)",
+    downloadPromptlijst: "Download prompt list (.docx)",
     promptCount: "of",
     promptsHavePrompt: "cards have a prompt",
     fireflyHint:
       "Vary origin, age and gender in images (the Netherlands is diverse), without stereotypes, recognisable people, logos or text in frame.",
     dropPhotos: "Drop photos (JPG, PNG, WEBP)",
+    packagePhotoConfirm:
+      "Linked via package field foto_bestand (overrides other rules). Confirm this is the correct file.",
+    textOverflowWarn: "Text may exceed the white zone — shorten or split paragraphs.",
     exportZip: "Download export ZIP",
+    exportFolder: "Save to folder",
+    exportFolderUnavailable:
+      "Saving directly to a folder only works in Chrome and Edge. Use the export ZIP here.",
+    exportLogHeading: "Result per file",
+    allowAanpassen: "Export anyway (foto_status: aanpassen)",
     exportNote:
       "Cases are fictional; images are AI-made (Adobe Firefly) — reuse in your own publications.",
     exportDisclaimer:

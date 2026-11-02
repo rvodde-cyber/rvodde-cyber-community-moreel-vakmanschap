@@ -1,6 +1,7 @@
 import JSZip from "jszip";
 import { describe, expect, it } from "vitest";
 import { buildCardDocx } from "./buildCardDocx";
+import { parseDocumentXml } from "./docxXml";
 import type { KaartPakket } from "./types";
 
 const sample: KaartPakket = {
@@ -26,5 +27,10 @@ describe("docx structure", () => {
     expect(xml).toContain('w:lineRule="exact"');
     expect(xml).toContain('w:val="2"');
     expect(xml).not.toContain("wp:anchor");
+    const snap = parseDocumentXml(xml);
+    expect(snap.trailParagraphBeforeSectPr).toBe(true);
+    expect(snap.margins?.top).toBe(0);
+    expect(snap.margins?.header).toBe(0);
+    expect(snap.margins?.footer).toBe(0);
   });
 });
