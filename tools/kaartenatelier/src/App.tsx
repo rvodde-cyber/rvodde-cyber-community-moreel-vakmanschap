@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Workflow } from "./Workflow";
 import {
   type Locale,
   readStoredLocale,
@@ -50,10 +51,12 @@ export default function App() {
       </header>
 
       <p className="lead">{copy.intro}</p>
-      <p className="notice">{copy.comingSoon}</p>
+
+      <Workflow locale={locale} />
 
       <section className="sources" aria-labelledby="sources-heading">
         <h2 id="sources-heading">{copy.sourcesHeading}</h2>
+        <p>{copy.privacyNote}</p>
         <p>{copy.sourceMeijer}</p>
         <p>{copy.sourceLectoraat}</p>
       </section>

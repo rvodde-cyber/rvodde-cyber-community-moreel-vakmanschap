@@ -1,9 +1,9 @@
 # Statusregel — Coördinatie moreelvakmanschap.nl
 
-**Onderdeel:** Kaartenatelier (fase 0 skelet)  
+**Onderdeel:** Kaartenatelier fase 1 (bouwmotor)  
 **Datum:** 2-11-2026  
-**Status:** **Fase 0 op branch `feat/kaartenatelier`** — PR open, niet gemerged
+**Status:** **Op branch `feat/kaartenatelier-app`** — PR naar `main`, niet gemerged; Word-steekproef Richard nog open
 
 **Statusregel (plakken in Coördinatie moreelvakmanschap.nl):**
 
-> **Kaartenatelier fase 0:** Skelet live-build onder `/workshop/kaartenatelier/` (statisch, geen AI/login/tracking). Hub-vermelding `kaartenatelier` in workshop-apps. `docs/Cursor-opdracht-Kaartenatelier-v1.md` nog niet in repo. Fase 1 volgt na merge PR. App-URL is publiek bereikbaar zonder workshopcode (bewust; alles client-side).
+> **Kaartenatelier fase 1:** Bouwmotor v3.0 in `tools/kaartenatelier/` (pakket-JSON, validatie, Firefly-prompts, fotokoppeling, Word/ZIP/site-JSON). Geen AI in de app. Layout-reserve **500 twips** (begrippenlijst noemt nog 900). PR fase 1 na #62; definitief na Richards Word-controle.
