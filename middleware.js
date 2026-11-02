@@ -1,4 +1,16 @@
 import { isWorkshopHubEnabled } from "./lib/workshop-flags.js";
+import {
+  PREVIEW_COOKIE,
+  PREVIEW_SESSION_HOURS,
+  codeIsGeldig,
+  createPreviewSessionToken,
+  getEdgeConfigClient,
+  haalActieveCodeOp,
+  normaliseerCode,
+  pathMatchtPreviewRoute,
+  previewCookieHeader,
+  verifyPreviewSessionToken,
+} from "./lib/preview-code.js";
 
 export const config = {
   matcher: [
@@ -90,9 +102,71 @@ function unavailableHtml() {
 </html>`;
 }
 
+function isPublicWorkshopPath(pathname) {
+  return (
+    pathname === "/workshop" ||
+    pathname === "/workshop/" ||
+    pathname === "/workshop/voorproef" ||
+    pathname === "/workshop/unavailable" ||
+    pathname.startsWith("/workshop/unavailable/")
+  );
+}
+
+async function allowPreviewIfValid(request, url) {
+  const { pathname } = url;
+  if (isPublicWorkshopPath(pathname) || pathname.startsWith("/data/workshop")) {
+    return null;
+  }
+
+  let actief;
+  try {
+    const client = getEdgeConfigClient();
+    if (!client) return null;
+    actief = await haalActieveCodeOp(client);
+  } catch {
+    return null;
+  }
+
+  if (!actief.code || !codeIsGeldig(actief.verlooptOp)) return null;
+  if (!pathMatchtPreviewRoute(pathname, actief.routes)) return null;
+
+  const cookieToken = request.cookies.get(PREVIEW_COOKIE)?.value;
+  const cookieOk = await verifyPreviewSessionToken(cookieToken, actief.code);
+  if (cookieOk) {
+    return fetch(request);
+  }
+
+  const aangeboden = normaliseerCode(url.searchParams.get("code"));
+  if (!aangeboden || aangeboden !== actief.code) return null;
+
+  const maxAgeSeconds = PREVIEW_SESSION_HOURS * 60 * 60;
+  const expiresAtMs = Math.min(
+    Date.now() + maxAgeSeconds * 1000,
+    Number(actief.verlooptOp)
+  );
+  const token = await createPreviewSessionToken(actief.code, expiresAtMs);
+  const redirectUrl = new URL(pathname, request.url);
+  return new Response(null, {
+    status: 302,
+    headers: {
+      Location: redirectUrl.pathname,
+      "Set-Cookie": previewCookieHeader(token, Math.max(1, Math.floor((expiresAtMs - Date.now()) / 1000))),
+      "Cache-Control": "no-store",
+    },
+  });
+}
+
 export default async function middleware(request) {
   const url = new URL(request.url);
   const { pathname } = url;
+
+  // Preview-codes staan los van WORKSHOP_PASSWORD en werken ook als de hub-vlag uit staat.
+  try {
+    const previewResponse = await allowPreviewIfValid(request, url);
+    if (previewResponse) return previewResponse;
+  } catch {
+    // Preview mag de bestaande workshop-gate nooit omverwerpen.
+  }
 
   // Kill-switch (default off): serve static HTML immediately — no redirect, no SPA.
   if (!isWorkshopHubEnabled()) {
@@ -117,14 +191,7 @@ export default async function middleware(request) {
 
   // Hub enabled: protect apps, besloten, and same-origin Wisselwerking;
   // keep login pages public.
-  const isPublicWorkshopPath =
-    pathname === "/workshop" ||
-    pathname === "/workshop/" ||
-    pathname === "/workshop/voorproef" ||
-    pathname === "/workshop/unavailable" ||
-    pathname.startsWith("/workshop/unavailable/");
-
-  if (isPublicWorkshopPath || pathname.startsWith("/data/workshop")) {
+  if (isPublicWorkshopPath(pathname) || pathname.startsWith("/data/workshop")) {
     return fetch(request);
   }
 
