@@ -5,6 +5,7 @@ import { useTaal } from "../context/TaalContext";
 import { bibliotheekData } from "../data/bibliotheekData";
 import { getWerkbladenCount } from "../data/werkbladen";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
+import ZelftestsSectie from "../components/ZelftestsSectie";
 
 const uiTekst = {
   nl: {
@@ -19,6 +20,7 @@ const uiTekst = {
     alleWerkbladen: "Alle werkbladen",
     materialenEn: "materiaal",
     materialenMeervoud: "materialen",
+    zelftests: "Zelftests",
   },
   en: {    label: "Materials",
     titel: "Library",
@@ -31,6 +33,7 @@ const uiTekst = {
     alleWerkbladen: "All worksheets",
     materialenEn: "material",
     materialenMeervoud: "materials",
+    zelftests: "Self-assessments",
   },
 };
 const stapSlug = {
@@ -341,6 +344,8 @@ export default function BiblioteekOverzicht() {
           ))}
         </div>
       </section>
+
+      {!usesEnglishRoutes(taal) && <ZelftestsSectie sectieTitel={ui.zelftests} />}
 
       <section
         style={{
