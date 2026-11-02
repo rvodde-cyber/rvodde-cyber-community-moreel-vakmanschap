@@ -22,9 +22,15 @@ export function parseDocumentXml(xml: string): DocxLayoutSnapshot {
     /<w:pgMar[^>]*w:top="(\d+)"[^>]*w:right="(\d+)"[^>]*w:bottom="(\d+)"[^>]*w:left="(\d+)"[^>]*w:header="(\d+)"[^>]*w:footer="(\d+)"/
   );
 
-  const rowHeights = allMatches(xml, /<w:trHeight[^>]*w:val="(\d+)"[^>]*w:hRule="([^"]+)"/gi).map(
-    (m) => ({ value: Number(m[1]), rule: m[2] })
-  );
+  const rowHeights = allMatches(xml, /<w:trHeight([^/>]*)\/?>/gi)
+    .map((m) => {
+      const attrs = m[1];
+      const valM = attrs.match(/w:val="(\d+)"/i);
+      const ruleM = attrs.match(/w:hRule="([^"]+)"/i);
+      if (!valM) return null;
+      return { value: Number(valM[1]), rule: ruleM?.[1] ?? "atLeast" };
+    })
+    .filter((r): r is { value: number; rule: string } => r != null);
 
   const fonts: DocxLayoutSnapshot["fonts"] = [];
   for (const m of allMatches(xml, /<w:rFonts[^>]*w:ascii="([^"]+)"/gi)) {

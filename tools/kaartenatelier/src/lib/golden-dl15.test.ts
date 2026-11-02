@@ -65,12 +65,7 @@ describe("golden DL15", () => {
     if (structural.length) {
       console.warn("[golden] Structurele verschillen:", structural);
     }
-    if (rowDiffs.length) {
-      console.warn(
-        "[golden] Rijhoogtes wijken af (formule §5.2 vs goedgekeurde DL15-splitsing):",
-        rowDiffs
-      );
-    }
+    expect(rowDiffs, rowDiffs.join("; ")).toHaveLength(0);
 
     expect(refSnap.hasAnchor).toBe(false);
     expect(genSnap.hasAnchor).toBe(false);

@@ -1,23 +1,38 @@
 import { describe, expect, it } from "vitest";
+import {
+  APPROVED_PHOTO_ROW_EXACT,
+  APPROVED_REFLECT_ROW_EXACT,
+  APPROVED_U,
+  APPROVED_WHITE_ROW_AT_LEAST,
+  APPROVED_IMAGE_HEIGHT_TWIPS,
+  legacyFormulaLayout,
+  percentDiff,
+} from "./cardLayoutApproved";
 import { calculatePhotoLayout, calculatePhotoLayoutAspect } from "./layout";
 import { composeFireflyPrompt, validateKaartpakket } from "./schema";
 import { matchPhotoToCard, nummerBoundaryFalsePositive } from "./photoMatch";
 
-describe("layout", () => {
-  it("RESERVE 500 controlewaarden", () => {
+describe("layout goedgekeurd (DL15)", () => {
+  it("export gebruikt gemeten rijhoogtes", () => {
     const l = calculatePhotoLayout(500);
-    expect(l.u).toBe(11406);
-    expect(l.whiteRow).toBe(5133);
-    expect(l.photoZone).toBe(6273);
-    expect(l.reflectRow).toBe(1129);
-    expect(l.photoRow).toBe(5144);
-    expect(l.imageHeight).toBe(4990);
-    expect(l.aspectRatio).toBeCloseTo(1.68, 2);
+    expect(l.u).toBe(APPROVED_U);
+    expect(l.whiteRow).toBe(APPROVED_WHITE_ROW_AT_LEAST);
+    expect(l.photoRow).toBe(APPROVED_PHOTO_ROW_EXACT);
+    expect(l.reflectRow).toBe(APPROVED_REFLECT_ROW_EXACT);
+    expect(l.imageHeight).toBe(APPROVED_IMAGE_HEIGHT_TWIPS);
+    expect(l.aspectRatio).toBeCloseTo(8391 / 5202, 2);
   });
 
-  it("RESERVE 900 aspect ~1.74", () => {
-    const ratio = calculatePhotoLayoutAspect(900);
-    expect(ratio).toBeCloseTo(1.74, 2);
+  it("legacy formule wijkt >1% per rij af", () => {
+    const legacy = legacyFormulaLayout(500);
+    expect(percentDiff(legacy.whiteRow, APPROVED_WHITE_ROW_AT_LEAST)).toBeGreaterThan(1);
+    expect(percentDiff(legacy.photoRow, APPROVED_PHOTO_ROW_EXACT)).toBeGreaterThan(1);
+    expect(percentDiff(legacy.reflectRow, APPROVED_REFLECT_ROW_EXACT)).toBeGreaterThan(1);
+  });
+
+  it("aspect ratio fotocrop", () => {
+    const ratio = calculatePhotoLayoutAspect(500);
+    expect(ratio).toBeCloseTo(8391 / 5202, 2);
   });
 });
 

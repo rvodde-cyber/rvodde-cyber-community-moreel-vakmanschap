@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:golden": "vitest run src/lib/golden-dl15.test.ts"
+    "test:golden": "vitest run src/lib/golden-dl15.test.ts",
+    "measure:geometry": "node scripts/measure-card-geometry.mjs"
   },
   "dependencies": {
     "@fontsource/carlito": "^5.2.7",

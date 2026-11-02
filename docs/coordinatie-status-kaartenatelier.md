@@ -1,9 +1,9 @@
 # Statusregel — Coördinatie moreelvakmanschap.nl
 
-**Onderdeel:** Kaartenatelier fase 1b (open punten)  
+**Onderdeel:** Kaartenatelier fase 1c (kalibratie DL15)  
 **Datum:** 2-11-2026  
-**Status:** **Op branch `feat/kaartenatelier-app`** — PR #63 bijgewerkt, niet gemerged; Richard: Word-steekproef + golden DL15 lokaal met `KAARTENATELIER_REF_DL15`
+**Status:** **Op branch `feat/kaartenatelier-app`** — PR #63; layout A-kaart = gemeten DL15/Mgmt01/PS01 (4953/5363/1090); golden met `KAARTENATELIER_REF_DL15`
 
 **Statusregel (plakken in Coördinatie moreelvakmanschap.nl):**
 
-> **Kaartenatelier fase 1b:** Prompt-Word (`Firefly_prompts`, `Promptlijst`), export naar map met `_vorige versie JJJJ-MM-DD`, golden-test `npm run test:golden`, canvas-witzonewaarschuwing, `foto_bestand`-bevestiging in UI. Zelfde PR #63 (`feat/kaartenatelier-app`). Geen AI; alleen `cmv-taal` in localStorage. Definitief na Richards Word-controle.
+> **Kaartenatelier fase 1c:** A-kaart rijhoogtes gekalibreerd op goedgekeurde Word (DL15, Management 01, PS01 — identiek). Constanten in `cardLayoutApproved.ts`; legacy 45/55-formule alleen ter vergelijking. LibreOffice-paginacheck in CI alleen als `soffice` beschikbaar. PR #63 open tot Richards Word-steekproef.

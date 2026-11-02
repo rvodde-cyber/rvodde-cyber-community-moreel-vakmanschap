@@ -1,8 +1,12 @@
 import {
-  PAGE_HEIGHT_TWIPS,
-  RESERVE_TWIPS,
-  STATUS_D,
-} from "./constants";
+  APPROVED_IMAGE_HEIGHT_TWIPS,
+  APPROVED_PHOTO_ROW_EXACT,
+  APPROVED_PHOTO_ZONE,
+  APPROVED_REFLECT_ROW_EXACT,
+  APPROVED_U,
+  APPROVED_WHITE_ROW_AT_LEAST,
+} from "./cardLayoutApproved";
+import { PAGE_WIDTH_TWIPS, RESERVE_TWIPS, STATUS_D } from "./constants";
 
 export type PhotoLayout = {
   u: number;
@@ -14,16 +18,15 @@ export type PhotoLayout = {
   aspectRatio: number;
 };
 
-export function calculatePhotoLayout(
-  reserveTwips = RESERVE_TWIPS
-): PhotoLayout {
-  const u = PAGE_HEIGHT_TWIPS - reserveTwips;
-  const whiteRow = Math.round(u * 0.45);
-  const photoZone = Math.round(u * 0.55);
-  const reflectRow = Math.round(photoZone * 0.18);
-  const photoRow = photoZone - reflectRow;
-  const imageHeight = Math.round(photoRow * 0.97);
-  const aspectRatio = imageHeight > 0 ? 8391 / imageHeight : 0;
+/** Layout voor status-A (met foto): goedgekeurde DL15-waarden, geen 45/55-formule. */
+export function calculatePhotoLayout(_reserveTwips = RESERVE_TWIPS): PhotoLayout {
+  const u = APPROVED_U;
+  const whiteRow = APPROVED_WHITE_ROW_AT_LEAST;
+  const photoRow = APPROVED_PHOTO_ROW_EXACT;
+  const reflectRow = APPROVED_REFLECT_ROW_EXACT;
+  const photoZone = APPROVED_PHOTO_ZONE;
+  const imageHeight = APPROVED_IMAGE_HEIGHT_TWIPS;
+  const aspectRatio = imageHeight > 0 ? PAGE_WIDTH_TWIPS / imageHeight : 0;
   return {
     u,
     whiteRow,
@@ -35,10 +38,9 @@ export function calculatePhotoLayout(
   };
 }
 
-export function calculatePhotoLayoutAspect(reserveTwips: number): number {
-  const { photoRow } = calculatePhotoLayout(reserveTwips);
-  const imageHeight = Math.round(photoRow * 0.97);
-  return 8391 / imageHeight;
+export function calculatePhotoLayoutAspect(_reserveTwips: number): number {
+  const { imageHeight } = calculatePhotoLayout();
+  return PAGE_WIDTH_TWIPS / imageHeight;
 }
 
 export function statusDLayout() {
