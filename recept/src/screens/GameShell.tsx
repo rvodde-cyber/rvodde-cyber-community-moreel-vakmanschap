@@ -1,4 +1,5 @@
 import { episodeContent } from '@data/episodes/content';
+import { tickerRegelsVoor } from '@data/episodes/tickerForEpisode';
 import { episodeMeta } from '@data/episodes/meta';
 import type { EpisodeId } from '@data/episodes/meta';
 import { PERIOD_THEMES } from '../../themes/periods';
@@ -7,6 +8,7 @@ import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { BriefjePanel } from '../components/BriefjePanel';
 import { ConceptDocentBanner } from '../components/ConceptDocentBanner';
+import { TijdgeestGeluidPanel } from '../components/TijdgeestGeluid';
 import { DashboardColumn } from '../components/DashboardColumn';
 import { FilmOverlay } from '../components/FilmOverlay';
 import { PeriodThemeScope } from '../components/PeriodThemeScope';
@@ -35,13 +37,18 @@ import { NabesprekingPhase } from './phases/NabesprekingPhase';
 import { VoorspelPhase } from './phases/VoorspelPhase';
 
 function Ticker({ state }: { state: GameUiState }) {
-  const items = roundDefFor(state).ticker;
-  const html = items
-    .map(([t, msg]) => `<span>${t === '!' ? '<b>▲</b>' : '<i>●</i>'}${msg}</span>`)
-    .join('');
+  const roundDef = roundDefFor(state);
+  const items = tickerRegelsVoor(state.episode, roundDef.ticker);
   return (
-    <div className="ticker" aria-live="off">
-      <div className="run" dangerouslySetInnerHTML={{ __html: html + html }} />
+    <div className="ticker" role="region" aria-label="Nieuwsband tijdgeest">
+      <div className="run">
+        {[...items, ...items].map(([t, msg], i) => (
+          <span key={`${i}-${msg}`}>
+            {t === '!' ? <b>▲</b> : <i>●</i>}
+            {msg}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }
@@ -196,7 +203,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
         </div>
       </header>
-      {showRoom && content.usesDemoBudget ? <Ticker state={state} /> : null}
+      {showRoom ? <Ticker state={state} /> : null}
       <div className="wrap">
         {showRoom ? <StepsNav phase={phase} /> : null}
         {showRoom ? (
@@ -226,6 +233,11 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
                   <DashboardColumn state={state} />
                 </section>
               </PeriodThemeScope>
+              <TijdgeestGeluidPanel
+                geluid={content.tijdgeest.geluid}
+                aan={state.tijdgeestGeluidAan}
+                onToggle={() => dispatch({ type: 'TOGGLE_TIJDGEEST_GELUID' })}
+              />
             </aside>
           </div>
         ) : null}

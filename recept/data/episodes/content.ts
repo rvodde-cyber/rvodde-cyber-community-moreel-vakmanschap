@@ -9,11 +9,12 @@ import { episodeMeta, type EpisodeId } from './meta';
 import { SKELETON_COLD } from '../skeleton/coldOpen';
 import { SKELETON_SLOTS, SKELETON_TRAILERS } from '../skeleton/film';
 import { A1_ROUNDS } from './a1Rounds';
+import { COLD_OPEN_EP1 } from './coldOpenEp1';
 import { SKELETON_ROUNDS } from '../skeleton/rounds';
 import { slotLineRonde1, slotLinesFinale } from '../slotLines';
 import type { ComputeResult } from '@engine/types';
 import type { DilemmaDef } from './dilemmaDef';
-import { COLD_OPEN_EP1 } from './coldOpenEp1';
+import { TIJDGEEST, type Tijdgeest } from './tijdgeest';
 
 export type ColdOpenDef = {
   place: string;
@@ -74,6 +75,8 @@ export type EpisodeContent = {
   usesDemoBudget: boolean;
   tussenKaart?: EpisodeTussenKaart;
   pauzeKaart?: EpisodePauzeKaart;
+  /** Sfeerlaag per periode — docs/TIJDGEEST.md */
+  tijdgeest: Tijdgeest;
 };
 
 function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
@@ -92,6 +95,7 @@ function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
     titelByRound: { 1: meta.titel },
     kick: meta.kick,
     usesDemoBudget: false,
+    tijdgeest: TIJDGEEST[ep],
   };
 }
 
@@ -137,6 +141,7 @@ const EPISODE_1_CONTENT: EpisodeContent = {
     liveLabel: 'EINDE AFLEVERING 1',
     intro: 'De scène is voorbij. Neem de tijd voor deze vragen voordat jullie verder gaan.',
   },
+  tijdgeest: TIJDGEEST[1],
 };
 
 const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
@@ -170,6 +175,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   kick: episodeMeta(4).kick,
   usesDemoBudget: true,
   tussenKaart: EPISODE_4_TUSSEN,
+  tijdgeest: TIJDGEEST[4],
 };
 
 export const EPISODE_CONTENT: Record<EpisodeId, EpisodeContent> = {

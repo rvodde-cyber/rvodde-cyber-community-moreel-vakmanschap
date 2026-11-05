@@ -57,6 +57,7 @@ export type GameAction =
   | { type: 'END_FILM' }
   | { type: 'START_ROUND_2' }
   | { type: 'SET_GOK'; id: string }
+  | { type: 'TOGGLE_TIJDGEEST_GELUID' }
   | { type: 'START_EPISODE'; episode: import('@data/episodes/meta').EpisodeId }
   | { type: 'SET_OPVOLGING'; keuze: import('@data/opvolging').OpvolgingKeuze }
   | { type: 'EXIT_TO_HOME' }
@@ -424,6 +425,8 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     }
     case 'SET_GOK':
       return { ...state, gok: action.id };
+    case 'TOGGLE_TIJDGEEST_GELUID':
+      return { ...state, tijdgeestGeluidAan: !state.tijdgeestGeluidAan };
     case 'TICK': {
       if (!state.timerOn || state.tLeft <= 0) return state;
       if (state.phase !== 'onderzoek' && state.phase !== 'besluit') return state;

@@ -113,6 +113,7 @@ export function freshEpisode(episode: EpisodeId): GameUiState {
     interventieMeters: usesInterventieMotor(episode)
       ? initialInterventieMeters(episode as Exclude<EpisodeId, 4>)
       : null,
+    tijdgeestGeluidAan: false,
     filmKind: null,
     gok: null,
   };

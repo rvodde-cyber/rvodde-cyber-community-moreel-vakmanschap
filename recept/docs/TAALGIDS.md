@@ -59,6 +59,8 @@ Boodschap: mensen willen vrij en willen gezien worden.
 5. Past de zin bij het personage (sectie 3)?
 6. Wie wordt er bij naam genoemd en wie niet? Is dat bewust?
 
+**Tijdgeest-ticker** (grapjes in de nieuwsband, geen dialoog): letterlijke teksten in **`docs/TIJDGEEST.md`**, zelfde toon als deze gids (warm, niet spottend over mensen).
+
 ## Bronnen
 
 Greiner, L. E. (1972). Evolution and revolution as organizations grow. Harvard Business Review, 50(4), 37–46.

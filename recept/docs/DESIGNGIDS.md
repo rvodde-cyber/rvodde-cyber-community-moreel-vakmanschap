@@ -53,6 +53,8 @@ Bron: `src/audio/sfx.ts` (Web Audio API, lazy `AudioContext`).
 
 Trailer-scripts roepen geluid aan via `FilmOverlay.tsx` + `filmResolve.ts` (o.a. `trailer-r1`, `trailer-r2`). Geen videobestanden; alles in-browser.
 
+**Tijdgeest (optioneel, per aflevering):** sfeergeluid los van de motor — register `data/episodes/tijdgeest.ts`, UI `TijdgeestGeluid.tsx`, teksten en regels in **`docs/TIJDGEEST.md`**. Standaard uit; checklist **`docs/GELUID-CHECK.md`**.
+
 ## 5. Componenten
 
 | Bestand | Functie |
@@ -74,6 +76,7 @@ Trailer-scripts roepen geluid aan via `FilmOverlay.tsx` + `filmResolve.ts` (o.a.
 | `SannePanel.tsx` | Sanne-inhoud waar gekoppeld |
 | `SceneBackground.tsx` | Beeld uit `beeldenCheck` / silhouet |
 | `StepsNav.tsx` | Fasenstappen in controlekamer |
+| `TijdgeestGeluid.tsx` | Optioneel sfeergeluid tijdgeest (aan/uit, tekstalternatief) |
 | `TaskBar.tsx` | Opdrachtbalk boven fase-inhoud |
 | `modals/GlossaryModal.tsx` | Begrippen |
 | `modals/HowItWorksModal.tsx` | Hoe het werkt |
@@ -108,7 +111,9 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 
 \* `playMode` in `meta.ts` blijft `skeleton` tot checklist „full”; spelregister heeft wel interventiemotor voor A1.
 
-**Register (A1 stap 1, 3 nov 2026):** `data/episodes/content.ts` — `EPISODE_CONTENT` per aflevering (rondes, cold open, dilemma, slotlijnen, film). Spelcode leest via `episodeContent(episode)`; `isFullEpisode(ep)` = register heeft 2 rondes + dilemma + slotlijnen. UI-label **skelet** blijft `playMode` in `meta.ts`.
+**Register (A1 stap 1, 3 nov 2026):** `data/episodes/content.ts` — `EPISODE_CONTENT` per aflevering (rondes, cold open, dilemma, slotlijnen, film, **`tijdgeest`**). Spelcode leest via `episodeContent(episode)`; `isFullEpisode(ep)` = register heeft 2 rondes + dilemma + slotlijnen. UI-label **skelet** blijft `playMode` in `meta.ts`.
+
+**Tijdgeestlaag (5 nov 2026):** ticker (header + skeleton), optioneel geluid en rekwisieten — **`docs/TIJDGEEST.md`**. Weergave ticker: `tickerRegelsVoor()` (A4: demo-ticker uit `rounds.ts` + tijdgeest; overige afleveringen alleen tijdgeest). Geen effect op meters of motor.
 
 ## 8. Open ontwerpvragen voor Richard
 

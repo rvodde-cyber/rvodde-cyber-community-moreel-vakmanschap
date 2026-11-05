@@ -39,6 +39,28 @@ Toelichting I1–I3/I5: beeld nog niet aangeleverd; check op klassieke arbeiders
 
 Richard zet `akkoordRichard: true` in `data/beeldenCheck.ts` en levert WebP in `public/portretten/` of `public/beelden/`.
 
+## Tijdgeest — Renault 5 en rekwisieten (5 nov 2026)
+
+Bron prompts: **`docs/TIJDGEEST.md`**. Bestanden: `public/beelden/<code>.webp`. Rekwisieten in de UI pas wanneer beeld akkoord is of past bij bestaande achtergrond; tot die tijd alleen documentatie.
+
+| Code | Omschrijving | Status app | Akkoord |
+| --- | --- | --- | --- |
+| RENAULT-84 | Rode Renault 5 bij schuur, kratten achterbank | Nog geen asset | **nee** |
+| RENAULT-96 | Zelfde auto, roestig, industrieterrein | Nog geen asset | **nee** |
+| RENAULT-09 | Klassieker op parkeerterrein fabriek | Nog geen asset | **nee** |
+| RENAULT-26 | Elektrische retro-hatchback bij dronefabriek | Nog geen asset | **nee** |
+| RENAULT-36 | Oude rode 5 in glazen vitrine lobby | Nog geen asset | **nee** |
+| REKW-84-CASSETTE | Cassetterecorder met handgeschreven label | Nog geen asset | **nee** |
+| REKW-84-TELEFOON | Telefoon met draaischijf | Nog geen asset | **nee** |
+| REKW-96-PC | Beige jaren-90 pc + semafoon (apart REKW-96-SEMAFOON) | Nog geen asset | **nee** |
+| REKW-96-SEMAFOON | Semafoon op bureau | Nog geen asset | **nee** |
+| REKW-09-BLACKBERRY | BlackBerry | Nog geen asset | **nee** |
+| REKW-09-HYVES | Pc met sociaal netwerk open (generiek, geen logo) | Nog geen asset | **nee** |
+| REKW-09-WII | Spelconsole pauzeruimte | Nog geen asset | **nee** |
+| REKW-26-PADEL | Padelbaan naast fabriek | Nog geen asset | **nee** |
+| REKW-26-SMARTWATCH | Smartwatch (detail) | Nog geen asset | **nee** |
+| REKW-36-BEZORG | Zelfrijdende bezorgwagen laaddock | Nog geen asset | **nee** |
+
 ## WCAG
 
 Alt-teksten zijn Nederlands en beschrijvend, zonder herkomstlabels (WCAG 2.2, zie voorstel §9).

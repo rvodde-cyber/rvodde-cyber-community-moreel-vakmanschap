@@ -77,6 +77,8 @@ export interface GameUiState {
   hidden: HiddenMetersState;
   /** Voortgang zichtbare/verborgen meters in interventiemotor (per aflevering) */
   interventieMeters: InterventieMeterState | null;
+  /** Tijdgeest-geluid (optioneel); standaard uit */
+  tijdgeestGeluidAan: boolean;
   filmKind: FilmKind | null;
   gok: string | null;
 }
