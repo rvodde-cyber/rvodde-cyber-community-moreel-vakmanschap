@@ -1,6 +1,8 @@
-import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
+import { episodeContent } from '@data/episodes/content';
+import { episodeMeta } from '@data/episodes/meta';
 import { PERIOD_THEMES } from '../../themes/periods';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
+import { BriefjePanel } from '../components/BriefjePanel';
 import { ConceptDocentBanner } from '../components/ConceptDocentBanner';
 import { DashboardColumn } from '../components/DashboardColumn';
 import { FilmOverlay } from '../components/FilmOverlay';
@@ -11,6 +13,7 @@ import { MessageToastHost } from '../components/MessageToast';
 import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
 import { useMessageDelivery } from '../hooks/useMessageDelivery';
 import { engineContext } from '../game/budgetUi';
+import { showBriefjePanel, showPhonePanel } from '../game/commPanel';
 import { resolveFilmScript } from '../game/filmResolve';
 import { roundDefFor } from '../game/roundSource';
 import type { GameAction } from '../game/gameReducer';
@@ -58,13 +61,16 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
   useMessageDelivery(state, dispatch);
   const ctx = engineContext(state);
   const meta = episodeMeta(state.episode);
+  const content = episodeContent(state.episode);
   const D = roundDefFor(state);
-  const budget = isFullEpisode(state.episode) ? budgetOf(round, ctx) : budgetOfDef(D, round, ctx);
+  const budget = content.usesDemoBudget ? budgetOf(round, ctx) : budgetOfDef(D, round, ctx);
   const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
   const film = state.filmKind ? <FilmLayer state={state} dispatch={dispatch} /> : null;
-  const dashTitle = isFullEpisode(state.episode)
+  const dashTitle = content.usesDemoBudget
     ? 'CONTROLEKAMER'
     : PERIOD_THEMES[meta.periodKey].dashboardLabel.toUpperCase();
+  const multiRound = content.roundCount === 2;
+  const dilemmaDef = content.dilemma;
 
   if (phase === 'intro') {
     return (
@@ -146,7 +152,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
             <p className="mark">RECEPT</p>
             <p className="sys">
               Aflevering {state.episode} /{' '}
-              {isFullEpisode(state.episode) ? (
+              {multiRound ? (
                 <>
                   <b>Ronde {round} van 2</b> / {D.label}
                 </>
@@ -159,7 +165,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
           <div className="clocks">
             <span className="clock" id="clock">
-              {isFullEpisode(state.episode) ? (round === 2 ? 'DI' : 'MA') : ''} {meta.jaar} · 09:14
+              {content.usesDemoBudget ? (round === 2 ? 'DI' : 'MA') : ''} {meta.jaar} · 09:14
             </span>
             <button
               type="button"
@@ -182,7 +188,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
           </div>
         </div>
       </header>
-      {showRoom ? <Ticker state={state} /> : null}
+      {showRoom && content.usesDemoBudget ? <Ticker state={state} /> : null}
       <div className="wrap">
         {showRoom ? <StepsNav phase={phase} /> : null}
         {showRoom ? (
@@ -194,9 +200,14 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
               {phase === 'uitkomst' ? <UitkomstPhase state={state} dispatch={dispatch} /> : null}
             </main>
             <aside>
-              {isFullEpisode(state.episode) &&
-              (phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst') ? (
-                <PhonePanel state={state} dispatch={dispatch} />
+              {showPhonePanel(state) ? <PhonePanel state={state} dispatch={dispatch} /> : null}
+              {showBriefjePanel(state) && dilemmaDef ? (
+                <BriefjePanel
+                  def={dilemmaDef}
+                  state={state}
+                  dispatch={dispatch}
+                  periodKey={meta.periodKey}
+                />
               ) : null}
               <PeriodThemeScope periodKey={meta.periodKey}>
                 <section className="panel period-panel">

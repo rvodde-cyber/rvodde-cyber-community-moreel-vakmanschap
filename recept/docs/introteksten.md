@@ -6,7 +6,7 @@ Elke aflevering opent, net vóór de trailer, met een korte introtekst in drie v
 
 ## Aflevering 1 — Alles met de hand (1984)
 
-**Geschiedenis.** Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, tweeëntwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en drie buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.
+**Geschiedenis.** Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.
 
 **Uitdagingen.** Vanmiddag belde een inkoper van een supermarktketen. Tien keer het normale volume, te leveren over zes weken. Harrie wil meteen ja zeggen. Lies heeft het nog niet gehoord. Twee buren hebben zich ziek gemeld, en de schuur telt precies acht vierkante meter werkruimte.
 

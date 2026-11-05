@@ -10,7 +10,7 @@ export type IntroBlok = {
 export const INTRO_TEKSTEN: Record<1 | 2 | 3 | 4 | 5, IntroBlok> = {
   1: {
     geschiedenis:
-      'Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, tweeëntwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en drie buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.',
+      'Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.',
     uitdagingen:
       'Vanmiddag belde een inkoper van een supermarktketen. Tien keer het normale volume, te leveren over zes weken. Harrie wil meteen ja zeggen. Lies heeft het nog niet gehoord. Twee buren hebben zich ziek gemeld, en de schuur telt precies acht vierkante meter werkruimte.',
     hint: 'Kijk goed wie er aan tafel zit wanneer de grote beslissingen vallen, en wie daar straks niet bij was. Een schuur is klein, maar een handtekening kan er net zo groot in doorklinken als in een directiekamer.',

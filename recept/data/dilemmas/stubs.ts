@@ -6,12 +6,12 @@ export const DILEMMA_STUBS: DilemmaStub[] = [
   {
     id: 'ep1-frans',
     aflevering: 1,
-    status: 'concept',
+    status: 'goedgekeurd',
     titel: 'Het geheim van Frans',
     samenvatting:
       'Frans helpt in de schuur; Harrie hoort een gerucht over softdrugs en overweegt hem niet meer te vragen.',
     spanningsveld: 'Privéleven tegenover bedrijfswaarden.',
-    speelbaar: false,
+    speelbaar: true,
   },
   {
     id: 'ep2-ab',

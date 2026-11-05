@@ -18,6 +18,15 @@ Stijl: warm, rustig gestileerd illustratieportret in gouache-achtige vlakken, za
 
 Aanvullend (nodig voor berichten): `dennis.webp` man van 39, financieel/operationeel manager; `yasmin.webp` vrouw van 29, medewerker in de assemblage; `piotr.webp` man van 34, medewerker in de assemblage. Geef geen enkele rol een vaste achtergrond-aanduiding; laat herkomst buiten de prompt.
 
+## Aflevering 1 (1984) — aanvullende portretten
+
+| Bestand | Prompt (aanvullend op de stijlregel) |
+| --- | --- |
+| `harrie-1984.webp` | Man van 29 in 1984, vakman in schuur, kort haar, werkjas met paneermeel, warme blik, geen karikatuur. |
+| `lies-1984.webp` | Vrouw van 27 in 1984, keukentafel/kasboek-sfeer, eenvoudige kledij, vriendelijke nuchtere blik. |
+| `gerrit-1984.webp` | Man van 44, slager, witte slagersschort, kalme ervaren blik, 1984 kledij. |
+| `frans-1984.webp` | Jonge buurman, begin twintig, casual 1984 kledij, bandje-sfeer zonder drugsbeelden of stereotypen. |
+
 ## Controle na generatie
 
 1. Zijn de portretten onderling even prominent en even warm uitgewerkt?

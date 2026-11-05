@@ -1,5 +1,5 @@
 import { compute } from '@engine/compute';
-import { isFullEpisode } from '@data/episodes/meta';
+import { episodeContent } from '@data/episodes/content';
 import { TaskBar } from '../../components/TaskBar';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { engineContext } from '../../game/budgetUi';
@@ -13,8 +13,11 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
   const res = state.results[state.round];
   if (!res) return null;
 
-  if (!isFullEpisode(state.episode)) {
+  const content = episodeContent(state.episode);
+
+  if (!content.usesDemoBudget) {
     const D = roundDefFor(state);
+    const filmKind = state.round === 2 && content.roundCount === 2 ? 'finale' : 'slot-r1';
     return (
       <>
         <ConceptDocentBanner />
@@ -36,7 +39,7 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
         <button
           type="button"
           className="btn gold big"
-          onClick={() => dispatch({ type: 'PLAY_FILM', kind: 'slot-r1' })}
+          onClick={() => dispatch({ type: 'PLAY_FILM', kind: filmKind })}
         >
           Einde van dit deel
         </button>

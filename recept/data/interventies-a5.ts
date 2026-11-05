@@ -116,6 +116,13 @@ export const INTERVENTIES_A5: Interventie[] = [
     ethischRisico: 'controle neemt af; auditproblemen mogelijk.',
     uitkomsttekst: 'Het wordt rustiger op de gang. Een paar mensen missen hun formulier.',
     opvolging: 'Piotr en ploegleiders krijgen weer mandaat.',
+    echo: [
+      {
+        bron: 'demo-a4-H',
+        tekst:
+          'Het klinkt bekend: ook in aflevering 4 schrapten jullie regels. Nu gaat het over het hele conglomeraat, niet over één fabriek.',
+      },
+    ],
     bron: BRON,
   }),
   makeConceptInterventie({
@@ -134,7 +141,7 @@ export const INTERVENTIES_A5: Interventie[] = [
     opvolging: 'verbindt de lijnen van Harrie, Piotr en Lotte.',
     bron: BRON,
   }),
-];
+].map((i) => ({ ...i, status: 'definitief' as const, interventieDefinitief: true }));
 
 export const NABESPREKING_A5 = [
   {

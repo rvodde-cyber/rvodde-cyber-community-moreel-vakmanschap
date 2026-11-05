@@ -1,4 +1,4 @@
-import { isFullEpisode } from '@data/episodes/meta';
+import { episodeContent } from '@data/episodes/content';
 import type { EpisodeId } from '@data/episodes/meta';
 import { budgetOf, budgetOfDef, marcoBud, marcoBudFromPosten } from '@engine/helpers';
 import type { GameContext } from '@engine/types';
@@ -26,7 +26,9 @@ export function bcalc(state: GameUiState, r: RoundUiState, ctx: GameContext) {
   for (const p of D.posten) {
     po += r.bud[p.id] ?? 0;
   }
-  const left = (isFullEpisode(state.episode) ? budgetOf(state.round, ctx) : budgetOfDef(D, state.round, ctx)) - iv - po;
+  const content = episodeContent(state.episode);
+  const left =
+    (content.usesDemoBudget ? budgetOf(state.round, ctx) : budgetOfDef(D, state.round, ctx)) - iv - po;
   return { iv, po, left };
 }
 
@@ -38,6 +40,7 @@ export function vermoedenQ(state: GameUiState, vermId: string | null): number {
 
 export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
   const def = roundDefEpisode(episode, round);
+  const content = episodeContent(episode);
   return {
     acties: [],
     verm: null,
@@ -48,7 +51,7 @@ export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
     mot: '',
     minOn: false,
     min: '',
-    bud: isFullEpisode(episode) ? marcoBud(round) : marcoBudFromPosten(def.posten),
+    bud: content.usesDemoBudget ? marcoBud(round) : marcoBudFromPosten(def.posten),
     coldSub: 0,
     trailerDone: false,
     reacted: false,

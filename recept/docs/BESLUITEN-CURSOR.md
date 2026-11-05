@@ -1,5 +1,26 @@
 # Besluiten Cursor — Recept
 
+## 2026-11-03 — Aflevering 4 volgt demo (v6)
+
+**Besluit:** Aflevering 4 volgt de demo; kaarten **A–E** (ronde 1) en **F–J** (ronde 2) zijn de A4-interventies; Piotr loopt via begrotingspost **`piotr-vast`**; 4.x-lijst vervallen (3 november 2026).
+
+**Demokaartnamen (tekst ongewijzigd, bron `data/rounds.ts` / `referentie/demo-aflevering4-v6.html`):**
+
+| Ronde | Kaarten |
+| --- | --- |
+| 1 (A–E) | Vitaliteitsweek · Aanwezigheidsbonus · Flexkrachten · TEMPO-norm begrenzen · Coaching en extra ploegleider |
+| 2 (F–J) | Gewetensclausule · Defensie via TEMPO · Regels schrappen · Ploegleiders opleiden · Compliance-afdeling |
+
+Concept-data `a4-1-1` … `a4-2-4` gearchiveerd in `docs/_archief-oude-recept-map/interventies-a4-concept-VERVALLEN.ts`. Spelmotor en demo-gedrag niet gewijzigd.
+
+## 2026-11-03 — Ontwerpbesluit 13 herzien (twee ranglijsten)
+
+**Besluit:** Teams spelen tegelijk; na afloop staan twee ranglijsten naast elkaar (aandeelhouder: productiviteit, budget; organisatie: eerlijkheid, menselijke maat). De ranglijst is onderwerp van nabespreking; geen winnaar op één getal.
+
+**Reden:** Een enkele ranglijst beloont juist het gedrag dat het spel kritisch bekijkt. Door twee lijsten en reflectie in de nabespreking wordt de spanning expliciet gemaakt in plaats van weggemoffeld.
+
+**Docs:** `docs/overzicht.md` (regel 13), `docs/keuzes-en-dashboard.md` (voorheen „Geen ranglijst tussen teams”).
+
 ## 2026-10-29 — Stap 6 trailer, slot, pauze, ronde 2
 
 - `FilmOverlay` + Web Audio (`src/audio/sfx.ts`), trailers ronde 1/2, slot na ronde 1, finale na ronde 2 (`slotLine` uit referentie).

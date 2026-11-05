@@ -156,7 +156,7 @@ export const INTERVENTIES_A3: Interventie[] = [
     echo: ECHO_BONUS_KWALITEIT,
     bron: BRON,
   }),
-];
+].map((i) => ({ ...i, status: 'definitief' as const, interventieDefinitief: true }));
 
 export const NABESPREKING_A3 = [
   {

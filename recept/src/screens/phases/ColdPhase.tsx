@@ -1,7 +1,6 @@
-import { COLD_OPEN } from '@data/coldOpen';
 import { COLD_SCENE, INTRO_SCENE } from '@data/sceneCodes';
-import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
-import { SKELETON_COLD } from '@data/skeleton/coldOpen';
+import { episodeContent } from '@data/episodes/content';
+import { episodeMeta } from '@data/episodes/meta';
 import { SceneBackground } from '../../components/SceneBackground';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
@@ -10,12 +9,17 @@ import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 function coldBackground(state: GameUiState, round: 1 | 2) {
-  if (!isFullEpisode(state.episode)) {
-    const sc = COLD_SCENE[state.episode as keyof typeof COLD_SCENE];
-    return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
+  const content = episodeContent(state.episode);
+  const co = content.coldOpen[round] ?? content.coldOpen[1];
+  if (content.usesDemoBudget) {
+    const file = round === 1 ? 'T4' : 'R2';
+    return <SceneBackground checkCode={INTRO_SCENE[4].checkCode} fileCode={file} />;
   }
-  const file = round === 1 ? 'T4' : 'R2';
-  return <SceneBackground checkCode={INTRO_SCENE[4].checkCode} fileCode={file} />;
+  if (content.roundCount >= 2 && co?.img) {
+    return <SceneBackground checkCode={co.img} fileCode={co.img} />;
+  }
+  const sc = COLD_SCENE[state.episode as keyof typeof COLD_SCENE];
+  return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
 }
 
 export function ColdPhase({
@@ -28,18 +32,21 @@ export function ColdPhase({
   const { openHowto, openGloss } = useUiModals();
   const round = state.round;
   const roundUi = state.rounds[round];
-  const skeleton = !isFullEpisode(state.episode);
+  const content = episodeContent(state.episode);
   const meta = episodeMeta(state.episode);
-  const sb = skeleton ? SKELETON_COLD[state.episode as keyof typeof SKELETON_COLD] : COLD_OPEN[round];
+  const sb = content.coldOpen[round] ?? content.coldOpen[1];
+  const skeleton = content.roundCount === 1;
+  const multiRound = content.roundCount === 2;
   const head = (
     <>
       <div className="cine-bar t" />
       <div className="cine-bar b" />
     </>
   );
-  const epTitle = skeleton ? meta.titel : round === 1 ? 'Het dashboard liegt niet' : 'Wie tekent er eigenlijk?';
+  const epTitle =
+    content.titelByRound[round] ?? content.titelByRound[1] ?? meta.titel;
   const trailerKind = skeleton ? 'trailer-r1' : round === 1 ? 'trailer-r1' : 'trailer-r2';
-  const kick = skeleton ? meta.kick : `AFLEVERING 4 / RONDE ${round}`;
+  const kick = skeleton || !multiRound ? content.kick : `AFLEVERING ${state.episode} / RONDE ${round}`;
 
   if (!roundUi.trailerDone) {
     return (

@@ -1,68 +1,114 @@
 # Open vragen en aanleveringen
 
-Laatste update: **2 november 2026** (A2-interventies definitief).
+Laatste update: **3 november 2026** (fase 0 documentatie).
 
-## Besloten (2 nov 2026)
+## Besloten (2–3 nov 2026)
 
 | Onderwerp | Besluit |
 | --- | --- |
-| **Notatie** | Legenda in data + docs: `+`/`-` = richting meter; verzuim `-` gunstig; budget `-` = uitgave; `(later)` → `effectLater`. |
-| **A1 interventies** | Alle **8** kaarten **definitief**; velden compleet; niet aan spelmotor. |
-| **A2 interventies** | Alle **8** kaarten **definitief**; echo's ongewijzigd; velden compleet; niet aan spelmotor. |
-| **A1 1.4** | Naam **Flexkrachten inhuren voor piekdrukte** (was „Flexibele jongeren…”). |
-| **A1 2.2 / A2 2.2.2** | Bewuste bonus-echo + conditionele nabesprekingsvraag (alleen als `a1-2-2` én `a2-2-2` gekozen). |
-| **Piotr** | Geen interventie `a4-2-1`; contract alleen via begroting **`piotr-vast`** (≥ €25.000) + slotvariant 2031. Echo-bron `piotr-vast` toegestaan naast interventie-id's. |
+| **Fase 0** | `DESIGNGIDS.md` aangemaakt; jaartallen interventiedocs; **besluit 13** herzien (twee ranglijsten). |
+| **Besluit 13** | Twee ranglijsten na afloop; geen winnaar op één getal — zie `overzicht.md`, `keuzes-en-dashboard.md`, `BESLUITEN-CURSOR.md`. |
+| **A1 stap 1** | Register `EPISODE_CONTENT` / `episodeContent()`; refactor zonder gedragswijziging A4. |
+| **A1 stap 2** | Inhoud aflevering 1: cold opens, briefje-dilemma, slotscène, pauzekaart, UI `BriefjePanel`. |
+| **Notatie / interventies** | Zie eerdere regels A1–A5 definitief; A4 demo; echo `demo-a4-H` op `a5-2-3`. |
 
-## Aflevering 4 — conceptdata vs demo (`data/rounds.ts`, v6)
+## Jaartallen gecorrigeerd (fase 0, 3 nov 2026)
 
-De demo blijft leidend tot Richard beslist. **Kaartinterventies niet overschreven.** Ronde 2 heeft de begrotingspost **`piotr-vast`** voor de slotvariant 2031 (geen conceptkaart 4.2.1 meer).
+Canoniek: `data/episodes/meta.ts`, `docs/serieconcept.md` → **1984, 1996, 2009, 2026, 2036**.
 
-| Onderwerp | Demo (speelbaar) | Concept `data/interventies-a4.ts` |
-| --- | --- | --- |
-| Interventies per ronde | 5 kaarten (A–E / F–J) | 4 in r1; **3 in r2** (4.2.2–4.2.4) |
-| Setting / crisis ronde 1 | `leiderschapscrisis`, H2 2026 | Greiner coördinatie/bureaucratie, doc ±2031 |
-| Ronde 1 thema's | Vitaliteit, bonus, flex, TEMPO-plafond, coaching | Defensie-hal, civiele lijn, TEMPO AI, flexploeg |
-| Ronde 2 thema's | Gewetensclausule, Defensie via TEMPO, regels schrappen, ploegleiders, compliance | PILOT, admin verlagen, gewetens-loket (+ begroting Piotr) |
-| Piotr in dienst | Onderzoeksactie + begroting `piotr-vast` + slotvariant | Zelfde lijn; geen dubbele kaart in conceptdata |
-| Nabespreking ep4 | Piotr-vragen in `nabespreking-ep4.ts` (deels definitief) | A4-interventienabespreking ook in `NABESPREKING_A4` (concept) |
-
-Richard: sync demo ↔ serieconcept of demo houden (standaard: demo geldt).
-
-## Notatie — resterende afwijkingen bron-md vs data (niet automatisch gecorrigeerd)
-
-| Id / bron | Afwijking |
+| Bestand | Regel (oud → nieuw) |
 | --- | --- |
-| **A1 1.1** | Bron-md §1.1: verloop `(later)` als `-`; data: direct `verloop -`, `effectLater.verloop +` (besloten). |
-| **A1 2.2** | Bron-md §2.2: verzuim `(later) +`; data: direct `verzuim -`, `effectLater.verzuim +` (presenteïsme, besloten). |
-| **A2 2.2.4** | Bron-md: verzuim `-`(later); data: `effect.verzuim 0`, `effectLater.verzuim -` (zelfde bedoeling, andere opsplitsing). |
-| **A4 4.2.1** | Bron-md beschrijft nog kaart Piotr; data/demo: alleen `piotr-vast` (besloten). |
-| **Diverse `(later)`** | In md soms op `bud` of `verl`; in data soms alleen in `effectLater` — inhoudelijk te checken bij kalibratie. |
+| `docs/INTERVENTIES-AFLEVERING-1-29-10-2026.md` | Setting: „ongeveer **2016** … aflevering 4 eindigt in 2031” → „**1984** (jaartallen: meta.ts, serieconcept.md)”. |
+| `docs/INTERVENTIES-AFLEVERING-1-29-10-2026.md` | Open vraag 2: „Jaartal … **2016**” → **vervallen**; canon **1984**. |
+| `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md` | Inhoud §2: „± **2021**” → **1996**. |
+| `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md` | Inhoud §3: „± **2026**” → **2009**. |
+| `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md` | Inhoud §4: „± **2031**” → **2026**. |
+| `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md` | Inhoud §5: „± **2036**” → **2036** (± verwijderd). |
+| `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md` | Koppen §2–§5: jaartal **1996 / 2009 / 2026 / 2036** toegevoegd (inhoudsopgave was al gecorrigeerd). |
+
+*Interventieteksten, effecten en id’s ongewijzigd.*
+
+## A1 — slotLineA1 en spelmotor (stap 3)
+
+Aflevering 1 gebruikt nog **skeleton-kaarten** (`SKELETON_ROUNDS[1]`). `slotLineA1(gekozen)` telt nu op **interventie-id’s** (`a1-1-4`, `a1-2-2`, `a1-2-3`); de film gebruikt `state.rounds[1|2].cards` tot echte A1-interventies aan de motor hangen (stap 3).
+
+## A4-verwijzingen na besluit demo leidend
+
+Richard: kies per regel welke **demokaart** (A–J) de bedoeling dekt. Echo's naar **A1–A3** niet wijzigen tenzij apart besloten.
+
+### `data/interventies-a2.ts`
+
+| Regel / veld | Verwijzing | Opmerking |
+| --- | --- | --- |
+| `a2-1-4` · `opvolging` | „bevordert anoniem flexwerk **(A4)**” | Demokaart? **C — Flexkrachten** |
+| `a2-2-1` · `opvolging` | „Joost … **(A3, A4)**” | Algemeen; geen 4.x-id |
+
+### `data/interventies-a3.ts`
+
+| Regel / veld | Verwijzing | Opmerking |
+| --- | --- | --- |
+| `a3-1-3` · `opvolging` | „spanning met oudgedienden in **A4**” | Geen 4.x-id |
+| `a3-1-4` · `opvolging` | „vertrouwen op dat **A4** nodig heeft” | Geen 4.x-id |
+| `a3-1-2` · `opvolging` | „voorloper van TEMPO en **PILOT**” | Concept **4.2.2 PILOT** vs demo **G — Defensie via TEMPO** / PILOT-advies in UI |
+| `a3-2-2` · `opvolging` | „bereidt AI-aansturing in **A4** voor” | Geen 4.x-id |
+
+### `docs/_archief-oude-recept-map/interventies-a4-concept-VERVALLEN.ts` (niet importeren)
+
+| Id | Nummer | Naam (concept) | Echo's (alleen in archief) |
+| --- | --- | --- | --- |
+| `a4-1-1` | 4.1.1 | Beveiligde Defensie-afdeling | — |
+| `a4-1-2` | 4.1.2 | Civiele dronelijn | — |
+| `a4-1-3` | 4.1.3 | TEMPO invoeren (AI-planning) | — |
+| `a4-1-4` | 4.1.4 | Flexploeg opschalen | `a1-1-4`, `a2-1-4` (flex-echo's; demo: **C — Flexkrachten**) |
+| `a4-2-2` | 4.2.2 | PILOT (AI-prestatiemonitor) | — |
+| `a4-2-3` | 4.2.3 | Administratielast verlagen | — |
+| `a4-2-4` | 4.2.4 | Gewetensbezwaar-loket | vs demo **F — Gewetensclausule** |
+| `a4-nb-1` … `a4-nb-12` | — | Nabespreking concept-lijst | Speelbaar: `data/nabespreking-ep4.ts` (`ep4-nb-*`) |
+
+### `docs/INTERVENTIES-AFLEVERING-2-T-M-5-29-10-2026.md`
+
+- § structuur: uitzondering „A4 ronde 2 = 3 interventies” — **verouderd** (demo: 5+5).
+- §4 volledige teksten **4.1.1–4.2.4** en koppelingen (flex → Piotr, gewetens-loket 4.2.4, Piotr 4.2.1, PILOT 4.2.2, enz.).
+- §7 addendum test (d) naar **4.2.1** — verouderd.
+
+### Overige docs (historisch / context)
+
+| Bestand | Verwijzing |
+| --- | --- |
+| `docs/OPEN-VRAGEN.md` (vorige secties) | Tabel demo vs `interventies-a4.ts`, **4.2.1**, a4-2-1 |
+| `docs/VOORTGANG.md` (eerdere regels) | a4-2-1, drie interventies r2 |
+| `docs/claude-outputs/recept-stand-van-zaken-02-11-2026.md` | 4.2.1, drie kaarten r2 |
+| `docs/prompts/CURSOR-PROMPT-BESLUITEN-INTERVENTIES-01-11-2026.md` | 4.2.1, a4-2-1, 4.2.2–4.2.4 |
+| `docs/prompts/CURSOR-PROMPT-A4-DEMO-LEIDEND-03-11-2026.md` | Beschrijft deze migratie |
+
+### Contentstatus A4-kaarten (punt 5)
+
+- `data/contentStatus.ts`: status **`definitief`** geldt voor **scènes**, niet voor demokaarten.
+- `data/rounds.ts` / `interventionCardSchema`: optioneel veld `status: 'concept' \| 'goedgekeurd'` — **niet** gezet op de tien kaarten; geen `definitief` per kaart toegevoegd (Richard's akkoord = demo zelf, geen extra veld).
 
 ## Wat op Richard wacht
 
 | Onderwerp | Status |
 | --- | --- |
-| **Live deploy** | https://recept-k8m3n7p2.netlify.app/ |
-| **Wachtwoord URL** | Niet geconfigureerd (betaald). |
-| **Piotr-lijn** | Scènes + varianten **definitief**; student ziet intro, privébericht, testament + één variant (finale / voorspel). **`a4r2-keuze-contract`** blijft concept. |
-| **Nabespreking A1 + A2** | Nog **concept** (incl. conditionele Wegen-vraag A2 in `data/interventies-a2.ts`). |
-| **`interventieDefinitief` A3–A5** | Nog **false** — akkoord per aflevering gewenst. |
-| **Sanne / overige nabespreking** | Nog `concept` (behalve één handelenvraag definitief). |
-| **Beelden** | Geen akkoord — zie `BEELDEN-CHECK.md`. |
-| **Sanne toon** | Standaard A; B via docent-schakelaar. Contract ja/nee nog niet aan motor. |
-| **Interventies kalibratie** | A3–A5: 23 concept-items; niet aan spelmotor. |
+| **A1 stap 3** | Koppeling interventies A1 aan spelmotor; `slotLineA1` op echte keuzes; twee rondes met eigen budget/onderzoek |
+| **Bouw A1–A3 + A5 → full** | Checklist `DESIGNGIDS.md` §7 |
+| **Zichtbare timer** | `.timer.low`, time-out, docentgebeurtenissen |
+| **Vergelijkscherm v1** | teamExport-import, twee ranglijsten (`LATER.md`, `BOUWPLANNING.md`) |
+| **Regiekamer v2** | Sync, auth, AVG |
+| **Nabespreking A1 t/m A5** | Nog **concept** |
+| **A4-verwijzingen** | Mapping concept → demokaart A–J |
+| **Sanne / overige nabespreking** | Nog `concept` |
+| **Beelden** | Geen akkoord — `BEELDEN-CHECK.md` |
 
-## Inhoud ingelezen (concept)
+## Inhoud ingelezen
 
-- `data/interventies-a3.ts` … `a5.ts` + `data/interventies/all.ts`
-- `data/interventies-a1.ts` / `a2.ts` — interventies **definitief**; nabespreking **concept**
-- Echo's + `echoTekstenVoorGekozenInterventies` (bonus-lijn)
-- `data/sanne.ts` (reactie contract × toon, slot ep4, onthulling ep5)
-- Sanne-vragen → `nabespreking-ep4.ts`
-- Greiner → `greinerCrisisEp4` (niet aan motor)
+- `data/interventies-a1.ts` … `a5.ts` + `data/interventies/all.ts` (32 items, A1–A3 + A5 definitief)
+- **A4:** `data/rounds.ts` + `referentie/demo-aflevering4-v6.html`
+- Echo's A1–A3, A5 (`demo-a4-H`) + `echoTekstenVoorGekozenInterventies`
+- Piotr-lijn, `nabespreking-ep4.ts`, Sanne-data — ongewijzigd in deze taak
 
 ## Technisch
 
-- Tests: **47** (incl. piotrSpel, piotrVariant, contentStatus, interventie-besluiten, A1/A2-definitief)
+- Tests: zie `npm test` (incl. `episodeContent.test.ts`)
 - Golden-suite zevendeling `spelmotor.md`: nog open
-- Multiplayer: bewust niet v1
+- Multiplayer v1/v2: zie `LATER.md` (vergelijkscherm, daarna regiekamer)

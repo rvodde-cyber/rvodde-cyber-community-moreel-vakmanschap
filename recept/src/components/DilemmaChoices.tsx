@@ -1,14 +1,15 @@
-import { DILEMMA_EP4_PIOTR, type DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
+import type { DilemmaDef, DilemmaKeuze } from '@data/episodes/dilemmaDef';
 import type { DilemmaState } from '../game/uiTypes';
 
 type Props = {
+  def: DilemmaDef;
   dilemma: DilemmaState;
   onChoice: (c: DilemmaKeuze) => void;
   onText: (t: string) => void;
   onConfirm: () => void;
 };
 
-export function DilemmaChoices({ dilemma, onChoice, onText, onConfirm }: Props) {
+export function DilemmaChoices({ def, dilemma, onChoice, onText, onConfirm }: Props) {
   const { choice, text, done } = dilemma;
   if (done) {
     const lbl = {
@@ -33,7 +34,7 @@ export function DilemmaChoices({ dilemma, onChoice, onText, onConfirm }: Props) 
   return (
     <>
       <div className="dbtns">
-        {DILEMMA_EP4_PIOTR.keuzes.map((k) => (
+        {def.keuzes.map((k) => (
           <button
             key={k.id}
             type="button"

@@ -1,4 +1,5 @@
-import { episodeMeta, isFullEpisode } from '@data/episodes/meta';
+import { episodeContent } from '@data/episodes/content';
+import { episodeMeta } from '@data/episodes/meta';
 import { INTRO_TEKSTEN } from '@content/intros.nl';
 import { startOf } from '@engine/startOf';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
@@ -18,8 +19,9 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
   const { openHowto, openGloss, openSettings } = useUiModals();
   const round = state.round;
   const ctx = engineContext(state);
+  const content = episodeContent(state.episode);
 
-  if (!isFullEpisode(state.episode) && round === 1) {
+  if (!content.usesDemoBudget && round === 1) {
     const meta = episodeMeta(state.episode);
     const intro = INTRO_TEKSTEN[state.episode];
     const sc = INTRO_SCENE[state.episode];
@@ -55,7 +57,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     );
   }
 
-  if (round === 2) {
+  if (content.usesDemoBudget && round === 2) {
     const notes = startOf(2, ctx).notes;
     return (
       <div className="cine">
@@ -98,6 +100,29 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
               jullie in ronde 1 hebben gekozen, werkt door in deze ronde. Jullie hebben weer ongeveer tien minuten.
             </p>
           </div>
+          <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
+            Verder
+          </button>
+          <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
+        </div>
+      </div>
+    );
+  }
+
+  if (!content.usesDemoBudget && round === 2) {
+    const meta = episodeMeta(state.episode);
+    const sc = INTRO_SCENE[state.episode];
+    return (
+      <div className="cine">
+        <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />
+        <div className="cine-shade" />
+        <div className="cine-in">
+          <p className="kick">{meta.kick} / RONDE 2</p>
+          <p className="ep">{meta.titel}</p>
+          <p className="body">
+            Drie weken later. Tussen de pagina&apos;s van het kasboek zit een briefje van Lies. Jullie beslissen wat
+            jullie ermee doen, zonder Frans in de schuur te laten merken wat er speelt.
+          </p>
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
           </button>

@@ -18,7 +18,7 @@ Status: **concept**. Alle interventies blijven achter `interventieDefinitief = f
 
 ## 1. Uitgangspunten en standaardkeuzes
 
-- Aflevering 1 speelt in de schuur in Berkel-Enschot, ongeveer 2016 (aanname: vijfjarige sprongen, aflevering 4 eindigt in 2031). Een kleine groep medewerkers, Harrie als oprichter, de zus (de speler) op de achtergrond.
+- Aflevering 1 speelt in de schuur in Berkel-Enschot, **1984** (jaartallen: `data/episodes/meta.ts`, `docs/serieconcept.md`). Een kleine groep medewerkers, Harrie als oprichter, de zus (de speler) op de achtergrond.
 - Greiner-crisis: **leiderschapscrisis**. Het bedrijf is gegroeid op creativiteit en persoonlijke inzet van Harrie; dat houdt het niet meer vol.
 - Het MT kiest **twee interventies per ronde**, in totaal vier in aflevering 1. Elke ronde heeft vier interventies, zodat er altijd keuze en afwegen is.
 - Thema's die aan bod komen: verzuim, verloop, demotivatie, leiderschapsstijl, zeggenschap.
@@ -175,7 +175,7 @@ Rondeopening: de eerste drukte is voorbij, maar niet iedereen blijft. Wat houdt 
 ## 8. Open vragen met standaardantwoord
 
 1. **Twee interventies per ronde, vier per ronde beschikbaar.** Klopt? *Standaard: ja.*
-2. **Jaartal aflevering 1 is 2016.** *Standaard: ja, of laten vallen in de spelertekst.*
+2. **Vervallen (3 nov 2026):** open vraag „Jaartal aflevering 1 is 2016”. Canoniek jaartal is **1984** (`data/episodes/meta.ts`, `docs/serieconcept.md`).
 3. **Interventie 2.4 (de zus toont zich) opnemen.** *Standaard: ja.*
 4. **Kosten alleen als categorie.** *Standaard: ja, kalibratie later.*
 

@@ -657,3 +657,29 @@ select:focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 2px;
 }
+
+.briefje-panel .briefje-sheet {
+  background: var(--briefje-bg, var(--panel));
+  color: var(--briefje-ink, var(--ink));
+  border: 1px solid color-mix(in srgb, var(--briefje-accent, var(--gold)) 35%, transparent);
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.12);
+  padding: 18px 20px 22px;
+  margin: 8px 0 12px;
+  transform: rotate(-1.2deg);
+  max-width: 100%;
+}
+.briefje-van {
+  font-size: 13px;
+  color: var(--briefje-muted, var(--soft));
+  margin: 0 0 10px;
+}
+.briefje-body {
+  font-family: 'Segoe Script', 'Bradley Hand ITC', 'Lucida Handwriting', cursive;
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+.briefje-keuzes .lab {
+  display: block;
+  margin-bottom: 6px;
+}

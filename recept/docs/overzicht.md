@@ -20,7 +20,7 @@ Recept is een HR-businessgame in de vorm van een dramaserie: een MT stuurt het f
 | 10 | Begrotingstafel van € 1,5 miljoen per ronde, met Marco's vooringevulde begroting |
 | 11 | HR-kosten in euro's (verzuim, werving, inwerken, lage motivatie); een ronde is een halfjaar |
 | 12 | Het dashboard heeft per tijdperk een eigen vorm; aflevering 4 is de controlekamer van TEMPO |
-| 13 | Geen ranglijst tussen teams |
+| 13 | Teams spelen tegelijk; aan het eind staan twee ranglijsten naast elkaar: wat de aandeelhouder ziet (productiviteit, budget) en wat de organisatie voelt (eerlijkheid, menselijke maat). De ranglijst zelf is het onderwerp van de nabespreking; er is geen winnaar op één getal. Besluit 3 november 2026, vervangt „geen ranglijst tussen teams”. |
 | 14 | Lichte webversie die ook op een oudere iPad werkt |
 | 15 | Ontwikkeld in eigen tijd en op eigen initiatief (vakantieweek oktober 2026) |
 | 16 | Elke ronde opent met een trailer van bewegende stilstaande beelden in de browser |

@@ -15,11 +15,20 @@ import {
 } from '@data/interventies/display';
 import { INTERVENTIES_A1, NABESPREKING_A1 } from '@data/interventies-a1';
 import { INTERVENTIES_A2, NABESPREKING_A2 } from '@data/interventies-a2';
-import { interventiesBeschikbaarPerRonde, KEUZES_PER_RONDE, type Interventie } from '@data/interventies/types';
+import { INTERVENTIES_A3, NABESPREKING_A3 } from '@data/interventies-a3';
+import { INTERVENTIES_A5, NABESPREKING_A5 } from '@data/interventies-a5';
+import { ROUNDS } from '@data/rounds';
+import {
+  ECHO_BRON_DEMO_KAARTEN_IDS,
+  interventiesBeschikbaarPerRonde,
+  KEUZES_PER_RONDE,
+  type Interventie,
+} from '@data/interventies/types';
 
 describe('interventies data', () => {
-  it('bundle laadt 39 interventies (8×5 minus Piotr-kaart 4.2.1)', () => {
-    expect(ALL_INTERVENTIES).toHaveLength(39);
+  it('bundle laadt 32 interventies (8×4: A1–A3 + A5; A4 via demo rounds.ts)', () => {
+    expect(ALL_INTERVENTIES).toHaveLength(32);
+    expect(ALL_INTERVENTIES.some((i) => i.episode === 4)).toBe(false);
   });
 
   it('faalt als interventieDefinitief true zonder volledige velden', () => {
@@ -63,13 +72,41 @@ describe('interventies data', () => {
     expect(met[0]).toContain('schuur');
   });
 
-  it('A4 ronde 2 heeft precies drie interventies, maximaal twee kiesbaar', () => {
-    expect(interventiesBeschikbaarPerRonde(4, 2)).toBe(3);
+  it('A4 demo: rounds.ts heeft per ronde vijf kaarten met de goedgekeurde namen', () => {
+    const r1 = ROUNDS[1].cards.map((c) => c.t);
+    expect(r1).toEqual([
+      'Vitaliteitsweek',
+      'Aanwezigheidsbonus',
+      'Flexkrachten',
+      'TEMPO-norm begrenzen',
+      'Coaching en extra ploegleider',
+    ]);
+    const r2 = ROUNDS[2].cards.map((c) => c.t);
+    expect(r2).toEqual([
+      'Gewetensclausule',
+      'Defensie via TEMPO',
+      'Regels schrappen',
+      'Ploegleiders opleiden',
+      'Compliance-afdeling',
+    ]);
+    expect(ROUNDS[1].contra).toEqual([
+      ['B', 'D'],
+      ['B', 'E'],
+    ]);
+    expect(ROUNDS[2].contra).toEqual([
+      ['H', 'J'],
+      ['F', 'G'],
+    ]);
     expect(KEUZES_PER_RONDE).toBe(2);
-    const r2 = ALL_INTERVENTIES.filter((i) => i.episode === 4 && i.ronde === 2);
-    expect(r2).toHaveLength(3);
-    expect(r2.map((i) => i.id).sort()).toEqual(['a4-2-2', 'a4-2-3', 'a4-2-4']);
-    expect(INTERVENTIE_BY_ID['a4-2-1']).toBeUndefined();
+    expect(() => interventiesBeschikbaarPerRonde(4, 1)).toThrow(/rounds\.ts/);
+  });
+
+  it('interventies-a4-concept is nergens meer geïmporteerd (geen a4-1-x / a4-2-x in bundle)', () => {
+    expect(INTERVENTIE_BY_ID['a4-1-1']).toBeUndefined();
+    expect(INTERVENTIE_BY_ID['a4-2-4']).toBeUndefined();
+    for (const i of ALL_INTERVENTIES) {
+      expect(i.id).not.toMatch(/^a4-/);
+    }
   });
 
   it('verborgen meters nooit zichtbaar voor studenten', () => {
@@ -146,5 +183,103 @@ describe('interventies data', () => {
     expect(a2Bonus.status).toBe('definitief');
     expect(echoTekstenVoorGekozenInterventies(a2Bonus, new Set(['a2-2-2']))).toHaveLength(0);
     expect(echoTekstenVoorGekozenInterventies(a2Bonus, new Set(['a1-2-2']))).toHaveLength(1);
+  });
+
+  const A3_IDS = ['a3-1-1', 'a3-1-2', 'a3-1-3', 'a3-1-4', 'a3-2-1', 'a3-2-2', 'a3-2-3', 'a3-2-4'] as const;
+
+  it('alle acht A3-interventies zijn definitief en velden compleet', () => {
+    expect(INTERVENTIES_A3).toHaveLength(8);
+    for (const id of A3_IDS) {
+      const i = INTERVENTIE_BY_ID[id]!;
+      expect(i.status).toBe('definitief');
+      expect(i.interventieDefinitief).toBe(true);
+      expect(interventieVeldenCompleet(i)).toBe(true);
+    }
+    expect(() => assertInterventieDefinitiefCompleet(ALL_INTERVENTIES)).not.toThrow();
+    expect(() => assertEchoBronnenBestaan(ALL_INTERVENTIES)).not.toThrow();
+    expect(INTERVENTIE_BY_ID['a1-2-2']!.status).toBe('definitief');
+    expect(INTERVENTIE_BY_ID['a2-2-2']!.status).toBe('definitief');
+  });
+
+  it('studentmodus toont A3-interventies zonder verborgen meter; docent geen CONCEPT bij A3', () => {
+    for (const i of INTERVENTIES_A3) {
+      expect(interventieZichtbaarInModus(i, false)).toBe(true);
+      expect(interventieToontConceptLabel(i, true)).toBe(false);
+      expect(studentZietVerborgenMeterInInterventie(i, false)).toBe(false);
+      const z = interventieZichtbaarVoorStudent(i);
+      expect('verborgen' in z).toBe(false);
+    }
+  });
+
+  it('nabespreking A3 blijft concept (a3-nb-1 t/m a3-nb-5)', () => {
+    expect(NABESPREKING_A3).toHaveLength(5);
+    for (const v of NABESPREKING_A3) {
+      expect(v.status).toBe('concept');
+    }
+  });
+
+  it('a3-2-4 is aanwezig en definitief (Aandelenregeling MT)', () => {
+    const mt = INTERVENTIE_BY_ID['a3-2-4']!;
+    expect(mt.nummer).toBe('3.2.4');
+    expect(mt.status).toBe('definitief');
+    expect(mt.interventieDefinitief).toBe(true);
+    expect(mt.naam).toContain('Aandelenregeling');
+  });
+
+  it('A3: echo kwaliteit alleen bij gekozen bonus a1-2-2 of a2-2-2', () => {
+    const a3 = INTERVENTIE_BY_ID['a3-1-1']!;
+    expect(a3.echo).toHaveLength(2);
+    expect(echoTekstenVoorGekozenInterventies(a3, new Set())).toHaveLength(0);
+    expect(echoTekstenVoorGekozenInterventies(a3, new Set(['a1-2-2']))).toHaveLength(1);
+    expect(echoTekstenVoorGekozenInterventies(a3, new Set(['a1-2-2', 'a2-2-2']))).toHaveLength(2);
+  });
+
+  const A5_IDS = ['a5-1-1', 'a5-1-2', 'a5-1-3', 'a5-1-4', 'a5-2-1', 'a5-2-2', 'a5-2-3', 'a5-2-4'] as const;
+
+  it('alle acht A5-interventies zijn definitief en velden compleet', () => {
+    expect(INTERVENTIES_A5).toHaveLength(8);
+    for (const id of A5_IDS) {
+      const i = INTERVENTIE_BY_ID[id]!;
+      expect(i.status).toBe('definitief');
+      expect(i.interventieDefinitief).toBe(true);
+      expect(interventieVeldenCompleet(i)).toBe(true);
+    }
+    expect(() => assertInterventieDefinitiefCompleet(ALL_INTERVENTIES)).not.toThrow();
+    expect(() => assertEchoBronnenBestaan(ALL_INTERVENTIES)).not.toThrow();
+  });
+
+  it('studentmodus toont A5-interventies zonder verborgen meter; docent geen CONCEPT bij A5', () => {
+    for (const i of INTERVENTIES_A5) {
+      expect(interventieZichtbaarInModus(i, false)).toBe(true);
+      expect(interventieToontConceptLabel(i, true)).toBe(false);
+      expect(studentZietVerborgenMeterInInterventie(i, false)).toBe(false);
+      const z = interventieZichtbaarVoorStudent(i);
+      expect('verborgen' in z).toBe(false);
+    }
+  });
+
+  it('nabespreking A5 blijft concept (a5-nb-1 t/m a5-nb-5)', () => {
+    expect(NABESPREKING_A5).toHaveLength(5);
+    for (const v of NABESPREKING_A5) {
+      expect(v.status).toBe('concept');
+    }
+  });
+
+  it('a5-2-3 heeft echo demo-a4-H; bron bestaat in rounds (Regels schrappen)', () => {
+    const bureau = INTERVENTIE_BY_ID['a5-2-3']!;
+    expect(bureau.echo?.[0]?.bron).toBe('demo-a4-H');
+    expect(ECHO_BRON_DEMO_KAARTEN_IDS).toContain('demo-a4-H');
+    const kaartH = ROUNDS[2].cards.find((c) => c.id === 'H');
+    expect(kaartH?.t).toBe('Regels schrappen');
+    expect(echoTekstenVoorGekozenInterventies(bureau, new Set())).toHaveLength(0);
+    expect(echoTekstenVoorGekozenInterventies(bureau, new Set(['demo-a4-H']))).toHaveLength(1);
+  });
+
+  it('a5-1-3 (Lotte) is aanwezig en definitief', () => {
+    const lotte = INTERVENTIE_BY_ID['a5-1-3']!;
+    expect(lotte.nummer).toBe('5.1.3');
+    expect(lotte.naam).toContain('Lotte');
+    expect(lotte.status).toBe('definitief');
+    expect(lotte.interventieDefinitief).toBe(true);
   });
 });

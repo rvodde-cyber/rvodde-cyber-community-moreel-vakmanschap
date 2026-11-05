@@ -5,10 +5,10 @@ Status: **concept** voor jouw doorlezing. Alles staat achter `interventieDefinit
 ## Inhoud
 
 1. Gemeenschappelijke uitgangspunten
-2. Aflevering 2: Groei (autonomiecrisis, ± 2021)
-3. Aflevering 3: Delegatie (controlecrisis, ± 2026)
-4. Aflevering 4: Coördinatie (bureaucratiecrisis, ± 2031)
-5. Aflevering 5: Het doel kwijt (opvolging, ± 2036)
+2. Aflevering 2: Groei (autonomiecrisis, 1996)
+3. Aflevering 3: Delegatie (controlecrisis, 2009)
+4. Aflevering 4: Coördinatie (bureaucratiecrisis, 2026)
+5. Aflevering 5: Het doel kwijt (opvolging, 2036)
 6. Echo's: hoe eerdere keuzes terugkomen
 7. Cursor-addendum
 8. Open vragen met standaardantwoord
@@ -28,7 +28,7 @@ Status: **concept** voor jouw doorlezing. Alles staat achter `interventieDefinit
 
 ---
 
-## 2. Aflevering 2: Groei (autonomiecrisis)
+## 2. Aflevering 2: Groei (autonomiecrisis, 1996)
 
 Greiner-fase: richting. Het bedrijf groeit; medewerkers willen meer zeggenschap dan de top geeft.
 
@@ -56,7 +56,7 @@ Greiner-fase: richting. Het bedrijf groeit; medewerkers willen meer zeggenschap 
 
 ---
 
-## 3. Aflevering 3: Delegatie (controlecrisis)
+## 3. Aflevering 3: Delegatie (controlecrisis, 2009)
 
 Greiner-fase: delegatie. Afdelingen krijgen vrijheid; het MT verliest overzicht.
 
@@ -84,7 +84,7 @@ Greiner-fase: delegatie. Afdelingen krijgen vrijheid; het MT verliest overzicht.
 
 ---
 
-## 4. Aflevering 4: Coördinatie (bureaucratiecrisis)
+## 4. Aflevering 4: Coördinatie (bureaucratiecrisis, 2026)
 
 Greiner-fase: coördinatie. Systemen en procedures lossen op wat afdelingen verloren. Defensie en drones maken de fabriek complex. *Controleer tegen de bestaande demo (v6) waar de interventies afwijken.*
 
@@ -112,7 +112,7 @@ Greiner-fase: coördinatie. Systemen en procedures lossen op wat afdelingen verl
 
 ---
 
-## 5. Aflevering 5: Het doel kwijt (opvolging)
+## 5. Aflevering 5: Het doel kwijt (opvolging, 2036)
 
 Greiner-fase: samenwerking en zingeving. Een conglomeraat waar niemand het doel nog weet; erfeniskwesties en bureaucratie. Piotr-lijn, Sanne en Lotte komen samen.
 

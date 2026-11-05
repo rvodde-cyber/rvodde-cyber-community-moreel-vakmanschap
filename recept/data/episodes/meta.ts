@@ -66,7 +66,3 @@ export function episodeMeta(id: EpisodeId): EpisodeMeta {
   if (!m) throw new Error(`Onbekende aflevering ${id}`);
   return m;
 }
-
-export function isFullEpisode(id: EpisodeId): boolean {
-  return episodeMeta(id).playMode === 'full';
-}

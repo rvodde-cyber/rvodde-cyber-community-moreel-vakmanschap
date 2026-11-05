@@ -18,6 +18,16 @@ Legenda kolommen: **1** eigen verhaal · **2** geen herkomstclichés · **3** ge
 
 Toelichting I1–I3/I5: beeld nog niet aangeleverd; check op klassieke arbeiders- of “koud conglomeraat”-clichés volgt bij definitief bestand.
 
+## Aflevering 1 — cold open, briefje, slot (3 nov 2026)
+
+| Code | Omschrijving | Status app | Akkoord |
+| --- | --- | --- | --- |
+| C1 | Keukentafel 1984 (cold open r1) | Placeholder/silhouet via `SceneBackground` | **nee** |
+| W1 | Met de hand 1984 (cold open r2) | Placeholder/silhouet | **nee** |
+| T1 | Schuur 1984 (slot) | Placeholder/silhouet | **nee** |
+| A1-BRIEFJE | Briefje tussen kasboekpagina's (UI: tekst in `BriefjePanel`, geen apart beeld) | Geen asset vereist voor speelbare tekst | **nee** |
+| A1-SCHRIFT | Twee handschriften op één pagina (slot beat 6) | Placeholder/silhouet | **nee** |
+
 ## Portretten
 
 | Slug | Rol | Alt-tekst (NL) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 akkoord |

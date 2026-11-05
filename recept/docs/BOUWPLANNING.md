@@ -11,4 +11,12 @@
 
 **Bronnen:** `Cursor projecten/Recept/` → sync naar `recept/` in monorepo. Drive-tabs Introteksten/Morele dilemma’s: bijwerken en opnieuw syncen.
 
-**Volgende actie:** stap 3 (speelbare aflevering 4 ronde 1).
+**Fase 0 (3 nov 2026):** `docs/DESIGNGIDS.md` vastgelegd (afgeleid van aflevering 4).
+
+**Volgende bouwstappen (na designgids):**
+
+1. **Docent-vergelijkscherm v1** — import van meerdere `teamExport`-bestanden; twee ranglijsten naast elkaar; geen server (zie `docs/LATER.md`).
+2. **Live regiekamer v2** — sync, auth, AVG-plan, gebeurtenissen naar teams (zie `docs/LATER.md`).
+3. Daarna: bouwstenen A1–A3 en A5 naar `playMode: full` volgens checklist in `DESIGNGIDS.md` §7.
+
+**Eerdere focus:** stap 3–6 (speelbare aflevering 4) grotendeels aanwezig; zie `docs/VOORTGANG.md`.

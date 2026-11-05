@@ -48,8 +48,25 @@ export const INTERVENTIE_METER_NOTATIE_LEGEND =
 /** Begrotingspost-id's die als echo-bron mogen (geen interventie-id). */
 export const ECHO_BRON_BEGROTING_IDS = ['piotr-vast'] as const;
 
-export function interventiesBeschikbaarPerRonde(episode: 1 | 2 | 3 | 4 | 5, ronde: 1 | 2): number {
-  if (episode === 4 && ronde === 2) return 3;
+/** Demo A4-kaart-id's als echo-bron (ronde 2 kaarten F–J); id-formaat `demo-a4-{kaartId}`. */
+export const ECHO_BRON_DEMO_KAARTEN_IDS = ['demo-a4-H'] as const;
+
+/**
+ * Aflevering 4 staat niet in `ALL_INTERVENTIES`. Kaarten en keuzeregels: `data/rounds.ts`
+ * (bron: `referentie/demo-aflevering4-v6.html`).
+ *
+ * Demo v6 (spelmotor ongewijzigd):
+ * - Per ronde **5** kaarten (`ROUNDS[n].cards`, id A–E / F–J).
+ * - Team kiest **precies 2** kaarten per ronde (zelfde getal als `KEUZES_PER_RONDE` voor A1–A3/A5).
+ * - **contra**: paren in `ROUNDS[n].contra` mogen niet tegelijk gekozen worden (tegenstrijdig signaal).
+ * - Piotr-contract: begrotingspost `piotr-vast` in ronde 2, geen 4.x-kaart.
+ */
+export function interventiesBeschikbaarPerRonde(episode: 1 | 2 | 3 | 4 | 5, _ronde: 1 | 2): number {
+  if (episode === 4) {
+    throw new Error(
+      'Aflevering 4: gebruik data/rounds.ts (5 kaarten per ronde), niet interventiesBeschikbaarPerRonde',
+    );
+  }
   return INTERVENTIES_PER_RONDE;
 }
 

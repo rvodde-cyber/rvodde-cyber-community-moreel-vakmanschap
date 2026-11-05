@@ -1,5 +1,6 @@
-import { DILEMMA_EP4_PIOTR, type DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
-import { ROUNDS } from '@data/rounds';
+import type { DilemmaDef, DilemmaKeuze } from '@data/episodes/dilemmaDef';
+import { episodeContent } from '@data/episodes/content';
+import type { EpisodeId } from '@data/episodes/meta';
 import type { ComputeResult } from '@engine/types';
 import type { HiddenMetersState, RoundUiState } from './uiTypes';
 
@@ -18,17 +19,24 @@ function pushLog(lines: string[], delta: number, text: string) {
 /** Verborgen meters na een ronde-besluit (zonder dilemma-default). */
 export function applyHiddenAfterRound(
   hidden: HiddenMetersState,
+  episode: EpisodeId,
   round: 1 | 2,
   r: RoundUiState,
   res: ComputeResult,
 ): HiddenMetersState {
+  const content = episodeContent(episode);
+  if (!content.usesDemoBudget) return hidden;
+
   let mm = hidden.menselijkeMaat;
   let eer = hidden.eerlijkheid;
   const wm = [...hidden.logMm];
   const we = [...hidden.logEer];
 
+  const roundDef = content.rounds[round];
+  if (!roundDef) return hidden;
+
   const marco: Record<string, number> = {};
-  for (const p of ROUNDS[round].posten) marco[p.id] = p.marco;
+  for (const p of roundDef.posten) marco[p.id] = p.marco;
 
   const c = r.cards;
   if (round === 1) {
@@ -116,6 +124,7 @@ export function applyHiddenAfterRound(
 
 export function applyDilemmaHidden(
   hidden: HiddenMetersState,
+  def: DilemmaDef,
   choice: DilemmaKeuze,
   privéTekst: string,
 ): HiddenMetersState {
@@ -124,9 +133,9 @@ export function applyDilemmaHidden(
   const wm = [...hidden.logMm];
   const we = [...hidden.logEer];
 
-  const fx = DILEMMA_EP4_PIOTR.effecten[choice];
+  const fx = def.effecten[choice];
   if (choice === 'prive') {
-    const min = DILEMMA_EP4_PIOTR.effecten.prive.minTekst ?? 10;
+    const min = def.effecten.prive.minTekst ?? 10;
     if (privéTekst.replace(/\s/g, '').length < min) return hidden;
   }
 
@@ -146,9 +155,10 @@ export function applyDilemmaHidden(
 /** Als Piotr-bericht kwam maar geen keuze: referentie hidden() default. */
 export function applyDilemmaDefaultIfNeeded(
   hidden: HiddenMetersState,
+  def: DilemmaDef | null,
   dilemmaDone: boolean,
   piotrDelivered: boolean,
 ): HiddenMetersState {
-  if (!piotrDelivered || dilemmaDone) return hidden;
-  return applyDilemmaHidden(hidden, 'niets', '');
+  if (!def || !piotrDelivered || dilemmaDone) return hidden;
+  return applyDilemmaHidden(hidden, def, 'niets', '');
 }

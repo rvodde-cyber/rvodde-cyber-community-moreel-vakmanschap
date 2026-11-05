@@ -1,4 +1,4 @@
-import { isFullEpisode } from '@data/episodes/meta';
+import { episodeContent } from '@data/episodes/content';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { kostEur } from '../lib/format';
 import { eur } from '../lib/format';
@@ -11,7 +11,8 @@ const BUD_STEP = 20000;
 function roundBudgetTotal(state: GameUiState): number {
   const ctx = engineContext(state);
   const D = roundDefFor(state);
-  return isFullEpisode(state.episode) ? budgetOf(state.round, ctx) : budgetOfDef(D, state.round, ctx);
+  const content = episodeContent(state.episode);
+  return content.usesDemoBudget ? budgetOf(state.round, ctx) : budgetOfDef(D, state.round, ctx);
 }
 
 export function budgetBlockMessage(state: GameUiState): string | null {

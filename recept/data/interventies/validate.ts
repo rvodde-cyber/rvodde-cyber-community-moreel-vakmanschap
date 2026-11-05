@@ -1,6 +1,7 @@
 import type { Interventie } from './types';
 import {
   ECHO_BRON_BEGROTING_IDS,
+  ECHO_BRON_DEMO_KAARTEN_IDS,
   interventiesBeschikbaarPerRonde,
   KEUZES_PER_RONDE,
 } from './types';
@@ -49,6 +50,7 @@ export function assertTweeKeuzesPerRonde(items: Interventie[]): void {
     throw new Error('Regel: teams kiezen precies twee interventies per ronde');
   }
   for (const ep of [1, 2, 3, 4, 5] as const) {
+    if (ep === 4) continue;
     for (const ronde of [1, 2] as const) {
       const verwacht = interventiesBeschikbaarPerRonde(ep, ronde);
       const n = items.filter((i) => i.episode === ep && i.ronde === ronde).length;
@@ -60,12 +62,17 @@ export function assertTweeKeuzesPerRonde(items: Interventie[]): void {
 }
 
 const ECHO_BRON_BEGROTING = new Set<string>(ECHO_BRON_BEGROTING_IDS);
+const ECHO_BRON_DEMO_KAARTEN = new Set<string>(ECHO_BRON_DEMO_KAARTEN_IDS);
 
 export function assertEchoBronnenBestaan(items: Interventie[]): void {
   const ids = new Set(items.map((i) => i.id));
   for (const i of items) {
     for (const e of i.echo ?? []) {
-      if (!ids.has(e.bron) && !ECHO_BRON_BEGROTING.has(e.bron)) {
+      if (
+        !ids.has(e.bron) &&
+        !ECHO_BRON_BEGROTING.has(e.bron) &&
+        !ECHO_BRON_DEMO_KAARTEN.has(e.bron)
+      ) {
         throw new Error(`Interventie ${i.id}: echo verwijst naar onbekende bron ${e.bron}`);
       }
     }

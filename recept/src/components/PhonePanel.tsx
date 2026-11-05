@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ROUNDS } from '@data/rounds';
+import { episodeContent } from '@data/episodes/content';
 import { NAAM_KLEUR } from '@data/berichten';
 import { DilemmaChoices } from './DilemmaChoices';
 import { notifyChatToast } from './MessageToast';
@@ -18,6 +18,8 @@ export function PhonePanel({ state, dispatch }: Props) {
   const chatRef = useRef<HTMLDivElement>(null);
   const prevLen = useRef(state.inbox.length);
   const tab = state.chatTab;
+  const content = episodeContent(state.episode);
+  const dilemmaDef = content.dilemma;
 
   useEffect(() => {
     if (state.inbox.length > prevLen.current) {
@@ -97,7 +99,7 @@ export function PhonePanel({ state, dispatch }: Props) {
               lastRound = def.round;
               dayEl = (
                 <div className="cday" key={`day-${def.round}`}>
-                  <span>{ROUNDS[def.round].label}</span>
+                  <span>{content.rounds[def.round as 1 | 2]?.label ?? ''}</span>
                 </div>
               );
             }
@@ -118,8 +120,9 @@ export function PhonePanel({ state, dispatch }: Props) {
                   </div>
                   {def.fwd ? <span className="fw">↪ Doorgestuurd</span> : null}
                   <span className="x">{state.msgText[def.id] ?? ''}</span>
-                  {isDil ? (
+                  {isDil && dilemmaDef ? (
                     <DilemmaChoices
+                      def={dilemmaDef}
                       dilemma={state.dilemma}
                       onChoice={(c) => dispatch({ type: 'SET_DILEMMA_CHOICE', choice: c })}
                       onText={(t) => dispatch({ type: 'SET_DILEMMA_TEXT', text: t })}

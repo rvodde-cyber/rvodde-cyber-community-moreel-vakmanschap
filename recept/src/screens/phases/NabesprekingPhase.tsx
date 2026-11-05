@@ -1,4 +1,4 @@
-import { isFullEpisode } from '@data/episodes/meta';
+import { isFullEpisode } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
 import { MT_ROLLEN } from '@data/rollen';

@@ -1,8 +1,22 @@
 # Bewust later (niet v1)
 
-## Multiplayer / regiekamer
+## Multiplayer — docent-vergelijkscherm (v1)
 
-Teams spelen nu lokaal op één scherm; state in `localStorage`. Later: telefoons via QR, docent-regiekamer (bijv. Supabase). **Waarom later:** SessionAdapter staat klaar, maar sync, auth en fairness vragen ontwerp- en privacywerk.
+Teams spelen lokaal; state in `localStorage`. **v1:** geen server, geen accounts, geen persoonsgegevens.
+
+- Teams exporteren hun resultaat via `buildTeamExport` / `downloadTeamExport` in `src/game/teamExport.ts`.
+- Docent importeert meerdere exports in **één scherm** met de **twee ranglijsten** (aandeelhouder vs. organisatie; zie besluit 13 in `docs/overzicht.md`).
+- UI voor import/vergelijk: nog niet gebouwd (zie `docs/BOUWPLANNING.md`).
+
+## Multiplayer — live regiekamer (v2)
+
+**v2:** docent stuurt een zaal met meerdere teams live.
+
+- Rondes starten/pauzeren, timer aanpassen.
+- Per team fase en keuzes zien.
+- Gebeurtenis naar één of alle teams sturen.
+
+Vereist synchronisatie, authenticatie en een **AVG-plan** (geen v1).
 
 ## Accounts
 

@@ -1,5 +1,4 @@
-import { isFullEpisode } from '@data/episodes/meta';
-import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
+import { episodeContent } from '@data/episodes/content';
 import { MT_ROLLEN } from '@data/rollen';
 import { ROL_BELANG } from '@data/rolBelang';
 import { roundDefFor } from './roundSource';
@@ -19,13 +18,14 @@ export type TeamExport = {
 };
 
 export function buildTeamExport(state: GameUiState): TeamExport {
+  const content = episodeContent(state.episode);
   const rounds: TeamExport['rounds'] = [];
-  const rNums = isFullEpisode(state.episode) ? ([1, 2] as const) : ([1] as const);
+  const rNums = content.roundCount === 2 ? ([1, 2] as const) : ([1] as const);
 
   for (const n of rNums) {
     const ui = state.rounds[n];
     const res = state.results[n];
-    const D = isFullEpisode(state.episode) ? roundDefFor({ ...state, round: n }) : roundDefFor(state);
+    const D = roundDefFor({ ...state, round: n });
     const verm = D.verm.find((v) => v.id === ui.verm);
     rounds.push({
       round: n,
@@ -66,7 +66,7 @@ export function buildTeamExport(state: GameUiState): TeamExport {
     dilemma: state.dilemma.done
       ? {
           ...state.dilemma,
-          titel: state.episode === 4 ? DILEMMA_EP4_PIOTR.titel : undefined,
+          titel: content.dilemma?.titel,
         }
       : state.dilemma,
     hidden: state.hidden,

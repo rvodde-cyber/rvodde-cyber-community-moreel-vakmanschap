@@ -7,7 +7,7 @@ export const dilemmaStubSchema = z.object({
   titel: z.string(),
   samenvatting: z.string(),
   spanningsveld: z.string(),
-  speelbaar: z.literal(false),
+  speelbaar: z.boolean(),
 });
 
 export type DilemmaStub = z.infer<typeof dilemmaStubSchema>;

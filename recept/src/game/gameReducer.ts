@@ -1,7 +1,8 @@
 import { compute } from '@engine/compute';
 import { BERICHTEN } from '@data/berichten';
 import type { BerichtDef } from '@data/berichten';
-import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
+import { episodeContent } from '@data/episodes/content';
+import type { DilemmaKeuze } from '@data/episodes/dilemmaDef';
 import { dilemmaGroepBerichten } from '@data/berichten';
 import type { ChatChannel } from '@data/berichten';
 import { useSkeletonMotor } from '@data/interventieFlags';
@@ -215,7 +216,13 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
       const q = vermoedenQ(state, r.verm);
       const res = compute(state.round, cards, q, ctx, r.bud);
-      const hidden = applyHiddenAfterRound(state.hidden, state.round, { ...r, cards }, res);
+      const hidden = applyHiddenAfterRound(
+        state.hidden,
+        state.episode,
+        state.round,
+        { ...r, cards },
+        res,
+      );
       return {
         ...state,
         phase: 'scan',
@@ -278,16 +285,18 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
     case 'CONFIRM_DILEMMA': {
       const { choice, text } = state.dilemma;
-      if (!choice) return state;
-      if (choice === 'prive' && text.replace(/\s/g, '').length < 10) return state;
+      const def = episodeContent(state.episode).dilemma;
+      if (!choice || !def) return state;
+      const minPriv = def.effecten.prive.minTekst ?? 10;
+      if (choice === 'prive' && text.replace(/\s/g, '').length < minPriv) return state;
 
       let next: GameUiState = {
         ...state,
         dilemma: { ...state.dilemma, done: true },
-        hidden: applyDilemmaHidden(state.hidden, choice, text),
+        hidden: applyDilemmaHidden(state.hidden, def, choice, text),
       };
 
-      if (choice === 'groep') {
+      if (choice === 'groep' && def.privéBericht.kanaal === 'app') {
         const defs = dilemmaGroepBerichten(state.playerName);
         const dynamicBerichten = { ...next.dynamicBerichten };
         for (const d of defs) dynamicBerichten[d.id] = d;
@@ -331,7 +340,10 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           },
         };
       } else if (kind === 'slot-r1') {
-        if (useSkeletonMotor(state.episode)) {
+        const content = episodeContent(state.episode);
+        if (content.roundCount === 2 && content.tussenKaart) {
+          next = { ...next, phase: 'tussen' };
+        } else if (useSkeletonMotor(state.episode)) {
           next = { ...next, phase: state.episode === 3 ? 'opvolging' : 'pauze' };
         } else {
           next = { ...next, phase: 'tussen' };

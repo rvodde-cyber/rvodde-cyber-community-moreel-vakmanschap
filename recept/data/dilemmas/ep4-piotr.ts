@@ -3,31 +3,43 @@
  * Effecten op verborgen meters: port referentie hidden() (demo v6).
  * Defensie-contract: altijd door; geen spelmotor-effect.
  */
+import type { DilemmaDef, DilemmaKeuze } from '../episodes/dilemmaDef';
 import { piotrPrivéBerichtQuote } from '../piotrSpel';
 
-export type DilemmaKeuze = 'niets' | 'groep' | 'prive';
+export type { DilemmaKeuze };
 
 export const DILEMMA_EP4_PIOTR = {
   id: 'ep4-piotr-screening',
   aflevering: 4,
   ronde: 2,
-  status: 'goedgekeurd' as const,
+  status: 'goedgekeurd',
   titel: 'De order van Defensie en de verdenking van Piotr',
   privéBericht: {
     van: 'Piotr Nowak',
     get tekst() {
       return piotrPrivéBerichtQuote(false);
     },
+    kanaal: 'app',
     dil: true,
   },
   keuzes: [
-    { id: 'niets' as const, label: 'Niets doen', kort: 'Het bericht blijft liggen.' },
-    { id: 'groep' as const, label: 'In de groep bespreken', kort: 'Zichtbaar in de MT-groepsapp.' },
-    { id: 'prive' as const, label: 'Privé een besluit nemen', kort: 'Korte motivatie (min. 10 tekens).' },
+    { id: 'niets', label: 'Niets doen', kort: 'Het bericht blijft liggen.' },
+    { id: 'groep', label: 'In de groep bespreken', kort: 'Zichtbaar in de MT-groepsapp.' },
+    { id: 'prive', label: 'Privé een besluit nemen', kort: 'Korte motivatie (min. 10 tekens).' },
   ],
   effecten: {
-    niets: { eerlijkheid: -8, menselijkeMaat: -10, logEer: 'Het verzoek om alle dossiers bleef onbeantwoord liggen', logMm: 'Piotr bleef alleen met een vermoeden' },
-    groep: { eerlijkheid: 8, menselijkeMaat: 3, logEer: 'Het verzoek van Defensie en de zaak-Piotr open op tafel gelegd', logMm: 'Piotr kreeg een stem in het MT' },
+    niets: {
+      eerlijkheid: -8,
+      menselijkeMaat: -10,
+      logEer: 'Het verzoek om alle dossiers bleef onbeantwoord liggen',
+      logMm: 'Piotr bleef alleen met een vermoeden',
+    },
+    groep: {
+      eerlijkheid: 8,
+      menselijkeMaat: 3,
+      logEer: 'Het verzoek van Defensie en de zaak-Piotr open op tafel gelegd',
+      logMm: 'Piotr kreeg een stem in het MT',
+    },
     prive: {
       eerlijkheid: 4,
       menselijkeMaat: 6,
@@ -36,14 +48,19 @@ export const DILEMMA_EP4_PIOTR = {
       logMm: 'Piotr niet alleen gelaten',
     },
   },
-  /** MT kan in ronde 2 budgetteren voor vaste aanname Piotr */
+  ethiekNoot:
+    'Geen juist antwoord. Herkomst niet expliciet benoemen in UI. Nabespreking: stereotypen en beeld bij personages (Bianchi et al., 2023).',
   vasteAanname: {
     postId: 'piotr-vast' as const,
     bedrag: 25000,
     label: 'Piotr in vaste dienst (loyaliteit)',
     beschrijving: 'Aanname via Brabantse Personeelsdiensten; pas na een jaar zonder bureau mogelijk.',
-    /** Zie data/ep4Interventies.ts — interventieDefinitief false tot Richard akkoord */
   },
-  ethiekNoot:
-    'Geen juist antwoord. Herkomst niet expliciet benoemen in UI. Nabespreking: stereotypen en beeld bij personages (Bianchi et al., 2023).',
+} satisfies DilemmaDef & {
+  vasteAanname: {
+    postId: 'piotr-vast';
+    bedrag: number;
+    label: string;
+    beschrijving: string;
+  };
 };

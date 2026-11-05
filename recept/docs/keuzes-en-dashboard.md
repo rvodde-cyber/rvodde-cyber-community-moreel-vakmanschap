@@ -52,7 +52,7 @@ Het dashboard is één scherm met zes zones. Het groeit mee met het bedrijf: in 
 
 **Na de keuze** schuift de keuzetafel weg en verschijnt het Waarom-scherm: de meters bewegen een voor een, met bij elke beweging de oorzakenketen uit de spelmotor.
 
-**Geen ranglijst tussen teams.** Een ranglijst zou precies het gedrag belonen dat het spel kritisch bekijkt. In de nabespreking vergelijkt de docent de teams per meter en per keuze, als spiegel en niet als wedstrijd.
+**Twee ranglijsten na afloop (besluit 13, 3 nov 2026).** Teams spelen tegelijk; aan het eind staan twee ranglijsten naast elkaar: wat de aandeelhouder ziet (productiviteit, budget) en wat de organisatie voelt (eerlijkheid, menselijke maat). De ranglijst zelf is het onderwerp van de nabespreking; er is geen winnaar op één getal. Besluit 3 november 2026, vervangt „geen ranglijst tussen teams”.
 
 ## Regiekamer en techniek (latere fase)
 
