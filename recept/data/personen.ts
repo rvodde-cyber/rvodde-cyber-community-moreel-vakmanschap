@@ -75,4 +75,14 @@ export const PERSONEN: Persoon[] = [
     portretAlt: 'Portret van Piotr Nowak, flexkracht assemblage',
     portret: 'portretten/piotr-nowak.webp',
   },
+  {
+    slug: 'anne-fleur-van-gorp',
+    naam: 'Anne-Fleur van Gorp',
+    leeftijd: 26,
+    rol: 'Nieuwe generatie Van Gorp',
+    tekst:
+      'Kleindochter en nazaat van een van de founders; in 2036 vraagt zij waar het bedrijf nog voor staat en wie het receptschrift nog kent.',
+    portretAlt: 'Portret van Anne-Fleur van Gorp, nieuwe generatie Van Gorp',
+    portret: 'portretten/anne-fleur-van-gorp.webp',
+  },
 ];

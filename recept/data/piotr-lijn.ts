@@ -98,7 +98,7 @@ export const PIOTR_SCENES: PiotrScene[] = [
     id: 'a5-overdracht',
     titel: 'Overdracht schuur',
     tekst:
-      'Piotr is inmiddels ploegleider. Zijn huis en gezin staan in Nederland. Hij kijkt naar de schuur, naar Lotte, en draagt hem over. Lies geeft haar beslissende stem aan Lotte.',
+      'Piotr is inmiddels ploegleider. Zijn huis en gezin staan in Nederland. Hij kijkt naar de schuur, naar Anne-Fleur, en draagt hem over. Lies geeft haar beslissende stem aan Anne-Fleur.',
     status: 'definitief',
     fase: 'volhouden',
     beeld: 'I5',

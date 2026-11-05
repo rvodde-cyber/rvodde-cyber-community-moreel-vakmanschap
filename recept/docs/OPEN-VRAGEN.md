@@ -1,6 +1,13 @@
 # Open vragen en aanleveringen
 
-Laatste update: **3 november 2026** (fase 0 documentatie).
+Laatste update: **5 november 2026** (taalronde cold opens).
+
+## Besloten (5 nov 2026)
+
+| Onderwerp | Besluit |
+| --- | --- |
+| **Taalronde cold opens A2–A5** | Letterlijke teksten in `SKELETON_COLD` / `COLD_OPEN`; bron `docs/TAALGIDS.md`. |
+| **Anne-Fleur** | Lotte hernoemd; nazaat founders, 2036-register zonder dialect/tonval. |
 
 ## Besloten (2–3 nov 2026)
 
@@ -90,6 +97,8 @@ Richard: kies per regel welke **demokaart** (A–J) de bedoeling dekt. Echo's na
 
 | Onderwerp | Status |
 | --- | --- |
+| **Taalronde overige teksten** | Privéberichten, nabesprekingen, slotscènes A2 t/m A5 (cold opens klaar) |
+| **Kaartvoorstellen gesprekskaarten** | Open |
 | **A1 stap 3** | Koppeling interventies A1 aan spelmotor; `slotLineA1` op echte keuzes; twee rondes met eigen budget/onderzoek |
 | **Bouw A1–A3 + A5 → full** | Checklist `DESIGNGIDS.md` §7 |
 | **Zichtbare timer** | `.timer.low`, time-out, docentgebeurtenissen |

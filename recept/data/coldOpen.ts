@@ -16,8 +16,8 @@ export const COLD_OPEN = {
     lines: [
       ['', 'Een half jaar later. Hal 3 krijgt een hek en een pasjeslezer.'],
       ['MARCO', 'Vrijdag tekenen we. Dan zijn we eindelijk groot.'],
-      ['ERIK', 'Groot zijn is vooral een kwestie van formulieren, Marco.'],
-      ['ANS', 'Ik heb deze week twee uur op de vloer gestaan. De rest was overleg.'],
+      ['ERIK', 'Groter worden betekent vooral meer formulieren, Marco.'],
+      ['ANS', 'Ik heb deze week maar twee uur op de vloer gestaan. De rest was overleg.'],
       ['', 'Dinsdag, 09:14. Piotrs pas werkt niet meer.'],
     ] as [string, string][],
   },

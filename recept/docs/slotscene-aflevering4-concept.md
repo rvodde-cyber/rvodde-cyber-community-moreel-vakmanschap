@@ -27,7 +27,7 @@ Concept, 27 oktober 2026. Doel: ± 27 seconden, bewegende stilstaande beelden me
 ## Scène (concept)
 
 1. Beeld: een notariskantoor in de Spoorzone van Tilburg, regen op het raam, een lange tafel, lege stoel aan het hoofd. Ondertitel: "Tilburg, 2031."
-2. Beeld: de familie rond de tafel (Marco, Sanne, Erik, Lies, Lotte als kind van vijftien). Piotr staat bij de deur in een pak dat hij zelden draagt.
+2. Beeld: de familie rond de tafel (Marco, Sanne, Erik, Lies, Anne-Fleur als kind van vijftien). Piotr staat bij de deur in een pak dat hij zelden draagt.
 3. **Notaris** (off-screen): "De erflater heeft deze bepaling eigenhandig toegevoegd, zonder overleg met de familie. Hij verzocht mij haar voor te lezen zoals hij haar schreef."
 4. Beeld: close-up van de regel in het testament, doorgestreept met een andere pen, en daarnaast Harries handschrift: "Dit is mijn wil." De tekst eronder is nog net leesbaar: "…Piotr Nowak…"
 5. **Erik** (zacht, tegen niemand): "Een kwestie van zorgvuldigheid."

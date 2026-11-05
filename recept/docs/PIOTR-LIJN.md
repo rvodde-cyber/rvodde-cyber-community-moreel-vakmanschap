@@ -26,7 +26,7 @@ Harrie overlijdt; testament laat Piotr de schuur in Berkel-Enschot na (eigenhand
 
 ## Aflevering 5 (2036)
 
-Erik streepte de zin door (grond, Sanne, Optivora); komt uit via brief in schuur + Lies herkent Harries woorden. Sanne wist het niet. Piotr (vaste ploegleider, gezin in NL) draagt schuur over aan Lotte. Lies geeft beslissende stem aan Lotte.
+Erik streepte de zin door (grond, Sanne, Optivora); komt uit via brief in schuur + Lies herkent Harries woorden. Sanne wist het niet. Piotr (vaste ploegleider, gezin in NL) draagt schuur over aan Anne-Fleur. Lies geeft beslissende stem aan Anne-Fleur.
 
 ## Ethiek (facilitator)
 

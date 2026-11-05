@@ -16,7 +16,11 @@ Stijl: warm, rustig gestileerd illustratieportret in gouache-achtige vlakken, za
 | `ans.webp` | Vrouw van 57, ploegleider in een productiehal, praktische werkkleding met veiligheidsvest, nuchtere en betrokken blik. |
 | `joost.webp` | Man van 52, ondernemingsraadvoorzitter, casual colbert, open en aandachtige blik, notitieblok in de hand. |
 
-Aanvullend (nodig voor berichten): `dennis.webp` man van 39, financieel/operationeel manager; `yasmin.webp` vrouw van 29, medewerker in de assemblage; `piotr.webp` man van 34, medewerker in de assemblage. Geef geen enkele rol een vaste achtergrond-aanduiding; laat herkomst buiten de prompt.
+Aanvullend (nodig voor berichten): `dennis.webp` man van 39, financieel/operationeel manager; `yasmin.webp` vrouw van 29, medewerker in de assemblage; `piotr.webp` man van 34, medewerker in de assemblage; `anne-fleur-van-gorp.webp` vrouw van 26 in 2036, nazaat van een van de founders, keurig en beschaafd ogend, blond haar, blauwe ogen, verzorgde eigentijdse kleding (geen futuristisch kostuum), vriendelijke en rustige blik. Geef geen enkele rol een vaste achtergrond-aanduiding; laat herkomst buiten de prompt.
+
+## Figuranten en bijrollen (aflevering 5, 2036)
+
+Nederland is in 2036 nog diverser dan nu: mensen met een migratieachtergrond en gemengde gezinnen zijn gewoon en worden niet als bijzonder in beeld gebracht. Varieer herkomst, leeftijd en gender zonder stereotypen en zonder dat herkomst de rol bepaalt. Zelfde stijlregel, 1:1, 512 × 512 WebP.
 
 ## Aflevering 1 (1984) — aanvullende portretten
 

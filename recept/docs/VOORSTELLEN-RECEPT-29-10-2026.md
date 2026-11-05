@@ -53,7 +53,7 @@ Status: alle onderdelen zijn **concept** voor Richard. Niets hiervan wordt `defi
 > De brief lag al jaren in de schuur, tussen de recepten. Lies leest hem hardop en herkent Harries woorden. Erik zegt het zakelijk: de grond, Sanne, Optivora. Hij had het zo bedoeld. Sanne zit stil. Ze wist het niet.
 
 **a5-overdracht**
-> Piotr is inmiddels ploegleider. Zijn huis en gezin staan in Nederland. Hij kijkt naar de schuur, naar Lotte, en draagt hem over. Lies geeft haar beslissende stem aan Lotte.
+> Piotr is inmiddels ploegleider. Zijn huis en gezin staan in Nederland. Hij kijkt naar de schuur, naar Anne-Fleur, en draagt hem over. Lies geeft haar beslissende stem aan Anne-Fleur.
 
 *Opmerking voor Richard:* de vertakking "zonder MT-contract in ronde 2 had Harrie het zelf geregeld; het MT mist die kans" moet nog worden uitgewerkt. Voorstel: bij "geen contract" een extra slotzin: "Harrie had het ook zelf kunnen regelen. Dat hij het aan jullie liet, was een uitnodiging die jullie niet hebben opgepakt." Akkoord?
 
@@ -172,7 +172,7 @@ Elke aflevering: teams kiezen twee interventies per ronde. Er staan geen getalle
 | Interventie | Anker | Effect | Menselijke maat | Ethisch risico | Opvolgingsgevolg |
 |---|---|---|---|---|---|
 | Familieraad voor opvolging | Governance | Betrokkenheid ↑, snelheid ↓ | ↑ | Uitsluiting niet-familie | Erfenisconflict wordt zichtbaar |
-| Waarden en doel opnieuw formuleren | JD-R (zingeving) | Betrokkenheid ↑ | ↑ | Slogans zonder daden | Lies en Lotte krijgen weer gehoor |
+| Waarden en doel opnieuw formuleren | JD-R (zingeving) | Betrokkenheid ↑ | ↑ | Slogans zonder daden | Lies en Anne-Fleur krijgen weer gehoor |
 | Verkoop aan investeerder | Kostenfocus | Resultaat ↑ | ↓ | Verlies van betekenis | Schuur en Piotr-lijn in gevaar |
 | Bureaucratie afslanken | Greiner | Tempo ↑, controle ↓ | ↑ | Risico bij Defensie | Piotr en ploegleiders krijgen mandaat |
 

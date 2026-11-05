@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { join, extname, sep } from 'node:path';
 import { COLD_OPEN } from '@data/coldOpen';
 import { DILEMMA_EP1_FRANS } from '@data/dilemmas/ep1-frans';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
@@ -148,5 +150,91 @@ describe('skeleton episodes (2, 3, 5)', () => {
     expect(c.film.trailerR1).toBe(SKELETON_TRAILERS[ep]);
     expect(c.film.slotSkeleton).toBe(SKELETON_SLOTS[ep]);
     expect(roundDefEpisode(ep, 1)).toBe(SKELETON_ROUNDS[ep]);
+  });
+});
+
+describe('taalronde cold opens (5 nov 2026)', () => {
+  it('A2: letterlijke regels', () => {
+    const lines = SKELETON_COLD[2].lines;
+    expect(lines).toHaveLength(5);
+    expect(lines[0]![1]).toBe('Dinsdag, tien over zeven. De band loopt al een uur.');
+    expect(lines[4]![1]).toBe('Niemand maakt vandaag nog een hele kroket.');
+    expect(lines[2]![0]).toBe('LIES');
+  });
+
+  it('A3: letterlijke regels', () => {
+    const lines = SKELETON_COLD[3].lines;
+    expect(lines).toHaveLength(5);
+    expect(lines[0]![1]).toBe('Vrijdagmiddag. Drie vestigingen en één vergadertafel.');
+    expect(lines[4]![1]).toBe('Niemand zegt iets. Buiten rijdt een vrachtwagen achteruit.');
+    expect(lines[2]![0]).toBe('MARCO');
+  });
+
+  it('A5: letterlijke regels', () => {
+    const lines = SKELETON_COLD[5].lines;
+    expect(lines).toHaveLength(5);
+    expect(lines[0]![1]).toBe('De glazen ingang weerspiegelt een verre schuur.');
+    expect(lines[4]![1]).toBe(
+      'In Berkel-Enschot ligt nog het receptschrift. Niemand weet wie de doorgestreepte zin heeft geschrapt.',
+    );
+    expect(lines[2]![0]).toBe('ANNE-FLEUR');
+  });
+
+  it('A4 COLD_OPEN[2]: alleen twee regels gewijzigd, ronde 1 ongewijzigd', () => {
+    expect(COLD_OPEN[1]).toEqual({
+      place: 'VILLA VAN GORP, OISTERWIJK',
+      img: 'C4',
+      lines: [
+        ['', 'Zaterdagavond. Harrie wordt 71.'],
+        ['HARRIE', 'Vroeger kende ik iedereen bij naam.'],
+        ['MARCO', 'Pap, het dashboard kent iedereen. Bij naam én prestatie.'],
+        ['ERIK', 'En het dashboard liegt niet.'],
+        ['', 'Maandag, 09:14. Het verzuim is weer gestegen.'],
+      ],
+    });
+    expect(COLD_OPEN[2].lines[2]).toEqual([
+      'ERIK',
+      'Groter worden betekent vooral meer formulieren, Marco.',
+    ]);
+    expect(COLD_OPEN[2].lines[3]).toEqual([
+      'ANS',
+      'Ik heb deze week maar twee uur op de vloer gestaan. De rest was overleg.',
+    ]);
+    expect(COLD_OPEN[2].lines[0]).toEqual(['', 'Een half jaar later. Hal 3 krijgt een hek en een pasjeslezer.']);
+    expect(COLD_OPEN[2].lines[1]).toEqual(['MARCO', 'Vrijdag tekenen we. Dan zijn we eindelijk groot.']);
+    expect(COLD_OPEN[2].lines[4]).toEqual(['', 'Dinsdag, 09:14. Piotrs pas werkt niet meer.']);
+  });
+});
+
+describe('Anne-Fleur hernoeming in code', () => {
+  it('geen Lotte meer in data/ en engine/', () => {
+    const root = join(__dirname, '..', '..');
+    const dirs = ['data', 'engine'] as const;
+    const textExt = new Set(['.ts', '.tsx', '.json', '.md']);
+
+    function walk(dir: string): string[] {
+      const out: string[] = [];
+      for (const name of readdirSync(dir)) {
+        const p = join(dir, name);
+        if (statSync(p).isDirectory()) {
+          if (name === 'node_modules') continue;
+          out.push(...walk(p));
+        } else if (textExt.has(extname(name))) {
+          out.push(p);
+        }
+      }
+      return out;
+    }
+
+    const hits: string[] = [];
+    const lotteName = /\bLotte\b/i;
+    for (const d of dirs) {
+      for (const file of walk(join(root, d))) {
+        if (file.includes(`${sep}__tests__${sep}`)) continue;
+        const text = readFileSync(file, 'utf8');
+        if (lotteName.test(text)) hits.push(file.replace(root + sep, ''));
+      }
+    }
+    expect(hits).toEqual([]);
   });
 });

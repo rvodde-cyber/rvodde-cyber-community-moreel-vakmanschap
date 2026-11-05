@@ -275,11 +275,11 @@ describe('interventies data', () => {
     expect(echoTekstenVoorGekozenInterventies(bureau, new Set(['demo-a4-H']))).toHaveLength(1);
   });
 
-  it('a5-1-3 (Lotte) is aanwezig en definitief', () => {
-    const lotte = INTERVENTIE_BY_ID['a5-1-3']!;
-    expect(lotte.nummer).toBe('5.1.3');
-    expect(lotte.naam).toContain('Lotte');
-    expect(lotte.status).toBe('definitief');
-    expect(lotte.interventieDefinitief).toBe(true);
+  it('a5-1-3 (Anne-Fleur) is aanwezig en definitief', () => {
+    const anneFleur = INTERVENTIE_BY_ID['a5-1-3']!;
+    expect(anneFleur.nummer).toBe('5.1.3');
+    expect(anneFleur.naam).toContain('Anne-Fleur');
+    expect(anneFleur.status).toBe('definitief');
+    expect(anneFleur.interventieDefinitief).toBe(true);
   });
 });

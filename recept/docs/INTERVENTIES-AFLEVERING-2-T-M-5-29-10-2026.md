@@ -114,7 +114,7 @@ Greiner-fase: coördinatie. Systemen en procedures lossen op wat afdelingen verl
 
 ## 5. Aflevering 5: Het doel kwijt (opvolging, 2036)
 
-Greiner-fase: samenwerking en zingeving. Een conglomeraat waar niemand het doel nog weet; erfeniskwesties en bureaucratie. Piotr-lijn, Sanne en Lotte komen samen.
+Greiner-fase: samenwerking en zingeving. Een conglomeraat waar niemand het doel nog weet; erfeniskwesties en bureaucratie. Piotr-lijn, Sanne en Anne-Fleur komen samen.
 
 ### Ronde 1: Wie volgt op?
 
@@ -122,19 +122,19 @@ Greiner-fase: samenwerking en zingeving. Een conglomeraat waar niemand het doel 
 
 **5.1.2 Externe CEO aanstellen** (€€€) · Een professional van buiten. · Kostenfocus; professionalisering. · prod `++`, betr `-`, verz `0`, verl `+`, bud `-` · eerl `0`, mm `-` · Risico: verlies van het verhaal van de schuur. · Uitkomst: "De nieuwe CEO werkt efficiënt. De schuur komt in zijn presentaties niet meer voor." · Opvolging: versterkt het gevoel van doelverlies.
 
-**5.1.3 Lotte voorbereiden op een leidende rol** (€€) · Mentoring en ruimte voor Lotte. · Opvolging; HPWS. · prod `0`, betr `++`, verz `-`, verl `-`, bud `-` · eerl `+`, mm `++` · Risico: onrechtvaardig voor anderen als de keuze niet uitgelegd wordt. · Uitkomst: "Lotte leert het bedrijf van binnenuit. Niet iedereen begrijpt waarom juist zij." · Opvolging: past bij de overdracht van de schuur.
+**5.1.3 Anne-Fleur voorbereiden op een leidende rol** (€€) · Mentoring en ruimte voor Anne-Fleur. · Opvolging; HPWS. · prod `0`, betr `++`, verz `-`, verl `-`, bud `-` · eerl `+`, mm `++` · Risico: onrechtvaardig voor anderen als de keuze niet uitgelegd wordt. · Uitkomst: "Anne-Fleur leert het bedrijf van binnenuit. Niet iedereen begrijpt waarom juist zij." · Opvolging: past bij de overdracht van de schuur.
 
 **5.1.4 Transparant archief met afspraken en testamenten** (€) · Vastleggen wat er is afgesproken en door wie. · Eerlijkheid; Tenbrunsel & Smith-Crowe (2008). · prod `0`, betr `+`, verz `0`, verl `0`, bud `-` · eerl `++`, mm `+` · Risico: onthulling kan pijn doen. · Uitkomst: "Het archief maakt zichtbaar wat er is gebeurd. Niet alles is prettig om te lezen." · Opvolging: versnelt de onthulling over de doorstreping.
 
 ### Ronde 2: Doel en omvang
 
-**5.2.1 Waarden en doel opnieuw formuleren** (€) · MT en medewerkers formuleren samen waarom het bedrijf bestaat. · JD-R (zingeving); Harter et al. (2002). · prod `0`, betr `++`, verz `-`, verl `-`, bud `0` · eerl `+`, mm `++` · Risico: slogans zonder daden. · Uitkomst: "Het gesprek is moeilijker dan het lijkt. Er blijft één zin over waar iedereen achter staat." · Opvolging: versterkt Lies en Lotte.
+**5.2.1 Waarden en doel opnieuw formuleren** (€) · MT en medewerkers formuleren samen waarom het bedrijf bestaat. · JD-R (zingeving); Harter et al. (2002). · prod `0`, betr `++`, verz `-`, verl `-`, bud `0` · eerl `+`, mm `++` · Risico: slogans zonder daden. · Uitkomst: "Het gesprek is moeilijker dan het lijkt. Er blijft één zin over waar iedereen achter staat." · Opvolging: versterkt Lies en Anne-Fleur.
 
 **5.2.2 Verkoop aan een investeerder** (€€€) · Het bedrijf wordt verkocht. · Kostenfocus. · prod `+`, betr `--`, verz `+`, verl `++`, bud `++` · eerl `-`, mm `--` · Risico: verlies van de schuur en van de Piotr-lijn. · Uitkomst: "Het geld komt binnen. De schuur staat op een lijst met 'overige activa'." · Opvolging: bedreigt de nalatenschap.
 
 **5.2.3 Bureaucratie afslanken** (€€) · Overbodige systemen en procedures verdwijnen. · Greiner (1972); JD-R. · prod `+`, betr `++`, verz `-`, verl `-`, bud `-` · eerl `+`, mm `++` · Risico: controle neemt af; auditproblemen mogelijk. · Uitkomst: "Het wordt rustiger op de gang. Een paar mensen missen hun formulier." · Opvolging: Piotr en ploegleiders krijgen weer mandaat.
 
-**5.2.4 De schuur bewaren als leer- en gedenkplek** (€€) · De oorspronkelijke schuur krijgt een bestemming voor medewerkers en bezoekers. · Zingeving; erfgoed. · prod `0`, betr `+`, verz `0`, verl `-`, bud `-` · eerl `++`, mm `++` · Risico: nostalgie die echte problemen toedekt. · Uitkomst: "De schuur wordt bewaard. Of het bedrijf leert van het verhaal, is een andere vraag." · Opvolging: verbindt de lijnen van Harrie, Piotr en Lotte.
+**5.2.4 De schuur bewaren als leer- en gedenkplek** (€€) · De oorspronkelijke schuur krijgt een bestemming voor medewerkers en bezoekers. · Zingeving; erfgoed. · prod `0`, betr `+`, verz `0`, verl `-`, bud `-` · eerl `++`, mm `++` · Risico: nostalgie die echte problemen toedekt. · Uitkomst: "De schuur wordt bewaard. Of het bedrijf leert van het verhaal, is een andere vraag." · Opvolging: verbindt de lijnen van Harrie, Piotr en Anne-Fleur.
 
 **Nabespreking A5:** 1. Wat vertelde het verhaal van de schuur jullie over het doel van het bedrijf? 2. Wie profiteerde van de opvolging, en wie niet? 3. Wat betekent het dat Sanne de stukken tekende zonder te vragen wat er niet in stond? 4. Hoe kijken jullie terug op jullie keuzes in aflevering 1 tot 4? 5. Wat neem je mee naar je eigen werk?
 
@@ -171,7 +171,7 @@ Echo's zijn **tekstregels in de uitkomst**, geen extra score. Hun inhoud is conc
 
 1. **Aflevering 4 sluit aan bij de bestaande demo.** *Standaard: demo geldt tot jij beslist.*
 2. **Aandelenregeling voor het MT (3.2.4).** Is deze te scherp? *Standaard: behouden, het is een nuttig ethisch gespreksonderwerp.*
-3. **Lotte in 5.1.3.** Klopt haar rol als beoogde opvolger? *Standaard: ja, als voorbereiding op de overdracht.*
+3. **Anne-Fleur in 5.1.3.** Klopt haar rol als beoogde opvolger? *Standaard: ja, als voorbereiding op de overdracht.*
 4. **De schuur als gedenkplek (5.2.4).** *Standaard: behouden.*
 5. **Kostencategorie in plaats van bedragen.** *Standaard: ja.*
 

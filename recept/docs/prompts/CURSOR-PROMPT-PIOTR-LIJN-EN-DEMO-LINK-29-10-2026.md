@@ -66,7 +66,7 @@ Maak scènes met onderstaande beats. Schrijf per scène GEEN eigen literaire tek
 
 **Aflevering 5 (2036)**
 - `a5-onthulling`: Erik blijkt de zin te hebben doorgestreept (grond, Sanne, Optivora). Aan het licht via een brief van Harrie in de schuur en Lies die zijn woorden herkent. Erik legt het zakelijk uit. Sanne wist het niet.
-- `a5-overdracht`: Piotr (vaste ploegleider, huis en gezin in Nederland) draagt de schuur over aan Lotte. Lies geeft haar beslissende stem aan Lotte.
+- `a5-overdracht`: Piotr (vaste ploegleider, huis en gezin in Nederland) draagt de schuur over aan Anne-Fleur. Lies geeft haar beslissende stem aan Anne-Fleur.
 
 Voeg per scène toe: `fase` (Zien | Voelen | Wegen | Handelen | Volhouden) als nabespreekanker, en `beeld` (verwijzing naar I1–I5 of `placeholder`).
 

@@ -1,6 +1,8 @@
 # Designgids Recept
 
-Laatste update: **3 november 2026** (fase 0). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
+Laatste update: **5 november 2026** (fase 0). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
+
+**Teksten:** alle zichtbare dialoog, cold opens, interventieteksten en UI-copy volgen waar mogelijk `docs/TAALGIDS.md` (register, personages, geen dialect in 2036).
 
 ## 1. Principes
 

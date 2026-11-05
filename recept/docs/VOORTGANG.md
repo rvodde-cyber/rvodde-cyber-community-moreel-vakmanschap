@@ -1,6 +1,6 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **3 november 2026** — A1 stap 2 (inhoud 1984)
+Laatste update: **5 november 2026** — taalronde cold opens A2 t/m A5, Anne-Fleur
 
 ## Deze sessie
 
@@ -11,8 +11,9 @@ Laatste update: **3 november 2026** — A1 stap 2 (inhoud 1984)
 | **A1 stap 2 — inhoud 1984** | Cold opens, `ep1-frans`, briefje-UI, `slot-ep1`, `slotLineA1`, pauzekaart; docs beeld/portret |
 | **A1–A3 + A5 interventies** | **8× definitief** per aflevering; niet aan spelmotor |
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
+| **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests | **76/76** groen + `npm run build` OK (stap 2) |
+| Tests | Zie `npm test` (cold-open- + Anne-Fleur-tests) + `npm run build` |
 
 ## Live demo
 

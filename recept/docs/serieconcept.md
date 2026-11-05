@@ -10,7 +10,7 @@ Recept leent de sfeer van de HBO-serie Succession: een familie als machtsspel, e
 
 | Element | Uitwerking in Recept |
 | --- | --- |
-| Familie als machtsspel | Marco wil bewijzen dat hij geen vergissing was, Sanne wil terug wat haar is afgepakt, Erik speelt beide kanten, Lotte heeft idealen én belang bij de erfenis |
+| Familie als machtsspel | Marco wil bewijzen dat hij geen vergissing was, Sanne wil terug wat haar is afgepakt, Erik speelt beide kanten, Anne-Fleur heeft idealen én belang bij de erfenis |
 | Patriarch die niet loslaat | Harrie bemoeit zich met alles; zijn zin "vroeger kende ik iedereen" klinkt elke aflevering wranger |
 | Dialogen | Droog, ironisch, complimenten als messen; humor die de machtigen raakt, nooit de mensen die het werk doen |
 | Ritme | Elke aflevering opent met een familiediner; beslissingen vallen achter gesloten deuren; er wordt gelekt en van kant gewisseld |
@@ -48,10 +48,10 @@ Elke aflevering is een groeifase van Greiner (1972, 1998), met een tijdsprong er
 | Dennis Kuipers (1987) | – | – | – | 39, operationeel directeur | 49, divisiedirecteur drones |
 | Yasmin El Amrani (1997) | – | – | – | 29, drone-engineer | 39, directeur van een partnerbedrijf |
 | Piotr Nowak (1992) | – | – | – | 34, flexkracht | 44, vaste ploegleider, of al lang vertrokken |
-| Lotte van Gorp (2010), kleindochter | – | – | – | 16, dochter van Marco | 26, vraagt waarvoor het bedrijf nog bestaat |
+| Anne-Fleur van Gorp (2010), kleindochter | – | – | – | 16, dochter van Marco | 26, vraagt waarvoor het bedrijf nog bestaat |
 | Caroline de Wit (1980), investeerder | – | – | – | – | 56, partner bij een investeringsfonds dat een bod doet |
 
-Erik is niet alleen een zakkenvuller: hij is de man van Sanne, en zijn zelfverrijking voelt voor hen als een rechtzetting. Lies geeft de serie een tweede morele lijn over erkenning. Lotte opent en sluit de serie met de vraag waar het hele spel om draait.
+Erik is niet alleen een zakkenvuller: hij is de man van Sanne, en zijn zelfverrijking voelt voor hen als een rechtzetting. Lies geeft de serie een tweede morele lijn over erkenning. Anne-Fleur opent en sluit de serie met de vraag waar het hele spel om draait.
 
 ## Opvolging als open keuze
 
