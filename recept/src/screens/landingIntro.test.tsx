@@ -240,5 +240,15 @@ describe('Intro register en IntroPhase', () => {
     root = r.root;
     expect(r.container.querySelector('.intro-split')).toBeNull();
     expect(r.container.querySelector('.cine')).toBeTruthy();
+    expect(r.container.textContent).toContain('managementteam (MT)');
+  });
+
+  it('A1 intro UI: geen conceptskelet, wel 8 punten', () => {
+    const r = introWithPeriod(1);
+    root = r.root;
+    const t = r.container.textContent ?? '';
+    expect(t.toLowerCase()).not.toContain('conceptskelet');
+    expect(t).not.toMatch(/mln/i);
+    expect(t).toContain('8 punten');
   });
 });

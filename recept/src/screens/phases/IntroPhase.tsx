@@ -2,19 +2,22 @@ import { episodeContent } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
 import { INTRO_TEKSTEN } from '@content/intros.nl';
 import { startOf } from '@engine/startOf';
-import { budgetOf, budgetOfDef } from '@engine/helpers';
-import { HelpLinks } from '../../components/HelpLinks';
-import { useUiModals } from '../../context/UiModalsContext';
-import { engineContext } from '../../game/budgetUi';
-import { roundDefFor } from '../../game/roundSource';
+import { budgetOf } from '@engine/helpers';
 import { mln } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
-
 import { INTRO_SCENE } from '@data/sceneCodes';
 import { piotrIntroResolved } from '@data/piotrSpel';
 import { SceneBackground } from '../../components/SceneBackground';
 import { IntroSceneImage } from '../../components/IntroSceneImage';
+import {
+  a4IntroCarryR1,
+  a4IntroCarryR2,
+  introCarryLines,
+} from '@data/episodes/introUiCopy';
+import { HelpLinks } from '../../components/HelpLinks';
+import { useUiModals } from '../../context/UiModalsContext';
+import { engineContext } from '../../game/budgetUi';
 
 export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { openHowto, openGloss, openSettings } = useUiModals();
@@ -26,7 +29,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const meta = episodeMeta(state.episode);
     const intro = INTRO_TEKSTEN[state.episode];
     const sc = INTRO_SCENE[state.episode];
-    const D = roundDefFor(state);
+    const carryLines = introCarryLines(content, state.episode, 1);
     const introBody = (
       <>
         <p className="kick">{content.introLook.kicker}</p>
@@ -41,8 +44,11 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         </div>
         <div className="carry">
           <h4>JULLIE OPDRACHT</h4>
-          <p className="body">{intro.opdracht}</p>
-          <p className="body">Budget deze ronde: {mln(budgetOfDef(D, 1, ctx))}.</p>
+          {carryLines.map((line) => (
+            <p key={line.slice(0, 48)} className="body">
+              {line}
+            </p>
+          ))}
         </div>
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder
@@ -118,10 +124,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           </div>
           <div className="carry">
             <h4>JULLIE OPDRACHT</h4>
-            <p className="body">
-              Dezelfde werkwijze als in ronde 1: eerst onderzoeken, dan besluiten, dan kijken wat er gebeurt. Let op: wat
-              jullie in ronde 1 hebben gekozen, werkt door in deze ronde. Jullie hebben weer ongeveer tien minuten.
-            </p>
+            <p className="body">{a4IntroCarryR2()}</p>
           </div>
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
@@ -194,11 +197,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         </div>
         <div className="carry">
           <h4>JULLIE OPDRACHT</h4>
-          <p className="body">
-            Jullie vormen samen het managementteam (MT) van Van Gorp Drones. Per ronde onderzoeken jullie eerst wat er
-            speelt. Daarna kiezen jullie twee interventies en verdelen jullie het budget. Voor onderzoek en besluit
-            samen hebben jullie ongeveer tien minuten.
-          </p>
+          <p className="body">{a4IntroCarryR1()}</p>
         </div>
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder

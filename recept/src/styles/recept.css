@@ -743,7 +743,19 @@ select:focus-visible {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(12, 22, 32, 0.72) 0%, rgba(6, 10, 14, 0.92) 45%, var(--bg) 100%);
+  background: linear-gradient(180deg, rgba(12, 22, 32, 0.45) 0%, rgba(6, 10, 14, 0.78) 50%, var(--bg) 100%);
+}
+.landing-hero {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
+}
+.landing-play {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
+}
+.landing-data__chips li {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.landing-ep-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 .landing-in {
   position: relative;
