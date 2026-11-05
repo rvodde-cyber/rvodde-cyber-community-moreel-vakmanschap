@@ -35,5 +35,6 @@ export function migrateGameState(raw: unknown): GameUiState | null {
     hidden: s.hidden ?? freshHidden(),
     filmKind: s.filmKind ?? null,
     gok: s.gok ?? null,
+    gesprekskaarten: s.gesprekskaarten ?? [],
   };
 }

@@ -116,5 +116,6 @@ export function freshEpisode(episode: EpisodeId): GameUiState {
     tijdgeestGeluidAan: false,
     filmKind: null,
     gok: null,
+    gesprekskaarten: [],
   };
 }

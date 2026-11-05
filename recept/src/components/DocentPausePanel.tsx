@@ -1,5 +1,6 @@
 import { useDocentMode } from '../hooks/useDocentMode';
-import { downloadTeamExport } from '../game/teamExport';
+import { downloadTeamExport, waardeLabels } from '../game/teamExport';
+import { gesprekskaartVoor } from '@data/gesprekskaarten';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState, Phase } from '../game/uiTypes';
 
@@ -8,6 +9,7 @@ const PHASES: { id: Phase; label: string }[] = [
   { id: 'cold', label: 'Cold open' },
   { id: 'onderzoek', label: 'Onderzoek' },
   { id: 'besluit', label: 'Besluit' },
+  { id: 'gesprek', label: 'Teamgesprek' },
   { id: 'scan', label: 'Scan' },
   { id: 'uitkomst', label: 'Uitkomst' },
   { id: 'tussen', label: 'Tussen' },
@@ -76,6 +78,37 @@ export function DocentPausePanel({ state, dispatch }: Props) {
           </ul>
         ) : null}
       </div>
+      {state.gesprekskaarten.length > 0 ? (
+        <div className="docent-gesprek">
+          <p>
+            <strong>Gesprekskaarten</strong>
+          </p>
+          <table className="cmp gesprek-export-table">
+            <thead>
+              <tr>
+                <th>Kaart</th>
+                <th>Zin team</th>
+                <th>Waarden</th>
+              </tr>
+            </thead>
+            <tbody>
+              {state.gesprekskaarten.map((g) => {
+                const titel = gesprekskaartVoor(g.episode).titel;
+                return (
+                  <tr key={`${g.episode}-${g.kaartId}`}>
+                    <td>
+                      A{g.episode} · {titel}
+                      {g.overgeslagen ? ' (overgeslagen)' : ''}
+                    </td>
+                    <td>{g.overgeslagen ? '—' : g.zin || '—'}</td>
+                    <td>{g.overgeslagen ? '—' : waardeLabels(g.waarden).join(', ') || '—'}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
       <button type="button" className="btn" onClick={() => downloadTeamExport(state)}>
         Exporteer keuzeketen (JSON)
       </button>

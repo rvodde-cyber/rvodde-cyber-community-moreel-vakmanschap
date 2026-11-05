@@ -3,6 +3,7 @@ import type { OpvolgingKeuze } from '@data/opvolging';
 import type { EpisodeId } from '@data/episodes/meta';
 import type { ComputeResult } from '@engine/types';
 import type { InterventieMeterState } from '@engine/interventieCompute';
+import type { GesprekskaartExportEntry } from '@data/schemas/gesprekskaart.schema';
 import type { BerichtDef, ChatChannel } from '@data/berichten';
 
 export type Phase =
@@ -10,6 +11,7 @@ export type Phase =
   | 'cold'
   | 'onderzoek'
   | 'besluit'
+  | 'gesprek'
   | 'uitkomst'
   | 'scan'
   | 'tussen'
@@ -81,6 +83,8 @@ export interface GameUiState {
   tijdgeestGeluidAan: boolean;
   filmKind: FilmKind | null;
   gok: string | null;
+  /** Teamgesprekken (ronde 1) voor docent/export */
+  gesprekskaarten: GesprekskaartExportEntry[];
 }
 
 export type BerichtFaseKey = `${1 | 2}-onderzoek` | `${1 | 2}-besluit`;

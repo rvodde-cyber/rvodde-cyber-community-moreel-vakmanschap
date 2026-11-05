@@ -705,3 +705,17 @@ select:focus-visible {
   display: block;
   margin-bottom: 6px;
 }
+
+.gesprek-wrap { padding-top: 24px; padding-bottom: 48px; max-width: 720px; }
+.gesprekskaart-panel .gk-titel { font-family: var(--font-display, var(--title)); font-size: 28px; margin: 0 0 16px; font-weight: 400; }
+.gesprekskaart-panel .gk-alinea { font-family: var(--font-ui, var(--sans)); margin-bottom: 14px; }
+.gesprekskaart-panel .gk-slotvraag { font-family: var(--font-ui, var(--sans)); margin: 20px 0; }
+.gesprek-meta { display: flex; gap: 12px; font-family: var(--font-data, var(--data)); font-size: 13px; color: var(--soft); margin-bottom: 8px; }
+.gesprek-timer { background: var(--panel-2); border: 1px solid var(--line); height: 8px; border-radius: 4px; overflow: hidden; margin: 16px 0 8px; }
+.gesprek-timer-bar { height: 100%; background: var(--cyan); opacity: 0.65; transition: width 1s linear; }
+.gesprek-timer-bar.static { width: 50%; opacity: 0.35; }
+.gk-waarden { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.gk-waarde[aria-pressed='true'] { border-color: var(--cyan); background: var(--cyan-dim); color: var(--cyan); }
+.gk-zin { width: 100%; min-height: 88px; resize: vertical; }
+.docent-gesprek { margin: 12px 0; }
+.gesprek-export-table td:first-child { text-align: left; font-family: var(--sans); }

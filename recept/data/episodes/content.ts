@@ -15,6 +15,7 @@ import { slotLineRonde1, slotLinesFinale } from '../slotLines';
 import type { ComputeResult } from '@engine/types';
 import type { DilemmaDef } from './dilemmaDef';
 import { TIJDGEEST, type Tijdgeest } from './tijdgeest';
+import { GESPREKSKAARTEN, type Gesprekskaart } from '../gesprekskaarten';
 
 export type ColdOpenDef = {
   place: string;
@@ -77,6 +78,9 @@ export type EpisodeContent = {
   pauzeKaart?: EpisodePauzeKaart;
   /** Sfeerlaag per periode — docs/TIJDGEEST.md */
   tijdgeest: Tijdgeest;
+  gesprekskaart: Gesprekskaart;
+  /** Teamgesprek ronde 1; A4-demo standaard uit (golden-flow). */
+  gesprekskaartActief: boolean;
 };
 
 function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
@@ -96,6 +100,8 @@ function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
     kick: meta.kick,
     usesDemoBudget: false,
     tijdgeest: TIJDGEEST[ep],
+    gesprekskaart: GESPREKSKAARTEN[ep],
+    gesprekskaartActief: true,
   };
 }
 
@@ -142,6 +148,8 @@ const EPISODE_1_CONTENT: EpisodeContent = {
     intro: 'De scène is voorbij. Neem de tijd voor deze vragen voordat jullie verder gaan.',
   },
   tijdgeest: TIJDGEEST[1],
+  gesprekskaart: GESPREKSKAARTEN[1],
+  gesprekskaartActief: true,
 };
 
 const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
@@ -176,6 +184,8 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   usesDemoBudget: true,
   tussenKaart: EPISODE_4_TUSSEN,
   tijdgeest: TIJDGEEST[4],
+  gesprekskaart: GESPREKSKAARTEN[4],
+  gesprekskaartActief: false,
 };
 
 export const EPISODE_CONTENT: Record<EpisodeId, EpisodeContent> = {

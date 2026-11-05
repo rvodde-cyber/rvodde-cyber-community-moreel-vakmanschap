@@ -6,6 +6,8 @@ Laatste update: **5 november 2026** (fase 0). Afgeleid van wat in de repo **best
 
 **Typografie:** per tijdperk — `docs/TYPOGRAFIE.md`, `themes/periods.ts`, `PeriodTypographyScope`.
 
+**Gesprekskaarten:** teamgesprek ronde 1 — `docs/GESPREKSKAART.md`, fase `gesprek`, geen motoreffect.
+
 ## 1. Principes
 
 - **Één bediening:** één React-app (`src/`), state via `useReducer` + `localStorage` (`recept-game-v4`). Geen aparte student/docent-build; docent via `?docent=1` (`useDocentMode`).

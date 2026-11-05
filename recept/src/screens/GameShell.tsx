@@ -34,6 +34,7 @@ import { ScanPhase } from './phases/ScanPhase';
 import { TussenPhase } from './phases/TussenPhase';
 import { UitkomstPhase } from './phases/UitkomstPhase';
 import { NabesprekingPhase } from './phases/NabesprekingPhase';
+import { GesprekskaartPhase } from './phases/GesprekskaartPhase';
 import { VoorspelPhase } from './phases/VoorspelPhase';
 
 function Ticker({ state }: { state: GameUiState }) {
@@ -141,6 +142,16 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
       <>
         <SyncModalRound round={round} />
         <TussenPhase state={state} dispatch={dispatch} />
+        {film}
+        <MessageToastHost />
+      </>
+    );
+  }
+  if (phase === 'gesprek') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <GesprekskaartPhase state={state} dispatch={dispatch} />
         {film}
         <MessageToastHost />
       </>

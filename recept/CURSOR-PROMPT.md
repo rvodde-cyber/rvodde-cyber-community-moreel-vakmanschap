@@ -30,7 +30,7 @@ Vijf afleveringen, elk één ronde van ongeveer 20 minuten, met een pauze van 15
 | 2 | 1996 | Sneller, Gerrit | Autonomie | Harrie zakt in elkaar op de werkvloer; Gerrit belt de ambulance |
 | 3 | 2009 | Een Van Gorp aan het roer | Controle | Opvolging gekozen; Sanne staat op en verlaat het restaurant (pauze volgt) |
 | 4 | 2026 | Het dashboard liegt niet | Zie 5.1 | Sprong naar 2031; Harrie overlijdt; één zin in het testament is doorgestreept |
-| 5 | 2036 | Wie heeft het schrift? | Externe groei | Lotte vindt het schrift in de schuur; gaat over in de nabespreking |
+| 5 | 2036 | Wie heeft het schrift? | Externe groei | Anne-Fleur vindt het schrift in de schuur; gaat over in de nabespreking |
 
 Aflevering 4 heeft in de demo twee rondes (ronde 1 en ronde 2). Bouw beide volledig.
 

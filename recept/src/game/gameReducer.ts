@@ -22,6 +22,9 @@ import { stubComputeResult } from './stubCompute';
 import { pilotLockedCards } from './besluitRules';
 import { chatTimeLabel } from './chatHelpers';
 import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
+import { phaseAfterBesluitConfirm, phaseAfterGesprek } from './gesprekFlow';
+import { validateGesprekOpslaan, type GesprekskaartExportEntry } from '@data/schemas/gesprekskaart.schema';
+import { gesprekskaartVoor } from '@data/gesprekskaarten';
 import type { GameUiState, Phase } from './uiTypes';
 import type { FilmKind } from './uiTypes';
 
@@ -43,6 +46,8 @@ export type GameAction =
   | { type: 'SET_BUD'; id: string; value: number }
   | { type: 'AUTO_FIX_BUDGET' }
   | { type: 'CONFIRM_BESLUIT' }
+  | { type: 'GESPREK_OPSLAAN'; zin: string; waarden: string[]; tijdsduurSec: number }
+  | { type: 'GESPREK_OVERSLAAN'; tijdsduurSec: number }
   | { type: 'FINISH_SCAN' }
   | { type: 'TRY_AGAIN' }
   | { type: 'SET_CHAT_TAB'; tab: ChatChannel }
@@ -68,6 +73,19 @@ export type GameAction =
 
 function roundState(state: GameUiState) {
   return state.rounds[state.round];
+}
+
+function replaceGesprekEntry(state: GameUiState, entry: GesprekskaartExportEntry): GesprekskaartExportEntry[] {
+  const kaartId = gesprekskaartVoor(state.episode).id;
+  const rest = state.gesprekskaarten.filter(
+    (g) => !(g.episode === state.episode && g.kaartId === kaartId),
+  );
+  return [...rest, entry];
+}
+
+function clearGesprekForEpisode(state: GameUiState): GesprekskaartExportEntry[] {
+  const kaartId = gesprekskaartVoor(state.episode).id;
+  return state.gesprekskaarten.filter((g) => !(g.episode === state.episode && g.kaartId === kaartId));
 }
 
 function deliverMessage(state: GameUiState, id: string, text: string): GameUiState {
@@ -219,9 +237,10 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           laterFromPrevRound,
         });
         const hidden = applyInterventieHidden(state.hidden, cards, hiddenDelta);
+        const nextPhase = phaseAfterBesluitConfirm(state.episode, state.round, motor);
         return {
           ...state,
-          phase: 'uitkomst',
+          phase: nextPhase,
           hidden,
           interventieMeters: meterStateOut,
           results: { ...state.results, [state.round]: result },
@@ -236,9 +255,10 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
           const c = D.cards.find((x) => x.id === id);
           if (c?.status === 'concept') conceptLog.push(`ep${state.episode}-${id}`);
         }
+        const nextPhase = phaseAfterBesluitConfirm(state.episode, state.round, motor);
         return {
           ...state,
-          phase: 'uitkomst',
+          phase: nextPhase,
           conceptLog,
           results: { ...state.results, [state.round]: res },
           rounds: { ...state.rounds, [state.round]: { ...r, cards } },
@@ -260,12 +280,49 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         { ...r, cards },
         res,
       );
+      const nextPhase = phaseAfterBesluitConfirm(state.episode, state.round, motor);
       return {
         ...state,
-        phase: 'scan',
+        phase: nextPhase,
         hidden,
         results: { ...state.results, [state.round]: res },
         rounds: { ...state.rounds, [state.round]: { ...r, cards } },
+      };
+    }
+    case 'GESPREK_OPSLAAN': {
+      if (state.phase !== 'gesprek' || state.round !== 1) return state;
+      const v = validateGesprekOpslaan(action.zin, action.waarden);
+      if (!v.ok) return state;
+      const kaart = gesprekskaartVoor(state.episode);
+      const entry: GesprekskaartExportEntry = {
+        episode: state.episode,
+        kaartId: kaart.id,
+        zin: action.zin.trim(),
+        waarden: [...action.waarden],
+        overgeslagen: false,
+        tijdsduurSec: action.tijdsduurSec,
+      };
+      return {
+        ...state,
+        phase: phaseAfterGesprek(state.episode),
+        gesprekskaarten: replaceGesprekEntry(state, entry),
+      };
+    }
+    case 'GESPREK_OVERSLAAN': {
+      if (state.phase !== 'gesprek' || state.round !== 1) return state;
+      const kaart = gesprekskaartVoor(state.episode);
+      const entry: GesprekskaartExportEntry = {
+        episode: state.episode,
+        kaartId: kaart.id,
+        zin: '',
+        waarden: [],
+        overgeslagen: true,
+        tijdsduurSec: action.tijdsduurSec,
+      };
+      return {
+        ...state,
+        phase: phaseAfterGesprek(state.episode),
+        gesprekskaarten: replaceGesprekEntry(state, entry),
       };
     }
     case 'FINISH_SCAN':
@@ -306,6 +363,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         results,
         interventieMeters,
         pendingReacties: false,
+        gesprekskaarten: state.round === 1 ? clearGesprekForEpisode(state) : state.gesprekskaarten,
         rounds: { ...state.rounds, [state.round]: nextR },
         tLeft: state.tLeft > 0 ? state.tLeft : 600,
       };

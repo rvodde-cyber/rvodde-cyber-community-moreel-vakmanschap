@@ -12,7 +12,8 @@ import { MV_DIMENSIES, PORTRAIT_ETHIEK } from '@content/moreelVakmanschap.nl';
 import { PersonCard, personenInGlossarium } from '../../components/PersonCard';
 import { SannePanel } from '../../components/SannePanel';
 import { useDocentMode } from '../../hooks/useDocentMode';
-import { downloadTeamExport } from '../../game/teamExport';
+import { downloadTeamExport, waardeLabels } from '../../game/teamExport';
+import { gesprekskaartVoor } from '@data/gesprekskaarten';
 import { roundDefFor } from '../../game/roundSource';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
@@ -45,6 +46,30 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
           </button>
         ) : null}
       </section>
+
+      {state.gesprekskaarten.length > 0 ? (
+        <section className="panel">
+          <div className="ph">
+            <h2>TEAMGESPREK (GESPREKSKAART)</h2>
+          </div>
+          {state.gesprekskaarten.map((g) => {
+            const kaart = gesprekskaartVoor(g.episode);
+            return (
+              <div key={`${g.episode}-${g.kaartId}`} className="q">
+                <span className="tag">{kaart.titel}</span>
+                {g.overgeslagen ? (
+                  <p>Overgeslagen.</p>
+                ) : (
+                  <>
+                    <p className="big">{g.zin}</p>
+                    <p className="note">Waarden: {waardeLabels(g.waarden).join(', ') || '—'}</p>
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </section>
+      ) : null}
 
       {roundNums.map((n) => {
         const ui = state.rounds[n];

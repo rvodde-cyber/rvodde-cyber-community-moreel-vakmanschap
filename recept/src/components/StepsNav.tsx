@@ -7,6 +7,7 @@ const phaseIndex: Partial<Record<Phase, number>> = {
   cold: 0,
   onderzoek: 1,
   besluit: 2,
+  gesprek: 2,
   uitkomst: 3,
   scan: 3,
 };
@@ -31,6 +32,18 @@ export function StepsNav({ phase }: { phase: Phase }) {
     );
   }
 
+  if (phase === 'gesprek') {
+    return (
+      <ol className="steps">
+        <li className="done">1 COLD OPEN</li>
+        <li className="done">2 ONDERZOEK</li>
+        <li className="now" aria-current="step">
+          3 TEAMGESPREK
+        </li>
+        <li>4 UITKOMST</li>
+      </ol>
+    );
+  }
   const i0 = phaseIndex[phase] ?? 0;
   return (
     <ol className="steps">

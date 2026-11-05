@@ -3,8 +3,12 @@ import { MT_ROLLEN } from '@data/rollen';
 import { ROL_BELANG } from '@data/rolBelang';
 import { roundDefFor } from './roundSource';
 import type { GameUiState, Phase } from './uiTypes';
+import type { GesprekskaartExportEntry } from '@data/schemas/gesprekskaart.schema';
+import { TEAM_EXPORT_GESPREK_VERSION } from '@data/schemas/gesprekskaart.schema';
+import { WAARDEN } from '@data/schemas/gesprekskaart.schema';
 
 export type TeamExport = {
+  exportVersion: number;
   exportedAt: string;
   episode: number;
   playerName: string;
@@ -15,6 +19,7 @@ export type TeamExport = {
   dilemma: GameUiState['dilemma'] | (GameUiState['dilemma'] & { titel?: string });
   hidden: GameUiState['hidden'];
   gok: GameUiState['gok'];
+  gesprekskaarten: GesprekskaartExportEntry[];
 };
 
 export function buildTeamExport(state: GameUiState): TeamExport {
@@ -56,6 +61,7 @@ export function buildTeamExport(state: GameUiState): TeamExport {
   }
 
   return {
+    exportVersion: TEAM_EXPORT_GESPREK_VERSION,
     exportedAt: new Date().toISOString(),
     episode: state.episode,
     playerName: state.playerName,
@@ -71,7 +77,13 @@ export function buildTeamExport(state: GameUiState): TeamExport {
       : state.dilemma,
     hidden: state.hidden,
     gok: state.gok,
+    gesprekskaarten: state.gesprekskaarten,
   };
+}
+
+export function waardeLabels(ids: string[]): string[] {
+  const map = new Map(WAARDEN.map((w) => [w.id, w.label]));
+  return ids.map((id) => map.get(id as (typeof WAARDEN)[number]['id']) ?? id);
 }
 
 export function downloadTeamExport(state: GameUiState) {
