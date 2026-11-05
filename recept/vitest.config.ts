@@ -10,7 +10,7 @@ export default defineConfig({
     },
   },
   test: {
-    include: ['engine/**/*.test.ts', 'src/**/*.test.ts'],
+    include: ['engine/**/*.test.ts', 'src/**/*.test.ts', 'src/**/*.test.tsx'],
     environment: 'node',
     environmentMatchGlobs: [['src/**', 'jsdom']],
   },

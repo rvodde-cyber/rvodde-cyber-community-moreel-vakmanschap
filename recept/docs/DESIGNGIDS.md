@@ -8,6 +8,8 @@ Laatste update: **5 november 2026** (fase 0). Afgeleid van wat in de repo **best
 
 **Gesprekskaarten:** teamgesprek ronde 1 — `docs/GESPREKSKAART.md`, fase `gesprek`, geen motoreffect.
 
+**Landingspagina & intro:** posterlook — hoofdstuk **§9** hieronder; beeld rechts via `introBeeldRechts` in `EPISODE_CONTENT`.
+
 ## 1. Principes
 
 - **Één bediening:** één React-app (`src/`), state via `useReducer` + `localStorage` (`recept-game-v4`). Geen aparte student/docent-build; docent via `?docent=1` (`useDocentMode`).
@@ -118,6 +120,31 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 **Register (A1 stap 1, 3 nov 2026):** `data/episodes/content.ts` — `EPISODE_CONTENT` per aflevering (rondes, cold open, dilemma, slotlijnen, film, **`tijdgeest`**). Spelcode leest via `episodeContent(episode)`; `isFullEpisode(ep)` = register heeft 2 rondes + dilemma + slotlijnen. UI-label **skelet** blijft `playMode` in `meta.ts`.
 
 **Tijdgeestlaag (5 nov 2026):** ticker (header + skeleton), optioneel geluid en rekwisieten — **`docs/TIJDGEEST.md`**. Weergave ticker: `tickerRegelsVoor()` (A4: demo-ticker uit `rounds.ts` + tijdgeest; overige afleveringen alleen tijdgeest). Geen effect op meters of motor.
+
+## 9. Landingspagina en introscherm (poster, 5 nov 2026)
+
+### Landingspagina — was
+
+- `HomeScreen.tsx` in `.setup` / `.setup-in`: gouden kick „RECEPT”, h1 „Van Gorp Drones”, één kolom met voornaam, verticale `.ep-picker` (gouden knoppen + „— skelet”), Doorgaan, `HelpLinks`.
+- Geen achtergrondbeeld; globale `:root`-tokens uit `recept.css`.
+
+### Landingspagina — wordt
+
+- Nieuwe structuur met prefix **`landing-*`**: full-bleed `MENU.jpg` + verloopoverlay, kicker, h1 **RECEPT**, ondertitels (crème/goud), decoratieve dataregel (`aria-hidden`), sectie **Speel mee** (formulier links, vijf kaarten rechts met label Speelbaar/Skelet), voettekst + `HelpLinks`.
+- **`PosterTypographyScope`** + lazy **`loadPosterFonts()`** (Instrument Serif, Chakra Petch); instelling **Leesbaar lettertype** geldt ook hier.
+- Gedrag ongewijzigd: voornaam, `SET_NAME` / `START_EPISODE`, `hasSave`, `showsSkeletLabel()`.
+
+### Introscherm — was
+
+- **`IntroPhase`**: full-bleed `.cine` + `SceneBackground` (alleen na `beeldAkkoord`) + `.cine-in` onderaan (kick, titel, geschiedenis, knop Verder).
+- Aflevering 4 ronde 1: zelfde filmische laag (demo/golden).
+
+### Introscherm — wordt
+
+- Ronde 1 (niet-demo) en skeleton-afleveringen met **`introBeeldRechts: true`**: twee kolommen vanaf 900 px — tekst links (~60ch), **`IntroSceneImage`** rechts (sticky, 3:2, onderschrift `introBeeldTekst`); onder 900 px beeld boven tekst.
+- JPG laadt direct uit `public/beelden/`; bij `onerror` placeholder **BEELD &lt;code&gt; VOLGT**.
+- **A4:** `introBeeldRechts: false` → bestaande `.cine`-layout ongewijzigd.
+- Register: `introBeeldAlt`, `introBeeldTekst`, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
 
 ## 8. Open ontwerpvragen voor Richard
 

@@ -10,7 +10,7 @@ Legenda kolommen: **1** eigen verhaal · **2** geen herkomstclichés · **3** ge
 
 | Code | Omschrijving | Alt-tekst (NL) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 akkoord |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| I1 | Intro aflevering 1 — schuur 1984 | Sfeerbeeld: schuur bij schemer (placeholder) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
+| I1 | Intro aflevering 1 — woonhuis + schuur Berkel-Enschot | Bestand `public/beelden/I1.jpg` aanwezig; intro laadt JPG ook zonder `akkoordRichard`. Akkoord checklist: **nee** — Firefly-brief `docs/prompts/CURSOR-PROMPT-INTRO-BEELD-RECHTS-05-11-2026.md` | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
 | I2 | Intro aflevering 2 — lopende band 1996 | Sfeerbeeld: fabriekshal met band (placeholder) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
 | I3 | Intro aflevering 3 — directietafel 2009 | Sfeerbeeld: lege directietafel (placeholder) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
 | I4 | Intro aflevering 4 — TEMPO (T4 demo) | Leeg kantoor met actieve schermen bij zonsopgang | n.v.t. | ja | ja | n.v.t. | n.v.t. | ja | ja | n.v.t. | **nee** |

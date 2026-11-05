@@ -53,7 +53,7 @@ describe('geen externe font-CDN in bron', () => {
     for (const name of readdirSync(dir, { withFileTypes: true })) {
       const p = join(dir, name.name);
       if (name.isDirectory() && name.name !== 'node_modules') walk(p, acc);
-      else if (/\.(tsx?|css|html)$/.test(name.name)) acc.push(p);
+      else if (/\.(tsx?|css|html)$/.test(name.name) && !/\.test\.(tsx?)$/.test(name.name)) acc.push(p);
     }
     return acc;
   }

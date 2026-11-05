@@ -1,11 +1,12 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **5 november 2026** — tijdgeestlaag
+Laatste update: **5 november 2026** — landingspagina + intro poster
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **Landingspagina + intro** | Posterlook (`landing-*`), `MENU.jpg`, intro beeld rechts (`IntroSceneImage`, `introBeeldRechts`); A4 demo ongewijzigd; tests in `landingIntro.test.tsx` |
 | **Tijdgeestlaag** | `data/episodes/tijdgeest.ts`, ticker UI (`tickerRegelsVoor`), geluid aan/uit + tekstalternatief; docs `TIJDGEEST.md`, `GELUID-CHECK.md`, beeldbank-check |
 | **Speelflow A1** | Cold open auto + registergrenzen; 3 klikken intro→MT; `docs/STAP-FLOW-ONDERZOEK.md` |
 | **Typografie per tijdperk** | Fontsource self-hosted, `PeriodTypographyScope`, instelling Leesbaar lettertype — `docs/TYPOGRAFIE.md` |
@@ -18,7 +19,7 @@ Laatste update: **5 november 2026** — tijdgeestlaag
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests | Zie `npm test` (cold-open- + Anne-Fleur-tests) + `npm run build` |
+| Tests | **`npm test`**: 161 groen (incl. landing/intro) + `npm run build` |
 
 ## Live demo
 

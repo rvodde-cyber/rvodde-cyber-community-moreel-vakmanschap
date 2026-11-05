@@ -14,6 +14,8 @@ import type { GameUiState } from '../../game/uiTypes';
 import { INTRO_SCENE } from '@data/sceneCodes';
 import { piotrIntroResolved } from '@data/piotrSpel';
 import { SceneBackground } from '../../components/SceneBackground';
+import { IntroSceneImage } from '../../components/IntroSceneImage';
+import { PosterTypographyScope } from '../../components/PosterTypographyScope';
 
 export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { openHowto, openGloss, openSettings } = useUiModals();
@@ -26,33 +28,55 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const intro = INTRO_TEKSTEN[state.episode];
     const sc = INTRO_SCENE[state.episode];
     const D = roundDefFor(state);
+    const introBody = (
+      <>
+        <p className="kick">{meta.kick}</p>
+        <p className="ep">{meta.titel}</p>
+        <h4>GESCHIEDENIS</h4>
+        <p className="body">{intro.geschiedenis}</p>
+        <h4>UITDAGINGEN</h4>
+        <p className="body">{intro.uitdagingen}</p>
+        <div className="hintbox">
+          <h4>HINT</h4>
+          <p>{intro.hint}</p>
+        </div>
+        <div className="carry">
+          <h4>JULLIE OPDRACHT</h4>
+          <p className="body">{intro.opdracht}</p>
+          <p className="body">Budget deze ronde: {mln(budgetOfDef(D, 1, ctx))}.</p>
+        </div>
+        <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
+          Verder
+        </button>
+        <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
+      </>
+    );
+
+    if (content.introBeeldRechts) {
+      return (
+        <PosterTypographyScope className="intro-split-root intro-fade">
+          <div className="intro-split">
+            <div className="intro-split__grid">
+              <div className="cine-in intro-split__text">{introBody}</div>
+              <aside className="intro-split__media">
+                <IntroSceneImage
+                  checkCode={sc.checkCode}
+                  fileCode={sc.fileCode}
+                  alt={content.introBeeldAlt}
+                  caption={content.introBeeldTekst}
+                />
+              </aside>
+            </div>
+          </div>
+        </PosterTypographyScope>
+      );
+    }
+
     return (
       <div className="cine">
-        {(() => {
-          return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
-        })()}
+        <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />
         <div className="cine-shade" />
-        <div className="cine-in">
-          <p className="kick">{meta.kick}</p>
-          <p className="ep">{meta.titel}</p>
-          <h4>GESCHIEDENIS</h4>
-          <p className="body">{intro.geschiedenis}</p>
-          <h4>UITDAGINGEN</h4>
-          <p className="body">{intro.uitdagingen}</p>
-          <div className="hintbox">
-            <h4>HINT</h4>
-            <p>{intro.hint}</p>
-          </div>
-          <div className="carry">
-            <h4>JULLIE OPDRACHT</h4>
-            <p className="body">{intro.opdracht}</p>
-            <p className="body">Budget deze ronde: {mln(budgetOfDef(D, 1, ctx))}.</p>
-          </div>
-          <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
-            Verder
-          </button>
-          <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
-        </div>
+        <div className="cine-in">{introBody}</div>
       </div>
     );
   }

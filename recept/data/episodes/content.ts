@@ -81,6 +81,41 @@ export type EpisodeContent = {
   gesprekskaart: Gesprekskaart;
   /** Teamgesprek ronde 1; A4-demo standaard uit (golden-flow). */
   gesprekskaartActief: boolean;
+  /** Introfase: posterindeling met beeld rechts (A4-demo uit). */
+  introBeeldRechts: boolean;
+  introBeeldAlt: string;
+  introBeeldTekst: string;
+};
+
+const INTRO_BEELD: Record<
+  EpisodeId,
+  Pick<EpisodeContent, 'introBeeldRechts' | 'introBeeldAlt' | 'introBeeldTekst'>
+> = {
+  1: {
+    introBeeldRechts: true,
+    introBeeldAlt: 'Woonhuis met een schuur ernaast in Berkel-Enschot, schemering in 1984',
+    introBeeldTekst: 'BERKEL-ENSCHOT, 1984',
+  },
+  2: {
+    introBeeldRechts: true,
+    introBeeldAlt: 'Fabriekshal met lopende band in Tilburg, ochtendlicht in 1996',
+    introBeeldTekst: 'LOVEN, TILBURG, 1996',
+  },
+  3: {
+    introBeeldRechts: true,
+    introBeeldAlt: 'Lege directietafel in Tilburg, middaglicht in 2009',
+    introBeeldTekst: 'DIRECTIETAFEL, TILBURG, 2009',
+  },
+  4: {
+    introBeeldRechts: false,
+    introBeeldAlt: 'Leeg kantoor met actieve schermen bij zonsopgang',
+    introBeeldTekst: 'VOSSENBERG, TILBURG, 2026',
+  },
+  5: {
+    introBeeldRechts: true,
+    introBeeldAlt: 'Glazen ingang van de Spoorzone in Tilburg, schemering in 2036',
+    introBeeldTekst: 'SPOORZONE, TILBURG, 2036',
+  },
 };
 
 function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
@@ -102,6 +137,7 @@ function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
     tijdgeest: TIJDGEEST[ep],
     gesprekskaart: GESPREKSKAARTEN[ep],
     gesprekskaartActief: true,
+    ...INTRO_BEELD[ep],
   };
 }
 
@@ -150,6 +186,7 @@ const EPISODE_1_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[1],
   gesprekskaart: GESPREKSKAARTEN[1],
   gesprekskaartActief: true,
+  ...INTRO_BEELD[1],
 };
 
 const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
@@ -186,6 +223,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[4],
   gesprekskaart: GESPREKSKAARTEN[4],
   gesprekskaartActief: false,
+  ...INTRO_BEELD[4],
 };
 
 export const EPISODE_CONTENT: Record<EpisodeId, EpisodeContent> = {

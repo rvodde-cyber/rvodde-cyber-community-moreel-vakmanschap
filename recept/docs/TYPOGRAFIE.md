@@ -42,14 +42,16 @@ Handschrift/typemachine **niet** voor lange lopende tekst (uitkomst, nabesprekin
 | `@fontsource/caveat` | hand alle periodes | [OFL](https://github.com/fontsource/font-files/tree/main/fonts/google/caveat) | latin-400 |
 | `@fontsource/vt323` | 1996 display + data | [OFL](https://github.com/fontsource/font-files/tree/main/fonts/google/vt323) | latin-400 |
 | `@fontsource/nunito` | 2036 display/ui/data | [OFL](https://github.com/fontsource/font-files/tree/main/fonts/google/nunito) | latin-300, 400, 700 |
+| `@fontsource/instrument-serif` | Landingspagina + intro (poster), `:root --serif` fallback | [OFL](https://github.com/fontsource/font-files/tree/main/fonts/google/instrument-serif) | latin-400, latin-400-italic |
+| `@fontsource/chakra-petch` | Landingspagina + intro (data/labels), `:root --data` fallback | [OFL](https://github.com/fontsource/font-files/tree/main/fonts/google/chakra-petch) | latin-400, latin-500 |
 
 Verdana, Tahoma, Consolas, Georgia, Courier: **systeemfallbacks** (geen extra bestanden). Geen Google Fonts CDN in de app.
 
-Laadpad: `src/fonts/packs/<periodKey>.ts` — alleen geïmporteerd wanneer die aflevering speelt.
+Laadpad: `src/fonts/packs/<periodKey>.ts` — periode; **`src/fonts/packs/poster.ts`** — startscherm + intro split (`loadPosterFonts()`).
 
 ## Leesbaar lettertype
 
-Standaard **uit**. Aan: `--font-display` en `--font-hand` = `system-ui, sans-serif`; op demo 2026 ook `--title` neutraal. UI-body en data-ticker blijven zoals het tijdperk voorschrijft (tenzij het hele `:root` al wordt overschreven buiten A4).
+Standaard **uit**. Aan: `--font-display` en `--font-hand` = `system-ui, sans-serif`; op demo 2026 ook `--title` neutraal. Op **landingspagina en intro split** zet `PosterTypographyScope` ook `--serif` en `--data` naar het leesbare sans-stack. UI-body en data-ticker blijven zoals het tijdperk voorschrijft (tenzij het hele `:root` al wordt overschreven buiten A4).
 
 ## Bronnen
 

@@ -6,6 +6,7 @@ import { episodeMeta } from '@data/episodes/meta';
 import type { GameAction } from './game/gameReducer';
 import { GameShell } from './screens/GameShell';
 import { HomeScreen } from './screens/HomeScreen';
+import { PosterTypographyScope } from './components/PosterTypographyScope';
 
 export default function App() {
   const { state, dispatch, hasSave } = useGame();
@@ -27,18 +28,20 @@ export default function App() {
       gameDispatch={playing ? dispatchGame : undefined}
     >
       {!playing ? (
-        <HomeScreen
-          name={draftName}
-          hasSave={hasSave}
-          savedEpisode={state.playerName ? state.episode : undefined}
-          onName={setDraftName}
-          dispatch={dispatchGame}
-          onStart={() => setPlaying(true)}
-          onResume={() => {
-            setDraftName(state.playerName);
-            setPlaying(true);
-          }}
-        />
+        <PosterTypographyScope className="landing-typography">
+          <HomeScreen
+            name={draftName}
+            hasSave={hasSave}
+            savedEpisode={state.playerName ? state.episode : undefined}
+            onName={setDraftName}
+            dispatch={dispatchGame}
+            onStart={() => setPlaying(true)}
+            onResume={() => {
+              setDraftName(state.playerName);
+              setPlaying(true);
+            }}
+          />
+        </PosterTypographyScope>
       ) : (
         <PeriodTypographyScope periodKey={episodeMeta(state.episode).periodKey}>
           <GameShell state={state} dispatch={dispatchGame} />
