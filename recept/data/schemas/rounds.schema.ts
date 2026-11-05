@@ -50,7 +50,13 @@ export const roundDefinitionSchema = z.object({
   q1: z.string(),
   q2: z.string(),
   q3: z.string(),
-  cards: z.array(interventionCardSchema).length(5),
+  cards: z
+    .array(interventionCardSchema)
+    .min(4)
+    .max(5)
+    .refine((c) => c.length === 4 || c.length === 5, {
+      message: 'Interventiemodus: 4 kaarten; A4-demo: 5 kaarten',
+    }),
   contra: z.array(z.tuple([z.string(), z.string()])),
   posten: z.array(
     z.object({

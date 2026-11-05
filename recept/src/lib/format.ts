@@ -12,6 +12,11 @@ export function kostEur(kosten: number): number {
   return kosten * 50000;
 }
 
+export function budgetPuntenLabel(punten: number, munt: 'gulden' | 'euro'): string {
+  const eenheid = munt === 'gulden' ? 'gulden' : 'euro';
+  return `${punten} ${eenheid} (punten)`;
+}
+
 export function pad2(n: number): string {
   return (n < 10 ? '0' : '') + n;
 }

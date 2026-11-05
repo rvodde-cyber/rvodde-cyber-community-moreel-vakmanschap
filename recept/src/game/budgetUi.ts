@@ -1,6 +1,8 @@
 import { episodeContent } from '@data/episodes/content';
 import type { EpisodeId } from '@data/episodes/meta';
+import { usesInterventieMotor } from '@data/episodes/motor';
 import { budgetOf, budgetOfDef, marcoBud, marcoBudFromPosten } from '@engine/helpers';
+import { initialInterventieMeters } from '@engine/interventieCompute';
 import type { GameContext } from '@engine/types';
 import { kostEur } from '../lib/format';
 import type { GameUiState, RoundUiState } from './uiTypes';
@@ -18,6 +20,14 @@ export function engineContext(state: GameUiState): GameContext {
 
 export function bcalc(state: GameUiState, r: RoundUiState, ctx: GameContext) {
   const D = roundDefFor(state);
+  if (usesInterventieMotor(state.episode)) {
+    let iv = 0;
+    for (const id of r.cards) {
+      const k = D.cards.find((c) => c.id === id);
+      if (k) iv += k.kosten;
+    }
+    return { iv, po: 0, left: D.budget - iv };
+  }
   let iv = 0;
   let po = 0;
   for (const k of D.cards) {
@@ -44,14 +54,18 @@ export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
   return {
     acties: [],
     verm: null,
-    pilot: null,
+    pilot: usesInterventieMotor(episode) ? 'zelf' : null,
     cards: [],
     spoken: [],
     w: ['', '', ''],
     mot: '',
     minOn: false,
     min: '',
-    bud: content.usesDemoBudget ? marcoBud(round) : marcoBudFromPosten(def.posten),
+    bud: usesInterventieMotor(episode)
+      ? {}
+      : content.usesDemoBudget
+        ? marcoBud(round)
+        : marcoBudFromPosten(def.posten),
     coldSub: 0,
     trailerDone: false,
     reacted: false,
@@ -96,6 +110,9 @@ export function freshEpisode(episode: EpisodeId): GameUiState {
     pendingReacties: false,
     dilemma: { choice: null, text: '', done: false },
     hidden: freshHidden(),
+    interventieMeters: usesInterventieMotor(episode)
+      ? initialInterventieMeters(episode as Exclude<EpisodeId, 4>)
+      : null,
     filmKind: null,
     gok: null,
   };

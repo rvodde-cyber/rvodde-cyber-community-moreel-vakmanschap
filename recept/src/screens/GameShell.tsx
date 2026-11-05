@@ -1,6 +1,9 @@
 import { episodeContent } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
+import type { EpisodeId } from '@data/episodes/meta';
 import { PERIOD_THEMES } from '../../themes/periods';
+import { usesInterventieMotor } from '@data/episodes/motor';
+import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { BriefjePanel } from '../components/BriefjePanel';
 import { ConceptDocentBanner } from '../components/ConceptDocentBanner';
@@ -12,13 +15,13 @@ import { PhonePanel } from '../components/PhonePanel';
 import { MessageToastHost } from '../components/MessageToast';
 import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
 import { useMessageDelivery } from '../hooks/useMessageDelivery';
-import { engineContext } from '../game/budgetUi';
+import { bcalc, engineContext } from '../game/budgetUi';
 import { showBriefjePanel, showPhonePanel } from '../game/commPanel';
 import { resolveFilmScript } from '../game/filmResolve';
 import { roundDefFor } from '../game/roundSource';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
-import { mln, pad2 } from '../lib/format';
+import { mln, pad2, budgetPuntenLabel } from '../lib/format';
 import { BesluitPhase } from './phases/BesluitPhase';
 import { ColdPhase } from './phases/ColdPhase';
 import { IntroPhase } from './phases/IntroPhase';
@@ -64,6 +67,11 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
   const content = episodeContent(state.episode);
   const D = roundDefFor(state);
   const budget = content.usesDemoBudget ? budgetOf(round, ctx) : budgetOfDef(D, round, ctx);
+  const interventie = usesInterventieMotor(state.episode);
+  const budgetHeader = interventie
+    ? budgetPuntenLabel(bcalc(state, state.rounds[round], ctx).left, 'gulden') +
+      ` / ${budgetVoorRonde(state.episode as Exclude<EpisodeId, 4>, round)}`
+    : mln(budget);
   const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
   const film = state.filmKind ? <FilmLayer state={state} dispatch={dispatch} /> : null;
   const dashTitle = content.usesDemoBudget
@@ -183,7 +191,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
             </button>
             <div className="hbud">
               <small>Budget ronde {round}</small>
-              <b>{mln(budget)}</b>
+              <b>{budgetHeader}</b>
             </div>
           </div>
         </div>

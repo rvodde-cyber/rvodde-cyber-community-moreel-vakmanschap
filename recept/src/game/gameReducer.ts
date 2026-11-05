@@ -5,7 +5,15 @@ import { episodeContent } from '@data/episodes/content';
 import type { DilemmaKeuze } from '@data/episodes/dilemmaDef';
 import { dilemmaGroepBerichten } from '@data/berichten';
 import type { ChatChannel } from '@data/berichten';
+import { episodeMotorKind, usesInterventieMotor } from '@data/episodes/motor';
 import { useSkeletonMotor } from '@data/interventieFlags';
+import type { EpisodeId } from '@data/episodes/meta';
+import {
+  initialInterventieMeters,
+  interventieCompute,
+  laterEffectenVanKeuze,
+} from '@engine/interventieCompute';
+import { applyInterventieHidden } from './interventieHidden';
 import { applyAutoFixBud } from './budgetFix';
 import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
 import { roundDefFor } from './roundSource';
@@ -191,7 +199,34 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     case 'CONFIRM_BESLUIT': {
       const r = roundState(state);
       const cards = pilotLockedCards(state);
-      if (useSkeletonMotor(state.episode)) {
+      const motor = episodeMotorKind(state.episode);
+      if (motor === 'interventie') {
+        const ep = state.episode as Exclude<EpisodeId, 4>;
+        const D = roundDefFor(state);
+        const meterIn =
+          state.interventieMeters ??
+          initialInterventieMeters(ep);
+        const laterFromPrevRound =
+          state.round === 2 ? laterEffectenVanKeuze(state.rounds[1].cards) : [];
+        const { result, meterStateOut, hiddenDelta } = interventieCompute({
+          episode: ep,
+          round: state.round,
+          cardIds: cards,
+          roundDef: D,
+          meterStateIn: meterIn,
+          laterFromPrevRound,
+        });
+        const hidden = applyInterventieHidden(state.hidden, cards, hiddenDelta);
+        return {
+          ...state,
+          phase: 'uitkomst',
+          hidden,
+          interventieMeters: meterStateOut,
+          results: { ...state.results, [state.round]: result },
+          rounds: { ...state.rounds, [state.round]: { ...r, cards } },
+        };
+      }
+      if (motor === 'skeleton') {
         const D = roundDefFor(state);
         const res = stubComputeResult(D, cards, r.bud);
         const conceptLog = [...state.conceptLog];
@@ -235,8 +270,9 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       return { ...state, phase: 'uitkomst', pendingReacties: true };
     case 'TRY_AGAIN': {
       const r = roundState(state);
-      const pc = roundDefFor(state).pilotCard;
-      const cards = r.pilot === 'pilot' ? [pc] : [];
+      const D = roundDefFor(state);
+      const pc = D.pilotCard;
+      const cards = r.pilot === 'pilot' && pc ? [pc] : [];
       const nextR = {
         ...r,
         cards,
@@ -246,10 +282,27 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
       const results = { ...state.results };
       delete results[state.round];
+      let interventieMeters = state.interventieMeters;
+      if (usesInterventieMotor(state.episode)) {
+        const ep = state.episode as Exclude<EpisodeId, 4>;
+        if (state.round === 1) {
+          interventieMeters = initialInterventieMeters(ep);
+        } else if (state.rounds[1].cards.length === 2) {
+          interventieMeters = interventieCompute({
+            episode: ep,
+            round: 1,
+            cardIds: state.rounds[1].cards,
+            roundDef: roundDefFor({ ...state, round: 1 }),
+            meterStateIn: initialInterventieMeters(ep),
+            laterFromPrevRound: [],
+          }).meterStateOut;
+        }
+      }
       return {
         ...state,
         phase: 'besluit',
         results,
+        interventieMeters,
         pendingReacties: false,
         rounds: { ...state.rounds, [state.round]: nextR },
         tLeft: state.tLeft > 0 ? state.tLeft : 600,

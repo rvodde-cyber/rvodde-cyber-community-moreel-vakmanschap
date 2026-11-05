@@ -35,9 +35,17 @@ Canoniek: `data/episodes/meta.ts`, `docs/serieconcept.md` → **1984, 1996, 2009
 
 *Interventieteksten, effecten en id’s ongewijzigd.*
 
-## A1 — slotLineA1 en spelmotor (stap 3)
+## A1 — interventiemotor (stap 3, 5 nov 2026)
 
-Aflevering 1 gebruikt nog **skeleton-kaarten** (`SKELETON_ROUNDS[1]`). `slotLineA1(gekozen)` telt nu op **interventie-id’s** (`a1-1-4`, `a1-2-2`, `a1-2-3`); de film gebruikt `state.rounds[1|2].cards` tot echte A1-interventies aan de motor hangen (stap 3).
+- Aflevering 1: `motorKind: 'interventie'`, budget **8 punten ronde 1 / 9 punten ronde 2** (Richard 5 nov 2026; `BUDGET_PER_RONDE_A1`).
+- **Kalibratie na balanstest motor:** `a1-1-3` verzuim `--`; `a1-1-4` productiviteit `++` — akkoord Richard nodig (effect-symbolen, teksten ongewijzigd). **Ronde 2:** bij sommige r1-eindstanden (clamp) kan één paar domineren; statische balanstest op startwaarden is groen; playtest na budget 9.
+- Startwaarden A2/A3/A5: zelfde als A1 (`startwaarden.ts` TODO) tot playtest.
+- Balans A2/A3/A5: balanstest draait; dominante combinaties mogelijk tot kalibratie bij aansluiten interventiemodus.
+- Open: nabespreking A1 (ethischRisico/opvolging/echo in UI), begrotingsposten vanaf A3, A2/A3/A5 naar `motorKind: 'interventie'`.
+
+## A1 — slotLineA1 (afgerond stap 3)
+
+`slotLineA1` gebruikt interventie-id's `a1-1-4`, `a1-2-2`, `a1-2-3`; gekoppeld aan `state.rounds[1|2].cards` in de slotfilm.
 
 ## A4-verwijzingen na besluit demo leidend
 

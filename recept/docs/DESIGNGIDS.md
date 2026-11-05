@@ -98,13 +98,15 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 
 | Aflevering | playMode | Cold open / trailer | Dashboardskin (periode) | Privé + dilemma | Portretten/beelden | Slotscène | Nabespreking | Ronde-timer | Docent-gebeurtenissen |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 · 1984 | skeleton | skeleton cold (`SKELETON_COLD`) | thema 1984, geen volledige kasboek-UI | — | silhouetten | — | data concept, geen flow | — | — |
+| 1 · 1984 | skeleton* | cold opens A1 (`COLD_OPEN_EP1`) | **1984 kasboek-meters** (interventiemotor) | briefje r2 (`ep1-frans`) | silhouetten | slot A1 | data concept | **ja** (600 s) | — |
 | 2 · 1996 | skeleton | idem | thema 1996, terminal beperkt | — | silhouetten | — | concept | — | — |
 | 3 · 2009 | skeleton | idem + `OpvolgingPhase.tsx` | thema 2009 | — | silhouetten | — | concept | — | — |
 | 4 · 2026 | **full** | ja (r1+r2) | **2026 controlekamer** (DashboardColumn, ticker) | **ja** (Piotr r2) | beelden I4/T4/R2 + portretten | **ja** (Voorspel/testament) | `NabesprekingPhase` + `nabespreking-ep4.ts` (deels concept) | **ja** (600 s, zie §3) | alleen pauze/export in `DocentPausePanel`, geen push-gebeurtenis |
 | 5 · 2036 | skeleton | skeleton | thema 2036, holding stub | — | silhouetten | — | concept (`NABESPREKING_A5`) | — | — |
 
-**Interventiedata:** A1–A3 + A5 kaarten `definitief` in `data/interventies-a*.ts` (niet aan spelmotor). A4 = `data/rounds.ts` (demo).
+**Interventiedata:** A1–A3 + A5 kaarten `definitief` in `data/interventies-a*.ts`. **A1 stap 3 (5 nov 2026):** `motorKind: 'interventie'`, berekening `engine/interventieCompute.ts`, rondekaarten `data/episodes/a1Rounds.ts`. A4 = `data/rounds.ts` (demo, ongewijzigd).
+
+\* `playMode` in `meta.ts` blijft `skeleton` tot checklist „full”; spelregister heeft wel interventiemotor voor A1.
 
 **Register (A1 stap 1, 3 nov 2026):** `data/episodes/content.ts` — `EPISODE_CONTENT` per aflevering (rondes, cold open, dilemma, slotlijnen, film). Spelcode leest via `episodeContent(episode)`; `isFullEpisode(ep)` = register heeft 2 rondes + dilemma + slotlijnen. UI-label **skelet** blijft `playMode` in `meta.ts`.
 

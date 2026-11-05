@@ -1,9 +1,10 @@
 import { episodeContent } from '@data/episodes/content';
+import { usesInterventieMotor } from '@data/episodes/motor';
+import { roundDefFor } from './roundSource';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { kostEur } from '../lib/format';
 import { eur } from '../lib/format';
 import { bcalc, engineContext } from './budgetUi';
-import { roundDefFor } from './roundSource';
 import type { GameUiState } from './uiTypes';
 
 const BUD_STEP = 20000;
@@ -19,6 +20,10 @@ export function budgetBlockMessage(state: GameUiState): string | null {
   const R = state.rounds[state.round];
   const b = bcalc(state, R, engineContext(state));
   if (b.left >= 0) return null;
+  if (usesInterventieMotor(state.episode)) {
+    const cap = roundDefFor(state).budget;
+    return `Nog nodig: jullie zitten ${-b.left} punt${-b.left === 1 ? '' : 'en'} boven het budget van ${cap}.`;
+  }
   return `Nog nodig: pas de begroting aan: je zit ${eur(-b.left)} boven het budget`;
 }
 
@@ -59,6 +64,7 @@ export function computeAutoFixBud(state: GameUiState): Record<string, number> | 
 }
 
 export function canAutoFixBudget(state: GameUiState): boolean {
+  if (usesInterventieMotor(state.episode)) return false;
   return computeAutoFixBud(state) != null;
 }
 

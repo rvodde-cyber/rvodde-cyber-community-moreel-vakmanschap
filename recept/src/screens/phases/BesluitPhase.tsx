@@ -1,4 +1,7 @@
 import { useEffect } from 'react';
+import { usesInterventieMotor } from '@data/episodes/motor';
+import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
+import type { EpisodeId } from '@data/episodes/meta';
 import { MT_ROLLEN } from '@data/rollen';
 import { TaskBar } from '../../components/TaskBar';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
@@ -8,7 +11,7 @@ import { needText, okBesluit } from '../../game/besluitRules';
 import { budgetBlockMessage, canAutoFixBudget } from '../../game/budgetFix';
 import { bcalc, engineContext } from '../../game/budgetUi';
 import { roundDefFor } from '../../game/roundSource';
-import { eur, kostEur } from '../../lib/format';
+import { eur, budgetPuntenLabel, kostEur } from '../../lib/format';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
@@ -29,6 +32,7 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
   const blockMsg = needText(state);
   const budgetMsg = budgetBlockMessage(state);
   const showAutoFix = budgetMsg != null && canAutoFixBudget(state);
+  const interventie = usesInterventieMotor(state.episode);
 
   return (
     <>
@@ -36,13 +40,18 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
       <TaskBar
         step={3}
         title="MT-BESLUIT"
-        lead="Nu beslissen jullie als MT. Loop de onderdelen van boven naar beneden langs: het advies van PILOT, twee interventies, de begroting, het rondje MT en één zin motivatie."
+        lead={
+          interventie
+            ? 'Kies twee interventies binnen acht punten. Loop daarna het rondje MT en schrijf één zin motivatie.'
+            : 'Nu beslissen jullie als MT. Loop de onderdelen van boven naar beneden langs: het advies van PILOT, twee interventies, de begroting, het rondje MT en één zin motivatie.'
+        }
         sub='De knop “Besluit vastleggen” onderaan wordt actief zodra alles is ingevuld. Wat er nog ontbreekt, staat daaronder.'
       />
       <div className="q">
         <span className="tag">MT-VRAAG</span>
         <p>{D.q2}</p>
       </div>
+      {interventie ? null : (
       <div className="pilot">
         <span className="k">▲ PILOT ADVIES</span>
         <p className="rec">{D.pilotRec}</p>
@@ -66,6 +75,7 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
           </div>
         ) : null}
       </div>
+      )}
       <section className="panel">
         <div className="ph">
           <h2>INTERVENTIES</h2>
@@ -74,7 +84,7 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
         <div className="cards">
           {D.cards.map((k) => {
             const on = R.cards.includes(k.id);
-            const lock = pl && k.id === D.pilotCard;
+            const lock = !interventie && pl && k.id === D.pilotCard;
             const off = (!on && R.cards.length >= 2) || lock;
             return (
               <button
@@ -85,12 +95,18 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
                 disabled={off}
                 onClick={() => dispatch({ type: 'TOGGLE_CARD', id: k.id })}
               >
-                {k.id === D.pilotCard ? <span className="pl">PILOT</span> : null}
+                {k.id === D.pilotCard && !interventie ? <span className="pl">PILOT</span> : null}
                 {docent && k.status === 'concept' ? <span className="concept-tag">CONCEPT</span> : null}
                 <span className="id">{k.id}</span>
                 <span className="t">{k.t}</span>
                 <span className="d">{k.d}</span>
-                <span className="eur">{k.kosten < 0 ? `levert ${eur(-kostEur(k.kosten))} op` : eur(kostEur(k.kosten))}</span>
+                <span className="eur">
+                  {interventie
+                    ? budgetPuntenLabel(k.kosten, 'gulden')
+                    : k.kosten < 0
+                      ? `levert ${eur(-kostEur(k.kosten))} op`
+                      : eur(kostEur(k.kosten))}
+                </span>
               </button>
             );
           })}
@@ -98,8 +114,27 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
       </section>
       <section className="panel" id="budget">
         <div className="ph">
-          <h2>BEGROTING RONDE {round}</h2>
+          <h2>{interventie ? 'BUDGET RONDE' : 'BEGROTING RONDE'} {round}</h2>
         </div>
+        {interventie ? (
+          <>
+            <p className="note">
+              Jullie hebben {budgetVoorRonde(state.episode as Exclude<EpisodeId, 4>, round)} punten deze ronde — in
+              1984 uitgedrukt in gulden op het kasboek.
+            </p>
+            <div className="bsum">
+              <div>
+                <span>Interventies</span>
+                <b>{budgetPuntenLabel(b.iv, 'gulden')}</b>
+              </div>
+              <div className={`left ${b.left < 0 ? 'neg' : 'pos'}`}>
+                <span>{b.left < 0 ? 'Tekort' : 'Nog beschikbaar'}</span>
+                <b>{budgetPuntenLabel(Math.abs(b.left), 'gulden')}</b>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
         <p className="note">Opgesteld door Marco van Gorp. Akkoord, of passen jullie aan?</p>
         <div className="bsum">
           <div><span>Interventies</span><b>{eur(b.iv)}</b></div>
@@ -130,6 +165,8 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
             </div>
           );
         })}
+          </>
+        )}
       </section>
       <section className="panel">
         <div className="ph">

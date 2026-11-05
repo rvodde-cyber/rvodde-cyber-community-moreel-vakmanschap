@@ -1,3 +1,4 @@
+import { usesInterventieMotor } from '@data/episodes/motor';
 import { mln } from '../lib/format';
 import { roundDefFor } from '../game/roundSource';
 import type { GameUiState } from '../game/uiTypes';
@@ -18,6 +19,27 @@ function distBar(betr: number) {
 export function DashboardColumn({ state }: { state: GameUiState }) {
   const res = state.results[state.round];
   const eb = roundDefFor(state).eurBase;
+  const interventie = usesInterventieMotor(state.episode);
+
+  if (interventie) {
+    const start = !res;
+    const prod = start ? 50 : Math.round(res.P0);
+    const betr = start ? 70 : Math.round(res.B);
+    const verz = start ? 3 : res.verz;
+    const verl = start ? 4 : res.verl;
+    return (
+      <div className="gauges interventie-kasboek">
+        <div className="lbl data">Productiviteit · {prod}</div>
+        <div className="lbl data">Betrokkenheid · {betr}</div>
+        <div className="lbl data">
+          Verzuim · {(Math.round(verz * 10) / 10).toString().replace('.', ',')}%
+        </div>
+        <div className="lbl data">
+          Verloop · {(Math.round(verl * 10) / 10).toString().replace('.', ',')}%
+        </div>
+      </div>
+    );
+  }
 
   if (!res) {
     return (

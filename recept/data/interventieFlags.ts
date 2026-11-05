@@ -7,7 +7,7 @@ export type InterventieFlag = {
 };
 
 export const INTERVENTIE_FLAGS: Record<Exclude<EpisodeId, 4>, InterventieFlag> = {
-  1: { interventieDefinitief: false, gevolgenCompleet: false },
+  1: { interventieDefinitief: true, gevolgenCompleet: true },
   2: { interventieDefinitief: false, gevolgenCompleet: false },
   3: { interventieDefinitief: false, gevolgenCompleet: false },
   5: { interventieDefinitief: false, gevolgenCompleet: false },

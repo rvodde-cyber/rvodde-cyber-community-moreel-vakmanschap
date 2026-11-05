@@ -6,6 +6,7 @@ import { DILEMMA_EP1_FRANS } from '@data/dilemmas/ep1-frans';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
 import { buildSlotEp1 } from '@data/filmSequences';
 import { COLD_OPEN_EP1 } from '@data/episodes/coldOpenEp1';
+import { A1_ROUNDS } from '@data/episodes/a1Rounds';
 import {
   EPISODE_CONTENT,
   episodeContent,
@@ -58,11 +59,15 @@ describe('episode 1 content (stap 2)', () => {
     );
   });
 
-  it('register: two rounds, dilemma ep1-frans, slotLines', () => {
+  it('register: two rounds, dilemma ep1-frans, slotLines, interventiemotor', () => {
     expect(c.roundCount).toBe(2);
     expect(c.dilemma?.id).toBe('ep1-frans');
     expect(c.slotLines).not.toBeNull();
     expect(c.usesDemoBudget).toBe(false);
+    expect(c.motorKind).toBe('interventie');
+    expect(c.rounds[1]).toBe(A1_ROUNDS[1]);
+    expect(c.rounds[2]).toBe(A1_ROUNDS[2]);
+    expect(c.rounds[1].cards).toHaveLength(4);
   });
 
   it('(b) ep1-frans: three choices, minTekst 10, effects', () => {

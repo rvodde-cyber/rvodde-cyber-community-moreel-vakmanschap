@@ -2,6 +2,7 @@ import type { DilemmaKeuze } from '@data/dilemmas/ep4-piotr';
 import type { OpvolgingKeuze } from '@data/opvolging';
 import type { EpisodeId } from '@data/episodes/meta';
 import type { ComputeResult } from '@engine/types';
+import type { InterventieMeterState } from '@engine/interventieCompute';
 import type { BerichtDef, ChatChannel } from '@data/berichten';
 
 export type Phase =
@@ -74,6 +75,8 @@ export interface GameUiState {
   pendingReacties: boolean;
   dilemma: DilemmaState;
   hidden: HiddenMetersState;
+  /** Voortgang zichtbare/verborgen meters in interventiemotor (per aflevering) */
+  interventieMeters: InterventieMeterState | null;
   filmKind: FilmKind | null;
   gok: string | null;
 }

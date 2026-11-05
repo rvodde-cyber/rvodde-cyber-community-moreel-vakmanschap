@@ -8,6 +8,7 @@ import type { RoundDefinition } from '../schemas/rounds.schema';
 import { episodeMeta, type EpisodeId } from './meta';
 import { SKELETON_COLD } from '../skeleton/coldOpen';
 import { SKELETON_SLOTS, SKELETON_TRAILERS } from '../skeleton/film';
+import { A1_ROUNDS } from './a1Rounds';
 import { SKELETON_ROUNDS } from '../skeleton/rounds';
 import { slotLineRonde1, slotLinesFinale } from '../slotLines';
 import type { ComputeResult } from '@engine/types';
@@ -59,6 +60,8 @@ export type EpisodeTussenKaart = {
 };
 
 export type EpisodeContent = {
+  /** Welke berekeningslaag: A4-demo, interventiemodel of stub */
+  motorKind: 'a4' | 'interventie' | 'skeleton';
   rounds: { 1: RoundDefinition; 2?: RoundDefinition };
   roundCount: 1 | 2;
   coldOpen: { 1: ColdOpenDef; 2?: ColdOpenDef };
@@ -76,6 +79,7 @@ export type EpisodeContent = {
 function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
   const meta = episodeMeta(ep);
   return {
+    motorKind: 'skeleton',
     rounds: { 1: SKELETON_ROUNDS[ep] },
     roundCount: 1,
     coldOpen: { 1: SKELETON_COLD[ep] },
@@ -92,7 +96,8 @@ function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
 }
 
 const EPISODE_1_CONTENT: EpisodeContent = {
-  rounds: { 1: SKELETON_ROUNDS[1], 2: SKELETON_ROUNDS[1] },
+  motorKind: 'interventie',
+  rounds: { 1: A1_ROUNDS[1], 2: A1_ROUNDS[2] },
   roundCount: 2,
   coldOpen: { 1: COLD_OPEN_EP1[1], 2: COLD_OPEN_EP1[2] },
   dilemma: DILEMMA_EP1_FRANS,
@@ -145,6 +150,7 @@ const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
 };
 
 const EPISODE_4_CONTENT: EpisodeContent = {
+  motorKind: 'a4',
   rounds: { 1: ROUNDS[1], 2: ROUNDS[2] },
   roundCount: 2,
   coldOpen: { 1: COLD_OPEN[1], 2: COLD_OPEN[2] },

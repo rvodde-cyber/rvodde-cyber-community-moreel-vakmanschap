@@ -1,5 +1,7 @@
 import { compute } from '@engine/compute';
 import { episodeContent } from '@data/episodes/content';
+import { usesInterventieMotor } from '@data/episodes/motor';
+import { INTERVENTIE_BY_ID } from '@data/interventies/all';
 import { TaskBar } from '../../components/TaskBar';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { engineContext } from '../../game/budgetUi';
@@ -14,6 +16,59 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
   if (!res) return null;
 
   const content = episodeContent(state.episode);
+
+  if (usesInterventieMotor(state.episode)) {
+    const D = roundDefFor(state);
+    const filmKind = state.round === 2 && content.roundCount === 2 ? 'finale' : 'slot-r1';
+    return (
+      <>
+        <ConceptDocentBanner />
+        <TaskBar
+          step={4}
+          title="UITKOMST"
+          lead="Jullie keuzes werken door op de vloer en in het kasboek. Lees wat er gebeurde."
+          sub='Druk op “Einde van dit deel” voor de slotscène.'
+        />
+        <section className="panel">
+          <div className="ph">
+            <h2>WAT ER GEBEURDE</h2>
+          </div>
+          {res.sel.map((c) => {
+            const i = INTERVENTIE_BY_ID[c.id];
+            return (
+              <p key={c.id} className="body">
+                <strong>{i?.naam ?? c.t}.</strong> {i?.uitkomsttekst ?? c.d}
+              </p>
+            );
+          })}
+        </section>
+        <section className="panel">
+          <div className="ph">
+            <h2>METERS</h2>
+          </div>
+          <p className="note">
+            Productiviteit {Math.round(res.P0)} · Betrokkenheid {Math.round(res.B)} · Verzuim{' '}
+            {(Math.round(res.verz * 10) / 10).toString().replace('.', ',')}% · Verloop{' '}
+            {(Math.round(res.verl * 10) / 10).toString().replace('.', ',')}%
+          </p>
+        </section>
+        <div className="q">
+          <span className="tag">MT-VRAAG</span>
+          <p>{D.q3}</p>
+        </div>
+        <button
+          type="button"
+          className="btn gold big"
+          onClick={() => dispatch({ type: 'PLAY_FILM', kind: filmKind })}
+        >
+          Einde van dit deel
+        </button>
+        <button type="button" className="btn ghost" onClick={() => dispatch({ type: 'TRY_AGAIN' })}>
+          Ander besluit proberen
+        </button>
+      </>
+    );
+  }
 
   if (!content.usesDemoBudget) {
     const D = roundDefFor(state);

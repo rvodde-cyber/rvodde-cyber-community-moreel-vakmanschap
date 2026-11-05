@@ -1,4 +1,5 @@
 import { MT_ROLLEN } from '@data/rollen';
+import { usesInterventieMotor } from '@data/episodes/motor';
 import { budgetBlockMessage } from './budgetFix';
 import { bcalc, engineContext } from './budgetUi';
 import { roundDefFor } from './roundSource';
@@ -8,8 +9,9 @@ export function okBesluit(state: GameUiState): boolean {
   const R = state.rounds[state.round];
   const ctx = engineContext(state);
   const b = bcalc(state, R, ctx);
+  const interventie = usesInterventieMotor(state.episode);
   return !!(
-    R.pilot &&
+    (interventie || R.pilot) &&
     R.cards.length === 2 &&
     R.spoken.length === MT_ROLLEN.length &&
     R.mot.replace(/\s/g, '').length >= 8 &&
@@ -19,7 +21,10 @@ export function okBesluit(state: GameUiState): boolean {
 
 export function needText(state: GameUiState): string {
   const R = state.rounds[state.round];
-  if (!R.pilot) return 'Nog nodig: kies of jullie het advies van PILOT volgen of zelf wegen.';
+  const interventie = usesInterventieMotor(state.episode);
+  if (!interventie && !R.pilot) {
+    return 'Nog nodig: kies of jullie het advies van PILOT volgen of zelf wegen.';
+  }
   if (R.cards.length !== 2) {
     return `Nog nodig: kies precies twee interventies (nu ${R.cards.length} van 2).`;
   }
@@ -32,9 +37,10 @@ export function needText(state: GameUiState): string {
 }
 
 export function pilotLockedCards(state: GameUiState): string[] {
+  if (usesInterventieMotor(state.episode)) return state.rounds[state.round].cards;
   const R = state.rounds[state.round];
   const pc = roundDefFor(state).pilotCard;
-  if (R.pilot === 'pilot' && !R.cards.includes(pc)) {
+  if (R.pilot === 'pilot' && pc && !R.cards.includes(pc)) {
     return [pc, ...R.cards].slice(0, 2);
   }
   return R.cards;
