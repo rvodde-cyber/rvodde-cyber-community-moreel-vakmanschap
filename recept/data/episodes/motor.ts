@@ -15,3 +15,9 @@ export function usesInterventieMotor(episode: EpisodeId): boolean {
 export function showsSkeletLabel(episode: EpisodeId): boolean {
   return episodeMotorKind(episode) === 'skeleton';
 }
+
+/** Beslistijd-timer in UI (onderzoek/besluit), niet voor stub-skeletten. */
+export function usesBeslistijdTimer(episode: EpisodeId): boolean {
+  const k = episodeMotorKind(episode);
+  return k === 'a4' || k === 'interventie';
+}

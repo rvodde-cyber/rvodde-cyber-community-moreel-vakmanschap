@@ -6,6 +6,7 @@ import type { DilemmaKeuze } from '@data/episodes/dilemmaDef';
 import { dilemmaGroepBerichten } from '@data/berichten';
 import type { ChatChannel } from '@data/berichten';
 import { episodeMotorKind, usesInterventieMotor } from '@data/episodes/motor';
+import { canColdNext } from '@data/episodes/coldOpenFlow';
 import { useSkeletonMotor } from '@data/interventieFlags';
 import type { EpisodeId } from '@data/episodes/meta';
 import {
@@ -107,8 +108,8 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
     case 'COLD_NEXT': {
       const r = roundState(state);
-      const max = 4;
-      if (r.coldSub >= max) return state;
+      const round = state.round as 1 | 2;
+      if (!canColdNext(state.episode, round, r.coldSub)) return state;
       return {
         ...state,
         rounds: {

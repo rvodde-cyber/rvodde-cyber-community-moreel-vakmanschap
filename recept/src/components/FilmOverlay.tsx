@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { FilmCue, FilmScript } from '@data/filmSequences';
 import { TR_UI_LABELS } from '@data/filmSequences';
 import { hum, SFX, unlockAudio } from '../audio/sfx';
+import { usePrefersReducedMotion } from '../lib/prefersReducedMotion';
 
 const base = import.meta.env.BASE_URL;
 
@@ -119,22 +120,4 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
       </div>
     </div>
   );
-}
-
-function usePrefersReducedMotion() {
-  const [reduced, setReduced] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const sync = () =>
-      setReduced(mq.matches || document.documentElement.classList.contains('reduce-motion'));
-    sync();
-    mq.addEventListener('change', sync);
-    const obs = new MutationObserver(sync);
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'data-reduce-motion'] });
-    return () => {
-      mq.removeEventListener('change', sync);
-      obs.disconnect();
-    };
-  }, []);
-  return reduced;
 }

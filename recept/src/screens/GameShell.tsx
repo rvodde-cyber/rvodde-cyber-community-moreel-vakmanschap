@@ -3,7 +3,7 @@ import { tickerRegelsVoor } from '@data/episodes/tickerForEpisode';
 import { episodeMeta } from '@data/episodes/meta';
 import type { EpisodeId } from '@data/episodes/meta';
 import { PERIOD_THEMES } from '../../themes/periods';
-import { usesInterventieMotor } from '@data/episodes/motor';
+import { usesInterventieMotor, usesBeslistijdTimer } from '@data/episodes/motor';
 import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { BriefjePanel } from '../components/BriefjePanel';
@@ -182,6 +182,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
             <span className="clock" id="clock">
               {content.usesDemoBudget ? (round === 2 ? 'DI' : 'MA') : ''} {meta.jaar} · 09:14
             </span>
+            {usesBeslistijdTimer(state.episode) ? (
             <button
               type="button"
               className="timer"
@@ -191,6 +192,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
               <small>Beslistijd</small>
               {pad2(Math.floor(state.tLeft / 60))}:{pad2(state.tLeft % 60)}
             </button>
+            ) : null}
             <button type="button" className="ib" aria-label="Menu" onClick={openPause}>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M4 7h16M4 12h16M4 17h16" />

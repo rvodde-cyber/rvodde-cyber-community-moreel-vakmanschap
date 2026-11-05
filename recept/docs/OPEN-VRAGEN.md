@@ -8,6 +8,7 @@ Laatste update: **5 november 2026** (taalronde cold opens).
 | --- | --- |
 | **Taalronde cold opens A2–A5** | Letterlijke teksten in `SKELETON_COLD` / `COLD_OPEN`; bron `docs/TAALGIDS.md`. |
 | **Tijdgeestlaag** | Register `data/episodes/tijdgeest.ts`, ticker in UI, geluid-mechanisme; teksten `docs/TIJDGEEST.md`. |
+| **Speelflow cold open A1** | Auto-regels, `COLD_NEXT` uit register, 3 verplichte klikken intro→MT; zie `STAP-FLOW-ONDERZOEK.md`. |
 | **Anne-Fleur** | Lotte hernoemd; nazaat founders, 2036-register zonder dialect/tonval. |
 
 ## Open (tijdgeest, 5 nov 2026)
@@ -17,6 +18,7 @@ Laatste update: **5 november 2026** (taalronde cold opens).
 | **Audio tijdgeest** | Bestanden kiezen/maken — `docs/GELUID-CHECK.md` |
 | **Firefly Renault + rekwisieten** | RENAULT-84 t/m 36, REKW-* — `docs/TIJDGEEST.md`, `docs/BEELDEN-CHECK.md` |
 | **Rekwisieten in beeld** | Beslissen waar rekwisieten zichtbaar worden (nu vooral documentatie) |
+| **Speelflow verder** | Optioneel: ronde-2 intro compacter na playtest; docent-timer op skeletten |
 
 ## Besloten (2–3 nov 2026)
 

@@ -500,6 +500,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .task p { margin: 0; font-size: 16px; line-height: 1.5; }
 .task p + p { margin-top: 5px; font-size: 14px; color: var(--soft); }
 .cine-in p.task-line { font-size: 16px; line-height: 1.5; color: #BFE8F7; margin: 0 0 18px; max-width: 56ch; }
+.cold-progress { display: flex; gap: 6px; margin: 0 0 14px; }
+.cold-progress span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.25); transition: background .25s ease; }
+.cold-progress span.on { background: var(--cyan); }
+.cold-auto-hint { font-size: 13px; opacity: .75; margin-top: 8px; }
+.cold-scene { cursor: pointer; }
 .glos { margin: 0 0 12px; }
 .glos dt { font-family: var(--data); font-weight: 600; margin: 12px 0 0; }
 .glos dd { margin: 2px 0 0; color: var(--soft); line-height: 1.5; }
