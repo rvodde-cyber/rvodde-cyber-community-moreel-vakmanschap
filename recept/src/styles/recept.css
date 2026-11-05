@@ -505,6 +505,23 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .cold-progress span.on { background: var(--cyan); }
 .cold-auto-hint { font-size: 13px; opacity: .75; margin-top: 8px; }
 .cold-scene { cursor: pointer; }
+
+/* Typografie per tijdperk — zie docs/TYPOGRAFIE.md */
+.period-typography { min-height: 100%; }
+.period-typography--readable { line-height: 1.55; }
+.period-typography--readable .cine-in p.body,
+.period-typography--readable .panel .body,
+.period-typography--readable .note { line-height: 1.6; }
+.period-typography--2036 .cine-in .ep,
+.period-typography--2036 .intro .ep { font-weight: 300; }
+.period-typography .cine-in .ep,
+.period-typography .intro .ep,
+.period-typography .film .ep { font-family: var(--font-display, var(--title)); }
+.period-typography .briefje-van,
+.period-typography .briefje-body { font-family: var(--font-hand); }
+.period-scope { font-family: var(--font-ui, var(--period-ui-font)); }
+.period-scope .ph h2,
+.period-scope .ph h3 { font-family: var(--font-data, var(--period-data-font)); }
 .glos { margin: 0 0 12px; }
 .glos dt { font-family: var(--data); font-weight: 600; margin: 12px 0 0; }
 .glos dd { margin: 2px 0 0; color: var(--soft); line-height: 1.5; }

@@ -1,4 +1,9 @@
 /** Dashboard skin per aflevering (stap 7 vult widgets; 2026 volgt demo-controlekamer). */
+import {
+  PERIOD_2026_DATA_FONT,
+  PERIOD_2026_UI_FONT,
+} from './periodTypography';
+
 export type PeriodKey = '1984' | '1996' | '2009' | '2026' | '2036';
 
 export interface PeriodTheme {
@@ -16,6 +21,8 @@ export interface PeriodTheme {
     success: string;
   };
   fonts: {
+    display: string;
+    hand: string;
     ui: string;
     data: string;
   };
@@ -37,7 +44,12 @@ export const PERIOD_THEMES: Record<PeriodKey, PeriodTheme> = {
       danger: '#a33',
       success: '#3d6b3d',
     },
-    fonts: { ui: 'Georgia, serif', data: 'ui-monospace, monospace' },
+    fonts: {
+      display: '"Special Elite", "Courier New", Courier, monospace',
+      hand: '"Caveat", "Segoe Print", "Comic Sans MS", cursive',
+      ui: 'Georgia, "Times New Roman", Times, serif',
+      data: '"Courier New", Courier, monospace',
+    },
     widgets: ['kasboek', 'meters'],
   },
   '1996': {
@@ -54,7 +66,12 @@ export const PERIOD_THEMES: Record<PeriodKey, PeriodTheme> = {
       danger: '#ff6666',
       success: '#33ff66',
     },
-    fonts: { ui: 'system-ui, sans-serif', data: '"Courier New", monospace' },
+    fonts: {
+      display: '"VT323", "Courier New", monospace',
+      hand: '"Caveat", "Segoe Print", "Comic Sans MS", cursive',
+      ui: 'system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+      data: '"VT323", "Courier New", monospace',
+    },
     widgets: ['terminal', 'meters', 'ticker'],
   },
   '2009': {
@@ -71,7 +88,12 @@ export const PERIOD_THEMES: Record<PeriodKey, PeriodTheme> = {
       danger: '#c00',
       success: '#217346',
     },
-    fonts: { ui: 'Calibri, system-ui, sans-serif', data: 'Consolas, monospace' },
+    fonts: {
+      display: 'Verdana, Tahoma, sans-serif',
+      hand: '"Caveat", "Segoe Print", "Comic Sans MS", cursive',
+      ui: 'Verdana, Tahoma, sans-serif',
+      data: 'Consolas, "Courier New", monospace',
+    },
     widgets: ['spreadsheet', 'meters'],
   },
   '2026': {
@@ -88,7 +110,12 @@ export const PERIOD_THEMES: Record<PeriodKey, PeriodTheme> = {
       danger: '#ff8c42',
       success: '#3ec8e0',
     },
-    fonts: { ui: 'system-ui, sans-serif', data: 'ui-monospace, monospace' },
+    fonts: {
+      display: '"Cinzel", "Iowan Old Style", Georgia, serif',
+      hand: '"Caveat", "Segoe Print", "Comic Sans MS", cursive',
+      ui: PERIOD_2026_UI_FONT,
+      data: PERIOD_2026_DATA_FONT,
+    },
     widgets: ['meters', 'ticker', 'news'],
   },
   '2036': {
@@ -105,7 +132,12 @@ export const PERIOD_THEMES: Record<PeriodKey, PeriodTheme> = {
       danger: '#dc2626',
       success: '#059669',
     },
-    fonts: { ui: 'system-ui, sans-serif', data: 'ui-monospace, monospace' },
+    fonts: {
+      display: '"Nunito", system-ui, sans-serif',
+      hand: '"Caveat", "Segoe Print", "Comic Sans MS", cursive',
+      ui: '"Nunito", system-ui, sans-serif',
+      data: '"Nunito", system-ui, sans-serif',
+    },
     widgets: ['holding', 'meters'],
   },
 };

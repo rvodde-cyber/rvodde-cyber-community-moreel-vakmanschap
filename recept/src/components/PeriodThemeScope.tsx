@@ -22,6 +22,10 @@ export function PeriodThemeScope({ periodKey, children, className }: Props) {
           '--period-muted': t.colors.muted,
           '--period-ui-font': t.fonts.ui,
           '--period-data-font': t.fonts.data,
+          '--font-display': t.fonts.display,
+          '--font-hand': t.fonts.hand,
+          '--font-ui': t.fonts.ui,
+          '--font-data': t.fonts.data,
         } as React.CSSProperties
       }
     >

@@ -55,6 +55,18 @@ export function SettingsModal({ onClose }: Props) {
         />
         Minder beweging (animaties en trailer vereenvoudigd)
       </label>
+      <button
+        type="button"
+        className="btn ghost"
+        aria-pressed={s.readableFont}
+        aria-label="Leesbaar lettertype"
+        onClick={() => setS({ ...s, readableFont: !s.readableFont })}
+      >
+        Leesbaar lettertype {s.readableFont ? 'aan' : 'uit'}
+      </button>
+      <p className="note">
+        Vervangt sfeerlettertypen (typemachine, handschrift) door een neutrale sans en iets meer regelafstand.
+      </p>
       <button type="button" className="btn" onClick={onClose}>
         Sluiten
       </button>

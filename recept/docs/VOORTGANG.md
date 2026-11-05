@@ -8,6 +8,7 @@ Laatste update: **5 november 2026** — tijdgeestlaag
 | --- | --- |
 | **Tijdgeestlaag** | `data/episodes/tijdgeest.ts`, ticker UI (`tickerRegelsVoor`), geluid aan/uit + tekstalternatief; docs `TIJDGEEST.md`, `GELUID-CHECK.md`, beeldbank-check |
 | **Speelflow A1** | Cold open auto + registergrenzen; 3 klikken intro→MT; `docs/STAP-FLOW-ONDERZOEK.md` |
+| **Typografie per tijdperk** | Fontsource self-hosted, `PeriodTypographyScope`, instelling Leesbaar lettertype — `docs/TYPOGRAFIE.md` |
 | **Fase 0** | Jaartallen docs, besluit 13, `DESIGNGIDS.md`, `LATER.md` / `BOUWPLANNING.md` |
 | **A1 stap 1 — generaliseren** | **`EPISODE_CONTENT`**; consumers via register |
 | **A1 stap 2 — inhoud 1984** | Cold opens, `ep1-frans`, briefje-UI, `slot-ep1`, `slotLineA1`, pauzekaart; docs beeld/portret |

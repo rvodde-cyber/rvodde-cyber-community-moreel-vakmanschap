@@ -2,6 +2,8 @@ export type A11ySettings = {
   fontScale: 'normaal' | 'groot' | 'extra';
   contrast: 'standaard' | 'hoog' | 'licht';
   reduceMotion: boolean;
+  /** Vervangt display/hand door neutrale sans (WCAG). */
+  readableFont: boolean;
 };
 
 const KEY = 'recept-a11y';
@@ -10,6 +12,7 @@ export const DEFAULT_A11Y: A11ySettings = {
   fontScale: 'normaal',
   contrast: 'standaard',
   reduceMotion: false,
+  readableFont: false,
 };
 
 export function loadA11ySettings(): A11ySettings {
@@ -21,6 +24,7 @@ export function loadA11ySettings(): A11ySettings {
       fontScale: p.fontScale ?? DEFAULT_A11Y.fontScale,
       contrast: p.contrast ?? DEFAULT_A11Y.contrast,
       reduceMotion: p.reduceMotion ?? prefersReducedMotionOs(),
+      readableFont: p.readableFont ?? DEFAULT_A11Y.readableFont,
     };
   } catch {
     return DEFAULT_A11Y;
@@ -45,6 +49,7 @@ export function applyA11ySettings(s: A11ySettings) {
   root.dataset.fontScale = s.fontScale;
   root.dataset.contrast = s.contrast;
   root.dataset.reduceMotion = s.reduceMotion ? '1' : '0';
+  root.dataset.readableFont = s.readableFont ? '1' : '0';
   if (s.reduceMotion) root.classList.add('reduce-motion');
   else root.classList.remove('reduce-motion');
 }

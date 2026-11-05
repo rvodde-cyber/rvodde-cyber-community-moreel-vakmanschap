@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { UiModalsProvider } from './context/UiModalsContext';
 import { useGame } from './hooks/useGame';
+import { PeriodTypographyScope } from './components/PeriodTypographyScope';
+import { episodeMeta } from '@data/episodes/meta';
 import type { GameAction } from './game/gameReducer';
 import { GameShell } from './screens/GameShell';
 import { HomeScreen } from './screens/HomeScreen';
@@ -38,7 +40,9 @@ export default function App() {
           }}
         />
       ) : (
-        <GameShell state={state} dispatch={dispatchGame} />
+        <PeriodTypographyScope periodKey={episodeMeta(state.episode).periodKey}>
+          <GameShell state={state} dispatch={dispatchGame} />
+        </PeriodTypographyScope>
       )}
     </UiModalsProvider>
   );

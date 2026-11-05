@@ -4,6 +4,8 @@ Laatste update: **5 november 2026** (fase 0). Afgeleid van wat in de repo **best
 
 **Teksten:** alle zichtbare dialoog, cold opens, interventieteksten en UI-copy volgen waar mogelijk `docs/TAALGIDS.md` (register, personages, geen dialect in 2036).
 
+**Typografie:** per tijdperk — `docs/TYPOGRAFIE.md`, `themes/periods.ts`, `PeriodTypographyScope`.
+
 ## 1. Principes
 
 - **Één bediening:** één React-app (`src/`), state via `useReducer` + `localStorage` (`recept-game-v4`). Geen aparte student/docent-build; docent via `?docent=1` (`useDocentMode`).
