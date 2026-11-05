@@ -4,7 +4,7 @@ Besluit Richard (5 november 2026): elk tijdperk krijgt een eigen beginpagina (in
 
 ## Beeldbrieven voor Richard (Adobe Firefly)
 
-Formaat voor alle vijf: liggend 3:2, 1800 × 1200 px, fotorealistisch, geen tekst, geen logo's, geen herkenbare personen, maximaal 250 kB (JPG). Bestanden in `public/beelden/`. Dezelfde rode Renault 5 komt in elk beeld terug als rode draad (zie docs/TIJDGEEST.md).
+Formaat (bijgewerkt: de geplaatste beelden I1, I2, I3 en I5 zijn staand 3:4, 1344 × 1728 px, ongeveer 300 kB; ze staan al in public/beelden/): fotorealistisch, geen tekst, geen logo's, geen herkenbare personen, maximaal 250 kB (JPG). Bestanden in `public/beelden/`. Dezelfde rode Renault 5 komt in elk beeld terug als rode draad (zie docs/TIJDGEEST.md).
 
 | Code | Aflevering | Bestand | Beeld |
 | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ Regels: de kaders zijn decoratief en nemen geen leesruimte van de tekst weg; lee
 
 ## Cursor-prompt
 
-Taak: introscherm per tijdperk (beeld en sfeer volgens de tabel hierboven). Taal NL. Geen deploy. Commit niet zelf. Voorwaarde: de opdracht "landingspagina en introscherm" is klaar en de tests zijn groen. Engine, rounds, golden-referenties en A4 (demo) blijven ongewijzigd; alle bestaande tests blijven groen. Werk in de map recept/.
+Taak: introscherm per tijdperk (beeld en sfeer volgens de tabel hierboven). Taal NL. Geen deploy. Commit niet zelf. Voorwaarde: de opdracht "landingspagina en introscherm" is klaar en de tests zijn groen (161). Beelden I1, I2, I3 en I5 zijn staand (3:4) en bestaan al; het kader is vanaf 900 px breed 3:4 en op smal scherm 3:2 met object-position 50% 55%. Gebruik de chatversie van 5 november (complete, laatste versie) als leidende tekst bij verschillen. Engine, rounds, golden-referenties en A4 (demo) blijven ongewijzigd; alle bestaande tests blijven groen. Werk in de map recept/.
 
 1. Verkenning: lees IntroPhase.tsx, de CSS van het introscherm met beeld rechts, themes/periods.ts, data/sceneCodes.ts en EPISODE_CONTENT. Beschrijf kort in docs/DESIGNGIDS.md hoe het introscherm nu per aflevering wordt opgebouwd.
 2. Data: voeg per aflevering een veld `introLook` toe aan EPISODE_CONTENT met `kader` ('polaroid' | 'kettingpapier' | 'venster' | 'dashboard' | 'glas'), `tint` (CSS-kleur of verloop), `kicker` en `onderschrift` (uit de tabel). A4 krijgt 'dashboard' en blijft visueel ongewijzigd.

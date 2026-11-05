@@ -146,6 +146,31 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 - **A4:** `introBeeldRechts: false` → bestaande `.cine`-layout ongewijzigd.
 - Register: `introBeeldAlt`, `introBeeldTekst`, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
 
+## 10. Introscherm per tijdperk (5 nov 2026)
+
+### Opbouw
+
+| Laag | Bron |
+| --- | --- |
+| Fase | `IntroPhase.tsx` — ronde 1, `introBeeldRechts` |
+| Beeld | `INTRO_SCENE[episode].fileCode` → `public/beelden/*.jpg` (staand 3:4 vanaf 900 px; smal 3:2, `object-position` 50% 55%) |
+| Register | `EPISODE_CONTENT.introLook`: `kader`, `tint`, `kicker`, `onderschrift` (+ `introBeeldAlt`) |
+| UI | `IntroSceneImage.tsx` — kaderwrapper `intro-kader-<naam>`, tintlaag (~25%), onderschrift per periode-font |
+| Typografie | `PeriodTypographyScope` (App) → `--font-hand`, `--font-display`, `--font-ui` uit `themes/periods.ts` |
+| A4 demo | `introBeeldRechts: false` → ongewijzigde `.cine` + `SceneBackground` (T4); `introLook.kader: dashboard` alleen in register |
+
+### Kader per aflevering
+
+| Aflevering | Kader | Sfeer (kort) |
+| --- | --- | --- |
+| A1 · 1984 | polaroid | Warme bruingele tint + lichte korrel; onderschrift Caveat |
+| A2 · 1996 | kettingpapier | Grijsgroene tl-tint, perforatie; onderschrift VT323 |
+| A3 · 2009 | venster | Koel blauwwit, titelbalk (decoratief); onderschrift statusbalk Verdana/Tahoma |
+| A4 · 2026 | dashboard | Geen split-layout — demo ongewijzigd |
+| A5 · 2036 | glas | Zachte glastint, blur-rand; onderschrift Nunito |
+
+Leesbaar lettertype: kaderversiering minimaal (CSS `.period-typography--readable`). Onder 900 px: geen kanteling/perforatie; beeld boven tekst, max. 40vh.
+
 ## 8. Open ontwerpvragen voor Richard
 
 - **Dashboard per periode:** widgets in `periods.ts` vs. wat skeleton-afleveringen moeten tonen vóór full bouw.

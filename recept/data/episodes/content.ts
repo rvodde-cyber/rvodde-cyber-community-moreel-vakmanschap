@@ -85,38 +85,89 @@ export type EpisodeContent = {
   introBeeldRechts: boolean;
   introBeeldAlt: string;
   introBeeldTekst: string;
+  /** Sfeer en kader intro-beeld rechts — zie docs/DESIGNGIDS.md §10 */
+  introLook: EpisodeIntroLook;
 };
 
-const INTRO_BEELD: Record<
+export type IntroKader = 'polaroid' | 'kettingpapier' | 'venster' | 'dashboard' | 'glas';
+
+export type EpisodeIntroLook = {
+  kader: IntroKader;
+  /** CSS `background` voor semi-transparante tintlaag (~max 25%) */
+  tint: string;
+  kicker: string;
+  onderschrift: string;
+};
+
+const INTRO_REGISTER: Record<
   EpisodeId,
-  Pick<EpisodeContent, 'introBeeldRechts' | 'introBeeldAlt' | 'introBeeldTekst'>
+  Pick<EpisodeContent, 'introBeeldRechts' | 'introBeeldAlt' | 'introLook'>
 > = {
   1: {
     introBeeldRechts: true,
     introBeeldAlt: 'Woonhuis met een schuur ernaast in Berkel-Enschot, schemering in 1984',
-    introBeeldTekst: 'BERKEL-ENSCHOT, 1984',
+    introLook: {
+      kader: 'polaroid',
+      tint:
+        'linear-gradient(165deg, rgba(120, 85, 45, 0.2) 0%, rgba(210, 175, 95, 0.12) 50%, rgba(80, 55, 30, 0.15) 100%)',
+      kicker: 'AFLEVERING 1 / 1984',
+      onderschrift: 'BERKEL-ENSCHOT, 1984',
+    },
   },
   2: {
     introBeeldRechts: true,
     introBeeldAlt: 'Fabriekshal met lopende band in Tilburg, ochtendlicht in 1996',
-    introBeeldTekst: 'LOVEN, TILBURG, 1996',
+    introLook: {
+      kader: 'kettingpapier',
+      tint: 'linear-gradient(180deg, rgba(60, 90, 70, 0.18), rgba(140, 180, 130, 0.1))',
+      kicker: 'AFLEVERING 2 / 1996',
+      onderschrift: 'LOVEN, TILBURG, 1996',
+    },
   },
   3: {
     introBeeldRechts: true,
     introBeeldAlt: 'Lege directietafel in Tilburg, middaglicht in 2009',
-    introBeeldTekst: 'DIRECTIETAFEL, TILBURG, 2009',
+    introLook: {
+      kader: 'venster',
+      tint: 'linear-gradient(180deg, rgba(200, 220, 240, 0.2), rgba(120, 160, 200, 0.12))',
+      kicker: 'AFLEVERING 3 / 2009',
+      onderschrift: 'TILBURG-WEST, 2009',
+    },
   },
   4: {
     introBeeldRechts: false,
     introBeeldAlt: 'Leeg kantoor met actieve schermen bij zonsopgang',
-    introBeeldTekst: 'VOSSENBERG, TILBURG, 2026',
+    introLook: {
+      kader: 'dashboard',
+      tint: 'transparent',
+      kicker: 'AFLEVERING 4 / 2026',
+      onderschrift: 'VOSSENBERG, TILBURG, 2026',
+    },
   },
   5: {
     introBeeldRechts: true,
     introBeeldAlt: 'Glazen ingang van de Spoorzone in Tilburg, schemering in 2036',
-    introBeeldTekst: 'SPOORZONE, TILBURG, 2036',
+    introLook: {
+      kader: 'glas',
+      tint: 'linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(180, 210, 255, 0.12))',
+      kicker: 'AFLEVERING 5 / 2036',
+      onderschrift: 'VOSSENBERG, TILBURG, 2036',
+    },
   },
 };
+
+function introEpisodeFields(id: EpisodeId): Pick<
+  EpisodeContent,
+  'introBeeldRechts' | 'introBeeldAlt' | 'introBeeldTekst' | 'introLook'
+> {
+  const r = INTRO_REGISTER[id];
+  return {
+    introBeeldRechts: r.introBeeldRechts,
+    introBeeldAlt: r.introBeeldAlt,
+    introLook: r.introLook,
+    introBeeldTekst: r.introLook.onderschrift,
+  };
+}
 
 function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
   const meta = episodeMeta(ep);
@@ -137,7 +188,7 @@ function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
     tijdgeest: TIJDGEEST[ep],
     gesprekskaart: GESPREKSKAARTEN[ep],
     gesprekskaartActief: true,
-    ...INTRO_BEELD[ep],
+    ...introEpisodeFields(ep),
   };
 }
 
@@ -186,7 +237,7 @@ const EPISODE_1_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[1],
   gesprekskaart: GESPREKSKAARTEN[1],
   gesprekskaartActief: true,
-  ...INTRO_BEELD[1],
+  ...introEpisodeFields(1),
 };
 
 const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
@@ -223,7 +274,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[4],
   gesprekskaart: GESPREKSKAARTEN[4],
   gesprekskaartActief: false,
-  ...INTRO_BEELD[4],
+  ...introEpisodeFields(4),
 };
 
 export const EPISODE_CONTENT: Record<EpisodeId, EpisodeContent> = {

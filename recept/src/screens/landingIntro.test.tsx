@@ -8,6 +8,8 @@ import type { EpisodeId } from '@data/episodes/meta';
 import { freshEpisode } from '../game/budgetUi';
 import { UiModalsProvider } from '../context/UiModalsContext';
 import { PosterTypographyScope } from '../components/PosterTypographyScope';
+import { PeriodTypographyScope } from '../components/PeriodTypographyScope';
+import { episodeMeta } from '@data/episodes/meta';
 import { HomeScreen } from './HomeScreen';
 import { IntroPhase } from './phases/IntroPhase';
 
@@ -156,13 +158,46 @@ describe('Landingspagina HomeScreen', () => {
 describe('Intro register en IntroPhase', () => {
   const ALL: EpisodeId[] = [1, 2, 3, 4, 5];
 
-  it('(f) elke aflevering heeft introbeeld-velden en INTRO_SCENE', () => {
+  it('(f) elke aflevering heeft introbeeld-velden, introLook en INTRO_SCENE', () => {
     for (const id of ALL) {
       const c = EPISODE_CONTENT[id];
       expect(c.introBeeldAlt.length).toBeGreaterThan(10);
-      expect(c.introBeeldTekst).toMatch(/\d{4}/);
+      expect(c.introBeeldTekst).toBe(c.introLook.onderschrift);
+      expect(c.introLook.kader).toBeTruthy();
+      expect(c.introLook.tint).toBeTruthy();
+      expect(c.introLook.kicker).toMatch(/AFLEVERING/);
+      expect(c.introLook.onderschrift).toMatch(/\d{4}/);
       expect(INTRO_SCENE[id].fileCode).toBeTruthy();
     }
+  });
+
+  it('(a) introLook kader per aflevering', () => {
+    expect(EPISODE_CONTENT[1].introLook.kader).toBe('polaroid');
+    expect(EPISODE_CONTENT[2].introLook.kader).toBe('kettingpapier');
+    expect(EPISODE_CONTENT[3].introLook.kader).toBe('venster');
+    expect(EPISODE_CONTENT[4].introLook.kader).toBe('dashboard');
+    expect(EPISODE_CONTENT[5].introLook.kader).toBe('glas');
+  });
+
+  function introWithPeriod(ep: EpisodeId) {
+    const state = { ...freshEpisode(ep), phase: 'intro' as const, round: 1 as const };
+    return renderUi(
+      <PeriodTypographyScope periodKey={episodeMeta(ep).periodKey}>
+        <IntroPhase state={state} dispatch={() => {}} />
+      </PeriodTypographyScope>,
+    );
+  }
+
+  it.each([
+    [1, 'polaroid'],
+    [2, 'kettingpapier'],
+    [3, 'venster'],
+    [5, 'glas'],
+  ] as const)('(b) aflevering %i rendert intro-kader-%s', (ep, kader) => {
+    const r = introWithPeriod(ep);
+    root = r.root;
+    expect(r.container.querySelector(`.intro-kader-${kader}`)).toBeTruthy();
+    expect(r.container.querySelector(`.intro-kader-shell--${kader}`)).toBeTruthy();
   });
 
   let root: Root | null = null;
@@ -175,23 +210,27 @@ describe('Intro register en IntroPhase', () => {
   });
 
   it('(g) A1 intro rendert beeld met alt uit register', () => {
-    const state = { ...freshEpisode(1), phase: 'intro' as const, round: 1 as const };
-    const r = renderUi(<IntroPhase state={state} dispatch={() => {}} />);
+    const r = introWithPeriod(1);
     root = r.root;
     const img = r.container.querySelector('.intro-beeld__frame img');
     expect(img?.getAttribute('alt')).toBe(EPISODE_CONTENT[1].introBeeldAlt);
   });
 
-  it('(h) ontbrekend bestand toont plaatsaanduiding BEELD I2 VOLGT', () => {
-    const state = { ...freshEpisode(2), phase: 'intro' as const, round: 1 as const };
-    const r = renderUi(<IntroPhase state={state} dispatch={() => {}} />);
+  it('(h) ontbrekend bestand toont plaatsaanduiding binnen kader', () => {
+    const r = introWithPeriod(2);
     root = r.root;
     const img = r.container.querySelector('.intro-beeld__frame img') as HTMLImageElement | null;
     expect(img).toBeTruthy();
     act(() => {
       img?.dispatchEvent(new Event('error'));
     });
-    expect(r.container.textContent).toContain('BEELD I2 VOLGT');
+    expect(r.container.querySelector('.intro-beeld__frame')?.textContent).toContain('BEELD I2 VOLGT');
+  });
+
+  it('(e) venster-kader: decoratieve titelbalk aria-hidden', () => {
+    const r = introWithPeriod(3);
+    root = r.root;
+    expect(r.container.querySelector('.intro-kader-venster-bar')?.getAttribute('aria-hidden')).toBe('true');
   });
 
   it('(i) A4 introBeeldRechts uit: geen intro-split', () => {

@@ -15,7 +15,6 @@ import { INTRO_SCENE } from '@data/sceneCodes';
 import { piotrIntroResolved } from '@data/piotrSpel';
 import { SceneBackground } from '../../components/SceneBackground';
 import { IntroSceneImage } from '../../components/IntroSceneImage';
-import { PosterTypographyScope } from '../../components/PosterTypographyScope';
 
 export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
   const { openHowto, openGloss, openSettings } = useUiModals();
@@ -30,7 +29,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const D = roundDefFor(state);
     const introBody = (
       <>
-        <p className="kick">{meta.kick}</p>
+        <p className="kick">{content.introLook.kicker}</p>
         <p className="ep">{meta.titel}</p>
         <h4>GESCHIEDENIS</h4>
         <p className="body">{intro.geschiedenis}</p>
@@ -54,7 +53,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
 
     if (content.introBeeldRechts) {
       return (
-        <PosterTypographyScope className="intro-split-root intro-fade">
+        <div className="intro-split-root intro-fade">
           <div className="intro-split">
             <div className="intro-split__grid">
               <div className="cine-in intro-split__text">{introBody}</div>
@@ -63,12 +62,12 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
                   checkCode={sc.checkCode}
                   fileCode={sc.fileCode}
                   alt={content.introBeeldAlt}
-                  caption={content.introBeeldTekst}
+                  look={content.introLook}
                 />
               </aside>
             </div>
           </div>
-        </PosterTypographyScope>
+        </div>
       );
     }
 
