@@ -1,5 +1,6 @@
 import { EPISODES } from '@data/episodes/meta';
 import { episodeMeta } from '@data/episodes/meta';
+import { showsSkeletLabel } from '@data/episodes/motor';
 import { HelpLinks } from '../components/HelpLinks';
 import { useUiModals } from '../context/UiModalsContext';
 import type { GameAction } from '../game/gameReducer';
@@ -64,7 +65,7 @@ export function HomeScreen({
                 onClick={() => start(ep.id)}
               >
                 {ep.id}. {ep.titel} ({ep.jaar})
-                {ep.playMode === 'skeleton' ? ' — skelet' : ''}
+                {showsSkeletLabel(ep.id) ? ' — skelet' : ''}
               </button>
             </li>
           ))}

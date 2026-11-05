@@ -24,6 +24,7 @@ import { roundDefEpisode, roundDefFor } from '../../src/game/roundSource';
 import { freshEpisode } from '../../src/game/budgetUi';
 import { showBriefjePanel, showPhonePanel } from '../../src/game/commPanel';
 import type { GameUiState } from '../../src/game/uiTypes';
+import { episodeMotorKind, showsSkeletLabel } from '@data/episodes/motor';
 
 const ALL_EPS: EpisodeId[] = [1, 2, 3, 4, 5];
 
@@ -40,6 +41,17 @@ describe('EPISODE_CONTENT register', () => {
     expect(isFullEpisode(4)).toBe(true);
     for (const id of [2, 3, 5] as const) {
       expect(isFullEpisode(id)).toBe(false);
+    }
+  });
+
+  it('skelet-label in UI: alleen motorKind skeleton (2, 3, 5)', () => {
+    expect(episodeMotorKind(1)).toBe('interventie');
+    expect(showsSkeletLabel(1)).toBe(false);
+    expect(episodeMotorKind(4)).toBe('a4');
+    expect(showsSkeletLabel(4)).toBe(false);
+    for (const id of [2, 3, 5] as const) {
+      expect(episodeMotorKind(id)).toBe('skeleton');
+      expect(showsSkeletLabel(id)).toBe(true);
     }
   });
 });
