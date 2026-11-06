@@ -1083,6 +1083,15 @@ select:focus-visible {
 
 /* —— Intro split (beeld rechts): scroll op #intro-split-scroll, hoogte 100dvh —— */
 .intro-split-scroll {
+  /* Totaalbudget kader+inhoud t.o.v. viewport (marge boven/onder kolom); alleen voor max-height op het beeld */
+  --intro-viewport-cap: calc(100dvh - 48px);
+  /* Ruimte onder het beeld: padding kader + titelbalk + onderschrift (gemeten t.o.v. reflow; polaroid incl. brede onderstrook) */
+  --intro-kader-extra-polaroid: 100px;
+  --intro-kader-extra-kettingpapier: 90px;
+  --intro-kader-extra-venster: 120px;
+  --intro-kader-extra-glas: 90px;
+  --intro-phone-cap: min(35dvh, var(--intro-viewport-cap));
+  --intro-tablet-cap: min(45dvh, var(--intro-viewport-cap));
   box-sizing: border-box;
   height: 100dvh;
   max-height: 100dvh;
@@ -1119,48 +1128,74 @@ select:focus-visible {
   padding: 0;
   max-width: 60ch;
 }
-/* Telefoon: beeld boven, max 35dvh voor kader+onderschrift */
+/* Telefoon: beeld boven; kader hoogte = inhoud, alleen het beeld begrensd */
 @media (max-width: 599px) {
   .intro-split__media {
     position: static;
     max-height: none;
   }
   .intro-split-scroll .intro-kader-shell {
-    max-height: min(35dvh, calc(100dvh - 48px));
+    height: auto;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     min-height: 0;
+    max-width: 100%;
   }
   .intro-split-scroll .intro-beeld__frame {
     aspect-ratio: auto;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     min-height: 120px;
-    max-height: min(28dvh, calc(35dvh - 56px));
     width: 100%;
+  }
+  .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
+    max-height: calc(var(--intro-phone-cap) - var(--intro-kader-extra-polaroid));
+  }
+  .intro-split-scroll .intro-kader-shell--kettingpapier .intro-beeld__frame {
+    max-height: calc(var(--intro-phone-cap) - var(--intro-kader-extra-kettingpapier));
+  }
+  .intro-split-scroll .intro-kader-shell--venster .intro-beeld__frame {
+    max-height: calc(var(--intro-phone-cap) - var(--intro-kader-extra-venster));
+  }
+  .intro-split-scroll .intro-kader-shell--glas .intro-beeld__frame {
+    max-height: calc(var(--intro-phone-cap) - var(--intro-kader-extra-glas));
   }
   .intro-split-scroll .intro-beeld__cap {
     font-size: 10px;
     flex-shrink: 0;
   }
 }
-/* Tablet: beeld boven, max 45dvh */
+/* Tablet: beeld boven; zelfde principe als telefoon met 45dvh-cap */
 @media (min-width: 600px) and (max-width: 899px) {
   .intro-split__media {
     position: static;
     max-height: none;
   }
   .intro-split-scroll .intro-kader-shell {
-    max-height: min(45dvh, calc(100dvh - 48px));
+    height: auto;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     min-height: 0;
+    max-width: 100%;
   }
   .intro-split-scroll .intro-beeld__frame {
     aspect-ratio: auto;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     min-height: 200px;
-    max-height: min(38dvh, calc(45dvh - 64px));
     width: 100%;
+  }
+  .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
+    max-height: calc(var(--intro-tablet-cap) - var(--intro-kader-extra-polaroid));
+  }
+  .intro-split-scroll .intro-kader-shell--kettingpapier .intro-beeld__frame {
+    max-height: calc(var(--intro-tablet-cap) - var(--intro-kader-extra-kettingpapier));
+  }
+  .intro-split-scroll .intro-kader-shell--venster .intro-beeld__frame {
+    max-height: calc(var(--intro-tablet-cap) - var(--intro-kader-extra-venster));
+  }
+  .intro-split-scroll .intro-kader-shell--glas .intro-beeld__frame {
+    max-height: calc(var(--intro-tablet-cap) - var(--intro-kader-extra-glas));
   }
 }
 @media (min-width: 900px) {
@@ -1174,16 +1209,18 @@ select:focus-visible {
     position: sticky;
     top: 24px;
     align-self: start;
-    max-height: calc(100dvh - 48px);
+    max-height: min(var(--intro-viewport-cap), 100%);
     width: 100%;
   }
-  /* Kader + onderschrift samen max. viewport minus marge */
+  /* Shell: hoogte van inhoud, geen clip; alleen het beeld krijgt max-height */
   .intro-split-scroll .intro-kader-shell {
     display: flex;
     flex-direction: column;
     min-height: 0;
-    max-height: calc(100dvh - 48px);
+    height: auto;
+    overflow: visible;
     box-sizing: border-box;
+    max-width: 100%;
   }
   .intro-split-scroll .intro-beeld__frame {
     position: relative;
@@ -1191,8 +1228,18 @@ select:focus-visible {
     min-height: 280px;
     width: 100%;
     aspect-ratio: 3 / 4;
-    max-height: calc(100dvh - 160px);
-    /* hoogte uit aspect-ratio, begrensd door max-height (cover in frame) */
+  }
+  .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
+    max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-polaroid));
+  }
+  .intro-split-scroll .intro-kader-shell--kettingpapier .intro-beeld__frame {
+    max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-kettingpapier));
+  }
+  .intro-split-scroll .intro-kader-shell--venster .intro-beeld__frame {
+    max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-venster));
+  }
+  .intro-split-scroll .intro-kader-shell--glas .intro-beeld__frame {
+    max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-glas));
   }
 }
 /* Lage vensters op desktop: geen sticky (anders geen scroll mee), beeld begrenzen */
@@ -1202,11 +1249,24 @@ select:focus-visible {
     max-height: none;
   }
   .intro-split-scroll .intro-kader-shell {
-    max-height: min(50dvh, calc(100dvh - 48px));
+    height: auto;
+    overflow: visible;
   }
-  .intro-split-scroll .intro-beeld__frame {
-    max-height: min(calc(50dvh - 72px), calc(100dvh - 200px));
-    height: min(calc(50dvh - 72px), calc(100dvh - 200px));
+  .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
+    max-height: min(calc(50dvh - var(--intro-kader-extra-polaroid)), calc(var(--intro-viewport-cap) - var(--intro-kader-extra-polaroid)));
+    height: auto;
+  }
+  .intro-split-scroll .intro-kader-shell--kettingpapier .intro-beeld__frame {
+    max-height: min(calc(50dvh - var(--intro-kader-extra-kettingpapier)), calc(var(--intro-viewport-cap) - var(--intro-kader-extra-kettingpapier)));
+    height: auto;
+  }
+  .intro-split-scroll .intro-kader-shell--venster .intro-beeld__frame {
+    max-height: min(calc(50dvh - var(--intro-kader-extra-venster)), calc(var(--intro-viewport-cap) - var(--intro-kader-extra-venster)));
+    height: auto;
+  }
+  .intro-split-scroll .intro-kader-shell--glas .intro-beeld__frame {
+    max-height: min(calc(50dvh - var(--intro-kader-extra-glas)), calc(var(--intro-viewport-cap) - var(--intro-kader-extra-glas)));
+    height: auto;
   }
 }
 .intro-beeld { margin: 0; }
@@ -1293,7 +1353,7 @@ select:focus-visible {
 
 .intro-kader-shell--polaroid {
   background: #f4efe6;
-  padding: 12px 12px 8px;
+  padding: 12px 12px 0;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
   transform: rotate(-0.8deg);
 }
@@ -1308,9 +1368,14 @@ select:focus-visible {
   letter-spacing: 0.02em;
   color: #4a4035;
   text-align: center;
-  padding: 10px 4px 4px;
-  min-height: 40px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
+  padding: 8px 8px 12px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-kader-shell--kettingpapier {

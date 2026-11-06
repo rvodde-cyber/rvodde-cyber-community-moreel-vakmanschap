@@ -1,6 +1,6 @@
 # Designgids Recept
 
-Laatste update: **6 november 2026** (intro-split scroll + § Introscherm scroll). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
+Laatste update: **6 november 2026** (intro-kaders + intro-split scroll). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
 
 **Teksten:** alle zichtbare dialoog, cold opens, interventieteksten en UI-copy volgen waar mogelijk `docs/TAALGIDS.md` (register, personages, geen dialect in 2036).
 
@@ -160,14 +160,27 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 ### Oplossing
 
 - **`#intro-split-scroll.intro-split-scroll`** (wrapper in `IntroPhase.tsx` alleen bij `introBeeldRechts`): **`height` / `max-height: 100dvh`**, **`overflow-y: auto`**, **`overflow-x: hidden`**, **`padding-bottom: calc(24px + env(safe-area-inset-bottom))`** — één duidelijke scrollcontainer (mobiele adresbalk: **`100dvh`** i.p.v. `100vh`).
-- **Desktop (≥900 px):** `.intro-kader-shell` max **`calc(100dvh - 48px)`**; `.intro-beeld__frame` **`min-height: 280px`**, **`max-height: calc(100dvh - 160px)`**, **`aspect-ratio: 3/4`**; **`object-fit: cover`** ongewijzigd.
-- **Laag venster (≥900 px breed, ≤599 px hoog):** sticky uit, **`max-height: 50dvh`** op kader/beeld.
-- **Tablet 600–899 px / telefoon &lt;600 px:** beeld boven, **`max-height` 45dvh / 35dvh** op kader; geen sticky.
+- **Hoogte kader vs. beeld (nov 2026, kader-fix):** `.intro-kader-shell` heeft **geen `max-height`** meer — de shell volgt de inhoud (rand + crème achtergrond + onderschrift blijven zichtbaar). Op `.intro-split-scroll` staan CSS-variabelen:
+  - **`--intro-viewport-cap: calc(100dvh - 48px)`** — budget voor kader + onderschrift t.o.v. viewport;
+  - **`--intro-kader-extra-*`** — gereserveerde ruimte voor padding, venster-titelbalk en onderschrift: **polaroid 100px**, **kettingpapier 90px**, **venster 120px**, **glas 90px**;
+  - **`.intro-beeld__frame`** krijgt **`max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-<kader>))`** per kader-modifier — alleen het beeld wordt begrensd; kader + onderschrift blijven samen binnen het scrollvenster.
+- **Polaroid:** padding **`12px 12px 0`**; onderschriftstrook **`min-height: 56px`**, tekst **#4a4035** op crème **#f4efe6** (leesbaar contrast).
+- **Laag venster (≥900 px breed, ≤599 px hoog):** sticky uit; beeld **`max-height: min(50dvh - extra, viewport-cap - extra)`** per kader.
+- **Tablet 600–899 px / telefoon &lt;600 px:** beeld boven; frames gebruiken **`--intro-tablet-cap`** / **`--intro-phone-cap`** (= **min(45dvh of 35dvh, viewport-cap)`)** min extra — shell weer zonder max-height.
 - **Cold open / A4 `.cine`:** ongewijzigd (geen `#intro-split-scroll`).
 
 ### Playwright / handmatige check (repo heeft geen Playwright-devDependency)
 
-Screenshots in `docs/beelden-check/` worden **niet** gecommit. Verwachting na fix (handmatig of later met Playwright):
+Screenshots in `docs/beelden-check/` worden **niet** gecommit. **Kaders A1/A2/A3/A5 (na kader-fix):** verwachting — volledige rand + onderschrift binnen de shell; leesbaar onderschrift.
+
+| Viewport | Kader omsluit beeld + onderschrift | Onderschrift leesbaar | Kader+onderschrift in venster (laptop) | Horizontale overloop | Sticky OK |
+| --- | --- | --- | --- | --- | --- |
+| 390×844 | ja | ja | n.v.t. | nee | n.v.t. |
+| 768×1024 | ja | ja | n.v.t. | nee | n.v.t. |
+| 1024×768 | ja | ja | ja | nee | ja** |
+| 1366×768 | ja | ja | ja | nee | ja** |
+| 1536×864 | ja | ja | ja | nee | ja** |
+| 1920×1080 | ja | ja | ja | nee | ja** |
 
 | Viewport | Beeld + onderschrift in venster | Scroll naar tekst + Verder | Horizontale overloop | Sticky zonder over tekst |
 | --- | --- | --- | --- | --- |
