@@ -1,12 +1,12 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **5 november 2026** — landingspagina + intro poster
+Laatste update: **6 november 2026** — intro beslistijdregel + landingspagina
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
-| **Introteksten + landingspagina** | Register `introUiCopy.ts`; A1 budgetpunten; skelet-disclaimer; lichtere `landing-overlay` |
+| **Introteksten + landingspagina** | `introCarryLines`: A1 + skeletten derde regel via `introBeslistijdZin` (timer vs. *Neem de tijd*); `STAP-FLOW-ONDERZOEK.md` § Introteksten uitgebreid; landingspagina: lichtere `.landing-overlay`, scrim `.landing-in::before`, data-chips + episodekaarten leesbaarder |
 | **Tijdgeestlaag** | `data/episodes/tijdgeest.ts`, ticker UI (`tickerRegelsVoor`), geluid aan/uit + tekstalternatief; docs `TIJDGEEST.md`, `GELUID-CHECK.md`, beeldbank-check |
 | **Speelflow A1** | Cold open auto + registergrenzen; 3 klikken intro→MT; `docs/STAP-FLOW-ONDERZOEK.md` |
 | **Typografie per tijdperk** | Fontsource self-hosted, `PeriodTypographyScope`, instelling Leesbaar lettertype — `docs/TYPOGRAFIE.md` |
@@ -19,7 +19,7 @@ Laatste update: **5 november 2026** — landingspagina + intro poster
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests | **`npm test`**: 172 groen + `npm run build` |
+| Tests | **`npm test`**: 174 groen + `npm run build` |
 
 ## Live demo
 

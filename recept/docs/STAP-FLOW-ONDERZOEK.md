@@ -56,21 +56,31 @@ Optioneel: Overslaan, Naar de scène (trailer), Pauze — niet meegeteld als ver
 
 `engine/__tests__/coldOpenFlow.test.ts` — registergrenzen, leestijd, auto-gate, 3 klikken, A1 `END_FILM`-paden.
 
-## Introteksten (5 nov 2026, rechtzetting demo)
+## Introteksten (5–6 nov 2026, rechtzetting demo)
 
-Onderzoek: `IntroPhase.tsx` (vak **JULLIE OPDRACHT**), `content/intros.nl.ts` (geschiedenis/uitdagingen/hint), `data/episodes/introUiCopy.ts` (opdracht + budget per `motorKind`).
+Onderzoek: `IntroPhase.tsx` (vak **JULLIE OPDRACHT**; A4 r1/r2 apart met `A4_INTRO_CARRY_*`), `content/intros.nl.ts` (geschiedenis/uitdagingen/hint + skelet-**opdracht**regel), `data/episodes/introUiCopy.ts` (`introCarryLines`, `introBeslistijdZin`, `budgetVoorRonde`).
+
+**Waar komen “conceptskelet”, “mln”, “tien minuten” voor?**
+
+| Bron | Inhoud |
+| --- | --- |
+| `introCarryLines` / `A4_INTRO_CARRY_*` | Opdrachtvak intro ronde 1 (niet-demo) en A4-carry; skelet-disclaimer zonder mln; A1 budget in **punten** |
+| `IntroPhase` A4 r2 | **UITDAGINGEN**: `mln(budgetOf(2, …))` (demo ongewijzigd) |
+| `GameShell`, `DashboardColumn` | HUD/dashboard: mln waar van toepassing |
+| `data/rounds.ts` | Storyfeed o.a. orderregel met “€ 4,2 mln” (data, geen intro-copy) |
+| `content/howItWorks.nl.ts` | Algemene uitleg (niet introscherm) |
 
 | Aflevering | Ronde | Motor | Wat de speler ziet in JULLIE OPDRACHT |
 | --- | --- | --- | --- |
-| A1 | 1 | interventie | MT-tekst + **budgetpunten** (`budgetVoorRonde`, r1=8) — geen mln, geen conceptskelet |
+| A1 | 1 | interventie | Kern + **budget deze ronde: N punten** (`budgetVoorRonde`) + zin beslistijd (`introBeslistijdZin` → *ongeveer tien minuten*) — geen mln, geen conceptskelet |
 | A1 | 2 | interventie | Intro kort (briefje); geen carry-budget in intro |
-| A2 | 1 | skeleton | Opdracht uit `intros.nl` + disclaimer *eerste opzet* — geen budgetregel |
+| A2 | 1 | skeleton | Opdracht uit `intros.nl` + disclaimer *eerste opzet* + `introBeslistijdZin` → *Neem de tijd om samen te kiezen* — geen budgetregel |
 | A3 | 1 | skeleton | Idem A2 |
 | A5 | 1 | skeleton | Idem A2 |
 | A4 | 1 | a4 | Vaste demo-copy + *tien minuten* (`A4_INTRO_CARRY_R1`) |
 | A4 | 2 | a4 | Vaste demo-copy r2 + mln in **UITDAGINGEN**; carry r2 ongewijzigd |
 
-**Tien minuten:** alleen als `usesBeslistijdTimer(episode)` (interventie + A4); anders *Neem de tijd om samen te kiezen* (helper `introBeslistijdZin`).
+**Tien minuten:** in het opdrachtvak als derde regel (A1/A2/A3/A5) via `introBeslistijdZin`; alleen timer-afleveringen krijgen *ongeveer tien minuten* (`usesBeslistijdTimer` = interventie + A4).
 
 **Eerdere fout (demo):** A1 toonde nog conceptskelet + `€ 0,00 mln` via `budgetOfDef` op skelet-rounddef — opgelost via register-gestuurde copy.
 

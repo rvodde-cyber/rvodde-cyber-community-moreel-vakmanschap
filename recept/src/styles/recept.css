@@ -743,7 +743,8 @@ select:focus-visible {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(12, 22, 32, 0.45) 0%, rgba(6, 10, 14, 0.78) 50%, var(--bg) 100%);
+  /* Lichter boven: posterfiguur/robotarmen blijven zichtbaar; onder door naar --bg voor leesbare body */
+  background: linear-gradient(180deg, rgba(12, 22, 32, 0.35) 0%, rgba(6, 10, 14, 0.62) 48%, var(--bg) 100%);
 }
 .landing-hero {
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.55);
@@ -760,9 +761,25 @@ select:focus-visible {
 .landing-in {
   position: relative;
   z-index: 2;
+  isolation: isolate;
   max-width: 1120px;
   margin: 0 auto;
   padding: clamp(24px, 5vw, 48px) clamp(16px, 4vw, 32px) 40px;
+}
+/* Subtiele leesbaarheids-scrim achter titel + speelkolom (geen extra full-bleed dim over het beeld) */
+.landing-in::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -4px;
+  bottom: 12px;
+  width: min(100% - 8px, 1040px);
+  max-width: calc(100vw - 24px);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(4, 8, 12, 0.55) 0%, rgba(4, 8, 12, 0.22) 42%, transparent 100%);
+  pointer-events: none;
+  z-index: -1;
 }
 .landing-kicker {
   font-family: var(--data);
@@ -822,7 +839,8 @@ select:focus-visible {
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--soft);
+  color: #c5d2dc;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
 }
 .landing-data__tri { color: var(--amber); }
 .landing-data__dot { color: var(--cyan); }
@@ -909,7 +927,7 @@ select:focus-visible {
   min-height: 44px;
   padding: 12px 10px;
   border: 1px solid var(--line);
-  background: rgba(12, 20, 27, 0.75);
+  background: rgba(12, 20, 27, 0.88);
   color: var(--film-ink);
   cursor: pointer;
   text-align: left;

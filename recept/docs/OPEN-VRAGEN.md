@@ -1,6 +1,6 @@
 # Open vragen en aanleveringen
 
-Laatste update: **5 november 2026** (taalronde cold opens).
+Laatste update: **6 november 2026** (introteksten beslistijd + landing leesbaarheid).
 
 ## Besloten (5 nov 2026)
 
@@ -23,7 +23,7 @@ Laatste update: **5 november 2026** (taalronde cold opens).
 | **Speelflow verder** | Optioneel: ronde-2 intro compacter na playtest; docent-timer op skeletten |
 | **Typografie visueel** | Richard beoordeelt uiterlijk per tijdperk na spelen (1984–2036); aanpassingen via `themes/periods.ts` |
 | **Gesprekskaarten** | Richard beoordeelt kaarten na spelen; vergelijkscherm v1 + timer docent later — `docs/GESPREKSKAART.md` |
-| **Landingspagina + intro** | Richard beoordeelt poster (lichtere overlay) en **vijf introschermen**; teksten A1 budgetpunten — `STAP-FLOW-ONDERZOEK.md` § Introteksten |
+| **Landingspagina + intro** | Richard: visuele check poster 360 / 768 / 1920 px na overlay + tekstscrim; **vijf introschermen** r1/r2 — `STAP-FLOW-ONDERZOEK.md` § Introteksten |
 
 ## Besloten (2–3 nov 2026)
 

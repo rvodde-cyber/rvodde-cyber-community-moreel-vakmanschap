@@ -17,6 +17,7 @@ describe('introUiCopy', () => {
     const text = lines.join(' ');
     expect(text).toContain('budgetpunten');
     expect(text).toContain(`${budgetVoorRonde(1, 1)} punten`);
+    expect(text).toContain('ongeveer tien minuten');
     expect(text.toLowerCase()).not.toContain('conceptskelet');
     expect(text).not.toMatch(/mln/i);
   });
@@ -25,6 +26,8 @@ describe('introUiCopy', () => {
     const lines = introCarryLines(episodeContent(ep), ep, 1);
     const text = lines.join(' ');
     expect(text).toContain(INTRO_SKELET_DISCLAIMER);
+    expect(text).toContain('Neem de tijd om samen te kiezen');
+    expect(text).not.toContain('tien minuten');
     expect(text).not.toMatch(/€\s*0[,.]00/i);
     expect(text).not.toMatch(/mln/i);
   });

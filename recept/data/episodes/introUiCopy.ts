@@ -25,10 +25,11 @@ export function introCarryLines(content: EpisodeContent, episode: EpisodeId, rou
       return [
         INTERVENTIE_OPDRACHT_KERN,
         `Jullie budget deze ronde: ${punten} punten.`,
+        introBeslistijdZin(episode),
       ];
     }
     case 'skeleton':
-      return [INTRO_TEKSTEN[episode].opdracht, INTRO_SKELET_DISCLAIMER];
+      return [INTRO_TEKSTEN[episode].opdracht, INTRO_SKELET_DISCLAIMER, introBeslistijdZin(episode)];
     default:
       return [INTRO_TEKSTEN[episode].opdracht];
   }
