@@ -1,6 +1,6 @@
 # Designgids Recept
 
-Laatste update: **5 november 2026** (fase 0). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
+Laatste update: **6 november 2026** (intro-split scroll + § Introscherm scroll). Afgeleid van wat in de repo **bestaat** — vooral aflevering 4 (`playMode: full`), `data/rounds.ts`, `themes/periods.ts`, `src/styles/recept.css`, componenten en schermen. Geen ontwerp-wensen buiten de code.
 
 **Teksten:** alle zichtbare dialoog, cold opens, interventieteksten en UI-copy volgen waar mogelijk `docs/TAALGIDS.md` (register, personages, geen dialect in 2036).
 
@@ -146,6 +146,43 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 - **A4:** `introBeeldRechts: false` → bestaande `.cine`-layout ongewijzigd.
 - Register: `introBeeldAlt`, `introBeeldTekst`, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
 
+## Introscherm scroll en hoogte (6 nov 2026)
+
+### Welk element scrollt?
+
+| Laag | Rol |
+| --- | --- |
+| **`html` / `body`** | `body` heeft `overflow-x: hidden` (geen verticale clip); geen vaste hoogte behalve `min-height: 100%`. |
+| **`.scr`** | `position: fixed; overflow: hidden` — alleen tijdens oude shell/boot; speelscherm zit in `#root` zonder `.scr`. |
+| **`#cine`** | In `recept.css` staat `overflow-y: auto`, maar **`#cine` komt niet in de huidige React-tree voor** — klassen zijn `.cine` zonder id. De verticale scroll voor filmische schermen zat daardoor op de **document body**. |
+| **Intro split (`introBeeldRechts`)** | Oorzaak bug: **`.intro-split-root` had `min-height: 100%`** zonder begrensde parent → inhoud werd **taller dan het viewport**; **`aside.intro-split__media`** had **`position: sticky; max-height: 80vh`** terwijl **`.intro-beeld__frame`** vanaf 900 px **`aspect-ratio: 3/4`** + **`max-height: inherit`** kreeg — de **aside** erfde geen effectieve max-height van de gridcel, dus het **kader kon hoger worden dan 80vh** en **buiten het venster** lopen. Sticky hield de media vast terwijl de pagina-scroll op body **niet goed voelbaar** was / tekst + knop **Verder** niet bereikbaar leken. |
+
+### Oplossing
+
+- **`#intro-split-scroll.intro-split-scroll`** (wrapper in `IntroPhase.tsx` alleen bij `introBeeldRechts`): **`height` / `max-height: 100dvh`**, **`overflow-y: auto`**, **`overflow-x: hidden`**, **`padding-bottom: calc(24px + env(safe-area-inset-bottom))`** — één duidelijke scrollcontainer (mobiele adresbalk: **`100dvh`** i.p.v. `100vh`).
+- **Desktop (≥900 px):** `.intro-kader-shell` max **`calc(100dvh - 48px)`**; `.intro-beeld__frame` **`min-height: 280px`**, **`max-height: calc(100dvh - 160px)`**, **`aspect-ratio: 3/4`**; **`object-fit: cover`** ongewijzigd.
+- **Laag venster (≥900 px breed, ≤599 px hoog):** sticky uit, **`max-height: 50dvh`** op kader/beeld.
+- **Tablet 600–899 px / telefoon &lt;600 px:** beeld boven, **`max-height` 45dvh / 35dvh** op kader; geen sticky.
+- **Cold open / A4 `.cine`:** ongewijzigd (geen `#intro-split-scroll`).
+
+### Playwright / handmatige check (repo heeft geen Playwright-devDependency)
+
+Screenshots in `docs/beelden-check/` worden **niet** gecommit. Verwachting na fix (handmatig of later met Playwright):
+
+| Viewport | Beeld + onderschrift in venster | Scroll naar tekst + Verder | Horizontale overloop | Sticky zonder over tekst |
+| --- | --- | --- | --- | --- |
+| 360×740 | ja* | ja | nee | n.v.t. (geen sticky) |
+| 390×844 | ja* | ja | nee | n.v.t. |
+| 768×1024 | ja* | ja | nee | n.v.t. |
+| 1024×768 | ja | ja | nee | ja** |
+| 1366×768 | ja | ja | nee | ja** |
+| 1536×864 | ja | ja | nee | ja** |
+| 1920×1080 | ja | ja | nee | ja** |
+| 1366×768 @ 200% | ja | ja | nee | ja** |
+
+\*Tablet/telefoon: kader begrensd; lange tekst scrollt in `#intro-split-scroll`.  
+\*\*Desktop: sticky alleen binnen de scrollkolom; bij extreem lage viewport (`max-height: 599px`) sticky uit.
+
 ## 10. Introscherm per tijdperk (5 nov 2026)
 
 ### Opbouw
@@ -169,7 +206,7 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 | A4 · 2026 | dashboard | Geen split-layout — demo ongewijzigd |
 | A5 · 2036 | glas | Zachte glastint, blur-rand; onderschrift Nunito |
 
-Leesbaar lettertype: kaderversiering minimaal (CSS `.period-typography--readable`). Onder 900 px: geen kanteling/perforatie; beeld boven tekst, max. 40vh.
+Leesbaar lettertype: kaderversiering minimaal (CSS `.period-typography--readable`). Onder 900 px: geen kanteling/perforatie; beeld boven tekst — tablet 600–899 px max. **45dvh** op kader, telefoon &lt;600 px max. **35dvh** (zie § *Introscherm scroll en hoogte*).
 
 ## 8. Open ontwerpvragen voor Richard
 

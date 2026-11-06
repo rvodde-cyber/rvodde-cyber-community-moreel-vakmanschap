@@ -59,18 +59,20 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
 
     if (content.introBeeldRechts) {
       return (
-        <div className="intro-split-root intro-fade">
-          <div className="intro-split">
-            <div className="intro-split__grid">
-              <div className="cine-in intro-split__text">{introBody}</div>
-              <aside className="intro-split__media">
-                <IntroSceneImage
-                  checkCode={sc.checkCode}
-                  fileCode={sc.fileCode}
-                  alt={content.introBeeldAlt}
-                  look={content.introLook}
-                />
-              </aside>
+        <div id="intro-split-scroll" className="intro-split-scroll intro-fade">
+          <div className="intro-split-root">
+            <div className="intro-split">
+              <div className="intro-split__grid">
+                <div className="cine-in intro-split__text">{introBody}</div>
+                <aside className="intro-split__media">
+                  <IntroSceneImage
+                    checkCode={sc.checkCode}
+                    fileCode={sc.fileCode}
+                    alt={content.introBeeldAlt}
+                    look={content.introLook}
+                  />
+                </aside>
+              </div>
             </div>
           </div>
         </div>

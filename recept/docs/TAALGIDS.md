@@ -1,4 +1,4 @@
-# Recept – Taalgids (versie 1, 5 november 2026)
+# Recept – Taalgids (versie 1, 6 november 2026)
 
 Status: voorstel van Claude, akkoord op de richting door Richard (3 november 2026). Geldt voor alle dialoogregels, cold opens, privéberichten, gesprekskaarten en slotscènes. Introteksten zijn vertellende proza en volgen alleen de woordenlijst en anachronismecheck.
 
@@ -83,3 +83,37 @@ Canon voor alle zichtbare teksten (register in `data/episodes/content.ts`, uitle
 | 2036 | **Van Gorp Groep** (niet „holding” of „conglomeraat” in MT-opdracht); Optivora als investeerder blijft zoals in de data. |
 
 Uitgebreide inventarisatie: `docs/BEDRIJFSVERHAAL.md`.
+
+## 8. Signaalwoorden onderzoeken (6 november 2026)
+
+Gebruikt in **`sig`** op het onderzoeksscherm (stap 2). Formaat: **▲** of **▼** (stijging/daling), daarna het signaal in **HOOFDLETTERS**; twee signalen staan met **twee spaties** ertussen, zonder punt aan het einde (zoals A4-demo: `▲ TEMPO  ▼ REGELRUIMTE`). Twee woorden staan vast in register (`data/schemas/rounds.schema.ts`): **STEUN LEIDING** (twee woorden, spatie) en **MENSELIJKE MAAT** (twee woorden, spatie).
+
+| Signaalwoord |
+| --- |
+| AANDACHT |
+| AFSTEMMING |
+| BETROKKENHEID |
+| CONTACT |
+| CONTROLE |
+| DOORGROEI |
+| DRUK |
+| EERLIJKHEID |
+| INFORMATIE |
+| INSPRAAK |
+| KAS |
+| KWALITEIT |
+| MENSELIJKE MAAT |
+| OMZET |
+| ONDUIDELIJKHEID |
+| ONZEKERHEID |
+| OVERZICHT |
+| REGELRUIMTE |
+| RISICO |
+| SPANNING |
+| STEUN LEIDING |
+| TEMPO |
+| UITSTEL |
+| VERLOOP |
+| VERTROUWEN |
+| VERZUIM |
+| ZEGGENSCHAP |

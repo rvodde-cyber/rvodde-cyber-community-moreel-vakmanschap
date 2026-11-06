@@ -223,6 +223,7 @@ describe('Intro register en IntroPhase', () => {
   ] as const)('(b) aflevering %i rendert intro-kader-%s', (ep, kader) => {
     const r = introWithPeriod(ep);
     root = r.root;
+    expect(r.container.querySelector('#intro-split-scroll.intro-split-scroll')).toBeTruthy();
     expect(r.container.querySelector(`.intro-kader-${kader}`)).toBeTruthy();
     expect(r.container.querySelector(`.intro-kader-shell--${kader}`)).toBeTruthy();
   });

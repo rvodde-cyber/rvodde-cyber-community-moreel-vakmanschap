@@ -67,15 +67,18 @@ export const roundDefinitionSchema = z.object({
     }),
   ),
   BE: z.record(z.string(), driverEffectSchema),
-  acties: z.array(
-    z.object({
-      id: z.string(),
-      ic: z.string().optional(),
-      t: z.string(),
-      quote: z.string(),
-      sig: z.string(),
-    }),
-  ),
+  acties: z
+    .array(
+      z.object({
+        id: z.string(),
+        ic: z.string().optional(),
+        t: z.string(),
+        quote: z.string(),
+        sig: z.string(),
+      }),
+    )
+    .min(3)
+    .max(6),
   verm: z.array(
     z.object({
       id: z.string(),

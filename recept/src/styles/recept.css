@@ -216,13 +216,15 @@ button, input { font: inherit; color: inherit; }
 
 /* Tegels */
 .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-gap: 10px; }
+/* Onderzoek: vijf tegels — 3+2 op breed scherm; één kolom op smal (wcag reflow) */
+.tiles--onderzoek { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .tile { text-align: left; border: 1px solid var(--line); background: var(--panel-2); padding: 12px; min-height: 112px; cursor: pointer; width: 100%; position: relative; }
 .tile svg { width: 26px; height: 26px; stroke: var(--soft); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; display: block; margin-bottom: 8px; }
 .tile .t { font-weight: 600; display: block; }
 .tile[aria-pressed="true"] { border-color: var(--cyan); background: var(--cyan-dim); }
 .tile[aria-pressed="true"] svg { stroke: var(--cyan); }
-.tile .quote { display: block; margin-top: 8px; font-size: 14px; }
-.tile .sig { display: block; margin-top: 8px; font-family: var(--data); font-size: 12px; color: var(--amber); }
+.tile .quote { display: block; margin-top: 8px; font-size: 16px; line-height: 1.55; color: var(--ink); }
+.tile .sig { display: block; margin-top: 8px; font-family: var(--data); font-size: 12px; line-height: 1.45; color: var(--amber); text-transform: uppercase; letter-spacing: 0.02em; }
 .tile[disabled] { opacity: .45; cursor: not-allowed; }
 .count { font-family: var(--data); color: var(--cyan); }
 
@@ -323,6 +325,7 @@ details p { margin: 0 0 10px; max-width: 72ch; }
 }
 @media (max-width: 720px) {
   .tiles, .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tiles--onderzoek { grid-template-columns: 1fr; }
   .gauges { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .roles, .bsum { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .brow { grid-template-columns: minmax(0, 1fr) 100px; }
@@ -1078,13 +1081,25 @@ select:focus-visible {
   line-height: 1.55;
 }
 
-/* —— Intro split (beeld rechts) —— */
-.intro-split-root {
-  min-height: 100%;
+/* —— Intro split (beeld rechts): scroll op #intro-split-scroll, hoogte 100dvh —— */
+.intro-split-scroll {
+  box-sizing: border-box;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background: var(--bg);
+  /* Ruimte onderaan: tekst/knop boven home-indicator (WCAG 2.2 reflow) */
+  padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+}
+.intro-split-root {
+  min-height: min-content;
+  background: transparent;
 }
 .intro-split {
-  padding: clamp(16px, 4vw, 40px) clamp(16px, 5vw, 48px) 48px;
+  padding: clamp(16px, 4vw, 40px) clamp(16px, 5vw, 48px)
+    calc(24px + env(safe-area-inset-bottom, 0px));
 }
 .intro-split__grid {
   display: grid;
@@ -1093,12 +1108,60 @@ select:focus-visible {
   max-width: 1200px;
   margin: 0 auto;
 }
-.intro-split__media { order: -1; max-height: 40vh; }
+.intro-split__media {
+  order: -1;
+  width: 100%;
+  min-width: 0;
+}
 .intro-split__text.cine-in {
   justify-content: flex-start;
   min-height: auto;
   padding: 0;
   max-width: 60ch;
+}
+/* Telefoon: beeld boven, max 35dvh voor kader+onderschrift */
+@media (max-width: 599px) {
+  .intro-split__media {
+    position: static;
+    max-height: none;
+  }
+  .intro-split-scroll .intro-kader-shell {
+    max-height: min(35dvh, calc(100dvh - 48px));
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .intro-split-scroll .intro-beeld__frame {
+    aspect-ratio: auto;
+    flex: 1 1 auto;
+    min-height: 120px;
+    max-height: min(28dvh, calc(35dvh - 56px));
+    width: 100%;
+  }
+  .intro-split-scroll .intro-beeld__cap {
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+}
+/* Tablet: beeld boven, max 45dvh */
+@media (min-width: 600px) and (max-width: 899px) {
+  .intro-split__media {
+    position: static;
+    max-height: none;
+  }
+  .intro-split-scroll .intro-kader-shell {
+    max-height: min(45dvh, calc(100dvh - 48px));
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .intro-split-scroll .intro-beeld__frame {
+    aspect-ratio: auto;
+    flex: 1 1 auto;
+    min-height: 200px;
+    max-height: min(38dvh, calc(45dvh - 64px));
+    width: 100%;
+  }
 }
 @media (min-width: 900px) {
   .intro-split__grid {
@@ -1110,7 +1173,40 @@ select:focus-visible {
     order: 0;
     position: sticky;
     top: 24px;
-    max-height: 80vh;
+    align-self: start;
+    max-height: calc(100dvh - 48px);
+    width: 100%;
+  }
+  /* Kader + onderschrift samen max. viewport minus marge */
+  .intro-split-scroll .intro-kader-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    max-height: calc(100dvh - 48px);
+    box-sizing: border-box;
+  }
+  .intro-split-scroll .intro-beeld__frame {
+    position: relative;
+    flex: 0 1 auto;
+    min-height: 280px;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-height: calc(100dvh - 160px);
+    /* hoogte uit aspect-ratio, begrensd door max-height (cover in frame) */
+  }
+}
+/* Lage vensters op desktop: geen sticky (anders geen scroll mee), beeld begrenzen */
+@media (min-width: 900px) and (max-height: 599px) {
+  .intro-split__media {
+    position: static;
+    max-height: none;
+  }
+  .intro-split-scroll .intro-kader-shell {
+    max-height: min(50dvh, calc(100dvh - 48px));
+  }
+  .intro-split-scroll .intro-beeld__frame {
+    max-height: min(calc(50dvh - 72px), calc(100dvh - 200px));
+    height: min(calc(50dvh - 72px), calc(100dvh - 200px));
   }
 }
 .intro-beeld { margin: 0; }
@@ -1121,10 +1217,7 @@ select:focus-visible {
   overflow: hidden;
   aspect-ratio: 3 / 2;
   background: var(--panel);
-  max-height: inherit;
-}
-@media (min-width: 900px) {
-  .intro-beeld__frame { aspect-ratio: 3 / 4; }
+  box-sizing: border-box;
 }
 .intro-beeld__frame img {
   display: block;

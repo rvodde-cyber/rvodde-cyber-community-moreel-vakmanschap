@@ -1,11 +1,13 @@
 # Open vragen en aanleveringen
 
-Laatste update: **6 november 2026** (worstenbroodje + Van Gorp Machinebouw / Groep).
+Laatste update: **6 november 2026** (intro-split scroll + worstenbroodje + Van Gorp Machinebouw / Groep).
 
 ## Besloten (6 nov 2026)
 
 | Onderwerp | Besluit |
 | --- | --- |
+| **Stap 2 onderzoeken A1/A2/A3/A5** | Vijf onderzoeken per ronde, inhoud en `sig` zoals opdracht; ronde-specifieke lijsten in `a*Rounds.ts`. Onderzoek-id’s (`a1`–`a5`) wegen **niet** mee in motor/golden (alleen UI + teamExport); **A4** `data/rounds.ts` ongewijzigd. |
+| **Intro-split scroll + beeldhoogte** | Technische oorzaak: `#cine` scrollt niet in de React-tree (alleen `.cine`); sticky media + te hoog kader (`aspect-ratio`/`inherit`) blokkeerde UX. Oplossing: wrapper `#intro-split-scroll` met `100dvh` + `overflow-y: auto`, `dvh`-begrenzing op kader/frame; cold open en A4-layout ongewijzigd. Verwachting per viewport: `DESIGNGIDS.md` § *Introscherm scroll en hoogte*; visuele double-check door Richard op echte devices gewenst. |
 | **Product + bedrijf** | Worstenbroodjes i.p.v. kroket; tijdlijn Van Gorp Machinebouw B.V. (2009) → dronesorder (rond 2020) → Van Gorp Drones (2026) → Van Gorp Groep (2036); zie `docs/BEDRIJFSVERHAAL.md`, `data/episodes/overstapUitlegA4.ts`. |
 | **A3 → A4** | Brugzin in slotfilm A3 via **`buildSlotEp3`** in `data/filmSequences.ts` (Defensie/drones / Van Gorp Machinebouw). |
 

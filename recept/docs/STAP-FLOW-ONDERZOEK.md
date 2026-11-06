@@ -108,6 +108,29 @@ Onderzoek: `IntroPhase.tsx` (vak **JULLIE OPDRACHT**; A4 r1/r2 apart met `A4_INT
 
 Tests: `engine/__tests__/introUiCopy.test.ts`, UI-checks in `src/screens/landingIntro.test.tsx`.
 
+## Onderzoeken A1/A2/A3/A5 (6 november 2026)
+
+### Waar `acties` en `TOGGLE_ACTIE` landen
+
+| Plek | Rol |
+| --- | --- |
+| `data/episodes/a1Rounds.ts` … `a5Rounds.ts` | `RoundDefinition.acties`: `id`, `t`, `quote`, `sig` per ronde |
+| `data/schemas/rounds.schema.ts` | Zod-validatie: 3–6 acties per ronde |
+| `src/screens/phases/OnderzoekPhase.tsx` | Toont tegels; bij selectie `quote` + `sig`; max. 3 gekozen id’s in state |
+| `src/game/gameReducer.ts` | `TOGGLE_ACTIE`: lijst `rounds[r].acties` (string id’s), max. 3 |
+| `src/game/uiTypes.ts` | `RoundUi.acties: string[]` |
+| `src/game/teamExport.ts` | Exporteert gekozen id’s (geen inhoudelijke score) |
+| **Motor / `interventieCompute` / golden** | Gebruikt **interventiekaarten** (`cards`), niet de onderzoek-id’s `a1`–`a5` |
+| **Nabespreking** | Conditioneel op **gekozen interventies** (`tonenAlsGekozen`), niet op onderzoek |
+
+### Wegen onderzoek-id’s inhoudelijk mee?
+
+**Nee.** De id’s `a1` … `a5` zijn alleen keuzelijst + teamExport; ze zitten niet in effectberekening of golden. **A4** (`data/rounds.ts`): ongewijzigd; blijft demo-referentie met eigen `acties` (6 stuks ronde 1).
+
+### Inhoud
+
+Per aflevering en **per ronde** vijf onderzoeken met vaste titels (`t`), bevinding (`quote`) en signaalregel (`sig`, formaat als A4). Zie `docs/TAALGIDS.md` § Signaalwoorden onderzoeken.
+
 ## Bronnen
 
 Greiner, L. E. (1972). Evolution and revolution as organizations grow. Harvard Business Review, 50(4), 37–46.

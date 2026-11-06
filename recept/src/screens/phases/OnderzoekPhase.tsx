@@ -32,7 +32,7 @@ export function OnderzoekPhase({
           <h2>ONDERZOEK</h2>
           <span className="count">{n} / 3</span>
         </div>
-        <div className="tiles">
+        <div className="tiles tiles--onderzoek">
           {D.acties.map((a) => {
             const on = roundUi.acties.includes(a.id);
             const off = !on && n >= 3;
