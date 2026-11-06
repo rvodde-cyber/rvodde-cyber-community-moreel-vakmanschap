@@ -1,11 +1,12 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **6 november 2026** — intro beslistijdregel + landingspagina
+Laatste update: **6 november 2026** — worstenbroodje + Van Gorp Machinebouw / Groep
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **Worstenbroodje + bedrijfslijn** | Product- en bakmetafoor in `content/`, `data/`, UI; `overstapUitleg` + `HOE HET ZO VER KWAM` op A4; A3 geschiedenis + **titelregel in A3-slotfilm** (Defensie 2020); echo A5 → Van Gorp Groep; docs `BEDRIJFSVERHAAL.md`, `TAALGIDS` §7, `TIJDGEEST` tijdlijn; test `worstenbroodjeCopy.test.ts` |
 | **Introteksten + landingspagina** | `introCarryLines`: A1 + skeletten derde regel via `introBeslistijdZin` (timer vs. *Neem de tijd*); `STAP-FLOW-ONDERZOEK.md` § Introteksten uitgebreid; landingspagina: lichtere `.landing-overlay`, scrim `.landing-in::before`, data-chips + episodekaarten leesbaarder |
 | **Tijdgeestlaag** | `data/episodes/tijdgeest.ts`, ticker UI (`tickerRegelsVoor`), geluid aan/uit + tekstalternatief; docs `TIJDGEEST.md`, `GELUID-CHECK.md`, beeldbank-check |
 | **Speelflow A1** | Cold open auto + registergrenzen; 3 klikken intro→MT; `docs/STAP-FLOW-ONDERZOEK.md` |
@@ -19,7 +20,7 @@ Laatste update: **6 november 2026** — intro beslistijdregel + landingspagina
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests | **`npm test`**: 174 groen + `npm run build` |
+| Tests | **`npm test`**: 177 groen + `npm run build` |
 
 ## Live demo
 

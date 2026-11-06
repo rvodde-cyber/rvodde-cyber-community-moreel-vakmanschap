@@ -44,6 +44,7 @@ Geen accounts, geen analytics, geen cookies van derden. Spelstatus alleen in `lo
 ## Documentatie
 
 - `CURSOR-PROMPT.md` — volledige specificatie
+- `docs/BEDRIJFSVERHAAL.md` — product worstenbroodje, bedrijfsnamen en tijdlijn
 - `docs/VOORTGANG.md` — bouwvolgorde
 - `docs/TOEGANKELIJKHEID.md` — a11y-checklist
 - `docs/OPEN-VRAGEN.md` — wat Richard nog aanlevert

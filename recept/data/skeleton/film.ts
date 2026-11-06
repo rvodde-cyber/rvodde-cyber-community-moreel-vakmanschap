@@ -47,6 +47,20 @@ export const SKELETON_TRAILERS: Record<Exclude<EpisodeId, 4>, FilmScript> = {
 export const SKELETON_SLOTS: Record<Exclude<EpisodeId, 4>, FilmScript> = {
   1: slot(1, 'Harrie legt de telefoon neer. Morgen moet iemand ja of nee durven zeggen.'),
   2: slot(2, 'Gerrit roept nog één keer sneller. De band antwoordt met stilte.'),
-  3: slot(3, 'Harrie kijkt van Sanne naar Marco. Het MT moet straks ook kiezen.'),
+  3: {
+    ...slot(3, 'Harrie kijkt van Sanne naar Marco. Het MT moet straks ook kiezen.'),
+    duration: 11000,
+    cues: [
+      { at: 400, kind: 'text', text: 'EINDE DEEL' },
+      { at: 2400, kind: 'shot', img: 'I3', zoom: 'pan' },
+      { at: 3000, kind: 'sub', text: 'Harrie kijkt van Sanne naar Marco. Het MT moet straks ook kiezen.' },
+      {
+        at: 5200,
+        kind: 'sub',
+        text: 'Rond 2020 zoekt Defensie productiecapaciteit voor drones. Van Gorp Machinebouw krijgt de order.',
+      },
+      { at: 9200, kind: 'boom', soft: true },
+    ],
+  },
   5: slot(5, 'In de reflectie van het glas flitst een schuur die niemand meer bezoekt.'),
 };

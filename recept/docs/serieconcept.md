@@ -2,7 +2,7 @@
 
 24 oktober 2026 · Richard
 
-Recept is een HR-businessgame in de vorm van een dramaserie van vijf afleveringen: van de schuur waarin Harrie van Gorp in 1984 zijn eerste kroketten bakt, tot een conglomeraat in 2036 waar niemand meer weet waarvoor of voor wie hij werkt. Teams sturen het bedrijf door alle groeifasen van Greiner, terwijl de familie strijdt om opvolging en erfenis. Het geheime ragoutrecept van de oprichter loopt als motief door de hele serie.
+Recept is een HR-businessgame in de vorm van een dramaserie van vijf afleveringen: van de schuur waarin Harrie van Gorp in 1984 zijn eerste worstenbroodjes bakt, tot **Van Gorp Groep** in 2036 waar niemand meer weet waarvoor of voor wie hij werkt. Teams sturen het bedrijf door alle groeifasen van Greiner, terwijl de familie strijdt om opvolging en erfenis. Het geheime ragoutrecept van de oprichter loopt als motief door de hele serie.
 
 ## Toon en sfeer
 
@@ -25,11 +25,11 @@ Elke aflevering is een groeifase van Greiner (1972, 1998), met een tijdsprong er
 
 | Jaar | Aflevering | Schaal | Greiner-crisis | Zichtbaar probleem | Slotscène |
 | --- | --- | --- | --- | --- | --- |
-| 1984 | 1. Alles met de hand | Harrie, Lies, Gerrit en vier buren in de schuur | Leiderschap | Bestellingen groeien, Harrie doet alles zelf en raakt overbelast | Een supermarktketen wil tien keer zoveel kroketten |
+| 1984 | 1. Alles met de hand | Harrie, Lies, Gerrit en vier buren in de schuur | Leiderschap | Bestellingen groeien, Harrie doet alles zelf en raakt overbelast | Een supermarktketen wil tien keer zoveel worstenbroodjes |
 | 1996 | 2. Sneller, Gerrit | Eerste fabriekshal, lopende band, ploegleiders | Autonomie | Demotivatie en fouten door opgeknipt werk en tempo | Harrie krijgt een hartinfarct; wie neemt het over? |
 | 2009 | 3. Een Van Gorp aan het roer | Drie vestigingen, eerste managementlaag | Controle | Vestigingen gaan hun eigen gang; het hoofdkantoor verliest het overzicht | Een kans om te diversifiëren naar drones |
 | 2026 | 4. Het dashboard liegt niet | Divisies, TEMPO en PILOT, defensieorder | Bureaucratie | Algoritmische sturing, procedures en gewetensbezwaren | Harrie overlijdt; het testament wordt geopend |
-| 2036 | 5. Wie heeft het schrift? | Conglomeraat met duizenden medewerkers | Doelverlies en externe groei | Niemand weet nog waarvoor hij werkt; erfgenamen strijden; een investeerder doet een bod | Het spiegelmoment: terug naar de schuur |
+| 2036 | 5. Wie heeft het schrift? | Van Gorp Groep met duizenden medewerkers | Doelverlies en externe groei | Niemand weet nog waarvoor hij werkt; erfgenamen strijden; een investeerder doet een bod | Het spiegelmoment: terug naar de schuur |
 
 **Het recept als motief.** In 1984 schrijft Harrie het recept met Gerrit in een schrift. In 2009 gaat het naar een fabriek in een andere provincie. In 2036 zit het als merkrecht in een verkoopdossier, en de finale opent met de vraag wie het schrift nog heeft. Het recept staat voor wat het bedrijf ooit uniek maakte: zijn doel.
 
@@ -37,14 +37,14 @@ Elke aflevering is een groeifase van Greiner (1972, 1998), met een tijdsprong er
 
 | Personage | 1984 | 1996 | 2009 | 2026 | 2036 |
 | --- | --- | --- | --- | --- | --- |
-| Harrie van Gorp (1955), oprichter | 29, bakt kroketten in de schuur | 41, directeur-eigenaar, kent nog iedereen | 54, kiest zijn opvolger | 71, president-commissaris | Overleden in 2031; zijn testament opent de aflevering |
+| Harrie van Gorp (1955), oprichter | 29, bakt worstenbroodjes in de schuur | 41, directeur-eigenaar, kent nog iedereen | 54, kiest zijn opvolger | 71, president-commissaris | Overleden in 2031; zijn testament opent de aflevering |
 | Lies van Gorp (1957), medeoprichter | 27, doet de boeken en de klanten | 39, haar rol verdwijnt uit beeld | 52, ziet de opvolgingskeuze met lede ogen aan | 69, stille getuige | 79, erflater met de beslissende stem |
 | Sanne van Gorp (1977), dochter | 7, speelt in de schuur | 19, werkt mee in de fabriek, kent elk proces | 32, de sterkste kandidaat | 49, buiten het bedrijf, getrouwd met Erik | 59, erfgename met een rekening te vereffenen |
-| Marco van Gorp (1980), zoon | 4, wil aandacht van zijn vader | 16, schaamt zich voor de kroketten | 29, kandidaat-opvolger | 46, algemeen directeur | 56, onder druk van erfgenamen en investeerder |
+| Marco van Gorp (1980), zoon | 4, wil aandacht van zijn vader | 16, schaamt zich voor de worstenbroodjes | 29, kandidaat-opvolger | 46, algemeen directeur | 56, onder druk van erfgenamen en investeerder |
 | Erik Verhoeven (1977), zwager | – | – | 32, trouwt met Sanne | 49, eigenaar Optivora | 59, adviseur van Sanne in de erfenisstrijd |
 | Gerrit Smulders (1940), eerste werknemer | 44, slager, kent het recept | 56, ploegbaas, gaat met pensioen | Overleden; zijn handschrift staat in het schrift | – | – |
-| Ans Willems (1969) | – | 27, nieuw in de frituurhal | 40, ervaren kracht | 57, uitgeputte ploegleider | 67, net met pensioen; laatste die het recept nog kent |
-| Joost Hendriks (1974) | – | – | 35, kwaliteitscontroleur, net in de OR | 52, OR-voorzitter | 62, OR van het conglomeraat |
+| Ans Willems (1969) | – | 27, nieuw aan de bakstraat | 40, ervaren kracht | 57, uitgeputte ploegleider | 67, net met pensioen; laatste die het recept nog kent |
+| Joost Hendriks (1974) | – | – | 35, kwaliteitscontroleur, net in de OR | 52, OR-voorzitter | 62, OR van Van Gorp Groep |
 | Dennis Kuipers (1987) | – | – | – | 39, operationeel directeur | 49, divisiedirecteur drones |
 | Yasmin El Amrani (1997) | – | – | – | 29, drone-engineer | 39, directeur van een partnerbedrijf |
 | Piotr Nowak (1992) | – | – | – | 34, flexkracht | 44, vaste ploegleider, of al lang vertrokken |

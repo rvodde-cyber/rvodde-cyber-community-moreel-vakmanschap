@@ -34,12 +34,12 @@ Defensie wil de order pas tekenen als het bedrijf alle personeelsgegevens deelt,
 
 ## Aflevering 5 — Wie heeft het schrift? (2036): Het algoritme van Judith
 
-Judith werkt al sinds 2009 bij het bedrijf en heeft reumatoïde artritis, iets wat ze nooit heeft verzwegen maar ook nooit breed heeft gedeeld. Het conglomeraat gebruikt een extern AI-systeem dat reorganisaties "objectief" voorbereidt op basis van inzetbaarheidsdata, verzuimpatronen en productiviteitscijfers. Niemand heeft het systeem gevraagd om op gezondheid te selecteren, en niemand kan nu precies uitleggen waarom, maar Judiths naam staat al drie kwartalen op de lijst voor de volgende reorganisatieronde. Ondertussen pronkt het bedrijf naar buiten met een inclusie-rapport.
+Judith werkt al sinds 2009 bij het bedrijf en heeft reumatoïde artritis, iets wat ze nooit heeft verzwegen maar ook nooit breed heeft gedeeld. Van Gorp Groep gebruikt een extern AI-systeem dat reorganisaties "objectief" voorbereidt op basis van inzetbaarheidsdata, verzuimpatronen en productiviteitscijfers. Niemand heeft het systeem gevraagd om op gezondheid te selecteren, en niemand kan nu precies uitleggen waarom, maar Judiths naam staat al drie kwartalen op de lijst voor de volgende reorganisatieronde. Ondertussen pronkt het bedrijf naar buiten met een inclusie-rapport.
 
 - Spanningsveld: onzichtbare, geautomatiseerde discriminatie tegenover een bedrijf dat beweert alles eerlijk te meten; niemand heeft het besloten, en toch gebeurt het.
 - Moreel Vakmanschap: Zien: wie durft een algoritme in twijfel te trekken dat "objectief" heet? Volhouden: hoe grijp je in bij vooringenomenheid die in een systeem verstopt zit, niet in een persoon?
 
-Waarom deze versie: het algoritme van Judith bouwt voort op de kernzin uit aflevering 4, "een dashboard laat zien wat het meet, niet wat het mist", op het schaalniveau van het conglomeraat. Anne-Fleur, die in deze aflevering vraagt waar het bedrijf nog voor staat, zou degene kunnen zijn die de lijst toevallig vindt.
+Waarom deze versie: het algoritme van Judith bouwt voort op de kernzin uit aflevering 4, "een dashboard laat zien wat het meet, niet wat het mist", op het schaalniveau van Van Gorp Groep. Anne-Fleur, die in deze aflevering vraagt waar het bedrijf nog voor staat, zou degene kunnen zijn die de lijst toevallig vindt.
 
 ## Hoe dit in het spel werkt
 

@@ -6,7 +6,7 @@ Elke aflevering opent, net vóór de trailer, met een korte introtekst in drie v
 
 ## Aflevering 1 — Alles met de hand (1984)
 
-**Geschiedenis.** Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.
+**Geschiedenis.** Het ruikt naar warm deeg en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het deeg. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.
 
 **Uitdagingen.** Vanmiddag belde een inkoper van een supermarktketen. Tien keer het normale volume, te leveren over zes weken. Harrie wil meteen ja zeggen. Lies heeft het nog niet gehoord. Twee buren hebben zich ziek gemeld, en de schuur telt precies acht vierkante meter werkruimte.
 
@@ -16,15 +16,15 @@ Elke aflevering opent, net vóór de trailer, met een korte introtekst in drie v
 
 ## Aflevering 2 — Sneller, Gerrit (1996)
 
-**Geschiedenis.** Twaalf jaar later zoemt er een lopende band door een fabriekshal op industrieterrein Loven in Tilburg. Dertig mensen in witte jassen herhalen elk hun eigen handeling, duizenden keren per dag. Harrie, inmiddels directeur-eigenaar, loopt zeven dagen per week over de vloer en groet iedereen bij naam, of denkt dat hij dat nog kan.
+**Geschiedenis.** Twaalf jaar later zoemt er een lopende band door een fabriekshal op industrieterrein Loven in Tilburg. Naast de hal staat een eigen werkplaats: daar worden de machines gerepareerd en verbeterd. Dertig mensen in witte jassen herhalen elk hun eigen handeling, duizenden keren per dag. Harrie, inmiddels directeur-eigenaar, loopt zeven dagen per week over de vloer en groet iedereen bij naam, of denkt dat hij dat nog kan.
 
-**Uitdagingen.** Het ziekteverzuim kruipt omhoog, net als de klok van de productieteller boven de band. Niemand maakt meer een hele kroket; iedereen doet hetzelfde ene gebaar, de hele dag. Gerrit, nu ploegbaas, roept steeds vaker "sneller" naar een ploeg die hem steeds minder hoort.
+**Uitdagingen.** Het ziekteverzuim kruipt omhoog, net als de klok van de productieteller boven de band. Niemand maakt meer een heel worstenbroodje; iedereen doet hetzelfde ene gebaar, de hele dag. Gerrit, nu ploegbaas, roept steeds vaker "sneller" naar een ploeg die hem steeds minder hoort.
 
 **Hints.** Een lopende band verdeelt het werk in stukjes. Vraag je af wat er gebeurt met het gevoel een vak te beheersen, wanneer niemand meer een heel product in zijn handen houdt, en wie dat het eerst voelt.
 
 ## Aflevering 3 — Een Van Gorp aan het roer (2009)
 
-**Geschiedenis.** Drie vestigingen nu: Tilburg, Waalwijk, Dongen. Harrie is 54 en voelt voor het eerst dat hij niet overal tegelijk kan zijn. Aan de ene kant van de tafel zit zijn dochter Sanne, 32, die elk proces in de fabriek kent omdat ze er letterlijk in is opgegroeid. Aan de andere kant zijn zoon Marco, net dertig, met een gloednieuw pak en een stem die nooit twijfelt.
+**Geschiedenis.** Drie vestigingen nu: Tilburg, Waalwijk, Dongen. Harrie is 54 en voelt voor het eerst dat hij niet overal tegelijk kan zijn. Net is Van Gorp Machinebouw B.V. opgericht: de eigen werkplaats van het bedrijf is een zelfstandige onderneming geworden, met een eigen directeur en eigen cijfers. Aan de ene kant van de tafel zit zijn dochter Sanne, 32, die elk proces in de fabriek kent omdat ze er letterlijk in is opgegroeid. Aan de andere kant zijn zoon Marco, net dertig, met een gloednieuw pak en een stem die nooit twijfelt.
 
 **Uitdagingen.** De vestigingen gaan steeds meer hun eigen gang; het hoofdkantoor in Tilburg ziet de cijfers pas als het al te laat is om bij te sturen. En er hangt een vraag boven de tafel die niemand hardop stelt: wie neemt het straks over, en op basis waarvan beslist een vader dat eigenlijk?
 
@@ -35,6 +35,8 @@ Elke aflevering opent, net vóór de trailer, met een korte introtekst in drie v
 **Geschiedenis.** Van Gorp Drones, Vossenberg, Tilburg. Geen lopende band meer, maar robotarmen en schermen vol grafieken. Sturingssysteem TEMPO bepaalt het tempo op de vloer tot op de seconde, algoritme PILOT fluistert de leiding advies in het oor. Harrie is 71, president-commissaris, en zit zaterdagavond aan zijn eigen verjaardagstaart terwijl niemand aan tafel van zijn telefoon opkijkt.
 
 **Uitdagingen.** Maandagochtend, 09:14 uur. Het verzuim is weer gestegen. Ploegleider Ans weet 's ochtends niet wat de norm die dag wordt. En ergens in een la ligt de eerste order voor een defensietoepassing, nog ongeopend. Marco wil vrijdag een plan zien, en maar 1,5 miljoen euro om het mee te betalen.
+
+**Hoe het zo ver kwam** (alleen in de game onder de kop HOE HET ZO VER KWAM). Van Gorp maakte tientallen jaren worstenbroodjes … (volledige zeven zinnen; zie `data/episodes/overstapUitlegA4.ts`).
 
 **Hints.** Een dashboard laat precies zien wat het meet, en niets van wat het mist. Vraag bij elk getal: wie heeft dit ingevoerd, en wie komt er in deze cijfers helemaal niet voor?
 
@@ -52,7 +54,7 @@ De introtekst verschijnt als eerste scherm van een ronde, vóór het MT op "Spee
 
 | Aflevering | Beeld bij de intro | Stijlblok |
 | --- | --- | --- |
-| 1 | Harrie met zijn handen in het paneermeel, de schuurdeur op een kier, laat avondlicht | S1 (schuur, 1984) |
+| 1 | Harrie met zijn handen in het deeg, de schuurdeur op een kier, laat avondlicht | S1 (schuur, 1984) |
 | 2 | De lopende band in de verte, een klok en een productieteller op de voorgrond | S2 (lopende band, 1996) |
 | 3 | Een lege directietafel met twee stoelen tegenover elkaar, net voor de vergadering | S3 (overname, 2009) |
 | 4 | Het lege kantoor van TEMPO bij zonsopgang, schermen al actief | S4 (drones, 2026) |

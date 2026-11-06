@@ -188,6 +188,12 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           dag wordt. En ergens in een la ligt de eerste order voor een defensietoepassing, nog ongeopend. Je neef Marco
           wil vrijdag een plan zien, en heeft € 1,5 miljoen om het mee te betalen.
         </p>
+        {content.overstapUitleg ? (
+          <>
+            <h4>HOE HET ZO VER KWAM</h4>
+            <p className="body">{content.overstapUitleg}</p>
+          </>
+        ) : null}
         <div className="hintbox">
           <h4>HINT</h4>
           <p>

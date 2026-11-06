@@ -51,7 +51,7 @@ export function HomeScreen({
           <h1 className="landing-title">RECEPT</h1>
           <p className="landing-tagline landing-tagline--italic">Van Gorp Drones</p>
           <p className="landing-lead">
-            Een krokettenfabriek. Vijf tijdperken. Jullie beslissen.
+            Een worstenbroodjesfabriek. Vijf tijdperken. Jullie beslissen.
           </p>
           <p className="landing-accent landing-tagline--italic">Het MT vergadert. Jullie beslissen.</p>
 

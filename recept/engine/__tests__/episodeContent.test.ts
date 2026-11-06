@@ -175,7 +175,7 @@ describe('taalronde cold opens (5 nov 2026)', () => {
     const lines = SKELETON_COLD[2].lines;
     expect(lines).toHaveLength(5);
     expect(lines[0]![1]).toBe('Dinsdag, tien over zeven. De band loopt al een uur.');
-    expect(lines[4]![1]).toBe('Niemand maakt vandaag nog een hele kroket.');
+    expect(lines[4]![1]).toBe('Niemand maakt vandaag nog een heel worstenbroodje.');
     expect(lines[2]![0]).toBe('LIES');
   });
 

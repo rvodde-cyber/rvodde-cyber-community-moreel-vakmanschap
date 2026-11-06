@@ -24,7 +24,7 @@ Status: goedgekeurd door Richard op 5 november 2026 (vijf kaarten, namen Ingrid,
 
 **Waarom deze:** het past bij het kasboek en het motief "wat staat er op papier en wat niet". Het privédilemma over Frans gaat over hoor en wederhoor; deze kaart gaat over loyaliteit en eerlijkheid. Uit HR13, herschreven van HR-medewerker naar Gerrit.
 
-Zaterdagmiddag vraagt Harrie aan Gerrit of hij even iets wil bezorgen: een paar extra kratten kroketten voor een café in Tilburg. "Een gunstje, Gerrit. Jij kent die man." Gerrit doet het graag; Harrie heeft hem de laatste maanden ook veel werk bezorgd.
+Zaterdagmiddag vraagt Harrie aan Gerrit of hij even iets wil bezorgen: een paar extra kratten worstenbroodjes voor een café in Tilburg. "Een gunstje, Gerrit. Jij kent die man." Gerrit doet het graag; Harrie heeft hem de laatste maanden ook veel werk bezorgd.
 
 Bij het café blijken het veel meer kratten dan afgesproken, en de eigenaar telt zeshonderd gulden in contanten uit. Geen bon, geen briefje. "Geef maar aan Harrie." Harrie stopt het geld in zijn jaszak. "Dat schrijven we later wel in het kasboek."
 

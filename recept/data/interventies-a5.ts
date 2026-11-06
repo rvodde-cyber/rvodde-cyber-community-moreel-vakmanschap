@@ -120,7 +120,7 @@ export const INTERVENTIES_A5: Interventie[] = [
       {
         bron: 'demo-a4-H',
         tekst:
-          'Het klinkt bekend: ook in aflevering 4 schrapten jullie regels. Nu gaat het over het hele conglomeraat, niet over één fabriek.',
+          'Het klinkt bekend: ook in aflevering 4 schrapten jullie regels. Nu gaat het over de hele Van Gorp Groep, niet over één fabriek.',
       },
     ],
     bron: BRON,

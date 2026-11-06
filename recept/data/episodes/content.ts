@@ -16,6 +16,7 @@ import type { ComputeResult } from '@engine/types';
 import type { DilemmaDef } from './dilemmaDef';
 import { TIJDGEEST, type Tijdgeest } from './tijdgeest';
 import { GESPREKSKAARTEN, type Gesprekskaart } from '../gesprekskaarten';
+import { OVERSTAP_UITLEG_A4 } from './overstapUitlegA4';
 
 export type ColdOpenDef = {
   place: string;
@@ -87,6 +88,8 @@ export type EpisodeContent = {
   introBeeldTekst: string;
   /** Sfeer en kader intro-beeld rechts — zie docs/DESIGNGIDS.md §10 */
   introLook: EpisodeIntroLook;
+  /** Alleen A4: blok „Hoe het zo ver kwam” onder de andere introkoppen */
+  overstapUitleg?: string;
 };
 
 export type IntroKader = 'polaroid' | 'kettingpapier' | 'venster' | 'dashboard' | 'glas';
@@ -274,6 +277,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[4],
   gesprekskaart: GESPREKSKAARTEN[4],
   gesprekskaartActief: false,
+  overstapUitleg: OVERSTAP_UITLEG_A4,
   ...introEpisodeFields(4),
 };
 

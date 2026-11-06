@@ -14,7 +14,7 @@ Een regel met lege spreker ('') is een titelkaart. Volg de bestaande structuur (
 ['GERRIT', 'Sneller, jongens! De vrachtwagen staat al te wachten.']
 ['LIES', 'Wie is eigenlijk die jongen bij de verpakking?']
 ['HARRIE', 'Die ken ik wel. Even denken... Toch?']
-['', 'Niemand maakt vandaag nog een hele kroket.']
+['', 'Niemand maakt vandaag nog een heel worstenbroodje.']
 2. Aflevering 3 (SKELETON_COLD[3], place 'DIRECTIETAFEL, TILBURG', img 'I3'):
 ['', 'Vrijdagmiddag. Drie vestigingen en één vergadertafel.']
 ['SANNE', 'Het loopt vast op de vloer, pap. Dat weet iedereen die er staat.']

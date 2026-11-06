@@ -10,7 +10,7 @@ export type IntroBlok = {
 export const INTRO_TEKSTEN: Record<1 | 2 | 3 | 4 | 5, IntroBlok> = {
   1: {
     geschiedenis:
-      'Het ruikt naar hete olie en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het paneermeel. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.',
+      'Het ruikt naar warm deeg en nat gras. In de schuur achter zijn ouderlijk huis in Berkel-Enschot staat Harrie van Gorp, negenentwintig jaar oud, tot zijn ellebogen in het deeg. Zijn vriendin Lies houdt de kas bij op de keukentafel, slager Gerrit levert het vlees en kent het recept beter dan Harrie zelf, en vier buren komen bijspringen als het druk wordt. De telefoon, een enkel toestel aan de muur, gaat de laatste weken bijna de hele avond.',
     uitdagingen:
       'Vanmiddag belde een inkoper van een supermarktketen. Tien keer het normale volume, te leveren over zes weken. Harrie wil meteen ja zeggen. Lies heeft het nog niet gehoord. Twee buren hebben zich ziek gemeld, en de schuur telt precies acht vierkante meter werkruimte.',
     hint: 'Kijk goed wie er aan tafel zit wanneer de grote beslissingen vallen, en wie daar straks niet bij was. Een schuur is klein, maar een handtekening kan er net zo groot in doorklinken als in een directiekamer.',
@@ -19,16 +19,16 @@ export const INTRO_TEKSTEN: Record<1 | 2 | 3 | 4 | 5, IntroBlok> = {
   },
   2: {
     geschiedenis:
-      'Twaalf jaar later zoemt er een lopende band door een fabriekshal op industrieterrein Loven in Tilburg. Dertig mensen in witte jassen herhalen elk hun eigen handeling, duizenden keren per dag. Harrie, inmiddels directeur-eigenaar, loopt zeven dagen per week over de vloer en groet iedereen bij naam, of denkt dat hij dat nog kan.',
+      'Twaalf jaar later zoemt er een lopende band door een fabriekshal op industrieterrein Loven in Tilburg. Naast de hal staat een eigen werkplaats: daar worden de machines gerepareerd en verbeterd. Dertig mensen in witte jassen herhalen elk hun eigen handeling, duizenden keren per dag. Harrie, inmiddels directeur-eigenaar, loopt zeven dagen per week over de vloer en groet iedereen bij naam, of denkt dat hij dat nog kan.',
     uitdagingen:
-      'Het ziekteverzuim kruipt omhoog, net als de klok van de productieteller boven de band. Niemand maakt meer een hele kroket; iedereen doet hetzelfde ene gebaar, de hele dag. Gerrit, nu ploegbaas, roept steeds vaker "sneller" naar een ploeg die hem steeds minder hoort.',
+      'Het ziekteverzuim kruipt omhoog, net als de klok van de productieteller boven de band. Niemand maakt meer een heel worstenbroodje; iedereen doet hetzelfde ene gebaar, de hele dag. Gerrit, nu ploegbaas, roept steeds vaker "sneller" naar een ploeg die hem steeds minder hoort.',
     hint: 'Een lopende band verdeelt het werk in stukjes. Vraag je af wat er gebeurt met het gevoel een vak te beheersen, wanneer niemand meer een heel product in zijn handen houdt, en wie dat het eerst voelt.',
     opdracht:
       'Jullie sturen het MT van de fabriek. Onderzoek wat er speelt, kies twee interventies en verdeel het budget.',
   },
   3: {
     geschiedenis:
-      'Drie vestigingen nu: Tilburg, Waalwijk, Dongen. Harrie is 54 en voelt voor het eerst dat hij niet overal tegelijk kan zijn. Aan de ene kant van de tafel zit zijn dochter Sanne, 32, die elk proces in de fabriek kent omdat ze er letterlijk in is opgegroeid. Aan de andere kant zijn zoon Marco, net dertig, met een gloednieuw pak en een stem die nooit twijfelt.',
+      'Drie vestigingen nu: Tilburg, Waalwijk, Dongen. Harrie is 54 en voelt voor het eerst dat hij niet overal tegelijk kan zijn. Net is Van Gorp Machinebouw B.V. opgericht: de eigen werkplaats van het bedrijf is een zelfstandige onderneming geworden, met een eigen directeur en eigen cijfers. Aan de ene kant van de tafel zit zijn dochter Sanne, 32, die elk proces in de fabriek kent omdat ze er letterlijk in is opgegroeid. Aan de andere kant zijn zoon Marco, net dertig, met een gloednieuw pak en een stem die nooit twijfelt.',
     uitdagingen:
       'De vestigingen gaan steeds meer hun eigen gang; het hoofdkantoor in Tilburg ziet de cijfers pas als het al te laat is om bij te sturen. En er hangt een vraag boven de tafel die niemand hardop stelt: wie neemt het straks over, en op basis waarvan beslist een vader dat eigenlijk?',
     hint: 'Wie het langst heeft meegedraaid, is niet vanzelfsprekend wie het hardst zijn stem verheft. Let op wie er aan deze tafel zwijgt, en waarom.',
@@ -51,7 +51,7 @@ export const INTRO_TEKSTEN: Record<1 | 2 | 3 | 4 | 5, IntroBlok> = {
       'De erfgenamen zitten tegenover elkaar aan een tafel die veel te groot aanvoelt voor wat er nog over is van de familie. Een investeerder wacht ongeduldig op antwoord. En ergens, in een schuur in Berkel-Enschot die niemand meer heeft bezocht, ligt nog altijd het oorspronkelijke receptschrift.',
     hint: 'Een bedrijf dat alles kan meten, is onderweg iets kwijtgeraakt dat zich niet laat meten. Vraag je af: wat is er nog over van waarmee dit ooit, in een schuur, is begonnen?',
     opdracht:
-      'Jullie sturen het MT van de holding. Onderzoek wat er speelt en kies twee interventies.',
+      'Jullie sturen het MT van Van Gorp Groep. Onderzoek wat er speelt en kies twee interventies.',
   },
 };
 

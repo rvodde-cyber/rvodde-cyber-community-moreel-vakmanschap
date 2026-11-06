@@ -50,6 +50,7 @@ describe('Landingspagina HomeScreen', () => {
     root = r.root;
     expect(r.container.querySelector('h1.landing-title')?.textContent).toBe('RECEPT');
     expect(r.container.querySelectorAll('.landing-ep-card')).toHaveLength(5);
+    expect(r.container.textContent).toContain('worstenbroodjesfabriek');
   });
 
   it('(b) kaarten disabled bij korte voornaam, actief daarna', () => {
@@ -231,6 +232,7 @@ describe('Intro register en IntroPhase', () => {
     const r = introWithPeriod(3);
     root = r.root;
     expect(r.container.querySelector('.intro-kader-venster-bar')?.getAttribute('aria-hidden')).toBe('true');
+    expect(r.container.textContent).toContain('Van Gorp Machinebouw B.V.');
   });
 
   it('(i) A4 introBeeldRechts uit: geen intro-split', () => {
@@ -241,6 +243,8 @@ describe('Intro register en IntroPhase', () => {
     expect(r.container.querySelector('.intro-split')).toBeNull();
     expect(r.container.querySelector('.cine')).toBeTruthy();
     expect(r.container.textContent).toContain('managementteam (MT)');
+    expect(r.container.textContent).toMatch(/HOE HET ZO VER KWAM/i);
+    expect(r.container.textContent).toContain('Van Gorp Machinebouw B.V.');
   });
 
   it('A1 intro UI: geen conceptskelet, wel 8 punten', () => {

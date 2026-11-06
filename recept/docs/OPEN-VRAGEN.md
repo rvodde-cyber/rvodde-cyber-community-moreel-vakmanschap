@@ -1,6 +1,13 @@
 # Open vragen en aanleveringen
 
-Laatste update: **6 november 2026** (introteksten beslistijd + landing leesbaarheid).
+Laatste update: **6 november 2026** (worstenbroodje + Van Gorp Machinebouw / Groep).
+
+## Besloten (6 nov 2026)
+
+| Onderwerp | Besluit |
+| --- | --- |
+| **Product + bedrijf** | Worstenbroodjes i.p.v. kroket; tijdlijn Van Gorp Machinebouw B.V. (2009) → dronesorder (rond 2020) → Van Gorp Drones (2026) → Van Gorp Groep (2036); zie `docs/BEDRIJFSVERHAAL.md`, `data/episodes/overstapUitlegA4.ts`. |
+| **A3 → A4** | Extra ondertitel in **slotfilm A3** (`data/skeleton/film.ts`). |
 
 ## Besloten (5 nov 2026)
 

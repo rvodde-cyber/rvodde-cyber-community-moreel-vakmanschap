@@ -14,7 +14,7 @@ export const SKELETON_COLD: Record<Exclude<EpisodeId, 4>, ColdDef> = {
       ['', 'Laat op de avond. De telefoon gaat alweer.'],
       ['HARRIE', 'Als we ja zeggen, moet iedereen morgen weten waarom.'],
       ['LIES', 'En als we nee zeggen, moet iemand dat tegen de inkoper durven.'],
-      ['', 'In de schuur ruikt het naar olie en nat gras.'],
+      ['', 'In de schuur ruikt het naar warm deeg en nat gras.'],
     ],
   },
   2: {
@@ -25,7 +25,7 @@ export const SKELETON_COLD: Record<Exclude<EpisodeId, 4>, ColdDef> = {
       ['GERRIT', 'Sneller, jongens! De vrachtwagen staat al te wachten.'],
       ['LIES', 'Wie is eigenlijk die jongen bij de verpakking?'],
       ['HARRIE', 'Die ken ik wel. Even denken... Toch?'],
-      ['', 'Niemand maakt vandaag nog een hele kroket.'],
+      ['', 'Niemand maakt vandaag nog een heel worstenbroodje.'],
     ],
   },
   3: {

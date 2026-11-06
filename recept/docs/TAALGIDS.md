@@ -66,3 +66,18 @@ Boodschap: mensen willen vrij en willen gezien worden.
 Greiner, L. E. (1972). Evolution and revolution as organizations grow. Harvard Business Review, 50(4), 37–46.
 
 Tenbrunsel, A. E., & Messick, D. M. (2004). Ethical fading: The role of self-deception in unethical behavior. Social Justice Research, 17(2), 223–236. https://doi.org/10.1023/B:SORE.0000027411.35832.53
+
+## 7. Bedrijfsnamen en tijdlijn (5 november 2026)
+
+Canon voor alle zichtbare teksten (register in `data/episodes/content.ts`, uitleg A4 in `data/episodes/overstapUitlegA4.ts`).
+
+| Jaar | Wat spelers lezen |
+| --- | --- |
+| 1984 | Product: **worstenbroodjes**; geur/smaak: **warm deeg**, bakken (geen kroket-/frituurmetafoor in spelteksten). |
+| 1996 | **De werkplaats** naast de fabriekshal (machines bouwen en repareren). |
+| 2009 | **Van Gorp Machinebouw B.V.** — zie intro A3. |
+| Rond 2020 | Defensie → Van Gorp Machinebouw; overgang naar o.a. **Van Gorp Drones B.V.** (verwijzing in slot A3 + blok HOE HET ZO VER KWAM in A4). |
+| 2026 | **Van Gorp Drones**, Vossenberg, Tilburg. |
+| 2036 | **Van Gorp Groep** (niet „holding” of „conglomeraat” in MT-opdracht); Optivora als investeerder blijft zoals in de data. |
+
+Uitgebreide inventarisatie: `docs/BEDRIJFSVERHAAL.md`.

@@ -47,7 +47,7 @@ export const BEELDEN_CHECK: BeeldCheckItem[] = [
     omschrijving: 'Intro aflevering 5 — Spoorzone 2036',
     bron: 'Nog aan te leveren',
     altNl: 'Glazen ingang met reflectie, placeholder',
-    stereotypencheck: 'Geen conglomeraat als “koud” visueel cliché zonder context.',
+    stereotypencheck: 'Geen Van Gorp Groep als “koud” visueel cliché zonder context.',
     akkoordRichard: false,
   },
 ];

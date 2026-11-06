@@ -30,7 +30,7 @@ export const TIJDGEEST: Record<EpisodeId, Tijdgeest> = {
     rekwisieten: [
       {
         id: 'renault-5-1984',
-        omschrijving: 'Rode Renault 5 voor de schuur, kratten kroketten op de achterbank',
+        omschrijving: 'Rode Renault 5 voor de schuur, kratten worstenbroodjes op de achterbank',
         beeldCode: 'RENAULT-84',
       },
       {

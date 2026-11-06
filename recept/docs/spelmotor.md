@@ -91,7 +91,7 @@ Alle drijvers lopen van 0 tot 100. De startwaarden geven het beeld van ronde 1: 
  | Hulpbron
  | 0,10
  | 55
- | Oude krokettenploeg houdt elkaar nog vast
+ | Oude worstenbroodjesploeg houdt elkaar nog vast
  | 
 | Betekenis
  | Hulpbron

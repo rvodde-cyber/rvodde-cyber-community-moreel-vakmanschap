@@ -26,7 +26,7 @@ Nederland is in 2036 nog diverser dan nu: mensen met een migratieachtergrond en 
 
 | Bestand | Prompt (aanvullend op de stijlregel) |
 | --- | --- |
-| `harrie-1984.webp` | Man van 29 in 1984, vakman in schuur, kort haar, werkjas met paneermeel, warme blik, geen karikatuur. |
+| `harrie-1984.webp` | Man van 29 in 1984, vakman in schuur, kort haar, werkjas met bloem en deegresten, warme blik, geen karikatuur. |
 | `lies-1984.webp` | Vrouw van 27 in 1984, keukentafel/kasboek-sfeer, eenvoudige kledij, vriendelijke nuchtere blik. |
 | `gerrit-1984.webp` | Man van 44, slager, witte slagersschort, kalme ervaren blik, 1984 kledij. |
 | `frans-1984.webp` | Jonge buurman, begin twintig, casual 1984 kledij, bandje-sfeer zonder drugsbeelden of stereotypen. |

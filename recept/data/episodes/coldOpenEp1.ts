@@ -14,7 +14,7 @@ export const COLD_OPEN_EP1: { 1: Ep1Cold; 2: Ep1Cold } = {
       ['HARRIE', 'Nee joh, die man belde zelf. Tien keer zoveel, binnen zes weken. Keileuk, hè?'],
       ['LIES', 'Keileuk? Daar komen we toch nooit aan toe?'],
       ['HARRIE', 'Dan lopen we gewoon wat harder.'],
-      ['GERRIT', 'Van harder lopen worden kroketten echt niet sneller, Harrie.'],
+      ['GERRIT', 'Van harder lopen worden worstenbroodjes echt niet sneller klaar, Harrie.'],
       ['HARRIE', 'Dat red ik wel.'],
       ['', 'Maandag, half zeven. In de schuur wachten vier problemen tegelijk.'],
     ],

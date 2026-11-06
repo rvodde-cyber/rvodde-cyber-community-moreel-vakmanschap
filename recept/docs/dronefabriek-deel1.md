@@ -33,7 +33,7 @@ Uitleg van de score. Na elke ronde een korte gevolgketen die keuze, effect en mo
 Spelmotor. De rekenregels achter de meters, de drijvers en de toetsing van de motor staan in het tabblad .
 
 ## Setting
-Van Gorp Aero is een voormalige krokettenfabriek in Brabant die drie jaar geleden is omgebouwd tot assemblagebedrijf voor civiele drones (landbouw en inspectie), aangejaagd door de Brainport-regio. Er werken 180 mensen: oud-krokettenbakkers naast jonge engineers en flexkrachten via een uitzendbureau. De groei verloopt volgens de fasen van Greiner: van familiebedrijf op intuïtie naar een professionele organisatie, met bij elke fase een eigen crisis.
+Van Gorp Aero is een voormalige worstenbroodjesfabriek in Brabant die drie jaar geleden is omgebouwd tot assemblagebedrijf voor civiele drones (landbouw en inspectie), aangejaagd door de Brainport-regio. Er werken 180 mensen: oud-worstenbroodbakkers naast jonge engineers en flexkrachten via een uitzendbureau. De groei verloopt volgens de fasen van Greiner: van familiebedrijf op intuïtie naar een professionele organisatie, met bij elke fase een eigen crisis.
 TEMPO is het AI-planningssysteem op de werkvloer. Het verdeelt taken, bepaalt het werktempo per station en meet prestaties per medewerker. TEMPO is geleverd door Optivora, het bedrijf van de zwager van de directeur. Dat is de eerste draad van de verborgen zelfverrijkingslijn.
 PILOT is de AI-adviseur van het HR-team, dus van de spelers zelf. PILOT geeft elke ronde binnen enkele seconden een helder advies. Het advies is soms juist, maar stuurt vaak subtiel op efficiency en symptoombestrijding. Het spel registreert hoe vaak een team PILOT volgt zonder eigen onderzoek of discussie.
 In de loop van het spel groeit het bedrijf langs twee lijnen. De civiele lijn groeit door een grote order voor pakketbezorgdrones van een webwinkel. Daarnaast gaan enkele afdelingen vanaf ronde 3 voor defensie werken: flinke groei, maar ook gewetensbezwaren.
@@ -76,7 +76,7 @@ Acht personages dragen het verhaal. Elk personage heeft een zichtbare kant (wat 
  | 
 | Harrie van Gorp (71)
  | Oprichter, nu president-commissaris
- | Trots op het bedrijf, mist de krokettentijd, zegt vaak "vroeger kende ik iedereen"
+ | Trots op het bedrijf, mist de tijd van de worstenbroodjes, zegt vaak "vroeger kende ik iedereen"
  | Weet weinig van de cijfers en vertrouwt zijn zoon blind
  | Ronde 1 en 5
  | 
@@ -100,7 +100,7 @@ Acht personages dragen het verhaal. Elk personage heeft een zichtbare kant (wat 
  | 
 | Ans Willems (57)
  | Ploegleider assemblagehal
- | 31 jaar in dienst, begon in de frituurhal, loyaal
+ | 31 jaar in dienst, begon aan de bakstraat, loyaal
  | Uitgeput, voelt zich overruled door TEMPO, durft niet te klagen
  | Ronde 1 en 2
  | 
@@ -127,7 +127,7 @@ Acht personages dragen het verhaal. Elk personage heeft een zichtbare kant (wat 
 Het zichtbare symptoom is hoog verzuim; de verborgen oorzaak is een AI-planner die het tempo automatisch opvoert, waardoor taakeisen stijgen en hulpbronnen als regie, herstel en steun van de ploegleider wegvallen. Het centrale model is Job Demands-Resources, aangevuld met vervreemding (machteloosheid) en algoritmisch management. De ronde draait om de productiviteitsparadox: de productiviteit stijgt, terwijl de betrokkenheid daalt.
 
 ### Openingstekst
-Maandagochtend, 7.15 uur. Harrie van Gorp loopt door de assemblagehal, waar vroeger de frituurketels stonden. Drie van de twaalf stations zijn leeg. Het verzuim in de hal is in een jaar verdubbeld en de orders voor landbouwdrones lopen achter. Marco wijst op het dashboard: de productiviteit per station is sinds TEMPO met 18% gestegen. "TEMPO werkt, alleen het personeel doet moeilijk. Ik wil voor vrijdag een plan." Jullie zijn net begonnen als HR-team. Waar beginnen jullie?
+Maandagochtend, 7.15 uur. Harrie van Gorp loopt door de assemblagehal, waar vroeger de ovens voor worstenbroodjes stonden. Drie van de twaalf stations zijn leeg. Het verzuim in de hal is in een jaar verdubbeld en de orders voor landbouwdrones lopen achter. Marco wijst op het dashboard: de productiviteit per station is sinds TEMPO met 18% gestegen. "TEMPO werkt, alleen het personeel doet moeilijk. Ik wil voor vrijdag een plan." Jullie zijn net begonnen als HR-team. Waar beginnen jullie?
 
 ### Onderzoeksacties (kies er drie van zes)
 

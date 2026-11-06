@@ -15,7 +15,7 @@ Maak data/gesprekskaarten.ts met type `Gesprekskaart`: `id`, `episode` (1 tot 5)
 Teksten (letterlijk overnemen, niet herschrijven):
 
 **A1 · "Het klusje voor Harrie" · micro · 1 ster**
-1. Zaterdagmiddag vraagt Harrie aan Gerrit of hij even iets wil bezorgen: een paar extra kratten kroketten voor een café in Tilburg. "Een gunstje, Gerrit. Jij kent die man." Gerrit doet het graag; Harrie heeft hem de laatste maanden ook veel werk bezorgd.
+1. Zaterdagmiddag vraagt Harrie aan Gerrit of hij even iets wil bezorgen: een paar extra kratten worstenbroodjes voor een café in Tilburg. "Een gunstje, Gerrit. Jij kent die man." Gerrit doet het graag; Harrie heeft hem de laatste maanden ook veel werk bezorgd.
 2. Bij het café blijken het veel meer kratten dan afgesproken, en de eigenaar telt zeshonderd gulden in contanten uit. Geen bon, geen briefje. "Geef maar aan Harrie." Harrie stopt het geld in zijn jaszak. "Dat schrijven we later wel in het kasboek."
 3. Zondag ziet Gerrit hoe Lies het kasboek bijhoudt, regel voor regel. Dit bedrag staat er niet in. Het is niet de eerste keer. Volgende zaterdag vraagt Harrie hem hetzelfde nog eens. Doet Gerrit het weer, spreekt hij Harrie erop aan, of vertelt hij het aan Lies?
 

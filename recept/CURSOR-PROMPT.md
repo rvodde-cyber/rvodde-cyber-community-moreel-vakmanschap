@@ -4,7 +4,7 @@ Taal van alle zichtbare tekst en documentatie: Nederlands. Code, bestandsnamen e
 
 ## 1. Rol, doel en werkwijze
 
-Je bouwt **Recept**: een HR-businessgame in de vorm van een dramaserie, voor hbo-studenten HR en Psychologie. Een MT van vier of vijf studenten stuurt het fictieve familiebedrijf Van Gorp (van de schuur in 1984 tot een conglomeraat in 2036) door de groeifasen van Greiner. Elke uitkomst is herleidbaar tot keuze, oorzaak, mechanisme en gevolg (JD-R, AMO, HPWS, Greiner, Gallup). Het spel is bedoeld om morele vakmanschap te oefenen (Model Moreel Vakmanschap: Zien, Voelen, Wegen, Handelen, Volhouden) en niet om een score te halen.
+Je bouwt **Recept**: een HR-businessgame in de vorm van een dramaserie, voor hbo-studenten HR en Psychologie. Een MT van vier of vijf studenten stuurt het fictieve familiebedrijf Van Gorp (van de schuur in 1984 tot Van Gorp Groep in 2036) door de groeifasen van Greiner. Elke uitkomst is herleidbaar tot keuze, oorzaak, mechanisme en gevolg (JD-R, AMO, HPWS, Greiner, Gallup). Het spel is bedoeld om morele vakmanschap te oefenen (Model Moreel Vakmanschap: Zien, Voelen, Wegen, Handelen, Volhouden) en niet om een score te halen.
 
 Werkwijze:
 1. Lees eerst `docs/` en `referentie/` volledig. Maak daarna een korte bouwplanning (maximaal 40 regels) en werk die af in de volgorde van paragraaf 11. Stel geen vragen als het antwoord in de bronnen staat; kies bij een gat een redelijke standaard, leg die vast in `docs/BESLUITEN-CURSOR.md` en ga door.
@@ -26,7 +26,7 @@ Vijf afleveringen, elk één ronde van ongeveer 20 minuten, met een pauze van 15
 
 | Aflevering | Jaar | Titel | Greiner-crisis | Slotscène |
 | --- | --- | --- | --- | --- |
-| 1 | 1984 | Alles met de hand | Leiderschap | Supermarktketen wil tien keer zoveel kroketten; Harrie zegt ja zonder het Lies te vragen |
+| 1 | 1984 | Alles met de hand | Leiderschap | Supermarktketen wil tien keer zoveel worstenbroodjes; Harrie zegt ja zonder het Lies te vragen |
 | 2 | 1996 | Sneller, Gerrit | Autonomie | Harrie zakt in elkaar op de werkvloer; Gerrit belt de ambulance |
 | 3 | 2009 | Een Van Gorp aan het roer | Controle | Opvolging gekozen; Sanne staat op en verlaat het restaurant (pauze volgt) |
 | 4 | 2026 | Het dashboard liegt niet | Zie 5.1 | Sprong naar 2031; Harrie overlijdt; één zin in het testament is doorgestreept |
@@ -38,7 +38,7 @@ Aflevering 4 heeft in de demo twee rondes (ronde 1 en ronde 2). Bouw beide volle
 Introscherm (geschiedenis, uitdagingen, hint) → Speel trailer → cold open met ondertitels per klik → 1. Onderzoek (drie van zes acties, daarna een vermoeden uit vier) → 2. MT-besluit (PILOT volgen of zelf wegen, twee interventies, sluitende begroting, rondje MT met vier rollen, motivatie van één zin, optioneel minderheidsstandpunt) → 3. Uitkomst ("TEMPO herberekent de fabriek", meters, Waarom-scherm, HR-kosten, reacties) → knop **Einde van dit deel** → slotscène (± 27 s) → pauzekaart (twee tafelvragen en een voorspelling). Het besluit kan pas worden vastgelegd als aan alle vijf voorwaarden is voldaan; bij PILOT volgen staat interventie B vast.
 
 ### 3.3 Dashboard per tijdperk
-Het dashboard verandert van vorm per tijdperk: 1984 kasboek op de keukentafel, 1996 groen terminalscherm met productieteller, 2009 spreadsheet en eerste BI-dashboard, 2026 controlekamer van TEMPO (zoals de demo), 2036 glanzende holding-app waarin bijna geen mensen meer voorkomen. Maak één dashboardcomponent met een thema-object per tijdperk (kleuren, lettertypen, widgetset, nieuwsband). De controlekamer van 2026 moet pixelnabij de demo zijn. De overige vier mogen eenvoudiger zijn maar moeten per tijdperk herkenbaar anders voelen.
+Het dashboard verandert van vorm per tijdperk: 1984 kasboek op de keukentafel, 1996 groen terminalscherm met productieteller, 2009 spreadsheet en eerste BI-dashboard, 2026 controlekamer van TEMPO (zoals de demo), 2036 glanzende app van Van Gorp Groep waarin bijna geen mensen meer voorkomen. Maak één dashboardcomponent met een thema-object per tijdperk (kleuren, lettertypen, widgetset, nieuwsband). De controlekamer van 2026 moet pixelnabij de demo zijn. De overige vier mogen eenvoudiger zijn maar moeten per tijdperk herkenbaar anders voelen.
 
 ### 3.4 Duidelijkheid voor studenten (zit al in de referentie, behouden)
 Bouw na wat de referentie doet en behoud de teksten: opdrachtbalk bovenaan elk spelscherm (opdrachtvorm met "jullie"); blok "Jullie opdracht" in de intro van elke ronde en een korte uitleg bij de cold open; venster "Wie is wie en begrippen" (personen en vakwoorden), bereikbaar vanuit hoofdmenu, pauzemenu, "Hoe het werkt" en de intro; "Hoe het werkt" in gewone taal met knop "Duidelijk"; meldingen onder knoppen die beginnen met "Nog nodig:"; uitkomst met vijf oordelen (timing, samenspel, diagnose, basis, geld) met een vraag als titel, en de wetenschappelijke uitleg in de uitklapper "Voor de nabespreking: zo is het berekend". Het besluitscherm is bewust nog niet in genummerde stappen opgedeeld; doe dat wel als dat de duidelijkheid vergroot, en meld het in `docs/BESLUITEN-CURSOR.md`.

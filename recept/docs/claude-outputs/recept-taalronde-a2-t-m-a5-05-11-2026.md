@@ -6,14 +6,14 @@ Opmerking over de regelvorm: een regel met lege spreker is een titelkaart (verte
 
 ## Aflevering 2 – 1996, Loven, Tilburg (beeld I2)
 
-Nu (skelet): "De productieteller tikt door." / GERRIT "Sneller. Nog eens sneller." / HARRIE "Ik ken jullie nog bij naam. Toch?" / "Niemand maakt vandaag een hele kroket."
+Nu (skelet): "De productieteller tikt door." / GERRIT "Sneller. Nog eens sneller." / HARRIE "Ik ken jullie nog bij naam. Toch?" / "Niemand maakt vandaag een heel worstenbroodje."
 
 Voorstel:
 - titel: "Dinsdag, tien over zeven. De band loopt al een uur."
 - GERRIT: "Sneller, jongens! De vrachtwagen staat al te wachten."
 - LIES: "Wie is eigenlijk die jongen bij de verpakking?"
 - HARRIE: "Die ken ik wel. Even denken... Toch?"
-- titel: "Niemand maakt vandaag nog een hele kroket."
+- titel: "Niemand maakt vandaag nog een heel worstenbroodje."
 
 Toelichting: Harrie zoekt een naam; dat is het beginpunt van het thema "bij naam kennen". Gerrit is nu ploegbaas en blijft kort en nuchter.
 
