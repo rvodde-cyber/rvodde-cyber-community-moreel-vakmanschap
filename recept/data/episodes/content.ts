@@ -92,6 +92,8 @@ export type EpisodeContent = {
   gesprekskaartActief: boolean;
   /** Introfase: posterindeling met beeld rechts (A4-demo uit). */
   introBeeldRechts: boolean;
+  /** Alleen bij `introBeeldRechts: true` — `object-position` voor cover-beeld. */
+  introBeeldFocus?: IntroBeeldFocus;
   introBeeldAlt: string;
   introBeeldTekst: string;
   /** Sfeer en kader intro-beeld rechts — zie docs/DESIGNGIDS.md §10 */
@@ -110,13 +112,17 @@ export type EpisodeIntroLook = {
   onderschrift: string;
 };
 
+/** Object-position voor intro-JPEG (`object-fit: cover`), procenten 0–100. Alleen `introBeeldRechts`. */
+export type IntroBeeldFocus = { x: number; y: number };
+
 const INTRO_REGISTER: Record<
   EpisodeId,
-  Pick<EpisodeContent, 'introBeeldRechts' | 'introBeeldAlt' | 'introLook'>
+  Pick<EpisodeContent, 'introBeeldRechts' | 'introBeeldAlt' | 'introLook' | 'introBeeldFocus'>
 > = {
   1: {
     introBeeldRechts: true,
     introBeeldAlt: 'Woonhuis met een schuur ernaast in Berkel-Enschot, schemering in 1984',
+    introBeeldFocus: { x: 55, y: 62 },
     introLook: {
       kader: 'polaroid',
       tint:
@@ -128,6 +134,7 @@ const INTRO_REGISTER: Record<
   2: {
     introBeeldRechts: true,
     introBeeldAlt: 'Fabriekshal met lopende band in Tilburg, ochtendlicht in 1996',
+    introBeeldFocus: { x: 50, y: 60 },
     introLook: {
       kader: 'kettingpapier',
       tint: 'linear-gradient(180deg, rgba(60, 90, 70, 0.18), rgba(140, 180, 130, 0.1))',
@@ -138,6 +145,7 @@ const INTRO_REGISTER: Record<
   3: {
     introBeeldRechts: true,
     introBeeldAlt: 'Lege directietafel in Tilburg, middaglicht in 2009',
+    introBeeldFocus: { x: 50, y: 50 },
     introLook: {
       kader: 'venster',
       tint: 'linear-gradient(180deg, rgba(200, 220, 240, 0.2), rgba(120, 160, 200, 0.12))',
@@ -158,6 +166,7 @@ const INTRO_REGISTER: Record<
   5: {
     introBeeldRechts: true,
     introBeeldAlt: 'Glazen ingang van de Spoorzone in Tilburg, schemering in 2036',
+    introBeeldFocus: { x: 50, y: 50 },
     introLook: {
       kader: 'glas',
       tint: 'linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(180, 210, 255, 0.12))',
@@ -169,11 +178,12 @@ const INTRO_REGISTER: Record<
 
 function introEpisodeFields(id: EpisodeId): Pick<
   EpisodeContent,
-  'introBeeldRechts' | 'introBeeldAlt' | 'introBeeldTekst' | 'introLook'
+  'introBeeldRechts' | 'introBeeldFocus' | 'introBeeldAlt' | 'introBeeldTekst' | 'introLook'
 > {
   const r = INTRO_REGISTER[id];
   return {
     introBeeldRechts: r.introBeeldRechts,
+    introBeeldFocus: r.introBeeldFocus,
     introBeeldAlt: r.introBeeldAlt,
     introLook: r.introLook,
     introBeeldTekst: r.introLook.onderschrift,

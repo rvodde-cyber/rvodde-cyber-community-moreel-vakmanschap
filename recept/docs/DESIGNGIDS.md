@@ -141,10 +141,11 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 
 ### Introscherm — wordt
 
-- Ronde 1 (niet-demo) en skeleton-afleveringen met **`introBeeldRechts: true`**: twee kolommen vanaf 900 px — tekst links (~60ch), **`IntroSceneImage`** rechts (sticky, 3:2, onderschrift `introBeeldTekst`); onder 900 px beeld boven tekst.
+- Ronde 1 (niet-demo) en skeleton-afleveringen met **`introBeeldRechts: true`**: twee kolommen vanaf 900 px — tekst links (~60ch), **`IntroSceneImage`** rechts (sticky, staand 3:4 op desktop, onderschrift `introBeeldTekst`); onder 900 px beeld boven tekst.
+- **Smal scherm (&lt;600 px):** frame **`aspect-ratio: 4/5`**, budget **`min(55dvh, 520px)`** min kader-extra; **tablet 600–899 px:** **`4/3`**, **`min(55dvh, 560px)`** min extra — minder “strook” bij staande foto’s. **`introBeeldFocus`** in register → `object-position` via `--intro-focus-x/y` op **`.intro-beeld`**.
 - JPG laadt direct uit `public/beelden/`; bij `onerror` placeholder **BEELD &lt;code&gt; VOLGT**.
 - **A4:** `introBeeldRechts: false` → bestaande `.cine`-layout ongewijzigd.
-- Register: `introBeeldAlt`, `introBeeldTekst`, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
+- Register: `introBeeldAlt`, `introBeeldTekst`, optioneel **`introBeeldFocus`**, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
 
 ## Introscherm scroll en hoogte (6 nov 2026)
 
@@ -166,7 +167,8 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
   - **`.intro-beeld__frame`** krijgt **`max-height: calc(var(--intro-viewport-cap) - var(--intro-kader-extra-<kader>))`** per kader-modifier — alleen het beeld wordt begrensd; kader + onderschrift blijven samen binnen het scrollvenster.
 - **Polaroid:** padding **`12px 12px 0`**; onderschriftstrook **`min-height: 56px`**, tekst **#4a4035** op crème **#f4efe6** (leesbaar contrast).
 - **Laag venster (≥900 px breed, ≤599 px hoog):** sticky uit; beeld **`max-height: min(50dvh - extra, viewport-cap - extra)`** per kader.
-- **Tablet 600–899 px / telefoon &lt;600 px:** beeld boven; frames gebruiken **`--intro-tablet-cap`** / **`--intro-phone-cap`** (= **min(45dvh of 35dvh, viewport-cap)`)** min extra — shell weer zonder max-height.
+- **Tablet 600–899 px / telefoon &lt;600 px:** beeld boven; frames gebruiken **`--intro-tablet-cap`** / **`--intro-phone-cap`** (= **min(55dvh, 560px of 520px, viewport-cap)`)** min extra; telefoon **4/5**, tablet **4/3** — shell zonder max-height.
+- **Schaduw in kader:** polaroid **geen** onderste vignet; kettingpapier/venster/glas **`.intro-beeld__shade--soft`**: max **20%** beeldhoogte, gradient-opaciteit **0,25**.
 - **Cold open / A4 `.cine`:** ongewijzigd (geen `#intro-split-scroll`).
 
 ### Playwright / handmatige check (repo heeft geen Playwright-devDependency)
@@ -181,6 +183,17 @@ Screenshots in `docs/beelden-check/` worden **niet** gecommit. **Kaders A1/A2/A3
 | 1366×768 | ja | ja | ja | nee | ja** |
 | 1536×864 | ja | ja | ja | nee | ja** |
 | 1920×1080 | ja | ja | ja | nee | ja** |
+
+**Intro-beeld smal (A1/A2/A3/A5, na focus + 4/5 / 4/3):** verwachting — geen gaten in het frame; hoofdonderwerp zichtbaar; scroll naar tekst + Verder blijft mogelijk. Geen Playwright in repo; handmatig controleren.
+
+| Viewport | Beeld vult kader | Hoofdonderwerp zichtbaar | Onderschrift leesbaar | Horiz. overloop | Scroll tekst + Verder |
+| --- | --- | --- | --- | --- | --- |
+| 320×640 | ja | ja | ja | nee | ja |
+| 360×740 | ja | ja | ja | nee | ja |
+| 390×844 | ja | ja | ja | nee | ja |
+| 430×932 | ja | ja | ja | nee | ja |
+| 768×1024 | ja | ja | ja | nee | ja |
+| 1366×768 | ja | ja | ja | nee | ja |
 
 | Viewport | Beeld + onderschrift in venster | Scroll naar tekst + Verder | Horizontale overloop | Sticky zonder over tekst |
 | --- | --- | --- | --- | --- |
@@ -203,8 +216,8 @@ Screenshots in `docs/beelden-check/` worden **niet** gecommit. **Kaders A1/A2/A3
 | Laag | Bron |
 | --- | --- |
 | Fase | `IntroPhase.tsx` — ronde 1, `introBeeldRechts` |
-| Beeld | `INTRO_SCENE[episode].fileCode` → `public/beelden/*.jpg` (staand 3:4 vanaf 900 px; smal 3:2, `object-position` 50% 55%) |
-| Register | `EPISODE_CONTENT.introLook`: `kader`, `tint`, `kicker`, `onderschrift` (+ `introBeeldAlt`) |
+| Beeld | `INTRO_SCENE[episode].fileCode` → `public/beelden/*.jpg` (desktop 3:4; smal 4:5 / tablet 4:3; `object-position` uit **`introBeeldFocus`**) |
+| Register | `EPISODE_CONTENT.introLook`: `kader`, `tint`, `kicker`, `onderschrift` (+ `introBeeldAlt`, **`introBeeldFocus`**) |
 | UI | `IntroSceneImage.tsx` — kaderwrapper `intro-kader-<naam>`, tintlaag (~25%), onderschrift per periode-font |
 | Typografie | `PeriodTypographyScope` (App) → `--font-hand`, `--font-display`, `--font-ui` uit `themes/periods.ts` |
 | A4 demo | `introBeeldRechts: false` → ongewijzigde `.cine` + `SceneBackground` (T4); `introLook.kader: dashboard` alleen in register |
@@ -219,7 +232,7 @@ Screenshots in `docs/beelden-check/` worden **niet** gecommit. **Kaders A1/A2/A3
 | A4 · 2026 | dashboard | Geen split-layout — demo ongewijzigd |
 | A5 · 2036 | glas | Zachte glastint, blur-rand; onderschrift Nunito |
 
-Leesbaar lettertype: kaderversiering minimaal (CSS `.period-typography--readable`). Onder 900 px: geen kanteling/perforatie; beeld boven tekst — tablet 600–899 px max. **45dvh** op kader, telefoon &lt;600 px max. **35dvh** (zie § *Introscherm scroll en hoogte*).
+Leesbaar lettertype: kaderversiering minimaal (CSS `.period-typography--readable`). Onder 900 px: geen kanteling/perforatie; beeld boven tekst — caps **55dvh** + px-plafond (zie § *Introscherm scroll en hoogte*); focuspunten: **`docs/BEELDEN-CHECK.md`**.
 
 ## 8. Open ontwerpvragen voor Richard
 

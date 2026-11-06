@@ -31,4 +31,11 @@ describe('intro-split scroll CSS (recept.css)', () => {
     expect(src).toMatch(/<div className=\{`intro-kader-shell[^`]+`[^>]*>[\s\S]*<figcaption className=\{`intro-beeld__cap/);
     expect(src).toMatch(/<\/figcaption>\s*\n\s*<\/div>\s*\n\s*<\/figure>/);
   });
+
+  it('IntroSceneImage: optionele prop focus zet --intro-focus-x/y op figure', () => {
+    const src = readFileSync(INTRO_SCENE_IMAGE, 'utf8');
+    expect(src).toContain('--intro-focus-x');
+    expect(src).toContain('--intro-focus-y');
+    expect(src).toContain('focus?: IntroBeeldFocus');
+  });
 });

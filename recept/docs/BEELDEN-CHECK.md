@@ -18,6 +18,18 @@ Legenda kolommen: **1** eigen verhaal · **2** geen herkomstclichés · **3** ge
 
 Toelichting I1: beeld nog niet aangeleverd; check op clichés volgt bij definitief bestand. **I2, I3, I5:** bestanden staan onder `public/beelden/`; inhoudelijke akkoord-check (stereotypen, WCAG) nog open (`akkoordRichard`).
 
+## Intro split — object-position (6 nov 2026)
+
+Voor `introBeeldRechts` zet het register **`introBeeldFocus`** (`{ x, y }` in procenten) op **`figure.intro-beeld`** als CSS-variabelen; `object-fit: cover` gebruikt `object-position: var(--intro-focus-x) var(--intro-focus-y)`. Afstemmen op echt beeld (I1–I3, I5) zodra assets definitief zijn. **Controle 390×844** gebruikt als referentie in devtools.
+
+| Aflevering | introBeeldFocus (x, y) | Toelichting |
+| --- | --- | --- |
+| A1 | **55%, 62%** | Huis + schuur in beeld i.p.v. alleen dak (smalle strook op smal scherm) |
+| A2 | **50%, 60%** | Fabriek/band in beeld |
+| A3 | **50%, 50%** | Tafel/scène gecentreerd — verfijnen bij definitief I3 |
+| A4 | — | Geen intro split / geen veld |
+| A5 | **50%, 50%** | Glazen ingang — verfijnen bij definitief I5 |
+
 ## UI — nog te leveren of te verbeteren (6 nov 2026)
 
 | Onderdeel | Aflevering | Status |

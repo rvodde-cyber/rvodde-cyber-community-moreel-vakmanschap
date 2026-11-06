@@ -53,6 +53,21 @@ describe('EPISODE_CONTENT register', () => {
     }
   });
 
+  it('introBeeldRechts-episodes hebben introBeeldFocus met x en y tussen 0 en 100; A4 niet', () => {
+    for (const id of [1, 2, 3, 5] as const) {
+      const c = episodeContent(id);
+      expect(c.introBeeldRechts).toBe(true);
+      const f = c.introBeeldFocus;
+      expect(f).toBeDefined();
+      expect(f!.x).toBeGreaterThanOrEqual(0);
+      expect(f!.x).toBeLessThanOrEqual(100);
+      expect(f!.y).toBeGreaterThanOrEqual(0);
+      expect(f!.y).toBeLessThanOrEqual(100);
+    }
+    expect(episodeContent(4).introBeeldFocus).toBeUndefined();
+    expect(episodeContent(4).introBeeldRechts).toBe(false);
+  });
+
   it('isFullEpisode true for 1, 2, 3, 4 en 5', () => {
     for (const id of [1, 2, 3, 4, 5] as const) {
       expect(isFullEpisode(id)).toBe(true);

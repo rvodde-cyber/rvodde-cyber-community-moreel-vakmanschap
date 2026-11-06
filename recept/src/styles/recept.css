@@ -1090,8 +1090,8 @@ select:focus-visible {
   --intro-kader-extra-kettingpapier: 90px;
   --intro-kader-extra-venster: 120px;
   --intro-kader-extra-glas: 90px;
-  --intro-phone-cap: min(35dvh, var(--intro-viewport-cap));
-  --intro-tablet-cap: min(45dvh, var(--intro-viewport-cap));
+  --intro-phone-cap: min(55dvh, 520px, var(--intro-viewport-cap));
+  --intro-tablet-cap: min(55dvh, 560px, var(--intro-viewport-cap));
   box-sizing: border-box;
   height: 100dvh;
   max-height: 100dvh;
@@ -1143,9 +1143,10 @@ select:focus-visible {
     max-width: 100%;
   }
   .intro-split-scroll .intro-beeld__frame {
-    aspect-ratio: auto;
+    aspect-ratio: 4 / 5;
+    height: auto;
     flex: 0 1 auto;
-    min-height: 120px;
+    min-height: 0;
     width: 100%;
   }
   .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
@@ -1180,9 +1181,10 @@ select:focus-visible {
     max-width: 100%;
   }
   .intro-split-scroll .intro-beeld__frame {
-    aspect-ratio: auto;
+    aspect-ratio: 4 / 3;
+    height: auto;
     flex: 0 1 auto;
-    min-height: 200px;
+    min-height: 0;
     width: 100%;
   }
   .intro-split-scroll .intro-kader-shell--polaroid .intro-beeld__frame {
@@ -1269,7 +1271,11 @@ select:focus-visible {
     height: auto;
   }
 }
-.intro-beeld { margin: 0; }
+.intro-beeld {
+  margin: 0;
+  --intro-focus-x: 50%;
+  --intro-focus-y: 55%;
+}
 .intro-beeld__frame {
   position: relative;
   border: 1px solid var(--line);
@@ -1284,15 +1290,18 @@ select:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 55%;
+  object-position: var(--intro-focus-x, 50%) var(--intro-focus-y, 55%);
 }
-.intro-beeld__shade {
+/* Onderste vignet: alleen licht (kettingpapier, venster, glas); polaroid zonder laag */
+.intro-beeld__shade--soft {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 35%;
-  background: linear-gradient(180deg, transparent, rgba(5, 8, 11, 0.75));
+  height: 20%;
+  max-height: 20%;
+  opacity: 1;
+  background: linear-gradient(180deg, transparent, rgba(5, 8, 11, 0.25));
   pointer-events: none;
 }
 .intro-beeld__placeholder {

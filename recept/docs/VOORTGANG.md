@@ -1,13 +1,13 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **6 november 2026** — onderzoeken A1/A2/A3/A5 + intro-split + rapport A2/A3/A5 + test/build
+Laatste update: **6 november 2026** — intro-beeld smal (focus + ratio) + onderzoeken + intro-split + test/build
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
 | **Stap 2 — onderzoek A1/A2/A3/A5** | Per ronde **5** onderzoeken (`t`, `quote`, `sig`); inhoud uit opdracht; r1 ≠ r2 in `a1Rounds` … `a5Rounds`. Schema `acties`: 3–6 items. UI: `.tiles--onderzoek` (3+2 breed, 1 kolom &lt;720px); `quote` 16px/1.55, `sig` uppercase. `docs/TAALGIDS.md` § Signaalwoorden; `STAP-FLOW-ONDERZOEK.md` § Onderzoeken. **A4** `data/rounds.ts` ongewijzigd. Onderzoek-id’s wegen **niet** mee in motor/golden (alleen UI + export). Test: `onderzoekActiesInterventie.test.ts`. |
-| **Intro-split (introBeeldRechts)** | Scrollcontainer `#intro-split-scroll.intro-split-scroll` (`100dvh`, `overflow-y: auto`, safe-area padding); kader + frame `max-height` met `dvh`; desktop sticky; tablet/phone beeld boven zonder sticky; A4/cold open ongewijzigd. Zie `DESIGNGIDS.md` § *Introscherm scroll en hoogte*. Playwright zit niet in de repo — verwachting/meetmatrix daar; screenshots `docs/beelden-check/` niet gecommit. |
+| **Intro-split (introBeeldRechts)** | Scrollcontainer `#intro-split-scroll` …; kaderfix + **telefoon `aspect-ratio 4/5`**, **tablet `4/3`**, caps **`min(55dvh, 520/560px)`**; register **`introBeeldFocus`** → `--intro-focus-x/y` op `.intro-beeld`; polaroid **zonder** vignet, andere kaders **`.intro-beeld__shade--soft`** (20% hoogte, max 0,25). Zie `DESIGNGIDS.md`, focusparen in `docs/BEELDEN-CHECK.md`. |
 | **Tests types A5-interventie** | Historische mismatch-rapport: `docs/RAPPORT-A2-A3-A5-06-11-2026.md` |
 | **A3 (2009) speelbaar** | Register `EPISODE_3_CONTENT`: `motorKind: 'interventie'`, `a3Rounds`, `COLD_OPEN_EP3`, dilemma `ep3-waalwijk` (sms 2009), `slotLineA3`, slotfilm `buildSlotEp3` (Defensie-brugzin), pauze-/tussenkaart; landingslabel **Speelbaar**; tests + `STAP-FLOW-ONDERZOEK.md` bijgewerkt |
 | **Worstenbroodje + bedrijfslijn** | Product- en bakmetafoor in `content/`, `data/`, UI; `overstapUitleg` + `HOE HET ZO VER KWAM` op A4; A3 geschiedenis + **titelregel in A3-slotfilm** (Defensie 2020); echo A5 → Van Gorp Groep; docs `BEDRIJFSVERHAAL.md`, `TAALGIDS` §7, `TIJDGEEST` tijdlijn; test `worstenbroodjeCopy.test.ts` |
@@ -26,7 +26,7 @@ Laatste update: **6 november 2026** — onderzoeken A1/A2/A3/A5 + intro-split + 
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests / build | **`npm test`** **206** groen; **`npm run build`** OK |
+| Tests / build | **`npm test`** **211** groen; **`npm run build`** OK |
 | Viewport stap 2 (handmatige check) | **360px:** onderzoek-tegels 1 kolom (`tiles--onderzoek`), geen horizontale scroll van de pagina. **768px:** boven 720px breed wordt het raster 3+2. **1920px:** 3+2 layout; lange titels/teksen wrappen in de tegel. |
 
 ## Live demo

@@ -70,6 +70,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
                     fileCode={sc.fileCode}
                     alt={content.introBeeldAlt}
                     look={content.introLook}
+                    focus={content.introBeeldFocus}
                   />
                 </aside>
               </div>
