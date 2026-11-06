@@ -8,9 +8,9 @@ export type InterventieFlag = {
 
 export const INTERVENTIE_FLAGS: Record<Exclude<EpisodeId, 4>, InterventieFlag> = {
   1: { interventieDefinitief: true, gevolgenCompleet: true },
-  2: { interventieDefinitief: false, gevolgenCompleet: false },
-  3: { interventieDefinitief: false, gevolgenCompleet: false },
-  5: { interventieDefinitief: false, gevolgenCompleet: false },
+  2: { interventieDefinitief: true, gevolgenCompleet: true },
+  3: { interventieDefinitief: true, gevolgenCompleet: true },
+  5: { interventieDefinitief: true, gevolgenCompleet: true },
 };
 
 export function assertInterventieFlagsConsistent(flags: Record<Exclude<EpisodeId, 4>, InterventieFlag>): void {

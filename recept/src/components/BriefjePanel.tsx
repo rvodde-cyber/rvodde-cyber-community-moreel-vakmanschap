@@ -23,7 +23,7 @@ export function BriefjePanel({ def, state, dispatch, periodKey }: Props) {
   return (
     <section
       className="panel briefje-panel"
-      aria-label="Handgeschreven briefje in het kasboek"
+      aria-label="Handgeschreven briefje"
       style={
         {
           '--briefje-bg': theme.colors.panel,

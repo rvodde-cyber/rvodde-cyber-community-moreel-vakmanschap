@@ -1,16 +1,23 @@
 import { COLD_OPEN } from '../coldOpen';
 import { DILEMMA_EP1_FRANS } from '../dilemmas/ep1-frans';
+import { DILEMMA_EP2_WIM } from '../dilemmas/ep2-wim';
+import { DILEMMA_EP3_WAALWIJK } from '../dilemmas/ep3-waalwijk';
 import { DILEMMA_EP4_PIOTR } from '../dilemmas/ep4-piotr';
+import { DILEMMA_EP5_SCHRIFT } from '../dilemmas/ep5-schrift';
 import type { FilmScript } from '../filmSequences';
 import { TRAILER_RONDE_1, TRAILER_RONDE_2 } from '../filmSequences';
 import { ROUNDS } from '../rounds';
 import type { RoundDefinition } from '../schemas/rounds.schema';
 import { episodeMeta, type EpisodeId } from './meta';
-import { SKELETON_COLD } from '../skeleton/coldOpen';
-import { SKELETON_SLOTS, SKELETON_TRAILERS } from '../skeleton/film';
+import { SKELETON_TRAILERS } from '../skeleton/film';
 import { A1_ROUNDS } from './a1Rounds';
+import { A2_ROUNDS } from './a2Rounds';
+import { A3_ROUNDS } from './a3Rounds';
+import { A5_ROUNDS } from './a5Rounds';
+import { COLD_OPEN_EP2 } from './coldOpenEp2';
+import { COLD_OPEN_EP3 } from './coldOpenEp3';
 import { COLD_OPEN_EP1 } from './coldOpenEp1';
-import { SKELETON_ROUNDS } from '../skeleton/rounds';
+import { COLD_OPEN_EP5 } from './coldOpenEp5';
 import { slotLineRonde1, slotLinesFinale } from '../slotLines';
 import type { ComputeResult } from '@engine/types';
 import type { DilemmaDef } from './dilemmaDef';
@@ -47,7 +54,8 @@ export type EpisodeFilmDef = {
 
 export type EpisodePauzeKaart = {
   tafelvragen: readonly string[];
-  voorspelling: {
+  /** Weggelaten bij laatste aflevering (A5): alleen tafelvragen, daarna nabespreking. */
+  voorspelling?: {
     vraag: string;
     opties: readonly { id: string; label: string }[];
   };
@@ -172,29 +180,6 @@ function introEpisodeFields(id: EpisodeId): Pick<
   };
 }
 
-function skeletonEpisodeContent(ep: Exclude<EpisodeId, 4 | 1>): EpisodeContent {
-  const meta = episodeMeta(ep);
-  return {
-    motorKind: 'skeleton',
-    rounds: { 1: SKELETON_ROUNDS[ep] },
-    roundCount: 1,
-    coldOpen: { 1: SKELETON_COLD[ep] },
-    dilemma: null,
-    slotLines: null,
-    film: {
-      trailerR1: SKELETON_TRAILERS[ep],
-      slotSkeleton: SKELETON_SLOTS[ep],
-    },
-    titelByRound: { 1: meta.titel },
-    kick: meta.kick,
-    usesDemoBudget: false,
-    tijdgeest: TIJDGEEST[ep],
-    gesprekskaart: GESPREKSKAARTEN[ep],
-    gesprekskaartActief: true,
-    ...introEpisodeFields(ep),
-  };
-}
-
 const EPISODE_1_CONTENT: EpisodeContent = {
   motorKind: 'interventie',
   rounds: { 1: A1_ROUNDS[1], 2: A1_ROUNDS[2] },
@@ -243,6 +228,102 @@ const EPISODE_1_CONTENT: EpisodeContent = {
   ...introEpisodeFields(1),
 };
 
+const EPISODE_2_CONTENT: EpisodeContent = {
+  motorKind: 'interventie',
+  rounds: { 1: A2_ROUNDS[1], 2: A2_ROUNDS[2] },
+  roundCount: 2,
+  coldOpen: { 1: COLD_OPEN_EP2[1], 2: COLD_OPEN_EP2[2] },
+  dilemma: DILEMMA_EP2_WIM,
+  slotLines: {
+    ronde1: (_res, _r) => ['LOVEN', 'De band draait. In ronde 2 valt het briefje tussen de loonzakjes.'],
+    finale: () => [
+      ['', ''],
+      ['', ''],
+    ],
+  },
+  film: {
+    trailerR1: SKELETON_TRAILERS[2],
+    trailerR2: SKELETON_TRAILERS[2],
+  },
+  titelByRound: { 1: episodeMeta(2).titel, 2: episodeMeta(2).titel },
+  kick: episodeMeta(2).kick,
+  usesDemoBudget: false,
+  tussenKaart: {
+    title: 'EINDE VAN RONDE 1',
+    tafelvragen: ['Wat nemen jullie mee naar ronde 2, nu de band sneller moet?'],
+    note: 'Neem de tijd. Ronde 2 begint pas als jullie verder gaan.',
+    ctaLabel: 'Door naar ronde 2',
+  },
+  pauzeKaart: {
+    tafelvragen: [
+      'Welke ploegleiders kregen mandaat, en wie kreeg niets?',
+      'Wat gebeurt er in een bedrijf als de oprichter overal bij wil zijn?',
+    ],
+    voorspelling: {
+      vraag: 'Hoe ziet het bedrijf er in 2009 uit?',
+      opties: [
+        { id: 'a', label: 'Meer vestigingen, meer afdelingen.' },
+        { id: 'b', label: 'Harrie leidt nog steeds elke dag.' },
+        { id: 'c', label: 'Een familielid heeft het roer overgenomen.' },
+      ],
+    },
+    liveLabel: 'EINDE AFLEVERING 2',
+    intro: 'De scène is voorbij. Neem de tijd voor deze vragen voordat jullie verder gaan.',
+  },
+  tijdgeest: TIJDGEEST[2],
+  gesprekskaart: GESPREKSKAARTEN[2],
+  gesprekskaartActief: true,
+  ...introEpisodeFields(2),
+};
+
+const EPISODE_3_CONTENT: EpisodeContent = {
+  motorKind: 'interventie',
+  rounds: { 1: A3_ROUNDS[1], 2: A3_ROUNDS[2] },
+  roundCount: 2,
+  coldOpen: { 1: COLD_OPEN_EP3[1], 2: COLD_OPEN_EP3[2] },
+  dilemma: DILEMMA_EP3_WAALWIJK,
+  slotLines: {
+    ronde1: (_res, _r) => ['TILBURG', 'Het scherm toont planning. In ronde 2 komt de sms binnen.'],
+    finale: () => [
+      ['', ''],
+      ['', ''],
+    ],
+  },
+  film: {
+    trailerR1: SKELETON_TRAILERS[3],
+    trailerR2: SKELETON_TRAILERS[3],
+  },
+  titelByRound: { 1: episodeMeta(3).titel, 2: episodeMeta(3).titel },
+  kick: episodeMeta(3).kick,
+  usesDemoBudget: false,
+  tussenKaart: {
+    title: 'EINDE VAN RONDE 1',
+    tafelvragen: ['Wat nemen jullie mee naar ronde 2, nu de vestigingen meer zelf sturen?'],
+    note: 'Neem de tijd. Ronde 2 begint pas als jullie verder gaan.',
+    ctaLabel: 'Door naar ronde 2',
+  },
+  pauzeKaart: {
+    tafelvragen: [
+      'Wat gebeurt er met de vloer als vooral de cijfers tellen?',
+      'Wie koos er voor Marco, en wie vroeg het aan Sanne?',
+    ],
+    voorspelling: {
+      vraag: 'Hoe ziet het bedrijf er in 2026 uit?',
+      opties: [
+        { id: 'a', label: 'Het draait nog steeds om worstenbroodjes.' },
+        { id: 'b', label: 'Er worden ook machines en drones gebouwd.' },
+        { id: 'c', label: 'De familie is verdeeld en het bedrijf is geschrompeld.' },
+      ],
+    },
+    liveLabel: 'EINDE AFLEVERING 3',
+    intro: 'De scène is voorbij. Neem de tijd voor deze vragen voordat jullie verder gaan.',
+  },
+  tijdgeest: TIJDGEEST[3],
+  gesprekskaart: GESPREKSKAARTEN[3],
+  gesprekskaartActief: true,
+  ...introEpisodeFields(3),
+};
+
 const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
   title: 'EINDE VAN RONDE 1',
   tafelvragen: [
@@ -251,6 +332,46 @@ const EPISODE_4_TUSSEN: EpisodeTussenKaart = {
   ],
   note: 'Neem de tijd voor deze vragen. Ronde 2 begint pas als jullie verder gaan.',
   ctaLabel: 'Door naar ronde 2',
+};
+
+const EPISODE_5_CONTENT: EpisodeContent = {
+  motorKind: 'interventie',
+  rounds: { 1: A5_ROUNDS[1], 2: A5_ROUNDS[2] },
+  roundCount: 2,
+  coldOpen: { 1: COLD_OPEN_EP5[1], 2: COLD_OPEN_EP5[2] },
+  dilemma: DILEMMA_EP5_SCHRIFT,
+  slotLines: {
+    ronde1: (_res, _r) => ['VOSSENBERG', 'Optivora wacht. In ronde 2 komt het appbericht over het schrift.'],
+    finale: () => [
+      ['', ''],
+      ['', ''],
+    ],
+  },
+  film: {
+    trailerR1: SKELETON_TRAILERS[5],
+    trailerR2: SKELETON_TRAILERS[5],
+  },
+  titelByRound: { 1: episodeMeta(5).titel, 2: episodeMeta(5).titel },
+  kick: episodeMeta(5).kick,
+  usesDemoBudget: false,
+  tussenKaart: {
+    title: 'EINDE VAN RONDE 1',
+    tafelvragen: ['Wat nemen jullie mee naar ronde 2, nu er over opvolging en het archief wordt beslist?'],
+    note: 'Neem de tijd. Ronde 2 begint pas als jullie verder gaan.',
+    ctaLabel: 'Door naar ronde 2',
+  },
+  pauzeKaart: {
+    tafelvragen: [
+      'Wie wist wat er in het schrift stond, en wie had het in handen?',
+      'Wat is er in vijf afleveringen vastgelegd, en wat zat alleen in iemands hoofd?',
+    ],
+    liveLabel: 'EINDE AFLEVERING 5',
+    intro: 'De scène is voorbij. Neem de tijd voor deze vragen voordat jullie de nabespreking starten.',
+  },
+  tijdgeest: TIJDGEEST[5],
+  gesprekskaart: GESPREKSKAARTEN[5],
+  gesprekskaartActief: true,
+  ...introEpisodeFields(5),
 };
 
 const EPISODE_4_CONTENT: EpisodeContent = {
@@ -283,10 +404,10 @@ const EPISODE_4_CONTENT: EpisodeContent = {
 
 export const EPISODE_CONTENT: Record<EpisodeId, EpisodeContent> = {
   1: EPISODE_1_CONTENT,
-  2: skeletonEpisodeContent(2),
-  3: skeletonEpisodeContent(3),
+  2: EPISODE_2_CONTENT,
+  3: EPISODE_3_CONTENT,
   4: EPISODE_4_CONTENT,
-  5: skeletonEpisodeContent(5),
+  5: EPISODE_5_CONTENT,
 };
 
 export function episodeContent(id: EpisodeId): EpisodeContent {

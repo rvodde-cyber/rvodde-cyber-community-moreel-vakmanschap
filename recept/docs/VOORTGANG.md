@@ -1,11 +1,13 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **6 november 2026** — worstenbroodje + Van Gorp Machinebouw / Groep
+Laatste update: **6 november 2026** — rapport A2/A3/A5 + test/build-status
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **Tests types A5-interventie** | `npm test` **202** groen; `npm run build` OK (incl. vite). Historische mismatch-rapport: `docs/RAPPORT-A2-A3-A5-06-11-2026.md` |
+| **A3 (2009) speelbaar** | Register `EPISODE_3_CONTENT`: `motorKind: 'interventie'`, `a3Rounds`, `COLD_OPEN_EP3`, dilemma `ep3-waalwijk` (sms 2009), `slotLineA3`, slotfilm `buildSlotEp3` (Defensie-brugzin), pauze-/tussenkaart; landingslabel **Speelbaar**; tests + `STAP-FLOW-ONDERZOEK.md` bijgewerkt |
 | **Worstenbroodje + bedrijfslijn** | Product- en bakmetafoor in `content/`, `data/`, UI; `overstapUitleg` + `HOE HET ZO VER KWAM` op A4; A3 geschiedenis + **titelregel in A3-slotfilm** (Defensie 2020); echo A5 → Van Gorp Groep; docs `BEDRIJFSVERHAAL.md`, `TAALGIDS` §7, `TIJDGEEST` tijdlijn; test `worstenbroodjeCopy.test.ts` |
 | **Introteksten + landingspagina** | `introCarryLines`: A1 + skeletten derde regel via `introBeslistijdZin` (timer vs. *Neem de tijd*); `STAP-FLOW-ONDERZOEK.md` § Introteksten uitgebreid; landingspagina: lichtere `.landing-overlay`, scrim `.landing-in::before`, data-chips + episodekaarten leesbaarder |
 | **Tijdgeestlaag** | `data/episodes/tijdgeest.ts`, ticker UI (`tickerRegelsVoor`), geluid aan/uit + tekstalternatief; docs `TIJDGEEST.md`, `GELUID-CHECK.md`, beeldbank-check |
@@ -16,11 +18,13 @@ Laatste update: **6 november 2026** — worstenbroodje + Van Gorp Machinebouw / 
 | **A1 stap 1 — generaliseren** | **`EPISODE_CONTENT`**; consumers via register |
 | **A1 stap 2 — inhoud 1984** | Cold opens, `ep1-frans`, briefje-UI, `slot-ep1`, `slotLineA1`, pauzekaart; docs beeld/portret |
 | **A1 stap 3 — interventiemotor** | `interventieCompute`, register `motorKind`, A1 speelbaar; budget **8 / 9** punten r1/r2 |
-| **A1–A3 + A5 interventies** | **8× definitief**; A1 aan motor; A2/A3/A5 nog skeleton |
+| **A1–A3 + A5 interventies** | **8× definitief** per aflevering; **A5** in register als `motorKind: 'interventie'` (`EPISODE_5_CONTENT`); testbestanden verwachten deels nog oude A5-skeletdefinities — zie rapport |
+| **A2 (1996)** | `EPISODE_2_CONTENT`, `coldOpenEp2`, `a2Rounds`, `ep2-wim`, `slotLineA2`/`buildSlotEp2` |
+| **A3 (2009)** | `EPISODE_3_CONTENT`, `coldOpenEp3`, `a3Rounds`, `ep3-waalwijk`, `SmsDilemmaPanel`, `slotLineA3`/`buildSlotEp3` |
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests | **`npm test`**: 177 groen + `npm run build` |
+| Tests | **`npm test`** 202 groen; **`npm run build`** geslaagd |
 
 ## Live demo
 
@@ -31,7 +35,7 @@ Laatste update: **6 november 2026** — worstenbroodje + Van Gorp Machinebouw / 
 
 ## Richard — top-3
 
-1. **A2/A3/A5** interventiemodus + kalibratie startwaarden/balans; **nabespreking A1** (ethischRisico/opvolging/echo); begroting vanaf A3.
+1. **A5** interventiemodus + kalibratie startwaarden/balans; **nabespreking A1** (ethischRisico/opvolging/echo); A3-kalibratie na Richard’s speeltest (`OPEN-VRAGEN.md`).
 2. **Vergelijkscherm v1** (teamExport-import, twee ranglijsten).
 3. Nabespreking A1–A5, Sanne, beeldakkoord; **A4-verwijzingen** (`OPEN-VRAGEN.md`).
 

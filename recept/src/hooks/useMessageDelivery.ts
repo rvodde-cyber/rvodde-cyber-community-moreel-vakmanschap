@@ -79,9 +79,11 @@ export function useMessageDelivery(state: GameUiState, dispatch: (a: GameAction)
 
   useEffect(() => {
     if (!state.dilemma.done || state.dilemma.choice !== 'groep') return;
-    if (state.inbox.includes('dil-h')) return;
+    const followIds =
+      state.episode === 5 ? (['dil-a5-sanne', 'dil-a5-marco'] as const) : (['dil-h', 'dil-m'] as const);
+    if (state.inbox.includes(followIds[0])) return;
 
-    const defs = [state.dynamicBerichten['dil-h'], state.dynamicBerichten['dil-m']].filter(Boolean);
+    const defs = [state.dynamicBerichten[followIds[0]], state.dynamicBerichten[followIds[1]]].filter(Boolean);
     if (defs.length < 2) return;
 
     const ctx = berichtCtx(state);

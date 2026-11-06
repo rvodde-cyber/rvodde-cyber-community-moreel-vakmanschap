@@ -1,4 +1,5 @@
 import { describe, expect, it, vi, afterEach } from 'vitest';
+import * as content from '@data/episodes/content';
 import { createRoot, type Root } from 'react-dom/client';
 import { act, type ReactNode } from 'react';
 import { EPISODE_CONTENT } from '@data/episodes/content';
@@ -27,6 +28,7 @@ describe('Landingspagina HomeScreen', () => {
   let root: Root | null = null;
 
   afterEach(() => {
+    vi.restoreAllMocks();
     if (root) {
       act(() => root!.unmount());
       root = null;
@@ -113,7 +115,7 @@ describe('Landingspagina HomeScreen', () => {
     expect(onStart).toHaveBeenCalled();
   });
 
-  it('(d) label Skelet alleen A2, A3, A5', () => {
+  it('(d) alle vijf afleveringen: label Speelbaar (geen skeleton in register)', () => {
     const r = renderUi(
       <PosterTypographyScope>
         <HomeScreen
@@ -130,12 +132,36 @@ describe('Landingspagina HomeScreen', () => {
     const statuses = [...r.container.querySelectorAll('.landing-ep-card__status')].map(
       (el) => el.textContent?.trim(),
     );
-    expect(statuses[0]).toBe('Speelbaar');
-    expect(statuses[1]).toBe('Skelet');
-    expect(statuses[2]).toBe('Skelet');
-    expect(statuses[3]).toBe('Speelbaar');
-    expect(statuses[4]).toBe('Skelet');
-    expect(showsSkeletLabel(1)).toBe(false);
+    expect(statuses.every((s) => s === 'Speelbaar')).toBe(true);
+    for (const id of [1, 2, 3, 4, 5] as const) {
+      expect(showsSkeletLabel(id)).toBe(false);
+    }
+  });
+
+  it('hypothetische skeleton-aflevering in register toont label Schets', () => {
+    vi.spyOn(content, 'episodeContent').mockImplementation((id) => {
+      const base = content.EPISODE_CONTENT[id];
+      if (id === 5) return { ...base, motorKind: 'skeleton' };
+      return base;
+    });
+    const r = renderUi(
+      <PosterTypographyScope>
+        <HomeScreen
+          name="xx"
+          hasSave={false}
+          onName={() => {}}
+          dispatch={() => {}}
+          onStart={() => {}}
+          onResume={() => {}}
+        />
+      </PosterTypographyScope>,
+    );
+    root = r.root;
+    const statuses = [...r.container.querySelectorAll('.landing-ep-card__status')].map(
+      (el) => el.textContent?.trim(),
+    );
+    expect(statuses[4]).toBe('Schets');
+    expect(showsSkeletLabel(5)).toBe(true);
   });
 
   it('(e) dataregel is aria-hidden', () => {

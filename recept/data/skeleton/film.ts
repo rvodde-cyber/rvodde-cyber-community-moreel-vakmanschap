@@ -62,5 +62,22 @@ export const SKELETON_SLOTS: Record<Exclude<EpisodeId, 4>, FilmScript> = {
       { at: 9200, kind: 'boom', soft: true },
     ],
   },
-  5: slot(5, 'In de reflectie van het glas flitst een schuur die niemand meer bezoekt.'),
+  5: {
+    ...slot(5, 'In de reflectie van het glas flitst een schuur die niemand meer bezoekt.'),
+    duration: 27000,
+    cues: [
+      { at: 200, kind: 'sub', text: 'In de reflectie van het glas flitst een schuur die niemand meer bezoekt.' },
+      { at: 2800, kind: 'shot', img: 'I5', zoom: 'in' },
+      { at: 2800, kind: 'sub', text: 'Berkel-Enschot, 2036.' },
+      { at: 5600, kind: 'sub', text: 'Anne-Fleur tilt het deksel van een houten kist. Onderin ligt een schrift met een bruine kaft.' },
+      { at: 8400, kind: 'sub', who: 'ANNE-FLEUR', text: 'Dit is het. Het schrift.' },
+      { at: 11200, kind: 'sub', who: 'PIOTR', text: 'Heb je het gevonden?' },
+      { at: 14000, kind: 'sub', who: 'ANNE-FLEUR', text: 'Ja. Het lag hier al die tijd.' },
+      { at: 16800, kind: 'sub', text: 'Close-up: Harries handschrift. Eén zin doorgestreept, net niet leesbaar.' },
+      { at: 19600, kind: 'sub', who: 'ANNE-FLEUR', text: 'Iemand heeft hier iets doorgehaald. Ik wil weten wie dat heeft gedaan, en waarom.' },
+      { at: 22800, kind: 'text', text: 'Wie heeft het schrift?' },
+      { at: 22800, kind: 'boom', soft: true },
+      { at: 26400, kind: 'title' },
+    ],
+  },
 };

@@ -56,7 +56,7 @@ export const EPISODES: EpisodeMeta[] = [
     titel: 'Wie heeft het schrift?',
     greinerCrisis: 'coordinatiecrisis',
     periodKey: '2036',
-    playMode: 'skeleton',
+    playMode: 'full',
     kick: 'AFLEVERING 5 / 2036',
   },
 ];

@@ -16,6 +16,7 @@ export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatc
   const pauze = content.pauzeKaart;
 
   if (pauze && state.episode !== 4) {
+    const voorspel = pauze.voorspelling;
     return (
       <div className="wrap" style={{ paddingTop: 24 }}>
         <section className="panel">
@@ -31,25 +32,27 @@ export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatc
             <p>{q}</p>
           </div>
         ))}
-        <section className="panel">
-          <div className="ph">
-            <h2>VOORSPEL</h2>
-          </div>
-          <p className="note">{pauze.voorspelling.vraag}</p>
-          <div className="opts">
-            {pauze.voorspelling.opties.map((g) => (
-              <button
-                key={g.id}
-                type="button"
-                className="opt"
-                aria-pressed={state.gok === g.id}
-                onClick={() => dispatch({ type: 'SET_GOK', id: g.id })}
-              >
-                {g.label}
-              </button>
-            ))}
-          </div>
-        </section>
+        {voorspel ? (
+          <section className="panel">
+            <div className="ph">
+              <h2>VOORSPEL</h2>
+            </div>
+            <p className="note">{voorspel.vraag}</p>
+            <div className="opts">
+              {voorspel.opties.map((g) => (
+                <button
+                  key={g.id}
+                  type="button"
+                  className="opt"
+                  aria-pressed={state.gok === g.id}
+                  onClick={() => dispatch({ type: 'SET_GOK', id: g.id })}
+                >
+                  {g.label}
+                </button>
+              ))}
+            </div>
+          </section>
+        ) : null}
         <button
           type="button"
           className="btn gold big"

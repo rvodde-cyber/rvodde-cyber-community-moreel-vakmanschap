@@ -1,7 +1,10 @@
-import { buildFinale, buildSlotEp1, buildSlotRonde1 } from '@data/filmSequences';
+import { buildFinale, buildSlotEp1, buildSlotEp2, buildSlotEp3, buildSlotEp5, buildSlotRonde1 } from '@data/filmSequences';
 import { episodeContent } from '@data/episodes/content';
 import { mtKoosPiotrInDienst, resolveTestamentForSpel } from '@data/piotrSpel';
 import { slotLineA1 } from '@data/slotLineA1';
+import { slotLineA2 } from '@data/slotLineA2';
+import { slotLineA3 } from '@data/slotLineA3';
+import { slotLineA5 } from '@data/slotLineA5';
 import type { FilmScript } from '@data/filmSequences';
 import type { GameUiState } from './uiTypes';
 
@@ -35,6 +38,18 @@ export function resolveFilmScript(state: GameUiState): FilmScript | null {
       if (state.episode === 1) {
         const gekozen = [...state.rounds[1].cards, ...state.rounds[2].cards];
         return buildSlotEp1(slotLineA1(gekozen));
+      }
+      if (state.episode === 2) {
+        const gekozen = [...state.rounds[1].cards, ...state.rounds[2].cards];
+        return buildSlotEp2(slotLineA2(gekozen));
+      }
+      if (state.episode === 3) {
+        const gekozen = [...state.rounds[1].cards, ...state.rounds[2].cards];
+        return buildSlotEp3(slotLineA3(gekozen));
+      }
+      if (state.episode === 5) {
+        const gekozen = [...state.rounds[1].cards, ...state.rounds[2].cards];
+        return buildSlotEp5(slotLineA5(gekozen));
       }
       const res = state.results[2];
       if (!res || !slotLines) return null;

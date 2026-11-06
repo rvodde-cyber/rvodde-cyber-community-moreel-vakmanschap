@@ -59,7 +59,8 @@ export const INTERVENTIES_A3: Interventie[] = [
     nummer: '3.1.3',
     naam: 'Afdelingsmanagers extern werven',
     omschrijving: 'Ervaren managers van buiten.',
-    kostenCategorie: '€€€',
+    /** €€ i.p.v. €€€: past bij budget 8 in ronde 1 (5+3); kalibratie zie OPEN-VRAGEN.md */
+    kostenCategorie: '€€',
     anker: 'Kostenfocus; cultuurverandering.',
     effect: { productiviteit: '++', betrokkenheid: '-', verzuim: '0', verloop: '+', budget: '--' },
     verborgen: { eerlijkheid: '0', menselijkeMaat: '-' },

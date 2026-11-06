@@ -138,6 +138,8 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
   if (!content.usesDemoBudget && round === 2) {
     const meta = episodeMeta(state.episode);
     const sc = INTRO_SCENE[state.episode];
+    const isA5 = state.episode === 5;
+    const carryR2 = introCarryLines(content, state.episode, 2);
     return (
       <div className="cine">
         <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />
@@ -145,10 +147,27 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         <div className="cine-in">
           <p className="kick">{meta.kick} / RONDE 2</p>
           <p className="ep">{meta.titel}</p>
-          <p className="body">
-            Drie weken later. Tussen de pagina&apos;s van het kasboek zit een briefje van Lies. Jullie beslissen wat
-            jullie ermee doen, zonder Frans in de schuur te laten merken wat er speelt.
-          </p>
+          {isA5 ? (
+            <>
+              <p className="body">
+                Er ligt een voorstel van Optivora op tafel. In de app wacht een privébericht van Anne-Fleur over het
+                receptschrift in de schuur. Jullie beslissen straks samen wat jullie daarmee doen.
+              </p>
+              <div className="carry">
+                <h4>JULLIE OPDRACHT</h4>
+                {carryR2.map((line) => (
+                  <p key={line.slice(0, 48)} className="body">
+                    {line}
+                  </p>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="body">
+              Drie weken later. Tussen de pagina&apos;s van het kasboek zit een briefje van Lies. Jullie beslissen wat
+              jullie ermee doen, zonder Frans in de schuur te laten merken wat er speelt.
+            </p>
+          )}
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
           </button>

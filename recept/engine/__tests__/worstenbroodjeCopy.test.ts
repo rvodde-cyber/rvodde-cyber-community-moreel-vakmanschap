@@ -7,7 +7,7 @@ import { INTRO_TEKSTEN } from '@content/intros.nl';
 
 /** Scan src/, data/, themes/ op verboden woorden (NL-spelteksten); documenten uitgezonderd. */
 const ROOT = join(__dirname, '..', '..');
-const DIRS = ['src', 'data', 'themes'] as const;
+const DIRS = ['src', 'data', 'themes', 'content'] as const;
 const EXT = new Set(['.ts', '.tsx', '.css', '.html', '.json']);
 const FORBIDDEN = ['kroket', 'paneer', 'frituur'] as const;
 

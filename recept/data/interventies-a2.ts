@@ -63,7 +63,8 @@ export const INTERVENTIES_A2: Interventie[] = [
     nummer: '2.1.4',
     naam: 'Snel groeien met werving via bureaus',
     omschrijving: 'Veel mensen in korte tijd erbij.',
-    kostenCategorie: '€€€',
+    /** €€ i.p.v. €€€: past bij budget 8 in ronde 1 (5+3 punten); kalibratie zie OPEN-VRAGEN.md */
+    kostenCategorie: '€€',
     anker: 'Kostenfocus; spanning met cultuur.',
     effect: { productiviteit: '++', betrokkenheid: '-', verzuim: '0', verloop: '0', budget: '--' },
     effectLater: { verloop: '+' },

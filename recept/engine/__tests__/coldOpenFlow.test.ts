@@ -105,8 +105,12 @@ describe('cold open copy — beslistijd alleen met timer', () => {
     ).toContain('tien minuten');
   });
 
-  it('skelet zonder timer: geen tien minuten', () => {
-    expect(usesBeslistijdTimer(2)).toBe(false);
+  it('timer: A3 en A5; cold-regel zonder timer toont geen tien minuten', () => {
+    expect(usesBeslistijdTimer(3)).toBe(true);
+    expect(usesBeslistijdTimer(5)).toBe(true);
+    expect(
+      coldSceneTaskLine({ last: true, hasBeslistijdTimer: true, manualAdvance: false }),
+    ).toContain('tien minuten');
     expect(
       coldSceneTaskLine({ last: true, hasBeslistijdTimer: false, manualAdvance: false }),
     ).not.toContain('tien minuten');

@@ -1,10 +1,8 @@
 import { compute } from '@engine/compute';
-import { BERICHTEN } from '@data/berichten';
-import type { BerichtDef } from '@data/berichten';
+import { BERICHTEN, dilemmaGroepBerichten, dilemmaGroepBerichtenA5 } from '@data/berichten';
+import type { BerichtDef, ChatChannel } from '@data/berichten';
 import { episodeContent } from '@data/episodes/content';
 import type { DilemmaKeuze } from '@data/episodes/dilemmaDef';
-import { dilemmaGroepBerichten } from '@data/berichten';
-import type { ChatChannel } from '@data/berichten';
 import { episodeMotorKind, usesInterventieMotor } from '@data/episodes/motor';
 import { canColdNext } from '@data/episodes/coldOpenFlow';
 import { useSkeletonMotor } from '@data/interventieFlags';
@@ -410,7 +408,10 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       };
 
       if (choice === 'groep' && def.privéBericht.kanaal === 'app') {
-        const defs = dilemmaGroepBerichten(state.playerName);
+        const defs =
+          state.episode === 5 && def.id === 'ep5-schrift'
+            ? dilemmaGroepBerichtenA5(state.playerName)
+            : dilemmaGroepBerichten(state.playerName);
         const dynamicBerichten = { ...next.dynamicBerichten };
         for (const d of defs) dynamicBerichten[d.id] = d;
         const own = defs[0]!;

@@ -79,7 +79,7 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
         <TaskBar
           step={4}
           title="UITKOMST (CONCEPT)"
-          lead="Dit skelet rekent nog niet met de volledige spelmotor. Jullie keuzes zijn wel vastgelegd voor docent en nabespreking."
+          lead="Deze houtskoolschets rekent nog niet met de volledige spelmotor. Jullie keuzes zijn wel vastgelegd voor docent en nabespreking."
           sub='Druk op “Einde van dit deel” voor de slotscène.'
         />
         <section className="panel">

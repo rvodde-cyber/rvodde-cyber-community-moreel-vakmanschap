@@ -3,10 +3,19 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, extname, sep } from 'node:path';
 import { COLD_OPEN } from '@data/coldOpen';
 import { DILEMMA_EP1_FRANS } from '@data/dilemmas/ep1-frans';
+import { DILEMMA_EP2_WIM } from '@data/dilemmas/ep2-wim';
+import { DILEMMA_EP3_WAALWIJK } from '@data/dilemmas/ep3-waalwijk';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
-import { buildSlotEp1 } from '@data/filmSequences';
+import { DILEMMA_EP5_SCHRIFT } from '@data/dilemmas/ep5-schrift';
+import { buildSlotEp1, buildSlotEp2, buildSlotEp3, buildSlotEp5 } from '@data/filmSequences';
 import { COLD_OPEN_EP1 } from '@data/episodes/coldOpenEp1';
 import { A1_ROUNDS } from '@data/episodes/a1Rounds';
+import { A2_ROUNDS } from '@data/episodes/a2Rounds';
+import { A3_ROUNDS } from '@data/episodes/a3Rounds';
+import { A5_ROUNDS } from '@data/episodes/a5Rounds';
+import { COLD_OPEN_EP2 } from '@data/episodes/coldOpenEp2';
+import { COLD_OPEN_EP3 } from '@data/episodes/coldOpenEp3';
+import { COLD_OPEN_EP5 } from '@data/episodes/coldOpenEp5';
 import {
   EPISODE_CONTENT,
   episodeContent,
@@ -15,18 +24,26 @@ import {
 import type { EpisodeId } from '@data/episodes/meta';
 import { ROUNDS } from '@data/rounds';
 import { SKELETON_COLD } from '@data/skeleton/coldOpen';
-import { SKELETON_SLOTS, SKELETON_TRAILERS } from '@data/skeleton/film';
-import { SKELETON_ROUNDS } from '@data/skeleton/rounds';
 import { slotLineRonde1, slotLinesFinale } from '@data/slotLines';
 import { slotLineA1 } from '@data/slotLineA1';
+import { slotLineA2 } from '@data/slotLineA2';
+import { slotLineA3 } from '@data/slotLineA3';
+import { slotLineA5 } from '@data/slotLineA5';
 import { TRAILER_RONDE_1, TRAILER_RONDE_2 } from '@data/filmSequences';
-import { roundDefEpisode, roundDefFor } from '../../src/game/roundSource';
+import { roundDefFor } from '../../src/game/roundSource';
 import { freshEpisode } from '../../src/game/budgetUi';
-import { showBriefjePanel, showPhonePanel } from '../../src/game/commPanel';
+import { showAppDilemmaPanel, showBriefjePanel, showPhonePanel, showSmsDilemmaPanel } from '../../src/game/commPanel';
 import type { GameUiState } from '../../src/game/uiTypes';
 import { episodeMotorKind, showsSkeletLabel } from '@data/episodes/motor';
 
 const ALL_EPS: EpisodeId[] = [1, 2, 3, 4, 5];
+
+function expectPauzekaartMetVoorspelling(c: ReturnType<typeof episodeContent>) {
+  expect(c.pauzeKaart?.tafelvragen).toHaveLength(2);
+  const v = c.pauzeKaart?.voorspelling;
+  expect(v).toBeDefined();
+  expect(v!.opties).toHaveLength(3);
+}
 
 describe('EPISODE_CONTENT register', () => {
   it('has an entry for episodes 1 through 5', () => {
@@ -36,23 +53,23 @@ describe('EPISODE_CONTENT register', () => {
     }
   });
 
-  it('isFullEpisode true for 1 and 4, false for 2, 3 and 5', () => {
-    expect(isFullEpisode(1)).toBe(true);
-    expect(isFullEpisode(4)).toBe(true);
-    for (const id of [2, 3, 5] as const) {
-      expect(isFullEpisode(id)).toBe(false);
+  it('isFullEpisode true for 1, 2, 3, 4 en 5', () => {
+    for (const id of [1, 2, 3, 4, 5] as const) {
+      expect(isFullEpisode(id)).toBe(true);
     }
   });
 
-  it('skelet-label in UI: alleen motorKind skeleton (2, 3, 5)', () => {
+  it('skelet-label in UI: geen vaste aflevering skeleton; alleen bij motorKind skeleton', () => {
     expect(episodeMotorKind(1)).toBe('interventie');
     expect(showsSkeletLabel(1)).toBe(false);
+    expect(episodeMotorKind(2)).toBe('interventie');
+    expect(showsSkeletLabel(2)).toBe(false);
+    expect(episodeMotorKind(3)).toBe('interventie');
+    expect(showsSkeletLabel(3)).toBe(false);
     expect(episodeMotorKind(4)).toBe('a4');
     expect(showsSkeletLabel(4)).toBe(false);
-    for (const id of [2, 3, 5] as const) {
-      expect(episodeMotorKind(id)).toBe('skeleton');
-      expect(showsSkeletLabel(id)).toBe(true);
-    }
+    expect(episodeMotorKind(5)).toBe('interventie');
+    expect(showsSkeletLabel(5)).toBe(false);
   });
 });
 
@@ -109,13 +126,73 @@ describe('episode 1 content (stap 2)', () => {
   });
 
   it('(e) pauzekaart: two questions and three prediction options', () => {
-    expect(c.pauzeKaart?.tafelvragen).toHaveLength(2);
-    expect(c.pauzeKaart?.voorspelling.opties).toHaveLength(3);
+    expectPauzekaartMetVoorspelling(c);
   });
 
   it('slot-ep1 script id and duration', () => {
     const script = buildSlotEp1('test');
     expect(script.id).toBe('slot-ep1');
+    expect(script.duration).toBe(27000);
+  });
+});
+
+describe('episode 2 content', () => {
+  const c = episodeContent(2);
+
+  it('(a) cold opens r1 + r2: line counts and last line r2', () => {
+    expect(c.coldOpen[1]).toEqual(COLD_OPEN_EP2[1]);
+    expect(c.coldOpen[2]).toEqual(COLD_OPEN_EP2[2]);
+    expect(c.coldOpen[1]!.lines).toHaveLength(5);
+    expect(c.coldOpen[2]!.lines).toHaveLength(6);
+    expect(c.coldOpen[2]!.lines[5]![1]).toBe(
+      'Donderdag, kwart over vier. Tussen de loonzakjes zit een briefje zonder naam.',
+    );
+  });
+
+  it('register: two rounds, dilemma ep2-wim, slotLines, interventiemotor', () => {
+    expect(c.roundCount).toBe(2);
+    expect(c.dilemma?.id).toBe('ep2-wim');
+    expect(c.slotLines).not.toBeNull();
+    expect(c.usesDemoBudget).toBe(false);
+    expect(c.motorKind).toBe('interventie');
+    expect(c.rounds[1]).toBe(A2_ROUNDS[1]);
+    expect(c.rounds[2]).toBe(A2_ROUNDS[2]);
+    expect(c.rounds[1].cards).toHaveLength(4);
+  });
+
+  it('(b) ep2-wim: three choices, minTekst 10, effects', () => {
+    expect(DILEMMA_EP2_WIM.keuzes).toHaveLength(3);
+    expect(DILEMMA_EP2_WIM.effecten.prive.minTekst).toBe(10);
+    expect(DILEMMA_EP2_WIM.effecten.niets).toMatchObject({ eerlijkheid: -6, menselijkeMaat: -10 });
+    expect(DILEMMA_EP2_WIM.effecten.groep).toMatchObject({ eerlijkheid: 8, menselijkeMaat: -2 });
+    expect(DILEMMA_EP2_WIM.effecten.prive).toMatchObject({ eerlijkheid: 4, menselijkeMaat: 8 });
+    expect(DILEMMA_EP2_WIM.privéBericht.kanaal).toBe('briefje');
+  });
+
+  it('(c) briefje channel: BriefjePanel yes, PhonePanel no in r2 besluit', () => {
+    const state: GameUiState = {
+      ...freshEpisode(2),
+      round: 2,
+      phase: 'besluit',
+    };
+    expect(showBriefjePanel(state)).toBe(true);
+    expect(showPhonePanel(state)).toBe(false);
+  });
+
+  it('(d) slotLineA2 both variants', () => {
+    const snel = slotLineA2(['a2-1-4', 'a2-2-2', 'other']);
+    expect(snel).toContain('draait de band');
+    const anders = slotLineA2(['a2-1-1']);
+    expect(anders).toContain('ploegen veel zelf');
+  });
+
+  it('(e) pauzekaart: two questions and three prediction options', () => {
+    expectPauzekaartMetVoorspelling(c);
+  });
+
+  it('slot-ep2 script id and duration', () => {
+    const script = buildSlotEp2('test');
+    expect(script.id).toBe('slot-ep2');
     expect(script.duration).toBe(27000);
   });
 });
@@ -155,41 +232,171 @@ describe('episode 4 golden (unchanged references)', () => {
   });
 });
 
-describe('skeleton episodes (2, 3, 5)', () => {
-  it.each([2, 3, 5] as const)('ep %i uses skeleton round and film', (ep) => {
-    const c = episodeContent(ep);
-    expect(c.roundCount).toBe(1);
-    expect(c.dilemma).toBeNull();
-    expect(c.slotLines).toBeNull();
+describe('episode 5 content', () => {
+  const c = episodeContent(5);
+
+  it('(a) cold opens r1 + r2: line counts en laatste regels', () => {
+    expect(c.coldOpen[1]).toEqual(COLD_OPEN_EP5[1]);
+    expect(c.coldOpen[2]).toEqual(COLD_OPEN_EP5[2]);
+    expect(c.coldOpen[1]!.lines).toHaveLength(5);
+    expect(c.coldOpen[2]!.lines).toHaveLength(6);
+    expect(c.coldOpen[2]!.lines[5]![1]).toBe(
+      'Vrijdag, tien voor vijf. Er staat een bericht in de app, alleen voor jou.',
+    );
+  });
+
+  it('register: twee rondes, dilemma ep5-schrift, slotLines, interventiemotor', () => {
+    expect(c.roundCount).toBe(2);
+    expect(c.dilemma?.id).toBe('ep5-schrift');
+    expect(c.slotLines).not.toBeNull();
     expect(c.usesDemoBudget).toBe(false);
-    expect(c.rounds[1]).toBe(SKELETON_ROUNDS[ep]);
-    expect(c.coldOpen[1]).toBe(SKELETON_COLD[ep]);
-    expect(c.film.trailerR1).toBe(SKELETON_TRAILERS[ep]);
-    expect(c.film.slotSkeleton).toBe(SKELETON_SLOTS[ep]);
-    expect(roundDefEpisode(ep, 1)).toBe(SKELETON_ROUNDS[ep]);
+    expect(c.motorKind).toBe('interventie');
+    expect(c.gesprekskaartActief).toBe(true);
+    expect(c.rounds[1]).toBe(A5_ROUNDS[1]);
+    expect(c.rounds[2]).toBe(A5_ROUNDS[2]);
+    expect(c.rounds[1].cards).toHaveLength(4);
+  });
+
+  it('(b) ep5-schrift: drie keuzes, minTekst 10, kanaal app', () => {
+    expect(DILEMMA_EP5_SCHRIFT.keuzes).toHaveLength(3);
+    expect(DILEMMA_EP5_SCHRIFT.effecten.prive.minTekst).toBe(10);
+    expect(DILEMMA_EP5_SCHRIFT.privéBericht.kanaal).toBe('app');
+    expect(DILEMMA_EP5_SCHRIFT.privéBericht.dil).toBe(true);
+  });
+
+  it('(c) app-dilemma: AppDilemmaPanel ja in r2 besluit', () => {
+    const state: GameUiState = {
+      ...freshEpisode(5),
+      round: 2,
+      phase: 'besluit',
+    };
+    expect(showAppDilemmaPanel(state)).toBe(true);
+    expect(showBriefjePanel(state)).toBe(false);
+    expect(showSmsDilemmaPanel(state)).toBe(false);
+    expect(showPhonePanel(state)).toBe(false);
+  });
+
+  it('(d) slotLineA5 beide varianten bereikbaar', () => {
+    const verkoop = slotLineA5(['a5-2-2', 'a5-1-1']);
+    expect(verkoop).toContain('Optivora');
+    const nietVerkocht = slotLineA5(['a5-2-1', 'a5-2-3']);
+    expect(nietVerkocht).toContain('nog niet verkocht');
+  });
+
+  it('(e) pauzekaart: twee tafelvragen, géén voorspelling', () => {
+    expect(c.pauzeKaart?.tafelvragen).toHaveLength(2);
+    expect(c.pauzeKaart?.voorspelling).toBeUndefined();
+  });
+
+  it('slot-ep5 script id and duration', () => {
+    const script = buildSlotEp5('test');
+    expect(script.id).toBe('slot-ep5');
+    expect(script.duration).toBe(27000);
+  });
+});
+
+describe('episode 3 content', () => {
+  const c = episodeContent(3);
+
+  it('(a) cold opens r1 + r2 + coldOpenFlow grens r2', () => {
+    expect(c.coldOpen[1]).toEqual(COLD_OPEN_EP3[1]);
+    expect(c.coldOpen[2]).toEqual(COLD_OPEN_EP3[2]);
+    expect(c.coldOpen[1]!.lines).toHaveLength(5);
+    expect(c.coldOpen[2]!.lines).toHaveLength(6);
+    const lines2 = c.coldOpen[2]!.lines;
+    expect(lines2[0]![1]).toBe(
+      'Dinsdagochtend. Op het scherm staat de nieuwe planning van het systeem. Niemand heeft hem gemaakt.',
+    );
+    expect(lines2[5]![1]).toBe('Vrijdag, tien voor vijf. Er komt een sms binnen.');
+    expect(lines2[2]![0]).toBe('MARCO');
+  });
+
+  it('register: two rounds, dilemma ep3-waalwijk, slotLines, interventiemotor', () => {
+    expect(c.roundCount).toBe(2);
+    expect(c.dilemma?.id).toBe('ep3-waalwijk');
+    expect(c.slotLines).not.toBeNull();
+    expect(c.usesDemoBudget).toBe(false);
+    expect(c.motorKind).toBe('interventie');
+    expect(c.gesprekskaartActief).toBe(true);
+    expect(c.rounds[1]).toBe(A3_ROUNDS[1]);
+    expect(c.rounds[2]).toBe(A3_ROUNDS[2]);
+    expect(c.rounds[1].cards).toHaveLength(4);
+  });
+
+  it('(b) ep3-waalwijk: drie sms’jes in tekstblok, drie keuzes, minTekst 10, effecten', () => {
+    expect(DILEMMA_EP3_WAALWIJK.keuzes).toHaveLength(3);
+    expect(DILEMMA_EP3_WAALWIJK.effecten.prive.minTekst).toBe(10);
+    expect(DILEMMA_EP3_WAALWIJK.privéBericht.kanaal).toBe('sms2009');
+    expect(DILEMMA_EP3_WAALWIJK.privéBericht.tekst).toContain('Hoi tante, de bank komt maandag langs');
+    expect(DILEMMA_EP3_WAALWIJK.privéBericht.tekst).toContain(
+      'Als we de afschrijving van de nieuwe lijn over vijf jaar uitsmeren in plaats van drie',
+    );
+    expect(DILEMMA_EP3_WAALWIJK.privéBericht.tekst).toContain('Kun je dit even laten staan');
+    expect(DILEMMA_EP3_WAALWIJK.effecten.niets).toMatchObject({ eerlijkheid: -10, menselijkeMaat: -2 });
+    expect(DILEMMA_EP3_WAALWIJK.effecten.groep).toMatchObject({ eerlijkheid: 8, menselijkeMaat: -4 });
+    expect(DILEMMA_EP3_WAALWIJK.effecten.prive).toMatchObject({ eerlijkheid: 6, menselijkeMaat: 4 });
+  });
+
+  it('(c) sms-kanaal: SmsDilemmaPanel ja, BriefjePanel en PhonePanel demo nee in r2 besluit', () => {
+    const state: GameUiState = {
+      ...freshEpisode(3),
+      round: 2,
+      phase: 'besluit',
+    };
+    expect(showSmsDilemmaPanel(state)).toBe(true);
+    expect(showBriefjePanel(state)).toBe(false);
+    expect(showPhonePanel(state)).toBe(false);
+  });
+
+  it('(d) slotLineA3 beide varianten bereikbaar', () => {
+    const controle = slotLineA3(['a3-1-1', 'a3-1-2', 'a3-2-4']);
+    expect(controle).toContain('Op de vloer weet niemand meer wie er aan tafel zit');
+    const anders = slotLineA3(['a3-1-4', 'a3-2-1']);
+    expect(anders).toContain('In de cijfers staat dat niet altijd');
+  });
+
+  it('(e) pauzekaart: twee tafelvragen en drie voorspellingsopties', () => {
+    expectPauzekaartMetVoorspelling(c);
+    expect(c.pauzeKaart?.voorspelling?.vraag).toBe('Hoe ziet het bedrijf er in 2026 uit?');
+  });
+
+  it('slot-ep3 Defensie-brugzin in slotfilm', () => {
+    const script = buildSlotEp3('test');
+    expect(script.id).toBe('slot-ep3');
+    expect(script.duration).toBe(27000);
+    expect(script.cues.some((x) => x.kind === 'sub' && x.text?.includes('Defensie') && x.text?.includes('drones'))).toBe(
+      true,
+    );
   });
 });
 
 describe('taalronde cold opens (5 nov 2026)', () => {
-  it('A2: letterlijke regels', () => {
-    const lines = SKELETON_COLD[2].lines;
+  it('A2 ronde 1: letterlijke regels (register)', () => {
+    const lines = COLD_OPEN_EP2[1].lines;
     expect(lines).toHaveLength(5);
     expect(lines[0]![1]).toBe('Dinsdag, tien over zeven. De band loopt al een uur.');
     expect(lines[4]![1]).toBe('Niemand maakt vandaag nog een heel worstenbroodje.');
     expect(lines[2]![0]).toBe('LIES');
   });
 
-  it('A3: letterlijke regels', () => {
-    const lines = SKELETON_COLD[3].lines;
+  it('A2 stub SKELETON_COLD: ongewijzigd voor documentatie', () => {
+    const lines = SKELETON_COLD[2].lines;
+    expect(lines[0]![1]).toBe('Dinsdag, tien over zeven. De band loopt al een uur.');
+  });
+
+  it('A3: letterlijke regels (register COLD_OPEN_EP3[1]; stub SKELETON_COLD[3] gelijk)', () => {
+    const lines = COLD_OPEN_EP3[1].lines;
     expect(lines).toHaveLength(5);
+    expect(lines).toEqual(SKELETON_COLD[3].lines);
     expect(lines[0]![1]).toBe('Vrijdagmiddag. Drie vestigingen en één vergadertafel.');
     expect(lines[4]![1]).toBe('Niemand zegt iets. Buiten rijdt een vrachtwagen achteruit.');
     expect(lines[2]![0]).toBe('MARCO');
   });
 
-  it('A5: letterlijke regels', () => {
-    const lines = SKELETON_COLD[5].lines;
+  it('A5 ronde 1: letterlijke regels (register COLD_OPEN_EP5[1]; stub SKELETON_COLD[5] gelijk)', () => {
+    const lines = COLD_OPEN_EP5[1].lines;
     expect(lines).toHaveLength(5);
+    expect(lines).toEqual(SKELETON_COLD[5].lines);
     expect(lines[0]![1]).toBe('De glazen ingang weerspiegelt een verre schuur.');
     expect(lines[4]![1]).toBe(
       'In Berkel-Enschot ligt nog het receptschrift. Niemand weet wie de doorgestreepte zin heeft geschrapt.',
@@ -224,9 +431,9 @@ describe('taalronde cold opens (5 nov 2026)', () => {
 });
 
 describe('Anne-Fleur hernoeming in code', () => {
-  it('geen Lotte meer in data/ en engine/', () => {
+  it('geen Lotte meer in src/, data/, content/', () => {
     const root = join(__dirname, '..', '..');
-    const dirs = ['data', 'engine'] as const;
+    const dirs = ['data', 'engine', 'src', 'content'] as const;
     const textExt = new Set(['.ts', '.tsx', '.json', '.md']);
 
     function walk(dir: string): string[] {

@@ -1,6 +1,6 @@
 # Recept — HR-businessgame
 
-Interactieve dramaserie in vijf afleveringen (1984–2036) rond Van Gorp Drones. Teams spelen het MT; aflevering 4 is volledig speelbaar met spelmotor, afleveringen 1, 2, 3 en 5 zijn inhoudelijke skeletten met conceptinterventies.
+Interactieve dramaserie in vijf afleveringen (1984–2036) rond Van Gorp Drones. Teams spelen het MT; aflevering 4 is de volledige demo met spelmotor; afleveringen **1** en **2** gebruiken het interventiemodel; afleveringen **3** en **5** zijn nog houtskoolschetsen (skeleton) met conceptinterventies.
 
 ## Vereisten
 
@@ -20,7 +20,7 @@ Interactieve dramaserie in vijf afleveringen (1984–2036) rond Van Gorp Drones.
 
 Voeg `?docent=1` toe aan de URL. Je krijgt dan o.a.:
 
-- Conceptbanner bij skeletafleveringen
+- Conceptbanner bij houtskoolschets-afleveringen (motor skeleton)
 - In het pauzemenu: timer bijstellen, naar een fase springen, verborgen meters inzien, export van de keuzeketen als JSON
 
 ## Inhoud toevoegen

@@ -5,7 +5,7 @@ import type { EpisodeId } from './meta';
 import { usesBeslistijdTimer } from './motor';
 
 export const INTRO_SKELET_DISCLAIMER =
-  'Dit is een eerste opzet: de uitkomst is nog niet gekoppeld aan de volledige spelmotor.';
+  'Dit is een houtskoolschets: de lijnen staan er, de uitwerking volgt. De uitkomst is nog niet gekoppeld aan de volledige spelmotor.';
 
 const INTERVENTIE_OPDRACHT_KERN =
   'Jullie vormen samen het managementteam. Per ronde onderzoeken jullie eerst wat er speelt. Daarna kiezen jullie twee interventies en verdelen jullie de budgetpunten.';
@@ -29,7 +29,7 @@ export function introCarryLines(content: EpisodeContent, episode: EpisodeId, rou
       ];
     }
     case 'skeleton':
-      return [INTRO_TEKSTEN[episode].opdracht, INTRO_SKELET_DISCLAIMER, introBeslistijdZin(episode)];
+      return [INTERVENTIE_OPDRACHT_KERN, INTRO_SKELET_DISCLAIMER, introBeslistijdZin(episode)];
     default:
       return [INTRO_TEKSTEN[episode].opdracht];
   }

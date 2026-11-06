@@ -52,7 +52,7 @@ function main() {
   }
 
   console.log(
-    'Data OK: ronden 1–2 (demo A4), skeleton 1/2/3/5, interventies A1–A3 + A5 (32),',
+    'Data OK: ronden 1–2 (demo A4), skeleton-rounddef 1/2/3 (taalronde stubs), interventies A1–A3 + A5 (32),',
     DILEMMA_STUBS.length,
     'dilemma-stubs,',
     PERSONEN.length,

@@ -11,12 +11,22 @@ Legenda kolommen: **1** eigen verhaal · **2** geen herkomstclichés · **3** ge
 | Code | Omschrijving | Alt-tekst (NL) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 akkoord |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | I1 | Intro aflevering 1 — woonhuis + schuur Berkel-Enschot | `public/beelden/I1.jpg` (staand 3:4) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
-| I2 | Intro aflevering 2 — fabriekshal 1996 | `public/beelden/I2.jpg` (staand 3:4) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
-| I3 | Intro aflevering 3 — drie vestigingen 2009 | `public/beelden/I3.jpg` (staand 3:4) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
+| I2 | Intro aflevering 2 — fabriekshal 1996 | `public/beelden/I2.jpg` (staand 3:4) — **geplaatst in repo** | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
+| I3 | Intro + cold/slot A3 — directie/vestigingen 2009 (restaurant/slot: hergebruik I3 of apart beeld) | `public/beelden/I3.jpg` (staand 3:4) — **geplaatst in repo** | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
 | I4 | Intro aflevering 4 — TEMPO (T4 demo) | Leeg kantoor met actieve schermen bij zonsopgang | n.v.t. | ja | ja | n.v.t. | n.v.t. | ja | ja | n.v.t. | **nee** |
-| I5 | Intro aflevering 5 — Spoorzone / conglomeraat 2036 | `public/beelden/I5.jpg` (staand 3:4) | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
+| I5 | Intro aflevering 5 — Spoorzone / conglomeraat 2036 | `public/beelden/I5.jpg` (staand 3:4) — **geplaatst in repo** | twijfel | ja | ja | n.v.t. | ja | ja | ja | n.v.t. | **nee** |
 
-Toelichting I1–I3/I5: beeld nog niet aangeleverd; check op klassieke arbeiders- of “koud conglomeraat”-clichés volgt bij definitief bestand.
+Toelichting I1: beeld nog niet aangeleverd; check op clichés volgt bij definitief bestand. **I2, I3, I5:** bestanden staan onder `public/beelden/`; inhoudelijke akkoord-check (stereotypen, WCAG) nog open (`akkoordRichard`).
+
+## UI — nog te leveren of te verbeteren (6 nov 2026)
+
+| Onderdeel | Aflevering | Status |
+| --- | --- | --- |
+| Prikbord / briefje (dilemma Wim) | A2 | Placeholder of geen fotorealistisch asset — `BriefjePanel` is tekst |
+| Telefoon met sms (2009) | A3 | Styling in `SmsDilemmaPanel`; optioneel referentiebeeld |
+| App-scherm (neutraal) | A5 | Styling in `AppDilemmaPanel` |
+| Restaurant 2009 | A3 | In slot/cold hergebruik I3 of apart beeld — nog niet akkoord |
+| Schuur 2036 met kist (slot A5) | A5 | Cues in `buildSlotEp5`; beeld hergebruik **I5** of apart — inhoud akkoord open |
 
 ## Aflevering 1 — cold open, briefje, slot (3 nov 2026)
 
@@ -38,6 +48,13 @@ Toelichting I1–I3/I5: beeld nog niet aangeleverd; check op klassieke arbeiders
 | overige MT | Diverse | Zie `docs/PORTRETTEN-PROMPTS.md` | twijfel | ja | ja | twijfel | ja | ja | ja | twijfel | **nee** |
 
 Richard zet `akkoordRichard: true` in `data/beeldenCheck.ts` en levert WebP in `public/portretten/` of `public/beelden/`.
+
+## UI A3 — telefoon met sms (2009)
+
+| Onderdeel | Status app | Akkoord |
+| --- | --- | --- |
+| Sms-dilemma / feature phone — generieke chrome, geen merk-UI (`SmsDilemmaPanel`, CSS `sms-dilemma-panel`) | Stijl + copy aanwezig; geen apart fotobestand | **nee** |
+| Optioneel: referentiebeeld 2009-toetsenbordtelefoon in achtergrond | Nog te maken indien gewenst | **nee** |
 
 ## Tijdgeest — Renault 5 en rekwisieten (5 nov 2026)
 

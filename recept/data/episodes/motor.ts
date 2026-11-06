@@ -11,7 +11,7 @@ export function usesInterventieMotor(episode: EpisodeId): boolean {
   return episodeMotorKind(episode) === 'interventie';
 }
 
-/** UI-label „— skelet” op de aflevering-keuzelijst (register, niet playMode in meta). */
+/** UI-label „Schets” op de aflevering-keuzelijst wanneer motorKind skeleton (register, niet playMode in meta). */
 export function showsSkeletLabel(episode: EpisodeId): boolean {
   return episodeMotorKind(episode) === 'skeleton';
 }

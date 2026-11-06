@@ -7,6 +7,8 @@ import { usesInterventieMotor, usesBeslistijdTimer } from '@data/episodes/motor'
 import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
 import { budgetOf, budgetOfDef } from '@engine/helpers';
 import { BriefjePanel } from '../components/BriefjePanel';
+import { SmsDilemmaPanel } from '../components/SmsDilemmaPanel';
+import { AppDilemmaPanel } from '../components/AppDilemmaPanel';
 import { ConceptDocentBanner } from '../components/ConceptDocentBanner';
 import { TijdgeestGeluidPanel } from '../components/TijdgeestGeluid';
 import { DashboardColumn } from '../components/DashboardColumn';
@@ -18,7 +20,7 @@ import { MessageToastHost } from '../components/MessageToast';
 import { SyncModalRound, useUiModals } from '../context/UiModalsContext';
 import { useMessageDelivery } from '../hooks/useMessageDelivery';
 import { bcalc, engineContext } from '../game/budgetUi';
-import { showBriefjePanel, showPhonePanel } from '../game/commPanel';
+import { showBriefjePanel, showPhonePanel, showSmsDilemmaPanel, showAppDilemmaPanel } from '../game/commPanel';
 import { resolveFilmScript } from '../game/filmResolve';
 import { roundDefFor } from '../game/roundSource';
 import type { GameAction } from '../game/gameReducer';
@@ -231,6 +233,22 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
               {showPhonePanel(state) ? <PhonePanel state={state} dispatch={dispatch} /> : null}
               {showBriefjePanel(state) && dilemmaDef ? (
                 <BriefjePanel
+                  def={dilemmaDef}
+                  state={state}
+                  dispatch={dispatch}
+                  periodKey={meta.periodKey}
+                />
+              ) : null}
+              {showSmsDilemmaPanel(state) && dilemmaDef ? (
+                <SmsDilemmaPanel
+                  def={dilemmaDef}
+                  state={state}
+                  dispatch={dispatch}
+                  periodKey={meta.periodKey}
+                />
+              ) : null}
+              {showAppDilemmaPanel(state) && dilemmaDef ? (
+                <AppDilemmaPanel
                   def={dilemmaDef}
                   state={state}
                   dispatch={dispatch}

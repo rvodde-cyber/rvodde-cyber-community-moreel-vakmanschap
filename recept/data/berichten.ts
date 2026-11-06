@@ -176,3 +176,37 @@ export function dilemmaGroepBerichten(playerName: string): BerichtDef[] {
     },
   ];
 }
+
+/** Berichten na keuze „in het MT bespreken” — A5 schrift / Anne-Fleur (ronde 2). */
+export function dilemmaGroepBerichtenA5(playerName: string): BerichtDef[] {
+  const z = playerName || 'Mies';
+  return [
+    {
+      id: 'dil-a5-g',
+      round: 2,
+      at: 'besluit',
+      channel: 'g',
+      van: z,
+      delay: 0,
+      tekst: 'Anne-Fleur vraagt inzage in het archief voor Optivora, inclusief het receptschrift in de schuur. Ze weet niet wat erin staat. Ze wil het graag goed doen. Dit wil ik met jullie bespreken.',
+    },
+    {
+      id: 'dil-a5-sanne',
+      round: 2,
+      at: 'besluit',
+      channel: 'g',
+      van: 'Sanne',
+      delay: 2800,
+      tekst: 'Ik teken pas als ik weet wat er in dat schrift staat. Dat blijft zo, ook nu.',
+    },
+    {
+      id: 'dil-a5-marco',
+      round: 2,
+      at: 'besluit',
+      channel: 'g',
+      van: 'Marco',
+      delay: 6200,
+      tekst: `Tante ${z}, Optivora wacht op vrijdag. Als we dit nu in de groep leggen, moet het ook kloppen naar buiten. Wat stellen we voor?`,
+    },
+  ];
+}

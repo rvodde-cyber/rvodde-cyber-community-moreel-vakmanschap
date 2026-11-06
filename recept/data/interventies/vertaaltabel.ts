@@ -32,15 +32,14 @@ export const KOSTEN_PUNTEN: Record<'€' | '€€' | '€€€', number> = {
   '€€€': 6,
 };
 
-/** Aflevering 1: budgetpunten per ronde (Richard 5 nov 2026). */
+/** Budgetpunten per ronde voor interventie-afleveringen 1–3 (Richard 5 nov 2026). */
 export const BUDGET_PER_RONDE_A1 = { 1: 8, 2: 9 } as const;
 
 export const LATER_FACTOR = 0.5;
 
 /** Budgetpunten voor interventiemotor; A4 gebruikt dit niet. */
 export function budgetVoorRonde(episode: Exclude<EpisodeId, 4>, round: 1 | 2): number {
-  if (episode === 1) return BUDGET_PER_RONDE_A1[round];
-  // TODO: kalibratie A2/A3/A5 na playtest
+  if (episode === 1 || episode === 2 || episode === 3 || episode === 5) return BUDGET_PER_RONDE_A1[round];
   return 8;
 }
 

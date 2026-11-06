@@ -73,7 +73,7 @@ describe('tijdgeest register (docs/TIJDGEEST.md)', () => {
     expect(tickerRegelsVoor(4, demo1).length).toBe(demo1.length + 3);
   });
 
-  it('skeleton-afleveringen: alleen tijdgeest-ticker', () => {
+  it('interventie zonder demo-budget: alleen tijdgeest-ticker', () => {
     for (const ep of [1, 2, 3, 5] as EpisodeId[]) {
       expect(tickerRegelsVoor(ep, [])).toEqual(TIJDGEEST[ep].ticker);
     }

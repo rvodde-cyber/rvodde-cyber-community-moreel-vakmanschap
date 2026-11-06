@@ -19,7 +19,7 @@ export type DilemmaDef = {
   privéBericht: {
     van: string;
     tekst: string;
-    kanaal: 'app' | 'briefje';
+    kanaal: 'app' | 'briefje' | 'sms2009';
     dil?: boolean;
   };
   keuzes: readonly { id: DilemmaKeuze; label: string; kort: string }[];

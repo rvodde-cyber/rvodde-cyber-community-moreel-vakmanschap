@@ -1,7 +1,7 @@
 import type { RoundDefinition } from '@data/schemas/rounds.schema';
 import type { BudgetMap, ComputeResult } from '@engine/types';
 
-/** Placeholder-uitkomst voor conceptskeletten (geen spelmotor). */
+/** Placeholder-uitkomst voor houtskoolschetsen zonder volledige spelmotor. */
 export function stubComputeResult(
   roundDef: RoundDefinition,
   cardIds: string[],
@@ -17,7 +17,7 @@ export function stubComputeResult(
     Pb: 50,
     HRb: hr,
     verz0: 5,
-    notes: ['Conceptskelet — geen volledige motorberekening'],
+    notes: ['Houtskoolschets — geen volledige motorberekening'],
   };
   return {
     n: 1,

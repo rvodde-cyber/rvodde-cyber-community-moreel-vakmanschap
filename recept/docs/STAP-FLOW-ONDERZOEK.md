@@ -25,7 +25,7 @@ Doel: hapering en overmatig klikken in de speelflow; A4/golden ongewijzigd.
 | … r2 | voorspel | `END_FILM` finale | Automatisch einde film |
 | voorspel | nabespreking | keuze + knop | Voorspelling = keuzemoment |
 
-Geen blokkades gevonden: elke film (`trailer-r1`, `slot-r1`, `finale`) heeft een `END_FILM`-pad; skelet-stub voor A2/A3/A5 ongewijzigd.
+Geen blokkades gevonden: elke film (`trailer-r1`, `slot-r1`, `finale`) heeft een `END_FILM`-pad; taalronde-stub cold opens voor A2/A3/A5 in `SKELETON_COLD` blijven documentatie/hook; speelbare cold opens staan in `coldOpenEp*`.
 
 ## Verplichte klikken vóór / na (A1, ronde 1 tot MT-overleg)
 
@@ -56,6 +56,28 @@ Optioneel: Overslaan, Naar de scène (trailer), Pauze — niet meegeteld als ver
 
 `engine/__tests__/coldOpenFlow.test.ts` — registergrenzen, leestijd, auto-gate, 3 klikken, A1 `END_FILM`-paden.
 
+## A2 / A3 / A5 — sjabloon A1 (6 nov 2026, bijgewerkt A3 speelbaar)
+
+**Doel:** hergebruik van de A1-stroom (twee rondes interventiemotor, dilemma ronde 2, tussenkaart, slotfilm met dynamische `slotLine`, pauzekaart). **A2, A3 en A5** volgen dat patroon (`EPISODE_*_CONTENT`).
+
+| Onderdeel | A1 (sjabloon) | A2 (1996) | A3 (2009) | A5 (2036) |
+| --- | --- | --- | --- | --- |
+| Register | `EPISODE_1_CONTENT` | `EPISODE_2_CONTENT` | `EPISODE_3_CONTENT` | `EPISODE_5_CONTENT` |
+| Motor | `interventie` | idem | idem | `interventie` |
+| Rondedef | `a1Rounds` + `INTERVENTIES_A1` | `a2Rounds` + `INTERVENTIES_A2` | `a3Rounds` + `INTERVENTIES_A3` | `a5Rounds` + `INTERVENTIES_A5` |
+| Budget | 8/9 | 8/9 | 8/9 (`budgetVoorRonde(3, ronde)`) | 8/9 (`budgetVoorRonde(5, ronde)`) |
+| Cold open | `coldOpenEp1` | `coldOpenEp2` | `coldOpenEp3` (r1 = taalronde gelijk `SKELETON_COLD[3]`; r2 = vergaderruimte + sms-setup) | `coldOpenEp5` (r2 = hoofdkantoor + app-setup) |
+| Dilemma | `ep1-frans` · briefje | `ep2-wim` · briefje | `ep3-waalwijk` · sms (`sms2009`, `SmsDilemmaPanel`) | `ep5-schrift` · app (`AppDilemmaPanel`) |
+| Slotfilm | `buildSlotEp1` + `slotLineA1` | `buildSlotEp2` + `slotLineA2` | `buildSlotEp3` + `slotLineA3` + brugzin Defensie/drones | `buildSlotEp5` + `slotLineA5` |
+| `showsSkeletLabel` | nee | nee | nee | nee |
+| Disclaimer intro | — | — | — (interventie: budget + tien minuten) | — (idem) |
+
+**A2:** `coldOpenEp2`, `a2Rounds`, `ep2-wim`, `slotLineA2`, `buildSlotEp2`, pauze-/tussenkaart (hoofdstuk 2 bron).
+
+**A3:** `coldOpenEp3`, `a3Rounds`, `ep3-waalwijk`, `slotLineA3`, `buildSlotEp3`, pauze-/tussenkaart (hoofdstuk 3 bron); slotcue staat in `data/filmSequences.ts` (`buildSlotEp3`), niet in `data/skeleton/film.ts`.
+
+**A5:** `coldOpenEp5`, `a5Rounds`, `ep5-schrift`, `slotLineA5`, `buildSlotEp5`; pauzekaart zonder voorspelling.
+
 ## Introteksten (5–6 nov 2026, rechtzetting demo)
 
 Onderzoek: `IntroPhase.tsx` (vak **JULLIE OPDRACHT**; A4 r1/r2 apart met `A4_INTRO_CARRY_*`), `content/intros.nl.ts` (geschiedenis/uitdagingen/hint + skelet-**opdracht**regel), `data/episodes/introUiCopy.ts` (`introCarryLines`, `introBeslistijdZin`, `budgetVoorRonde`).
@@ -74,13 +96,13 @@ Onderzoek: `IntroPhase.tsx` (vak **JULLIE OPDRACHT**; A4 r1/r2 apart met `A4_INT
 | --- | --- | --- | --- |
 | A1 | 1 | interventie | Kern + **budget deze ronde: N punten** (`budgetVoorRonde`) + zin beslistijd (`introBeslistijdZin` → *ongeveer tien minuten*) — geen mln, geen conceptskelet |
 | A1 | 2 | interventie | Intro kort (briefje); geen carry-budget in intro |
-| A2 | 1 | skeleton | Opdracht uit `intros.nl` + disclaimer *eerste opzet* + `introBeslistijdZin` → *Neem de tijd om samen te kiezen* — geen budgetregel |
-| A3 | 1 | skeleton | Idem A2 |
-| A5 | 1 | skeleton | Idem A2 |
+| A2 | 1 | interventie | Kern + budget **N punten** + *ongeveer tien minuten* (timer) |
+| A3 | 1 | interventie | Kern + budget **N punten** + *ongeveer tien minuten* (timer) |
+| A5 | 1 | interventie | Kern + budget **N punten** + *ongeveer tien minuten* (timer), zelfde patroon als A1–A3 |
 | A4 | 1 | a4 | Vaste demo-copy + *tien minuten* (`A4_INTRO_CARRY_R1`) |
 | A4 | 2 | a4 | Vaste demo-copy r2 + mln in **UITDAGINGEN**; carry r2 ongewijzigd |
 
-**Tien minuten:** in het opdrachtvak als derde regel (A1/A2/A3/A5) via `introBeslistijdZin`; alleen timer-afleveringen krijgen *ongeveer tien minuten* (`usesBeslistijdTimer` = interventie + A4).
+**Tien minuten:** in het opdrachtvak als derde regel via `introBeslistijdZin`; timer = `usesBeslistijdTimer`: **A1, A2, A3, A5** (interventie) en **A4** (demo). Alleen een hypothetische aflevering met `motorKind: 'skeleton'` krijgt *Neem de tijd om samen te kiezen* en de houtskoolschets-disclaimer (`introCarryLines`).
 
 **Eerdere fout (demo):** A1 toonde nog conceptskelet + `€ 0,00 mln` via `budgetOfDef` op skelet-rounddef — opgelost via register-gestuurde copy.
 

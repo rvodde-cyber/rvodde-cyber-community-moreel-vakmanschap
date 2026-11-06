@@ -7,7 +7,7 @@ Laatste update: **6 november 2026** (worstenbroodje + Van Gorp Machinebouw / Gro
 | Onderwerp | Besluit |
 | --- | --- |
 | **Product + bedrijf** | Worstenbroodjes i.p.v. kroket; tijdlijn Van Gorp Machinebouw B.V. (2009) → dronesorder (rond 2020) → Van Gorp Drones (2026) → Van Gorp Groep (2036); zie `docs/BEDRIJFSVERHAAL.md`, `data/episodes/overstapUitlegA4.ts`. |
-| **A3 → A4** | Extra ondertitel in **slotfilm A3** (`data/skeleton/film.ts`). |
+| **A3 → A4** | Brugzin in slotfilm A3 via **`buildSlotEp3`** in `data/filmSequences.ts` (Defensie/drones / Van Gorp Machinebouw). |
 
 ## Besloten (5 nov 2026)
 
@@ -64,7 +64,19 @@ Canoniek: `data/episodes/meta.ts`, `docs/serieconcept.md` → **1984, 1996, 2009
 - **Kalibratie na balanstest motor:** `a1-1-3` verzuim `--`; `a1-1-4` productiviteit `++` — akkoord Richard nodig (effect-symbolen, teksten ongewijzigd). **Ronde 2:** bij sommige r1-eindstanden (clamp) kan één paar domineren; statische balanstest op startwaarden is groen; playtest na budget 9.
 - Startwaarden A2/A3/A5: zelfde als A1 (`startwaarden.ts` TODO) tot playtest.
 - Balans A2/A3/A5: balanstest draait; dominante combinaties mogelijk tot kalibratie bij aansluiten interventiemodus.
-- Open: nabespreking A1 (ethischRisico/opvolging/echo in UI), begrotingsposten vanaf A3, A2/A3/A5 naar `motorKind: 'interventie'`.
+- Open: nabespreking A1 (ethischRisico/opvolging/echo in UI), begrotingsposten in latere iteratie.
+- **A5:** register `EPISODE_5_CONTENT` — `motorKind: 'interventie'`; tests en types zijn bijgewerkt voor optionele `pauzeKaart.voorspelling` (6 nov 2026).
+
+## A2 — interventiemotor en dilemma Wim (6 nov 2026)
+
+- Aflevering 2: `motorKind: 'interventie'`, budget **8 / 9** (`budgetVoorRonde(2, ronde)`), `DILEMMA_EP2_WIM`, slotfilm `buildSlotEp2` + `slotLineA2` (ids `a2-1-4`, `a2-2-2`, `a2-2-4`).
+- **Kalibratie na speeltest:** startwaarden en interventie-effecten (`data/interventies/startwaarden.ts`, `data/interventies-a2.ts`); dilemma-effecten Wim (tabel bron §2.2).
+
+## A3 — interventiemotor, dilemma Waalwijk, slot (6 nov 2026)
+
+- Aflevering 3: `motorKind: 'interventie'`, budget **8 / 9** (`budgetVoorRonde(3, ronde)`), `DILEMMA_EP3_WAALWIJK` (kanaal `sms2009`), slotfilm `buildSlotEp3` + `slotLineA3` (controle/cijfers: `a3-1-1`, `a3-1-2`, `a3-1-3`, `a3-2-2`; ≥2 gekozen → eerste variant).
+- **Open — kalibratie na speeltest:** startwaarden (`data/interventies/startwaarden.ts`), interventie-effecten en eventueel `a3-1-3` kosten (`€€` t.o.v. origineel `€€€` in bron — zie comment in `data/interventies-a3.ts`); dilemma-effecten vastgezet volgens opdracht, herijken na feedback.
+- **Open — Richard speelt A3 door:** flow sms-panel, cold open r2, slotvarianten en pauzekaart nabespreken.
 
 ## A1 — slotLineA1 (afgerond stap 3)
 
@@ -149,6 +161,7 @@ Richard: kies per regel welke **demokaart** (A–J) de bedoeling dekt. Echo's na
 
 ## Technisch
 
+- Tests/build (6 nov 2026, na testfix): **`npm test`** 202 groen; **`npm run build`** geslaagd. Oud rapport met falende run: **`docs/RAPPORT-A2-A3-A5-06-11-2026.md`**.
 - Tests: zie `npm test` (incl. `episodeContent.test.ts`)
 - Golden-suite zevendeling `spelmotor.md`: nog open
 - Multiplayer v1/v2: zie `LATER.md` (vergelijkscherm, daarna regiekamer)

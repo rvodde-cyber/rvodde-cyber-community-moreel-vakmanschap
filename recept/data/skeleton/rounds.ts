@@ -43,7 +43,7 @@ function skeletonRound(ep: SkeletonEpisode): RoundDefinition {
       { id: 'v3', t: 'Groei en druk', q: 0.8, o: 'groei' },
     ],
     ticker: [
-      ['i', 'Conceptskelet — meters zijn indicatief'],
+      ['i', 'Houtskoolschets — meters zijn indicatief'],
       ['!', 'Interventies nog niet inhoudelijk getoetst'],
     ] as RoundDefinition['ticker'],
   };

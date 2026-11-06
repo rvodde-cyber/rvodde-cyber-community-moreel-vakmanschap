@@ -137,7 +137,7 @@ export function HomeScreen({
                       <span className="landing-ep-card__year">{ep.jaar}</span>
                       <span className="landing-ep-card__titel">{ep.titel}</span>
                       <span className="landing-ep-card__status">
-                        {showsSkeletLabel(ep.id) ? 'Skelet' : 'Speelbaar'}
+                        {showsSkeletLabel(ep.id) ? 'Schets' : 'Speelbaar'}
                       </span>
                     </button>
                   </li>

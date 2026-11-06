@@ -706,6 +706,78 @@ select:focus-visible {
   margin-bottom: 6px;
 }
 
+/* A3 dilemma: sms 2009 (eenvoudige skin, geen merk-UI) */
+.sms-dilemma-panel .sms-phone {
+  background: var(--sms-bg, var(--panel));
+  color: var(--sms-ink, var(--ink));
+  border: 1px solid color-mix(in srgb, var(--sms-accent, var(--cyan)) 30%, transparent);
+  border-radius: 14px;
+  padding: 14px 16px 18px;
+  margin: 8px 0 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  max-width: 100%;
+}
+.sms-dilemma-panel .sms-phone-chrome {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3a4a5a, #2a3540);
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+.sms-dilemma-panel .sms-van {
+  font-size: 12px;
+  color: var(--sms-muted, var(--soft));
+  margin: 0 0 10px;
+  font-family: var(--font-data, var(--data));
+}
+.sms-dilemma-panel .sms-body {
+  font-family: var(--font-ui, var(--sans));
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.sms-keuzes .lab {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* A5 dilemma: app 2036 (neutraal, geen merk-UI) */
+.app-dilemma-panel .app-device {
+  background: var(--app-bg, var(--panel));
+  color: var(--app-ink, var(--ink));
+  border: 1px solid color-mix(in srgb, var(--app-accent, var(--cyan)) 28%, transparent);
+  border-radius: 16px;
+  padding: 14px 16px 18px;
+  margin: 8px 0 12px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+.app-dilemma-panel .app-device-chrome {
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #4a5c72, #2f3a48);
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+.app-dilemma-panel .app-van {
+  font-size: 12px;
+  color: var(--app-muted, var(--soft));
+  margin: 0 0 10px;
+  font-family: var(--font-data, var(--data));
+}
+.app-dilemma-panel .app-body {
+  font-family: var(--font-ui, var(--sans));
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.app-keuzes .lab {
+  display: block;
+  margin-bottom: 6px;
+}
+
 .gesprek-wrap { padding-top: 24px; padding-bottom: 48px; max-width: 720px; }
 .gesprekskaart-panel .gk-titel { font-family: var(--font-display, var(--title)); font-size: 28px; margin: 0 0 16px; font-weight: 400; }
 .gesprekskaart-panel .gk-alinea { font-family: var(--font-ui, var(--sans)); margin-bottom: 14px; }

@@ -119,6 +119,93 @@ export function buildSlotEp1(openingLine: string): FilmScript {
   };
 }
 
+/** Slotscène aflevering 2 (1996), ±27 s. Beelden I2 volgen beeldbank/placeholder. */
+export function buildSlotEp2(openingLine: string): FilmScript {
+  return {
+    id: 'slot-ep2',
+    label: 'Einde van dit deel',
+    titleMark: 'RECEPT',
+    titleAfter: 'AFLEVERING 2',
+    titleEp: 'Sneller, Gerrit',
+    duration: 27000,
+    cues: [
+      { at: 200, kind: 'sub', text: openingLine },
+      { at: 3200, kind: 'shot', img: 'I2', zoom: 'in' },
+      { at: 3200, kind: 'sub', text: 'Loven, Tilburg, 1996.' },
+      { at: 5200, kind: 'sub', who: 'HARRIE', text: 'Jij bent... even denken. Marco? Nee. Jij hoort bij de verpakking, toch?' },
+      { at: 8200, kind: 'sub', who: 'GERRIT', text: 'Harrie, ga even zitten. Je ziet er niet uit.' },
+      { at: 11200, kind: 'sub', who: 'HARRIE', text: 'Dat gaat zo wel over, joh. Er staat nog een vrachtwagen te wachten.' },
+      { at: 14200, kind: 'shot', img: 'I2', zoom: 'pan' },
+      { at: 17200, kind: 'sub', who: 'GERRIT', text: 'Harrie? Harrie! Bel iemand. Nu!' },
+      { at: 20200, kind: 'text', text: 'Gerrit belt de ambulance.' },
+      { at: 20200, kind: 'boom', soft: true },
+      { at: 23800, kind: 'text', text: 'Wie neemt het straks over?' },
+      { at: 23800, kind: 'boom', soft: true },
+      { at: 26200, kind: 'title' },
+    ],
+  };
+}
+
+/** Slotscène aflevering 3 (2009), ±27 s. Beelden I3; brug naar A4 aan het einde. */
+export function buildSlotEp3(openingLine: string): FilmScript {
+  return {
+    id: 'slot-ep3',
+    label: 'Einde van dit deel',
+    titleMark: 'RECEPT',
+    titleAfter: 'AFLEVERING 3',
+    titleEp: 'Een Van Gorp aan het roer',
+    duration: 27000,
+    cues: [
+      { at: 200, kind: 'sub', text: openingLine },
+      { at: 2800, kind: 'shot', img: 'I3', zoom: 'in' },
+      { at: 2800, kind: 'sub', text: 'Tilburg, 2009.' },
+      { at: 5200, kind: 'sub', who: 'HARRIE', text: 'Ik heb het lang laten liggen, hè. Maar ik heb besloten. Marco neemt het over.' },
+      { at: 8000, kind: 'sub', who: 'MARCO', text: 'Dank je, pap. Ik zorg dat het goed komt.' },
+      { at: 10800, kind: 'sub', who: 'SANNE', text: 'En de vloer dan? Heb je daar ook over nagedacht?' },
+      { at: 13600, kind: 'sub', who: 'HARRIE', text: 'Daar praten we later over, Sanne.' },
+      { at: 16400, kind: 'sub', who: 'SANNE', text: 'Later.' },
+      { at: 16400, kind: 'sub', text: '(zet haar glas neer) Ik ga even buiten staan.' },
+      { at: 19200, kind: 'shot', img: 'I3', zoom: 'pan' },
+      { at: 19200, kind: 'sub', text: 'De lege stoel. Een glas trilt nog na.' },
+      { at: 22000, kind: 'text', text: 'Sanne verlaat het restaurant.' },
+      { at: 22000, kind: 'boom', soft: true },
+      {
+        at: 24800,
+        kind: 'sub',
+        text: 'Rond 2020 zoekt Defensie productiecapaciteit voor drones. Van Gorp Machinebouw krijgt de order.',
+      },
+      { at: 24800, kind: 'boom', soft: true },
+      { at: 26400, kind: 'title' },
+    ],
+  };
+}
+
+/** Slotscène aflevering 5 (2036), ±27 s. Beeld I5/placeholder schuur; geen zus in beeld. */
+export function buildSlotEp5(openingLine: string): FilmScript {
+  return {
+    id: 'slot-ep5',
+    label: 'Einde van dit deel',
+    titleMark: 'RECEPT',
+    titleAfter: 'AFLEVERING 5',
+    titleEp: 'Wie heeft het schrift?',
+    duration: 27000,
+    cues: [
+      { at: 200, kind: 'sub', text: openingLine },
+      { at: 2800, kind: 'shot', img: 'I5', zoom: 'in' },
+      { at: 2800, kind: 'sub', text: 'Berkel-Enschot, 2036.' },
+      { at: 5600, kind: 'sub', text: 'Anne-Fleur tilt het deksel van een houten kist. Onderin ligt een schrift met een bruine kaft.' },
+      { at: 8400, kind: 'sub', who: 'ANNE-FLEUR', text: 'Dit is het. Het schrift.' },
+      { at: 11200, kind: 'sub', who: 'PIOTR', text: 'Heb je het gevonden?' },
+      { at: 14000, kind: 'sub', who: 'ANNE-FLEUR', text: 'Ja. Het lag hier al die tijd.' },
+      { at: 16800, kind: 'sub', text: 'Close-up: Harries handschrift. Eén zin doorgestreept, net niet leesbaar.' },
+      { at: 19600, kind: 'sub', who: 'ANNE-FLEUR', text: 'Iemand heeft hier iets doorgehaald. Ik wil weten wie dat heeft gedaan, en waarom.' },
+      { at: 22800, kind: 'text', text: 'Wie heeft het schrift?' },
+      { at: 22800, kind: 'boom', soft: true },
+      { at: 26400, kind: 'title' },
+    ],
+  };
+}
+
 export function buildFinale(
   a: [string, string],
   b: [string, string],

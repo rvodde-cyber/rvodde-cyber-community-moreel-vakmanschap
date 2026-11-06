@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { A1_ROUNDS } from '@data/episodes/a1Rounds';
+import { A2_ROUNDS } from '@data/episodes/a2Rounds';
+import { A3_ROUNDS } from '@data/episodes/a3Rounds';
 import { ALL_INTERVENTIES } from '@data/interventies/all';
 import {
   ZICHTBAAR_DELTA,
@@ -11,6 +13,8 @@ import {
   LATER_FACTOR,
 } from '@data/interventies/vertaaltabel';
 import { slotLineA1 } from '@data/slotLineA1';
+import { slotLineA2 } from '@data/slotLineA2';
+import { slotLineA3 } from '@data/slotLineA3';
 import { ROUNDS } from '@data/rounds';
 import {
   interventieCompute,
@@ -39,6 +43,10 @@ describe('vertaaltabel', () => {
     expect(BUDGET_PER_RONDE_A1).toEqual({ 1: 8, 2: 9 });
     expect(budgetVoorRonde(1, 1)).toBe(8);
     expect(budgetVoorRonde(1, 2)).toBe(9);
+    expect(budgetVoorRonde(2, 1)).toBe(8);
+    expect(budgetVoorRonde(2, 2)).toBe(9);
+    expect(budgetVoorRonde(3, 1)).toBe(8);
+    expect(budgetVoorRonde(3, 2)).toBe(9);
     expect(LATER_FACTOR).toBe(0.5);
   });
 });
@@ -113,6 +121,29 @@ describe('interventieCompute', () => {
     const gekozen = ['a1-1-4', 'a1-1-1', 'a1-2-2', 'a1-2-1'];
     expect(slotLineA1(gekozen)).toContain('keigoed');
     expect(slotLineA1(['a1-1-1'])).toContain('kasboek');
+  });
+
+  it('(g) A2 budget en slotLineA2 bereikbaar (a2-1-4 + a2-2-2)', () => {
+    expect(A2_ROUNDS[1].budget).toBe(8);
+    expect(A2_ROUNDS[2].budget).toBe(9);
+    expect(validateInterventieKeuze(['a2-1-4', 'a2-1-2'], A2_ROUNDS[1]).ok).toBe(true);
+    expect(validateInterventieKeuze(['a2-2-2', 'a2-2-1'], A2_ROUNDS[2]).ok).toBe(true);
+    const gekozen = ['a2-1-4', 'a2-1-2', 'a2-2-2', 'a2-2-1'];
+    expect(slotLineA2(gekozen)).toContain('draait de band');
+    expect(slotLineA2(['a2-1-1'])).toContain('ploegen veel zelf');
+  });
+
+  it('(h) A3 budget en slotLineA3 bereikbaar via geldige keuzes', () => {
+    expect(A3_ROUNDS[1].budget).toBe(8);
+    expect(A3_ROUNDS[2].budget).toBe(9);
+    expect(validateInterventieKeuze(['a3-1-1', 'a3-1-3'], A3_ROUNDS[1]).ok).toBe(true);
+    expect(validateInterventieKeuze(['a3-2-2', 'a3-2-3'], A3_ROUNDS[2]).ok).toBe(true);
+    const controlePad = ['a3-1-1', 'a3-1-3', 'a3-2-2', 'a3-2-3'];
+    expect(slotLineA3(controlePad)).toContain('Op de vloer weet niemand meer wie er aan tafel zit');
+    expect(validateInterventieKeuze(['a3-1-1', 'a3-1-4'], A3_ROUNDS[1]).ok).toBe(true);
+    expect(validateInterventieKeuze(['a3-2-1', 'a3-2-3'], A3_ROUNDS[2]).ok).toBe(true);
+    const andersPad = ['a3-1-1', 'a3-1-4', 'a3-2-1', 'a3-2-3'];
+    expect(slotLineA3(andersPad)).toContain('In de cijfers staat dat niet altijd');
   });
 
   it('(f) A4 rounds ongewijzigd (5 kaarten)', () => {
