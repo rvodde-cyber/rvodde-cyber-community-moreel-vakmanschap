@@ -129,10 +129,35 @@ describe('episode 1 content (stap 2)', () => {
     expectPauzekaartMetVoorspelling(c);
   });
 
-  it('slot-ep1 script id and duration', () => {
+  it('slot-ep1: Brabants afscheid vóór A1-SCHRIFT, duur sluit aan bij titel', () => {
     const script = buildSlotEp1('test');
     expect(script.id).toBe('slot-ep1');
-    expect(script.duration).toBe(27000);
+    expect(script.duration).toBe(28500);
+    const idxGerritHoudoe = script.cues.findIndex(
+      (c) =>
+        c.kind === 'sub' &&
+        c.who === 'GERRIT' &&
+        typeof c.text === 'string' &&
+        c.text.includes('Houdoe'),
+    );
+    const idxLiesHoudoe = script.cues.findIndex(
+      (c) =>
+        c.kind === 'sub' &&
+        c.who === 'LIES' &&
+        typeof c.text === 'string' &&
+        c.text.includes('Houdoe'),
+    );
+    const idxSchrift = script.cues.findIndex((c) => c.kind === 'shot' && c.img === 'A1-SCHRIFT');
+    expect(idxGerritHoudoe).toBeGreaterThan(-1);
+    expect(idxLiesHoudoe).toBeGreaterThan(-1);
+    expect(idxSchrift).toBeGreaterThan(-1);
+    expect(idxGerritHoudoe).toBeLessThan(idxLiesHoudoe);
+    expect(idxLiesHoudoe).toBeLessThan(idxSchrift);
+    const titleCues = script.cues.filter((c) => c.kind === 'title');
+    expect(titleCues.length).toBeGreaterThan(0);
+    const lastAt = Math.max(...script.cues.map((c) => c.at));
+    expect(lastAt).toBe(Math.max(...titleCues.map((c) => c.at)));
+    expect(script.duration).toBeGreaterThanOrEqual(lastAt);
   });
 });
 

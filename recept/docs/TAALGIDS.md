@@ -21,6 +21,8 @@ Status: voorstel van Claude, akkoord op de richting door Richard (3 november 202
 | 4 | 2026 | HR-jargon bij jongeren en leiding; tonval bij Harrie, Lies, Gerrit en Ans | dashboard, werkdruk, norm, TEMPO, PILOT, doelgroep, inclusief | dialectspelling, 2036-taal |
 | 5 | 2036 | Abstract, data-gedreven, afstandelijk; een warm "hè" valt op | capaciteit, besluit, herstructurering, investeerder, optimaliseren | dialect en tonval (die zijn in 2036 helemaal verdwenen, ook bij oudere personages), grappige oudjes-taal |
 
+**„Houdoe” (1984):** het Brabantse afscheid; in **1984** bij **Gerrit** en **Lies** bij afscheid van collega’s en vrienden, niet bij elk vaarwel. **1996:** nog **sporadisch** bij Harrie en Lies. **Vanaf 2009:** verdwenen uit het spreekregister.
+
 ## 3. Personages
 
 - **Harrie** (29 in 1984, 71 in 2026): blijft Brabants, ook als hij ouder wordt. Zegt "keileuk", "dat red ik wel", "toch?". Wordt korter van stof en zoekt eerder naar namen.

@@ -20,7 +20,7 @@ export function OnderzoekPhase({
       <TaskBar
         step={2}
         title="ONDERZOEK"
-        lead="Nog geen besluit. Tik één tot drie onderzoeken aan en lees wat ze laten zien. Kies daarna het vermoeden dat jullie het meest overtuigt."
+        lead="Voor je iets kunt besluiten willen jullie meer informatie; kies maximaal 3 onderzoeken die jullie willen uitvoeren en lees wat ze laten zien. Kies daarna het vermoeden dat jullie het meest overtuigt."
         sub="Praat hardop met elkaar: wat zien we, en wat zou daarachter kunnen zitten? Jullie vermoeden telt straks mee in de uitkomst."
       />
       <div className="q">

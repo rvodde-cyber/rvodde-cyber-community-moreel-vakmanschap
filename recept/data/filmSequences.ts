@@ -92,7 +92,7 @@ export function buildSlotRonde1(place: string, line: string): FilmScript {
   };
 }
 
-/** Slotscène aflevering 1 (1984), ±27 s. Beelden C1, T1, A1-SCHRIFT volgen beeldbank/placeholder. */
+/** Slotscène aflevering 1 (1984), ±28,5 s. Beelden C1, T1, A1-SCHRIFT volgen beeldbank/placeholder. */
 export function buildSlotEp1(openingLine: string): FilmScript {
   return {
     id: 'slot-ep1',
@@ -100,7 +100,7 @@ export function buildSlotEp1(openingLine: string): FilmScript {
     titleMark: 'RECEPT',
     titleAfter: 'AFLEVERING 1',
     titleEp: 'Alles met de hand',
-    duration: 27000,
+    duration: 28500,
     cues: [
       { at: 200, kind: 'sub', text: openingLine },
       { at: 3200, kind: 'shot', img: 'T1', zoom: 'in' },
@@ -109,12 +109,14 @@ export function buildSlotEp1(openingLine: string): FilmScript {
       { at: 5800, kind: 'sub', who: 'GERRIT', text: 'Tien keer zoveel, Harrie. Dat moet je opschrijven. Ik ben er niet altijd.' },
       { at: 8800, kind: 'sub', who: 'LIES', text: 'En als jullie er niet zijn? Wie weet dan nog waarom we het zo doen?' },
       { at: 11800, kind: 'sub', who: 'HARRIE', text: 'Dat weet ik toch? Ik weet alles.' },
-      { at: 14800, kind: 'shot', img: 'A1-SCHRIFT', zoom: 'in' },
-      { at: 17800, kind: 'shot', img: 'C1', zoom: 'in' },
-      { at: 20800, kind: 'blank' },
-      { at: 21200, kind: 'text', text: 'Wie weet er straks nog hoe het gaat?' },
-      { at: 21200, kind: 'boom', soft: true },
-      { at: 25000, kind: 'title' },
+      { at: 13200, kind: 'sub', who: 'GERRIT', text: 'Houdoe, Harrie. Schrijf het op.' },
+      { at: 14200, kind: 'sub', who: 'LIES', text: 'Houdoe, Gerrit.' },
+      { at: 16200, kind: 'shot', img: 'A1-SCHRIFT', zoom: 'in' },
+      { at: 19200, kind: 'shot', img: 'C1', zoom: 'in' },
+      { at: 22200, kind: 'blank' },
+      { at: 22600, kind: 'text', text: 'Wie weet er straks nog hoe het gaat?' },
+      { at: 22600, kind: 'boom', soft: true },
+      { at: 26400, kind: 'title' },
     ],
   };
 }
