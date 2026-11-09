@@ -32,7 +32,7 @@ import { slotLineA5 } from '@data/slotLineA5';
 import { TRAILER_RONDE_1, TRAILER_RONDE_2 } from '@data/filmSequences';
 import { roundDefFor } from '../../src/game/roundSource';
 import { freshEpisode } from '../../src/game/budgetUi';
-import { showAppDilemmaPanel, showBriefjePanel, showPhonePanel, showSmsDilemmaPanel } from '../../src/game/commPanel';
+import { showLensDilemmaPanel, showBriefjePanel, showPhonePanel, showSmsDilemmaPanel } from '../../src/game/commPanel';
 import type { GameUiState } from '../../src/game/uiTypes';
 import { episodeMotorKind, showsSkeletLabel } from '@data/episodes/motor';
 
@@ -281,7 +281,7 @@ describe('episode 5 content', () => {
     expect(c.coldOpen[1]!.lines).toHaveLength(5);
     expect(c.coldOpen[2]!.lines).toHaveLength(6);
     expect(c.coldOpen[2]!.lines[5]![1]).toBe(
-      'Vrijdag, tien voor vijf. Er staat een bericht in de app, alleen voor jou.',
+      'Vrijdag, tien voor vijf. Er staat een bericht op je lens, alleen voor jou.',
     );
   });
 
@@ -297,20 +297,20 @@ describe('episode 5 content', () => {
     expect(c.rounds[1].cards).toHaveLength(4);
   });
 
-  it('(b) ep5-schrift: drie keuzes, minTekst 10, kanaal app', () => {
+  it('(b) ep5-schrift: drie keuzes, minTekst 10, kanaal lens', () => {
     expect(DILEMMA_EP5_SCHRIFT.keuzes).toHaveLength(3);
     expect(DILEMMA_EP5_SCHRIFT.effecten.prive.minTekst).toBe(10);
-    expect(DILEMMA_EP5_SCHRIFT.privéBericht.kanaal).toBe('app');
+    expect(DILEMMA_EP5_SCHRIFT.privéBericht.kanaal).toBe('lens');
     expect(DILEMMA_EP5_SCHRIFT.privéBericht.dil).toBe(true);
   });
 
-  it('(c) app-dilemma: AppDilemmaPanel ja in r2 besluit', () => {
+  it('(c) lens-dilemma: LensDilemmaPanel ja in r2 besluit', () => {
     const state: GameUiState = {
       ...freshEpisode(5),
       round: 2,
       phase: 'besluit',
     };
-    expect(showAppDilemmaPanel(state)).toBe(true);
+    expect(showLensDilemmaPanel(state)).toBe(true);
     expect(showBriefjePanel(state)).toBe(false);
     expect(showSmsDilemmaPanel(state)).toBe(false);
     expect(showPhonePanel(state)).toBe(false);
@@ -445,7 +445,7 @@ describe('taalronde cold opens (5 nov 2026)', () => {
   });
 
   it('A4 COLD_OPEN[2]: alleen twee regels gewijzigd, ronde 1 ongewijzigd', () => {
-    expect(COLD_OPEN[1]).toEqual({
+    expect(COLD_OPEN[1]).toMatchObject({
       place: 'VILLA VAN GORP, OISTERWIJK',
       img: 'C4',
       lines: [
@@ -456,6 +456,7 @@ describe('taalronde cold opens (5 nov 2026)', () => {
         ['', 'Maandag, 09:14. Het verzuim is weer gestegen.'],
       ],
     });
+    expect(episodeContent(4).onderstroomActief).toBe(false);
     expect(COLD_OPEN[2].lines[2]).toEqual([
       'ERIK',
       'Groter worden betekent vooral meer formulieren, Marco.',

@@ -34,16 +34,23 @@ function advanceColdToEnd(state: GameUiState, round: 1 | 2): GameUiState {
 describe('cold open grens uit register', () => {
   it.each(EPS)('aflevering %i ronde 1: COLD_NEXT tot laatste regel', (ep) => {
     const max = coldOpenMaxSub(ep, 1);
-    expect(max).toBe(coldOpenForRound(ep, 1).lines.length - 1);
+    const base = coldOpenForRound(ep, 1).lines.length - 1;
+    const c = episodeContent(ep);
+    if (c.onderstroomActief) {
+      expect(max).toBeGreaterThanOrEqual(base);
+    } else {
+      expect(max).toBe(base);
+    }
     const end = advanceColdToEnd(freshEpisode(ep), 1);
     expect(end.rounds[1].coldSub).toBe(max);
     expect(gameReducer(end, { type: 'COLD_NEXT' })).toEqual(end);
   });
 
-  it('aflevering 1 ronde 2: 5 regels (index 0–4)', () => {
-    expect(coldOpenMaxSub(1, 2)).toBe(4);
+  it('aflevering 1 ronde 2: golden 5 regels + onderstroom (index 0–6)', () => {
+    expect(coldOpenForRound(1, 2).lines).toHaveLength(5);
+    expect(coldOpenMaxSub(1, 2)).toBe(6);
     const end = advanceColdToEnd(freshEpisode(1), 2);
-    expect(end.rounds[2].coldSub).toBe(4);
+    expect(end.rounds[2].coldSub).toBe(6);
   });
 
   it('aflevering 4 ronde 1: demo cold open ongewijzigd lengte', () => {

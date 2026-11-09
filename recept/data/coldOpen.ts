@@ -1,3 +1,52 @@
+import type { OnderstroomInsert } from './episodes/coldOpenModel';
+
+const A4_R1_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 1,
+    kanaal: 'app',
+    van: 'Marco',
+    naar: 'Sanne',
+    tekst: 'Pap begint weer over vroeger.',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 1,
+    kanaal: 'app',
+    van: 'Sanne',
+    naar: 'Marco',
+    tekst: 'Hij kende ze nog.',
+  },
+];
+
+const A4_R2_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 2,
+    kanaal: 'app',
+    van: 'Marco',
+    naar: 'Sanne',
+    tekst: 'Kun jij Erik even afremmen?',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 2,
+    kanaal: 'app',
+    van: 'Sanne',
+    naar: 'Marco',
+    tekst: 'Nee. Hij heeft een punt.',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'app',
+    van: 'Marco',
+    naar: 'Sanne',
+    tekst: 'Dat is toch…',
+    typIndicator: true,
+  },
+];
+
 export const COLD_OPEN = {
   1: {
     place: 'VILLA VAN GORP, OISTERWIJK',
@@ -9,6 +58,7 @@ export const COLD_OPEN = {
       ['ERIK', 'En het dashboard liegt niet.'],
       ['', 'Maandag, 09:14. Het verzuim is weer gestegen.'],
     ] as [string, string][],
+    onderstroom: A4_R1_ONDERSTROOM,
   },
   2: {
     place: 'HAL 3, VOSSENBERG',
@@ -20,5 +70,6 @@ export const COLD_OPEN = {
       ['ANS', 'Ik heb deze week maar twee uur op de vloer gestaan. De rest was overleg.'],
       ['', 'Dinsdag, 09:14. Piotrs pas werkt niet meer.'],
     ] as [string, string][],
+    onderstroom: A4_R2_ONDERSTROOM,
   },
 } as const;

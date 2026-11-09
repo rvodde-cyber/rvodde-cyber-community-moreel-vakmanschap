@@ -36,7 +36,7 @@ Voor `introBeeldRechts` zet het register **`introBeeldFocus`** (`{ x, y }` in pr
 | --- | --- | --- |
 | Prikbord / briefje (dilemma Wim) | A2 | Placeholder of geen fotorealistisch asset — `BriefjePanel` is tekst |
 | Telefoon met sms (2009) | A3 | Styling in `SmsDilemmaPanel`; optioneel referentiebeeld |
-| App-scherm (neutraal) | A5 | Styling in `AppDilemmaPanel` |
+| Lens / privébericht (neutraal) | A5 | Styling in `LensDilemmaPanel` + `Onderstroom` lens |
 | Restaurant 2009 | A3 | In slot/cold hergebruik I3 of apart beeld — nog niet akkoord |
 | Schuur 2036 met kist (slot A5) | A5 | Cues in `buildSlotEp5`; beeld hergebruik **I5** of apart — inhoud akkoord open |
 

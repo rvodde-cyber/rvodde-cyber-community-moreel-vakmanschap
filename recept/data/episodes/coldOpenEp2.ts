@@ -1,8 +1,74 @@
+import type { OnderstroomInsert } from './coldOpenModel';
+
 type Ep2Cold = {
   place: string;
   img: string;
   lines: readonly [string, string][];
+  onderstroom?: readonly OnderstroomInsert[];
 };
+
+const EP2_R1_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Lies',
+    naar: 'Gerrit',
+    tekst: 'Hij weet zijn naam niet.',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Gerrit',
+    naar: 'Lies',
+    tekst: 'Dennis. Sinds maart. Niet hier zeggen.',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Lies',
+    naar: 'Gerrit',
+    tekst: 'Waarom niet?',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Gerrit',
+    naar: 'Lies',
+    tekst: 'Dan staat hij voor schut.',
+    typIndicator: true,
+  },
+];
+
+const EP2_R2_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 2,
+    kanaal: 'plakbriefje',
+    van: 'Lies',
+    naar: 'Gerrit',
+    tekst: 'Veertig handtekeningen. Hij schrikt.',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Lies',
+    naar: 'Gerrit',
+    tekst: 'Wat doen we als hij nee zegt?',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'plakbriefje',
+    van: 'Gerrit',
+    naar: 'Lies',
+    tekst: 'Dan teken ik ook.',
+  },
+];
 
 export const COLD_OPEN_EP2: { 1: Ep2Cold; 2: Ep2Cold } = {
   1: {
@@ -15,6 +81,7 @@ export const COLD_OPEN_EP2: { 1: Ep2Cold; 2: Ep2Cold } = {
       ['HARRIE', 'Die ken ik wel. Even denken... Toch?'],
       ['', 'Niemand maakt vandaag nog een heel worstenbroodje.'],
     ],
+    onderstroom: EP2_R1_ONDERSTROOM,
   },
   2: {
     place: 'KANTINE, LOVEN',
@@ -27,5 +94,6 @@ export const COLD_OPEN_EP2: { 1: Ep2Cold; 2: Ep2Cold } = {
       ['GERRIT', 'Veertig handtekeningen is veel, Harrie.'],
       ['', 'Donderdag, kwart over vier. Tussen de loonzakjes zit een briefje zonder naam.'],
     ],
+    onderstroom: EP2_R2_ONDERSTROOM,
   },
 };

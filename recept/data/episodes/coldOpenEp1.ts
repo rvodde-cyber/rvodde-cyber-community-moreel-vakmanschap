@@ -1,8 +1,58 @@
+import type { OnderstroomInsert } from './coldOpenModel';
+
 type Ep1Cold = {
   place: string;
   img: string;
   lines: readonly [string, string][];
+  onderstroom?: readonly OnderstroomInsert[];
 };
+
+const EP1_R1_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 3,
+    kanaal: 'kantlijn',
+    van: 'Lies',
+    tekst: 'Tien keer zoveel. En wie staat er morgen om zes uur in de schuur?',
+    handschrift: 'potlood',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 4,
+    kanaal: 'kantlijn',
+    van: 'Gerrit',
+    tekst: 'IK. WEER.',
+    handschrift: 'blokletters',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 6,
+    kanaal: 'kantlijn',
+    van: 'Lies',
+    tekst: 'Hij hoort alleen wat hij wil horen.',
+    doorgehaald: true,
+    handschrift: 'potlood',
+  },
+];
+
+const EP1_R2_ONDERSTROOM: readonly OnderstroomInsert[] = [
+  {
+    type: 'onderstroom',
+    afterIndex: 2,
+    kanaal: 'kantlijn',
+    van: 'Lies',
+    tekst: 'Ze vragen niet voor niets vrij.',
+    handschrift: 'potlood',
+  },
+  {
+    type: 'onderstroom',
+    afterIndex: 2,
+    kanaal: 'kantlijn',
+    van: 'Gerrit',
+    tekst: 'ZE ZIJN MOE, LIES. IK OOK.',
+    handschrift: 'blokletters',
+  },
+];
 
 export const COLD_OPEN_EP1: { 1: Ep1Cold; 2: Ep1Cold } = {
   1: {
@@ -18,6 +68,7 @@ export const COLD_OPEN_EP1: { 1: Ep1Cold; 2: Ep1Cold } = {
       ['HARRIE', 'Dat red ik wel.'],
       ['', 'Maandag, half zeven. In de schuur wachten vier problemen tegelijk.'],
     ],
+    onderstroom: EP1_R1_ONDERSTROOM,
   },
   2: {
     place: 'SCHUUR, BERKEL-ENSCHOT',
@@ -29,5 +80,6 @@ export const COLD_OPEN_EP1: { 1: Ep1Cold; 2: Ep1Cold } = {
       ['GERRIT', 'De mensen willen gewoon aandacht, ze willen gezien worden, Harrie.'],
       ['', "Donderdag, kwart voor vijf. Tussen de pagina's van het kasboek zit een briefje."],
     ],
+    onderstroom: EP1_R2_ONDERSTROOM,
   },
 };

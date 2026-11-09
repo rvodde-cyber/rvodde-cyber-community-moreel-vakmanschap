@@ -12,7 +12,7 @@ export const DILEMMA_EP5_SCHRIFT = {
   privéBericht: {
     van: 'Anne-Fleur',
     tekst: BERICHT,
-    kanaal: 'app',
+    kanaal: 'lens',
     dil: true,
   },
   keuzes: [

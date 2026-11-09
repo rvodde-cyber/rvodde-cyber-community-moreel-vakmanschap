@@ -27,7 +27,7 @@ export function HomeScreen({
   onStart,
   onResume,
 }: Props) {
-  const { openHowto, openGloss, openSettings } = useUiModals();
+  const { openHowto, openGloss, openSettings, openUitlegPage } = useUiModals();
   const nameOk = name.trim().length >= 2;
 
   const start = (episode: GameUiState['episode']) => {
@@ -149,6 +149,9 @@ export function HomeScreen({
 
         <footer className="landing-foot">
           <p className="landing-foot__line">VAN GORP DRONES / VOSSENBERG, TILBURG / 2026</p>
+          <button type="button" className="btn ghost landing-uitleg-btn" onClick={openUitlegPage}>
+            Uitleg en spelregels
+          </button>
           <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
         </footer>
       </div>

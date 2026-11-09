@@ -24,11 +24,14 @@ import type { DilemmaDef } from './dilemmaDef';
 import { TIJDGEEST, type Tijdgeest } from './tijdgeest';
 import { GESPREKSKAARTEN, type Gesprekskaart } from '../gesprekskaarten';
 import { OVERSTAP_UITLEG_A4 } from './overstapUitlegA4';
+import type { OnderstroomInsert } from './coldOpenModel';
 
 export type ColdOpenDef = {
   place: string;
   img: string;
   lines: readonly [string, string][];
+  /** Zichtbaar alleen bij `onderstroomActief`. Gesproken regels in `lines` blijven de golden-referentie. */
+  onderstroom?: readonly OnderstroomInsert[];
 };
 
 export type RoundUiSlice = {
@@ -90,6 +93,8 @@ export type EpisodeContent = {
   gesprekskaart: Gesprekskaart;
   /** Teamgesprek ronde 1; A4-demo standaard uit (golden-flow). */
   gesprekskaartActief: boolean;
+  /** Onderstroom in cold opens; A4 standaard uit (golden demo). */
+  onderstroomActief: boolean;
   /** Introfase: posterindeling met beeld rechts (A4-demo uit). */
   introBeeldRechts: boolean;
   /** Alleen bij `introBeeldRechts: true` — `object-position` voor cover-beeld. */
@@ -235,6 +240,7 @@ const EPISODE_1_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[1],
   gesprekskaart: GESPREKSKAARTEN[1],
   gesprekskaartActief: true,
+  onderstroomActief: true,
   ...introEpisodeFields(1),
 };
 
@@ -283,6 +289,7 @@ const EPISODE_2_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[2],
   gesprekskaart: GESPREKSKAARTEN[2],
   gesprekskaartActief: true,
+  onderstroomActief: true,
   ...introEpisodeFields(2),
 };
 
@@ -331,6 +338,7 @@ const EPISODE_3_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[3],
   gesprekskaart: GESPREKSKAARTEN[3],
   gesprekskaartActief: true,
+  onderstroomActief: true,
   ...introEpisodeFields(3),
 };
 
@@ -351,7 +359,7 @@ const EPISODE_5_CONTENT: EpisodeContent = {
   coldOpen: { 1: COLD_OPEN_EP5[1], 2: COLD_OPEN_EP5[2] },
   dilemma: DILEMMA_EP5_SCHRIFT,
   slotLines: {
-    ronde1: (_res, _r) => ['VOSSENBERG', 'Optivora wacht. In ronde 2 komt het appbericht over het schrift.'],
+    ronde1: (_res, _r) => ['VOSSENBERG', 'Optivora wacht. In ronde 2 komt een bericht op je lens over het schrift.'],
     finale: () => [
       ['', ''],
       ['', ''],
@@ -381,6 +389,7 @@ const EPISODE_5_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[5],
   gesprekskaart: GESPREKSKAARTEN[5],
   gesprekskaartActief: true,
+  onderstroomActief: true,
   ...introEpisodeFields(5),
 };
 
@@ -408,6 +417,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[4],
   gesprekskaart: GESPREKSKAARTEN[4],
   gesprekskaartActief: false,
+  onderstroomActief: false,
   overstapUitleg: OVERSTAP_UITLEG_A4,
   ...introEpisodeFields(4),
 };

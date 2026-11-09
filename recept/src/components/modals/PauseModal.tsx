@@ -4,7 +4,7 @@ import type { GameUiState } from '../../game/uiTypes';
 
 type Props = {
   onResume: () => void;
-  onHowto: () => void;
+  onUitleg: () => void;
   onGloss: () => void;
   onSettings?: () => void;
   onMenu: () => void;
@@ -12,7 +12,7 @@ type Props = {
   gameDispatch?: (a: GameAction) => void;
 };
 
-export function PauseModal({ onResume, onHowto, onGloss, onSettings, onMenu, gameState, gameDispatch }: Props) {
+export function PauseModal({ onResume, onUitleg, onGloss, onSettings, onMenu, gameState, gameDispatch }: Props) {
   return (
     <>
       <p className="k">GEPAUZEERD</p>
@@ -20,7 +20,12 @@ export function PauseModal({ onResume, onHowto, onGloss, onSettings, onMenu, gam
       <p className="note">De beslistijd staat stil zolang dit venster open is. Jullie voortgang wordt bewaard.</p>
       {gameState && gameDispatch ? <DocentPausePanel state={gameState} dispatch={gameDispatch} /> : null}
       <button type="button" className="btn" onClick={onResume}>Hervatten</button>
-      <button type="button" className="btn ghost" onClick={onHowto}>Hoe het werkt</button>
+      <button type="button" className="btn ghost" onClick={onUitleg}>
+        Uitleg en spelregels
+      </button>
+      <button type="button" className="btn ghost" onClick={onUitleg}>
+        Hoe het werkt
+      </button>
       <button type="button" className="btn ghost" onClick={onGloss}>Wie is wie en begrippen</button>
       {onSettings ? (
         <button type="button" className="btn ghost" onClick={onSettings}>Instellingen</button>

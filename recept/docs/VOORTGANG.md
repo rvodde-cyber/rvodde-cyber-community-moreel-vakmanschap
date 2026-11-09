@@ -1,10 +1,12 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **6 november 2026** — intro-beeld smal (focus + ratio) + onderzoeken + intro-split + test/build
+Laatste update: **9 november 2026** — uitlegpagina + openingsscène in UI
 
 ## Deze sessie
 
 | Onderdeel | Status |
+| --- | --- |
+| **Uitleg en spelregels** | `content/uitleg.ts`, `UitlegScreen.tsx`, routing via `App.tsx` + `UiModalsContext`; CSS `uitleg-*`; tests `uitlegScreen.test.tsx`; docs §9b `DESIGNGIDS.md`; zichtbare **cold open** → **openingsscène** (`StepsNav`, docentpaneel). |
 | --- | --- |
 | **Stap 2 — onderzoek A1/A2/A3/A5** | Per ronde **5** onderzoeken (`t`, `quote`, `sig`); inhoud uit opdracht; r1 ≠ r2 in `a1Rounds` … `a5Rounds`. Schema `acties`: 3–6 items. UI: `.tiles--onderzoek` (3+2 breed, 1 kolom &lt;720px); `quote` 16px/1.55, `sig` uppercase. `docs/TAALGIDS.md` § Signaalwoorden; `STAP-FLOW-ONDERZOEK.md` § Onderzoeken. **A4** `data/rounds.ts` ongewijzigd. Onderzoek-id’s wegen **niet** mee in motor/golden (alleen UI + export). Test: `onderzoekActiesInterventie.test.ts`. |
 | **Intro-split (introBeeldRechts)** | Scrollcontainer `#intro-split-scroll` …; kaderfix + **telefoon `aspect-ratio 4/5`**, **tablet `4/3`**, caps **`min(55dvh, 520/560px)`**; register **`introBeeldFocus`** → `--intro-focus-x/y` op `.intro-beeld`; polaroid **zonder** vignet, andere kaders **`.intro-beeld__shade--soft`** (20% hoogte, max 0,25). Zie `DESIGNGIDS.md`, focusparen in `docs/BEELDEN-CHECK.md`. |
@@ -26,7 +28,7 @@ Laatste update: **6 november 2026** — intro-beeld smal (focus + ratio) + onder
 | **A4** | Demo leidend (`data/rounds.ts`); golden tests ongewijzigd |
 | **Taalronde cold opens** | A2, A3, A4 (2 regels), A5 letterlijk; Lotte → **Anne-Fleur** in actieve data/docs |
 | Nabespreking A1 t/m A5 | Nog **concept** |
-| Tests / build | **`npm test`** **211** groen; **`npm run build`** OK |
+| Tests / build | **`npm test`** en **`npm run build`** — zie laatste run na uitlegpagina |
 | Viewport stap 2 (handmatige check) | **360px:** onderzoek-tegels 1 kolom (`tiles--onderzoek`), geen horizontale scroll van de pagina. **768px:** boven 720px breed wordt het raster 3+2. **1920px:** 3+2 layout; lange titels/teksen wrappen in de tegel. |
 
 ## Live demo

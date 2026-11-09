@@ -1,14 +1,18 @@
-import { useCallback, useEffect, useState, type MouseEvent } from 'react';
+import { useCallback, useEffect, useMemo, useState, type MouseEvent } from 'react';
 import { COLD_SCENE, INTRO_SCENE } from '@data/sceneCodes';
+import { coldOpenTimelineForRound } from '@data/episodes/coldOpenFlow';
 import { episodeContent } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
 import { usesBeslistijdTimer } from '@data/episodes/motor';
+import type { ColdTimelineStep } from '@data/episodes/coldOpenModel';
 import { SceneBackground } from '../../components/SceneBackground';
 import { HelpLinks } from '../../components/HelpLinks';
+import { Onderstroom, OnderstroomTyping } from '../../components/Onderstroom';
 import { useUiModals } from '../../context/UiModalsContext';
 import { unlockAudio } from '../../audio/sfx';
+import { speechStepAriaLabel } from '../../game/coldOpenA11y';
 import { coldSceneTaskLine, coldTrailerIntroTaskLine } from '../../game/coldOpenCopy';
-import { coldLineDurationMs, shouldAutoAdvanceCold } from '../../game/coldOpenTiming';
+import { coldStepDurationMs, shouldAutoAdvanceCold } from '../../game/coldOpenTiming';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 import { usePrefersReducedMotion } from '../../lib/prefersReducedMotion';
@@ -25,6 +29,15 @@ function coldBackground(state: GameUiState, round: 1 | 2) {
   }
   const sc = COLD_SCENE[state.episode as keyof typeof COLD_SCENE];
   return <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />;
+}
+
+function speechAtOrBefore(steps: readonly ColdTimelineStep[], index: number) {
+  for (let i = index; i >= 0; i--) {
+    const s = steps[i];
+    if (s?.kind === 'speech') return s;
+  }
+  const first = steps[0];
+  return first?.kind === 'speech' ? first : { kind: 'speech' as const, speaker: '', text: '' };
 }
 
 export function ColdPhase({
@@ -52,6 +65,10 @@ export function ColdPhase({
   const content = episodeContent(state.episode);
   const meta = episodeMeta(state.episode);
   const sb = content.coldOpen[round] ?? content.coldOpen[1]!;
+  const timeline = useMemo(
+    () => coldOpenTimelineForRound(state.episode, round),
+    [state.episode, round, content.onderstroomActief, sb],
+  );
   const skeleton = content.roundCount === 1;
   const multiRound = content.roundCount === 2;
   const hasTimer = usesBeslistijdTimer(state.episode);
@@ -65,9 +82,20 @@ export function ColdPhase({
   const trailerKind = skeleton ? 'trailer-r1' : round === 1 ? 'trailer-r1' : 'trailer-r2';
   const kick = skeleton || !multiRound ? content.kick : `AFLEVERING ${state.episode} / RONDE ${round}`;
 
-  const line = sb.lines[roundUi.coldSub] ?? ['', ''];
-  const last = roundUi.coldSub >= sb.lines.length - 1;
+  const step = timeline[roundUi.coldSub];
+  const last = roundUi.coldSub >= timeline.length - 1;
   const manualAdvance = reducedMotion;
+
+  const displaySpeech = step?.kind === 'speech' ? step : speechAtOrBefore(timeline, roundUi.coldSub);
+
+  const onderstroomStack = useMemo(() => {
+    const out: Extract<ColdTimelineStep, { kind: 'onderstroom' }>[] = [];
+    for (let i = 0; i <= roundUi.coldSub; i++) {
+      const s = timeline[i];
+      if (s?.kind === 'onderstroom') out.push(s);
+    }
+    return out;
+  }, [timeline, roundUi.coldSub]);
 
   const advanceLine = useCallback(() => {
     if (last) return;
@@ -79,13 +107,13 @@ export function ColdPhase({
   }, [dispatch]);
 
   useEffect(() => {
-    if (!roundUi.trailerDone || last || manualAdvance) return;
+    if (!roundUi.trailerDone || last || manualAdvance || !step) return;
     const gate = { reducedMotion: false, paused: autoPaused, tabHidden };
     if (!shouldAutoAdvanceCold(gate)) return;
-    const ms = coldLineDurationMs(line);
+    const ms = coldStepDurationMs(step);
     const t = window.setTimeout(advanceLine, ms);
     return () => window.clearTimeout(t);
-  }, [roundUi.trailerDone, roundUi.coldSub, last, manualAdvance, autoPaused, tabHidden, line, advanceLine]);
+  }, [roundUi.trailerDone, roundUi.coldSub, last, manualAdvance, autoPaused, tabHidden, step, advanceLine]);
 
   useEffect(() => {
     if (!roundUi.trailerDone) return;
@@ -143,6 +171,8 @@ export function ColdPhase({
     tabHidden,
   });
 
+  const speechAria = speechStepAriaLabel(displaySpeech);
+
   return (
     <div
       className="cine cold-scene"
@@ -155,14 +185,29 @@ export function ColdPhase({
         style={{ background: 'linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.2) 70%)' }}
       />
       {head}
-      <div className="cine-in">
+      <div className="cine-in cold-open-body">
         <p className="kick">{sb.place}</p>
-        <p className="sub" aria-live="polite">
-          {line[0] ? <span className="who">{line[0]}</span> : null}
-          {line[1]}
+        {onderstroomStack.length > 0 || step?.kind === 'onderstroom-typing' ? (
+          <div className="cold-onderstroom-stack" aria-live="off">
+            {onderstroomStack.map((item, idx) => (
+              <Onderstroom key={`${idx}-${item.line.tekst.slice(0, 12)}`} line={item.line} reducedMotion={reducedMotion} />
+            ))}
+            {step?.kind === 'onderstroom-typing' ? (
+              <OnderstroomTyping
+                van={step.van}
+                naar={step.naar}
+                kanaal={step.kanaal}
+                reducedMotion={reducedMotion}
+              />
+            ) : null}
+          </div>
+        ) : null}
+        <p className="sub" aria-live="polite" aria-label={speechAria}>
+          {displaySpeech.speaker ? <span className="who">{displaySpeech.speaker}</span> : null}
+          {displaySpeech.text}
         </p>
         <div className="cold-progress" aria-hidden="true">
-          {sb.lines.map((_, i) => (
+          {timeline.map((_, i) => (
             <span key={i} className={i <= roundUi.coldSub ? 'on' : undefined} />
           ))}
         </div>

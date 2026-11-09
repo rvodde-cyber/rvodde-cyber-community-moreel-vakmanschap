@@ -407,7 +407,7 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         hidden: applyDilemmaHidden(state.hidden, def, choice, text),
       };
 
-      if (choice === 'groep' && def.privéBericht.kanaal === 'app') {
+      if (choice === 'groep' && (def.privéBericht.kanaal === 'app' || def.privéBericht.kanaal === 'lens')) {
         const defs =
           state.episode === 5 && def.id === 'ep5-schrift'
             ? dilemmaGroepBerichtenA5(state.playerName)

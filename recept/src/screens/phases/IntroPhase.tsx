@@ -153,7 +153,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           {isA5 ? (
             <>
               <p className="body">
-                Er ligt een voorstel van Optivora op tafel. In de app wacht een privébericht van Anne-Fleur over het
+                Er ligt een voorstel van Optivora op tafel. Op jullie lens wacht een privébericht van Anne-Fleur over het
                 receptschrift in de schuur. Jullie beslissen straks samen wat jullie daarmee doen.
               </p>
               <div className="carry">

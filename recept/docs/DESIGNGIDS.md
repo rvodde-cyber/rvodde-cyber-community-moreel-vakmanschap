@@ -10,6 +10,8 @@ Laatste update: **6 november 2026** (intro-kaders + intro-split scroll). Afgelei
 
 **Landingspagina & intro:** posterlook — hoofdstuk **§9** hieronder; beeld rechts via `introBeeldRechts` in `EPISODE_CONTENT`.
 
+**Uitleg en spelregels:** volledig scherm in posterlook — hoofdstuk **§9b**; teksten in `content/uitleg.ts`, UI `src/screens/UitlegScreen.tsx`.
+
 ## 1. Principes
 
 - **Één bediening:** één React-app (`src/`), state via `useReducer` + `localStorage` (`recept-game-v4`). Geen aparte student/docent-build; docent via `?docent=1` (`useDocentMode`).
@@ -79,15 +81,29 @@ Trailer-scripts roepen geluid aan via `FilmOverlay.tsx` + `filmResolve.ts` (o.a.
 | `PersonAvatar.tsx` | Portret/silhouet persoon |
 | `PersonCard.tsx` | Wie-is-wie kaart |
 | `PhonePanel.tsx` | Groepsapp/privé (tabs, berichten) |
+| `Onderstroom.tsx` | Cold open: stiekeme berichten per kanaal (zie `docs/ONDERSTROOM.md`) |
+| `LensDilemmaPanel.tsx` | A5 privédilemma op de lens (glas-skin) |
 | `SannePanel.tsx` | Sanne-inhoud waar gekoppeld |
 | `SceneBackground.tsx` | Beeld uit `beeldenCheck` / silhouet |
 | `StepsNav.tsx` | Fasenstappen in controlekamer |
 | `TijdgeestGeluid.tsx` | Optioneel sfeergeluid tijdgeest (aan/uit, tekstalternatief) |
 | `TaskBar.tsx` | Opdrachtbalk boven fase-inhoud |
 | `modals/GlossaryModal.tsx` | Begrippen |
-| `modals/HowItWorksModal.tsx` | Hoe het werkt |
+| `screens/UitlegScreen.tsx` | Uitleg en spelregels (vervangt modal „Hoe het werkt”) |
+| `modals/HowItWorksModal.tsx` | Legacy-korte uitleg (niet meer in hoofdmenu) |
 | `modals/RoleBelangModal.tsx` | MT rondje (belang → standpunt) |
 | `modals/SettingsModal.tsx` | Instellingen (o.a. toegankelijkheid) |
+
+## 5b. Onderstroom en lens-skin (2036)
+
+Uitgebreid: **`docs/ONDERSTROOM.md`**.
+
+| Onderdeel | Waar |
+| --- | --- |
+| Cold open onderstroom | `ColdPhase.tsx`, `Onderstroom.tsx`, skins in `recept.css` (`.onderstroom-*`) |
+| Timeline / data | `coldOpenTimeline.ts`, `onderstroom[]` + `afterIndex` op `ColdOpenDef` |
+| **Lens (A5)** | Netvliesprojectie: `backdrop-filter`, lage opacity, label **Privé · buiten het bedrijfsplatform**; typografie afstandelijk, geen apparaatrand. Hergebruik: `.onderstroom-lens-glas` in cold open én `LensDilemmaPanel` (`.lens-dilemma-panel`). |
+| A4 onderstroom | Data aanwezig, `onderstroomActief: false` — golden demo ongewijzigd |
 
 ## 6. Spanningselementen in aflevering 4 (waar in code)
 
@@ -146,6 +162,15 @@ Status `playMode` uit `data/episodes/meta.ts`. „Full” = zelfde diepte als A4
 - JPG laadt direct uit `public/beelden/`; bij `onerror` placeholder **BEELD &lt;code&gt; VOLGT**.
 - **A4:** `introBeeldRechts: false` → bestaande `.cine`-layout ongewijzigd.
 - Register: `introBeeldAlt`, `introBeeldTekst`, optioneel **`introBeeldFocus`**, koppeling `INTRO_SCENE` / `data/sceneCodes.ts`.
+
+## 9b. Uitlegpagina (nov 2026)
+
+- **Scherm:** `UitlegScreen.tsx`, klassenprefix **`uitleg-*`** in `recept.css` — donkere posterachtergrond (geen full-bleed JPG), tokens `--bg`, `--cream`, `--gold`, `--cyan`, `--data`/Chakra Petch, koppen Instrument Serif via `PosterTypographyScope`.
+- **Tekstbron:** `content/uitleg.ts` — elf secties + stapkaarten, meterstabel, tijdlijn; optionele **`overrideA4`** per sectie wanneer speler vanuit deel 4 opent (`episodeHint` uit `App.tsx`).
+- **Navigatie:** landingsvoettekst **Uitleg en spelregels**; pauzemenu **Uitleg en spelregels** + **Hoe het werkt** (zelfde bestemming); `HelpLinks` **Hoe het werkt** → `openHowto` opent het scherm. Terug (`← Terug`) sluit het scherm en keert terug naar landingspagina of lopend spel (timer blijft gepauzeerd bij overstap vanuit pauze).
+- **Layout:** desktop sticky inhoudsopgave (11 ankers); mobiel inklapbare **Spring naar**-balk; vijf stapkaarten met groot serif-cijfer; tabellen meters en tijdlijn.
+- **Print:** `@media print` — wit papier, zwarte tekst, navigatie/foot uit.
+- **Toegankelijkheid:** zichtbare focus, logische kopstructuur (één `h1`), `prefers-reduced-motion` op `.landing-fade`; geen externe font-requests (zelfde als landingspagina).
 
 ## Introscherm scroll en hoogte (6 nov 2026)
 

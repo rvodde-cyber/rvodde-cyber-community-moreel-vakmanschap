@@ -10,18 +10,19 @@ import {
 } from 'react';
 import { Modal } from '../components/Modal';
 import { GlossaryModal } from '../components/modals/GlossaryModal';
-import { HowItWorksModal } from '../components/modals/HowItWorksModal';
 import { PauseModal } from '../components/modals/PauseModal';
 import { SettingsModal } from '../components/modals/SettingsModal';
 import { RoleBelangModal } from '../components/modals/RoleBelangModal';
 
 export type ModalKind = 'howto' | 'gloss' | 'pause' | 'role' | 'settings' | null;
+export type UitlegOrigin = 'landing' | 'game';
 
 type UiModalsValue = {
   openHowto: () => void;
   openGloss: () => void;
   openPause: () => void;
   openSettings: () => void;
+  openUitlegPage: () => void;
   openRole: (roleId: string) => void;
   close: () => void;
   round: 1 | 2;
@@ -34,20 +35,22 @@ const Ctx = createContext<UiModalsValue | null>(null);
 type ProviderProps = {
   children: ReactNode;
   onExitMenu: () => void;
+  onOpenUitleg?: (from: UitlegOrigin) => void;
   gameState?: import('../game/uiTypes').GameUiState | null;
   gameDispatch?: (a: import('../game/gameReducer').GameAction) => void;
 };
 
-export function UiModalsProvider({ children, onExitMenu, gameState = null, gameDispatch }: ProviderProps) {
+export function UiModalsProvider({ children, onExitMenu, onOpenUitleg, gameState = null, gameDispatch }: ProviderProps) {
   const [kind, setKind] = useState<ModalKind>(null);
   const [round, setRound] = useState<1 | 2>(1);
   const [roleId, setRoleId] = useState<string | null>(null);
   const [roleRevealed, setRoleRevealed] = useState(false);
   const roleSpokeRef = useRef<(id: string) => void>(() => {});
 
-  const close = useCallback(() => {
+  const close = useCallback((resumeAfterPause?: boolean) => {
+    const resume = resumeAfterPause !== false;
     setKind((k) => {
-      if (k === 'pause') gameDispatch?.({ type: 'SET_TIMER_ON', on: true });
+      if (k === 'pause' && resume) gameDispatch?.({ type: 'SET_TIMER_ON', on: true });
       return null;
     });
     setRoleId(null);
@@ -60,7 +63,14 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
 
   const value = useMemo<UiModalsValue>(
     () => ({
-      openHowto: () => setKind('howto'),
+      openHowto: () => {
+        const from: UitlegOrigin = gameState ? 'game' : 'landing';
+        onOpenUitleg?.(from);
+      },
+      openUitlegPage: () => {
+        const from: UitlegOrigin = gameState ? 'game' : 'landing';
+        onOpenUitleg?.(from);
+      },
       openGloss: () => setKind('gloss'),
       openPause: () => {
         gameDispatch?.({ type: 'SET_TIMER_ON', on: false });
@@ -77,7 +87,7 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
       setRound,
       setRoleSpokeHandler,
     }),
-    [close, round, setRoleSpokeHandler, gameDispatch],
+    [close, round, setRoleSpokeHandler, gameDispatch, gameState, onOpenUitleg],
   );
 
   const handleRoleSpoke = () => {
@@ -88,16 +98,16 @@ export function UiModalsProvider({ children, onExitMenu, gameState = null, gameD
   return (
     <Ctx.Provider value={value}>
       {children}
-      <Modal open={kind === 'howto'} label="Hoe het werkt" onClose={close}>
-        <HowItWorksModal onClose={close} onOpenGlossary={() => setKind('gloss')} />
-      </Modal>
       <Modal open={kind === 'gloss'} label="Wie is wie en begrippen" onClose={close}>
         <GlossaryModal round={round} onClose={close} />
       </Modal>
       <Modal open={kind === 'pause'} label="Pauze" onClose={close}>
         <PauseModal
           onResume={close}
-          onHowto={() => setKind('howto')}
+          onUitleg={() => {
+            close(false);
+            onOpenUitleg?.('game');
+          }}
           onGloss={() => setKind('gloss')}
           onSettings={() => setKind('settings')}
           onMenu={() => {

@@ -12,8 +12,8 @@ type Props = {
   periodKey: PeriodKey;
 };
 
-/** Privé-app (2036, neutrale skin) — dilemma met kanaal app + dil; geen merk-UI. */
-export function AppDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
+/** Privé-bericht op de lens (2036) — zelfde glas-skin als Onderstroom lens. */
+export function LensDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
   const theme = PERIOD_THEMES[periodKey];
   const { dilemma } = state;
   const showChoices =
@@ -23,32 +23,32 @@ export function AppDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
 
   return (
     <section
-      className="panel app-dilemma-panel"
-      aria-label="Bericht in app, alleen voor jullie"
+      className="panel lens-dilemma-panel"
+      aria-label="Privébericht op je lens, alleen voor jullie"
       style={
         {
-          '--app-bg': theme.colors.panel,
-          '--app-ink': theme.colors.text,
-          '--app-muted': theme.colors.muted,
-          '--app-accent': theme.colors.accent,
+          '--lens-bg': theme.colors.panel,
+          '--lens-ink': theme.colors.text,
+          '--lens-muted': theme.colors.muted,
+          '--lens-accent': theme.colors.accent,
         } as React.CSSProperties
       }
     >
       <div className="ph">
-        <h2>APP</h2>
+        <h2>LENS</h2>
         <span className="live">PRIVÉ</span>
       </div>
-      <div className="app-device" role="region" aria-labelledby="app-van">
-        <div className="app-device-chrome" aria-hidden="true" />
-        <p id="app-van" className="app-van">
-          Van {def.privéBericht.van}
-        </p>
-        <div className="app-body-wrap">
-          <p className="app-body">{def.privéBericht.tekst}</p>
+      <div className="lens-dilemma-glas-wrap" role="region" aria-labelledby="lens-van">
+        <p className="onderstroom-lens-label">Privé · buiten het bedrijfsplatform</p>
+        <div className="onderstroom-lens-glas lens-dilemma-glas">
+          <p id="lens-van" className="onderstroom-lens-meta">
+            Van {def.privéBericht.van}
+          </p>
+          <p className="onderstroom-lens-tekst lens-dilemma-body">{def.privéBericht.tekst}</p>
         </div>
       </div>
       {showChoices ? (
-        <div className="app-keuzes">
+        <div className="lens-keuzes">
           <p className="lab">Moreel dilemma — {def.titel}</p>
           <DilemmaChoices
             def={def}
@@ -63,7 +63,7 @@ export function AppDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
           Jullie besluit over dit bericht is vastgelegd.
         </p>
       ) : (
-        <p className="note">Het bericht staat klaar. Jullie beslissen straks in het MT-overleg.</p>
+        <p className="note">Het bericht staat klaar op je lens. Jullie beslissen straks in het MT-overleg.</p>
       )}
     </section>
   );

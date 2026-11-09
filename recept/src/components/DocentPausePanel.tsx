@@ -6,7 +6,7 @@ import type { GameUiState, Phase } from '../game/uiTypes';
 
 const PHASES: { id: Phase; label: string }[] = [
   { id: 'intro', label: 'Intro' },
-  { id: 'cold', label: 'Cold open' },
+  { id: 'cold', label: 'Openingsscène' },
   { id: 'onderzoek', label: 'Onderzoek' },
   { id: 'besluit', label: 'Besluit' },
   { id: 'gesprek', label: 'Teamgesprek' },

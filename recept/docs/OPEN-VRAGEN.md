@@ -22,6 +22,12 @@ Laatste update: **6 november 2026** (intro-split scroll + worstenbroodje + Van G
 | **Gesprekskaarten** | Fase `gesprek`, export v2; A4 demo uit; zie `docs/GESPREKSKAART.md`. |
 | **Anne-Fleur** | Lotte hernoemd; nazaat founders, 2036-register zonder dialect/tonval. |
 
+## Open (speeltijd, 9 nov 2026)
+
+| Onderwerp | Actie |
+| --- | --- |
+| **Totale speeltijd** | Nog een schatting op de uitlegpagina; **meten tijdens de eerste speelsessies** en tekst in sectie Praktisch kalibreren. |
+
 ## Open (tijdgeest, 5 nov 2026)
 
 | Onderwerp | Actie |
