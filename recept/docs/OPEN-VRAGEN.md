@@ -1,6 +1,24 @@
 # Open vragen en aanleveringen
 
-Laatste update: **10 november 2026** (portretten-voorbereiding).
+Laatste update: **10 november 2026** (bundel + beelden).
+
+## Bundel opmerkingen (10 nov 2026)
+
+| Onderwerp | Status |
+| --- | --- |
+| **A4 intro ronde 2** | Vak “De uitdaging” bevat nog **orakeltoon** (“Groei voelt als succes…”) — niet in `intros.nl.ts`; bewust niet gewijzigd |
+| **Glossary symptoom** | “Vraag je steeds af…” in `content/glossary.nl.ts` — orakeltoon, niet gewijzigd |
+| **Trailer >250 kB** | T1, TR2-3, TR4-2, TR5-1, TR5-4: optioneel tweede compressie |
+| **L4** | Kopie van D1 tot eigen shot klaar is |
+
+## Afleveringstrailer-beelden (10 nov 2026)
+
+| Onderwerp | Actie |
+| --- | --- |
+| **TR2-3** | Nog te maken (Firefly) |
+| **T1, W1, C1, L1** | Canonieke bestandsnamen nog te maken; app gebruikt tijdelijke aliassen in `trailerBeeld.ts` |
+| **L4 (dashboard)** | Tijdelijk **D1**; apart dashboard-shot optioneel |
+| **Visuele check** | Richard: 360 / 768 / 1920 px met ontbrekende shots (fallback overslaan) |
 
 ## A4 + rondebalk (10 nov 2026)
 

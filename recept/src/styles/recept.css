@@ -2068,3 +2068,135 @@ select:focus-visible {
   letter-spacing: 0.02em;
 }
 .period-typography--readable .intro-beeld__grain { display: none; }
+
+/* Afleveringstrailer vóór intro (posterlook) */
+.episode-trailer {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: #06080c;
+  color: var(--cream);
+  overflow: hidden;
+}
+.episode-trailer--loading {
+  display: grid;
+  place-items: center;
+}
+.episode-trailer__media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.episode-trailer__shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 3 / 2;
+}
+.episode-trailer__shot--crossfade {
+  transition: opacity 600ms ease;
+}
+.episode-trailer__shot--visible {
+  opacity: 1;
+  z-index: 2;
+}
+.episode-trailer__shot--hidden {
+  opacity: 0;
+  z-index: 1;
+}
+.episode-trailer__shot--geen {
+  transform: none !important;
+  animation: none !important;
+}
+.episode-trailer__shot--in {
+  animation: trailer-kenburns-in var(--shot-ms, 4000ms) ease-out forwards;
+}
+.episode-trailer__shot--uit {
+  animation: trailer-kenburns-uit var(--shot-ms, 4000ms) ease-out forwards;
+}
+.episode-trailer__shot--pan-rechts {
+  animation: trailer-pan-rechts var(--shot-ms, 4000ms) linear forwards;
+}
+.episode-trailer__shot--pan-links {
+  animation: trailer-pan-links var(--shot-ms, 4000ms) linear forwards;
+}
+@keyframes trailer-kenburns-in {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+@keyframes trailer-kenburns-uit {
+  from { transform: scale(1.06); }
+  to { transform: scale(1); }
+}
+@keyframes trailer-pan-rechts {
+  from { transform: scale(1.04) translateX(-2%); }
+  to { transform: scale(1.04) translateX(2%); }
+}
+@keyframes trailer-pan-links {
+  from { transform: scale(1.04) translateX(2%); }
+  to { transform: scale(1.04) translateX(-2%); }
+}
+.episode-trailer__tekst-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: clamp(48px, 12vw, 96px) clamp(16px, 4vw, 40px) clamp(20px, 4vw, 32px);
+  background: linear-gradient(180deg, transparent 0%, rgba(4, 8, 12, 0.55) 35%, rgba(4, 8, 12, 0.88) 100%);
+  pointer-events: none;
+}
+.episode-trailer__tekst {
+  font-family: var(--serif);
+  font-size: clamp(18px, 2.6vw, 26px);
+  line-height: 1.4;
+  margin: 0;
+  max-width: 42ch;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.65);
+}
+.episode-trailer__title {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(12, 20, 28, 0.75), #06080c);
+}
+.episode-trailer__title-mark {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(48px, 12vw, 120px);
+  letter-spacing: 0.12em;
+  margin: 0 0 12px;
+  color: var(--cream);
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+}
+.episode-trailer__title-meta {
+  font-family: var(--data);
+  font-size: clamp(11px, 1.6vw, 14px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--soft);
+  margin: 0;
+}
+.episode-trailer__skip {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 5;
+}
+.intro-trailer-replay {
+  margin-top: 8px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .episode-trailer__shot--crossfade {
+    transition: none;
+  }
+}

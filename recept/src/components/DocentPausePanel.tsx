@@ -5,6 +5,7 @@ import type { GameAction } from '../game/gameReducer';
 import type { GameUiState, Phase } from '../game/uiTypes';
 
 const PHASES: { id: Phase; label: string }[] = [
+  { id: 'trailer', label: 'Trailer' },
   { id: 'intro', label: 'Intro' },
   { id: 'cold', label: 'Openingsscène' },
   { id: 'onderzoek', label: 'Onderzoek' },

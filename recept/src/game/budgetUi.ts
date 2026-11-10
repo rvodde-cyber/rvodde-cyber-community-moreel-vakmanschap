@@ -89,7 +89,7 @@ export function freshGame(): GameUiState {
 
 export function freshEpisode(episode: EpisodeId): GameUiState {
   return {
-    v: 4,
+    v: 5,
     episode,
     opvolging: null,
     conceptLog: [],
@@ -116,6 +116,7 @@ export function freshEpisode(episode: EpisodeId): GameUiState {
       ? initialInterventieMeters(episode as Exclude<EpisodeId, 4>)
       : null,
     tijdgeestGeluidAan: false,
+    trailerGezien: {},
     filmKind: null,
     gok: null,
     gesprekskaarten: [],

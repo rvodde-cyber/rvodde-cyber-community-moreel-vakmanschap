@@ -7,6 +7,7 @@ import type { GesprekskaartExportEntry } from '@data/schemas/gesprekskaart.schem
 import type { BerichtDef, ChatChannel } from '@data/berichten';
 
 export type Phase =
+  | 'trailer'
   | 'intro'
   | 'cold'
   | 'onderzoek'
@@ -84,6 +85,8 @@ export interface GameUiState {
   interventieMeters: InterventieMeterState | null;
   /** Tijdgeest-geluid (optioneel); standaard uit */
   tijdgeestGeluidAan: boolean;
+  /** Afleveringstrailer (vóór intro) eenmalig gezien per deel */
+  trailerGezien: Partial<Record<EpisodeId, boolean>>;
   filmKind: FilmKind | null;
   gok: string | null;
   /** Teamgesprekken (ronde 1) voor docent/export */

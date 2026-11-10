@@ -3,9 +3,7 @@ import { episodeContent } from '@data/episodes/content';
 import { NAAM_KLEUR } from '@data/berichten';
 import { DilemmaChoices } from './DilemmaChoices';
 import { notifyChatToast } from './MessageToast';
-import { PersonAvatar } from './PersonAvatar';
 import { berichtDef } from '../game/chatHelpers';
-import { persoonByVan } from '../lib/persoonLookup';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
 
@@ -104,7 +102,6 @@ export function PhonePanel({ state, dispatch }: Props) {
               );
             }
             const isDil = def.dil && def.id === 'piotr';
-            const persoon = persoonByVan(def.van, state.episode);
             return (
               <div key={def.id}>
                 {dayEl}
@@ -113,7 +110,6 @@ export function PhonePanel({ state, dispatch }: Props) {
                     <span className="lock">{isDil ? 'PRIVÉ  /  MOREEL DILEMMA' : 'PRIVÉ'}</span>
                   ) : null}
                   <div className="bub-head">
-                    {persoon ? <PersonAvatar persoon={persoon} episode={state.episode} size="sm" /> : null}
                     <span className="n" style={{ color: NAAM_KLEUR[first] ?? 'var(--soft)' }}>
                       {def.van}
                     </span>

@@ -17,7 +17,7 @@ export function GlossaryModal({ episode, round, onClose }: Props) {
       <p className="glosh">PERSONEN</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 20 }}>
         {personen.map((p) => (
-          <PersonCard key={p.slug} persoon={p} episode={episode} />
+          <PersonCard key={p.slug} persoon={p} episode={episode} toonPortret />
         ))}
       </div>
       <p className="glosh">BEGRIPPEN</p>

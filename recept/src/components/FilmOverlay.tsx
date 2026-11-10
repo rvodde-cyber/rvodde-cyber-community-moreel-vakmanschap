@@ -3,6 +3,7 @@ import type { FilmCue, FilmScript } from '@data/filmSequences';
 import { TR_UI_LABELS } from '@data/filmSequences';
 import { hum, SFX, unlockAudio } from '../audio/sfx';
 import { usePrefersReducedMotion } from '../lib/prefersReducedMotion';
+import { SpokenLineText } from './SpokenLineText';
 
 const base = import.meta.env.BASE_URL;
 
@@ -110,7 +111,7 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
       </div>
       <div className="tr-sub">
         {sub.who ? <span className="who">{sub.who}</span> : null}
-        {sub.text ?? ''}
+        <SpokenLineText text={sub.text ?? ''} quoted={!!sub.who} />
       </div>
       <div className={`tr-text${centerQ ? ' q' : ''}${centerText ? ' on' : ''}`}>{centerText}</div>
       <div className={`tr-title${titleOn ? ' on' : ''}`}>

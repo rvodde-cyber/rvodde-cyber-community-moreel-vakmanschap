@@ -1,11 +1,11 @@
 import type { GameUiState } from './uiTypes';
 import { freshGame, freshHidden, freshRoundUi } from './budgetUi';
 
-/** Migreer oude saves (v3/v4) naar huidige v4-state (episode, opvolging, chat). */
+/** Migreer oude saves (v3–v5) naar huidige v5-state (episode, opvolging, chat, trailerGezien). */
 export function migrateGameState(raw: unknown): GameUiState | null {
   if (!raw || typeof raw !== 'object') return null;
   const s = raw as GameUiState & { v?: number };
-  if (s.v !== 3 && s.v !== 4) return null;
+  if (s.v !== 3 && s.v !== 4 && s.v !== 5) return null;
 
   const episode = s.episode ?? 4;
   const base = freshGame();
@@ -33,7 +33,8 @@ export function migrateGameState(raw: unknown): GameUiState | null {
   return {
     ...base,
     ...s,
-    v: 4,
+    v: 5,
+    trailerGezien: s.trailerGezien ?? {},
     episode,
     opvolging: s.opvolging ?? null,
     conceptLog: s.conceptLog ?? [],

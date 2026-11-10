@@ -50,16 +50,9 @@ Voor `introBeeldRechts` zet het register **`introBeeldFocus`** (`{ x, y }` in pr
 | A1-BRIEFJE | Briefje tussen kasboekpagina's (UI: tekst in `BriefjePanel`, geen apart beeld) | Geen asset vereist voor speelbare tekst | **nee** |
 | A1-SCHRIFT | Twee handschriften op één pagina (slot beat 6) | Placeholder/silhouet | **nee** |
 
-## Portretten
+## Portretten (legacy sectie)
 
-**Status (10 nov 2026):** bouwsteen `Portret.tsx` + codes per aflevering in `data/personen.ts`. **Nog te maken door Richard (Firefly): 23 prioriteit 1 + 5 prioriteit 2 = 28 bestanden.** Volledige lijst: `docs/PORTRETTEN-LIJST.md`. Pad: `public/beelden/portretten/P-<NAAM>-<JAAR>.webp` (800×800, max 150 kB). Tot aanlevering: initialen-tegel in UI.
-
-| Prioriteit | Aantal | Akkoord |
-| --- | --- | --- |
-| 1 (Wie is wie-tegels) | 23 | **nee** |
-| 2 (overig verhaal) | 5 | **nee** |
-
-Richard zet per code akkoord in `data/beeldenCheck.ts` zodra bestanden akkoord zijn (optioneel uitbreiden met portretcodes).
+Zie tabel **Portretten — aanwezigheid** hierboven. UI laadt portretten **alleen** in Wie is wie (`GlossaryModal`), niet in berichten of nabespreking.
 
 ## UI A3 — telefoon met sms (2009)
 
@@ -89,6 +82,50 @@ Bron prompts: **`docs/TIJDGEEST.md`**. Bestanden: `public/beelden/<code>.webp`. 
 | REKW-26-PADEL | Padelbaan naast fabriek | Nog geen asset | **nee** |
 | REKW-26-SMARTWATCH | Smartwatch (detail) | Nog geen asset | **nee** |
 | REKW-36-BEZORG | Zelfrijdende bezorgwagen laaddock | Nog geen asset | **nee** |
+
+## Afleveringstrailer vóór intro (10 nov 2026)
+
+Bron: `data/trailers.ts` → `public/beelden/<CODE>.jpg` (3:2, 1800×1200). Originelen: `beelden-bron/trailers/` (niet in git). Normalisatie: `scripts/normalize-trailer-beelden.mjs` (sharp-cli).
+
+| Code | kB (na) | Status | Opmerking |
+| --- | --- | --- | --- |
+| I1 | (bestaand) | controleren | Ongewijzigd |
+| I2 | (bestaand) | controleren | Ongewijzigd |
+| T1 | 327 | controleren | >250 kB; optioneel extra compressie |
+| W1 | 250 | controleren | — |
+| C1 | 186 | controleren | — |
+| L1 | 202 | controleren | Ook shot A5 |
+| T4 | (bestaand) | controleren | — |
+| L4 | 238 | controleren | Afgeleid van **D1** (D1 blijft staan) |
+| TR2-2 | 189 | controleren | — |
+| TR2-3 | 386 | controleren | >250 kB |
+| TR2-4 | 206 | controleren | — |
+| TR2-5 | 209 | controleren | — |
+| TR3-1 | 249 | controleren | — |
+| TR3-2 | 178 | controleren | — |
+| TR3-3 | 199 | controleren | — |
+| TR3-4 | 154 | controleren | — |
+| TR3-5 | 173 | controleren | — |
+| TR4-2 | 326 | controleren | >250 kB |
+| TR4-4 | 217 | controleren | — |
+| TR4-5 | 214 | controleren | — |
+| TR5-1 | 283 | controleren | >250 kB |
+| TR5-2 | 193 | controleren | — |
+| TR5-3 | 182 | controleren | — |
+| TR5-4 | 282 | controleren | >250 kB |
+
+Richard: inhoud akkoord Firefly nog open. **T1, TR2-3, TR4-2, TR5-1, TR5-4** boven 250 kB na resize.
+
+## Portretten — aanwezigheid (10 nov 2026)
+
+| Item | Status |
+| --- | --- |
+| Lijst P1 (28 codes) | **28/28** JPG in `public/beelden/portretten/` |
+| `data/personen.ts` | Elke `portret`-code heeft bestand |
+| Extra | **P-SANNE-2026.jpg** (niet op lijst; geen Wie-is-wie-tegel) |
+| Naam | `P-ANNEFLEUR-2036` → hernoemd naar **`P-ANNE-FLEUR-2036.jpg`** (register) |
+| Originelen | `public/.../_origineel` → **`beelden-bron/portretten-origineel/`** (gitignore) |
+| Akkoord Richard | nog **nee** per bestand |
 
 ## WCAG
 

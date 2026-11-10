@@ -3,7 +3,7 @@ import { freshGame, gameReducer, type GameAction } from '../game/gameReducer';
 import { migrateGameState } from '../game/migrateState';
 import type { GameUiState } from '../game/uiTypes';
 
-const KEY = 'recept-game-v4';
+const KEY = 'recept-game-v5';
 
 function load(): GameUiState | null {
   try {

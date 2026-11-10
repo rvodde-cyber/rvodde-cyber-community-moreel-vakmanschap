@@ -93,6 +93,8 @@ export type EpisodeContent = {
   gesprekskaart: Gesprekskaart;
   /** Teamgesprek ronde 1; A4-demo standaard uit (golden-flow). */
   gesprekskaartActief: boolean;
+  /** Afleveringstrailer vóór intro; standaard aan (uitzetten zonder UI-wijziging). */
+  trailerActief: boolean;
   /** Onderstroom in cold opens; A4 standaard uit (golden demo). */
   onderstroomActief: boolean;
   /** Introfase: posterindeling met beeld rechts (A4-demo uit). */
@@ -240,6 +242,7 @@ const EPISODE_1_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[1],
   gesprekskaart: GESPREKSKAARTEN[1],
   gesprekskaartActief: true,
+  trailerActief: true,
   onderstroomActief: true,
   ...introEpisodeFields(1),
 };
@@ -289,6 +292,7 @@ const EPISODE_2_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[2],
   gesprekskaart: GESPREKSKAARTEN[2],
   gesprekskaartActief: true,
+  trailerActief: true,
   onderstroomActief: true,
   ...introEpisodeFields(2),
 };
@@ -338,6 +342,7 @@ const EPISODE_3_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[3],
   gesprekskaart: GESPREKSKAARTEN[3],
   gesprekskaartActief: true,
+  trailerActief: true,
   onderstroomActief: true,
   ...introEpisodeFields(3),
 };
@@ -389,6 +394,7 @@ const EPISODE_5_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[5],
   gesprekskaart: GESPREKSKAARTEN[5],
   gesprekskaartActief: true,
+  trailerActief: true,
   onderstroomActief: true,
   ...introEpisodeFields(5),
 };
@@ -417,6 +423,7 @@ const EPISODE_4_CONTENT: EpisodeContent = {
   tijdgeest: TIJDGEEST[4],
   gesprekskaart: GESPREKSKAARTEN[4],
   gesprekskaartActief: false,
+  trailerActief: true,
   onderstroomActief: false,
   overstapUitleg: OVERSTAP_UITLEG_A4,
   ...introEpisodeFields(4),

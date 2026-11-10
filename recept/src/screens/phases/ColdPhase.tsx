@@ -21,6 +21,7 @@ import { coldStepDurationMs, shouldAutoAdvanceCold } from '../../game/coldOpenTi
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 import { usePrefersReducedMotion } from '../../lib/prefersReducedMotion';
+import { SpokenLineText } from '../../components/SpokenLineText';
 
 function coldBackground(state: GameUiState, round: 1 | 2) {
   const content = episodeContent(state.episode);
@@ -213,7 +214,7 @@ export function ColdPhase({
         ) : null}
         <p className="sub" aria-live="polite" aria-label={speechAria}>
           {displaySpeech.speaker ? <span className="who">{displaySpeech.speaker}</span> : null}
-          {displaySpeech.text}
+          <SpokenLineText text={displaySpeech.text} quoted={!!displaySpeech.speaker} />
         </p>
         <div className="cold-progress" aria-hidden="true">
           {timeline.map((_, i) => (

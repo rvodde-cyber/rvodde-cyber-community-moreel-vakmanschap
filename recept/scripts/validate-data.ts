@@ -10,6 +10,8 @@ import { SKELETON_ROUNDS } from '../data/skeleton/rounds';
 import { dilemmaStubSchema } from '../data/schemas/dilemma.schema';
 import { personenSchema } from '../data/schemas/personen.schema';
 import { roundDefinitionSchema, roundsRecordSchema } from '../data/schemas/rounds.schema';
+import { EPISODE_TRAILERS } from '../data/trailers';
+import { trailersRecordSchema } from '../data/schemas/trailers.schema';
 
 function main() {
   assertInterventieFlagsConsistent(INTERVENTIE_FLAGS);
@@ -48,6 +50,12 @@ function main() {
   const personen = personenSchema.safeParse(PERSONEN);
   if (!personen.success) {
     console.error('PERSONEN validatie mislukt:', personen.error.flatten());
+    process.exit(1);
+  }
+
+  const trailers = trailersRecordSchema.safeParse(EPISODE_TRAILERS);
+  if (!trailers.success) {
+    console.error('EPISODE_TRAILERS validatie mislukt:', trailers.error.flatten());
     process.exit(1);
   }
 

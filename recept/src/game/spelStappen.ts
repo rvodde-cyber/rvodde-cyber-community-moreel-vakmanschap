@@ -37,7 +37,7 @@ export function actieveSpelStap(
   round: 1 | 2,
   opts: { gesprekskaartActief: boolean; heeftDilemma: boolean; dilemmaOpen: boolean },
 ): SpelStapId | null {
-  if (phase === 'intro' || phase === 'cold') return 'kijk';
+  if (phase === 'trailer' || phase === 'intro' || phase === 'cold') return 'kijk';
   if (phase === 'onderzoek') return 'onderzoek';
   if (phase === 'besluit') {
     if (round === 2 && opts.heeftDilemma && opts.dilemmaOpen) return 'praat';

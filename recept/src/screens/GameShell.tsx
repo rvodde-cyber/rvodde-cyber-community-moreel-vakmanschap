@@ -30,6 +30,7 @@ import { ArgumentPhase } from './phases/ArgumentPhase';
 import { BesluitPhase } from './phases/BesluitPhase';
 import { ColdPhase } from './phases/ColdPhase';
 import { IntroPhase } from './phases/IntroPhase';
+import { EpisodeTrailerPhase } from './phases/EpisodeTrailerPhase';
 import { OnderzoekPhase } from './phases/OnderzoekPhase';
 import { OpvolgingPhase } from './phases/OpvolgingPhase';
 import { PauzePhase } from './phases/PauzePhase';
@@ -92,6 +93,15 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
   const multiRound = content.roundCount === 2;
   const dilemmaDef = content.dilemma;
 
+  if (phase === 'trailer') {
+    return (
+      <>
+        <SyncModalRound round={round} />
+        <EpisodeTrailerPhase state={state} dispatch={dispatch} />
+        <MessageToastHost />
+      </>
+    );
+  }
   if (phase === 'intro') {
     return (
       <>

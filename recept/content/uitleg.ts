@@ -152,7 +152,7 @@ export const UITLEG_BODY: Record<UitlegSectionId, UitlegBody> = {
       'Lees eerst alle kaarten en praat erover voordat jullie kiezen. Er is geen juiste combinatie. Elke keuze heeft een prijs, ook als die niet in geld staat.',
     ],
     overrideA4: [
-      "In deel 4 kiezen jullie twee maatregelen uit vijf kaarten. Naast die kaarten verdelen jullie ook een begroting over vaste posten in euro's.",
+      "In deel 4 kiezen jullie twee maatregelen uit vijf kaarten. Daarnaast wijzen jullie budget toe aan vaste posten in euro's.",
     ],
   },
   budget: {

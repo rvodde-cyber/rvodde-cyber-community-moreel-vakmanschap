@@ -1,17 +1,22 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **10 november 2026** — A4 zus-opdracht, rondebalk, openingsscène-uitleg
+Laatste update: **10 november 2026** — bundel opmerkingen 1–3 + beelden
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **Bundel 1–3** | Labels **DE SITUATIE** / **DE UITDAGING**; hints in `content/intros.nl.ts`; `SpokenLineText` in cold open + slotfilm; portretten alleen glossary. Tests `bundelOpmerkingen.test.ts`. |
+| **Trailer-JPG’s** | Canonieke `{CODE}.jpg`; aliassen verwijderd; bron in `beelden-bron/`. |
+| **Portretten** | 28/28 aanwezig; `_origineel` uit `public/`. |
+| **Tests / build** | **286** groen; `npm run build` OK. |
+| **Afleveringstrailer** | Fase `trailer` vóór intro; `data/trailers.ts`, `EpisodeTrailerPhase`, `trailerGezien` (save v5), overslaan/replay, cold-open **FilmOverlay**-trailer ongewijzigd. Tests `episodeTrailer.test.ts`. |
 | **A4 + rondebalk** | `introCarryLines` gelijk aan A1–A5; rondebalk **Kijk … Kijk terug** (`spelStappen.ts`); openingsscène-kop + uitleglijn; speler-UI zonder MT als teamrol. |
 | **Portretten (voorbereiding)** | `docs/PORTRETTEN-LIJST.md`, codeschema `P-<NAAM>-<JAAR>`, `Portret.tsx`, glossarium per aflevering (`data/glossarium.ts`), **23+5** nog aan te leveren door Richard. Tests `portret.test.tsx`. |
 | **Zus-rol (één teamrol)** | MT-rolverdeling en `RoleBelangModal` verwijderd; spelers = jongere zus. Flow: besluit → **argument** → gesprek/uitkomst. `docs/INVENTARIS-MT-ROLLEN.md`. |
 | **Argumentstap** | Fase `argument`, velden 20–280 / 10–140 tekens, knop *Dit is ons besluit*; export + docentlog; timer loopt door (`useGame` + `onderzoek`/`besluit`/`argument`), geen blokkade bij 0. |
 | **Teksten** | `content/uitleg.ts` (6 stappen, 4 momenten), startscherm naam zus, `howItWorks`/`glossary`, intro A1 notariszin; nabesprekingsvraag *Wie wist…* (concept) per aflevering. |
-| **Tests / build** | **252** tests groen; `npm run build` OK (portretten-taak). |
+| **Tests / build** | **276** tests groen; `npm run build` OK (incl. afleveringstrailer). |
 | **Uitleg en spelregels** | `content/uitleg.ts`, `UitlegScreen.tsx`, routing via `App.tsx` + `UiModalsContext`; CSS `uitleg-*`; tests `uitlegScreen.test.tsx`; docs §9b `DESIGNGIDS.md`; zichtbare **cold open** → **openingsscène** (`StepsNav`, docentpaneel). |
 | --- | --- |
 | **Stap 2 — onderzoek A1/A2/A3/A5** | Per ronde **5** onderzoeken (`t`, `quote`, `sig`); inhoud uit opdracht; r1 ≠ r2 in `a1Rounds` … `a5Rounds`. Schema `acties`: 3–6 items. UI: `.tiles--onderzoek` (3+2 breed, 1 kolom &lt;720px); `quote` 16px/1.55, `sig` uppercase. `docs/TAALGIDS.md` § Signaalwoorden; `STAP-FLOW-ONDERZOEK.md` § Onderzoeken. **A4** `data/rounds.ts` ongewijzigd. Onderzoek-id’s wegen **niet** mee in motor/golden (alleen UI + export). Test: `onderzoekActiesInterventie.test.ts`. |

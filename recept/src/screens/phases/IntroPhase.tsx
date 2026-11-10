@@ -12,6 +12,7 @@ import { SceneBackground } from '../../components/SceneBackground';
 import { IntroSceneImage } from '../../components/IntroSceneImage';
 import { introCarryLines } from '@data/episodes/introUiCopy';
 import { HelpLinks } from '../../components/HelpLinks';
+import { IntroTrailerReplay } from '../../components/IntroTrailerReplay';
 import { useUiModals } from '../../context/UiModalsContext';
 import { engineContext } from '../../game/budgetUi';
 
@@ -32,10 +33,10 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         <p className="ep">{meta.titel}</p>
         <h4>GESCHIEDENIS</h4>
         <p className="body">{intro.geschiedenis}</p>
-        <h4>UITDAGINGEN</h4>
+        <h4>DE SITUATIE</h4>
         <p className="body">{intro.uitdagingen}</p>
         <div className="hintbox">
-          <h4>HINT</h4>
+          <h4>DE UITDAGING</h4>
           <p>{intro.hint}</p>
         </div>
         <div className="carry">
@@ -49,6 +50,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder
         </button>
+        <IntroTrailerReplay state={state} dispatch={dispatch} />
         <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
       </>
     );
@@ -108,14 +110,14 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
             4,2 miljoen tekenen voor verkenningsdrones. Er komen nieuwe regels, nieuwe formulieren en een afgeschermde hal
             3. Marco noemt het volwassen worden.
           </p>
-          <h4>UITDAGINGEN</h4>
+          <h4>DE SITUATIE</h4>
           <p className="body">
             Ploegleiders zitten meer in overleg dan op de vloer. Negen engineers hebben bezwaar tegen defensiewerk. En
             Defensie stelt voorwaarden die verder gaan dan de wet toestaat. Jullie budget deze ronde:{' '}
             {mln(budgetOf(2, ctx))}.
           </p>
           <div className="hintbox">
-            <h4>HINT</h4>
+            <h4>DE UITDAGING</h4>
             <p>
               Groei voelt als succes, totdat de regels het werk overnemen. Vraag bij elke nieuwe regel: wie heeft er last
               van, en wie heeft er eigenlijk om gevraagd?
@@ -204,7 +206,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           advies in het oor. Harrie, jouw broer, is 71 en president-commissaris. Zaterdagavond zit hij aan zijn eigen
           verjaardagstaart terwijl niemand aan tafel van zijn telefoon opkijkt. Jij was er, zoals altijd, niet bij.
         </p>
-        <h4>UITDAGINGEN</h4>
+        <h4>DE SITUATIE</h4>
         <p className="body">
           Maandagochtend, 09:14 uur. Het verzuim is weer gestegen. Ploegleider Ans weet ’s ochtends niet wat de norm die
           dag wordt. En ergens in een la ligt de eerste order voor een defensietoepassing, nog ongeopend. Je neef Marco
@@ -217,11 +219,8 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           </>
         ) : null}
         <div className="hintbox">
-          <h4>HINT</h4>
-          <p>
-            Een dashboard laat precies zien wat het meet, en niets van wat het mist. Vraag bij elk getal: wie heeft dit
-            ingevoerd, en wie komt er in deze cijfers helemaal niet voor?
-          </p>
+          <h4>DE UITDAGING</h4>
+          <p>{INTRO_TEKSTEN[4].hint}</p>
         </div>
         <div className="carry">
           <h4>JULLIE OPDRACHT</h4>
@@ -234,6 +233,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder
         </button>
+        <IntroTrailerReplay state={state} dispatch={dispatch} />
         <HelpLinks onHowto={openHowto} onGloss={openGloss} onSettings={openSettings} />
       </div>
     </div>

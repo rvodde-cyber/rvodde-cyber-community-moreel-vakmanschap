@@ -24,6 +24,7 @@ import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
 import { phaseAfterBesluitConfirm, phaseAfterGesprek } from './gesprekFlow';
 import { validateGesprekOpslaan, type GesprekskaartExportEntry } from '@data/schemas/gesprekskaart.schema';
 import { gesprekskaartVoor } from '@data/gesprekskaarten';
+import { moetAfleveringstrailer } from './episodeTrailerFlow';
 import type { GameUiState, Phase } from './uiTypes';
 import type { FilmKind } from './uiTypes';
 
@@ -63,6 +64,8 @@ export type GameAction =
   | { type: 'SET_GOK'; id: string }
   | { type: 'TOGGLE_TIJDGEEST_GELUID' }
   | { type: 'START_EPISODE'; episode: import('@data/episodes/meta').EpisodeId }
+  | { type: 'SKIP_EPISODE_TRAILER'; markSeen: boolean }
+  | { type: 'REPLAY_EPISODE_TRAILER' }
   | { type: 'SET_OPVOLGING'; keuze: import('@data/opvolging').OpvolgingKeuze }
   | { type: 'EXIT_TO_HOME' }
   | { type: 'TICK' }
@@ -101,8 +104,26 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
   switch (action.type) {
     case 'RESET':
       return freshGame();
-    case 'START_EPISODE':
-      return { ...freshEpisode(action.episode), playerName: state.playerName, team: state.team };
+    case 'START_EPISODE': {
+      const trailerGezien = state.trailerGezien ?? {};
+      const phase: Phase = moetAfleveringstrailer(action.episode, trailerGezien, true) ? 'trailer' : 'intro';
+      return {
+        ...freshEpisode(action.episode),
+        playerName: state.playerName,
+        team: state.team,
+        trailerGezien,
+        phase,
+      };
+    }
+    case 'SKIP_EPISODE_TRAILER': {
+      const ep = state.episode;
+      const trailerGezien = { ...(state.trailerGezien ?? {}) };
+      if (action.markSeen) trailerGezien[ep] = true;
+      return { ...state, phase: 'intro', trailerGezien };
+    }
+    case 'REPLAY_EPISODE_TRAILER':
+      if (episodeContent(state.episode).trailerActief === false) return state;
+      return { ...state, phase: 'trailer' };
     case 'SET_OPVOLGING':
       return { ...state, opvolging: action.keuze, phase: 'pauze' };
     case 'EXIT_TO_HOME':
