@@ -10,11 +10,7 @@ import { INTRO_SCENE } from '@data/sceneCodes';
 import { piotrIntroResolved } from '@data/piotrSpel';
 import { SceneBackground } from '../../components/SceneBackground';
 import { IntroSceneImage } from '../../components/IntroSceneImage';
-import {
-  a4IntroCarryR1,
-  a4IntroCarryR2,
-  introCarryLines,
-} from '@data/episodes/introUiCopy';
+import { introCarryLines } from '@data/episodes/introUiCopy';
 import { HelpLinks } from '../../components/HelpLinks';
 import { useUiModals } from '../../context/UiModalsContext';
 import { engineContext } from '../../game/budgetUi';
@@ -29,7 +25,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const meta = episodeMeta(state.episode);
     const intro = INTRO_TEKSTEN[state.episode];
     const sc = INTRO_SCENE[state.episode];
-    const carryLines = introCarryLines(content, state.episode, 1);
+    const carryLines = introCarryLines(content, state.episode, 1, state.playerName);
     const introBody = (
       <>
         <p className="kick">{content.introLook.kicker}</p>
@@ -127,7 +123,11 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           </div>
           <div className="carry">
             <h4>JULLIE OPDRACHT</h4>
-            <p className="body">{a4IntroCarryR2()}</p>
+            {introCarryLines(content, state.episode, 2, state.playerName).map((line) => (
+              <p key={line.slice(0, 48)} className="body">
+                {line}
+              </p>
+            ))}
           </div>
           <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
             Verder
@@ -142,7 +142,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
     const meta = episodeMeta(state.episode);
     const sc = INTRO_SCENE[state.episode];
     const isA5 = state.episode === 5;
-    const carryR2 = introCarryLines(content, state.episode, 2);
+    const carryR2 = introCarryLines(content, state.episode, 2, state.playerName);
     return (
       <div className="cine">
         <SceneBackground checkCode={sc.checkCode} fileCode={sc.fileCode} />
@@ -225,7 +225,11 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
         </div>
         <div className="carry">
           <h4>JULLIE OPDRACHT</h4>
-          <p className="body">{a4IntroCarryR1()}</p>
+          {introCarryLines(content, 4, 1, state.playerName).map((line) => (
+            <p key={line.slice(0, 48)} className="body">
+              {line}
+            </p>
+          ))}
         </div>
         <button type="button" className="btn gold big" onClick={() => dispatch({ type: 'SET_PHASE', phase: 'cold' })}>
           Verder

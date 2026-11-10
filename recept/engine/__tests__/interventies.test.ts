@@ -211,8 +211,8 @@ describe('interventies data', () => {
     }
   });
 
-  it('nabespreking A3 blijft concept (a3-nb-1 t/m a3-nb-5)', () => {
-    expect(NABESPREKING_A3).toHaveLength(5);
+  it('nabespreking A3 blijft concept (a3-nb-1 t/m a3-nb-5 + wie-wist)', () => {
+    expect(NABESPREKING_A3).toHaveLength(6);
     for (const v of NABESPREKING_A3) {
       expect(v.status).toBe('concept');
     }
@@ -258,8 +258,8 @@ describe('interventies data', () => {
     }
   });
 
-  it('nabespreking A5 blijft concept (a5-nb-1 t/m a5-nb-5)', () => {
-    expect(NABESPREKING_A5).toHaveLength(5);
+  it('nabespreking A5 blijft concept (a5-nb-1 t/m a5-nb-5 + wie-wist)', () => {
+    expect(NABESPREKING_A5).toHaveLength(6);
     for (const v of NABESPREKING_A5) {
       expect(v.status).toBe('concept');
     }

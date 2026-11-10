@@ -1,25 +1,20 @@
-import { MT_ROLLEN } from '@data/rollen';
+import { okArgument } from '@data/schemas/argument.schema';
 import { usesInterventieMotor } from '@data/episodes/motor';
 import { budgetBlockMessage } from './budgetFix';
 import { bcalc, engineContext } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import type { GameUiState } from './uiTypes';
 
-export function okBesluit(state: GameUiState): boolean {
+/** Twee interventies + budget (en piloot bij A4) — stap vóór argument. */
+export function okBesluitKeuze(state: GameUiState): boolean {
   const R = state.rounds[state.round];
   const ctx = engineContext(state);
   const b = bcalc(state, R, ctx);
   const interventie = usesInterventieMotor(state.episode);
-  return !!(
-    (interventie || R.pilot) &&
-    R.cards.length === 2 &&
-    R.spoken.length === MT_ROLLEN.length &&
-    R.mot.replace(/\s/g, '').length >= 8 &&
-    b.left >= 0
-  );
+  return !!((interventie || R.pilot) && R.cards.length === 2 && b.left >= 0);
 }
 
-export function needText(state: GameUiState): string {
+export function needTextBesluit(state: GameUiState): string {
   const R = state.rounds[state.round];
   const interventie = usesInterventieMotor(state.episode);
   if (!interventie && !R.pilot) {
@@ -30,10 +25,17 @@ export function needText(state: GameUiState): string {
   }
   const budgetMsg = budgetBlockMessage(state);
   if (budgetMsg) return budgetMsg;
-  if (R.spoken.length !== MT_ROLLEN.length) {
-    return `Nog nodig: iedere rol bekijkt in stilte zijn belang en geeft daarna een standpunt (nu ${R.spoken.length} van ${MT_ROLLEN.length}).`;
-  }
-  return okBesluit(state) ? '' : 'Nog nodig: schrijf in één zin waarom het MT zo besluit.';
+  return okBesluitKeuze(state) ? '' : 'Nog nodig: rond jullie keuze af.';
+}
+
+/** @deprecated gebruik okBesluitKeuze of okArgument voor fase */
+export function okBesluit(state: GameUiState): boolean {
+  const R = state.rounds[state.round];
+  return okBesluitKeuze(state) && okArgument(R.argument, R.tegenargument);
+}
+
+export function needText(state: GameUiState): string {
+  return needTextBesluit(state);
 }
 
 export function pilotLockedCards(state: GameUiState): string[] {

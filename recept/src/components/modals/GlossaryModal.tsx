@@ -1,13 +1,15 @@
 import { BEGRIPPEN } from '@content/glossary.nl';
+import type { EpisodeId } from '@data/episodes/meta';
 import { PersonCard, personenInGlossarium } from '../PersonCard';
 
 type Props = {
+  episode: EpisodeId;
   round: 1 | 2;
   onClose: () => void;
 };
 
-export function GlossaryModal({ round, onClose }: Props) {
-  const personen = personenInGlossarium(round);
+export function GlossaryModal({ episode, round, onClose }: Props) {
+  const personen = personenInGlossarium(episode, round);
   return (
     <>
       <p className="k">WIE IS WIE</p>
@@ -15,7 +17,7 @@ export function GlossaryModal({ round, onClose }: Props) {
       <p className="glosh">PERSONEN</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 20 }}>
         {personen.map((p) => (
-          <PersonCard key={p.slug} persoon={p} />
+          <PersonCard key={p.slug} persoon={p} episode={episode} />
         ))}
       </div>
       <p className="glosh">BEGRIPPEN</p>

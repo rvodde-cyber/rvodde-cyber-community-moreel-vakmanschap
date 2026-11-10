@@ -10,7 +10,7 @@ export function HowItWorksModal({ onClose, onOpenGlossary }: Props) {
   return (
     <>
       <p className="k">HOE HET WERKT</p>
-      <h2 id="modh">Jullie zijn het MT</h2>
+      <h2 id="modh">Jullie rol</h2>
       {paras.map((p) => (
         <p key={p.slice(0, 24)} className="note" style={{ maxWidth: '72ch' }}>{p}</p>
       ))}

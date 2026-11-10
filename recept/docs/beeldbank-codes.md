@@ -20,7 +20,8 @@ De volledige Firefly-prompts staan in het ontwerpdocument; Cursor heeft alleen d
 | Titelkaarten | T1 schuur 1984, T2 lege hal 1996, T3 drie fabrieken 2009, T4 drone in assemblagehal 2026, T5 glazen hoofdkantoor 2036 |
 | Cold opens (familiescène) | C1 keukentafel 1984, C2 verjaardag 1996, C3 aankondiging 2009, C4 71e verjaardag Harrie 2026, C5 na de begrafenis 2036 |
 | Werkvloer | W1 met de hand 1984, W2 de band 1996, W3 de controle 2009, W4 de nachtploeg 2026, W5 het kantoor 2036 |
-| Portretten (4:5) | P1 Harrie 29, P2 Harrie 71, P3 Lies 27, P4 Lies 79, P5 Sanne 32, P6 Sanne 59, P7 Marco 29, P8 Marco 46, P9 Erik 49, P10 Gerrit 44, P11 Ans 27, P12 Ans 57, P13 Joost 52, P14 Dennis 39, P15 Yasmin 29, P16 Piotr 34, P17 Anne-Fleur 26, P18 Caroline 56 |
+| Portretten (legacy 4:5) | P1–P18 (zie mapping in `docs/PORTRETTEN-LIJST.md` § Legacy) |
+| Portretten (vierkant, UI) | **`P-<NAAM>-<JAAR>`** bijv. `P-HARRIE-1984` → `public/beelden/portretten/P-HARRIE-1984.webp` (of `.jpg`); 800×800, max 150 kB — volledige lijst: `docs/PORTRETTEN-LIJST.md` |
 | Locaties en objecten | L1 het schrift, L2 de bestuurskamer, L3 dashboardachtergrond schuur, L4 dashboardachtergrond conglomeraat |
 | Tijdgeest — Renault 5 (rode draad) | **RENAULT-84**, **RENAULT-96**, **RENAULT-09**, **RENAULT-26**, **RENAULT-36** — prompts in `docs/TIJDGEEST.md` |
 | Tijdgeest — rekwisieten | **REKW-84-CASSETTE**, **REKW-84-TELEFOON**, **REKW-96-PC**, **REKW-96-SEMAFOON**, **REKW-09-BLACKBERRY**, **REKW-09-HYVES**, **REKW-09-WII**, **REKW-26-PADEL**, **REKW-26-SMARTWATCH**, **REKW-36-BEZORG** — prompts in `docs/TIJDGEEST.md` |

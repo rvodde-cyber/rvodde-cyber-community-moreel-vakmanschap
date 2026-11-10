@@ -17,7 +17,8 @@ import { applyAutoFixBud } from './budgetFix';
 import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import { stubComputeResult } from './stubCompute';
-import { pilotLockedCards } from './besluitRules';
+import { okArgument } from '@data/schemas/argument.schema';
+import { okBesluitKeuze, pilotLockedCards } from './besluitRules';
 import { chatTimeLabel } from './chatHelpers';
 import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
 import { phaseAfterBesluitConfirm, phaseAfterGesprek } from './gesprekFlow';
@@ -37,9 +38,8 @@ export type GameAction =
   | { type: 'SET_VERM'; id: string }
   | { type: 'SET_PILOT'; mode: 'pilot' | 'zelf' }
   | { type: 'TOGGLE_CARD'; id: string }
-  | { type: 'TOGGLE_ROLE'; id: string }
-  | { type: 'MARK_ROLE_SPOKE'; id: string }
-  | { type: 'SET_FIELD'; field: 'mot' | 'min' | 'w0' | 'w1' | 'w2'; value: string }
+  | { type: 'PROCEED_TO_ARGUMENT' }
+  | { type: 'SET_FIELD'; field: 'mot' | 'min' | 'argument' | 'tegenargument' | 'w0' | 'w1' | 'w2'; value: string }
   | { type: 'TOGGLE_MIN' }
   | { type: 'SET_BUD'; id: string; value: number }
   | { type: 'AUTO_FIX_BUDGET' }
@@ -174,24 +174,22 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       else if (cards.length < 2) cards = [...cards, action.id];
       return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, cards } } };
     }
-    case 'TOGGLE_ROLE': {
-      const r = roundState(state);
-      const has = r.spoken.includes(action.id);
-      const spoken = has ? r.spoken.filter((x) => x !== action.id) : [...r.spoken, action.id];
-      return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, spoken } } };
-    }
-    case 'MARK_ROLE_SPOKE': {
-      const r = roundState(state);
-      if (r.spoken.includes(action.id)) return state;
-      return {
-        ...state,
-        rounds: { ...state.rounds, [state.round]: { ...r, spoken: [...r.spoken, action.id] } },
-      };
-    }
+    case 'PROCEED_TO_ARGUMENT':
+      if (!okBesluitKeuze(state)) return state;
+      return { ...state, phase: 'argument' };
     case 'SET_FIELD': {
       const r = roundState(state);
       if (action.field === 'mot') return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, mot: action.value } } };
       if (action.field === 'min') return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, min: action.value } } };
+      if (action.field === 'argument') {
+        return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, argument: action.value.slice(0, 280) } } };
+      }
+      if (action.field === 'tegenargument') {
+        return {
+          ...state,
+          rounds: { ...state.rounds, [state.round]: { ...r, tegenargument: action.value.slice(0, 140) } },
+        };
+      }
       const w = [...r.w] as [string, string, string];
       if (action.field === 'w0') w[0] = action.value;
       if (action.field === 'w1') w[1] = action.value;
@@ -215,7 +213,9 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
     case 'AUTO_FIX_BUDGET':
       return applyAutoFixBud(state);
     case 'CONFIRM_BESLUIT': {
+      if (state.phase !== 'argument') return state;
       const r = roundState(state);
+      if (!okBesluitKeuze(state) || !okArgument(r.argument, r.tegenargument)) return state;
       const cards = pilotLockedCards(state);
       const motor = episodeMotorKind(state.episode);
       if (motor === 'interventie') {
@@ -334,6 +334,8 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
         ...r,
         cards,
         spoken: [],
+        argument: '',
+        tegenargument: '',
         reacted: false,
         bud: freshRoundUi(state.episode, state.round).bud,
       };

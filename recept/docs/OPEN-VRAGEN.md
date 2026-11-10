@@ -1,6 +1,21 @@
 # Open vragen en aanleveringen
 
-Laatste update: **6 november 2026** (intro-split scroll + worstenbroodje + Van Gorp Machinebouw / Groep).
+Laatste update: **10 november 2026** (portretten-voorbereiding).
+
+## Portretten (10 nov 2026)
+
+| Onderwerp | Actie |
+| --- | --- |
+| **Firefly-portretten** | Richard levert **28** bestanden volgens `docs/PORTRETTEN-LIJST.md` → `public/beelden/portretten/` |
+| **Stijl 800×800** | Vervangt oude 512px-aanwijzing in `PORTRETTEN-PROMPTS.md` voor UI; prompts verder bruikbaar |
+| **Akkoord per code** | Optioneel: uitbreiden `beeldenCheck.ts` met portretcodes |
+
+## Besloten (10 nov 2026)
+
+| Onderwerp | Besluit |
+| --- | --- |
+| **Spelersrol** | Eén rol: jongere zus van Harrie; geen MT-rolverdeling meer; argumentstap verplicht vóór uitkomst. Oude saves: `spoken`/`mot` blijven laden, `mot` → `argument` bij migratie. |
+| **Beslistijd + argument** | Zelfde timer als onderzoek/besluit; geen extra tijd; fase blijft bruikbaar als `tLeft` op is. |
 
 ## Besloten (6 nov 2026)
 

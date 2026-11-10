@@ -9,6 +9,7 @@ const PHASES: { id: Phase; label: string }[] = [
   { id: 'cold', label: 'Openingsscène' },
   { id: 'onderzoek', label: 'Onderzoek' },
   { id: 'besluit', label: 'Besluit' },
+  { id: 'argument', label: 'Argument' },
   { id: 'gesprek', label: 'Teamgesprek' },
   { id: 'scan', label: 'Scan' },
   { id: 'uitkomst', label: 'Uitkomst' },
@@ -78,6 +79,35 @@ export function DocentPausePanel({ state, dispatch }: Props) {
           </ul>
         ) : null}
       </div>
+      {([1, 2] as const).some((n) => state.rounds[n].argument || state.rounds[n].tegenargument) ? (
+        <div className="docent-gesprek">
+          <p>
+            <strong>Argument per ronde</strong>
+          </p>
+          <table className="cmp gesprek-export-table">
+            <thead>
+              <tr>
+                <th>Ronde</th>
+                <th>Waarom</th>
+                <th>Tegenargument</th>
+              </tr>
+            </thead>
+            <tbody>
+              {([1, 2] as const).map((n) => {
+                const ui = state.rounds[n];
+                if (!ui.argument && !ui.tegenargument) return null;
+                return (
+                  <tr key={n}>
+                    <td>{n}</td>
+                    <td>{ui.argument || '—'}</td>
+                    <td>{ui.tegenargument || '—'}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
       {state.gesprekskaarten.length > 0 ? (
         <div className="docent-gesprek">
           <p>

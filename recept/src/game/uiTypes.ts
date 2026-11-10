@@ -11,6 +11,7 @@ export type Phase =
   | 'cold'
   | 'onderzoek'
   | 'besluit'
+  | 'argument'
   | 'gesprek'
   | 'uitkomst'
   | 'scan'
@@ -30,6 +31,8 @@ export interface RoundUiState {
   spoken: string[];
   w: [string, string, string];
   mot: string;
+  argument: string;
+  tegenargument: string;
   minOn: boolean;
   min: string;
   bud: Record<string, number>;

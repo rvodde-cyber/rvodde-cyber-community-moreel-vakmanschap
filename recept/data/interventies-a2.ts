@@ -190,4 +190,10 @@ export const NABESPREKING_A2 = [
     tekst: 'Wat gebeurt er met zeggenschap als de organisatie nog verder groeit?',
     status: 'concept' as const,
   },
+  {
+    id: 'a2-nb-wie-wist',
+    fase: 'wegen' as const,
+    tekst: 'Wie wist dat jullie dit besloten?',
+    status: 'concept' as const,
+  },
 ];

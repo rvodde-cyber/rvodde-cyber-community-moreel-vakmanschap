@@ -51,6 +51,21 @@ describe('validateGesprekOpslaan', () => {
   });
 });
 
+const ARG = 'Wij kiezen dit omdat Lies en de buren eerst gehoord moeten worden.';
+const TEGEN = 'Sneller kan ook fouten geven.';
+
+function bevestigMetArgument(s: ReturnType<typeof freshEpisode>) {
+  s = gameReducer(s, { type: 'PROCEED_TO_ARGUMENT' });
+  s = {
+    ...s,
+    rounds: {
+      ...s.rounds,
+      [s.round]: { ...s.rounds[s.round], argument: ARG, tegenargument: TEGEN },
+    },
+  };
+  return gameReducer(s, { type: 'CONFIRM_BESLUIT' });
+}
+
 describe('reducer flow gesprek', () => {
   it('A1 r1: besluit → gesprek → uitkomst; r2 geen gesprek', () => {
     let s = freshEpisode(1);
@@ -62,7 +77,7 @@ describe('reducer flow gesprek', () => {
         1: { ...s.rounds[1], cards: ['a1-1-1', 'a1-1-2'] },
       },
     };
-    s = gameReducer(s, { type: 'CONFIRM_BESLUIT' });
+    s = bevestigMetArgument(s);
     expect(s.phase).toBe('gesprek');
     expect(s.results[1]).toBeDefined();
     s = gameReducer(s, {
@@ -75,7 +90,7 @@ describe('reducer flow gesprek', () => {
     expect(s.gesprekskaarten[0]?.overgeslagen).toBe(false);
 
     s = { ...s, round: 2, phase: 'besluit', rounds: { ...s.rounds, 2: { ...s.rounds[2], cards: ['a1-2-1', 'a1-2-2'] } } };
-    s = gameReducer(s, { type: 'CONFIRM_BESLUIT' });
+    s = bevestigMetArgument(s);
     expect(s.phase).toBe('uitkomst');
   });
 
@@ -101,15 +116,14 @@ describe('reducer flow gesprek', () => {
         1: {
           ...s.rounds[1],
           cards: ['A', 'B'],
-          pilot: 'zelf',
+          pilot: 'pilot',
           verm: 'verzuim',
-          mot: 'test',
           w: ['1', '1', '1'],
-          spoken: ['erik'],
         },
       },
     };
-    s = gameReducer(s, { type: 'CONFIRM_BESLUIT' });
+    s = gameReducer(s, { type: 'AUTO_FIX_BUDGET' });
+    s = bevestigMetArgument(s);
     expect(s.phase).toBe('scan');
   });
 });
@@ -123,7 +137,7 @@ describe('compute ongewijzigd door gesprek', () => {
       phase: 'besluit',
       rounds: { ...s.rounds, 1: { ...s.rounds[1], cards } },
     };
-    s = gameReducer(s, { type: 'CONFIRM_BESLUIT' });
+    s = bevestigMetArgument(s);
     const before = s.results[1];
     s = gameReducer(s, {
       type: 'GESPREK_OPSLAAN',

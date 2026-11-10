@@ -264,12 +264,18 @@ describe('Intro register en IntroPhase', () => {
 
   it('(i) A4 introBeeldRechts uit: geen intro-split', () => {
     expect(EPISODE_CONTENT[4].introBeeldRechts).toBe(false);
-    const state = { ...freshEpisode(4), phase: 'intro' as const, round: 1 as const };
+    const state = {
+      ...freshEpisode(4),
+      phase: 'intro' as const,
+      round: 1 as const,
+      playerName: 'Marja',
+    };
     const r = renderUi(<IntroPhase state={state} dispatch={() => {}} />);
     root = r.root;
     expect(r.container.querySelector('.intro-split')).toBeNull();
     expect(r.container.querySelector('.cine')).toBeTruthy();
-    expect(r.container.textContent).toContain('managementteam (MT)');
+    expect(r.container.textContent).toContain('Jullie zijn Marja');
+    expect(r.container.textContent).not.toMatch(/managementteam/i);
     expect(r.container.textContent).toMatch(/HOE HET ZO VER KWAM/i);
     expect(r.container.textContent).toContain('Van Gorp Machinebouw B.V.');
   });

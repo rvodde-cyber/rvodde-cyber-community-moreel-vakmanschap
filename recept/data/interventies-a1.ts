@@ -172,4 +172,10 @@ export const NABESPREKING_A1 = [
     tekst: 'Wat gebeurt er met een keuze als de organisatie groeit?',
     status: 'concept' as const,
   },
+  {
+    id: 'a1-nb-wie-wist',
+    fase: 'wegen' as const,
+    tekst: 'Wie wist dat jullie dit besloten?',
+    status: 'concept' as const,
+  },
 ];

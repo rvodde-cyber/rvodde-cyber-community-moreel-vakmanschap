@@ -1,8 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { MT_ROLLEN } from '../../data/rollen';
 import { freshGame, bcalc, engineContext } from '../../src/game/budgetUi';
 import { gameReducer } from '../../src/game/gameReducer';
-import { okBesluit } from '../../src/game/besluitRules';
+import { okBesluitKeuze } from '../../src/game/besluitRules';
 import {
   budgetBlockMessage,
   canAutoFixBudget,
@@ -34,17 +33,15 @@ describe('budgetFix ep4 ronde 1', () => {
     expect(computeAutoFixBud(state)).not.toBeNull();
   });
 
-  it('na autofix + MT-velden kan besluit kloppen', () => {
+  it('na autofix kan interventiekeuze doorgaan naar argument', () => {
     let state = freshGame();
     state = { ...state, playerName: 'Demo', phase: 'besluit' };
     state = gameReducer(state, { type: 'SET_PILOT', mode: 'pilot' });
     state = gameReducer(state, { type: 'TOGGLE_CARD', id: 'B' });
     state = gameReducer(state, { type: 'TOGGLE_CARD', id: 'D' });
     state = gameReducer(state, { type: 'AUTO_FIX_BUDGET' });
-    for (const ro of MT_ROLLEN) {
-      state = gameReducer(state, { type: 'MARK_ROLE_SPOKE', id: ro.id });
-    }
-    state = gameReducer(state, { type: 'SET_FIELD', field: 'mot', value: 'We volgen PILOT en begrenzen TEMPO.' });
-    expect(okBesluit(state)).toBe(true);
+    expect(okBesluitKeuze(state)).toBe(true);
+    state = gameReducer(state, { type: 'PROCEED_TO_ARGUMENT' });
+    expect(state.phase).toBe('argument');
   });
 });

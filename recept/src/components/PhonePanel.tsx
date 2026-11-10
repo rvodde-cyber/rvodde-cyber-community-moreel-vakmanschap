@@ -104,7 +104,7 @@ export function PhonePanel({ state, dispatch }: Props) {
               );
             }
             const isDil = def.dil && def.id === 'piotr';
-            const persoon = persoonByVan(def.van);
+            const persoon = persoonByVan(def.van, state.episode);
             return (
               <div key={def.id}>
                 {dayEl}
@@ -113,7 +113,7 @@ export function PhonePanel({ state, dispatch }: Props) {
                     <span className="lock">{isDil ? 'PRIVÉ  /  MOREEL DILEMMA' : 'PRIVÉ'}</span>
                   ) : null}
                   <div className="bub-head">
-                    {persoon ? <PersonAvatar persoon={persoon} size="sm" /> : null}
+                    {persoon ? <PersonAvatar persoon={persoon} episode={state.episode} size="sm" /> : null}
                     <span className="n" style={{ color: NAAM_KLEUR[first] ?? 'var(--soft)' }}>
                       {def.van}
                     </span>

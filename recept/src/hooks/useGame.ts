@@ -33,7 +33,7 @@ export function useGame() {
 
   useEffect(() => {
     if (!state.timerOn) return;
-    if (state.phase !== 'onderzoek' && state.phase !== 'besluit') return;
+    if (state.phase !== 'onderzoek' && state.phase !== 'besluit' && state.phase !== 'argument') return;
     const id = window.setInterval(() => dispatch({ type: 'TICK' }), 1000);
     return () => window.clearInterval(id);
   }, [state.timerOn, state.phase]);

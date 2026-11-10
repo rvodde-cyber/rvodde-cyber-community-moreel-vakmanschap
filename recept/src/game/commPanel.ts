@@ -1,7 +1,7 @@
 import { episodeContent } from '@data/episodes/content';
 import type { GameUiState } from './uiTypes';
 
-const PLAY_PHASES = new Set(['onderzoek', 'besluit', 'uitkomst']);
+const PLAY_PHASES = new Set(['onderzoek', 'besluit', 'argument', 'uitkomst']);
 
 export function showPhonePanel(state: GameUiState): boolean {
   const content = episodeContent(state.episode);

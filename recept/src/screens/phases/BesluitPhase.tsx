@@ -1,13 +1,10 @@
-import { useEffect } from 'react';
 import { usesInterventieMotor } from '@data/episodes/motor';
 import { budgetVoorRonde } from '@data/interventies/vertaaltabel';
 import type { EpisodeId } from '@data/episodes/meta';
-import { MT_ROLLEN } from '@data/rollen';
 import { TaskBar } from '../../components/TaskBar';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { useDocentMode } from '../../hooks/useDocentMode';
-import { useUiModals } from '../../context/UiModalsContext';
-import { needText, okBesluit } from '../../game/besluitRules';
+import { needTextBesluit, okBesluitKeuze } from '../../game/besluitRules';
 import { budgetBlockMessage, canAutoFixBudget } from '../../game/budgetFix';
 import { bcalc, engineContext } from '../../game/budgetUi';
 import { roundDefFor } from '../../game/roundSource';
@@ -16,11 +13,7 @@ import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
 
 export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch: (a: GameAction) => void }) {
-  const { openRole, setRoleSpokeHandler } = useUiModals();
   const docent = useDocentMode();
-  useEffect(() => {
-    setRoleSpokeHandler((id) => dispatch({ type: 'MARK_ROLE_SPOKE', id }));
-  }, [dispatch, setRoleSpokeHandler]);
 
   const round = state.round;
   const R = state.rounds[round];
@@ -29,7 +22,7 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
   const b = bcalc(state, R, ctx);
   const pl = R.pilot === 'pilot';
   const zelf = R.pilot === 'zelf';
-  const blockMsg = needText(state);
+  const blockMsg = needTextBesluit(state);
   const budgetMsg = budgetBlockMessage(state);
   const showAutoFix = budgetMsg != null && canAutoFixBudget(state);
   const interventie = usesInterventieMotor(state.episode);
@@ -39,16 +32,16 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
       <ConceptDocentBanner />
       <TaskBar
         step={3}
-        title="MT-BESLUIT"
+        title="BESLISSEN"
         lead={
           interventie
-            ? 'Kies twee interventies binnen acht punten. Loop daarna het rondje MT en schrijf één zin motivatie.'
-            : 'Nu beslissen jullie als MT. Loop de onderdelen van boven naar beneden langs: het advies van PILOT, twee interventies, de begroting, het rondje MT en één zin motivatie.'
+            ? 'Kies twee interventies binnen acht punten. Daarna leggen jullie uit waarom.'
+            : 'Kies twee interventies, pas de begroting aan en bepaal of jullie het advies van PILOT volgen of zelf wegen.'
         }
-        sub='De knop “Besluit vastleggen” onderaan wordt actief zodra alles is ingevuld. Wat er nog ontbreekt, staat daaronder.'
+        sub='Is alles ingevuld? Ga verder naar jullie argument. Wat er nog ontbreekt, staat daaronder.'
       />
       <div className="q">
-        <span className="tag">MT-VRAAG</span>
+        <span className="tag">VRAAG</span>
         <p>{D.q2}</p>
       </div>
       {interventie ? null : (
@@ -168,58 +161,9 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
           </>
         )}
       </section>
-      <section className="panel">
-        <div className="ph">
-          <h2>RONDJE MT</h2>
-          <span className="count">{R.spoken.length} / 4</span>
-        </div>
-        <p className="note">Geef het scherm per rol aan wie die rol speelt. Elke rol leest eerst in stilte zijn eigen belang.</p>
-        <div className="roles">
-          {MT_ROLLEN.map((ro) => {
-            const on = R.spoken.includes(ro.id);
-            return (
-              <button
-                key={ro.id}
-                type="button"
-                className="role"
-                aria-pressed={on}
-                onClick={() => {
-                  if (on) dispatch({ type: 'TOGGLE_ROLE', id: ro.id });
-                  else openRole(ro.id);
-                }}
-              >
-                <span className="n">{ro.n}</span>
-                <span className="s">{on ? '✓ STANDPUNT GEGEVEN' : 'BEKIJK JE BELANG'}</span>
-              </button>
-            );
-          })}
-        </div>
-        <label className="lab" htmlFor="mot">Motivatie van het MT (één zin)</label>
-        <input
-          id="mot"
-          className="inp"
-          value={R.mot}
-          autoComplete="off"
-          onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'mot', value: e.target.value })}
-        />
-        <button type="button" className="btn ghost" aria-pressed={R.minOn} onClick={() => dispatch({ type: 'TOGGLE_MIN' })}>
-          {R.minOn ? '✓ Minderheidsstandpunt' : '+ Minderheidsstandpunt'}
-        </button>
-        {R.minOn ? (
-          <>
-            <label className="lab" htmlFor="min">Wie is het oneens, en waarom?</label>
-            <input
-              id="min"
-              className="inp"
-              value={R.min}
-              onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'min', value: e.target.value })}
-            />
-          </>
-        ) : null}
-      </section>
       <div className="besluit-submit" role="region" aria-labelledby="besluit-submit-heading">
         <h2 id="besluit-submit-heading" className="sr-only">
-          Besluit vastleggen
+          Verder naar argument
         </h2>
         {blockMsg ? (
           <p className="need besluit-need" id="need" role="status" aria-live="polite">
@@ -239,11 +183,11 @@ export function BesluitPhase({ state, dispatch }: { state: GameUiState; dispatch
           <button
             type="button"
             className="btn gold big"
-            disabled={!okBesluit(state)}
+            disabled={!okBesluitKeuze(state)}
             aria-describedby={blockMsg ? 'need' : undefined}
-            onClick={() => dispatch({ type: 'CONFIRM_BESLUIT' })}
+            onClick={() => dispatch({ type: 'PROCEED_TO_ARGUMENT' })}
           >
-            Besluit vastleggen
+            Verder: jullie argument
           </button>
         </div>
       </div>

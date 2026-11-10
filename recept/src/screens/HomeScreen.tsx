@@ -93,12 +93,13 @@ export function HomeScreen({
           </h2>
           <div className="landing-play__grid">
             <div className="landing-form">
+              <h3 className="landing-form__kop">Bedenk een naam voor de zus</h3>
               <p className="landing-form__intro">
-                Jullie spelen de hoger opgeleide jongere zus van Harrie. Typ haar voornaam (max. 12 tekens). Gebruik
-                geen echte persoonsgegevens.
+                Jullie spelen de jongere zus van Harrie. Ze heeft veel te zeggen, maar staat liever op de achtergrond.
+                Bedenk samen een naam voor haar.
               </p>
               <label className="landing-lab" htmlFor="pname">
-                Voornaam van de zus
+                Naam van de zus
               </label>
               <input
                 id="pname"
@@ -106,9 +107,21 @@ export function HomeScreen({
                 value={name}
                 maxLength={12}
                 autoComplete="off"
-                placeholder="Marja, Ingrid, Mieke…"
+                placeholder="Bijvoorbeeld Annelies"
+                aria-invalid={name.length > 0 && !nameOk}
+                aria-describedby="pname-hint pname-err"
                 onChange={(e) => onName(e.target.value)}
               />
+              <p id="pname-hint" className="landing-form__hint">
+                Een voornaam is genoeg (2 tot 12 tekens).
+              </p>
+              {name.length > 0 && !nameOk ? (
+                <p id="pname-err" className="landing-form__err" role="alert">
+                  Kies een naam van minstens 2 tekens.
+                </p>
+              ) : (
+                <p id="pname-err" className="sr-only" />
+              )}
               <ul className="landing-facts">
                 <li>In teams van vier</li>
                 <li>Ongeveer een uur</li>

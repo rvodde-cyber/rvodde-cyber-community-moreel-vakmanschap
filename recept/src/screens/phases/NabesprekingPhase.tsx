@@ -1,8 +1,6 @@
 import { isFullEpisode } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
 import { DILEMMA_EP4_PIOTR } from '@data/dilemmas/ep4-piotr';
-import { MT_ROLLEN } from '@data/rollen';
-import { ROL_BELANG } from '@data/rolBelang';
 import { greinerCrisisEp4, slotTekst } from '@data/ep4ContentSlots';
 import { NABESPREKING_EP4 } from '@data/nabespreking-ep4';
 import { veiligGesprekIsConcept, veiligGesprekTekst } from '@data/nabesprekingEp4Docent';
@@ -22,7 +20,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
   const docent = useDocentMode();
   const meta = episodeMeta(state.episode);
   const roundNums = isFullEpisode(state.episode) ? ([1, 2] as const) : ([1] as const);
-  const personen = personenInGlossarium(state.round);
+  const personen = personenInGlossarium(state.episode, state.round);
   const h = state.hidden;
   const ep4Vragen = NABESPREKING_EP4.filter(
     (v) => v.status === 'definitief' || (docent && v.status === 'concept'),
@@ -74,7 +72,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
       {roundNums.map((n) => {
         const ui = state.rounds[n];
         const res = state.results[n];
-        if (!ui.mot && !res && ui.cards.length === 0) return null;
+        if (!ui.argument && !res && ui.cards.length === 0) return null;
         const D = roundDefFor({ ...state, round: n });
         const verm = D.verm.find((v) => v.id === ui.verm);
         return (
@@ -88,14 +86,10 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
               <dd>{verm?.t ?? '—'}</dd>
               <dt>Interventies</dt>
               <dd>{ui.cards.length ? ui.cards.join(' en ') : '—'}</dd>
-              <dt>Motivatie MT</dt>
-              <dd>{ui.mot || '—'}</dd>
-              {ui.minOn && ui.min ? (
-                <>
-                  <dt>Minderheidsstandpunt</dt>
-                  <dd>{ui.min}</dd>
-                </>
-              ) : null}
+              <dt>Waarom deze twee</dt>
+              <dd>{ui.argument || '—'}</dd>
+              <dt>Tegenargument</dt>
+              <dd>{ui.tegenargument || '—'}</dd>
               {res ? (
                 <>
                   <dt>Gevolg (indicatief)</dt>
@@ -105,16 +99,6 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
                 </>
               ) : null}
             </dl>
-            <details>
-              <summary>Rolbelangen onthuld (nabespreking)</summary>
-              <ul className="note">
-                {MT_ROLLEN.map((ro) => (
-                  <li key={ro.id}>
-                    <strong>{ro.n}</strong>: {ROL_BELANG[n]?.[ro.id] ?? '—'}
-                  </li>
-                ))}
-              </ul>
-            </details>
           </section>
         );
       })}
@@ -258,7 +242,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
         <p className="note">{PORTRAIT_ETHIEK}</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {personen.map((p) => (
-            <PersonCard key={p.slug} persoon={p} />
+            <PersonCard key={p.slug} persoon={p} episode={state.episode} />
           ))}
         </div>
       </section>

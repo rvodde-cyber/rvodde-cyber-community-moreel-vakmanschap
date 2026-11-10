@@ -52,11 +52,17 @@ export const UITLEG_STAPPEN = [
   },
   {
     nr: 4,
+    titel: 'Leg uit',
+    tekst:
+      'Schrijf waarom jullie deze twee kiezen en wat het sterkste argument is om het juist niet te doen.',
+  },
+  {
+    nr: 5,
     titel: 'Praat',
     tekst: 'In ronde 1 komt er een gesprekskaart. Jullie praten twee minuten en leggen één zin vast.',
   },
   {
-    nr: 5,
+    nr: 6,
     titel: 'Kijk terug',
     tekst: 'Jullie lezen wat er gebeurde en zien wat er met de meters is gebeurd.',
   },
@@ -119,12 +125,12 @@ export const UITLEG_BODY: Record<UitlegSectionId, UitlegBody> = {
     paragraphs: [
       "Jullie spelen de jongere zus van Harrie van Gorp. Harrie begon in de schuur in Berkel-Enschot met worstenbroodjes. Jullie hebben veel zeggenschap, maar werken op de achtergrond. Jullie zijn er niet bij op feestjes, niet op de foto's en niet bij het gekibbel. Elk team kiest zelf haar naam.",
       'Van Gorp groeit mee met de tijd: eerst een schuur met een handvol mensen, dan een werkplaats, een bv met drie vestigingen, een dronefabriek en uiteindelijk een groep met een investeerder. Elk deel speelt in een ander jaar. Het bedrijf verandert, de mensen veranderen, en de vragen worden groter.',
-      'Jullie nemen elke ronde besluiten met het MT. Er is geen eindcijfer waar jullie naar jagen. Het gaat erom dat jullie merken wat jullie keuzes met mensen en met het bedrijf doen.',
+      'Het MT vergadert. Jullie beslissen. Harrie, Lies, Gerrit en de anderen geven advies, werken tegen of zwijgen. Bij de notaris is vastgelegd dat jullie het laatste woord hebben over het budget: 8 punten per ronde. Verder reikt jullie macht niet. Er is geen eindcijfer waar jullie naar jagen. Het gaat erom dat jullie merken wat jullie keuzes met mensen en met het bedrijf doen.',
     ],
   },
   stappen: {
     paragraphs: [
-      'Een deel (aflevering) heeft twee rondes. In elke ronde doen jullie dezelfde vijf stappen.',
+      'Een deel (aflevering) heeft twee rondes. In elke ronde doen jullie dezelfde zes stappen.',
       'In ronde 2 komt er vóór de uitkomst een privébericht aan jullie. Dat is een persoonlijk dilemma dat los staat van de rest. Daarover beslist ieder voor zich, met een korte reden.',
       'Als jullie op "Einde van dit deel" drukken, volgt een slotscène. Daarna komt een pauzekaart met tafelvragen en een voorspelling. Neem daar even de tijd voor.',
     ],
@@ -142,7 +148,7 @@ export const UITLEG_BODY: Record<UitlegSectionId, UitlegBody> = {
   },
   beslissingen: {
     paragraphs: [
-      'Elke interventie is een maatregel die HR en het MT kunnen nemen. Op elke kaart staan: een naam en een korte omschrijving; de kosten (€, €€ of €€€); de verwachte effecten op de meters; soms een effect dat pas in de volgende ronde doorwerkt.',
+      'Elke interventie is een maatregel die jullie kunnen opdragen. Op elke kaart staan: een naam en een korte omschrijving; de kosten (€, €€ of €€€); de verwachte effecten op de meters; soms een effect dat pas in de volgende ronde doorwerkt.',
       'Lees eerst alle kaarten en praat erover voordat jullie kiezen. Er is geen juiste combinatie. Elke keuze heeft een prijs, ook als die niet in geld staat.',
     ],
     overrideA4: [
@@ -166,14 +172,15 @@ export const UITLEG_BODY: Record<UitlegSectionId, UitlegBody> = {
   },
   tafel: {
     paragraphs: [
-      'Het spel bestaat voor een groot deel uit praten. Er zijn drie momenten.',
+      'Het spel bestaat voor een groot deel uit praten. Er zijn vier momenten.',
+      'Het argument (elke ronde). Na jullie keuze schrijven jullie waarom jullie deze twee kiezen (maximaal 280 tekens) en wat het sterkste argument is om het juist niet te doen (maximaal 140 tekens). Denk ook aan mensen die erop achteruitgaan.',
       'De gesprekskaart (ronde 1). Een figuur uit het deel zit met een dilemma. Jullie krijgen twee minuten. Leg één zin vast (maximaal 280 tekens) en kies maximaal drie van zeven waarden: eerlijkheid, loyaliteit, rechtvaardigheid, zorg, vertrouwen, veiligheid en transparantie. Het gesprek heeft geen effect op de meters.',
       'Het privébericht (ronde 2). Dit bericht is alleen voor jullie bedoeld. Kies nadenkend en leg kort uit waarom. Schrijf een reden van minstens tien tekens.',
       'De pauzekaart (na elk deel). Twee vragen voor aan tafel en een voorspelling voor het volgende deel.',
       'Een goed gesprek begint met luisteren. Laat iedereen eerst zeggen wat hij ziet, en bespreek daarna wat jullie willen doen.',
     ],
     overrideA4: [
-      'In deel 4 is er geen gesprekskaart in ronde 1; wel het rondje MT met geheime belangen en het privédilemma in ronde 2.',
+      'In deel 4 is er geen gesprekskaart in ronde 1; wel het argument na jullie keuze en het privédilemma in ronde 2.',
     ],
   },
   jaren: {

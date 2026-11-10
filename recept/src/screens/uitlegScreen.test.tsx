@@ -103,6 +103,22 @@ describe('UitlegScreen', () => {
     expect(r.container.textContent).toContain('Doorgaan waar je was');
   });
 
+  it('(h) zes stappen en vier tafelmomenten in uitleg', () => {
+    expect(UITLEG_STAPPEN).toHaveLength(6);
+    expect(UITLEG_STAPPEN[3]?.titel).toBe('Leg uit');
+    const tafel = UITLEG_BODY.tafel.paragraphs?.join(' ') ?? '';
+    expect(tafel).toContain('vier momenten');
+    expect(tafel).toContain('Het argument (elke ronde)');
+    const r = renderUi(
+      <PosterTypographyScope>
+        <UitlegScreen onBack={() => {}} onOpenGlossary={() => {}} onOpenSettings={() => {}} />
+      </PosterTypographyScope>,
+    );
+    root = r.root;
+    expect(r.container.textContent).toContain('zes stappen');
+    expect(r.container.textContent).toContain('vier momenten');
+  });
+
   it('(g) geen cold open in zichtbare uitlegteksten', () => {
     expect(JSON.stringify(UITLEG_BODY).toLowerCase()).not.toContain('cold open');
     expect(JSON.stringify(UITLEG_STAPPEN).toLowerCase()).not.toContain('cold open');

@@ -52,14 +52,14 @@ Voor `introBeeldRechts` zet het register **`introBeeldFocus`** (`{ x, y }` in pr
 
 ## Portretten
 
-| Slug | Rol | Alt-tekst (NL) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 akkoord |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| piotr-nowak | Flex / ploegleider | Portret: man in werkkleding, neutrale achtergrond | twijfel | ja | ja | twijfel | ja | ja | ja | twijfel | **nee** |
-| erik-verhoeven | MT / zakelijk | Portret: man in zakelijke kleding | twijfel | ja | ja | twijfel | ja | ja | ja | twijfel | **nee** |
-| yasmin-el-amrani | HR | Portret: vrouw in professionele kleding | twijfel | ja | ja | twijfel | ja | ja | ja | twijfel | **nee** |
-| overige MT | Diverse | Zie `docs/PORTRETTEN-PROMPTS.md` | twijfel | ja | ja | twijfel | ja | ja | ja | twijfel | **nee** |
+**Status (10 nov 2026):** bouwsteen `Portret.tsx` + codes per aflevering in `data/personen.ts`. **Nog te maken door Richard (Firefly): 23 prioriteit 1 + 5 prioriteit 2 = 28 bestanden.** Volledige lijst: `docs/PORTRETTEN-LIJST.md`. Pad: `public/beelden/portretten/P-<NAAM>-<JAAR>.webp` (800×800, max 150 kB). Tot aanlevering: initialen-tegel in UI.
 
-Richard zet `akkoordRichard: true` in `data/beeldenCheck.ts` en levert WebP in `public/portretten/` of `public/beelden/`.
+| Prioriteit | Aantal | Akkoord |
+| --- | --- | --- |
+| 1 (Wie is wie-tegels) | 23 | **nee** |
+| 2 (overig verhaal) | 5 | **nee** |
+
+Richard zet per code akkoord in `data/beeldenCheck.ts` zodra bestanden akkoord zijn (optioneel uitbreiden met portretcodes).
 
 ## UI A3 — telefoon met sms (2009)
 

@@ -1,14 +1,12 @@
 import { ROLBESCHRIJVING_INTRO } from './rolbeschrijving.nl';
 
-/** Teksten uit referentie howtoHTML + rolbeschrijving (§3.4, §8.1) */
 export const HOE_HET_WERKT_STAPPEN = [
-  'Jullie spelen samen het managementteam (MT) van Van Gorp Drones, met vier rollen: directeur, financiën, HR en OR. Verdeel die rollen aan het begin.',
-  'Elke ronde begint met een trailer en een korte scène. Daarna lopen jullie vier stappen door: scène, onderzoek, MT-besluit en uitkomst. Voor onderzoek en besluit samen hebben jullie tien minuten.',
+  'Jullie spelen samen de jongere zus van Harrie: één rol, één stem per team. Kies vooraf haar naam op het startscherm.',
+  'Elke ronde begint met een openingsscène. Daarna lopen jullie onderzoek, besluit, argument en uitkomst door. Voor onderzoek en besluit samen hebben jullie ongeveer tien minuten — de timer loopt ook tijdens het argument, maar blokkeert niet als de tijd om is.',
   'Begin met onderzoek. Tik maximaal drie onderzoeken aan en kies een vermoeden: wat is symptoom en wat is oorzaak?',
-  'Neem dan jullie besluit. Kies twee interventies, verdeel het budget en bepaal of jullie het advies van PILOT volgen of zelf wegen.',
-  'Doe het rondje MT. Elke rol leest in stilte een geheim belang en geeft daarna een standpunt. Is iemand het oneens? Leg dat vast als minderheidsstandpunt.',
-  'Houd de telefoon in de gaten. Berichten in GROEP zijn voor het hele MT. Berichten in PRIVÉ zijn niet voor iedereen bedoeld: jullie bepalen zelf wat je ermee doet.',
-  'Daarna rekent TEMPO uit wat er gebeurt, en waarom. Wat jullie in ronde 1 kiezen, werkt door in ronde 2.',
+  'Neem dan jullie besluit. Kies twee interventies en houd het budget binnen de punten. In aflevering 4: kies ook of jullie PILOT volgen.',
+  'Leg uit waarom jullie deze twee kiezen en wat het sterkste argument is om het juist niet te doen. Pas daarna legt het spel de uitkomst vast.',
+  'Houd de telefoon in de gaten. Berichten in GROEP zijn voor het hele bedrijf. Berichten in PRIVÉ zijn voor jullie — jullie bepalen zelf wat je ermee doet.',
   'In de nabespreking zie je wat het dashboard niet meet. Er is geen winnaar: het gaat om wat jullie ervan leren.',
 ] as const;
 

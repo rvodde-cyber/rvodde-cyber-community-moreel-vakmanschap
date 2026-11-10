@@ -10,8 +10,24 @@ export function migrateGameState(raw: unknown): GameUiState | null {
   const episode = s.episode ?? 4;
   const base = freshGame();
   const rounds: GameUiState['rounds'] = {
-    1: { ...freshRoundUi(episode, 1), ...s.rounds?.[1], reacted: s.rounds?.[1]?.reacted ?? false },
-    2: { ...freshRoundUi(episode, 2), ...s.rounds?.[2], reacted: s.rounds?.[2]?.reacted ?? false },
+    1: {
+      ...freshRoundUi(episode, 1),
+      ...s.rounds?.[1],
+      argument: s.rounds?.[1]?.argument?.trim()
+        ? s.rounds[1].argument
+        : (s.rounds?.[1]?.mot ?? s.rounds?.[1]?.argument ?? ''),
+      tegenargument: s.rounds?.[1]?.tegenargument ?? '',
+      reacted: s.rounds?.[1]?.reacted ?? false,
+    },
+    2: {
+      ...freshRoundUi(episode, 2),
+      ...s.rounds?.[2],
+      argument: s.rounds?.[2]?.argument?.trim()
+        ? s.rounds[2].argument
+        : (s.rounds?.[2]?.mot ?? s.rounds?.[2]?.argument ?? ''),
+      tegenargument: s.rounds?.[2]?.tegenargument ?? '',
+      reacted: s.rounds?.[2]?.reacted ?? false,
+    },
   };
 
   return {

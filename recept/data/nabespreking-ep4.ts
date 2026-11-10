@@ -123,6 +123,13 @@ export const NABESPREKING_EP4: NabesprekingVraagEp4[] = [
     tekst: 'Wanneer helpt een procedure om zorgvuldig te zijn, en wanneer verhult ze juist iets?',
     thema: 'sanne',
   },
+  {
+    id: 'ep4-nb-wie-wist',
+    fase: 'wegen',
+    status: 'concept',
+    tekst: 'Wie wist dat jullie dit besloten?',
+    thema: 'budget',
+  },
 ];
 
 export function validateNabesprekingEp4() {

@@ -26,6 +26,7 @@ import { roundDefFor } from '../game/roundSource';
 import type { GameAction } from '../game/gameReducer';
 import type { GameUiState } from '../game/uiTypes';
 import { mln, pad2, budgetPuntenLabel } from '../lib/format';
+import { ArgumentPhase } from './phases/ArgumentPhase';
 import { BesluitPhase } from './phases/BesluitPhase';
 import { ColdPhase } from './phases/ColdPhase';
 import { IntroPhase } from './phases/IntroPhase';
@@ -82,7 +83,8 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
     ? budgetPuntenLabel(bcalc(state, state.rounds[round], ctx).left, 'gulden') +
       ` / ${budgetVoorRonde(state.episode as Exclude<EpisodeId, 4>, round)}`
     : mln(budget);
-  const showRoom = phase === 'onderzoek' || phase === 'besluit' || phase === 'uitkomst' || phase === 'scan';
+  const showRoom =
+    phase === 'onderzoek' || phase === 'besluit' || phase === 'argument' || phase === 'uitkomst' || phase === 'scan';
   const film = state.filmKind ? <FilmLayer state={state} dispatch={dispatch} /> : null;
   const dashTitle = content.usesDemoBudget
     ? 'CONTROLEKAMER'
@@ -226,6 +228,7 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
             <main>
               {phase === 'onderzoek' ? <OnderzoekPhase state={state} dispatch={dispatch} /> : null}
               {phase === 'besluit' ? <BesluitPhase state={state} dispatch={dispatch} /> : null}
+              {phase === 'argument' ? <ArgumentPhase state={state} dispatch={dispatch} /> : null}
               {phase === 'scan' ? <ScanPhase dispatch={dispatch} /> : null}
               {phase === 'uitkomst' ? <UitkomstPhase state={state} dispatch={dispatch} /> : null}
             </main>

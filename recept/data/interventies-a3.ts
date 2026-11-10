@@ -190,4 +190,10 @@ export const NABESPREKING_A3 = [
     tekst: 'Wat gebeurt er met een organisatie wanneer niemand meer het geheel overziet?',
     status: 'concept' as const,
   },
+  {
+    id: 'a3-nb-wie-wist',
+    fase: 'wegen' as const,
+    tekst: 'Wie wist dat jullie dit besloten?',
+    status: 'concept' as const,
+  },
 ];

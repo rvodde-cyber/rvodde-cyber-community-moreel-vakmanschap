@@ -59,6 +59,8 @@ export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
     spoken: [],
     w: ['', '', ''],
     mot: '',
+    argument: '',
+    tegenargument: '',
     minOn: false,
     min: '',
     bud: usesInterventieMotor(episode)
