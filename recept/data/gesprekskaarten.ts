@@ -43,9 +43,9 @@ const A3: Gesprekskaart = {
   sterren: 2,
   slotvraag: STANDAARD_SLOTVRAAG,
   alineas: [
-    'Voor de derde keer in korte tijd meldt Saskia zich ziek. In het verzuimgesprek komt het eruit: werkdruk, spanning en een leidinggevende die iedereen constant opjaagt. "Ik trek het even niet meer. En ik ben echt niet de enige."',
-    'Mark, HR-adviseur op het hoofdkantoor in Tilburg, kent die leidinggevende. De vestiging in Dongen haalt al drie jaar op rij de targets. Marco noemt hem "onze motor". Waalwijk zit al maanden eronder.',
-    'Een kritisch signaal naar boven kan het team helpen, maar ook een succesvolle manager beschadigen, en Marks eigen positie. Zwijgen houdt de cijfers hoog en mensen ziek. Wat zijn topresultaten waard als ze worden betaald met de gezondheid van het team?',
+    'Saskia werkt in Dongen. Voor de derde keer in korte tijd meldt ze zich ziek. In het verzuimgesprek met Mark, HR-adviseur op het hoofdkantoor in Tilburg, komt het eruit: te veel werk, voortdurend spanning en een leidinggevende die iedereen opjaagt. "Ik trek het even niet meer. En ik ben echt niet de enige."',
+    'Mark kent die leidinggevende. De vestiging in Dongen haalt al drie jaar op rij de targets, en Marco noemt hem "onze motor". Waalwijk zit al maanden onder target.',
+    'Als Mark dit meldt, kan dat Saskia en haar collega\'s helpen. Maar het kan ook de leidinggevende schaden, en Marks eigen positie. Zwijgt hij, dan blijven de cijfers goed, en blijven mensen ziek. Wat doet Mark?',
   ],
 };
 

@@ -4,6 +4,8 @@ export type IntroBlok = {
   geschiedenis: string;
   uitdagingen: string;
   hint: string;
+  /** Alleen A4 ronde 2: De uitdaging (blok na situatie ronde 2). */
+  hintRonde2?: string;
   opdracht: string;
 };
 
@@ -41,6 +43,8 @@ export const INTRO_TEKSTEN: Record<1 | 2 | 3 | 4 | 5, IntroBlok> = {
     uitdagingen:
       'Maandagochtend, 09:14 uur. Het verzuim is weer gestegen. Ploegleider Ans weet \'s ochtends niet wat de norm die dag wordt. En ergens in een la ligt de eerste order voor een defensietoepassing, nog ongeopend. Marco wil vrijdag een plan zien, en maar 1,5 miljoen euro om het mee te betalen.',
     hint: 'Het dashboard laat cijfers zien. Bedenk eens wie die cijfers heeft ingevoerd, en wie er in deze cijfers niet in voorkomt.',
+    hintRonde2:
+      'Er komen steeds meer regels en formulieren. Bedenk eens wie daar last van heeft, en wie er eigenlijk om gevraagd heeft.',
     opdracht:
       'Jullie zijn de jongere zus van Harrie. Jullie werken op de achtergrond, maar hebben het laatste woord over het budget. Per ronde onderzoeken jullie eerst wat er speelt. Daarna kiezen jullie twee interventies binnen jullie budgetpunten en schrijven jullie op waarom.',
   },

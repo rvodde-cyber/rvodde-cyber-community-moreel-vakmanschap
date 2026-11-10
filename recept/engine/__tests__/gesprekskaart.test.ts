@@ -33,6 +33,13 @@ describe('gesprekskaarten register', () => {
   it('A1: gesprekskaartActief aan', () => {
     expect(EPISODE_CONTENT[1].gesprekskaartActief).toBe(true);
   });
+
+  it('A3 topresultaten: nieuwe alinea\'s met Dongen', () => {
+    const k = gesprekskaartVoor(3);
+    expect(k.alineas[0]).toContain('Dongen');
+    expect(k.alineas[2]).toContain('Wat doet Mark?');
+    expect(k.alineas.join(' ')).not.toMatch(/topresultaten waard/i);
+  });
 });
 
 describe('validateGesprekOpslaan', () => {

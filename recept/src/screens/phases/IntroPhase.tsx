@@ -118,10 +118,7 @@ export function IntroPhase({ state, dispatch }: { state: GameUiState; dispatch: 
           </p>
           <div className="hintbox">
             <h4>DE UITDAGING</h4>
-            <p>
-              Groei voelt als succes, totdat de regels het werk overnemen. Vraag bij elke nieuwe regel: wie heeft er last
-              van, en wie heeft er eigenlijk om gevraagd?
-            </p>
+            <p>{INTRO_TEKSTEN[4].hintRonde2}</p>
           </div>
           <div className="carry">
             <h4>JULLIE OPDRACHT</h4>

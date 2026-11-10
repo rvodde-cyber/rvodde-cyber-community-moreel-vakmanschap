@@ -1,13 +1,23 @@
 # Open vragen en aanleveringen
 
-Laatste update: **10 november 2026** (bundel + beelden).
+Laatste update: **10 november 2026** (gewone taal + portret jpg).
+
+## Orakeltoon, te beoordelen door Richard
+
+| Bestand | Regel (ca.) | Tekstfragment |
+| --- | --- | --- |
+| `data/gesprekskaarten.ts` | A2 alinea 3 | `Wat is eerlijker: de nieuwe goed betalen, of de oude niet passeren?` |
+| `data/gesprekskaarten.ts` | A5 alinea 3 | `Wat is een organisatie verschuldigd aan iemand die zij zelf heeft laten verouderen…` |
+| `content/glossary.nl.ts` | symptoom | `Vraag je steeds af: waarom is dit zo?` |
+| `data/sanne.ts` | groepsapp | `…hardop horen: waarom niet?` (rhetorische slot) |
 
 ## Bundel opmerkingen (10 nov 2026)
 
 | Onderwerp | Status |
 | --- | --- |
-| **A4 intro ronde 2** | Vak “De uitdaging” bevat nog **orakeltoon** (“Groei voelt als succes…”) — niet in `intros.nl.ts`; bewust niet gewijzigd |
-| **Glossary symptoom** | “Vraag je steeds af…” in `content/glossary.nl.ts` — orakeltoon, niet gewijzigd |
+| **A4 intro ronde 2** | Tekst in `content/intros.nl.ts` → `hintRonde2`; golden compute ongewijzigd |
+| **Gesprekskaart A3** | Drie alinea's vervangen (Dongen, gewone taal) |
+| **Portret-URL** | Alleen `.jpg` in `Portret.tsx` |
 | **Trailer >250 kB** | T1, TR2-3, TR4-2, TR5-1, TR5-4: optioneel tweede compressie |
 | **L4** | Kopie van D1 tot eigen shot klaar is |
 

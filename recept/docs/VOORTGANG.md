@@ -6,10 +6,11 @@ Laatste update: **10 november 2026** — bundel opmerkingen 1–3 + beelden
 
 | Onderdeel | Status |
 | --- | --- |
+| **Gewone taal** | Gesprekskaart A3 herschreven; A4 `hintRonde2` in `intros.nl.ts`; portretten alleen `.jpg`. Tests uitgebreid. |
 | **Bundel 1–3** | Labels **DE SITUATIE** / **DE UITDAGING**; hints in `content/intros.nl.ts`; `SpokenLineText` in cold open + slotfilm; portretten alleen glossary. Tests `bundelOpmerkingen.test.ts`. |
 | **Trailer-JPG’s** | Canonieke `{CODE}.jpg`; aliassen verwijderd; bron in `beelden-bron/`. |
 | **Portretten** | 28/28 aanwezig; `_origineel` uit `public/`. |
-| **Tests / build** | **286** groen; `npm run build` OK. |
+| **Tests / build** | **292** groen; `npm run build` OK. |
 | **Afleveringstrailer** | Fase `trailer` vóór intro; `data/trailers.ts`, `EpisodeTrailerPhase`, `trailerGezien` (save v5), overslaan/replay, cold-open **FilmOverlay**-trailer ongewijzigd. Tests `episodeTrailer.test.ts`. |
 | **A4 + rondebalk** | `introCarryLines` gelijk aan A1–A5; rondebalk **Kijk … Kijk terug** (`spelStappen.ts`); openingsscène-kop + uitleglijn; speler-UI zonder MT als teamrol. |
 | **Portretten (voorbereiding)** | `docs/PORTRETTEN-LIJST.md`, codeschema `P-<NAAM>-<JAAR>`, `Portret.tsx`, glossarium per aflevering (`data/glossarium.ts`), **23+5** nog aan te leveren door Richard. Tests `portret.test.tsx`. |

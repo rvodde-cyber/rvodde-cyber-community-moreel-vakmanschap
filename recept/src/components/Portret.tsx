@@ -17,8 +17,6 @@ const INITIALS: Record<string, string> = {
   'caroline-de-wit': 'CD',
 };
 
-type AfbeeldingFase = 'webp' | 'jpg' | 'fallback';
-
 type Props = {
   code?: string;
   naam: string;
@@ -37,10 +35,10 @@ export function portretAltTekst(naam: string, leeftijd?: number): string {
 
 export function Portret({ code, naam, leeftijd, slug, size = 'md', className }: Props) {
   const base = import.meta.env.BASE_URL;
-  const [fase, setFase] = useState<AfbeeldingFase>('webp');
+  const [beeldOk, setBeeldOk] = useState(true);
 
   const opError = useCallback(() => {
-    setFase((prev) => (prev === 'webp' ? 'jpg' : 'fallback'));
+    setBeeldOk(false);
   }, []);
 
   const cls = ['person-avatar', size === 'sm' ? 'person-avatar-sm' : 'person-avatar-md', className]
@@ -58,13 +56,12 @@ export function Portret({ code, naam, leeftijd, slug, size = 'md', className }: 
   const init = INITIALS[slug] ?? naam.slice(0, 2).toUpperCase();
   const alt = portretAltTekst(naam, leeftijd);
 
-  const toonBeeld = code && magPortretTonen(slug) && fase !== 'fallback';
+  const toonBeeld = code && magPortretTonen(slug) && beeldOk;
 
   if (toonBeeld) {
-    const ext = fase === 'webp' ? 'webp' : 'jpg';
     return (
       <img
-        src={`${base}beelden/portretten/${code}.${ext}`}
+        src={`${base}beelden/portretten/${code}.jpg`}
         alt={alt}
         loading="lazy"
         decoding="async"

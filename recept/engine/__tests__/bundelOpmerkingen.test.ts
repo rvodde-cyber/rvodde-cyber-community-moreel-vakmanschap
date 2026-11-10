@@ -132,6 +132,20 @@ describe('bundel opmerkingen 1–3', () => {
   });
 });
 
+describe('gewone taal — A4 r2 en gesprekskaart', () => {
+  it('(c) A4 hint ronde 2 uit intros.nl.ts; geen Groei voelt', () => {
+    const hint =
+      'Er komen steeds meer regels en formulieren. Bedenk eens wie daar last van heeft, en wie er eigenlijk om gevraagd heeft.';
+    expect(INTRO_TEKSTEN[4].hintRonde2).toBe(hint);
+    const corpus = spelerTekstCorpus();
+    expect(corpus).not.toContain('Groei voelt als succes');
+  });
+
+  it('(b) Wat zijn topresultaten waard nergens in spelersteksten', () => {
+    expect(spelerTekstCorpus()).not.toMatch(/topresultaten waard/i);
+  });
+});
+
 describe('portretcodes helper', () => {
   it('portretCode resolveert naar register', () => {
     const harrie = PERSONEN.find((p) => p.slug === 'harrie-van-gorp')!;

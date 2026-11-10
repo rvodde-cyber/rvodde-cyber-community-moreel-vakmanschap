@@ -37,7 +37,7 @@ describe('Portret en glossarium', () => {
     expect(img?.getAttribute('loading')).toBe('lazy');
     expect(img?.getAttribute('decoding')).toBe('async');
     const src = img?.getAttribute('src') ?? '';
-    expect(src).toMatch(/beelden\/portretten\/P-HARRIE-2026\.webp$/);
+    expect(src).toMatch(/beelden\/portretten\/P-HARRIE-2026\.jpg$/);
     expect(src).not.toMatch(/^https?:/);
   });
 
@@ -68,6 +68,20 @@ describe('Portret en glossarium', () => {
         expect(p.tekst.length).toBeGreaterThan(0);
       }
     }
+  });
+
+  it('(d) onError: terug naar initialen', () => {
+    const r = renderUi(
+      <Portret code="P-ONTBREEKT-9999" naam="Harrie van Gorp" leeftijd={71} slug="harrie-van-gorp" />,
+    );
+    root = r.root;
+    const img = r.container.querySelector('img');
+    expect(img).not.toBeNull();
+    act(() => {
+      img?.dispatchEvent(new Event('error', { bubbles: true }));
+    });
+    expect(r.container.querySelector('img')).toBeNull();
+    expect(r.container.textContent).toContain('HG');
   });
 
   it('(e) geen externe src in portret-paden', () => {
