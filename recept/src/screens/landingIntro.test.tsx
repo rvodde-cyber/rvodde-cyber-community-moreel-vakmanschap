@@ -280,6 +280,19 @@ describe('Intro register en IntroPhase', () => {
     expect(r.container.textContent).toContain('Van Gorp Machinebouw B.V.');
   });
 
+  it('(a) A4 intro zonder naam: terugvaltekst zus', () => {
+    const state = {
+      ...freshEpisode(4),
+      phase: 'intro' as const,
+      round: 1 as const,
+      playerName: '',
+    };
+    const r = renderUi(<IntroPhase state={state} dispatch={() => {}} />);
+    root = r.root;
+    expect(r.container.textContent).toContain('Jullie zijn de jongere zus van Harrie');
+    expect(r.container.textContent).not.toContain('Jullie zijn ,');
+  });
+
   it('A1 intro UI: geen conceptskelet, wel 8 punten', () => {
     const r = introWithPeriod(1);
     root = r.root;

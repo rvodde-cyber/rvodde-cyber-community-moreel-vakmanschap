@@ -222,7 +222,14 @@ export function GameShell({ state, dispatch }: { state: GameUiState; dispatch: (
       </header>
       {showRoom ? <Ticker state={state} /> : null}
       <div className="wrap">
-        {showRoom ? <StepsNav phase={phase} /> : null}
+        {showRoom ? (
+          <StepsNav
+            phase={phase}
+            episode={state.episode}
+            round={round}
+            dilemmaDone={state.dilemma.done}
+          />
+        ) : null}
         {showRoom ? (
           <div className="grid">
             <main>

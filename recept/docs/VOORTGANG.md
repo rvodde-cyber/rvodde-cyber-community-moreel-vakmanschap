@@ -1,16 +1,17 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **10 november 2026** — portretten-voorbereiding (lijst + bouwsteen)
+Laatste update: **10 november 2026** — A4 zus-opdracht, rondebalk, openingsscène-uitleg
 
 ## Deze sessie
 
 | Onderdeel | Status |
 | --- | --- |
+| **A4 + rondebalk** | `introCarryLines` gelijk aan A1–A5; rondebalk **Kijk … Kijk terug** (`spelStappen.ts`); openingsscène-kop + uitleglijn; speler-UI zonder MT als teamrol. |
 | **Portretten (voorbereiding)** | `docs/PORTRETTEN-LIJST.md`, codeschema `P-<NAAM>-<JAAR>`, `Portret.tsx`, glossarium per aflevering (`data/glossarium.ts`), **23+5** nog aan te leveren door Richard. Tests `portret.test.tsx`. |
 | **Zus-rol (één teamrol)** | MT-rolverdeling en `RoleBelangModal` verwijderd; spelers = jongere zus. Flow: besluit → **argument** → gesprek/uitkomst. `docs/INVENTARIS-MT-ROLLEN.md`. |
 | **Argumentstap** | Fase `argument`, velden 20–280 / 10–140 tekens, knop *Dit is ons besluit*; export + docentlog; timer loopt door (`useGame` + `onderzoek`/`besluit`/`argument`), geen blokkade bij 0. |
 | **Teksten** | `content/uitleg.ts` (6 stappen, 4 momenten), startscherm naam zus, `howItWorks`/`glossary`, intro A1 notariszin; nabesprekingsvraag *Wie wist…* (concept) per aflevering. |
-| **Tests / build** | Zie laatste run na portretten-taak (`npm test`, `npm run build`). |
+| **Tests / build** | **252** tests groen; `npm run build` OK (portretten-taak). |
 | **Uitleg en spelregels** | `content/uitleg.ts`, `UitlegScreen.tsx`, routing via `App.tsx` + `UiModalsContext`; CSS `uitleg-*`; tests `uitlegScreen.test.tsx`; docs §9b `DESIGNGIDS.md`; zichtbare **cold open** → **openingsscène** (`StepsNav`, docentpaneel). |
 | --- | --- |
 | **Stap 2 — onderzoek A1/A2/A3/A5** | Per ronde **5** onderzoeken (`t`, `quote`, `sig`); inhoud uit opdracht; r1 ≠ r2 in `a1Rounds` … `a5Rounds`. Schema `acties`: 3–6 items. UI: `.tiles--onderzoek` (3+2 breed, 1 kolom &lt;720px); `quote` 16px/1.55, `sig` uppercase. `docs/TAALGIDS.md` § Signaalwoorden; `STAP-FLOW-ONDERZOEK.md` § Onderzoeken. **A4** `data/rounds.ts` ongewijzigd. Onderzoek-id’s wegen **niet** mee in motor/golden (alleen UI + export). Test: `onderzoekActiesInterventie.test.ts`. |

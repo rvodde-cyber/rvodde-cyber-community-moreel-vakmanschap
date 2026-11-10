@@ -2,6 +2,13 @@
 
 Laatste update: **10 november 2026** (portretten-voorbereiding).
 
+## A4 + rondebalk (10 nov 2026)
+
+| Onderwerp | Status |
+| --- | --- |
+| **Golden compute A4** | Ongewijzigd (`engine/__golden__/`, `episodeContent` golden-blok) |
+| **Intro-opdracht A4** | Alleen tekst via `introOpdrachtKern`; geen aparte snapshot in golden |
+
 ## Portretten (10 nov 2026)
 
 | Onderwerp | Actie |

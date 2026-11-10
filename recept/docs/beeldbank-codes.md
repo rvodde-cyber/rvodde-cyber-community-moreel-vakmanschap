@@ -1,6 +1,6 @@
 # Recept – Beeldcodes (kort overzicht voor de bouw)
 
-De volledige Firefly-prompts staan in het ontwerpdocument; Cursor heeft alleen de codes en bestemming nodig. Bestanden komen in `public/beelden/<code>.webp` (16:9, maximaal 1600 px breed) of `public/portretten/<slug>.webp` (portretten). Ontbreekt een beeld: toon een sfeervolle plaatsaanduiding "BEELD <code> VOLGT".
+De volledige Firefly-prompts staan in het ontwerpdocument; Cursor heeft alleen de codes en bestemming nodig. Bestanden komen in `public/beelden/<code>.webp` (16:9, maximaal 1600 px breed) of `public/beelden/portretten/P-<NAAM>-<JAAR>.webp` (vierkant, 800 px). Ontbreekt een beeld: toon een sfeervolle plaatsaanduiding "BEELD <code> VOLGT" (portretten: initialen-tegel).
 
 ## Stijl per tijdperk
 

@@ -57,7 +57,7 @@ export function PhonePanel({ state, dispatch }: Props) {
           {tab === 'g' ? 'VG' : '🔒'}
         </span>
         <span>
-          <span className="gn">{tab === 'g' ? 'MT Van Gorp Drones' : 'Privéberichten'}</span>
+          <span className="gn">{tab === 'g' ? 'Groep Van Gorp Drones' : 'Privéberichten'}</span>
           <span className={`gm${typingOnTab ? ' typing' : ''}`}>
             {typingOnTab
               ? `${typingDef!.van.split(' ')[0]} typt…`

@@ -24,7 +24,7 @@ export function OnderzoekPhase({
         sub="Praat hardop met elkaar: wat zien we, en wat zou daarachter kunnen zitten? Jullie vermoeden telt straks mee in de uitkomst."
       />
       <div className="q">
-        <span className="tag">MT-VRAAG</span>
+        <span className="tag">VRAAG</span>
         <p>{D.q1}</p>
       </div>
       <section className="panel">
@@ -59,7 +59,7 @@ export function OnderzoekPhase({
       </section>
       <section className="panel">
         <div className="ph">
-          <h2>VERMOEDEN VAN HET MT</h2>
+          <h2>JULLIE VERMOEDEN</h2>
         </div>
         <div className="opts">
           {D.verm.map((v) => (
@@ -81,7 +81,7 @@ export function OnderzoekPhase({
         disabled={!ok}
         onClick={() => dispatch({ type: 'SET_PHASE', phase: 'besluit' })}
       >
-        Naar het MT-besluit
+        Naar beslissen
       </button>
       {!ok ? <p className="need">Nog nodig om door te gaan: minstens één onderzoek en een vermoeden.</p> : null}
     </>

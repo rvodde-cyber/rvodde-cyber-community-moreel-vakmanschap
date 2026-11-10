@@ -59,7 +59,7 @@ export function BriefjePanel({ def, state, dispatch, periodKey }: Props) {
           Jullie besluit over dit briefje is vastgelegd.
         </p>
       ) : (
-        <p className="note">Het briefje ligt klaar. Jullie beslissen straks in het MT-overleg.</p>
+        <p className="note">Het briefje ligt klaar. Jullie beslissen straks samen wat jullie ermee doen.</p>
       )}
     </section>
   );

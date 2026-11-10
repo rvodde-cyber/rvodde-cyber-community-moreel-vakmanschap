@@ -11,7 +11,12 @@ import { Onderstroom, OnderstroomTyping } from '../../components/Onderstroom';
 import { useUiModals } from '../../context/UiModalsContext';
 import { unlockAudio } from '../../audio/sfx';
 import { speechStepAriaLabel } from '../../game/coldOpenA11y';
-import { coldSceneTaskLine, coldTrailerIntroTaskLine } from '../../game/coldOpenCopy';
+import {
+  COLD_OPENING_KOP,
+  COLD_OPENING_UITLEG,
+  coldSceneTaskLine,
+  coldTrailerIntroTaskLine,
+} from '../../game/coldOpenCopy';
 import { coldStepDurationMs, shouldAutoAdvanceCold } from '../../game/coldOpenTiming';
 import type { GameAction } from '../../game/gameReducer';
 import type { GameUiState } from '../../game/uiTypes';
@@ -141,6 +146,8 @@ export function ColdPhase({
         <div className="cine-shade" />
         {head}
         <div className="cine-in">
+          <h4 className="cold-open-kop">{COLD_OPENING_KOP}</h4>
+          <p className="cold-open-uitleg">{COLD_OPENING_UITLEG}</p>
           <p className="kick">{kick}</p>
           <p className="ep">{epTitle}</p>
           <p className="task-line">{coldTrailerIntroTaskLine()}</p>
@@ -186,6 +193,8 @@ export function ColdPhase({
       />
       {head}
       <div className="cine-in cold-open-body">
+        <h4 className="cold-open-kop">{COLD_OPENING_KOP}</h4>
+        <p className="cold-open-uitleg">{COLD_OPENING_UITLEG}</p>
         <p className="kick">{sb.place}</p>
         {onderstroomStack.length > 0 || step?.kind === 'onderstroom-typing' ? (
           <div className="cold-onderstroom-stack" aria-live="off">
@@ -217,7 +226,7 @@ export function ColdPhase({
         <div className="filmbtns">
           {last ? (
             <button type="button" className="btn gold big" onClick={skipToOnderzoek}>
-              Start het MT-overleg
+              Start met onderzoek
             </button>
           ) : (
             <>

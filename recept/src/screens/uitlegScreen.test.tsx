@@ -125,11 +125,14 @@ describe('UitlegScreen', () => {
     expect(UITLEG_STAPPEN[0]?.tekst).toContain('openingsscène');
   });
 
-  it('(d) StepsNav toont openingsscène i.p.v. cold open', () => {
-    const r = renderUi(<StepsNav phase="cold" />);
+  it('(d) StepsNav toont Kijk i.p.v. OPENINGSSCÈNE', () => {
+    const r = renderUi(
+      <StepsNav phase="cold" episode={4} round={1} dilemmaDone={false} />,
+    );
     root = r.root;
     const text = r.container.textContent ?? '';
-    expect(text.toUpperCase()).toContain('OPENINGSSCÈNE');
+    expect(text.toUpperCase()).toContain('KIJK');
+    expect(text.toUpperCase()).not.toContain('OPENINGSSCÈNE');
     expect(text.toLowerCase()).not.toContain('cold open');
   });
 });

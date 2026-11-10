@@ -96,7 +96,7 @@ export function VoorspelPhase({ state, dispatch }: { state: GameUiState; dispatc
       </section>
       <div className="q">
         <span className="tag">TAFELVRAAG</span>
-        <p>Wat heeft dit MT aan Harries opvolger nagelaten, behalve geld?</p>
+        <p>Wat hebben jullie aan Harries opvolger nagelaten, behalve geld?</p>
       </div>
       <section className="panel">
         <div className="ph">

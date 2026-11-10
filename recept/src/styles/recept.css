@@ -49,9 +49,24 @@ button, input { font: inherit; color: inherit; }
 
 /* Stappen */
 .steps { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-gap: 6px; }
+.steps--stappen { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .steps li { font-family: var(--data); font-size: 13px; color: var(--soft); padding: 6px 10px; border: 1px solid var(--line); background: var(--panel); }
 .steps li.done { color: var(--ink); }
 .steps li.now { color: var(--bg); background: var(--cyan); border-color: var(--cyan); }
+.cold-open-kop {
+  margin: 0 0 6px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.cold-open-uitleg {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--soft);
+  max-width: 36em;
+}
 
 /* Raster */
 .grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; grid-gap: 14px; margin: 14px auto 40px; }
@@ -334,6 +349,7 @@ details p { margin: 0 0 10px; max-width: 72ch; }
   .chain { grid-template-columns: minmax(0, 1fr); }
   .film .ep { font-size: 38px; } .sub { font-size: 21px; }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps--stappen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .clock { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {

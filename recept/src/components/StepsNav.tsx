@@ -1,19 +1,30 @@
+import { episodeContent } from '@data/episodes/content';
+import type { EpisodeId } from '@data/episodes/meta';
+import { actieveSpelStap, spelStappenVoorRonde, type SpelStapId } from '../game/spelStappen';
 import type { Phase } from '../game/uiTypes';
 
-const STEPS = ['OPENINGSSCÈNE', 'ONDERZOEK', 'BESLISSEN', 'UITKOMST'];
-
-const phaseIndex: Partial<Record<Phase, number>> = {
-  intro: 0,
-  cold: 0,
-  onderzoek: 1,
-  besluit: 2,
-  argument: 2,
-  gesprek: 2,
-  uitkomst: 3,
-  scan: 3,
+type Props = {
+  phase: Phase;
+  episode: EpisodeId;
+  round: 1 | 2;
+  dilemmaDone: boolean;
 };
 
-export function StepsNav({ phase }: { phase: Phase }) {
+function doneBefore(current: SpelStapId | null, stepId: SpelStapId, order: SpelStapId[]): boolean {
+  if (!current) return false;
+  return order.indexOf(stepId) < order.indexOf(current);
+}
+
+export function StepsNav({ phase, episode, round, dilemmaDone }: Props) {
+  const content = episodeContent(episode);
+  const stappen = spelStappenVoorRonde(episode, round);
+  const order = stappen.map((s) => s.id);
+  const current = actieveSpelStap(phase, round, {
+    gesprekskaartActief: content.gesprekskaartActief,
+    heeftDilemma: !!content.dilemma,
+    dilemmaOpen: !dilemmaDone,
+  });
+
   if (phase === 'tussen') {
     return (
       <ol className="steps">
@@ -33,42 +44,23 @@ export function StepsNav({ phase }: { phase: Phase }) {
     );
   }
 
-  if (phase === 'gesprek') {
-    return (
-      <ol className="steps">
-        <li className="done">1 OPENINGSSCÈNE</li>
-        <li className="done">2 ONDERZOEK</li>
-        <li className="now" aria-current="step">
-          3 TEAMGESPREK
-        </li>
-        <li>4 UITKOMST</li>
-      </ol>
-    );
-  }
-  if (phase === 'argument') {
-    return (
-      <ol className="steps">
-        <li className="done">1 OPENINGSSCÈNE</li>
-        <li className="done">2 ONDERZOEK</li>
-        <li className="now" aria-current="step">
-          3 JULLIE ARGUMENT
-        </li>
-        <li>4 UITKOMST</li>
-      </ol>
-    );
-  }
-  const i0 = phaseIndex[phase] ?? 0;
+  if (!current) return null;
+
   return (
-    <ol className="steps">
-      {STEPS.map((label, i) => (
-        <li
-          key={label}
-          className={[i < i0 ? 'done' : '', i === i0 ? 'now' : ''].filter(Boolean).join(' ')}
-          aria-current={i === i0 ? 'step' : undefined}
-        >
-          {i + 1} {label}
-        </li>
-      ))}
+    <ol className="steps steps--stappen">
+      {stappen.map((stap, i) => {
+        const isNow = stap.id === current;
+        const isDone = doneBefore(current, stap.id, order);
+        return (
+          <li
+            key={stap.id}
+            className={[isDone ? 'done' : '', isNow ? 'now' : ''].filter(Boolean).join(' ')}
+            aria-current={isNow ? 'step' : undefined}
+          >
+            {i + 1} {stap.label.toUpperCase()}
+          </li>
+        );
+      })}
     </ol>
   );
 }

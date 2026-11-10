@@ -53,7 +53,7 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
           </p>
         </section>
         <div className="q">
-          <span className="tag">MT-VRAAG</span>
+          <span className="tag">VRAAG</span>
           <p>{D.q3}</p>
         </div>
         <button
@@ -88,7 +88,7 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
           </p>
         </section>
         <div className="q">
-          <span className="tag">MT-VRAAG</span>
+          <span className="tag">VRAAG</span>
           <p>{D.q3}</p>
         </div>
         <button
@@ -212,7 +212,7 @@ export function UitkomstPhase({ state, dispatch }: { state: GameUiState; dispatc
         </details>
       </section>
       <div className="q">
-        <span className="tag">MT-VRAAG</span>
+        <span className="tag">VRAAG</span>
         <p>{D.q3}</p>
       </div>
       <button

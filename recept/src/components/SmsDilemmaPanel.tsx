@@ -63,7 +63,7 @@ export function SmsDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
           Jullie besluit over deze sms is vastgelegd.
         </p>
       ) : (
-        <p className="note">De sms staat klaar. Jullie beslissen straks in het MT-overleg.</p>
+        <p className="note">De sms staat klaar. Jullie beslissen straks samen wat jullie ermee doen.</p>
       )}
     </section>
   );

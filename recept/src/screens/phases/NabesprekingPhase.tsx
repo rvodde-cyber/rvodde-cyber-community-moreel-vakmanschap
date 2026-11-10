@@ -35,7 +35,7 @@ export function NabesprekingPhase({ state, dispatch }: { state: GameUiState; dis
           <span className="live">{meta.titel}</span>
         </div>
         <p className="body">
-          Team <strong>{state.playerName || 'MT'}</strong> — aflevering {state.episode}. Geen ranglijst: vergelijk jullie
+          Team <strong>{state.playerName || 'jullie'}</strong> — aflevering {state.episode}. Geen ranglijst: vergelijk jullie
           keuzes als spiegel, niet als wedstrijd.
         </p>
         {docent ? (

@@ -63,7 +63,7 @@ export function LensDilemmaPanel({ def, state, dispatch, periodKey }: Props) {
           Jullie besluit over dit bericht is vastgelegd.
         </p>
       ) : (
-        <p className="note">Het bericht staat klaar op je lens. Jullie beslissen straks in het MT-overleg.</p>
+        <p className="note">Het bericht staat klaar op je lens. Jullie beslissen straks samen wat jullie ermee doen.</p>
       )}
     </section>
   );

@@ -124,7 +124,7 @@ describe('cold open copy — beslistijd alleen met timer', () => {
   });
 });
 
-describe('aflevering 1 — verplichte klikken intro → MT-overleg', () => {
+describe('aflevering 1 — verplichte klikken intro → onderzoek', () => {
   it('maximaal 3 speleracties vóór onderzoek (intro, trailer, start overleg)', () => {
     const mandatory: Parameters<typeof gameReducer>[1][] = [
       { type: 'SET_PHASE', phase: 'cold' },
