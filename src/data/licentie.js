@@ -1,4 +1,14 @@
 export const LICENTIES = {
+  "CC BY 4.0": {
+    url: {
+      nl: "https://creativecommons.org/licenses/by/4.0/deed.nl",
+      en: "https://creativecommons.org/licenses/by/4.0/deed.en",
+    },
+    kort: {
+      nl: "Gratis te gebruiken en te bewerken, met naamsvermelding.",
+      en: "Free to use and adapt, with attribution.",
+    },
+  },
   "CC BY-NC-SA 4.0": {
     url: {
       nl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl",
