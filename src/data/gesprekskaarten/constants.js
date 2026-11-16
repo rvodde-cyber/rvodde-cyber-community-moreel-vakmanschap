@@ -8,6 +8,7 @@ export const CARD_SET_ORDER = [
   "dl-compleet-a5",
   "onderwijs-v3",
   "hoger-onderwijs-v3",
+  "toegepaste-psychologie-v3",
   "passende-zorg",
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
@@ -54,6 +55,7 @@ export const CATEGORIE_SLUGS = [
   "onderzoeksintegriteit",
   "onderwijs",
   "hoger-onderwijs",
+  "toegepaste-psychologie",
   "overheid",
   "hrm",
   "burgerschap",
@@ -79,6 +81,7 @@ export const ATTRIBUTION_COLOR = "#5f5e5a";
 export const CATEGORIE_KLEUREN = {
   onderwijs: "#1a9080",
   "hoger-onderwijs": "#6C5B7B",
+  "toegepaste-psychologie": "#7A5195",
   werk: "#e05a1a",
   "dagelijks-leven": "#e0a01a",
   duurzaamheid: "#c0392b",
@@ -147,6 +150,9 @@ export const CATEGORY_FROM_LEGACY = {
   Citizenship: "burgerschap",
   Bestuurskunde: "bestuurskunde",
   "Public administration": "bestuurskunde",
+  "Toegepaste psychologie": "toegepaste-psychologie",
+  "Applied psychology": "toegepaste-psychologie",
+  "APPLIED PSYCHOLOGY": "toegepaste-psychologie",
 };
 
 export const TEASER_SET = {

@@ -63,6 +63,21 @@ const PACK_CONFIG = {
     bron: "HBO-docenten — v3 website (10 kaarten)",
     cleanupIds: () => false,
   },
+  "toegepaste-psychologie": {
+    packDir: "Cursor_Toegepaste_psychologie",
+    jsonFile: "cards_tp.json",
+    categorie: "toegepaste-psychologie",
+    set: "toegepaste-psychologie-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "APPLIED PSYCHOLOGY",
+    useTitleAlt: true,
+    altSceneNl: "Psychologische praktijksituatie",
+    altSceneEn: "Psychology practice scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/toegepaste-psychologie-meta.json"),
+    bron: "Toegepaste psychologie — v3 website (20 kaarten)",
+    cleanupIds: () => false,
+  },
 };
 
 function splitReflection(text) {
@@ -222,7 +237,7 @@ function main() {
   const config = PACK_CONFIG[sector];
   if (!config) {
     console.error(
-      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]"
+      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten|toegepaste-psychologie [--skip-cleanup] [--cleanup-only]"
     );
     process.exit(1);
   }
