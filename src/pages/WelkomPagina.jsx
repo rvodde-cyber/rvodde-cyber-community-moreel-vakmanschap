@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useTaal } from "../context/TaalContext";
 import { getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
@@ -56,6 +57,8 @@ const content = {
     ctaSecundair: "View the model",
   },
 };
+
+const WerkbladenSectie = lazy(() => import("../components/WerkbladenSectie.jsx"));
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -168,6 +171,10 @@ export default function WelkomPagina() {
           </a>
         </motion.div>
       </section>
+
+      <Suspense fallback={<div style={{ minHeight: 520 }} aria-hidden="true" />}>
+        <WerkbladenSectie />
+      </Suspense>
 
       <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem" }}>
         <div style={{ height: "1px", backgroundColor: "var(--rand, #d3d1c7)" }} />
