@@ -2839,5 +2839,248 @@
     },
     "sfeerbeeld": "WB-MW65-DAGELIJKSLEVEN-NL.jpg",
     "naamsvermelding_bron": "Werkvorm geïnspireerd op African Storybook (Saide), CC BY 4.0. Bij gebruik van een verhaal vermeldt u titel, auteur en illustrator."
+  },
+  {
+    "id": "MV_82",
+    "werkblad_code": "WB-MW89-COMMUNICATIE-NL",
+    "titel": {
+      "nl": "Namen rechtzetten",
+      "en": "Rectifying names"
+    },
+    "omschrijving": {
+      "nl": "Een communicatieadviseur moet een bericht over 42 vervallen functies schrijven. De casus laat zien hoe woorden de werkelijkheid verhullen of zichtbaar maken, met de Chinese gedachte van de namen rechtzetten.",
+      "en": "A communications adviser has to write a message about 42 jobs being cut. The case shows how words hide or reveal reality, using the Chinese idea of rectifying names."
+    },
+    "themas": {
+      "nl": [
+        "Eerlijkheid",
+        "Taal",
+        "Reorganisatie"
+      ],
+      "en": [
+        "Honesty",
+        "Language",
+        "Reorganisation"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Communicatie",
+    "complexiteit": "meso",
+    "duur": "45 min",
+    "groep": "4–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Namen rechtzetten (zhengming)",
+    "bronnen_apa": [
+      "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 1. Confucian analects, the great learning, and the doctrine of the mean. Trübner.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW89-COMMUNICATIE-NL_studentenversie.docx",
+      "docent_nl": "WB-MW89-COMMUNICATIE-NL_docentenversie.docx",
+      "student_en": "WB-MW89-COMMUNICATIE-EN_student-version.docx",
+      "docent_en": "WB-MW89-COMMUNICATIE-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW89-COMMUNICATIE-NL.jpg",
+    "naamsvermelding_bron": "Tekst naar Legge, J. (1861), The Chinese classics, Vol. 1 – publiek domein."
+  },
+  {
+    "id": "MV_83",
+    "werkblad_code": "WB-MW90-FACILITAIR-NL",
+    "titel": {
+      "nl": "Kind bij de put",
+      "en": "Child at the well"
+    },
+    "omschrijving": {
+      "nl": "Een beveiliger treft na zijn dienst een verwarde vrouw in de regen en moet kiezen tussen zijn laatste trein en haar. Met Mencius’ kind bij de put onderzoeken studenten de eerste reactie en de morele kiemen daarin.",
+      "en": "A security guard finds a confused woman in the rain after his shift and must choose between his last train and her. With Mencius’s child at the well, students explore the first reaction and the moral sprouts in it."
+    },
+    "themas": {
+      "nl": [
+        "Medeleven",
+        "Eerste reactie",
+        "Zorg en grenzen"
+      ],
+      "en": [
+        "Compassion",
+        "First reaction",
+        "Care and limits"
+      ]
+    },
+    "fasen": [
+      "voelen",
+      "zien"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Facilitair",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "2–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Kind bij de put (vier kiemen)",
+    "bronnen_apa": [
+      "Legge, J. (Trans.). (1861). The Chinese classics: Vol. 2. The works of Mencius. Trübner.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW90-FACILITAIR-NL_studentenversie.docx",
+      "docent_nl": "WB-MW90-FACILITAIR-NL_docentenversie.docx",
+      "student_en": "WB-MW90-FACILITAIR-EN_student-version.docx",
+      "docent_en": "WB-MW90-FACILITAIR-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW90-FACILITAIR-NL.jpg",
+    "naamsvermelding_bron": "Tekst naar Legge, J. (1861), The Chinese classics, Vol. 2 – publiek domein."
+  },
+  {
+    "id": "MV_84",
+    "werkblad_code": "WB-MW91-MANAGEMENT-NL",
+    "titel": {
+      "nl": "De onderste tien procent",
+      "en": "The bottom ten percent"
+    },
+    "omschrijving": {
+      "nl": "Een teamleider in een distributiecentrum moet de tien procent minst productieve medewerkers aanleveren, en daar staat ook Ans, die iedereen inwerkt. Met het verhaal van de nutteloze boom onderzoeken studenten wat een maatstaf laat zien en wat niet.",
+      "en": "A team leader in a distribution centre must supply the ten percent least productive staff, and Ans, who trains everyone, is among them. With the story of the useless tree, students explore what a measure shows and what it does not."
+    },
+    "themas": {
+      "nl": [
+        "Maatstaven",
+        "Rechtvaardigheid",
+        "Prestatiemeting"
+      ],
+      "en": [
+        "Measures",
+        "Justice",
+        "Performance measurement"
+      ]
+    },
+    "fasen": [
+      "zien",
+      "wegen"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "Management",
+    "complexiteit": "meso",
+    "duur": "30–45 min",
+    "groep": "4–30 deelnemers",
+    "oorspronkelijke_werkvorm": "De nutteloze boom",
+    "bronnen_apa": [
+      "Giles, H. A. (Trans.). (1889). Chuang Tzŭ: Mystic, moralist, and social reformer. Bernard Quaritch.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW91-MANAGEMENT-NL_studentenversie.docx",
+      "docent_nl": "WB-MW91-MANAGEMENT-NL_docentenversie.docx",
+      "student_en": "WB-MW91-MANAGEMENT-EN_student-version.docx",
+      "docent_en": "WB-MW91-MANAGEMENT-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW91-MANAGEMENT-NL.jpg",
+    "naamsvermelding_bron": "Verhaal naar Giles, H. A. (1889), Chuang Tzŭ – publiek domein."
+  },
+  {
+    "id": "MV_85",
+    "werkblad_code": "WB-MW92-ICT-NL",
+    "titel": {
+      "nl": "De knop onderaan",
+      "en": "The button at the bottom"
+    },
+    "omschrijving": {
+      "nl": "Een junior developer moet een opzegknop verstoppen die hij als dark pattern herkent. Met Wang Yangmings gedachte dat kennen en doen één zijn onderzoeken studenten het gat tussen weten en handelen.",
+      "en": "A junior developer has to hide a cancel button that he recognises as a dark pattern. With Wang Yangming’s idea that knowing and doing are one, students explore the gap between knowing and acting."
+    },
+    "themas": {
+      "nl": [
+        "Weten en doen",
+        "Dark patterns",
+        "Moed"
+      ],
+      "en": [
+        "Knowing and doing",
+        "Dark patterns",
+        "Courage"
+      ]
+    },
+    "fasen": [
+      "handelen",
+      "zien"
+    ],
+    "opleidingsniveau": "MBO, HBO, WO",
+    "vakgebied": "ICT",
+    "complexiteit": "micro",
+    "duur": "30–45 min",
+    "groep": "2–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Weten is doen (naar wang yangming)",
+    "bronnen_apa": [
+      "Ivanhoe, P. J. (Trans.). (2009). Readings from the Lu-Wang school of Neo-Confucianism. Hackett.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW92-ICT-NL_studentenversie.docx",
+      "docent_nl": "WB-MW92-ICT-NL_docentenversie.docx",
+      "student_en": "WB-MW92-ICT-EN_student-version.docx",
+      "docent_en": "WB-MW92-ICT-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW92-ICT-NL.jpg"
+  },
+  {
+    "id": "MV_86",
+    "werkblad_code": "WB-MW93-BESTUURSKUNDE-NL",
+    "titel": {
+      "nl": "Wie bezit de warmte?",
+      "en": "Who owns the heat?"
+    },
+    "omschrijving": {
+      "nl": "Een beleidsmedewerker moet de raad adviseren over publiek of commercieel eigendom van een warmtenet. Met het oude Chinese debat over zout en ijzer spelen studenten een beleidsdebat in twee kampen.",
+      "en": "A policy adviser has to advise the council on public or commercial ownership of a district heating network. With the ancient Chinese debate on salt and iron, students play out a policy debate in two camps."
+    },
+    "themas": {
+      "nl": [
+        "Rechtvaardigheid",
+        "Publiek eigendom",
+        "Beleid"
+      ],
+      "en": [
+        "Justice",
+        "Public ownership",
+        "Policy"
+      ]
+    },
+    "fasen": [
+      "wegen"
+    ],
+    "opleidingsniveau": "HBO, WO",
+    "vakgebied": "Bestuurskunde",
+    "complexiteit": "macro",
+    "duur": "60–90 min",
+    "groep": "8–30 deelnemers",
+    "oorspronkelijke_werkvorm": "Debat over zout en ijzer",
+    "bronnen_apa": [
+      "Gale, E. M. (Trans.). (1931). Discourses on salt and iron: A debate on state control of commerce and industry in ancient China. Brill.",
+      "Loewe, M. (2006). The government of the Qin and Han empires, 221 BCE–220 CE. Hackett.",
+      "Meijer, K. M. T. (2023). Impossible and inevitable: Reconstructing the critique of business ethics [Proefschrift, Tilburg University]. Ridderprint. https://research.tilburguniversity.edu/en/publications/impossible-and-inevitable-reconstructing-the-critique-of-business/"
+    ],
+    "licentie": "CC BY 4.0",
+    "naamsvermelding": "Richard Voddé, Lectoraat Ethisch Werken, Fontys Hogescholen",
+    "niveau": "concept",
+    "bestanden": {
+      "student_nl": "WB-MW93-BESTUURSKUNDE-NL_studentenversie.docx",
+      "docent_nl": "WB-MW93-BESTUURSKUNDE-NL_docentenversie.docx",
+      "student_en": "WB-MW93-BESTUURSKUNDE-EN_student-version.docx",
+      "docent_en": "WB-MW93-BESTUURSKUNDE-EN_teacher-version.docx"
+    },
+    "sfeerbeeld": "WB-MW93-BESTUURSKUNDE-NL.jpg"
   }
 ]
