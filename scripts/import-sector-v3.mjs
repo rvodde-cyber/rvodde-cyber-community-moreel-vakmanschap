@@ -1,6 +1,6 @@
 /**
- * Import v3-pakket (Burgerschap, Bestuurskunde, Onderwijs) + optionele opruiming oude kaarten.
- * Usage: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]
+ * Import v3-pakket (website-sets) + optionele opruiming oude kaarten.
+ * Usage: node scripts/import-sector-v3.mjs <sector> [--skip-cleanup] [--cleanup-only]
  */
 import fs from "fs";
 import path from "path";
@@ -93,7 +93,53 @@ const PACK_CONFIG = {
     bron: "Mensen met een beperking — v3 website (15 kaarten)",
     cleanupIds: () => false,
   },
+  "toegepaste-psychologie": {
+    packDir: "Cursor_Toegepaste_psychologie",
+    jsonFile: "cards_tp.json",
+    categorie: "toegepaste-psychologie",
+    set: "toegepaste-psychologie-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "APPLIED PSYCHOLOGY",
+    useTitleAlt: true,
+    altSceneNl: "Psychologische praktijksituatie",
+    altSceneEn: "Psychology practice scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/toegepaste-psychologie-meta.json"),
+    bron: "Toegepaste psychologie — v3 website (20 kaarten)",
+    cleanupIds: () => false,
+  },
+  management: {
+    packDir: "website import v3",
+    jsonFile: "cards_management.json",
+    categorie: "management",
+    set: "management-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "MANAGEMENT",
+    altMapPath: path.join(__dirname, "management-v3-alts.json"),
+    metaPath: path.join(root, "src/data/gesprekskaarten/management-meta.json"),
+    bron: "Management — v3 website (20 kaarten)",
+    cleanupIds: () => false,
+  },
+  "gender-en-seksualiteit": {
+    packDir: "Cursor_Gender_en_seksualiteit",
+    jsonFile: "cards_gs.json",
+    categorie: "gender-en-seksualiteit",
+    set: "gender-en-seksualiteit-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "GENDER AND SEXUALITY",
+    useTitleAlt: true,
+    altSceneNl: "Situatie gender en seksualiteit",
+    altSceneEn: "Gender and sexuality scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/gender-en-seksualiteit-meta.json"),
+    bron: "Gender en seksualiteit — v3 website (15 kaarten)",
+    cleanupIds: () => false,
+  },
 };
+
+const SECTOR_HELP =
+  "burgerschap|bestuurskunde|onderwijs|hbo-docenten|neurodivergentie|mensen-met-een-beperking|toegepaste-psychologie|management|gender-en-seksualiteit";
 
 function splitReflection(text) {
   const t = (text || "").trim();
@@ -107,8 +153,8 @@ function splitReflection(text) {
 function altFromImagePath(imageRel) {
   const base = path.basename(imageRel, path.extname(imageRel));
   const slug = base
-    .replace(/^(bg|bk|ow|hd)-\d+-/i, "")
-    .replace(/^(bg|bk|ow|hd)-\d+$/i, "scene")
+    .replace(/^(bg|bk|ow|hd|nd|mb|tp|mg|gs)-\d+-/i, "")
+    .replace(/^(bg|bk|ow|hd|nd|mb|tp|mg|gs)-\d+$/i, "scene")
     .replace(/-/g, " ");
   const label = slug === "scene" ? base.replace(/-/g, " ") : slug;
   return {
@@ -138,7 +184,12 @@ function optimizeImage(srcFile, destFile) {
   }
 }
 
-function toCommunityCard(entry, config) {
+function loadAltMap(config) {
+  if (!config.altMapPath || !fs.existsSync(config.altMapPath)) return {};
+  return JSON.parse(fs.readFileSync(config.altMapPath, "utf8"));
+}
+
+function toCommunityCard(entry, config, altMap = {}) {
   const verhaalNl = entry.story.nl.join("\n\n");
   const verhaalEn = entry.story.en.join("\n\n");
   const refNl = splitReflection(entry.reflection.nl);
@@ -160,9 +211,12 @@ function toCommunityCard(entry, config) {
   }
   optimizeImage(resolvedSrc, destFile);
 
-  const alt = config.useTitleAlt
-    ? altFromTitle(entry, config)
-    : altFromImagePath(entry.image);
+  const altOverride = altMap[entry.id];
+  const alt = altOverride
+    ? { nl: altOverride.nl, en: altOverride.en }
+    : config.useTitleAlt
+      ? altFromTitle(entry, config)
+      : altFromImagePath(entry.image);
 
   return normalizeCard({
     id: entry.id,
@@ -252,7 +306,7 @@ function main() {
   const config = PACK_CONFIG[sector];
   if (!config) {
     console.error(
-      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten|neurodivergentie|mensen-met-een-beperking [--skip-cleanup] [--cleanup-only]"
+      `Gebruik: node scripts/import-sector-v3.mjs ${SECTOR_HELP} [--skip-cleanup] [--cleanup-only]`
     );
     process.exit(1);
   }
@@ -280,7 +334,8 @@ function main() {
       }
     }
 
-    const newCards = pack.cards.map((e) => toCommunityCard(e, config));
+    const altMap = loadAltMap(config);
+    const newCards = pack.cards.map((e) => toCommunityCard(e, config, altMap));
     addedCount = newCards.length;
     cards = [...cards, ...newCards];
 
