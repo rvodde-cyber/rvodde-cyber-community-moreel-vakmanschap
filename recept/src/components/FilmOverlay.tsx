@@ -4,6 +4,7 @@ import { TR_UI_LABELS } from '@data/filmSequences';
 import { hum, SFX, unlockAudio } from '../audio/sfx';
 import { usePrefersReducedMotion } from '../lib/prefersReducedMotion';
 import { SpokenLineText } from './SpokenLineText';
+import { PeriodThemeScope } from './PeriodThemeScope';
 
 const base = import.meta.env.BASE_URL;
 
@@ -19,6 +20,7 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
   const [sub, setSub] = useState<{ who?: string; text?: string }>({});
   const [centerText, setCenterText] = useState('');
   const [centerQ, setCenterQ] = useState(false);
+  const [handOverlay, setHandOverlay] = useState('');
   const [titleOn, setTitleOn] = useState(false);
   const doneRef = useRef(false);
 
@@ -44,6 +46,10 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
         case 'shot':
           setShot({ img: cue.img, zoom: cue.zoom ?? 'in' });
           setSub({});
+          if (cue.img !== 'L1') setHandOverlay('');
+          break;
+        case 'overlay-hand':
+          setHandOverlay(cue.text);
           break;
         case 'ui':
           setShot({ ui: cue.ui });
@@ -55,6 +61,7 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
         case 'blank':
           setShot({});
           setSub({});
+          setHandOverlay('');
           break;
         case 'tick':
           SFX.tick();
@@ -84,8 +91,8 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
   const ui = shot.ui ? TR_UI_LABELS[shot.ui] : null;
   const imgUrl = shot.img ? `${base}beelden/${shot.img}.jpg` : null;
 
-  return (
-    <div className="tr" role="dialog" aria-label={script.label}>
+  const body = (
+    <>
       <button type="button" className="tr-skip btn ghost" onClick={() => (onSkip ?? finish)()}>
         Overslaan
       </button>
@@ -108,7 +115,17 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
             <span className={`huge${ui.cyan ? ' c' : ''}`}>{ui.huge}</span>
           </div>
         ) : null}
+        {handOverlay ? (
+          <p className="tr-hand-overlay" aria-hidden="true">
+            {handOverlay}
+          </p>
+        ) : null}
       </div>
+      {handOverlay ? (
+        <p className="sr-only" aria-live="polite">
+          Op de kaft van het schrift staat: {handOverlay}
+        </p>
+      ) : null}
       <div className="tr-sub">
         {sub.who ? <span className="who">{sub.who}</span> : null}
         <SpokenLineText text={sub.text ?? ''} quoted={!!sub.who} />
@@ -119,6 +136,16 @@ export function FilmOverlay({ script, onDone, onSkip }: Props) {
         {script.titleAfter ? <span className="a">{script.titleAfter}</span> : null}
         {script.titleEp ? <span className="e">{script.titleEp}</span> : null}
       </div>
+    </>
+  );
+
+  return (
+    <div className="tr" role="dialog" aria-label={script.label}>
+      {script.periodKey ? (
+        <PeriodThemeScope periodKey={script.periodKey}>{body}</PeriodThemeScope>
+      ) : (
+        body
+      )}
     </div>
   );
 }

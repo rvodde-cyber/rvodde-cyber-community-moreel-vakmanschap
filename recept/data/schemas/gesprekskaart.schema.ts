@@ -36,7 +36,9 @@ export const waardenSchema = z.array(waardeSchema).length(7);
 export const STANDAARD_SLOTVRAAG =
   'Wat zou jij doen en waarom? Welke waarden zijn hier in het spel?';
 
-export const GESPREK_ZIN_MAX = 280;
+export { GESPREK_ZIN_MAX, ONZEZIN_MAX } from '@/game/limits';
+import { GESPREK_ZIN_MAX } from '@/game/limits';
+
 export const GESPREK_WAARDEN_MAX = 3;
 
 export function validateGesprekOpslaan(zin: string, waarden: string[]): { ok: true } | { ok: false; reason: string } {

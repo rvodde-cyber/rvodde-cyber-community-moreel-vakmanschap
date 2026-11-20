@@ -39,6 +39,8 @@ export interface RoundUiState {
   bud: Record<string, number>;
   coldSub: number;
   trailerDone: boolean;
+  /** Tijdstempel (ms) wanneer de openingscène is gestart; null = briefing nog niet gedaan. */
+  sceneGestartOp: number | null;
   reacted: boolean;
 }
 

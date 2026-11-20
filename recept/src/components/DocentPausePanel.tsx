@@ -60,6 +60,13 @@ export function DocentPausePanel({ state, dispatch }: Props) {
           ))}
         </select>
       </label>
+      <div className="docent-row">
+        <span>Openingsscène gestart</span>
+        <span>
+          R1: {state.rounds[1].sceneGestartOp ? new Date(state.rounds[1].sceneGestartOp).toLocaleTimeString('nl-NL') : '—'} · R2:{' '}
+          {state.rounds[2].sceneGestartOp ? new Date(state.rounds[2].sceneGestartOp).toLocaleTimeString('nl-NL') : '—'}
+        </span>
+      </div>
       <div className="docent-hidden" aria-live="polite">
         <p>
           <strong>Verborgen meters</strong> — Menselijke maat {Math.round(h.menselijkeMaat)} · Eerlijkheid{' '}

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { episodeContent } from '@data/episodes/content';
 import { episodeMeta } from '@data/episodes/meta';
 import { WAARDEN, GESPREK_ZIN_MAX, GESPREK_WAARDEN_MAX } from '@data/schemas/gesprekskaart.schema';
+import { fieldMaxLength } from '../../game/limitsInput';
 import { PeriodThemeScope } from '../../components/PeriodThemeScope';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import type { GameAction } from '../../game/gameReducer';
@@ -144,18 +145,20 @@ export function GesprekskaartPhase({
             <label className="lab" htmlFor="gk-zin">
               Onze zin
             </label>
-            <textarea
-              id="gk-zin"
-              className="inp gk-zin"
-              rows={3}
-              maxLength={GESPREK_ZIN_MAX}
-              value={zin}
-              onChange={(e) => setZin(e.target.value)}
-              placeholder="Eén zin die jullie als team vastleggen…"
-            />
-            <p className="need" aria-live="polite">
-              {zin.length} / {GESPREK_ZIN_MAX} tekens
-            </p>
+            <div className="field-wrap">
+              <textarea
+                id="gk-zin"
+                className="inp inp-compact"
+                rows={2}
+                maxLength={fieldMaxLength(GESPREK_ZIN_MAX, zin)}
+                value={zin}
+                onChange={(e) => setZin(e.target.value)}
+                placeholder="Eén zin die jullie als team vastleggen…"
+              />
+              <p className="note field-teller" aria-live="polite">
+                {zin.trim().length} / {GESPREK_ZIN_MAX}
+              </p>
+            </div>
 
             <p className="lab">Waarden (maximaal {GESPREK_WAARDEN_MAX})</p>
             <div className="gk-waarden" role="group" aria-label="Kies waarden">

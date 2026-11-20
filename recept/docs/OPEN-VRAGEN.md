@@ -1,6 +1,18 @@
 # Open vragen en aanleveringen
 
-Laatste update: **10 november 2026** (gewone taal + portret jpg).
+Laatste update: **19 november 2026** (briefing, limieten, schrift-hint A1).
+
+## Speeltest — briefing, limieten, schrift (19 nov 2026)
+
+Richard / eerste sessies: beoordeel in de zaal, geen blokkade in code.
+
+| Vraag | Waar in de app |
+| --- | --- |
+| Is **160 tekens** genoeg om te redeneren over twee interventies? | Fase **Leg uit** na besluit |
+| Begrijpen spelers de **openingsscène** na de briefing **zonder docent**? | **Start de scène** → cold open |
+| Voelt **timerstart bij de knop** eerlijk (niet “stiekem al lopend”)? | Briefingregel + header **Beslistijd** |
+| Past de **invoer op 360 px** (geen horizontale scroll, teller leesbaar)? | Argument + gesprekskaart **Onze zin** |
+| Pikken spelers het **schrift** op zonder dat het te zwaar wordt aangezet? | A1 cold open titelregel + slot L1/overlay (~30 s) |
 
 ## Orakeltoon, te beoordelen door Richard
 

@@ -96,7 +96,7 @@ describe('episode 1 content (stap 2)', () => {
     expect(c.coldOpen[2]).toEqual(COLD_OPEN_EP1[2]);
     expect(c.coldOpen[1]!.lines).toHaveLength(8);
     expect(c.coldOpen[2]!.lines).toHaveLength(5);
-    expect(c.coldOpen[1]!.lines[0]![1]).toBe('Zondagavond. Het kasboek ligt open op de keukentafel.');
+    expect(c.coldOpen[1]!.lines[0]![1]).toContain('Geheim familierecept');
     expect(c.coldOpen[1]!.lines[7]![1]).toBe('Maandag, half zeven. In de schuur wachten vier problemen tegelijk.');
     expect(c.coldOpen[2]!.lines[4]![1]).toBe(
       "Donderdag, kwart voor vijf. Tussen de pagina's van het kasboek zit een briefje.",
@@ -144,10 +144,10 @@ describe('episode 1 content (stap 2)', () => {
     expectPauzekaartMetVoorspelling(c);
   });
 
-  it('slot-ep1: Brabants afscheid vóór A1-SCHRIFT, duur sluit aan bij titel', () => {
+  it('slot-ep1: schrift-hint vóór A1-SCHRIFT, duur sluit aan bij titel', () => {
     const script = buildSlotEp1('test');
     expect(script.id).toBe('slot-ep1');
-    expect(script.duration).toBe(28500);
+    expect(script.duration).toBe(30000);
     const idxGerritHoudoe = script.cues.findIndex(
       (c) =>
         c.kind === 'sub' &&
@@ -162,10 +162,21 @@ describe('episode 1 content (stap 2)', () => {
         typeof c.text === 'string' &&
         c.text.includes('Houdoe'),
     );
+    const idxL1 = script.cues.findIndex((c) => c.kind === 'shot' && c.img === 'L1');
+    const idxLiesWat = script.cues.findIndex(
+      (c) => c.kind === 'sub' && c.who === 'LIES' && c.text === 'Wat staat erin?',
+    );
     const idxSchrift = script.cues.findIndex((c) => c.kind === 'shot' && c.img === 'A1-SCHRIFT');
+    const idxOverlay = script.cues.findIndex(
+      (c) => c.kind === 'overlay-hand' && c.text === 'Geheim familierecept',
+    );
+    expect(idxL1).toBeGreaterThan(-1);
+    expect(idxOverlay).toBeGreaterThan(-1);
+    expect(idxLiesWat).toBeGreaterThan(-1);
     expect(idxGerritHoudoe).toBeGreaterThan(-1);
     expect(idxLiesHoudoe).toBeGreaterThan(-1);
     expect(idxSchrift).toBeGreaterThan(-1);
+    expect(idxLiesWat).toBeLessThan(idxGerritHoudoe);
     expect(idxGerritHoudoe).toBeLessThan(idxLiesHoudoe);
     expect(idxLiesHoudoe).toBeLessThan(idxSchrift);
     const titleCues = script.cues.filter((c) => c.kind === 'title');

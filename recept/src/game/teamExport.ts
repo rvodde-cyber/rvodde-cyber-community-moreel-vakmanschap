@@ -8,6 +8,8 @@ import { WAARDEN } from '@data/schemas/gesprekskaart.schema';
 export type TeamExportRound = {
   round: number;
   label: string;
+  /** ISO-tijdstempel wanneer de openingscène startte (nieuw); ontbreekt in oude exports. */
+  sceneGestartOp?: number | null;
   acties: string[];
   vermoeden: { id: string; titel: string; q: number } | null;
   pilot: string | null;
@@ -66,6 +68,7 @@ export function buildTeamExport(state: GameUiState): TeamExport {
     rounds.push({
       round: n,
       label: D.label,
+      sceneGestartOp: ui.sceneGestartOp,
       acties: ui.acties,
       vermoeden: verm ? { id: verm.id, titel: verm.t, q: verm.q } : null,
       pilot: ui.pilot,

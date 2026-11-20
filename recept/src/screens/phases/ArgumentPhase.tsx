@@ -7,6 +7,7 @@ import {
   argumentLength,
   validateArgumentField,
 } from '@data/schemas/argument.schema';
+import { fieldMaxLength } from '../../game/limitsInput';
 import { TaskBar } from '../../components/TaskBar';
 import { ConceptDocentBanner } from '../../components/ConceptDocentBanner';
 import { needTextBesluit, okBesluitKeuze } from '../../game/besluitRules';
@@ -47,48 +48,52 @@ export function ArgumentPhase({
         <label className="lab" htmlFor="arg-waarom">
           Waarom kiezen jullie deze twee?
         </label>
-        <textarea
-          id="arg-waarom"
-          ref={argRef}
-          className="inp gk-zin"
-          rows={4}
-          maxLength={ARGUMENT_MAX}
-          value={r.argument}
-          autoComplete="off"
-          onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'argument', value: e.target.value })}
-        />
-        <p className="note argument-teller" aria-live="polite">
-          <span aria-hidden="true">
-            {aLen} / {ARGUMENT_MAX} tekens
-          </span>
-          <span className="sr-only">
-            {aLen} van {ARGUMENT_MAX} tekens gebruikt. Minimaal {ARGUMENT_MIN} tekens nodig.
-          </span>
-        </p>
+        <div className="field-wrap">
+          <textarea
+            id="arg-waarom"
+            ref={argRef}
+            className="inp inp-compact inp-compact--arg"
+            rows={3}
+            maxLength={fieldMaxLength(ARGUMENT_MAX, r.argument)}
+            value={r.argument}
+            autoComplete="off"
+            onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'argument', value: e.target.value })}
+          />
+          <p className="note field-teller" aria-live="polite">
+            <span aria-hidden="true">
+              {aLen} / {ARGUMENT_MAX}
+            </span>
+            <span className="sr-only">
+              {aLen} van {ARGUMENT_MAX} tekens gebruikt. Minimaal {ARGUMENT_MIN} tekens nodig.
+            </span>
+          </p>
+        </div>
 
         <label className="lab" htmlFor="arg-tegen">
           Wat is het sterkste argument om dit juist niet te doen?
         </label>
-        <textarea
-          id="arg-tegen"
-          className="inp gk-zin"
-          rows={3}
-          maxLength={TEGENARGUMENT_MAX}
-          value={r.tegenargument}
-          autoComplete="off"
-          aria-describedby={tegenHintId}
-          onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'tegenargument', value: e.target.value })}
-        />
+        <div className="field-wrap">
+          <textarea
+            id="arg-tegen"
+            className="inp inp-compact"
+            rows={2}
+            maxLength={fieldMaxLength(TEGENARGUMENT_MAX, r.tegenargument)}
+            value={r.tegenargument}
+            autoComplete="off"
+            aria-describedby={tegenHintId}
+            onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'tegenargument', value: e.target.value })}
+          />
+          <p className="note field-teller" aria-live="polite">
+            <span aria-hidden="true">
+              {tLen} / {TEGENARGUMENT_MAX}
+            </span>
+            <span className="sr-only">
+              {tLen} van {TEGENARGUMENT_MAX} tekens gebruikt. Minimaal {TEGENARGUMENT_MIN} tekens nodig.
+            </span>
+          </p>
+        </div>
         <p id={tegenHintId} className="argument-hint">
           Zijn er ook mensen die hier op achteruitgaan?
-        </p>
-        <p className="note argument-teller" aria-live="polite">
-          <span aria-hidden="true">
-            {tLen} / {TEGENARGUMENT_MAX} tekens
-          </span>
-          <span className="sr-only">
-            {tLen} van {TEGENARGUMENT_MAX} tekens gebruikt. Minimaal {TEGENARGUMENT_MIN} tekens nodig.
-          </span>
         </p>
 
         <div className="besluit-submit" role="region" aria-labelledby="argument-submit-heading">

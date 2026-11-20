@@ -1,10 +1,16 @@
 # Voortgang Recept (Cursor-bouw)
 
-Laatste update: **10 november 2026** — bundel opmerkingen 1–3 + beelden
+Laatste update: **19 november 2026** — scène-briefing, tekstlimieten, hint schrift A1
 
 ## Deze sessie
 
 | Onderdeel | Status |
+| --- | --- |
+| **Scène-briefing** | `SceneBriefing` vóór cold open (A1–A5, r1+r2). Geen scène/timer tot **Start de scène** (`START_COLD_SCENE` → `sceneGestartOp`, `timerOn` bij beslistijd). Uitleglijn onder scène vervallen. Hervatten/migratie: `src/game/sceneGestart.ts`, `migrateState.ts`. Export/docent: `sceneGestartOp` per ronde. |
+| **Tekstlimieten** | Centraal `src/game/limits.ts`: argument **160** (min 20), tegenargument **100** (min 10), Onze zin **140**. Compacte velden (~60ch). Oude lange import: tonen + bevestigen; nieuwe invoer geknipt via reducer/`maxLength`. |
+| **Hint schrift A1** | Cold open r1 titelregel *Geheim familierecept*; `buildSlotEp1` **30 s** met L1 + overlay handschrift + dialoog Lies/Harrie; daarna bestaande handschriften/titelkaart. |
+| **Tests** | `sceneBriefingLimits.test.ts` (19) + bestaande suite → **311** groen. Speeltestvragen → `OPEN-VRAGEN.md`. |
+| **Tests / build** | **19 nov 2026:** `npm test` 311 groen; `npm run build` geslaagd (`validate` + `tsc` + vite). |
 | --- | --- |
 | **Gewone taal** | Gesprekskaart A3 herschreven; A4 `hintRonde2` in `intros.nl.ts`; portretten alleen `.jpg`. Tests uitgebreid. |
 | **Bundel 1–3** | Labels **DE SITUATIE** / **DE UITDAGING**; hints in `content/intros.nl.ts`; `SpokenLineText` in cold open + slotfilm; portretten alleen glossary. Tests `bundelOpmerkingen.test.ts`. |
@@ -12,10 +18,10 @@ Laatste update: **10 november 2026** — bundel opmerkingen 1–3 + beelden
 | **Portretten** | 28/28 aanwezig; `_origineel` uit `public/`. |
 | **Tests / build** | **292** groen; `npm run build` OK. |
 | **Afleveringstrailer** | Fase `trailer` vóór intro; `data/trailers.ts`, `EpisodeTrailerPhase`, `trailerGezien` (save v5), overslaan/replay, cold-open **FilmOverlay**-trailer ongewijzigd. Tests `episodeTrailer.test.ts`. |
-| **A4 + rondebalk** | `introCarryLines` gelijk aan A1–A5; rondebalk **Kijk … Kijk terug** (`spelStappen.ts`); openingsscène-kop + uitleglijn; speler-UI zonder MT als teamrol. |
+| **A4 + rondebalk** | `introCarryLines` gelijk aan A1–A5; rondebalk **Kijk … Kijk terug** (`spelStappen.ts`); openingsscène: **briefing** i.p.v. uitleglijn onder scène; speler-UI zonder MT als teamrol. |
 | **Portretten (voorbereiding)** | `docs/PORTRETTEN-LIJST.md`, codeschema `P-<NAAM>-<JAAR>`, `Portret.tsx`, glossarium per aflevering (`data/glossarium.ts`), **23+5** nog aan te leveren door Richard. Tests `portret.test.tsx`. |
 | **Zus-rol (één teamrol)** | MT-rolverdeling en `RoleBelangModal` verwijderd; spelers = jongere zus. Flow: besluit → **argument** → gesprek/uitkomst. `docs/INVENTARIS-MT-ROLLEN.md`. |
-| **Argumentstap** | Fase `argument`, velden 20–280 / 10–140 tekens, knop *Dit is ons besluit*; export + docentlog; timer loopt door (`useGame` + `onderzoek`/`besluit`/`argument`), geen blokkade bij 0. |
+| **Argumentstap** | Fase `argument`, velden **20–160** / **10–100** tekens (`limits.ts`); knop *Dit is ons besluit*; export + docentlog; beslistijd loopt na scènestart in `onderzoek`/`besluit`. |
 | **Teksten** | `content/uitleg.ts` (6 stappen, 4 momenten), startscherm naam zus, `howItWorks`/`glossary`, intro A1 notariszin; nabesprekingsvraag *Wie wist…* (concept) per aflevering. |
 | **Tests / build** | **276** tests groen; `npm run build` OK (incl. afleveringstrailer). |
 | **Uitleg en spelregels** | `content/uitleg.ts`, `UitlegScreen.tsx`, routing via `App.tsx` + `UiModalsContext`; CSS `uitleg-*`; tests `uitlegScreen.test.tsx`; docs §9b `DESIGNGIDS.md`; zichtbare **cold open** → **openingsscène** (`StepsNav`, docentpaneel). |

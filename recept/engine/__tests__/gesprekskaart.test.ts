@@ -47,8 +47,8 @@ describe('validateGesprekOpslaan', () => {
     expect(validateGesprekOpslaan('  ', ['eerlijkheid']).ok).toBe(false);
   });
 
-  it('weigert zin boven 280 tekens', () => {
-    expect(validateGesprekOpslaan('x'.repeat(281), []).ok).toBe(false);
+  it('weigert zin boven ONZEZIN_MAX tekens', () => {
+    expect(validateGesprekOpslaan('x'.repeat(141), []).ok).toBe(false);
   });
 
   it('weigert meer dan 3 waarden', () => {

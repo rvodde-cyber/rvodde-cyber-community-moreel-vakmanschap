@@ -22,7 +22,7 @@ function advanceColdToEnd(state: GameUiState, round: 1 | 2): GameUiState {
     phase: 'cold',
     rounds: {
       ...state.rounds,
-      [round]: { ...state.rounds[round], trailerDone: true },
+      [round]: { ...state.rounds[round], trailerDone: true, sceneGestartOp: Date.now() },
     },
   };
   while (canColdNext(s.episode, round, s.rounds[round].coldSub)) {
@@ -125,19 +125,21 @@ describe('cold open copy — beslistijd alleen met timer', () => {
 });
 
 describe('aflevering 1 — verplichte klikken intro → onderzoek', () => {
-  it('maximaal 3 speleracties vóór onderzoek (intro, trailer, start overleg)', () => {
+  it('vaste stappen vóór onderzoek (intro, cold+briefing, trailer, start overleg)', () => {
     const mandatory: Parameters<typeof gameReducer>[1][] = [
       { type: 'SET_PHASE', phase: 'cold' },
+      { type: 'START_COLD_SCENE' },
       { type: 'PLAY_FILM', kind: 'trailer-r1' },
     ];
     let s = freshEpisode(1);
     expect(s.phase).toBe('intro');
+    expect(s.timerOn).toBe(false);
     for (const a of mandatory) s = gameReducer(s, a);
+    expect(s.timerOn).toBe(true);
     s = gameReducer(s, { type: 'END_FILM' });
     expect(s.rounds[1].trailerDone).toBe(true);
     s = advanceColdToEnd(s, 1);
-    mandatory.push({ type: 'SET_PHASE', phase: 'onderzoek' });
-    s = gameReducer(s, mandatory[2]!);
+    s = gameReducer(s, { type: 'SET_PHASE', phase: 'onderzoek' });
     expect(s.phase).toBe('onderzoek');
     expect(mandatory).toHaveLength(3);
   });

@@ -59,7 +59,10 @@ export const COLD_OPEN_EP1: { 1: Ep1Cold; 2: Ep1Cold } = {
     place: 'KEUKEN, BERKEL-ENSCHOT',
     img: 'C1',
     lines: [
-      ['', 'Zondagavond. Het kasboek ligt open op de keukentafel.'],
+      [
+        '',
+        'Zondagavond. Het kasboek ligt open op de keukentafel. Ernaast ligt een schrift. Op de kaft staat: Geheim familierecept.',
+      ],
       ['LIES', 'Dat kan toch geen bestelling voor ons zijn? Dat moet verkeerd afgeleverd zijn.'],
       ['HARRIE', 'Nee joh, die man belde zelf. Tien keer zoveel, binnen zes weken. Keileuk, hè?'],
       ['LIES', 'Keileuk? Daar komen we toch nooit aan toe?'],

@@ -18,6 +18,8 @@ import { freshGame, freshEpisode, freshRoundUi, vermoedenQ } from './budgetUi';
 import { roundDefFor } from './roundSource';
 import { stubComputeResult } from './stubCompute';
 import { okArgument } from '@data/schemas/argument.schema';
+import { ARGUMENT_MAX, TEGENARGUMENT_MAX } from './limits';
+import { usesBeslistijdTimer } from '@data/episodes/motor';
 import { okBesluitKeuze, pilotLockedCards } from './besluitRules';
 import { chatTimeLabel } from './chatHelpers';
 import { applyDilemmaHidden, applyHiddenAfterRound } from './hiddenMeters';
@@ -34,6 +36,7 @@ export type GameAction =
   | { type: 'SET_TEAM'; team: string }
   | { type: 'SET_PHASE'; phase: Phase }
   | { type: 'COLD_NEXT' }
+  | { type: 'START_COLD_SCENE' }
   | { type: 'TRAILER_DONE' }
   | { type: 'TOGGLE_ACTIE'; id: string }
   | { type: 'SET_VERM'; id: string }
@@ -134,6 +137,19 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       return { ...state, team: action.team.slice(0, 40) };
     case 'SET_PHASE':
       return { ...state, phase: action.phase };
+    case 'START_COLD_SCENE': {
+      const r = roundState(state);
+      if (r.sceneGestartOp != null) return state;
+      const timerOn = usesBeslistijdTimer(state.episode) ? true : state.timerOn;
+      return {
+        ...state,
+        timerOn,
+        rounds: {
+          ...state.rounds,
+          [state.round]: { ...r, sceneGestartOp: Date.now() },
+        },
+      };
+    }
     case 'TRAILER_DONE':
       return {
         ...state,
@@ -203,12 +219,12 @@ export function gameReducer(state: GameUiState, action: GameAction): GameUiState
       if (action.field === 'mot') return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, mot: action.value } } };
       if (action.field === 'min') return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, min: action.value } } };
       if (action.field === 'argument') {
-        return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, argument: action.value.slice(0, 280) } } };
+        return { ...state, rounds: { ...state.rounds, [state.round]: { ...r, argument: action.value.slice(0, ARGUMENT_MAX) } } };
       }
       if (action.field === 'tegenargument') {
         return {
           ...state,
-          rounds: { ...state.rounds, [state.round]: { ...r, tegenargument: action.value.slice(0, 140) } },
+          rounds: { ...state.rounds, [state.round]: { ...r, tegenargument: action.value.slice(0, TEGENARGUMENT_MAX) } },
         };
       }
       const w = [...r.w] as [string, string, string];

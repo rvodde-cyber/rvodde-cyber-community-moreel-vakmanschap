@@ -70,6 +70,7 @@ export function freshRoundUi(episode: EpisodeId, round: 1 | 2): RoundUiState {
         : marcoBudFromPosten(def.posten),
     coldSub: 0,
     trailerDone: false,
+    sceneGestartOp: null,
     reacted: false,
   };
 }
@@ -100,7 +101,7 @@ export function freshEpisode(episode: EpisodeId): GameUiState {
     rounds: { 1: freshRoundUi(episode, 1), 2: freshRoundUi(episode, 2) },
     results: {},
     tLeft: 600,
-    timerOn: true,
+    timerOn: false,
     chatTab: 'g',
     inbox: [],
     msgText: {},

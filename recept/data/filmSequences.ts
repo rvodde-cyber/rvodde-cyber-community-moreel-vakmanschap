@@ -3,6 +3,7 @@
 export type FilmCue =
   | { at: number; kind: 'text'; text: string; question?: boolean }
   | { at: number; kind: 'shot'; img: string; zoom?: 'in' | 'pan' }
+  | { at: number; kind: 'overlay-hand'; text: string }
   | { at: number; kind: 'ui'; ui: 'norm' | 'rank' | 'verz' | 'order' | 'f17' | 'toegang' }
   | { at: number; kind: 'sub'; who?: string; text: string }
   | { at: number; kind: 'blank' }
@@ -17,6 +18,8 @@ export type FilmScript = {
   titleAfter?: string;
   titleEp?: string;
   duration: number;
+  /** Handschrift-overlay in slot/trailer (thema-lettertype) */
+  periodKey?: '1984' | '1996' | '2009' | '2026' | '2036';
   cues: FilmCue[];
 };
 
@@ -92,7 +95,7 @@ export function buildSlotRonde1(place: string, line: string): FilmScript {
   };
 }
 
-/** Slotscène aflevering 1 (1984), ±28,5 s. Beelden C1, T1, A1-SCHRIFT volgen beeldbank/placeholder. */
+/** Slotscène aflevering 1 (1984), ±30 s. Beelden C1, T1, L1, A1-SCHRIFT volgen beeldbank/placeholder. */
 export function buildSlotEp1(openingLine: string): FilmScript {
   return {
     id: 'slot-ep1',
@@ -100,7 +103,8 @@ export function buildSlotEp1(openingLine: string): FilmScript {
     titleMark: 'RECEPT',
     titleAfter: 'AFLEVERING 1',
     titleEp: 'Alles met de hand',
-    duration: 28500,
+    periodKey: '1984',
+    duration: 30000,
     cues: [
       { at: 200, kind: 'sub', text: openingLine },
       { at: 3200, kind: 'shot', img: 'T1', zoom: 'in' },
@@ -109,14 +113,23 @@ export function buildSlotEp1(openingLine: string): FilmScript {
       { at: 5800, kind: 'sub', who: 'GERRIT', text: 'Tien keer zoveel, Harrie. Dat moet je opschrijven. Ik ben er niet altijd.' },
       { at: 8800, kind: 'sub', who: 'LIES', text: 'En als jullie er niet zijn? Wie weet dan nog waarom we het zo doen?' },
       { at: 11800, kind: 'sub', who: 'HARRIE', text: 'Dat weet ik toch? Ik weet alles.' },
-      { at: 13200, kind: 'sub', who: 'GERRIT', text: 'Houdoe, Harrie. Schrijf het op.' },
-      { at: 14200, kind: 'sub', who: 'LIES', text: 'Houdoe, Gerrit.' },
-      { at: 16200, kind: 'shot', img: 'A1-SCHRIFT', zoom: 'in' },
-      { at: 19200, kind: 'shot', img: 'C1', zoom: 'in' },
-      { at: 22200, kind: 'blank' },
-      { at: 22600, kind: 'text', text: 'Wie weet er straks nog hoe het gaat?' },
-      { at: 22600, kind: 'boom', soft: true },
-      { at: 26400, kind: 'title' },
+      { at: 12200, kind: 'shot', img: 'L1', zoom: 'in' },
+      { at: 12200, kind: 'overlay-hand', text: 'Geheim familierecept' },
+      { at: 14200, kind: 'sub', who: 'LIES', text: 'Wat staat erin?' },
+      {
+        at: 16200,
+        kind: 'sub',
+        who: 'HARRIE',
+        text: 'Het recept. En wie het later overneemt. Dat blijft in de familie, hè.',
+      },
+      { at: 18200, kind: 'sub', who: 'GERRIT', text: 'Houdoe, Harrie. Schrijf het op.' },
+      { at: 19200, kind: 'sub', who: 'LIES', text: 'Houdoe, Gerrit.' },
+      { at: 20200, kind: 'shot', img: 'A1-SCHRIFT', zoom: 'in' },
+      { at: 23200, kind: 'shot', img: 'C1', zoom: 'in' },
+      { at: 26200, kind: 'blank' },
+      { at: 26600, kind: 'text', text: 'Wie weet er straks nog hoe het gaat?' },
+      { at: 26600, kind: 'boom', soft: true },
+      { at: 28400, kind: 'title' },
     ],
   };
 }

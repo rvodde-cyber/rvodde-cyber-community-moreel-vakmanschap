@@ -79,9 +79,10 @@ describe('argument stap', () => {
     expect(btn2?.disabled).toBe(false);
   });
 
-  it('(d) validate weigert te lange tekens', () => {
-    expect(validateArgumentField('x'.repeat(281), 'ok genoeg lang').ok).toBe(false);
-    expect(validateArgumentField('x'.repeat(20), 'y'.repeat(141)).ok).toBe(false);
+  it('(d) validate: minimum verplicht; oude lange import niet afgekeurd', () => {
+    expect(validateArgumentField('x'.repeat(281), 'ok genoeg lang').ok).toBe(true);
+    expect(validateArgumentField('x'.repeat(20), 'y'.repeat(20)).ok).toBe(true);
+    expect(validateArgumentField('kort', 'y'.repeat(20)).ok).toBe(false);
   });
 
   it('(e) export bevat argument; import zonder velden werkt', () => {

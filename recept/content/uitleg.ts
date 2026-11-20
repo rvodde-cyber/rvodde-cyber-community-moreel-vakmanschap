@@ -1,4 +1,9 @@
 import { EPISODES, type EpisodeId } from '@data/episodes/meta';
+import {
+  ARGUMENT_MAX,
+  TEGENARGUMENT_MAX,
+  ONZEZIN_MAX,
+} from '@/game/limits';
 
 export type UitlegSectionId =
   | 'rol'
@@ -173,8 +178,8 @@ export const UITLEG_BODY: Record<UitlegSectionId, UitlegBody> = {
   tafel: {
     paragraphs: [
       'Het spel bestaat voor een groot deel uit praten. Er zijn vier momenten.',
-      'Het argument (elke ronde). Na jullie keuze schrijven jullie waarom jullie deze twee kiezen (maximaal 280 tekens) en wat het sterkste argument is om het juist niet te doen (maximaal 140 tekens). Denk ook aan mensen die erop achteruitgaan.',
-      'De gesprekskaart (ronde 1). Een figuur uit het deel zit met een dilemma. Jullie krijgen twee minuten. Leg één zin vast (maximaal 280 tekens) en kies maximaal drie van zeven waarden: eerlijkheid, loyaliteit, rechtvaardigheid, zorg, vertrouwen, veiligheid en transparantie. Het gesprek heeft geen effect op de meters.',
+      `Het argument (elke ronde). Na jullie keuze schrijven jullie waarom jullie deze twee kiezen (maximaal ${ARGUMENT_MAX} tekens) en wat het sterkste argument is om het juist niet te doen (maximaal ${TEGENARGUMENT_MAX} tekens). Denk ook aan mensen die erop achteruitgaan.`,
+      `De gesprekskaart (ronde 1). Een figuur uit het deel zit met een dilemma. Jullie krijgen twee minuten. Leg één zin vast (maximaal ${ONZEZIN_MAX} tekens) en kies maximaal drie van zeven waarden: eerlijkheid, loyaliteit, rechtvaardigheid, zorg, vertrouwen, veiligheid en transparantie. Het gesprek heeft geen effect op de meters.`,
       'Het privébericht (ronde 2). Dit bericht is alleen voor jullie bedoeld. Kies nadenkend en leg kort uit waarom. Schrijf een reden van minstens tien tekens.',
       'De pauzekaart (na elk deel). Twee vragen voor aan tafel en een voorspelling voor het volgende deel.',
       'Een goed gesprek begint met luisteren. Laat iedereen eerst zeggen wat hij ziet, en bespreek daarna wat jullie willen doen.',
