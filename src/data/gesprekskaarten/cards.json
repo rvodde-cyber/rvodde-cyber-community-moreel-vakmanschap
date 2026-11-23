@@ -7626,5 +7626,1355 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
+  },
+  {
+    "id": "nd-01",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De stille ruimte",
+      "verhaal": "Charlotte, autistisch en software-ontwikkelaar, werkt het best in stilte. Haar team zit in een open kantoortuin waar overleg en muziek door elkaar lopen. Ze vroeg teamleider Willem al twee keer of ze in de kleine, stille vergaderruimte mag werken.\n\nWillem ziet dat haar concentratie eronder lijdt. Maar twee collega’s zonder diagnose, met een vergelijkbare behoefte aan rust, vroegen dezelfde ruimte eerder en kregen nee, omdat hij voor vergaderingen is bedoeld.\n\nMorgen staat ‘werkplekverdeling’ als laatste punt op zijn agenda. Geeft Willem Charlotte voorrang, wijst hij haar verzoek ook af, of zoekt hij een oplossing voor het hele team?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De beslissing raakt de werkplekverdeling van het hele team en het risico op ongelijke behandeling."
+    },
+    "en": {
+      "titel": "The Quiet Room",
+      "verhaal": "Charlotte, autistic and a software developer, works best in silence. Her team sits in an open-plan office where meetings and music run together. She has already asked team leader Willem twice whether she may work in the small, quiet meeting room.\n\nWillem sees that her concentration is suffering. But two colleagues without a diagnosis, with a similar need for quiet, asked for the same room earlier and were refused, because it is meant for meetings.\n\nTomorrow ‘workspace allocation’ is the last item on his agenda. Does Willem give Charlotte priority, turn down her request too, or look for a solution for the whole team?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The decision affects the workspace allocation of the whole team and the risk of unequal treatment."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-01.jpg",
+      "altNl": "Situatie neurodivergentie: De stille ruimte",
+      "altEn": "Neurodivergence scene: The Quiet Room",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 98,
+      "woordenEn": 104,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND1",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-02",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Spot",
+      "verhaal": "Rutger, met ADHD, werkt in een kantoortuin waar zijn impulsieve opmerkingen en verstrooidheid regelmatig voor gelach zorgen. Collega Nina ziet hoe de groep, van wie ze de meesten al jaren kent, hem geregeld nadoet. Meestal goedbedoeld, maar Rutger krimpt er zichtbaar van ineen.\n\nNina hoort zelf bij die groep. Als ze iets zegt, verandert de sfeer en wordt zij misschien het mikpunt. Ze twijfelt of het haar plek is, of dat wegkijken haar medeplichtig maakt.\n\nRutger loopt rood aangelopen terug naar zijn bureau terwijl de groep om hem lacht. Spreekt Nina de groep aan, zoekt ze Rutger apart op, of laat ze het zoals het is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Nina beslist als individu; het speelt binnen haar eigen groep collega’s."
+    },
+    "en": {
+      "titel": "Ridicule",
+      "verhaal": "Rutger, who has ADHD, works in an open-plan office where his impulsive remarks and absent-mindedness regularly cause laughter. His colleague Nina sees how the group, most of whom she has known for years, often imitates him. Mostly well-meant, but Rutger visibly shrinks.\n\nNina herself belongs to that group. If she says something, the mood changes and she may become the target. She wonders whether it is her place, or whether looking away makes her complicit.\n\nRutger walks back to his desk, flushed, while the group laughs about him. Does Nina address the group, seek out Rutger privately, or leave things as they are?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Nina decides as an individual; it plays out within her own group of colleagues."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-02.jpg",
+      "altNl": "Situatie neurodivergentie: Spot",
+      "altEn": "Neurodivergence scene: Ridicule",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 103,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND2",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "nd-03",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het doolhof van letters",
+      "verhaal": "Emma, met dyslexie, vroeg haar teamleider Hugo al herhaaldelijk om werkdocumenten in een dyslexievriendelijk lettertype en met meer witruimte. Elk dicht beschreven document kost haar veel meer tijd en energie dan haar collega’s.\n\nHugo wil haar helpen, maar het omzetten van alle sjablonen vraagt een extern bureau. Dat geld staat gereserveerd voor de teamtraining waar de rest al weken naar uitkijkt. Beide kan dit kwartaal niet.\n\nHet budgetoverzicht ligt voor hem: twee opties, één budget. Kiest Hugo voor de aangepaste documenten, houdt hij vast aan de teamtraining, of zoekt hij een derde weg?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt het gedeelde teambudget en dus de andere teamleden."
+    },
+    "en": {
+      "titel": "The Maze of Letters",
+      "verhaal": "Emma, who has dyslexia, has repeatedly asked her team leader Hugo for work documents in a dyslexia-friendly font and with more white space. Every densely written document costs her much more time and energy than her colleagues.\n\nHugo wants to help her, but converting all the templates requires an external agency. That money is set aside for the team training that everyone else has been looking forward to for weeks. They cannot do both this quarter.\n\nThe budget overview lies in front of him: two options, one budget. Does Hugo choose the adapted documents, stick with the team training, or look for a third way?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the shared team budget and therefore the other team members."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-03.jpg",
+      "altNl": "Situatie neurodivergentie: Het doolhof van letters",
+      "altEn": "Neurodivergence scene: The Maze of Letters",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 93,
+      "woordenEn": 105,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND3",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-04",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Overprikkeld",
+      "verhaal": "Floris, hoogsensitief, raakt overprikkeld door het constante geroezemoes in de open kantoortuin. Hij vroeg office manager Petra om een deel van de gedeelde lunchruimte om te bouwen tot een stille werkplek.\n\nPetra ziet zijn uitputting. Maar diezelfde lunchruimte is al jaren de plek waar het team elkaar dagelijks ontmoet en bijpraat. Meerdere collega’s zeggen dat dat de sfeer juist goed houdt.\n\nDe inrichtingstekening ligt voor haar, met twee versies. Bouwt Petra de lunchruimte om, houdt ze hem zoals hij is, of zoekt ze een tussenoplossing?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De herinrichting raakt de gedeelde ruimte en sociale dynamiek van het hele team."
+    },
+    "en": {
+      "titel": "Overstimulated",
+      "verhaal": "Floris, who is highly sensitive, becomes overstimulated by the constant hum in the open-plan office. He asked office manager Petra to convert part of the shared lunch room into a quiet workspace.\n\nPetra sees his exhaustion. But that same lunch room has been the place where the team meets and catches up every day for years. Several colleagues say it is exactly what keeps the atmosphere good.\n\nThe layout drawing lies in front of her, in two versions. Does Petra convert the lunch room, keep it as it is, or look for a compromise?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The redesign affects the shared space and the social dynamics of the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-04.jpg",
+      "altNl": "Situatie neurodivergentie: Overprikkeld",
+      "altEn": "Neurodivergence scene: Overstimulated",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 85,
+      "woordenEn": 94,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND4",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-05",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Tempo",
+      "verhaal": "Marloes, met een leerstoornis, heeft voor dezelfde taken structureel meer tijd nodig dan haar collega’s. Teamleider Rachid ziet dat ze zorgvuldig en gedreven werkt, maar de deadline van de klant staat vast en nadert.\n\nTwee collega’s namen deze maand al werk van Marloes over en mopperen zachtjes bij de koffieautomaat. Rachid moet de resterende taken verdelen, zonder Marloes onder druk te zetten of het team uit te putten.\n\nHet planningsoverzicht staat open, de deadline rood gemarkeerd. Geeft Rachid Marloes meer tijd, verdeelt hij haar taken opnieuw, of bespreekt hij het eerst met de klant?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De taakverdeling raakt de werkdruk van het hele team, niet alleen Marloes’s tempo."
+    },
+    "en": {
+      "titel": "Pace",
+      "verhaal": "Marloes, who has a learning disability, structurally needs more time than her colleagues for the same tasks. Team leader Rachid sees that she works carefully and with drive, but the client’s deadline is fixed and approaching.\n\nTwo colleagues have already taken over work from Marloes this month and grumble quietly at the coffee machine. Rachid has to divide the remaining tasks without putting Marloes under pressure or exhausting the team.\n\nThe planning overview is open, the deadline marked red. Does Rachid give Marloes more time, redistribute her tasks, or discuss it with the client first?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The task allocation affects the workload of the whole team, not only Marloes’s pace."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-05.jpg",
+      "altNl": "Situatie neurodivergentie: Tempo",
+      "altEn": "Neurodivergence scene: Pace",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 94,
+      "woordenEn": 95,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND5",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-06",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Struikelen",
+      "verhaal": "Maarten heeft sinds een beroerte twee jaar geleden niet-aangeboren hersenletsel (NAH). Zijn woorden struikelen soms: hij zoekt naar een naam, begint opnieuw, raakt de draad kwijt. In de vriendengroep gaat het gesprek snel en wordt hij vaak onderbroken.\n\nJulia, een van zijn beste vriendinnen, ziet hem stiller worden. Ze twijfelt of ze de groep moet wijzen op zijn tempo. Dat kan de losse sfeer veranderen, en Maarten heeft zelf nooit gevraagd om hulp.\n\nMaarten begint weer aan een zin, en een ander verhaal neemt het over. Spreekt Julia de groep aan, vraagt ze Maarten later wat hij wil, of laat ze het zoals het is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Julia beslist als vriendin zelf; het gaat om een directe keuze in één moment."
+    },
+    "en": {
+      "titel": "Stumbling",
+      "verhaal": "Maarten has had acquired brain injury (ABI) since a stroke two years ago. His words sometimes stumble: he searches for a name, starts again, loses the thread. In the group of friends the conversation moves fast and he is often interrupted.\n\nJulia, one of his best friends, sees him growing quieter. She wonders whether she should point out his pace to the group. That could change the relaxed atmosphere, and Maarten has never asked for help himself.\n\nMaarten starts another sentence, and another story takes over. Does Julia address the group, ask Maarten later what he wants, or leave things as they are?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Julia decides for herself as a friend; it is a direct choice in a single moment."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-06.jpg",
+      "altNl": "Situatie neurodivergentie: Struikelen",
+      "altEn": "Neurodivergence scene: Stumbling",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 103,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND6",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "nd-07",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Onaangekondigd",
+      "verhaal": "Eline, met een angststoornis, schrikt zichtbaar wanneer collega’s onaangekondigd naast haar bureau opduiken met een snelle vraag. Ze vroeg teamleider Pieter of collega’s eerst een berichtje kunnen sturen voordat ze naar haar toe lopen.\n\nPieter overweegt dat voor het hele team in te voeren. Twee collega’s vinden dat de snelle, informele overlegcultuur waar ze trots op zijn in de weg zitten: extra stappen voor iets dat nu in een halve minuut klaar is.\n\nDe teamafspraken moeten volgende week rond. Voert Pieter de regel in voor iedereen, maakt hij een uitzondering voor Eline, of laat hij het informele systeem?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een nieuwe teamafspraak raakt de manier van werken van het hele team."
+    },
+    "en": {
+      "titel": "Unannounced",
+      "verhaal": "Eline, who has an anxiety disorder, visibly startles when colleagues appear unannounced at her desk with a quick question. She asked team leader Pieter whether colleagues could send a message first before walking over to her.\n\nPieter is considering introducing that for the whole team. Two colleagues feel it gets in the way of the quick, informal consultation culture they are proud of: extra steps for something that is now done in half a minute.\n\nThe team agreements have to be settled next week. Does Pieter introduce the rule for everyone, make an exception for Eline, or keep the informal system?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A new team agreement affects the working method of the whole team."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-07.jpg",
+      "altNl": "Situatie neurodivergentie: Onaangekondigd",
+      "altEn": "Neurodivergence scene: Unannounced",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 98,
+      "woordenEn": 101,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND7",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-08",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Cijfers",
+      "verhaal": "Stefan, met dyscalculie, heeft moeite met de rekenkundige taken in zijn functie. Hij vroeg manager Iris gespecialiseerde rekensoftware aan te schaffen, die hem enorm zou helpen.\n\nIris ziet zijn inzet en frustratie, maar de software kost een paar duizend euro. Dat geld is gereserveerd voor een opleiding waar twee andere teamleden al lang naar uitkijken om door te kunnen groeien.\n\nDe offerte voor de software ligt naast de opleidingsaanvraag. Kiest Iris voor de software, voor de opleiding van de twee collega’s, of zoekt ze een manier om beide te betalen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De budgetkeuze raakt de ontwikkelmogelijkheden van meerdere teamleden."
+    },
+    "en": {
+      "titel": "Numbers",
+      "verhaal": "Stefan, who has dyscalculia, struggles with the numerical tasks in his job. He asked manager Iris to buy specialised calculation software, which would help him enormously.\n\nIris sees his effort and frustration, but the software costs a few thousand euros. That money is reserved for a training course that two other team members have long looked forward to in order to keep growing.\n\nThe quote for the software lies next to the training application. Does Iris choose the software, the training for the two colleagues, or find a way to pay for both?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The budget choice affects the development opportunities of several team members."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-08.jpg",
+      "altNl": "Situatie neurodivergentie: Cijfers",
+      "altEn": "Neurodivergence scene: Numbers",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 90,
+      "woordenEn": 93,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND8",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-09",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Spontaan",
+      "verhaal": "Merel is autistisch en heeft tijd nodig om zich op een avond voor te bereiden; een onverwacht plan overspoelt haar. Haar vriendengroep plant het liefst spontaan: een appje ’s middags, en ’s avonds staat iedereen ergens te borrelen.\n\nHaar vriend Koen merkt dat ze steeds vaker afzegt en minder wordt uitgenodigd. Hij weet ook dat de rest van de groep van die spontaniteit houdt en dat vooruit plannen de sfeer verandert.\n\nDe groepsapp piept weer met een plan voor vanavond. Stelt Koen voor om vaker vooruit te plannen, appt hij Merel apart, of laat hij de groep zoals die is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Koen beslist als vriend binnen zijn eigen groep."
+    },
+    "en": {
+      "titel": "Spontaneous",
+      "verhaal": "Merel is autistic and needs time to prepare for an evening; an unexpected plan overwhelms her. Her group of friends prefers to plan spontaneously: a message in the afternoon, and by the evening everyone is out having drinks somewhere.\n\nHer friend Koen notices that she cancels more and more often and is invited less. He also knows that the rest of the group loves that spontaneity and that planning ahead would change the atmosphere.\n\nThe group chat pings again with a plan for tonight. Does Koen suggest planning ahead more often, message Merel privately, or leave the group as it is?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Koen decides as a friend within his own group."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-09.jpg",
+      "altNl": "Situatie neurodivergentie: Spontaan",
+      "altEn": "Neurodivergence scene: Spontaneous",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 100,
+      "woordenEn": 101,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND9",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "nd-10",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De doorverwijzing",
+      "verhaal": "Lotte, autistisch, vraagt haar huisarts voor de derde keer om een doorverwijzing naar een gespecialiseerde GGZ-instelling. Huisarts Verhoeven ziet dat ze het gesprek goed voert en geen acute crisis heeft.\n\nDe wachtlijst voor de instelling is maanden lang, en hij probeert de schaarse plekken te bewaren voor acute problemen. Lotte’s vraag is niet acuut, maar al jaren onbeantwoord, en ze voelt zich telkens weggewuifd.\n\nZe zit tegenover hem en wacht. Geeft Verhoeven de doorverwijzing nu, houdt hij vast aan prioritering voor acute gevallen, of zoekt hij een tussenweg?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Schaarste in de geestelijke gezondheidszorg en wachtlijstbeleid liggen buiten het bereik van één huisarts."
+    },
+    "en": {
+      "titel": "The Referral",
+      "verhaal": "Lotte, who is autistic, asks her GP for the third time for a referral to a specialised mental health institution. GP Verhoeven sees that she holds the conversation well and is not in acute crisis.\n\nThe waiting list for the institution runs to months, and he tries to keep the scarce places for acute problems. Lotte’s request is not acute, but has gone unanswered for years, and she feels brushed off every time.\n\nShe sits opposite him and waits. Does Verhoeven give the referral now, stick to prioritising acute cases, or look for a middle way?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Scarcity in mental health care and waiting list policy lie beyond the reach of a single GP."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-10.jpg",
+      "altNl": "Situatie neurodivergentie: De doorverwijzing",
+      "altEn": "Neurodivergence scene: The Referral",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 88,
+      "woordenEn": 96,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND10",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "nd-11",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De keuring",
+      "verhaal": "Rik is dyslectisch en heeft ADHD. Zijn droom is gaan werken als piloot, maar de medische keuring noemt zijn diagnose als reden om hem af te wijzen. Hij ziet dat hij in de praktijk goed is in snelle beslissingen onder druk.\n\nZijn instructeur zegt: ‘De regels zijn de regels, die gaan boven één mens.’ Een vriend raadt hem aan zijn diagnose te verzwijgen, maar bij ontdekking volgt royement.\n\nHet formulier ligt klaar. Vult Rik zijn diagnose eerlijk in, verzwijgt hij haar, of strijdt hij juridisch tegen de regel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Het dilemma ligt in wetgeving en sectorregels over geschiktheid; Rik of één opleiding kan die niet veranderen."
+    },
+    "en": {
+      "titel": "The Medical Check",
+      "verhaal": "Rik is dyslexic and has ADHD. His dream is to work as a pilot, but the medical examination cites his diagnosis as the reason to reject him. He sees that in practice he is good at quick decisions under pressure.\n\nHis instructor says: ‘Rules are rules; they come before any one person.’ A friend advises him to conceal his diagnosis, but if discovered, he would be struck off.\n\nThe form is ready. Does Rik fill in his diagnosis honestly, conceal it, or fight the rule legally?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The dilemma lies in legislation and sector rules on fitness; Rik or a single training school cannot change them."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-11.jpg",
+      "altNl": "Situatie neurodivergentie: De keuring",
+      "altEn": "Neurodivergence scene: The Medical Check",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 88,
+      "woordenEn": 86,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND11",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "nd-12",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het masker",
+      "verhaal": "Soraya is autistisch en doet op haar werk al jaren alsof ze zich prettig voelt: oogcontact oefenen, gespreksstof voorbereiden, glimlachen bij grappen die ze niet begrijpt. Bij het koffieapparaat ziet haar collega Jorik haar even zonder masker.\n\nZe staart uitgeput naar de muur. Jorik weet dat ze zelf nooit iets zegt. Hij twijfelt of hij haar moet aanspreken: misschien helpt het, misschien maakt hij haar kwetsbaarheid zichtbaar.\n\nSoraya ziet hem en haalt het masker weer terug. Zegt Jorik iets, vraagt hij later of ze koffie wil, of doet hij alsof hij niets zag?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Jorik beslist als collega-individu; geen organisatie of regel hoeft te veranderen."
+    },
+    "en": {
+      "titel": "The Mask",
+      "verhaal": "Soraya is autistic and has been pretending for years at work that she feels comfortable: practising eye contact, preparing small talk, smiling at jokes she does not understand. At the coffee machine her colleague Jorik sees her, briefly, without the mask.\n\nShe stares at the wall, exhausted. Jorik knows she never says anything herself. He hesitates about speaking to her: perhaps it will help, perhaps he will expose her vulnerability.\n\nSoraya sees him and puts the mask back on. Does Jorik say something, ask later whether she wants a coffee, or pretend he saw nothing?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Jorik decides as a colleague and individual; no organisation or rule needs to change."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-12.jpg",
+      "altNl": "Situatie neurodivergentie: Het masker",
+      "altEn": "Neurodivergence scene: The Mask",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 93,
+      "woordenEn": 95,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND12",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "nd-13",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De assessmentdag",
+      "verhaal": "Ayoub, met ADHD, solliciteert voor een traineeship dat begint met een groepsassessment van acht uur: gesprekken, rollenspellen en een lange schriftelijke opdracht. HR-medewerker Kim ziet in zijn motivatiebrief dat hij een andere format zou willen, met kortere blokken.\n\nAanpassen voor één kandidaat kan als oneerlijk voelen voor de andere zeventig. Het bedrijf is trots op ‘gelijke kansen voor iedereen’, wat voor HR vooral gelijke procedure betekent.\n\nDe uitnodigingen moeten vandaag de deur uit. Past Kim de format voor Ayoub aan, houdt ze het assessment ongewijzigd, of past ze het voor alle kandidaten aan?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Selectieprocedure, gelijke behandeling van kandidaten en het beleid van de organisatie spelen mee."
+    },
+    "en": {
+      "titel": "The Assessment Day",
+      "verhaal": "Ayoub, who has ADHD, is applying for a traineeship that begins with an eight-hour group assessment: interviews, role plays and a long written assignment. HR officer Kim sees in his motivation letter that he would like a different format, with shorter blocks.\n\nAdapting it for one candidate may feel unfair to the other seventy. The company is proud of ‘equal opportunities for everyone’, which for HR mainly means equal procedure.\n\nThe invitations have to go out today. Does Kim adapt the format for Ayoub, keep the assessment unchanged, or adapt it for all candidates?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Selection procedure, equal treatment of candidates and the organisation’s policy all play a part."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-13.jpg",
+      "altNl": "Situatie neurodivergentie: De assessmentdag",
+      "altEn": "Neurodivergence scene: The Assessment Day",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 93,
+      "woordenEn": 94,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND13",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "nd-14",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De pillen",
+      "verhaal": "Jesse, met ADHD, krijgt voorgeschreven medicatie. Tijdens de tentamenweek vraagt zijn kamergenoot Milan hem om een paar pillen: ‘Het is toch maar een boosterje, jij hebt ze toch.’ Milan is moe, bang voor een herkansing en vraagt het twee keer.\n\nJesse weet dat het niet mag en dat het gevaarlijk kan zijn. Maar Milan is zijn beste vriend en helpt hem altijd. Hij hoeft het niemand te vertellen, zegt Milan, ‘gewoon even’.\n\nHet tentamen is morgen vroeg. Geeft Jesse hem een pil, weigert hij en legt hij uit waarom, of vertelt hij iemand dat Milan het vraagt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Jesse beslist zelf over zijn eigen medicatie en vriendschap; geen organisatie hoeft te veranderen."
+    },
+    "en": {
+      "titel": "The Pills",
+      "verhaal": "Jesse, who has ADHD, is prescribed medication. During exam week his housemate Milan asks him for a few pills: ‘It’s just a little booster, and you have them anyway.’ Milan is tired, afraid of a resit, and asks twice.\n\nJesse knows it is not allowed and can be dangerous. But Milan is his best friend and always helps him. He does not have to tell anyone, Milan says, ‘just this once’.\n\nThe exam is early tomorrow. Does Jesse give him a pill, refuse and explain why, or tell someone that Milan is asking?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "Jesse decides for himself about his own medication and friendship; no organisation needs to change."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-14.jpg",
+      "altNl": "Situatie neurodivergentie: De pillen",
+      "altEn": "Neurodivergence scene: The Pills",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 97,
+      "woordenEn": 93,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND14",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "nd-15",
+    "set": "neurodivergentie-v3",
+    "stap": 1,
+    "categorie": "neurodivergentie",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het teamuitje",
+      "verhaal": "Teamleider Femke organiseert het jaarlijkse teamuitje: een escape room, daarna een luid restaurant met livemuziek. Het team heeft er zin in. Alleen Joost, autistisch, vertelt voorzichtig dat hij hier erg tegenop ziet.\n\nEen alternatief, zoals een wandeling, betekent dat de rest een uitje mist dat ze al weken plannen. Joost wil zijn collega’s niet teleurstellen en zegt dat hij ‘het wel redt’, maar zijn schouders zeggen iets anders.\n\nDe boeking moet vandaag definitief. Houdt Femke het programma, past ze het aan voor het hele team, of regelt ze iets apart voor Joost?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Teamcultuur, budget en de behoeften van het hele team spelen samen met Joosts persoonlijke grens."
+    },
+    "en": {
+      "titel": "The Team Outing",
+      "verhaal": "Team leader Femke is organising the annual team outing: an escape room, then a loud restaurant with live music. The team is looking forward to it. Only Joost, who is autistic, carefully says he is dreading it.\n\nAn alternative, such as a walk, means the rest miss an outing they have been planning for weeks. Joost does not want to disappoint his colleagues and says he ‘will manage’, but his shoulders say otherwise.\n\nThe booking has to be final today. Does Femke keep the programme, adapt it for the whole team, or arrange something separate for Joost?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Team culture, budget and the needs of the whole team interact with Joost’s personal boundary."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/nd-15.jpg",
+      "altNl": "Situatie neurodivergentie: Het teamuitje",
+      "altEn": "Neurodivergence scene: The Team Outing",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 92,
+      "woordenEn": 97,
+      "bron": "Neurodivergentie — v3 website (15 kaarten)",
+      "kaartNummer": "ND15",
+      "sectorColor": "#2E86AB",
+      "categorieEn": "NEURODIVERGENCE",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-01",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Toegankelijk",
+      "verhaal": "Sophie, die een visuele beperking heeft, kan de werkdocumenten van haar team niet goed lezen: geen schermlezerondersteuning, geen toegankelijke opmaak. Ze vroeg IT-manager Frank om aangepaste software.\n\nFrank wil haar helpen, maar het budget van dit kwartaal staat al vast voor een nieuw CRM-systeem waar de hele afdeling maanden naar uitkeek. Beide kosten ongeveer evenveel en niet allebei kan.\n\nMorgen dient hij het budgetvoorstel in. Koopt Frank de toegankelijke software, houdt hij vast aan het CRM, of stelt hij een van beide een kwartaal uit?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt het gedeelde IT-budget en dus een ander teamproject, niet alleen Sophies werkplek."
+    },
+    "en": {
+      "titel": "Accessible",
+      "verhaal": "Sophie, who has a visual impairment, cannot read her team’s working documents properly: no screen reader support, no accessible formatting. She asked IT manager Frank for adapted software.\n\nFrank wants to help her, but this quarter’s budget is already committed to a new CRM system that the whole department has been looking forward to for months. The two cost about the same, and they cannot have both.\n\nTomorrow he submits the budget proposal. Does Frank buy the accessible software, stick with the CRM, or postpone one of the two for a quarter?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the shared IT budget and therefore another team project, not only Sophie’s workplace."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-01.jpg",
+      "altNl": "Situatie mensen met een beperking: Toegankelijk",
+      "altEn": "People with disabilities scene: Accessible",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 85,
+      "woordenEn": 92,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB1",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-02",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Gefluister",
+      "verhaal": "Tom, slechthorend, merkt tijdens etentjes met vrienden dat gesprekken hem ontglippen zodra mensen zachter praten of door elkaar heen gaan. Hij lacht dan maar mee, ook als hij de grap niet verstond.\n\nZijn vriendin Mila ziet het steeds vaker gebeuren en twijfelt of ze de groep erop moet wijzen. Dat kan de losse sfeer verstoren en Tom extra in de aandacht zetten, iets waar hij zelf niet om vroeg.\n\nTom lacht weer mee, een fractie te laat. Spreekt Mila de groep aan, praat ze later apart met Tom, of laat ze het zoals het is?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een direct, persoonlijk moment voor Mila binnen haar eigen vriendengroep."
+    },
+    "en": {
+      "titel": "Whispers",
+      "verhaal": "Tom, who is hard of hearing, notices at dinners with friends that conversations slip away from him as soon as people speak more softly or talk over each other. He just laughs along, even when he did not hear the joke.\n\nHis friend Mila sees it happening more and more often and wonders whether she should point it out to the group. That could spoil the relaxed atmosphere and put Tom in the spotlight, something he never asked for himself.\n\nTom laughs along again, a fraction too late. Does Mila address the group, talk to Tom privately later, or leave things as they are?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal moment for Mila within her own group of friends."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-02.jpg",
+      "altNl": "Situatie mensen met een beperking: Gefluister",
+      "altEn": "People with disabilities scene: Whispers",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 95,
+      "woordenEn": 104,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB2",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mb-03",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Drempel",
+      "verhaal": "Esra, die een fysieke beperking heeft, komt al maanden niet meer in haar favoriete buurtcafé: een hoge drempel en geen helling maken de ingang voor haar onneembaar. Ze heeft het bij eigenaar Joris aangekaart.\n\nJoris haalt de drempel graag weg, maar het kleine café heeft dit jaar budget voor één grote investering. De keuken is verouderd en twee vaste medewerkers dringen al maanden aan op nieuwe apparatuur.\n\nHij heeft de offertes voor zich, keuken naast helling. Bouwt Joris de helling, investeert hij in de keuken, of stelt hij een van beide een jaar uit?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De beslissing raakt de investeringsruimte van de hele onderneming, niet alleen de toegang voor één gast."
+    },
+    "en": {
+      "titel": "The Threshold",
+      "verhaal": "Esra, who has a physical disability, has not been to her favourite neighbourhood café for months: a high threshold and no ramp make the entrance impossible for her. She has raised it with the owner, Joris.\n\nJoris would gladly remove the threshold, but the small café has budget for only one major investment this year. The kitchen is outdated and two regular staff members have been asking for new equipment for months.\n\nHe has the quotes in front of him, kitchen next to ramp. Does Joris build the ramp, invest in the kitchen, or postpone one of the two for a year?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The decision affects the investment capacity of the whole business, not only access for one guest."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-03.jpg",
+      "altNl": "Situatie mensen met een beperking: Drempel",
+      "altEn": "People with disabilities scene: The Threshold",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 94,
+      "woordenEn": 102,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB3",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-04",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Chaos",
+      "verhaal": "Lucas, met ADHD, heeft moeite met de losse, ad-hoc manier waarop zijn team werkt: taken komen binnen wanneer ze binnenkomen en prioriteiten wisselen dagelijks. Hij vroeg manager Yasmin om meer vaste structuur.\n\nYasmin overweegt een vast dagschema voor het hele team. Maar de rest is juist trots op de flexibiliteit, het is precies waarom twee collega’s hier ooit kozen, en een vast schema voelt voor hen als een stap terug.\n\nDeze week moet ze de teamafspraken vastleggen. Voert Yasmin het schema voor iedereen in, maakt ze een uitzondering voor Lucas, of laat ze het bij de vrije planning?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een vast dagschema raakt de werkwijze van het hele team, niet alleen Lucas’ behoefte aan structuur."
+    },
+    "en": {
+      "titel": "Chaos",
+      "verhaal": "Lucas, who has ADHD, struggles with the loose, ad hoc way his team works: tasks arrive whenever they arrive and priorities change daily. He asked manager Yasmin for more fixed structure.\n\nYasmin is considering a fixed daily schedule for the whole team. But the others are proud of the flexibility, it is exactly why two colleagues once chose to work here, and a fixed schedule feels like a step backwards to them.\n\nThis week she has to put the team agreements in writing. Does Yasmin introduce the schedule for everyone, make an exception for Lucas, or keep the free planning?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A fixed daily schedule affects the working method of the whole team, not only Lucas’s need for structure."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-04.jpg",
+      "altNl": "Situatie mensen met een beperking: Chaos",
+      "altEn": "People with disabilities scene: Chaos",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 98,
+      "woordenEn": 100,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB4",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-05",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Extra tijd",
+      "verhaal": "Anna, met een leerstoornis, heeft voor sommige taken meer tijd nodig dan haar collega’s. Twee teamleden maken daar geregeld halfgemeende grapjes over, waardoor Anna zich steeds vaker verontschuldigt voor iets waar ze zich niet voor hoeft te schamen.\n\nTeamleider Bram heeft het gezien maar twijfelt. Het in het teamoverleg bespreken kan Anna ongewild extra in de spotlight zetten; alleen de twee grappenmakers apart aanspreken raakt het patroon niet.\n\nMorgen is het eerstvolgende overleg. Bespreekt Bram het gedrag met het hele team, spreekt hij de twee apart aan, of wacht hij tot Anna zelf iets zegt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De aanpak raakt de teamcultuur en de andere teamleden, niet alleen Anna’s situatie."
+    },
+    "en": {
+      "titel": "Extra Time",
+      "verhaal": "Anna, who has a learning disability, needs more time than her colleagues for some tasks. Two team members regularly make half-joking remarks about it, so that Anna increasingly apologises for something she has no reason to be ashamed of.\n\nTeam leader Bram has noticed but hesitates. Raising it in the team meeting could put Anna in the spotlight against her will; speaking to the two joke-makers privately does not address the pattern.\n\nThe next meeting is tomorrow. Does Bram discuss the behaviour with the whole team, speak to the two privately, or wait until Anna says something herself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The approach affects team culture and the other team members, not only Anna’s situation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-05.jpg",
+      "altNl": "Situatie mensen met een beperking: Extra tijd",
+      "altEn": "People with disabilities scene: Extra Time",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 95,
+      "woordenEn": 98,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB5",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-06",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Wachten",
+      "verhaal": "David heeft een spraakstoornis en heeft iets meer tijd nodig om zijn zinnen te vormen. In de vriendengroep wordt hij daardoor vaak onbedoeld onderbroken: iemand vult zijn zin al in of springt in de stilte.\n\nZijn vriend Sam ziet het steeds bewuster en voelt de neiging iets te zeggen. Maar de groep bedoelt er niets kwaads mee en een opmerking kan het juist ongemakkelijk maken, ook voor David zelf.\n\nDavid begint weer aan een zin die iemand anders afmaakt. Spreekt Sam de groep aan, geeft hij David een teken dat hij de tijd mag nemen, of blijft hij erbuiten?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een direct, persoonlijk moment voor Sam binnen zijn eigen vriendengroep."
+    },
+    "en": {
+      "titel": "Waiting",
+      "verhaal": "David has a speech impairment and needs a little more time to form his sentences. In his group of friends he is therefore often unintentionally interrupted: someone finishes his sentence for him or jumps into the silence.\n\nHis friend Sam is noticing it more and more and feels the urge to say something. But the group means no harm, and a remark could make things awkward, for David too.\n\nDavid starts another sentence that someone else finishes. Does Sam address the group, give David a sign that he may take his time, or stay out of it?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal moment for Sam within his own group of friends."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-06.jpg",
+      "altNl": "Situatie mensen met een beperking: Wachten",
+      "altEn": "People with disabilities scene: Waiting",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 99,
+      "woordenEn": 97,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB6",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mb-07",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De vaste plek",
+      "verhaal": "Lisa, met een angststoornis, wordt onrustig van onverwachte drukte langs haar bureau. Op de flexplekken van haar afdeling rouleert het team bewust van plek, wat volgens de rest de onderlinge band versterkt.\n\nAfdelingshoofd Jeroen overweegt Lisa een vaste plek in een rustige hoek te geven. Maar een uitzondering kan bij andere collega’s het gevoel wekken dat de regel voor sommigen wel en voor anderen niet geldt.\n\nDe plekindeling voor volgende maand moet rond. Geeft Jeroen Lisa een vaste plek, houdt hij het rouleersysteem voor iedereen, of zoekt hij een tussenvorm?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het rouleersysteem raakt de teambinding van de hele afdeling, niet alleen Lisa’s werkplek."
+    },
+    "en": {
+      "titel": "The Fixed Desk",
+      "verhaal": "Lisa, who has an anxiety disorder, becomes restless when unexpected crowds pass by her desk. In her department’s flex space, the team deliberately rotates between desks, which the others say strengthens their bond.\n\nDepartment head Jeroen is considering giving Lisa a fixed spot in a quiet corner. But an exception may give other colleagues the feeling that the rule applies to some and not to others.\n\nThe seating plan for next month has to be settled. Does Jeroen give Lisa a fixed spot, keep the rotation system for everyone, or look for something in between?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The rotation system affects the bonding of the whole department, not only Lisa’s workplace."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-07.jpg",
+      "altNl": "Situatie mensen met een beperking: De vaste plek",
+      "altEn": "People with disabilities scene: The Fixed Desk",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 90,
+      "woordenEn": 95,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB7",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-08",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Lezen",
+      "verhaal": "Mark, met dyslexie, vroeg docent Wouter zijn tentamen in een andere vorm te mogen maken: mondeling in plaats van een dichtbeschreven tekst, waar hij onevenredig veel tijd aan kwijt is.\n\nWouter overweegt het toe te staan, maar twee andere studenten vinden een aangepaste vorm oneerlijk als zij niet dezelfde mogelijkheid krijgen; ook zij vinden het tentamen zwaar, om andere redenen.\n\nDeze week moet hij de tentamenvorm vastleggen bij de examencommissie. Geeft Wouter Mark een aangepaste vorm, houdt hij één vorm voor de hele groep, of zoekt hij een tussenweg voor iedereen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt de gelijke behandeling van alle studenten in de groep, niet alleen Marks situatie."
+    },
+    "en": {
+      "titel": "Reading",
+      "verhaal": "Mark, who has dyslexia, asked lecturer Wouter whether he could take his exam in a different form: orally instead of a densely written text, which costs him a disproportionate amount of time.\n\nWouter is considering allowing it, but two other students think an adapted form is unfair if they are not offered the same option; they also find the exam hard, for other reasons.\n\nThis week he has to settle the exam format with the examination board. Does Wouter give Mark an adapted form, keep one form for the whole group, or look for a middle way for everyone?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the equal treatment of all students in the group, not only Mark’s situation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-08.jpg",
+      "altNl": "Situatie mensen met een beperking: Lezen",
+      "altEn": "People with disabilities scene: Reading",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 91,
+      "woordenEn": 99,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB8",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-09",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Buitengesloten",
+      "verhaal": "Fenna heeft een chronische ziekte en moet regelmatig op het laatste moment afzeggen. Haar vriendengroep plant het liefst spontaan, een appje ’s ochtends, afspreken ’s middags, en merkt dat Fenna daardoor steeds vaker afwezig is.\n\nVriendin Noor ziet dat Fenna zich langzaam terugtrekt uit de groepsapp. Vooraf plannen geeft Fenna meer kans om mee te doen, maar de groep waardeert juist de spontaniteit en wil daar niet aan tornen voor één persoon.\n\nWeer een spontaan plan waar Fenna niet op reageert. Stelt Noor voor vaker vooruit te plannen, laat ze het zoals het is, of maakt ze apart iets met Fenna af?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een direct, persoonlijk moment voor Noor binnen haar eigen vriendengroep."
+    },
+    "en": {
+      "titel": "Left Out",
+      "verhaal": "Fenna has a chronic illness and regularly has to cancel at the last moment. Her group of friends prefers to plan spontaneously, a message in the morning, meeting up in the afternoon, and notices that Fenna is therefore absent more and more often.\n\nHer friend Noor sees Fenna slowly withdrawing from the group chat. Planning ahead would give Fenna a better chance of joining, but the group values the spontaneity and does not want to tamper with it for one person.\n\nAnother spontaneous plan that Fenna does not respond to. Does Noor suggest planning ahead more often, leave things as they are, or arrange something separately with Fenna?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal moment for Noor within her own group of friends."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-09.jpg",
+      "altNl": "Situatie mensen met een beperking: Buitengesloten",
+      "altEn": "People with disabilities scene: Left Out",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 108,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB9",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mb-10",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De broedplaats",
+      "verhaal": "Ilse, autistisch en getalenteerd grafisch ontwerpster, werkt bij een marketingbureau dat zichzelf profileert als open, dynamische broedplaats: geen vaste bureaus, spontane brainstorms, deuren die nooit dichtgaan.\n\nCreative director Bas ziet dat Ilse daaronder lijdt; ze vroeg hem om een rustige werkplek. Maar juist die open cultuur is wat het bureau uitdraagt en wat andere ontwerpers aantrekt.\n\nHij moet de kantoorinrichting voor volgend kwartaal bevestigen. Richt Bas een rustige werkplek voor Ilse in, houdt hij vast aan de open cultuur, of zoekt hij een middenweg?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De keuze raakt de identiteit en werkcultuur van het hele bureau, niet alleen Ilses werkplek."
+    },
+    "en": {
+      "titel": "The Incubator",
+      "verhaal": "Ilse, autistic and a talented graphic designer, works at a marketing agency that presents itself as an open, dynamic incubator: no fixed desks, spontaneous brainstorms, doors that never close.\n\nCreative director Bas sees that Ilse suffers from it; she asked him for a quiet workspace. But that very open culture is what the agency stands for and what attracts other designers.\n\nHe has to confirm the office layout for next quarter. Does Bas set up a quiet workspace for Ilse, hold on to the open culture, or look for a middle way?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The choice affects the identity and work culture of the whole agency, not only Ilse’s workplace."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-10.jpg",
+      "altNl": "Situatie mensen met een beperking: De broedplaats",
+      "altEn": "People with disabilities scene: The Incubator",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 84,
+      "woordenEn": 92,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB10",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "mb-11",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De uitkering",
+      "verhaal": "Reza heeft een chronische spierziekte en ontvangt een arbeidsongeschiktheidsuitkering. Een lokale ondernemer biedt hem een baan van twintig uur aan, werk dat hij graag zou doen en waar hij goed in is.\n\nMaar volgens de regels worden zijn uitkering en toeslagen sterk gekort, en bij een slechte periode is terugkeer naar de oude situatie niet vanzelfsprekend. Zijn adviseur zegt: ‘Netto zit je er dan slechter voor.’\n\nDe ondernemer wil donderdag een antwoord. Neemt Reza de baan, blijft hij bij zijn uitkering, of vraagt hij eerst de uitkeringsinstantie om een proefplaatsing?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Het dilemma ligt in wetgeving en uitkeringsregels; Reza of één werkgever kan dat systeem niet veranderen."
+    },
+    "en": {
+      "titel": "The Benefit",
+      "verhaal": "Reza has a chronic muscle disease and receives a disability benefit. A local entrepreneur offers him a twenty-hour job, work he would love to do and is good at.\n\nBut under the rules his benefit and allowances would be heavily reduced, and if he has a bad period, returning to the old situation is not guaranteed. His adviser says: ‘Net, you’ll be worse off.’\n\nThe entrepreneur wants an answer on Thursday. Does Reza take the job, stay on his benefit, or first ask the benefits agency for a trial placement?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The dilemma lies in legislation and benefit rules; Reza or a single employer cannot change that system."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-11.jpg",
+      "altNl": "Situatie mensen met een beperking: De uitkering",
+      "altEn": "People with disabilities scene: The Benefit",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 90,
+      "woordenEn": 90,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB11",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "mb-12",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Spontaan reizen",
+      "verhaal": "Joanne, die in een rolstoel zit, wil voor het verjaardagsfeest van haar zus spontaan met de trein naar Utrecht. Maar voor hulp bij het in- en uitstappen moet ze de reis uren van tevoren melden, en niet elk station heeft een hulpverlener of een lift in orde.\n\nHaar zus zegt: ‘Neem dan de auto, wij halen je wel op.’ Maar Joanne wil juist zonder hulp van haar familie de wereld in. Taxi’s zijn duur en niet elke is toegankelijk.\n\nHet feest begint over drie uur. Meldt Joanne zich alsnog aan voor hulp, neemt ze de auto van haar zus, of blijft ze thuis?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "Toegankelijkheidsregels in het openbaar vervoer en wetgeving rond gelijke toegang liggen buiten het bereik van Joanne of één vervoerder."
+    },
+    "en": {
+      "titel": "Spontaneous Travel",
+      "verhaal": "Joanne, who uses a wheelchair, wants to take the train to Utrecht spontaneously for her sister’s birthday party. But for help boarding and alighting she has to report her journey hours in advance, and not every station has a staff member or a working lift.\n\nHer sister says: ‘Then we’ll pick you up by car.’ But Joanne wants to go out into the world without her family’s help. Taxis are expensive and not every one is accessible.\n\nThe party starts in three hours. Does Joanne still request assistance, accept a lift from her sister, or stay at home?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "Accessibility rules in public transport and legislation on equal access lie beyond the reach of Joanne or one operator."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-12.jpg",
+      "altNl": "Situatie mensen met een beperking: Spontaan reizen",
+      "altEn": "People with disabilities scene: Spontaneous Travel",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 98,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB12",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "mb-13",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Ongevraagde hulp",
+      "verhaal": "Daan is blind en loopt met zijn stok naar de bushalte. Een voorbijganger, Ruben, pakt zonder iets te vragen zijn arm en wil hem helpen oversteken. Daan schrikt en trekt zijn arm weg.\n\nRuben bedoelt het goed en kijkt gekwetst. Zijn vriend Thijs, die toekijkt, ziet dat Daan het eigenlijk prima redde. Thijs vindt dat Ruben zich moet laten corrigeren, maar wil Ruben niet beschamen.\n\nDe bus komt er al aan. Spreekt Thijs Ruben meteen aan, zegt hij niets, of helpt hij Daan met zijn bus?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe keuze van Thijs tussen zijn vriend en respect voor Daans zelfstandigheid."
+    },
+    "en": {
+      "titel": "Unrequested Help",
+      "verhaal": "Daan is blind and is walking with his cane to the bus stop. A passer-by, Ruben, takes his arm without asking and wants to help him cross. Daan is startled and pulls his arm away.\n\nRuben means well and looks hurt. His friend Thijs, who is watching, sees that Daan was actually managing fine. Thijs thinks Ruben should be corrected, but does not want to embarrass him.\n\nThe bus is already coming. Does Thijs speak to Ruben straight away, say nothing, or help Daan board his bus?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct choice by Thijs between his friend and respect for Daan’s independence."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-13.jpg",
+      "altNl": "Situatie mensen met een beperking: Ongevraagde hulp",
+      "altEn": "People with disabilities scene: Unrequested Help",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 86,
+      "woordenEn": 87,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB13",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mb-14",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De gehandicaptenparkeerplek",
+      "verhaal": "Nadia parkeert haar auto op een gehandicaptenparkeerplek en stapt zonder zichtbare beperking uit, met een kaart achter de voorruit. Ze heeft een auto-immuunziekte en haar energie is vaak ineens op.\n\nEen voorbijganger, Wim, spreekt haar aan: ‘Die plek is voor mensen die het nodig hebben.’ Jorg, een collega van Nadia, hoort het. Hij weet dat ze die kaart eerlijk heeft gekregen, maar ze vertelde het hem in vertrouwen.\n\nNadia staat met haar tas stil en kijkt naar Wim. Zegt Jorg iets om haar te steunen, wacht hij tot ze zelf iets zegt, of loopt hij door?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe keuze van Jorg tussen een toevertrouwd geheim en het oordeel van een vreemde, in één moment."
+    },
+    "en": {
+      "titel": "The Disabled Parking Space",
+      "verhaal": "Nadia parks her car in a disabled parking space and gets out with no visible disability, a disabled badge behind the windscreen. She has an autoimmune disease and her energy often runs out suddenly.\n\nA passer-by, Wim, addresses her: ‘That space is for people who need it.’ Jorg, a colleague of Nadia’s, overhears. He knows she was rightfully given that badge, but she told him in confidence.\n\nNadia stands still with her bag, looking at Wim. Does Jorg say something to support her, wait until she says something herself, or walk on?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct choice by Jorg between a confidence and the judgement of a stranger, in a single moment."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-14.jpg",
+      "altNl": "Situatie mensen met een beperking: De gehandicaptenparkeerplek",
+      "altEn": "People with disabilities scene: The Disabled Parking Space",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 96,
+      "woordenEn": 92,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB14",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "mb-15",
+    "set": "mensen-met-een-beperking-v3",
+    "stap": 1,
+    "categorie": "mensen-met-een-beperking",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De evacuatie",
+      "verhaal": "Mehmet werkt als preventiemedewerker bij een kantoor op de derde verdieping. Zijn collega Annelies zit in een rolstoel. Bij de brandoefening vorige maand moest ze wachten bij de trap tot de oefening was afgelopen; het noodplan noemt haar niet.\n\nHij weet dat de lift tijdens brand uit staat. Een ‘evacuatiestoel’ kost duizenden euro’s en de directie vindt dat ‘deze situatie zelden voorkomt’. Annelies zelf wil er niet te veel ophef over.\n\nHet nieuwe noodplan moet deze maand klaar. Dringt Mehmet bij de directie aan op voorzieningen, past hij het plan eerst zelf aan, of laat hij Annelies bepalen hoe ver hij gaat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Veiligheid, de verantwoordelijkheid van de werkgever en Annelies’ eigen wensen spelen samen."
+    },
+    "en": {
+      "titel": "The Evacuation",
+      "verhaal": "Mehmet works as a prevention officer at an office on the third floor. His colleague Annelies uses a wheelchair. During last month’s fire drill she had to wait at the stairs until the drill was over; the emergency plan does not mention her.\n\nHe knows the lift is switched off during a fire. An ‘evacuation chair’ costs thousands of euros and management feels that ‘this situation rarely occurs’. Annelies herself does not want too much fuss made about it.\n\nThe new emergency plan has to be ready this month. Does Mehmet press management for provisions, adapt the plan himself first, or let Annelies decide how far he goes?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Safety, the employer’s responsibility and Annelies’s own wishes all play a part."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/mb-15.jpg",
+      "altNl": "Situatie mensen met een beperking: De evacuatie",
+      "altEn": "People with disabilities scene: The Evacuation",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 102,
+      "woordenEn": 108,
+      "bron": "Mensen met een beperking — v3 website (15 kaarten)",
+      "kaartNummer": "MB15",
+      "sectorColor": "#5B5F97",
+      "categorieEn": "PEOPLE WITH DISABILITIES",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
   }
 ]

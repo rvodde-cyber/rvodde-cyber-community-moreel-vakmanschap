@@ -63,6 +63,36 @@ const PACK_CONFIG = {
     bron: "HBO-docenten — v3 website (10 kaarten)",
     cleanupIds: () => false,
   },
+  neurodivergentie: {
+    packDir: "Cursor_Neurodivergentie",
+    jsonFile: "cards_nd.json",
+    categorie: "neurodivergentie",
+    set: "neurodivergentie-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "NEURODIVERGENCE",
+    useTitleAlt: true,
+    altSceneNl: "Situatie neurodivergentie",
+    altSceneEn: "Neurodivergence scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/neurodivergentie-meta.json"),
+    bron: "Neurodivergentie — v3 website (15 kaarten)",
+    cleanupIds: () => false,
+  },
+  "mensen-met-een-beperking": {
+    packDir: "Cursor_Mensen_met_een_beperking",
+    jsonFile: "cards_mb.json",
+    categorie: "mensen-met-een-beperking",
+    set: "mensen-met-een-beperking-v3",
+    stap: 1,
+    status: "getest",
+    categorieEn: "PEOPLE WITH DISABILITIES",
+    useTitleAlt: true,
+    altSceneNl: "Situatie mensen met een beperking",
+    altSceneEn: "People with disabilities scene",
+    metaPath: path.join(root, "src/data/gesprekskaarten/mensen-met-een-beperking-meta.json"),
+    bron: "Mensen met een beperking — v3 website (15 kaarten)",
+    cleanupIds: () => false,
+  },
 };
 
 function splitReflection(text) {
@@ -222,7 +252,7 @@ function main() {
   const config = PACK_CONFIG[sector];
   if (!config) {
     console.error(
-      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten [--skip-cleanup] [--cleanup-only]"
+      "Gebruik: node scripts/import-sector-v3.mjs burgerschap|bestuurskunde|onderwijs|hbo-docenten|neurodivergentie|mensen-met-een-beperking [--skip-cleanup] [--cleanup-only]"
     );
     process.exit(1);
   }

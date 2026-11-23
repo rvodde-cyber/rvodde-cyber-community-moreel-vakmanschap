@@ -8,6 +8,8 @@ export const CARD_SET_ORDER = [
   "dl-compleet-a5",
   "onderwijs-v3",
   "hoger-onderwijs-v3",
+  "neurodivergentie-v3",
+  "mensen-met-een-beperking-v3",
   "passende-zorg",
   "nucleaire-geneeskunde",
   "onderzoeksintegriteit",
@@ -54,6 +56,8 @@ export const CATEGORIE_SLUGS = [
   "onderzoeksintegriteit",
   "onderwijs",
   "hoger-onderwijs",
+  "neurodivergentie",
+  "mensen-met-een-beperking",
   "overheid",
   "hrm",
   "burgerschap",
@@ -79,6 +83,8 @@ export const ATTRIBUTION_COLOR = "#5f5e5a";
 export const CATEGORIE_KLEUREN = {
   onderwijs: "#1a9080",
   "hoger-onderwijs": "#6C5B7B",
+  neurodivergentie: "#2E86AB",
+  "mensen-met-een-beperking": "#5B5F97",
   werk: "#e05a1a",
   "dagelijks-leven": "#e0a01a",
   duurzaamheid: "#c0392b",
@@ -147,6 +153,10 @@ export const CATEGORY_FROM_LEGACY = {
   Citizenship: "burgerschap",
   Bestuurskunde: "bestuurskunde",
   "Public administration": "bestuurskunde",
+  Neurodivergentie: "neurodivergentie",
+  Neurodivergence: "neurodivergentie",
+  "Mensen met een beperking": "mensen-met-een-beperking",
+  "People with disabilities": "mensen-met-een-beperking",
 };
 
 export const TEASER_SET = {
