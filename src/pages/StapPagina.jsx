@@ -12,6 +12,8 @@ import WerkbladFilters, {
   filterWerkbladen,
   collectFilterOptions,
 } from "../components/WerkbladFilters";
+import { filterWerkbladItemForZoek } from "../lib/bibliotheekZoek";
+import { themaLabel } from "../lib/themas";
 import { bibliotheekData, niveauLabels, statusLabels } from "../data/bibliotheekData";
 import { STANDAARD_NAAMSVERMELDING } from "../data/licentie";
 import { getWerkbladenVoorStap } from "../data/werkbladen";
@@ -164,6 +166,29 @@ export default function StapPagina() {
     [stapWerkbladen, werkbladFilters],
   );
 
+  const zoekThemaFilters = useMemo(
+    () => ({ zoek: werkbladFilters.zoek, themas: werkbladFilters.themas ?? [] }),
+    [werkbladFilters.zoek, werkbladFilters.themas],
+  );
+
+  const gefilterdeMaterialen = useMemo(() => {
+    if (!stapData) return [];
+    return stapData.materialen.filter((mat) =>
+      filterWerkbladItemForZoek(
+        {
+          titel: mat.titel,
+          themas: mat.themas,
+          omschrijving: mat.omschrijving,
+        },
+        zoekThemaFilters,
+        mat.thema_ids,
+      ),
+    );
+  }, [stapData, zoekThemaFilters]);
+
+  const totaalFilterItems = (stapData?.materialen.length ?? 0) + stapWerkbladen.length;
+  const totaalGefilterd = gefilterdeMaterialen.length + gefilterdeWerkbladen.length;
+
   if (!stapData) {
     return (
       <main style={{ padding: "6rem 1.5rem", textAlign: "center", minHeight: "100vh" }}>
@@ -303,6 +328,19 @@ export default function StapPagina() {
       </div>
 
       <section style={{ padding: "3rem 1.5rem 4rem", maxWidth: "900px", margin: "0 auto" }}>
+        {(stapData.materialen.length > 0 || stapWerkbladen.length > 0) && (
+          <WerkbladFilters
+            filters={werkbladFilters}
+            onChange={setWerkbladFilters}
+            options={{
+              ...werkbladOptions,
+              countThemas: stapWerkbladen.length > 0,
+              items: stapWerkbladen,
+            }}
+            resultCount={totaalGefilterd}
+            totalCount={totaalFilterItems}
+          />
+        )}
         <div
           style={{
             display: "grid",
@@ -310,7 +348,7 @@ export default function StapPagina() {
             gap: "1.25rem",
           }}
         >
-          {stapData.materialen.map((mat, i) => (
+          {gefilterdeMaterialen.map((mat, i) => (
             <motion.div
               key={mat.id}
               id={mat.id}
@@ -386,6 +424,21 @@ export default function StapPagina() {
               )}
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
+                {(mat.thema_ids ?? []).map((id) => (
+                  <span
+                    key={id}
+                    style={{
+                      fontSize: "0.7rem",
+                      fontFamily: "DM Sans, sans-serif",
+                      padding: "0.2rem 0.6rem",
+                      borderRadius: "99px",
+                      backgroundColor: "#eeecf9",
+                      color: "#534ab7",
+                    }}
+                  >
+                    {themaLabel(id, dataLang)}
+                  </span>
+                ))}
                 {mat.themas.map((thema) => (
                   <span
                     key={thema}
@@ -481,13 +534,6 @@ export default function StapPagina() {
             >
               {ui.werkbladenTitel}
             </h2>
-            <WerkbladFilters
-              filters={werkbladFilters}
-              onChange={setWerkbladFilters}
-              options={werkbladOptions}
-              resultCount={gefilterdeWerkbladen.length}
-              totalCount={stapWerkbladen.length}
-            />
             <div
               className="werkbladen-grid-stap"
               style={{ display: "grid", gridTemplateColumns: "1fr", gap: "1.25rem" }}

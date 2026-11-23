@@ -3,6 +3,9 @@ import { useTaal } from "../context/TaalContext";
 import { COMPLEXITY_KEYS } from "../data/gesprekskaarten/constants";
 import { FASE_KLEUREN, getFaseNaam } from "../data/werkbladen";
 import { getBibliotheekDataLang } from "../data/vertalingen";
+import ThemaFilter from "./ThemaFilter";
+import { filterWerkbladItemForZoek } from "../lib/bibliotheekZoek";
+import { THEMA_IDS } from "../lib/themas";
 
 export const EMPTY_WERKBLAD_FILTERS = {
   complexiteit: "",
@@ -10,11 +13,12 @@ export const EMPTY_WERKBLAD_FILTERS = {
   opleidingsniveau: "",
   zoek: "",
   fasen: [],
+  themas: [],
 };
 
 const uiTekst = {
   nl: {
-    showing: "{count} van {total} werkbladen",
+    showing: "{count} van {total} materialen en werkbladen",
     reset: "Filters wissen",
     complexiteit: "Complexiteit",
     vakgebied: "Vakgebied",
@@ -25,7 +29,7 @@ const uiTekst = {
     all: "Alle",
   },
   en: {
-    showing: "{count} of {total} worksheets",
+    showing: "{count} of {total} materials and worksheets",
     reset: "Clear filters",
     complexiteit: "Complexity",
     vakgebied: "Field",
@@ -46,7 +50,6 @@ export function parseOpleidingsniveaus(value) {
 }
 
 export function filterWerkbladen(items, filters) {
-  const q = filters.zoek.trim().toLowerCase();
   return items.filter((item) => {
     if (filters.complexiteit && item.complexiteit !== filters.complexiteit) return false;
     if (filters.vakgebied && item.vakgebied !== filters.vakgebied) return false;
@@ -58,13 +61,19 @@ export function filterWerkbladen(items, filters) {
       const match = filters.fasen.some((f) => item.fasen.includes(f));
       if (!match) return false;
     }
-    if (q) {
-      const inTitel = item.titel.toLowerCase().includes(q);
-      const inThema = item.themas.some((t) => t.toLowerCase().includes(q));
-      if (!inTitel && !inThema) return false;
-    }
+  if (!filterWerkbladItemForZoek(item, filters, item.thema_ids)) return false;
     return true;
   });
+}
+
+export function countThemasInWerkbladen(items, filters) {
+  const base = { ...filters, themas: [] };
+  const counts = Object.fromEntries(THEMA_IDS.map((id) => [id, 0]));
+  for (const id of THEMA_IDS) {
+    const withThema = filterWerkbladen(items, { ...base, themas: [id] });
+    counts[id] = withThema.length;
+  }
+  return counts;
 }
 
 export function collectFilterOptions(items) {
@@ -88,12 +97,18 @@ export default function WerkbladFilters({
   const ui = uiTekst[dataLang] ?? uiTekst.nl;
   const complexLabels = t.gesprekskaart?.complexiteitLabels ?? {};
 
+  const themaCounts = useMemo(
+    () => (options.countThemas ? countThemasInWerkbladen(options.items ?? [], filters) : null),
+    [options.countThemas, options.items, filters],
+  );
+
   const hasActive =
     filters.complexiteit ||
     filters.vakgebied ||
     filters.opleidingsniveau ||
     filters.zoek ||
-    (filters.fasen?.length ?? 0) > 0;
+    (filters.fasen?.length ?? 0) > 0 ||
+    (filters.themas?.length ?? 0) > 0;
 
   const toggleFase = (slug) => {
     const current = filters.fasen ?? [];
@@ -127,6 +142,13 @@ export default function WerkbladFilters({
           </button>
         )}
       </div>
+
+      <ThemaFilter
+        selected={filters.themas ?? []}
+        onChange={(themas) => onChange({ ...filters, themas })}
+        counts={themaCounts}
+        dataLang={dataLang}
+      />
 
       {showFaseFilter && (
         <div className="mb-4">

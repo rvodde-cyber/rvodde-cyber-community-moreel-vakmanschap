@@ -1,6 +1,6 @@
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { COMPLEXITY_KEYS } from "../src/data/gesprekskaarten/constants.js";
 import { LICENTIES } from "../src/data/licentie.js";
 
@@ -24,6 +24,34 @@ const SAFE_FILENAME = /^[A-Za-z0-9._-]+$/;
 
 const errors = [];
 const warnings = [];
+
+function loadThemaIdsForWerkbladen() {
+  let themas;
+  try {
+    themas = JSON.parse(readFileSync(join(root, "src/data/themas.json"), "utf8"));
+  } catch (e) {
+    fail(`themas.json kan niet worden gelezen: ${e.message}`);
+    return new Set();
+  }
+  return new Set((themas.themas ?? []).map((t) => t.id));
+}
+
+const VALID_THEMA_IDS_WB = loadThemaIdsForWerkbladen();
+
+function validateThemaIds(path, ids) {
+  if (!Array.isArray(ids)) {
+    fail(`${path}: thema_ids moet een array zijn`);
+    return;
+  }
+  if (ids.length > 3) fail(`${path}: thema_ids mag maximaal 3 items bevatten`);
+  const seen = new Set();
+  for (const id of ids) {
+    if (!VALID_THEMA_IDS_WB.has(id)) fail(`${path}: onbekend thema_id "${id}"`);
+    if (seen.has(id)) fail(`${path}: dubbel thema_id "${id}"`);
+    seen.add(id);
+  }
+  if (ids.length === 0) warn(`${path}: lege thema_ids`);
+}
 
 function fail(msg) {
   errors.push(msg);
@@ -247,6 +275,29 @@ for (const item of raw) {
 
   if (item.titel?.en !== undefined && !String(item.titel.en || "").trim()) {
     warn(`${id}: ontbrekende EN-titel`);
+  }
+
+  if (!("thema_ids" in item)) fail(`${id}: thema_ids ontbreekt`);
+  else validateThemaIds(id, item.thema_ids);
+}
+
+const { bibliotheekData } = await import(
+  pathToFileURL(join(root, "src/data/bibliotheekData.js")).href
+);
+for (const lang of ["nl", "en"]) {
+  const byIdNl = new Map();
+  for (const stap of bibliotheekData.nl) {
+    for (const m of stap.materialen) byIdNl.set(m.id, m.thema_ids ?? []);
+  }
+  for (const stap of bibliotheekData[lang]) {
+    for (const m of stap.materialen) {
+      const nlIds = byIdNl.get(m.id);
+      if (!Array.isArray(m.thema_ids)) fail(`${m.id} (${lang}): thema_ids ontbreekt`);
+      else validateThemaIds(`${m.id} (${lang})`, m.thema_ids);
+      if (lang === "en" && nlIds && JSON.stringify(nlIds) !== JSON.stringify(m.thema_ids)) {
+        fail(`${m.id}: thema_ids wijkt af tussen nl en en`);
+      }
+    }
   }
 }
 

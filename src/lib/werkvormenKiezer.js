@@ -1,5 +1,12 @@
 /** Pure filter/sort helpers for the werkbladenkiezer (128 MW entries). */
 
+import {
+  buildThemaHaystack,
+  matchesThemas,
+  matchesZoekInText,
+  THEMA_IDS,
+} from "./themas.js";
+
 export const FASE_SLUGS = ["zien", "voelen", "wegen", "handelen", "volhouden"];
 
 export const STATUS_KEYS = ["beschikbaar", "in_voorbereiding", "externe_methode"];
@@ -28,6 +35,7 @@ export const EMPTY_KIEZER_FILTERS = {
   regio: [],
   status: [...STATUS_KEYS],
   zoek: "",
+  themas: [],
   sort: "id",
 };
 
@@ -183,26 +191,28 @@ export function kiezerSortKey(item) {
 }
 
 function matchesZoek(item, q) {
-  if (!q) return true;
+  if (!q?.trim()) return true;
   const hay = [
     item.titelNl,
     item.titelEn,
     item.herkomst,
     item.beschrijvingNl,
     item.beschrijvingEn,
+    buildThemaHaystack(item.themaIds),
   ]
     .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  return hay.includes(q);
+    .join(" ");
+  return matchesZoekInText(hay, q);
 }
 
 export function filterWerkvormKiezerItems(items, filters) {
-  const q = (filters.zoek ?? "").trim().toLowerCase();
+  const q = filters.zoek ?? "";
   const statusFilter = filters.status?.length ? filters.status : STATUS_KEYS;
 
   return items.filter((item) => {
     if (statusFilter.length && !statusFilter.includes(item.status)) return false;
+
+    if (filters.themas?.length && !matchesThemas(item.themaIds, filters.themas)) return false;
 
     if (filters.fasen?.length) {
       if (!item.filterableFase) return false;
@@ -302,6 +312,12 @@ export function buildKiezerItem(werkvorm, werkbladenForMw, regioLijst, dataLang)
       : regioEntry?.nl ?? werkvorm.regio;
 
   const linked = werkbladenForMw ?? [];
+  const themaIds = [
+    ...new Set([
+      ...(werkvorm.thema_ids ?? []),
+      ...linked.flatMap((wb) => wb.thema_ids ?? []),
+    ]),
+  ];
   const status = deriveWerkvormStatus(werkvorm, linked.length);
 
   const contexten = [...new Set(linked.map((w) => w.vakgebied).filter(Boolean))].sort();
@@ -365,6 +381,7 @@ export function buildKiezerItem(werkvorm, werkbladenForMw, regioLijst, dataLang)
     filterableRegio: true,
     contexten,
     complexiteiten,
+    themaIds,
   };
 }
 
@@ -418,6 +435,7 @@ export function buildStandaloneKiezerItem(werkblad, dataLang) {
     filterableRegio: false,
     contexten: werkblad.vakgebied ? [werkblad.vakgebied] : [],
     complexiteiten: werkblad.complexiteit ? [werkblad.complexiteit] : [],
+    themaIds: werkblad.thema_ids ?? [],
   };
 }
 
@@ -431,6 +449,15 @@ export function buildAllKiezerItems(werkvormenData, werkbladenRaw, dataLang) {
     buildStandaloneKiezerItem(wb, dataLang),
   );
   return [...mwItems, ...standalone];
+}
+
+export function countThemasInKiezer(items, filters) {
+  const base = { ...filters, themas: [] };
+  const counts = Object.fromEntries(THEMA_IDS.map((id) => [id, 0]));
+  for (const id of THEMA_IDS) {
+    counts[id] = filterWerkvormKiezerItems(items, { ...base, themas: [id] }).length;
+  }
+  return counts;
 }
 
 export function collectKiezerFilterOptions(items) {

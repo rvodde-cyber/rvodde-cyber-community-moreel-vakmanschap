@@ -17,9 +17,51 @@ const DUUR_TYPES = new Set([
 const EXPECTED_COUNT = 128;
 
 const errors = [];
+const warnings = [];
 
 function fail(msg) {
   errors.push(msg);
+}
+
+function warn(msg) {
+  warnings.push(msg);
+}
+
+function loadThemaIds() {
+  let themas;
+  try {
+    themas = JSON.parse(readFileSync(join(root, "src/data/themas.json"), "utf8"));
+  } catch (e) {
+    fail(`themas.json kan niet worden gelezen: ${e.message}`);
+    return new Set();
+  }
+  if (!Array.isArray(themas.themas) || themas.themas.length !== 11) {
+    fail("themas.json moet exact 11 thema's bevatten");
+  }
+  const ids = new Set();
+  for (const t of themas.themas ?? []) {
+    if (!t?.id || ids.has(t.id)) fail(`themas.json: ongeldig of dubbel id ${t?.id}`);
+    if (!t.nl?.trim() || !t.en?.trim()) fail(`themas.json: nl/en ontbreken voor ${t.id}`);
+    ids.add(t.id);
+  }
+  return ids;
+}
+
+const VALID_THEMA_IDS = loadThemaIds();
+
+function validateThemaIds(path, ids) {
+  if (!Array.isArray(ids)) {
+    fail(`${path}: thema_ids moet een array zijn`);
+    return;
+  }
+  if (ids.length > 3) fail(`${path}: thema_ids mag maximaal 3 items bevatten`);
+  const seen = new Set();
+  for (const id of ids) {
+    if (!VALID_THEMA_IDS.has(id)) fail(`${path}: onbekend thema_id "${id}"`);
+    if (seen.has(id)) fail(`${path}: dubbel thema_id "${id}"`);
+    seen.add(id);
+  }
+  if (ids.length === 0) warn(`${path}: lege thema_ids`);
 }
 
 let raw;
@@ -113,6 +155,9 @@ for (const wv of raw.werkvormen) {
       if (c.lng < -180 || c.lng > 180) fail(`${id}: lng buiten bereik`);
     }
   }
+
+  if (!("thema_ids" in wv)) fail(`${id}: thema_ids ontbreekt`);
+  else validateThemaIds(id, wv.thema_ids);
 }
 
 if (errors.length > 0) {
@@ -124,3 +169,5 @@ if (errors.length > 0) {
 console.log("✅ Werkvormen-validatie geslaagd");
 console.log(`   Werkvormen: ${raw.werkvormen.length}`);
 console.log(`   Regio's: ${raw.regio_lijst.length}`);
+console.log(`   Thema-waarschuwingen: ${warnings.length}`);
+for (const w of warnings) console.warn(`   ⚠ ${w}`);

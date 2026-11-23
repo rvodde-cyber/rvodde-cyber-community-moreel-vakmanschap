@@ -8,6 +8,7 @@ import {
   TIME_FILTER_KEYS,
 } from "./werkvormenKiezer.js";
 import { COMPLEXITY_KEYS } from "../data/gesprekskaarten/constants.js";
+import { THEMA_IDS } from "./themas.js";
 
 const ARRAY_PARAMS = {
   fasen: FASE_SLUGS,
@@ -45,6 +46,14 @@ export function filtersFromSearchParams(searchParams, regioSlugs = []) {
 
   next.zoek = searchParams.get("zoek") ?? "";
 
+  const themaRaw = searchParams.get("themas");
+  if (themaRaw) {
+    next.themas = themaRaw
+      .split(",")
+      .map((s) => s.trim())
+      .filter((id) => THEMA_IDS.includes(id));
+  }
+
   return next;
 }
 
@@ -70,6 +79,10 @@ export function filtersToSearchParams(filters, regioSlugs = []) {
 
   if (filters.sort && filters.sort !== "id") params.set("sort", filters.sort);
   if (filters.zoek?.trim()) params.set("zoek", filters.zoek.trim());
+  if (filters.themas?.length) {
+    const valid = filters.themas.filter((id) => THEMA_IDS.includes(id));
+    if (valid.length) params.set("themas", valid.join(","));
+  }
 
   return params;
 }

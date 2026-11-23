@@ -1,0 +1,146 @@
+{
+  "versie": "1.0",
+  "datum": "2026-11-23",
+  "themas": [
+    {
+      "id": "identiteit-achtergrond",
+      "nl": "Identiteit, achtergrond en diversiteit",
+      "en": "Identity, background and diversity",
+      "synoniemen_nl": [
+        "cultuur",
+        "herkomst",
+        "familie",
+        "socialisatie",
+        "privilege",
+        "intersectionaliteit"
+      ],
+      "synoniemen_en": [
+        "culture",
+        "origin",
+        "family",
+        "socialisation",
+        "privilege",
+        "intersectionality"
+      ]
+    },
+    {
+      "id": "zelfkennis-reflectie",
+      "nl": "Zelfkennis en reflectie",
+      "en": "Self-knowledge and reflection",
+      "synoniemen_nl": [
+        "zelfbewustzijn",
+        "zelfonderzoek",
+        "feedback",
+        "blinde vlekken",
+        "authenticiteit"
+      ],
+      "synoniemen_en": [
+        "self-awareness",
+        "self-inquiry",
+        "feedback",
+        "blind spots",
+        "authenticity"
+      ]
+    },
+    {
+      "id": "waarden-integriteit",
+      "nl": "Waarden en integriteit",
+      "en": "Values and integrity",
+      "synoniemen_nl": ["plicht", "gevolgen", "deugd", "overtuigingen"],
+      "synoniemen_en": ["duty", "consequences", "virtue", "beliefs"]
+    },
+    {
+      "id": "afweging-besluitvorming",
+      "nl": "Afweging en besluitvorming",
+      "en": "Weighing and decision-making",
+      "synoniemen_nl": [
+        "ethische afweging",
+        "redeneren",
+        "argumentatie",
+        "morele toets"
+      ],
+      "synoniemen_en": [
+        "ethical deliberation",
+        "reasoning",
+        "argumentation"
+      ]
+    },
+    {
+      "id": "denkfouten-valkuilen",
+      "nl": "Denkfouten en valkuilen",
+      "en": "Thinking errors and pitfalls",
+      "synoniemen_nl": ["denkfout", "valkuil", "bias"],
+      "synoniemen_en": ["fallacy", "pitfall", "bias"]
+    },
+    {
+      "id": "dialoog",
+      "nl": "Dialoog",
+      "en": "Dialogue",
+      "synoniemen_nl": [
+        "gesprek",
+        "gespreksvoering",
+        "socratisch gesprek",
+        "onderzoekend leren"
+      ],
+      "synoniemen_en": [
+        "conversation",
+        "facilitation",
+        "Socratic dialogue",
+        "inquiry"
+      ]
+    },
+    {
+      "id": "empathie-perspectief",
+      "nl": "Empathie en perspectief",
+      "en": "Empathy and perspective",
+      "synoniemen_nl": ["perspectief nemen", "verbeelding"],
+      "synoniemen_en": ["perspective taking", "imagination"]
+    },
+    {
+      "id": "moed-handelen",
+      "nl": "Moed en handelen",
+      "en": "Courage and action",
+      "synoniemen_nl": ["standpunt innemen", "moreel handelen", "twijfel"],
+      "synoniemen_en": ["taking a stand", "moral action", "doubt"]
+    },
+    {
+      "id": "vertrouwen-relaties",
+      "nl": "Vertrouwen en relaties",
+      "en": "Trust and relationships",
+      "synoniemen_nl": [
+        "morele relaties",
+        "gedragspatronen",
+        "beïnvloeding"
+      ],
+      "synoniemen_en": [
+        "moral relationships",
+        "behavioural patterns",
+        "influence"
+      ]
+    },
+    {
+      "id": "leiderschap-organisatiecultuur",
+      "nl": "Leiderschap en organisatiecultuur",
+      "en": "Leadership and organisational culture",
+      "synoniemen_nl": [
+        "morele cultuur",
+        "beleid",
+        "professionaliteit",
+        "organisatie"
+      ],
+      "synoniemen_en": [
+        "moral culture",
+        "policy",
+        "professionalism",
+        "organisation"
+      ]
+    },
+    {
+      "id": "koers-houden",
+      "nl": "Koers houden",
+      "en": "Staying the course",
+      "synoniemen_nl": ["volhouden", "terugkeren", "innerlijk kompas"],
+      "synoniemen_en": ["persevering", "returning", "inner compass"]
+    }
+  ]
+}

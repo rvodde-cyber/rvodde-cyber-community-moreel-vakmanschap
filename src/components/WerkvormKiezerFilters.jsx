@@ -4,6 +4,7 @@ import { COMPLEXITY_KEYS } from "../data/gesprekskaarten/constants";
 import { FASE_KLEUREN, getFaseNaam } from "../data/werkbladen";
 import { getBibliotheekDataLang } from "../data/vertalingen";
 import {
+  countThemasInKiezer,
   EMPTY_KIEZER_FILTERS,
   FASE_SLUGS,
   GROUP_FILTER_KEYS,
@@ -12,6 +13,7 @@ import {
   STATUS_KEYS,
   TIME_FILTER_KEYS,
 } from "../lib/werkvormenKiezer";
+import ThemaFilter from "./ThemaFilter";
 
 const uiTekst = {
   nl: {
@@ -134,11 +136,17 @@ export default function WerkvormKiezerFilters({
   resultCount,
   totalCount,
   regioLijst = [],
+  allItems = [],
 }) {
   const { taal, t } = useTaal();
   const dataLang = getBibliotheekDataLang(taal);
   const ui = uiTekst[dataLang] ?? uiTekst.nl;
   const complexLabels = t.gesprekskaart?.complexiteitLabels ?? {};
+
+  const themaCounts = useMemo(
+    () => (allItems.length ? countThemasInKiezer(allItems, filters) : null),
+    [allItems, filters],
+  );
 
   const hasActive =
     filters.fasen?.length ||
@@ -150,6 +158,7 @@ export default function WerkvormKiezerFilters({
     filters.regio?.length ||
     filters.status?.length !== STATUS_KEYS.length ||
     filters.zoek?.trim() ||
+    (filters.themas?.length ?? 0) > 0 ||
     filters.sort !== "id";
 
   const faseKnoppen = useMemo(
@@ -194,6 +203,13 @@ export default function WerkvormKiezerFilters({
           </ChipButton>
         ))}
       </FilterChipGroup>
+
+      <ThemaFilter
+        selected={filters.themas ?? []}
+        onChange={(themas) => patch({ themas })}
+        counts={themaCounts}
+        dataLang={dataLang}
+      />
 
       <FilterChipGroup label={ui.tijd}>
         {TIME_FILTER_KEYS.map((key) => (

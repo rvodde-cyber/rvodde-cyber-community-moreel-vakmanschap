@@ -120,6 +120,7 @@ export default function WerkbladenKiezerContent({ ui }) {
           filters={filters}
           onChange={setFilters}
           options={options}
+          allItems={allKiezerItems}
           resultCount={filtered.length}
           totalCount={totalCount}
           regioLijst={regioLijst}

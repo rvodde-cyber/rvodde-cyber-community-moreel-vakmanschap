@@ -1,10 +1,22 @@
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useTaal } from "../context/TaalContext";
+import ThemaFilter from "../components/ThemaFilter";
 import { bibliotheekData } from "../data/bibliotheekData";
+import { loadKiezerBundle } from "../data/loadWerkvormenKiezer";
 import { getWerkbladenCount } from "../data/werkbladen";
 import { getBibliotheekDataLang, getLocalizedPageContent, usesEnglishRoutes } from "../data/vertalingen";
+import {
+  bibliotheekZoekActief,
+  buildKiezerUrl,
+  countKiezerForBibliotheekZoek,
+  filterBibliotheekMaterialen,
+  flattenBibliotheekMaterialen,
+  parseThemasParam,
+} from "../lib/bibliotheekZoek";
+import { themaLabel, THEMA_IDS } from "../lib/themas";
 
 const uiTekst = {
   nl: {
@@ -19,8 +31,20 @@ const uiTekst = {
     alleWerkbladen: "Alle werkbladen",
     materialenEn: "materiaal",
     materialenMeervoud: "materialen",
+    zoekSectie: "Zoek in de bibliotheek",
+    zoekLabel: "Zoekterm",
+    zoekPlaceholder: "Zoek op titel, thema of herkomst…",
+    resultaten: "{n} resultaten",
+    stappenbib: "Stappenbibliotheek",
+    kiezerKnop: "Bekijk {n} werkbladen in de Werkbladenkiezer",
+    kiezerGeen: "Geen werkbladen in de Werkbladenkiezer gevonden.",
+    kiezerLaden: "Aantal wordt berekend…",
+    geenResultaten:
+      "Geen resultaten. Probeer een ander woord of laat een thema los.",
+    stapLabelResult: "Stap",
   },
-  en: {    label: "Materials",
+  en: {
+    label: "Materials",
     titel: "Library",
     subtitel:
       "All tools, worksheets and conversation cards — organised by model step. Choose a step to get started.",
@@ -31,6 +55,16 @@ const uiTekst = {
     alleWerkbladen: "All worksheets",
     materialenEn: "material",
     materialenMeervoud: "materials",
+    zoekSectie: "Search the library",
+    zoekLabel: "Search term",
+    zoekPlaceholder: "Search by title, theme or origin…",
+    resultaten: "{n} results",
+    stappenbib: "Step library",
+    kiezerKnop: "View {n} worksheets in the Worksheet Chooser",
+    kiezerGeen: "No worksheets found in the Worksheet Chooser.",
+    kiezerLaden: "Calculating count…",
+    geenResultaten: "No results. Try another word or remove a theme.",
+    stapLabelResult: "Step",
   },
 };
 const stapSlug = {
@@ -116,14 +150,96 @@ function BibliotheekDisclaimer({ dataLang }) {
   );
 }
 
+function geenResultatenInBeide(materialen, kiezer) {
+  if (kiezer.loading) return false;
+  return materialen.length === 0 && (kiezer.count ?? 0) === 0;
+}
+
+function countThemasMaterialen(materialen, filters) {
+  const base = { ...filters, themas: [] };
+  const counts = Object.fromEntries(THEMA_IDS.map((id) => [id, 0]));
+  for (const id of THEMA_IDS) {
+    counts[id] = filterBibliotheekMaterialen(materialen, { ...base, themas: [id] }).length;
+  }
+  return counts;
+}
+
 export default function BiblioteekOverzicht() {
   const { taal } = useTaal();
   const ui = getLocalizedPageContent(uiTekst, taal, "bibliotheek");
   const dataLang = getBibliotheekDataLang(taal);
   const data = bibliotheekData[dataLang];
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const werkbladenCount = getWerkbladenCount();
   const werkbladenHref = usesEnglishRoutes(taal) ? "/library/worksheets" : "/bibliotheek/werkbladen";
+  const enRoutes = usesEnglishRoutes(taal);
+
+  const filters = useMemo(
+    () => ({
+      zoek: searchParams.get("zoek") ?? "",
+      themas: parseThemasParam(searchParams.get("themas")).filter((id) => THEMA_IDS.includes(id)),
+    }),
+    [searchParams],
+  );
+
+  const [zoekDraft, setZoekDraft] = useState(filters.zoek);
+  useEffect(() => {
+    setZoekDraft(filters.zoek);
+  }, [filters.zoek]);
+
+  useEffect(() => {
+    const handle = setTimeout(() => {
+      if (zoekDraft === filters.zoek) return;
+      const next = new URLSearchParams(searchParams);
+      if (zoekDraft.trim()) next.set("zoek", zoekDraft.trim());
+      else next.delete("zoek");
+      setSearchParams(next, { replace: true });
+    }, 200);
+    return () => clearTimeout(handle);
+  }, [zoekDraft, filters.zoek, searchParams, setSearchParams]);
+
+  const alleMaterialen = useMemo(() => flattenBibliotheekMaterialen(data, dataLang), [data, dataLang]);
+  const themaCounts = useMemo(
+    () => countThemasMaterialen(alleMaterialen, filters),
+    [alleMaterialen, filters],
+  );
+
+  const zoekActief = bibliotheekZoekActief(filters);
+  const gevondenMaterialen = useMemo(
+    () => (zoekActief ? filterBibliotheekMaterialen(alleMaterialen, filters) : []),
+    [alleMaterialen, filters, zoekActief],
+  );
+
+  const [kiezerTelling, setKiezerTelling] = useState({ loading: false, count: null });
+  useEffect(() => {
+    if (!zoekActief) {
+      setKiezerTelling({ loading: false, count: null });
+      return;
+    }
+    let cancelled = false;
+    setKiezerTelling({ loading: true, count: null });
+    loadKiezerBundle(dataLang).then((bundle) => {
+      if (cancelled) return;
+      const n = countKiezerForBibliotheekZoek(bundle.items, filters);
+      setKiezerTelling({ loading: false, count: n });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [zoekActief, filters, dataLang]);
+
+  const setThemaFilters = useCallback(
+    (themas) => {
+      const next = new URLSearchParams(searchParams);
+      if (themas.length) next.set("themas", themas.join(","));
+      else next.delete("themas");
+      setSearchParams(next, { replace: true });
+    },
+    [searchParams, setSearchParams],
+  );
+
+  const kiezerLink = buildKiezerUrl(werkbladenHref, filters);
 
   const handleStapKlik = (stapItem) => {
     const slug = getStapRouteSlug(stapItem, dataLang);
@@ -213,6 +329,169 @@ export default function BiblioteekOverzicht() {
           </motion.div>
         )}
       </section>
+
+      <section style={{ padding: "0 1.5rem 2rem", maxWidth: "760px", margin: "0 auto" }}>
+        <div
+          className="rounded-xl border border-rand bg-white p-4 shadow-warm md:p-5"
+          style={{ borderColor: "var(--rand, #d3d1c7)" }}
+        >
+          <h2
+            className="mb-4 text-lg font-semibold text-primair"
+            style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.35rem" }}
+          >
+            {ui.zoekSectie}
+          </h2>
+          <label className="mb-3 flex flex-col gap-1.5 text-sm">
+            <span className="font-semibold text-primair">{ui.zoekLabel}</span>
+            <input
+              type="search"
+              value={zoekDraft}
+              onChange={(e) => setZoekDraft(e.target.value)}
+              placeholder={ui.zoekPlaceholder}
+              className="min-w-0 rounded-lg border border-rand bg-[#fafaf8] px-3 py-2 text-primair focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#534ab7]"
+            />
+          </label>
+          <ThemaFilter
+            selected={filters.themas}
+            onChange={setThemaFilters}
+            counts={themaCounts}
+            dataLang={dataLang}
+          />
+        </div>
+      </section>
+
+      {zoekActief && (
+        <section
+          aria-live="polite"
+          style={{ padding: "0 1.5rem 2rem", maxWidth: "900px", margin: "0 auto" }}
+        >
+          <p
+            className="mb-4 text-sm text-secundair"
+            style={{ fontFamily: "DM Sans, sans-serif" }}
+          >
+            {ui.resultaten.replace("{n}", String(gevondenMaterialen.length + (kiezerTelling.count ?? 0)))}
+          </p>
+
+          {geenResultatenInBeide(gevondenMaterialen, kiezerTelling) ? (
+            <p className="text-sm text-secundair" style={{ fontFamily: "DM Sans, sans-serif" }}>
+              {ui.geenResultaten}
+            </p>
+          ) : (
+            <>
+              {gevondenMaterialen.length > 0 && (
+                <div className="mb-6">
+                  <h3
+                    className="mb-3 text-base font-semibold text-primair"
+                    style={{ fontFamily: "DM Sans, sans-serif" }}
+                  >
+                    {ui.stappenbib}
+                  </h3>
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 240px), 1fr))",
+                      gap: "1rem",
+                    }}
+                  >
+                    {gevondenMaterialen.map((mat) => {
+                      const stapHref = enRoutes
+                        ? `/library/${mat.stapSlug}`
+                        : `/bibliotheek/${mat.stapSlug}`;
+                      return (
+                        <Link
+                          key={mat.id}
+                          to={stapHref}
+                          style={{
+                            textDecoration: "none",
+                            backgroundColor: "#ffffff",
+                            borderRadius: "12px",
+                            border: "1px solid var(--rand, #d3d1c7)",
+                            borderTop: `3px solid ${mat.stapKleur}`,
+                            padding: "1rem",
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "0.5rem",
+                          }}
+                        >
+                          <span
+                            style={{
+                              fontSize: "0.65rem",
+                              textTransform: "uppercase",
+                              letterSpacing: "0.08em",
+                              color: mat.stapKleur,
+                              fontFamily: "DM Sans, sans-serif",
+                            }}
+                          >
+                            {typeof mat.stap === "number"
+                              ? `${ui.stapLabelResult} ${mat.stap}`
+                              : mat.stapNaam}
+                          </span>
+                          <span
+                            style={{
+                              fontFamily: "Cormorant Garamond, serif",
+                              fontSize: "1.05rem",
+                              fontWeight: 600,
+                              color: "var(--tekst-primair)",
+                            }}
+                          >
+                            {mat.titel}
+                          </span>
+                          <div style={{ display: "flex", flexWrap: "wrap", gap: "0.25rem" }}>
+                            {(mat.thema_ids ?? []).slice(0, 3).map((id) => (
+                              <span
+                                key={id}
+                                style={{
+                                  fontSize: "0.65rem",
+                                  padding: "0.15rem 0.5rem",
+                                  borderRadius: "99px",
+                                  backgroundColor: "#eeecf9",
+                                  color: "#534ab7",
+                                  fontFamily: "DM Sans, sans-serif",
+                                }}
+                              >
+                                {themaLabel(id, dataLang)}
+                              </span>
+                            ))}
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              <div>
+                {kiezerTelling.loading ? (
+                  <p className="text-sm text-secundair" style={{ fontFamily: "DM Sans, sans-serif" }}>
+                    {ui.kiezerLaden}
+                  </p>
+                ) : kiezerTelling.count === 0 ? (
+                  <p className="text-sm text-secundair" style={{ fontFamily: "DM Sans, sans-serif" }}>
+                    {ui.kiezerGeen}
+                  </p>
+                ) : kiezerTelling.count > 0 ? (
+                  <Link
+                    to={kiezerLink}
+                    style={{
+                      display: "inline-block",
+                      padding: "0.65rem 1.25rem",
+                      borderRadius: "8px",
+                      backgroundColor: "#534ab7",
+                      color: "#ffffff",
+                      fontFamily: "DM Sans, sans-serif",
+                      fontSize: "0.9rem",
+                      fontWeight: 500,
+                      textDecoration: "none",
+                    }}
+                  >
+                    {ui.kiezerKnop.replace("{n}", String(kiezerTelling.count))}
+                  </Link>
+                ) : null}
+              </div>
+            </>
+          )}
+        </section>
+      )}
 
       <section style={{ padding: "0 1.5rem 6rem", maxWidth: "1000px", margin: "0 auto" }}>
         <div
