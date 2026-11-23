@@ -20,6 +20,11 @@ import burgerschapMeta from '../data/gesprekskaarten/burgerschap-meta.json'
 import bestuurskundeMeta from '../data/gesprekskaarten/bestuurskunde-meta.json'
 import onderwijsMeta from '../data/gesprekskaarten/onderwijs-meta.json'
 import hboDocentenMeta from '../data/gesprekskaarten/hbo-docenten-meta.json'
+import neurodivergentieMeta from '../data/gesprekskaarten/neurodivergentie-meta.json'
+import mensenMetEenBeperkingMeta from '../data/gesprekskaarten/mensen-met-een-beperking-meta.json'
+import toegepastePsychologieMeta from '../data/gesprekskaarten/toegepaste-psychologie-meta.json'
+import managementMeta from '../data/gesprekskaarten/management-meta.json'
+import genderEnSeksualiteitMeta from '../data/gesprekskaarten/gender-en-seksualiteit-meta.json'
 import etzPassendeZorgMeta from '../data/gesprekskaarten/etz-passende-zorg-meta.json'
 import { ATTRIBUTION_COLOR, resolveCardSetId, resolveCategorieSlug } from '../data/gesprekskaarten/constants'
 
@@ -217,6 +222,11 @@ export default function GespreksKaartenPagina() {
     { set: 'bestuurskunde', meta: bestuurskundeMeta },
     { set: 'onderwijs-v3', meta: onderwijsMeta },
     { set: 'hoger-onderwijs-v3', meta: hboDocentenMeta },
+    { set: 'neurodivergentie-v3', meta: neurodivergentieMeta },
+    { set: 'mensen-met-een-beperking-v3', meta: mensenMetEenBeperkingMeta },
+    { set: 'toegepaste-psychologie-v3', meta: toegepastePsychologieMeta },
+    { set: 'management-v3', meta: managementMeta },
+    { set: 'gender-en-seksualiteit-v3', meta: genderEnSeksualiteitMeta },
   ].filter((block) => displayCards.some((card) => card.set === block.set))
   const passendeZorgLabel =
     t.gesprekskaart.filters?.categorieLabels?.['passende-zorg'] ?? 'Passende zorg'
