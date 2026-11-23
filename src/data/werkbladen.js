@@ -48,6 +48,7 @@ function localizeItem(item, dataLang) {
     doelgroep: item.doelgroep ? localizeText(item.doelgroep, dataLang) : "",
     leeruitkomsten: item.leeruitkomsten ? localizeStringArray(item.leeruitkomsten, dataLang) : [],
     themas: localizeThemas(item.themas, dataLang),
+    thema_ids: item.thema_ids ?? [],
   };
 }
 

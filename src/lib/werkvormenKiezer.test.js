@@ -98,6 +98,7 @@ describe("filterWerkvormKiezerItems", () => {
       filterableTijd: true,
       filterableGroep: true,
       filterableRegio: true,
+      themaIds: ["dialoog"],
     },
     {
       id: "MW02",
@@ -119,8 +120,16 @@ describe("filterWerkvormKiezerItems", () => {
       filterableTijd: true,
       filterableGroep: true,
       filterableRegio: true,
+      themaIds: ["waarden-integriteit"],
     },
   ];
+
+  it("filters by thema", () => {
+    const f = { ...EMPTY_KIEZER_FILTERS, themas: ["dialoog"] };
+    assert.equal(filterWerkvormKiezerItems(items, f).length, 1);
+    const f2 = { ...EMPTY_KIEZER_FILTERS, themas: ["dialoog", "waarden-integriteit"] };
+    assert.equal(filterWerkvormKiezerItems(items, f2).length, 2);
+  });
 
   it("hides items without regio when regio filter active", () => {
     const standalone = {
@@ -170,6 +179,7 @@ describe("URL roundtrip", () => {
       tijd: ["20_45"],
       status: ["beschikbaar", "in_voorbereiding"],
       zoek: "loyal",
+      themas: ["dialoog", "empathie-perspectief"],
       sort: "titel",
     };
     const params = filtersToSearchParams(filters, ["europa", "azie"]);
@@ -179,6 +189,13 @@ describe("URL roundtrip", () => {
     assert.deepEqual(back.status.sort(), filters.status.sort());
     assert.equal(back.zoek, filters.zoek);
     assert.equal(back.sort, filters.sort);
+    assert.deepEqual(back.themas.sort(), filters.themas.sort());
+  });
+
+  it("ignores unknown thema ids in URL", () => {
+    const params = new URLSearchParams("themas=dialoog,onbekend-thema");
+    const back = filtersFromSearchParams(params, []);
+    assert.deepEqual(back.themas, ["dialoog"]);
   });
 });
 

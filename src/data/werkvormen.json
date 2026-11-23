@@ -48,6 +48,7 @@
  "werkvormen": [
   {
    "id": "MW01",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Socratisch gesprek",
     "en": "Socratic dialogue"
@@ -97,6 +98,7 @@
   },
   {
    "id": "MW02",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Moreel beraad – dilemmamethode",
     "en": "Moral case deliberation – dilemma method"
@@ -145,6 +147,7 @@
   },
   {
    "id": "MW03",
+   "thema_ids": ["waarden-integriteit","afweging-besluitvorming","dialoog"],
    "titel": {
     "nl": "Nijmeegse methode voor moreel beraad",
     "en": "Nijmegen method of ethical case deliberation"
@@ -192,6 +195,7 @@
   },
   {
    "id": "MW04",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Filosoferen met studenten (onderzoeksgemeenschap)",
     "en": "Community of Inquiry (Philosophy for Children)"
@@ -238,6 +242,7 @@
   },
   {
    "id": "MW05",
+   "thema_ids": ["identiteit-achtergrond","dialoog"],
    "titel": {
     "nl": "Cultuurcirkel",
     "en": "Culture circle (círculo de cultura)"
@@ -284,6 +289,7 @@
   },
   {
    "id": "MW06",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Gesprekscirkel",
     "en": "Talking circle / peacemaking circle"
@@ -332,6 +338,7 @@
   },
   {
    "id": "MW07",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Ubuntu-/indabagesprek",
     "en": "Ubuntu dialogue / indaba"
@@ -378,6 +385,7 @@
   },
   {
    "id": "MW08",
+   "thema_ids": ["zelfkennis-reflectie","waarden-integriteit"],
    "titel": {
     "nl": "Ethische cyclus",
     "en": "Ethical cycle"
@@ -426,6 +434,7 @@
   },
   {
    "id": "MW09",
+   "thema_ids": ["identiteit-achtergrond","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Vier-kwadrantenmethode",
     "en": "Four Box Method"
@@ -473,6 +482,7 @@
   },
   {
    "id": "MW10",
+   "thema_ids": ["leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Ethische matrix",
     "en": "Ethical matrix"
@@ -520,6 +530,7 @@
   },
   {
    "id": "MW11",
+   "thema_ids": [],
    "titel": {
     "nl": "Zes ethische lenzen",
     "en": "Six ethical lenses (framework for ethical decision making)"
@@ -567,6 +578,7 @@
   },
   {
    "id": "MW12",
+   "thema_ids": [],
    "titel": {
     "nl": "Goed-tegen-goed-analyse",
     "en": "Right-versus-right paradigms"
@@ -615,6 +627,7 @@
   },
   {
    "id": "MW13",
+   "thema_ids": ["leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Sluier van onwetendheid",
     "en": "Veil of ignorance exercise"
@@ -662,6 +675,7 @@
   },
   {
    "id": "MW14",
+   "thema_ids": [],
    "titel": {
     "nl": "Belanghebbendenkaart",
     "en": "Stakeholder mapping"
@@ -709,6 +723,7 @@
   },
   {
    "id": "MW15",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Begeleidingsethiek",
     "en": "Guidance ethics approach"
@@ -757,6 +772,7 @@
   },
   {
    "id": "MW16",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Stem geven aan waarden",
     "en": "Giving Voice to Values (approach)"
@@ -805,6 +821,7 @@
   },
   {
    "id": "MW17",
+   "thema_ids": [],
    "titel": {
     "nl": "Forumtheater",
     "en": "Forum theatre (Theatre of the Oppressed)"
@@ -853,6 +870,7 @@
   },
   {
    "id": "MW18",
+   "thema_ids": [],
    "titel": {
     "nl": "Morele pre-mortem",
     "en": "Ethical pre-mortem"
@@ -900,6 +918,7 @@
   },
   {
    "id": "MW19",
+   "thema_ids": ["moed-handelen"],
    "titel": {
     "nl": "Talisman van Gandhi",
     "en": "Gandhi's talisman"
@@ -948,6 +967,7 @@
   },
   {
    "id": "MW20",
+   "thema_ids": ["afweging-besluitvorming","dialoog"],
    "titel": {
     "nl": "Ethics Bowl",
     "en": "Ethics Bowl"
@@ -994,6 +1014,7 @@
   },
   {
    "id": "MW21",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Gestructureerde academische controverse",
     "en": "Structured Academic Controversy"
@@ -1041,6 +1062,7 @@
   },
   {
    "id": "MW22",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Dilemmadiscussie",
     "en": "Moral dilemma discussion"
@@ -1088,6 +1110,7 @@
   },
   {
    "id": "MW23",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Waardenlijn",
     "en": "Values continuum / values line"
@@ -1131,6 +1154,7 @@
   },
   {
    "id": "MW24",
+   "thema_ids": ["waarden-integriteit","dialoog"],
    "titel": {
     "nl": "Vier hoeken",
     "en": "Four corners"
@@ -1173,6 +1197,7 @@
   },
   {
    "id": "MW25",
+   "thema_ids": ["dialoog","waarden-integriteit"],
    "titel": {
     "nl": "Vissenkom",
     "en": "Fishbowl discussion"
@@ -1215,6 +1240,7 @@
   },
   {
    "id": "MW26",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Advocaat van de duivel",
     "en": "Devil's advocate"
@@ -1260,6 +1286,7 @@
   },
   {
    "id": "MW27",
+   "thema_ids": ["zelfkennis-reflectie","waarden-integriteit"],
    "titel": {
     "nl": "Waardenverheldering",
     "en": "Values clarification"
@@ -1307,6 +1334,7 @@
   },
   {
    "id": "MW28",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Kritisch-incidentbeschrijving",
     "en": "Critical incident analysis"
@@ -1356,6 +1384,7 @@
   },
   {
    "id": "MW29",
+   "thema_ids": ["moed-handelen"],
    "titel": {
     "nl": "Ethiekcanvas",
     "en": "Ethics Canvas"
@@ -1403,6 +1432,7 @@
   },
   {
    "id": "MW30",
+   "thema_ids": [],
    "titel": {
     "nl": "Data-ethiekcanvas",
     "en": "Data Ethics Canvas"
@@ -1451,6 +1481,7 @@
   },
   {
    "id": "MW31",
+   "thema_ids": [],
    "titel": {
     "nl": "AI-ethiekcanvas",
     "en": "AI Ethics Canvas"
@@ -1495,6 +1526,7 @@
   },
   {
    "id": "MW32",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Gevolgenscan",
     "en": "Consequence Scanning"
@@ -1543,6 +1575,7 @@
   },
   {
    "id": "MW33",
+   "thema_ids": ["denkfouten-valkuilen","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Risicozones van technologie",
     "en": "Ethical OS risk zones"
@@ -1589,6 +1622,7 @@
   },
   {
    "id": "MW34",
+   "thema_ids": [],
    "titel": {
     "nl": "Moral-IT-kaartspel",
     "en": "Moral-IT deck"
@@ -1637,6 +1671,7 @@
   },
   {
    "id": "MW35",
+   "thema_ids": [],
    "titel": {
     "nl": "Embedded EthiCS-modules",
     "en": "Embedded EthiCS modules"
@@ -1684,6 +1719,7 @@
   },
   {
    "id": "MW36",
+   "thema_ids": ["identiteit-achtergrond"],
    "titel": {
     "nl": "Open leerboek: Introduction to Philosophy: Ethics",
     "en": "Open textbook: Introduction to Philosophy: Ethics"
@@ -1730,6 +1766,7 @@
   },
   {
    "id": "MW37",
+   "thema_ids": [],
    "titel": {
     "nl": "Open leerboek: Ethical Explorations",
     "en": "Open textbook: Ethical Explorations"
@@ -1773,6 +1810,7 @@
   },
   {
    "id": "MW38",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Envisioning Cards (Value Sensitive Design)",
     "en": "Envisioning Cards"
@@ -1819,6 +1857,7 @@
   },
   {
    "id": "MW39",
+   "thema_ids": [],
    "titel": {
     "nl": "De Ethische Data Assistent (DEDA)",
     "en": "Data Ethics Decision Aid"
@@ -1866,6 +1905,7 @@
   },
   {
    "id": "MW40",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Tarot Cards of Tech",
     "en": "Tarot Cards of Tech"
@@ -1912,6 +1952,7 @@
   },
   {
    "id": "MW41",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Konstanz-methode voor dilemmadiscussie (KMDD®)",
     "en": "Konstanz Method of Dilemma Discussion"
@@ -1959,6 +2000,7 @@
   },
   {
    "id": "MW42",
+   "thema_ids": ["afweging-besluitvorming","dialoog"],
    "titel": {
     "nl": "Deep Democracy (Lewis-methode)",
     "en": "Deep Democracy – The Lewis Method"
@@ -2006,6 +2048,7 @@
   },
   {
    "id": "MW43",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Zes denkhoeden",
     "en": "Six Thinking Hats"
@@ -2053,6 +2096,7 @@
   },
   {
    "id": "MW44",
+   "thema_ids": ["zelfkennis-reflectie","denkfouten-valkuilen","moed-handelen"],
    "titel": {
     "nl": "Ethics Unwrapped (video's)",
     "en": "Ethics Unwrapped"
@@ -2100,6 +2144,7 @@
   },
   {
    "id": "MW45",
+   "thema_ids": ["empathie-perspectief"],
    "titel": {
     "nl": "Dilemmaverhaal",
     "en": "African dilemma tale"
@@ -2144,6 +2189,7 @@
   },
   {
    "id": "MW46",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Palavergesprek",
     "en": "Palaver (arbre à palabres)"
@@ -2189,6 +2235,7 @@
   },
   {
    "id": "MW47",
+   "thema_ids": ["leiderschap-organisatiecultuur","dialoog"],
    "titel": {
     "nl": "Kgotla-beraad (leider spreekt als laatste)",
     "en": "Kgotla deliberation"
@@ -2237,6 +2284,7 @@
   },
   {
    "id": "MW48",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Consensusberaad (naar Wiredu)",
     "en": "Consensus deliberation (Wiredu)"
@@ -2284,6 +2332,7 @@
   },
   {
    "id": "MW49",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Wijzeninterview (sagefilosofie)",
     "en": "Sage philosophy interview"
@@ -2333,6 +2382,7 @@
   },
   {
    "id": "MW50",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Spreekwoordengesprek",
     "en": "Proverb dialogue"
@@ -2378,6 +2428,7 @@
   },
   {
    "id": "MW51",
+   "thema_ids": ["waarden-integriteit","empathie-perspectief"],
    "titel": {
     "nl": "Anansi-verhaal: slim of fout?",
     "en": "Anansi story discussion"
@@ -2425,6 +2476,7 @@
   },
   {
    "id": "MW52",
+   "thema_ids": ["waarden-integriteit","zelfkennis-reflectie"],
    "titel": {
     "nl": "Ma'at-weging: eigen verklaringen",
     "en": "Weighing of the heart (Ma'at)"
@@ -2474,6 +2526,7 @@
   },
   {
    "id": "MW53",
+   "thema_ids": ["koers-houden","dialoog"],
    "titel": {
     "nl": "De welsprekende boer: pleidooi voor recht",
     "en": "The Eloquent Peasant"
@@ -2522,6 +2575,7 @@
   },
   {
    "id": "MW54",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Sankofa-reflectie",
     "en": "Sankofa reflection"
@@ -2570,6 +2624,7 @@
   },
   {
    "id": "MW55",
+   "thema_ids": ["waarden-integriteit","leiderschap-organisatiecultuur","zelfkennis-reflectie"],
    "titel": {
     "nl": "Adinkra-waardensymbolen",
     "en": "Adinkra values symbols"
@@ -2617,6 +2672,7 @@
   },
   {
    "id": "MW56",
+   "thema_ids": ["waarden-integriteit","zelfkennis-reflectie"],
    "titel": {
     "nl": "Karakterkaart van de omoluabi",
     "en": "Omoluabi character map"
@@ -2665,6 +2721,7 @@
   },
   {
    "id": "MW57",
+   "thema_ids": ["identiteit-achtergrond","zelfkennis-reflectie","waarden-integriteit"],
    "titel": {
     "nl": "Levensboom",
     "en": "Tree of Life (narrative approach)"
@@ -2714,6 +2771,7 @@
   },
   {
    "id": "MW58",
+   "thema_ids": ["zelfkennis-reflectie","moed-handelen"],
    "titel": {
     "nl": "Heldenboek",
     "en": "Hero Book"
@@ -2760,6 +2818,7 @@
   },
   {
    "id": "MW59",
+   "thema_ids": ["zelfkennis-reflectie","vertrouwen-relaties"],
    "titel": {
     "nl": "Mmogo-methode",
     "en": "Mmogo-method"
@@ -2806,6 +2865,7 @@
   },
   {
    "id": "MW60",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Ontwikkelingstheater",
     "en": "Theatre for Development"
@@ -2851,6 +2911,7 @@
   },
   {
    "id": "MW61",
+   "thema_ids": ["zelfkennis-reflectie","dialoog"],
    "titel": {
     "nl": "Getuigen – erkennen – herstellen",
     "en": "Testimony – acknowledgement – repair (TRC)"
@@ -2899,6 +2960,7 @@
   },
   {
    "id": "MW62",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Kampvuurgesprek (naar Fambul Tok)",
     "en": "Bonfire dialogue (after Fambul Tok)"
@@ -2947,6 +3009,7 @@
   },
   {
    "id": "MW63",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Integriteitsraad (naar de bashingantahe)",
     "en": "Integrity council (bashingantahe)"
@@ -2994,6 +3057,7 @@
   },
   {
    "id": "MW64",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Harambee-actieplan",
     "en": "Harambee action plan"
@@ -3041,6 +3105,7 @@
   },
   {
    "id": "MW65",
+   "thema_ids": [],
    "titel": {
     "nl": "African Storybook (open verhalen)",
     "en": "African Storybook"
@@ -3087,6 +3152,7 @@
   },
   {
    "id": "MW66",
+   "thema_ids": [],
    "titel": {
     "nl": "Traditionele verzoening na conflict (IDEA-casusbundel)",
     "en": "Traditional justice and reconciliation (IDEA)"
@@ -3131,6 +3197,7 @@
   },
   {
    "id": "MW67",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Shura-beraad (raadplegen vóór besluiten)",
     "en": "Shura (consultation)"
@@ -3176,6 +3243,7 @@
   },
   {
    "id": "MW68",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Sulha – bemiddeling en verzoening",
     "en": "Sulha (reconciliation)"
@@ -3221,6 +3289,7 @@
   },
   {
    "id": "MW69",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Munazara – debat met etiquette",
     "en": "Munazara (rules of disputation)"
@@ -3265,6 +3334,7 @@
   },
   {
    "id": "MW70",
+   "thema_ids": ["identiteit-achtergrond"],
    "titel": {
     "nl": "Maqasid-afweging (te beschermen goederen)",
     "en": "Maqasid analysis"
@@ -3310,6 +3380,7 @@
   },
   {
    "id": "MW71",
+   "thema_ids": ["moed-handelen"],
    "titel": {
     "nl": "Rechtsmaximes-toets",
     "en": "Legal maxims test"
@@ -3353,6 +3424,7 @@
   },
   {
    "id": "MW72",
+   "thema_ids": [],
    "titel": {
     "nl": "Hand–tong–hart-ladder",
     "en": "Hand–tongue–heart ladder"
@@ -3398,6 +3470,7 @@
   },
   {
    "id": "MW73",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Muhasaba – avondbalans",
     "en": "Muhasaba (self-accounting)"
@@ -3446,6 +3519,7 @@
   },
   {
    "id": "MW74",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Intentiecheck (niyya)",
     "en": "Intention check (niyya)"
@@ -3491,6 +3565,7 @@
   },
   {
    "id": "MW75",
+   "thema_ids": ["zelfkennis-reflectie","waarden-integriteit","moed-handelen"],
    "titel": {
     "nl": "Karakter oefenen (naar Miskawayh)",
     "en": "Refinement of character (Miskawayh)"
@@ -3538,6 +3613,7 @@
   },
   {
    "id": "MW76",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Verdriet verdrijven (naar al-Kindi)",
     "en": "Dispelling sorrows (al-Kindi)"
@@ -3586,6 +3662,7 @@
   },
   {
    "id": "MW77",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Geestelijke geneeskunde (naar al-Razi)",
     "en": "Spiritual physick (al-Razi)"
@@ -3632,6 +3709,7 @@
   },
   {
    "id": "MW78",
+   "thema_ids": ["zelfkennis-reflectie","koers-houden"],
    "titel": {
     "nl": "Geduld en dankbaarheid (sabr en shukr)",
     "en": "Patience and gratitude"
@@ -3679,6 +3757,7 @@
   },
   {
    "id": "MW79",
+   "thema_ids": ["zelfkennis-reflectie","waarden-integriteit"],
    "titel": {
     "nl": "Futuwwa – deugden van ridderlijkheid",
     "en": "Futuwwa (chivalry)"
@@ -3726,6 +3805,7 @@
   },
   {
    "id": "MW80",
+   "thema_ids": [],
    "titel": {
     "nl": "Eigen beroepsadab (naar al-Ruhawi)",
     "en": "Professional adab (al-Ruhawi)"
@@ -3774,6 +3854,7 @@
   },
   {
    "id": "MW81",
+   "thema_ids": ["dialoog","empathie-perspectief"],
    "titel": {
     "nl": "Fabelgesprek: Kalila en Dimna",
     "en": "Kalila and Dimna fables"
@@ -3823,6 +3904,7 @@
   },
   {
    "id": "MW82",
+   "thema_ids": ["dialoog","empathie-perspectief"],
    "titel": {
     "nl": "Juha-verhalen: perspectief wisselen",
     "en": "Juha tales"
@@ -3866,6 +3948,7 @@
   },
   {
    "id": "MW83",
+   "thema_ids": [],
    "titel": {
     "nl": "Gedachte-experiment Hayy ibn Yaqzan",
     "en": "Hayy ibn Yaqzan thought experiment"
@@ -3914,6 +3997,7 @@
   },
   {
    "id": "MW84",
+   "thema_ids": ["waarden-integriteit","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "De deugdzame organisatie (naar al-Farabi)",
     "en": "The virtuous city (al-Farabi)"
@@ -3961,6 +4045,7 @@
   },
   {
    "id": "MW85",
+   "thema_ids": ["zelfkennis-reflectie","waarden-integriteit"],
    "titel": {
     "nl": "Asabiyya-spiegel (loyaliteit in teams)",
     "en": "Asabiyya mirror (group loyalty)"
@@ -4008,6 +4093,7 @@
   },
   {
    "id": "MW86",
+   "thema_ids": ["waarden-integriteit"],
    "titel": {
     "nl": "Pact van de deugdzamen (naar Hilf al-Fudul)",
     "en": "Pact of the virtuous (Hilf al-Fudul)"
@@ -4056,6 +4142,7 @@
   },
   {
    "id": "MW87",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "De zaak van de dieren tegen de mens",
     "en": "The case of the animals versus man"
@@ -4104,6 +4191,7 @@
   },
   {
    "id": "MW88",
+   "thema_ids": ["dialoog","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Nationale dialoog (naar het Tunesische Kwartet)",
     "en": "National dialogue (Tunisian Quartet)"
@@ -4152,6 +4240,7 @@
   },
   {
    "id": "MW89",
+   "thema_ids": [],
    "titel": {
     "nl": "Namen rechtzetten (zhengming)",
     "en": "Rectifying names (zhengming)"
@@ -4200,6 +4289,7 @@
   },
   {
    "id": "MW90",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Kind bij de put (vier kiemen)",
     "en": "Child at the well (four sprouts)"
@@ -4248,6 +4338,7 @@
   },
   {
    "id": "MW91",
+   "thema_ids": ["empathie-perspectief"],
    "titel": {
     "nl": "De nutteloze boom",
     "en": "The useless tree"
@@ -4296,6 +4387,7 @@
   },
   {
    "id": "MW92",
+   "thema_ids": [],
    "titel": {
     "nl": "Weten is doen (naar Wang Yangming)",
     "en": "Knowing is doing (after Wang Yangming)"
@@ -4344,6 +4436,7 @@
   },
   {
    "id": "MW93",
+   "thema_ids": ["dialoog","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Debat over zout en ijzer",
     "en": "Debate on salt and iron"
@@ -4391,6 +4484,7 @@
   },
   {
    "id": "MW94",
+   "thema_ids": ["dialoog","vertrouwen-relaties"],
    "titel": {
     "nl": "Mens van nature goed of slecht? (Mencius–Xunzi)",
     "en": "Human nature: good or bad? (Mencius–Xunzi)"
@@ -4439,6 +4533,7 @@
   },
   {
    "id": "MW95",
+   "thema_ids": ["empathie-perspectief"],
    "titel": {
     "nl": "Vikram en de vetala: raadseldilemma",
     "en": "Vikram and the vetala: riddle dilemma"
@@ -4486,6 +4581,7 @@
   },
   {
    "id": "MW96",
+   "thema_ids": ["waarden-integriteit","dialoog","empathie-perspectief"],
    "titel": {
     "nl": "Jataka-gesprek: wat zou de wijze doen?",
     "en": "Jataka dialogue"
@@ -4531,6 +4627,7 @@
   },
   {
    "id": "MW97",
+   "thema_ids": ["waarden-integriteit","moed-handelen"],
    "titel": {
     "nl": "Arjuna's dilemma: plicht en gevolgen",
     "en": "Arjuna's dilemma: duty and consequences"
@@ -4578,6 +4675,7 @@
   },
   {
    "id": "MW98",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Yaksha-vragen: wijsheid onder druk",
     "en": "Yaksha's questions"
@@ -4623,6 +4721,7 @@
   },
   {
    "id": "MW99",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Eerlijk debat (vada) of winnen (jalpa)?",
     "en": "Honest debate (vada) or winning (jalpa)?"
@@ -4669,6 +4768,7 @@
   },
   {
    "id": "MW100",
+   "thema_ids": [],
    "titel": {
     "nl": "Vijf toetsen voor spreken",
     "en": "Five tests for speech"
@@ -4713,6 +4813,7 @@
   },
   {
    "id": "MW101",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Panchayat: raad van vijf",
     "en": "Panchayat: council of five"
@@ -4762,6 +4863,7 @@
   },
   {
    "id": "MW102",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Naikan-reflectie: ontvangen, gegeven, last bezorgd",
     "en": "Naikan reflection"
@@ -4811,6 +4913,7 @@
   },
   {
    "id": "MW103",
+   "thema_ids": [],
    "titel": {
     "nl": "Driezijdig goed (sanpō yoshi)",
     "en": "Three-way good (sanpō yoshi)"
@@ -4858,6 +4961,7 @@
   },
   {
    "id": "MW104",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Wortels losmaken (nemawashi): eerlijk draagvlak",
     "en": "Root-binding (nemawashi): fair consensus building"
@@ -4902,6 +5006,7 @@
   },
   {
    "id": "MW105",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Musyawarah-mufakat: beraad tot overeenstemming",
     "en": "Musyawarah-mufakat: deliberation to consensus"
@@ -4947,6 +5052,7 @@
   },
   {
    "id": "MW106",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Kapwa: het gedeelde zelf",
     "en": "Kapwa: the shared self"
@@ -4996,6 +5102,7 @@
   },
   {
    "id": "MW107",
+   "thema_ids": [],
    "titel": {
     "nl": "De petitietrom (sinmungo): melden wanneer niemand luistert",
     "en": "The petition drum (sinmungo)"
@@ -5044,6 +5151,7 @@
   },
   {
    "id": "MW108",
+   "thema_ids": ["afweging-besluitvorming","dialoog"],
    "titel": {
     "nl": "Staand debat (naar het Tibetaanse kloosterdebat)",
     "en": "Standing debate (after Tibetan monastic debate)"
@@ -5092,6 +5200,7 @@
   },
   {
    "id": "MW109",
+   "thema_ids": [],
    "titel": {
     "nl": "Buen vivir-toets (sumak kawsay)",
     "en": "Buen vivir test (sumak kawsay)"
@@ -5141,6 +5250,7 @@
   },
   {
    "id": "MW110",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Ayni-balans: wederkerigheid",
     "en": "Ayni balance: reciprocity"
@@ -5189,6 +5299,7 @@
   },
   {
    "id": "MW111",
+   "thema_ids": [],
    "titel": {
     "nl": "Drie Andesgeboden: niet stelen, niet liegen, niet lui zijn",
     "en": "Three Andean precepts"
@@ -5237,6 +5348,7 @@
   },
   {
    "id": "MW112",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Gezicht en hart (in ixtli in yollotl)",
     "en": "Face and heart (in ixtli in yollotl)"
@@ -5285,6 +5397,7 @@
   },
   {
    "id": "MW113",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Woorden van de ouderen (huehuetlatolli)",
     "en": "Words of the elders (huehuetlatolli)"
@@ -5334,6 +5447,7 @@
   },
   {
    "id": "MW114",
+   "thema_ids": ["empathie-perspectief"],
    "titel": {
     "nl": "Mensen van hout (naar de Popol Vuh)",
     "en": "People of wood (after the Popol Vuh)"
@@ -5383,6 +5497,7 @@
   },
   {
    "id": "MW115",
+   "thema_ids": ["dialoog"],
    "titel": {
     "nl": "Het Valladolid-debat: wie telt als mens?",
     "en": "The Valladolid debate"
@@ -5426,6 +5541,7 @@
   },
   {
    "id": "MW116",
+   "thema_ids": ["moed-handelen","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "'Zijn dit geen mensen?' (naar de preek van Montesinos)",
     "en": "'Are these not human beings?' (after Montesinos)"
@@ -5475,6 +5591,7 @@
   },
   {
    "id": "MW117",
+   "thema_ids": [],
    "titel": {
     "nl": "Brief aan de koning (naar Guaman Poma)",
     "en": "Letter to the king (after Guaman Poma)"
@@ -5524,6 +5641,7 @@
   },
   {
    "id": "MW118",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Verweerschrift (naar Sor Juana)",
     "en": "Letter of defence (after Sor Juana)"
@@ -5571,6 +5689,7 @@
   },
   {
    "id": "MW119",
+   "thema_ids": [],
    "titel": {
     "nl": "Inventamos o erramos: vernieuwen of dwalen",
     "en": "Invent or err"
@@ -5619,6 +5738,7 @@
   },
   {
    "id": "MW120",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Sentipensar: denken met het hart",
     "en": "Sentipensar: feeling-thinking"
@@ -5667,6 +5787,7 @@
   },
   {
    "id": "MW121",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Ervaringen systematiseren (naar Jara)",
     "en": "Systematising experiences (after Jara)"
@@ -5714,6 +5835,7 @@
   },
   {
    "id": "MW122",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Pedagogie van de tederheid",
     "en": "Pedagogy of tenderness"
@@ -5762,6 +5884,7 @@
   },
   {
    "id": "MW123",
+   "thema_ids": [],
    "titel": {
     "nl": "Leerlingenraad met echte zeggenschap (naar Escuela Nueva)",
     "en": "Student council with real voice (after Escuela Nueva)"
@@ -5810,6 +5933,7 @@
   },
   {
    "id": "MW124",
+   "thema_ids": ["dialoog","leiderschap-organisatiecultuur"],
    "titel": {
     "nl": "Leiden door te gehoorzamen (mandar obedeciendo)",
     "en": "Leading by obeying"
@@ -5857,6 +5981,7 @@
   },
   {
    "id": "MW125",
+   "thema_ids": [],
    "titel": {
     "nl": "Burgerbegroting (naar Porto Alegre)",
     "en": "Participatory budget (after Porto Alegre)"
@@ -5906,6 +6031,7 @@
   },
   {
    "id": "MW126",
+   "thema_ids": ["zelfkennis-reflectie"],
    "titel": {
     "nl": "Ambtsverantwoording (naar de juicio de residencia)",
     "en": "Accountability review (after the juicio de residencia)"
@@ -5951,6 +6077,7 @@
   },
   {
    "id": "MW127",
+   "thema_ids": ["empathie-perspectief","moed-handelen"],
    "titel": {
     "nl": "Arpillera-verhaal: onrecht in textiel",
     "en": "Arpillera story: injustice in textile"
@@ -5999,6 +6126,7 @@
   },
   {
    "id": "MW128",
+   "thema_ids": ["empathie-perspectief"],
    "titel": {
     "nl": "Cordel-dilemma: een moraal op rijm",
     "en": "Cordel dilemma: a moral in rhyme"

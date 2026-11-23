@@ -42,7 +42,10 @@
       "student_en": "WB-MW01-HRM-EN_student-version.docx",
       "docent_en": "WB-MW01-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW01-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW01-HRM-NL.jpg",
+    "thema_ids": [
+      "dialoog"
+    ]
   },
   {
     "id": "MV_24",
@@ -90,7 +93,8 @@
       "docent_en": "WB-MW02-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW02-HRM-NL.jpg",
-    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
+    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0.",
+    "thema_ids": []
   },
   {
     "id": "MV_25",
@@ -137,7 +141,8 @@
       "student_en": "WB-MW03-HRM-EN_student-version.docx",
       "docent_en": "WB-MW03-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW03-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW03-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_26",
@@ -181,7 +186,8 @@
       "student_en": "WB-MW04-HRM-EN_student-version.docx",
       "docent_en": "WB-MW04-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW04-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW04-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_27",
@@ -228,7 +234,8 @@
       "student_en": "WB-MW05-HRM-EN_student-version.docx",
       "docent_en": "WB-MW05-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW05-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW05-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_28",
@@ -275,7 +282,8 @@
       "student_en": "WB-MW06-HRM-EN_student-version.docx",
       "docent_en": "WB-MW06-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW06-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW06-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_29",
@@ -321,7 +329,8 @@
       "student_en": "WB-MW07-HRM-EN_student-version.docx",
       "docent_en": "WB-MW07-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW07-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW07-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_30",
@@ -369,7 +378,8 @@
       "student_en": "WB-MW08-HRM-EN_student-version.docx",
       "docent_en": "WB-MW08-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW08-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW08-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_31",
@@ -416,7 +426,8 @@
       "student_en": "WB-MW09-HRM-EN_student-version.docx",
       "docent_en": "WB-MW09-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW09-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW09-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_32",
@@ -463,7 +474,10 @@
       "student_en": "WB-MW10-HRM-EN_student-version.docx",
       "docent_en": "WB-MW10-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW10-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW10-HRM-NL.jpg",
+    "thema_ids": [
+      "leiderschap-organisatiecultuur"
+    ]
   },
   {
     "id": "MV_33",
@@ -509,7 +523,8 @@
       "student_en": "WB-MW11-HRM-EN_student-version.docx",
       "docent_en": "WB-MW11-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW11-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW11-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_34",
@@ -556,7 +571,8 @@
       "student_en": "WB-MW12-HRM-EN_student-version.docx",
       "docent_en": "WB-MW12-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW12-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW12-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_35",
@@ -602,7 +618,8 @@
       "student_en": "WB-MW13-HRM-EN_student-version.docx",
       "docent_en": "WB-MW13-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW13-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW13-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_36",
@@ -648,7 +665,8 @@
       "student_en": "WB-MW14-HRM-EN_student-version.docx",
       "docent_en": "WB-MW14-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW14-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW14-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_37",
@@ -696,7 +714,8 @@
       "student_en": "WB-MW15-HRM-EN_student-version.docx",
       "docent_en": "WB-MW15-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW15-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW15-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_38",
@@ -744,7 +763,10 @@
       "docent_en": "WB-MW16-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW16-HRM-NL.jpg",
-    "zieOok": ["MV_61"]
+    "zieOok": [
+      "MV_61"
+    ],
+    "thema_ids": []
   },
   {
     "id": "MV_39",
@@ -791,7 +813,8 @@
       "student_en": "WB-MW17-HRM-EN_student-version.docx",
       "docent_en": "WB-MW17-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW17-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW17-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_40",
@@ -838,7 +861,8 @@
       "student_en": "WB-MW18-HRM-EN_student-version.docx",
       "docent_en": "WB-MW18-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW18-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW18-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_41",
@@ -885,7 +909,8 @@
       "student_en": "WB-MW19-HRM-EN_student-version.docx",
       "docent_en": "WB-MW19-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW19-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW19-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_42",
@@ -931,7 +956,10 @@
       "student_en": "WB-MW20-HRM-EN_student-version.docx",
       "docent_en": "WB-MW20-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW20-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW20-HRM-NL.jpg",
+    "thema_ids": [
+      "afweging-besluitvorming"
+    ]
   },
   {
     "id": "MV_43",
@@ -977,7 +1005,8 @@
       "student_en": "WB-MW21-HRM-EN_student-version.docx",
       "docent_en": "WB-MW21-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW21-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW21-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_44",
@@ -1023,7 +1052,10 @@
       "student_en": "WB-MW22-HRM-EN_student-version.docx",
       "docent_en": "WB-MW22-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW22-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW22-HRM-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_45",
@@ -1070,7 +1102,10 @@
       "student_en": "WB-MW23-HRM-EN_student-version.docx",
       "docent_en": "WB-MW23-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW23-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW23-HRM-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_46",
@@ -1117,7 +1152,10 @@
       "student_en": "WB-MW24-HRM-EN_student-version.docx",
       "docent_en": "WB-MW24-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW24-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW24-HRM-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_47",
@@ -1163,7 +1201,8 @@
       "student_en": "WB-MW25-HRM-EN_student-version.docx",
       "docent_en": "WB-MW25-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW25-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW25-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_48",
@@ -1209,7 +1248,8 @@
       "student_en": "WB-MW26-HRM-EN_student-version.docx",
       "docent_en": "WB-MW26-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW26-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW26-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_49",
@@ -1255,7 +1295,8 @@
       "student_en": "WB-MW27-HRM-EN_student-version.docx",
       "docent_en": "WB-MW27-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW27-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW27-HRM-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_50",
@@ -1303,7 +1344,10 @@
       "student_en": "WB-MW28-HRM-EN_student-version.docx",
       "docent_en": "WB-MW28-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW28-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW28-HRM-NL.jpg",
+    "thema_ids": [
+      "zelfkennis-reflectie"
+    ]
   },
   {
     "id": "MV_51",
@@ -1351,7 +1395,8 @@
       "docent_en": "WB-MW29-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW29-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op The Ethics Canvas – ADAPT Centre & Trinity College Dublin – CC BY-SA 3.0 – https://www.ethicscanvas.org/"
+    "naamsvermelding_bron": "Gebaseerd op The Ethics Canvas – ADAPT Centre & Trinity College Dublin – CC BY-SA 3.0 – https://www.ethicscanvas.org/",
+    "thema_ids": []
   },
   {
     "id": "MV_52",
@@ -1400,7 +1445,8 @@
       "docent_en": "WB-MW30-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW30-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op The Data Ethics Canvas – Open Data Institute – CC BY-SA 4.0 – https://theodi.org/"
+    "naamsvermelding_bron": "Gebaseerd op The Data Ethics Canvas – Open Data Institute – CC BY-SA 4.0 – https://theodi.org/",
+    "thema_ids": []
   },
   {
     "id": "MV_53",
@@ -1448,7 +1494,8 @@
       "docent_en": "WB-MW31-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW31-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op AI Ethics Canvas – Trystan S. Goetze – CC BY-SA 4.0 – https://www.trystangoetze.ca/aicanvas.html"
+    "naamsvermelding_bron": "Gebaseerd op AI Ethics Canvas – Trystan S. Goetze – CC BY-SA 4.0 – https://www.trystangoetze.ca/aicanvas.html",
+    "thema_ids": []
   },
   {
     "id": "MV_54",
@@ -1496,7 +1543,8 @@
       "docent_en": "WB-MW32-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW32-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op Consequence Scanning – Doteveryone – https://doteveryone.org.uk/project/consequence-scanning/"
+    "naamsvermelding_bron": "Gebaseerd op Consequence Scanning – Doteveryone – https://doteveryone.org.uk/project/consequence-scanning/",
+    "thema_ids": []
   },
   {
     "id": "MV_55",
@@ -1543,7 +1591,8 @@
       "docent_en": "WB-MW33-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW33-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op Ethical OS Toolkit – Institute for the Future & Omidyar Network – https://ethicalos.org/"
+    "naamsvermelding_bron": "Gebaseerd op Ethical OS Toolkit – Institute for the Future & Omidyar Network – https://ethicalos.org/",
+    "thema_ids": []
   },
   {
     "id": "MV_56",
@@ -1592,7 +1641,8 @@
       "docent_en": "WB-MW34-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW34-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op The Moral-IT Deck – Urquhart & Craigon, University of Nottingham"
+    "naamsvermelding_bron": "Gebaseerd op The Moral-IT Deck – Urquhart & Craigon, University of Nottingham",
+    "thema_ids": []
   },
   {
     "id": "MV_57",
@@ -1640,7 +1690,8 @@
       "docent_en": "WB-MW35-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW35-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op Embedded EthiCS @ Harvard – Harvard University – CC BY 4.0 – https://embeddedethics.seas.harvard.edu/"
+    "naamsvermelding_bron": "Gebaseerd op Embedded EthiCS @ Harvard – Harvard University – CC BY 4.0 – https://embeddedethics.seas.harvard.edu/",
+    "thema_ids": []
   },
   {
     "id": "MV_58",
@@ -1687,7 +1738,8 @@
       "docent_en": "WB-MW36-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW36-HRM-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op Introduction to Philosophy: Ethics – G. Matthews (Red.), Rebus Community – CC BY 4.0"
+    "naamsvermelding_bron": "Gebaseerd op Introduction to Philosophy: Ethics – G. Matthews (Red.), Rebus Community – CC BY 4.0",
+    "thema_ids": []
   },
   {
     "id": "MV_59",
@@ -1734,7 +1786,8 @@
       "docent_en": "WB-MW37-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW37-HRM-NL.jpg",
-    "naamsvermelding_bron": "Geïnspireerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0 (alleen de aanpak; geen tekst overgenomen)"
+    "naamsvermelding_bron": "Geïnspireerd op Ethical Explorations – Brendan Shea – CC BY-NC 4.0 (alleen de aanpak; geen tekst overgenomen)",
+    "thema_ids": []
   },
   {
     "id": "MV_60",
@@ -1782,7 +1835,8 @@
       "docent_en": "WB-EX01-HRM-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-EX01-HRM-NL.jpg",
-    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0."
+    "naamsvermelding_bron": "Methode gebaseerd op Stolper, M., Molewijk, B., & Widdershoven, G. (2016), BMC Medical Ethics, CC BY 4.0.",
+    "thema_ids": []
   },
   {
     "id": "MV_61",
@@ -1875,7 +1929,8 @@
       "MV_20",
       "MV_18",
       "MV_38"
-    ]
+    ],
+    "thema_ids": []
   },
   {
     "id": "MV_62",
@@ -1922,7 +1977,8 @@
       "student_en": "WB-MW45-ONDERWIJS-EN_student-version.docx",
       "docent_en": "WB-MW45-ONDERWIJS-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW45-ONDERWIJS-NL.jpg"
+    "sfeerbeeld": "WB-MW45-ONDERWIJS-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_63",
@@ -1970,7 +2026,8 @@
       "student_en": "WB-MW46-SOCIAALWERK-EN_student-version.docx",
       "docent_en": "WB-MW46-SOCIAALWERK-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW46-SOCIAALWERK-NL.jpg"
+    "sfeerbeeld": "WB-MW46-SOCIAALWERK-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_64",
@@ -2018,7 +2075,10 @@
       "student_en": "WB-MW47-HRM-EN_student-version.docx",
       "docent_en": "WB-MW47-HRM-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW47-HRM-NL.jpg"
+    "sfeerbeeld": "WB-MW47-HRM-NL.jpg",
+    "thema_ids": [
+      "leiderschap-organisatiecultuur"
+    ]
   },
   {
     "id": "MV_65",
@@ -2066,7 +2126,8 @@
       "student_en": "WB-MW48-BESTUURSKUNDE-EN_student-version.docx",
       "docent_en": "WB-MW48-BESTUURSKUNDE-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW48-BESTUURSKUNDE-NL.jpg"
+    "sfeerbeeld": "WB-MW48-BESTUURSKUNDE-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_66",
@@ -2115,7 +2176,8 @@
       "student_en": "WB-MW49-PSYCHOLOGIE-EN_student-version.docx",
       "docent_en": "WB-MW49-PSYCHOLOGIE-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW49-PSYCHOLOGIE-NL.jpg"
+    "sfeerbeeld": "WB-MW49-PSYCHOLOGIE-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_67",
@@ -2163,7 +2225,8 @@
       "student_en": "WB-MW50-FACILITAIR-EN_student-version.docx",
       "docent_en": "WB-MW50-FACILITAIR-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW50-FACILITAIR-NL.jpg"
+    "sfeerbeeld": "WB-MW50-FACILITAIR-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_68",
@@ -2212,7 +2275,8 @@
       "docent_en": "WB-MW51-ZORG-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW51-ZORG-NL.jpg",
-    "naamsvermelding_bron": "Verhaal naar Rattray, R. S. (1930), Akan-Ashanti folk-tales – publiek domein."
+    "naamsvermelding_bron": "Verhaal naar Rattray, R. S. (1930), Akan-Ashanti folk-tales – publiek domein.",
+    "thema_ids": []
   },
   {
     "id": "MV_69",
@@ -2262,7 +2326,10 @@
       "docent_en": "WB-MW52-ONDERZOEKSINTEGRITEIT-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW52-ONDERZOEKSINTEGRITEIT-NL.jpg",
-    "naamsvermelding_bron": "Gebaseerd op Budge, E. A. W. (1895), The Book of the Dead – publiek domein."
+    "naamsvermelding_bron": "Gebaseerd op Budge, E. A. W. (1895), The Book of the Dead – publiek domein.",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_70",
@@ -2310,7 +2377,10 @@
       "student_en": "WB-MW53-OVERHEID-EN_student-version.docx",
       "docent_en": "WB-MW53-OVERHEID-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW53-OVERHEID-NL.jpg"
+    "sfeerbeeld": "WB-MW53-OVERHEID-NL.jpg",
+    "thema_ids": [
+      "koers-houden"
+    ]
   },
   {
     "id": "MV_71",
@@ -2358,7 +2428,10 @@
       "student_en": "WB-MW54-PEDAGOGIEK-EN_student-version.docx",
       "docent_en": "WB-MW54-PEDAGOGIEK-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW54-PEDAGOGIEK-NL.jpg"
+    "sfeerbeeld": "WB-MW54-PEDAGOGIEK-NL.jpg",
+    "thema_ids": [
+      "zelfkennis-reflectie"
+    ]
   },
   {
     "id": "MV_72",
@@ -2405,7 +2478,11 @@
       "student_en": "WB-MW55-MANAGEMENT-EN_student-version.docx",
       "docent_en": "WB-MW55-MANAGEMENT-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW55-MANAGEMENT-NL.jpg"
+    "sfeerbeeld": "WB-MW55-MANAGEMENT-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit",
+      "leiderschap-organisatiecultuur"
+    ]
   },
   {
     "id": "MV_73",
@@ -2453,7 +2530,10 @@
       "student_en": "WB-MW56-POLITIE-EN_student-version.docx",
       "docent_en": "WB-MW56-POLITIE-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW56-POLITIE-NL.jpg"
+    "sfeerbeeld": "WB-MW56-POLITIE-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_74",
@@ -2502,7 +2582,8 @@
       "student_en": "WB-MW57-ZORG-EN_student-version.docx",
       "docent_en": "WB-MW57-ZORG-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW57-ZORG-NL.jpg"
+    "sfeerbeeld": "WB-MW57-ZORG-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_75",
@@ -2549,7 +2630,8 @@
       "student_en": "WB-MW58-SCHOONMAAK-EN_student-version.docx",
       "docent_en": "WB-MW58-SCHOONMAAK-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW58-SCHOONMAAK-NL.jpg"
+    "sfeerbeeld": "WB-MW58-SCHOONMAAK-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_76",
@@ -2597,7 +2679,8 @@
       "student_en": "WB-MW60-DUURZAAMHEID-EN_student-version.docx",
       "docent_en": "WB-MW60-DUURZAAMHEID-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW60-DUURZAAMHEID-NL.jpg"
+    "sfeerbeeld": "WB-MW60-DUURZAAMHEID-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_77",
@@ -2646,7 +2729,8 @@
       "student_en": "WB-MW61-JURIDISCHEZAKEN-EN_student-version.docx",
       "docent_en": "WB-MW61-JURIDISCHEZAKEN-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW61-JURIDISCHEZAKEN-NL.jpg"
+    "sfeerbeeld": "WB-MW61-JURIDISCHEZAKEN-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_78",
@@ -2694,7 +2778,8 @@
       "student_en": "WB-MW62-STUDENTENLEVEN-EN_student-version.docx",
       "docent_en": "WB-MW62-STUDENTENLEVEN-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW62-STUDENTENLEVEN-NL.jpg"
+    "sfeerbeeld": "WB-MW62-STUDENTENLEVEN-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_79",
@@ -2742,7 +2827,10 @@
       "student_en": "WB-MW63-LOBBYISTEN-EN_student-version.docx",
       "docent_en": "WB-MW63-LOBBYISTEN-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW63-LOBBYISTEN-NL.jpg"
+    "sfeerbeeld": "WB-MW63-LOBBYISTEN-NL.jpg",
+    "thema_ids": [
+      "waarden-integriteit"
+    ]
   },
   {
     "id": "MV_80",
@@ -2790,7 +2878,8 @@
       "student_en": "WB-MW64-DIVERSITEIT-EN_student-version.docx",
       "docent_en": "WB-MW64-DIVERSITEIT-EN_teacher-version.docx"
     },
-    "sfeerbeeld": "WB-MW64-DIVERSITEIT-NL.jpg"
+    "sfeerbeeld": "WB-MW64-DIVERSITEIT-NL.jpg",
+    "thema_ids": []
   },
   {
     "id": "MV_81",
@@ -2838,6 +2927,7 @@
       "docent_en": "WB-MW65-DAGELIJKSLEVEN-EN_teacher-version.docx"
     },
     "sfeerbeeld": "WB-MW65-DAGELIJKSLEVEN-NL.jpg",
-    "naamsvermelding_bron": "Werkvorm geïnspireerd op African Storybook (Saide), CC BY 4.0. Bij gebruik van een verhaal vermeldt u titel, auteur en illustrator."
+    "naamsvermelding_bron": "Werkvorm geïnspireerd op African Storybook (Saide), CC BY 4.0. Bij gebruik van een verhaal vermeldt u titel, auteur en illustrator.",
+    "thema_ids": []
   }
 ]
