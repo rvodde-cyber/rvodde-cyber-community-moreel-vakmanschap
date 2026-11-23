@@ -10776,5 +10776,680 @@
       "project": "Lectoraat Ethisch Werken"
     },
     "moeilijkheid": 2
+  },
+  {
+    "id": "gs-01",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De verkeerde voornaamwoorden",
+      "verhaal": "Dewi werkt al een jaar met Robin, een getalenteerde ontwikkelaar die zich non-binair noemt. In vergaderingen hoort ze het steeds weer: collega’s die Robin per ongeluk met ‘zij’ of ‘hij’ aanspreken, ondanks haar geduldige correcties.\n\nRobin zegt er inmiddels weinig meer van, moe van het steeds opnieuw uitleggen. Dewi wil haar steunen, maar vreest dat hardop corrigeren Robin juist in de schijnwerpers zet. Stilzwijgen voelt toch als in de steek laten.\n\nVandaag gaat het midden in het teamoverleg weer mis. Grijpt Dewi ter plekke in, laat ze het aan Robin, of brengt ze het achteraf bij de teamleider ter sprake?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het steeds opnieuw corrigeren van collega’s raakt de teamcultuur en vraagt om een organisatorische aanpak, niet alleen een individueel gesprek."
+    },
+    "en": {
+      "titel": "The Wrong Pronouns",
+      "verhaal": "Dewi has worked with Robin for a year, a talented developer who identifies as non-binary. In meetings she hears it again and again: colleagues accidentally calling Robin ‘she’ or ‘he’, despite Robin’s patient corrections.\n\nBy now Robin says little about it, tired of explaining again and again. Dewi wants to support Robin, but fears that correcting out loud will put Robin in the spotlight. Staying silent still feels like leaving Robin in the lurch.\n\nToday it goes wrong again in the middle of the team meeting. Does Dewi step in on the spot, leave it to Robin, or raise it afterwards with the team leader?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "Repeatedly correcting colleagues affects team culture and calls for an organisational approach, not only an individual conversation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-01.jpg",
+      "altNl": "Situatie gender en seksualiteit: De verkeerde voornaamwoorden",
+      "altEn": "Gender and sexuality scene: The Wrong Pronouns",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 100,
+      "woordenEn": 105,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS1",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-02",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De homofobe grap",
+      "verhaal": "Jasper voelt zich al weken ongemakkelijk. Zijn vrienden, met wie hij al jaren optrekt, maken tijdens hun wekelijkse avondje steeds vaker homofobe grappen. Elke keer krimpt hij inwendig ineen, terwijl de rest lacht alsof er niets aan de hand is.\n\nHij wil iets zeggen, maar is bang dat ze hem dan niet meer accepteren. Wat als hij de enige is die er moeite mee heeft en de sfeer verpest? Hij wil niet de zeur zijn, maar de grappen worden kwetsender.\n\nVanavond is de grap rechtstreeks aan zijn adres gericht. Spreekt Jasper zijn vrienden nu aan, laat hij het gaan zoals altijd, of trekt hij zich stilletjes terug uit de groep?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen loyaliteit aan vrienden en opkomen voor eigen waarden; Jasper kan het zelf beslissen."
+    },
+    "en": {
+      "titel": "The Homophobic Joke",
+      "verhaal": "Jasper has felt uncomfortable for weeks. His friends, whom he has known for years, increasingly make homophobic jokes during their weekly evening together. Every time he cringes inwardly, while the rest laugh as if nothing is wrong.\n\nHe wants to say something, but fears they will no longer accept him. What if he is the only one who minds and spoils the mood? He does not want to be the nag, but the jokes are getting more hurtful.\n\nTonight the joke is aimed straight at him. Does Jasper confront his friends now, let it go as always, or quietly withdraw from the group?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of loyalty to friends against standing up for one’s own values; Jasper can decide it himself."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-02.jpg",
+      "altNl": "Situatie gender en seksualiteit: De homofobe grap",
+      "altEn": "Gender and sexuality scene: The Homophobic Joke",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 103,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS2",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-03",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Genderneutrale toiletten",
+      "verhaal": "Facilitair manager Sjoerd krijgt een dringend verzoek van Naomi, een projectmanager in transitie. De toiletten zijn strikt verdeeld naar man en vrouw en ze voelt zich bij beide onveilig. Ze vraagt om op korte termijn één verdieping genderneutraal te maken.\n\nSjoerd begrijpt haar, maar het verbouwingsbudget is al volledig belegd met de achterstallige renovatie van de brandtrappen, een project met een eigen veiligheidsurgentie. Naar voren halen betekent een ander project vertragen.\n\nNaomi wacht al maanden op antwoord en de spanning in haar team is voelbaar. Geeft Sjoerd nu voorrang aan de toiletten, bouwt hij tijdelijk één bestaand hokje om, of houdt hij vast aan de planning?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een investeringsbeslissing over faciliteiten voor de hele organisatie, met een beperkt budget en meerdere belanghebbenden."
+    },
+    "en": {
+      "titel": "Gender-Neutral Toilets",
+      "verhaal": "Facilities manager Sjoerd receives an urgent request from Naomi, a project manager in transition. The toilets are strictly divided into men’s and women’s and she feels unsafe in both. She asks to make one floor gender-neutral at short notice.\n\nSjoerd understands her, but the renovation budget is already fully committed to the overdue renovation of the fire escapes, a project with its own safety urgency. Bringing the toilets forward means delaying another project.\n\nNaomi has been waiting for an answer for months and the tension in her team is palpable. Does Sjoerd now give the toilets priority, temporarily convert one existing stall, or stick to the planning?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "An investment decision about facilities for the whole organisation, with a limited budget and several stakeholders."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-03.jpg",
+      "altNl": "Situatie gender en seksualiteit: Genderneutrale toiletten",
+      "altEn": "Gender and sexuality scene: Gender-Neutral Toilets",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 106,
+      "woordenEn": 107,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS3",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-04",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Te veel vragen",
+      "verhaal": "Lucia, een creatieve schrijver die biseksueel is, geniet van haar hechte vriendenkring. Toch stellen haar vrienden steeds vaker vragen die ze opdringerig vindt: op wie ze nu eigenlijk valt, of ze ‘nog een kant kiest’, of het ‘een fase’ is.\n\nLucia wil open zijn over wie ze is en waardeert hun interesse. Maar een grens trekken voelt als afsluiten, alsof ze ondankbaar is voor hun betrokkenheid.\n\nTijdens de borrel van vanavond begint een vriend er weer over, nu voor de hele groep. Stelt Lucia een duidelijke grens, beantwoordt ze de vraag nog één keer om ervan af te zijn, of verandert ze snel van onderwerp?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen openheid naar vrienden en het stellen van eigen grenzen."
+    },
+    "en": {
+      "titel": "Too Many Questions",
+      "verhaal": "Lucia, a creative writer who is bisexual, enjoys her close circle of friends. Yet her friends increasingly ask questions she finds intrusive: who she is actually attracted to, whether she will ‘choose a side’ eventually, whether it is ‘a phase’.\n\nLucia wants to be open about who she is and appreciates their interest. But drawing a line feels like shutting them out, as if she is ungrateful for their involvement.\n\nAt tonight’s drinks a friend raises it again, now in front of the whole group. Does Lucia set a clear boundary, answer the question one more time to get it over with, or quickly change the subject?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of openness towards friends and setting one’s own boundaries."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-04.jpg",
+      "altNl": "Situatie gender en seksualiteit: Te veel vragen",
+      "altEn": "Gender and sexuality scene: Too Many Questions",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 107,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS4",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-05",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Niet uitgenodigd",
+      "verhaal": "Bij het reclamebureau valt het Tijmen op: bij elk teamuitje en elke vrijdagmiddagborrel staat de naam van zijn collega Hanneke net niet op de gastenlijst. Niemand doet het expres, denkt hij, maar het patroon is er. Hanneke, die lesbisch is, past niet vanzelfsprekend in de grappen en de sfeer die de groep gewend is.\n\nDeze keer organiseert Tijmen het teamuitje zelf. Hij twijfelt: vragen waarom Hanneke steeds wordt overgeslagen kan de vaste organisator, met wie hij goed overweg kan, in een lastig daglicht zetten. Niets zeggen betekent dat het patroon zich herhaalt.\n\nDe gastenlijst moet vandaag de deur uit. Zet Tijmen Hanneke er zelf op en bespreekt hij het later, spreekt hij de organisator nu aan, of gaat hij uit van een vergissing en laat hij het los?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Het patroon van uitsluiting raakt de teamcultuur en de sociale verhoudingen van een hele afdeling, niet alleen één collega."
+    },
+    "en": {
+      "titel": "Not Invited",
+      "verhaal": "At the advertising agency, Tijmen notices that at every team outing and every Friday afternoon drinks, the name of his colleague Hanneke just misses the guest list. Nobody does it on purpose, he thinks, but the pattern is there. Hanneke, who is lesbian, does not fit automatically into the jokes and atmosphere the group is used to.\n\nThis time Tijmen is organising the team outing himself. He hesitates: asking why Hanneke is always skipped could put the regular organiser, whom he gets on well with, in an awkward light. Saying nothing means the pattern repeats.\n\nThe guest list has to go out today. Does Tijmen add Hanneke himself and discuss it later, address the organiser now, or assume it was an oversight and let it go?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The pattern of exclusion affects the team culture and social relations of a whole department, not only one colleague."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-05.jpg",
+      "altNl": "Situatie gender en seksualiteit: Niet uitgenodigd",
+      "altEn": "Gender and sexuality scene: Not Invited",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 128,
+      "woordenEn": 126,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS5",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-06",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Niet welkom zoals hij is",
+      "verhaal": "Jonas, genderqueer, ziet bij elke familiebijeenkomst weer tegen het avondeten op. Zijn ouders houden vast aan traditionele verwachtingen, en hun opmerkingen, als grapje bedoeld, voelen voor hem als afwijzing.\n\nZijn zus Merle ziet het elke keer gebeuren en voelt zich verscheurd. Ingrijpen aan tafel kan de sfeer voor de hele familie verpesten en haar ouders publiekelijk op scherp zetten. Zwijgen voelt alsof ze haar broer alleen laat staan.\n\nVanavond begint hun vader er weer over, terwijl Jonas zijn blik op zijn bord laat zakken. Spreekt Merle haar vader nu aan, neemt ze Jonas na het eten apart, of wacht ze tot hij het zelf aankaart?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen loyaliteit aan de familie en het openlijk steunen van een broer."
+    },
+    "en": {
+      "titel": "Not Welcome as He Is",
+      "verhaal": "Jonas, genderqueer, dreads every family gathering at dinner time. His parents hold on to traditional expectations, and their remarks, meant as jokes, feel like rejection to him.\n\nHis sister Merle sees it happen every time and feels torn. Stepping in at the table could spoil the atmosphere for the whole family and put her parents publicly on edge. Staying silent feels like leaving her brother to fend for himself.\n\nTonight their father starts on it again, while Jonas lowers his gaze to his plate. Does Merle address her father now, take Jonas aside after dinner, or wait until he raises it himself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of loyalty to the family and openly supporting a brother."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-06.jpg",
+      "altNl": "Situatie gender en seksualiteit: Niet welkom zoals hij is",
+      "altEn": "Gender and sexuality scene: Not Welcome as He Is",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 105,
+      "woordenEn": 102,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS6",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-07",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Gewoon een fase",
+      "verhaal": "Roos, panseksueel, geniet normaal van de avonden met haar hechte vriendengroep. Maar zodra seksualiteit ter sprake komt, volgen grapjes of wordt haar identiteit weggewuifd als ‘gewoon een fase’ of ‘aandacht trekken’.\n\nZe wil haar vrienden vertellen hoe dat voelt, maar twijfelt: misschien bedoelen ze er niets kwaads mee, en een confrontatie kan de sfeer in de groep voorgoed veranderen. Toch merkt ze dat ze zich steeds vaker inhoudt.\n\nVanavond valt de opmerking weer, nu van haar beste vriendin. Spreekt Roos haar er direct op aan, wacht ze een rustiger moment onder vier ogen af, of laat ze het zoals altijd passeren?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen het beschermen van een vriendschap en het serieus nemen van de eigen identiteit."
+    },
+    "en": {
+      "titel": "Just a Phase",
+      "verhaal": "Roos, pansexual, normally enjoys the evenings with her close group of friends. But as soon as sexuality comes up, jokes follow or her identity is waved away as ‘just a phase’ or ‘attention-seeking’.\n\nShe wants to tell her friends how that feels, but wonders: perhaps they mean no harm, and a confrontation could change the mood in the group for good. Yet she notices she holds back more and more often.\n\nTonight the remark falls again, this time from her best friend. Does Roos address her directly, wait for a quieter moment in private, or let it pass as always?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of protecting a friendship against being taken seriously in one’s own identity."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-07.jpg",
+      "altNl": "Situatie gender en seksualiteit: Gewoon een fase",
+      "altEn": "Gender and sexuality scene: Just a Phase",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 101,
+      "woordenEn": 100,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS7",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-08",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Ongepaste vragen",
+      "verhaal": "Marit, aseksueel, werkt met plezier bij een innovatief technologiebedrijf. Collega’s, nieuwsgierig en misschien zonder kwade bedoelingen, stellen steeds vragen die te ver gaan: of ze ‘nog nooit verliefd is geweest’ en of het ‘gewoon nog niet de juiste persoon’ was.\n\nMarit wil best open zijn, maar voelt telkens de druk zichzelf te verdedigen tegenover vragen die niemand een ander zou stellen. Een grens trekken voelt riskant in een team waar ze verder goed ligt.\n\nTijdens de lunch begint een collega er weer over, in het bijzijn van het hele team. Legt Marit rustig uit waarom de vraag haar raakt, geeft ze een kort antwoord om ervan af te zijn, of verandert ze van onderwerp?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen openheid over de eigen identiteit en het bewaken van privacy op de werkvloer."
+    },
+    "en": {
+      "titel": "Inappropriate Questions",
+      "verhaal": "Marit, asexual, enjoys working at an innovative technology company. Colleagues, curious and perhaps without ill intent, keep asking questions that go too far: whether she has ‘never been in love’ and whether it was ‘just not the right person yet’.\n\nMarit is happy to be open, but keeps feeling pressure to defend herself against questions nobody would ask anyone else. Drawing a line feels risky in a team where she otherwise fits in well.\n\nDuring lunch a colleague raises it again, in front of the whole team. Does Marit calmly explain why the question affects her, give a short answer to get it over with, or change the subject?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of openness about one’s identity and guarding privacy in the workplace."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-08.jpg",
+      "altNl": "Situatie gender en seksualiteit: Ongepaste vragen",
+      "altEn": "Gender and sexuality scene: Inappropriate Questions",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 109,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS8",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-09",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Niet serieus genomen",
+      "verhaal": "Sanne, genderfluïde, is dol op haar vriendengroep en de fotoavonden die ze samen organiseren. Maar zodra het gesprek op haar genderidentiteit komt, wordt ze niet serieus genomen: er volgen grapjes, of iemand zegt ‘doe toch gewoon normaal, wat maakt het uit’.\n\nZe wil haar vrienden aanspreken, maar is bang dat een confrontatie de vriendschap onder druk zet, juist bij mensen die haar nauw aan het hart liggen. Ze merkt dat ze zich steeds vaker inhoudt.\n\nTijdens de fotoavond van vandaag valt de opmerking weer, nu van haar oudste vriend. Spreekt Sanne hem direct aan, wacht ze een rustiger moment om het uit te leggen, of laat ze het weer voorbijgaan?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een directe, persoonlijke afweging tussen het beschermen van een vriendschap en het opkomen voor de eigen genderidentiteit."
+    },
+    "en": {
+      "titel": "Not Taken Seriously",
+      "verhaal": "Sanne, genderfluid, loves her group of friends and the photo evenings they organise together. But as soon as the conversation turns to her gender identity, she is not taken seriously: jokes follow, or someone says ‘just act normal, what does it matter’.\n\nShe wants to address her friends, but fears a confrontation will put the friendship under pressure, precisely with people close to her heart. She notices she holds back more and more often.\n\nAt today’s photo evening the remark falls again, this time from her oldest friend. Does Sanne address him directly, wait for a quieter moment to explain, or let it pass again?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A direct, personal weighing of protecting a friendship against standing up for one’s own gender identity."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-09.jpg",
+      "altNl": "Situatie gender en seksualiteit: Niet serieus genomen",
+      "altEn": "Gender and sexuality scene: Not Taken Seriously",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 105,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS9",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
+  },
+  {
+    "id": "gs-10",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De wachtlijst",
+      "verhaal": "Ilona, een transgender vrouw, zit voor de derde keer dit jaar tegenover haar huisarts met hetzelfde verzoek: een doorverwijzing naar een genderkliniek. Elke afspraak voelt voor haar als een strijd, en de wachtlijsten bij de klinieken lopen op tot meer dan een jaar.\n\nHuisarts Rob weet dat een verwijzing zonder de gebruikelijke intakegesprekken in de eigen praktijk het risico geeft dat de kliniek het dossier terugstuurt, waarna Ilona helemaal achteraan moet aansluiten. Tegelijk ziet hij haar met elke afspraak vermoeider en wanhopiger worden.\n\nVolgt Rob het volledige protocol met nog enkele intakegesprekken, of verwijst hij Ilona nu meteen door, met het risico dat ze straks opnieuw achteraan staat?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "De doorverwijzing raakt het protocol en de beperkte capaciteit van de zorgorganisatie, niet alleen de individuele arts-patiëntrelatie."
+    },
+    "en": {
+      "titel": "The Waiting List",
+      "verhaal": "Ilona, a transgender woman, sits across from her GP for the third time this year with the same request: a referral to a gender clinic. Every appointment feels like a fight to her, and waiting lists at the clinics run to more than a year.\n\nGP Rob knows that a referral without the usual intake conversations in his own practice risks the clinic sending the file back, after which Ilona would have to join the queue at the very back. At the same time he sees her growing more tired and desperate with every appointment.\n\nDoes Rob follow the full protocol with a few more intake conversations, or does he refer Ilona on right away, risking that she ends up at the back of the queue again?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "The referral touches the protocol and limited capacity of the healthcare organisation, not only the individual doctor–patient relationship."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-10.jpg",
+      "altNl": "Situatie gender en seksualiteit: De wachtlijst",
+      "altEn": "Gender and sexuality scene: The Waiting List",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 108,
+      "woordenEn": 127,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS10",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-11",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Het vakje M of V",
+      "verhaal": "Samira werkt bij burgerzaken. Op haar spreekuur vraagt Kris, die zich non-binair noemt, een nieuwe identiteitskaart aan en vraagt of er een neutrale aanduiding op kan. Volgens de regels waaraan Samira zich moet houden staat er een ‘M’ of een ‘V’.\n\nZe ziet wat dat voor Kris betekent: bij elke grenscontrole, bij elke balie, steeds opnieuw uitleggen. Samira kan de regel niet veranderen, alleen hoe ze Kris begeleidt. Gaat ze verder dan haar functie voorschrijft, dan overschrijdt ze haar mandaat.\n\nKris kijkt haar aan en wacht. Voert Samira de aanvraag uit zoals het voorschrift luidt, wijst ze Kris op de weg van bezwaar en politieke aandacht, of zoekt ze zelf de ruimte in de regel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De kern ligt bij wet- en regelgeving over geslachtsregistratie; één ambtenaar of gemeente kan dit niet oplossen."
+    },
+    "en": {
+      "titel": "The M or F Box",
+      "verhaal": "Samira works at the civil registry. At her counter, Kris, who identifies as non-binary, applies for a new identity card and asks whether a neutral marker is possible. Under the rules Samira must follow, there is an ‘M’ or an ‘F’.\n\nShe sees what that means for Kris: at every border check, at every counter, explaining again and again. Samira cannot change the rule, only how she guides Kris. If she goes further than her job prescribes, she exceeds her mandate.\n\nKris looks at her and waits. Does Samira process the application as the regulation says, point Kris to the route of objection and political attention, or look for room within the rule herself?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The core lies in legislation and regulation on sex registration; a single civil servant or municipality cannot solve this."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-11.jpg",
+      "altNl": "Situatie gender en seksualiteit: Het vakje M of V",
+      "altEn": "Gender and sexuality scene: The M or F Box",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 115,
+      "woordenEn": 114,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS11",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "gs-12",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De kleedkamer",
+      "verhaal": "Lena (15) speelt al jaren bij de meidenteams van de voetbalclub en is transgender. Haar teamgenoten kennen haar als vriendin. Maar enkele ouders hebben bezwaar tegen het gebruik van dezelfde kleedkamer en leggen dat bij trainer Gijs neer.\n\nGijs vindt dat Lena erbij hoort. Hij wil de ouders ook niet wegzetten als onwillig, want sommigen zijn oprecht bezorgd over de privacy van hun dochters. Het bestuur wil vooral geen ruzie in de club.\n\nZaterdag is de eerstvolgende wedstrijd. Houdt Gijs vast aan één kleedkamer voor iedereen, regelt hij een aparte omkleedtijd voor Lena, of organiseert hij eerst een ouderavond?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Een regel van de club botst met uiteenlopende belangen van speler, ouders, trainer en bestuur binnen één organisatie."
+    },
+    "en": {
+      "titel": "The Changing Room",
+      "verhaal": "Lena (15) has played for years in the girls’ teams at the football club and is transgender. Her teammates know her as a friend. But some parents object to her using the same changing room and raise it with coach Gijs.\n\nGijs thinks Lena belongs. He also does not want to portray the parents as unwilling, because some are genuinely concerned about their daughters’ privacy. The board mainly wants no quarrel in the club.\n\nThe next match is on Saturday. Does Gijs hold on to one changing room for everyone, arrange a separate changing time for Lena, or first organise a parents’ evening?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "A club rule clashes with the differing interests of player, parents, coach and board within one organisation."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-12.jpg",
+      "altNl": "Situatie gender en seksualiteit: De kleedkamer",
+      "altEn": "Gender and sexuality scene: The Changing Room",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 99,
+      "woordenEn": 103,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS12",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-13",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "meso",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "De regenboogvlag",
+      "verhaal": "Op de middelbare school van schoolleider Hans hangt sinds de Coming-outdag een regenboogvlag in de aula, op initiatief van docent Mirjam en enkele leerlingen. Het voelde als een steun voor leerlingen die zich niet gezien voelden.\n\nNu belt een groep ouders, met een andere levensovertuiging, dat de vlag niet past in een neutrale school. Ze dreigen hun kinderen weg te halen. Mirjam zegt dat weghalen een signaal afgeeft aan juist de leerlingen die het het hardst nodig hebben.\n\nHet ouderoverleg is morgen. Laat Hans de vlag hangen, haalt hij hem weg, of zoekt hij een andere vorm waarin alle leerlingen zich welkom voelen?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★☆  MESO — organisatorisch",
+      "rechtvaardiging": "Schoolbeleid, de eigen cultuur van de school en uiteenlopende belangen van leerlingen, docenten en ouders spelen tegelijk."
+    },
+    "en": {
+      "titel": "The Rainbow Flag",
+      "verhaal": "At the secondary school of head teacher Hans, a rainbow flag has hung in the atrium since Coming Out Day, on the initiative of teacher Mirjam and a few pupils. It felt like support for pupils who did not feel seen.\n\nNow a group of parents, with a different philosophy of life, calls to say the flag does not belong in a neutral school. They threaten to take their children away. Mirjam says that taking it down sends a signal to precisely the pupils who need it most.\n\nThe parents’ meeting is tomorrow. Does Hans let the flag hang, take it down, or look for another form in which all pupils feel welcome?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★☆  MESO — organisational",
+      "rechtvaardiging": "School policy, the school’s own culture and the differing interests of pupils, teachers and parents all play a part at once."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-13.jpg",
+      "altNl": "Situatie gender en seksualiteit: De regenboogvlag",
+      "altEn": "Gender and sexuality scene: The Rainbow Flag",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 103,
+      "woordenEn": 113,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS13",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 2
+  },
+  {
+    "id": "gs-14",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "macro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Geloofwaardig genoeg?",
+      "verhaal": "Besluitmedewerker Karin beoordeelt de asielaanvraag van Hamid, die zegt dat hij in zijn land vervolgd wordt omdat hij homoseksueel is. Hij heeft geen foto’s, geen getuigen en vertelt zijn verhaal stuntelig, in korte, voorzichtige zinnen.\n\nDe richtlijn vraagt om een consistent en geloofwaardig verhaal. Karin weet dat veel mensen zwijgen over wat ze nooit hardop hebben mogen zeggen. Ze weet ook dat er mensen zijn die de richtlijn proberen te misbruiken en dat haar organisatie daar streng op moet toetsen.\n\nHaar beslissing ligt op haar bureau. Volgt Karin de richtlijn en wijst ze af, of neemt ze het risico op onrecht en geeft ze Hamid het voordeel van de twijfel?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★★★  MACRO — systemisch",
+      "rechtvaardiging": "De kern ligt bij vreemdelingenwetgeving en mensenrechten; één besluitmedewerker kan de maatstaf niet veranderen."
+    },
+    "en": {
+      "titel": "Credible Enough?",
+      "verhaal": "Decision officer Karin is assessing the asylum application of Hamid, who says he is persecuted in his country because he is gay. He has no photos, no witnesses, and tells his story haltingly, in short, careful sentences.\n\nThe guideline asks for a consistent and credible account. Karin knows that many people stay silent about what they were never allowed to say out loud. She also knows there are people who try to abuse the guideline and that her organisation has to test strictly for that.\n\nHer decision lies on her desk. Does Karin follow the guideline and reject, or take the risk of injustice and give Hamid the benefit of the doubt?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★★★  MACRO — systemic",
+      "rechtvaardiging": "The core lies in immigration law and human rights; a single decision officer cannot change the standard."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-14.jpg",
+      "altNl": "Situatie gender en seksualiteit: Geloofwaardig genoeg?",
+      "altEn": "Gender and sexuality scene: Credible Enough?",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 110,
+      "woordenEn": 112,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS14",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 3
+  },
+  {
+    "id": "gs-15",
+    "set": "gender-en-seksualiteit-v3",
+    "stap": 1,
+    "categorie": "gender-en-seksualiteit",
+    "complexiteit": "micro",
+    "taalniveau": "B2",
+    "status": "getest",
+    "nl": {
+      "titel": "Wat Joep weet",
+      "verhaal": "Eva vertrouwde Joep, haar collega en vriend, toe dat ze transgender is. Op het werk weet nog niemand het; ze is bezig met haar transitie en wil het zelf vertellen wanneer het zover is.\n\nNu merkt Joep dat er op de afdeling wordt gefluisterd over haar vele afspraken en vrije middagen. Teamleider Hendrik vraagt hem tijdens de koffie of hij weet wat er speelt, en zegt dat hij ‘zich zorgen maakt’. Als Joep zwijgt, groeien de geruchten. Als hij iets zegt, verbreekt hij haar vertrouwen.\n\nHendrik wacht op zijn antwoord. Zegt Joep niets, zegt hij dat Hendrik het beter aan Eva zelf kan vragen, of waarschuwt hij Eva eerst voordat de roddel haar inhaalt?",
+      "vraag1": "Wat zou jij doen en waarom?",
+      "vraag2": "Welke waarden zijn hier in het spel?",
+      "complexiteitLabel": "★☆☆  MICRO — persoonlijke keuze",
+      "rechtvaardiging": "Een persoonlijke keuze tussen geheimhouding aan een vriendin en haar bescherming; Joep beslist het zelf."
+    },
+    "en": {
+      "titel": "What Joep Knows",
+      "verhaal": "Eva confided in Joep, her colleague and friend, that she is transgender. Nobody at work knows yet; she is in the middle of her transition and wants to tell people herself when the time comes.\n\nNow Joep notices whispering in the department about her many appointments and free afternoons. Team leader Hendrik asks him over coffee whether he knows what is going on, saying he is ‘worried’. If Joep stays silent, the rumours grow. If he says something, he breaks her trust.\n\nHendrik waits for his answer. Does Joep say nothing, say that Hendrik had better ask Eva herself, or warn Eva first before the gossip catches up with her?",
+      "vraag1": "What would you do and why?",
+      "vraag2": "Which values are at stake here?",
+      "complexiteitLabel": "★☆☆  MICRO — personal choice",
+      "rechtvaardiging": "A personal choice between confidentiality towards a friend and protecting her; Joep decides for himself."
+    },
+    "assets": {
+      "afbeelding": "/images/gesprekskaarten/gs-15.jpg",
+      "altNl": "Situatie gender en seksualiteit: Wat Joep weet",
+      "altEn": "Gender and sexuality scene: What Joep Knows",
+      "fireflyPrompt": null,
+      "pdfNl": null,
+      "pdfEn": null
+    },
+    "meta": {
+      "woordenNl": 114,
+      "woordenEn": 110,
+      "bron": "Gender en seksualiteit — v3 website (15 kaarten)",
+      "kaartNummer": "GS15",
+      "sectorColor": "#D6457A",
+      "categorieEn": "GENDER AND SEXUALITY",
+      "tekstVersie": "3.0",
+      "afbeeldingStatus": "v3",
+      "project": "Lectoraat Ethisch Werken"
+    },
+    "moeilijkheid": 1
   }
 ]
